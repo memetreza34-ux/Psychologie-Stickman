@@ -1,0 +1,36 @@
+{
+  "name": "stickman-youtube",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:youtube": "remotion render src/index.ts Phase3ImageVideo exports/youtube.mp4",
+    "render:project": "node scripts/render-phase3-project.mjs",
+    "audio:youtube": "node scripts/prepare-youtube-voiceover.mjs",
+    "qa:youtube-pacing": "node scripts/check-youtube-pacing.mjs",
+    "map:phase1": "node scripts/map-phase1-scenes.mjs",
+    "validate:assets": "node scripts/validate-production-assets.mjs",
+    "production:check": "node scripts/production-check.mjs",
+    "validate:phase3": "node scripts/validate-phase3-word-plan.mjs",
+    "build:phase3-props": "node scripts/build-phase3-props.mjs",
+    "prepare:phase3": "node scripts/prepare-phase3.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "tsc --noEmit && node --check scripts/prepare-youtube-voiceover.mjs && node --check scripts/check-youtube-pacing.mjs && node --check scripts/map-phase1-scenes.mjs && node --check scripts/validate-production-assets.mjs && node --check scripts/production-check.mjs && node --check scripts/render-phase3-project.mjs && node --check scripts/validate-phase3-word-plan.mjs && node --check scripts/build-phase3-props.mjs && node --check scripts/prepare-phase3.mjs"
+  },
+  "dependencies": {
+    "@remotion/captions": "4.0.490",
+    "@remotion/cli": "4.0.490",
+    "@remotion/lottie": "4.0.490",
+    "@remotion/media": "4.0.490",
+    "@remotion/sfx": "4.0.490",
+    "@remotion/transitions": "4.0.490",
+    "lucide-react": "^1.25.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.490"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "typescript": "5.9.3"
+  }
+}

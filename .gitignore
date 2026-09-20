@@ -1,0 +1,23 @@
+node_modules/
+.remotion/
+.DS_Store
+tmp/
+outputs/
+scripts/__pycache__/
+**/__pycache__/
+
+# Generated media
+exports/*.mp4
+exports/*.mov
+channels/dinge-erklaert/youtube/**/01-script-audio/audio/*.mp3
+channels/dinge-erklaert/youtube/**/01-script-audio/audio/*.wav
+channels/dinge-erklaert/youtube/**/02-bilder/images/*.png
+channels/dinge-erklaert/youtube/**/02-bilder/images/*.jpg
+channels/dinge-erklaert/youtube/**/02-bilder/images/*.jpeg
+channels/dinge-erklaert/youtube/**/02-bilder/images/*.webp
+channels/dinge-erklaert/youtube/**/05-export/*.mp4
+public/dinge-erklaert/youtube/**/audio/*.mp3
+public/dinge-erklaert/youtube/**/images/*.png
+public/dinge-erklaert/youtube/**/images/*.jpg
+public/dinge-erklaert/youtube/**/images/*.jpeg
+public/dinge-erklaert/youtube/**/images/*.webp

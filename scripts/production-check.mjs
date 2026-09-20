@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+import {spawnSync} from 'node:child_process';const [wordTimingPath,scenePlanPath]=process.argv.slice(2);if(!wordTimingPath||!scenePlanPath)process.exit(1);const run=(args)=>{const r=spawnSync(process.execPath,args,{stdio:'inherit'});if(r.error)throw r.error;if(r.status!==0)process.exit(r.status??1);};run(['scripts/validate-phase3-word-plan.mjs',wordTimingPath,scenePlanPath]);run(['scripts/validate-production-assets.mjs',scenePlanPath]);console.log('PRODUCTION READY: PASS (youtube)');

@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+import {spawnSync} from 'node:child_process';const [wordTimingPath,scenePlanPath,outputPath]=process.argv.slice(2);if(!wordTimingPath||!scenePlanPath||!outputPath)process.exit(1);const run=(args)=>{const r=spawnSync(process.execPath,args,{stdio:'inherit'});if(r.error)throw r.error;if(r.status!==0)process.exit(r.status??1);};run(['scripts/production-check.mjs',wordTimingPath,scenePlanPath]);run(['scripts/build-phase3-props.mjs',wordTimingPath,scenePlanPath,outputPath]);console.log('PHASE 3 PREPARE: PASS');
