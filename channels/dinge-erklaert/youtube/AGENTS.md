@@ -11,6 +11,7 @@ Gilt für `channels/dinge-erklaert/youtube/`.
 - 16:9 / 1920×1080 / 30 fps
 - die Bildwelt wird **nicht** aus dem Quell-Repo geerbt
 - solange `YOUTUBE_STYLE_LOCK.md` den Status `UNSET` trägt, keine finale Phase-2-Bildproduktion starten
+- `YOUTUBE_VISUAL_BEAT_RULES.md` ist für jede Phase-1-Planung verbindlich
 
 ## Verbindliche Projektstruktur
 
@@ -44,14 +45,41 @@ Gilt für `channels/dinge-erklaert/youtube/`.
 
 THEMA + QUELLEN + CLAIM-CHECK
 → finales `script.txt`
-→ PHASE 1 semantische Szenen
+→ PHASE 1 Visual Beats
+→ `npm run qa:visual-density`
 → PHASE-1-PASS
 → PHASE 2 Bilder + finales Audio
 → PHASE-2-PASS
 → PHASE 3 Wort-Timings / Mapping / Render
 → Final-QA
 
-Keine Phase überspringen. Phase 2 darf keine Phase-1-Grenzen erfinden oder verschieben. Phase 3 darf Skript oder Szenengrenzen nicht kreativ umdeuten.
+Keine Phase überspringen. Phase 2 darf keine Phase-1-Grenzen erfinden, verschieben oder zusammenlegen. Phase 3 darf Skript oder Szenengrenzen nicht kreativ umdeuten.
+
+## Phase 1 = Visual Beats, nicht Kapitel
+
+Ein wichtiger visueller Gedanke bekommt grundsätzlich ein eigenes Bild.
+
+Neue Beats insbesondere bei:
+- neuem Fakt
+- neuem Staat/Ort/Akteur/Institution
+- neuem Jahr oder Zeitsprung
+- neuer relevanter Zahl
+- neuer Handlung
+- Ursache → Folge
+- Vergleich
+- Frage → Antwort
+- neuem Schritt einer Metapher oder Mechanismus-Erklärung
+
+Wenn ein Satz einen konkreten Staat oder Ort zentral nennt, muss dieser im zugehörigen Bild sichtbar bzw. eindeutig repräsentiert sein. Das Bild darf nicht schon den Inhalt späterer Sätze zeigen.
+
+Dichte:
+- Ziel meist 8–18 gesprochene Wörter pro Beat
+- Durchschnitt maximal 18 Wörter pro Szene
+- harte Obergrenze 28 Wörter
+- 10–14 Minuten führen häufig zu ungefähr 90–150 Bildern
+- nie Szenen zusammenlegen, nur um Bilder zu sparen
+
+Für skriptbasierte Projekte darf `autoFromScript` in `phase1-scenes.json` verwendet werden. Vor Phase 2 muss die daraus entstehende Beat-Liste redaktionell geprüft werden.
 
 ## Audio
 
@@ -70,7 +98,7 @@ Bis der Nutzer eine neue Bildwelt ausdrücklich festlegt:
 - keine alte Bildwelt rekonstruieren
 - keine neue Figurenart voraussetzen
 - keine alten Google-Flow-Masterprompts wiederverwenden
-- Phase 1 darf semantisch geplant werden; konkrete visuelle Ausgestaltung bleibt offen
+- Phase 1 darf inhaltlich/visuell als Beat geplant werden; konkrete Stil-DNA bleibt offen
 
 ## Schreibsicherheit
 

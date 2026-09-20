@@ -34,10 +34,27 @@ Deutschsprachiger Faceless-Erklärkanal mit Fokus auf Politik, Geopolitik, Gesch
 
 1. Thema + Quellen + Claim-Check
 2. finales `script.txt`
-3. Phase 1: semantische Szenen
-4. Phase 2: finale Assets + finales Audio
-5. Phase 3: Timings, Mapping, Render
-6. Final-QA
+3. Phase 1: **Visual Beats**
+4. Phase 1 Density-QA
+5. Phase 2: finale Assets + finales Audio
+6. Phase 3: Timings, Mapping, Render
+7. Final-QA
+
+## Visual-Beat-Prinzip
+
+Verbindlich: `channels/dinge-erklaert/youtube/YOUTUBE_VISUAL_BEAT_RULES.md`
+
+Dieses Format lebt von vielen präzisen Bildern:
+- ein wichtiger visueller Gedanke = grundsätzlich ein eigenes Bild
+- neuer Fakt/Akteur/Ort/Jahr/Zahl/Handlung/Ursache-Folge-Schritt/Mechanismusschritt = neuer Beat, wenn sich das Bild inhaltlich ändern muss
+- keine 20–30-Sekunden-Sammelbilder für mehrere Aussagen
+- Bilder dürfen spätere Informationen nicht vorwegnehmen
+- Ziel meist 8–18 gesprochene Wörter pro Beat
+- Durchschnitt höchstens 18 Wörter pro Szene
+- harte Obergrenze 28 Wörter pro Szene
+- bei 10–14 Minuten sind häufig ungefähr 90–150 Bilder sinnvoll; Inhalt entscheidet, nicht eine starre Quote
+
+`npm run qa:visual-density` muss für Produktionsprojekte bestehen.
 
 ## Bildwelt
 
@@ -48,7 +65,7 @@ Die alte Bildwelt des Quell-Repos ist ausdrücklich nicht kanonisch. Keine konkr
 Technisch bereits fest:
 - 16:9 / 1920×1080 / 30 fps
 - filmische Kontinuität
-- Bilder erklären Inhalt statt nur zu dekorieren
+- Bilder erklären den aktuell gesprochenen Inhalt statt nur zu dekorieren
 - politische/historische Darstellung neutral
 
 ## Schluss-Hold

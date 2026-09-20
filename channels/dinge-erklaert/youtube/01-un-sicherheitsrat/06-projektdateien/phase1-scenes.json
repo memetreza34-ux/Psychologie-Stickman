@@ -1,0 +1,14 @@
+{
+  "format": "youtube",
+  "audio": "dinge-erklaert/youtube/01-un-sicherheitsrat/audio/final-voice.mp3",
+  "imageBasePath": "dinge-erklaert/youtube/01-un-sicherheitsrat/images",
+  "imageExtension": "png",
+  "endHoldMs": 1000,
+  "autoFromScript": {
+    "scriptPath": "channels/dinge-erklaert/youtube/01-un-sicherheitsrat/01-script-audio/script.txt",
+    "targetWords": 16,
+    "maxWords": 20,
+    "policy": "visual-beats-v2"
+  },
+  "rebuildReason": "Der alte 43-Bild-Ansatz war für 12+ Minuten zu grob. Dieses Projekt wird jetzt satz-/gedankenweise in viele Visual Beats geteilt, damit der aktuell gesprochene Inhalt gleichzeitig sichtbar ist."
+}

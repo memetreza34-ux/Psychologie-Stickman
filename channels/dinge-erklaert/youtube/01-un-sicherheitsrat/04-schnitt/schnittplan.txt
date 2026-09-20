@@ -1,5 +1,8 @@
 SCHNITTPLAN — WIE FUNKTIONIERT DER UN-SICHERHEITSRAT WIRKLICH?
 
+STATUS
+Der frühere 43-Bild-Ansatz ist verworfen. Für dieses 12+ Minuten lange Erklärvideo war die visuelle Granularität zu niedrig. Der Neuaufbau verwendet Visual Beats nach `YOUTUBE_VISUAL_BEAT_RULES.md`.
+
 Dramaturgie:
 REALE SZENE → ZENTRALES RÄTSEL → KLARES VERSPRECHEN → MECHANISMUS → REALE GEGENBEISPIELE → HISTORISCHE URSACHE → WERKZEUGE → GRENZEN → REFORM-FALLE → CALLBACK / PAYOFF
 
@@ -11,6 +14,36 @@ AUDIO
 
 EINSTIEG
 Suezkrise 1956 als reale Cold-Open-Szene. Kein erfundenes „Stell dir vor“.
+
+VISUELLER NEUAUFBAU
+- nicht mehr 1 großes Bild pro Absatz/Kapitel
+- 1 wichtiger visueller Gedanke = 1 Visual Beat
+- neue Fakten, Staaten, Orte, Jahreszahlen, Abstimmungsergebnisse, Handlungen und Ursache-Folge-Schritte bekommen eigene Bilder
+- ein Bild darf spätere Informationen nicht vorwegnehmen
+- Ziel meist 8–18 gesprochene Wörter pro Beat
+- bei diesem Skript werden deutlich mehr als 43 Bildwechsel erwartet; die endgültige Zahl ergibt sich aus den tatsächlichen Beats
+- Bilder werden erst nach Festlegung der neuen Bildwelt produziert
+
+BEISPIEL SUEZ-COLD-OPEN
+Nicht mehr alles in einem Bild bündeln. Getrennte Beats für:
+1. New York / 30. Oktober 1956
+2. Resolutionsentwurf im Sicherheitsrat
+3. Israel/Ägypten und geforderter Rückzug
+4. Abstimmung beginnt
+5. Frankreich: Nein
+6. Großbritannien: Nein
+7. beide als Vetomächte
+8. Resolution scheitert
+9. am Folgetag britisch-französische Luftangriffe auf Ziele in Ägypten
+
+BEISPIEL ZWEI-SCHLÖSSER-MECHANISMUS
+Getrennte Beats für:
+1. Tür mit zwei Schlössern als Grundmetapher
+2. Schloss 1 = mindestens neun Ja-Stimmen
+3. Schloss 2 = kein Nein eines P5-Mitglieds
+4. neun Ja öffnen nur Schloss 1
+5. ein P5-Nein hält Schloss 2 geschlossen
+6. Ergebnis: Veto blockiert die sachliche Entscheidung
 
 HAUPTTEILE
 1. 15 Sitze und P5
@@ -24,13 +57,15 @@ HAUPTTEILE
 9. Kritik und Reformfalle
 
 SCHLUSS
-Vier reale Krisen, eine Architektur. Rückkehr zur Zwei-Schlösser-Erklärung.
+Vier reale Krisen, eine Architektur. Rückkehr zur Zwei-Schlösser-Erklärung. Auch im Schluss werden die vier Fälle nacheinander sichtbar und nicht in ein überladenes Sammelbild gepresst.
 
 RETENTION
 - keine Logoanimation vor dem Cold Open
 - erste 30 Sekunden: reale Handlung + Konflikt + Kernfrage
 - starke historische Beispiele früh genug
 - kein künstliches Strecken
+- kein statisches Bild für 20–30 Sekunden
+- bevorzugt etwa 4–8 Sekunden pro visueller Idee; 8–12 Sekunden nur bei tatsächlich gleichem visuellen Gedanken
 
-VISUELL
-Die alte konkrete Bildwelt wurde im Ziel-Repo absichtlich entfernt. Nach Festlegung der neuen Bildwelt muss Phase 1 visuell neu konkretisiert werden.
+FINAL-QA
+Bei jedem wichtigen Satz prüfen: Ist das, worüber gerade gesprochen wird, jetzt auch sichtbar? Wenn nein, fehlt ein Visual Beat oder das Bild ist falsch zugeordnet.
