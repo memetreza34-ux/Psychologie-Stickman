@@ -1,0 +1,5 @@
+STATUS: RESET FOR NEW VISUAL WORLD
+
+Die semantische Geschichte, historischen Akteure und Fälle bleiben erhalten. Konkrete Charakterformen, Stilregeln, Farben, Prompt-Anker und frühere Bildreferenzen wurden bewusst nicht migriert.
+
+Nach Festlegung der neuen Bildwelt muss für dieses Projekt eine neue visuelle Kontinuität definiert werden.

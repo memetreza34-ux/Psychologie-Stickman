@@ -1,0 +1,16 @@
+{
+  "format": "youtube",
+  "audio": "dinge-erklaert/youtube/<PROJEKT>/audio/final-voice.mp3",
+  "imageBasePath": "dinge-erklaert/youtube/<PROJEKT>/images",
+  "imageExtension": "png",
+  "endHoldMs": 1000,
+  "scenes": [
+    {
+      "scene": 1,
+      "startPhrase": "<eindeutige Startphrase>",
+      "endWord": "<letztes Wort>",
+      "speechSection": "<vollständiger gesprochener Sinnabschnitt>",
+      "visualTask": "<erst nach Festlegung der Bildwelt konkretisieren>"
+    }
+  ]
+}

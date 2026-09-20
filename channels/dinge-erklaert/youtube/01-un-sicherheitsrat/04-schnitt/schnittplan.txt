@@ -1,0 +1,36 @@
+SCHNITTPLAN — WIE FUNKTIONIERT DER UN-SICHERHEITSRAT WIRKLICH?
+
+Dramaturgie:
+REALE SZENE → ZENTRALES RÄTSEL → KLARES VERSPRECHEN → MECHANISMUS → REALE GEGENBEISPIELE → HISTORISCHE URSACHE → WERKZEUGE → GRENZEN → REFORM-FALLE → CALLBACK / PAYOFF
+
+AUDIO
+- exakt 1,10×
+- führende Stille entfernen
+- Pausen ab ungefähr 500 ms deutlich straffen
+- nur kurze natürliche Restpausen
+
+EINSTIEG
+Suezkrise 1956 als reale Cold-Open-Szene. Kein erfundenes „Stell dir vor“.
+
+HAUPTTEILE
+1. 15 Sitze und P5
+2. Zwei-Schlösser-Mechanismus
+3. Libyen 2011 vs. Ukraine 2022
+4. historische Konstruktion 1945
+5. Kuwait 1990 als Gegenbeispiel für Handlungsfähigkeit
+6. Werkzeugkasten / Eskalationsleiter
+7. Beschluss ≠ Umsetzung
+8. Verfahrensfragen und Generalversammlung
+9. Kritik und Reformfalle
+
+SCHLUSS
+Vier reale Krisen, eine Architektur. Rückkehr zur Zwei-Schlösser-Erklärung.
+
+RETENTION
+- keine Logoanimation vor dem Cold Open
+- erste 30 Sekunden: reale Handlung + Konflikt + Kernfrage
+- starke historische Beispiele früh genug
+- kein künstliches Strecken
+
+VISUELL
+Die alte konkrete Bildwelt wurde im Ziel-Repo absichtlich entfernt. Nach Festlegung der neuen Bildwelt muss Phase 1 visuell neu konkretisiert werden.

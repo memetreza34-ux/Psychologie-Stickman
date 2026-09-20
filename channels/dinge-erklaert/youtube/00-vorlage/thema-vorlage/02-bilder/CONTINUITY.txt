@@ -1,0 +1,9 @@
+VISUAL CONTINUITY — GENERISCH
+
+Diese Datei enthält bis zur Festlegung einer Bildwelt nur technische Kontinuitätsregeln.
+
+- wiederkehrende Akteure müssen nach Festlegung des Stils konsistent bleiben
+- wiederkehrende Orte und Requisiten sollen erkennbar bleiben
+- Komposition und Kameradistanz dürfen wechseln
+- ein Video soll wie ein zusammenhängender Film wirken
+- konkrete Figuren-, Farb-, Outline- und Shading-Regeln sind noch UNSET

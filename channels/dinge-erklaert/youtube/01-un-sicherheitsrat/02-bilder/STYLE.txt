@@ -1,0 +1,3 @@
+STATUS: UNSET
+
+Die konkrete Bildwelt dieses Ziel-Repositories ist noch nicht definiert. Die frühere Bildwelt des Quell-Repos wird nicht übernommen.

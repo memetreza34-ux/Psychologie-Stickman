@@ -1,0 +1,3 @@
+STATUS: UNSET
+
+Die neue Bildwelt ist noch nicht definiert. Keine alte Bildwelt übernehmen und keine neue automatisch erfinden.
