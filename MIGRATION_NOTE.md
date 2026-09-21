@@ -22,7 +22,7 @@ Nur die technische Produktionsmaschine und allgemein nutzbare Produktionsregeln 
 
 - Themen-Nische und Kanalpositionierung des Quell-Repositories
 - Themenlisten und Themenprioritäten des Quell-Repositories
-- das frühere UN-Sicherheitsrat-Projekt einschließlich Skript, Quellen, Claim-Matrix, Schnittplanung und Projektdateien
+- frühere Produktionsprojekte einschließlich Skripten, Quellen, Claim-Matrizen, Schnittplanung und Projektdateien
 - Round-Ball/Countryball-Bildwelt
 - konkrete STYLE-/CONTINUITY-Regeln der alten Bildwelt
 - Google-Flow-Masterprompts der alten Bildwelt
