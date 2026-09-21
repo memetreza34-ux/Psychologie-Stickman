@@ -12,8 +12,7 @@ Gilt für `channels/dinge-erklaert/youtube/`.
 - psychologische Aussagen sauber belegen und wissenschaftliche Unsicherheit transparent machen
 - keine medizinischen Diagnosen, Therapieanweisungen oder pseudowissenschaftlichen Versprechen
 - 16:9 / 1920×1080 / 30 fps
-- die Bildwelt wird **nicht** aus dem Quell-Repo geerbt
-- solange `YOUTUBE_STYLE_LOCK.md` den Status `UNSET` trägt, keine finale Phase-2-Bildproduktion starten
+- verbindliche Bildwelt: `YOUTUBE_STYLE_LOCK.md` — **UNIVERSAL EDITORIAL STICKMAN WORLD v1.1**
 - `YOUTUBE_VISUAL_BEAT_RULES.md` ist für jede Phase-1-Planung verbindlich
 
 ## Themen-Grenze
@@ -90,6 +89,43 @@ Dichte:
 
 Für skriptbasierte Projekte darf `autoFromScript` in `phase1-scenes.json` verwendet werden. Vor Phase 2 muss die daraus entstehende Beat-Liste redaktionell geprüft werden.
 
+## Bildwelt — harte Stickman-Regel
+
+Die verbindliche Bildwelt ist `YOUTUBE_STYLE_LOCK.md`.
+
+Für **jede sichtbare menschliche Figur** gilt:
+- Stickman-/Minimalfiguren-DNA beibehalten
+- runder einfacher Kopf
+- minimale Gesichtszüge
+- dünne dunkle Arme und Beine
+- kleiner vereinfachter Torso
+- Kleidung, Haare, Bart, Brille und Accessoires dürfen Rolle und Epoche unterscheiden
+- Umgebung darf deutlich realitätsnäher und detailreicher sein als die Figuren
+
+Diese Regel gilt auch für:
+- Hintergrundpersonen
+- Menschenmengen
+- historische Figuren
+- Nebenrollen
+- entfernte kleine Figuren
+- Menschen auf eingebetteten Displays oder Bildern, sofern sie sichtbar relevant sind
+
+**STYLE FAIL:** Sobald ein finales Bild normale Cartoon-Menschen, semi-realistische Menschen, realistische menschliche Anatomie oder gemischte Figurenstile enthält, wird das Bild nicht akzeptiert und muss neu generiert werden.
+
+Beim Prompting muss der Stickman-Zwang ausdrücklich genannt werden, besonders bei detailreichen modernen oder historischen Umgebungen. Realitätsnähe betrifft Welt, Architektur, Licht, Materialien und Gegenstände — nicht die menschliche Grundanatomie.
+
+## Phase-2-Visual-QA
+
+Vor `PHASE-2-PASS` jedes finale Bild mindestens auf diese Punkte prüfen:
+1. Sind alle sichtbaren Menschen klar Stickman?
+2. Gibt es irgendwo normale Cartoon- oder semi-realistische Menschen?
+3. Bleibt die Figuren-DNA über Vordergrund und Hintergrund konsistent?
+4. Passt Kleidung/Umgebung zur dargestellten Zeit und Situation?
+5. Sind Farben und Detailgrad innerhalb der erlaubten Bildwelt?
+6. Erklärt das Bild den aktuellen Visual Beat korrekt?
+
+Wenn Punkt 1–3 nicht bestehen: **Asset verwerfen und neu generieren. Nicht durchwinken.**
+
 ## Audio
 
 YouTube-Voice-over:
@@ -98,16 +134,6 @@ YouTube-Voice-over:
 - lange interne Pausen straffen
 - Wörter nicht anschneiden
 - Timings erst aus dem final verarbeiteten Audio
-
-## Bildwelt-Sperre
-
-Das Quell-Repo verwendete eine eigene visuelle Welt. Diese wurde bei der Migration absichtlich entfernt.
-
-Bis der Nutzer eine neue Bildwelt ausdrücklich festlegt:
-- keine alte Bildwelt rekonstruieren
-- keine neue Figurenart voraussetzen
-- keine alten Google-Flow-Masterprompts wiederverwenden
-- Phase 1 darf inhaltlich/visuell als Beat geplant werden; konkrete Stil-DNA bleibt offen
 
 ## Schreibsicherheit
 
