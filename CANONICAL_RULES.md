@@ -69,14 +69,22 @@ Dieses Format lebt von vielen präzisen Bildern:
 
 ## Bildwelt
 
-**Noch nicht festgelegt.**
+Verbindlich: `channels/dinge-erklaert/youtube/YOUTUBE_STYLE_LOCK.md`
 
-Die alte Bildwelt des Quell-Repos ist ausdrücklich nicht kanonisch. Keine konkrete Figurenart, Farblogik, Prompt-DNA oder Bildsprache voraussetzen, bevor der Nutzer sie festlegt.
+**Universal Editorial Stickman World v1**
 
-Technisch bereits fest:
+Kernregeln:
+- minimalistische, klar erkennbare Stickman-Figuren
+- reichere 2D-Umgebungen, die je nach Szene realitätsnah aufgebaut sein dürfen
+- natürliche und klar erkennbare Farben; keine permanente Beige-/Pastell-/Auswaschoptik
+- variabler Detailgrad: abstrakte Concept-Szene, moderne Editorial-Szene oder detailreichere historische/ortsgebundene Szene
+- Stil bleibt über alle Epochen gleich; Kleidung, Architektur, Technik und Requisiten ändern sich passend zu Zeit und Ort
+- Umgebung darf glaubwürdige Perspektive, Licht, Materialien und räumliche Logik haben
+- Figuren bleiben bewusst stilisiert; keine vollrealistischen Menschen
+- kein Photorealismus, kein 3D/CGI, kein Anime/Chibi
+- Bilder erklären den aktuell gesprochenen Inhalt statt nur zu dekorieren
 - 16:9 / 1920×1080 / 30 fps
 - filmische Kontinuität
-- Bilder erklären den aktuell gesprochenen Inhalt statt nur zu dekorieren
 - sachlich, verständlich und nicht irreführend visualisieren
 
 ## Schluss-Hold

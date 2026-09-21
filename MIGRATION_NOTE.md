@@ -33,7 +33,8 @@ Nur die technische Produktionsmaschine und allgemein nutzbare Produktionsregeln 
 
 - neue Themen-/Kanalpositionierung: **Alltagspsychologie & menschliches Verhalten**
 - verbindliches Themen-System: `channels/dinge-erklaert/youtube/YOUTUBE_THEMEN_SYSTEM.md`
-- Bildwelt: `UNSET`
+- neue Bildwelt: **Universal Editorial Stickman World v1 — LOCKED**
+- verbindlicher Style-Lock: `channels/dinge-erklaert/youtube/YOUTUBE_STYLE_LOCK.md`
 - aktives Produktionsprojekt: keines
 
-Die Themenwelt wurde nach der neutralen Migration neu festgelegt und stammt ausdrücklich nicht aus dem Quell-Repository. Die neue Stickman-Bildwelt wird separat nach ausdrücklicher Nutzerentscheidung definiert.
+Themenwelt und Bildwelt wurden nach der neutralen Migration neu festgelegt und stammen ausdrücklich nicht aus dem Quell-Repository.

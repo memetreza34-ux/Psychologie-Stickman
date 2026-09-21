@@ -1,3 +1,54 @@
-STATUS: UNSET
+STATUS: LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1
 
-Die neue Bildwelt ist noch nicht definiert. Keine alte Bildwelt übernehmen und keine neue automatisch erfinden.
+Die verbindliche Bildwelt kombiniert klar erkennbare minimalistische Stickman-Figuren mit deutlich reicheren, glaubwürdigen 2D-Umgebungen.
+
+KERNREGEL
+Style stays. World changes.
+
+FIGUREN
+- runder einfacher Kopf
+- minimale Augen/Mund/Augenbrauen
+- dünne dunkle Arme und Beine
+- kleiner vereinfachter Torso
+- einfache Hände
+- Körpersprache statt realistischer Gesichtsmimik
+- Kleidung und Requisiten passen Rolle, Ort und Epoche an
+- keine realistischen Gesichter, kein Anime, kein 3D
+
+REALITÄTSGRAD
+Die Figur bleibt stilisiert; Räume, Architektur, Kleidung, Gegenstände, Licht, Perspektive und Materialien dürfen realitätsnah aufgebaut sein.
+
+Drei erlaubte Stufen:
+A Concept / Abstract — reduziert und grafisch für Denkmodelle, Vergleiche, Entscheidungen, Prozesse.
+B Everyday Editorial — glaubwürdige moderne Räume, Straßen und Alltagssituationen mit mittlerem Detailgrad.
+C Grounded / Historical — detailreichere, historisch oder örtlich plausible Umgebungen mit passenden Gebäuden, Kleidern, Werkzeugen und Fahrzeugen.
+
+FARBE
+- nicht standardmäßig ausgewaschen oder beige
+- natürliche, erkennbare Objektfarben
+- mittlere bis kräftige kontrollierte Sättigung erlaubt
+- Fokusobjekte dürfen stärker gesättigt sein
+- historische Szenen nicht automatisch sepia
+- Off-White nur für bewusst abstrakte/grafische Szenen
+- keine chaotische Neonpalette
+
+LINIEN & SHADING
+- saubere dunkle, leicht organische Outlines
+- überwiegend flächige 2D-Farben
+- dezentes Illustrations-/Cel-Shading
+- leichte Material- und Lichtwirkung erlaubt
+- subtile Textur erlaubt
+- kein Photorealismus, kein glossy CGI
+
+ZEITEN
+Grundstil bleibt gleich; nur Kleidung, Architektur, Technik, Requisiten, Fahrzeuge und Umgebung ändern sich passend zu Epoche und Ort.
+
+ERKLÄRMODI
+Character Scene, Environment Scene, Concept Metaphor, Diagram/Process, Timeline, Comparison, Cutaway, Map/Spatial.
+Nicht jedes Bild muss einen Stickman als Hauptmotiv haben.
+
+MASTER DNA
+universal editorial 2D stickman explainer world, consistent minimalist stickman anatomy, richer grounded environment, clean dark organic outlines, clear natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, variable detail level depending on the scene, educational visual storytelling, coherent visual hierarchy, 16:9
+
+NEGATIV
+no photorealism, no fully realistic humans, no 3D/CGI, no anime, no chibi, no permanent whiteboard emptiness, no permanent beige/sepia/pastel wash, no unnecessary text blocks

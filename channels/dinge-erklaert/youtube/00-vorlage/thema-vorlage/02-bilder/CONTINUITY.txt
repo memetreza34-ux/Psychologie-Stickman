@@ -1,9 +1,56 @@
-VISUAL CONTINUITY — GENERISCH
+VISUAL CONTINUITY — UNIVERSAL EDITORIAL STICKMAN WORLD v1
 
-Diese Datei enthält bis zur Festlegung einer Bildwelt nur technische Kontinuitätsregeln.
+Diese Datei konkretisiert die verbindliche Bildkontinuität für jedes Projekt.
 
-- wiederkehrende Akteure müssen nach Festlegung des Stils konsistent bleiben
-- wiederkehrende Orte und Requisiten sollen erkennbar bleiben
-- Komposition und Kameradistanz dürfen wechseln
-- ein Video soll wie ein zusammenhängender Film wirken
-- konkrete Figuren-, Farb-, Outline- und Shading-Regeln sind noch UNSET
+FIGUREN-KONTINUITÄT
+- dieselbe Grundanatomie in allen Szenen: runder Kopf, minimale Gesichtszüge, dünne dunkle Gliedmaßen, kleiner vereinfachter Torso
+- wiederkehrende Akteure behalten Kleidung, Frisur-/Kopfmerkmale, Accessoires und Farbmerkmale, solange die Handlung keinen Wechsel verlangt
+- Alter, Beruf, Rolle und Epoche werden über Kleidung, Haltung, Requisiten und Umgebung vermittelt, nicht durch Wechsel des Figurenstils
+- Figuren dürfen unterschiedlich groß, alt oder kräftig wirken, bleiben aber klar Teil derselben Stickman-Welt
+
+UMGEBUNG
+- wiederkehrende Orte behalten Grundriss, dominante Farben, wichtige Möbel, Architektur und Requisiten
+- Perspektive und Kameradistanz dürfen wechseln
+- Räume und Architektur dürfen realitätsnah und detailreicher sein als die Figuren
+- historische Orte müssen epochemäßig plausibel bleiben
+
+FARBE
+- keine permanente entsättigte Beige-/Grauoptik
+- wiederkehrende Figuren und Objekte behalten ihre Kernfarben
+- natürliche Objektfarben nutzen
+- Fokusfarben dürfen pro Beat wechseln, wenn sie Aufmerksamkeit oder Bedeutung steuern
+- Farbwechsel dürfen der Stimmung dienen, aber nicht die gesamte Bildwelt in einen anderen Stil verwandeln
+
+REALITÄTSGRAD
+- abstrakte Beats dürfen stark reduziert sein
+- Alltagsszenen mittlerer Detailgrad
+- historische/ortsgebundene Szenen dürfen deutlich reicher und realitätsnäher sein
+- trotz unterschiedlichem Detailgrad bleiben Outlines, Figuren-DNA, Flächenbehandlung und Farbverhalten konsistent
+
+LICHT & SHADING
+- glaubwürdige Lichtquelle, wenn eine Szene räumlich ist
+- dezentes 2D-/Cel-Shading statt photorealistischer Lichtsimulation
+- Tag/Nacht, Innen/Außen und Stimmung dürfen Lichtfarbe ändern
+
+OBJEKTE
+- wiederkehrende Requisiten bleiben in Form und Farbe erkennbar gleich
+- technische, historische oder alltägliche Objekte sollen sachlich korrekt genug sein, dass ihre Funktion verständlich bleibt
+- keine zufälligen schwebenden Symbole, wenn eine echte Szene oder ein konkretes Objekt besser erklärt
+
+EPOCHEN
+Style stays. World changes.
+- Figurenstil bleibt gleich
+- Kleidung, Gebäude, Werkzeuge, Fahrzeuge, Möbel und Technik werden an die jeweilige Epoche angepasst
+- keine Sepia-Pflicht für Geschichte
+
+KOMPOSITION
+- pro Visual Beat eine klare Hauptaussage
+- Vordergrund, Mittelgrund und Hintergrund nutzen, wenn sinnvoll
+- genügend Raum für leichten Zoom/Pan
+- Motivgröße nicht unnötig klein
+- sichtbarer Text nur bei echter Erklärfunktion
+
+REFERENZPRINZIP
+Sobald für ein Projekt finale Referenzbilder existieren, sollen neue Bilder auf diese Referenzen zurückgreifen. Besonders wichtig bei wiederkehrenden Figuren, Räumen und Requisiten.
+
+Ein Video muss trotz wechselnder Orte, Epochen und Darstellungsmodi wie ein zusammenhängender Film aus derselben Welt wirken.

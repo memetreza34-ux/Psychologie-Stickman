@@ -16,9 +16,20 @@ Keine eigenständigen Hauptnischen sind Medizin/Diagnosen/Therapie, Biologie, Po
 
 ## Bildwelt
 
-Die bisherige Bildwelt des Quell-Repositories wurde **absichtlich nicht übernommen**.
+**Universal Editorial Stickman World v1 — LOCKED**
 
-Verbindlich ist `YOUTUBE_STYLE_LOCK.md`. Solange diese Datei den Status `UNSET` trägt, dürfen keine finalen Bildprompts oder Bilder als kanonisch produziert werden.
+Verbindlich: `YOUTUBE_STYLE_LOCK.md`
+
+Kern:
+- minimalistische Stickman-Figuren
+- reichere 2D-Umgebungen
+- natürliche, klarere Farben statt permanent ausgewaschener Beige-/Pastelloptik
+- bei Bedarf realitätsnahe Architektur, Kleidung, Gegenstände, Perspektive, Licht und Materialien
+- variabler Detailgrad je nach Szene
+- gleicher Grundstil über moderne, historische und abstrakte Szenen hinweg
+- kein Photorealismus und kein 3D/CGI
+
+Die Projektvorlage übernimmt diese Regeln zusätzlich über `02-bilder/STYLE.txt` und `02-bilder/CONTINUITY.txt`.
 
 ## Länge
 

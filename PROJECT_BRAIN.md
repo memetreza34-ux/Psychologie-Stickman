@@ -14,7 +14,8 @@ Eigenständiges YouTube-Longform-Produktionsrepo, technisch abgeleitet aus `face
 - Visual-Beat-System: vorhanden
 - Themen-/Kanalpositionierung: **ALLTAGSPSYCHOLOGIE & MENSCHLICHES VERHALTEN**
 - verbindliches Themen-System: `channels/dinge-erklaert/youtube/YOUTUBE_THEMEN_SYSTEM.md`
-- Bildwelt: **UNSET**
+- Bildwelt: **LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1**
+- verbindlicher Style-Lock: `channels/dinge-erklaert/youtube/YOUTUBE_STYLE_LOCK.md`
 - aktives Produktionsprojekt: **keines**
 - alte thematische Inhalte des Quell-Repos: **entfernt**
 - alte visuelle Inhalte des Quell-Repos: **nicht übernommen**
@@ -24,6 +25,18 @@ Eigenständiges YouTube-Longform-Produktionsrepo, technisch abgeleitet aus `face
 Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
 
 Der Kanal konzentriert sich auf Alltagspsychologie, Denkfehler, Entscheidungen, Gewohnheiten, soziale Dynamiken, Kommunikation und menschliches Verhalten. Medizinische Psychologie, Diagnosen/Therapie, Biologie, Politik/Geopolitik/Geschichte, Finanzen und KI sind keine eigenständigen Hauptnischen dieses Repos.
+
+## Bildwelt-Kern
+
+Verbindlich ist die `Universal Editorial Stickman World v1`.
+
+Kern:
+- klar erkennbare minimalistische Stickman-Figuren
+- deutlich reichere und bei Bedarf realitätsnahe 2D-Umgebungen
+- natürliche und klarere Farben statt permanent ausgewaschener Beige-/Pastelloptik
+- variabler Detailgrad: abstrakt/grafisch, moderner Editorial-Alltag oder detailreichere historische/ortsgebundene Szene
+- Stil bleibt gleich; Kleidung, Architektur, Technik und Requisiten passen sich Zeit und Ort an
+- kein Photorealismus, keine vollrealistischen Menschen, kein 3D/CGI
 
 ## Dauerhafte Visual-Beat-Entscheidung
 
@@ -41,12 +54,12 @@ Kernwerte:
 - das Bild muss zum aktuell gesprochenen Inhalt passen und darf spätere Aussagen nicht vorwegnehmen
 - `npm run qa:visual-density` ist Teil des Repo-Checks
 
-## Nächste Entscheidungen
+## Nächste Schritte
 
-1. neue Stickman-Bildwelt ausdrücklich festlegen
-2. danach `YOUTUBE_STYLE_LOCK.md` setzen
-3. erstes neues Psychologie-/Verhaltensprojekt aus der neutralen Vorlage erzeugen
-4. Phase 1 Visual Beats → Phase 2 Assets → Phase 3 Render
+1. erstes neues Psychologie-/Verhaltensprojekt aus der neutralen Vorlage erzeugen
+2. Phase 1 Visual Beats redaktionell planen/prüfen
+3. Phase 2 Assets mit dem verbindlichen Style-Lock erzeugen
+4. Phase 3 Render + Final-QA
 
 ## Audio
 
