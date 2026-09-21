@@ -2,6 +2,14 @@
 
 Dieses Repository ist ein technischer Ableger von `memetreza34-ux/faceless-erklaerkanal` für YouTube-Longform.
 
+## Kanalpositionierung
+
+**Alltagspsychologie & menschliches Verhalten**
+
+Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
+
+Verbindliches Themen-System: `channels/dinge-erklaert/youtube/YOUTUBE_THEMEN_SYSTEM.md`
+
 ## Was technisch übernommen wurde
 
 - allgemeine Recherche- und Claim-Check-Logik
@@ -15,15 +23,13 @@ Dieses Repository ist ein technischer Ableger von `memetreza34-ux/faceless-erkla
 
 ## Was ausdrücklich nicht geerbt wird
 
-- keine alte Themen-Nische
-- keine alte Themen-Prioritätenliste
+- keine alte Themen-Nische oder alte Themen-Prioritätenliste
 - kein altes Produktionsprojekt, Skript oder Quellenpaket
 - keine alte Bildwelt, Stil-Locks, Charakterregeln, Flow-Prompts oder generierten Bilder
 
-**Themen-/Kanalpositionierung: UNSET**  
 **Bildwelt: UNSET**
 
-Neue Themen und die neue Bildwelt werden erst durch ausdrückliche Nutzerentscheidung festgelegt.
+Die neue Stickman-Bildwelt wird erst durch ausdrückliche Nutzerentscheidung festgelegt.
 
 ## Produktionsfolge
 

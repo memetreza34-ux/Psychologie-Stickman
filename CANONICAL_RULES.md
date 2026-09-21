@@ -2,11 +2,15 @@
 
 ## Kanal
 
-YouTube-Longform-Erklärkanal.
+YouTube-Longform-Erklärkanal für **Alltagspsychologie & menschliches Verhalten**.
 
-**Themen-/Kanalpositionierung: UNSET.**
+Verbindlich: `channels/dinge-erklaert/youtube/YOUTUBE_THEMEN_SYSTEM.md`
 
-Keine frühere Themen-Nische aus dem Quell-Repository voraussetzen oder rekonstruieren. Neue Themenregeln werden erst durch ausdrückliche Nutzerentscheidung festgelegt.
+Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
+
+Der Kanal erklärt psychologische und verhaltensbezogene Mechanismen. Er ist kein allgemeiner Wissenskanal und kein medizinischer Beratungs- oder Therapiekanal.
+
+Nicht als eigenständige Hauptnischen verwenden: Medizin/Diagnosen/Therapie, Biologie, Politik/Geopolitik/Geschichte, Finanzen sowie KI/Technik. Solche Bereiche dürfen nur als Beispiele dienen, wenn der psychologische Mechanismus klar im Mittelpunkt bleibt.
 
 ## Longform
 
@@ -14,8 +18,9 @@ Keine frühere Themen-Nische aus dem Quell-Repository voraussetzen oder rekonstr
 - Ziel meist 11–14 Minuten
 - kein Fülltext
 - eine klare Leitfrage pro Video
-- konkrete Beispiele bevorzugen, wenn sie das Verständnis verbessern
-- sensible oder umstrittene Fakten sauber belegen
+- konkrete Alltagssituationen und Beispiele bevorzugen
+- psychologische Behauptungen sauber belegen
+- wissenschaftliche Unsicherheit oder umstrittene Forschung transparent machen
 
 ## Skript
 
@@ -25,6 +30,8 @@ Keine frühere Themen-Nische aus dem Quell-Repository voraussetzen oder rekonstr
 - Ursache → Wirkung erklären
 - Kontraste, Callbacks und Metaphern gezielt einsetzen
 - keine künstlichen Cliffhanger oder unbelegten Superlative
+- Menschen nicht diagnostizieren
+- keine pseudowissenschaftlichen Versprechen
 
 ## Audio
 

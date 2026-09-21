@@ -4,9 +4,15 @@ Dieses Repository ist als technischer Ableger des bisherigen Erklärkanal-Repos 
 
 ## Positionierung
 
-**UNSET.**
+**Alltagspsychologie & menschliches Verhalten**
 
-Es gibt aktuell keine festgelegte Themen-Nische und keine geerbte Themenliste. Neue Themenregeln werden erst nach ausdrücklicher Nutzerentscheidung festgelegt.
+Der Kanal erklärt, warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell.
+
+Verbindlich: `YOUTUBE_THEMEN_SYSTEM.md`
+
+Schwerpunkte sind Denkfehler und Wahrnehmung, Entscheidungen und Gewohnheiten, soziale Psychologie und Gruppendynamik, Kommunikation sowie Verhalten in der modernen Alltagswelt.
+
+Keine eigenständigen Hauptnischen sind Medizin/Diagnosen/Therapie, Biologie, Politik/Geopolitik/Geschichte, Finanzen oder KI/Technik.
 
 ## Bildwelt
 

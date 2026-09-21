@@ -12,11 +12,18 @@ Eigenständiges YouTube-Longform-Produktionsrepo, technisch abgeleitet aus `face
 - YouTube-Audio-Standard: vorhanden
 - Remotion/Phase-3-Grundengine: vorhanden
 - Visual-Beat-System: vorhanden
-- Themen-/Kanalpositionierung: **UNSET**
+- Themen-/Kanalpositionierung: **ALLTAGSPSYCHOLOGIE & MENSCHLICHES VERHALTEN**
+- verbindliches Themen-System: `channels/dinge-erklaert/youtube/YOUTUBE_THEMEN_SYSTEM.md`
 - Bildwelt: **UNSET**
 - aktives Produktionsprojekt: **keines**
 - alte thematische Inhalte des Quell-Repos: **entfernt**
 - alte visuelle Inhalte des Quell-Repos: **nicht übernommen**
+
+## Kanalversprechen
+
+Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
+
+Der Kanal konzentriert sich auf Alltagspsychologie, Denkfehler, Entscheidungen, Gewohnheiten, soziale Dynamiken, Kommunikation und menschliches Verhalten. Medizinische Psychologie, Diagnosen/Therapie, Biologie, Politik/Geopolitik/Geschichte, Finanzen und KI sind keine eigenständigen Hauptnischen dieses Repos.
 
 ## Dauerhafte Visual-Beat-Entscheidung
 
@@ -36,11 +43,10 @@ Kernwerte:
 
 ## Nächste Entscheidungen
 
-1. Themen-/Kanalpositionierung ausdrücklich festlegen
-2. neue Bildwelt ausdrücklich festlegen
-3. danach `YOUTUBE_STYLE_LOCK.md` setzen
-4. erstes neues Projekt aus der neutralen Vorlage erzeugen
-5. Phase 1 Visual Beats → Phase 2 Assets → Phase 3 Render
+1. neue Stickman-Bildwelt ausdrücklich festlegen
+2. danach `YOUTUBE_STYLE_LOCK.md` setzen
+3. erstes neues Psychologie-/Verhaltensprojekt aus der neutralen Vorlage erzeugen
+4. Phase 1 Visual Beats → Phase 2 Assets → Phase 3 Render
 
 ## Audio
 

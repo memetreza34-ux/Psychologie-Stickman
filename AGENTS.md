@@ -12,12 +12,17 @@ Danach lesen:
 1. `CANONICAL_RULES.md`
 2. `PROJECT_BRAIN.md`
 3. `channels/dinge-erklaert/youtube/AGENTS.md`
-4. `channels/dinge-erklaert/youtube/YOUTUBE_STYLE_LOCK.md`
-5. `channels/dinge-erklaert/youtube/YOUTUBE_VISUAL_BEAT_RULES.md`
+4. `channels/dinge-erklaert/youtube/YOUTUBE_THEMEN_SYSTEM.md`
+5. `channels/dinge-erklaert/youtube/YOUTUBE_STYLE_LOCK.md`
+6. `channels/dinge-erklaert/youtube/YOUTUBE_VISUAL_BEAT_RULES.md`
 
 ## Themenwelt
 
-Es gibt aktuell keine geerbte Themen-Nische. Themen-/Kanalpositionierung bleibt `UNSET`, bis der Nutzer sie ausdrücklich festlegt. Keine frühere Themenliste oder Priorisierung aus dem Quell-Repository rekonstruieren.
+Die verbindliche Kanalnische ist **Alltagspsychologie & menschliches Verhalten**.
+
+Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
+
+Keine frühere Themenliste oder Priorisierung aus dem Quell-Repository rekonstruieren. Für Scope, Ausschlüsse und Themen-Gates gilt ausschließlich `YOUTUBE_THEMEN_SYSTEM.md`.
 
 ## Bildwelt
 

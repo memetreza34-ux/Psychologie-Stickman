@@ -4,14 +4,23 @@ Gilt für `channels/dinge-erklaert/youtube/`.
 
 ## Harte Regeln
 
+- Kanalnische: **Alltagspsychologie & menschliches Verhalten**
+- verbindlich: `YOUTUBE_THEMEN_SYSTEM.md`
 - neue YouTube-Videos mindestens **10:00 Minuten final**, sofern das gewählte Thema diese Länge sinnvoll trägt
 - sinnvoller Zielbereich meist 11–14 Minuten
 - kein Fülltext
-- Themen-/Kanalpositionierung: **UNSET**; keine frühere Nische voraussetzen
+- psychologische Aussagen sauber belegen und wissenschaftliche Unsicherheit transparent machen
+- keine medizinischen Diagnosen, Therapieanweisungen oder pseudowissenschaftlichen Versprechen
 - 16:9 / 1920×1080 / 30 fps
 - die Bildwelt wird **nicht** aus dem Quell-Repo geerbt
 - solange `YOUTUBE_STYLE_LOCK.md` den Status `UNSET` trägt, keine finale Phase-2-Bildproduktion starten
 - `YOUTUBE_VISUAL_BEAT_RULES.md` ist für jede Phase-1-Planung verbindlich
+
+## Themen-Grenze
+
+Der zentrale Inhalt jedes Videos muss menschliches Denken, Wahrnehmen, Entscheiden, Fühlen, Kommunizieren oder Verhalten erklären.
+
+Medizin/Biologie, Politik/Geopolitik/Geschichte, Finanzen und KI/Technik sind keine eigenständigen Hauptnischen dieses Kanals. Sie dürfen nur als Beispiele vorkommen, wenn der psychologische Mechanismus klar im Mittelpunkt bleibt.
 
 ## Verbindliche Projektstruktur
 

@@ -4,7 +4,7 @@ Quelle: `memetreza34-ux/faceless-erklaerkanal`
 
 ## Ziel
 
-Nur die technische Produktionsmaschine und allgemein nutzbare Produktionsregeln werden übernommen. Das Zielrepo startet inhaltlich und visuell neutral.
+Nur die technische Produktionsmaschine und allgemein nutzbare Produktionsregeln wurden übernommen. Die neue Themenwelt und die neue Bildwelt werden unabhängig vom Quell-Repository festgelegt.
 
 ## Übernommen
 
@@ -29,10 +29,11 @@ Nur die technische Produktionsmaschine und allgemein nutzbare Produktionsregeln 
 - generierte Bilder und alte visuelle Referenzen
 - alte visuell festgelegte `visualTask`-Felder
 
-## Aktueller Grundzustand
+## Neuer Grundzustand
 
-- Themen-/Kanalpositionierung: `UNSET`
+- neue Themen-/Kanalpositionierung: **Alltagspsychologie & menschliches Verhalten**
+- verbindliches Themen-System: `channels/dinge-erklaert/youtube/YOUTUBE_THEMEN_SYSTEM.md`
 - Bildwelt: `UNSET`
 - aktives Produktionsprojekt: keines
 
-Neue Inhalte und die neue Bildwelt werden erst nach ausdrücklicher Nutzerentscheidung festgelegt.
+Die Themenwelt wurde nach der neutralen Migration neu festgelegt und stammt ausdrücklich nicht aus dem Quell-Repository. Die neue Stickman-Bildwelt wird separat nach ausdrücklicher Nutzerentscheidung definiert.
