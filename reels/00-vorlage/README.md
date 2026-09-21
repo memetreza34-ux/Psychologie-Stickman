@@ -1,22 +1,9 @@
-# Reels-Vorlage
+# REELS VORLAGE
 
-Reels werden nach Wochen organisiert:
+Die echte kopierbare Vorlage ist `wochen-vorlage/`.
 
-`reels/TT.MM.JJJJ-bis-TT.MM.JJJJ/`
-
-Darin liegen immer:
-- `1-montag/`
-- `2-dienstag/`
-- `3-mittwoch/`
-- `4-donnerstag/`
-- `5-freitag/`
-- `6-samstag/`
-- `7-sonntag/`
-
-Jeder Tag nutzt die kompakte Produktionsstruktur:
-- `01-script-audio/`
-- `02-bilder/`
-- `03-export/`
-- `04-projektdateien/`
-
-Quellen, Claim-Checks, Schnittdaten und technische JSON-Dateien können bei Reels unter `04-projektdateien/` liegen, damit die sichtbare Tagesstruktur kompakt bleibt.
+Workflow:
+1. `wochen-vorlage` im Finder kopieren.
+2. Kopie nach dem echten Zeitraum benennen, z. B. `28.09.2026-bis-04.10.2026`.
+3. Themen in `wochenplan.md` eintragen.
+4. Pro Tag direkt in den sichtbaren Dateien arbeiten.

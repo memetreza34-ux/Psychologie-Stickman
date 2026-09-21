@@ -1,0 +1,7 @@
+AUDIO STANDARD
+
+- Voice-over erst nach finalem Script erzeugen.
+- Bestehender Workflow: 1,10x.
+- Führende Stille entfernen.
+- Lange Pausen straffen, Wörter nicht anschneiden.
+- Timings erst aus final verarbeitetem Audio erzeugen.

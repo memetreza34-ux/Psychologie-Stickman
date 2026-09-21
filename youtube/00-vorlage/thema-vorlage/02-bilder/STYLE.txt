@@ -1,65 +1,9 @@
-STATUS: LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.1
+STYLE
 
-Die verbindliche Bildwelt kombiniert klar erkennbare minimalistische Stickman-Figuren mit deutlich reicheren, glaubwürdigen 2D-Umgebungen.
+Universal Editorial Stickman World v1.1 — LOCKED
 
-KERNREGEL
-Style stays. World changes.
-
-FIGUREN
-- runder einfacher Kopf
-- minimale Augen/Mund/Augenbrauen
-- dünne dunkle Arme und Beine
-- kleiner vereinfachter Torso
-- einfache Hände
-- Körpersprache statt realistischer Gesichtsmimik
-- Kleidung und Requisiten passen Rolle, Ort und Epoche an
-- Haare, Bart, Brille, Kopfbedeckung und Accessoires dürfen variieren, ohne die Stickman-Grundanatomie zu verändern
-- keine realistischen Gesichter, kein Anime, kein 3D
-
-HARTES STICKMAN-ONLY-GATE
-- JEDE menschliche Figur muss Stickman bleiben
-- gilt für Hauptfiguren, Nebenfiguren, Gruppen, Menschenmengen und Hintergrundpersonen
-- gilt für moderne und historische Personen gleichermaßen
-- keine normalen Cartoon-Menschen neben Stickman-Figuren
-- keine semi-realistischen Menschen
-- keine realistische menschliche Anatomie
-- kein Figurenstil-Mix innerhalb einer Szene oder eines Videos
-- wenn eine sichtbare menschliche Figur nicht zur Stickman-DNA passt: STYLE FAIL → Bild neu generieren
-
-REALITÄTSGRAD
-Die Figur bleibt stilisiert; Räume, Architektur, Kleidung, Gegenstände, Licht, Perspektive und Materialien dürfen realitätsnah aufgebaut sein.
-
-Drei erlaubte Stufen:
-A Concept / Abstract — reduziert und grafisch für Denkmodelle, Vergleiche, Entscheidungen, Prozesse.
-B Everyday Editorial — glaubwürdige moderne Räume, Straßen und Alltagssituationen mit mittlerem Detailgrad; alle Menschen weiterhin strikt Stickman.
-C Grounded / Historical — detailreichere, historisch oder örtlich plausible Umgebungen mit passenden Gebäuden, Kleidern, Werkzeugen und Fahrzeugen; alle Menschen weiterhin strikt Stickman.
-
-FARBE
-- nicht standardmäßig ausgewaschen oder beige
-- natürliche, erkennbare Objektfarben
-- mittlere bis kräftige kontrollierte Sättigung erlaubt
-- Fokusobjekte dürfen stärker gesättigt sein
-- historische Szenen nicht automatisch sepia
-- Off-White nur für bewusst abstrakte/grafische Szenen
-- keine chaotische Neonpalette
-
-LINIEN & SHADING
-- saubere dunkle, leicht organische Outlines
-- überwiegend flächige 2D-Farben
-- dezentes Illustrations-/Cel-Shading
-- leichte Material- und Lichtwirkung erlaubt
-- subtile Textur erlaubt
-- kein Photorealismus, kein glossy CGI
-
-ZEITEN
-Grundstil bleibt gleich; nur Kleidung, Architektur, Technik, Requisiten, Fahrzeuge und Umgebung ändern sich passend zu Epoche und Ort. Die Stickman-Anatomie bleibt immer gleich.
-
-ERKLÄRMODI
-Character Scene, Environment Scene, Concept Metaphor, Diagram/Process, Timeline, Comparison, Cutaway, Map/Spatial.
-Nicht jedes Bild muss einen Stickman als Hauptmotiv haben. Sobald Menschen sichtbar sind, müssen sie Stickman sein.
-
-MASTER DNA
-universal editorial 2D stickman explainer world, ALL human figures including background people use the same consistent minimalist stickman anatomy, round simple heads, minimal facial features, thin dark limbs and small simplified torsos, no conventional cartoon humans, richer grounded environment, clean dark organic outlines, clear natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, variable detail level depending on the scene, educational visual storytelling, coherent visual hierarchy, 16:9
-
-NEGATIV
-no photorealism, no fully realistic humans, no conventional cartoon humans, no semi-realistic humans, no mixed human character styles, no realistic human anatomy, no 3D/CGI, no anime, no chibi, no permanent whiteboard emptiness, no permanent beige/sepia/pastel wash, no unnecessary text blocks
+- Jede sichtbare menschliche Figur bleibt Stickman.
+- Keine normalen Cartoon-Menschen, keine semi-realistischen Menschen.
+- Umgebung darf farbig, glaubwürdig, detailreich und realitätsnah wirken.
+- Kein Photorealismus, kein 3D/CGI, kein Anime.
+- Moderne und historische Szenen bleiben Teil derselben Bildwelt.

@@ -1,0 +1,11 @@
+QUELLEN
+
+Thema: [THEMA]
+
+1. [Quelle / Studie / Primärquelle]
+   Link: [URL]
+   Verwendet für: [Claim]
+
+2. [Quelle]
+   Link: [URL]
+   Verwendet für: [Claim]

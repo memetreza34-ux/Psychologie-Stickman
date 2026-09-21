@@ -1,22 +1,7 @@
-YOUTUBE VOICE-OVER – VERBINDLICHER STANDARD
+AUDIO STANDARD
 
-ZIEL
-Zügiges, unterhaltsames Erklärtempo ohne lange Leerstellen. Kurze natürliche Pausen bleiben bestehen, aber der Sprachfluss darf nie stehen bleiben.
-
-STANDARD
-- finale Sprechgeschwindigkeit: 1,10×
-- Tonhöhe erhalten
-- führende Stille entfernen
-- kurze natürliche Pausen unter ungefähr 500 ms bleiben grundsätzlich erhalten
-- Pausen ab ungefähr 500 ms werden deutlich gekürzt
-- nach einer gekürzten Pause bleibt nur eine kurze natürliche Restpause von ungefähr 120 ms vor der 1,10×-Beschleunigung
-- Wörter niemals anschneiden
-- kein gehetzter oder roboterhafter Klang
-
-VERBINDLICHER ABLAUF
-1. Rohes Voice-over erzeugen.
-2. `npm run audio:youtube -- <raw-voiceover> <final-voice.mp3>`
-3. Ab dann ausschließlich `final-voice.mp3` verwenden.
-4. Wort-Timings ausschließlich aus `final-voice.mp3`.
-5. Phase 3 verwendet dieselbe Datei.
-6. Pacing-QA nach dem Render.
+- Voice-over erst nach finalem Script erzeugen.
+- Bestehender Workflow: 1,10x.
+- Führende Stille entfernen.
+- Lange Pausen straffen, Wörter nicht anschneiden.
+- Timings erst aus final verarbeitetem Audio erzeugen.

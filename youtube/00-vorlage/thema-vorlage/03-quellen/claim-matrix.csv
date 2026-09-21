@@ -1,2 +1,2 @@
-claim_id,claim,source_ids,status,notes
-C01,"<Claim>","S01",PENDING,"<Notiz>"
+claim_id,claim,source,status,notes
+C01,[Claim],[Quelle],OFFEN,[Notiz]

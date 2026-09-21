@@ -1,0 +1,7 @@
+THEMA: [THEMA]
+
+HOOK:
+[Hook schreiben]
+
+SCRIPT:
+[Finales Voice-over-Skript hier schreiben]

@@ -1,70 +1,7 @@
-VISUAL CONTINUITY — UNIVERSAL EDITORIAL STICKMAN WORLD v1.1
+CONTINUITY
 
-Diese Datei konkretisiert die verbindliche Bildkontinuität für jedes Projekt.
-
-FIGUREN-KONTINUITÄT
-- dieselbe Grundanatomie in allen Szenen: runder Kopf, minimale Gesichtszüge, dünne dunkle Gliedmaßen, kleiner vereinfachter Torso
-- JEDE menschliche Figur bleibt Stickman: Hauptfigur, Nebenfigur, Gruppe, Menschenmenge, Hintergrundperson, historische und moderne Person
-- wiederkehrende Akteure behalten Kleidung, Frisur-/Kopfmerkmale, Accessoires und Farbmerkmale, solange die Handlung keinen Wechsel verlangt
-- Alter, Beruf, Rolle und Epoche werden über Kleidung, Haltung, Requisiten und Umgebung vermittelt, nicht durch Wechsel des Figurenstils
-- Figuren dürfen unterschiedlich groß, alt oder kräftig wirken, bleiben aber klar Teil derselben Stickman-Welt
-- Haare, Bart, Brille, Kopfbedeckung und Accessoires dürfen differenzieren, ohne normale Cartoon-Anatomie zu erzeugen
-- keine normalen Cartoon-Menschen neben Stickman-Figuren
-- keine semi-realistischen Menschen
-- keine realistische menschliche Anatomie
-- kein Figurenstil-Mix innerhalb eines Videos
-
-STICKMAN-QA
-Wenn ein generiertes Asset eine deutlich sichtbare menschliche Figur enthält, die nicht der Stickman-DNA entspricht, wird das gesamte Asset abgelehnt und neu generiert. Hintergrundpersonen sind keine Ausnahme.
-
-UMGEBUNG
-- wiederkehrende Orte behalten Grundriss, dominante Farben, wichtige Möbel, Architektur und Requisiten
-- Perspektive und Kameradistanz dürfen wechseln
-- Räume und Architektur dürfen realitätsnah und detailreicher sein als die Figuren
-- historische Orte müssen epochemäßig plausibel bleiben
-- ein höherer Realitätsgrad der Umgebung darf niemals den Figurenstil in Richtung normaler Cartoon- oder realistischer Menschen ziehen
-
-FARBE
-- keine permanente entsättigte Beige-/Grauoptik
-- wiederkehrende Figuren und Objekte behalten ihre Kernfarben
-- natürliche Objektfarben nutzen
-- Fokusfarben dürfen pro Beat wechseln, wenn sie Aufmerksamkeit oder Bedeutung steuern
-- Farbwechsel dürfen der Stimmung dienen, aber nicht die gesamte Bildwelt in einen anderen Stil verwandeln
-
-REALITÄTSGRAD
-- abstrakte Beats dürfen stark reduziert sein
-- Alltagsszenen mittlerer Detailgrad
-- historische/ortsgebundene Szenen dürfen deutlich reicher und realitätsnäher sein
-- trotz unterschiedlichem Detailgrad bleiben Outlines, Figuren-DNA, Flächenbehandlung und Farbverhalten konsistent
-- Realitätsnähe gilt primär für Welt, Gegenstände, Architektur, Licht und Materialien; Menschen bleiben stilisierte Stickman-Figuren
-
-LICHT & SHADING
-- glaubwürdige Lichtquelle, wenn eine Szene räumlich ist
-- dezentes 2D-/Cel-Shading statt photorealistischer Lichtsimulation
-- Tag/Nacht, Innen/Außen und Stimmung dürfen Lichtfarbe ändern
-
-OBJEKTE
-- wiederkehrende Requisiten bleiben in Form und Farbe erkennbar gleich
-- technische, historische oder alltägliche Objekte sollen sachlich korrekt genug sein, dass ihre Funktion verständlich bleibt
-- keine zufälligen schwebenden Symbole, wenn eine echte Szene oder ein konkretes Objekt besser erklärt
-
-EPOCHEN
-Style stays. World changes.
-- Figurenstil und Stickman-Grundanatomie bleiben gleich
-- Kleidung, Gebäude, Werkzeuge, Fahrzeuge, Möbel und Technik werden an die jeweilige Epoche angepasst
-- historische Kleidung sitzt auf Stickman-Figuren; sie erzeugt keine normalen historischen Cartoon-Menschen
-- keine Sepia-Pflicht für Geschichte
-
-KOMPOSITION
-- pro Visual Beat eine klare Hauptaussage
-- Vordergrund, Mittelgrund und Hintergrund nutzen, wenn sinnvoll
-- genügend Raum für leichten Zoom/Pan
-- Motivgröße nicht unnötig klein
-- sichtbarer Text nur bei echter Erklärfunktion
-
-REFERENZPRINZIP
-Sobald für ein Projekt finale Referenzbilder existieren, sollen neue Bilder auf diese Referenzen zurückgreifen. Besonders wichtig bei wiederkehrenden Figuren, Räumen und Requisiten.
-
-Bei Referenzbildern muss zuerst geprüft werden, dass wirklich alle menschlichen Figuren die Stickman-DNA erfüllen. Ein fehlerhaftes Referenzbild darf nicht als Stilanker weiterverwendet werden.
-
-Ein Video muss trotz wechselnder Orte, Epochen und Darstellungsmodi wie ein zusammenhängender Film aus derselben Stickman-Welt wirken.
+- Gleiche Stickman-Grundanatomie über alle Bilder.
+- Kleidung, Haare, Accessoires, Epoche und Rollen dürfen variieren.
+- Wiederkehrende Hauptfiguren konsistent halten.
+- Farben und Umgebungsdetail an Szene anpassen, aber visuelle DNA beibehalten.
+- Hintergrundfiguren ebenfalls ausschließlich Stickman.

@@ -1,0 +1,15 @@
+EXPORT / UPLOAD
+
+Status: PENDING
+
+Finale Videodatei:
+[Pfad]
+
+Titel:
+[Titel]
+
+Beschreibung:
+[Beschreibung]
+
+Hashtags:
+[Hashtags]
