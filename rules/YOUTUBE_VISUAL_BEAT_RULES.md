@@ -45,11 +45,11 @@ Vor dem finalen Audio wird diese Dichte über gesprochene Wörter angenähert:
 - harte Obergrenze: 28 Wörter pro Szene
 - mindestens ungefähr `ceil(Gesamtwörter / 20)` Szenen
 
-Für 10–14 Minuten entstehen dadurch häufig ungefähr **90–150 Bilder**. Das ist kein starres Quotenziel: Entscheidend ist die Zahl der echten visuellen Gedanken. Wenn das Skript mehr klar getrennte Gedanken enthält, sind auch deutlich mehr Bilder korrekt. **Lieber ein passendes Bild mehr als einen wichtigen Satz ohne passende Visualisierung.**
+Für 10–14 Minuten entstehen dadurch häufig ungefähr **90–150 Bilder**. Das ist kein starres Quotenziel: Entscheidend ist die Zahl der echten visuellen Gedanken.
 
 ## Phase 1
 
-Phase 1 ist **Visual-Beat-Planung**, nicht grobe Kapitelplanung.
+Phase 1 ist ab jetzt **Visual-Beat-Planung**, nicht grobe Kapitelplanung.
 
 Jeder Beat enthält:
 - `startPhrase`
@@ -57,41 +57,15 @@ Jeder Beat enthält:
 - `speechSection`
 - `visualTask`
 
-`visualTask` beschreibt ausschließlich, was während genau dieses gesprochenen Beats sichtbar sein muss.
+`visualTask` beschreibt ausschließlich, was während genau dieses gesprochenen Beats sichtbar sein muss. Stilfragen werden davon getrennt behandelt.
 
-## Automatische Sicherung — Dichte
+## Automatische Sicherung
 
 `npm run qa:visual-density`
 
 Der Check schlägt fehl, wenn ein Produktionsprojekt wieder zu wenige bzw. zu große Szenen enthält.
 
-## Phase 2 — harte 1:1-Prompt-Regel
-
-Für jede materialisierte Phase-1-Szene muss genau **ein eigener finaler Bildprompt** existieren.
-
-Verbindlich:
-- Szene `001` → Prompt `001` → Bild `001.png`
-- Szene `002` → Prompt `002` → Bild `002.png`
-- usw.
-- Promptanzahl muss exakt Szenenanzahl entsprechen.
-- `speechSection` und `visualTask` müssen exakt zur Phase-1-Szene gehören.
-- jeder final materialisierte Prompt muss zero-context sein und die komplette Style-DNA + Negativregeln enthalten.
-- ein Prompt darf nicht mehrere Beats zusammenziehen, nur um Bildzahl zu sparen.
-- ein Prompt darf keine spätere Information vorwegnehmen.
-- rein dekorative/generische Prompts gelten als FAIL.
-
-Für große Projekte dürfen die szenenspezifischen Promptquellen in nummerierte Batches aufgeteilt werden, z. B.:
-`02-bilder/prompts/image-prompts-001-050.json`
-
-Der finale zero-context Prompt wird daraus deterministisch mit der verbindlichen Style-DNA materialisiert:
-`npm run materialize:image-prompts -- <phase1-scenes.json> <output.json>`
-
-Sobald Phase 2 für ein Projekt vorbereitet ist, setzt `phase1-scenes.json` `phase2PromptCoverageRequired: true`. Dann muss die 1:1-Prompt-Abdeckung vollständig sein; ein reines Phase-1-Projekt darf vorher noch ohne finale Promptabdeckung existieren.
-
-Automatische Prüfung:
-`npm run qa:prompt-coverage`
-
-Der normale `npm run check` führt sowohl Density- als auch Prompt-Coverage-QA aus.
+Für skriptbasierte Longform-Projekte kann `autoFromScript` genutzt werden. Der Splitter trennt Absätze in Sätze und lange Sätze zusätzlich in kleinere visuelle Beats. Vor Phase 2 müssen die Beats trotzdem redaktionell geprüft werden.
 
 ## Phase 2
 
@@ -111,6 +85,5 @@ Nach dem Render muss geprüft werden:
 - Bleibt ein Bild ungewöhnlich lange stehen?
 - zeigt das Bild schon Informationen, die das Audio erst später erklärt?
 - gibt es einen wichtigen Satz, für den keine passende visuelle Darstellung existiert?
-- stimmt die Bildnummer mit Szene/Prompt überein?
 
 Wenn eine dieser Fragen problematisch ist, geht das Video zurück zu Phase 1/2 statt nur den Schnitt zu kaschieren.
