@@ -1,10 +1,11 @@
 # Formate
 
-Aktive Produktionsflächen:
-- `youtube/longform/` — reguläre YouTube-Longform-Videos.
-- `youtube/reels/` — Reels/Shorts und kurze Produktions-/Style-Tests.
+Dieses Repository hat zwei getrennte Produktionsflächen auf Root-Ebene:
 
-Aktueller Reel-Pilot:
-- `youtube/reels/01-smartphone-checking/`
+- `youtube/` — nur reguläre YouTube-Longform-Videos. Jeder Themenname ist dort ein eigener Projektordner.
+- `reels/` — nur Reels/Shorts. Organisation nach Wochenordnern (`TT.MM.JJJJ-bis-TT.MM.JJJJ`) und darin `1-montag` bis `7-sonntag`.
 
-Der alte technische Pfad `channels/dinge-erklaert/youtube/` ist nicht mehr Teil der aktiven Struktur.
+Aktueller Reel-Test:
+- `reels/21.09.2026-bis-27.09.2026/1-montag/`
+
+Keine Verschachtelung von Reels unter YouTube und keine Longform-Unterebene mehr.

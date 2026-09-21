@@ -2,52 +2,55 @@
 
 ## Zweck
 
-Eigenständiges YouTube-Produktionsrepo für **Alltagspsychologie & menschliches Verhalten**, technisch abgeleitet aus `faceless-erklaerkanal`, aber ohne dessen Themen- oder Bildwelt.
+Eigenständiges Produktionsrepo für **Alltagspsychologie & menschliches Verhalten** mit zwei klar getrennten Formaten: YouTube-Longform und Reels/Shorts.
 
 ## Aktueller Status
 
-- Produktionspipeline: vorhanden
-- Recherche-/Claim-Check-Logik: vorhanden
-- Audio-Standard: vorhanden
-- Remotion/Phase-3-Grundengine: vorhanden
-- Visual-Beat-System: vorhanden
 - Themen-/Kanalpositionierung: **ALLTAGSPSYCHOLOGIE & MENSCHLICHES VERHALTEN**
-- verbindliches Themen-System: `youtube/YOUTUBE_THEMEN_SYSTEM.md`
+- Themen-System: `rules/YOUTUBE_THEMEN_SYSTEM.md`
 - Bildwelt: **LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.1**
-- verbindlicher Style-Lock: `youtube/YOUTUBE_STYLE_LOCK.md`
-- Longform-Bereich: `youtube/longform/`
-- Reel-Bereich: `youtube/reels/`
-- aktiver Test: `youtube/reels/01-smartphone-checking/`
-- alte thematische Inhalte des Quell-Repos: entfernt
-- alte visuelle Inhalte des Quell-Repos: nicht übernommen
+- Style-Lock: `rules/YOUTUBE_STYLE_LOCK.md`
+- Visual-Beat-Regeln: `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+- YouTube-Produktionsfläche: `youtube/`
+- Reel-Produktionsfläche: `reels/`
+- aktiver Reel-Test: `reels/21.09.2026-bis-27.09.2026/1-montag/`
 
-## Kanalversprechen
+## Strukturprinzip
 
-Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
+### YouTube
+Unter `youtube/` liegen Themen direkt als Projektordner. Kein zusätzlicher `longform/`-Zwischenordner.
+
+Ein YouTube-Thema enthält sichtbar:
+1. `01-script-audio/`
+2. `02-bilder/`
+3. `03-quellen/`
+4. `04-schnitt/`
+5. `06-projektdateien/`
+
+### Reels
+Unter `reels/` wird nach Kalenderwochen organisiert:
+`TT.MM.JJJJ-bis-TT.MM.JJJJ/`
+
+Darin liegen:
+`1-montag` bis `7-sonntag`.
+
+Jeder Reeltag folgt dem kompakten Erklärkanal-Muster:
+1. `01-script-audio/`
+2. `02-bilder/`
+3. `03-export/`
+4. `04-projektdateien/`
 
 ## Bildwelt-Kern
 
-- klar erkennbare minimalistische Stickman-Figuren
 - jede sichtbare menschliche Figur bleibt Stickman
-- deutlich reichere und bei Bedarf realitätsnahe 2D-Umgebungen
-- natürliche, klare Farben statt permanent ausgewaschener Beige-/Pastelloptik
-- variabler Detailgrad von abstrakt/grafisch bis detailreich/ortsgebunden
+- realitätsnähere, detailreiche 2D-Umgebungen erlaubt
+- natürliche, klare Farben
 - kein Photorealismus, keine normalen Cartoon-Menschen, kein 3D/CGI
 
 ## Visual Beats
 
-Verbindlich: `youtube/YOUTUBE_VISUAL_BEAT_RULES.md`
+Ein wichtiger visueller Gedanke bekommt grundsätzlich ein eigenes starkes Bild. Longform nutzt meist 8–18 gesprochene Wörter pro Beat; Reels dürfen deutlich dichter schneiden.
 
-Longform arbeitet meist mit 8–18 gesprochenen Wörtern pro Beat und häufig etwa 90–150 Bildern bei 10–14 Minuten. Reels dürfen deutlich dichter geschnitten werden; entscheidend bleibt, dass jeder wichtige visuelle Gedanke ein eigenes starkes Bild bekommt.
+## Aktueller Test
 
-## Nächste Schritte
-
-1. Reel-Pilot `01-smartphone-checking` mit finalen Bildern füllen
-2. Stickman-only-QA und Stilkontinuität prüfen
-3. Audio/Timings erzeugen
-4. Test rendern und auswerten
-5. danach erstes reguläres Longform-Projekt starten
-
-## Audio
-
-1,10× für den bestehenden Voice-over-Workflow, führende Stille entfernen, lange Pausen straffen, Timings erst danach.
+Montag, 21.09.2026: **„Warum greifen wir automatisch zum Handy?“** mit 26 geplanten Visual Beats.

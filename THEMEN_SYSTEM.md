@@ -1,8 +1,8 @@
 # Themen-System
 
-Für alle YouTube-Formate gilt verbindlich:
+Für YouTube und Reels gilt verbindlich:
 
-`youtube/YOUTUBE_THEMEN_SYSTEM.md`
+`rules/YOUTUBE_THEMEN_SYSTEM.md`
 
 Kanalnische: **Alltagspsychologie & menschliches Verhalten**.
 

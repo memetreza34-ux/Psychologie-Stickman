@@ -1,6 +1,6 @@
-# Stickman YouTube — Produktionsrepo
+# Stickman — Produktionsrepo
 
-Produktionsrepo für einen deutschsprachigen Kanal zu **Alltagspsychologie & menschlichem Verhalten**.
+Deutschsprachiger Kanal zu **Alltagspsychologie & menschlichem Verhalten**.
 
 Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
 
@@ -8,41 +8,40 @@ Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — 
 
 ```text
 youtube/
-├── longform/
-│   └── 00-vorlage/
-├── reels/
-│   ├── 00-vorlage/
-│   └── 01-smartphone-checking/
-├── YOUTUBE_THEMEN_SYSTEM.md
-├── YOUTUBE_STYLE_LOCK.md
-└── YOUTUBE_VISUAL_BEAT_RULES.md
+├── 00-vorlage/
+└── [01-themenname]/
+    ├── 01-script-audio/
+    ├── 02-bilder/
+    ├── 03-quellen/
+    ├── 04-schnitt/
+    └── 06-projektdateien/
+
+reels/
+├── 00-vorlage/
+└── TT.MM.JJJJ-bis-TT.MM.JJJJ/
+    ├── 1-montag/
+    ├── 2-dienstag/
+    ├── 3-mittwoch/
+    ├── 4-donnerstag/
+    ├── 5-freitag/
+    ├── 6-samstag/
+    └── 7-sonntag/
 ```
+
+**YouTube und Reels sind vollständig getrennt.** In `youtube/` liegen keine Reels und in `reels/` keine Longform-Projekte.
 
 ## Bildwelt
 
 **Universal Editorial Stickman World v1.1 — LOCKED**
 
-Verbindlicher Style-Lock: `youtube/YOUTUBE_STYLE_LOCK.md`
+Regeln: `rules/YOUTUBE_STYLE_LOCK.md`
 
-Jede sichtbare menschliche Figur bleibt Stickman. Räume, Architektur, Kleidung, Technik, Gegenstände, Perspektive und Licht dürfen deutlich detailreicher und realitätsnäher sein. Farben sollen natürlich und klar sein statt permanent ausgewaschen oder beige.
+Jede sichtbare menschliche Figur bleibt Stickman. Räume, Architektur, Kleidung, Technik, Gegenstände, Perspektive und Licht dürfen deutlich detailreicher und realitätsnäher sein.
 
-## Formate
+## Themen
 
-### Longform
-`youtube/longform/`
+Verbindlich: `rules/YOUTUBE_THEMEN_SYSTEM.md`
 
-Reguläre Videos: mindestens 10:00 Minuten, sofern das Thema die Länge sinnvoll trägt; Ziel meist 11–14 Minuten.
+## Aktueller Test
 
-### Reels
-`youtube/reels/`
-
-Kurze Formate und Produktionspiloten. Der aktuelle Style-/Dichte-Test liegt unter `youtube/reels/01-smartphone-checking/`.
-
-## Produktionsfolge
-
-THEMA + QUELLEN + CLAIM-CHECK
-→ FINALES SCRIPT
-→ PHASE 1 VISUAL BEATS
-→ PHASE 2
-→ PHASE 3
-→ FINAL-QA
+`reels/21.09.2026-bis-27.09.2026/1-montag/` — „Warum greifen wir automatisch zum Handy?“

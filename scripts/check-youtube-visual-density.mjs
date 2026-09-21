@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {countWords, resolvePhase1Plan} from './lib/youtube-visual-beats.mjs';
 
-const root = path.resolve('youtube');
+const roots = [path.resolve('youtube'), path.resolve('reels')];
 const plans = [];
 
 const walk = (dir) => {
@@ -16,10 +16,10 @@ const walk = (dir) => {
   }
 };
 
-walk(root);
+roots.forEach(walk);
 
 if (plans.length === 0) {
-  console.log('YOUTUBE VISUAL DENSITY: PASS — no production phase1-scenes.json files found.');
+  console.log('VISUAL DENSITY: PASS — no production phase1-scenes.json files found.');
   process.exit(0);
 }
 
@@ -34,9 +34,7 @@ for (const planPath of plans) {
   const average = scenes.length ? totalWords / scenes.length : Infinity;
   const longest = counts.length ? Math.max(...counts) : Infinity;
   const minimumSceneCount = Math.ceil(totalWords / 20);
-  const tooLong = counts
-    .map((words, index) => ({scene: index + 1, words}))
-    .filter((item) => item.words > 28);
+  const tooLong = counts.map((words, index) => ({scene: index + 1, words})).filter((item) => item.words > 28);
 
   console.log(`\n${path.relative(process.cwd(), planPath)}`);
   console.log(`Scenes: ${scenes.length}`);
@@ -48,11 +46,7 @@ for (const planPath of plans) {
   if (scenes.length === 0) failures.push(`${planPath}: no visual beats.`);
   if (average > 18) failures.push(`${planPath}: average ${average.toFixed(1)} words/scene exceeds hard 18-word average.`);
   if (scenes.length < minimumSceneCount) failures.push(`${planPath}: ${scenes.length} scenes is below density floor ${minimumSceneCount}.`);
-  if (tooLong.length > 0) {
-    failures.push(
-      `${planPath}: scene(s) above 28 spoken words: ${tooLong.map((item) => `${item.scene}=${item.words}`).join(', ')}.`,
-    );
-  }
+  if (tooLong.length > 0) failures.push(`${planPath}: scene(s) above 28 spoken words: ${tooLong.map((item) => `${item.scene}=${item.words}`).join(', ')}.`);
 
   scenes.forEach((scene, index) => {
     if (typeof scene.visualTask !== 'string' || scene.visualTask.trim() === '') {
@@ -62,10 +56,9 @@ for (const planPath of plans) {
 }
 
 if (failures.length > 0) {
-  console.error('\nYOUTUBE VISUAL DENSITY: FAIL\n');
+  console.error('\nVISUAL DENSITY: FAIL\n');
   failures.forEach((failure) => console.error(`- ${failure}`));
-  console.error('\nRule: this format lives from many precise images. Split new facts, actors, places, numbers, actions, comparisons and mechanism steps into their own visual beats.');
   process.exit(1);
 }
 
-console.log('\nYOUTUBE VISUAL DENSITY: PASS\n');
+console.log('\nVISUAL DENSITY: PASS\n');
