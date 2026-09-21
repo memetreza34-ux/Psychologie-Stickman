@@ -1,6 +1,10 @@
-# Channels
+# Formate
 
-Aktiver Kanal:
-- `channels/dinge-erklaert/youtube/` — deutschsprachige YouTube-Longform-Erklärvideos.
+Aktive Produktionsflächen:
+- `youtube/longform/` — reguläre YouTube-Longform-Videos.
+- `youtube/reels/` — Reels/Shorts und kurze Produktions-/Style-Tests.
 
-Dieses Zielrepo ist YouTube-fokussiert. Die historische Reel-Produktion des Quell-Repositories wird nicht als aktive Produktionsfläche verwendet.
+Aktueller Reel-Pilot:
+- `youtube/reels/01-smartphone-checking/`
+
+Der alte technische Pfad `channels/dinge-erklaert/youtube/` ist nicht mehr Teil der aktiven Struktur.

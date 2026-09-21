@@ -1,8 +1,8 @@
 # Themen-System
 
-Für YouTube gilt verbindlich:
+Für alle YouTube-Formate gilt verbindlich:
 
-`channels/dinge-erklaert/youtube/YOUTUBE_THEMEN_SYSTEM.md`
+`youtube/YOUTUBE_THEMEN_SYSTEM.md`
 
 Kanalnische: **Alltagspsychologie & menschliches Verhalten**.
 

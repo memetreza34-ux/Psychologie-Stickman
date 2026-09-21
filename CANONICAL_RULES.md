@@ -2,91 +2,66 @@
 
 ## Kanal
 
-YouTube-Longform-Erklärkanal für **Alltagspsychologie & menschliches Verhalten**.
+Thema: **Alltagspsychologie & menschliches Verhalten**.
 
-Verbindlich: `channels/dinge-erklaert/youtube/YOUTUBE_THEMEN_SYSTEM.md`
+Verbindlich:
+- `youtube/YOUTUBE_THEMEN_SYSTEM.md`
+- `youtube/YOUTUBE_STYLE_LOCK.md`
+- `youtube/YOUTUBE_VISUAL_BEAT_RULES.md`
 
 Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
 
-Der Kanal erklärt psychologische und verhaltensbezogene Mechanismen. Er ist kein allgemeiner Wissenskanal und kein medizinischer Beratungs- oder Therapiekanal.
+Keine medizinischen Diagnosen, Therapieanweisungen oder pseudowissenschaftlichen Versprechen.
 
-Nicht als eigenständige Hauptnischen verwenden: Medizin/Diagnosen/Therapie, Biologie, Politik/Geopolitik/Geschichte, Finanzen sowie KI/Technik. Solche Bereiche dürfen nur als Beispiele dienen, wenn der psychologische Mechanismus klar im Mittelpunkt bleibt.
+## Formate
 
-## Longform
-
-- mindestens 10:00 Minuten final, sofern das gewählte Thema diese Länge sinnvoll trägt
+### Longform
+Pfad: `youtube/longform/`
+- mindestens 10:00 Minuten, sofern das Thema diese Länge sinnvoll trägt
 - Ziel meist 11–14 Minuten
 - kein Fülltext
-- eine klare Leitfrage pro Video
-- konkrete Alltagssituationen und Beispiele bevorzugen
-- psychologische Behauptungen sauber belegen
-- wissenschaftliche Unsicherheit oder umstrittene Forschung transparent machen
+- vollständige 01–06-Projektstruktur
 
-## Skript
+### Reels
+Pfad: `youtube/reels/`
+- keine 10-Minuten-Mindestlänge
+- kurze Projekte dürfen deutlich dichter geschnitten sein
+- keine Füllbilder nur für künstliche Bildanzahl
+- vollständige 01–06-Projektstruktur
 
-- starker Einstieg statt Begrüßungsfloskel
-- wenn möglich konkrete Situation / Konsequenz statt leerer Einleitung
-- klare Einleitung, Hauptteil, Schluss
-- Ursache → Wirkung erklären
-- Kontraste, Callbacks und Metaphern gezielt einsetzen
-- keine künstlichen Cliffhanger oder unbelegten Superlative
-- Menschen nicht diagnostizieren
-- keine pseudowissenschaftlichen Versprechen
-
-## Audio
-
-- final 1,10×
-- führende Stille entfernen
-- Pausen ab ungefähr 500 ms deutlich straffen
-- Wörter nicht anschneiden
-- Wort-Timings ausschließlich aus final verarbeitetem Audio
-
-## Phasen
+## Produktionsfolge
 
 1. Thema + Quellen + Claim-Check
 2. finales `script.txt`
-3. Phase 1: **Visual Beats**
-4. Phase 1 Density-QA
-5. Phase 2: finale Assets + finales Audio
-6. Phase 3: Timings, Mapping, Render
-7. Final-QA
+3. Phase 1 Visual Beats
+4. Phase 2 Bilder + finales Audio
+5. Phase 3 Timings / Mapping / Render
+6. Final-QA
 
 ## Visual-Beat-Prinzip
 
-Verbindlich: `channels/dinge-erklaert/youtube/YOUTUBE_VISUAL_BEAT_RULES.md`
+Ein wichtiger neuer visueller Gedanke bekommt grundsätzlich ein eigenes Bild. Neue Fakten, Orte, Akteure, Objekte, Zahlen, Handlungen, Vergleiche und Ursache-Folge-Schritte nicht in langen Sammelbildern bündeln.
 
-Dieses Format lebt von vielen präzisen Bildern:
-- ein wichtiger visueller Gedanke = grundsätzlich ein eigenes Bild
-- neuer Fakt, Ort, Akteur, Objekt, relevante Zahl, Handlung, Ursache-Folge-Schritt oder Mechanismusschritt = neuer Beat, wenn sich das Bild inhaltlich ändern muss
-- keine 20–30-Sekunden-Sammelbilder für mehrere Aussagen
-- Bilder dürfen spätere Informationen nicht vorwegnehmen
-- Ziel meist 8–18 gesprochene Wörter pro Beat
-- Durchschnitt höchstens 18 Wörter pro Szene
-- harte Obergrenze 28 Wörter pro Szene
-- bei 10–14 Minuten sind häufig ungefähr 90–150 Bilder sinnvoll; Inhalt entscheidet, nicht eine starre Quote
+Longform: meist 8–18 Wörter pro Beat, Durchschnitt höchstens 18, harte Obergrenze 28. Bei 10–14 Minuten häufig ungefähr 90–150 Bilder, ohne starre Quote.
 
-`npm run qa:visual-density` muss für Produktionsprojekte bestehen.
+Reels dürfen deutlich dichter sein, sofern jeder Beat eine eigenständige starke Bildidee hat.
 
 ## Bildwelt
 
-Verbindlich: `channels/dinge-erklaert/youtube/YOUTUBE_STYLE_LOCK.md`
+**Universal Editorial Stickman World v1.1**
 
-**Universal Editorial Stickman World v1**
-
-Kernregeln:
-- minimalistische, klar erkennbare Stickman-Figuren
-- reichere 2D-Umgebungen, die je nach Szene realitätsnah aufgebaut sein dürfen
-- natürliche und klar erkennbare Farben; keine permanente Beige-/Pastell-/Auswaschoptik
-- variabler Detailgrad: abstrakte Concept-Szene, moderne Editorial-Szene oder detailreichere historische/ortsgebundene Szene
-- Stil bleibt über alle Epochen gleich; Kleidung, Architektur, Technik und Requisiten ändern sich passend zu Zeit und Ort
-- Umgebung darf glaubwürdige Perspektive, Licht, Materialien und räumliche Logik haben
-- Figuren bleiben bewusst stilisiert; keine vollrealistischen Menschen
+- jede sichtbare menschliche Figur bleibt Stickman
+- keine normalen Cartoon-Menschen oder semi-realistischen Menschen
+- Umgebung darf glaubwürdig, farbig, detailreich und realitätsnah aufgebaut sein
 - kein Photorealismus, kein 3D/CGI, kein Anime/Chibi
+- moderne und historische Szenen bleiben Teil derselben Stickman-Welt
+- 16:9 für Longform; projektspezifisches Seitenverhältnis für Reels nur nach ausdrücklicher Festlegung
 - Bilder erklären den aktuell gesprochenen Inhalt statt nur zu dekorieren
-- 16:9 / 1920×1080 / 30 fps
-- filmische Kontinuität
-- sachlich, verständlich und nicht irreführend visualisieren
 
-## Schluss-Hold
+## Audio
 
-Standard: ungefähr 1,0 Sekunde nach dem letzten gesprochenen Wort.
+- bestehender Voice-over-Workflow: 1,10×
+- führende Stille entfernen
+- lange Pausen straffen
+- Wörter nicht anschneiden
+- Timings erst aus final verarbeitetem Audio

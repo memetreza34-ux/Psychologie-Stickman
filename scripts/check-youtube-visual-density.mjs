@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {countWords, resolvePhase1Plan} from './lib/youtube-visual-beats.mjs';
 
-const root = path.resolve('channels/dinge-erklaert/youtube');
+const root = path.resolve('youtube');
 const plans = [];
 
 const walk = (dir) => {
