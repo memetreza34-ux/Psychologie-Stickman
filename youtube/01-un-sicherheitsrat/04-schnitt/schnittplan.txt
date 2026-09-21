@@ -1,0 +1,41 @@
+SCHNITTPLAN — UN-SICHERHEITSRAT REBUILD v2
+
+Ziel: komplette Neufassung der visuellen Ebene bei unverändertem gesprochenem Inhalt.
+
+VERBINDLICH
+- 189 Visual Beats = 189 Bildpositionen.
+- Szene 001 → Prompt UNSC-001 → Bild 001.png, fortlaufend bis 189.png.
+- Beats nicht zusammenlegen, nur um Bilder zu sparen.
+- Jede wichtige neue Aussage muss in dem Moment sichtbar werden, in dem sie gesprochen wird.
+- Keine spätere Information vorwegnehmen.
+
+RHYTHMUS
+- normal meist ca. 4–8 Sekunden pro Bildidee, tatsächliche Dauer kommt aus finalen Wort-Timings.
+- 8–12 Sekunden nur wenn exakt derselbe visuelle Gedanke weiterläuft.
+- ungewöhnlich lange Standzeiten nach dem Render prüfen; 20–30 Sekunden auf einem Sammelbild sind nicht zulässig.
+- Hook/Suez: besonders enge Synchronität zwischen gesprochenem Satz und Bildwechsel.
+- Mechanismen wie 9 Stimmen, Veto, Enthaltung und Zwei-Schlösser-Tür schrittweise statt als Sammelgrafik erklären.
+
+BEWEGUNG
+- dezente Zooms/Pans/Fokuswechsel erlaubt.
+- kein hektischer Dauer-Motion-Look.
+- Bewegung ersetzt niemals einen fehlenden Bildwechsel.
+
+KONTINUITÄT
+- wiederkehrender Sicherheitsratssaal konsistent.
+- Generalversammlung klar davon unterscheiden.
+- Zwei-Schlösser-Tür ab Szene 040 als wiederkehrende Metapher konsistent halten.
+- historische Zustände beachten: 1945 Republik China + Sowjetunion; 1990 Sowjetunion.
+
+AUDIO
+- vorhandenes/finales Voice-over nicht inhaltlich verändern.
+- finale Verarbeitung weiterhin exakt 1,10× mit Pausenstraffung gemäß AUDIO_STANDARD.txt.
+- Wort-Timings erst aus final verarbeitetem Audio erzeugen.
+
+PHASE 3
+Erst wenn 001.png–189.png und final-voice.mp3 vorhanden sind:
+1. Wort-Timings erzeugen.
+2. Phase-1-Beats auf Timings mappen.
+3. Scene-Plan und Render-Props erzeugen.
+4. Render erstellen.
+5. Pacing-/Visual-QA durchführen.

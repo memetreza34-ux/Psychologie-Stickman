@@ -9,6 +9,7 @@
     "audio:youtube": "node scripts/prepare-youtube-voiceover.mjs",
     "qa:youtube-pacing": "node scripts/check-youtube-pacing.mjs",
     "qa:visual-density": "node scripts/check-youtube-visual-density.mjs",
+    "qa:prompt-coverage": "node scripts/check-youtube-prompt-coverage.mjs",
     "materialize:phase1": "node scripts/generate-youtube-visual-beats.mjs",
     "map:phase1": "node scripts/map-phase1-scenes.mjs",
     "validate:assets": "node scripts/validate-production-assets.mjs",
@@ -17,7 +18,8 @@
     "build:phase3-props": "node scripts/build-phase3-props.mjs",
     "prepare:phase3": "node scripts/prepare-phase3.mjs",
     "typecheck": "tsc --noEmit",
-    "check": "tsc --noEmit && node scripts/check-youtube-visual-density.mjs && node --check scripts/lib/youtube-visual-beats.mjs && node --check scripts/generate-youtube-visual-beats.mjs && node --check scripts/check-youtube-visual-density.mjs && node --check scripts/prepare-youtube-voiceover.mjs && node --check scripts/check-youtube-pacing.mjs && node --check scripts/map-phase1-scenes.mjs && node --check scripts/validate-production-assets.mjs && node --check scripts/production-check.mjs && node --check scripts/render-phase3-project.mjs && node --check scripts/validate-phase3-word-plan.mjs && node --check scripts/build-phase3-props.mjs && node --check scripts/prepare-phase3.mjs"
+    "check": "tsc --noEmit && node scripts/check-youtube-visual-density.mjs && node scripts/check-youtube-prompt-coverage.mjs && node --check scripts/lib/youtube-visual-beats.mjs && node --check scripts/generate-youtube-visual-beats.mjs && node --check scripts/check-youtube-visual-density.mjs && node --check scripts/check-youtube-prompt-coverage.mjs && node --check scripts/prepare-youtube-voiceover.mjs && node --check scripts/check-youtube-pacing.mjs && node --check scripts/map-phase1-scenes.mjs && node --check scripts/validate-production-assets.mjs && node --check scripts/production-check.mjs && node --check scripts/render-phase3-project.mjs && node --check scripts/validate-phase3-word-plan.mjs && node --check scripts/build-phase3-props.mjs && node --check scripts/prepare-phase3.mjs && node --check scripts/lib/youtube-image-prompts.mjs && node --check scripts/materialize-youtube-image-prompts.mjs",
+    "materialize:image-prompts": "node scripts/materialize-youtube-image-prompts.mjs"
   },
   "dependencies": {
     "@remotion/captions": "4.0.490",

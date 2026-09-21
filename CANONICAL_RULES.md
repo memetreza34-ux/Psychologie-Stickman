@@ -23,7 +23,7 @@ Pfad: `youtube/`
 - kein zusätzlicher `longform/`-Zwischenordner
 - mindestens 10:00 Minuten, sofern das Thema die Länge sinnvoll trägt
 - Ziel meist 11–14 Minuten
-- sichtbare Projektstruktur: `01-script-audio`, `02-bilder`, `03-quellen`, `04-schnitt`, `06-projektdateien`
+- sichtbare Projektstruktur: `01-script-audio`, `02-bilder`, `03-quellen`, `04-schnitt`, `05-export`, `06-projektdateien`
 
 ### Reels
 Pfad: `reels/`
@@ -43,6 +43,10 @@ THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Ph
 ## Visual-Beat-Prinzip
 
 Ein wichtiger neuer visueller Gedanke bekommt grundsätzlich ein eigenes Bild. Keine langen Sammelbilder für mehrere Aussagen. Qualität vor bloßer Bildanzahl.
+
+Für YouTube gilt zusätzlich ab Phase 2 eine harte 1:1-Zuordnung:
+**eine Phase-1-Szene → ein eigener Bildprompt → ein eigenes nummeriertes Bild.**
+Prompts dürfen keine Beats zusammenlegen oder spätere Aussagen vorwegnehmen. `npm run qa:prompt-coverage` muss für Phase-2-Projekte bestehen.
 
 ## Bildwelt
 
