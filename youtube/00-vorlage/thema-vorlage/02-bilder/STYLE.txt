@@ -1,9 +1,18 @@
 STYLE
 
-Universal Editorial Stickman World v1.1 — LOCKED
+Universal Editorial Stickman World v1.2 — LOCKED
 
 - Jede sichtbare menschliche Figur bleibt Stickman.
 - Keine normalen Cartoon-Menschen, keine semi-realistischen Menschen.
 - Umgebung darf farbig, glaubwürdig, detailreich und realitätsnah wirken.
 - Kein Photorealismus, kein 3D/CGI, kein Anime.
 - Moderne und historische Szenen bleiben Teil derselben Bildwelt.
+
+MASTER-REFERENZ — PFLICHT
+- Zuerst Bild 01 oder ein eigenes `00-master-reference` erzeugen und visuell freigeben.
+- Danach dieses Referenzbild bei jeder weiteren Bildgenerierung anhängen.
+- Referenz sperrt Figuren-DNA, Proportionen, Linienart, Farbverhalten, Shading und Illustrationslook.
+- Szenenprompt ändert nur Inhalt, Pose, Kamera, Umgebung, Requisiten, Licht und bei Bedarf Kleidung/Epoche.
+- sichtbarer Stil-Drift = STYLE FAIL → neu generieren.
+
+Verbindlicher Gesamtworkflow: `rules/IMAGE_REFERENCE_LOCK.md`.
