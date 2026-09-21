@@ -1,18 +1,38 @@
 # Migration — faceless-erklaerkanal → Stickman-youtube-
 
 Quelle: `memetreza34-ux/faceless-erklaerkanal`
-Quellstand: `9209fce3f3f03608d4b42cc7366fb7492fcbee2b`
 
 ## Ziel
 
-Produktionslogik, YouTube-Themensystem, Longform-Struktur, Audio-Regeln und das aktuelle UN-Sicherheitsrat-Projekt werden übernommen.
+Nur die technische Produktionsmaschine und allgemein nutzbare Produktionsregeln werden übernommen. Das Zielrepo startet inhaltlich und visuell neutral.
 
-## Absichtlich NICHT übernommen
+## Übernommen
 
+- allgemeine Produktionslogik
+- allgemeine Recherche- und Claim-Check-Logik
+- Skript-/Dramaturgie-Workflow
+- Longform-Projektstruktur
+- Audio-Aufbereitung
+- Visual-Beat-/Phase-1-Logik
+- Phase-3-/Remotion-Grundengine
+- QA-/Produktionsskripte
+- neutrale Projektvorlage
+
+## Absichtlich NICHT übernommen bzw. entfernt
+
+- Themen-Nische und Kanalpositionierung des Quell-Repositories
+- Themenlisten und Themenprioritäten des Quell-Repositories
+- das frühere UN-Sicherheitsrat-Projekt einschließlich Skript, Quellen, Claim-Matrix, Schnittplanung und Projektdateien
 - Round-Ball/Countryball-Bildwelt
 - konkrete STYLE-/CONTINUITY-Regeln der alten Bildwelt
 - Google-Flow-Masterprompts der alten Bildwelt
 - generierte Bilder und alte visuelle Referenzen
-- visuell festgelegte `visualTask`-Felder des bestehenden Phase-1-Plans
+- alte visuell festgelegte `visualTask`-Felder
 
-Die neue Bildwelt ist ausdrücklich `UNSET` und wird erst auf ausdrückliche Nutzerentscheidung definiert.
+## Aktueller Grundzustand
+
+- Themen-/Kanalpositionierung: `UNSET`
+- Bildwelt: `UNSET`
+- aktives Produktionsprojekt: keines
+
+Neue Inhalte und die neue Bildwelt werden erst nach ausdrücklicher Nutzerentscheidung festgelegt.

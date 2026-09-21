@@ -2,24 +2,25 @@
 
 ## Zweck
 
-Eigenständiges YouTube-Longform-Produktionsrepo, abgeleitet aus `faceless-erklaerkanal`, aber ohne dessen Bildwelt.
+Eigenständiges YouTube-Longform-Produktionsrepo, technisch abgeleitet aus `faceless-erklaerkanal`, aber ohne dessen Themenwelt und ohne dessen Bildwelt.
 
 ## Aktueller Status
 
 - Repo-Struktur: aufgebaut
-- Themenfokus: übernommen
-- YouTube-Audio-Standard: übernommen
+- Produktionspipeline: vorhanden
+- Recherche-/Claim-Check-Logik: vorhanden
+- YouTube-Audio-Standard: vorhanden
 - Remotion/Phase-3-Grundengine: vorhanden
+- Visual-Beat-System: vorhanden
+- Themen-/Kanalpositionierung: **UNSET**
 - Bildwelt: **UNSET**
-- erstes Projekt: `01-un-sicherheitsrat`
-- finales Skript/Quellen/Claim-Check: übernommen
-- alte visuelle Round-Ball-Phase 1/Flow-Prompts: bewusst nicht übernommen
-- alte 43-Bild-Longform-Logik: **verworfen**
-- neue Phase-1-Logik: **Visual Beats** mit hoher Bilddichte
+- aktives Produktionsprojekt: **keines**
+- alte thematische Inhalte des Quell-Repos: **entfernt**
+- alte visuelle Inhalte des Quell-Repos: **nicht übernommen**
 
 ## Dauerhafte Visual-Beat-Entscheidung
 
-Dieses Content-Format lebt von vielen Bildern. Ein wichtiger neuer visueller Gedanke bekommt grundsätzlich ein eigenes Bild.
+Dieses Longform-System arbeitet mit vielen präzisen Bildern. Ein wichtiger neuer visueller Gedanke bekommt grundsätzlich ein eigenes Bild.
 
 Verbindlich:
 `channels/dinge-erklaert/youtube/YOUTUBE_VISUAL_BEAT_RULES.md`
@@ -33,18 +34,13 @@ Kernwerte:
 - das Bild muss zum aktuell gesprochenen Inhalt passen und darf spätere Aussagen nicht vorwegnehmen
 - `npm run qa:visual-density` ist Teil des Repo-Checks
 
-## Aktuelles UN-Sicherheitsrat-Video
+## Nächste Entscheidungen
 
-Der frühere 43-Bild-Ansatz gilt als fehlerhaft und wird neu aufgebaut. `phase1-scenes.json` nutzt jetzt `autoFromScript`, um das finale Skript satz-/gedankenweise in viele Visual Beats zu zerlegen. Vor Phase 2 müssen die Beats redaktionell geprüft werden.
-
-## Nächster visueller Meilenstein
-
-Erst nach ausdrücklicher Nutzerentscheidung eine neue Bildwelt definieren. Danach:
-1. `YOUTUBE_STYLE_LOCK.md` festlegen
-2. Template-STYLE/CONTINUITY synchronisieren
-3. UN-Sicherheitsrat-Visual-Beats materialisieren und redaktionell prüfen
-4. neue Phase-2-Prompts für jeden Beat erstellen
-5. neue Bilder erzeugen und alten 43-Bild-Render ersetzen
+1. Themen-/Kanalpositionierung ausdrücklich festlegen
+2. neue Bildwelt ausdrücklich festlegen
+3. danach `YOUTUBE_STYLE_LOCK.md` setzen
+4. erstes neues Projekt aus der neutralen Vorlage erzeugen
+5. Phase 1 Visual Beats → Phase 2 Assets → Phase 3 Render
 
 ## Audio
 

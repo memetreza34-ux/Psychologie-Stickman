@@ -10,9 +10,9 @@ Dieses Longform-Format lebt von vielen präzisen Bildern. Ein Bild darf nicht 15
 
 Eine neue Szene beginnt insbesondere bei:
 - neuem Fakt oder neuer Kernaussage
-- neuem Staat, Ort, Akteur oder Institution
-- neuem Jahr / historischem Zeitsprung
-- neuer wichtigen Zahl oder Abstimmung
+- neuem Ort, Akteur, Objekt oder System
+- neuem Zeitbezug / Zeitsprung
+- neuer wichtigen Zahl oder Größenordnung
 - neuer Handlung
 - Ursache → Folge
 - Vergleich A → B
@@ -20,7 +20,7 @@ Eine neue Szene beginnt insbesondere bei:
 - neuem Schritt einer Mechanismus-/Metapher-Erklärung
 - Wechsel von Problem → Konsequenz → Lösung
 
-Wenn im Audio z. B. Saudi-Arabien, Ägypten, Russland, eine bestimmte Abstimmung oder ein konkreter Ort zum zentralen Inhalt des Satzes wird, muss genau dieser Inhalt im zugehörigen Beat sichtbar bzw. eindeutig visualisiert werden.
+Wenn im Audio ein konkretes Objekt, ein bestimmter Ort, eine Person, ein Vorgang oder ein anderer zentraler Inhalt wichtig wird, muss genau dieser Inhalt im zugehörigen Beat sichtbar bzw. eindeutig visualisiert werden.
 
 ## Keine Sammelbilder
 

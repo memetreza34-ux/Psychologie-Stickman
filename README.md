@@ -2,32 +2,38 @@
 
 Dieses Repository ist ein technischer Ableger von `memetreza34-ux/faceless-erklaerkanal` für YouTube-Longform.
 
-## Was übernommen wurde
+## Was technisch übernommen wurde
 
-- Politik-/Geschichte-/Geopolitik-Themensystem
-- Recherche- und Claim-Check-Logik
-- Skript-/Dramaturgie-Workflow
+- allgemeine Recherche- und Claim-Check-Logik
+- Skript- und Dramaturgie-Workflow
 - YouTube-Projektstruktur
 - 1,10× Voice-over-Aufbereitung mit Pausenstraffung
-- Phase-1-/Phase-3-Grundlogik
+- Visual-Beat-/Phase-1-Logik
+- Phase-3-Grundlogik
 - Remotion-Renderer
-- aktuelles Projekt `01-un-sicherheitsrat`
+- QA- und Produktionsskripte
 
-## Was bewusst nicht übernommen wurde
+## Was ausdrücklich nicht geerbt wird
 
-Die alte Bildwelt einschließlich ihrer Stil-Locks, Flow-Prompts, Charakterregeln und generierten Bilder.
+- keine alte Themen-Nische
+- keine alte Themen-Prioritätenliste
+- kein altes Produktionsprojekt, Skript oder Quellenpaket
+- keine alte Bildwelt, Stil-Locks, Charakterregeln, Flow-Prompts oder generierten Bilder
 
-`channels/dinge-erklaert/youtube/YOUTUBE_STYLE_LOCK.md` steht deshalb auf `UNSET`.
+**Themen-/Kanalpositionierung: UNSET**  
+**Bildwelt: UNSET**
+
+Neue Themen und die neue Bildwelt werden erst durch ausdrückliche Nutzerentscheidung festgelegt.
 
 ## Produktionsfolge
 
 ```text
 THEMA + QUELLEN + CLAIM-CHECK
 → FINALES SCRIPT
-→ PHASE 1
+→ PHASE 1 VISUAL BEATS
 → PHASE 2
 → PHASE 3
 → FINAL-QA
 ```
 
-Neue Longforms: mindestens 10:00 Minuten final, Ziel meist 11–14 Minuten.
+Longform-Standard: mindestens 10:00 Minuten final, Ziel meist 11–14 Minuten, sofern das gewählte Thema diese Länge sinnvoll trägt.

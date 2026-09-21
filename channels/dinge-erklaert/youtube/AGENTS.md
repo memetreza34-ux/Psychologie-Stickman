@@ -4,10 +4,10 @@ Gilt für `channels/dinge-erklaert/youtube/`.
 
 ## Harte Regeln
 
-- neue YouTube-Videos mindestens **10:00 Minuten final**
+- neue YouTube-Videos mindestens **10:00 Minuten final**, sofern das gewählte Thema diese Länge sinnvoll trägt
 - sinnvoller Zielbereich meist 11–14 Minuten
 - kein Fülltext
-- Themenfokus: Politik, Geopolitik, Geschichte, Ideologien, Staaten/Grenzen/politische Systeme
+- Themen-/Kanalpositionierung: **UNSET**; keine frühere Nische voraussetzen
 - 16:9 / 1920×1080 / 30 fps
 - die Bildwelt wird **nicht** aus dem Quell-Repo geerbt
 - solange `YOUTUBE_STYLE_LOCK.md` den Status `UNSET` trägt, keine finale Phase-2-Bildproduktion starten
@@ -61,8 +61,8 @@ Ein wichtiger visueller Gedanke bekommt grundsätzlich ein eigenes Bild.
 
 Neue Beats insbesondere bei:
 - neuem Fakt
-- neuem Staat/Ort/Akteur/Institution
-- neuem Jahr oder Zeitsprung
+- neuem Ort, Akteur, Objekt oder System
+- neuem Zeitbezug oder Zeitsprung
 - neuer relevanter Zahl
 - neuer Handlung
 - Ursache → Folge
@@ -70,7 +70,7 @@ Neue Beats insbesondere bei:
 - Frage → Antwort
 - neuem Schritt einer Metapher oder Mechanismus-Erklärung
 
-Wenn ein Satz einen konkreten Staat oder Ort zentral nennt, muss dieser im zugehörigen Bild sichtbar bzw. eindeutig repräsentiert sein. Das Bild darf nicht schon den Inhalt späterer Sätze zeigen.
+Wenn ein konkretes Objekt, ein Ort, eine Person oder ein anderer zentraler Inhalt im gesprochenen Satz wichtig wird, muss genau dieser Inhalt im zugehörigen Bild sichtbar bzw. eindeutig repräsentiert sein. Das Bild darf nicht schon den Inhalt späterer Sätze zeigen.
 
 Dichte:
 - Ziel meist 8–18 gesprochene Wörter pro Beat

@@ -2,21 +2,25 @@
 
 ## Kanal
 
-Deutschsprachiger Faceless-Erklärkanal mit Fokus auf Politik, Geopolitik, Geschichte, Ideologien, Staaten, Grenzen und politische Systeme.
+YouTube-Longform-Erklärkanal.
+
+**Themen-/Kanalpositionierung: UNSET.**
+
+Keine frühere Themen-Nische aus dem Quell-Repository voraussetzen oder rekonstruieren. Neue Themenregeln werden erst durch ausdrückliche Nutzerentscheidung festgelegt.
 
 ## Longform
 
-- mindestens 10:00 Minuten final
+- mindestens 10:00 Minuten final, sofern das gewählte Thema diese Länge sinnvoll trägt
 - Ziel meist 11–14 Minuten
 - kein Fülltext
 - eine klare Leitfrage pro Video
-- reale Beispiele bevorzugen
-- sensible/umstrittene Fakten sauber belegen
+- konkrete Beispiele bevorzugen, wenn sie das Verständnis verbessern
+- sensible oder umstrittene Fakten sauber belegen
 
 ## Skript
 
 - starker Einstieg statt Begrüßungsfloskel
-- wenn möglich reale Szene / reale Konsequenz statt erfundenem Szenario
+- wenn möglich konkrete Situation / Konsequenz statt leerer Einleitung
 - klare Einleitung, Hauptteil, Schluss
 - Ursache → Wirkung erklären
 - Kontraste, Callbacks und Metaphern gezielt einsetzen
@@ -46,7 +50,7 @@ Verbindlich: `channels/dinge-erklaert/youtube/YOUTUBE_VISUAL_BEAT_RULES.md`
 
 Dieses Format lebt von vielen präzisen Bildern:
 - ein wichtiger visueller Gedanke = grundsätzlich ein eigenes Bild
-- neuer Fakt/Akteur/Ort/Jahr/Zahl/Handlung/Ursache-Folge-Schritt/Mechanismusschritt = neuer Beat, wenn sich das Bild inhaltlich ändern muss
+- neuer Fakt, Ort, Akteur, Objekt, relevante Zahl, Handlung, Ursache-Folge-Schritt oder Mechanismusschritt = neuer Beat, wenn sich das Bild inhaltlich ändern muss
 - keine 20–30-Sekunden-Sammelbilder für mehrere Aussagen
 - Bilder dürfen spätere Informationen nicht vorwegnehmen
 - Ziel meist 8–18 gesprochene Wörter pro Beat
@@ -66,7 +70,7 @@ Technisch bereits fest:
 - 16:9 / 1920×1080 / 30 fps
 - filmische Kontinuität
 - Bilder erklären den aktuell gesprochenen Inhalt statt nur zu dekorieren
-- politische/historische Darstellung neutral
+- sachlich, verständlich und nicht irreführend visualisieren
 
 ## Schluss-Hold
 

@@ -1,15 +1,12 @@
 # YouTube Longform — Dinge erklärt
 
-Dieses Repository ist als funktionaler Ableger des bisherigen Erklärkanal-Repos aufgebaut.
+Dieses Repository ist als technischer Ableger des bisherigen Erklärkanal-Repos aufgebaut.
 
 ## Positionierung
 
-YouTube konzentriert sich auf:
-- Politik & Staatssysteme
-- Geopolitik & internationale Ordnung
-- Geschichte & Machtverschiebungen
-- Ideologien & politische Denkschulen
-- Staaten, Grenzen & politische Geografie
+**UNSET.**
+
+Es gibt aktuell keine festgelegte Themen-Nische und keine geerbte Themenliste. Neue Themenregeln werden erst nach ausdrücklicher Nutzerentscheidung festgelegt.
 
 ## Bildwelt
 
@@ -19,7 +16,7 @@ Verbindlich ist `YOUTUBE_STYLE_LOCK.md`. Solange diese Datei den Status `UNSET` 
 
 ## Länge
 
-- mindestens 10:00 Minuten finales Video
+- mindestens 10:00 Minuten finales Video, sofern das gewählte Thema diese Länge sinnvoll trägt
 - Zielbereich meist 11–14 Minuten
 - kein Fülltext
 
@@ -38,7 +35,7 @@ Verbindlich ist `YOUTUBE_STYLE_LOCK.md`. Solange diese Datei den Status `UNSET` 
 
 Thema + Quellen + Claim-Check
 → finales `script.txt`
-→ Phase 1
+→ Phase 1 Visual Beats
 → Phase 2
 → Phase 3
 → Final-QA.
