@@ -1,0 +1,21 @@
+UPLOAD-PAKET — STYLE PILOT 01 v2
+
+Status: TEST — NICHT ZUR VERÖFFENTLICHUNG FREIGEGEBEN
+
+Arbeitstitel:
+Warum greifen wir automatisch zum Handy?
+
+Beschreibung:
+PENDING — erst nach bestandenem Style-/Render-Test finalisieren.
+
+Thumbnail:
+PENDING — dieser Pilot testet primär die Video-Bildwelt, nicht Packaging.
+
+Kapitel:
+Nicht nötig für den kurzen Pilot.
+
+Quellenhinweise:
+Siehe `03-quellen/sources.txt`.
+
+Freigabe:
+Erst nach finalem Visual-QA, Audio, Timings und Render.

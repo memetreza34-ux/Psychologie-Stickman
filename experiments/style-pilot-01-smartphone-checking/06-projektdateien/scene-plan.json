@@ -1,0 +1,6 @@
+{
+  "status": "PENDING",
+  "sourcePhase1": "phase1-scenes.json",
+  "sourceWordTimings": "word-timings.json",
+  "scenes": []
+}

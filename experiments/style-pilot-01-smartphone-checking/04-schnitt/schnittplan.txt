@@ -1,0 +1,25 @@
+SCHNITTPLAN — STYLE PILOT 01 v2
+
+Ziel: 60–90 Sekunden, 26 Visual Beats, meist ca. 2,5–3,5 Sekunden pro Bild.
+
+Grundregeln:
+- Schnitt folgt den 26 Phase-1-Beats; keine Beats zusammenlegen, nur um Bilder zu sparen.
+- Neue Kernaussage = neues Bild.
+- Moderne Alltagsszenen, Close-ups, Concept-Shots und Prozessbilder bewusst mischen.
+- Wiederkehrende Hauptfigur visuell konsistent halten.
+- Alle sichtbaren Menschen bleiben Stickman.
+- Leichte Zooms/Pans/Fokuswechsel sind erlaubt, aber kein hektischer Dauer-Motion-Look.
+- Bei Concept-Szenen dürfen Pfeile/Objekte schrittweise eingeblendet werden.
+- Kein Bild darf nur als Füller existieren.
+- Wenn ein Bild schwach oder stilistisch falsch ist: neu generieren statt im Schnitt kaschieren.
+
+Rhythmus:
+- Hook: schnelle, klare Bildwechsel.
+- Mechanismus: etwas ruhiger, aber weiterhin dicht.
+- Forschungsbeleg: klare, sachliche Visualisierung.
+- Schluss: 1–2 ruhigere Beats mit stärkerem visuellen Fokus.
+
+Audio:
+- finales Voice-over nach AUDIO_STANDARD.txt verarbeiten.
+- Wort-Timings erst danach erstellen.
+- Scene-Plan erst aus finalem Audio + phase1-scenes.json ableiten.
