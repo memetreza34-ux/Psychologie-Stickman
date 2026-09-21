@@ -1,6 +1,14 @@
-VISUAL CONTINUITY — UNIVERSAL EDITORIAL STICKMAN WORLD v1.1
+VISUAL CONTINUITY — UNIVERSAL EDITORIAL STICKMAN WORLD v1.2
 
 Diese Datei konkretisiert die verbindliche Bildkontinuität für jedes Projekt.
+
+MASTER-REFERENZ-WORKFLOW
+- Bild 01 zuerst alleine generieren.
+- Bild 01 nur freigeben, wenn Figur, Kleidung, Raum, Linien, Farben und Shading als Stilanker funktionieren.
+- Nach Freigabe Bild 01 als Master-Referenz behandeln und bei Bild 02–26 bei jeder Generierung als Bildreferenz anhängen.
+- Ohne Master-Referenz kein finales Bild 02–26.
+- Wenn die Referenz schlecht ist, nicht damit weiterarbeiten: Bild 01 neu generieren.
+- Die Referenz bestimmt WIE das Bild aussieht; der Szenenprompt bestimmt WAS gezeigt wird.
 
 FIGUREN-KONTINUITÄT
 - dieselbe Grundanatomie in allen Szenen: runder Kopf, minimale Gesichtszüge, dünne dunkle Gliedmaßen, kleiner vereinfachter Torso
@@ -14,8 +22,17 @@ FIGUREN-KONTINUITÄT
 - keine realistische menschliche Anatomie
 - kein Figurenstil-Mix innerhalb eines Videos
 
+WIEDERKEHRENDE HAUPTFIGUR
+Für die Hauptfigur aus Bild 01 müssen in späteren Szenen möglichst konstant bleiben:
+- Kopfgröße und Kopfform
+- Torso-/Gliedmaßen-Proportionen
+- Kleidung und deren Kernfarben
+- Haare/Brille/Accessoires, falls vorhanden
+- Smartphone bzw. wichtige wiederkehrende Requisiten
+- Outline-Charakter und Shading
+
 STICKMAN-QA
-Wenn ein generiertes Asset eine deutlich sichtbare menschliche Figur enthält, die nicht der Stickman-DNA entspricht, wird das gesamte Asset abgelehnt und neu generiert. Hintergrundpersonen sind keine Ausnahme.
+Wenn ein generiertes Asset eine deutlich sichtbare menschliche Figur enthält, die nicht der Stickman-DNA oder der Master-Referenz entspricht, wird das gesamte Asset abgelehnt und neu generiert. Hintergrundpersonen sind keine Ausnahme.
 
 UMGEBUNG
 - wiederkehrende Orte behalten Grundriss, dominante Farben, wichtige Möbel, Architektur und Requisiten
@@ -23,6 +40,7 @@ UMGEBUNG
 - Räume und Architektur dürfen realitätsnah und detailreicher sein als die Figuren
 - historische Orte müssen epochemäßig plausibel bleiben
 - ein höherer Realitätsgrad der Umgebung darf niemals den Figurenstil in Richtung normaler Cartoon- oder realistischer Menschen ziehen
+- neue Orte dürfen anders aussehen, müssen aber dieselbe Linien-/Flächen-/Shading-Sprache wie die Master-Referenz behalten
 
 FARBE
 - keine permanente entsättigte Beige-/Grauoptik
@@ -30,6 +48,7 @@ FARBE
 - natürliche Objektfarben nutzen
 - Fokusfarben dürfen pro Beat wechseln, wenn sie Aufmerksamkeit oder Bedeutung steuern
 - Farbwechsel dürfen der Stimmung dienen, aber nicht die gesamte Bildwelt in einen anderen Stil verwandeln
+- Grundcharakter von Sättigung, Kontrast und Flächenbehandlung an Master-Referenz ausrichten
 
 REALITÄTSGRAD
 - abstrakte Beats dürfen stark reduziert sein
@@ -42,6 +61,7 @@ LICHT & SHADING
 - glaubwürdige Lichtquelle, wenn eine Szene räumlich ist
 - dezentes 2D-/Cel-Shading statt photorealistischer Lichtsimulation
 - Tag/Nacht, Innen/Außen und Stimmung dürfen Lichtfarbe ändern
+- Rendering-/Shading-Stil bleibt an Master-Referenz gebunden
 
 OBJEKTE
 - wiederkehrende Requisiten bleiben in Form und Farbe erkennbar gleich
@@ -62,9 +82,17 @@ KOMPOSITION
 - Motivgröße nicht unnötig klein
 - sichtbarer Text nur bei echter Erklärfunktion
 
-REFERENZPRINZIP
-Sobald für ein Projekt finale Referenzbilder existieren, sollen neue Bilder auf diese Referenzen zurückgreifen. Besonders wichtig bei wiederkehrenden Figuren, Räumen und Requisiten.
+REFERENCE MATCH CLAUSE
+Bei jedem Bild ab 02 sinngemäß verwenden:
+`Match the attached master reference exactly for character design, stickman proportions, linework, color treatment, shading, illustration finish and overall visual language. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. Do not redesign the visual style.`
 
-Bei Referenzbildern muss zuerst geprüft werden, dass wirklich alle menschlichen Figuren die Stickman-DNA erfüllen. Ein fehlerhaftes Referenzbild darf nicht als Stilanker weiterverwendet werden.
+HARD FAIL
+- sichtbar andere Stickman-Proportionen
+- anderer Liniencharakter
+- anderer Rendering-/Shading-Stil
+- völlig anderes Sättigungs-/Farbverhalten ohne inhaltlichen Grund
+- Hauptfigur wirkt wie eine neu entworfene Figur
+- normale Cartoon-Menschen oder semi-realistische Menschen
+- 3D, CGI, Anime oder Fotorealismus
 
 Ein Video muss trotz wechselnder Orte, Epochen und Darstellungsmodi wie ein zusammenhängender Film aus derselben Stickman-Welt wirken.
