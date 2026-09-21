@@ -1,6 +1,6 @@
 # YOUTUBE STYLE LOCK
 
-**STATUS: LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1**
+**STATUS: LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.1**
 
 Diese Bildwelt ist die verbindliche visuelle Basis des Kanals.
 
@@ -16,7 +16,7 @@ Der Zeichenstil und die Figuren-DNA bleiben gleich. Kleidung, Architektur, Techn
 
 ## 1. Figuren-DNA
 
-Menschen werden als klar erkennbare Stickman-/Minimalfiguren dargestellt:
+Menschen werden immer als klar erkennbare Stickman-/Minimalfiguren dargestellt:
 - runder, einfacher Kopf
 - sehr reduzierte Augen, Mund und bei Bedarf Augenbrauen
 - dünne dunkle Arme und Beine
@@ -24,10 +24,29 @@ Menschen werden als klar erkennbare Stickman-/Minimalfiguren dargestellt:
 - einfache Hände; keine anatomisch detaillierten Finger nötig
 - Körpersprache und Pose tragen einen großen Teil der Emotion
 - Kleidung darf Epoche, Beruf, Rolle und Situation zeigen
+- Haare, Bart, Brille, Kopfbedeckung und Accessoires dürfen Identität vermitteln, ohne die Stickman-Grundanatomie zu verändern
 - keine realistischen menschlichen Gesichter
 - keine Anime-, Chibi-, Kinderbuch- oder 3D-Figuren
 
-Die Grundanatomie bleibt über alle Videos und Epochen erkennbar gleich.
+Die Grundanatomie bleibt über alle Videos, Orte und Epochen erkennbar gleich.
+
+### HARTES STICKMAN-ONLY-GATE
+
+**Jede menschliche Figur im Bild muss zur Stickman-Welt gehören.** Das gilt ohne Ausnahme für:
+- Hauptfiguren
+- Nebenfiguren
+- Menschenmengen
+- Personen im Hintergrund
+- historische Personen
+- moderne Personen
+- kleine entfernte Figuren
+- Figuren auf Displays, Plakaten oder eingebetteten Szenen, sofern sie als Menschen dargestellt werden
+
+Nicht zulässig sind normale Cartoon-Menschen mit ausgeformter menschlicher Anatomie, realistischen Gesichtern, natürlichen Armen/Beinen, detaillierten Händen oder einem anderen Figurenstil.
+
+Die Umgebung darf realitätsnah und detailreich werden. **Der Mensch selbst bleibt Stickman.**
+
+Wenn ein generiertes Bild auch nur deutlich sichtbare menschliche Figuren enthält, die nicht dieser Stickman-DNA entsprechen, gilt das Asset als **STYLE FAIL** und muss neu generiert werden. Es darf nicht als finales Phase-2-Asset akzeptiert werden.
 
 ## 2. Umgebungen und Realitätsgrad
 
@@ -50,12 +69,13 @@ Standard für moderne Alltagsszenen.
 - erkennbare Möbel, Geräte, Kleidung und Requisiten
 - mittlerer Detailgrad
 - natürliche Perspektive und Lichtwirkung
+- auch bei sehr realitätsnaher Umgebung bleiben sämtliche Menschen klar Stickman
 
 ### C — Grounded Scene / Historical
 Für historische, kulturelle oder stark ortsgebundene Szenen.
 - Architektur, Kleidung, Werkzeuge, Fahrzeuge und Umgebung dürfen deutlich detailreicher sein
 - reale Epoche und Umgebung müssen visuell plausibel wirken
-- Stickman-Figuren bleiben trotzdem stilisiert
+- historische Kleidung wird auf Stickman-Figuren angewendet; sie verwandelt die Figuren nicht in normale illustrierte Menschen
 
 Die Bildwelt darf zwischen A, B und C wechseln, ohne ihre gemeinsame visuelle DNA zu verlieren.
 
@@ -95,13 +115,13 @@ Zu vermeiden:
 Der Grundstil bleibt immer gleich.
 
 Nur die Welt verändert sich:
-- moderne Szene → moderne Kleidung, Smartphone, heutige Architektur
-- 1950er → passende Kleidung, Fahrzeuge, Möbel und Technik
-- Mittelalter → passende Kleidung, Gebäude, Märkte, Werkzeuge, Pferde
-- Antike → passende Architektur, Kleidung und Gegenstände
+- moderne Szene → Stickman mit moderner Kleidung, Smartphone, heutiger Architektur
+- 1950er → derselbe Stickman-Grundkörper mit passender Kleidung, Fahrzeugen, Möbeln und Technik
+- Mittelalter → derselbe Stickman-Grundkörper mit passender Kleidung, Gebäuden, Märkten, Werkzeugen und Pferden
+- Antike → derselbe Stickman-Grundkörper mit passender Architektur, Kleidung und Gegenständen
 - Zukunft → nur wenn inhaltlich nötig; plausibel stilisiert statt generischem Sci-Fi
 
-Historische Genauigkeit hat Vorrang vor dekorativen Klischees.
+Historische Genauigkeit hat Vorrang vor dekorativen Klischees, ohne die Stickman-Figuren-DNA zu verlassen.
 
 ## 6. Komplexe Erklärungen
 
@@ -115,7 +135,7 @@ Nicht alles muss über einen Stickman erklärt werden. Die Bildwelt muss folgend
 7. Cutaway / Inside View
 8. Map / Spatial Explanation
 
-Figuren sind Teil der visuellen Sprache, aber nicht zwangsläufig Mittelpunkt jedes Bildes.
+Figuren sind Teil der visuellen Sprache, aber nicht zwangsläufig Mittelpunkt jedes Bildes. Sobald Menschen sichtbar sind, gelten jedoch immer die Stickman-Regeln.
 
 ## 7. Psychologische Mechanismen
 
@@ -156,18 +176,22 @@ Keine hektische Daueranimation als Stilprinzip.
 
 Jeder finale Bildprompt muss sinngemäß diese DNA tragen:
 
-`universal editorial 2D stickman explainer world, consistent minimalist stickman anatomy, richer grounded environment, clean dark organic outlines, clear natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, variable detail level depending on the scene, educational visual storytelling, coherent visual hierarchy, 16:9`
+`universal editorial 2D stickman explainer world, ALL human figures including background people use the same consistent minimalist stickman anatomy, round simple heads, minimal facial features, thin dark limbs and small simplified torsos, no conventional cartoon humans, richer grounded environment, clean dark organic outlines, clear natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, variable detail level depending on the scene, educational visual storytelling, coherent visual hierarchy, 16:9`
 
 Je nach Szene ergänzen:
 - `abstract concept illustration` für Modus A
-- `grounded modern editorial scene` für Modus B
-- `historically grounded illustrated environment` für Modus C
+- `grounded modern editorial scene, realistic environment but strictly stickman human characters` für Modus B
+- `historically grounded illustrated environment, period-accurate world with strictly stickman human characters` für Modus C
 
 ## 11. Negativregeln
 
 Nicht verwenden:
 - Photorealismus
 - vollrealistische Menschen
+- normale Cartoon-Menschen neben Stickman-Figuren
+- semi-realistische illustrierte Menschen
+- menschliche Figuren mit realistischer Anatomie
+- gemischte Figurenstile innerhalb eines Bildes oder Videos
 - 3D-/Pixar-/CGI-Look
 - Anime/Manga
 - Chibi/Kinderbuchästhetik
