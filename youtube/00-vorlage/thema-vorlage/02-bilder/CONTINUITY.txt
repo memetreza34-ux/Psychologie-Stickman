@@ -5,3 +5,16 @@ CONTINUITY
 - Wiederkehrende Hauptfiguren konsistent halten.
 - Farben und Umgebungsdetail an Szene anpassen, aber visuelle DNA beibehalten.
 - Hintergrundfiguren ebenfalls ausschließlich Stickman.
+
+MASTER-REFERENZ-WORKFLOW
+- Zuerst Bild 01 oder ein eigenes `00-master-reference` erzeugen und freigeben.
+- Das freigegebene Referenzbild bei jeder weiteren Generierung als Bildreferenz anhängen.
+- Ohne Master-Referenz keine Seriengenerierung final akzeptieren.
+- Referenz bestimmt: Figurenproportionen, Kopf-/Torso-Verhältnis, Linien, Farbverhalten, Shading und Illustrationsfinish.
+- Szenen dürfen Pose, Kamera, Ort, Requisiten, Licht und notwendige Kleidung/Epoche verändern.
+- Sichtbarer Stil-Drift = verwerfen und neu generieren.
+
+REFERENCE MATCH CLAUSE
+`Match the attached master reference exactly for character design, stickman proportions, linework, color treatment, shading, illustration finish and overall visual language. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. Do not redesign the visual style.`
+
+Verbindlich: `rules/IMAGE_REFERENCE_LOCK.md`.
