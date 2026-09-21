@@ -1,0 +1,32 @@
+# Quellen — Style Pilot 01
+
+## S1 — Checking habits
+Oulasvirta, A., Rattenbury, T., Ma, L., & Raita, E. (2012). *Habits make smartphone use more pervasive*. Personal and Ubiquitous Computing, 16, 105–114.
+DOI: https://doi.org/10.1007/s00779-011-0412-2
+
+Relevanz:
+- beschreibt kurze, wiederholte Smartphone-Checking-Habits
+- berichtet, dass schnell zugängliche Informationsbelohnungen solche Checks verstärken können
+- qualitative Daten sprechen dagegen, habitualisiertes Checking pauschal mit Sucht gleichzusetzen
+
+## S2 — Benachrichtigungen und Aufmerksamkeit
+Stothart, C., Mitchum, A., & Yehnert, C. (2015). *The attentional cost of receiving a cell phone notification*. Journal of Experimental Psychology: Human Perception and Performance, 41(4), 893–897.
+PubMed: https://pubmed.ncbi.nlm.nih.gov/26121498/
+DOI: https://doi.org/10.1037/xhp0000100
+
+Relevanz:
+- Benachrichtigungen allein störten in einem Experiment die Leistung bei einer aufmerksamkeitsfordernden Aufgabe
+- die Teilnehmenden mussten das Telefon dafür nicht aktiv benutzen
+
+## S3 — Review zu Smartphones und Kognition
+Wilmer, H. H., Sherman, L. E., & Chein, J. M. (2017). *Smartphones and Cognition: A Review of Research Exploring the Links between Mobile Technology Habits and Cognitive Functioning*. Frontiers in Psychology, 8, 605.
+PubMed: https://pubmed.ncbi.nlm.nih.gov/28487665/
+DOI: https://doi.org/10.3389/fpsyg.2017.00605
+
+Relevanz:
+- Review zu Aufmerksamkeit, Gedächtnis, Belohnungsaufschub und Smartphone-Gewohnheiten
+- betont, dass die Forschungslage in mehreren Bereichen noch nicht stark genug für pauschale Schlussfolgerungen ist
+
+## Redaktionsregel
+
+Keine Dopamin-Erklärung, keine pauschale Aussage „Smartphones machen süchtig“ und keine medizinische Diagnose. Der Pilot erklärt Gewohnheit und Aufmerksamkeitsunterbrechung, nicht Abhängigkeit.

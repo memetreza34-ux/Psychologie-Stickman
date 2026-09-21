@@ -1,0 +1,6 @@
+claim_id,claim,source,status,notes
+C01,"Bei Smartphones wurden kurze, wiederholte Checking-Habits beschrieben.",S1,PASS,"Direkt durch Oulasvirta et al. gestützt."
+C02,"Schnell zugängliche neue Informationen können Checking-Verhalten verstärken.",S1,PASS,"Im kontrollierten Feldexperiment als Verstärkung durch schnell zugängliche Informationsbelohnungen beschrieben."
+C03,"Schon Handy-Benachrichtigungen können Aufmerksamkeit bzw. Aufgabenleistung stören, ohne dass das Gerät aktiv benutzt wird.",S2,PASS,"Direkt durch das Experiment von Stothart et al. gestützt."
+C04,"Habitualisiertes Checking darf nicht pauschal als Sucht bezeichnet werden.",S1;S3,PASS,"S1 beschreibt Checking eher als Gewohnheit/Annoyance; S3 warnt vor zu starken pauschalen Schlussfolgerungen."
+C05,"Ein Teil des Smartphone-Verhaltens kann automatisiert bzw. habitualisiert ablaufen.",S1;S3,PASS,"Kernpunkt des Piloten; vorsichtig formuliert, ohne medizinische Aussage."

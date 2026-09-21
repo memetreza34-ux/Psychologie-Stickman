@@ -1,0 +1,68 @@
+{
+  "project": "style-pilot-01-smartphone-checking",
+  "format": "youtube-style-test",
+  "aspectRatio": "16:9",
+  "styleLock": "UNIVERSAL EDITORIAL STICKMAN WORLD v1.1",
+  "scenes": [
+    {
+      "scene": 1,
+      "speechSection": "Du willst nur kurz die Uhrzeit prüfen.",
+      "visualTask": "Moderner Stickman am Schreibtisch hebt das Smartphone nur zum Uhrzeit-Check an; Uhrzeit auf Sperrbildschirm ist der klare Fokus."
+    },
+    {
+      "scene": 2,
+      "speechSection": "Zwei Minuten später bist du in einer App, obwohl du eigentlich etwas anderes machen wolltest.",
+      "visualTask": "Gleicher Stickman sitzt nun tiefer im Stuhl und scrollt durch eine App; offene Arbeitsaufgabe am Laptop bleibt sichtbar und unbeachtet."
+    },
+    {
+      "scene": 3,
+      "speechSection": "Das ist nicht automatisch fehlende Disziplin.",
+      "visualTask": "Stickman zwischen zwei Deutungen: links moralischer Zeigefinger/Disziplin-Symbol, rechts neutraler Gewohnheitskreislauf; Fokus auf die zweite Erklärung."
+    },
+    {
+      "scene": 4,
+      "speechSection": "Forschende haben bei Smartphones kurze, wiederholte Check-Gewohnheiten beschrieben: Man schaut nach neuen Informationen, oft ohne lange darüber nachzudenken.",
+      "visualTask": "Abstrakter Ablauf mit demselben Stickman: Tasche -> Smartphone kurz ansehen -> zurückstecken -> kurze Zeit später wiederholen; klarer wiederholter Check statt langer Nutzung."
+    },
+    {
+      "scene": 5,
+      "speechSection": "Solche Checks können sich verstärken, wenn auf dem Gerät schnell neue, interessante Informationen auftauchen.",
+      "visualTask": "Smartphone zeigt nacheinander neue Nachrichten/Updates; kleine farbige Informationskarten erscheinen, während der Stickman erneut hinsieht. Keine Markenlogos."
+    },
+    {
+      "scene": 6,
+      "speechSection": "Und manchmal reicht schon ein Ton oder eine Vibration.",
+      "visualTask": "Stickman arbeitet konzentriert am Laptop; Smartphone liegt seitlich auf dem Tisch und vibriert sichtbar, Kopf und Augen drehen sich sofort zum Gerät."
+    },
+    {
+      "scene": 7,
+      "speechSection": "In einem Experiment störten Handy-Benachrichtigungen die Leistung bei einer Aufmerksamkeitsaufgabe, obwohl die Teilnehmenden das Gerät nicht benutzten.",
+      "visualTask": "Stickman in einfacher Labor-/Testumgebung löst Konzentrationsaufgabe am Bildschirm; Smartphone liegt unberührt daneben und sendet Benachrichtigung, während Fokus sichtbar unterbrochen wird."
+    },
+    {
+      "scene": 8,
+      "speechSection": "So kann ein einfacher Kreislauf entstehen: Auslöser, Griff zum Handy, neue Information, Wiederholung.",
+      "visualTask": "Saubere Concept-Szene als vierteiliger Kreis: Auslöser -> Hand greift Smartphone -> neue Information -> Wiederholung; kleine Stickman-Figur integriert, kein corporate infographic look."
+    },
+    {
+      "scene": 9,
+      "speechSection": "Wichtig ist aber: Gewohnheit ist nicht automatisch Sucht.",
+      "visualTask": "Zwei klar getrennte Wege: links alltägliche wiederholte Check-Gewohnheit, rechts medizinisch wirkende Warnzone bewusst mit Fragezeichen statt Diagnose; visuell zeigen, dass beides nicht gleichgesetzt wird."
+    },
+    {
+      "scene": 10,
+      "speechSection": "Die Forschung zu Smartphones und Denken ist komplex, und nicht jede starke Behauptung ist gut belegt.",
+      "visualTask": "Stickman-Wissenschaftler vor mehreren Studienseiten und Diagrammen; einige Befunde klar, andere mit Fragezeichen/unsicherer Verbindung; sachliche Forschungsszene."
+    },
+    {
+      "scene": 11,
+      "speechSection": "Der spannendere Punkt ist: Ein Teil unseres Handyverhaltens kann automatisch werden.",
+      "visualTask": "Moderner Stickman geht durch Alltagsszene; Hand bewegt sich fast automatisch zur Hosentasche, während Blick noch auf etwas anderes gerichtet ist."
+    },
+    {
+      "scene": 12,
+      "speechSection": "Noch bevor wir bewusst entscheiden, ob wir wirklich nachsehen wollten.",
+      "visualTask": "Naher Abschluss: Stickman hält kurz inne mit Hand am Smartphone; hinter ihm abstrakt zwei Ebenen 'automatischer Impuls' und 'bewusste Entscheidung' als bildliche Wege ohne große Textblöcke."
+    }
+  ]
+}
