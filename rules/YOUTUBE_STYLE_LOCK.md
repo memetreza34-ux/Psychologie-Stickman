@@ -1,8 +1,10 @@
 # YOUTUBE STYLE LOCK
 
-**STATUS: LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.1**
+**STATUS: LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.2**
 
 Diese Bildwelt ist die verbindliche visuelle Basis des Kanals.
+
+Zusätzlich verbindlich: `rules/IMAGE_REFERENCE_LOCK.md`.
 
 ## Ziel
 
@@ -206,3 +208,20 @@ Nicht verwenden:
 Verbindliche Detailregeln stehen zusätzlich in der Projektvorlage unter `02-bilder/CONTINUITY.txt`.
 
 Diese Bildwelt ersetzt keine inhaltliche Visual-Beat-Planung: Erst wird festgelegt, **was** sichtbar sein muss; danach wird dieser Inhalt in dieser Bildwelt umgesetzt.
+
+## 13. Master-Referenzbild — HARD LOCK
+
+Textprompts allein gelten nicht mehr als ausreichende Stilkontrolle.
+
+Für jedes Projekt wird vor der Seriengenerierung ein freigegebenes Master-Referenzbild festgelegt. Beim aktuellen Reel-Pilot ist **Bild 01** dieser Anker. Für zukünftige Projekte darf alternativ ein eigenes `00-master-reference` vor Szene 01 erzeugt werden.
+
+Ab Bild 02 gilt:
+- Master-Referenz bei jeder Generierung als Bildreferenz anhängen
+- Figurendesign, Linien, Farbverhalten, Shading und Illustrationsästhetik an der Referenz ausrichten
+- nur Szene, Pose, Perspektive, Umgebung, Requisiten und nötige Epoche verändern
+- bei sichtbarem Style-Drift Asset verwerfen und neu generieren
+
+Verbindlicher Workflow: `rules/IMAGE_REFERENCE_LOCK.md`.
+
+Priorität bei visuellen Konflikten:
+**Master-Referenzbild > generische Stilwörter im Szenenprompt.**
