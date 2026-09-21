@@ -1,99 +1,146 @@
-# Finale Bildprompts — Style Pilot 01 v2
+FINALE BILDPROMPTS — STYLE PILOT 01 v3
 
-## MASTER PREFIX — vor jeden Szenenprompt setzen
+WICHTIG: DIESER TEST NUTZT EIN MASTER-REFERENZBILD.
+
+==================================================
+MASTER-REFERENZ-WORKFLOW
+==================================================
+
+1. Zuerst NUR Bild 01 generieren.
+2. Bild 01 visuell prüfen. Es muss als Stilanker funktionieren: klarer Stickman, sichtbare Kleidung, sichtbare Umgebung, gute Farben, saubere Outlines, passendes Shading.
+3. Nur wenn Bild 01 wirklich gut ist, dieses Bild als MASTER-REFERENZ freigeben.
+4. Das freigegebene Bild 01 bei JEDER Generierung von Bild 02–26 als Bildreferenz anhängen.
+5. Bild 02–26 niemals nur aus Text generieren.
+6. Bei sichtbarem Stil-Drift Bild verwerfen und erneut MIT der Master-Referenz generieren.
+
+Für Bild 02–26 zusätzlich immer diese Referenzanweisung verwenden:
+
+REFERENCE MATCH CLAUSE:
+`Match the attached master reference exactly for character design, stickman proportions, linework, color treatment, shading, illustration finish and overall visual language. Keep the same visual DNA and do not redesign the style. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt.`
+
+==================================================
+MASTER PREFIX
+==================================================
 
 `Universal editorial 2D stickman explainer world, 16:9, 1920x1080. ALL visible human characters must use the exact same minimalist stickman anatomy: simple round head, tiny minimal eyes and mouth, thin dark line arms and legs, small simplified torso, simple hands, no realistic anatomy. This applies to main characters, background people, people on screens and small distant figures. Rich grounded environment, clean dark organic outlines, natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, subtle cel shading, educational visual storytelling. The environment may be realistic in structure and detail, but every human remains unmistakably stickman.`
 
-## HARD NEGATIVE — an jeden Prompt anhängen
+==================================================
+HARD NEGATIVE
+==================================================
 
 `No normal cartoon humans, no semi-realistic people, no realistic faces, no realistic arms or legs, no detailed fingers, no mixed human styles, no 3D, no CGI, no anime, no chibi, no photorealism, no washed-out beige filter, no generic whiteboard emptiness, no brand logos, no unnecessary text blocks.`
 
----
+==================================================
+01 — MASTER FRAME / NUR KURZ DIE UHRZEIT
+==================================================
 
-## 01 — Nur kurz die Uhrzeit
-`Tight modern close-up. A stickman lifts a smartphone only to check the lock-screen time. The time display is the clear focus, the face is simple and neutral, background home-office elements are softly simplified. Cool daylight, dark phone frame, one warm accent.`
+DIESES BILD WIRD ZUERST ALLEINE GENERIERT UND DANACH ALS MASTER-REFERENZ VERWENDET.
 
-## 02 — Ausgangssituation
-`Grounded 2026 home-office wide shot. The same stickman sits at a desk with an open laptop, notebook and smartphone resting beside it. Modern chair, headphones, charging cable, plant, lamp and window. Natural blue, green, warm wood and orange accents. Clean believable spatial layout.`
+`Grounded 2026 home-office medium-wide editorial shot designed as the visual master frame for the entire video. Show one complete minimalist stickman clearly from head to at least knees, seated naturally at a modern desk while lifting a smartphone only to check the lock-screen time. The same frame must clearly establish the character anatomy, clothing, linework, color treatment, room detail, lighting and shading used throughout the video. The stickman has a simple round head, tiny minimal eyes and mouth, thin dark line arms and legs, a small simplified torso, simple hands and modern casual clothing: dark blue hoodie or overshirt, neutral trousers and simple sneakers. The room is contemporary and believable: laptop, notebook, headphones, charging cable, desk lamp, green plant, shelf and window. Use clean dark organic outlines, controlled natural blue, green, warm wood and amber accents, moderate saturation, soft daylight, subtle 2D cel shading and simplified materials. The environment is richer than the figure, but the figure remains unmistakably stickman. Strong balanced composition, not a close-up, because this image must serve as the style and character reference for every later scene.`
 
-## 03 — Entsperren
-`Extreme detail shot of the same stickman hand unlocking the smartphone. Keep the simplified stickman hand design, dark organic outlines and clean modern screen glow. Background reduced to laptop edge and desk surface. Strong visual focus, no text clutter.`
+==================================================
+02 — AUSGANGSSITUATION
+==================================================
 
-## 04 — Zwei Minuten später
-`Same room and same stickman continuity. The character is now slouched deeper in the chair scrolling through a colorful generic short-form content feed. The phone screen is bright and attention-grabbing. Contemporary room, vivid but controlled color palette.`
+`Grounded 2026 home-office wide shot. The same stickman from the attached master reference sits at the same desk with an open laptop, notebook and smartphone resting beside it. Preserve the same clothing, proportions, room design, linework, colors and shading. Modern chair, headphones, charging cable, plant, lamp and window. Natural blue, green, warm wood and amber accents. Clean believable spatial layout.`
 
-## 05 — Aufgabe bleibt offen
-`Over-the-shoulder composition. The unfinished laptop task fills the foreground while the same stickman in the middle ground is absorbed in the smartphone. The visual contrast must instantly show abandoned work versus phone attention. Modern believable workspace.`
+03 — ENTSPERREN
+`Extreme detail shot of the same stickman hand unlocking the same smartphone. Preserve the exact simplified hand design, clothing sleeve color, linework and screen treatment from the attached master reference. Background reduced to laptop edge and desk surface. Strong visual focus, no text clutter.`
 
-## 06 — Schlechte Disziplin?
-`Abstract psychology scene. The stickman stands beneath an oversized accusing pointing-hand symbol and a rigid checklist, visually representing the simplistic judgment of poor discipline. Strong composition, off-white abstract background, restrained red accent, no large text.`
+04 — ZWEI MINUTEN SPÄTER
+`Same room and same stickman continuity from the attached master reference. The character is now slouched deeper in the same chair scrolling through a colorful generic short-form content feed. Preserve clothing, body proportions, desk, room palette, outline style and shading. The phone screen is bright and attention-grabbing.`
 
-## 07 — Forschende untersuchen das
-`Modern editorial research scene. Three stickman researchers sit around a table with smartphones, notes, timers and simple charts. Every researcher uses the exact same stickman anatomy. Contemporary university lab, rich natural colors, blue screens, green plants, warm wood.`
+05 — AUFGABE BLEIBT OFFEN
+`Over-the-shoulder composition in the same home-office world. The unfinished laptop task fills the foreground while the same stickman from the attached master reference is absorbed in the smartphone. Preserve room identity, clothing colors, linework and rendering. The visual contrast must instantly show abandoned work versus phone attention.`
 
-## 08 — Wiederholte Checks
-`Sequence illustration with the same stickman shown in four connected mini-moments: waiting, quick phone glance, phone away, later another quick glance. The environments subtly shift to show time passing while keeping one coherent visual world.`
+06 — SCHLECHTE DISZIPLIN?
+`Abstract psychology scene derived from the attached master reference style. The same stickman stands beneath an oversized accusing pointing-hand symbol and a rigid checklist, visually representing the simplistic judgment of poor discipline. Preserve the exact stickman anatomy, outline character, color treatment and cel-shading style from the reference. Strong composition, restrained red accent, no large text.`
 
-## 09 — Handy raus
-`Dynamic waist-up urban shot. A walking stickman pulls a smartphone from a trouser or jacket pocket. Clear motion line, realistic contemporary sidewalk, shop windows, bicycles and traffic elements in the background. All background people are stickmen.`
+07 — FORSCHENDE UNTERSUCHEN DAS
+`Modern editorial research scene in the exact style of the attached master reference. Three stickman researchers sit around a table with smartphones, notes, timers and simple charts. Every researcher uses the same minimalist stickman anatomy and line language. Contemporary university lab, rich natural colors, blue screens, green plants, warm wood, same shading treatment as reference.`
 
-## 10 — Kurz schauen
-`Profile close-up of the stickman face and smartphone. The character gives one quick glance at the screen. Minimal facial features, strong eye direction, clean dark outlines, shallow visual complexity, vivid screen against quieter background.`
+08 — WIEDERHOLTE CHECKS
+`Sequence illustration in the exact attached-reference style with the same main stickman shown in four connected mini-moments: waiting, quick phone glance, phone away, later another quick glance. Preserve the same character anatomy, clothing and color identity. The environments subtly shift to show time passing while keeping one coherent visual world.`
 
-## 11 — Wieder weg
-`Close shot of the same stickman putting the smartphone back into the pocket while continuing to walk. The arm moves downward, environment remains active. Use a different camera angle from scene 09 to avoid repetition.`
+09 — HANDY RAUS
+`Dynamic waist-up urban shot in the exact attached-reference style. The same main stickman pulls the same smartphone from a trouser or jacket pocket. Preserve character proportions and clothing identity. Contemporary sidewalk, shop windows, bicycles and traffic elements in the background. All background people are stickmen using the same visual DNA.`
 
-## 12 — Wenig später nochmal
-`Modern public transport stop. The same stickman stands waiting and checks the phone again. Digital timetable, bench, shelter, city street and several background stickman commuters. Strong modern colors, blue signage, green trees, red and yellow accents.`
+10 — KURZ SCHAUEN
+`Profile close-up of the same stickman face and smartphone, matching the attached master reference exactly in head shape, facial simplicity, linework and colors. The character gives one quick glance at the screen. Vivid screen against a quieter background.`
 
-## 13 — Neue Informationen
-`Grounded modern scene focused on the phone. Several generic information cards appear sequentially on the screen while the stickman immediately refocuses on it. Use stronger saturation on new information and slightly quieter colors in the room.`
+11 — WIEDER WEG
+`Close shot of the same stickman putting the same smartphone back into the pocket while continuing to walk. Preserve the exact character, clothing and line treatment from the attached master reference. Use a different camera angle from scene 09 without changing the visual style.`
 
-## 14 — Nachricht, Update, Neues
-`Three-part micro-composition in one frame connected by the same stickman hand and smartphone: a message preview, a simple update card, and another generic new-information card. No logos. Distinct blue, green and orange accents with clear hierarchy.`
+12 — WENIG SPÄTER NOCHMAL
+`Modern public transport stop in the exact attached-reference style. The same stickman stands waiting and checks the phone again. Digital timetable, bench, shelter, city street and several background stickman commuters. Keep the same linework, shading and natural controlled color treatment.`
 
-## 15 — Noch passiert nichts
-`Quiet suspenseful everyday scene. The smartphone lies inactive on a modern desk while the stickman works on the laptop. Calm daylight, balanced composition, no notification yet. The image should feel still and focused, preparing contrast for the next beat.`
+13 — NEUE INFORMATIONEN
+`Grounded modern scene in the attached-reference style focused on the phone. Several generic information cards appear sequentially on the screen while the same stickman immediately refocuses on it. Use stronger saturation on new information and slightly quieter colors in the room while preserving the reference's overall color behavior.`
 
-## 16 — Ton oder Vibration
-`Same workspace. The smartphone visibly vibrates with subtle motion lines and a tiny sound cue. The stickman has not touched it, but the head and eyes turn immediately away from the laptop toward the device. Clear attention shift, stronger accent on the phone.`
+14 — NACHRICHT, UPDATE, NEUES
+`Three-part micro-composition in the exact attached-reference style connected by the same stickman hand and smartphone: a message preview, a simple update card and another generic new-information card. No logos. Distinct blue, green and orange accents with clear hierarchy, same outlines and shading as reference.`
 
-## 17 — Aufmerksamkeitsexperiment
-`Grounded simplified laboratory scene. A stickman participant performs a demanding attention task on a computer monitor. Clean modern test room, neutral desk, keyboard, simple test graphics. Any researcher in the background is also an unmistakable stickman.`
+15 — NOCH PASSIERT NICHTS
+`Quiet suspenseful everyday scene matching the attached master reference. The smartphone lies inactive on a modern desk while the same stickman works on the laptop. Calm daylight, balanced composition, no notification yet. Preserve the same desk-world, linework and color language.`
 
-## 18 — Handy bleibt unberührt
-`Same laboratory from a different angle. The smartphone lies untouched beside the keyboard and receives a notification while the participant’s hands remain on the computer. Show distraction through gaze shift only. No one touches the phone.`
+16 — TON ODER VIBRATION
+`Same workspace and same main stickman as the attached master reference. The smartphone visibly vibrates with subtle motion lines and a tiny sound cue. The character has not touched it, but the head and eyes turn immediately away from the laptop toward the device. Preserve all style and character identity.`
 
-## 19 — Der Kreislauf entsteht
-`Abstract concept scene. Build a clean circular path with four empty stations around a small central stickman, visually preparing a habit loop without yet filling every station. Strong arrows, controlled blue, yellow, red and green accents, off-white background.`
+17 — AUFMERKSAMKEITSEXPERIMENT
+`Grounded simplified laboratory scene rendered in the exact attached-reference visual language. A stickman participant performs a demanding attention task on a computer monitor. Clean modern test room, neutral desk, keyboard and simple test graphics. Any researcher in the background is also an unmistakable stickman with the same anatomy and line style.`
 
-## 20 — Auslöser und Griff
-`First half of the loop. A vibrating smartphone or notification cue acts as the trigger, followed by a simplified stickman hand reaching toward the phone. Two clearly separated visual steps connected by a bold directional arrow.`
+18 — HANDY BLEIBT UNBERÜHRT
+`Same laboratory from a different angle, matching the attached master reference style. The smartphone lies untouched beside the keyboard and receives a notification while the participant's hands remain on the computer. Show distraction through gaze shift only. No one touches the phone.`
 
-## 21 — Information und Wiederholung
-`Second half of the loop. A new colorful information card appears on the smartphone, then a large curved arrow returns to the beginning of the loop. The closed cycle should be readable instantly without corporate infographic styling.`
+19 — DER KREISLAUF ENTSTEHT
+`Abstract concept scene in the exact visual language of the attached master reference. Build a clean circular path with four empty stations around a small central stickman, visually preparing a habit loop without yet filling every station. Strong arrows, controlled blue, yellow, red and green accents, same outline and shading language.`
 
-## 22 — Gewohnheit ist nicht Sucht
-`Neutral scientific comparison scene. Left side: ordinary stickman repeatedly checking a phone in normal daily life. Right side: a clearly separate caution zone with a question mark and restrained medical-warning symbolism. Do not diagnose or dramatize.`
+20 — AUSLÖSER UND GRIFF
+`First half of the loop in the attached-reference style. A vibrating smartphone or notification cue acts as the trigger, followed by a simplified stickman hand reaching toward the phone. Two clearly separated visual steps connected by a bold directional arrow. Preserve the same stickman hand construction, outlines and color behavior.`
 
-## 23 — Forschung ist komplex
-`Editorial evidence scene. Several stickman researchers examine study pages, charts and evidence cards. Some links between findings are solid, others dotted or uncertain. Modern research environment, rich color, strong visual hierarchy, no normal cartoon people.`
+21 — INFORMATION UND WIEDERHOLUNG
+`Second half of the loop in the exact attached-reference style. A new colorful information card appears on the smartphone, then a large curved arrow returns to the beginning of the loop. The closed cycle should be readable instantly without corporate infographic styling.`
 
-## 24 — Automatisches Verhalten
-`Grounded modern city or subway scene. The stickman looks forward at the environment while one hand already drifts toward the smartphone pocket almost automatically. Other visible people are stickmen. Natural urban colors and believable lighting.`
+22 — GEWOHNHEIT IST NICHT SUCHT
+`Neutral scientific comparison scene in the exact attached-reference visual language. Left side: ordinary stickman repeatedly checking a phone in normal daily life. Right side: a clearly separate caution zone with a question mark and restrained medical-warning symbolism. Do not diagnose or dramatize. All people remain the same stickman type.`
 
-## 25 — Hand zur Tasche
-`Cinematic close-up of torso, arm and pocket only. The stickman hand moves toward the smartphone in the pocket while the head is outside the frame or looking elsewhere. Strong dark outline, realistic clothing folds in simplified 2D form, no realistic anatomy.`
+23 — FORSCHUNG IST KOMPLEX
+`Editorial evidence scene matching the attached master reference exactly in figure anatomy, outlines, color treatment and shading. Several stickman researchers examine study pages, charts and evidence cards. Some links between findings are solid, others dotted or uncertain. Modern research environment, rich color, strong visual hierarchy.`
 
-## 26 — Vor der bewussten Entscheidung
-`Calm cinematic closing shot. The stickman pauses with one hand resting at the phone pocket, not yet pulling it out. Behind the figure, two subtle illustrated paths diverge: one fast curved impulse path and one slower deliberate path. Dark blue evening tones with warm amber highlights. Strong final composition, no large text.`
+24 — AUTOMATISCHES VERHALTEN
+`Grounded modern city or subway scene in the exact attached-reference style. The same main stickman looks forward at the environment while one hand already drifts toward the smartphone pocket almost automatically. Other visible people are stickmen. Natural urban colors and believable lighting with the same rendering language.`
 
----
+25 — HAND ZUR TASCHE
+`Cinematic close-up of the same main stickman's torso, arm and pocket, matching the attached master reference. The hand moves toward the same smartphone in the pocket while the head is outside the frame or looking elsewhere. Preserve clothing color, outline weight, hand simplification and shading.`
 
-## Generierungsregel
+26 — VOR DER BEWUSSTEN ENTSCHEIDUNG
+`Calm cinematic closing shot in the exact attached-reference style. The same main stickman pauses with one hand resting at the phone pocket, not yet pulling it out. Behind the figure, two subtle illustrated paths diverge: one fast curved impulse path and one slower deliberate path. Dark blue evening tones with warm amber highlights are allowed, but retain the same linework, cel shading and character identity.`
 
-Für jedes Bild gilt: `MASTER PREFIX + Szenenprompt + HARD NEGATIVE`.
+==================================================
+GENERIERUNGSFORMEL
+==================================================
 
-Die 26 Bilder sollen **nicht** wie 26 Varianten derselben Szene aussehen. Perspektive, Kameradistanz, Umgebung und Darstellungsmodus müssen sinnvoll wechseln: Wide Shot, Close-up, Over-the-shoulder, Detailshot, Research Scene, Concept Scene, Process Scene und Environmental Scene.
+BILD 01:
+MASTER PREFIX + PROMPT 01 + HARD NEGATIVE
 
-Wenn auch nur eine deutlich sichtbare menschliche Figur als normaler Cartoon-Mensch statt Stickman erscheint, Bild verwerfen und neu generieren. Keine schwache Komposition nur wegen der Bildanzahl akzeptieren.
+BILD 02–26:
+ATTACHED MASTER REFERENCE + REFERENCE MATCH CLAUSE + MASTER PREFIX + SZENENPROMPT + HARD NEGATIVE
+
+==================================================
+QA
+==================================================
+
+Die 26 Bilder sollen NICHT wie 26 identische Kompositionen aussehen. Perspektive, Kameradistanz, Umgebung und Darstellungsmodus sollen sinnvoll wechseln: Wide Shot, Close-up, Over-the-shoulder, Detailshot, Research Scene, Concept Scene, Process Scene und Environmental Scene.
+
+Aber trotz dieser Abwechslung müssen sie wie EIN einziges visuelles System aussehen.
+
+STYLE FAIL, wenn:
+- die Hauptfigur plötzlich anders proportioniert ist
+- Linien oder Shading sichtbar wechseln
+- Farben in einen anderen Illustrationsstil kippen
+- normale Cartoon-Menschen erscheinen
+- Hintergrundpersonen nicht Stickman sind
+- 3D, CGI, Anime oder Fotorealismus auftaucht
+- das Bild wie ein anderer Kanal aussieht
+
+Bei STYLE FAIL: Bild nicht behalten. Mit derselben Master-Referenz neu generieren.
