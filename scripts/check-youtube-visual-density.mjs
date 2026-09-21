@@ -12,7 +12,11 @@ const walk = (dir) => {
   for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) walk(full);
-    else if (entry.isFile() && entry.name === 'phase1-scenes.json') plans.push(full);
+    else if (entry.isFile() && entry.name === 'phase1-scenes.json') {
+      const relative = path.relative(process.cwd(), full);
+      const parts = relative.split(path.sep);
+      if (!parts.includes('00-vorlage')) plans.push(full);
+    }
   }
 };
 
