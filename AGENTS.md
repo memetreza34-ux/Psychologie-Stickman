@@ -12,11 +12,12 @@ Danach lesen:
 1. `CANONICAL_RULES.md`
 2. `PROJECT_BRAIN.md`
 3. `rules/FORMAT_LOCK.md`
-4. `rules/YOUTUBE_THEMEN_SYSTEM.md`
-5. `rules/YOUTUBE_STYLE_LOCK.md`
-6. `rules/IMAGE_REFERENCE_LOCK.md`
-7. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-8. `rules/PRODUCTION_FORMAT_RULES.md`
+4. `rules/REEL_PROGRAMMATIC_VISUAL_RULES.md`
+5. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+6. `rules/YOUTUBE_STYLE_LOCK.md`
+7. `rules/IMAGE_REFERENCE_LOCK.md`
+8. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+9. `rules/PRODUCTION_FORMAT_RULES.md`
 
 ## Themenwelt
 
@@ -24,22 +25,27 @@ Die Kanalnische ist **Alltagspsychologie & menschliches Verhalten**.
 
 Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
 
-## Bildwelt
+## Bild-/Animationswelt
 
 Verbindlich ist **Universal Editorial Stickman World v1.2**. Jede sichtbare menschliche Figur bleibt Stickman; Umgebung und Gegenstände dürfen detailreicher und realitätsnäher sein.
 
-### Verbindlicher Referenz-Workflow
+### YouTube: bildbasierter Referenz-Workflow
 
-Bei Serienbildern gilt:
-1. zuerst Bild 01 bzw. ein explizites Masterbild alleine generieren,
-2. visuell prüfen und freigeben,
-3. dieses Bild als Master-Referenz für alle Folgeassets verwenden,
-4. danach höchstens 5 neue Bilder pro Batch erzeugen,
-5. jeden Batch gegen die Master-Referenz und untereinander prüfen,
-6. bei Style-Drift nur fehlerhafte Bilder neu generieren,
-7. erst nach vollständigem PASS mit dem nächsten 5er-Batch fortfahren.
+Wenn ein YouTube-Projekt Serienbilder nutzt, gilt der Referenz-Workflow aus `rules/IMAGE_REFERENCE_LOCK.md`.
 
-Kein Folgeasset darf die Master-Referenz eigenmächtig ersetzen. Details stehen in `rules/IMAGE_REFERENCE_LOCK.md`.
+### Reels: programmatic only
+
+Für alles unter `reels/` gilt standardmäßig:
+- keine Google-Flow-/externe Bildgenerierung
+- keine PNG/JPG-Serie als visuelle Produktionsgrundlage
+- kein Master-Referenzbild nötig
+- der Nutzer liefert nach Skriptfreigabe nur das finale Voice-over
+- Visuals werden direkt in Remotion mit React + SVG/CSS/programmatischen 2D-Komponenten gebaut
+- Worttimings steuern Szenen, Untertitel und Action-Cues
+- aktuell gesprochenes Untertitelwort ist gelb `#FFD84D`, übrige Wörter weiß
+- zentrale Animationen dürfen über `actionWord` exakt an ein gesprochenes Wort gekoppelt werden
+
+Details stehen in `rules/REEL_PROGRAMMATIC_VISUAL_RULES.md`.
 
 ## FORMAT HARD LOCK
 
@@ -49,7 +55,7 @@ Der Projektpfad entscheidet zwingend das Format.
 - **9:16**
 - **1080×1920**
 - **30 fps**
-- vertikale Bildkomposition
+- vertikale Komposition
 - Remotion: `Phase3Reel`
 - niemals als 16:9 planen oder final rendern
 
@@ -57,11 +63,9 @@ Der Projektpfad entscheidet zwingend das Format.
 - **16:9**
 - **1920×1080**
 - **30 fps**
-- horizontale Bildkomposition
+- horizontale Komposition
 - Remotion: `Phase3YouTube`
 - niemals als 9:16 planen oder final rendern
-
-Ein Bild wird direkt für sein Zielformat erzeugt. Falsches Seitenverhältnis anschließend nur zu croppen ist keine Standardlösung.
 
 ## Audio
 
@@ -72,29 +76,31 @@ Für beide Formate:
 - Wörter niemals abschneiden
 - Timings erst aus final verarbeitetem Audio
 
-## Bildsprache und Individualisierung
+## Individualisierung
 
-- sichtbarer Text im finalen Bild ausschließlich Deutsch, wenn Text überhaupt nötig ist
-- sonst lieber kein sichtbarer Text
-- jedes Bild individuell auf den aktuellen Sprechabschnitt/Visual Beat zuschneiden
-- Master-Referenz bestimmt den Stil, nicht die Komposition
-- keine generischen Wiederholungen derselben Pose oder desselben Bildaufbaus als Füllmaterial
-- Reels vertikal komponieren; YouTube horizontal komponieren
+- sichtbarer erklärender Text ausschließlich Deutsch, wenn Text überhaupt nötig ist
+- jeder Visual Beat wird individuell auf den aktuellen Sprechabschnitt zugeschnitten
+- keine generischen Wiederholungen derselben Pose oder desselben Aufbaus als Füllmaterial
+- Reels vertikal programmieren; YouTube horizontal komponieren
 
 ## Zwei getrennte Produktionsflächen
 
-- `youtube/` — ausschließlich reguläre YouTube-Longform-Projekte. Themen liegen direkt als eigene Ordner unter `youtube/`.
-- `reels/` — ausschließlich Reels/Shorts. Organisation nach Wochenordnern und darin Montag bis Sonntag.
+- `youtube/` — ausschließlich reguläre YouTube-Longform-Projekte
+- `reels/` — ausschließlich Reels/Shorts, Organisation nach Wochenordnern und Montag bis Sonntag
 
 Reels dürfen niemals unter `youtube/` liegen und YouTube-Projekte niemals unter `reels/`.
 
 ## Reihenfolge
 
-THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Phase 2 → Phase 3 → Final-QA.
+### YouTube
+THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 → Phase 2 → Phase 3 → FINAL-QA.
 
-Keine Phase überspringen. Skriptänderung setzt nachgelagerte semantische/visuelle Planung zurück.
+### Reels
+THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Nutzer-Audio → Audio-Normalisierung → Worttimings → Programmatic Scene Plan → Remotion-Animation + Untertitel → Render → FINAL-QA.
+
+Keine Phase überspringen. Skriptänderung setzt nachgelagerte Timings/Visuals zurück.
 
 ## Priorität
 
-Bei Formatkonflikten gilt ohne Ausnahme:
-**`rules/FORMAT_LOCK.md` gewinnt.**
+Bei Konflikten gilt:
+**`rules/FORMAT_LOCK.md` zuerst; für Reels zusätzlich `rules/REEL_PROGRAMMATIC_VISUAL_RULES.md`.**
