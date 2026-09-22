@@ -2,7 +2,7 @@
 
 Datum: **22.09.2026**
 
-Status: Reel vorbereitet — Skript, Quellen, Claim-Check, 24 Visual Beats und Bildprompts vorhanden. Audio/Bilder/Render noch ausstehend.
+Status: Inhaltlich vorbereitet — Skript, Quellen, Claim-Check und 24 Visual Beats vorhanden. Für die finale Produktion fehlen Nutzer-Audio, echte Worttimings, programmatic Scene Plan und Render.
 
 ## Thema
 
@@ -17,8 +17,23 @@ Status: Reel vorbereitet — Skript, Quellen, Claim-Check, 24 Visual Beats und B
 - Render-Komposition: `Phase3Reel`
 - kein 16:9-Reel
 
+## Reel-Visuals — PROGRAMMATIC HARD LOCK
+
+Dieses Reel wird **nicht aus extern generierten Bildern** gebaut.
+
+- kein Google Flow für Bildproduktion
+- keine PNG/JPG-Serie
+- kein Master-Referenzbild
+- keine 5er-Bildbatches
+- der Nutzer liefert nach Skriptfreigabe nur das Voice-over
+- Stickmen, Bahn, Objekte, Spotlight, Diagramme, Übergänge und Bewegungen werden direkt in Remotion/React/SVG/CSS gebaut
+- `02-bilder/` enthält nur ältere Vorarbeiten und ist für den programmatic Render **nicht die Produktionsquelle**
+
+Verbindliche Regel: `rules/REEL_PROGRAMMATIC_VISUAL_RULES.md`
+
 ## Audio
 
+- Nutzer liefert finales Voice-over
 - finales Voice-over exakt 1,10×
 - führende Stille entfernen
 - Pausen ab ungefähr 500 ms deutlich kürzen
@@ -26,40 +41,51 @@ Status: Reel vorbereitet — Skript, Quellen, Claim-Check, 24 Visual Beats und B
 - Wörter niemals abschneiden
 - Timings erst aus final verarbeitetem Audio
 
+## Untertitel
+
+- aus den echten Worttimings
+- kurze Wortgruppen
+- übrige Wörter weiß
+- aktuell gesprochenes Wort gelb `#FFD84D`
+- Highlight bewegt sich Wort für Wort synchron mit dem Audio
+- Untertitel in vertikaler Safe Area
+
+## Animation
+
+Jeder Visual Beat wird als eigene programmatic Szene bzw. Animationsaufgabe umgesetzt.
+
+Wichtige Aktionen bekommen ein `actionWord`. Der Start dieses gesprochenen Wortes löst die zentrale Animation aus, z. B.:
+- „verschüttest“ → Becher kippt / Kaffee fällt / Fleck erscheint
+- „Jeder“ → gefühlte Blicklinien erscheinen
+- „weniger“ → übertriebene Aufmerksamkeit schrumpft
+- „Spotlight-Effekt“ → Spotlight-Metapher baut sich auf
+
 ## Umfang
 
 - ca. 60–90 Sekunden
-- 24 Visual Beats / 24 geplante Bilder
+- 24 Visual Beats
 - Universal Editorial Stickman World v1.2
 - jede sichtbare menschliche Figur bleibt Stickman
-- Bild 01 wird zuerst allein in 9:16 erzeugt und als Master-Referenz freigegeben
-- Bild 02–24 werden ausschließlich mit Bild 01 als visueller Referenz erzeugt
+- keine Füllanimationen
+- jeder Beat zeigt genau den gerade gesprochenen Gedanken
 
-## 5er-Batch-Ablauf
+## Technischer Test
 
-1. Bild 01 allein in 9:16 generieren und prüfen.
-2. Bild 01 als `00-master-reference.png` freigeben.
-3. Batch 1: Bild 02–06 → QA.
-4. Batch 2: Bild 07–11 → QA.
-5. Batch 3: Bild 12–16 → QA.
-6. Batch 4: Bild 17–21 → QA.
-7. Batch 5: Bild 22–24 → QA.
-8. Kein nächster Batch, solange der vorherige nicht vollständig PASS ist.
+Im Repo existiert zusätzlich die Remotion-Komposition `ProgrammaticReelTest`.
 
-## Bildregeln
+Render-Befehl:
+`npm run render:reel:test`
 
-- jedes Bild individuell auf den gesprochenen Beat anpassen
-- jedes Bild nativ für die vertikale 9:16-Fläche komponieren
-- Master-Referenz hält Stil, Figuren-DNA, Linien, Farbverhalten und Shading konstant
-- Pose, Kamera, Perspektive, Umgebung, Requisiten und Licht pro Beat sinnvoll ändern
-- keine Füllbilder
-- sichtbarer Text nur wenn nötig und dann ausschließlich Deutsch
-- wenn Text nicht nötig ist, keinen Text erzwingen
-- kein 16:9-Bild nur nachträglich auf 9:16 croppen
+Der Test läuft ohne externe Bilder und demonstriert:
+- Stickman-Szenen
+- Übergänge
+- Audio-Wort-Cues
+- Karaoke-Untertitel
+- gelbes Active-Word-Highlight
 
 ## Struktur
 
-- `01-script-audio/` — Skript und Audio-Standard
-- `02-bilder/` — Bildprompts, Style, Continuity, Referenz und QA
-- `03-export/` — Upload-Paket
-- `04-projektdateien/` — Phase-1-Plan, Quellen, Claim-Check, Schnitt, Timings und Renderdaten
+- `01-script-audio/` — Skript und Nutzer-Audio
+- `02-bilder/` — Legacy-Vorarbeit; für programmatic Reels nicht renderrelevant
+- `03-export/` — finaler Reel-Export / Upload-Paket
+- `04-projektdateien/` — Quellen, Claim-Check, Visual Beats, Worttimings, programmatic Scene Plan und Renderdaten
