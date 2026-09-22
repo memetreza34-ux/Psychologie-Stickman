@@ -4,10 +4,13 @@ THEMA: Warum denkst du, alle schauen dich an? — Spotlight-Effekt
 STATUS
 Timing erst nach finalem 1,10×-Audio festlegen.
 
-FORMAT
-- 16:9
-- 1920×1080
+FORMAT — HARD LOCK
+- 9:16
+- 1080×1920
 - 30 fps
+- vertikal / Portrait
+- Render-Komposition: Phase3Reel
+- alle Bilder nativ als 9:16 erzeugen
 
 BILDABFOLGE
 01 Master Frame: Kaffeefleck in Bahn
@@ -41,6 +44,7 @@ BEWEGUNG
 - Concept-Szenen dürfen Pfeile/Lichtkegel subtil aufbauen
 - Bildwechsel exakt nach finalen Audio-Timings
 - kein Bild länger stehen lassen, wenn bereits ein neuer visueller Gedanke gesprochen wird
+- Bewegungen und Zooms müssen zur vertikalen 9:16-Komposition passen
 
 AUDIO
 - final exakt 1,10×
