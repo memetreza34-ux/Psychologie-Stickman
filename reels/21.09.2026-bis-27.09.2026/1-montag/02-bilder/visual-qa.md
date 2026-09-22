@@ -16,6 +16,22 @@ Bild 01 darf nur als Master-Referenz freigegeben werden, wenn:
 
 Wenn Bild 01 hier nicht besteht: **nicht weitergenerieren**, sondern Bild 01 neu erzeugen.
 
+## Verbindliche 5er-Batches
+
+Nach Freigabe von Bild 01:
+- Batch 1: Bild 02–06
+- Batch 2: Bild 07–11
+- Batch 3: Bild 12–16
+- Batch 4: Bild 17–21
+- Batch 5: Bild 22–26
+
+Für jeden Batch gilt:
+- [ ] bei allen fünf Bildern wurde Bild 01 als Master-Referenz angehängt
+- [ ] alle fünf Bilder einzeln gegen Bild 01 geprüft
+- [ ] alle fünf Bilder zusätzlich untereinander auf Stil-/Figuren-Konsistenz geprüft
+- [ ] fehlerhafte Einzelbilder neu generiert, gute Bilder beibehalten
+- [ ] nächster Batch erst nach vollständigem PASS gestartet
+
 ## Muss für jedes Bild 02–26 bestehen
 
 - [ ] Master-Referenz wurde bei der Generierung als Bildreferenz verwendet
@@ -48,11 +64,12 @@ Der Pilot gilt in der Bilddichte nur als bestanden, wenn:
 Der Pilot gilt visuell nur als bestanden, wenn:
 1. Bild 01 als Master-Referenz PASS ist,
 2. Bild 02–26 nachweisbar an dieser Master-Referenz ausgerichtet wurden,
-3. alle 26 Assets einzeln PASS sind,
-4. moderne, wissenschaftliche und abstrakte Szenen wie dieselbe Bildwelt wirken,
-5. kein einziges Bild wegen normaler Cartoon-Menschen aus dem Stickman-System ausbricht,
-6. Hintergrundmenschen in Stadt, Haltestelle, Labor und Forschung ebenfalls Stickman bleiben,
-7. kräftigere Farben genutzt werden, ohne die einheitliche Zeichen-DNA zu verlieren.
+3. alle fünf Batches einzeln PASS sind,
+4. alle 26 Assets einzeln PASS sind,
+5. moderne, wissenschaftliche und abstrakte Szenen wie dieselbe Bildwelt wirken,
+6. kein einziges Bild wegen normaler Cartoon-Menschen aus dem Stickman-System ausbricht,
+7. Hintergrundmenschen in Stadt, Haltestelle, Labor und Forschung ebenfalls Stickman bleiben,
+8. kräftigere Farben genutzt werden, ohne die einheitliche Zeichen-DNA zu verlieren.
 
 ## Besonders kritische Szenen
 
