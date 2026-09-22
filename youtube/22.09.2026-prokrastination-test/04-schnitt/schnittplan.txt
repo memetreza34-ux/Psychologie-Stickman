@@ -1,0 +1,55 @@
+SCHNITTPLAN — PROKRASTINATION TEST
+
+ZIEL
+- ungefähr 5 Minuten
+- 58 Visual Beats
+- 16:9 / 1920×1080 / 30 fps
+- Remotion-Komposition: Phase3YouTube
+- finales Voice-over exakt 1,10×
+
+GRUNDREGEL
+Der Schnitt folgt den 58 Phase-1-Beats. Kein Beat wird nur deshalb mit einem anderen zusammengelegt, um Bilder zu sparen. Neue Kernaussage = neues Bild.
+
+RHYTHMUS
+- Scene 01–06 Hook: schnell und klar, typischerweise ca. 3–5 s pro Bild
+- Scene 07–18 Definition/Ursachen: ca. 4–6 s, Vergleiche und Research etwas länger wenn nötig
+- Scene 19–35 Mechanismus/Stimmungsregulation: dichte Folge, Concept Shots sauber verständlich halten
+- Scene 36–43 Schuld/Deadline: Tempo leicht steigern, Deadline-Wendepunkt visuell spürbar machen
+- Scene 44–53 praktische Mechanismen/Forschung: ruhiger und präziser, keine hektische Motivation-Montage
+- Scene 54–58 Schluss: klarer Perspektivwechsel und 1–2 stärkere Abschlussbilder
+
+BEWEGUNG
+- überwiegend leichte Zooms, Pans oder Fokusverschiebungen
+- keine permanente künstliche Bewegung
+- Concept-/Diagramm-Szenen dürfen Pfeile, Gewichte, Timeline-Elemente oder Prozessschritte nacheinander einblenden
+- Bewegung darf niemals einen schlechten Bildprompt kaschieren
+- wenn ein Bild inhaltlich/stilistisch schwach ist: Asset neu generieren
+
+BILDDICHTE
+Zielwert ungefähr 4–6 Sekunden pro Bild. Länger nur, wenn exakt derselbe visuelle Gedanke weitergesprochen wird. Kein statisches Bild 15–20 Sekunden stehen lassen.
+
+AUDIO
+- Rohvoice erst nach finalem Skript
+- lange Pausen vor Speed-up straffen
+- dann exakt 1,10× bei erhaltener Tonhöhe
+- Wort-Timings ausschließlich aus final-voice.mp3
+- Bildwechsel aus finalen Wort-Timings + phase1-scenes.json ableiten
+
+PHASE 3
+Nach finalem Audio:
+1. word-timings.json erzeugen
+2. `map:phase1` auf die 58 speechSections anwenden
+3. scene-plan.json erzeugen
+4. alle 58 Bilder vorhanden und korrekt nummeriert prüfen
+5. render-props.json erzeugen
+6. Phase3YouTube rendern
+
+FINAL QA
+- Laufzeit ungefähr 5 Minuten, nicht künstlich auf 5:00 strecken
+- 16:9 korrekt
+- 58 Beats vollständig abgedeckt
+- Audio ohne abgeschnittene Wörter
+- keine auffälligen langen Pausen
+- Stickman-only in jedem sichtbaren Menschen
+- Stil über komplettes Video stabil
+- visuelle Dichte weder statisch noch hektisch
