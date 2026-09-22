@@ -8,24 +8,20 @@ Eigenständiges Produktionsrepo für **Alltagspsychologie & menschliches Verhalt
 
 - Themen-/Kanalpositionierung: **ALLTAGSPSYCHOLOGIE & MENSCHLICHES VERHALTEN**
 - Themen-System: `rules/YOUTUBE_THEMEN_SYSTEM.md`
-- Bildwelt: **LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.1**
+- Bild-/Animationswelt: **LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.2**
 - Style-Lock: `rules/YOUTUBE_STYLE_LOCK.md`
+- Reel-Programmatic-Lock: `rules/REEL_PROGRAMMATIC_VISUAL_RULES.md`
 - Visual-Beat-Regeln: `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - YouTube-Produktionsfläche: `youtube/`
 - Reel-Produktionsfläche: `reels/`
-- aktiver Reel-Test: `reels/21.09.2026-bis-27.09.2026/1-montag/`
+- technischer Reel-Test: Remotion-Komposition `ProgrammaticReelTest`
 
 ## Strukturprinzip
 
 ### YouTube
 Unter `youtube/` liegen Themen direkt als Projektordner. Kein zusätzlicher `longform/`-Zwischenordner.
 
-Ein YouTube-Thema enthält sichtbar:
-1. `01-script-audio/`
-2. `02-bilder/`
-3. `03-quellen/`
-4. `04-schnitt/`
-5. `06-projektdateien/`
+YouTube darf bildbasiert produzieren und verwendet `Phase3YouTube` in 16:9.
 
 ### Reels
 Unter `reels/` wird nach Kalenderwochen organisiert:
@@ -34,23 +30,44 @@ Unter `reels/` wird nach Kalenderwochen organisiert:
 Darin liegen:
 `1-montag` bis `7-sonntag`.
 
-Jeder Reeltag folgt dem kompakten Erklärkanal-Muster:
-1. `01-script-audio/`
-2. `02-bilder/`
-3. `03-export/`
-4. `04-projektdateien/`
+Reels werden **nicht als Bild-Slideshow produziert**. Der Nutzer liefert nach Skriptfreigabe nur das finale Voice-over. Aus finalem Audio + Worttimings + programmatic Scene Plan baut Remotion die komplette visuelle Ebene selbst.
 
-## Bildwelt-Kern
+Technische Kernkomponente:
+- `src/reels/ProgrammaticReel.tsx`
+
+Testkomposition:
+- `ProgrammaticReelTest`
+- Render: `npm run render:reel:test`
+
+## Bild-/Animationswelt-Kern
 
 - jede sichtbare menschliche Figur bleibt Stickman
 - realitätsnähere, detailreiche 2D-Umgebungen erlaubt
 - natürliche, klare Farben
 - kein Photorealismus, keine normalen Cartoon-Menschen, kein 3D/CGI
+- Reels halten die Stilkontinuität über wiederverwendbare React/SVG-Komponenten und Design-Tokens
 
 ## Visual Beats
 
-Ein wichtiger visueller Gedanke bekommt grundsätzlich ein eigenes starkes Bild. Longform nutzt meist 8–18 gesprochene Wörter pro Beat; Reels dürfen deutlich dichter schneiden.
+Ein wichtiger visueller Gedanke bekommt grundsätzlich einen eigenen Visual Beat.
+
+- YouTube: Visual Beat kann ein eigenes Bild sein.
+- Reels: Visual Beat wird als eigene Remotion-Szene oder klarer Animationsschritt umgesetzt.
+
+## Reel-Synchronität
+
+Worttimings aus dem finalen Voice-over steuern:
+- Szenenwechsel
+- Karaoke-Untertitel
+- gelbes Active-Word-Highlight `#FFD84D`
+- wichtige `actionWord`-Animationen
 
 ## Aktueller Test
 
-Montag, 21.09.2026: **„Warum greifen wir automatisch zum Handy?“** mit 26 geplanten Visual Beats.
+Der technische Beispieltest zeigt vier programmatic Szenen zum Spotlight-Effekt:
+1. Kaffee verschütten
+2. gefühlte Blicke
+3. reale geringere Aufmerksamkeit
+4. Spotlight-Metapher
+
+Der Test benötigt keine externen Bilder und kann zunächst ohne Audio gerendert werden. Für einen echten Audio-Sync-Test wird anschließend das Nutzer-Voice-over mit echten Worttimings eingesetzt.
