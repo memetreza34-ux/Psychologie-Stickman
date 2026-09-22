@@ -18,14 +18,14 @@ if (!/id="Phase3Reel"[\s\S]*?width=\{1080\}[\s\S]*?height=\{1920\}/.test(root)) 
 }
 
 const required = [
-  ['rules/FORMAT_LOCK.md', 'Reels', '9:16', '1080×1920'],
-  ['rules/FORMAT_LOCK.md', 'YouTube', '16:9', '1920×1080'],
+  ['rules/FORMAT_LOCK.md', 'reels', '9:16', '1080×1920'],
+  ['rules/FORMAT_LOCK.md', 'youtube', '16:9', '1920×1080'],
 ];
 
 for (const [file, ...needles] of required) {
-  const text = fs.readFileSync(file, 'utf8');
+  const text = fs.readFileSync(file, 'utf8').toLocaleLowerCase('de-DE');
   for (const needle of needles) {
-    if (!text.includes(needle)) fail(`${file} is missing ${needle}.`);
+    if (!text.includes(String(needle).toLocaleLowerCase('de-DE'))) fail(`${file} is missing ${needle}.`);
   }
 }
 

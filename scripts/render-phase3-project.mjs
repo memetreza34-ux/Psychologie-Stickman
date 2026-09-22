@@ -5,8 +5,8 @@ import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 
 const [formatArg, propsPath, outputPath] = process.argv.slice(2);
-const format = String(formatArg ?? '').toLowerCase();
-const targetFormat = format === 'youtube' ? 'youtube' : format === 'reel' || format === 'reels' ? 'reel' : null;
+const rawFormat = String(formatArg ?? '').trim().toLowerCase();
+const targetFormat = rawFormat.startsWith('youtube') ? 'youtube' : rawFormat.startsWith('reel') ? 'reel' : null;
 const composition = targetFormat === 'youtube' ? 'Phase3YouTube' : targetFormat === 'reel' ? 'Phase3Reel' : null;
 
 if (!composition || !propsPath || !outputPath) {

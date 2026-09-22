@@ -20,6 +20,6 @@ run(['scripts/validate-phase3-word-plan.mjs', wordTimingPath, scenePlanPath]);
 run(['scripts/validate-production-assets.mjs', scenePlanPath]);
 
 const plan = JSON.parse(fs.readFileSync(path.resolve(scenePlanPath), 'utf8'));
-const rawFormat = String(plan.format ?? '').toLowerCase();
-const format = rawFormat === 'youtube' ? 'youtube' : 'reel';
+const rawFormat = String(plan.format ?? '').trim().toLowerCase();
+const format = rawFormat.startsWith('youtube') ? 'youtube' : rawFormat.startsWith('reel') ? 'reel' : 'unknown';
 console.log(`PRODUCTION READY: PASS (${format})`);

@@ -9,11 +9,17 @@ if (!wordTimingPath || !scenePlanPath || !outputPath) {
   process.exit(1);
 }
 
+const normalizeFormat = (value) => {
+  const normalized = String(value ?? '').trim().toLowerCase();
+  if (normalized.startsWith('reel')) return 'reel';
+  if (normalized.startsWith('youtube')) return 'youtube';
+  return null;
+};
+
 const words = JSON.parse(fs.readFileSync(path.resolve(wordTimingPath), 'utf8'));
 const plan = JSON.parse(fs.readFileSync(path.resolve(scenePlanPath), 'utf8'));
-const rawFormat = String(plan.format ?? '').toLowerCase();
-const targetFormat = rawFormat === 'youtube' ? 'youtube' : rawFormat === 'reel' || rawFormat === 'reels' ? 'reel' : null;
-if (!targetFormat) throw new Error('format must be youtube, reel or reels');
+const targetFormat = normalizeFormat(plan.format);
+if (!targetFormat) throw new Error('format must identify youtube or reel');
 if (!Array.isArray(plan.sceneStartWords) || !plan.sceneStartWords.length) throw new Error('sceneStartWords required');
 
 const allowedEffects = new Set(['static', 'zoom-in', 'zoom-out', 'pan-left', 'pan-right']);
