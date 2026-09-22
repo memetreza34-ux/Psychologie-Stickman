@@ -7,6 +7,7 @@
     "render:youtube": "remotion render src/index.ts Phase3YouTube exports/youtube.mp4",
     "render:reel": "remotion render src/index.ts Phase3Reel exports/reel.mp4",
     "render:reels": "npm run render:reel",
+    "render:reel:test": "remotion render src/index.ts ProgrammaticReelTest exports/programmatic-reel-test.mp4",
     "render:project": "node scripts/render-phase3-project.mjs",
     "audio:youtube": "node scripts/prepare-youtube-voiceover.mjs",
     "audio:reels": "node scripts/prepare-youtube-voiceover.mjs",
