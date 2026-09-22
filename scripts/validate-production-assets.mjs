@@ -28,11 +28,8 @@ const safe = (input) => {
   return resolved;
 };
 
-const count = Array.isArray(plan.sceneStartWords) ? plan.sceneStartWords.length : 0;
 if (!format) errors.push('format must identify youtube or reel.');
-if (!count) errors.push('No scenes.');
 if (!plan.audio) errors.push('audio is required.');
-if (!plan.imageBasePath) errors.push('imageBasePath is required.');
 
 if (plan.audio) {
   try {
@@ -43,21 +40,31 @@ if (plan.audio) {
   }
 }
 
-if (plan.imageBasePath) {
-  try {
-    const dir = safe(plan.imageBasePath);
-    if (!fs.existsSync(dir)) {
-      errors.push(`Missing image directory: ${dir}`);
-    } else {
-      const ext = String(plan.imageExtension ?? 'png').replace(/^\./, '');
-      const digits = Number.isFinite(plan.imageDigits) ? plan.imageDigits : Math.max(2, String(count).length);
-      for (let index = 1; index <= count; index++) {
-        const file = path.join(dir, `${String(index).padStart(digits, '0')}.${ext}`);
-        if (!fs.existsSync(file) || !fs.statSync(file).size) errors.push(`Missing/empty image: ${file}`);
+if (format === 'reel') {
+  const scenes = Array.isArray(plan.programmaticScenes) ? plan.programmaticScenes : [];
+  if (!scenes.length) errors.push('programmaticScenes required for reel production.');
+  if (plan.imageBasePath) errors.push('Reels are programmatic; imageBasePath must not be required or used.');
+} else if (format === 'youtube') {
+  const count = Array.isArray(plan.sceneStartWords) ? plan.sceneStartWords.length : 0;
+  if (!count) errors.push('No YouTube scenes.');
+  if (!plan.imageBasePath) errors.push('imageBasePath is required for YouTube image production.');
+
+  if (plan.imageBasePath) {
+    try {
+      const dir = safe(plan.imageBasePath);
+      if (!fs.existsSync(dir)) {
+        errors.push(`Missing image directory: ${dir}`);
+      } else {
+        const ext = String(plan.imageExtension ?? 'png').replace(/^\./, '');
+        const digits = Number.isFinite(plan.imageDigits) ? plan.imageDigits : Math.max(2, String(count).length);
+        for (let index = 1; index <= count; index++) {
+          const file = path.join(dir, `${String(index).padStart(digits, '0')}.${ext}`);
+          if (!fs.existsSync(file) || !fs.statSync(file).size) errors.push(`Missing/empty image: ${file}`);
+        }
       }
+    } catch (error) {
+      errors.push(error.message);
     }
-  } catch (error) {
-    errors.push(error.message);
   }
 }
 
