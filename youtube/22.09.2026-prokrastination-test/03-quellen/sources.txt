@@ -1,0 +1,33 @@
+QUELLEN — PROKRASTINATION TEST
+
+S1 — Steel, P. (2007). The nature of procrastination: a meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.
+URL: https://pubmed.ncbi.nlm.nih.gov/17201571/
+DOI: 10.1037/0033-2909.133.1.65
+Verwendung: Definition/Einordnung als Selbstregulationsproblem; starke Zusammenhänge u. a. mit Aufgaben-Unangenehmheit, zeitlicher Verzögerung, Selbstwirksamkeit und Impulsivität; Temporal-Motivation-Perspektive.
+
+S2 — Svartdal, F. et al. (2020). How Study Environments Foster Academic Procrastination: Overview and Recommendations. Frontiers in Psychology, 11, 540910.
+URL: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.540910/full
+Verwendung: Aufgaben-Unangenehmheit; Prokrastination als kurzfristige Stimmungsregulation; unangenehme Gefühle können kurzfristig durch Vermeidung reduziert werden.
+
+S3 — Gustavson, D. E. et al. (2017). Academic Procrastination and Goal Accomplishment: A Combined Experimental and Individual Differences Investigation.
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC5608091/
+PMID: 28943742
+DOI: 10.1016/j.lindif.2017.01.010
+Verwendung: Experiment mit SMART-Zielen und Implementation Intentions; in dieser Studie keine signifikante Reduktion der akademischen Prokrastination durch diese einfachen Interventionen.
+
+S4 — Rozental, A. et al. (2018). Targeting Procrastination Using Psychological Treatments: A Systematic Review and Meta-Analysis. Frontiers in Psychology, 9, 1588.
+URL: https://pubmed.ncbi.nlm.nih.gov/30214421/
+PMCID: PMC6125391
+DOI: 10.3389/fpsyg.2018.01588
+Verwendung: Psychologische Behandlungen zeigten im Mittel einen kleinen Nutzen; CBT-Subgruppe moderater Nutzen, jedoch nur wenige Studien und deutliche Heterogenität im Gesamtmaterial.
+
+S5 — Svartdal, F. et al. / Frontiers (2021). Basic Behavioral Processes Involved in Procrastination.
+URL: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.769928/full
+Verwendung: Verhaltensmodell zu Aufgaben-Unangenehmheit, zunehmender Deadline-/Zeitdruck und möglicher Verstärkung des Aufschiebens durch kurzfristige Entlastung.
+
+REDAKTIONELLE REGELN
+- Keine Aussage im Video als Diagnose formulieren.
+- Keine einfache „Dopamin = Prokrastination“-Erklärung verwenden.
+- Keine Behauptung, dass Smartphone-Nutzung allein Prokrastination verursacht.
+- Praktische Schlussfolgerungen als Mechanismus-/Verhaltensvorschläge formulieren, nicht als garantierte Behandlung.
+- Bei Interventionen ausdrücklich keine Universalwirkung behaupten.
