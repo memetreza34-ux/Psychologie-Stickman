@@ -1,0 +1,35 @@
+CONTINUITY — PROKRASTINATION TEST
+
+HAUPTFIGUR
+- wiederkehrender neutraler junger erwachsener Stickman
+- einfacher runder Kopf, minimale Gesichtszüge, dünne dunkle Arme/Beine, kleiner vereinfachter Torso
+- dunkelblauer Pullover
+- anthrazitfarbene Hose
+- helle Schuhe
+- keine realistische Anatomie, keine detaillierten Hände
+
+UMGEBUNG
+- moderner europäischer Alltag 2026
+- Homeoffice/Schreibtisch, Laptop, Smartphone, Kalender, Lernmaterialien und normale Wohnräume glaubwürdig darstellen
+- keine Markenlogos
+- sichtbarer Text möglichst vermeiden; falls nötig ausschließlich Deutsch
+- Umgebung darf deutlich detailreicher als die Figuren sein, bleibt aber stilisierte 2D-Illustration
+
+KONTINUITÄT
+- Alltagsszenen mit Hauptfigur behalten Kleidung, Figurenproportionen und Stickman-DNA bei
+- Tageszeit und Licht dürfen sich mit der Handlung verändern
+- Concept-/Diagramm-Szenen dürfen Umgebung reduzieren, aber Figurenstil, Linienlogik und Farbcharakter bleiben identisch
+- Research-Szenen dürfen andere Stickman-Figuren zeigen; sämtliche Menschen ohne Ausnahme bleiben dieselbe Stickman-Anatomie
+
+MASTER
+- Szene 01 dient als Master-Referenz
+- erst Szene 01 freigeben
+- Szene 02–58 immer mit Szene 01 als Referenz generieren
+- maximal 5 neue Bilder pro Batch
+
+HARD FAIL
+- Hauptfigur wechselt erkennbar Design oder Kleidung ohne inhaltlichen Grund
+- normale Cartoon- oder realistische Menschen
+- andere Strich-/Shading-Sprache
+- 3D/CGI/Fotorealismus
+- vertikale 9:16-Komposition
