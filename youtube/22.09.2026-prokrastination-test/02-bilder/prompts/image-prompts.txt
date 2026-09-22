@@ -1,0 +1,197 @@
+IMAGE PROMPTS — PROKRASTINATION TEST — 58 BEATS
+
+FORMAT HARD LOCK
+- YouTube Longform
+- 16:9 horizontal
+- 1920×1080 target
+- never compose as 9:16
+
+MASTER PREFIX — prepend to EVERY scene prompt:
+universal editorial 2D stickman explainer world, 16:9 horizontal landscape composition, ALL human figures including background people use the same consistent minimalist stickman anatomy, round simple heads, minimal facial features, thin dark limbs and small simplified torsos, no conventional cartoon humans, richer grounded environment, clean dark organic outlines, clear natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, subtle cel illustration shading, educational visual storytelling, coherent visual hierarchy, modern 2026 environment where appropriate
+
+MAIN CHARACTER LOCK:
+neutral young adult stickman, dark blue sweatshirt, charcoal trousers, light shoes, same proportions and drawing DNA as master scene 01
+
+HARD NEGATIVE — append to EVERY scene prompt:
+no photorealism, no fully realistic humans, no conventional cartoon humans, no semi-realistic humans, no mixed human character styles, no realistic human anatomy, no detailed realistic hands, no 3D CGI, no anime, no chibi, no permanent whiteboard emptiness, no permanent beige sepia pastel wash, no unnecessary text blocks, no brand logos, no vertical 9:16 framing
+
+WORKFLOW
+1. Generate Scene 01 alone and approve it as master reference.
+2. Attach Scene 01 as image reference for every Scene 02–58 generation.
+3. Generate at most 5 new images per batch.
+4. Run visual QA after every batch.
+5. If any visible human is not Stickman DNA: regenerate that asset.
+
+SCENE 01
+Wide shot in a modern home office: main Stickman at desk with laptop, large calendar clearly communicating three days until a deadline through simple visual layout; calm evening light, task ready to start, strong master-reference quality, balanced 16:9 composition with room around the character.
+
+SCENE 02
+Medium shot: laptop document open in foreground, main Stickman hesitates and looks sideways toward several tempting alternatives in the room, visual attention clearly leaving the important task.
+
+SCENE 03
+Dynamic but clean visual montage within one horizontal frame: dishes in kitchen area, phone notification, generic short-video screen as three competing distractions around the same Stickman; laptop task remains visibly untouched.
+
+SCENE 04
+Time-loss storytelling: wall clock shifts from 18:00 to 18:20, the Stickman has cleaned and scrolled but the laptop document remains unchanged, clear sense of productive-looking avoidance.
+
+SCENE 05
+Split-time composition: present Stickman casually postpones while a future version of the same Stickman at a later date carries a visibly larger workload under a tighter clock and closer deadline.
+
+SCENE 06
+Concept scene: an important task card is deliberately pushed farther along a timeline despite a visible future-cost warning, simple educational metaphor for voluntary delay despite expected consequences.
+
+SCENE 07
+Clear A/B comparison: deliberate rational delay on one side versus procrastination on the other; first path organized and intentional, second path avoidant with accumulating cost, understandable without long text.
+
+SCENE 08
+Rational waiting example: missing information visibly arrives from another Stickman while the main character works on a genuinely higher-priority task, organized workspace and calm body language.
+
+SCENE 09
+Main Stickman pushes a task marker toward 'later' on a timeline while consequences accumulate behind it: shrinking available time, more pressure, same unfinished project.
+
+SCENE 10
+Editorial concept diagram of self-regulation: long-term goal on one side, current behavior-control point in the center, immediate distraction pulling the Stickman away on the other side.
+
+SCENE 11
+Simple character metaphor: main Stickman faces the task while an oversized simplistic discipline weight or battery icon suggests the common 'just more discipline' explanation is incomplete.
+
+SCENE 12
+Question-driven wide composition: important task glows at center of workspace while the Stickman physically steps away from it, visually emphasizing the paradox of avoiding something important.
+
+SCENE 13
+Close-up emotional task perception: boring repetitive document on laptop, slumped Stickman posture, restrained colors around the task while the broader scene remains naturally colored; the task itself feels aversive.
+
+SCENE 14
+Messy project board with unclear steps, tangled arrows and several unresolved starting points; main Stickman cannot identify the first concrete action.
+
+SCENE 15
+Performance-worry metaphor: unfinished work under a soft judgment spotlight, main Stickman imagines a visibly poor result; restrained worry, no medical or diagnostic symbolism.
+
+SCENE 16
+Oversized project folder or mountain of work towers over the small main Stickman at the desk, making the first step look disproportionately difficult while remaining in the same 2D editorial world.
+
+SCENE 17
+Long horizontal timeline: effort is immediate beside the Stickman, while the meaningful reward sits far in the distance, visually weak because of temporal distance.
+
+SCENE 18
+Modern research scene: several Stickman researchers review a clean meta-analysis board with four visual icon clusters representing task aversiveness, temporal delay, self-efficacy and impulsivity; no dense readable text.
+
+SCENE 19
+Concept comparison correcting a misconception: not 'work versus laziness' but two immediate options, one demanding task and one easy alternative, both clearly presented in the same moment.
+
+SCENE 20
+Decision scale: unpleasant task-now on one side and easier alternative-now on the other, main Stickman between them, immediate emotional cost visually tipping the choice.
+
+SCENE 21
+Close-up at laptop: main Stickman shows subtle hesitation through pose, with a dull task panel and two small abstract thought symbols for boredom and uncertainty.
+
+SCENE 22
+Thought scene: main Stickman imagines the finished result being judged as insufficient, with a restrained comparison board and no exaggerated fear imagery.
+
+SCENE 23
+Action scene: main Stickman opens a generic app, begins a tiny cleaning task and checks another tab while the important project sits clearly untouched in the background.
+
+SCENE 24
+Before-and-after emotional pressure visualization in one frame: pressure high while facing the task, then visibly lower immediately after switching to a distraction; same Stickman and same room.
+
+SCENE 25
+The unfinished task folder remains physically present on the desk while the Stickman looks temporarily relieved after turning away from it; problem unchanged, feeling temporarily better.
+
+SCENE 26
+Educational concept: short-term mood-regulation loop, with emotional state changing while the central task icon remains fixed and unresolved; clean process composition.
+
+SCENE 27
+Two-layer metaphor: external problem remains exactly the same, while an internal dark emotional cloud around the Stickman temporarily shrinks after avoidance.
+
+SCENE 28
+Immediate reward pulse from a generic smartphone creates a bright short path beside the Stickman while the important task remains on a longer path; phone is attractive but not villainized.
+
+SCENE 29
+Phone shown as one accessible alternative among several normal distractions, not as the sole cause; one tap instantly redirects the main Stickman's attention and mood away from the laptop.
+
+SCENE 30
+Horizontal comparison: delayed reward from finishing the important project sits far to the right, while an immediate small reward from distraction is directly beside the Stickman now.
+
+SCENE 31
+Timeline advances to the next morning; same home office and same unfinished laptop document remain, but the calendar is now visibly closer to deadline.
+
+SCENE 32
+Desk scene becomes tighter and more pressured: less remaining time, larger clock, subtle guilt symbol and stress lines, while the same project is still unfinished.
+
+SCENE 33
+Same task from earlier now appears visually heavier because extra time pressure has accumulated around it; continuity with earlier project object is obvious.
+
+SCENE 34
+A circular loop begins to form around the main Stickman: aversive task leads toward avoidance, with the path continuing into short relief and later pressure.
+
+SCENE 35
+Full clean circular process diagram: aversive task → avoidance → short relief → more pressure → avoidance; use icons and arrows, visible words only if necessary and only in German.
+
+SCENE 36
+Main Stickman looks at a guilt cloud that points back toward the task but does not automatically produce action; visually separate guilt from actual task engagement.
+
+SCENE 37
+Emotional load stacks onto the task card: guilt and stress make it heavier, while a side path toward distraction becomes tempting again; clear cause-and-effect composition.
+
+SCENE 38
+Deadline turning point: same main Stickman suddenly leans toward the laptop while a large clock is now close in the foreground, visually asking why action starts now.
+
+SCENE 39
+Deadline and consequence move into immediate foreground; available time block visibly shrinks, main Stickman sees the cost of not acting as something happening now rather than later.
+
+SCENE 40
+Decision scale flips compared with Scene 20: starting the task now is less aversive than missing the deadline, and the Stickman finally chooses the laptop.
+
+SCENE 41
+Night work scene: concentrated main Stickman completes a large amount rapidly under a near deadline; subtle split-screen memory shows two earlier low-output days without clutter.
+
+SCENE 42
+Correction scene: visual myth that pressure is the 'best method' is crossed out; nearby icons show fatigue, rushed work and almost no margin for error.
+
+SCENE 43
+Concept transition: incentive landscape changes over time, with previously distant long-term cost moving close and shifting the balance toward action.
+
+SCENE 44
+Practical mechanism scene: instead of a giant motivation lightning bolt, the overwhelming task is transformed into one small, concrete first action placed directly in front of the Stickman.
+
+SCENE 45
+Oversized project checklist with the entire project treated as one intimidating block; main Stickman stands before it unsure where to begin.
+
+SCENE 46
+Same project transformed into an open file with exactly three simple bullet placeholders; beside it, a second visual example shows an intimidating two-hour study block waiting to be simplified.
+
+SCENE 47
+Study example becomes concrete: materials are already on the desk and the first exercise is open; body language shows beginning, while composition makes clear this is not a magical instant cure.
+
+SCENE 48
+Before/after task structure: left side is a huge foggy project cloud, right side is one visible next step connected to a short arrow, same main Stickman moving toward clarity.
+
+SCENE 49
+Environment-design scene: smartphone is placed in another room, distracting tabs are closed, workspace is simplified before the work session starts; proactive friction reduction.
+
+SCENE 50
+Temptation-control scene: barrier is created before the tempting cue is directly present; phone remains far away while the Stickman is already seated and engaged with the task.
+
+SCENE 51
+Research caution scene: several intervention tools sit on a table, none presented as a universal winner; multiple Stickman participants show visibly different responses.
+
+SCENE 52
+Controlled-study illustration: a SMART-goal card and an if-then plan are tested, while a simple results board shows no clear reliable reduction versus control; minimal German labels only if essential.
+
+SCENE 53
+Systematic-review scene: several different study cards feed into one summary panel showing small-to-moderate average improvement but visible variation across studies and people.
+
+SCENE 54
+Perspective reset: main Stickman looks toward a future version across a timeline; frame shows that the issue is a present-versus-future conflict, not lack of caring about the future.
+
+SCENE 55
+Two-path concept: long-term meaningful outcome on one route versus short-term easier feeling on the other; present Stickman stands at the branching choice point.
+
+SCENE 56
+Split-self composition: future Stickman proudly holds the finished project while present Stickman reaches toward immediate relief from current discomfort; same character DNA across both versions.
+
+SCENE 57
+Final correction: guilt cloud fades into the background while a clear first-step card moves to the visual center; structure replaces self-blame as focus.
+
+SCENE 58
+Strong closing hero frame: main Stickman calmly begins one small concrete action at the laptop, the distraction path is still visible but less attractive, confident wide 16:9 ending with clear visual resolution.
