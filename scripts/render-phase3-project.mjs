@@ -6,16 +6,12 @@ import {spawnSync} from 'node:child_process';
 
 const [formatArg, propsPath, outputPath] = process.argv.slice(2);
 const format = String(formatArg ?? '').toLowerCase();
-const compositionByFormat = {
-  youtube: 'Phase3YouTube',
-  reels: 'Phase3Reel',
-  reel: 'Phase3Reel',
-};
-const composition = compositionByFormat[format];
+const targetFormat = format === 'youtube' ? 'youtube' : format === 'reel' || format === 'reels' ? 'reel' : null;
+const composition = targetFormat === 'youtube' ? 'Phase3YouTube' : targetFormat === 'reel' ? 'Phase3Reel' : null;
 
 if (!composition || !propsPath || !outputPath) {
-  console.error('Usage: npm run render:project -- <youtube|reels> <render-props.json> <output.mp4>');
-  console.error('youtube = 16:9 / 1920x1080, reels = 9:16 / 1080x1920');
+  console.error('Usage: npm run render:project -- <youtube|reel|reels> <render-props.json> <output.mp4>');
+  console.error('youtube = 16:9 / 1920x1080, reel(s) = 9:16 / 1080x1920');
   process.exit(1);
 }
 
@@ -30,6 +26,12 @@ if (fs.existsSync(output)) {
   process.exit(1);
 }
 
+const parsedProps = JSON.parse(fs.readFileSync(props, 'utf8'));
+if (parsedProps.targetFormat && parsedProps.targetFormat !== targetFormat) {
+  console.error(`Format mismatch: command requested ${targetFormat}, props target ${parsedProps.targetFormat}.`);
+  process.exit(1);
+}
+
 fs.mkdirSync(path.dirname(output), {recursive: true});
 const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx';
 const result = spawnSync(
@@ -40,4 +42,4 @@ const result = spawnSync(
 
 if (result.error) throw result.error;
 if (result.status !== 0) process.exit(result.status ?? 1);
-console.log(`RENDER PASS [${format}] via ${composition}: ${output}`);
+console.log(`RENDER PASS [${targetFormat}] via ${composition}: ${output}`);
