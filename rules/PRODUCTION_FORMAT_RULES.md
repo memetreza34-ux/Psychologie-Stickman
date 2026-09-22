@@ -2,64 +2,89 @@
 
 **STATUS: VERBINDLICH**
 
-Diese Regeln gelten für **Reels und YouTube-Longform**.
+Zusätzlich gilt `rules/FORMAT_LOCK.md` mit höchster Format-Priorität.
 
-## 1. Bildformat / Videoformat
+## 1. Zwei getrennte Ausgabeformate
 
-Sowohl Reels als auch YouTube-Videos dieses Repositories werden im selben Querformat produziert:
+### Reels / Shorts
 
+Für alles unter `reels/` gilt:
+- Seitenverhältnis: **9:16**
+- Auflösung: **1080×1920**
+- Framerate: **30 fps**
+- Ausrichtung: vertikal / portrait
+- Remotion-Komposition: `Phase3Reel`
+- jedes Bild bereits als 9:16-Komposition planen und generieren
+- 16:9-Bilder nicht als Standardlösung nachträglich auf 9:16 croppen
+
+### YouTube-Longform
+
+Für alles unter `youtube/` gilt:
 - Seitenverhältnis: **16:9**
 - Auflösung: **1920×1080**
 - Framerate: **30 fps**
-- keine automatische 9:16-/Vertical-Ausgabe für Reels
-- jedes generierte Bild muss bereits als 16:9-Komposition geplant werden
-- wichtige Motive nicht an den äußersten Rand setzen, damit leichte Zooms/Pans möglich bleiben
+- Ausrichtung: horizontal / landscape
+- Remotion-Komposition: `Phase3YouTube`
+- jedes Bild bereits als 16:9-Komposition planen und generieren
 
 ## 2. Voice-over / Geschwindigkeit
 
 Verbindlich für beide Formate:
-
 - finales Voice-over: **exakt 1,10×**
 - Tonhöhe erhalten
 - führende Stille entfernen
 - Wörter niemals abschneiden
 - keine langen Leerstellen zwischen Sätzen
 - kurze natürliche Pausen bleiben erhalten
-- Pausen ab ungefähr **500 ms** werden deutlich gekürzt
+- Pausen ab ungefähr **500 ms** deutlich kürzen
 - Ziel-Restpause nach Kürzung: ungefähr **120 ms**, bevor 1,10× angewendet wird
 - Timings und Bildwechsel erst aus dem final bearbeiteten Audio ableiten
 
-Die 1,10×-Beschleunigung darf erst nach der Pausenbereinigung erfolgen.
+Die 1,10×-Beschleunigung erfolgt erst nach der Pausenbereinigung.
 
 ## 3. Sprache in Bildern
 
-- Wenn in einem Bild sichtbarer Text notwendig ist, muss dieser **Deutsch** sein.
-- Keine englischen Überschriften, Labels, Buttons, Schilder oder erklärenden Wörter im finalen Bild, sofern sie inhaltlich kontrollierbar sind.
-- Wenn Text für das Verständnis nicht nötig ist, **gar keinen sichtbaren Text** erzeugen.
+- Wenn sichtbarer Text notwendig ist, muss er **Deutsch** sein.
+- Keine englischen Überschriften, Labels, Buttons, Schilder oder erklärenden Wörter im finalen Bild, sofern kontrollierbar.
+- Wenn Text nicht nötig ist: **gar keinen sichtbaren Text** erzeugen.
 - Markenlogos und unnötige UI-Texte vermeiden.
-- Bildprompts dürfen technisch auf Englisch formuliert sein; die sichtbare Sprache im erzeugten Bild bleibt Deutsch.
+- Bildprompts selbst dürfen auf Englisch formuliert sein.
 
 ## 4. Jedes Bild individuell anpassen
 
-Jeder Visual Beat bekommt eine **eigene, inhaltlich passende Bildidee**.
+Jeder Visual Beat bekommt eine eigene, inhaltlich passende Bildidee.
 
 Verbindlich:
 - Bild zeigt exakt den aktuell gesprochenen Gedanken.
-- Komposition, Kameradistanz, Handlung, Umgebung, Requisiten, Licht und Fokus werden für den jeweiligen Beat individuell gewählt.
+- Komposition, Kameradistanz, Handlung, Umgebung, Requisiten, Licht und Fokus werden pro Beat individuell gewählt.
 - Kein generisches Standardbild nur mit ausgetauschtem Gegenstand.
-- Nicht mehrfach dieselbe Pose oder denselben Bildaufbau verwenden, wenn der Inhalt eine bessere neue Darstellung erlaubt.
-- Ein Master-Referenzbild sperrt den **Stil**, nicht die Komposition.
-- Stilkontinuität und visuelle Abwechslung müssen gleichzeitig bestehen.
+- Keine unnötige Wiederholung derselben Pose oder desselben Bildaufbaus.
+- Master-Referenz sperrt den **Stil**, nicht die Komposition.
 - Keine späteren Informationen vorwegnehmen.
-- Keine Füllbilder nur zur Erhöhung der Bildanzahl.
+- Keine Füllbilder.
 
 Kurzform:
-**Master-Referenz bestimmt WIE. Visual Beat bestimmt WAS. Jede Szene bestimmt ihre eigene beste Komposition.**
+**Master-Referenz bestimmt WIE. Visual Beat bestimmt WAS. Zielplattform bestimmt das BILDFORMAT.**
 
-## 5. Final-QA
+## 5. Formatgerechte Komposition
+
+### Reels 9:16
+- Motive vertikal staffeln.
+- Hauptmotiv ausreichend groß halten.
+- wichtige Inhalte nicht an äußerste Ober-/Unterkante setzen.
+- bei Gruppen Tiefe und vertikale Ebenen nutzen statt alles horizontal nebeneinanderzustellen.
+- Close-ups, Halbtotalen und vertikale Environment Shots bewusst einsetzen.
+
+### YouTube 16:9
+- horizontale Breite für Umgebung, Vergleiche und Abläufe nutzen.
+- Vordergrund, Mittelgrund und Hintergrund sinnvoll verteilen.
+- Raum für leichte Zooms/Pans lassen.
+
+## 6. Final-QA
 
 Vor Export prüfen:
-- 16:9 / 1920×1080 / 30 fps korrekt
+- Reel: **9:16 / 1080×1920 / 30 fps**
+- YouTube: **16:9 / 1920×1080 / 30 fps**
 - finales Audio tatsächlich 1,10×
 - lange Pausen entfernt/gestrafft
 - keine abgeschnittenen Wörter
@@ -67,3 +92,5 @@ Vor Export prüfen:
 - jedes Bild individuell auf seinen Sprechabschnitt angepasst
 - alle Menschen weiterhin Stickman
 - Stil bleibt über Master-Referenz konsistent
+
+**HARD FAIL:** Reel in 16:9 oder YouTube-Longform in 9:16.
