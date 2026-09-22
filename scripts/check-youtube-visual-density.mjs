@@ -18,21 +18,23 @@ const walk = (dir) => {
 
 roots.forEach(walk);
 
-if (plans.length === 0) {
+const productionPlans = plans.filter((planPath) => !planPath.split(path.sep).includes('00-vorlage'));
+
+if (productionPlans.length === 0) {
   console.log('VISUAL DENSITY: PASS — no production phase1-scenes.json files found.');
   process.exit(0);
 }
 
 const failures = [];
 
-for (const planPath of plans) {
+for (const planPath of productionPlans) {
   const raw = JSON.parse(fs.readFileSync(planPath, 'utf8'));
   const plan = resolvePhase1Plan(raw, planPath);
   const scenes = Array.isArray(plan.scenes) ? plan.scenes : [];
   const counts = scenes.map((scene) => countWords(scene.speechSection));
   const totalWords = counts.reduce((sum, value) => sum + value, 0);
-  const average = scenes.length ? totalWords / scenes.length : Infinity;
-  const longest = counts.length ? Math.max(...counts) : Infinity;
+  const average = scenes.length ? totalWords / scenes.length : 0;
+  const longest = counts.length ? Math.max(...counts) : 0;
   const minimumSceneCount = Math.ceil(totalWords / 20);
   const tooLong = counts.map((words, index) => ({scene: index + 1, words})).filter((item) => item.words > 28);
 
@@ -44,7 +46,7 @@ for (const planPath of plans) {
   console.log(`Minimum density floor for this script: ${minimumSceneCount} scenes`);
 
   if (scenes.length === 0) failures.push(`${planPath}: no visual beats.`);
-  if (average > 18) failures.push(`${planPath}: average ${average.toFixed(1)} words/scene exceeds hard 18-word average.`);
+  if (scenes.length > 0 && average > 18) failures.push(`${planPath}: average ${average.toFixed(1)} words/scene exceeds hard 18-word average.`);
   if (scenes.length < minimumSceneCount) failures.push(`${planPath}: ${scenes.length} scenes is below density floor ${minimumSceneCount}.`);
   if (tooLong.length > 0) failures.push(`${planPath}: scene(s) above 28 spoken words: ${tooLong.map((item) => `${item.scene}=${item.words}`).join(', ')}.`);
 
