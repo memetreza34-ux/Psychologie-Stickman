@@ -1,4 +1,11 @@
-# VISUAL QA — DIENSTAG REEL
+# VISUAL QA — DIENSTAG REEL — 9:16
+
+## Format Hard Lock
+- [ ] jedes Asset nativ 9:16 komponiert
+- [ ] Zielauflösung 1080×1920
+- [ ] keine 16:9-Komposition, die nur nachträglich beschnitten wurde
+- [ ] Hauptmotiv ausreichend groß und mobil lesbar
+- [ ] wichtige Inhalte nicht an äußerster Ober-/Unterkante
 
 ## Master 01
 Bild 01 darf nur freigegeben werden, wenn:
@@ -9,7 +16,7 @@ Bild 01 darf nur freigegeben werden, wenn:
 - [ ] Farbverhalten und Shading überzeugen
 - [ ] moderne Bahnwelt glaubwürdig und 2D bleibt
 - [ ] alle Hintergrundpersonen ebenfalls Stickman
-- [ ] 16:9-Komposition funktioniert
+- [ ] 9:16-Komposition funktioniert
 - [ ] kein lesbarer englischer Text
 
 ## Jedes Bild 02–24
@@ -22,7 +29,7 @@ Bild 01 darf nur freigegeben werden, wenn:
 - [ ] Bild erklärt exakt den gesprochenen Beat
 - [ ] keine spätere Aussage vorweggenommen
 - [ ] eigene starke Komposition, kein Füllbild
-- [ ] 16:9 mit Raum für leichte Zooms/Pans
+- [ ] nativ 9:16 mit Raum für leichte Zooms/Pans
 
 ## Batch-QA
 - Batch 1: 02–06
@@ -36,11 +43,12 @@ Der nächste Batch startet erst, wenn alle Bilder des vorherigen Batches PASS si
 ## Besonders kritisch
 - 06/07: mehrere Personen, kein Cartoon-Mensch-Drift
 - 09: Vergleich muss ohne Text verständlich sein
-- 17–20: abstrakte Psychologie muss trotzdem dieselbe Bildwelt bleiben
+- 17–20: abstrakte Psychologie muss dieselbe Bildwelt bleiben
 - 21: nicht fälschlich zeigen, dass niemand hinsieht
-- 23: Theatermetapher darf nicht in einen anderen Illustrationsstil kippen
+- 23: Theatermetapher darf nicht in anderen Illustrationsstil kippen
 
 ## Hard Fail
+- 16:9 / Landscape-Asset
 - normale Cartoon-/realistische Menschen
 - anderes Figuren-Design als Master
 - 3D/CGI/Anime/Fotorealismus

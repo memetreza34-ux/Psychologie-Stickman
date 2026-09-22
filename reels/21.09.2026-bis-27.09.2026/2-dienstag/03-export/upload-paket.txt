@@ -15,11 +15,15 @@ Du denkst nach einem peinlichen Moment, jeder hätte es bemerkt? Der Spotlight-E
 HASHTAGS
 #Psychologie #Verhalten #SpotlightEffekt #Wissen
 
-FORMAT
-16:9 · 1920×1080 · 30 fps
+FORMAT — HARD LOCK
+9:16 · 1080×1920 · 30 fps · vertikal
+Render-Komposition: Phase3Reel
 
 AUDIO
 Finales Voice-over 1,10×, Pausen bereinigt.
+
+BILDER
+Alle Assets nativ in 9:16 erzeugen; sichtbarer Text nur wenn nötig und dann Deutsch.
 
 HINWEIS
 Keine medizinische Diagnose oder Therapieaussage. Quellen/Claim-Check liegen unter `04-projektdateien/quellen/`.

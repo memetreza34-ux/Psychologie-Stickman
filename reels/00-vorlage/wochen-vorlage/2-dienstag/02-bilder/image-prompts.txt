@@ -1,27 +1,35 @@
-IMAGE PROMPTS — PRODUKTIONSSTANDARD
+IMAGE PROMPTS — REEL PRODUKTIONSSTANDARD
 
-FORMAT
-- jedes Bild in 16:9
-- Zielauflösung 1920×1080
-- für Reels und YouTube gleich
+FORMAT HARD LOCK
+- jedes Bild in 9:16
+- Zielauflösung 1080×1920
+- vertikale / Portrait-Komposition
+- nur für Reels; YouTube hat eine eigene 16:9-Vorlage
+- Bild direkt für 9:16 planen, nicht aus einer 16:9-Komposition croppen
 
 SPRACHE IM BILD
 - sichtbarer Text nur, wenn er wirklich nötig ist
 - wenn Text sichtbar ist: ausschließlich Deutsch
 - keine englischen Labels, Überschriften oder UI-Texte im finalen Bild
-- wenn Text nicht nötig ist: lieber ganz ohne Text
+- wenn Text nicht nötig ist: ganz ohne lesbaren Text
 
 INDIVIDUELLE ANPASSUNG
 - jeder Visual Beat bekommt eine eigene Bildidee
 - Komposition, Kamerawinkel, Perspektive, Pose, Handlung, Umgebung, Requisiten, Licht und Fokus individuell an den gesprochenen Beat anpassen
-- keine generische Wiederholung derselben Szene nur mit kleinen Änderungen
+- vertikale Staffelung und mobile Lesbarkeit bewusst nutzen
+- Hauptmotiv ausreichend groß halten
+- keine generische Wiederholung derselben Szene
 - keine Füllbilder
 - keine spätere Information vorwegnehmen
 
 MASTER-REFERENZ
-- Bild 01 bzw. das freigegebene Masterbild bestimmt Stil, Stickman-DNA, Linien, Farben und Shading
+- Bild 01 bzw. das freigegebene Masterbild wird ebenfalls in 9:16 / 1080×1920 erzeugt
+- es bestimmt Stil, Stickman-DNA, Linien, Farben und Shading
 - die Referenz bestimmt NICHT die Komposition
-- Folgeassets müssen stilistisch passen, dürfen aber visuell klar unterschiedlich komponiert sein
+- Folgeassets müssen stilistisch passen und trotzdem individuell komponiert sein
+
+MASTER FORMAT SUFFIX
+`vertical portrait 9:16 composition, 1080x1920, composition designed natively for a tall mobile frame, strong vertical hierarchy, mobile-first framing, no landscape composition`
 
 STIL
 Universal Editorial Stickman World v1.2.
@@ -37,7 +45,7 @@ Visual Task:
 [Was muss exakt während dieses Beats sichtbar sein?]
 
 Prompt:
-[Individuell angepasster finaler 16:9-Bildprompt]
+[Individuell angepasster finaler 9:16 / 1080×1920 Bildprompt]
 
 Beat 02
 Sprechtext:
@@ -47,4 +55,4 @@ Visual Task:
 [Eigene visuelle Aufgabe]
 
 Prompt:
-[Individuell angepasster finaler 16:9-Bildprompt]
+[Individuell angepasster finaler 9:16 / 1080×1920 Bildprompt]

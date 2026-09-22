@@ -10,10 +10,12 @@ Kurzer Psychologie-Reel-Test zur Frage, warum Smartphone-Checking teilweise auto
 
 ## Verbindliches Ausgabeformat
 
-- 16:9
-- 1920×1080
-- 30 fps
-- kein 9:16-Vertical-Export
+- **9:16**
+- **1080×1920**
+- **30 fps**
+- vertikal / Portrait
+- Render-Komposition: `Phase3Reel`
+- kein 16:9-Reel
 
 ## Audio
 
@@ -30,22 +32,23 @@ Kurzer Psychologie-Reel-Test zur Frage, warum Smartphone-Checking teilweise auto
 - 26 Visual Beats / 26 geplante Bilder
 - Universal Editorial Stickman World v1.2
 - jede sichtbare menschliche Figur bleibt Stickman
-- Bild 01 wird zuerst allein erzeugt und als Master-Referenz freigegeben
+- Bild 01 wird zuerst allein in **9:16** erzeugt und als Master-Referenz freigegeben
 - Bild 02–26 werden ausschließlich mit Bild 01 als visueller Referenz erzeugt
 - Generierung in kontrollierten 5er-Batches
 
 ## Bildregeln
 
 - jedes Bild individuell an den aktuell gesprochenen Beat anpassen
+- jedes Bild nativ für die vertikale 9:16-Fläche komponieren
 - nicht dieselbe Komposition nur leicht verändert wiederholen
 - Master-Referenz hält Stil/Stickman-DNA konstant, nicht Pose oder Kamerabild
 - sichtbarer Text im Bild nur wenn nötig und dann ausschließlich Deutsch
 - wenn Text nicht nötig ist, keinen Text erzwingen
-- alle Bilder 16:9 planen
+- kein 16:9-Bild nur nachträglich auf 9:16 croppen
 
 ## Verbindlicher Bildablauf
 
-1. Bild 01 allein generieren und prüfen.
+1. Bild 01 allein in 9:16 generieren und prüfen.
 2. Bild 01 als `00-master-reference.png` freigeben.
 3. Batch 1: Bild 02–06 → QA.
 4. Batch 2: Bild 07–11 → QA.

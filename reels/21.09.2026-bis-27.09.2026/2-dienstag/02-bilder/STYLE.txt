@@ -1,24 +1,40 @@
-STYLE — DIENSTAG REEL
+REEL STYLE — UNIVERSAL EDITORIAL STICKMAN WORLD v1.2
 
-UNIVERSAL EDITORIAL STICKMAN WORLD v1.2
+FORMAT HARD LOCK
+- 9:16
+- 1080×1920
+- 30 fps
+- vertikale / Portrait-Komposition
+- Master-Referenz muss ebenfalls 9:16 sein
 
-- 16:9 / 1920×1080 / 30 fps
+STIL
 - jede sichtbare menschliche Figur bleibt Stickman
-- keine normalen Cartoon-Menschen, keine semi-realistischen Menschen
-- Umgebung darf modern, farbig, glaubwürdig und detailreicher sein
-- kein Photorealismus, kein 3D/CGI, kein Anime
-- natürliche klare Farben, kein permanenter Beige-/Pastellschleier
+- runder einfacher Kopf, minimale Gesichtszüge, dünne dunkle Gliedmaßen, kleiner vereinfachter Torso
+- keine normalen Cartoon-Menschen, keine semi-realistischen Menschen, keine realistische Anatomie
+- Umgebung darf glaubwürdig, farbig, detailreich und realitätsnah wirken
 - saubere dunkle organische Outlines
+- natürliche klare Farben, kontrollierte Sättigung
 - dezentes 2D-/Cel-Shading
-- sichtbarer Text nur wenn notwendig und dann ausschließlich Deutsch
-- Bild 01 ist nach Freigabe die verbindliche Master-Referenz für Bild 02–24
-- Master-Referenz sperrt Figuren-DNA, Linien, Farbverhalten, Shading und Illustrationsfinish
-- jeder Visual Beat bekommt trotzdem eine individuell passende Komposition
+- kein Photorealismus, kein 3D/CGI, kein Anime
 
-HARD FAIL
-- normale Cartoon-Person statt Stickman
-- wechselnde Figurenanatomie
-- deutlich andere Linien-/Shading-Sprache als Bild 01
-- 3D/Fotorealismus/Anime
-- lesbarer englischer Text
-- generische Wiederholung derselben Komposition ohne inhaltlichen Grund
+VERTIKALE KOMPOSITION
+- Motive für die hohe 9:16-Fläche neu komponieren
+- Hauptmotiv ausreichend groß
+- Vordergrund/Mittelgrund/Hintergrund auch vertikal staffeln
+- wichtige Inhalte nicht an äußerste Ober-/Unterkante setzen
+- keine 16:9-Komposition erzeugen und anschließend nur beschneiden
+
+MASTER-REFERENZ
+- Bild 01 bzw. das freigegebene Masterbild bestimmt Figuren-DNA, Linien, Farbverhalten und Shading
+- Pose, Kamera, Umgebung und Bildaufbau werden für jeden Beat individuell angepasst
+- Folgeassets in höchstens 5er-Batches prüfen
+
+SPRACHE
+- sichtbarer Text nur wenn nötig und dann ausschließlich Deutsch
+- wenn Text nicht nötig ist: kein lesbarer Text
+
+Verbindliche zentrale Regeln:
+- `rules/FORMAT_LOCK.md`
+- `rules/YOUTUBE_STYLE_LOCK.md`
+- `rules/IMAGE_REFERENCE_LOCK.md`
+- `rules/PRODUCTION_FORMAT_RULES.md`

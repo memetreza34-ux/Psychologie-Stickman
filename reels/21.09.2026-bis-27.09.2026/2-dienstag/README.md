@@ -2,7 +2,7 @@
 
 Datum: **22.09.2026**
 
-Status: Reel vorbereitet — Skript, Quellen, Claim-Check, 24 Visual Beats und finale Bildprompts vorhanden. Audio/Bilder/Render noch ausstehend.
+Status: Reel vorbereitet — Skript, Quellen, Claim-Check, 24 Visual Beats und Bildprompts vorhanden. Audio/Bilder/Render noch ausstehend.
 
 ## Thema
 
@@ -10,10 +10,12 @@ Status: Reel vorbereitet — Skript, Quellen, Claim-Check, 24 Visual Beats und f
 
 ## Verbindliches Ausgabeformat
 
-- 16:9
-- 1920×1080
-- 30 fps
-- kein 9:16-Vertical-Export
+- **9:16**
+- **1080×1920**
+- **30 fps**
+- vertikal / Portrait
+- Render-Komposition: `Phase3Reel`
+- kein 16:9-Reel
 
 ## Audio
 
@@ -30,12 +32,12 @@ Status: Reel vorbereitet — Skript, Quellen, Claim-Check, 24 Visual Beats und f
 - 24 Visual Beats / 24 geplante Bilder
 - Universal Editorial Stickman World v1.2
 - jede sichtbare menschliche Figur bleibt Stickman
-- Bild 01 wird zuerst allein erzeugt und als Master-Referenz freigegeben
+- Bild 01 wird zuerst allein in 9:16 erzeugt und als Master-Referenz freigegeben
 - Bild 02–24 werden ausschließlich mit Bild 01 als visueller Referenz erzeugt
 
 ## 5er-Batch-Ablauf
 
-1. Bild 01 allein generieren und prüfen.
+1. Bild 01 allein in 9:16 generieren und prüfen.
 2. Bild 01 als `00-master-reference.png` freigeben.
 3. Batch 1: Bild 02–06 → QA.
 4. Batch 2: Bild 07–11 → QA.
@@ -47,11 +49,13 @@ Status: Reel vorbereitet — Skript, Quellen, Claim-Check, 24 Visual Beats und f
 ## Bildregeln
 
 - jedes Bild individuell auf den gesprochenen Beat anpassen
+- jedes Bild nativ für die vertikale 9:16-Fläche komponieren
 - Master-Referenz hält Stil, Figuren-DNA, Linien, Farbverhalten und Shading konstant
-- Pose, Kamera, Perspektive, Umgebung, Requisiten und Licht dürfen sich pro Beat sinnvoll ändern
+- Pose, Kamera, Perspektive, Umgebung, Requisiten und Licht pro Beat sinnvoll ändern
 - keine Füllbilder
 - sichtbarer Text nur wenn nötig und dann ausschließlich Deutsch
 - wenn Text nicht nötig ist, keinen Text erzwingen
+- kein 16:9-Bild nur nachträglich auf 9:16 croppen
 
 ## Struktur
 
