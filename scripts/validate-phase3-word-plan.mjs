@@ -18,26 +18,37 @@ const normalizeFormat = (value) => {
 
 const words = JSON.parse(fs.readFileSync(path.resolve(wordTimingPath), 'utf8'));
 const plan = JSON.parse(fs.readFileSync(path.resolve(scenePlanPath), 'utf8'));
-const starts = plan.sceneStartWords ?? [];
 const format = normalizeFormat(plan.format);
 const errors = [];
-const allowedEffects = new Set(['static', 'zoom-in', 'zoom-out', 'pan-left', 'pan-right']);
 
 if (!Array.isArray(words) || !words.length) errors.push('word-timings must be non-empty.');
 if (!format) errors.push('format must identify youtube or reel.');
-if (!starts.length || starts[0] !== 1) errors.push('sceneStartWords must start with 1.');
 
-starts.forEach((value, index) => {
-  if (!Number.isInteger(value) || value < 1 || value > words.length) errors.push(`Invalid scene start ${value}.`);
-  if (index && value <= starts[index - 1]) errors.push('sceneStartWords must strictly increase.');
-});
+if (format === 'reel') {
+  const scenes = Array.isArray(plan.programmaticScenes) ? plan.programmaticScenes : [];
+  const allowedKinds = new Set(['coffee-spill', 'crowd-gaze', 'reality', 'spotlight', 'phone', 'comparison', 'generic']);
+  if (!scenes.length) errors.push('programmaticScenes required for reels.');
 
-if (Array.isArray(plan.sceneEffects) && plan.sceneEffects.length) {
-  if (plan.sceneEffects.length !== starts.length) errors.push('sceneEffects length must match sceneStartWords length.');
-  plan.sceneEffects.forEach((effect) => {
-    if (!allowedEffects.has(effect)) errors.push(`Unsupported scene effect: ${effect}.`);
+  scenes.forEach((scene, index) => {
+    const label = `programmaticScenes[${index}]`;
+    if (!allowedKinds.has(scene.kind)) errors.push(`${label}.kind unsupported: ${scene.kind}`);
+    if (!Number.isInteger(scene.startWord) || scene.startWord < 1 || scene.startWord > words.length) errors.push(`${label}.startWord invalid.`);
+    if (!Number.isInteger(scene.endWord) || scene.endWord < scene.startWord || scene.endWord > words.length) errors.push(`${label}.endWord invalid.`);
+    if (scene.actionWord !== undefined && (!Number.isInteger(scene.actionWord) || scene.actionWord < scene.startWord || scene.actionWord > scene.endWord)) {
+      errors.push(`${label}.actionWord must be inside the scene word range.`);
+    }
+    if (index > 0 && scene.startWord <= scenes[index - 1].startWord) errors.push('programmaticScenes startWord values must strictly increase.');
   });
-  if (format === 'youtube') errors.push('YouTube must not contain sceneEffects; keep Longform static unless the format rules change.');
+
+  if (scenes.length && scenes[0].startWord !== 1) errors.push('First programmatic reel scene must start with word 1.');
+} else if (format === 'youtube') {
+  const starts = plan.sceneStartWords ?? [];
+  if (!starts.length || starts[0] !== 1) errors.push('sceneStartWords must start with 1.');
+  starts.forEach((value, index) => {
+    if (!Number.isInteger(value) || value < 1 || value > words.length) errors.push(`Invalid scene start ${value}.`);
+    if (index && value <= starts[index - 1]) errors.push('sceneStartWords must strictly increase.');
+  });
+  if (Array.isArray(plan.sceneEffects) && plan.sceneEffects.length) errors.push('YouTube must not contain sceneEffects.');
 }
 
 if (errors.length) {
