@@ -55,7 +55,30 @@ Wenn dieselbe Figur wiederkehrt, zusätzlich zur Stilreferenz konstant halten:
 - Haare/Brille/Accessoires
 - Smartphone bzw. wichtige wiederkehrende Requisiten
 
-## 5. Generierungsregel
+## 5. Generierung in 5er-Batches
+
+Nach der Freigabe von Bild 01 werden die restlichen Bilder **nicht alle auf einmal** erzeugt.
+
+Verbindlicher Ablauf:
+1. Bild 01 alleine erzeugen, prüfen und als Master-Referenz freigeben.
+2. Danach maximal **5 neue Bilder pro Batch** generieren.
+3. Jedes Bild des Batches bekommt dieselbe freigegebene Master-Referenz angehängt.
+4. Nach jedem Batch alle fünf Bilder einzeln gegen Bild 01 und zusätzlich untereinander prüfen.
+5. Fehlerhafte Bilder sofort neu generieren; gute Bilder nicht unnötig neu erzeugen.
+6. Erst wenn der gesamte Batch den Style-/Continuity-Check besteht, darf der nächste Batch gestartet werden.
+7. Die Master-Referenz bleibt Bild 01; spätere Bilder ersetzen sie nicht automatisch.
+
+Für den aktuellen 26-Bilder-Pilot gilt exakt:
+- MASTER: `01`
+- Batch 1: `02–06`
+- Batch 2: `07–11`
+- Batch 3: `12–16`
+- Batch 4: `17–21`
+- Batch 5: `22–26`
+
+Diese Blockgröße verhindert, dass ein Stilfehler über 20+ Bilder unbemerkt weitergetragen wird.
+
+## 6. Generierungsregel pro Bild
 
 Für Bild 02 bis Ende:
 1. Master-Referenz als Bildreferenz anhängen.
@@ -64,7 +87,21 @@ Für Bild 02 bis Ende:
 4. Ergebnis gegen Master-Referenz prüfen.
 5. Bei erkennbarem Stil-Drift neu generieren.
 
-## 6. HARD FAIL
+## 7. Batch-QA
+
+Nach jedem 5er-Batch prüfen:
+- gleiche Stickman-Grundanatomie wie Bild 01
+- gleiche Linienart und ungefähr gleiche Linienstärke
+- gleiche Flächen-/Shading-Logik
+- vergleichbares Farbverhalten und Sättigungsniveau
+- wiederkehrende Hauptfigur eindeutig dieselbe Figur
+- wiederkehrende Räume/Requisiten konsistent
+- alle Hintergrundmenschen ebenfalls Stickman
+- trotz verschiedener Perspektiven eindeutig dieselbe Bildwelt
+
+Wenn ein Bild durchfällt, wird nur dieses Bild mit derselben Master-Referenz neu generiert. Der nächste Batch startet erst nach vollständigem PASS.
+
+## 8. HARD FAIL
 
 Ein Bild wird verworfen, wenn:
 - Stickman plötzlich andere Anatomie hat
@@ -76,7 +113,7 @@ Ein Bild wird verworfen, wenn:
 - dasselbe Hauptmotiv wie eine andere Figur wirkt
 - die Umgebung plötzlich nach 3D, Anime, Fotorealismus oder einem anderen Illustrationssystem aussieht
 
-## 7. Priorität
+## 9. Priorität
 
 Bei Konflikt gilt:
 **Master-Referenz > generische Stilwörter im Szenenprompt.**
