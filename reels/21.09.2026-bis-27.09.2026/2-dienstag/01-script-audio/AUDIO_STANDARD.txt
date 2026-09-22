@@ -1,0 +1,21 @@
+VOICE-OVER STANDARD — DIENSTAG REEL
+
+ZIEL
+Zügiges, natürliches Erklärtempo ohne lange Leerstellen.
+
+VERBINDLICH
+- finales Voice-over exakt 1,10×
+- Tonhöhe erhalten
+- führende Stille entfernen
+- Pausen ab ungefähr 500 ms deutlich kürzen
+- Ziel-Restpause ungefähr 120 ms vor der 1,10×-Beschleunigung
+- kurze natürliche Pausen dürfen bestehen bleiben
+- Wörter niemals anschneiden
+- kein gehetzter oder roboterhafter Klang
+- Timings ausschließlich aus dem final bearbeiteten Audio erzeugen
+
+ABLAUF
+1. Rohes Voice-over aus finalem Skript erzeugen.
+2. `npm run audio:reels -- <raw-voiceover> <final-voice.mp3>`
+3. Danach ausschließlich `final-voice.mp3` verwenden.
+4. Wort- und Szenen-Timings erst aus dieser Datei ableiten.

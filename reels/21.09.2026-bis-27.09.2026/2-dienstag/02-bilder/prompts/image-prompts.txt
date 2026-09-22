@@ -1,0 +1,115 @@
+FINALE BILDPROMPTS — DIENSTAG REEL
+THEMA: WARUM DENKST DU, ALLE SCHAUEN DICH AN? — SPOTLIGHT-EFFEKT
+
+WICHTIG
+- Alle Bilder 16:9 / 1920×1080 planen.
+- Alle sichtbaren Menschen bleiben Stickman.
+- Bild 01 zuerst alleine generieren und freigeben.
+- Bild 01 danach bei JEDEM Bild 02–24 als Master-Referenz anhängen.
+- Sichtbarer Text im Bild nur wenn unbedingt nötig und dann ausschließlich Deutsch.
+- Wenn Text nicht nötig ist: keinen lesbaren Text erzeugen.
+- Die 24 Bilder müssen individuell komponiert sein. Stil bleibt gleich, Kamera/Perspektive/Ort dürfen sinnvoll wechseln.
+
+==================================================
+MASTER PREFIX
+==================================================
+`Universal editorial 2D stickman explainer world, 16:9, 1920x1080. ALL visible human characters must use the same minimalist stickman anatomy: simple round head, tiny minimal eyes and mouth, thin dark line arms and legs, small simplified torso, simple hands, no realistic anatomy. Rich grounded environment, clean dark organic outlines, natural recognizable colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, subtle cel shading, educational visual storytelling. The environment may be realistic in structure and detail, but every human remains unmistakably stickman. No readable English text anywhere in the image; if visible text is unavoidable it must be German.`
+
+REFERENCE MATCH CLAUSE — BILD 02–24
+`Match the attached master reference exactly for character design, stickman proportions, head shape, linework, line weight, color treatment, shading, illustration finish and overall visual language. Keep the same main character identity and do not redesign the style. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt.`
+
+HARD NEGATIVE
+`No normal cartoon humans, no semi-realistic people, no realistic faces, no realistic arms or legs, no detailed fingers, no mixed human styles, no 3D, no CGI, no anime, no chibi, no photorealism, no washed-out beige filter, no generic whiteboard emptiness, no brand logos, no readable English text, no unnecessary text blocks.`
+
+==================================================
+01 — MASTER FRAME / KAFFEEFLECK
+==================================================
+DIESES BILD ZUERST ALLEINE GENERIEREN.
+`Grounded modern commuter-train interior, medium-wide editorial master frame. One complete main stickman is clearly visible from head to shoes, standing beside a seat and looking down at a fresh coffee spill on the front of a dark cobalt-blue sweatshirt. The character wears dark gray trousers, simple white sneakers and carries a muted olive backpack. A reusable coffee cup is still in one hand. Several background commuters are present, all unmistakable stickmen, but none is dramatically staring. Modern train interior with blue-gray seats, metal poles, windows, bags and subtle warm morning light. This frame must clearly establish the exact main-character proportions, clothing, linework, colors, shading, environmental detail and overall visual language for the entire reel. Strong balanced composition, natural modern colors, no readable signage.`
+
+02 — DU GLAUBST, JEDER SIEHT ES
+`Same train and same main stickman from the attached master reference. Slightly wider viewpoint. The main character looks tense and scans the carriage, imagining that many eyes are directed toward the coffee stain. Use composition and gaze direction to show the feeling of being watched, but keep actual background commuters mostly occupied with their own activities. No floating text.`
+
+03 — WAHRSCHEINLICH WENIGER ALS GEDACHT
+`Over-the-shoulder view from behind the same main stickman. The carriage is busy, but most stickman commuters are reading, looking out the window, checking a phone, or talking quietly. Only one or two give a brief casual glance. Make the contrast between perceived attention and actual attention visually obvious without labels.`
+
+04 — SPOTLIGHT-EFFEKT
+`Abstract concept scene derived from the master-reference style. The main stickman stands under an exaggerated theatrical spotlight while the surrounding stickman crowd remains in normal ambient light and continues with everyday activities. The spotlight represents the character's own perception, not actual attention. Same linework, colors and cel shading as reference, clean graphic composition.`
+
+05 — WIR ÜBERSCHÄTZEN AUFMERKSAMKEIT
+`Split-perspective illustration in the same visual language. Left side: the main stickman imagines a large crowd focusing on them. Right side: the real scene shows the same crowd mostly focused elsewhere. Use the same main character and crowd stickman anatomy. No text labels.`
+
+06 — MEHRERE EXPERIMENTE
+`Modern social-psychology research setting. Three stickman researchers prepare a simple observation study with clipboards, a table, chairs and several participant stickmen. Rich but controlled university-lab environment. Every human is strictly stickman and rendered with the same line and shading system as the master reference.`
+
+07 — AUFFÄLLIGES T-SHIRT
+`Grounded university hallway or seminar-room scene. A participant stickman wears a deliberately very noticeable bright yellow T-shirt with a strange generic geometric graphic, no brand and no readable text. The participant looks self-conscious while entering a room containing several other stickman students. Preserve the master-reference anatomy and illustration finish.`
+
+08 — WIE VIELE WERDEN SICH ERINNERN?
+`Research scene from a new camera angle. The noticeable-shirt participant sits with a stickman researcher and makes an estimate using simple blank count cards or dots, while the group of observers is visible through a glass partition or in the background. Avoid readable words; communicate estimation visually with grouped dots and counting marks.`
+
+09 — SCHÄTZUNG HÖHER ALS TATSÄCHLICHE ERINNERUNG
+`Clean comparison illustration in the same style. On the left, a large imagined group of stickman observers appears to remember the bright shirt. On the right, a smaller actual group of stickman observers indicates recognition. Use quantities and body gestures rather than written numbers or labels. Keep it visually simple and instantly understandable.`
+
+10 — WARUM PASSIERT DAS?
+`Cinematic close-up of the same main stickman from the train, looking puzzled at the coffee stain while the background subtly fades into a simplified thought-space. The question is conveyed by posture and a single small neutral question-mark symbol, with no text.`
+
+11 — DU ERLEBST ES AUS DER ERSTEN REIHE
+`First-person-inspired composition: the main stickman's coffee-stained sweatshirt dominates the foreground while the train environment and other commuters are farther away. Make the stain feel visually huge from the character's own perspective. Preserve 2D editorial style and natural colors.`
+
+12 — FÜR DICH IST DER FLECK RIESIG
+`Abstract exaggeration metaphor. The same coffee stain appears enlarged behind the main stickman like an oversized visual shape, while the character stands small in front of it. Keep the metaphor clearly connected to the exact stain color and shape from the master frame. No text.`
+
+13 — FÜR ANDERE NUR EIN KURZER BLICK
+`Grounded train close-medium shot. A nearby stickman commuter briefly glances at the stain for a moment, then turns attention back to another activity. The main character remains visible but not centered as dramatically. Natural body language, no exaggerated staring.`
+
+14 — DIE ANDERE PERSON DENKT AN EINE NACHRICHT
+`Same nearby commuter now focuses on a smartphone showing generic colored notification blocks with no readable text. The main character with the coffee stain is soft in the background and no longer the visual focus. Strong attention hierarchy.`
+
+15 — AN DEN TERMIN
+`New commuter-focused micro-scene. A stickman checks a simple wristwatch or phone calendar represented by abstract blocks, then looks toward the train doors with mild urgency. The stained main character appears only incidentally in the background. No readable text.`
+
+16 — ODER AN DEN AUSSTIEG
+`Wide train-carriage scene approaching a station. Several stickman commuters prepare to exit, pick up bags and move toward the doors. The main character is present but clearly not the center of everyone's attention. Realistic modern public-transport spatial logic.`
+
+17 — EIGENE PERSPEKTIVE ALS AUSGANGSPUNKT
+`Abstract psychology concept in the exact master-reference visual language. Place the main stickman in the center of a large translucent circular personal-perspective bubble containing the coffee stain, heartbeat-like tension marks and close-up details. Outside the bubble, other stickmen occupy smaller independent perspective bubbles with their own concerns. No text labels.`
+
+18 — DU WEISST EXTREM VIEL ÜBER DICH SELBST
+`Layered concept portrait of the main stickman surrounded by many small visual fragments from their own experience: the spill moment, embarrassed face, coffee cup, stain, remembered glances and internal tension. These are arranged close to the character, showing information richness without words.`
+
+19 — DANN SCHÄTZT DU DIE SICHT DER ANDEREN
+`Visual perspective-transfer scene. The main stickman looks toward another stickman through a transparent frame, trying to imagine the other person's viewpoint. Show the coffee stain smaller inside the second person's view. Strong spatial explanation, no written labels.`
+
+20 — DIE KORREKTUR IST OFT ZU KLEIN
+`Clean diagram-like scene without text. Start with a large spotlight cone centered on the main stickman, then visually narrow it only a little toward a smaller realistic attention cone, showing insufficient adjustment. Use arrows and scale change, not words. Same linework and color system.`
+
+21 — NICHT: NIEMAND BEMERKT DICH
+`Balanced realistic scene. Two or three nearby stickmen do notice the coffee stain briefly, while many others remain occupied. Avoid the false extreme that nobody sees it. The main character is calm but still aware. Modern train details and rich controlled colors.`
+
+22 — DER SCHEINWERFER IM KOPF IST HELLER
+`Strong conceptual hero image. The same main stickman has a huge bright imagined spotlight projected from above, while the real-world light around them is much softer and smaller. Other stickmen remain naturally dispersed. Dramatic but still editorial 2D, no photorealism.`
+
+23 — FÜR DICH DIE HAUPTSZENE
+`Cinematic visual metaphor. The main character stands center-stage in their own imagined mini theater, with the coffee stain emphasized and a large spotlight, while a semi-transparent border reveals the ordinary train world outside. Same Stickman World, no genre shift, no text.`
+
+24 — FÜR ANDERE NUR HINTERGRUND
+`Calm closing wide shot in the train. The same main stickman stands naturally among many other commuters, now relaxed, while everyone continues their own small routines. The coffee stain is still present but visually minor. Warm balanced lighting and strong final composition showing that each person has their own focus. No readable text.`
+
+==================================================
+GENERIERUNGSABLAUF
+==================================================
+01 allein → prüfen → als 00-master-reference.png freigeben.
+Batch 1: 02–06 → QA.
+Batch 2: 07–11 → QA.
+Batch 3: 12–16 → QA.
+Batch 4: 17–21 → QA.
+Batch 5: 22–24 → QA.
+
+FORMEL BILD 01
+MASTER PREFIX + PROMPT 01 + HARD NEGATIVE
+
+FORMEL BILD 02–24
+ATTACHED MASTER REFERENCE + REFERENCE MATCH CLAUSE + MASTER PREFIX + SZENENPROMPT + HARD NEGATIVE
+
+Bei Style-Drift nur das fehlerhafte Bild neu generieren. Der nächste Batch beginnt erst nach vollständigem PASS.

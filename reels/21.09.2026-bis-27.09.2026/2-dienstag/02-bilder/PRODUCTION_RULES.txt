@@ -1,0 +1,30 @@
+PRODUCTION RULES — DIENSTAG REEL
+
+FORMAT
+- 16:9
+- 1920×1080
+- 30 fps
+- kein 9:16-Vertical-Export
+
+AUDIO
+- finales Voice-over exakt 1,10×
+- führende Stille entfernen
+- Pausen ab ungefähr 500 ms stark kürzen
+- Ziel-Restpause ungefähr 120 ms vor 1,10×
+- Wörter niemals anschneiden
+- Timings erst aus finalem Audio
+
+BILDER
+- jeder Beat bekommt eine eigene passende Bildidee
+- Kamera, Perspektive, Umgebung, Licht und Requisiten individuell wählen
+- Master-Referenz hält Stil konstant, nicht Komposition
+- keine Füllbilder
+- keine spätere Information vorwegnehmen
+- sichtbarer Text nur wenn nötig und dann ausschließlich Deutsch
+- alle Menschen Stickman
+
+REFERENZ-WORKFLOW
+- Bild 01 allein generieren und freigeben
+- danach Bild 01 bei Bild 02–24 immer als Referenz anhängen
+- höchstens 5 neue Bilder pro Batch
+- nach jedem Batch QA
