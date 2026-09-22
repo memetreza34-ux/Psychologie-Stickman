@@ -13,7 +13,8 @@ Danach lesen:
 2. `PROJECT_BRAIN.md`
 3. `rules/YOUTUBE_THEMEN_SYSTEM.md`
 4. `rules/YOUTUBE_STYLE_LOCK.md`
-5. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+5. `rules/IMAGE_REFERENCE_LOCK.md`
+6. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 
 ## Themenwelt
 
@@ -23,7 +24,20 @@ Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — 
 
 ## Bildwelt
 
-Verbindlich ist **Universal Editorial Stickman World v1.1**. Jede sichtbare menschliche Figur bleibt Stickman; Umgebung und Gegenstände dürfen detailreicher und realitätsnäher sein.
+Verbindlich ist **Universal Editorial Stickman World v1.2**. Jede sichtbare menschliche Figur bleibt Stickman; Umgebung und Gegenstände dürfen detailreicher und realitätsnäher sein.
+
+### Verbindlicher Referenz-Workflow
+
+Bei Serienbildern gilt:
+1. zuerst Bild 01 bzw. ein explizites Masterbild alleine generieren,
+2. visuell prüfen und freigeben,
+3. dieses Bild als Master-Referenz für alle Folgeassets verwenden,
+4. danach höchstens **5 neue Bilder pro Batch** erzeugen,
+5. jeden Batch gegen die Master-Referenz und untereinander prüfen,
+6. bei Style-Drift nur fehlerhafte Bilder neu generieren,
+7. erst nach vollständigem PASS mit dem nächsten 5er-Batch fortfahren.
+
+Kein Folgeasset darf die Master-Referenz eigenmächtig ersetzen. Details stehen verbindlich in `rules/IMAGE_REFERENCE_LOCK.md`.
 
 ## Zwei getrennte Produktionsflächen
 
