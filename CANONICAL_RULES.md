@@ -5,6 +5,7 @@
 Thema: **Alltagspsychologie & menschliches Verhalten**.
 
 Verbindlich:
+- `rules/FORMAT_LOCK.md`
 - `rules/YOUTUBE_THEMEN_SYSTEM.md`
 - `rules/YOUTUBE_STYLE_LOCK.md`
 - `rules/IMAGE_REFERENCE_LOCK.md`
@@ -26,6 +27,8 @@ Pfad: `youtube/`
 - mindestens 10:00 Minuten, sofern das Thema die Länge sinnvoll trägt
 - Ziel meist 11–14 Minuten
 - sichtbare Projektstruktur: `01-script-audio`, `02-bilder`, `03-quellen`, `04-schnitt`, `06-projektdateien`
+- **FORMAT HARD LOCK: 16:9 / 1920×1080 / 30 fps**
+- technische Render-Komposition: `Phase3YouTube`
 
 ### Reels
 Pfad: `reels/`
@@ -35,16 +38,10 @@ Pfad: `reels/`
 - darin `1-montag` bis `7-sonntag`
 - jeder Tag: `01-script-audio`, `02-bilder`, `03-export`, `04-projektdateien`
 - keine Longform-Mindestlänge
+- **FORMAT HARD LOCK: 9:16 / 1080×1920 / 30 fps**
+- technische Render-Komposition: `Phase3Reel`
 
-YouTube und Reels dürfen strukturell nicht ineinander verschachtelt werden.
-
-## Verbindliches Videoformat
-
-Für **beide** Formate:
-- **16:9**
-- **1920×1080**
-- **30 fps**
-- Reels dieses Repositories werden nicht automatisch vertikal/9:16 produziert
+YouTube und Reels dürfen strukturell oder beim Ausgabeformat nicht vermischt werden.
 
 ## Produktionsfolge
 
@@ -54,7 +51,11 @@ THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Ph
 
 Ein wichtiger neuer visueller Gedanke bekommt grundsätzlich ein eigenes Bild. Keine langen Sammelbilder für mehrere Aussagen. Qualität vor bloßer Bildanzahl.
 
-Jedes Bild wird **individuell** auf genau seinen gesprochenen Beat angepasst. Master-Referenzen halten nur die visuelle DNA konstant; sie dürfen nicht dazu führen, dass Komposition, Pose oder Umgebung unnötig wiederholt werden.
+Jedes Bild wird individuell auf genau seinen gesprochenen Beat angepasst. Master-Referenzen halten nur die visuelle DNA konstant; sie dürfen nicht dazu führen, dass Komposition, Pose oder Umgebung unnötig wiederholt werden.
+
+Das Bildformat wird durch den Projektpfad bestimmt:
+- `reels/` → vertikale 9:16-Komposition
+- `youtube/` → horizontale 16:9-Komposition
 
 ## Bildwelt
 
@@ -65,7 +66,7 @@ Jedes Bild wird **individuell** auf genau seinen gesprochenen Beat angepasst. Ma
 - Umgebung darf glaubwürdig, farbig, detailreich und realitätsnah aufgebaut sein
 - kein Photorealismus, kein 3D/CGI, kein Anime/Chibi
 - moderne und historische Szenen bleiben Teil derselben Stickman-Welt
-- sichtbarer Text im finalen Bild ist **Deutsch**, wenn Text inhaltlich nötig ist
+- sichtbarer Text im finalen Bild ist Deutsch, wenn Text inhaltlich nötig ist
 - wenn Text nicht nötig ist: keinen sichtbaren Text erzwingen
 
 ## Audio
@@ -78,3 +79,10 @@ Jedes Bild wird **individuell** auf genau seinen gesprochenen Beat angepasst. Ma
 - Ziel-Restpause nach Kürzung ungefähr 120 ms vor der 1,10×-Beschleunigung
 - Wörter niemals anschneiden
 - Timings erst aus final verarbeitetem Audio
+
+## Format-Priorität
+
+Bei Widerspruch gilt immer:
+**`rules/FORMAT_LOCK.md` > ältere Projekttexte oder Promptreste.**
+
+Ein Reel in 16:9 oder ein reguläres YouTube-Video in 9:16 ist ein Produktionsfehler.
