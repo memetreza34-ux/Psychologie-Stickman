@@ -8,6 +8,22 @@ Status: Style-/Dichte-Pilot in Vorbereitung.
 
 Kurzer Psychologie-Reel-Test zur Frage, warum Smartphone-Checking teilweise automatisch bzw. habitualisiert ablaufen kann.
 
+## Verbindliches Ausgabeformat
+
+- 16:9
+- 1920×1080
+- 30 fps
+- kein 9:16-Vertical-Export
+
+## Audio
+
+- finales Voice-over exakt 1,10×
+- führende Stille entfernen
+- Pausen ab ungefähr 500 ms deutlich kürzen
+- Ziel-Restpause ungefähr 120 ms vor der 1,10×-Beschleunigung
+- Wörter niemals abschneiden
+- Timings erst aus final verarbeitetem Audio
+
 ## Umfang
 
 - ca. 60–90 Sekunden
@@ -17,6 +33,15 @@ Kurzer Psychologie-Reel-Test zur Frage, warum Smartphone-Checking teilweise auto
 - Bild 01 wird zuerst allein erzeugt und als Master-Referenz freigegeben
 - Bild 02–26 werden ausschließlich mit Bild 01 als visueller Referenz erzeugt
 - Generierung in kontrollierten 5er-Batches
+
+## Bildregeln
+
+- jedes Bild individuell an den aktuell gesprochenen Beat anpassen
+- nicht dieselbe Komposition nur leicht verändert wiederholen
+- Master-Referenz hält Stil/Stickman-DNA konstant, nicht Pose oder Kamerabild
+- sichtbarer Text im Bild nur wenn nötig und dann ausschließlich Deutsch
+- wenn Text nicht nötig ist, keinen Text erzwingen
+- alle Bilder 16:9 planen
 
 ## Verbindlicher Bildablauf
 

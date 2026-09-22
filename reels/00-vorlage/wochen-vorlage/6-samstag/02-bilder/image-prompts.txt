@@ -1,13 +1,50 @@
-# IMAGE PROMPTS
+IMAGE PROMPTS — PRODUKTIONSSTANDARD
 
-## Beat 01
-Sprechtext: [Satz/Beat]
+FORMAT
+- jedes Bild in 16:9
+- Zielauflösung 1920×1080
+- für Reels und YouTube gleich
+
+SPRACHE IM BILD
+- sichtbarer Text nur, wenn er wirklich nötig ist
+- wenn Text sichtbar ist: ausschließlich Deutsch
+- keine englischen Labels, Überschriften oder UI-Texte im finalen Bild
+- wenn Text nicht nötig ist: lieber ganz ohne Text
+
+INDIVIDUELLE ANPASSUNG
+- jeder Visual Beat bekommt eine eigene Bildidee
+- Komposition, Kamerawinkel, Perspektive, Pose, Handlung, Umgebung, Requisiten, Licht und Fokus individuell an den gesprochenen Beat anpassen
+- keine generische Wiederholung derselben Szene nur mit kleinen Änderungen
+- keine Füllbilder
+- keine spätere Information vorwegnehmen
+
+MASTER-REFERENZ
+- Bild 01 bzw. das freigegebene Masterbild bestimmt Stil, Stickman-DNA, Linien, Farben und Shading
+- die Referenz bestimmt NICHT die Komposition
+- Folgeassets müssen stilistisch passen, dürfen aber visuell klar unterschiedlich komponiert sein
+
+STIL
+Universal Editorial Stickman World v1.2.
+Jede sichtbare menschliche Figur bleibt Stickman.
+
+BEAT-VORLAGE
+
+Beat 01
+Sprechtext:
+[Satz/Beat]
+
+Visual Task:
+[Was muss exakt während dieses Beats sichtbar sein?]
 
 Prompt:
-[Finaler Bildprompt in der Universal Editorial Stickman World v1.1]
+[Individuell angepasster finaler 16:9-Bildprompt]
 
-## Beat 02
-Sprechtext: [Satz/Beat]
+Beat 02
+Sprechtext:
+[Satz/Beat]
+
+Visual Task:
+[Eigene visuelle Aufgabe]
 
 Prompt:
-[Finaler Bildprompt]
+[Individuell angepasster finaler 16:9-Bildprompt]

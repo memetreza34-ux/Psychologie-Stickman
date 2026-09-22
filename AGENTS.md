@@ -15,6 +15,7 @@ Danach lesen:
 4. `rules/YOUTUBE_STYLE_LOCK.md`
 5. `rules/IMAGE_REFERENCE_LOCK.md`
 6. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+7. `rules/PRODUCTION_FORMAT_RULES.md`
 
 ## Themenwelt
 
@@ -38,6 +39,26 @@ Bei Serienbildern gilt:
 7. erst nach vollständigem PASS mit dem nächsten 5er-Batch fortfahren.
 
 Kein Folgeasset darf die Master-Referenz eigenmächtig ersetzen. Details stehen verbindlich in `rules/IMAGE_REFERENCE_LOCK.md`.
+
+## Format und Audio
+
+Für **Reels und YouTube** gilt gleichermaßen:
+- 16:9
+- 1920×1080
+- 30 fps
+- finales Voice-over exakt 1,10×
+- führende Stille entfernen
+- lange Pausen straffen; Pausen ab ca. 500 ms auf ungefähr 120 ms Restpause kürzen
+- Wörter niemals abschneiden
+- Timings erst aus final verarbeitetem Audio
+
+## Bildsprache und Individualisierung
+
+- sichtbarer Text im finalen Bild ausschließlich Deutsch, wenn Text überhaupt nötig ist
+- sonst lieber kein sichtbarer Text
+- jedes Bild individuell auf den aktuellen Sprechabschnitt/Visual Beat zuschneiden
+- Master-Referenz bestimmt den Stil, nicht die Komposition
+- keine generischen Wiederholungen derselben Pose oder desselben Bildaufbaus als Füllmaterial
 
 ## Zwei getrennte Produktionsflächen
 

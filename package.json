@@ -7,6 +7,7 @@
     "render:youtube": "remotion render src/index.ts Phase3ImageVideo exports/youtube.mp4",
     "render:project": "node scripts/render-phase3-project.mjs",
     "audio:youtube": "node scripts/prepare-youtube-voiceover.mjs",
+    "audio:reels": "node scripts/prepare-youtube-voiceover.mjs",
     "qa:youtube-pacing": "node scripts/check-youtube-pacing.mjs",
     "qa:visual-density": "node scripts/check-youtube-visual-density.mjs",
     "materialize:phase1": "node scripts/generate-youtube-visual-beats.mjs",
