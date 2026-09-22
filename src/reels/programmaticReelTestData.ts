@@ -27,6 +27,11 @@ const sourceScenes: TestScene[] = [
     text: 'In der Psychologie nennt man das den Spotlight-Effekt.',
     actionToken: 'Spotlight-Effekt.',
   },
+  {
+    kind: 'comparison',
+    text: 'Der Scheinwerfer in deinem Kopf ist meistens heller als der echte.',
+    actionToken: 'heller',
+  },
 ];
 
 const normalize = (value: string) => value.toLocaleLowerCase('de-DE').replace(/[.,!?;:]/g, '');
