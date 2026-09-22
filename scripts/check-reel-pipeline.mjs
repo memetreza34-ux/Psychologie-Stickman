@@ -7,7 +7,6 @@ import {spawnSync} from 'node:child_process';
 
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'reel-pipeline-'));
 const timingsPath = path.join(dir, 'word-timings.json');
-const phase1Path = path.join(dir, 'phase1-scenes.json');
 const scenePlanPath = path.join(dir, 'scene-plan.json');
 const propsPath = path.join(dir, 'render-props.json');
 
@@ -17,19 +16,20 @@ const timings = [
   {text: 'Reels', startMs: 520, endMs: 900},
   {text: 'läuft', startMs: 920, endMs: 1300},
 ];
-const phase1 = {
+const plan = {
   project: 'smoke-reel',
   format: 'reel-9x16',
   audio: 'tests/final-voice.mp3',
-  imageBasePath: 'tests/images',
-  scenes: [
-    {scene: 1, speechSection: 'Test für', visualTask: 'Scene 1'},
-    {scene: 2, speechSection: 'Reels läuft', visualTask: 'Scene 2'},
+  captionWordsPerPage: 4,
+  activeCaptionColor: '#FFD84D',
+  programmaticScenes: [
+    {kind: 'generic', startWord: 1, endWord: 2, actionWord: 1, label: 'TEST 1'},
+    {kind: 'spotlight', startWord: 3, endWord: 4, actionWord: 3},
   ],
 };
 
 fs.writeFileSync(timingsPath, JSON.stringify(timings));
-fs.writeFileSync(phase1Path, JSON.stringify(phase1));
+fs.writeFileSync(scenePlanPath, JSON.stringify(plan));
 
 const run = (script, args) => {
   const result = spawnSync(process.execPath, [script, ...args], {encoding: 'utf8'});
@@ -40,18 +40,26 @@ const run = (script, args) => {
 };
 
 try {
-  run('scripts/map-phase1-scenes.mjs', [timingsPath, phase1Path, scenePlanPath]);
-  const scenePlan = JSON.parse(fs.readFileSync(scenePlanPath, 'utf8'));
-  if (scenePlan.format !== 'reel') throw new Error('Phase 1 format was not normalized to reel.');
-  if (JSON.stringify(scenePlan.sceneStartWords) !== JSON.stringify([1, 3])) throw new Error('Scene mapping did not derive expected start words.');
-
   run('scripts/validate-phase3-word-plan.mjs', [timingsPath, scenePlanPath]);
   run('scripts/build-phase3-props.mjs', [timingsPath, scenePlanPath, propsPath]);
   const props = JSON.parse(fs.readFileSync(propsPath, 'utf8'));
-  if (props.targetFormat !== 'reel') throw new Error('targetFormat was not normalized to reel.');
-  if (props.autoCaptions !== true) throw new Error('Reel auto captions must default to true.');
-  if (!Array.isArray(props.sceneEffects) || props.sceneEffects.length !== 2) throw new Error('Reel default motion effects were not generated.');
-  console.log('REEL PIPELINE SMOKE PASS');
+
+  if (!Array.isArray(props.scenes) || props.scenes.length !== 2) throw new Error('Programmatic scenes were not preserved.');
+  if (props.activeCaptionColor !== '#FFD84D') throw new Error('Active karaoke caption color is wrong.');
+  if (props.showCaptions !== true) throw new Error('Reel captions must default to enabled.');
+  if ('imageBasePath' in props) throw new Error('Reel props must not contain imageBasePath.');
+  if ('sceneEffects' in props) throw new Error('Reel props must not fall back to image pan/zoom effects.');
+
+  const root = fs.readFileSync('src/Root.tsx', 'utf8');
+  if (!/id="Phase3Reel"[\s\S]*?component=\{ProgrammaticReel\}/.test(root)) throw new Error('Phase3Reel is not wired to ProgrammaticReel.');
+  if (!root.includes('id="ProgrammaticReelTest"')) throw new Error('ProgrammaticReelTest composition is missing.');
+
+  const renderer = fs.readFileSync('src/reels/ProgrammaticReel.tsx', 'utf8');
+  if (renderer.includes('<Img') || renderer.includes('imageBasePath')) throw new Error('Programmatic reel renderer must not depend on image assets.');
+  if (!renderer.includes('activeCaptionColor')) throw new Error('Karaoke caption color support is missing.');
+  if (!renderer.includes('actionWord')) throw new Error('Audio-word animation cue support is missing.');
+
+  console.log('REEL PIPELINE SMOKE PASS — programmatic visuals, karaoke captions, audio-word cues');
 } finally {
   fs.rmSync(dir, {recursive: true, force: true});
 }
