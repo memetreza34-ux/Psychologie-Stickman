@@ -1,0 +1,12 @@
+{
+  "status": "PENDING_FINAL_AUDIO",
+  "sceneCount": 23,
+  "reason": "Start-/Endzeiten erst aus finalem bearbeiteten Audio ableiten.",
+  "sceneLabels": [
+    {"scene": 4, "text": "GEFÜHLSPROBLEM", "position": "top-left"},
+    {"scene": 8, "text": "KURZE ERLEICHTERUNG", "position": "top-left"},
+    {"scene": 13, "text": "KREISLAUF", "position": "top-left"},
+    {"scene": 17, "text": "KLEINER START", "position": "top-left"}
+  ],
+  "scenes": []
+}
