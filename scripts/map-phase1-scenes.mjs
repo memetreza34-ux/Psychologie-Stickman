@@ -85,6 +85,7 @@ const out = {
   ...(Number.isFinite(phase1.imageDigits) ? {imageDigits: phase1.imageDigits} : {}),
   ...(Number.isFinite(phase1.endHoldMs) ? {endHoldMs: phase1.endHoldMs} : {}),
   ...(Array.isArray(phase1.sceneEffects) ? {sceneEffects: phase1.sceneEffects} : {}),
+  ...(Array.isArray(phase1.sceneLabels) ? {sceneLabels: phase1.sceneLabels} : {}),
   ...(typeof phase1.autoCaptions === 'boolean' ? {autoCaptions: phase1.autoCaptions} : {}),
   ...(Number.isFinite(phase1.captionWordsPerPage) ? {captionWordsPerPage: phase1.captionWordsPerPage} : {}),
 };
