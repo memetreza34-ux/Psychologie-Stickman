@@ -37,6 +37,11 @@ for (const planPath of productionPlans) {
   const average = scenes.length ? totalWords / scenes.length : 0;
   const longest = counts.length ? Math.max(...counts) : 0;
   const minimumSceneCount = Math.ceil(totalWords / 18);
+  const reviewedExtendedBeats = new Set(
+    Array.isArray(plan.reviewedExtendedBeats)
+      ? plan.reviewedExtendedBeats.filter((value) => Number.isInteger(value) && value > 0)
+      : [],
+  );
 
   console.log(`\n${path.relative(process.cwd(), planPath)}`);
   console.log(`Scenes: ${scenes.length}`);
@@ -52,11 +57,12 @@ for (const planPath of productionPlans) {
   scenes.forEach((scene, index) => {
     const words = counts[index] ?? 0;
     const sceneNumber = index + 1;
+    const isReviewedExtended = scene.allowExtendedBeat === true || reviewedExtendedBeats.has(sceneNumber);
 
     if (words > 28) {
       failures.push(`${planPath}: scene ${sceneNumber} has ${words} words; absolute maximum is 28.`);
-    } else if (words > 20 && scene.allowExtendedBeat !== true) {
-      failures.push(`${planPath}: scene ${sceneNumber} has ${words} words; scenes above 20 require allowExtendedBeat=true after editorial review.`);
+    } else if (words > 20 && !isReviewedExtended) {
+      failures.push(`${planPath}: scene ${sceneNumber} has ${words} words; scenes above 20 require explicit editorial review.`);
     } else if (words > 20) {
       warnings.push(`${planPath}: scene ${sceneNumber} uses reviewed extended beat (${words} words).`);
     }
