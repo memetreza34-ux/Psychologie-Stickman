@@ -1,22 +1,9 @@
-# REEL TAG-VORLAGE
+# REEL-TAG-VORLAGE
 
-Diesen Tag innerhalb einer Wochenvorlage kopieren bzw. direkt befüllen.
+Diesen Tagesordner nicht einzeln bauen, sondern normalerweise die komplette `wochen-vorlage` kopieren.
 
-VERBINDLICHES FORMAT
-- 9:16
-- 1080×1920
-- 30 fps
-- vertikal / Portrait
-- Render-Komposition: `Phase3Reel`
-
-ARBEITSABLAUF
-Thema + Quellen + Claim-Check → finales Skript → Visual Beats → Bildprompts/Bilder → finales 1,10×-Audio → Timings → Render → QA.
-
-BILDER
-- alle Bilder direkt in 9:16 erzeugen
-- Bild 01/Masterbild zuerst freigeben
-- Folgeassets in 5er-Batches mit Master-Referenz
-- jedes Bild individuell auf seinen Beat anpassen
-- sichtbarer Text nur wenn nötig und dann Deutsch
-
-Die YouTube-16:9-Regeln gelten hier nicht.
+Sichtbare Arbeitsdateien liegen in:
+- `01-script-audio/script.txt`
+- `02-bilder/image-prompts.md`
+- `03-export/upload-paket.txt`
+- `04-projektdateien/phase1-scenes.json`, `sources.txt`, `claim-matrix.csv`

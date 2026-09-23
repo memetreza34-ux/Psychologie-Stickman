@@ -1,24 +1,22 @@
-VOICE-OVER STANDARD — REELS UND YOUTUBE
+YOUTUBE VOICE-OVER – VERBINDLICHER STANDARD
 
 ZIEL
-Zügiges, natürliches Erklärtempo ohne lange Leerstellen. Wörter dürfen niemals angeschnitten werden.
+Zügiges, unterhaltsames Erklärtempo ohne lange Leerstellen. Kurze natürliche Pausen bleiben bestehen, aber der Sprachfluss darf nie stehen bleiben.
 
-VERBINDLICH
-- finale Sprechgeschwindigkeit: exakt 1,10×
+STANDARD
+- finale Sprechgeschwindigkeit: 1,10×
 - Tonhöhe erhalten
 - führende Stille entfernen
-- kurze natürliche Pausen unter ungefähr 500 ms grundsätzlich erhalten
-- Pausen ab ungefähr 500 ms deutlich kürzen
-- Ziel-Restpause nach Kürzung: ungefähr 120 ms VOR der 1,10×-Beschleunigung
-- keine langen künstlichen Denkpausen
+- kurze natürliche Pausen unter ungefähr 500 ms bleiben grundsätzlich erhalten
+- Pausen ab ungefähr 500 ms werden deutlich gekürzt
+- nach einer gekürzten Pause bleibt nur eine kurze natürliche Restpause von ungefähr 120 ms vor der 1,10×-Beschleunigung
 - Wörter niemals anschneiden
 - kein gehetzter oder roboterhafter Klang
-- Wort-/Szenen-Timings ausschließlich aus dem final bearbeiteten Audio erzeugen
 
-ABLAUF
-1. Rohes Voice-over aus finalem Skript erzeugen.
-2. Für YouTube: `npm run audio:youtube -- <raw-voiceover> <final-voice.mp3>`
-3. Für Reels: `npm run audio:reels -- <raw-voiceover> <final-voice.mp3>`
-4. Danach ausschließlich `final-voice.mp3` verwenden.
-5. Timings erst aus dieser finalen Datei ableiten.
-6. Nach Render prüfen, ob noch störend lange Pausen vorhanden sind.
+VERBINDLICHER ABLAUF
+1. Rohes Voice-over erzeugen.
+2. `npm run audio:youtube -- <raw-voiceover> <final-voice.mp3>`
+3. Ab dann ausschließlich `final-voice.mp3` verwenden.
+4. Wort-Timings ausschließlich aus `final-voice.mp3`.
+5. Phase 3 verwendet dieselbe Datei.
+6. Pacing-QA nach dem Render.

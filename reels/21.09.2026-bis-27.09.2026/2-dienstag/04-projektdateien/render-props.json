@@ -1,9 +1,0 @@
-{
-  "status": "PENDING_PHASE3",
-  "format": "9:16",
-  "resolution": "1080x1920",
-  "fps": 30,
-  "composition": "Phase3Reel",
-  "audio": "PENDING final-voice.mp3",
-  "reason": "Render-Props erst nach finalem Audio, Timings und finalen 9:16-Bildassets bauen."
-}

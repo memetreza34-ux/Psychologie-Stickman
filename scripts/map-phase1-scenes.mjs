@@ -9,12 +9,6 @@ if (!wordTimingPath || !phase1PlanPath || !outputPath) {
   process.exit(1);
 }
 
-const normalizeFormat = (value) => {
-  const normalized = String(value ?? '').trim().toLowerCase();
-  if (normalized.startsWith('reel')) return 'reel';
-  if (normalized.startsWith('youtube')) return 'youtube';
-  return normalized;
-};
 const read = (p) => JSON.parse(fs.readFileSync(path.resolve(p), 'utf8'));
 const words = read(wordTimingPath);
 const rawPhase1 = read(phase1PlanPath);
@@ -32,24 +26,19 @@ const norm = (v) =>
     .replace(/\s+/g, '')
     .trim();
 const toks = (v) => String(v ?? '').trim().split(/\s+/).map(norm).filter(Boolean);
-const firstWords = (text, count = 8) => String(text ?? '').trim().split(/\s+/).filter(Boolean).slice(0, count).join(' ');
-const lastWord = (text) => String(text ?? '').trim().split(/\s+/).filter(Boolean).at(-1) ?? '';
 const timing = words.map((w) => norm(w.text));
 const starts = [];
 let min = 0;
 
 for (const scene of scenes) {
-  const speechSection = String(scene.speechSection ?? '').trim();
-  if (!speechSection) throw new Error(`Scene ${scene.scene ?? starts.length + 1}: speechSection is required.`);
-  const startPhrase = String(scene.startPhrase ?? '').trim() || firstWords(speechSection, 8);
-  const p = toks(startPhrase);
+  const p = toks(scene.startPhrase);
   const matches = [];
   for (let i = min; i <= timing.length - p.length; i += 1) {
     if (p.every((t, j) => timing[i + j] === t)) matches.push(i);
   }
   if (matches.length !== 1) {
     console.error(`Scene ${scene.scene}: startPhrase must map exactly once after word ${min + 1}. Found ${matches.length}.`);
-    console.error(`startPhrase: ${startPhrase}`);
+    console.error(`startPhrase: ${scene.startPhrase}`);
     process.exit(1);
   }
   starts.push(matches[0] + 1);
@@ -69,26 +58,19 @@ scenes.forEach((scene, index) => {
   if (planned.length !== actual.length || planned.some((t, i) => t !== actual[i])) {
     throw new Error(`Scene ${scene.scene}: speechSection mismatch.`);
   }
-  const expectedEndWord = norm(scene.endWord ?? lastWord(scene.speechSection));
-  if (expectedEndWord !== timing[e]) throw new Error(`Scene ${scene.scene}: endWord mismatch.`);
+  if (norm(scene.endWord) !== timing[e]) throw new Error(`Scene ${scene.scene}: endWord mismatch.`);
 });
 
-const format = normalizeFormat(phase1.format);
-if (!['reel', 'youtube'].includes(format)) throw new Error(`Unsupported Phase 1 format: ${phase1.format}`);
-
 const out = {
-  format,
+  format: String(phase1.format).toLowerCase(),
   audio: phase1.audio,
   imageBasePath: phase1.imageBasePath,
   sceneStartWords: starts,
   imageExtension: String(phase1.imageExtension ?? 'png').replace(/^\./, ''),
   ...(Number.isFinite(phase1.imageDigits) ? {imageDigits: phase1.imageDigits} : {}),
   ...(Number.isFinite(phase1.endHoldMs) ? {endHoldMs: phase1.endHoldMs} : {}),
-  ...(Array.isArray(phase1.sceneEffects) ? {sceneEffects: phase1.sceneEffects} : {}),
-  ...(typeof phase1.autoCaptions === 'boolean' ? {autoCaptions: phase1.autoCaptions} : {}),
-  ...(Number.isFinite(phase1.captionWordsPerPage) ? {captionWordsPerPage: phase1.captionWordsPerPage} : {}),
 };
 
 fs.mkdirSync(path.dirname(path.resolve(outputPath)), {recursive: true});
 fs.writeFileSync(path.resolve(outputPath), `${JSON.stringify(out, null, 2)}\n`);
-console.log(`PHASE 1 MAP: PASS — ${scenes.length} visual beats (${format})`);
+console.log(`PHASE 1 MAP: PASS — ${scenes.length} visual beats`);

@@ -1,9 +1,0 @@
-{
-  "format": "youtube",
-  "audio": "youtube/22.09.2026-prokrastination-test/01-script-audio/audio/final-voice.mp3",
-  "imageBasePath": "youtube/22.09.2026-prokrastination-test/02-bilder/images",
-  "sceneStartWords": [],
-  "imageExtension": "png",
-  "imageDigits": 2,
-  "endHoldMs": 1000
-}

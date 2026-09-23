@@ -2,11 +2,11 @@
 
 **STATUS: VERBINDLICH**
 
-Dieses Format lebt von vielen präzisen Bildern. Ein Bild darf nicht 15–30 Sekunden lang mehrere verschiedene Aussagen gleichzeitig tragen.
+Dieses Longform-Format lebt von vielen präzisen Bildern. Ein Bild darf nicht 15–30 Sekunden lang mehrere verschiedene Aussagen gleichzeitig tragen.
 
 ## Grundregel
 
-**Ein wichtiger visueller Gedanke = ein Visual Beat = grundsätzlich ein eigenes, individuell angepasstes Bild.**
+**Ein wichtiger visueller Gedanke = ein Visual Beat = grundsätzlich ein eigenes Bild.**
 
 Eine neue Szene beginnt insbesondere bei:
 - neuem Fakt oder neuer Kernaussage
@@ -21,19 +21,6 @@ Eine neue Szene beginnt insbesondere bei:
 - Wechsel von Problem → Konsequenz → Lösung
 
 Wenn im Audio ein konkretes Objekt, ein bestimmter Ort, eine Person, ein Vorgang oder ein anderer zentraler Inhalt wichtig wird, muss genau dieser Inhalt im zugehörigen Beat sichtbar bzw. eindeutig visualisiert werden.
-
-## Individuelle Bildanpassung
-
-Jeder Beat wird als eigene visuelle Aufgabe behandelt.
-
-Verbindlich:
-- Komposition an genau diesen Beat anpassen.
-- Kameradistanz, Perspektive, Pose, Handlung, Requisiten, Umgebung, Licht und Fokus bewusst wählen.
-- Keine generische Standardszene nur mit ausgetauschtem Gegenstand.
-- Keine unnötige Wiederholung derselben Pose/Kamera, wenn eine andere Darstellung den Inhalt besser erklärt.
-- Master-Referenz hält Figuren-DNA, Linien, Farben und Shading konsistent; sie sperrt **nicht** die Komposition.
-- sichtbarer Text nur bei echter Erklärfunktion und dann **Deutsch**.
-- wenn Text nicht nötig ist, keinen Text generieren.
 
 ## Keine Sammelbilder
 
@@ -62,7 +49,7 @@ Für 10–14 Minuten entstehen dadurch häufig ungefähr **90–150 Bilder**. Da
 
 ## Phase 1
 
-Phase 1 ist **Visual-Beat-Planung**, nicht grobe Kapitelplanung.
+Phase 1 ist ab jetzt **Visual-Beat-Planung**, nicht grobe Kapitelplanung.
 
 Jeder Beat enthält:
 - `startPhrase`
@@ -84,22 +71,19 @@ Für skriptbasierte Longform-Projekte kann `autoFromScript` genutzt werden. Der 
 
 Phase 2 darf:
 - Stil auf den vorhandenen Visual Beat anwenden
-- den konkreten Beat verständlich und individuell komponieren
+- den konkreten Beat verständlich komponieren
 
 Phase 2 darf nicht:
 - mehrere Beats zusammenlegen, um Bildzahl zu sparen
 - Inhalte aus späteren Beats vorziehen
 - den gesprochenen Inhalt durch ein nur dekoratives Bild ersetzen
-- eine alte Komposition nur aus Bequemlichkeit wiederverwenden
 
 ## Final-QA
 
 Nach dem Render muss geprüft werden:
 - Ist der zentrale Inhalt des gerade gesprochenen Satzes gleichzeitig sichtbar?
-- Ist das Bild individuell auf diesen Beat zugeschnitten?
 - Bleibt ein Bild ungewöhnlich lange stehen?
 - zeigt das Bild schon Informationen, die das Audio erst später erklärt?
 - gibt es einen wichtigen Satz, für den keine passende visuelle Darstellung existiert?
-- ist eventuell sichtbarer Text Deutsch?
 
 Wenn eine dieser Fragen problematisch ist, geht das Video zurück zu Phase 1/2 statt nur den Schnitt zu kaschieren.

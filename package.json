@@ -4,17 +4,11 @@
   "version": "1.0.0",
   "scripts": {
     "studio": "remotion studio src/index.ts",
-    "render:youtube": "remotion render src/index.ts Phase3YouTube exports/youtube.mp4",
-    "render:reel": "remotion render src/index.ts Phase3Reel exports/reel.mp4",
-    "render:reels": "npm run render:reel",
-    "render:reel:test": "remotion render src/index.ts ProgrammaticReelTest exports/programmatic-reel-test.mp4",
+    "render:youtube": "remotion render src/index.ts Phase3ImageVideo exports/youtube.mp4",
     "render:project": "node scripts/render-phase3-project.mjs",
     "audio:youtube": "node scripts/prepare-youtube-voiceover.mjs",
-    "audio:reels": "node scripts/prepare-youtube-voiceover.mjs",
     "qa:youtube-pacing": "node scripts/check-youtube-pacing.mjs",
     "qa:visual-density": "node scripts/check-youtube-visual-density.mjs",
-    "qa:format-lock": "node scripts/check-format-lock.mjs",
-    "qa:reel-pipeline": "node scripts/check-reel-pipeline.mjs",
     "materialize:phase1": "node scripts/generate-youtube-visual-beats.mjs",
     "map:phase1": "node scripts/map-phase1-scenes.mjs",
     "validate:assets": "node scripts/validate-production-assets.mjs",
@@ -23,7 +17,7 @@
     "build:phase3-props": "node scripts/build-phase3-props.mjs",
     "prepare:phase3": "node scripts/prepare-phase3.mjs",
     "typecheck": "tsc --noEmit",
-    "check": "tsc --noEmit && node scripts/check-format-lock.mjs && node scripts/check-reel-pipeline.mjs && node scripts/check-youtube-visual-density.mjs && node --check scripts/lib/youtube-visual-beats.mjs && node --check scripts/generate-youtube-visual-beats.mjs && node --check scripts/check-youtube-visual-density.mjs && node --check scripts/prepare-youtube-voiceover.mjs && node --check scripts/check-youtube-pacing.mjs && node --check scripts/map-phase1-scenes.mjs && node --check scripts/validate-production-assets.mjs && node --check scripts/production-check.mjs && node --check scripts/render-phase3-project.mjs && node --check scripts/validate-phase3-word-plan.mjs && node --check scripts/build-phase3-props.mjs && node --check scripts/check-reel-pipeline.mjs && node --check scripts/prepare-phase3.mjs"
+    "check": "tsc --noEmit && node scripts/check-youtube-visual-density.mjs && node --check scripts/lib/youtube-visual-beats.mjs && node --check scripts/generate-youtube-visual-beats.mjs && node --check scripts/check-youtube-visual-density.mjs && node --check scripts/prepare-youtube-voiceover.mjs && node --check scripts/check-youtube-pacing.mjs && node --check scripts/map-phase1-scenes.mjs && node --check scripts/validate-production-assets.mjs && node --check scripts/production-check.mjs && node --check scripts/render-phase3-project.mjs && node --check scripts/validate-phase3-word-plan.mjs && node --check scripts/build-phase3-props.mjs && node --check scripts/prepare-phase3.mjs"
   },
   "dependencies": {
     "@remotion/captions": "4.0.490",

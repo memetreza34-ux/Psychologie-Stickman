@@ -1,9 +1,0 @@
-claim_id,claim,sources,status,notes
-C01,"Prokrastination ist freiwilliges Aufschieben trotz erwartbarer Nachteile und wird häufig als Selbstregulationsproblem beschrieben.",S1,PASS,"Kernaussage durch Steel 2007 gestützt."
-C02,"Aufgaben-Unangenehmheit, zeitliche Verzögerung, geringe Selbstwirksamkeit und Impulsivität stehen mit Prokrastination in Zusammenhang.",S1,PASS,"Im Video als Zusammenhänge, nicht als monokausale Ursachen formuliert."
-C03,"Prokrastination kann kurzfristig unangenehme Gefühle reduzieren und als kurzfristige Stimmungsregulation verstanden werden.",S2;S5,PASS,"Kurzfristige Entlastung klar von langfristiger Problemlösung trennen."
-C04,"Mit zunehmender Nähe einer Deadline können Zeitdruck und unmittelbare Konsequenzen das Anfangen attraktiver machen.",S1;S5,PASS,"Als Mechanismusmodell formuliert, nicht als Aussage über jede Person."
-C05,"SMART-Ziele oder einfache Wenn-dann-Pläne allein reduzierten in einer Studie die akademische Prokrastination nicht signifikant.",S3,PASS,"Keine Verallgemeinerung über alle möglichen Goal-Setting-Interventionen."
-C06,"Psychologische Behandlungen zeigen im Durchschnitt Nutzen gegen Prokrastination, wobei Effekt und Studienlage variieren.",S4,PASS,"Keine Heilungs- oder Erfolgsgarantie."
-C07,"Ein Smartphone verursacht nicht automatisch Prokrastination, kann aber als unmittelbar verfügbare angenehmere Alternative dienen.",S1;S2,INFERENCE,"Mechanistische redaktionelle Schlussfolgerung; keine direkte Kausalbehauptung."
-C08,"Eine kleinere und konkretere Startbarriere sowie vorab reduzierte Ablenkung sind plausible praktische Konsequenzen aus dem Selbstregulations-/Aversivitätsmodell.",S2;S4,INFERENCE,"Als Vorschlag formulieren, nicht als universell wirksame Behandlung."
