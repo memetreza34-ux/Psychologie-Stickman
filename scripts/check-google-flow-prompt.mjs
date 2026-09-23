@@ -24,6 +24,7 @@ if (productionPrompts.length === 0) {
 }
 
 const failures = [];
+const warnings = [];
 
 for (const promptPath of productionPrompts) {
   const content = fs.readFileSync(promptPath, 'utf8');
@@ -42,6 +43,11 @@ for (const promptPath of productionPrompts) {
     failures.push(`${relative}: contains conditional generated label instruction.`);
   }
 
+  const referenceClause = content.match(/REFERENCE CLAUSE FOR SCENE 02\+[\s\S]*?(?=^SCENE\s+01\s*$)/imu)?.[0] ?? '';
+  if (/character identity/iu.test(referenceClause) && !/NOT\s+(?:AS\s+)?A?\s*character clone/iu.test(referenceClause)) {
+    failures.push(`${relative}: master reference clause locks character identity instead of style/anatomy only.`);
+  }
+
   const sceneMatches = [...content.matchAll(/^SCENE\s+(\d+)\s*$/gimu)];
   const sceneNumbers = sceneMatches.map((match) => Number(match[1]));
   if (sceneNumbers.length === 0) {
@@ -52,6 +58,8 @@ for (const promptPath of productionPrompts) {
   sceneNumbers.forEach((sceneNumber, index) => {
     if (sceneNumber !== index + 1) failures.push(`${relative}: scenes are not contiguous at scene ${sceneNumber}.`);
   });
+
+  let cloneLockedScenes = 0;
 
   for (let index = 0; index < sceneMatches.length; index += 1) {
     const start = sceneMatches[index].index ?? 0;
@@ -64,9 +72,30 @@ for (const promptPath of productionPrompts) {
     if (!/SPEECH CONTEXT\s*[—-]\s*DO NOT RENDER AS TEXT:/iu.test(block)) {
       failures.push(`${relative}: scene ${sceneNumber} lacks protected speech-context marker.`);
     }
+
+    const explicitlySameCharacter = /\b(?:same|exact same)\s+(?:main\s+)?(?:stickman|character|person)\b/iu.test(block);
+    const localContinuity = /LOCAL CONTINUITY/iu.test(block);
+    if (explicitlySameCharacter && !localContinuity) cloneLockedScenes += 1;
   }
 
-  console.log(`${relative}: ${sceneNumbers.length} scene prompts checked.`);
+  const maxCloneLockedScenes = Math.max(3, Math.floor(sceneNumbers.length * 0.35));
+  if (cloneLockedScenes > maxCloneLockedScenes) {
+    failures.push(
+      `${relative}: ${cloneLockedScenes}/${sceneNumbers.length} scenes unnecessarily lock the same character. ` +
+      `Maximum without explicit LOCAL CONTINUITY is ${maxCloneLockedScenes}. Use the master as style/anatomy reference, not a character clone.`,
+    );
+  }
+
+  if (!/CAST VARIATION\s*[—-]\s*HARD LOCK/iu.test(content)) {
+    warnings.push(`${relative}: no explicit CAST VARIATION hard-lock block; consider adding one for future regeneration.`);
+  }
+
+  console.log(`${relative}: ${sceneNumbers.length} scene prompts checked; ${cloneLockedScenes} non-continuity clone-locked scenes.`);
+}
+
+if (warnings.length > 0) {
+  console.warn('\nGOOGLE FLOW PROMPT QA: WARNINGS\n');
+  warnings.forEach((warning) => console.warn(`- ${warning}`));
 }
 
 if (failures.length > 0) {
