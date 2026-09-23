@@ -1,6 +1,6 @@
 # STICKMAN DNA — CHANNEL VISUAL SOURCE OF TRUTH
 
-**STATUS: HARD LOCK — v1.1**
+**STATUS: HARD LOCK — v1.2**
 
 Diese Datei ist die zentrale visuelle Source of Truth für alle Agenten, Prompts, Templates, Reels und YouTube-Videos.
 
@@ -67,7 +67,7 @@ Verbindlich:
 - keine unnötigen Tabellen, Panels, Karten, Meter, Diagramme oder Textblöcke
 - Zuschauer soll die Kernidee in ungefähr 1 Sekunde erfassen können
 - mehrere neue Gedanken werden auf mehrere Visual Beats/Bilder verteilt
-- Master sperrt Stil, nicht Kamera, Pose, Ort oder Komposition
+- Master sperrt Stil, nicht Kamera, Pose, Ort, Komposition oder Figurenidentität
 
 Priorität:
 **Klarheit > Informationsmenge pro Bild.**
@@ -122,20 +122,49 @@ Wenn ein Projekt ausnahmsweise Text direkt im generierten Bild zwingend benötig
 Bei Konflikt gewinnt:
 **textfreies Flow-Quellbild + späterer deutscher Remotion-Overlay.**
 
-## 6. Hauptfigur-DNA
+## 6. CAST-VARIATION — STIL GLEICH, FIGUREN NICHT GLEICH
 
-Wenn eine wiederkehrende Hauptfigur genutzt wird:
-- Kopfgröße/-form konstant
-- Gesichtsstil konstant
-- Torso-Proportion konstant
-- Arm-/Beindicke konstant
-- Hände/Füße konstant vereinfacht
-- Kleidung und Kernfarben konstant, solange kein bewusster Wechsel nötig ist
-- Accessoires/Requisiten konsistent
+**Stickman-DNA ist keine Charakter-DNA.** Alle Figuren gehören sichtbar zur gleichen Bildwelt, müssen aber nicht dieselbe Person sein.
 
-Die konkrete Ausprägung wird durch Bild 01 als Master-Referenz festgelegt.
+Standard für erklärende Videos:
+- pro Szene den sinnvollsten Cast für den aktuellen Beat wählen
+- 1 bis 4 Stickmen, wenn es der Inhalt unterstützt
+- Hauptfigur nur dann bewusst wiederholen, wenn echte erzählerische Kontinuität nötig ist
+- Nebenfiguren dürfen andere Kleidung, Farben, Accessoires, Rollen und Körpergrößen innerhalb der Stickman-DNA haben
+- Rollen passend zum Inhalt wählen, z. B. Schüler, Azubi, Büroarbeiter, Pendler, Freund, Forscher, Kunde, Verkäufer
+- Kleidung und Requisiten sollen das Thema der Szene unterstützen
+- nicht automatisch denselben Hoodie, dieselbe Frisur, dieselbe Farbe oder denselben Charakter aus Bild 01 kopieren
 
-## 7. Master-Referenz-DNA
+Vor jedem Bild müssen vier Entscheidungen getroffen werden:
+1. **Cast:** Wer oder wie viele Stickmen passen zu diesem Beat?
+2. **Ort:** Welche konkrete Umgebung erklärt den Beat am besten?
+3. **Handlung:** Was tun die Figuren sichtbar?
+4. **Kamera:** Welche Perspektive macht diese Handlung am klarsten?
+
+Verbotener Default:
+- immer derselbe einzelne Stickman
+- immer derselbe Hoodie
+- immer derselbe Schreibtisch
+- immer dieselbe neutrale Pose
+- immer derselbe Medium Shot
+
+Ziel:
+**gleiche visuelle Sprache, unterschiedliche passende Szenen.**
+
+## 7. Wiederkehrende Figuren — NUR BEI ECHTER KONTINUITÄT
+
+Wenn eine bestimmte Figur innerhalb einer zusammenhängenden Mini-Handlung wirklich dieselbe Person bleiben soll, dann konstant halten:
+- Kopfgröße/-form
+- Gesichtsstil
+- Torso-Proportion
+- Arm-/Beindicke
+- Hände/Füße
+- Kleidung und Kernfarben innerhalb dieser Mini-Handlung
+- relevante Accessoires/Requisiten
+
+Diese Kontinuität ist **lokal**, nicht automatisch für das ganze Video. Ein neues Beispiel, ein anderer Ort oder eine andere Rolle darf einen anderen Stickman verwenden.
+
+## 8. Master-Referenz-DNA — STYLE REFERENCE, NOT CHARACTER CLONE
 
 Für jedes Projekt:
 1. Bild 01 allein generieren.
@@ -143,12 +172,13 @@ Für jedes Projekt:
 3. Nur freigeben, wenn Stickman-DNA, Welt-DNA, Textregel und Bildklarheit vollständig passen.
 4. Bild 01 als Master speichern.
 5. Ab Bild 02 immer Bild 01 als Referenz anhängen.
-6. Master sperrt Anatomie, Linien, Farben, Shading und Gesamtästhetik.
-7. Master sperrt NICHT Pose, Kamera, Ort, Licht oder Komposition.
+6. Master sperrt **Anatomie-System, Linienart, Rendering, Shading, Farbverhalten, Detailgrad und Gesamtästhetik**.
+7. Master sperrt **NICHT** Figurenidentität, Kleidung, Rollen, Anzahl der Figuren, Pose, Kamera, Ort, Licht oder Komposition.
+8. Den Charakter aus Bild 01 nur wiederverwenden, wenn die jeweilige Szene ausdrücklich Kontinuität verlangt.
 
 Ein späteres Bild ersetzt den Master nicht automatisch.
 
-## 8. Batch-DNA
+## 9. Batch-DNA
 
 Nach der einmaligen Freigabe von Bild 01:
 - maximal 5 neue Bilder pro Batch
@@ -162,7 +192,7 @@ Nach der einmaligen Freigabe von Bild 01:
 
 **Nutzerfreigabe regulär nur einmal: nach Bild 01.**
 
-## 9. Format-DNA
+## 10. Format-DNA
 
 Format wird vom Projektpfad bestimmt:
 - `reels/` → 9:16 / 1080×1920 / 30 fps
@@ -170,21 +200,22 @@ Format wird vom Projektpfad bestimmt:
 
 Nicht nachträglich aus dem falschen Format croppen, sondern direkt nativ komponieren.
 
-## 10. Kompakter DNA-Promptblock
+## 11. Kompakter DNA-Promptblock
 
 Dieser Block darf in Google-Flow-Prompts eingebettet werden:
 
-`STRICT CHANNEL DNA: simple editorial 2D stickman characters inside rich detailed believable environments. EVERY visible human or human-like figure, including background people, screens, posters, photos, reflections and crowds, must use the same true stickman anatomy: simple round/oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet. No conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi. Environment may be detailed, modern, grounded and cinematic in 2D. ONE clear visual idea per image, one dominant subject, at most 1–2 supporting cues. Prefer a concrete stickman action in a believable setting over an abstract infographic. SOURCE IMAGE TEXT POLICY: render zero readable text, zero letters, zero labels, zero UI words and zero captions unless the scene explicitly supplies an exact German exception. German labels are normally added later in Remotion.`
+`STRICT CHANNEL DNA: simple editorial 2D stickman characters inside rich detailed believable environments. EVERY visible human or human-like figure must use the same true stickman anatomy: simple round/oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet. No conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi. MASTER IMAGE IS A STYLE/ANATOMY REFERENCE, NOT A CHARACTER CLONE: preserve anatomy system, linework, rendering, color treatment and world quality, but freely vary character identity, clothing, cast size, pose, role, environment and camera to fit each beat. Do not default to the same lone character, same hoodie, same desk or same framing. Environment may be detailed, modern, grounded and cinematic in 2D. ONE clear visual idea per image, one dominant subject, at most 1–2 supporting cues. Prefer a concrete stickman action in a believable setting over an abstract infographic. SOURCE IMAGE TEXT POLICY: render zero readable text, zero letters, zero labels, zero UI words and zero captions unless the scene explicitly supplies an exact German exception. German labels are normally added later in Remotion.`
 
-## 11. Priorität
+## 12. Priorität
 
 Bei Konflikten gilt:
 - Format → `rules/FORMAT_LOCK.md`
 - visuelle Identität → **diese DNA-Datei**
-- exakte projektspezifische Ausprägung → freigegebene Master-Referenz
+- Style-/Anatomie-Ausprägung → freigegebene Master-Referenz
+- Figurenidentität/Cast → jeweiliger Visual Beat / Szenenprompt
 - Szeneninhalt → jeweiliger Visual Beat / Szenenprompt
 - sichtbarer Text → textfreies Flow-Quellbild; deutsche Overlays kontrolliert in Remotion
 
 Merksatz:
 
-**DNA bestimmt WIE. Master zeigt WIE genau. Visual Beat bestimmt WAS. Remotion kontrolliert sichtbaren Text.**
+**DNA bestimmt WIE Stickmen aussehen. Master zeigt den Stil. Visual Beat bestimmt WER, WO und WAS. Remotion kontrolliert sichtbaren Text.**
