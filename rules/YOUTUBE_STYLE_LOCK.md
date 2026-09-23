@@ -1,8 +1,8 @@
 # YOUTUBE STYLE LOCK
 
-**STATUS: LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.2**
+**STATUS: LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3 — STRICT STICKMAN ONLY**
 
-Diese Bildwelt ist die verbindliche visuelle Basis des Kanals. Sie gilt für Reels und YouTube. Das Seitenverhältnis gehört **nicht** zur Stil-DNA und wird separat durch `rules/FORMAT_LOCK.md` festgelegt.
+Diese Bildwelt ist die verbindliche visuelle Basis des Kanals. Sie gilt für Reels und YouTube. Das Seitenverhältnis gehört nicht zur Stil-DNA und wird separat durch `rules/FORMAT_LOCK.md` festgelegt.
 
 Zusätzlich verbindlich:
 - `rules/IMAGE_REFERENCE_LOCK.md`
@@ -10,215 +10,192 @@ Zusätzlich verbindlich:
 
 ## Ziel
 
-Eine breite, einheitliche 2D-Stickman-Erklärwelt, die moderne Alltagssituationen, historische Epochen, abstrakte Psychologie, soziale Situationen, Diagramme und komplexe Abläufe darstellen kann, ohne bei jeder Szene den Stil zu wechseln.
+Eine hochwertige 2D-Erklärwelt, in der **jede menschliche oder menschenähnliche Figur eindeutig ein echter Stickman** ist, während Umgebungen, Gegenstände, Architektur und Licht deutlich detailreicher sein dürfen.
 
 Leitprinzip:
 
-**Style stays. World changes. Format follows the platform.**
+**Simple stickmen. Rich world. Style stays. World changes.**
 
-Der Zeichenstil und die Figuren-DNA bleiben gleich. Kleidung, Architektur, Technik, Requisiten, Umgebung und Licht passen sich Thema, Ort und Epoche an. Das Bildformat passt sich der Produktionsfläche an.
+## 1. STRICT STICKMAN DNA — HARD LOCK
 
-## 1. Figuren-DNA
+Jede sichtbare Person muss dieselbe Grundanatomie besitzen:
+- einfacher runder oder ovaler Kopf
+- Kopf als klare flache 2D-Form, keine realistische Schädel-/Gesichtsmodellierung
+- minimale Punkt-/Strichaugen
+- einfacher kleiner Mund
+- Augenbrauen nur reduziert, wenn nötig
+- **keine realistische Nase**
+- **keine realistischen Ohren**
+- kein ausgeformter Hals
+- kleiner stark vereinfachter Torso
+- **sehr dünne lineare Arme und Beine** mit nahezu gleichbleibender Strich-/Stabdicke
+- keine fleischigen Ober-/Unterarme oder Oberschenkel
+- Hände nur als einfache Punkte, kleine Kreise, Mitten oder Nubs
+- **keine Fingeranatomie**
+- Füße/Schuhe stark vereinfacht, z. B. kleine flache Capsule-/Shoe-Formen
 
-Menschen werden immer als klar erkennbare Stickman-/Minimalfiguren dargestellt:
-- runder, einfacher Kopf
-- sehr reduzierte Augen, Mund und bei Bedarf Augenbrauen
-- dünne dunkle Arme und Beine
-- kleiner vereinfachter Torso
-- einfache Hände; keine anatomisch detaillierten Finger nötig
-- Körpersprache und Pose tragen einen großen Teil der Emotion
-- Kleidung darf Epoche, Beruf, Rolle und Situation zeigen
-- Haare, Bart, Brille, Kopfbedeckung und Accessoires dürfen Identität vermitteln, ohne die Stickman-Grundanatomie zu verändern
-- keine realistischen menschlichen Gesichter
-- keine Anime-, Chibi-, Kinderbuch- oder 3D-Figuren
+Kleidung ist erlaubt, aber sie liegt **auf der Stickman-DNA**:
+- Hoodie, Jacke, Hemd, Uniform, historische Kleidung, Tasche, Brille, Kopfbedeckung usw. sind erlaubt
+- Kleidung darf den Torso etwas formen
+- Kleidung darf Arme/Beine aber niemals in normale menschliche Cartoon-Gliedmaßen verwandeln
+- keine Schulter-/Muskel-/Körpermodellierung wie bei normalen Cartoon-Menschen
 
-Die Grundanatomie bleibt über alle Videos, Orte, Epochen und Formate erkennbar gleich.
+## 2. ALLE MENSCHEN — AUSNAHMSLOS
 
-### HARTES STICKMAN-ONLY-GATE
+STRICT STICKMAN ONLY gilt für:
+- Hauptfigur
+- Nebenfiguren
+- Passanten
+- Menschenmengen
+- Forscher und Versuchspersonen
+- historische Personen
+- entfernte Mini-Figuren
+- Personen in Fahrzeugen
+- Personen hinter Fenstern
+- Menschen auf Monitoren/Smartphones/TVs
+- Personen auf Fotos, Postern, Werbung und Plakaten
+- Spiegelungen
+- Illustrationen oder Erinnerungsbilder innerhalb einer Szene
 
-**Jede menschliche Figur im Bild muss zur Stickman-Welt gehören.** Das gilt ohne Ausnahme für Hauptfiguren, Nebenfiguren, Menschenmengen, Hintergrundpersonen, historische und moderne Personen, kleine entfernte Figuren sowie Menschen auf Displays oder Plakaten.
+**Es darf im gesamten Bild keine einzige normale Cartoon-, semi-realistische oder realistische Person auftauchen.**
 
-Nicht zulässig:
-- normale Cartoon-Menschen mit ausgeformter Anatomie
-- realistische Gesichter oder Gliedmaßen
-- detaillierte Hände/Finger
-- semi-realistische Menschen
-- gemischte Figurenstile
+Wenn eine einzige sichtbare Person nicht klar dieselbe Stickman-DNA verwendet:
+**STYLE FAIL → Bild verwerfen und neu generieren.**
 
-Wenn eine deutlich sichtbare menschliche Figur nicht dieser DNA entspricht: **STYLE FAIL → neu generieren.**
+## 3. Was NICHT als Stickman akzeptiert wird
 
-## 2. Umgebungen und Realitätsgrad
+HARD FAIL:
+- großer Cartoon-Kopf auf normalem menschlichem Körper
+- dicke menschliche Arme/Beine
+- ausgeformte Schultern
+- realistische Hände/Finger
+- normale Cartoon-Gesichter
+- sichtbare Nase/Ohren mit realistischer Form
+- halb Stickman / halb Mensch
+- Hauptfigur als Stickman, Hintergrund als normale Menschen
+- 3D-/Pixar-/CGI-Figur
+- Anime/Manga/Chibi
+- photorealistische oder semi-realistische Person
 
-Die Welt darf deutlich detailreicher und realitätsnäher sein als die Figur.
+## 4. Umgebung und Realitätsgrad
 
-Realitätsnah bedeutet reale räumliche Logik, glaubwürdige Architektur, passende Kleidung, korrekte Gegenstände, natürliche Größenverhältnisse, nachvollziehbare Materialien, Perspektive und Licht — weiterhin als stilisierte 2D-Illustration.
+Die Welt darf und soll deutlich detailreicher sein als die Figuren.
 
-Drei erlaubte Darstellungsstufen:
+Erlaubt und erwünscht:
+- glaubwürdige Räume
+- detaillierte Busse, Bahnen, Straßen, Büros, Wohnungen, Schulen, Labore
+- passende Möbel und Technik
+- reale räumliche Logik
+- nachvollziehbare Materialien
+- gute Perspektive
+- weiches glaubwürdiges Licht
+- natürliche Objektfarben
+- dezentes 2D-/Cel-Shading
+
+Wichtig:
+**Detailreichtum gehört in die Welt, nicht in die menschliche Anatomie.**
+
+## 5. Drei Darstellungsmodi
 
 ### A — Concept / Abstract
-Für Denkmodelle, Entscheidungen, Ursache-Wirkung, Aufmerksamkeit, Vergleiche und Metaphern.
+Für Mechanismen, Entscheidungen, Vergleiche und Metaphern.
 - reduzierte Umgebung
-- starke visuelle Hierarchie
-- einfache Formen, Pfeile und Symbolik
-- nur relevante Objekte
+- klare visuelle Hierarchie
+- wenige relevante Symbole
+- wenn Menschen sichtbar sind: STRICT STICKMAN ONLY
 
 ### B — Everyday Editorial
-Standard für moderne Alltagsszenen.
-- glaubwürdige Räume und Straßen
-- erkennbare Möbel, Geräte, Kleidung und Requisiten
-- mittlerer Detailgrad
-- natürliche Perspektive und Lichtwirkung
-- sämtliche Menschen bleiben Stickman
+Standard für Alltagsszenen.
+- glaubwürdige Räume, Verkehrsmittel, Straßen und Geräte
+- mittlerer bis hoher Umgebungsdetailgrad
+- natürliche Perspektive und Licht
+- alle Personen STRICT STICKMAN ONLY
 
 ### C — Grounded Scene / Historical
-Für historische, kulturelle oder stark ortsgebundene Szenen.
-- Architektur, Kleidung, Werkzeuge, Fahrzeuge und Umgebung dürfen deutlich detailreicher sein
-- reale Epoche und Umgebung visuell plausibel
+Für historische oder stark ortsgebundene Szenen.
+- Architektur, Kleidung, Werkzeuge, Fahrzeuge und Umgebung dürfen detailliert sein
 - historische Kleidung wird auf Stickman-Figuren angewendet
+- niemals normale historische Cartoon-Menschen
 
-## 3. Farbe
+## 6. Farbe
 
-- nicht standardmäßig ausgewaschen, beige oder pastellig
 - natürliche, erkennbare Objektfarben
-- mittlere bis kräftige kontrollierte Sättigung erlaubt
+- mittlere bis kräftige kontrollierte Sättigung
 - Fokusobjekte dürfen stärker gesättigt sein
-- historische Szenen nicht automatisch sepia
-- Off-White nur für bewusst grafische/abstrakte Szenen
-- keine chaotische Neon- oder Regenbogenpalette
+- kein permanenter Beige-/Sepia-/Pastellfilter
+- keine chaotische Neon-/Regenbogenpalette
 
-## 4. Linien, Flächen und Shading
+## 7. Linien und Shading
 
 - saubere dunkle, leicht organische Outlines
-- Linien dürfen leicht variieren, aber nicht skizzenhaft-chaotisch werden
+- Stickman-Gliedmaßen klar dünner als Umgebungsobjekte
 - überwiegend flächige 2D-Farben
 - dezentes Cel-/Illustrations-Shading
-- leichte Material- und Lichtwirkung erlaubt
 - subtile Textur erlaubt
 - keine fotorealistischen Oberflächen
 - kein glossy 3D-Render-Look
 
-## 5. Zeit und Epochen
+## 8. Kontinuität
 
-**Style stays. World changes.**
+Wiederkehrende Hauptfigur konstant halten:
+- Kopfgröße und Kopfform
+- Augen-/Mundstil
+- Torsoform
+- Armlänge/-dicke
+- Beinlänge/-dicke
+- Hände-/Fußvereinfachung
+- Kleidung und Farben
+- Accessoires
 
-Nur die Welt verändert sich:
-- moderne Szene → moderne Kleidung, Smartphone, heutige Architektur
-- 1950er → passende Kleidung, Fahrzeuge, Möbel und Technik
-- Mittelalter → passende Gebäude, Märkte, Werkzeuge und Pferde
-- Antike → passende Architektur, Kleidung und Gegenstände
-- Zukunft → nur wenn inhaltlich nötig, plausibel statt generischem Sci-Fi
+Die Master-Referenz sperrt diese Eigenschaften.
 
-Die Stickman-Grundanatomie bleibt immer gleich.
-
-## 6. Komplexe Erklärungen
-
-Die Bildwelt beherrscht:
-1. Character Scene
-2. Environment Scene
-3. Concept Metaphor
-4. Diagram / Process
-5. Timeline
-6. Comparison A/B
-7. Cutaway / Inside View
-8. Map / Spatial Explanation
-
-Nicht jedes Bild braucht einen Stickman als Hauptmotiv. Sobald Menschen sichtbar sind, gelten die Stickman-Regeln.
-
-## 7. Psychologische Mechanismen
-
-Unsichtbare Vorgänge verständlich visualisieren, z. B. durch Fokus, Gedanken-/Erinnerungsebenen, Entscheidungswege, Gruppenanordnung, Ursache → Handlung → Konsequenz, Vergleiche oder Erwartung-vs.-Realität.
-
-Keine zufälligen schwebenden Icons, wenn eine konkrete Szene den Gedanken besser erklärt.
-
-## 8. Komposition und FORMAT HARD LOCK
-
-Die Stil-DNA ist formatneutral. **Die Produktionsfläche legt das Seitenverhältnis fest:**
+## 9. Komposition und Format
 
 ### Reels unter `reels/`
-- **9:16 / 1080×1920 / 30 fps**
+- 9:16 / 1080×1920 / 30 fps
 - vertikale Komposition
-- Hauptmotiv ausreichend groß
-- Motive vertikal staffeln
-- wichtige Inhalte nicht an äußerste Ober-/Unterkante
-- Gruppen und Umgebung für ein Portrait-Frame neu komponieren, nicht aus 16:9 abschneiden
 
 ### YouTube unter `youtube/`
-- **16:9 / 1920×1080 / 30 fps**
+- 16:9 / 1920×1080 / 30 fps
 - horizontale Komposition
-- Breite für Umgebung, Abläufe und Vergleiche nutzen
-- Vordergrund, Mittelgrund und Hintergrund sinnvoll verteilen
 
 Für beide:
 - klare Hauptaussage pro Visual Beat
-- genügend Raum für leichte Zooms/Pans
-- Motiv nicht unnötig klein
 - Umgebung erzählt mit
+- genug Raum für leichte Zooms/Pans
 - sichtbarer Text nur wenn nötig und dann Deutsch
-
-## 9. Bewegungsfreundlichkeit
-
-Bilder sollen sich für zurückhaltende Bewegung eignen:
-- leichte Zooms
-- Pans
-- Fokuswechsel
-- Objekt-/Pfeil-Einblendungen
-- Aufbau eines Diagramms
-- kleine Charakterbewegungen
-
-Keine hektische Daueranimation als Stilprinzip.
 
 ## 10. Master-Prompt-DNA
 
-Formatneutrale Basis:
+Verbindliche Basis:
 
-`universal editorial 2D stickman explainer world, ALL human figures including background people use the same consistent minimalist stickman anatomy, round simple heads, minimal facial features, thin dark limbs and small simplified torsos, no conventional cartoon humans, richer grounded environment, clean dark organic outlines, clear natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, variable detail level depending on the scene, educational visual storytelling, coherent visual hierarchy`
+`strict universal editorial 2D stickman explainer world, EVERY visible human or human-like figure uses the exact same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose, no realistic ears, no realistic neck, small simplified torso, very thin line-like arms and legs with near-constant thickness, simple nub/mitten hands with no fingers, simplified feet, clothing may identify role but must never create normal human anatomy; ABSOLUTELY NO conventional cartoon humans, no semi-realistic humans, no mixed human styles; environments may be rich, grounded and detailed, clean dark organic outlines, natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, subtle cel shading, educational editorial visual storytelling`
 
-Danach **immer genau einen Formatsuffix** anhängen:
+Danach genau einen Formatsuffix anhängen:
 
 ### REEL FORMAT SUFFIX
-`vertical portrait 9:16 composition, 1080x1920, composition designed natively for a tall mobile frame, strong vertical hierarchy, no landscape framing`
+`vertical portrait 9:16 composition, 1080x1920, composition designed natively for a tall mobile frame`
 
 ### YOUTUBE FORMAT SUFFIX
 `horizontal landscape 16:9 composition, 1920x1080, composition designed natively for a wide video frame`
 
-Je nach Szene ergänzen:
-- `abstract concept illustration` für Modus A
-- `grounded modern editorial scene, realistic environment but strictly stickman human characters` für Modus B
-- `historically grounded illustrated environment, period-accurate world with strictly stickman human characters` für Modus C
+## 11. Szenen-Pflichtsatz
 
-## 11. Negativregeln
+Für **jede** Bildgenerierung gilt zusätzlich, auch wenn der einzelne Szenenprompt es nicht wiederholt:
 
-Nicht verwenden:
-- Photorealismus
-- vollrealistische oder semi-realistische Menschen
-- normale Cartoon-Menschen
-- gemischte Figurenstile
-- realistische menschliche Anatomie
-- 3D-/Pixar-/CGI-Look
-- Anime/Manga
-- Chibi/Kinderbuchästhetik
-- permanente Whiteboard-Leere
-- permanente Beige-/Sepia-/Pastelloptik
-- unnötige Textblöcke
-- dekorative Objekte ohne Erklärfunktion
-- falsches Seitenverhältnis für die jeweilige Produktionsfläche
+`STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in the foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same true stickman anatomy as the approved master. Do not generate normal cartoon humans. If any person looks human-like rather than stickman, regenerate the image.`
 
-## 12. Kontinuität
+## 12. Master-Referenzbild — HARD LOCK
 
-Verbindliche Detailregeln stehen zusätzlich in `02-bilder/CONTINUITY.txt` des Projekts.
+Textprompts allein reichen nicht aus.
 
-Erst wird festgelegt, **was** sichtbar sein muss; danach wird der Inhalt in dieser Bildwelt und im korrekten Zielformat umgesetzt.
-
-## 13. Master-Referenzbild — HARD LOCK
-
-Textprompts allein gelten nicht als ausreichende Stilkontrolle.
-
-Für jedes Projekt wird vor der Seriengenerierung ein freigegebenes Master-Referenzbild festgelegt. Ab Bild 02 gilt:
-- Master-Referenz bei jeder Generierung als Bildreferenz anhängen
-- Figurendesign, Linien, Farbverhalten, Shading und Illustrationsästhetik an Referenz ausrichten
-- nur Szene, Pose, Perspektive, Umgebung und Requisiten verändern
-- bei sichtbarem Style-Drift Asset verwerfen und neu generieren
-- Master-Referenz muss bereits im **korrekten Zielformat** des Projekts erzeugt sein
+1. Bild 01 allein generieren.
+2. Bild 01 muss die STRICT-STICKMAN-DNA klar zeigen.
+3. Bild 01 visuell freigeben.
+4. Ab Bild 02 Bild 01 bei jeder Generierung als Referenz anhängen.
+5. Master sperrt Anatomie, Linien, Farben, Shading und Gesamtästhetik.
+6. Kamera, Pose, Ort, Licht und Komposition dürfen sich je Szene ändern.
+7. Ein späteres Bild ersetzt den Master nicht automatisch.
 
 Priorität bei Konflikten:
-**FORMAT_LOCK + Master-Referenz > generische Stilwörter im Szenenprompt.**
+**FORMAT_LOCK + STRICT STICKMAN ONLY + freigegebene Master-Referenz > generische Stilwörter im Szenenprompt.**

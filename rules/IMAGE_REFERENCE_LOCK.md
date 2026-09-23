@@ -8,13 +8,14 @@ Ziel: Alle Bilder eines Videos müssen eindeutig wie dieselbe Bildwelt aussehen.
 
 Vor der Seriengenerierung wird genau ein Bild als visuelle Master-Referenz festgelegt.
 
-Für den aktuellen Reel-Pilot gilt:
-- Szene/Bild 01 wird zuerst alleine generiert.
-- Bild 01 muss vor allen anderen Bildern visuell geprüft und freigegeben werden.
-- Erst nach Freigabe wird Bild 01 als `00-master-reference.png` gespeichert bzw. bei der Bildgenerierung als Referenz angehängt.
-- Bild 02 bis Ende dürfen ohne die freigegebene Master-Referenz nicht final generiert werden.
+Verbindlicher Ablauf für jedes Projekt:
+1. Bild 01 allein generieren.
+2. Bild 01 visuell prüfen.
+3. Bild 01 nur freigeben, wenn es bereits **STRICT STICKMAN ONLY** erfüllt.
+4. Bild 01 als Master speichern.
+5. Bild 02 bis Ende dürfen ohne die freigegebene Master-Referenz nicht final generiert werden.
 
-Für zukünftige Projekte darf alternativ vor Szene 01 ein eigenes `00-master-reference` erzeugt werden, wenn Szene 01 stilistisch nicht genug von Figur und Welt zeigt.
+Für YouTube liegt die sichtbare Master-Datei direkt als `03-bilder/01.png`.
 
 ## 2. Was die Referenz sperrt
 
@@ -22,17 +23,45 @@ Die Master-Referenz ist verbindlicher Anker für:
 - Stickman-Grundanatomie
 - Kopf-/Gesichtsvereinfachung
 - Verhältnis von Kopf, Torso, Armen und Beinen
+- sehr dünne lineare Arme/Beine
+- Hand-/Fußvereinfachung
 - Linienart und Linienstärke
 - Flächenbehandlung
 - Cel-/Illustrations-Shading
 - Farbverhalten und Sättigungsniveau
 - Detailgrad der Welt
-- Verhältnis zwischen einfacher Figur und reichhaltigerer Umgebung
+- Verhältnis zwischen sehr einfacher Figur und reichhaltigerer Umgebung
 - allgemeine Illustrationsästhetik
 
 Diese Eigenschaften dürfen zwischen Bildern nicht neu interpretiert werden.
 
-## 3. Was sich ändern darf
+## 3. STRICT STICKMAN ONLY — auch im Hintergrund
+
+Alle menschlichen oder menschenähnlichen Figuren müssen dieselbe Stickman-DNA wie der Master verwenden.
+
+Das gilt auch für:
+- Nebenfiguren
+- Menschenmengen
+- Passanten
+- Forscher/Versuchspersonen
+- historische Figuren
+- Personen in Fahrzeugen
+- entfernte Mini-Figuren
+- Personen auf Screens, Fotos, Postern, Werbung und Plakaten
+- Spiegelungen
+- Figuren in Erinnerungs-/Gedankenebenen
+
+Nicht zulässig:
+- normale Cartoon-Menschen
+- semi-realistische Menschen
+- fleischige menschliche Arme/Beine
+- realistische Hände/Finger
+- realistische Nasen/Ohren
+- Mischstil: Hauptfigur Stickman, Hintergrund normale Menschen
+
+Wenn auch nur eine sichtbare Person nicht zur Master-Stickman-DNA gehört: **FAIL → neu generieren.**
+
+## 4. Was sich ändern darf
 
 Je Szene dürfen sich ändern:
 - Pose und Handlung
@@ -46,76 +75,83 @@ Je Szene dürfen sich ändern:
 
 Trotzdem muss das Ergebnis klar aus derselben Stickman-Welt stammen.
 
-## 4. Wiederkehrende Hauptfigur
+## 5. Wiederkehrende Hauptfigur
 
-Wenn dieselbe Figur wiederkehrt, zusätzlich zur Stilreferenz konstant halten:
+Wenn dieselbe Figur wiederkehrt, konstant halten:
 - Kopf-/Körperproportionen
+- Kopf-/Gesichtsstil
+- Arm-/Beindicke
+- Hand-/Fußvereinfachung
 - Kleidung, solange kein Wechsel vorgesehen ist
 - Farbmerkmale
 - Haare/Brille/Accessoires
-- Smartphone bzw. wichtige wiederkehrende Requisiten
+- wichtige wiederkehrende Requisiten
 
-## 5. Generierung in 5er-Batches
+## 6. Generierung in 5er-Batches — HARD LOCK
 
-Nach der Freigabe von Bild 01 werden die restlichen Bilder **nicht alle auf einmal** erzeugt.
+Nach der Freigabe von Bild 01 werden die restlichen Bilder **niemals alle auf einmal** erzeugt.
 
 Verbindlicher Ablauf:
-1. Bild 01 alleine erzeugen, prüfen und als Master-Referenz freigeben.
-2. Danach maximal **5 neue Bilder pro Batch** generieren.
-3. Jedes Bild des Batches bekommt dieselbe freigegebene Master-Referenz angehängt.
-4. Nach jedem Batch alle fünf Bilder einzeln gegen Bild 01 und zusätzlich untereinander prüfen.
-5. Fehlerhafte Bilder sofort neu generieren; gute Bilder nicht unnötig neu erzeugen.
-6. Erst wenn der gesamte Batch den Style-/Continuity-Check besteht, darf der nächste Batch gestartet werden.
-7. Die Master-Referenz bleibt Bild 01; spätere Bilder ersetzen sie nicht automatisch.
+1. Bild 01 allein erzeugen.
+2. STOP.
+3. Bild 01 visuell prüfen und freigeben.
+4. Danach maximal **5 neue Bilder pro Batch** generieren.
+5. Für jedes Bild des Batches dieselbe Master-Referenz anhängen.
+6. Nach jedem Batch **STOP**.
+7. Alle Bilder einzeln gegen Bild 01 und zusätzlich untereinander prüfen.
+8. Nur fehlerhafte Bilder regenerieren; gute Bilder behalten.
+9. Erst nach vollständigem PASS darf der nächste Batch starten.
+10. Bild 01 bleibt Master; spätere Bilder ersetzen ihn nicht.
 
-Für den aktuellen 26-Bilder-Pilot gilt exakt:
-- MASTER: `01`
-- Batch 1: `02–06`
-- Batch 2: `07–11`
-- Batch 3: `12–16`
-- Batch 4: `17–21`
-- Batch 5: `22–26`
+Ein Agent darf einen nächsten Batch nicht automatisch starten, wenn der aktuelle Batch noch nicht geprüft/freigegeben ist.
 
-Diese Blockgröße verhindert, dass ein Stilfehler über 20+ Bilder unbemerkt weitergetragen wird.
-
-## 6. Generierungsregel pro Bild
+## 7. Generierungsregel pro Bild
 
 Für Bild 02 bis Ende:
-1. Master-Referenz als Bildreferenz anhängen.
+1. Master-Referenz anhängen.
 2. Szenenprompt verwenden.
-3. Explizit verlangen: `Match the attached master reference exactly for character design, linework, color treatment, shading and overall illustration style. Change only the scene content, pose, camera and environment required by this prompt.`
-4. Ergebnis gegen Master-Referenz prüfen.
-5. Bei erkennbarem Stil-Drift neu generieren.
+3. Diese Referenzklausel anwenden:
 
-## 7. Batch-QA
+`Match the attached master reference exactly for true stickman anatomy, character design, head/torso proportions, very thin line-like arms and legs, simple no-finger hands, linework, color treatment, shading and overall illustration style. Change only the scene content, pose, camera, environment, props and lighting required by this prompt. STRICT STICKMAN-ONLY CHECK: every person visible anywhere in foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same stickman anatomy. Do not generate conventional cartoon humans or semi-realistic people.`
 
-Nach jedem 5er-Batch prüfen:
-- gleiche Stickman-Grundanatomie wie Bild 01
-- gleiche Linienart und ungefähr gleiche Linienstärke
+4. Ergebnis gegen Master prüfen.
+5. Bei Style-/Anatomie-Drift neu generieren.
+
+## 8. Batch-QA
+
+Nach jedem Batch prüfen:
+- gleiche runde/ovale einfache Kopfform
+- keine realistische Nase/Ohren
+- gleicher kleiner vereinfachter Torso
+- Arme/Beine weiterhin sehr dünn und linear
+- keine fleischigen Gliedmaßen
+- keine Fingeranatomie
+- gleiche Linienart/-stärke
 - gleiche Flächen-/Shading-Logik
-- vergleichbares Farbverhalten und Sättigungsniveau
-- wiederkehrende Hauptfigur eindeutig dieselbe Figur
-- wiederkehrende Räume/Requisiten konsistent
-- alle Hintergrundmenschen ebenfalls Stickman
-- trotz verschiedener Perspektiven eindeutig dieselbe Bildwelt
+- vergleichbares Farbverhalten
+- Hauptfigur eindeutig dieselbe Figur
+- alle Hintergrundmenschen STRICT STICKMAN ONLY
+- keine normale Cartoon-Person auf Screens/Postern/Reflexionen
+- trotz verschiedener Perspektiven dieselbe Bildwelt
 
-Wenn ein Bild durchfällt, wird nur dieses Bild mit derselben Master-Referenz neu generiert. Der nächste Batch startet erst nach vollständigem PASS.
+Wenn ein Bild durchfällt, wird nur dieses Bild mit derselben Master-Referenz neu generiert.
 
-## 8. HARD FAIL
+## 9. HARD FAIL
 
 Ein Bild wird verworfen, wenn:
-- Stickman plötzlich andere Anatomie hat
+- Stickman-Anatomie sichtbar wechselt
 - Kopf-/Torso-Proportionen deutlich wechseln
+- dicke normale Cartoon-Arme/-Beine auftauchen
 - normale Cartoon-Menschen auftauchen
-- Linien plötzlich dicker/dünner oder anders gezeichnet wirken
-- Farbwelt ohne inhaltlichen Grund komplett kippt
-- Shading/Rendering in einen anderen Stil driftet
-- dasselbe Hauptmotiv wie eine andere Figur wirkt
-- die Umgebung plötzlich nach 3D, Anime, Fotorealismus oder einem anderen Illustrationssystem aussieht
+- Hintergrundfiguren menschlicher wirken als der Master
+- realistische Hände/Finger, Nasen oder Ohren auftauchen
+- Linien/Shading/Farbwelt ohne Grund in einen anderen Stil driften
+- Hauptfigur wie eine andere Figur wirkt
+- Umgebung nach 3D, Anime oder Fotorealismus kippt
 
-## 9. Priorität
+## 10. Priorität
 
 Bei Konflikt gilt:
-**Master-Referenz > generische Stilwörter im Szenenprompt.**
+**STRICT STICKMAN ONLY + Master-Referenz > generische Stilwörter im Szenenprompt.**
 
-Der Szenenprompt bestimmt, was gezeigt wird. Die Master-Referenz bestimmt, wie es aussieht.
+Der Szenenprompt bestimmt, **was** gezeigt wird. Die Master-Referenz bestimmt, **wie** Figuren und Bildwelt aussehen.

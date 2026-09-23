@@ -24,20 +24,34 @@ Die Kanalnische ist **Alltagspsychologie & menschliches Verhalten**.
 
 Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
 
-## Bildwelt
+## Bildwelt — HARD LOCK
 
-Verbindlich ist **Universal Editorial Stickman World v1.2**. Jede sichtbare menschliche Figur bleibt Stickman; Umgebung und Gegenstände dürfen detailreicher und realitätsnäher sein.
+Verbindlich ist **Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY**.
 
-### Verbindlicher Referenz-Workflow
+Jede sichtbare menschliche oder menschenähnliche Figur muss dieselbe echte Stickman-Grundanatomie benutzen. Das gilt ohne Ausnahme für Hauptfiguren, Nebenfiguren, Menschenmengen, Hintergrundpersonen, Forscher, historische Figuren, Passanten sowie Personen auf Screens, Fotos, Postern, Werbung, Spiegelungen oder Illustrationen innerhalb der Szene.
+
+Echte Stickman-DNA:
+- einfacher runder/ovaler Kopf
+- keine realistische Nase, Ohren oder Gesichtsmodellierung
+- minimale Augen/Mund/Augenbrauen
+- kleiner stark vereinfachter Torso
+- sehr dünne, lineare Arme und Beine ohne fleischige Volumen
+- Hände nur als einfache Punkte/Mitten/Nubs, keine Fingeranatomie
+- Füße/Schuhe stark vereinfacht
+- Kleidung darf Rolle und Epoche zeigen, darf aber niemals normale menschliche Anatomie erzeugen
+
+**Normale Cartoon-Menschen, halb-realistische Menschen oder Mischstile sind HARD FAIL.** Die Umgebung darf dagegen deutlich detailreicher, räumlich glaubwürdig und hochwertig illustriert sein.
+
+## Verbindlicher Referenz-Workflow
 
 Bei Serienbildern gilt:
 1. zuerst Bild 01 bzw. ein explizites Masterbild alleine generieren,
 2. visuell prüfen und freigeben,
 3. dieses Bild als Master-Referenz für alle Folgeassets verwenden,
-4. danach höchstens 5 neue Bilder pro Batch erzeugen,
-5. jeden Batch gegen die Master-Referenz und untereinander prüfen,
-6. bei Style-Drift nur fehlerhafte Bilder neu generieren,
-7. erst nach vollständigem PASS mit dem nächsten 5er-Batch fortfahren.
+4. danach **exakt höchstens 5 neue Bilder pro Batch** erzeugen,
+5. nach jedem Batch STOP und QA,
+6. nur fehlerhafte Bilder regenerieren,
+7. erst nach vollständigem PASS mit dem nächsten Batch fortfahren.
 
 Kein Folgeasset darf die Master-Referenz eigenmächtig ersetzen. Details stehen in `rules/IMAGE_REFERENCE_LOCK.md`.
 
@@ -80,40 +94,42 @@ Für beide Formate:
 - Master-Referenz bestimmt den Stil, nicht die Komposition
 - keine generischen Wiederholungen derselben Pose oder desselben Bildaufbaus als Füllmaterial
 - Reels vertikal komponieren; YouTube horizontal komponieren
+- jedes Bild vor Freigabe auf Stickman-only prüfen, einschließlich winziger Hintergrundpersonen
 
 ## Zwei getrennte Produktionsflächen
 
-- `youtube/` — ausschließlich reguläre YouTube-Longform-Projekte. Themen liegen direkt als eigene Ordner unter `youtube/`.
-- `reels/` — ausschließlich Reels/Shorts. Organisation nach Wochenordnern und darin Montag bis Sonntag.
+- `youtube/` — reguläre YouTube-Longform-/Testvideo-Projekte als eigene Themenordner
+- `reels/` — Reels/Shorts nach Wochenordnern und Wochentagen
 
 Reels dürfen niemals unter `youtube/` liegen und YouTube-Projekte niemals unter `reels/`.
 
 ## Einfache YouTube-Arbeitsfläche — HARD LOCK
 
-Für jedes neue reguläre YouTube-Projekt soll die normale Nutzeransicht bewusst einfach bleiben. Auf Projektebene werden nur diese Arbeitsordner angelegt:
+Für jedes neue YouTube-Projekt bleibt die normale Nutzeransicht bewusst einfach:
 
 - `01-script/` → enthält nur `script.txt`
 - `02-google-flow/` → enthält nur `google-flow-prompt.txt`
-- `03-bilder/` → hier kommen `01.png`, `02.png`, `03.png` usw. direkt hinein; `01.png` ist zugleich die Master-Referenz
-- `04-audio/` → hier kommt das finale `final-voice.mp3` hinein
-- `05-export/` → hier kommt der fertige Videoexport hinein
-- `99-intern/` → alle Quellen, Style-/Continuity-Regeln, QA, Phase-1/Phase-3-Dateien und sonstige technische Metadaten
+- `03-bilder/` → `01.png`, `02.png`, `03.png` usw.; `01.png` ist zugleich Master-Referenz
+- `04-audio/` → finales `final-voice.mp3`
+- `05-export/` → fertiger Videoexport
+- `99-intern/` → Quellen, Style-/Continuity-Regeln, QA, Phase-1/Phase-3-Dateien und sonstige Technik
 
 Der Nutzer soll für die normale Produktion **nur ein Skript und eine einzige Prompt-Datei** öffnen müssen.
 
-`02-google-flow/google-flow-prompt.txt` ist die einzige nutzerseitige Prompt-Datei für die komplette Bildproduktion eines Videos. Sie muss in sich enthalten:
+`02-google-flow/google-flow-prompt.txt` ist die einzige nutzerseitige Prompt-Datei für die komplette Bildproduktion. Sie muss enthalten:
 - Format und Stil
+- STRICT-STICKMAN-ONLY-Gate
 - Master-Referenz-Regel
-- 5er-Batch-Workflow
+- konkreten 5er-Batch-Plan mit STOP nach jedem Batch
 - Dateinamen
 - Sprachregel für sichtbaren Text
 - alle individuellen Szenen-/Bildprompts des Videos
 
-Keine zusätzlichen `STYLE.txt`, `CONTINUITY.txt`, `PRODUCTION_RULES.txt`, `visual-qa.md` oder weiteren Prompt-Dateien in der normalen sichtbaren Arbeitsfläche anlegen. Solche technischen Dateien gehören ausschließlich nach `99-intern/`.
+Keine zusätzlichen Prompt-/Style-Dateien in der normalen sichtbaren Arbeitsfläche anlegen. Technische Dateien gehören ausschließlich nach `99-intern/`.
 
 ## Reihenfolge
 
-THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Phase 2 → Phase 3 → Final-QA.
+THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Phase 2 Bilder → Phase 3 Timings/Render → Final-QA.
 
 Keine Phase überspringen. Skriptänderung setzt nachgelagerte semantische/visuelle Planung zurück.
 
@@ -121,3 +137,6 @@ Keine Phase überspringen. Skriptänderung setzt nachgelagerte semantische/visue
 
 Bei Formatkonflikten gilt ohne Ausnahme:
 **`rules/FORMAT_LOCK.md` gewinnt.**
+
+Bei Figuren-/Stilkonflikten gilt:
+**STRICT STICKMAN ONLY + freigegebene Master-Referenz gewinnt.**

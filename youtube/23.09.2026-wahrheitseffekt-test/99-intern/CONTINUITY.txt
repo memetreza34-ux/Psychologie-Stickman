@@ -2,26 +2,38 @@ CONTINUITY — WAHRHEITSEFFEKT TEST
 
 MASTER
 - Szene 01 ist die verbindliche Master-Referenz.
-- Folgeassets dürfen den Master nicht eigenmächtig ersetzen.
-- Bei jeder Szene 02–69 Szene 01 als Bildreferenz anhängen.
+- Bild 01 wird als `03-bilder/01.png` gespeichert.
+- Folgeassets dürfen den Master nicht ersetzen.
+- Bei jeder Szene 02–69 `01.png` als Bildreferenz anhängen.
 
 WIEDERKEHRENDE HAUPTFIGUR
-- round simple light head
-- tiny black eyes and minimal mouth
-- thin charcoal limbs
-- small simplified torso
+- einfacher runder heller Kopf
+- winzige schwarze Augen
+- minimaler Mund
+- keine Nase
+- keine realistischen Ohren
+- kein realistischer Hals
+- kleiner vereinfachter Torso
+- sehr dünne charcoal-farbene lineare Arme und Beine
+- einfache Nub-/Mitten-Hände ohne Finger
 - dark teal hoodie
-- charcoal trousers
+- charcoal trousers ohne menschliches Beinvolumen
 - simple light shoes
-- keine realistische Anatomie
-- keine normalen Cartoon-Hände oder Gesichter
+
+ALLE ANDEREN PERSONEN
+- exakt dieselbe grundlegende Stickman-Anatomie wie der Master
+- Unterschiede nur über einfache Kleidung, Farbe, Accessoires, Pose und Rolle
+- das gilt für Hintergrund, Menge, Forscher, Versuchspersonen, Screens, Poster, Fotos und Spiegelungen
 
 KONSTANT HALTEN
 - Stickman-Proportionen
+- Kopf-/Gesichtsstil
+- Arm-/Beindicke
+- Hand-/Fußvereinfachung
 - Outline-/Linienlogik
 - Farbverhalten und Sättigungsniveau
 - vereinfachtes 2D-Shading
-- Verhältnis zwischen minimalistischen Menschen und reicheren Umgebungen
+- Verhältnis zwischen minimalistischen Stickmen und reicheren Umgebungen
 - Kleidungsfarben der wiederkehrenden Hauptfigur
 
 DARF SICH PRO SZENE ÄNDERN
@@ -32,17 +44,40 @@ DARF SICH PRO SZENE ÄNDERN
 - Requisiten
 - Lichtstimmung
 - Anzahl der Figuren
-- abstrakt / Alltag / Forschung, solange dieselbe Bildwelt erhalten bleibt
+- abstrakt / Alltag / Forschung
+
+BATCHES — HARD LOCK
+MASTER: 01
+Batch 1: 02–06
+Batch 2: 07–11
+Batch 3: 12–16
+Batch 4: 17–21
+Batch 5: 22–26
+Batch 6: 27–31
+Batch 7: 32–36
+Batch 8: 37–41
+Batch 9: 42–46
+Batch 10: 47–51
+Batch 11: 52–56
+Batch 12: 57–61
+Batch 13: 62–66
+Batch 14: 67–69
+
+Nach jedem Batch STOP + QA. Nächster Batch erst nach PASS.
 
 TEXT IM BILD
 - nur wenn wirklich nötig
 - dann ausschließlich Deutsch
 - kurze Labels bevorzugen
-- keine langen Textblöcke
+- keine unnötigen Textblöcke
 
 HARD FAIL
 - normale Cartoon-Menschen
-- semi-realistische oder realistische Menschen
+- semi-realistische/realistische Menschen
+- dicke menschliche Gliedmaßen
+- realistische Hände/Finger
+- Nase/Ohren mit realistischer Form
+- Hintergrundmenschen menschlicher als der Master
 - anderer Hauptcharakter-Look als Master
 - 3D/CGI/Anime/Chibi
 - sichtbarer englischer Erklärungstext

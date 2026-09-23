@@ -1,29 +1,45 @@
 STYLE — WAHRHEITSEFFEKT TEST
 
-LOCKED: UNIVERSAL EDITORIAL STICKMAN WORLD v1.2
+LOCKED: UNIVERSAL EDITORIAL STICKMAN WORLD v1.3 — STRICT STICKMAN ONLY
 
-Menschen:
-- ausnahmslos minimalistische Stickman-Figuren
-- runder einfacher Kopf
-- minimale Gesichtszüge
-- dünne dunkle Gliedmaßen
-- kleiner vereinfachter Torso
-- Emotion vor allem über Pose/Körpersprache
-- auch Forscher, Gruppen, Hintergrundmenschen und Figuren auf Screens bleiben Stickman
+MENSCHEN — HARD LOCK
+- ausnahmslos echte Stickman-Figuren
+- einfacher runder/ovaler Kopf
+- minimale Augen/Mund
+- keine realistische Nase
+- keine realistischen Ohren
+- kein realistischer Hals
+- kleiner stark vereinfachter Torso
+- sehr dünne lineare Arme und Beine mit nahezu gleichbleibender Dicke
+- keine fleischigen Cartoon-Gliedmaßen
+- Hände nur als Punkte/Mitten/Nubs, keine Fingeranatomie
+- stark vereinfachte Füße/Schuhe
+- Kleidung darf Rolle zeigen, darf aber niemals normale menschliche Anatomie erzeugen
+- auch Forscher, Gruppen, Hintergrundmenschen, Screen-/Poster-/Fotofiguren und Spiegelungen bleiben echte Stickmen
 
-Umgebung:
-- glaubwürdig und etwas detailreicher als die Figuren
+HARD FAIL
+- normale Cartoon-Menschen
+- semi-realistische/realistische Menschen
+- dicke menschliche Arme oder Beine
+- realistische Hände/Finger
+- menschliche Hintergrundfiguren bei stickmanartiger Hauptfigur
+- 3D/CGI/Anime/Chibi
+
+UMGEBUNG
+- glaubwürdig und deutlich detailreicher als die Figuren
 - klare natürliche Farben
 - moderate bis kräftige kontrollierte Sättigung
 - saubere dunkle organische Outlines
 - vereinfachte 2D-Materialien
 - glaubwürdige Perspektive und Licht
+- dezentes Cel-Shading
 - nicht fotorealistisch
 
 PROJEKTLOOK
-- moderner, sachlicher Editorial-Doku-Look
+- moderner sachlicher Editorial-Doku-Look
 - Wechsel aus Alltag, Experiment, Diagramm und Metapher
 - kein dauerhaft leerer Whiteboard-Look
 - kein Beige-/Sepia-/Pastell-Einheitsfilter
 - 16:9 / 1920×1080
-- Szene 01 definiert endgültig Figuren-DNA, Linien, Farben und Shading
+- Szene 01 definiert endgültig Stickman-DNA, Linien, Farben und Shading
+- ab Szene 02 immer 01.png als Master-Referenz anhängen

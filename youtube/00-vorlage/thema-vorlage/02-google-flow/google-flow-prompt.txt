@@ -4,7 +4,7 @@ DIESE DATEI IST DER EINZIGE PROMPT, DEN DER NUTZER FÜR GOOGLE FLOW BRAUCHT.
 Keine zusätzlichen Prompt-Dateien pro Szene anlegen.
 
 ZIEL
-Aus dem finalen Skript alle benötigten 16:9-Bilder für ein YouTube-Longform-Video erzeugen.
+Aus dem finalen Skript alle benötigten 16:9-Bilder für ein YouTube-Longform-/Testvideo erzeugen.
 
 FORMAT HARD LOCK
 - 16:9
@@ -13,9 +13,40 @@ FORMAT HARD LOCK
 - horizontale / Landscape-Komposition
 - Bilder direkt für 16:9 planen, nicht aus Hochformat croppen
 
-STIL
-Universal Editorial Stickman World v1.2.
-Alle sichtbaren Menschen bleiben minimalistische Stickman-Figuren. Umgebungen dürfen deutlich detailreicher sein. Keine realistischen Menschen, keine normalen Cartoon-Menschen, kein 3D/CGI, kein Anime, kein Chibi.
+STYLE HARD LOCK — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3
+STRICT STICKMAN ONLY.
+
+EVERY visible human or human-like figure must use the exact same true stickman anatomy, including foreground people, background people, crowds, researchers, historical figures, people on screens, posters, photos, advertisements, reflections and illustrations inside the scene.
+
+TRUE STICKMAN ANATOMY:
+- simple round or oval flat head
+- tiny minimal eyes and mouth
+- no realistic nose
+- no realistic ears
+- no realistic neck
+- small strongly simplified torso
+- very thin line-like arms and legs with near-constant thickness
+- no fleshy human/cartoon limb volume
+- simple nub/mitten/circle hands, no finger anatomy
+- simplified feet/shoes
+- clothing may identify role, era or personality but must never create normal human anatomy
+
+HARD FAIL:
+- conventional cartoon humans
+- semi-realistic humans
+- realistic humans
+- thick human-like arms or legs
+- detailed hands/fingers
+- realistic face anatomy
+- main character as stickman while background characters look human
+- 3D/CGI/Pixar
+- anime/manga/chibi
+
+ENVIRONMENT RULE
+The environment may be much richer and more detailed than the characters: believable rooms, buses, trains, streets, laboratories, furniture, devices, architecture, props, lighting and perspective. Detail belongs in the world, not in human anatomy.
+
+GLOBAL SCENE CLAUSE — APPLIES TO EVERY SINGLE SCENE EVEN IF NOT REPEATED BELOW
+STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in the foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same true stickman anatomy as the approved master. Do not generate normal cartoon humans. If any person looks human-like rather than stickman, the image fails and must be regenerated.
 
 SPRACHE IM BILD
 - sichtbarer Text nur wenn wirklich nötig
@@ -24,26 +55,49 @@ SPRACHE IM BILD
 
 MASTER-REFERENZ
 1. Zuerst ausschließlich Bild 01 generieren.
-2. Bild 01 prüfen und freigeben.
-3. Bild 01 bleibt die Master-Referenz für alle folgenden Bilder.
-4. Bild 01 wird gleichzeitig als `01.png` im Ordner `03-bilder/` gespeichert.
-5. Für Bild 02 und alle folgenden Bilder `01.png` als Bildreferenz anhängen.
-6. Master bestimmt Figuren-DNA, Linien, Farbverhalten, Shading und Gesamtstil.
-7. Master bestimmt NICHT Kamera, Pose, Ort oder Komposition.
+2. Danach STOP.
+3. Bild 01 vollständig prüfen: Stickman-Anatomie, Linien, Farben, Shading, Umgebung, Format.
+4. Bild 01 nur freigeben, wenn STRICT STICKMAN ONLY vollständig erfüllt ist.
+5. Bild 01 bleibt die Master-Referenz für alle folgenden Bilder.
+6. Bild 01 als `01.png` in `03-bilder/` speichern.
+7. Für Bild 02 und alle folgenden Bilder `01.png` als Bildreferenz anhängen.
+8. Master bestimmt Figuren-DNA, Linien, Farbverhalten, Shading und Gesamtstil.
+9. Master bestimmt NICHT Kamera, Pose, Ort oder Komposition.
 
-BATCH-WORKFLOW
-- maximal 5 neue Bilder pro Batch
-- nach jedem Batch Style- und Inhalts-QA
-- nur fehlerhafte Bilder neu erzeugen
+BATCH-WORKFLOW — HARD LOCK
+- niemals alle Bilder auf einmal erzeugen
+- nach Freigabe von 01 immer höchstens 5 neue Bilder pro Batch
+- nach jedem Batch STOP
+- jedes Bild einzeln gegen 01 prüfen
+- zusätzlich den gesamten Batch untereinander vergleichen
+- nur fehlerhafte Bilder regenerieren
 - gute Bilder behalten
+- nächster Batch erst nach vollständigem PASS
 - Dateinamen fortlaufend: `01.png`, `02.png`, `03.png` ...
 - alle fertigen Bilder direkt in `03-bilder/` speichern
 
+Beispiel für einen 69-Bilder-Plan:
+MASTER: 01
+Batch 1: 02–06
+Batch 2: 07–11
+Batch 3: 12–16
+Batch 4: 17–21
+Batch 5: 22–26
+Batch 6: 27–31
+Batch 7: 32–36
+Batch 8: 37–41
+Batch 9: 42–46
+Batch 10: 47–51
+Batch 11: 52–56
+Batch 12: 57–61
+Batch 13: 62–66
+Batch 14: 67–69
+
 JEDE SZENE INDIVIDUELL
-Für jeden Visual Beat eine eigene Bildidee entwickeln. Kamera, Perspektive, Pose, Handlung, Umgebung, Requisiten, Licht und Fokus passend zum gesprochenen Inhalt wählen. Keine generische Standardkomposition immer wieder verwenden. Keine Füllbilder und keine Informationen zeigen, die erst später im Skript kommen.
+Für jeden Visual Beat eine eigene Bildidee entwickeln. Kamera, Perspektive, Pose, Handlung, Umgebung, Requisiten, Licht und Fokus passend zum gesprochenen Inhalt wählen. Keine generische Standardkomposition wiederholen. Keine Füllbilder und keine Informationen zeigen, die erst später im Skript kommen.
 
 REFERENZ-KLAUSEL FÜR BILD 02+
-Match the attached master reference exactly for character design, stickman proportions, linework, color treatment, shading and overall illustration style. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. Do not redesign the visual style.
+Match the attached master reference exactly for true stickman anatomy, character design, head and torso proportions, very thin line-like arms and legs, simple no-finger hands, linework, color treatment, shading and overall illustration style. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. STRICT STICKMAN-ONLY CHECK: every person visible anywhere in foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same stickman anatomy. Do not generate conventional cartoon humans or semi-realistic people.
 
 ARBEITSWEISE FÜR EIN KONKRETES VIDEO
 Unterhalb dieses Blocks werden ALLE Visual Beats des jeweiligen Videos direkt in dieser EINEN Datei eingetragen.
@@ -52,18 +106,16 @@ Jeder Beat enthält nur:
 - Sprechtext
 - finalen Bildprompt
 
+SCENE 01 muss die Figur besonders klar zeigen, damit sie als echte Master-Referenz taugt.
+
 BEISPIEL
 
 SCENE 01
 SPEECH: [Sprechtext]
-PROMPT: [Finaler individueller 16:9-Bildprompt. Diese Szene allein zuerst generieren.]
+PROMPT: Master frame with one clearly visible true stickman character. Simple round head, no nose/ears, tiny face, small simplified torso, very thin line-like limbs, simple no-finger hands. Rich detailed environment. 16:9 landscape. Generate this scene alone first.
 
 SCENE 02
 SPEECH: [Sprechtext]
-PROMPT: [Finaler individueller 16:9-Bildprompt. Bild 01 als Master-Referenz anhängen.]
-
-SCENE 03
-SPEECH: [Sprechtext]
-PROMPT: [Finaler individueller 16:9-Bildprompt. Bild 01 als Master-Referenz anhängen.]
+PROMPT: [Individueller Szeneninhalt.] Attach 01.png as master reference. Every visible person including background people must remain true stickman.
 
 Für das echte Projekt werden hier alle Szenen vollständig eingesetzt. Es gibt dafür keine zweite, dritte oder vierte Prompt-Datei.

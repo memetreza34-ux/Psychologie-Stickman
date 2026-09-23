@@ -1,20 +1,37 @@
-CONTINUITY
+CONTINUITY — YOUTUBE TEMPLATE
 
-- Gleiche Stickman-Grundanatomie über alle Bilder.
-- Kleidung, Haare, Accessoires, Epoche und Rollen dürfen variieren.
-- Wiederkehrende Hauptfiguren konsistent halten.
-- Farben und Umgebungsdetail an Szene anpassen, aber visuelle DNA beibehalten.
-- Hintergrundfiguren ebenfalls ausschließlich Stickman.
+MASTER
+- Bild 01 zuerst allein generieren.
+- Bild 01 nur freigeben, wenn STRICT STICKMAN ONLY vollständig erfüllt ist.
+- Bild 01 als `03-bilder/01.png` speichern.
+- Für jedes Bild ab 02 `01.png` als Referenz anhängen.
+- Master bleibt für das gesamte Video verbindlich.
 
-MASTER-REFERENZ-WORKFLOW
-- Zuerst Bild 01 oder ein eigenes `00-master-reference` erzeugen und freigeben.
-- Das freigegebene Referenzbild bei jeder weiteren Generierung als Bildreferenz anhängen.
-- Ohne Master-Referenz keine Seriengenerierung final akzeptieren.
-- Referenz bestimmt: Figurenproportionen, Kopf-/Torso-Verhältnis, Linien, Farbverhalten, Shading und Illustrationsfinish.
-- Szenen dürfen Pose, Kamera, Ort, Requisiten, Licht und notwendige Kleidung/Epoche verändern.
-- Sichtbarer Stil-Drift = verwerfen und neu generieren.
+STICKMAN-KONTINUITÄT
+- gleiche Kopf-/Torso-Proportionen
+- gleiche minimale Gesichtslogik
+- sehr dünne lineare Arme/Beine
+- keine fleischigen Gliedmaßen
+- keine realistischen Hände/Finger
+- gleiche Hand-/Fußvereinfachung
+- gleiche Linien-/Shading-Logik
+- wiederkehrende Hauptfigur über Kleidung/Farbe/Accessoires konstant halten
 
-REFERENCE MATCH CLAUSE
-`Match the attached master reference exactly for character design, stickman proportions, linework, color treatment, shading, illustration finish and overall visual language. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. Do not redesign the visual style.`
+ALLE PERSONEN
+Jede sichtbare Person im Vorder-, Mittel- und Hintergrund sowie auf Screens, Fotos, Postern, Werbung oder Spiegelungen muss die gleiche echte Stickman-Grundanatomie verwenden.
 
-Verbindlich: `rules/IMAGE_REFERENCE_LOCK.md`.
+BATCH-WORKFLOW
+- nach Master-Freigabe maximal 5 neue Bilder pro Batch
+- danach STOP
+- alle Bilder gegen 01.png prüfen
+- nur fehlerhafte Bilder regenerieren
+- nächster Batch erst nach vollständigem PASS
+
+HARD FAIL
+- normale Cartoon-Menschen
+- semi-realistische/realistische Menschen
+- Hintergrundfiguren mit anderer Anatomie
+- dicke menschliche Arme/Beine
+- realistische Hände/Finger/Nasen/Ohren
+- 3D/CGI/Anime/Chibi
+- Style-Drift gegenüber 01.png

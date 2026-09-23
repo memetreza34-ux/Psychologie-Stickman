@@ -9,8 +9,10 @@
   "imageExtension": "png",
   "imageDigits": 2,
   "endHoldMs": 1000,
-  "styleLock": "UNIVERSAL EDITORIAL STICKMAN WORLD v1.2",
+  "styleLock": "UNIVERSAL EDITORIAL STICKMAN WORLD v1.3 — STRICT STICKMAN ONLY",
   "masterReference": "01.png",
+  "batchSize": 5,
+  "requireBatchApproval": true,
   "autoFromScript": {
     "scriptPath": "youtube/23.09.2026-wahrheitseffekt-test/01-script/script.txt",
     "targetWords": 28,
