@@ -16,12 +16,13 @@
   "requireBatchApproval": false,
   "autoContinueAfterBatchPass": true,
   "visibleTextLanguage": "de",
+  "flowSourceImageTextPolicy": "NONE",
   "preferNoVisibleText": true,
-  "maxVisibleTextWordsPreferred": 4,
+  "renderGermanLabelsInRemotion": true,
   "forbidEnglishVisibleText": true,
   "autoFromScript": {
     "scriptPath": "youtube/23.09.2026-wahrheitseffekt-test/01-script/script.txt",
-    "targetWords": 28,
-    "maxWords": 30
+    "targetWords": 14,
+    "maxWords": 20
   }
 }
