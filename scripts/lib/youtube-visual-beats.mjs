@@ -22,8 +22,10 @@ const mergeTinyParts = (parts, minWords = 4) => {
   return merged;
 };
 
-const splitSemanticSentence = (sentence, targetWords, maxWords) => {
+const splitSemanticSentence = (sentence, targetWords, maxWords, semanticSplit = true) => {
   const text = sentence.trim();
+  if (!semanticSplit) return [text];
+
   const wordCount = countWords(text);
   const commaCount = (text.match(/,/g) ?? []).length;
   const hasListChoice = /\soder\s/iu.test(text);
@@ -45,8 +47,8 @@ const splitSemanticSentence = (sentence, targetWords, maxWords) => {
   return mergeTinyParts(parts);
 };
 
-const splitLongSentence = (sentence, targetWords, maxWords) => {
-  const semanticParts = splitSemanticSentence(sentence, targetWords, maxWords);
+const splitLongSentence = (sentence, targetWords, maxWords, semanticSplit = true) => {
+  const semanticParts = splitSemanticSentence(sentence, targetWords, maxWords, semanticSplit);
   const beats = [];
 
   for (const semanticPart of semanticParts) {
@@ -89,9 +91,10 @@ const splitLongSentence = (sentence, targetWords, maxWords) => {
 export const splitScriptIntoVisualBeats = (script, options = {}) => {
   const targetWords = Number(options.targetWords ?? 14);
   const maxWords = Number(options.maxWords ?? 20);
+  const semanticSplit = options.semanticSplit !== false;
   if (!Number.isFinite(targetWords) || targetWords < 6) throw new Error('targetWords must be >= 6.');
   if (!Number.isFinite(maxWords) || maxWords < targetWords) throw new Error('maxWords must be >= targetWords.');
-  if (maxWords > 28) throw new Error('maxWords must be <= 28. Use allowExtendedBeat on reviewed scenes instead.');
+  if (maxWords > 28) throw new Error('maxWords must be <= 28.');
 
   const paragraphs = String(script)
     .replace(/\r\n/g, '\n')
@@ -108,7 +111,7 @@ export const splitScriptIntoVisualBeats = (script, options = {}) => {
       .filter(Boolean);
 
     for (const sentence of sentences) {
-      beats.push(...splitLongSentence(sentence, targetWords, maxWords));
+      beats.push(...splitLongSentence(sentence, targetWords, maxWords, semanticSplit));
     }
   }
 
