@@ -1,0 +1,42 @@
+QUELLEN — WAHRHEITSEFFEKT
+
+S1 — Dechêne, A., Stahl, C., Hansen, J., & Wänke, M. (2010).
+The truth about the truth: A meta-analytic review of the truth effect.
+Personality and Social Psychology Review, 14(2), 238–257.
+DOI: 10.1177/1088868309352251
+https://pubmed.ncbi.nlm.nih.gov/20023210/
+NUTZUNG: robuste Evidenz, dass Wiederholung subjektive Wahrheitsurteile erhöhen kann; Meta-Analyse von 51 Studien.
+
+S2 — Fazio, L. K., Brashier, N. M., Payne, B. K., & Marsh, E. J. (2015).
+Knowledge does not protect against illusory truth.
+Journal of Experimental Psychology: General, 144(5), 993–1002.
+DOI: 10.1037/xge0000098
+https://pubmed.ncbi.nlm.nih.gov/26301795/
+NUTZUNG: Wiederholung kann Wahrheitsurteile auch beeinflussen, wenn korrektes Vorwissen vorhanden ist; Processing Fluency als wichtiger Mechanismus.
+
+S3 — Brashier, N. M., & Marsh, E. J. (2020).
+Judging Truth.
+Annual Review of Psychology, 71, 499–515.
+DOI: 10.1146/annurev-psych-010419-050807
+https://www.annualreviews.org/content/journals/10.1146/annurev-psych-010419-050807
+NUTZUNG: Überblick zu Fluency, Vorwissen, Quelleninformation und mehreren Hinweisen bei Wahrheitsurteilen.
+
+S4 — Udry, J., & Barber, S. J. (2024).
+The illusory truth effect: A review of how repetition increases belief in misinformation.
+Current Opinion in Psychology, 56, 101736.
+DOI: 10.1016/j.copsyc.2023.101736
+https://pubmed.ncbi.nlm.nih.gov/38113667/
+NUTZUNG: aktueller Review zur Robustheit des Effekts und zu Grenzen/Interventionen.
+
+S5 — Hasher, L., Goldstein, D., & Toppino, T. (1977).
+Frequency and the conference of referential validity.
+Journal of Verbal Learning and Verbal Behavior, 16(1), 107–112.
+DOI: 10.1016/S0022-5371(77)80012-1
+NUTZUNG: klassische frühe Demonstration, dass wiederholte plausible Aussagen höhere Validitätsurteile erhalten können.
+
+S6 — Prike, T., & Ecker, U. K. H. (2023).
+Effective correction of misinformation.
+Current Opinion in Psychology, 55, 101712.
+DOI: 10.1016/j.copsyc.2023.101712
+https://pubmed.ncbi.nlm.nih.gov/37944323/
+NUTZUNG: Korrekturen; begrenztes Risiko eines Vertrautheits-Backfire-Effekts, Wiederholung einer Falschinformation in einer Korrektur ist nicht automatisch schädlich.

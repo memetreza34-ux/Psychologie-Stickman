@@ -1,0 +1,291 @@
+MASTER PREFIX — WAHRHEITSEFFEKT TEST
+
+universal editorial 2D stickman explainer world, ALL human figures including background people use the same consistent minimalist stickman anatomy, round simple heads, tiny minimal facial features, thin dark limbs and small simplified torsos, no conventional cartoon humans, richer grounded environment, clean dark organic outlines, clear natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, educational visual storytelling, coherent visual hierarchy, 16:9 landscape, 1920x1080.
+
+Recurring main character: minimalist Stickman, round light head, tiny black facial features, thin charcoal limbs, small simplified torso, dark teal hoodie, charcoal trousers, simple light shoes.
+
+WORKFLOW
+- Generate Scene 01 alone first.
+- Scene 01 becomes the MASTER REFERENCE after visual approval.
+- For Scene 02 onward attach Scene 01 as image reference every time.
+- Master controls character DNA, line language, color behavior, shading and overall illustration style.
+- Master does NOT lock camera, location, pose or composition.
+- Visible text inside images: German only, and only when necessary.
+- No photorealism, normal cartoon humans, semi-realistic humans, mixed human styles, 3D/CGI, anime, chibi, logos or unnecessary text blocks.
+- Every scene is a new visual idea. Do not reuse the same pose/composition as filler.
+
+SCENE 01
+SPEECH: Du hörst einen Satz zum ersten Mal und denkst: Keine Ahnung, ob das stimmt.
+PROMPT: Master frame: modern home desk, recurring main Stickman in dark teal hoodie reading a single neutral claim card on laptop, thoughtful uncertain pose, room and character fully visible to establish style, colors, line weight and lighting. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 02
+SPEECH: Ein paar Tage später taucht derselbe Satz wieder auf.
+PROMPT: Same main Stickman several days later encountering the identical claim card again on a phone while commuting; subtle recognition, different location and camera angle. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 03
+SPEECH: Dann noch einmal in einem Video, in einem Kommentar oder in einem Gespräch.
+PROMPT: Three-part editorial composition showing the same claim appearing in a short video, a comment feed and a face-to-face conversation; all visible humans use identical Stickman anatomy. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 04
+SPEECH: Irgendwann klingt er plötzlich vertraut.
+PROMPT: Close medium shot of the main Stickman recognizing the claim; a soft familiarity glow around the repeated card, no truth verdict yet. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 05
+SPEECH: Und genau diese Vertrautheit kann sich ein bisschen wie Wahrheit anfühlen.
+PROMPT: Concept scene: familiarity on one side and perceived truth on the other, connected by a subtle visual bridge; main Stickman hesitates between them. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 06
+SPEECH: Psychologen nennen das den Illusory Truth Effect, auf Deutsch oft Wahrheitseffekt.
+PROMPT: Clean educational scene introducing the German label 'WAHRHEITSEFFEKT' beside repeated statement cards; researcher Stickman points to the concept. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 07
+SPEECH: Gemeint ist ein erstaunlich simples Muster: Aussagen, die wir schon einmal gehört oder gelesen haben, werden später im Durchschnitt eher als wahr eingeschätzt als vergleichbare neue Aussagen.
+PROMPT: Comparison experiment visual: repeated statements on the left receive slightly higher truth-meter positions than equally plausible new statements on the right; simple German labels only if needed. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 08
+SPEECH: Das heißt nicht, dass Menschen alles glauben, wenn man es nur oft genug wiederholt.
+PROMPT: Boundary scene: a wall of repeated claim cards stops before a large 'nicht automatisch' barrier, showing that repetition is not mind control. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 09
+SPEECH: Aber Wiederholung kann unsere Einschätzung verschieben, selbst wenn der Inhalt sich überhaupt nicht verändert hat.
+PROMPT: Same sentence card remains identical while only its repetition count increases and the main Stickman's confidence meter shifts slightly upward. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 10
+SPEECH: Warum passiert das?
+PROMPT: Question transition: main Stickman in a darkened room under a single question mark, repeated claim cards floating in the background, clear visual reset. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 11
+SPEECH: Ein wichtiger Teil der Erklärung ist Verarbeitungsleichtigkeit, also Processing Fluency.
+PROMPT: Educational concept for processing fluency: a familiar sentence travels smoothly through a simple mental processing path while a new sentence takes a more effortful path. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 12
+SPEECH: Wenn dir ein Satz bekannt vorkommt, lässt er sich häufig schneller und leichter verarbeiten.
+PROMPT: Side-by-side reading: familiar claim is processed quickly by the main Stickman, unfamiliar claim requires a second look; clean timing icons, no heavy text. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 13
+SPEECH: Die Wörter wirken weniger neu.
+PROMPT: Close-up of repeated words appearing visually crisp and immediately recognizable while novel words feel less familiar, still fully legible only if German. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 14
+SPEECH: Der Aufbau ist vertrauter.
+PROMPT: Structural familiarity scene: repeated sentence layout snaps into a known pattern while a new layout remains unsorted; editorial metaphor, no realistic brain. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 15
+SPEECH: Dein Gehirn muss nicht bei null anfangen.
+PROMPT: Simple pathway metaphor: the familiar sentence follows an already-cleared route instead of starting from an untouched path. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 16
+SPEECH: Und dieses leichte Gefühl braucht eine Erklärung.
+PROMPT: Main Stickman feels a smooth 'easy' cue emerging from the repeated statement, but the cue itself has no label for truth yet. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 17
+SPEECH: Manchmal kommt die richtige Erklärung: Klar, ich habe diesen Satz schon einmal gesehen.
+PROMPT: Correct attribution scene: Stickman points from the easy feeling back to a memory of having seen the same sentence before, showing 'I know this because I saw it'. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 18
+SPEECH: Manchmal wird die Leichtigkeit aber unbewusst anders gedeutet: Vielleicht klingt das so vertraut, weil es stimmt.
+PROMPT: Misattribution scene: the same smooth familiarity cue is mistakenly routed toward a truth meter, without claiming conscious choice. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 19
+SPEECH: Das Spannende ist, dass wir dabei nicht absichtlich entscheiden: Vertraut gleich wahr.
+PROMPT: Close shot of main Stickman not pressing any explicit 'familiar = true' button; instead a small background cue subtly influences judgment. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 20
+SPEECH: Es ist eher ein kleiner Hinweis, der in unser Urteil einfließt.
+PROMPT: Decision-scale scene where one small fluency weight joins other evidence weights and nudges the final truth judgment slightly. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 21
+SPEECH: Das lässt sich in Experimenten ziemlich sauber zeigen.
+PROMPT: Laboratory wide shot with researcher Stickmen, statement cards, rating scale and computer stations; clear scientific setting, same stickman world. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 22
+SPEECH: Versuchspersonen sehen verschiedene Aussagen.
+PROMPT: Participants view a varied set of neutral trivia-like statement cards on screens; no political or medical claims. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 23
+SPEECH: Einige davon begegnen ihnen später erneut, andere sind neu.
+PROMPT: Second session visual: some cards return with a repetition marker while other cards are genuinely new; clean A/B structure. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 24
+SPEECH: Wenn sie anschließend einschätzen sollen, welche Aussagen wahr wirken, bekommen wiederholte Aussagen im Durchschnitt höhere Wahrheitswerte.
+PROMPT: Result scene: repeated-card group shows a modestly higher average truth rating than new-card group; simple bars, German labels 'wiederholt' and 'neu'. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 25
+SPEECH: Eine Meta-Analyse über viele Studien kam ebenfalls zu dem Ergebnis, dass Wiederholung den subjektiven Wahrheitseindruck zuverlässig erhöhen kann.
+PROMPT: Meta-analysis visual: many small study sheets flow into one summary chart showing a reliable positive repetition effect, researchers in background. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 26
+SPEECH: Noch interessanter wird es bei Aussagen, über die Menschen eigentlich schon Wissen besitzen.
+PROMPT: Knowledge transition: main Stickman stands beside a bookshelf of known facts while a repeated false claim card approaches from the other side. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 27
+SPEECH: Man könnte erwarten: Wenn ich die richtige Antwort kenne, müsste mich bloße Wiederholung kaum beeinflussen.
+PROMPT: Expectation scene: Stickman confidently holds a correct-fact card as a shield against a repeated claim, suggesting the intuitive prediction. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 28
+SPEECH: Doch eine bekannte Studie von Lisa Fazio und Kollegen zeigte, dass selbst vorhandenes Wissen nicht immer vollständig schützt.
+PROMPT: Research scene inspired by Fazio and colleagues: participants rate repeated claims while a separate knowledge check is visible in the same lab world. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 29
+SPEECH: Wiederholte falsche Aussagen konnten teilweise glaubwürdiger wirken, obwohl Teilnehmende später zeigen konnten, dass sie die richtige Information eigentlich kannten.
+PROMPT: Key finding visualization: participant possesses the correct answer card in one hand while a repeated false statement still nudges the truth meter upward with the other cue. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 30
+SPEECH: Das bedeutet nicht, dass Wissen nutzlos ist.
+PROMPT: Correction frame: large clear German text 'WISSEN IST NICHT NUTZLOS' beside the main Stickman, calm explanatory composition. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 31
+SPEECH: Im Gegenteil.
+PROMPT: Very brief emphasis scene: knowledge bookshelf lights up strongly, countering any implication that knowledge has no value. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 32
+SPEECH: Wissen kann Urteile korrigieren.
+PROMPT: Judgment scene: main Stickman actively compares a claim with a stored fact and corrects the truth meter downward. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 33
+SPEECH: Aber Menschen greifen nicht in jedem Moment automatisch auf alles zurück, was sie wissen.
+PROMPT: Busy everyday scene: several stored facts are available in the background, but the main Stickman responds to the immediate claim without retrieving all of them. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 34
+SPEECH: Manchmal ist die schnelle Vertrautheit einfach früher da als die bewusste Prüfung.
+PROMPT: Timing metaphor: familiarity cue reaches the judgment desk first; deliberate fact-checking arrives a moment later on a longer route. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 35
+SPEECH: Stell dir vor, du liest immer wieder den Satz: Ein bestimmtes Lebensmittel verbessert die Konzentration.
+PROMPT: Everyday example: main Stickman repeatedly encounters a generic German claim card 'Dieses Lebensmittel steigert die Konzentration' across neutral feeds, presented as an example, not endorsement. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 36
+SPEECH: Beim ersten Mal ist es nur eine Behauptung.
+PROMPT: First exposure: the example claim appears once, small and unfamiliar; main Stickman shows neutral uncertainty. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 37
+SPEECH: Beim fünften Mal kommt sie dir bekannt vor.
+PROMPT: Fifth exposure: the exact same example claim appears with five subtle encounter markers; the main Stickman recognizes it more quickly. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 38
+SPEECH: Vielleicht weißt du nicht mehr genau, wo du sie zuerst gesehen hast.
+PROMPT: Source-memory scene: claim card remains clear while the original source icons behind it blur and separate, showing uncertainty about where it came from. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 39
+SPEECH: Aber dein Kopf registriert: Das kenne ich.
+PROMPT: Recognition close-up: main Stickman sees the familiar claim and a small 'kenne ich' thought cue appears, not a truth checkmark. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 40
+SPEECH: Und hier kommt noch ein zweites Problem dazu: Quelle und Inhalt können sich im Gedächtnis unterschiedlich gut halten.
+PROMPT: Memory split concept: statement content stored clearly in one box while source information sits in a separate fading box. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 41
+SPEECH: Du erinnerst dich vielleicht an die Aussage, aber nicht mehr daran, ob sie aus einer seriösen Studie, einer Werbung oder irgendeinem Kommentar kam.
+PROMPT: Three possible source paths behind the same claim: serious study document, advertisement, anonymous comment; the main Stickman cannot recall which path was original. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 42
+SPEECH: Dann bleibt Vertrautheit übrig, während die Information über die Quelle schwächer wird.
+PROMPT: Concept scene where the claim stays vivid in foreground while source tags fade into the background, emphasizing source-memory loss. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 43
+SPEECH: Das ist einer der Gründe, warum reine Wiederholung in Werbung, Gerüchten und sozialen Medien so wirkungsvoll sein kann.
+PROMPT: Three-environment montage: advertisement panel, rumor conversation and social-media feed each repeat the same neutral claim pattern; no brand logos. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 44
+SPEECH: Nicht jede Wiederholung überzeugt sofort.
+PROMPT: Slow accumulation scene: first repetition barely moves the judgment needle, emphasizing that one repeat does not instantly convince. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 45
+SPEECH: Aber sie kann einen Satz leichter verarbeitbar und bekannter machen.
+PROMPT: Processing scene: after several encounters the same sentence card moves more smoothly and appears more familiar, with no extra evidence added. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 46
+SPEECH: Wichtig ist trotzdem: Der Wahrheitseffekt ist kein magischer Gehirn-Hack.
+PROMPT: Boundary reset: magician-style 'brain hack' imagery is crossed out; main Stickman and researcher return to a sober scientific frame. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 47
+SPEECH: Menschen berücksichtigen auch Vorwissen, Plausibilität, Quellen und andere Hinweise.
+PROMPT: Multi-cue judgment board with four inputs: prior knowledge, plausibility, source quality and processing ease, all contributing to one decision. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 48
+SPEECH: Eine offensichtlich absurde Behauptung wird nicht automatisch glaubwürdig, nur weil du sie dreimal siehst.
+PROMPT: Absurd-claim example: obviously impossible neutral claim beside three repetition stamps while the truth meter remains low, showing repetition has limits. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 49
+SPEECH: Außerdem hängt der Effekt von Situation, Aussage und Person ab.
+PROMPT: Variation scene: several Stickman participants react differently to the same repeated statement across different contexts. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 50
+SPEECH: Forschung zu Wahrheitseinschätzungen zeigt insgesamt, dass mehrere Signale zusammenwirken: Was wissen wir bereits?
+PROMPT: Research synthesis board asking in German 'Was wissen wir bereits?' with memory/fact icon as first cue. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 51
+SPEECH: Wie plausibel klingt etwas?
+PROMPT: Second cue panel: plausibility scale comparing a sensible and an absurd claim, no truth conclusion from repetition alone. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 52
+SPEECH: Wie vertrauenswürdig ist die Quelle?
+PROMPT: Third cue panel: source-quality ladder from primary study document to anonymous repost, clean German labels. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 53
+SPEECH: Und wie leicht lässt sich die Aussage verarbeiten?
+PROMPT: Fourth cue panel: processing-ease path showing familiar information moving faster, completing the multi-cue framework. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 54
+SPEECH: Was kann man praktisch daraus mitnehmen?
+PROMPT: Practical transition: main Stickman closes the experiment board and opens a simple four-step checklist for everyday use. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 55
+SPEECH: Erstens: Vertrautheit ist kein Beweis.
+PROMPT: Tip 1 scene with German label 'VERTRAUT ≠ BEWIESEN'; familiar claim card and evidence card kept visibly separate. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 56
+SPEECH: Wenn dein erster Gedanke lautet: Das habe ich schon oft gehört, dann beantwortet das noch nicht die Frage: Woher weiß ich, dass es stimmt?
+PROMPT: Main Stickman hears 'Das habe ich schon oft gehört' from several directions, then pauses before a separate question card 'Woher weiß ich das?'. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 57
+SPEECH: Zweitens: Prüfe bei wichtigen Behauptungen nicht nur den Satz, sondern die Quelle.
+PROMPT: Tip 2 scene: main Stickman traces a claim backward to its source instead of stopping at the repeated sentence; investigative but simple. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 58
+SPEECH: Wer behauptet das?
+PROMPT: Source-question close-up with German label 'WER BEHAUPTET DAS?' beside an author/source icon. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 59
+SPEECH: Worauf stützt sich die Aussage?
+PROMPT: Evidence-question scene with German label 'WORAUF STÜTZT SICH DAS?' and arrows from claim to actual evidence documents. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 60
+SPEECH: Gibt es eine Primärquelle oder nur viele Seiten, die voneinander abgeschrieben haben?
+PROMPT: Primary-source check: one original study document at the top versus many identical repost pages copied from one another below. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 61
+SPEECH: Drittens: Sei vorsichtig mit falschen Behauptungen, die du selbst ständig wiederholst, auch wenn du sie widerlegen willst.
+PROMPT: Tip 3 scene: main Stickman fact-checks a false claim but avoids turning the false sentence into the visual hero; correct information is larger and clearer. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 62
+SPEECH: Forschung zur Korrektur von Fehlinformation zeigt zwar nicht, dass jede Wiederholung automatisch schadet.
+PROMPT: Nuance research frame: correction studies show that repeating misinformation in a correction does not automatically cause harm; balanced scale, no sensational backfire graphic. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 63
+SPEECH: Trotzdem ist es sinnvoll, die korrekte Information klar in den Mittelpunkt zu stellen und nicht die falsche Behauptung unnötig oft zu verstärken.
+PROMPT: Best-practice scene: correct information occupies center stage, false claim reduced to a small crossed reference card, clear hierarchy. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 64
+SPEECH: Und viertens: Wenn etwas plötzlich wahr klingt, nur weil du es überall siehst, ist genau das ein guter Moment für eine kurze Prüfung.
+PROMPT: Tip 4 scene: main Stickman notices the same claim across many feeds and intentionally pauses before accepting it, with a small check icon. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 65
+SPEECH: Denn unser Gehirn arbeitet effizient.
+PROMPT: Efficiency concept: a clean network of shortcuts lets familiar information move quickly through everyday cognition, framed as generally useful. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 66
+SPEECH: Vertraute Informationen lassen sich leichter verarbeiten.
+PROMPT: Familiar statement glides smoothly through the processing path while a new statement takes longer, same visual language as earlier but wider composition. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 67
+SPEECH: Meistens ist diese Effizienz hilfreich.
+PROMPT: Positive frame: main Stickman uses efficient recognition successfully in an ordinary task, showing that mental efficiency is usually helpful. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 68
+SPEECH: Aber manchmal verwechselt unser Kopf das Gefühl von Bekanntheit mit einem Hinweis auf Wahrheit.
+PROMPT: Final mechanism scene: familiarity cue is accidentally placed onto the truth side of a judgment scale, subtle and explanatory. 16:9 landscape. Show only this beat; do not preview later information.
+
+SCENE 69
+SPEECH: Und genau deshalb kann ein Satz beim fünften Mal überzeugender klingen, obwohl er kein bisschen wahrer geworden ist.
+PROMPT: Closing callback: the exact same claim card appears for the fifth time beside the same main Stickman; it now feels more convincing, but an evidence meter stays unchanged at the same level. 16:9 landscape. Show only this beat; do not preview later information.

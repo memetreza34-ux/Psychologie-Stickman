@@ -1,0 +1,37 @@
+SCHNITTPLAN — WAHRHEITSEFFEKT TEST
+
+ZIEL
+- ca. 5 Minuten
+- 69 Visual Beats
+- 16:9 / 1920×1080 / 30 fps
+- durchschnittlich etwa 4–6 Sekunden pro Bild
+- Bildwechsel folgen dem finalen 1,10×-Audio
+
+DRAMATURGIE
+1. Hook / Alltagsbeobachtung: Szenen 01–10
+2. Mechanismus Verarbeitungsleichtigkeit: 11–20
+3. Experiment + Meta-Analyse: 21–25
+4. Vorwissen schützt nicht vollständig: 26–34
+5. Alltagsbeispiel + Quellen-Gedächtnis: 35–45
+6. Grenzen / mehrere Signale: 46–53
+7. praktische Regeln: 54–64
+8. Schluss / Callback: 65–69
+
+BEWEGUNG
+- primär leichte Zooms, Pans und Fokusverschiebungen
+- kein hektischer Dauer-Motion-Look
+- Diagramm-/Vergleichsszenen dürfen Elemente nacheinander aufbauen
+- keine künstlichen 20–30-Sekunden-Standbilder
+- neue Kernaussage = neues Bild
+
+AUDIO
+- Rohvoice zuerst nach AUDIO_STANDARD.txt bearbeiten
+- finales Voice exakt 1,10×
+- erst danach Worttimings erstellen
+- Scene-Plan aus finalen Timings + phase1-scenes.json ableiten
+
+BILDER
+- Szene 01 Master
+- Folgeassets mit Szene 01 als Referenz
+- 5er-Batches + QA
+- gute Assets behalten, nur fehlerhafte neu generieren

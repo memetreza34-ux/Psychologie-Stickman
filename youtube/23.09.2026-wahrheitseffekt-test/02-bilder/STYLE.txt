@@ -1,0 +1,29 @@
+STYLE — WAHRHEITSEFFEKT TEST
+
+LOCKED: UNIVERSAL EDITORIAL STICKMAN WORLD v1.2
+
+Menschen:
+- ausnahmslos minimalistische Stickman-Figuren
+- runder einfacher Kopf
+- minimale Gesichtszüge
+- dünne dunkle Gliedmaßen
+- kleiner vereinfachter Torso
+- Emotion vor allem über Pose/Körpersprache
+- auch Forscher, Gruppen, Hintergrundmenschen und Figuren auf Screens bleiben Stickman
+
+Umgebung:
+- glaubwürdig und etwas detailreicher als die Figuren
+- klare natürliche Farben
+- moderate bis kräftige kontrollierte Sättigung
+- saubere dunkle organische Outlines
+- vereinfachte 2D-Materialien
+- glaubwürdige Perspektive und Licht
+- nicht fotorealistisch
+
+PROJEKTLOOK
+- moderner, sachlicher Editorial-Doku-Look
+- Wechsel aus Alltag, Experiment, Diagramm und Metapher
+- kein dauerhaft leerer Whiteboard-Look
+- kein Beige-/Sepia-/Pastell-Einheitsfilter
+- 16:9 / 1920×1080
+- Szene 01 definiert endgültig Figuren-DNA, Linien, Farben und Shading

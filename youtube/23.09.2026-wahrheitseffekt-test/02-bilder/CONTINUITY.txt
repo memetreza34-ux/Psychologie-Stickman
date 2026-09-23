@@ -1,0 +1,49 @@
+CONTINUITY — WAHRHEITSEFFEKT TEST
+
+MASTER
+- Szene 01 ist die verbindliche Master-Referenz.
+- Folgeassets dürfen den Master nicht eigenmächtig ersetzen.
+- Bei jeder Szene 02–69 Szene 01 als Bildreferenz anhängen.
+
+WIEDERKEHRENDE HAUPTFIGUR
+- round simple light head
+- tiny black eyes and minimal mouth
+- thin charcoal limbs
+- small simplified torso
+- dark teal hoodie
+- charcoal trousers
+- simple light shoes
+- keine realistische Anatomie
+- keine normalen Cartoon-Hände oder Gesichter
+
+KONSTANT HALTEN
+- Stickman-Proportionen
+- Outline-/Linienlogik
+- Farbverhalten und Sättigungsniveau
+- vereinfachtes 2D-Shading
+- Verhältnis zwischen minimalistischen Menschen und reicheren Umgebungen
+- Kleidungsfarben der wiederkehrenden Hauptfigur
+
+DARF SICH PRO SZENE ÄNDERN
+- Kamera
+- Perspektive
+- Ort
+- Pose
+- Requisiten
+- Lichtstimmung
+- Anzahl der Figuren
+- abstrakt / Alltag / Forschung, solange dieselbe Bildwelt erhalten bleibt
+
+TEXT IM BILD
+- nur wenn wirklich nötig
+- dann ausschließlich Deutsch
+- kurze Labels bevorzugen
+- keine langen Textblöcke
+
+HARD FAIL
+- normale Cartoon-Menschen
+- semi-realistische oder realistische Menschen
+- anderer Hauptcharakter-Look als Master
+- 3D/CGI/Anime/Chibi
+- sichtbarer englischer Erklärungstext
+- generische Wiederholungsbilder ohne neue visuelle Idee

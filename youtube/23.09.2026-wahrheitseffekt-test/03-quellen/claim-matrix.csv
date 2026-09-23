@@ -1,0 +1,9 @@
+claim_id,claim,status,source,notes
+C01,"Wiederholung kann subjektive Wahrheitsurteile erhöhen.",PASS,"S1,S4,S5","Kernbefund; robust, aber kein deterministischer Effekt."
+C02,"Verarbeitungsleichtigkeit/Fluency ist ein wichtiger Mechanismus des Wahrheitseffekts.",PASS,"S2,S3","Nicht als alleinige universelle Ursache formulieren."
+C03,"Vorwissen schützt nicht immer vollständig vor dem Wahrheitseffekt.",PASS,"S2","Explizit vorsichtig formuliert; Wissen bleibt nützlich."
+C04,"Menschen nutzen mehrere Hinweise wie Vorwissen, Plausibilität, Quelle und Fluency für Wahrheitsurteile.",PASS,"S3","Review-Befund."
+C05,"Quelle und Aussage können im Gedächtnis unterschiedlich verfügbar sein.",PASS,"S3,S6","Als Gedächtnis-/Quellenproblem, nicht als absolute Regel."
+C06,"Der Wahrheitseffekt wurde auch bei Fehlinformation untersucht.",PASS,"S4","Keine politische Zuspitzung im Video nötig."
+C07,"Das Wiederholen einer Falschinformation innerhalb einer Korrektur schadet nicht automatisch.",PASS,"S6","Bewusst gegen vereinfachten Backfire-Mythos formuliert."
+C08,"Eine absurde Behauptung wird nicht automatisch glaubwürdig allein durch wenige Wiederholungen.",PASS,"S3,S4","Grenzen betonen; kein absoluter Schutz."
