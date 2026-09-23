@@ -1,4 +1,4 @@
-GOOGLE FLOW MASTER PROMPT — WAHRHEITSEFFEKT TEST
+GOOGLE FLOW MASTER PROMPT — WAHRHEITSEFFEKT TEST — v2
 
 DIESE DATEI IST DER EINZIGE GOOGLE-FLOW-PROMPT FÜR DAS GESAMTE VIDEO.
 Keine zweite Prompt-Datei verwenden.
@@ -44,50 +44,50 @@ ENVIRONMENT RULE
 The world can be rich and detailed: believable rooms, buses, trains, laboratories, furniture, streets, windows, screens, objects, architecture, materials, soft cinematic light and clear perspective. Detail belongs in the environment, NOT in human anatomy.
 
 CHANNEL DNA — HARD LOCK
-Simple Stickmen. Rich World. One clear idea per image. German visual language.
-- Every image must communicate ONE primary visual thought from the exact current speech beat.
-- Use ONE dominant focal point.
-- Normally use only 1–2 supporting visual cues.
-- If the speech explicitly lists 3 or 4 items, those items may appear as small supporting icons around ONE central composition; do not turn the image into a dense infographic.
-- Avoid split-screen, comic panels, collages, dashboards and multi-panel layouts unless a direct comparison truly requires them.
-- If a comparison is necessary, use at most two clean visual zones whenever possible.
-- Never put several unrelated ideas into one image.
-- Background details may make the world feel modern and believable, but they must never compete with the main idea.
-- Use camera, pose, environment, props, light and visual hierarchy to explain the beat instead of written text.
-- If a scene prompt below becomes overloaded, SIMPLIFY IT automatically while preserving the exact spoken meaning.
-- Modern scenes should feel contemporary, clean, grounded and visually coherent rather than like generic whiteboard graphics.
-- Keep enough negative space and readable visual hierarchy for subtle zooms/pans.
-- ONE CLEAR IDEA PER IMAGE overrides any scene wording that would otherwise create visual clutter.
+Simple Stickmen. Rich World. One clear idea per image.
+- Every image communicates ONE primary visual thought from the current beat.
+- Use ONE dominant focal point and normally only 1–2 supporting cues.
+- Prefer a concrete Stickman action in a believable environment over a generic infographic.
+- Use abstract diagrams, cards, meters or paths only when a concrete scene would explain the beat less clearly.
+- Vary camera, pose, action, environment, props and lighting across the video.
+- Avoid split-screen, comic panels, collages, dashboards and dense multi-panel layouts.
+- Never preview information from later beats.
+- Keep enough negative space for subtle Remotion zooms/pans and occasional controlled text overlays.
 
-GLOBAL SCENE CLAUSE — THIS APPLIES TO EVERY SINGLE SCENE BELOW EVEN IF THE INDIVIDUAL PROMPT DOES NOT REPEAT IT
-STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in the foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same true stickman anatomy as the approved master. Do not generate normal cartoon humans. If any person looks human-like rather than stickman, the image fails and must be regenerated.
+FLOW SOURCE IMAGE TEXT POLICY — ZERO READABLE TEXT — HARD LOCK
+EVERY generated source image must contain ZERO readable text.
+- zero words
+- zero letters
+- zero captions
+- zero labels
+- zero UI words
+- zero poster text
+- zero screen text
+- zero brand/logo text
+- zero readable document text
+- avoid readable numbers unless a scene absolutely requires a non-language numerical symbol
+- use abstract lines, shapes and icons instead of text on screens, cards, documents and signs
+- DO NOT render German speech lines into the image
+- DO NOT render English prompt wording into the image
 
-VISIBLE TEXT — GERMAN ONLY + MINIMAL — HARD LOCK
-This is a German-language channel. The prompts may be written in English, but the generated image must never use English visible text.
-- Prefer NO readable text whenever the idea can be communicated visually.
-- If text is genuinely necessary: German only.
-- Never show English headings, labels, buttons, UI, posters, cards, subtitles or screen text.
-- Do not copy English wording from this prompt into the image.
-- Normally use only one short German label or phrase.
-- Target 1–4 visible words.
-- Avoid full sentences, paragraphs, infographic text blocks and text-heavy layouts.
-- Visual storytelling must carry the explanation; text only supports it.
-- If any scene instruction below asks for too much text, SHORTEN it, TRANSLATE it to German or REMOVE it.
-- THIS GLOBAL TEXT RULE OVERRIDES ANY CONFLICTING SCENE-LEVEL TEXT REQUEST BELOW.
+German labels such as WAHRHEITSEFFEKT, WISSEN HILFT, QUELLE?, WER? and BELEG? are added later in Remotion. They must NOT be drawn by Google Flow.
+
+GLOBAL SCENE CLAUSE
+For every scene below: STRICT STICKMAN ONLY + ONE CLEAR IDEA + ZERO READABLE TEXT. If a prompt mentions a card, screen, document, feed, chart or sign, its content must be represented by abstract lines/icons/shapes, never readable words.
 
 MASTER REFERENCE WORKFLOW
 1. Generate SCENE 01 ONLY.
 2. STOP.
-3. Inspect Scene 01 carefully before generating anything else.
-4. Scene 01 must clearly establish true stickman anatomy, line language, color treatment, shading and environment detail.
-5. If Scene 01 contains human-like/cartoon anatomy, REGENERATE Scene 01. Do not continue.
+3. Inspect Scene 01 carefully.
+4. Scene 01 must establish true stickman anatomy, line language, color treatment, shading and environment detail.
+5. If Scene 01 contains human-like/cartoon anatomy or readable text, REGENERATE Scene 01.
 6. Wait for user approval of Scene 01.
-7. After approval save it as `03-bilder/01.png`.
-8. For EVERY image from Scene 02 onward attach `01.png` as the image reference.
-9. Scene 01 remains the master for the entire video and is never replaced automatically.
+7. Save approved master as `03-bilder/01.png`.
+8. For EVERY image from Scene 02 onward attach `01.png` as image reference.
+9. Scene 01 remains the master for the entire video.
 10. The master locks anatomy/style, NOT camera, pose, location or composition.
 
-AUTOMATIC BATCH WORKFLOW — HARD LOCK
+AUTOMATIC BATCH WORKFLOW
 MASTER: 01
 Batch 1: 02–06
 Batch 2: 07–11
@@ -104,25 +104,10 @@ Batch 12: 57–61
 Batch 13: 62–66
 Batch 14: 67–69
 
-RULES FOR EVERY BATCH AFTER SCENE 01 APPROVAL
-- Generate only the images in the current batch, maximum 5 new images.
-- After generating the batch, perform INTERNAL QA automatically.
-- Check every image against 01.png.
-- Check every visible person, including tiny background people.
-- Check that all arms/legs remain thin line-like stickman limbs.
-- Check that no normal cartoon human appears anywhere.
-- Check main character identity, clothing, colors, linework and shading.
-- Check scene meaning against the exact speech beat.
-- Check CHANNEL DNA: one clear idea, one dominant focal point, no unnecessary clutter.
-- Check visible text: preferably none; if present, short and German only; never English.
-- Regenerate ONLY failed images.
-- Keep all passed images.
-- Once the whole current batch passes internal QA, IMMEDIATELY continue with the next batch automatically.
-- DO NOT ask the user for approval after Batch 1, Batch 2 or any later normal batch.
-- Only interrupt if a major consistency failure cannot be corrected automatically after regeneration attempts.
+After Scene 01 approval generate only the current batch, maximum 5 new images. Run internal QA after every batch. Check master consistency, every visible person, scene meaning, clutter and ZERO READABLE TEXT. Regenerate only failed images. Continue automatically after the batch passes. Do not request user approval after normal batches.
 
 REFERENCE CLAUSE FOR SCENE 02+
-Match the attached master reference exactly for true stickman anatomy, character design, head and torso proportions, very thin line-like arms and legs, simple no-finger hands, linework, color treatment, shading and overall illustration style. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. STRICT STICKMAN-ONLY CHECK: every person visible anywhere in foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same stickman anatomy. Do not generate conventional cartoon humans or semi-realistic people. CHANNEL DNA CHECK: preserve one dominant visual idea and remove unnecessary clutter. VISIBLE TEXT CHECK: prefer no readable text; if text is necessary, keep it short and German only. Never render English prompt wording inside the image.
+Match attached `01.png` exactly for true stickman anatomy, character proportions, very thin line-like arms and legs, no-finger hands, linework, color treatment, shading and overall illustration style. Change only scene content, pose, camera, environment, props and lighting. Prefer a concrete Stickman action in a believable environment. Every person anywhere must remain a true stickman. SOURCE IMAGE TEXT POLICY: ZERO READABLE TEXT anywhere.
 
 RECURRING MAIN CHARACTER
 - simple round light head
@@ -135,290 +120,297 @@ RECURRING MAIN CHARACTER
 - very thin charcoal line-like arms and legs
 - simple nub/mitten hands, no fingers
 - dark teal hoodie adapted to the simplified torso
-- charcoal trousers that do not add human leg volume
+- charcoal trousers without realistic leg volume
 - simple light shoes
 
 SCENE 01
-SPEECH: Du hörst einen Satz zum ersten Mal und denkst: Keine Ahnung, ob das stimmt.
-PROMPT: MASTER FRAME. One single recurring true stickman character at a modern home desk, no other people visible. The character has a perfectly simple round light head, tiny black dot eyes, tiny simple mouth, absolutely no nose or realistic ears, no realistic neck, a small simplified torso wearing a dark teal hoodie, very thin charcoal line-like arms and legs with near-constant thickness, simple nub hands with no fingers, charcoal trousers that do not add realistic leg volume, and simple light shoes. Show enough of the full body to clearly establish the exact stickman anatomy. The Stickman is reading one neutral claim on a laptop and looks uncertain/thoughtful through pose rather than facial detail. Rich but controlled modern home-office environment: desk, laptop, notebook, lamp, plant, shelf, window, soft daylight, believable perspective, clean dark organic outlines, natural colors, subtle 2D cel shading. One dominant focus: the uncertain Stickman and the claim. No readable claim text. 16:9 landscape, 1920x1080. Show only this beat. Generate SCENE 01 alone, then STOP for approval.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Du hörst einen Satz zum ersten Mal und denkst: Keine Ahnung, ob das stimmt.
+PROMPT: MASTER FRAME. One recurring true Stickman at a modern home desk reading an abstract claim on a laptop. Show enough full body to establish exact anatomy. The Stickman looks uncertain through pose. Rich controlled home-office environment, believable perspective, natural colors, soft daylight, clean dark organic outlines, subtle 2D cel shading. One dominant focus: uncertain Stickman and laptop. Laptop contains only abstract lines/shapes. ZERO READABLE TEXT. Generate Scene 01 only, then STOP.
 
 SCENE 02
-SPEECH: Ein paar Tage später taucht derselbe Satz wieder auf.
-PROMPT: Attach 01.png as master reference. The exact same recurring true Stickman is seated inside a detailed modern city bus and encounters the same neutral claim again on a smartphone. Subtle recognition through pose. IMPORTANT: every other passenger visible anywhere in foreground, midground or background must use the same true stickman geometry as the master: simple round/oval heads, minimal faces, small simplified torsos, very thin line-like arms and legs, simple no-finger hands. ABSOLUTELY NO normal cartoon-human passengers. Keep the bus itself rich and believable with seats, poles, windows, urban scenery outside, soft daylight, perspective depth and natural muted colors. One dominant focus: the main Stickman recognizing the same claim. Background passengers support the world but remain visually secondary. Different camera angle from Scene 01. No readable phone text. 16:9 landscape. Show only this beat.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Ein paar Tage später taucht derselbe Satz wieder auf.
+PROMPT: Attach 01.png. Same Stickman seated in a detailed modern city bus sees the same abstract claim again on a smartphone and subtly recognizes it. All passengers are strict Stickmen. Rich believable bus interior and urban daylight. Smartphone uses abstract shapes only. ZERO READABLE TEXT.
 
 SCENE 03
-SPEECH: Dann noch einmal in einem Video, in einem Kommentar oder in einem Gespräch.
-PROMPT: Attach 01.png as master reference. Use ONE clean composition centered on the main Stickman noticing the same claim recurring through everyday communication. Show the smartphone as the dominant object with one simple video cue and one comment cue; a nearby conversation partner may act as one small secondary cue. Do NOT create a three-panel comic or collage. Every visible human, including the conversation partner and any tiny screen figure, must use the exact true stickman anatomy of the master. Use abstract UI shapes, no readable text, no English UI. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Dann noch einmal in einem Video, in einem Kommentar oder in einem Gespräch.
+PROMPT: Attach 01.png. Main Stickman notices the same claim returning through everyday communication. Smartphone is dominant, with one abstract video cue and one abstract comment cue; one nearby Stickman conversation partner is a small secondary cue. One composition, no collage. ZERO READABLE TEXT.
 
 SCENE 04
-SPEECH: Irgendwann klingt er plötzlich vertraut.
-PROMPT: Attach 01.png as master reference. Close medium shot of the same main Stickman recognizing the claim; a soft familiarity glow around the repeated card, no truth verdict yet. Keep true stickman anatomy exact. One dominant focus: recognition. No readable text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Irgendwann klingt er plötzlich vertraut.
+PROMPT: Attach 01.png. Close medium shot of the main Stickman recognizing the familiar abstract claim. Use pose and a subtle familiarity glow, not text. One dominant recognition moment. ZERO READABLE TEXT.
 
 SCENE 05
-SPEECH: Und genau diese Vertrautheit kann sich ein bisschen wie Wahrheit anfühlen.
-PROMPT: Attach 01.png as master reference. One clear concept scene: the same true Stickman holds a familiar claim card while a subtle visual path nudges it toward a truth meter. Avoid two separate worlds or multiple panels. Any additional human-like figure, if used, must be a true stickman. Explain visually without readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Und genau diese Vertrautheit kann sich ein bisschen wie Wahrheit anfühlen.
+PROMPT: Attach 01.png. Main Stickman sees the familiar claim and instinctively leans toward accepting it before any evidence appears. Use one subtle visual pull toward an approval symbol, with no second panel and no explicit written judgment. ZERO READABLE TEXT.
 
 SCENE 06
-SPEECH: Psychologen nennen das den Illusory Truth Effect, auf Deutsch oft Wahrheitseffekt.
-PROMPT: Attach 01.png as master reference. Clean educational scene introducing one short German label 'WAHRHEITSEFFEKT' beside repeated statement cards; one researcher Stickman points to the concept. Researcher must use exact same strict stickman anatomy, only clothing/role differs. One dominant concept, no dense infographic. Do not show the English term in the image. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Psychologen nennen das den Illusory Truth Effect, auf Deutsch oft Wahrheitseffekt.
+PROMPT: Attach 01.png. Clean educational scene: researcher Stickman points to a repeated-claim mechanism made of abstract cards and a familiarity-to-belief arrow. Leave clean negative space in upper-left for a later Remotion label. Do not draw the term itself. ZERO READABLE TEXT.
 
 SCENE 07
-SPEECH: Gemeint ist ein erstaunlich simples Muster: Aussagen, die wir schon einmal gehört oder gelesen haben, werden später im Durchschnitt eher als wahr eingeschätzt als vergleichbare neue Aussagen.
-PROMPT: Attach 01.png as master reference. Use one clean two-zone comparison: repeated statement cards on the left receive slightly higher truth-meter positions than equally plausible new statement cards on the right. If labels are necessary use only short German labels 'WIEDERHOLT' and 'NEU'. Any participants are strict stickmen. Keep the comparison visually simple and uncluttered. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Gemeint ist ein erstaunlich simples Muster: Aussagen, die wir schon einmal gehört oder gelesen haben, werden später im Durchschnitt eher als wahr eingeschätzt als vergleichbare neue Aussagen.
+PROMPT: Attach 01.png. One clean two-zone comparison: repeated abstract claim on left receives a slightly higher visual judgment position than an equally plausible new claim on right. Use icons and position only, no labels. Strict Stickmen if participants appear. ZERO READABLE TEXT.
 
 SCENE 08
-SPEECH: Das heißt nicht, dass Menschen alles glauben, wenn man es nur oft genug wiederholt.
-PROMPT: Attach 01.png as master reference. Boundary scene: a wall of repeated claim cards stops before a clear barrier, showing that repetition is not mind control. Optional single German label 'NICHT AUTOMATISCH'. Main Stickman remains strict stickman. One dominant visual metaphor, no extra diagrams. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Das heißt nicht, dass Menschen alles glauben, wenn man es nur oft genug wiederholt.
+PROMPT: Attach 01.png. Repeated abstract claims meet a clear barrier before reaching the Stickman's judgment, showing repetition is not mind control. One strong metaphor. ZERO READABLE TEXT.
 
 SCENE 09
-SPEECH: Aber Wiederholung kann unsere Einschätzung verschieben, selbst wenn der Inhalt sich überhaupt nicht verändert hat.
-PROMPT: Attach 01.png as master reference. Same abstract sentence card remains visually identical while only its repetition count increases and the main Stickman's confidence meter shifts slightly upward. One dominant comparison, no readable sentence. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Aber Wiederholung kann unsere Einschätzung verschieben, selbst wenn der Inhalt sich überhaupt nicht verändert hat.
+PROMPT: Attach 01.png. Same unchanged abstract claim appears repeatedly while only the Stickman's confidence/judgment needle shifts slightly upward. Claim visuals remain identical. ZERO READABLE TEXT.
 
 SCENE 10
-SPEECH: Warum passiert das?
-PROMPT: Attach 01.png as master reference. Question transition: main Stickman in a darkened room under one large question-mark symbol, repeated claim cards in background, clear visual reset. One focal point, no other text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Warum passiert das?
+PROMPT: Attach 01.png. Main Stickman pauses in a darkened room beneath one large question-mark symbol, repeated abstract claim shapes softly in background. Clear reset and one focal point. ZERO READABLE TEXT.
 
 SCENE 11
-SPEECH: Ein wichtiger Teil der Erklärung ist Verarbeitungsleichtigkeit, also Processing Fluency.
-PROMPT: Attach 01.png as master reference. Educational concept for processing fluency: one familiar statement card travels smoothly through a simple mental processing path while one new card takes a more effortful route. Use the main Stickman only if useful. Keep the comparison clean, no realistic brain and no English label. Explain visually. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Ein wichtiger Teil der Erklärung ist Verarbeitungsleichtigkeit, also Processing Fluency.
+PROMPT: Attach 01.png. Familiar abstract claim moves smoothly along a simple processing route while a new claim takes a visibly more effortful route. Keep it clean and minimal, no realistic brain. ZERO READABLE TEXT.
 
 SCENE 12
-SPEECH: Wenn dir ein Satz bekannt vorkommt, lässt er sich häufig schneller und leichter verarbeiten.
-PROMPT: Attach 01.png as master reference. Side-by-side reading with only two clear states: familiar claim processed quickly by the main Stickman, unfamiliar claim requiring a second look. Clean timing icons, no readable text, no extra interface clutter. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Wenn dir ein Satz bekannt vorkommt, lässt er sich häufig schneller und leichter verarbeiten.
+PROMPT: Attach 01.png. Main Stickman recognizes a familiar abstract claim immediately while a new claim makes the Stickman pause and look twice. Two clear states in one simple comparison. ZERO READABLE TEXT.
 
 SCENE 13
-SPEECH: Die Wörter wirken weniger neu.
-PROMPT: Attach 01.png as master reference. Visualize repeated text-like marks becoming immediately recognizable while novel marks feel unfamiliar. One close-up idea, no readable words. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Die Wörter wirken weniger neu.
+PROMPT: Attach 01.png. Close-up of repeated abstract line-pattern becoming visually familiar while a novel pattern remains unfamiliar. No actual letters. ZERO READABLE TEXT.
 
 SCENE 14
-SPEECH: Der Aufbau ist vertrauter.
-PROMPT: Attach 01.png as master reference. Structural familiarity scene: repeated statement-card layout snaps into a known visual pattern while a new layout remains unsorted. Keep it as one simple editorial metaphor, no realistic brain and no readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Der Aufbau ist vertrauter.
+PROMPT: Attach 01.png. Repeated claim layout fits immediately into a familiar visual template while a new layout feels unsorted. One clean editorial metaphor. ZERO READABLE TEXT.
 
 SCENE 15
-SPEECH: Dein Gehirn muss nicht bei null anfangen.
-PROMPT: Attach 01.png as master reference. Simple pathway metaphor: the familiar statement follows an already-cleared route instead of starting from an untouched path. One path comparison only. No realistic brain imagery and no readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Dein Gehirn muss nicht bei null anfangen.
+PROMPT: Attach 01.png. Familiar information follows an already-cleared visual route while new information starts on an untouched route. No realistic brain. ZERO READABLE TEXT.
 
 SCENE 16
-SPEECH: Und dieses leichte Gefühl braucht eine Erklärung.
-PROMPT: Attach 01.png as master reference. Main Stickman feels one smooth visual cue emerging from the repeated statement, but the cue itself has no truth verdict yet. One dominant focus, explain without text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Und dieses leichte Gefühl braucht eine Erklärung.
+PROMPT: Attach 01.png. Main Stickman experiences a smooth familiarity cue from the repeated claim and pauses as if interpreting the feeling. One quiet focal moment. ZERO READABLE TEXT.
 
 SCENE 17
-SPEECH: Manchmal kommt die richtige Erklärung: Klar, ich habe diesen Satz schon einmal gesehen.
-PROMPT: Attach 01.png as master reference. Correct attribution scene: main Stickman points from the easy feeling back to one simple memory echo of having seen the same statement card before. Any remembered version of the character remains strict stickman. No readable text, no multi-panel layout. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Manchmal kommt die richtige Erklärung: Klar, ich habe diesen Satz schon einmal gesehen.
+PROMPT: Attach 01.png. Main Stickman correctly connects the familiar feeling to one soft memory echo of seeing the same abstract claim earlier. Memory figure also strict Stickman. ZERO READABLE TEXT.
 
 SCENE 18
-SPEECH: Manchmal wird die Leichtigkeit aber unbewusst anders gedeutet: Vielleicht klingt das so vertraut, weil es stimmt.
-PROMPT: Attach 01.png as master reference. Misattribution scene: the same smooth familiarity cue is mistakenly routed toward a truth meter. Main Stickman exact master anatomy. One visual mechanism, no extra decision panels, no text required. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Manchmal wird die Leichtigkeit aber unbewusst anders gedeutet: Vielleicht klingt das so vertraut, weil es stimmt.
+PROMPT: Attach 01.png. At a desk, the familiar claim triggers an automatic hand movement toward an approval/check symbol before the Stickman reaches for evidence. Concrete misattribution action, no dashboard. ZERO READABLE TEXT.
 
 SCENE 19
-SPEECH: Das Spannende ist, dass wir dabei nicht absichtlich entscheiden: Vertraut gleich wahr.
-PROMPT: Attach 01.png as master reference. Close shot of main Stickman with no explicit button; instead one subtle background familiarity cue influences judgment. Keep the visual quiet and focused. Do not show English or equation text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Das Spannende ist, dass wir dabei nicht absichtlich entscheiden: Vertraut gleich wahr.
+PROMPT: Attach 01.png. Close shot: Stickman looks at familiar claim while a subtle background familiarity glow influences posture; no explicit choice button or equation. ZERO READABLE TEXT.
 
 SCENE 20
-SPEECH: Es ist eher ein kleiner Hinweis, der in unser Urteil einfließt.
-PROMPT: Attach 01.png as master reference. Decision-scale scene where one small fluency weight joins a few muted evidence weights and nudges the final truth judgment slightly. Any human figure remains strict stickman. Keep the fluency cue as the single emphasized element; use symbols rather than labels. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Es ist eher ein kleiner Hinweis, der in unser Urteil einfließt.
+PROMPT: Attach 01.png. One small familiarity weight joins several muted evidence weights on a simple judgment scale and nudges it slightly. One emphasized small influence, not a dense diagram. ZERO READABLE TEXT.
 
 SCENE 21
-SPEECH: Das lässt sich in Experimenten ziemlich sauber zeigen.
-PROMPT: Attach 01.png as master reference. Laboratory wide shot with one researcher Stickman and a small group of participant Stickmen using statement cards and rating controls. Clear scientific setting, but keep one dominant focal experiment station. ALL researchers and participants use exact strict stickman anatomy. Screens use abstract marks, no readable English UI. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Das lässt sich in Experimenten ziemlich sauber zeigen.
+PROMPT: Attach 01.png. Laboratory wide shot with researcher Stickman and a small group of participant Stickmen using abstract statement cards and rating controls. One dominant experiment station. Screens show abstract marks only. ZERO READABLE TEXT.
 
 SCENE 22
-SPEECH: Versuchspersonen sehen verschiedene Aussagen.
-PROMPT: Attach 01.png as master reference. Focus on one participant Stickman viewing a small sequence of varied neutral trivia-like statement cards on one screen. A second participant may be soft background context only. Every person is strict stickman. Use unreadable abstract statement lines instead of literal text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Versuchspersonen sehen verschiedene Aussagen.
+PROMPT: Attach 01.png. Focus on one participant Stickman viewing a short sequence of different abstract claim cards on one screen. Screen uses non-readable line patterns. ZERO READABLE TEXT.
 
 SCENE 23
-SPEECH: Einige davon begegnen ihnen später erneut, andere sind neu.
-PROMPT: Attach 01.png as master reference. Second-session visual centered on one participant: one familiar returning abstract card beside one genuinely new card. Clean A/B structure only. Participant remains exact strict stickman. No readable text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Einige davon begegnen ihnen später erneut, andere sind neu.
+PROMPT: Attach 01.png. Second-session setup: one familiar returning abstract card beside one genuinely new card in front of one participant Stickman. Clean A/B composition without letters. ZERO READABLE TEXT.
 
 SCENE 24
-SPEECH: Wenn sie anschließend einschätzen sollen, welche Aussagen wahr wirken, bekommen wiederholte Aussagen im Durchschnitt höhere Wahrheitswerte.
-PROMPT: Attach 01.png as master reference. Result scene with one simple two-bar truth-rating comparison: repeated group modestly higher than new group. If needed use only 'WIEDERHOLT' and 'NEU'. One researcher Stickman may point to the result. No extra charts. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Wenn sie anschließend einschätzen sollen, welche Aussagen wahr wirken, bekommen wiederholte Aussagen im Durchschnitt höhere Wahrheitswerte.
+PROMPT: Attach 01.png. One simple two-bar result graphic with repeated group modestly higher than new group, distinguished by icon pattern/color rather than words. One researcher Stickman may point. ZERO READABLE TEXT.
 
 SCENE 25
-SPEECH: Eine Meta-Analyse über viele Studien kam ebenfalls zu dem Ergebnis, dass Wiederholung den subjektiven Wahrheitseindruck zuverlässig erhöhen kann.
-PROMPT: Attach 01.png as master reference. Meta-analysis visual centered on one clean summary chart with a small stack of study sheets behind it as supporting context. One researcher Stickman in the background. Do not fill the frame with many tiny charts. No readable chart text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Eine Meta-Analyse über viele Studien kam ebenfalls zu dem Ergebnis, dass Wiederholung den subjektiven Wahrheitseindruck zuverlässig erhöhen kann.
+PROMPT: Attach 01.png. One clean summary chart in foreground with a small stack of study sheets behind it and one researcher Stickman. Study sheets and chart contain shapes only. ZERO READABLE TEXT.
 
 SCENE 26
-SPEECH: Noch interessanter wird es bei Aussagen, über die Menschen eigentlich schon Wissen besitzen.
-PROMPT: Attach 01.png as master reference. Knowledge transition: main Stickman stands beside one bookshelf of known-fact symbols while one repeated false-claim card approaches from the other side. Clear three-element composition, no readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Noch interessanter wird es bei Aussagen, über die Menschen eigentlich schon Wissen besitzen.
+PROMPT: Attach 01.png. Main Stickman beside a bookshelf of known-fact symbols while a repeated false-claim card approaches from the other side. Three clear elements only. ZERO READABLE TEXT.
 
 SCENE 27
-SPEECH: Man könnte erwarten: Wenn ich die richtige Antwort kenne, müsste mich bloße Wiederholung kaum beeinflussen.
-PROMPT: Attach 01.png as master reference. Expectation scene: main Stickman confidently holds one correct-fact card as a shield against one repeated claim. Strict stickman anatomy unchanged. Keep cards visual, not text-heavy. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Man könnte erwarten: Wenn ich die richtige Antwort kenne, müsste mich bloße Wiederholung kaum beeinflussen.
+PROMPT: Attach 01.png. Main Stickman confidently uses a correct-fact symbol like a shield against a repeated claim. Concrete expectation metaphor. ZERO READABLE TEXT.
 
 SCENE 28
-SPEECH: Doch eine bekannte Studie von Lisa Fazio und Kollegen zeigte, dass selbst vorhandenes Wissen nicht immer vollständig schützt.
-PROMPT: Attach 01.png as master reference. Research scene inspired by Fazio and colleagues: focus on one participant Stickman rating a repeated claim while a separate knowledge-check card sits nearby. One researcher Stickman may observe. Every person is a strict stickman. No researcher names or English text inside image. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Doch eine bekannte Studie von Lisa Fazio und Kollegen zeigte, dass selbst vorhandenes Wissen nicht immer vollständig schützt.
+PROMPT: Attach 01.png. Research scene with participant Stickman rating a repeated abstract claim while a separate knowledge-check card sits nearby; researcher Stickman observes. No names or document text. ZERO READABLE TEXT.
 
 SCENE 29
-SPEECH: Wiederholte falsche Aussagen konnten teilweise glaubwürdiger wirken, obwohl Teilnehmende später zeigen konnten, dass sie die richtige Information eigentlich kannten.
-PROMPT: Attach 01.png as master reference. Key finding visualization: one participant Stickman possesses a correct-answer symbol in one hand while one repeated false-claim card still nudges a truth meter upward. Three clear elements only. No readable claim text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Wiederholte falsche Aussagen konnten teilweise glaubwürdiger wirken, obwohl Teilnehmende später zeigen konnten, dass sie die richtige Information eigentlich kannten.
+PROMPT: Attach 01.png. Participant Stickman holds a correct-answer symbol in one hand while the repeated false-claim cue still nudges the judgment needle upward. Three elements only. ZERO READABLE TEXT.
 
 SCENE 30
-SPEECH: Das bedeutet nicht, dass Wissen nutzlos ist.
-PROMPT: Attach 01.png as master reference. Correction frame: main Stickman beside a bright knowledge bookshelf, calm explanatory composition. Optional short German label 'WISSEN HILFT'. One dominant message, no longer sentence. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Das bedeutet nicht, dass Wissen nutzlos ist.
+PROMPT: Attach 01.png. Main Stickman beside a bright useful knowledge bookshelf, calm corrective scene. Leave upper-left negative space for later Remotion label. ZERO READABLE TEXT.
 
 SCENE 31
-SPEECH: Im Gegenteil.
-PROMPT: Attach 01.png as master reference. Very brief emphasis scene: knowledge bookshelf lights up strongly, countering any implication that knowledge has no value. Main Stickman exact master anatomy. No text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Im Gegenteil.
+PROMPT: Attach 01.png. Very brief emphasis: knowledge bookshelf lights up strongly while Stickman turns toward it with confidence. ZERO READABLE TEXT.
 
 SCENE 32
-SPEECH: Wissen kann Urteile korrigieren.
-PROMPT: Attach 01.png as master reference. Judgment scene: main Stickman compares one claim card with one stored fact symbol and corrects one truth meter downward. No readable text, no extra panels. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Wissen kann Urteile korrigieren.
+PROMPT: Attach 01.png. Stickman checks an abstract claim against a stored fact symbol and deliberately moves the judgment needle back downward. Concrete correction action. ZERO READABLE TEXT.
 
 SCENE 33
-SPEECH: Aber Menschen greifen nicht in jedem Moment automatisch auf alles zurück, was sie wissen.
-PROMPT: Attach 01.png as master reference. Busy but visually controlled everyday scene: main Stickman responds to one immediate claim while a small shelf of stored fact symbols remains in the background, clearly available but not accessed. Any background people are strict stickmen. Keep the claim as dominant focus. No readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Aber Menschen greifen nicht in jedem Moment automatisch auf alles zurück, was sie wissen.
+PROMPT: Attach 01.png. Everyday scene: Stickman reacts to an immediate smartphone claim while the knowledge bookshelf remains clearly available but unused in the background. ZERO READABLE TEXT.
 
 SCENE 34
-SPEECH: Manchmal ist die schnelle Vertrautheit einfach früher da als die bewusste Prüfung.
-PROMPT: Attach 01.png as master reference. Timing metaphor with one central destination: familiarity cue reaches the judgment desk first while fact-checking arrives later on a longer route. Use only two paths, no text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Manchmal ist die schnelle Vertrautheit einfach früher da als die bewusste Prüfung.
+PROMPT: Attach 01.png. Main Stickman sees a familiar smartphone claim and begins reacting immediately; a closed fact-check notebook and evidence folder are still untouched on the desk. Concrete timing contrast, no path diagram. ZERO READABLE TEXT.
 
 SCENE 35
-SPEECH: Stell dir vor, du liest immer wieder den Satz: Ein bestimmtes Lebensmittel verbessert die Konzentration.
-PROMPT: Attach 01.png as master reference. Everyday example: main Stickman encounters the same generic food-related claim card again. Use one simple food icon plus one attention/focus symbol; do NOT render the full sentence. If one label is needed, use only the German word 'KONZENTRATION?'. Any people inside feeds are strict stickmen. No English UI. One dominant claim card, no collage of many feeds. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Stell dir vor, du liest immer wieder den Satz: Ein bestimmtes Lebensmittel verbessert die Konzentration.
+PROMPT: Attach 01.png. Everyday food example: Stickman encounters the same generic food-related claim on a phone, represented by one food icon plus one focus/attention icon. No sentence or UI words. ZERO READABLE TEXT.
 
 SCENE 36
-SPEECH: Beim ersten Mal ist es nur eine Behauptung.
-PROMPT: Attach 01.png as master reference. First exposure: the example claim card appears once, small and unfamiliar; main Stickman shows neutral uncertainty through posture. One card, one reaction. Keep card mostly symbolic, no sentence. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Beim ersten Mal ist es nur eine Behauptung.
+PROMPT: Attach 01.png. First exposure: symbolic food/focus claim appears once and unfamiliar; Stickman shows neutral uncertainty. ZERO READABLE TEXT.
 
 SCENE 37
-SPEECH: Beim fünften Mal kommt sie dir bekannt vor.
-PROMPT: Attach 01.png as master reference. Fifth exposure: the exact same symbolic claim card appears with five subtle encounter markers; the main Stickman recognizes it more quickly. Keep the claim card as dominant focus, no readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Beim fünften Mal kommt sie dir bekannt vor.
+PROMPT: Attach 01.png. Fifth exposure: same symbolic claim appears again with five small non-text encounter marks around it; Stickman recognizes it faster. ZERO READABLE TEXT.
 
 SCENE 38
-SPEECH: Vielleicht weißt du nicht mehr genau, wo du sie zuerst gesehen hast.
-PROMPT: Attach 01.png as master reference. Source-memory scene: one claim card remains clear while only two or three faint source icons behind it blur and separate, showing uncertainty about origin. If any thumbnail contains a person, that person is strict stickman. No readable source names or English text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Vielleicht weißt du nicht mehr genau, wo du sie zuerst gesehen hast.
+PROMPT: Attach 01.png. Claim remains clear while two or three possible source icons behind it blur and separate, showing uncertainty about origin. ZERO READABLE TEXT.
 
 SCENE 39
-SPEECH: Aber dein Kopf registriert: Das kenne ich.
-PROMPT: Attach 01.png as master reference. Recognition close-up: main Stickman sees the familiar claim. Optional small German cue 'KENNE ICH'. No truth checkmark and no other readable text. One dominant recognition moment. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Aber dein Kopf registriert: Das kenne ich.
+PROMPT: Attach 01.png. Recognition close-up of Stickman seeing the familiar claim. Leave upper-left negative space for later Remotion label. No truth checkmark. ZERO READABLE TEXT.
 
 SCENE 40
-SPEECH: Und hier kommt noch ein zweites Problem dazu: Quelle und Inhalt können sich im Gedächtnis unterschiedlich gut halten.
-PROMPT: Attach 01.png as master reference. Memory split concept with only two visual containers: statement content stays clear in one, source information fades in the other. Use icons and visual separation, no readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Und hier kommt noch ein zweites Problem dazu: Quelle und Inhalt können sich im Gedächtnis unterschiedlich gut halten.
+PROMPT: Attach 01.png. One memory concept with two visual containers: claim content stays sharp while source cue fades. No words on either container. ZERO READABLE TEXT.
 
 SCENE 41
-SPEECH: Du erinnerst dich vielleicht an die Aussage, aber nicht mehr daran, ob sie aus einer seriösen Studie, einer Werbung oder irgendeinem Kommentar kam.
-PROMPT: Attach 01.png as master reference. Main Stickman holds one remembered claim card while three small possible-source icons sit behind it: study document, advertisement, anonymous comment. Keep the claim card dominant and source icons secondary. If any avatar depicts a person, it must be strict stickman. No readable brand or source text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Du erinnerst dich vielleicht an die Aussage, aber nicht mehr daran, ob sie aus einer seriösen Studie, einer Werbung oder irgendeinem Kommentar kam.
+PROMPT: Attach 01.png. Stickman holds one remembered abstract claim while three small possible-source icons sit behind it: study document, advertising panel, anonymous comment bubble. Claim remains dominant. ZERO READABLE TEXT.
 
 SCENE 42
-SPEECH: Dann bleibt Vertrautheit übrig, während die Information über die Quelle schwächer wird.
-PROMPT: Attach 01.png as master reference. One concept scene where the claim card stays vivid in foreground while source icons fade softly into the background. One dominant contrast, no text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Dann bleibt Vertrautheit übrig, während die Information über die Quelle schwächer wird.
+PROMPT: Attach 01.png. Claim stays vivid in foreground while source icons fade softly into background. One clean contrast. ZERO READABLE TEXT.
 
 SCENE 43
-SPEECH: Das ist einer der Gründe, warum reine Wiederholung in Werbung, Gerüchten und sozialen Medien so wirkungsvoll sein kann.
-PROMPT: Attach 01.png as master reference. Use ONE centered composition with the main Stickman and one repeated claim card. Around it, use three small secondary source icons only: advertising panel, speech-bubble rumor cue, smartphone/social-feed cue. Do NOT create a three-environment montage or collage. Any person in a cue is strict stickman. No brand logos, no readable English UI or text blocks. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Das ist einer der Gründe, warum reine Wiederholung in Werbung, Gerüchten und sozialen Medien so wirkungsvoll sein kann.
+PROMPT: Attach 01.png. Main Stickman stands in one believable urban/social setting where the same abstract claim appears on a billboard shape, through a nearby rumor speech-bubble cue and on a smartphone. One centered scene, not a three-panel collage. ZERO READABLE TEXT.
 
 SCENE 44
-SPEECH: Nicht jede Wiederholung überzeugt sofort.
-PROMPT: Attach 01.png as master reference. Slow accumulation scene: one repetition barely moves one judgment needle. Main Stickman strict master anatomy. One dominant meter, no text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Nicht jede Wiederholung überzeugt sofort.
+PROMPT: Attach 01.png. One repetition barely moves a simple judgment needle while Stickman remains skeptical. One dominant meter only. ZERO READABLE TEXT.
 
 SCENE 45
-SPEECH: Aber sie kann einen Satz leichter verarbeitbar und bekannter machen.
-PROMPT: Attach 01.png as master reference. Processing scene: after several encounters the same statement card moves more smoothly along one visual path, with no extra evidence added. Keep one dominant path and one card. No readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Aber sie kann einen Satz leichter verarbeitbar und bekannter machen.
+PROMPT: Attach 01.png. After several encounters, same abstract claim is recognized smoothly by Stickman with less hesitation; no extra evidence appears. Prefer concrete reaction over a path diagram. ZERO READABLE TEXT.
 
 SCENE 46
-SPEECH: Wichtig ist trotzdem: Der Wahrheitseffekt ist kein magischer Gehirn-Hack.
-PROMPT: Attach 01.png as master reference. Boundary reset: one exaggerated magic-wand/brain-hack symbol is crossed out while main Stickman and one researcher Stickman stand in a sober scientific setting. Both use exact same strict stickman anatomy. One dominant correction metaphor, no English phrase. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Wichtig ist trotzdem: Der Wahrheitseffekt ist kein magischer Gehirn-Hack.
+PROMPT: Attach 01.png. Sober scientific scene: exaggerated magic-wand symbol is crossed out beside main Stickman and researcher Stickman. One correction metaphor. ZERO READABLE TEXT.
 
 SCENE 47
-SPEECH: Menschen berücksichtigen auch Vorwissen, Plausibilität, Quellen und andere Hinweise.
-PROMPT: Attach 01.png as master reference. One central judgment scale or decision hub as dominant focus. Around it place four small supporting icons because the speech explicitly lists several cues: stored knowledge, plausibility balance, source document and processing-ease path. Keep icons small and clean; do NOT create four panels or a dashboard. Any people are strict stickmen. No text labels needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Menschen berücksichtigen auch Vorwissen, Plausibilität, Quellen und andere Hinweise.
+PROMPT: Attach 01.png. Main Stickman evaluates one claim at a desk while four small supporting evidence objects surround the single decision: knowledge book, plausibility balance symbol, source document icon and familiarity cue. One central action, no four-panel dashboard. ZERO READABLE TEXT.
 
 SCENE 48
-SPEECH: Eine offensichtlich absurde Behauptung wird nicht automatisch glaubwürdig, nur weil du sie dreimal siehst.
-PROMPT: Attach 01.png as master reference. One absurd neutral claim represented by an obviously impossible visual symbol beside three repetition stamps while one truth meter remains low. Main Stickman strict master anatomy. One dominant claim example, no readable claim text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Eine offensichtlich absurde Behauptung wird nicht automatisch glaubwürdig, nur weil du sie dreimal siehst.
+PROMPT: Attach 01.png. One obviously impossible neutral claim symbol appears three times while Stickman remains unconvinced and the judgment needle stays low. ZERO READABLE TEXT.
 
 SCENE 49
-SPEECH: Außerdem hängt der Effekt von Situation, Aussage und Person ab.
-PROMPT: Attach 01.png as master reference. Show three participant Stickmen maximum, arranged cleanly around the same repeated statement card, each reacting differently. Same true stickman anatomy; distinguish them only with simple clothing/colors/accessories. One dominant claim card, no separate context panels, no text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Außerdem hängt der Effekt von Situation, Aussage und Person ab.
+PROMPT: Attach 01.png. Three participant Stickmen maximum react differently to the same repeated abstract claim in one clean composition. Same anatomy, simple clothing differences. ZERO READABLE TEXT.
 
 SCENE 50
-SPEECH: Forschung zu Wahrheitseinschätzungen zeigt insgesamt, dass mehrere Signale zusammenwirken: Was wissen wir bereits?
-PROMPT: Attach 01.png as master reference. Research synthesis scene emphasizing stored knowledge as the first cue, represented by one memory shelf and one fact icon. Optional single German label 'VORWISSEN'. Researcher figure, if shown, is strict stickman. One dominant cue, no longer question text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Forschung zu Wahrheitseinschätzungen zeigt insgesamt, dass mehrere Signale zusammenwirken: Was wissen wir bereits?
+PROMPT: Attach 01.png. Research synthesis scene focused only on stored knowledge as the first cue: Stickman reaches toward a memory shelf/fact symbol before judging a claim. Leave upper-left negative space for later Remotion label. ZERO READABLE TEXT.
 
 SCENE 51
-SPEECH: Wie plausibel klingt etwas?
-PROMPT: Attach 01.png as master reference. Plausibility cue visual: one balance scale comparing one sensible-looking claim symbol and one absurd-looking claim symbol. One clean comparison, no readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Wie plausibel klingt etwas?
+PROMPT: Attach 01.png. One clean plausibility balance compares a sensible-looking claim symbol with an absurd-looking symbol. ZERO READABLE TEXT.
 
 SCENE 52
-SPEECH: Wie vertrauenswürdig ist die Quelle?
-PROMPT: Attach 01.png as master reference. Source-quality visual centered on one primary-study document versus one anonymous repost icon. If labels are needed use only short German words such as 'QUELLE' or 'ANONYM'. Any avatar/person is strict stickman. No English text and no extra source ladder. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Wie vertrauenswürdig ist die Quelle?
+PROMPT: Attach 01.png. Stickman compares one credible primary-study document icon with one anonymous repost icon. Leave upper-left negative space for later Remotion label. Documents contain abstract lines only. ZERO READABLE TEXT.
 
 SCENE 53
-SPEECH: Und wie leicht lässt sich die Aussage verarbeiten?
-PROMPT: Attach 01.png as master reference. Processing-ease path showing one familiar information card moving faster and more smoothly than one new card. One clean two-state comparison, no text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Und wie leicht lässt sich die Aussage verarbeiten?
+PROMPT: Attach 01.png. Familiar abstract claim is recognized quickly and smoothly while a new claim causes more hesitation. One clean two-state comparison. ZERO READABLE TEXT.
 
 SCENE 54
-SPEECH: Was kann man praktisch daraus mitnehmen?
-PROMPT: Attach 01.png as master reference. Practical transition: main Stickman closes the experiment board and looks toward one simple checklist card containing four tiny icons only. The Stickman is the dominant focus; do not display four separate panels or written checklist items. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Was kann man praktisch daraus mitnehmen?
+PROMPT: Attach 01.png. Main Stickman closes the experiment board and turns toward one simple checklist card containing four tiny icons only. Stickman remains dominant. ZERO READABLE TEXT.
 
 SCENE 55
-SPEECH: Erstens: Vertrautheit ist kein Beweis.
-PROMPT: Attach 01.png as master reference. Tip 1 scene with one familiar claim card and one separate evidence card visibly kept apart. Optional short German label 'VERTRAUT ≠ BEWIESEN'. Main Stickman exact master anatomy. No other text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Erstens: Vertrautheit ist kein Beweis.
+PROMPT: Attach 01.png. Familiar claim cue and evidence cue are visibly separated while Stickman refuses to treat familiarity as proof. Leave upper-left negative space for later Remotion label. ZERO READABLE TEXT.
 
 SCENE 56
-SPEECH: Wenn dein erster Gedanke lautet: Das habe ich schon oft gehört, dann beantwortet das noch nicht die Frage: Woher weiß ich, dass es stimmt?
-PROMPT: Attach 01.png as master reference. Main Stickman is surrounded by only two or three faint repeated speech-bubble symbols and then pauses before one source/evidence icon. Use visual contrast instead of sentences. Optional single German label 'QUELLE?'. Any surrounding speakers are strict stickmen. Keep the source icon as the decisive focal cue. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Wenn dein erster Gedanke lautet: Das habe ich schon oft gehört, dann beantwortet das noch nicht die Frage: Woher weiß ich, dass es stimmt?
+PROMPT: Attach 01.png. Stickman sees two or three repeated speech-bubble symbols, pauses, then reaches toward one source/evidence document. Source-check action is dominant. Leave upper-left negative space for later Remotion label. ZERO READABLE TEXT.
 
 SCENE 57
-SPEECH: Zweitens: Prüfe bei wichtigen Behauptungen nicht nur den Satz, sondern die Quelle.
-PROMPT: Attach 01.png as master reference. Tip 2 scene: main Stickman traces one abstract claim card backward along one arrow to one source document. One clear visual action, no readable text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Zweitens: Prüfe bei wichtigen Behauptungen nicht nur den Satz, sondern die Quelle.
+PROMPT: Attach 01.png. Stickman traces one abstract claim backward along a single arrow to one source document. One clear action. ZERO READABLE TEXT.
 
 SCENE 58
-SPEECH: Wer behauptet das?
-PROMPT: Attach 01.png as master reference. Source-question close-up with one source/author symbol. Optional single German label 'WER?'. If an author is shown, use strict stickman anatomy. No other text or extra cards. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Wer behauptet das?
+PROMPT: Attach 01.png. Source-question close-up centered on one author/source symbol and Stickman inspecting it. Leave upper-left negative space for later Remotion label. ZERO READABLE TEXT.
 
 SCENE 59
-SPEECH: Worauf stützt sich die Aussage?
-PROMPT: Attach 01.png as master reference. Evidence-question scene with one abstract claim card and one arrow leading to a small evidence-document stack. Optional single German label 'BELEG?'. One dominant connection, no other readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Worauf stützt sich die Aussage?
+PROMPT: Attach 01.png. Abstract claim connects by one clear arrow to a small evidence-document stack while Stickman checks the link. Leave upper-left negative space for later Remotion label. ZERO READABLE TEXT.
 
 SCENE 60
-SPEECH: Gibt es eine Primärquelle oder nur viele Seiten, die voneinander abgeschrieben haben?
-PROMPT: Attach 01.png as master reference. Primary-source check with one original study document as the dominant source and a small cluster of visually duplicated repost pages below it as supporting context. Any profile avatars use strict stickman heads, not human faces. Explain visually with no readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Gibt es eine Primärquelle oder nur viele Seiten, die voneinander abgeschrieben haben?
+PROMPT: Attach 01.png. One original study document is dominant while a small cluster of visually duplicated repost pages branches below it. Pages contain abstract lines only. ZERO READABLE TEXT.
 
 SCENE 61
-SPEECH: Drittens: Sei vorsichtig mit falschen Behauptungen, die du selbst ständig wiederholst, auch wenn du sie widerlegen willst.
-PROMPT: Attach 01.png as master reference. Tip 3 scene: main Stickman fact-checks one false-claim card while the correct-information symbol is larger and visually dominant. Keep the false claim small and secondary. No readable false-claim text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Drittens: Sei vorsichtig mit falschen Behauptungen, die du selbst ständig wiederholst, auch wenn du sie widerlegen willst.
+PROMPT: Attach 01.png. Stickman fact-checks one false-claim cue while a correct-information symbol is much larger and visually dominant. False claim remains small and secondary. ZERO READABLE TEXT.
 
 SCENE 62
-SPEECH: Forschung zur Korrektur von Fehlinformation zeigt zwar nicht, dass jede Wiederholung automatisch schadet.
-PROMPT: Attach 01.png as master reference. Nuance research frame centered on one balanced scale showing that repetition in a correction does not automatically cause harm. One researcher Stickman may stand nearby. No sensational backfire graphic, no multiple charts, no text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Forschung zur Korrektur von Fehlinformation zeigt zwar nicht, dass jede Wiederholung automatisch schadet.
+PROMPT: Attach 01.png. Nuanced research frame with one balanced scale showing that repetition during correction does not automatically cause harm; researcher Stickman nearby. No sensational graphics. ZERO READABLE TEXT.
 
 SCENE 63
-SPEECH: Trotzdem ist es sinnvoll, die korrekte Information klar in den Mittelpunkt zu stellen und nicht die falsche Behauptung unnötig oft zu verstärken.
-PROMPT: Attach 01.png as master reference. Best-practice scene: one correct-information symbol occupies center stage while one false-claim card is reduced to a small crossed reference card. Clear hierarchy, main Stickman strict master anatomy. No readable claim text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Trotzdem ist es sinnvoll, die korrekte Information klar in den Mittelpunkt zu stellen und nicht die falsche Behauptung unnötig oft zu verstärken.
+PROMPT: Attach 01.png. Correct-information symbol occupies center stage while false-claim card is reduced to a small crossed reference cue. Clear visual hierarchy. ZERO READABLE TEXT.
 
 SCENE 64
-SPEECH: Und viertens: Wenn etwas plötzlich wahr klingt, nur weil du es überall siehst, ist genau das ein guter Moment für eine kurze Prüfung.
-PROMPT: Attach 01.png as master reference. Tip 4 scene: main Stickman notices the same abstract claim card appearing two or three times in the background and deliberately pauses with one search/check symbol. Any people in feeds are strict stickmen. Keep the pause/check action dominant. No readable UI text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Und viertens: Wenn etwas plötzlich wahr klingt, nur weil du es überall siehst, ist genau das ein guter Moment für eine kurze Prüfung.
+PROMPT: Attach 01.png. Stickman notices the same abstract claim appearing two or three times in the environment and deliberately pauses to check one source/evidence document. Check action is dominant. ZERO READABLE TEXT.
 
 SCENE 65
-SPEECH: Denn unser Gehirn arbeitet effizient.
-PROMPT: Attach 01.png as master reference. Efficiency concept: one clean network shortcut lets familiar information move quickly through everyday cognition, framed as generally useful. One dominant shortcut path, avoid realistic brain anatomy and text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Denn unser Gehirn arbeitet effizient.
+PROMPT: Attach 01.png. Useful efficiency concept: familiar information takes a clean shortcut through an everyday task while Stickman benefits from quick recognition. Avoid realistic brain anatomy. ZERO READABLE TEXT.
 
 SCENE 66
-SPEECH: Vertraute Informationen lassen sich leichter verarbeiten.
-PROMPT: Attach 01.png as master reference. One familiar statement card glides smoothly through a processing path while one new card takes longer. Same visual language as earlier, one clean comparison, no readable text. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Vertraute Informationen lassen sich leichter verarbeiten.
+PROMPT: Attach 01.png. Stickman recognizes familiar abstract information immediately while new information takes visibly more effort. Concrete reaction comparison. ZERO READABLE TEXT.
 
 SCENE 67
-SPEECH: Meistens ist diese Effizienz hilfreich.
-PROMPT: Attach 01.png as master reference. Positive everyday frame: main Stickman uses efficient recognition successfully in one ordinary task. Keep the task simple and immediately readable. Any other person remains strict stickman. No text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Meistens ist diese Effizienz hilfreich.
+PROMPT: Attach 01.png. Positive everyday scene: Stickman uses quick recognition successfully in one ordinary task such as finding a familiar transit route or household item. One simple readable action. ZERO READABLE TEXT.
 
 SCENE 68
-SPEECH: Aber manchmal verwechselt unser Kopf das Gefühl von Bekanntheit mit einem Hinweis auf Wahrheit.
-PROMPT: Attach 01.png as master reference. Final mechanism scene: one familiarity cue is accidentally placed onto the truth side of one judgment scale. Main Stickman exact master anatomy. One clear mechanism, no extra diagrams, no text needed. 16:9 landscape. Show only this beat; do not preview later information.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Aber manchmal verwechselt unser Kopf das Gefühl von Bekanntheit mit einem Hinweis auf Wahrheit.
+PROMPT: Attach 01.png. Familiarity cue is accidentally placed onto the truth side of one simple judgment scale while Stickman watches. One clear mechanism. ZERO READABLE TEXT.
 
 SCENE 69
-SPEECH: Und genau deshalb kann ein Satz beim fünften Mal überzeugender klingen, obwohl er kein bisschen wahrer geworden ist.
-PROMPT: Attach 01.png as master reference. Closing callback: the exact same abstract claim card appears for the fifth time beside the exact same main Stickman; it now feels more convincing, but one evidence meter remains unchanged. Strong visual callback to earlier scenes. Keep only these three clear elements. No readable claim text. 16:9 landscape. Show only this beat.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT: Und genau deshalb kann ein Satz beim fünften Mal überzeugender klingen, obwohl er kein bisschen wahrer geworden ist.
+PROMPT: Attach 01.png. Closing callback: same abstract claim appears for the fifth encounter beside the same main Stickman; Stickman now reacts with more confidence, but the separate evidence indicator remains exactly unchanged. Strong visual callback, only three elements. ZERO READABLE TEXT.
 
 FINAL EXECUTION RULE
-Stop only after Scene 01 for user approval. After Scene 01 is approved, continue automatically through Batch 1 to Batch 14 until all remaining images are complete. After each batch, perform internal QA, regenerate only failed images, and continue immediately when the batch passes. Do not ask the user for approval after normal batches. Only interrupt if a major consistency failure cannot be corrected automatically.
+Stop only after Scene 01 for user approval. After Scene 01 is approved, continue automatically through Batch 1 to Batch 14 until all remaining images are complete. After each batch, perform internal QA, regenerate only failed images and continue immediately when the batch passes.
 
-FINAL DNA RULE
-Simple Stickmen. Rich World. One clear idea per image. German visual language. If any generated image feels crowded, reads like an infographic, contains several competing focal points or tries to explain more than the current speech beat, simplify and regenerate it before continuing.
+FINAL QA RULE
+Reject and regenerate any image that contains:
+- a non-stickman human
+- anatomy drift
+- mixed human styles
+- 3D/Pixar/anime/photorealistic style drift
+- unintended readable text of any language
+- an overloaded infographic composition
+- a scene that does not directly match the current speech beat
 
-FINAL TEXT RULE
-Prompts are allowed to be English. The channel is German. Generated images must never contain English visible text. Prefer visual storytelling with no text; if text is necessary, use only short German wording, normally 1–4 words.
+FINAL PRINCIPLE
+Simple Stickmen. Rich World. One clear idea per image. Concrete action before generic infographic. ZERO readable text in Flow source images. German labels are added later in Remotion.

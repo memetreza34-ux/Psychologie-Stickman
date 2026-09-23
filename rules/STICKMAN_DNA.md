@@ -1,8 +1,8 @@
 # STICKMAN DNA — CHANNEL VISUAL SOURCE OF TRUTH
 
-**STATUS: HARD LOCK — v1.0**
+**STATUS: HARD LOCK — v1.1**
 
-Diese Datei definiert die unveränderliche visuelle DNA des Kanals. Sie ist die kurze, zentrale Quelle für alle Agenten, Prompts, Templates, Reels und YouTube-Videos.
+Diese Datei ist die zentrale visuelle Source of Truth für alle Agenten, Prompts, Templates, Reels und YouTube-Videos.
 
 Leitidee:
 
@@ -27,26 +27,16 @@ Verbindlich:
 - Füße/Schuhe stark vereinfacht
 - Kleidung darf Rolle, Beruf, Epoche und Persönlichkeit zeigen, darf aber niemals normale menschliche Anatomie erzeugen
 
-Gilt ausnahmslos für:
-- Hauptfiguren
-- Nebenfiguren
-- Passanten
-- Menschenmengen
-- Forscher / Versuchspersonen
-- historische Figuren
-- Personen in Fahrzeugen
-- entfernte Hintergrundfiguren
-- Personen auf Screens, Fotos, Postern, Werbung, Plakaten oder Spiegelungen
-- Figuren in Erinnerungen, Gedankenbildern oder Diagrammen
+Gilt ausnahmslos für Hauptfiguren, Nebenfiguren, Passanten, Menschenmengen, Forscher, historische Figuren, Personen in Fahrzeugen, entfernte Hintergrundfiguren sowie Personen auf Screens, Fotos, Postern, Werbung, Spiegelungen und Erinnerungs-/Diagrammebenen.
 
-**HARD FAIL:** normale Cartoon-Menschen, semi-realistische Menschen, realistische Menschen, gemischte Figurenstile, dicke menschliche Gliedmaßen, realistische Hände/Finger, 3D/Pixar, Anime, Chibi.
+**HARD FAIL:** normale Cartoon-Menschen, semi-realistische Menschen, realistische Menschen, gemischte Figurenstile, dicke menschliche Gliedmaßen, realistische Hände/Finger, 3D/Pixar, Anime, Manga oder Chibi.
 
 ## 2. Welt-DNA — DETAILREICHE MODERNE 2D-WELT
 
 Die Figuren bleiben sehr simpel. Die Welt darf deutlich reichhaltiger sein.
 
 Erwünscht:
-- glaubwürdige Wohnungen, Büros, Busse, Bahnen, Straßen, Cafés, Schulen, Labore
+- glaubwürdige Wohnungen, Büros, Busse, Bahnen, Straßen, Cafés, Schulen und Labore
 - klare Architektur und Perspektive
 - echte räumliche Logik
 - passende Möbel, Technik und Requisiten
@@ -68,42 +58,71 @@ Nicht erwünscht:
 
 ## 3. Bild-DNA — EINE KLARE IDEE PRO BILD
 
-Ein Bild darf nicht versuchen, zu viele Aussagen gleichzeitig zu erklären.
-
 Verbindlich:
 - genau ein primärer visueller Gedanke pro Bild
 - ein klares Hauptmotiv
-- höchstens 1–2 unterstützende visuelle Hinweise, wenn sie wirklich nötig sind
+- höchstens 1–2 unterstützende Hinweise, wenn wirklich nötig
 - keine vollgestopften Infografiken
 - keine 3–5 konkurrierenden Teilbilder, wenn eine einzelne Szene genügt
-- keine unnötigen Tabellen, Panels, Karten oder Textblöcke
+- keine unnötigen Tabellen, Panels, Karten, Meter, Diagramme oder Textblöcke
 - Zuschauer soll die Kernidee in ungefähr 1 Sekunde erfassen können
-- wenn ein Sprechabschnitt mehrere neue Gedanken enthält, lieber mehrere Visual Beats/Bilder statt alles in ein Bild zu pressen
-- jede Szene bekommt eine eigene passende Komposition; Master sperrt Stil, nicht Kamera oder Aufbau
+- mehrere neue Gedanken werden auf mehrere Visual Beats/Bilder verteilt
+- Master sperrt Stil, nicht Kamera, Pose, Ort oder Komposition
 
 Priorität:
 **Klarheit > Informationsmenge pro Bild.**
 
-## 4. Sprache im Bild — DEUTSCH + MINIMAL
+## 4. Konkrete Szene vor abstrakter Infografik
 
-Der Kanal ist deutschsprachig.
+Standardmäßig soll ein Beat als konkrete Stickman-Handlung in einer glaubwürdigen Umgebung visualisiert werden.
 
-Prompts dürfen Englisch sein. Das finale Bild bleibt trotzdem deutsch.
+Bevorzugte Reihenfolge:
+1. konkrete Handlung mit Stickman + passendem Ort/Requisit
+2. einfache visuelle Metapher
+3. Diagramm/Skala/Karte nur wenn Handlung oder Metapher die Aussage nicht sauber erklären kann
 
-Verbindlich:
-- wenn Text nicht nötig ist: kein sichtbarer Text
-- wenn Text nötig ist: ausschließlich Deutsch
-- normalerweise nur ein kurzes Label / eine kurze Phrase
-- Ziel: 1–4 sichtbare Wörter
-- keine englischen Überschriften, Labels, Buttons, UI-Texte, Postertexte oder Karten
-- keine englischen Promptwörter ins Bild übernehmen
-- keine langen Sätze, Absätze oder Textwände
-- visuelle Erklärung trägt die Aussage; Text unterstützt nur
+Vermeide eine Serie aus immer denselben `claim cards`, `truth meters`, `processing paths`, Waagen oder abstrakten UI-Flächen. Wiederkehrende Symbole sind erlaubt, aber sie dürfen nicht die visuelle Hauptsprache des ganzen Videos ersetzen.
 
-Bei Konflikt:
-**Text übersetzen, stark kürzen oder vollständig weglassen.**
+Jede Szene soll bewusst variieren können:
+- Kameradistanz
+- Perspektive
+- Pose
+- Handlung
+- Ort
+- Requisiten
+- Licht
+- Bildtiefe
 
-## 5. Hauptfigur-DNA
+## 5. Sprache im Bild — FLOW QUELLBILDER STANDARDMÄSSIG TEXTFREI
+
+Der Kanal ist deutschsprachig. Für Google-Flow-Quellbilder gilt trotzdem als Standard:
+
+**ZERO READABLE TEXT IN GENERATED SOURCE IMAGES.**
+
+Das bedeutet:
+- keine lesbaren Buchstaben
+- keine Wörter
+- keine Zahlen, wenn sie nicht zwingend visuell notwendig sind
+- keine UI-Texte
+- keine Labels
+- keine Untertitel
+- keine Postertexte
+- keine Bildschirmtexte
+- keine Marken-/Logo-Texte
+- keine zufälligen englischen Promptwörter im Bild
+
+Warum: Bildmodelle übernehmen englische Promptbegriffe unzuverlässig als sichtbaren Text. Deutsche Labels werden deshalb standardmäßig erst kontrolliert in Remotion hinzugefügt.
+
+Wenn ein Projekt ausnahmsweise Text direkt im generierten Bild zwingend benötigt, muss die Szene das ausdrücklich freigeben und den **exakten deutschen Text** nennen. Dann gilt:
+- nur Deutsch
+- möglichst 1–4 Wörter
+- exakt vorgegebener Wortlaut
+- kein weiterer lesbarer Text im Bild
+
+Bei Konflikt gewinnt:
+**textfreies Flow-Quellbild + späterer deutscher Remotion-Overlay.**
+
+## 6. Hauptfigur-DNA
 
 Wenn eine wiederkehrende Hauptfigur genutzt wird:
 - Kopfgröße/-form konstant
@@ -116,7 +135,7 @@ Wenn eine wiederkehrende Hauptfigur genutzt wird:
 
 Die konkrete Ausprägung wird durch Bild 01 als Master-Referenz festgelegt.
 
-## 6. Master-Referenz-DNA
+## 7. Master-Referenz-DNA
 
 Für jedes Projekt:
 1. Bild 01 allein generieren.
@@ -129,7 +148,7 @@ Für jedes Projekt:
 
 Ein späteres Bild ersetzt den Master nicht automatisch.
 
-## 7. Batch-DNA
+## 8. Batch-DNA
 
 Nach der einmaligen Freigabe von Bild 01:
 - maximal 5 neue Bilder pro Batch
@@ -143,7 +162,7 @@ Nach der einmaligen Freigabe von Bild 01:
 
 **Nutzerfreigabe regulär nur einmal: nach Bild 01.**
 
-## 8. Format-DNA
+## 9. Format-DNA
 
 Format wird vom Projektpfad bestimmt:
 - `reels/` → 9:16 / 1080×1920 / 30 fps
@@ -151,20 +170,21 @@ Format wird vom Projektpfad bestimmt:
 
 Nicht nachträglich aus dem falschen Format croppen, sondern direkt nativ komponieren.
 
-## 9. Kompakter DNA-Promptblock
+## 10. Kompakter DNA-Promptblock
 
 Dieser Block darf in Google-Flow-Prompts eingebettet werden:
 
-`STRICT CHANNEL DNA: simple editorial 2D stickman characters inside rich detailed believable environments. EVERY visible human or human-like figure, including background people, screens, posters, photos, reflections and crowds, must use the same true stickman anatomy: simple round/oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet. No conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi. Environment may be detailed, modern, grounded and cinematic in 2D. ONE clear visual idea per image, one dominant subject, at most 1–2 supporting cues, never overload the frame. Prefer no readable text; if text is necessary, German only, normally 1–4 words. Prompts may be English but visible image language is German.`
+`STRICT CHANNEL DNA: simple editorial 2D stickman characters inside rich detailed believable environments. EVERY visible human or human-like figure, including background people, screens, posters, photos, reflections and crowds, must use the same true stickman anatomy: simple round/oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet. No conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi. Environment may be detailed, modern, grounded and cinematic in 2D. ONE clear visual idea per image, one dominant subject, at most 1–2 supporting cues. Prefer a concrete stickman action in a believable setting over an abstract infographic. SOURCE IMAGE TEXT POLICY: render zero readable text, zero letters, zero labels, zero UI words and zero captions unless the scene explicitly supplies an exact German exception. German labels are normally added later in Remotion.`
 
-## 10. Priorität
+## 11. Priorität
 
 Bei Konflikten gilt:
 - Format → `rules/FORMAT_LOCK.md`
 - visuelle Identität → **diese DNA-Datei**
 - exakte projektspezifische Ausprägung → freigegebene Master-Referenz
 - Szeneninhalt → jeweiliger Visual Beat / Szenenprompt
+- sichtbarer Text → textfreies Flow-Quellbild; deutsche Overlays kontrolliert in Remotion
 
 Merksatz:
 
-**DNA bestimmt WIE. Master zeigt WIE genau. Visual Beat bestimmt WAS.**
+**DNA bestimmt WIE. Master zeigt WIE genau. Visual Beat bestimmt WAS. Remotion kontrolliert sichtbaren Text.**

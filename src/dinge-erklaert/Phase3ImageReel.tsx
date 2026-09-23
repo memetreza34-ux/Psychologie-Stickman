@@ -6,6 +6,8 @@ export type Phase3ImageScene = {image: string; from: number; durationInFrames: n
 export type Phase3TimedWord = {text: string; startMs: number; endMs: number; timestampMs?: number; confidence?: number};
 export type Phase3WordScene = {scene: number; image: string; startWord: number; endWord: number; startWordText: string; endWordText: string; effect?: Phase3ImageEffect};
 export type Phase3Caption = {startFrame: number; endFrame: number; text: string};
+export type Phase3SceneLabelPosition = 'top-left' | 'top-center' | 'center' | 'bottom-center';
+export type Phase3SceneLabel = {scene: number; text: string; position?: Phase3SceneLabelPosition};
 export type Phase3ImageReelProps = {
   audio: string;
   targetFormat?: 'youtube' | 'reel';
@@ -18,6 +20,7 @@ export type Phase3ImageReelProps = {
   wordScenes?: Phase3WordScene[];
   scenes?: Phase3ImageScene[];
   captions?: Phase3Caption[];
+  sceneLabels?: Phase3SceneLabel[];
   autoCaptions?: boolean;
   captionWordsPerPage?: number;
   endHoldMs?: number;
@@ -140,6 +143,43 @@ const CaptionOverlay = ({caption, isVertical}: {caption: Phase3Caption; isVertic
   </Sequence>
 );
 
+const SceneLabelOverlay = ({label, scene, isVertical}: {label: Phase3SceneLabel; scene: Phase3ImageScene; isVertical: boolean}) => {
+  const position = label.position ?? 'top-left';
+  const justifyContent = position === 'center' ? 'center' : position === 'bottom-center' ? 'flex-end' : 'flex-start';
+  const alignItems = position === 'top-left' ? 'flex-start' : 'center';
+
+  return (
+    <Sequence from={scene.from} durationInFrames={scene.durationInFrames}>
+      <AbsoluteFill
+        style={{
+          justifyContent,
+          alignItems,
+          padding: isVertical ? 72 : 64,
+          pointerEvents: 'none',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: isVertical ? '82%' : '62%',
+            color: '#fff',
+            backgroundColor: 'rgba(0,0,0,0.70)',
+            borderRadius: isVertical ? 20 : 14,
+            padding: isVertical ? '16px 22px' : '12px 18px',
+            fontFamily: 'Arial, Helvetica, sans-serif',
+            fontSize: isVertical ? 58 : 42,
+            fontWeight: 800,
+            lineHeight: 1.08,
+            textAlign: position === 'top-left' ? 'left' : 'center',
+            textShadow: '0 2px 8px rgba(0,0,0,0.45)',
+          }}
+        >
+          {label.text}
+        </div>
+      </AbsoluteFill>
+    </Sequence>
+  );
+};
+
 export const Phase3ImageReel = ({
   audio,
   targetFormat,
@@ -152,15 +192,17 @@ export const Phase3ImageReel = ({
   wordScenes = [],
   scenes = [],
   captions = [],
+  sceneLabels = [],
   autoCaptions,
   captionWordsPerPage = 4,
   endHoldMs = PHASE3_END_HOLD_MS,
 }: Phase3ImageReelProps) => {
   const {fps, width, height} = useVideoConfig();
   const isVertical = targetFormat === 'reel' || (targetFormat !== 'youtube' && height > width);
-  const resolved = resolvePhase3Scenes({audio, targetFormat, wordTimings, imageBasePath, sceneStartWords, imageExtension, imageDigits, sceneEffects, wordScenes, scenes, captions, autoCaptions, captionWordsPerPage, endHoldMs}, fps);
+  const resolved = resolvePhase3Scenes({audio, targetFormat, wordTimings, imageBasePath, sceneStartWords, imageExtension, imageDigits, sceneEffects, wordScenes, scenes, captions, sceneLabels, autoCaptions, captionWordsPerPage, endHoldMs}, fps);
   const shouldAutoCaption = autoCaptions ?? isVertical;
   const effectiveCaptions = captions.length > 0 ? captions : shouldAutoCaption ? buildAutoCaptions(wordTimings, fps, captionWordsPerPage) : [];
+  const effectiveLabels = sceneLabels.filter((label) => Number.isInteger(label.scene) && label.scene >= 1 && label.scene <= resolved.length && label.text.trim().length > 0);
 
   return (
     <AbsoluteFill style={{backgroundColor: '#000', overflow: 'hidden'}}>
@@ -171,6 +213,9 @@ export const Phase3ImageReel = ({
             <AnimatedSceneImage scene={scene} />
           </AbsoluteFill>
         </Sequence>
+      ))}
+      {effectiveLabels.map((label, index) => (
+        <SceneLabelOverlay key={`${label.scene}-${label.text}-${index}`} label={label} scene={resolved[label.scene - 1]} isVertical={isVertical} />
       ))}
       {effectiveCaptions.map((caption, index) => (
         <CaptionOverlay key={`${caption.startFrame}-${caption.endFrame}-${index}`} caption={caption} isVertical={isVertical} />

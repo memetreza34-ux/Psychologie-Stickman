@@ -7,25 +7,22 @@ Zusätzlich gilt `rules/FORMAT_LOCK.md` mit höchster Format-Priorität.
 ## 1. Zwei getrennte Ausgabeformate
 
 ### Reels / Shorts
-
 Für alles unter `reels/` gilt:
 - Seitenverhältnis: **9:16**
 - Auflösung: **1080×1920**
 - Framerate: **30 fps**
 - Ausrichtung: vertikal / portrait
 - Remotion-Komposition: `Phase3Reel`
-- jedes Bild bereits als 9:16-Komposition planen und generieren
-- 16:9-Bilder nicht als Standardlösung nachträglich auf 9:16 croppen
+- Bilder direkt für 9:16 planen und generieren
 
 ### YouTube-Longform
-
 Für alles unter `youtube/` gilt:
 - Seitenverhältnis: **16:9**
 - Auflösung: **1920×1080**
 - Framerate: **30 fps**
 - Ausrichtung: horizontal / landscape
 - Remotion-Komposition: `Phase3YouTube`
-- jedes Bild bereits als 16:9-Komposition planen und generieren
+- Bilder direkt für 16:9 planen und generieren
 
 ## 2. Voice-over / Geschwindigkeit
 
@@ -34,51 +31,52 @@ Verbindlich für beide Formate:
 - Tonhöhe erhalten
 - führende Stille entfernen
 - Wörter niemals abschneiden
-- keine langen Leerstellen zwischen Sätzen
-- kurze natürliche Pausen bleiben erhalten
-- Pausen ab ungefähr **500 ms** deutlich kürzen
-- Ziel-Restpause nach Kürzung: ungefähr **120 ms**, bevor 1,10× angewendet wird
+- Pausen ab ungefähr 500 ms deutlich kürzen
+- Ziel-Restpause nach Kürzung ungefähr 120 ms
 - Timings und Bildwechsel erst aus dem final bearbeiteten Audio ableiten
 
-Die 1,10×-Beschleunigung erfolgt erst nach der Pausenbereinigung.
+## 3. Google-Flow-Quellbilder — textfrei
 
-## 3. Sprache in Bildern
+Für beide Formate gilt standardmäßig:
+- keine lesbaren Wörter oder Buchstaben im generierten Quellbild
+- keine UI-Texte, Labels, Untertitel, Poster- oder Bildschirmtexte
+- keine englischen Promptwörter im Bild
+- Karten, Screens und Dokumente mit abstrakten Linien/Formen/Icons darstellen
 
-- Wenn sichtbarer Text notwendig ist, muss er **Deutsch** sein.
-- Keine englischen Überschriften, Labels, Buttons, Schilder oder erklärenden Wörter im finalen Bild, sofern kontrollierbar.
-- Wenn Text nicht nötig ist: **gar keinen sichtbaren Text** erzeugen.
-- Markenlogos und unnötige UI-Texte vermeiden.
-- Bildprompts selbst dürfen auf Englisch formuliert sein.
+Deutsche Begriffe werden kontrolliert in Remotion über `sceneLabels` hinzugefügt.
+
+Nur eine ausdrücklich begründete Szene darf Text direkt im Bild anfordern. Dann muss der exakte deutsche Wortlaut vorgegeben sein.
 
 ## 4. Jedes Bild individuell anpassen
 
-Jeder Visual Beat bekommt eine eigene, inhaltlich passende Bildidee.
+Jeder Visual Beat bekommt eine eigene passende Bildidee.
 
 Verbindlich:
-- Bild zeigt exakt den aktuell gesprochenen Gedanken.
-- Komposition, Kameradistanz, Handlung, Umgebung, Requisiten, Licht und Fokus werden pro Beat individuell gewählt.
-- Kein generisches Standardbild nur mit ausgetauschtem Gegenstand.
-- Keine unnötige Wiederholung derselben Pose oder desselben Bildaufbaus.
-- Master-Referenz sperrt den **Stil**, nicht die Komposition.
-- Keine späteren Informationen vorwegnehmen.
-- Keine Füllbilder.
+- Bild zeigt exakt den aktuell gesprochenen Gedanken
+- konkrete Stickman-Handlung in glaubwürdiger Umgebung bevorzugen
+- abstrakte Infografik nur nutzen, wenn sie den Inhalt klarer macht
+- Komposition, Kameradistanz, Handlung, Umgebung, Requisiten, Licht und Fokus pro Beat individuell wählen
+- kein generisches Standardbild nur mit ausgetauschtem Gegenstand
+- keine unnötige Wiederholung derselben Pose oder desselben Bildaufbaus
+- Master-Referenz sperrt den Stil, nicht die Komposition
+- keine späteren Informationen vorwegnehmen
+- keine Füllbilder
 
 Kurzform:
-**Master-Referenz bestimmt WIE. Visual Beat bestimmt WAS. Zielplattform bestimmt das BILDFORMAT.**
+**Master bestimmt WIE. Visual Beat bestimmt WAS. Zielplattform bestimmt FORMAT. Remotion kontrolliert Text.**
 
 ## 5. Formatgerechte Komposition
 
 ### Reels 9:16
-- Motive vertikal staffeln.
-- Hauptmotiv ausreichend groß halten.
-- wichtige Inhalte nicht an äußerste Ober-/Unterkante setzen.
-- bei Gruppen Tiefe und vertikale Ebenen nutzen statt alles horizontal nebeneinanderzustellen.
-- Close-ups, Halbtotalen und vertikale Environment Shots bewusst einsetzen.
+- Motive vertikal staffeln
+- Hauptmotiv groß genug halten
+- wichtige Inhalte nicht an äußerste Ober-/Unterkante setzen
+- Close-ups, Halbtotalen und vertikale Environment Shots bewusst einsetzen
 
 ### YouTube 16:9
-- horizontale Breite für Umgebung, Vergleiche und Abläufe nutzen.
-- Vordergrund, Mittelgrund und Hintergrund sinnvoll verteilen.
-- Raum für leichte Zooms/Pans lassen.
+- horizontale Breite für Umgebung, Vergleiche und Abläufe nutzen
+- Vordergrund, Mittelgrund und Hintergrund sinnvoll verteilen
+- Raum für leichte Zooms/Pans und geplante Overlays lassen
 
 ## 6. Final-QA
 
@@ -88,9 +86,10 @@ Vor Export prüfen:
 - finales Audio tatsächlich 1,10×
 - lange Pausen entfernt/gestrafft
 - keine abgeschnittenen Wörter
-- sichtbarer Text ausschließlich Deutsch oder bewusst gar kein Text
-- jedes Bild individuell auf seinen Sprechabschnitt angepasst
-- alle Menschen weiterhin Stickman
+- Flow-Quellbilder enthalten keinen unbeabsichtigten lesbaren Text
+- deutsche Remotion-Labels sind korrekt geschrieben und bewusst gesetzt
+- jedes Bild ist individuell auf seinen Sprechabschnitt angepasst
+- alle Menschen weiterhin echte Stickmen
 - Stil bleibt über Master-Referenz konsistent
 
 **HARD FAIL:** Reel in 16:9 oder YouTube-Longform in 9:16.

@@ -23,6 +23,7 @@ if (!targetFormat) throw new Error('format must identify youtube or reel');
 if (!Array.isArray(plan.sceneStartWords) || !plan.sceneStartWords.length) throw new Error('sceneStartWords required');
 
 const allowedEffects = new Set(['static', 'zoom-in', 'zoom-out', 'pan-left', 'pan-right']);
+const allowedLabelPositions = new Set(['top-left', 'top-center', 'center', 'bottom-center']);
 const reelDefaultEffects = ['zoom-in', 'pan-left', 'zoom-out', 'pan-right'];
 let sceneEffects = Array.isArray(plan.sceneEffects) ? plan.sceneEffects : [];
 if (sceneEffects.some((effect) => !allowedEffects.has(effect))) throw new Error('sceneEffects contains unsupported values');
@@ -30,6 +31,19 @@ if (sceneEffects.length && sceneEffects.length !== plan.sceneStartWords.length) 
 if (!sceneEffects.length && targetFormat === 'reel') {
   sceneEffects = plan.sceneStartWords.map((_, index) => reelDefaultEffects[index % reelDefaultEffects.length]);
 }
+
+const sceneLabels = Array.isArray(plan.sceneLabels) ? plan.sceneLabels : [];
+sceneLabels.forEach((label, index) => {
+  if (!Number.isInteger(label.scene) || label.scene < 1 || label.scene > plan.sceneStartWords.length) {
+    throw new Error(`sceneLabels[${index}].scene must reference an existing scene`);
+  }
+  if (typeof label.text !== 'string' || label.text.trim() === '') {
+    throw new Error(`sceneLabels[${index}].text must be a non-empty string`);
+  }
+  if (label.position && !allowedLabelPositions.has(label.position)) {
+    throw new Error(`sceneLabels[${index}].position is unsupported`);
+  }
+});
 
 const props = {
   targetFormat,
@@ -41,6 +55,7 @@ const props = {
   ...(Number.isFinite(plan.imageDigits) ? {imageDigits: plan.imageDigits} : {}),
   sceneEffects,
   captions: Array.isArray(plan.captions) ? plan.captions : [],
+  sceneLabels,
   autoCaptions: targetFormat === 'reel' ? plan.autoCaptions !== false : Boolean(plan.autoCaptions),
   captionWordsPerPage: Number.isFinite(Number(plan.captionWordsPerPage))
     ? Math.max(2, Math.min(7, Math.round(Number(plan.captionWordsPerPage))))

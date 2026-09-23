@@ -10,43 +10,91 @@ const hardSplit = (text, maxWords) => {
   return out.filter(Boolean);
 };
 
-const splitLongSentence = (sentence, targetWords, maxWords) => {
-  if (countWords(sentence) <= maxWords) return [sentence.trim()];
+const mergeTinyParts = (parts, minWords = 4) => {
+  const merged = [];
+  for (const rawPart of parts.map((part) => part.trim()).filter(Boolean)) {
+    if (merged.length > 0 && countWords(rawPart) < minWords) {
+      merged[merged.length - 1] = `${merged[merged.length - 1]} ${rawPart}`.trim();
+    } else {
+      merged.push(rawPart);
+    }
+  }
+  return merged;
+};
 
-  const clauses = sentence.trim().split(/(?<=[,;:–—])\s+/u).filter(Boolean);
-  if (clauses.length === 1) return hardSplit(sentence, maxWords);
+const splitSemanticSentence = (sentence, targetWords, maxWords, semanticSplit = true) => {
+  const text = sentence.trim();
+  if (!semanticSplit) return [text];
 
+  const wordCount = countWords(text);
+  const commaCount = (text.match(/,/g) ?? []).length;
+  const hasListChoice = /\soder\s/iu.test(text);
+  const hasContrastOrCause = /\b(aber|doch|während|obwohl|deshalb|dagegen|anschließend|danach)\b/iu.test(text);
+
+  const shouldTrySemanticSplit =
+    wordCount > targetWords ||
+    (wordCount >= 10 && commaCount >= 1 && hasListChoice) ||
+    (wordCount >= 12 && hasContrastOrCause);
+
+  if (!shouldTrySemanticSplit) return [text];
+
+  const parts = text
+    .split(/(?<=[,;:–—])\s+|\s+(?=(?:aber|doch|während|obwohl|deshalb|dagegen|anschließend|danach)\b)/iu)
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  if (parts.length <= 1) return [text];
+  return mergeTinyParts(parts);
+};
+
+const splitLongSentence = (sentence, targetWords, maxWords, semanticSplit = true) => {
+  const semanticParts = splitSemanticSentence(sentence, targetWords, maxWords, semanticSplit);
   const beats = [];
-  let current = '';
 
-  for (const clause of clauses) {
-    if (countWords(clause) > maxWords) {
-      if (current) {
-        beats.push(current);
-        current = '';
-      }
-      beats.push(...hardSplit(clause, maxWords));
+  for (const semanticPart of semanticParts) {
+    if (countWords(semanticPart) <= maxWords) {
+      beats.push(semanticPart);
       continue;
     }
 
-    const candidate = current ? `${current} ${clause}` : clause;
-    if (current && countWords(candidate) > targetWords) {
-      beats.push(current);
-      current = clause;
-    } else {
-      current = candidate;
+    const clauses = semanticPart.split(/(?<=[,;:–—])\s+/u).filter(Boolean);
+    if (clauses.length === 1) {
+      beats.push(...hardSplit(semanticPart, maxWords));
+      continue;
     }
+
+    let current = '';
+    for (const clause of clauses) {
+      if (countWords(clause) > maxWords) {
+        if (current) {
+          beats.push(current);
+          current = '';
+        }
+        beats.push(...hardSplit(clause, maxWords));
+        continue;
+      }
+
+      const candidate = current ? `${current} ${clause}` : clause;
+      if (current && countWords(candidate) > targetWords) {
+        beats.push(current);
+        current = clause;
+      } else {
+        current = candidate;
+      }
+    }
+    if (current) beats.push(current);
   }
 
-  if (current) beats.push(current);
   return beats.flatMap((beat) => (countWords(beat) > maxWords ? hardSplit(beat, maxWords) : [beat]));
 };
 
 export const splitScriptIntoVisualBeats = (script, options = {}) => {
-  const targetWords = Number(options.targetWords ?? 16);
+  const targetWords = Number(options.targetWords ?? 14);
   const maxWords = Number(options.maxWords ?? 20);
+  const semanticSplit = options.semanticSplit !== false;
   if (!Number.isFinite(targetWords) || targetWords < 6) throw new Error('targetWords must be >= 6.');
   if (!Number.isFinite(maxWords) || maxWords < targetWords) throw new Error('maxWords must be >= targetWords.');
+  if (maxWords > 28) throw new Error('maxWords must be <= 28.');
 
   const paragraphs = String(script)
     .replace(/\r\n/g, '\n')
@@ -63,7 +111,7 @@ export const splitScriptIntoVisualBeats = (script, options = {}) => {
       .filter(Boolean);
 
     for (const sentence of sentences) {
-      beats.push(...splitLongSentence(sentence, targetWords, maxWords));
+      beats.push(...splitLongSentence(sentence, targetWords, maxWords, semanticSplit));
     }
   }
 
@@ -79,9 +127,12 @@ export const buildVisualBeatScenes = (beats) =>
     startPhrase: firstWords(beat, 8),
     endWord: lastWord(beat),
     speechSection: beat,
+    textPolicy: 'NONE',
     visualTask:
       `VISUAL BEAT: Zeige ausschließlich die Information, die in diesem gesprochenen Beat vorkommt. ` +
+      `Bevorzuge eine konkrete Stickman-Handlung in einer glaubwürdigen Umgebung vor abstrakten Diagrammen. ` +
       `Keine spätere Information vorwegnehmen. Neue Orte, Staaten, Institutionen, Zahlen, Handlungen oder Ursache-Folge-Schritte müssen sichtbar werden, wenn sie in diesem Beat genannt werden. ` +
+      `Google-Flow-Quellbild ohne lesbaren Text erzeugen; deutsche Labels werden bei Bedarf später in Remotion ergänzt. ` +
       `Gesprochener Beat: ${beat}`,
   }));
 
