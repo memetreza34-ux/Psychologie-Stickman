@@ -26,6 +26,7 @@ if (productionPlans.length === 0) {
 }
 
 const failures = [];
+const warnings = [];
 
 for (const planPath of productionPlans) {
   const raw = JSON.parse(fs.readFileSync(planPath, 'utf8'));
@@ -35,8 +36,7 @@ for (const planPath of productionPlans) {
   const totalWords = counts.reduce((sum, value) => sum + value, 0);
   const average = scenes.length ? totalWords / scenes.length : 0;
   const longest = counts.length ? Math.max(...counts) : 0;
-  const minimumSceneCount = Math.ceil(totalWords / 20);
-  const tooLong = counts.map((words, index) => ({scene: index + 1, words})).filter((item) => item.words > 28);
+  const minimumSceneCount = Math.ceil(totalWords / 18);
 
   console.log(`\n${path.relative(process.cwd(), planPath)}`);
   console.log(`Scenes: ${scenes.length}`);
@@ -46,15 +46,34 @@ for (const planPath of productionPlans) {
   console.log(`Minimum density floor for this script: ${minimumSceneCount} scenes`);
 
   if (scenes.length === 0) failures.push(`${planPath}: no visual beats.`);
-  if (scenes.length > 0 && average > 18) failures.push(`${planPath}: average ${average.toFixed(1)} words/scene exceeds hard 18-word average.`);
+  if (scenes.length > 0 && average > 16) failures.push(`${planPath}: average ${average.toFixed(1)} words/scene exceeds 16-word average.`);
   if (scenes.length < minimumSceneCount) failures.push(`${planPath}: ${scenes.length} scenes is below density floor ${minimumSceneCount}.`);
-  if (tooLong.length > 0) failures.push(`${planPath}: scene(s) above 28 spoken words: ${tooLong.map((item) => `${item.scene}=${item.words}`).join(', ')}.`);
 
   scenes.forEach((scene, index) => {
+    const words = counts[index] ?? 0;
+    const sceneNumber = index + 1;
+
+    if (words > 28) {
+      failures.push(`${planPath}: scene ${sceneNumber} has ${words} words; absolute maximum is 28.`);
+    } else if (words > 20 && scene.allowExtendedBeat !== true) {
+      failures.push(`${planPath}: scene ${sceneNumber} has ${words} words; scenes above 20 require allowExtendedBeat=true after editorial review.`);
+    } else if (words > 20) {
+      warnings.push(`${planPath}: scene ${sceneNumber} uses reviewed extended beat (${words} words).`);
+    }
+
     if (typeof scene.visualTask !== 'string' || scene.visualTask.trim() === '') {
-      failures.push(`${planPath}: scene ${index + 1} has no visualTask.`);
+      failures.push(`${planPath}: scene ${sceneNumber} has no visualTask.`);
+    }
+
+    if (scene.textPolicy && scene.textPolicy !== 'NONE' && typeof scene.textPolicy !== 'string') {
+      failures.push(`${planPath}: scene ${sceneNumber} has invalid textPolicy.`);
     }
   });
+}
+
+if (warnings.length > 0) {
+  console.warn('\nVISUAL DENSITY WARNINGS\n');
+  warnings.forEach((warning) => console.warn(`- ${warning}`));
 }
 
 if (failures.length > 0) {
