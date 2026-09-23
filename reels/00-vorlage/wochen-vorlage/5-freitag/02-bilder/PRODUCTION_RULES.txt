@@ -1,0 +1,39 @@
+REEL PRODUCTION RULES — HARD LOCK
+
+FORMAT
+- ausschließlich 9:16
+- 1080×1920
+- 30 fps
+- vertikale / Portrait-Komposition
+- Remotion-Komposition: Phase3Reel
+- Bilder direkt als 9:16 generieren; kein standardmäßiges Crop aus 16:9
+
+AUDIO
+- finales Voice-over exakt 1,10×
+- führende Stille entfernen
+- Pausen ab ungefähr 500 ms deutlich kürzen
+- Ziel-Restpause ungefähr 120 ms vor 1,10×
+- Wörter niemals anschneiden
+- Timings erst aus finalem Audio
+
+BILDER
+- jeder Beat bekommt eine eigene passende Bildidee
+- Kamera, Perspektive, Umgebung, Licht und Requisiten individuell wählen
+- Master-Referenz hält Stil konstant, nicht Komposition
+- vertikale Bildfläche bewusst nutzen
+- Hauptmotiv ausreichend groß halten
+- wichtige Elemente nicht an äußerste Ober-/Unterkante setzen
+- keine Füllbilder
+- keine spätere Information vorwegnehmen
+- sichtbarer Text nur wenn nötig und dann ausschließlich Deutsch
+- alle Menschen Stickman
+
+REFERENZ-WORKFLOW
+- Bild 01 bzw. Masterbild im 9:16-Format allein generieren und freigeben
+- danach Masterbild bei allen Folgeassets als Referenz anhängen
+- höchstens 5 neue Bilder pro Batch
+- nach jedem Batch QA
+
+HARD FAIL
+- 16:9-Bild oder 1920×1080-Reel
+- horizontal komponiertes Asset, das nur nachträglich beschnitten werden soll

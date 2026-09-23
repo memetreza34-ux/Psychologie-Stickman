@@ -1,7 +1,24 @@
-AUDIO STANDARD
+VOICE-OVER STANDARD — REELS UND YOUTUBE
 
-- Voice-over erst nach finalem Script erzeugen.
-- Bestehender Workflow: 1,10x.
-- Führende Stille entfernen.
-- Lange Pausen straffen, Wörter nicht anschneiden.
-- Timings erst aus final verarbeitetem Audio erzeugen.
+ZIEL
+Zügiges, natürliches Erklärtempo ohne lange Leerstellen. Wörter dürfen niemals angeschnitten werden.
+
+VERBINDLICH
+- finale Sprechgeschwindigkeit: exakt 1,10×
+- Tonhöhe erhalten
+- führende Stille entfernen
+- kurze natürliche Pausen unter ungefähr 500 ms grundsätzlich erhalten
+- Pausen ab ungefähr 500 ms deutlich kürzen
+- Ziel-Restpause nach Kürzung: ungefähr 120 ms VOR der 1,10×-Beschleunigung
+- keine langen künstlichen Denkpausen
+- Wörter niemals anschneiden
+- kein gehetzter oder roboterhafter Klang
+- Wort-/Szenen-Timings ausschließlich aus dem final bearbeiteten Audio erzeugen
+
+ABLAUF
+1. Rohes Voice-over aus finalem Skript erzeugen.
+2. Für YouTube: `npm run audio:youtube -- <raw-voiceover> <final-voice.mp3>`
+3. Für Reels: `npm run audio:reels -- <raw-voiceover> <final-voice.mp3>`
+4. Danach ausschließlich `final-voice.mp3` verwenden.
+5. Timings erst aus dieser finalen Datei ableiten.
+6. Nach Render prüfen, ob noch störend lange Pausen vorhanden sind.

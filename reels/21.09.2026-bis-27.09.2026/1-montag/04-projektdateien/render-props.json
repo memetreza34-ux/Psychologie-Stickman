@@ -1,5 +1,9 @@
 {
   "status": "PENDING",
+  "format": "9:16",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "composition": "Phase3Reel",
   "audio": "",
   "wordTimings": [],
   "scenes": [],

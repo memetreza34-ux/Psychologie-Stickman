@@ -1,0 +1,40 @@
+REEL STYLE — UNIVERSAL EDITORIAL STICKMAN WORLD v1.2
+
+FORMAT HARD LOCK
+- 9:16
+- 1080×1920
+- 30 fps
+- vertikale / Portrait-Komposition
+- Master-Referenz muss ebenfalls 9:16 sein
+
+STIL
+- jede sichtbare menschliche Figur bleibt Stickman
+- runder einfacher Kopf, minimale Gesichtszüge, dünne dunkle Gliedmaßen, kleiner vereinfachter Torso
+- keine normalen Cartoon-Menschen, keine semi-realistischen Menschen, keine realistische Anatomie
+- Umgebung darf glaubwürdig, farbig, detailreich und realitätsnah wirken
+- saubere dunkle organische Outlines
+- natürliche klare Farben, kontrollierte Sättigung
+- dezentes 2D-/Cel-Shading
+- kein Photorealismus, kein 3D/CGI, kein Anime
+
+VERTIKALE KOMPOSITION
+- Motive für die hohe 9:16-Fläche neu komponieren
+- Hauptmotiv ausreichend groß
+- Vordergrund/Mittelgrund/Hintergrund auch vertikal staffeln
+- wichtige Inhalte nicht an äußerste Ober-/Unterkante setzen
+- keine 16:9-Komposition erzeugen und anschließend nur beschneiden
+
+MASTER-REFERENZ
+- Bild 01 bzw. das freigegebene Masterbild bestimmt Figuren-DNA, Linien, Farbverhalten und Shading
+- Pose, Kamera, Umgebung und Bildaufbau werden für jeden Beat individuell angepasst
+- Folgeassets in höchstens 5er-Batches prüfen
+
+SPRACHE
+- sichtbarer Text nur wenn nötig und dann ausschließlich Deutsch
+- wenn Text nicht nötig ist: kein lesbarer Text
+
+Verbindliche zentrale Regeln:
+- `rules/FORMAT_LOCK.md`
+- `rules/YOUTUBE_STYLE_LOCK.md`
+- `rules/IMAGE_REFERENCE_LOCK.md`
+- `rules/PRODUCTION_FORMAT_RULES.md`

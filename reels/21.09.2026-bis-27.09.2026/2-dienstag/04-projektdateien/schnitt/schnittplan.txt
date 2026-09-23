@@ -1,0 +1,52 @@
+SCHNITTPLAN — DIENSTAG REEL
+THEMA: Warum denkst du, alle schauen dich an? — Spotlight-Effekt
+
+STATUS
+Timing erst nach finalem 1,10×-Audio festlegen.
+
+FORMAT — HARD LOCK
+- 9:16
+- 1080×1920
+- 30 fps
+- vertikal / Portrait
+- Render-Komposition: Phase3Reel
+- alle Bilder nativ als 9:16 erzeugen
+
+BILDABFOLGE
+01 Master Frame: Kaffeefleck in Bahn
+02 subjektives Gefühl: alle schauen
+03 reale Aufmerksamkeit: viele schauen nicht
+04 Spotlight-Metapher
+05 subjektiv vs. real
+06 Forschungsszene
+07 auffälliges T-Shirt
+08 Schätzung der Beobachterzahl
+09 Schätzung vs. tatsächliche Erinnerung
+10 Warum passiert das?
+11 eigene Perspektive / erste Reihe
+12 Fleck wirkt riesig
+13 kurzer Blick einer anderen Person
+14 andere Person denkt an Nachricht
+15 andere Person denkt an Termin
+16 andere Person denkt an Ausstieg
+17 eigene Perspektive als Ausgangspunkt
+18 reiches Wissen über eigenes Erleben
+19 Perspektive anderer abschätzen
+20 Korrektur fällt zu klein aus
+21 einige bemerken es durchaus
+22 innerer Scheinwerfer heller als echter
+23 für dich die Hauptszene
+24 für andere Hintergrundmoment
+
+BEWEGUNG
+- überwiegend leichte Zooms/Pans
+- keine hektische Daueranimation
+- Concept-Szenen dürfen Pfeile/Lichtkegel subtil aufbauen
+- Bildwechsel exakt nach finalen Audio-Timings
+- kein Bild länger stehen lassen, wenn bereits ein neuer visueller Gedanke gesprochen wird
+- Bewegungen und Zooms müssen zur vertikalen 9:16-Komposition passen
+
+AUDIO
+- final exakt 1,10×
+- lange Pausen vor Speed-up kürzen
+- Wörter niemals anschneiden
