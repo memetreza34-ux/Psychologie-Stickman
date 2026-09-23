@@ -20,6 +20,7 @@
   "preferNoVisibleText": true,
   "renderGermanLabelsInRemotion": true,
   "forbidEnglishVisibleText": true,
+  "reviewedExtendedBeats": [7, 41, 56, 63, 64],
   "sceneLabels": [
     {"scene": 6, "text": "WAHRHEITSEFFEKT", "position": "top-left"},
     {"scene": 30, "text": "WISSEN HILFT", "position": "top-left"},
@@ -33,7 +34,8 @@
   ],
   "autoFromScript": {
     "scriptPath": "youtube/23.09.2026-wahrheitseffekt-test/01-script/script.txt",
-    "targetWords": 14,
-    "maxWords": 20
+    "targetWords": 28,
+    "maxWords": 28,
+    "semanticSplit": false
   }
 }
