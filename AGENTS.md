@@ -11,12 +11,15 @@ Ein neuer Chat startet read-only. Analyse bedeutet keine Schreibfreigabe. Geschr
 Danach lesen:
 1. `CANONICAL_RULES.md`
 2. `PROJECT_BRAIN.md`
-3. `rules/FORMAT_LOCK.md`
-4. `rules/YOUTUBE_THEMEN_SYSTEM.md`
-5. `rules/YOUTUBE_STYLE_LOCK.md`
-6. `rules/IMAGE_REFERENCE_LOCK.md`
-7. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-8. `rules/PRODUCTION_FORMAT_RULES.md`
+3. `rules/STICKMAN_DNA.md`
+4. `rules/FORMAT_LOCK.md`
+5. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+6. `rules/YOUTUBE_STYLE_LOCK.md`
+7. `rules/IMAGE_REFERENCE_LOCK.md`
+8. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+9. `rules/PRODUCTION_FORMAT_RULES.md`
+
+`rules/STICKMAN_DNA.md` ist die zentrale visuelle Source of Truth. Andere Style-/Prompt-Dateien konkretisieren diese DNA, dürfen ihr aber nicht widersprechen.
 
 ## Themenwelt
 
@@ -55,6 +58,15 @@ Der Kanal ist deutschsprachig.
 - Keine Textwände, langen Sätze oder Infotafeln, wenn die Aussage visuell erklärt werden kann.
 - Englische Promptwörter dürfen niemals automatisch im finalen Bild erscheinen.
 - Bei Konflikt gilt: visuell erklären, Text verkürzen/übersetzen oder weglassen.
+
+## Bildklarheit — HARD LOCK
+
+- genau ein primärer visueller Gedanke pro Bild
+- ein klares Hauptmotiv
+- höchstens 1–2 unterstützende visuelle Hinweise, wenn wirklich nötig
+- keine überladenen Multi-Panel-/Infografik-Kompositionen, wenn eine einfache Szene genügt
+- wenn ein Sprechabschnitt mehrere neue Gedanken enthält, in mehrere Visual Beats/Bilder aufteilen
+- Zuschauer soll die Kernaussage sehr schnell erfassen können
 
 ## Verbindlicher Referenz-Workflow
 
@@ -133,9 +145,11 @@ Für jedes neue YouTube-Projekt bleibt die normale Nutzeransicht bewusst einfach
 Der Nutzer soll für die normale Produktion **nur ein Skript und eine einzige Prompt-Datei** öffnen müssen.
 
 `02-google-flow/google-flow-prompt.txt` ist die einzige nutzerseitige Prompt-Datei für die komplette Bildproduktion. Sie muss enthalten:
+- zentrale DNA aus `rules/STICKMAN_DNA.md`
 - Format und Stil
 - STRICT-STICKMAN-ONLY-Gate
 - Deutsch/Minimal-Text-Gate
+- Ein-Gedanke-pro-Bild-Gate
 - Master-Referenz-Regel
 - konkreten 5er-Batch-Plan
 - **STOP nur nach Bild 01**
@@ -157,8 +171,11 @@ Keine Phase überspringen. Skriptänderung setzt nachgelagerte semantische/visue
 Bei Formatkonflikten gilt ohne Ausnahme:
 **`rules/FORMAT_LOCK.md` gewinnt.**
 
-Bei Figuren-/Stilkonflikten gilt:
-**STRICT STICKMAN ONLY + freigegebene Master-Referenz gewinnt.**
+Bei visueller Identität gilt:
+**`rules/STICKMAN_DNA.md` gewinnt.**
+
+Bei der exakten projektspezifischen Darstellung gilt innerhalb der DNA:
+**freigegebene Master-Referenz gewinnt.**
 
 Bei Textkonflikten gilt:
 **Deutsch + minimaler sichtbarer Text + visuelle Erklärung gewinnt.**
