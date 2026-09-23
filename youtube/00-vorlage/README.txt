@@ -1,20 +1,24 @@
-YOUTUBE LONGFORM VORLAGE
+YOUTUBE LONGFORM — EINFACHE ARBEITSSTRUKTUR
 
-Neue Longform-Projekte liegen direkt unter `youtube/` als Themenordner, z. B. `youtube/01-warum-schieben-wir-dinge-auf/`.
+Jedes neue YouTube-Projekt verwendet nur diese sichtbaren Arbeitsordner:
 
-Sichtbare Pflichtstruktur pro Thema:
-01-script-audio/
-02-bilder/
-03-quellen/
-04-schnitt/
-06-projektdateien/
+01-script/
+- script.txt
 
-Reihenfolge:
-THEMA + QUELLEN + CLAIM-CHECK
-→ finales Skript
-→ Phase 1 Visual Beats
-→ Phase 2 Bilder
-→ Phase 3 Timings / Render
-→ Final-QA
+02-google-flow/
+- google-flow-prompt.txt
 
-Die verbindlichen Kanal- und Bildweltregeln liegen unter `rules/`.
+03-bilder/
+- hier `01.png`, `02.png`, `03.png` usw. ablegen
+- `01.png` ist gleichzeitig die Master-Referenz
+
+04-audio/
+- hier `final-voice.mp3` ablegen
+
+05-export/
+- hier den fertigen Videoexport ablegen
+
+99-intern/
+- technische Dateien, Quellen, QA, Style, Continuity und Pipeline-Metadaten
+
+Für die normale Arbeit braucht der Nutzer nur `script.txt` und `google-flow-prompt.txt` zu öffnen.

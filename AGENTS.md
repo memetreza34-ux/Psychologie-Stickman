@@ -88,6 +88,29 @@ Für beide Formate:
 
 Reels dürfen niemals unter `youtube/` liegen und YouTube-Projekte niemals unter `reels/`.
 
+## Einfache YouTube-Arbeitsfläche — HARD LOCK
+
+Für jedes neue reguläre YouTube-Projekt soll die normale Nutzeransicht bewusst einfach bleiben. Auf Projektebene werden nur diese Arbeitsordner angelegt:
+
+- `01-script/` → enthält nur `script.txt`
+- `02-google-flow/` → enthält nur `google-flow-prompt.txt`
+- `03-bilder/` → hier kommen `01.png`, `02.png`, `03.png` usw. direkt hinein; `01.png` ist zugleich die Master-Referenz
+- `04-audio/` → hier kommt das finale `final-voice.mp3` hinein
+- `05-export/` → hier kommt der fertige Videoexport hinein
+- `99-intern/` → alle Quellen, Style-/Continuity-Regeln, QA, Phase-1/Phase-3-Dateien und sonstige technische Metadaten
+
+Der Nutzer soll für die normale Produktion **nur ein Skript und eine einzige Prompt-Datei** öffnen müssen.
+
+`02-google-flow/google-flow-prompt.txt` ist die einzige nutzerseitige Prompt-Datei für die komplette Bildproduktion eines Videos. Sie muss in sich enthalten:
+- Format und Stil
+- Master-Referenz-Regel
+- 5er-Batch-Workflow
+- Dateinamen
+- Sprachregel für sichtbaren Text
+- alle individuellen Szenen-/Bildprompts des Videos
+
+Keine zusätzlichen `STYLE.txt`, `CONTINUITY.txt`, `PRODUCTION_RULES.txt`, `visual-qa.md` oder weiteren Prompt-Dateien in der normalen sichtbaren Arbeitsfläche anlegen. Solche technischen Dateien gehören ausschließlich nach `99-intern/`.
+
 ## Reihenfolge
 
 THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Phase 2 → Phase 3 → Final-QA.

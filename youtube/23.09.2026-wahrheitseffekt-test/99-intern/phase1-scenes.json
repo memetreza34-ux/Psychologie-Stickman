@@ -4,15 +4,15 @@
   "aspectRatio": "16:9",
   "resolution": "1920x1080",
   "fps": 30,
-  "audio": "youtube/23.09.2026-wahrheitseffekt-test/01-script-audio/audio/final-voice.mp3",
-  "imageBasePath": "youtube/23.09.2026-wahrheitseffekt-test/02-bilder/images",
+  "audio": "youtube/23.09.2026-wahrheitseffekt-test/04-audio/final-voice.mp3",
+  "imageBasePath": "youtube/23.09.2026-wahrheitseffekt-test/03-bilder",
   "imageExtension": "png",
   "imageDigits": 2,
   "endHoldMs": 1000,
   "styleLock": "UNIVERSAL EDITORIAL STICKMAN WORLD v1.2",
-  "masterReference": "scene-01",
+  "masterReference": "01.png",
   "autoFromScript": {
-    "scriptPath": "youtube/23.09.2026-wahrheitseffekt-test/01-script-audio/script.txt",
+    "scriptPath": "youtube/23.09.2026-wahrheitseffekt-test/01-script/script.txt",
     "targetWords": 28,
     "maxWords": 30
   }

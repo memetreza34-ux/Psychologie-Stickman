@@ -1,0 +1,69 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+DIESE DATEI IST DER EINZIGE PROMPT, DEN DER NUTZER FÜR GOOGLE FLOW BRAUCHT.
+Keine zusätzlichen Prompt-Dateien pro Szene anlegen.
+
+ZIEL
+Aus dem finalen Skript alle benötigten 16:9-Bilder für ein YouTube-Longform-Video erzeugen.
+
+FORMAT HARD LOCK
+- 16:9
+- 1920×1080
+- 30 fps Zielvideo
+- horizontale / Landscape-Komposition
+- Bilder direkt für 16:9 planen, nicht aus Hochformat croppen
+
+STIL
+Universal Editorial Stickman World v1.2.
+Alle sichtbaren Menschen bleiben minimalistische Stickman-Figuren. Umgebungen dürfen deutlich detailreicher sein. Keine realistischen Menschen, keine normalen Cartoon-Menschen, kein 3D/CGI, kein Anime, kein Chibi.
+
+SPRACHE IM BILD
+- sichtbarer Text nur wenn wirklich nötig
+- wenn Text sichtbar ist: ausschließlich Deutsch
+- sonst keinen lesbaren Text erzwingen
+
+MASTER-REFERENZ
+1. Zuerst ausschließlich Bild 01 generieren.
+2. Bild 01 prüfen und freigeben.
+3. Bild 01 bleibt die Master-Referenz für alle folgenden Bilder.
+4. Bild 01 wird gleichzeitig als `01.png` im Ordner `03-bilder/` gespeichert.
+5. Für Bild 02 und alle folgenden Bilder `01.png` als Bildreferenz anhängen.
+6. Master bestimmt Figuren-DNA, Linien, Farbverhalten, Shading und Gesamtstil.
+7. Master bestimmt NICHT Kamera, Pose, Ort oder Komposition.
+
+BATCH-WORKFLOW
+- maximal 5 neue Bilder pro Batch
+- nach jedem Batch Style- und Inhalts-QA
+- nur fehlerhafte Bilder neu erzeugen
+- gute Bilder behalten
+- Dateinamen fortlaufend: `01.png`, `02.png`, `03.png` ...
+- alle fertigen Bilder direkt in `03-bilder/` speichern
+
+JEDE SZENE INDIVIDUELL
+Für jeden Visual Beat eine eigene Bildidee entwickeln. Kamera, Perspektive, Pose, Handlung, Umgebung, Requisiten, Licht und Fokus passend zum gesprochenen Inhalt wählen. Keine generische Standardkomposition immer wieder verwenden. Keine Füllbilder und keine Informationen zeigen, die erst später im Skript kommen.
+
+REFERENZ-KLAUSEL FÜR BILD 02+
+Match the attached master reference exactly for character design, stickman proportions, linework, color treatment, shading and overall illustration style. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. Do not redesign the visual style.
+
+ARBEITSWEISE FÜR EIN KONKRETES VIDEO
+Unterhalb dieses Blocks werden ALLE Visual Beats des jeweiligen Videos direkt in dieser EINEN Datei eingetragen.
+Jeder Beat enthält nur:
+- Nummer
+- Sprechtext
+- finalen Bildprompt
+
+BEISPIEL
+
+SCENE 01
+SPEECH: [Sprechtext]
+PROMPT: [Finaler individueller 16:9-Bildprompt. Diese Szene allein zuerst generieren.]
+
+SCENE 02
+SPEECH: [Sprechtext]
+PROMPT: [Finaler individueller 16:9-Bildprompt. Bild 01 als Master-Referenz anhängen.]
+
+SCENE 03
+SPEECH: [Sprechtext]
+PROMPT: [Finaler individueller 16:9-Bildprompt. Bild 01 als Master-Referenz anhängen.]
+
+Für das echte Projekt werden hier alle Szenen vollständig eingesetzt. Es gibt dafür keine zweite, dritte oder vierte Prompt-Datei.
