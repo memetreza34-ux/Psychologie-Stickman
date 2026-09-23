@@ -5,12 +5,15 @@
 Thema: **Alltagspsychologie & menschliches Verhalten**.
 
 Verbindlich:
+- `rules/STICKMAN_DNA.md`
 - `rules/FORMAT_LOCK.md`
 - `rules/YOUTUBE_THEMEN_SYSTEM.md`
 - `rules/YOUTUBE_STYLE_LOCK.md`
 - `rules/IMAGE_REFERENCE_LOCK.md`
 - `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - `rules/PRODUCTION_FORMAT_RULES.md`
+
+`rules/STICKMAN_DNA.md` ist die zentrale visuelle Source of Truth. Alle Style-, Prompt- und Projektregeln müssen mit dieser DNA kompatibel bleiben.
 
 Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
 
@@ -55,6 +58,13 @@ THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Ph
 Ein wichtiger neuer visueller Gedanke bekommt grundsätzlich ein eigenes Bild. Keine langen Sammelbilder für mehrere Aussagen. Qualität vor bloßer Bildanzahl.
 
 Jedes Bild wird individuell auf genau seinen gesprochenen Beat angepasst. Master-Referenzen halten nur die visuelle DNA konstant; sie dürfen nicht dazu führen, dass Komposition, Pose oder Umgebung unnötig wiederholt werden.
+
+Zusätzlich gilt die DNA-Regel:
+- genau ein primärer visueller Gedanke pro Bild
+- ein klares Hauptmotiv
+- höchstens 1–2 unterstützende Hinweise, wenn nötig
+- keine überladenen Multi-Panel-/Infografik-Bilder, wenn eine einfache Szene reicht
+- mehrere neue Gedanken werden auf mehrere Visual Beats verteilt
 
 Das Bildformat wird durch den Projektpfad bestimmt:
 - `reels/` → vertikale 9:16-Komposition
@@ -110,6 +120,7 @@ Der Kanal ist deutschsprachig. Die Prompts dürfen technisch Englisch sein; sich
 - nach jedem Batch **interne QA** gegen Master, untereinander und gegen den Visual Beat
 - alle Personen im Vorder-, Mittel- und Hintergrund auf echte Stickman-Anatomie prüfen
 - sichtbaren Text auf Deutsch + Minimalität prüfen
+- Bildklarheit / Ein-Gedanke-pro-Bild prüfen
 - nur fehlerhafte Bilder regenerieren
 - nach vollständigem PASS **automatisch und ohne Nutzer-Rückfrage** mit dem nächsten Batch fortfahren
 - nur bei einem nicht automatisch lösbaren schweren Fehler stoppen
@@ -127,7 +138,7 @@ Der Nutzer arbeitet bei YouTube regulär nur mit:
 
 Alle technischen Hilfsdateien gehören nach `99-intern/`.
 
-Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, Style-/Stickman-Regeln, Deutsch/Minimal-Text-Regeln und den Batch-Ablauf.
+Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, die zentrale Stickman-DNA, Deutsch/Minimal-Text-Regeln und den Batch-Ablauf.
 
 Für Google Flow gilt:
 - Scene 01 allein
@@ -152,8 +163,11 @@ Für Google Flow gilt:
 Bei Format-Widerspruch:
 **`rules/FORMAT_LOCK.md` gewinnt.**
 
-Bei Figuren-/Stil-Widerspruch:
-**STRICT STICKMAN ONLY + freigegebene Master-Referenz gewinnt.**
+Bei visueller Identität:
+**`rules/STICKMAN_DNA.md` gewinnt.**
+
+Bei exakter projektspezifischer Darstellung innerhalb der DNA:
+**freigegebene Master-Referenz gewinnt.**
 
 Bei Text-Widerspruch:
 **Deutsch + minimaler sichtbarer Text + visuelle Erklärung gewinnt.**
