@@ -9,8 +9,12 @@
   "requireBatchApproval": false,
   "autoContinueAfterBatchPass": true,
   "visibleTextLanguage": "de",
-  "preferNoVisibleText": true,
-  "maxVisibleTextWordsPreferred": 4,
+  "flowSourceImageTextPolicy": "NONE",
+  "renderGermanLabelsInRemotion": true,
   "forbidEnglishVisibleText": true,
+  "recommendedTargetWords": 14,
+  "recommendedMaxWords": 20,
+  "semanticSplit": true,
+  "sceneLabels": [],
   "scenes": []
 }
