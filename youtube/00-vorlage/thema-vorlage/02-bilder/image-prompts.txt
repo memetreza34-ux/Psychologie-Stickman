@@ -1,13 +1,56 @@
-# IMAGE PROMPTS
+IMAGE PROMPTS — YOUTUBE PRODUKTIONSSTANDARD
 
-## Beat 01
-Sprechtext: [Satz/Beat]
+FORMAT HARD LOCK
+- jedes Bild in 16:9
+- Zielauflösung 1920×1080
+- horizontale / Landscape-Komposition
+- nur für YouTube-Longform; Reels haben eine eigene 9:16-Vorlage
+- Bild direkt für 16:9 planen
+
+SPRACHE IM BILD
+- sichtbarer Text nur, wenn er wirklich nötig ist
+- wenn Text sichtbar ist: ausschließlich Deutsch
+- keine englischen Labels, Überschriften oder UI-Texte im finalen Bild
+- wenn Text nicht nötig ist: ganz ohne lesbaren Text
+
+INDIVIDUELLE ANPASSUNG
+- jeder Visual Beat bekommt eine eigene Bildidee
+- Komposition, Kamerawinkel, Perspektive, Pose, Handlung, Umgebung, Requisiten, Licht und Fokus individuell an den gesprochenen Beat anpassen
+- horizontale Breite bewusst für Umgebung, Abläufe und Vergleiche nutzen
+- keine generische Wiederholung derselben Szene
+- keine Füllbilder
+- keine spätere Information vorwegnehmen
+
+MASTER-REFERENZ
+- Bild 01 bzw. das freigegebene Masterbild wird in 16:9 / 1920×1080 erzeugt
+- es bestimmt Stil, Stickman-DNA, Linien, Farben und Shading
+- die Referenz bestimmt NICHT die Komposition
+
+MASTER FORMAT SUFFIX
+`horizontal landscape 16:9 composition, 1920x1080, composition designed natively for a wide video frame`
+
+STIL
+Universal Editorial Stickman World v1.2.
+Jede sichtbare menschliche Figur bleibt Stickman.
+
+BEAT-VORLAGE
+
+Beat 01
+Sprechtext:
+[Satz/Beat]
+
+Visual Task:
+[Was muss exakt während dieses Beats sichtbar sein?]
 
 Prompt:
-[Finaler Bildprompt in der Universal Editorial Stickman World v1.1]
+[Individuell angepasster finaler 16:9 / 1920×1080 Bildprompt]
 
-## Beat 02
-Sprechtext: [Satz/Beat]
+Beat 02
+Sprechtext:
+[Satz/Beat]
+
+Visual Task:
+[Eigene visuelle Aufgabe]
 
 Prompt:
-[Finaler Bildprompt]
+[Individuell angepasster finaler 16:9 / 1920×1080 Bildprompt]

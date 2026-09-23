@@ -16,14 +16,26 @@ const metadata = ({props}: {props: Phase3ImageReelProps}) => ({
 });
 
 export const RemotionRoot = () => (
-  <Composition
-    id="Phase3ImageVideo"
-    component={Phase3ImageVideo}
-    durationInFrames={18000}
-    fps={30}
-    width={1920}
-    height={1080}
-    defaultProps={defaultProps}
-    calculateMetadata={metadata}
-  />
+  <>
+    <Composition
+      id="Phase3YouTube"
+      component={Phase3ImageVideo}
+      durationInFrames={18000}
+      fps={30}
+      width={1920}
+      height={1080}
+      defaultProps={defaultProps}
+      calculateMetadata={metadata}
+    />
+    <Composition
+      id="Phase3Reel"
+      component={Phase3ImageVideo}
+      durationInFrames={5400}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={defaultProps}
+      calculateMetadata={metadata}
+    />
+  </>
 );

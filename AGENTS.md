@@ -11,10 +11,12 @@ Ein neuer Chat startet read-only. Analyse bedeutet keine Schreibfreigabe. Geschr
 Danach lesen:
 1. `CANONICAL_RULES.md`
 2. `PROJECT_BRAIN.md`
-3. `rules/YOUTUBE_THEMEN_SYSTEM.md`
-4. `rules/YOUTUBE_STYLE_LOCK.md`
-5. `rules/IMAGE_REFERENCE_LOCK.md`
-6. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+3. `rules/FORMAT_LOCK.md`
+4. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+5. `rules/YOUTUBE_STYLE_LOCK.md`
+6. `rules/IMAGE_REFERENCE_LOCK.md`
+7. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+8. `rules/PRODUCTION_FORMAT_RULES.md`
 
 ## Themenwelt
 
@@ -32,12 +34,52 @@ Bei Serienbildern gilt:
 1. zuerst Bild 01 bzw. ein explizites Masterbild alleine generieren,
 2. visuell prüfen und freigeben,
 3. dieses Bild als Master-Referenz für alle Folgeassets verwenden,
-4. danach höchstens **5 neue Bilder pro Batch** erzeugen,
+4. danach höchstens 5 neue Bilder pro Batch erzeugen,
 5. jeden Batch gegen die Master-Referenz und untereinander prüfen,
 6. bei Style-Drift nur fehlerhafte Bilder neu generieren,
 7. erst nach vollständigem PASS mit dem nächsten 5er-Batch fortfahren.
 
-Kein Folgeasset darf die Master-Referenz eigenmächtig ersetzen. Details stehen verbindlich in `rules/IMAGE_REFERENCE_LOCK.md`.
+Kein Folgeasset darf die Master-Referenz eigenmächtig ersetzen. Details stehen in `rules/IMAGE_REFERENCE_LOCK.md`.
+
+## FORMAT HARD LOCK
+
+Der Projektpfad entscheidet zwingend das Format.
+
+### Unter `reels/`
+- **9:16**
+- **1080×1920**
+- **30 fps**
+- vertikale Bildkomposition
+- Remotion: `Phase3Reel`
+- niemals als 16:9 planen oder final rendern
+
+### Unter `youtube/`
+- **16:9**
+- **1920×1080**
+- **30 fps**
+- horizontale Bildkomposition
+- Remotion: `Phase3YouTube`
+- niemals als 9:16 planen oder final rendern
+
+Ein Bild wird direkt für sein Zielformat erzeugt. Falsches Seitenverhältnis anschließend nur zu croppen ist keine Standardlösung.
+
+## Audio
+
+Für beide Formate:
+- finales Voice-over exakt 1,10×
+- führende Stille entfernen
+- lange Pausen straffen; Pausen ab ca. 500 ms auf ungefähr 120 ms Restpause kürzen
+- Wörter niemals abschneiden
+- Timings erst aus final verarbeitetem Audio
+
+## Bildsprache und Individualisierung
+
+- sichtbarer Text im finalen Bild ausschließlich Deutsch, wenn Text überhaupt nötig ist
+- sonst lieber kein sichtbarer Text
+- jedes Bild individuell auf den aktuellen Sprechabschnitt/Visual Beat zuschneiden
+- Master-Referenz bestimmt den Stil, nicht die Komposition
+- keine generischen Wiederholungen derselben Pose oder desselben Bildaufbaus als Füllmaterial
+- Reels vertikal komponieren; YouTube horizontal komponieren
 
 ## Zwei getrennte Produktionsflächen
 
@@ -51,3 +93,8 @@ Reels dürfen niemals unter `youtube/` liegen und YouTube-Projekte niemals unter
 THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Phase 2 → Phase 3 → Final-QA.
 
 Keine Phase überspringen. Skriptänderung setzt nachgelagerte semantische/visuelle Planung zurück.
+
+## Priorität
+
+Bei Formatkonflikten gilt ohne Ausnahme:
+**`rules/FORMAT_LOCK.md` gewinnt.**
