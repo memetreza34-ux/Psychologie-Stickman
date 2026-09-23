@@ -135,7 +135,34 @@ Für historische oder stark ortsgebundene Szenen.
 - keine fotorealistischen Oberflächen
 - kein glossy 3D-Render-Look
 
-## 8. Kontinuität
+## 8. Sichtbarer Text — DEUTSCH + MINIMAL — HARD LOCK
+
+Der Kanal ist deutschsprachig. Die technische Sprache eines Prompts ist davon vollständig getrennt.
+
+Verbindlich:
+- Prompts dürfen auf Englisch geschrieben sein
+- **sichtbarer Text im finalen Bild ist niemals Englisch**
+- wenn Text nicht inhaltlich nötig ist: **kein sichtbarer Text**
+- wenn Text nötig ist: **ausschließlich Deutsch**
+- möglichst nur **ein kurzes Label oder eine kurze Phrase** pro Bild
+- Richtwert: **1–4 sichtbare Wörter**
+- keine ganzen Absätze, Erklärtafeln oder textlastigen Karten, wenn dieselbe Aussage visuell darstellbar ist
+- keine unnötigen Bildschirmtexte, Untertitel, Menüs, Buttons, Postertexte oder englischen UI-Fragmente
+- keine englischen Begriffe aus dem Prompt als Bildtext übernehmen
+- bei psychologischen Fachbegriffen bevorzugt kurze deutsche Bezeichnung im Bild; englischer Fachbegriff gehört eher in Voice-over/Skript, nicht automatisch ins Bild
+
+Bevorzugte Reihenfolge:
+1. visuell ohne Text erklären
+2. falls nötig: ein kurzes deutsches Label
+3. längerer Text nur bei zwingendem inhaltlichem Grund
+
+HARD FAIL:
+- sichtbarer englischer Text
+- mehrere konkurrierende Textblöcke
+- Bild funktioniert nur, weil viel Text gelesen werden muss
+- lange Sätze, obwohl Symbolik/Handlung die Aussage tragen könnte
+
+## 9. Kontinuität
 
 Wiederkehrende Hauptfigur konstant halten:
 - Kopfgröße und Kopfform
@@ -149,7 +176,7 @@ Wiederkehrende Hauptfigur konstant halten:
 
 Die Master-Referenz sperrt diese Eigenschaften.
 
-## 9. Komposition und Format
+## 10. Komposition und Format
 
 ### Reels unter `reels/`
 - 9:16 / 1080×1920 / 30 fps
@@ -163,13 +190,13 @@ Für beide:
 - klare Hauptaussage pro Visual Beat
 - Umgebung erzählt mit
 - genug Raum für leichte Zooms/Pans
-- sichtbarer Text nur wenn nötig und dann Deutsch
+- visuelle Erklärung vor Text
 
-## 10. Master-Prompt-DNA
+## 11. Master-Prompt-DNA
 
 Verbindliche Basis:
 
-`strict universal editorial 2D stickman explainer world, EVERY visible human or human-like figure uses the exact same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose, no realistic ears, no realistic neck, small simplified torso, very thin line-like arms and legs with near-constant thickness, simple nub/mitten hands with no fingers, simplified feet, clothing may identify role but must never create normal human anatomy; ABSOLUTELY NO conventional cartoon humans, no semi-realistic humans, no mixed human styles; environments may be rich, grounded and detailed, clean dark organic outlines, natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, subtle cel shading, educational editorial visual storytelling`
+`strict universal editorial 2D stickman explainer world, EVERY visible human or human-like figure uses the exact same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose, no realistic ears, no realistic neck, small simplified torso, very thin line-like arms and legs with near-constant thickness, simple nub/mitten hands with no fingers, simplified feet, clothing may identify role but must never create normal human anatomy; ABSOLUTELY NO conventional cartoon humans, no semi-realistic humans, no mixed human styles; environments may be rich, grounded and detailed, clean dark organic outlines, natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, subtle cel shading, educational editorial visual storytelling; prefer visual storytelling over text; if visible text is necessary it must be short and German only, never English`
 
 Danach genau einen Formatsuffix anhängen:
 
@@ -179,13 +206,13 @@ Danach genau einen Formatsuffix anhängen:
 ### YOUTUBE FORMAT SUFFIX
 `horizontal landscape 16:9 composition, 1920x1080, composition designed natively for a wide video frame`
 
-## 11. Szenen-Pflichtsatz
+## 12. Szenen-Pflichtsatz
 
 Für **jede** Bildgenerierung gilt zusätzlich, auch wenn der einzelne Szenenprompt es nicht wiederholt:
 
-`STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in the foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same true stickman anatomy as the approved master. Do not generate normal cartoon humans. If any person looks human-like rather than stickman, regenerate the image.`
+`STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in the foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same true stickman anatomy as the approved master. Do not generate normal cartoon humans. If any person looks human-like rather than stickman, regenerate the image. TEXT CHECK: prefer no readable text; if text is necessary, keep it short and German only. Never render English text from the prompt.`
 
-## 12. Master-Referenzbild — HARD LOCK
+## 13. Master-Referenzbild — HARD LOCK
 
 Textprompts allein reichen nicht aus.
 
@@ -198,4 +225,4 @@ Textprompts allein reichen nicht aus.
 7. Ein späteres Bild ersetzt den Master nicht automatisch.
 
 Priorität bei Konflikten:
-**FORMAT_LOCK + STRICT STICKMAN ONLY + freigegebene Master-Referenz > generische Stilwörter im Szenenprompt.**
+**FORMAT_LOCK + STRICT STICKMAN ONLY + Deutsch/Minimal-Text-Regel + freigegebene Master-Referenz > generische Stilwörter oder Textwünsche im Szenenprompt.**

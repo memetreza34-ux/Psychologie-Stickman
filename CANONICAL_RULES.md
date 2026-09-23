@@ -86,18 +86,35 @@ Nicht erlaubt:
 
 Die Umgebung darf dagegen glaubwürdig, farbig, detailreich und realitätsnah illustriert sein.
 
-Sichtbarer Text im finalen Bild ist Deutsch, wenn Text inhaltlich nötig ist. Wenn Text nicht nötig ist, keinen Text erzwingen.
+## Sichtbarer Text — DEUTSCH + MINIMAL
 
-## Master-Referenz + 5er-Batches
+Der Kanal ist deutschsprachig. Die Prompts dürfen technisch Englisch sein; sichtbare Bildsprache bleibt trotzdem Deutsch.
 
-- Bild 01 zuerst allein generieren und visuell freigeben
+- visuelle Erklärung vor Text
+- wenn Text nicht nötig ist: kein sichtbarer Text
+- wenn Text nötig ist: ausschließlich Deutsch
+- möglichst nur ein kurzes Label / eine kurze Phrase pro Bild
+- Richtwert: 1–4 sichtbare Wörter
+- keine englischen Labels, Buttons, Poster, Screens oder UI-Texte
+- keine Textwände oder langen Erklärsätze, wenn die Aussage visuell darstellbar ist
+- bei Konflikt: englischen/zu langen Text übersetzen, verkürzen oder weglassen
+
+## Master-Referenz + automatische 5er-Batches
+
+- Bild 01 zuerst allein generieren
+- danach STOP und auf Nutzerfreigabe warten
+- Bild 01 nur bei vollständigem Style-/Stickman-PASS als Master freigeben
 - Bild 01 bleibt Master-Referenz
 - ab Bild 02 Master bei jeder Generierung anhängen
 - danach höchstens 5 neue Bilder pro Batch
-- nach jedem Batch STOP + QA
+- nach jedem Batch **interne QA** gegen Master, untereinander und gegen den Visual Beat
 - alle Personen im Vorder-, Mittel- und Hintergrund auf echte Stickman-Anatomie prüfen
+- sichtbaren Text auf Deutsch + Minimalität prüfen
 - nur fehlerhafte Bilder regenerieren
-- erst nach vollständigem PASS weiter
+- nach vollständigem PASS **automatisch und ohne Nutzer-Rückfrage** mit dem nächsten Batch fortfahren
+- nur bei einem nicht automatisch lösbaren schweren Fehler stoppen
+
+**Es gibt regulär genau eine Nutzerfreigabe: nach Bild 01.**
 
 ## Einfache YouTube-Arbeitsfläche
 
@@ -110,7 +127,14 @@ Der Nutzer arbeitet bei YouTube regulär nur mit:
 
 Alle technischen Hilfsdateien gehören nach `99-intern/`.
 
-Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, Style-/Stickman-Regeln und den Batch-Ablauf.
+Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, Style-/Stickman-Regeln, Deutsch/Minimal-Text-Regeln und den Batch-Ablauf.
+
+Für Google Flow gilt:
+- Scene 01 allein
+- Nutzerfreigabe für Scene 01
+- anschließend automatische 5er-Batches
+- interne QA nach jedem Batch
+- keine Rückfrage nach normalen Batches
 
 ## Audio
 
@@ -130,3 +154,9 @@ Bei Format-Widerspruch:
 
 Bei Figuren-/Stil-Widerspruch:
 **STRICT STICKMAN ONLY + freigegebene Master-Referenz gewinnt.**
+
+Bei Text-Widerspruch:
+**Deutsch + minimaler sichtbarer Text + visuelle Erklärung gewinnt.**
+
+Beim Batch-Widerspruch:
+**Nur Bild 01 braucht Nutzerfreigabe; danach automatische 5er-Batches mit interner QA.**

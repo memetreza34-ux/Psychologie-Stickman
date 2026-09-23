@@ -48,31 +48,45 @@ The environment may be much richer and more detailed than the characters: believ
 GLOBAL SCENE CLAUSE — APPLIES TO EVERY SINGLE SCENE EVEN IF NOT REPEATED BELOW
 STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in the foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same true stickman anatomy as the approved master. Do not generate normal cartoon humans. If any person looks human-like rather than stickman, the image fails and must be regenerated.
 
-SPRACHE IM BILD
-- sichtbarer Text nur wenn wirklich nötig
-- wenn Text sichtbar ist: ausschließlich Deutsch
-- sonst keinen lesbaren Text erzwingen
+VISIBLE TEXT — GERMAN ONLY + MINIMAL
+This is a German-language channel. The prompt language may be English, but the visible language inside the generated image must remain German.
+- prefer NO readable text whenever the idea can be shown visually
+- if text is necessary: German only
+- never render English words, headings, labels, buttons, UI, posters, cards or screen text
+- do not copy English wording from this prompt into the image
+- normally use only one short German label or phrase
+- target 1–4 visible words
+- avoid full sentences, paragraphs, explanation cards and text-heavy layouts
+- if a scene below asks for too much text, shorten/translate it or replace it with visual storytelling
+- this rule OVERRIDES any conflicting text instruction in a scene prompt
 
 MASTER-REFERENZ
 1. Zuerst ausschließlich Bild 01 generieren.
 2. Danach STOP.
-3. Bild 01 vollständig prüfen: Stickman-Anatomie, Linien, Farben, Shading, Umgebung, Format.
+3. Bild 01 vollständig prüfen: Stickman-Anatomie, Linien, Farben, Shading, Umgebung, Format und sichtbaren Text.
 4. Bild 01 nur freigeben, wenn STRICT STICKMAN ONLY vollständig erfüllt ist.
-5. Bild 01 bleibt die Master-Referenz für alle folgenden Bilder.
-6. Bild 01 als `01.png` in `03-bilder/` speichern.
-7. Für Bild 02 und alle folgenden Bilder `01.png` als Bildreferenz anhängen.
-8. Master bestimmt Figuren-DNA, Linien, Farbverhalten, Shading und Gesamtstil.
-9. Master bestimmt NICHT Kamera, Pose, Ort oder Komposition.
+5. Auf die Nutzerfreigabe für Bild 01 warten.
+6. Bild 01 bleibt danach die Master-Referenz für alle folgenden Bilder.
+7. Bild 01 als `01.png` in `03-bilder/` speichern.
+8. Für Bild 02 und alle folgenden Bilder `01.png` als Bildreferenz anhängen.
+9. Master bestimmt Figuren-DNA, Linien, Farbverhalten, Shading und Gesamtstil.
+10. Master bestimmt NICHT Kamera, Pose, Ort oder Komposition.
 
-BATCH-WORKFLOW — HARD LOCK
-- niemals alle Bilder auf einmal erzeugen
-- nach Freigabe von 01 immer höchstens 5 neue Bilder pro Batch
-- nach jedem Batch STOP
-- jedes Bild einzeln gegen 01 prüfen
+AUTOMATIC BATCH WORKFLOW — HARD LOCK
+Nach der Nutzerfreigabe von Bild 01 läuft die restliche Bildproduktion automatisch weiter.
+
+- niemals alle Bilder gleichzeitig erzeugen
+- immer höchstens 5 neue Bilder pro Batch
+- nach jedem Batch interne Style-, Continuity-, Inhalts- und Text-QA durchführen
+- jedes Bild einzeln gegen 01.png prüfen
 - zusätzlich den gesamten Batch untereinander vergleichen
+- alle sichtbaren Personen inklusive Mini-Hintergrundfiguren auf STRICT STICKMAN ONLY prüfen
+- sichtbaren Text prüfen: kein Englisch, möglichst kein Text, sonst kurz und Deutsch
 - nur fehlerhafte Bilder regenerieren
 - gute Bilder behalten
-- nächster Batch erst nach vollständigem PASS
+- sobald der aktuelle Batch vollständig PASS ist, SOFORT automatisch mit dem nächsten Batch fortfahren
+- nach normalen Batches NICHT den Nutzer um Freigabe bitten
+- nur stoppen, wenn ein schwerer Fehler nach Regenerationsversuchen nicht automatisch lösbar ist
 - Dateinamen fortlaufend: `01.png`, `02.png`, `03.png` ...
 - alle fertigen Bilder direkt in `03-bilder/` speichern
 
@@ -97,7 +111,7 @@ JEDE SZENE INDIVIDUELL
 Für jeden Visual Beat eine eigene Bildidee entwickeln. Kamera, Perspektive, Pose, Handlung, Umgebung, Requisiten, Licht und Fokus passend zum gesprochenen Inhalt wählen. Keine generische Standardkomposition wiederholen. Keine Füllbilder und keine Informationen zeigen, die erst später im Skript kommen.
 
 REFERENZ-KLAUSEL FÜR BILD 02+
-Match the attached master reference exactly for true stickman anatomy, character design, head and torso proportions, very thin line-like arms and legs, simple no-finger hands, linework, color treatment, shading and overall illustration style. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. STRICT STICKMAN-ONLY CHECK: every person visible anywhere in foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same stickman anatomy. Do not generate conventional cartoon humans or semi-realistic people.
+Match the attached master reference exactly for true stickman anatomy, character design, head and torso proportions, very thin line-like arms and legs, simple no-finger hands, linework, color treatment, shading and overall illustration style. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. STRICT STICKMAN-ONLY CHECK: every person visible anywhere in foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same stickman anatomy. Do not generate conventional cartoon humans or semi-realistic people. VISIBLE TEXT CHECK: prefer no readable text; when text is necessary, keep it short and German only. Never render English text from the prompt.
 
 ARBEITSWEISE FÜR EIN KONKRETES VIDEO
 Unterhalb dieses Blocks werden ALLE Visual Beats des jeweiligen Videos direkt in dieser EINEN Datei eingetragen.
@@ -112,10 +126,13 @@ BEISPIEL
 
 SCENE 01
 SPEECH: [Sprechtext]
-PROMPT: Master frame with one clearly visible true stickman character. Simple round head, no nose/ears, tiny face, small simplified torso, very thin line-like limbs, simple no-finger hands. Rich detailed environment. 16:9 landscape. Generate this scene alone first.
+PROMPT: Master frame with one clearly visible true stickman character. Simple round head, no nose/ears, tiny face, small simplified torso, very thin line-like limbs, simple no-finger hands. Rich detailed environment. 16:9 landscape. Generate this scene alone first, then STOP for user approval. Prefer no readable text.
 
 SCENE 02
 SPEECH: [Sprechtext]
-PROMPT: [Individueller Szeneninhalt.] Attach 01.png as master reference. Every visible person including background people must remain true stickman.
+PROMPT: [Individueller Szeneninhalt.] Attach 01.png as master reference. Every visible person including background people must remain true stickman. Prefer no visible text; if necessary, German only and short.
+
+FINAL EXECUTION RULE
+Stop only after Scene 01 for user approval. After Scene 01 is approved, continue automatically through all remaining 5-image batches until the full image set is complete. Perform internal QA after every batch, regenerate only failed images, and do not ask the user to approve normal batches. Only interrupt if a major consistency problem cannot be corrected automatically.
 
 Für das echte Projekt werden hier alle Szenen vollständig eingesetzt. Es gibt dafür keine zweite, dritte oder vierte Prompt-Datei.

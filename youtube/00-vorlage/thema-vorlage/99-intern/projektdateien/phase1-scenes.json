@@ -1,4 +1,16 @@
 {
   "status": "PENDING",
+  "format": "youtube",
+  "aspectRatio": "16:9",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "batchSize": 5,
+  "requireMasterApproval": true,
+  "requireBatchApproval": false,
+  "autoContinueAfterBatchPass": true,
+  "visibleTextLanguage": "de",
+  "preferNoVisibleText": true,
+  "maxVisibleTextWordsPreferred": 4,
+  "forbidEnglishVisibleText": true,
   "scenes": []
 }

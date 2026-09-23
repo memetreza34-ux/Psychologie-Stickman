@@ -42,16 +42,33 @@ Echte Stickman-DNA:
 
 **Normale Cartoon-Menschen, halb-realistische Menschen oder Mischstile sind HARD FAIL.** Die Umgebung darf dagegen deutlich detailreicher, räumlich glaubwürdig und hochwertig illustriert sein.
 
+## Sichtbarer Text — HARD LOCK
+
+Der Kanal ist deutschsprachig.
+
+- Prompts dürfen Englisch sein.
+- Sichtbarer Text im Bild ist trotzdem **immer Deutsch**.
+- Wenn Text nicht nötig ist: keinen Text erzeugen.
+- Wenn Text nötig ist: möglichst nur **ein kurzes deutsches Label / eine kurze Phrase**.
+- Richtwert: **1–4 sichtbare Wörter**.
+- Keine englischen Labels, Überschriften, Bildschirmtexte, Buttons, UI-Texte, Poster oder Karten.
+- Keine Textwände, langen Sätze oder Infotafeln, wenn die Aussage visuell erklärt werden kann.
+- Englische Promptwörter dürfen niemals automatisch im finalen Bild erscheinen.
+- Bei Konflikt gilt: visuell erklären, Text verkürzen/übersetzen oder weglassen.
+
 ## Verbindlicher Referenz-Workflow
 
 Bei Serienbildern gilt:
 1. zuerst Bild 01 bzw. ein explizites Masterbild alleine generieren,
-2. visuell prüfen und freigeben,
-3. dieses Bild als Master-Referenz für alle Folgeassets verwenden,
-4. danach **exakt höchstens 5 neue Bilder pro Batch** erzeugen,
-5. nach jedem Batch STOP und QA,
+2. danach STOP und auf Nutzerfreigabe warten,
+3. dieses Bild nur bei vollständigem PASS als Master-Referenz freigeben,
+4. danach höchstens 5 neue Bilder pro Batch erzeugen,
+5. nach jedem Batch interne Style-/Continuity-/Inhalts-QA durchführen,
 6. nur fehlerhafte Bilder regenerieren,
-7. erst nach vollständigem PASS mit dem nächsten Batch fortfahren.
+7. nach vollständigem PASS **automatisch ohne Nutzer-Rückfrage** mit dem nächsten Batch fortfahren,
+8. nur bei einem nicht automatisch lösbaren schweren Fehler stoppen.
+
+**Die einzige reguläre Nutzerfreigabe ist Bild 01.** Nach Freigabe des Masters soll die Bildproduktion bis zum letzten Batch automatisch weiterlaufen.
 
 Kein Folgeasset darf die Master-Referenz eigenmächtig ersetzen. Details stehen in `rules/IMAGE_REFERENCE_LOCK.md`.
 
@@ -88,13 +105,12 @@ Für beide Formate:
 
 ## Bildsprache und Individualisierung
 
-- sichtbarer Text im finalen Bild ausschließlich Deutsch, wenn Text überhaupt nötig ist
-- sonst lieber kein sichtbarer Text
 - jedes Bild individuell auf den aktuellen Sprechabschnitt/Visual Beat zuschneiden
 - Master-Referenz bestimmt den Stil, nicht die Komposition
 - keine generischen Wiederholungen derselben Pose oder desselben Bildaufbaus als Füllmaterial
 - Reels vertikal komponieren; YouTube horizontal komponieren
-- jedes Bild vor Freigabe auf Stickman-only prüfen, einschließlich winziger Hintergrundpersonen
+- jedes Bild intern auf Stickman-only prüfen, einschließlich winziger Hintergrundpersonen
+- visuelle Erklärung hat Vorrang vor Text
 
 ## Zwei getrennte Produktionsflächen
 
@@ -119,10 +135,13 @@ Der Nutzer soll für die normale Produktion **nur ein Skript und eine einzige Pr
 `02-google-flow/google-flow-prompt.txt` ist die einzige nutzerseitige Prompt-Datei für die komplette Bildproduktion. Sie muss enthalten:
 - Format und Stil
 - STRICT-STICKMAN-ONLY-Gate
+- Deutsch/Minimal-Text-Gate
 - Master-Referenz-Regel
-- konkreten 5er-Batch-Plan mit STOP nach jedem Batch
+- konkreten 5er-Batch-Plan
+- **STOP nur nach Bild 01**
+- automatische interne QA und automatisches Fortsetzen nach jedem bestandenen 5er-Batch
+- keine Nutzerfreigabe nach normalen Batches
 - Dateinamen
-- Sprachregel für sichtbaren Text
 - alle individuellen Szenen-/Bildprompts des Videos
 
 Keine zusätzlichen Prompt-/Style-Dateien in der normalen sichtbaren Arbeitsfläche anlegen. Technische Dateien gehören ausschließlich nach `99-intern/`.
@@ -140,3 +159,9 @@ Bei Formatkonflikten gilt ohne Ausnahme:
 
 Bei Figuren-/Stilkonflikten gilt:
 **STRICT STICKMAN ONLY + freigegebene Master-Referenz gewinnt.**
+
+Bei Textkonflikten gilt:
+**Deutsch + minimaler sichtbarer Text + visuelle Erklärung gewinnt.**
+
+Beim Batch-Ablauf gilt:
+**Masterfreigabe einmalig nach Bild 01; danach automatische 5er-Batches mit interner QA ohne weitere Nutzer-Rückfragen.**
