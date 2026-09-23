@@ -45,28 +45,60 @@ Echte Stickman-DNA:
 
 **Normale Cartoon-Menschen, halb-realistische Menschen oder Mischstile sind HARD FAIL.** Die Umgebung darf dagegen deutlich detailreicher, räumlich glaubwürdig und hochwertig illustriert sein.
 
-## Sichtbarer Text — HARD LOCK
+## Bildlogik — KONKRETE SZENE VOR INFOGRAFIK
 
-Der Kanal ist deutschsprachig.
+Für jeden Visual Beat zuerst prüfen, ob eine konkrete Stickman-Handlung in einer glaubwürdigen Umgebung die Aussage verständlich machen kann.
 
-- Prompts dürfen Englisch sein.
-- Sichtbarer Text im Bild ist trotzdem **immer Deutsch**.
-- Wenn Text nicht nötig ist: keinen Text erzeugen.
-- Wenn Text nötig ist: möglichst nur **ein kurzes deutsches Label / eine kurze Phrase**.
-- Richtwert: **1–4 sichtbare Wörter**.
-- Keine englischen Labels, Überschriften, Bildschirmtexte, Buttons, UI-Texte, Poster oder Karten.
-- Keine Textwände, langen Sätze oder Infotafeln, wenn die Aussage visuell erklärt werden kann.
-- Englische Promptwörter dürfen niemals automatisch im finalen Bild erscheinen.
-- Bei Konflikt gilt: visuell erklären, Text verkürzen/übersetzen oder weglassen.
+Priorität:
+1. konkrete Handlung / Alltagsszene
+2. einfache visuelle Metapher
+3. Diagramm, Skala, Karte oder abstrakter Pfad nur wenn wirklich besser
+
+Keine langen Serien aus denselben `claim cards`, `truth meters`, Waagen, Pfaden oder Dashboard-Kompositionen. Wiederkehrende Symbole dürfen unterstützen, aber nicht das ganze Video dominieren.
+
+## Google-Flow-Quellbilder — ZERO READABLE TEXT HARD LOCK
+
+Der Kanal ist deutschsprachig, aber Google-Flow-Quellbilder werden standardmäßig **vollständig textfrei** erzeugt.
+
+Verbindlich:
+- keine lesbaren Wörter oder Buchstaben
+- keine UI-Texte
+- keine Labels
+- keine Untertitel
+- keine Poster-/Werbetexte
+- keine Bildschirmtexte
+- keine Marken-/Logo-Texte
+- Dokumente/Screens nur mit abstrakten Linien, Formen und Icons
+- englische Promptwörter niemals ins Bild übernehmen
+- deutsche Sprechtexte niemals ins Bild schreiben
+
+Deutsche Labels werden standardmäßig kontrolliert in **Remotion** hinzugefügt (`sceneLabels`).
+
+Nur wenn Text physisch zwingend Teil der Szene sein muss und nicht sinnvoll als Overlay gesetzt werden kann, darf eine explizite Ausnahme den exakten kurzen deutschen Wortlaut definieren.
+
+Bei Konflikt gilt:
+**textfreies Flow-Quellbild + späterer deutscher Remotion-Overlay gewinnt.**
 
 ## Bildklarheit — HARD LOCK
 
 - genau ein primärer visueller Gedanke pro Bild
 - ein klares Hauptmotiv
 - höchstens 1–2 unterstützende visuelle Hinweise, wenn wirklich nötig
-- keine überladenen Multi-Panel-/Infografik-Kompositionen, wenn eine einfache Szene genügt
+- keine überladenen Multi-Panel-/Infografik-Kompositionen
 - wenn ein Sprechabschnitt mehrere neue Gedanken enthält, in mehrere Visual Beats/Bilder aufteilen
 - Zuschauer soll die Kernaussage sehr schnell erfassen können
+
+## Visual-Beat-Dichte
+
+Standard für skriptbasierte YouTube-Projekte:
+- Ziel meist 10–16 Wörter pro Beat
+- automatischer Zielwert 14
+- normale Obergrenze 20
+- 21–28 Wörter nur als ausdrücklich geprüfte Ausnahme mit `allowExtendedBeat: true`
+- absolute Obergrenze 28
+- durchschnittlich höchstens 16 Wörter pro Szene
+
+Nicht nur nach Wortzahl teilen. Auch kurze Sätze mit mehreren Orten, Handlungen, Vergleichen oder Ursache-Folge-Schritten redaktionell trennen.
 
 ## Verbindlicher Referenz-Workflow
 
@@ -77,10 +109,10 @@ Bei Serienbildern gilt:
 4. danach höchstens 5 neue Bilder pro Batch erzeugen,
 5. nach jedem Batch interne Style-/Continuity-/Inhalts-QA durchführen,
 6. nur fehlerhafte Bilder regenerieren,
-7. nach vollständigem PASS **automatisch ohne Nutzer-Rückfrage** mit dem nächsten Batch fortfahren,
+7. nach vollständigem PASS automatisch ohne Nutzer-Rückfrage mit dem nächsten Batch fortfahren,
 8. nur bei einem nicht automatisch lösbaren schweren Fehler stoppen.
 
-**Die einzige reguläre Nutzerfreigabe ist Bild 01.** Nach Freigabe des Masters soll die Bildproduktion bis zum letzten Batch automatisch weiterlaufen.
+**Die einzige reguläre Nutzerfreigabe ist Bild 01.**
 
 Kein Folgeasset darf die Master-Referenz eigenmächtig ersetzen. Details stehen in `rules/IMAGE_REFERENCE_LOCK.md`.
 
@@ -94,7 +126,6 @@ Der Projektpfad entscheidet zwingend das Format.
 - **30 fps**
 - vertikale Bildkomposition
 - Remotion: `Phase3Reel`
-- niemals als 16:9 planen oder final rendern
 
 ### Unter `youtube/`
 - **16:9**
@@ -102,7 +133,6 @@ Der Projektpfad entscheidet zwingend das Format.
 - **30 fps**
 - horizontale Bildkomposition
 - Remotion: `Phase3YouTube`
-- niemals als 9:16 planen oder final rendern
 
 Ein Bild wird direkt für sein Zielformat erzeugt. Falsches Seitenverhältnis anschließend nur zu croppen ist keine Standardlösung.
 
@@ -114,15 +144,6 @@ Für beide Formate:
 - lange Pausen straffen; Pausen ab ca. 500 ms auf ungefähr 120 ms Restpause kürzen
 - Wörter niemals abschneiden
 - Timings erst aus final verarbeitetem Audio
-
-## Bildsprache und Individualisierung
-
-- jedes Bild individuell auf den aktuellen Sprechabschnitt/Visual Beat zuschneiden
-- Master-Referenz bestimmt den Stil, nicht die Komposition
-- keine generischen Wiederholungen derselben Pose oder desselben Bildaufbaus als Füllmaterial
-- Reels vertikal komponieren; YouTube horizontal komponieren
-- jedes Bild intern auf Stickman-only prüfen, einschließlich winziger Hintergrundpersonen
-- visuelle Erklärung hat Vorrang vor Text
 
 ## Zwei getrennte Produktionsflächen
 
@@ -148,17 +169,27 @@ Der Nutzer soll für die normale Produktion **nur ein Skript und eine einzige Pr
 - zentrale DNA aus `rules/STICKMAN_DNA.md`
 - Format und Stil
 - STRICT-STICKMAN-ONLY-Gate
-- Deutsch/Minimal-Text-Gate
+- ZERO-READABLE-TEXT-Gate für Flow-Quellbilder
 - Ein-Gedanke-pro-Bild-Gate
+- konkrete Szene vor generischer Infografik
 - Master-Referenz-Regel
 - konkreten 5er-Batch-Plan
-- **STOP nur nach Bild 01**
-- automatische interne QA und automatisches Fortsetzen nach jedem bestandenen 5er-Batch
-- keine Nutzerfreigabe nach normalen Batches
+- STOP nur nach Bild 01
+- automatische interne QA und automatisches Fortsetzen
 - Dateinamen
 - alle individuellen Szenen-/Bildprompts des Videos
 
-Keine zusätzlichen Prompt-/Style-Dateien in der normalen sichtbaren Arbeitsfläche anlegen. Technische Dateien gehören ausschließlich nach `99-intern/`.
+Deutsche Labels gehören als Metadaten nach `99-intern/` und werden durch Phase 3/Remotion gerendert, nicht durch Flow.
+
+Keine zusätzlichen Prompt-/Style-Dateien in der normalen sichtbaren Arbeitsfläche anlegen.
+
+## QA vor Abschluss
+
+Bei strukturellen oder Pipeline-Änderungen mindestens ausführen:
+- `npm run typecheck`
+- `npm run qa:visual-density`
+- `npm run qa:flow-prompts`
+- relevante Format-/Produktionschecks
 
 ## Reihenfolge
 
@@ -178,7 +209,7 @@ Bei der exakten projektspezifischen Darstellung gilt innerhalb der DNA:
 **freigegebene Master-Referenz gewinnt.**
 
 Bei Textkonflikten gilt:
-**Deutsch + minimaler sichtbarer Text + visuelle Erklärung gewinnt.**
+**textfreies Flow-Quellbild + deutscher Remotion-Overlay gewinnt.**
 
 Beim Batch-Ablauf gilt:
 **Masterfreigabe einmalig nach Bild 01; danach automatische 5er-Batches mit interner QA ohne weitere Nutzer-Rückfragen.**
