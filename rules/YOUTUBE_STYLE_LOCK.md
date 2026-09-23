@@ -15,7 +15,7 @@ Eine hochwertige 2D-Erklärwelt mit sehr einfachen echten Stickmen in deutlich r
 
 Leitprinzip:
 
-**Simple stickmen. Rich world. One clear idea. Concrete scene first.**
+**Simple stickmen. Rich world. One clear idea. Concrete scene first. Style consistency without character cloning.**
 
 ## 1. STRICT STICKMAN DNA — HARD LOCK
 
@@ -73,7 +73,28 @@ Priorität:
 
 Keine langen Serien aus denselben Karten, Metern, Waagen, Pfaden oder Dashboard-Kompositionen.
 
-## 4. Bildklarheit
+## 4. CAST-/SZENENVIELFALT — HARD LOCK
+
+Alle Figuren teilen dieselbe Stickman-Anatomie und denselben Renderingstil. Sie müssen aber **nicht dieselbe Person** sein.
+
+Pro Beat bewusst wählen:
+- 1–4 Stickmen je nach Aussage
+- passende Rolle, z. B. Schüler, Azubi, Büroarbeiter, Pendler, Freund, Forscher, Kunde
+- passende Kleidung/Farben/Accessoires
+- passenden Ort
+- passende Handlung
+- passende Kameradistanz und Perspektive
+
+Nicht als Standard wiederholen:
+- denselben einzelnen Charakter aus Bild 01
+- denselben Hoodie
+- denselben Schreibtisch/Raum
+- dieselbe Pose
+- denselben Medium Shot
+
+Eine bestimmte Figur bleibt nur dann identisch, wenn eine echte fortlaufende Mini-Handlung dieselbe Person verlangt. Neue Beispiele oder neue Rollen dürfen andere Stickmen verwenden.
+
+## 5. Bildklarheit
 
 - genau ein primärer visueller Gedanke pro Bild
 - ein klares Hauptmotiv
@@ -82,7 +103,7 @@ Keine langen Serien aus denselben Karten, Metern, Waagen, Pfaden oder Dashboard-
 - keine späteren Informationen vorwegnehmen
 - Komposition, Kamera, Pose, Ort, Requisiten und Licht pro Beat bewusst wählen
 
-## 5. Google-Flow-Quellbilder — ZERO READABLE TEXT
+## 6. Google-Flow-Quellbilder — ZERO READABLE TEXT
 
 Google-Flow-Quellbilder werden standardmäßig vollständig textfrei erzeugt.
 
@@ -100,9 +121,9 @@ Deutsche Begriffe werden standardmäßig später in Remotion über `sceneLabels`
 
 Nur wenn Text physisch zwingend Bestandteil einer Szene sein muss und nicht sinnvoll als Overlay gesetzt werden kann, darf eine explizite Ausnahme den exakten kurzen deutschen Wortlaut freigeben.
 
-## 6. Kontinuität
+## 7. Kontinuität
 
-Wiederkehrende Hauptfigur konstant halten:
+Kontinuität gilt **lokal**, wenn eine bestimmte Person in einer zusammenhängenden Sequenz wiederkehrt. Dann konstant halten:
 - Kopfgröße und Kopfform
 - Augen-/Mundstil
 - Torsoform
@@ -111,9 +132,9 @@ Wiederkehrende Hauptfigur konstant halten:
 - Kleidung und Farben
 - Accessoires
 
-Die Master-Referenz sperrt diese Eigenschaften. Sie sperrt nicht Kamera, Pose, Ort, Licht oder Komposition.
+Die Master-Referenz sperrt dagegen global nur Stickman-DNA, Linien, Rendering, Farbverhalten, Shading und Weltqualität. Sie sperrt **nicht** die Figurenidentität für das ganze Video.
 
-## 7. Drei Darstellungsmodi
+## 8. Drei Darstellungsmodi
 
 ### A — Everyday Editorial
 Standard für Alltagsszenen. Konkrete Handlung in glaubwürdiger Umgebung.
@@ -124,7 +145,7 @@ Für Mechanismen, die sich nicht sauber als Alltagshandlung darstellen lassen. W
 ### C — Grounded / Historical
 Für historische oder stark ortsgebundene Szenen. Umgebung und Kleidung dürfen detailliert sein; Menschen bleiben echte Stickmen.
 
-## 8. Format
+## 9. Format
 
 ### Reels
 - 9:16 / 1080×1920 / 30 fps
@@ -134,19 +155,20 @@ Für historische oder stark ortsgebundene Szenen. Umgebung und Kleidung dürfen 
 
 Das Bild wird direkt im Zielformat komponiert.
 
-## 9. Master-Prompt-DNA
+## 10. Master-Prompt-DNA
 
-`strict universal editorial 2D stickman explainer world, EVERY visible human or human-like figure uses the exact same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet; no conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi; rich believable 2D environment, clean dark organic outlines, natural colors, controlled saturation, believable perspective and lighting, subtle cel shading; ONE clear visual idea; prefer a concrete stickman action in a believable setting over a generic infographic; SOURCE IMAGE TEXT POLICY: zero readable text, zero letters, zero labels, zero UI words and zero captions; German labels are normally added later in Remotion`
+`strict universal editorial 2D stickman explainer world; EVERY visible human or human-like figure uses the same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet; no conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi; rich believable 2D environment, clean dark organic outlines, natural colors, controlled saturation, believable perspective and lighting, subtle cel shading; MASTER REFERENCE IS STYLE/ANATOMY ONLY, NOT CHARACTER IDENTITY: choose scene-specific cast, clothing, roles, location, pose and camera for every beat; do not default to the same lone hoodie character, same desk, same room or same framing; ONE clear visual idea; prefer a concrete stickman action in a believable setting over a generic infographic; SOURCE IMAGE TEXT POLICY: zero readable text, zero letters, zero labels, zero UI words and zero captions; German labels are normally added later in Remotion`
 
-## 10. Referenzregel
+## 11. Referenzregel
 
 1. Bild 01 allein generieren.
 2. Bild 01 visuell freigeben.
 3. Ab Bild 02 Bild 01 bei jeder Generierung als Referenz anhängen.
-4. Master sperrt Anatomie, Linien, Farben, Shading und Gesamtästhetik.
-5. Kamera, Pose, Ort, Licht und Komposition bleiben frei.
+4. Master sperrt Anatomie-System, Linien, Farben, Shading und Gesamtästhetik.
+5. Master sperrt nicht Figurenidentität, Kleidung, Castgröße, Kamera, Pose, Ort, Licht oder Komposition.
+6. Exakten Bild-01-Charakter nur bei ausdrücklich benötigter Kontinuität kopieren.
 
-## 11. Priorität
+## 12. Priorität
 
 Bei Konflikt gilt:
-**FORMAT_LOCK + STICKMAN_DNA + Master-Referenz + ZERO-READABLE-TEXT-Flow-Regel > generische Stilwörter oder Szenenformulierungen.**
+**FORMAT_LOCK + STICKMAN_DNA + Master als STYLE-/ANATOMIE-Referenz + beat-passende Cast-/Szenenwahl + ZERO-READABLE-TEXT > Charakterklonen oder generische Wiederholung.**
