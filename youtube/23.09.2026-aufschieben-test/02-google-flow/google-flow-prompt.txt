@@ -12,7 +12,7 @@ FORMAT HARD LOCK
 STYLE HARD LOCK — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3
 STRICT STICKMAN ONLY.
 
-EVERY visible human or human-like figure must use the exact same true stickman anatomy. This includes the main character, side characters, background people, figures on screens, posters, advertisements, reflections and memory scenes.
+EVERY visible human or human-like figure must use the same TRUE STICKMAN DNA, but they do NOT need to be the same person.
 
 TRUE STICKMAN ANATOMY — NON-NEGOTIABLE
 - simple round or oval flat head
@@ -40,7 +40,7 @@ HARD FAIL
 - anime/manga/chibi
 
 ENVIRONMENT RULE
-The world can be rich and detailed: believable rooms, desk setups, kitchen corners, sofa areas, phones, clocks, windows, lamps, notebooks, shelves, soft cinematic light and clear perspective. Detail belongs in the environment, NOT in human anatomy.
+The world can be rich and detailed: believable homes, offices, libraries, cafes, kitchens, classrooms, buses, streets, phones, clocks, windows, lamps, notebooks, shelves, soft cinematic light and clear perspective. Detail belongs in the environment, NOT in human anatomy.
 
 CHANNEL DNA — HARD LOCK
 Simple Stickmen. Rich World. One clear idea per image. German visual language.
@@ -53,6 +53,23 @@ Simple Stickmen. Rich World. One clear idea per image. German visual language.
 - Vary camera distance, pose, environment and composition naturally between scenes.
 - Do not turn the video into repeated cards, meters, scales or diagrams.
 
+CAST VARIATION — HARD LOCK
+STYLE CONSISTENCY DOES NOT MEAN CHARACTER CLONING.
+- 01.png is a STYLE AND ANATOMY reference, NOT a character identity template for the whole video.
+- Use different stickman people when the current beat does not require narrative continuity.
+- Vary clothing colors and outfit types, simple accessories, role cues, cast size, pose, location and camera angle.
+- Choose 1 to 4 Stickmen when the scene benefits from them.
+- Roles may include student, office worker, commuter, friend, researcher or everyday person.
+- Do NOT default to the same lone teal-hoodie Stickman.
+- Do NOT default to the same desk, same home-office room, same pose or same medium shot.
+- Reuse an exact character only inside an explicitly connected mini-story.
+
+BEFORE EACH SCENE DECIDE
+1. CAST — who/how many Stickmen best explain this beat?
+2. LOCATION — which believable place makes the idea clearest?
+3. ACTION — what visible action represents the spoken meaning?
+4. CAMERA — what angle/distance makes the action instantly readable?
+
 FLOW SOURCE IMAGE TEXT POLICY — ZERO READABLE TEXT
 Generated source images must contain ZERO readable text.
 Do not render readable German text.
@@ -63,19 +80,19 @@ Use abstract lines, shapes and icons where a screen or document is visible.
 German labels for the final video are added later in Remotion, not inside the source images.
 
 GLOBAL SCENE CLAUSE
-STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in foreground, midground, background, screens, posters, reflections, photos or memories must use the same true stickman anatomy as the approved master. If any figure becomes a normal cartoon or semi-realistic human, regenerate the image.
+STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in foreground, midground, background, screens, posters, reflections, photos or memories must use the approved true-stickman anatomy and illustration style. They may be DIFFERENT PEOPLE. If any figure becomes a normal cartoon or semi-realistic human, regenerate the image.
 
 MASTER REFERENCE WORKFLOW
 1. Generate SCENE 01 ONLY.
 2. STOP.
 3. Inspect Scene 01 carefully before generating anything else.
-4. Scene 01 must clearly establish true stickman anatomy, line language, color treatment, shading and environment detail.
+4. Scene 01 must establish true stickman anatomy, line language, color treatment, shading and environment detail.
 5. If Scene 01 contains human-like/cartoon anatomy, regenerate Scene 01.
 6. Wait for user approval of Scene 01.
 7. After approval save it as `03-bilder/01.png`.
 8. For EVERY image from Scene 02 onward attach `01.png` as the image reference.
-9. Scene 01 remains the master for the entire video.
-10. The master locks style/anatomy, not pose, camera or composition.
+9. Scene 01 remains the STYLE/ANATOMY master for the entire video.
+10. The master DOES NOT lock character identity, clothing, cast size, location, pose, camera or composition.
 
 AUTOMATIC BATCH WORKFLOW
 MASTER: 01
@@ -88,177 +105,164 @@ Batch 5: 22–23
 RULES FOR EVERY BATCH AFTER SCENE 01 APPROVAL
 - Generate only the images in the current batch, maximum 5 new images.
 - After generating the batch, perform INTERNAL QA automatically.
-- Check every image against 01.png.
+- Check every image against 01.png for STYLE/ANATOMY, not character cloning.
 - Check every visible person, including tiny background people.
 - Check all limbs remain very thin and line-like.
 - Check scene meaning against the exact speech beat.
 - Check one-clear-idea-per-image.
+- Check cast/location/camera are appropriate and not needlessly repetitive.
 - Check ZERO READABLE TEXT.
 - Regenerate only failed images.
 - Keep all passed images.
 - Once the batch passes, continue automatically with the next batch.
 - Do not ask for user approval after normal batches.
 
-RECURRING MAIN CHARACTER
-- simple round light head
-- tiny black eyes
-- simple minimal mouth
-- no nose
-- no realistic ears
-- no neck anatomy
-- small simplified torso
-- very thin charcoal line-like arms and legs
-- simple nub hands, no fingers
-- dark teal hoodie adapted to simplified torso
-- charcoal trousers without realistic leg volume
-- simple light shoes
-
 REFERENCE CLAUSE FOR SCENE 02+
-Match the attached 01.png master reference exactly for true stickman anatomy, character identity, head/torso proportions, very thin line-like arms and legs, no-finger hands, linework, color treatment, shading and overall illustration style. Change only scene content, action, pose, camera, environment, props and lighting. ZERO READABLE TEXT. Every visible person anywhere must remain a true stickman.
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone template. Match the approved true-stickman anatomy system, head/torso proportions, very thin line-like limbs, no-finger hands, linework, color treatment, shading, environment detail level and overall illustration quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current speech beat. Reuse an exact earlier character only when the scene explicitly says LOCAL CONTINUITY. Do not default to the Scene-01 hoodie person, desk, room or framing. ZERO READABLE TEXT. Every visible person anywhere must remain a true stickman.
 
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Du weißt genau, was du tun musst, und machst trotzdem alles andere.
 PROMPT:
-MASTER FRAME. One recurring true stickman at a modern home desk with one clearly important unfinished laptop task in front of him. Instead of starting, he turns toward a small irrelevant desk-cleaning action. Show enough of the full body to establish exact stickman anatomy. Rich but controlled modern home-office environment: desk, laptop with abstract blank interface shapes, lamp, shelf, plant, window, soft natural daylight. One dominant focus: knowing the important task but doing something else. Clean editorial 2D illustration, natural colors, subtle cel shading, clear perspective. ZERO READABLE TEXT. 16:9 landscape. Generate SCENE 01 alone, then STOP for approval.
+MASTER STYLE FRAME. One true Stickman in a modern home-office with an important unfinished laptop task directly in front of them, but they are wiping a tiny spot on the desk instead of starting. Show enough body to clearly establish approved anatomy: simple round head, tiny eyes and mouth, small torso, very thin line arms and legs, simple no-finger hands. Dark teal hoodie is allowed for THIS character only and must NOT become the default outfit for later characters. Rich but controlled room: desk, laptop with abstract blank interface shapes, lamp, shelf, plant, window, soft natural daylight. One dominant focus: avoiding the real task through a trivial action. Clean editorial 2D illustration, natural colors, subtle cel shading, clear perspective. ZERO READABLE TEXT. 16:9 landscape. Generate SCENE 01 alone, then STOP for approval.
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Du beantwortest noch schnell eine Nachricht, räumst irgendetwas auf oder scrollst nur kurz durchs Handy.
 PROMPT:
-Attach 01.png as master reference. Same main Stickman seated near the unfinished work task but now holding a smartphone and scrolling. A tiny tidying cue such as one moved object may support the idea, but do not create a collage of three activities. The important laptop task remains visible but secondary in the background. Concrete everyday action, different camera angle from Scene 01. Smartphone screen contains abstract blocks only. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER, not the Scene-01 person: a different Stickman in a casual warm-colored sweatshirt sits on a living-room sofa scrolling on a smartphone. An open laptop bag or study folder in the background quietly signals the task being avoided. Over-the-shoulder three-quarter camera, softer evening living-room environment, completely different composition from Scene 01. Smartphone screen contains abstract blocks only. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 03
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Das eigentliche Wichtige bleibt liegen. Das wirkt schnell wie Faulheit, ist aber oft etwas anderes.
 PROMPT:
-Attach 01.png as master reference. Make the neglected important work task the foreground focal point while the same Stickman is visibly active in the midground doing an unrelated household action. He must not appear asleep, lounging or physically lazy. Visual message: active, but avoiding the actual priority. Rich believable room, clear depth, one dominant idea. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER in a kitchen, wearing a simple light overshirt over a plain torso. The Stickman is actively loading or arranging dishes while an important open laptop and work folder remain untouched on the dining table behind them. Wide environmental shot with foreground kitchen counter and visible depth. The person looks busy, not lazy. One clear visual message: active, but avoiding the priority. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 04
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Aufschieben ist häufig kein reines Zeitproblem, sondern hängt auch mit Gefühlen zusammen.
 PROMPT:
-Attach 01.png as master reference. Same Stickman sits directly before the unfinished task and shows inner resistance only through posture: slightly pulled back shoulders, hesitant hands, reluctant body orientation. A small clock may exist in the background but must not dominate. Main idea is emotional friction with the task, not lack of available time. Concrete desk scene, not an infographic. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW OFFICE-WORKER STICKMAN in a muted blue shirt at a modern shared-office desk. Plenty of daylight suggests enough available time, while hesitant hands and pulled-back posture show emotional resistance toward one task. A small wall clock stays secondary. Side-angle medium-wide shot, office background with one or two distant Stickman coworkers kept visually secondary. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 05
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Wenn eine Aufgabe schwer, langweilig, unklar oder unangenehm wirkt, entsteht Widerstand.
 PROMPT:
-Attach 01.png as master reference. Show one single concrete work task on the laptop feeling difficult to begin. The Stickman hesitates in front of it; scattered reference material and an unfinished workspace make the task feel demanding without becoming cluttered. Do not create four panels for difficult, boring, unclear and unpleasant. One strong scene and one emotional reaction. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW STUDENT-LIKE STICKMAN in a library, wearing a simple rust-colored top and small backpack nearby. One difficult research/learning task sits on the table with a few books and papers; the character hesitates with closed posture. Low three-quarter camera through shelves, richer academic environment. Do not make four panels for difficult, boring, unclear and unpleasant. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 06
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Und genau in diesem Moment wird eine leichte Ablenkung plötzlich sehr attraktiv.
 PROMPT:
-Attach 01.png as master reference. Capture the decision moment: difficult task remains on one side of the desk while the smartphone lights up visually through brightness and positioning, drawing the Stickman's attention. The Stickman begins turning toward the easier option. Keep this as one real room, not a split screen. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER at a cafe table, wearing a simple olive jacket. An open work folder sits near a drink while a smartphone closer to camera catches the character's attention. Capture the exact turning moment from work toward phone. Close-medium side angle, cafe window and blurred Stickman patrons in background. Keep one real environment, not split screen. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 07
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Das Handy, ein Snack oder irgendeine Mini-Aufgabe fühlen sich sofort angenehmer an.
 PROMPT:
-Attach 01.png as master reference. Same Stickman now engaged with the smartphone as the single primary distraction, visibly more relaxed through posture. One small snack can appear as a secondary prop only. The difficult task stays quietly visible in the background. Avoid icons floating everywhere. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER in a small kitchen, wearing a simple burgundy top, relaxed while reaching for a snack from a counter. One closed notebook or work folder sits farther away and remains secondary. Camera from countertop height for a fresh composition. Do not repeat the cafe or desk setup. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 08
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Damit bekommst du kurzfristig Erleichterung. Genau das kann das Aufschieben verstärken.
 PROMPT:
-Attach 01.png as master reference. Show the immediate relief after avoiding the task: relaxed Stickman with smartphone in foreground while the untouched task remains behind him. Use a subtle warm light around the distraction and cooler neutral light around the task to communicate short-term relief without a reward meter or diagram. ONE dominant contrast. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER in a comfortable armchair, wearing a light gray sweater shape, relaxed with one simple distraction such as a smartphone or game controller. The untouched task is visible farther back on a small table. Use warm light around the distraction and neutral cooler light near the task. Medium-wide diagonal composition, no meter or diagram. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 09
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Du verschiebst also nicht nur die Aufgabe. Für einen Moment verschiebst du auch das unangenehme Gefühl.
 PROMPT:
-Attach 01.png as master reference. Same Stickman deliberately slides the difficult work material farther away on the desk and settles into the easier distraction. The physical act of pushing the task away mirrors temporary emotional avoidance. Concrete action only, no emotional gauge, no infographic. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER at a compact office desk, wearing a mustard-colored overshirt, physically sliding an unpleasant stack of work papers to the far edge while turning toward a tiny easy side task. Strong hand/action focus, higher camera angle looking across the desk. Concrete emotional avoidance through physical action, no infographic. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 10
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Das Problem ist nur: Die Aufgabe verschwindet nicht. Sie wandert einfach zu deinem späteren Ich.
 PROMPT:
-Attach 01.png as master reference. Evening version of the same room and same character. The identical unfinished work task is still waiting on the desk, now under a desk lamp with darker window light. The Stickman has returned and sees it again. Use time-of-day change to communicate the later self within one scene. No comic panels, no duplicate character timeline. ZERO READABLE TEXT. 16:9 landscape.
+LOCAL CONTINUITY WITH SCENE 01. Attach 01.png and intentionally reuse the exact Scene-01 character and home-office only for this connected callback. It is now evening: same unfinished laptop task waits under a desk lamp, darker window outside, character returning to face it. Change the camera to a wider doorway angle so even this continuity shot is visually fresh. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 11
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Und dort wartet sie oft mit zusätzlichem Zeitdruck. Dazu können Schuldgefühl, Stress oder Frust kommen.
 PROMPT:
-Attach 01.png as master reference. Later-night desk scene. Same unfinished task is central, with a nearby clock and tighter framing increasing pressure. Stickman posture is tense and frustrated, but face remains minimal. Use only one or two pressure cues and believable lighting. Do not add floating stress words or symbols. ZERO READABLE TEXT. 16:9 landscape.
+LOCAL CONTINUITY WITH SCENE 10. Reuse the exact same Scene-01 character for this final beat of that mini-story, now later at night and visibly tense through hunched posture. The unfinished task stays central with a clock as one secondary pressure cue. Tight side close-medium framing, stronger desk-lamp contrast. No floating emotion symbols or words. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 12
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Dadurch wirkt dieselbe Aufgabe beim nächsten Versuch noch unangenehmer.
 PROMPT:
-Attach 01.png as master reference. The same task is shown from a lower camera angle so it visually occupies more of the frame, while the Stickman hesitates before it. Keep proportions believable: the task should feel more intimidating through composition, not through fantasy monster imagery. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER in a study room, wearing a simple dark-red hoodie different from Scene 01, facing the same difficult notebook/laptop task of THIS mini-example. Use a low angle so the task occupies more visual space while the Stickman hesitates. Do not reuse the home-office. Keep proportions believable, no monster metaphor. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 13
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 So kann ein Kreislauf entstehen: Widerstand, Ablenkung, kurze Erleichterung und später noch mehr Druck.
 PROMPT:
-Attach 01.png as master reference. Create one restrained editorial cycle around the main Stickman using four simple visual moments connected by a subtle circular path: facing the task, turning to phone, relaxed distraction, returning under clock pressure. Keep the Stickman as central focus. No panels, no dashboard, no labels, no readable words. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. Create one restrained editorial cycle with four small action moments around a clear circular path: one Stickman facing a task, a second differently dressed Stickman turning to distraction, a third relaxing briefly, a fourth returning under clock pressure. All use identical stickman DNA but are visibly different people. Keep the circle and one central empty space clean; no panels, dashboard, labels or readable words. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 14
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Stell dir vor, du musst eine Präsentation anfangen. Du denkst sofort an zehn Folien, Quellen, Bilder und den perfekten Aufbau.
 PROMPT:
-Attach 01.png as master reference. New concrete example. Same Stickman at laptop about to begin a presentation. The laptop shows abstract blank slide shapes only. Around the desk are a few visually distinct research papers, image placeholders and planning notes that make the project feel large, but keep one composition and one focal character. No literal ten-slide grid and no readable text. ZERO READABLE TEXT. 16:9 landscape.
+NEW MINI-STORY. Attach 01.png as STYLE/ANATOMY reference only. Introduce a NEW PRESENTATION CHARACTER with a simple cream-colored top and dark green trousers in a modern learning/work room. The character sits at a laptop with abstract blank slide shapes; a few source sheets, image placeholders and planning cards make the project feel large without clutter. Three-quarter wide shot with a whiteboard shape in background containing no readable marks. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 15
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Das Ganze wirkt riesig. Also öffnest du lieber dein Handy.
 PROMPT:
-Attach 01.png as master reference. Same presentation workspace feels overwhelming through stacked materials and framing. The Stickman turns away from the laptop and reaches for the smartphone. Clear cause-and-action moment with the phone as tempting escape, not a split-screen comparison. ZERO READABLE TEXT. 16:9 landscape.
+LOCAL CONTINUITY WITH SCENE 14. Reuse the presentation character only. The workspace feels overwhelming through stacked materials while the character turns away and reaches for a smartphone. Shift to a closer camera from the opposite side of the desk. Clear cause-and-action moment, no split screen. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 16
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Ein kleinerer Start verändert die Situation.
 PROMPT:
-Attach 01.png as master reference. Visual reset at the same presentation desk: remove most distracting materials from immediate focus and place only one small first action in front of the Stickman. The character leans slightly toward the task. Bright, calmer composition with negative space. ONE dominant idea: reduce the entry barrier. ZERO READABLE TEXT. 16:9 landscape.
+LOCAL CONTINUITY WITH SCENE 14–15. Same presentation character, but visually reset the desk: most materials move out of immediate focus and only one tiny first action remains near the laptop. Character leans slightly forward. Brighter calmer lighting and overhead three-quarter camera. ONE dominant idea: reduce the entry barrier. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 17
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Öffne nur die Datei. Schreib nur die Überschrift. Such nur die erste Quelle. Arbeite nur zwei Minuten.
 PROMPT:
-Attach 01.png as master reference. Show one small start moment only: laptop is open to a simple blank document or slide with abstract lines, and the Stickman has begun the very first action. A single research sheet may sit nearby. Do NOT create four separate panels or illustrate every instruction separately. Keep the start tiny and concrete. ZERO READABLE TEXT. 16:9 landscape.
+LOCAL CONTINUITY WITH SCENE 14–16. Same presentation character performs one tiny first action only: laptop open to a simple blank presentation/document with abstract lines while one source sheet sits nearby. Do NOT create four panels or illustrate all instructions separately. Over-the-shoulder shot showing the small start. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 18
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Damit ist die ganze Aufgabe noch nicht erledigt. Aber du hast die erste Hürde kleiner gemacht.
 PROMPT:
-Attach 01.png as master reference. Show modest visible progress: only a small portion of the presentation is underway while much work remains in the background. The Stickman is now seated comfortably at the task. Use composition to show a lowered entry barrier, not completion. ZERO READABLE TEXT. 16:9 landscape.
+LOCAL CONTINUITY WITH SCENE 14–17. Final beat of the presentation mini-story. Same character has made modest progress while much work remains softly visible farther back. Character is now comfortably engaged. Camera shifts to a low side angle with laptop foreground and remaining materials behind. Show lowered entry barrier, not completion. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 19
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Oft wird eine Aufgabe nach dem Start konkreter. Du siehst besser, was wirklich als Nächstes zu tun ist.
 PROMPT:
-Attach 01.png as master reference. Same Stickman now working in a clearer, more organized desk setup. One obvious next action is visually ready, such as one source document beside the active laptop. The environment feels less chaotic because the task has become concrete. No roadmap labels or written checklist. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER at a library table, wearing a blue-green cardigan shape. The workspace is now organized after beginning: one open laptop and exactly one source document clearly positioned as the next step, other materials neat and secondary. High diagonal camera across the table, shelves in background. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 20
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Deshalb musst du nicht darauf warten, dass plötzlich perfekte Motivation auftaucht.
 PROMPT:
-Attach 01.png as master reference. Show the Stickman calmly working despite neutral, non-excited body language. No motivational fireworks, trophy imagery or exaggerated happiness. The ordinary act of already working is the whole point. Rich but quiet workspace, one clear focus. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER in a modern office or workshop desk area, wearing a simple charcoal top with light overshirt, calmly working despite neutral non-excited posture. No motivational fireworks, trophy imagery or exaggerated happiness. Wide profile composition with a colleague Stickman softly in background to enrich the world. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 21
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Wenn du merkst, dass du gerade ausweichst, frag dich nicht sofort: Wie schaffe ich alles?
 PROMPT:
-Attach 01.png as master reference. Catch the Stickman midway toward the smartphone, then pausing and looking back at the large overall task. Make the giant total workload visually secondary and deliberately not tackled all at once. No question mark text, no readable words, no split screen. ZERO READABLE TEXT. 16:9 landscape.
+NEW MINI-STORY. Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER at a small bedroom/study desk, wearing a simple orange-brown sweatshirt. One hand is almost reaching toward a smartphone, but the character pauses and looks back toward a visibly large task stack. Side camera captures the pause between avoidance and decision. No question marks, no readable words. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 22
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Frag dich: Was ist der kleinste sinnvolle Schritt, den ich jetzt machen kann?
 PROMPT:
-Attach 01.png as master reference. Show one tiny, clearly actionable next step placed directly in front of the Stickman: laptop open with a single simple starting element ready. Everything else is pushed back and visually softened. Strong close-medium composition centered on the small next action. ZERO READABLE TEXT. 16:9 landscape.
+LOCAL CONTINUITY WITH SCENE 21. Reuse only that character and room. The phone is now placed aside; directly in front of the character is exactly one tiny actionable next step at the laptop or notebook, while the rest of the workload is pushed back and softly defocused. Strong close-medium composition centered on the small action. ZERO READABLE TEXT. 16:9 landscape.
 
 SCENE 23
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Denn Aufschieben lässt sich oft leichter unterbrechen, wenn der Einstieg klein genug ist, dass du tatsächlich anfängst.
 PROMPT:
-Attach 01.png as master reference. Closing callback. Same Stickman has taken the small first step and is now visibly moving forward with the presentation task. Keep the progress believable and unfinished, but the character is engaged instead of avoiding. Clean hopeful room lighting, strong final composition, simple task progression, no victory trophy. ZERO READABLE TEXT. 16:9 landscape.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CLOSING CHARACTER in a different bright study/work environment, wearing a simple blue jacket shape, actually beginning one small concrete task. The character leans into the work and visible progress has just started; the rest remains realistic and unfinished. Slightly wider cinematic final composition with morning light and clear depth. No trophy, no victory pose, no reuse of the Scene-01 room. ZERO READABLE TEXT. 16:9 landscape.
 
 FINAL EXECUTION RULE
 Stop only after Scene 01 for user approval. After Scene 01 is approved, continue automatically through Batch 1 to Batch 5 until all remaining images are complete. After each batch, perform internal QA, regenerate only failed images, and continue immediately when the batch passes. Do not ask for approval after normal batches.
 
 FINAL DNA RULE
-Simple Stickmen. Rich World. One clear idea per image. Prefer concrete actions in believable environments over generic infographics. If an image becomes crowded, abstract, repetitive or visually unclear, simplify and regenerate it.
+Simple Stickmen. Rich World. One clear idea per image. Preserve the same Stickman DNA and rendering quality, NOT the same character. Choose cast, location, action and camera specifically for each beat. Prefer concrete actions in believable environments over generic infographics. If images become repetitive in character, clothing, room, pose or framing without a narrative reason, regenerate them with more appropriate variation.
 
 FINAL TEXT RULE
 Every Google Flow source image must contain ZERO READABLE TEXT. German labels belong to Remotion overlays only.
