@@ -2,227 +2,151 @@
 
 **STATUS: LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3 — STRICT STICKMAN ONLY**
 
-Diese Bildwelt ist die verbindliche visuelle Basis des Kanals. Sie gilt für Reels und YouTube. Das Seitenverhältnis gehört nicht zur Stil-DNA und wird separat durch `rules/FORMAT_LOCK.md` festgelegt.
+Diese Bildwelt ist die verbindliche visuelle Basis für Reels und YouTube. Das Seitenverhältnis wird separat durch `rules/FORMAT_LOCK.md` festgelegt.
 
 Zusätzlich verbindlich:
+- `rules/STICKMAN_DNA.md`
 - `rules/IMAGE_REFERENCE_LOCK.md`
-- `rules/FORMAT_LOCK.md`
+- `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 
 ## Ziel
 
-Eine hochwertige 2D-Erklärwelt, in der **jede menschliche oder menschenähnliche Figur eindeutig ein echter Stickman** ist, während Umgebungen, Gegenstände, Architektur und Licht deutlich detailreicher sein dürfen.
+Eine hochwertige 2D-Erklärwelt mit sehr einfachen echten Stickmen in deutlich reichhaltigeren, glaubwürdigen Umgebungen.
 
 Leitprinzip:
 
-**Simple stickmen. Rich world. Style stays. World changes.**
+**Simple stickmen. Rich world. One clear idea. Concrete scene first.**
 
 ## 1. STRICT STICKMAN DNA — HARD LOCK
 
-Jede sichtbare Person muss dieselbe Grundanatomie besitzen:
-- einfacher runder oder ovaler Kopf
-- Kopf als klare flache 2D-Form, keine realistische Schädel-/Gesichtsmodellierung
+Jede sichtbare Person besitzt dieselbe Grundanatomie:
+- einfacher runder oder ovaler flacher Kopf
 - minimale Punkt-/Strichaugen
 - einfacher kleiner Mund
-- Augenbrauen nur reduziert, wenn nötig
-- **keine realistische Nase**
-- **keine realistischen Ohren**
+- keine realistische Nase
+- keine realistischen Ohren
 - kein ausgeformter Hals
 - kleiner stark vereinfachter Torso
-- **sehr dünne lineare Arme und Beine** mit nahezu gleichbleibender Strich-/Stabdicke
-- keine fleischigen Ober-/Unterarme oder Oberschenkel
-- Hände nur als einfache Punkte, kleine Kreise, Mitten oder Nubs
-- **keine Fingeranatomie**
-- Füße/Schuhe stark vereinfacht, z. B. kleine flache Capsule-/Shoe-Formen
+- sehr dünne lineare Arme und Beine mit nahezu gleichbleibender Dicke
+- keine fleischigen menschlichen Gliedmaßen
+- Hände nur als Punkte, kleine Kreise, Mitten oder Nubs
+- keine Fingeranatomie
+- Füße/Schuhe stark vereinfacht
 
-Kleidung ist erlaubt, aber sie liegt **auf der Stickman-DNA**:
-- Hoodie, Jacke, Hemd, Uniform, historische Kleidung, Tasche, Brille, Kopfbedeckung usw. sind erlaubt
-- Kleidung darf den Torso etwas formen
-- Kleidung darf Arme/Beine aber niemals in normale menschliche Cartoon-Gliedmaßen verwandeln
-- keine Schulter-/Muskel-/Körpermodellierung wie bei normalen Cartoon-Menschen
+Kleidung darf Rolle, Beruf und Epoche zeigen, aber nie normale menschliche Anatomie erzeugen.
 
-## 2. ALLE MENSCHEN — AUSNAHMSLOS
+STRICT STICKMAN ONLY gilt ausnahmslos für Hauptfiguren, Nebenfiguren, Passanten, Menschenmengen, Forscher, historische Figuren, Personen in Fahrzeugen, Mini-Hintergrundfiguren sowie Personen auf Screens, Fotos, Postern, Werbung, Spiegelungen und Erinnerungsbildern.
 
-STRICT STICKMAN ONLY gilt für:
-- Hauptfigur
-- Nebenfiguren
-- Passanten
-- Menschenmengen
-- Forscher und Versuchspersonen
-- historische Personen
-- entfernte Mini-Figuren
-- Personen in Fahrzeugen
-- Personen hinter Fenstern
-- Menschen auf Monitoren/Smartphones/TVs
-- Personen auf Fotos, Postern, Werbung und Plakaten
-- Spiegelungen
-- Illustrationen oder Erinnerungsbilder innerhalb einer Szene
+**STYLE FAIL:** normale Cartoon-Menschen, semi-realistische Menschen, realistische Menschen, Mischstile, 3D/Pixar/CGI, Anime/Manga/Chibi.
 
-**Es darf im gesamten Bild keine einzige normale Cartoon-, semi-realistische oder realistische Person auftauchen.**
-
-Wenn eine einzige sichtbare Person nicht klar dieselbe Stickman-DNA verwendet:
-**STYLE FAIL → Bild verwerfen und neu generieren.**
-
-## 3. Was NICHT als Stickman akzeptiert wird
-
-HARD FAIL:
-- großer Cartoon-Kopf auf normalem menschlichem Körper
-- dicke menschliche Arme/Beine
-- ausgeformte Schultern
-- realistische Hände/Finger
-- normale Cartoon-Gesichter
-- sichtbare Nase/Ohren mit realistischer Form
-- halb Stickman / halb Mensch
-- Hauptfigur als Stickman, Hintergrund als normale Menschen
-- 3D-/Pixar-/CGI-Figur
-- Anime/Manga/Chibi
-- photorealistische oder semi-realistische Person
-
-## 4. Umgebung und Realitätsgrad
+## 2. Umgebung und Realitätsgrad
 
 Die Welt darf und soll deutlich detailreicher sein als die Figuren.
 
 Erlaubt und erwünscht:
-- glaubwürdige Räume
-- detaillierte Busse, Bahnen, Straßen, Büros, Wohnungen, Schulen, Labore
+- glaubwürdige Räume, Straßen, Busse, Bahnen, Büros, Wohnungen, Schulen und Labore
 - passende Möbel und Technik
 - reale räumliche Logik
-- nachvollziehbare Materialien
-- gute Perspektive
+- klare Perspektive
 - weiches glaubwürdiges Licht
 - natürliche Objektfarben
 - dezentes 2D-/Cel-Shading
+- saubere dunkle organische Outlines
 
-Wichtig:
-**Detailreichtum gehört in die Welt, nicht in die menschliche Anatomie.**
+Nicht erwünscht:
+- Photorealismus
+- glossy 3D-Render-Look
+- leerer Whiteboard-Look als Standard
+- permanenter Beige-/Sepia-/Pastellfilter
 
-## 5. Drei Darstellungsmodi
+**Detail gehört in die Welt, nicht in die menschliche Anatomie.**
 
-### A — Concept / Abstract
-Für Mechanismen, Entscheidungen, Vergleiche und Metaphern.
-- reduzierte Umgebung
-- klare visuelle Hierarchie
-- wenige relevante Symbole
-- wenn Menschen sichtbar sind: STRICT STICKMAN ONLY
+## 3. Konkrete Szene vor generischer Infografik
 
-### B — Everyday Editorial
-Standard für Alltagsszenen.
-- glaubwürdige Räume, Verkehrsmittel, Straßen und Geräte
-- mittlerer bis hoher Umgebungsdetailgrad
-- natürliche Perspektive und Licht
-- alle Personen STRICT STICKMAN ONLY
+Für jeden Beat zuerst prüfen:
+Kann eine konkrete Stickman-Handlung in einer glaubwürdigen Umgebung die Aussage sofort erklären?
 
-### C — Grounded Scene / Historical
-Für historische oder stark ortsgebundene Szenen.
-- Architektur, Kleidung, Werkzeuge, Fahrzeuge und Umgebung dürfen detailliert sein
-- historische Kleidung wird auf Stickman-Figuren angewendet
-- niemals normale historische Cartoon-Menschen
+Priorität:
+1. konkrete Handlung / Alltagsszene
+2. einfache visuelle Metapher
+3. Diagramm, Skala, Karte oder Pfad nur wenn wirklich klarer
 
-## 6. Farbe
+Keine langen Serien aus denselben Karten, Metern, Waagen, Pfaden oder Dashboard-Kompositionen.
 
-- natürliche, erkennbare Objektfarben
-- mittlere bis kräftige kontrollierte Sättigung
-- Fokusobjekte dürfen stärker gesättigt sein
-- kein permanenter Beige-/Sepia-/Pastellfilter
-- keine chaotische Neon-/Regenbogenpalette
+## 4. Bildklarheit
 
-## 7. Linien und Shading
+- genau ein primärer visueller Gedanke pro Bild
+- ein klares Hauptmotiv
+- höchstens 1–2 unterstützende Hinweise
+- keine unnötigen Multi-Panel-Kompositionen
+- keine späteren Informationen vorwegnehmen
+- Komposition, Kamera, Pose, Ort, Requisiten und Licht pro Beat bewusst wählen
 
-- saubere dunkle, leicht organische Outlines
-- Stickman-Gliedmaßen klar dünner als Umgebungsobjekte
-- überwiegend flächige 2D-Farben
-- dezentes Cel-/Illustrations-Shading
-- subtile Textur erlaubt
-- keine fotorealistischen Oberflächen
-- kein glossy 3D-Render-Look
+## 5. Google-Flow-Quellbilder — ZERO READABLE TEXT
 
-## 8. Sichtbarer Text — DEUTSCH + MINIMAL — HARD LOCK
-
-Der Kanal ist deutschsprachig. Die technische Sprache eines Prompts ist davon vollständig getrennt.
+Google-Flow-Quellbilder werden standardmäßig vollständig textfrei erzeugt.
 
 Verbindlich:
-- Prompts dürfen auf Englisch geschrieben sein
-- **sichtbarer Text im finalen Bild ist niemals Englisch**
-- wenn Text nicht inhaltlich nötig ist: **kein sichtbarer Text**
-- wenn Text nötig ist: **ausschließlich Deutsch**
-- möglichst nur **ein kurzes Label oder eine kurze Phrase** pro Bild
-- Richtwert: **1–4 sichtbare Wörter**
-- keine ganzen Absätze, Erklärtafeln oder textlastigen Karten, wenn dieselbe Aussage visuell darstellbar ist
-- keine unnötigen Bildschirmtexte, Untertitel, Menüs, Buttons, Postertexte oder englischen UI-Fragmente
-- keine englischen Begriffe aus dem Prompt als Bildtext übernehmen
-- bei psychologischen Fachbegriffen bevorzugt kurze deutsche Bezeichnung im Bild; englischer Fachbegriff gehört eher in Voice-over/Skript, nicht automatisch ins Bild
+- keine lesbaren Wörter oder Buchstaben
+- keine Labels
+- keine UI-Texte
+- keine Untertitel
+- keine Poster-/Werbetexte
+- keine Bildschirmtexte
+- keine zufälligen englischen Promptwörter
+- Dokumente und Screens nur mit abstrakten Linien, Formen und Icons
 
-Bevorzugte Reihenfolge:
-1. visuell ohne Text erklären
-2. falls nötig: ein kurzes deutsches Label
-3. längerer Text nur bei zwingendem inhaltlichem Grund
+Deutsche Begriffe werden standardmäßig später in Remotion über `sceneLabels` gerendert.
 
-HARD FAIL:
-- sichtbarer englischer Text
-- mehrere konkurrierende Textblöcke
-- Bild funktioniert nur, weil viel Text gelesen werden muss
-- lange Sätze, obwohl Symbolik/Handlung die Aussage tragen könnte
+Nur wenn Text physisch zwingend Bestandteil einer Szene sein muss und nicht sinnvoll als Overlay gesetzt werden kann, darf eine explizite Ausnahme den exakten kurzen deutschen Wortlaut freigeben.
 
-## 9. Kontinuität
+## 6. Kontinuität
 
 Wiederkehrende Hauptfigur konstant halten:
 - Kopfgröße und Kopfform
 - Augen-/Mundstil
 - Torsoform
-- Armlänge/-dicke
-- Beinlänge/-dicke
+- Arm-/Beindicke
 - Hände-/Fußvereinfachung
 - Kleidung und Farben
 - Accessoires
 
-Die Master-Referenz sperrt diese Eigenschaften.
+Die Master-Referenz sperrt diese Eigenschaften. Sie sperrt nicht Kamera, Pose, Ort, Licht oder Komposition.
 
-## 10. Komposition und Format
+## 7. Drei Darstellungsmodi
 
-### Reels unter `reels/`
+### A — Everyday Editorial
+Standard für Alltagsszenen. Konkrete Handlung in glaubwürdiger Umgebung.
+
+### B — Concept / Abstract
+Für Mechanismen, die sich nicht sauber als Alltagshandlung darstellen lassen. Wenige Symbole, klare Hierarchie.
+
+### C — Grounded / Historical
+Für historische oder stark ortsgebundene Szenen. Umgebung und Kleidung dürfen detailliert sein; Menschen bleiben echte Stickmen.
+
+## 8. Format
+
+### Reels
 - 9:16 / 1080×1920 / 30 fps
-- vertikale Komposition
 
-### YouTube unter `youtube/`
+### YouTube
 - 16:9 / 1920×1080 / 30 fps
-- horizontale Komposition
 
-Für beide:
-- klare Hauptaussage pro Visual Beat
-- Umgebung erzählt mit
-- genug Raum für leichte Zooms/Pans
-- visuelle Erklärung vor Text
+Das Bild wird direkt im Zielformat komponiert.
 
-## 11. Master-Prompt-DNA
+## 9. Master-Prompt-DNA
 
-Verbindliche Basis:
+`strict universal editorial 2D stickman explainer world, EVERY visible human or human-like figure uses the exact same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet; no conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi; rich believable 2D environment, clean dark organic outlines, natural colors, controlled saturation, believable perspective and lighting, subtle cel shading; ONE clear visual idea; prefer a concrete stickman action in a believable setting over a generic infographic; SOURCE IMAGE TEXT POLICY: zero readable text, zero letters, zero labels, zero UI words and zero captions; German labels are normally added later in Remotion`
 
-`strict universal editorial 2D stickman explainer world, EVERY visible human or human-like figure uses the exact same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose, no realistic ears, no realistic neck, small simplified torso, very thin line-like arms and legs with near-constant thickness, simple nub/mitten hands with no fingers, simplified feet, clothing may identify role but must never create normal human anatomy; ABSOLUTELY NO conventional cartoon humans, no semi-realistic humans, no mixed human styles; environments may be rich, grounded and detailed, clean dark organic outlines, natural object colors, moderate-to-vivid controlled saturation, believable perspective and lighting, simplified 2D materials, subtle cel shading, educational editorial visual storytelling; prefer visual storytelling over text; if visible text is necessary it must be short and German only, never English`
-
-Danach genau einen Formatsuffix anhängen:
-
-### REEL FORMAT SUFFIX
-`vertical portrait 9:16 composition, 1080x1920, composition designed natively for a tall mobile frame`
-
-### YOUTUBE FORMAT SUFFIX
-`horizontal landscape 16:9 composition, 1920x1080, composition designed natively for a wide video frame`
-
-## 12. Szenen-Pflichtsatz
-
-Für **jede** Bildgenerierung gilt zusätzlich, auch wenn der einzelne Szenenprompt es nicht wiederholt:
-
-`STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in the foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same true stickman anatomy as the approved master. Do not generate normal cartoon humans. If any person looks human-like rather than stickman, regenerate the image. TEXT CHECK: prefer no readable text; if text is necessary, keep it short and German only. Never render English text from the prompt.`
-
-## 13. Master-Referenzbild — HARD LOCK
-
-Textprompts allein reichen nicht aus.
+## 10. Referenzregel
 
 1. Bild 01 allein generieren.
-2. Bild 01 muss die STRICT-STICKMAN-DNA klar zeigen.
-3. Bild 01 visuell freigeben.
-4. Ab Bild 02 Bild 01 bei jeder Generierung als Referenz anhängen.
-5. Master sperrt Anatomie, Linien, Farben, Shading und Gesamtästhetik.
-6. Kamera, Pose, Ort, Licht und Komposition dürfen sich je Szene ändern.
-7. Ein späteres Bild ersetzt den Master nicht automatisch.
+2. Bild 01 visuell freigeben.
+3. Ab Bild 02 Bild 01 bei jeder Generierung als Referenz anhängen.
+4. Master sperrt Anatomie, Linien, Farben, Shading und Gesamtästhetik.
+5. Kamera, Pose, Ort, Licht und Komposition bleiben frei.
 
-Priorität bei Konflikten:
-**FORMAT_LOCK + STRICT STICKMAN ONLY + Deutsch/Minimal-Text-Regel + freigegebene Master-Referenz > generische Stilwörter oder Textwünsche im Szenenprompt.**
+## 11. Priorität
+
+Bei Konflikt gilt:
+**FORMAT_LOCK + STICKMAN_DNA + Master-Referenz + ZERO-READABLE-TEXT-Flow-Regel > generische Stilwörter oder Szenenformulierungen.**
