@@ -1,0 +1,215 @@
+{
+  "project": "youtube-aufschieben-test-01",
+  "format": "youtube",
+  "aspectRatio": "16:9",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "audio": "youtube/23.09.2026-aufschieben-test/04-audio/final-voice.mp3",
+  "imageBasePath": "youtube/23.09.2026-aufschieben-test/03-bilder",
+  "imageExtension": "png",
+  "imageDigits": 2,
+  "endHoldMs": 1000,
+  "styleLock": "UNIVERSAL EDITORIAL STICKMAN WORLD v1.3 — STRICT STICKMAN ONLY",
+  "masterReference": "01.png",
+  "batchSize": 5,
+  "requireMasterApproval": true,
+  "requireBatchApproval": false,
+  "autoContinueAfterBatchPass": true,
+  "visibleTextLanguage": "de",
+  "flowSourceImageTextPolicy": "NONE",
+  "preferNoVisibleText": true,
+  "renderGermanLabelsInRemotion": true,
+  "forbidEnglishVisibleText": true,
+  "sceneLabels": [
+    {"scene": 4, "text": "GEFÜHLSPROBLEM", "position": "top-left"},
+    {"scene": 8, "text": "KURZE ERLEICHTERUNG", "position": "top-left"},
+    {"scene": 13, "text": "KREISLAUF", "position": "top-left"},
+    {"scene": 17, "text": "KLEINER START", "position": "top-left"}
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "startPhrase": "Du weißt genau, was du tun",
+      "endWord": "andere",
+      "speechSection": "Du weißt genau, was du tun musst, und machst trotzdem alles andere.",
+      "visualTask": "Zeige den wiederkehrenden Stickman am Schreibtisch vor einer wichtigen Aufgabe, während er sich einer unwichtigen Nebenhandlung zuwendet. Konkrete Alltagsszene, ein klarer Fokus, kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 2,
+      "startPhrase": "Du beantwortest noch schnell eine Nachricht",
+      "endWord": "Handy",
+      "speechSection": "Du beantwortest noch schnell eine Nachricht, räumst irgendetwas auf oder scrollst nur kurz durchs Handy.",
+      "visualTask": "Zeige denselben Stickman mit Smartphone als dominante Ablenkung; kleine Aufräumrequisite nur unterstützend, wichtige Aufgabe sichtbar aber sekundär. Kein Collage-Aufbau, kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 3,
+      "startPhrase": "Das eigentliche Wichtige bleibt liegen",
+      "endWord": "anderes",
+      "speechSection": "Das eigentliche Wichtige bleibt liegen. Das wirkt schnell wie Faulheit, ist aber oft etwas anderes.",
+      "visualTask": "Zeige die wichtige unerledigte Aufgabe deutlich im Vordergrund und den Stickman aktiv beschäftigt statt faul oder schlafend. Visuell klar: beschäftigt, aber am Falschen. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 4,
+      "startPhrase": "Aufschieben ist häufig kein reines Zeitproblem",
+      "endWord": "zusammen",
+      "speechSection": "Aufschieben ist häufig kein reines Zeitproblem, sondern hängt auch mit Gefühlen zusammen.",
+      "visualTask": "Zeige den Stickman vor der Aufgabe mit sichtbarem innerem Widerstand über Körperhaltung; Uhr nur als kleines Nebenelement. Gefühl statt Zeitmangel als Hauptidee. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 5,
+      "startPhrase": "Wenn eine Aufgabe schwer, langweilig, unklar",
+      "endWord": "Widerstand",
+      "speechSection": "Wenn eine Aufgabe schwer, langweilig, unklar oder unangenehm wirkt, entsteht Widerstand.",
+      "visualTask": "Zeige eine einzige konkrete Arbeitsaufgabe, die für den Stickman unangenehm und schwer anzufangen wirkt. Keine vier getrennten Symbole oder Panels. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 6,
+      "startPhrase": "Und genau in diesem Moment wird",
+      "endWord": "attraktiv",
+      "speechSection": "Und genau in diesem Moment wird eine leichte Ablenkung plötzlich sehr attraktiv.",
+      "visualTask": "Zeige den Entscheidungsaugenblick: Stickman wendet sich vom schwierigen Arbeitsplatz zu einer deutlich leichter wirkenden Smartphone-Ablenkung. Ein Fokus, kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 7,
+      "startPhrase": "Das Handy, ein Snack oder irgendeine",
+      "endWord": "an",
+      "speechSection": "Das Handy, ein Snack oder irgendeine Mini-Aufgabe fühlen sich sofort angenehmer an.",
+      "visualTask": "Zeige eine primäre leichte Ablenkung, idealerweise Smartphone, und höchstens einen kleinen Snack als Unterstützung. Entspannte Haltung signalisiert sofortige Erleichterung. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 8,
+      "startPhrase": "Damit bekommst du kurzfristig Erleichterung",
+      "endWord": "verstärken",
+      "speechSection": "Damit bekommst du kurzfristig Erleichterung. Genau das kann das Aufschieben verstärken.",
+      "visualTask": "Zeige die kurzfristige Erleichterung direkt nach dem Ausweichen und dass die unangenehme Aufgabe im Hintergrund unangetastet bleibt. Konkrete Szene statt Diagramm. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 9,
+      "startPhrase": "Du verschiebst also nicht nur die",
+      "endWord": "Gefühl",
+      "speechSection": "Du verschiebst also nicht nur die Aufgabe. Für einen Moment verschiebst du auch das unangenehme Gefühl.",
+      "visualTask": "Zeige den Stickman entspannt bei der Ablenkung, während die unangenehme Aufgabe räumlich weggeschoben ist. Eine konkrete Handlung, keine Infografik. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 10,
+      "startPhrase": "Das Problem ist nur: Die Aufgabe",
+      "endWord": "Ich",
+      "speechSection": "Das Problem ist nur: Die Aufgabe verschwindet nicht. Sie wandert einfach zu deinem späteren Ich.",
+      "visualTask": "Zeige denselben Stickman später am Abend wieder vor exakt derselben unerledigten Aufgabe. Tageszeitwechsel vermittelt das spätere Ich. Kein Comic-Panel, kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 11,
+      "startPhrase": "Und dort wartet sie oft mit",
+      "endWord": "kommen",
+      "speechSection": "Und dort wartet sie oft mit zusätzlichem Zeitdruck. Dazu können Schuldgefühl, Stress oder Frust kommen.",
+      "visualTask": "Zeige späteren Zeitdruck mit Uhr und engerer Arbeitsatmosphäre; Stickman angespannt, Aufgabe weiterhin zentral. Nur ein bis zwei unterstützende Drucksignale. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 12,
+      "startPhrase": "Dadurch wirkt dieselbe Aufgabe beim nächsten",
+      "endWord": "unangenehmer",
+      "speechSection": "Dadurch wirkt dieselbe Aufgabe beim nächsten Versuch noch unangenehmer.",
+      "visualTask": "Zeige dieselbe Aufgabe beim nächsten Versuch subjektiv einschüchternder: größer im Bild, Stickman zögert davor. Keine Monster-Übertreibung, kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 13,
+      "startPhrase": "So kann ein Kreislauf entstehen: Widerstand",
+      "endWord": "Druck",
+      "speechSection": "So kann ein Kreislauf entstehen: Widerstand, Ablenkung, kurze Erleichterung und später noch mehr Druck.",
+      "visualTask": "Zeige einen sehr einfachen Kreislauf um den Stickman mit nur vier klaren visuellen Stationen, ohne Wörter. Kein Dashboard, keine dichte Infografik.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 14,
+      "startPhrase": "Stell dir vor, du musst eine",
+      "endWord": "Aufbau",
+      "speechSection": "Stell dir vor, du musst eine Präsentation anfangen. Du denkst sofort an zehn Folien, Quellen, Bilder und den perfekten Aufbau.",
+      "visualTask": "Zeige einen Stickman vor einem Laptop mit noch leerer Präsentation; mehrere kleine Arbeitsanforderungen türmen sich als Requisiten auf. Keine lesbaren Folientexte, kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 15,
+      "startPhrase": "Das Ganze wirkt riesig. Also öffnest",
+      "endWord": "Handy",
+      "speechSection": "Das Ganze wirkt riesig. Also öffnest du lieber dein Handy.",
+      "visualTask": "Zeige den überforderten Stickman, der sich vom großen Arbeitsstapel abwendet und stattdessen das Smartphone öffnet. Konkreter Moment, kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 16,
+      "startPhrase": "Ein kleinerer Start verändert die Situation",
+      "endWord": "Situation",
+      "speechSection": "Ein kleinerer Start verändert die Situation.",
+      "visualTask": "Zeige visuellen Reset: derselbe Arbeitsplatz, aber nur ein kleiner erster Schritt liegt vor dem Stickman; restliche Komplexität tritt in den Hintergrund. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 17,
+      "startPhrase": "Öffne nur die Datei. Schreib nur",
+      "endWord": "Minuten",
+      "speechSection": "Öffne nur die Datei. Schreib nur die Überschrift. Such nur die erste Quelle. Arbeite nur zwei Minuten.",
+      "visualTask": "Zeige einen einzigen kleinen Startmoment am Laptop: Datei geöffnet und erste Aktion begonnen. Die vier Beispiele nicht als vier Panels darstellen. Kein lesbarer Bildschirmtext.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 18,
+      "startPhrase": "Damit ist die ganze Aufgabe noch",
+      "endWord": "gemacht",
+      "speechSection": "Damit ist die ganze Aufgabe noch nicht erledigt. Aber du hast die erste Hürde kleiner gemacht.",
+      "visualTask": "Zeige nur kleinen sichtbaren Fortschritt, während der Großteil der Aufgabe noch vorhanden ist; Einstieg wirkt deutlich niedriger und machbarer. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 19,
+      "startPhrase": "Oft wird eine Aufgabe nach dem",
+      "endWord": "ist",
+      "speechSection": "Oft wird eine Aufgabe nach dem Start konkreter. Du siehst besser, was wirklich als Nächstes zu tun ist.",
+      "visualTask": "Zeige den Stickman nach dem Start mit klarerem Arbeitsplatz und einem eindeutigen nächsten Arbeitsschritt vor sich. Konkrete Szene, kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 20,
+      "startPhrase": "Deshalb musst du nicht darauf warten",
+      "endWord": "auftaucht",
+      "speechSection": "Deshalb musst du nicht darauf warten, dass plötzlich perfekte Motivation auftaucht.",
+      "visualTask": "Zeige den Stickman bereits arbeitend, obwohl seine Körpersprache ruhig und nicht euphorisch ist. Start ohne Motivations-Feuerwerk. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 21,
+      "startPhrase": "Wenn du merkst, dass du gerade",
+      "endWord": "alles",
+      "speechSection": "Wenn du merkst, dass du gerade ausweichst, frag dich nicht sofort: Wie schaffe ich alles?",
+      "visualTask": "Zeige den Stickman im Moment der Ablenkung, der innehält und den riesigen Gesamtstapel bewusst nicht auf einmal angeht. Kein Frage-Text im Bild.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 22,
+      "startPhrase": "Frag dich: Was ist der kleinste",
+      "endWord": "kann",
+      "speechSection": "Frag dich: Was ist der kleinste sinnvolle Schritt, den ich jetzt machen kann?",
+      "visualTask": "Zeige einen einzigen kleinen, konkret ausführbaren Schritt direkt vor dem Stickman, zum Beispiel Laptop öffnen oder erste Datei auswählen. Kein Text.",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 23,
+      "startPhrase": "Denn Aufschieben lässt sich oft leichter",
+      "endWord": "anfängst",
+      "speechSection": "Denn Aufschieben lässt sich oft leichter unterbrechen, wenn der Einstieg klein genug ist, dass du tatsächlich anfängst.",
+      "visualTask": "Abschlussbild: Stickman beginnt mit einem kleinen Schritt und kommt sichtbar in Bewegung; Aufgabe wirkt machbar, klare positive Schlusskomposition. Kein Text.",
+      "textPolicy": "NONE"
+    }
+  ]
+}
