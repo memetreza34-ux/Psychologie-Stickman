@@ -55,7 +55,7 @@ SCENE 01 COVER — HARD LOCK
 - `03-bilder/01.png` is ALWAYS Scene 01 + COVER/THUMBNAIL BASE + STYLE/ANATOMY MASTER.
 - Scene 01 must accurately visualize the first spoken beat AND work as a strong YouTube cover.
 - Use a clear large focal character, instantly readable body language, strong silhouette, simple visual hierarchy and minimal clutter.
-- Preserve quiet negative space where optional German cover text can be added later.
+- Preserve quiet upper-left/left negative space for the REQUIRED German Remotion cover headline `ALLE SCHAUEN DICH AN?`.
 - Do NOT render cover text in Flow. Scene 01 remains ZERO READABLE TEXT.
 - Do not create a separate required cover image. Scene 01 is the cover.
 
@@ -81,7 +81,19 @@ Generated source images must contain ZERO readable text.
 - no letters, words, labels, subtitles, UI words, poster text, document text or logos
 - screens and papers use abstract lines, blocks, icons and shapes only
 - do not copy the German speech context into the image
-German labels for the final video are added later in Remotion.
+German cover/keyword labels for the final video are added later in Remotion.
+
+FINAL REMOTION TEXT PLAN — DO NOT RENDER THESE WORDS IN FLOW
+Flow only prepares clean negative space for these selected scenes:
+- Scene 01: COVER — `ALLE SCHAUEN DICH AN?`
+- Scene 04: KEYWORD — `SPOTLIGHT-EFFEKT`
+- Scene 09: KEYWORD — `ÜBERSCHÄTZT`
+- Scene 15: KEYWORD — `EIGENER FILM`
+- Scene 18: KEYWORD — `ICH-FOKUS`
+- Scene 23: KEYWORD — `WENIGER ALS DU DENKST`
+- Scene 29: KEYWORD — `WENIGER BEMERKT`
+- Scene 35: KEYWORD — `IM EIGENEN KOPF`
+All other scenes remain without text overlays. These labels are rendered later in Remotion, never by Flow.
 
 GLOBAL SCENE CLAUSE
 STRICT STICKMAN-ONLY CHECK: Every visible person in foreground, background, screens, photos, reflections or memories must use the approved true-stickman anatomy and editorial 2D style. Different people are welcome. If any figure becomes a normal cartoon or semi-realistic human, regenerate.
@@ -115,7 +127,7 @@ SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Du läufst in einen Raum und plötzlich fühlt es sich an, als würden alle dich anschauen.
 PROMPT:
-COVER + MASTER STYLE FRAME. Create a strong YouTube-cover-quality first scene that still matches the spoken beat exactly. A true Stickman enters a modern community room through a doorway and hesitates, visibly self-conscious, as if suddenly feeling watched. Make this entering Stickman the clear large focal subject in the foreground/right-center with a strong readable silhouette and expressive hesitant posture. Three or four background Stickmen are already inside doing ordinary things; most are occupied with their own activities and should NOT all stare directly. Use the doorway and room perspective to make the main character feel exposed without falsely showing universal attention. Rich believable room, furniture, plants, windows, natural daylight, clean dark outlines, subtle 2D cel shading. Keep visual hierarchy simple and thumbnail-readable. Leave calm negative space in the upper-left/left area for optional German cover text to be added later outside Flow. Full enough body view to establish exact true-stickman anatomy. ZERO READABLE TEXT. Generate Scene 01 only, then STOP.
+COVER + MASTER STYLE FRAME. Create a strong YouTube-cover-quality first scene that still matches the spoken beat exactly. A true Stickman enters a modern community room through a doorway and hesitates, visibly self-conscious, as if suddenly feeling watched. Make this entering Stickman the clear large focal subject in the foreground/right-center with a strong readable silhouette and expressive hesitant posture. Three or four background Stickmen are already inside doing ordinary things; most are occupied with their own activities and should NOT all stare directly. Use the doorway and room perspective to make the main character feel exposed without falsely showing universal attention. Rich believable room, furniture, plants, windows, natural daylight, clean dark outlines, subtle 2D cel shading. Keep visual hierarchy simple and thumbnail-readable. Leave calm uncluttered negative space in the upper-left/left area specifically for the REQUIRED later German Remotion cover headline ALLE SCHAUEN DICH AN?. Do not render the headline in Flow. Full enough body view to establish exact true-stickman anatomy. ZERO READABLE TEXT. Generate Scene 01 only, then STOP.
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -133,7 +145,7 @@ SCENE 04
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Psychologen nennen dieses Muster den Spotlight-Effekt.
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. One Stickman stands in a modern neutral interior under a soft symbolic cone of light while the rest of the room remains normally lit. Keep this elegant and editorial, not theatrical. Leave clean upper-left negative space for the later German Remotion label SPOTLIGHT-EFFEKT. Medium frontal shot. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. One Stickman stands in a modern neutral interior under a soft symbolic cone of light while the rest of the room remains normally lit. Keep this elegant and editorial, not theatrical. Leave clean uncluttered upper-left negative space for the later German Remotion keyword SPOTLIGHT-EFFEKT. Medium frontal shot. Do not render the word in Flow. ZERO READABLE TEXT.
 
 SCENE 05
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -163,7 +175,7 @@ SCENE 09
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Ihre Schätzungen lagen deutlich über dem, was die Beobachter tatsächlich berichteten.
 PROMPT:
-LOCAL CONTINUITY WITH SCENE 07–08. Researcher Stickman compares two clean groups of abstract observer tokens: a visibly larger estimated group and a smaller actual-noticed group. Keep it editorial and simple with the researcher as anchor, not a dense chart. High three-quarter view. No numbers or labels. ZERO READABLE TEXT.
+LOCAL CONTINUITY WITH SCENE 07–08. Researcher Stickman compares two clean groups of abstract observer tokens: a visibly larger estimated group and a smaller actual-noticed group. Keep it editorial and simple with the researcher as anchor, not a dense chart. High three-quarter view. Leave clean upper-left negative space for the later German Remotion keyword ÜBERSCHÄTZT. Do not render the word in Flow. No numbers or labels. ZERO READABLE TEXT.
 
 SCENE 10
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -199,7 +211,7 @@ SCENE 15
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Andere Menschen haben aber ihren eigenen inneren Film.
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. Three different Stickmen in a detailed café each live in their own small everyday focus: one looks at a drink, one checks a phone, one prepares to speak to a friend. No one dominates. Wide environmental shot with rich café detail. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. Three different Stickmen in a detailed café each live in their own small everyday focus: one looks at a drink, one checks a phone, one prepares to speak to a friend. No one dominates. Wide environmental shot with rich café detail. Keep the upper-left area calm and uncluttered for the later German Remotion keyword EIGENER FILM. Do not render the words in Flow. ZERO READABLE TEXT.
 
 SCENE 16
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -217,7 +229,7 @@ SCENE 18
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Deine Aufmerksamkeit ist stark auf dich gerichtet.
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER walking on a park path with a visually narrow soft focus around their own body while the environment falls slightly out of attention. Keep effect subtle and 2D editorial. Leave upper-left negative space for German Remotion label ICH-FOKUS. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER walking on a park path with a visually narrow soft focus around their own body while the environment falls slightly out of attention. Keep effect subtle and 2D editorial. Leave upper-left negative space for German Remotion keyword ICH-FOKUS. Do not render the word in Flow. ZERO READABLE TEXT.
 
 SCENE 19
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -247,7 +259,7 @@ SCENE 23
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Der Punkt ist nur: Wir schätzen diese Aufmerksamkeit oft größer ein, als sie wirklich ist.
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. One self-conscious Stickman in a public square expects broad attention, but only one or two nearby people actually glance while everyone else continues their own tasks. Strong clear hierarchy. Leave upper-left space for later German label WENIGER ALS DU DENKST. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. One self-conscious Stickman in a public square expects broad attention, but only one or two nearby people actually glance while everyone else continues their own tasks. Strong clear hierarchy. Leave clean upper-left space for later German Remotion keyword WENIGER ALS DU DENKST. Do not render the words in Flow. ZERO READABLE TEXT.
 
 SCENE 24
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -283,7 +295,7 @@ SCENE 29
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Das Publikum nimmt davon häufig weniger wahr, weil es vor allem dem Inhalt folgt
 PROMPT:
-LOCAL CONTINUITY WITH SCENE 27–28. View from near the presenter toward the audience: most Stickmen are watching the abstract presentation content rather than scrutinizing the presenter's tiny nervous movements. Clear room depth. ZERO READABLE TEXT.
+LOCAL CONTINUITY WITH SCENE 27–28. View from near the presenter toward the audience: most Stickmen are watching the abstract presentation content rather than scrutinizing the presenter's tiny nervous movements. Clear room depth. Keep the upper-left area visually quiet for the later German Remotion keyword WENIGER BEMERKT. Do not render the words in Flow. ZERO READABLE TEXT.
 
 SCENE 30
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -319,13 +331,13 @@ SCENE 35
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Ein großer Teil dieses Scheinwerfers entsteht in deinem eigenen Kopf.
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. Closing scene: a Stickman walks calmly through an evening city passage, leaving behind a subtle imagined cone of light that existed only around their own head and body. The surrounding world continues normally with a few distant Stickmen. Cinematic wide final composition, natural evening colors, strong depth. Leave upper-left negative space for later German Remotion label IM EIGENEN KOPF. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. Closing scene: a Stickman walks calmly through an evening city passage, leaving behind a subtle imagined cone of light that existed only around their own head and body. The surrounding world continues normally with a few distant Stickmen. Cinematic wide final composition, natural evening colors, strong depth. Leave clean upper-left negative space for later German Remotion keyword IM EIGENEN KOPF. Do not render the words in Flow. ZERO READABLE TEXT.
 
 FINAL EXECUTION RULE
 Stop only after Scene 01 for user approval. Scene 01 is the official COVER/THUMBNAIL BASE and STYLE/ANATOMY MASTER. After Scene 01 is approved, continue automatically through Batch 1 to Batch 7 until all remaining images are complete. After each batch, perform internal QA, regenerate only failed images and continue immediately when the batch passes.
 
 FINAL QA RULE
-Reject and regenerate any image that contains a non-stickman human, anatomy drift, mascot-like oversized anatomy, 3D/Pixar/anime/photorealistic drift, unintended readable text, unnecessary character cloning, repetitive location/camera defaults, or a scene that does not directly match the current speech beat. Scene 01 additionally fails if it is not strong and simple enough to function as the YouTube cover while still matching the first spoken beat.
+Reject and regenerate any image that contains a non-stickman human, anatomy drift, mascot-like oversized anatomy, 3D/Pixar/anime/photorealistic drift, unintended readable text, unnecessary character cloning, repetitive location/camera defaults, or a scene that does not directly match the current speech beat. Scene 01 additionally fails if it is not strong and simple enough to function as the YouTube cover while still matching the first spoken beat. Overlay-planned scenes fail if the reserved text area is cluttered or covers the central action.
 
 FINAL PRINCIPLE
-01.png = SCENE 01 + COVER + STYLE/ANATOMY MASTER. Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. Concrete action before generic infographic. ZERO readable text in Flow source images. German labels are added later in Remotion.
+01.png = SCENE 01 + COVER + STYLE/ANATOMY MASTER. Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. Concrete action before generic infographic. ZERO readable text in Flow source images. Selected German cover/keyword labels are added later in Remotion.
