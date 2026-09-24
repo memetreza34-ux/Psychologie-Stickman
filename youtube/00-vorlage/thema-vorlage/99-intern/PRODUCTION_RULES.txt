@@ -26,11 +26,21 @@ BILDER
 - sichtbarer Text nur wenn nötig und dann ausschließlich Deutsch
 - alle Menschen Stickman
 
+SCENE 01 / COVER — HARD LOCK
+- `03-bilder/01.png` ist immer gleichzeitig Szene 01 + Cover/Thumbnail-Basis + Style-/Anatomie-Master
+- Szene 01 muss den ersten gesprochenen Beat korrekt darstellen UND als starkes Cover funktionieren
+- großes klares Hauptmotiv, schnelle Lesbarkeit, klare Emotion/Handlung, wenig visuelles Rauschen
+- optional ruhige Negativfläche für späteren deutschen Covertext
+- Flow-Quellbild bleibt ZERO READABLE TEXT
+- kein separates Pflicht-`cover.png`
+- Phase-1-Metadaten: `isCover: true`, `coverRole: "SCENE_01_COVER_MASTER"`
+
 REFERENZ-WORKFLOW
-- Bild 01 bzw. Masterbild im 16:9-Format allein generieren und freigeben
-- danach Masterbild bei allen Folgeassets als Referenz anhängen
+- Bild 01 als Cover + ersten Visual Beat + Master im 16:9-Format allein generieren und freigeben
+- danach Masterbild bei allen Folgeassets als Style-/Anatomie-Referenz anhängen
 - höchstens 5 neue Bilder pro Batch
 - nach jedem Batch QA
 
 HARD FAIL
+- Szene 01 ist nicht als Cover vorgesehen
 - 9:16 / 1080×1920 als reguläres YouTube-Longform-Format
