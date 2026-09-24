@@ -10,7 +10,8 @@ Jedes neue YouTube-Projekt verwendet nur diese sichtbaren Arbeitsordner:
 
 03-bilder/
 - hier `01.png`, `02.png`, `03.png` usw. ablegen
-- `01.png` ist gleichzeitig die Master-Referenz
+- `01.png` ist IMMER gleichzeitig Szene 01 + Cover/Thumbnail-Basis + Style-/Anatomie-Master
+- kein separates Pflicht-`cover.png`; die erste Szene ist das Cover
 
 04-audio/
 - hier `final-voice.mp3` ablegen
