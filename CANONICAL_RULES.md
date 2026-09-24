@@ -11,6 +11,7 @@ Verbindlich:
 - `rules/YOUTUBE_STYLE_LOCK.md`
 - `rules/IMAGE_REFERENCE_LOCK.md`
 - `rules/COVER_LOCK.md`
+- `rules/TEXT_OVERLAY_LOCK.md`
 - `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - `rules/PRODUCTION_FORMAT_RULES.md`
 
@@ -87,9 +88,10 @@ Nicht erlaubt:
 
 Die Umgebung darf glaubwürdig, farbig, detailreich und hochwertig illustriert sein.
 
-## Google-Flow-Quellbilder — ZERO READABLE TEXT
+## Textsystem
 
-Google-Flow-Quellbilder werden standardmäßig vollständig textfrei erzeugt:
+### Flow-Quellbilder
+Google-Flow-Quellbilder bleiben standardmäßig vollständig textfrei:
 - keine Wörter oder Buchstaben
 - keine Labels
 - keine UI-Texte
@@ -99,9 +101,18 @@ Google-Flow-Quellbilder werden standardmäßig vollständig textfrei erzeugt:
 
 Screens, Karten und Dokumente nutzen abstrakte Linien, Formen und Icons.
 
-Deutsche Labels werden standardmäßig erst in **Remotion** über `sceneLabels` hinzugefügt. Dadurch bleiben Schreibweise, Sprache und Typografie kontrollierbar.
+### Finaler YouTube-Render
+Kurzer deutscher Text darf gezielt als Verstärker genutzt werden:
+- Szene 01: verpflichtende deutsche Cover-Headline, 2–7 Wörter, `variant: "cover"`
+- ausgewählte weitere Szenen: zentrale Begriffe/Merksätze, maximal 5 Wörter, `variant: "keyword"`
+- keine langen Sätze
+- keine Dauer-Untertitel
+- Ziel meist ungefähr ein Textmoment alle 4–6 Bilder
+- maximal 30 % der YouTube-Szenen mit Overlays
 
-Nur wenn Text physisch zwingend Teil einer Szene sein muss, darf eine explizite Ausnahme den exakten kurzen deutschen Wortlaut freigeben.
+Flow plant bei diesen Szenen lediglich geeignete Negativfläche. Remotion setzt den Text kontrolliert.
+
+Details: `rules/TEXT_OVERLAY_LOCK.md`.
 
 ## Scene 01 — Cover + Master + erster Visual Beat
 
@@ -113,9 +124,10 @@ Szene 01 muss daher gleichzeitig:
 - den ersten gesprochenen Visual Beat korrekt darstellen,
 - als starkes, schnell lesbares Cover funktionieren,
 - die Stickman-/Welt-DNA als Master etablieren,
-- ZERO READABLE TEXT im Flow-Quellbild einhalten.
+- ZERO READABLE TEXT im Flow-Quellbild einhalten,
+- ruhige Fläche für die verpflichtende deutsche Cover-Headline besitzen.
 
-Ein separates Pflicht-`cover.png` wird nicht geführt. Falls das endgültige YouTube-Cover Text bekommt, wird dieser nach der Bildgenerierung ausschließlich kontrolliert auf Deutsch ergänzt.
+Ein separates Pflicht-`cover.png` wird nicht geführt.
 
 Details stehen in `rules/COVER_LOCK.md`.
 
@@ -146,7 +158,7 @@ Der Nutzer arbeitet regulär nur mit:
 
 Technische Hilfsdateien gehören nach `99-intern/`.
 
-Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, ZERO-READABLE-TEXT-Regel, Scene-01-Cover-Regel und Batch-Ablauf.
+Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, ZERO-READABLE-TEXT-Regel, Scene-01-Cover-Regel und Batch-Ablauf. Geplante Overlay-Szenen erhalten im Prompt passende Negativfläche; die Wörter selbst werden nicht von Flow gerendert.
 
 ## Audio
 
@@ -177,11 +189,11 @@ Bei visueller Identität:
 Bei Cover-Widerspruch:
 **`rules/COVER_LOCK.md` gewinnt: `01.png = SCENE 01 + COVER + MASTER`.**
 
+Bei Text-Overlay-Widerspruch:
+**`rules/TEXT_OVERLAY_LOCK.md` gewinnt.**
+
 Bei exakter projektspezifischer Darstellung:
 **freigegebene Master-Referenz gewinnt.**
-
-Bei Text-Widerspruch:
-**textfreies Flow-Quellbild + deutscher Remotion-Overlay gewinnt.**
 
 Beim Batch-Widerspruch:
 **Nur Bild 01 braucht Nutzerfreigabe; danach automatische 5er-Batches mit interner QA.**
