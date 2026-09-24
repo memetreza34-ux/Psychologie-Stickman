@@ -7,6 +7,8 @@ Diese Bildwelt ist die verbindliche visuelle Basis für Reels und YouTube. Das S
 Zusätzlich verbindlich:
 - `rules/STICKMAN_DNA.md`
 - `rules/IMAGE_REFERENCE_LOCK.md`
+- `rules/COVER_LOCK.md`
+- `rules/TEXT_OVERLAY_LOCK.md`
 - `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 
 ## Ziel
@@ -15,7 +17,7 @@ Eine hochwertige 2D-Erklärwelt mit sehr einfachen echten Stickmen in deutlich r
 
 Leitprinzip:
 
-**Simple stickmen. Rich world. One clear idea. Concrete scene first. Style consistency without character cloning.**
+**Simple stickmen. Rich world. One clear idea. Concrete scene first. Style consistency without character cloning. Image first, German text only as a deliberate amplifier.**
 
 ## 1. STRICT STICKMAN DNA — HARD LOCK
 
@@ -102,12 +104,13 @@ Eine bestimmte Figur bleibt nur dann identisch, wenn eine echte fortlaufende Min
 - keine unnötigen Multi-Panel-Kompositionen
 - keine späteren Informationen vorwegnehmen
 - Komposition, Kamera, Pose, Ort, Requisiten und Licht pro Beat bewusst wählen
+- bei geplanten Textmomenten gezielt ruhige Negativfläche lassen, ohne das Bild leer zu machen
 
-## 6. Google-Flow-Quellbilder — ZERO READABLE TEXT
+## 6. Textsystem: Flow textfrei, Endvideo selektiv mit deutschem Kurztext
 
 Google-Flow-Quellbilder werden standardmäßig vollständig textfrei erzeugt.
 
-Verbindlich:
+Verbindlich im Flow:
 - keine lesbaren Wörter oder Buchstaben
 - keine Labels
 - keine UI-Texte
@@ -117,9 +120,16 @@ Verbindlich:
 - keine zufälligen englischen Promptwörter
 - Dokumente und Screens nur mit abstrakten Linien, Formen und Icons
 
-Deutsche Begriffe werden standardmäßig später in Remotion über `sceneLabels` gerendert.
+Das **finale Video darf und soll an ausgewählten Stellen kurze deutsche Remotion-Overlays verwenden**:
+- Szene 01: verpflichtende Cover-Headline (`variant: "cover"`)
+- weitere Szenen: gezielte Schlüsselbegriffe (`variant: "keyword"`)
+- keine langen Sätze oder Dauer-Untertitel
+- typischer Zielwert: ungefähr ein Textmoment alle 4–6 Bilder
+- maximal 30 % der YouTube-Szenen mit Overlays
 
-Nur wenn Text physisch zwingend Bestandteil einer Szene sein muss und nicht sinnvoll als Overlay gesetzt werden kann, darf eine explizite Ausnahme den exakten kurzen deutschen Wortlaut freigeben.
+Details: `rules/TEXT_OVERLAY_LOCK.md`.
+
+Nur wenn Text physisch zwingend Bestandteil einer Szene sein muss und nicht sinnvoll als Overlay gesetzt werden kann, darf eine explizite Ausnahme den exakten kurzen deutschen Wortlaut direkt im Bild freigeben.
 
 ## 7. Kontinuität
 
@@ -157,7 +167,7 @@ Das Bild wird direkt im Zielformat komponiert.
 
 ## 10. Master-Prompt-DNA
 
-`strict universal editorial 2D stickman explainer world; EVERY visible human or human-like figure uses the same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet; no conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi; rich believable 2D environment, clean dark organic outlines, natural colors, controlled saturation, believable perspective and lighting, subtle cel shading; MASTER REFERENCE IS STYLE/ANATOMY ONLY, NOT CHARACTER IDENTITY: choose scene-specific cast, clothing, roles, location, pose and camera for every beat; do not default to the same lone hoodie character, same desk, same room or same framing; ONE clear visual idea; prefer a concrete stickman action in a believable setting over a generic infographic; SOURCE IMAGE TEXT POLICY: zero readable text, zero letters, zero labels, zero UI words and zero captions; German labels are normally added later in Remotion`
+`strict universal editorial 2D stickman explainer world; EVERY visible human or human-like figure uses the same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet; no conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi; rich believable 2D environment, clean dark organic outlines, natural colors, controlled saturation, believable perspective and lighting, subtle cel shading; MASTER REFERENCE IS STYLE/ANATOMY ONLY, NOT CHARACTER IDENTITY: choose scene-specific cast, clothing, roles, location, pose and camera for every beat; do not default to the same lone hoodie character, same desk, same room or same framing; ONE clear visual idea; prefer a concrete stickman action in a believable setting over a generic infographic; SOURCE IMAGE TEXT POLICY: zero readable text, zero letters, zero labels, zero UI words and zero captions; final selected German cover/keyword labels are added later in Remotion`
 
 ## 11. Referenzregel
 
@@ -171,4 +181,4 @@ Das Bild wird direkt im Zielformat komponiert.
 ## 12. Priorität
 
 Bei Konflikt gilt:
-**FORMAT_LOCK + STICKMAN_DNA + Master als STYLE-/ANATOMIE-Referenz + beat-passende Cast-/Szenenwahl + ZERO-READABLE-TEXT > Charakterklonen oder generische Wiederholung.**
+**FORMAT_LOCK + STICKMAN_DNA + Master als STYLE-/ANATOMIE-Referenz + beat-passende Cast-/Szenenwahl + textfreies Flow-Quellbild + selektive deutsche Remotion-Overlays > Charakterklonen, generische Wiederholung oder textlastige Slides.**
