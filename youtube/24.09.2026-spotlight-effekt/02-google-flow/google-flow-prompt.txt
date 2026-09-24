@@ -1,0 +1,323 @@
+GOOGLE FLOW MASTER PROMPT — SPOTLIGHT-EFFEKT — 2,5-MINUTEN-VIDEO
+
+DIESE DATEI IST DER EINZIGE GOOGLE-FLOW-PROMPT FÜR DAS GESAMTE VIDEO.
+Keine zweite Prompt-Datei verwenden.
+
+FORMAT HARD LOCK
+- YouTube 16:9
+- 1920×1080
+- horizontale Landscape-Komposition
+- Bilder direkt für 16:9 erzeugen
+
+STYLE HARD LOCK — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3
+STRICT STICKMAN ONLY.
+
+EVERY visible human or human-like figure must use TRUE STICKMAN anatomy. They do NOT need to be the same person.
+
+TRUE STICKMAN ANATOMY — NON-NEGOTIABLE
+- simple round or oval flat head, slightly smaller than mascot proportions
+- tiny black dot eyes and very small simple mouth
+- no realistic nose
+- no realistic ears
+- no realistic neck
+- small strongly simplified torso
+- very thin line-like arms and legs with near-constant thickness
+- no fleshy upper arms, forearms, thighs or calves
+- simple rounded nub/mitten/circle hands, no finger anatomy
+- simplified feet/shoes
+- clothing may identify role or situation but must stay wrapped around the simplified stickman structure
+- clothing must NEVER create normal human/cartoon anatomy
+
+HARD FAIL
+- conventional cartoon humans
+- semi-realistic or realistic humans
+- thick human-like limbs
+- detailed fingers/hands
+- realistic noses/ears/faces
+- mixed human styles
+- 3D/CGI/Pixar
+- anime/manga/chibi
+- mascot-like oversized heads
+
+ENVIRONMENT RULE
+The world may be rich, detailed and believable: rooms, cafés, streets, trains, seminar rooms, parks, mirrors, shops, presentation spaces, furniture, plants, windows and soft cinematic light. Detail belongs in the environment, NOT in human anatomy.
+
+CHANNEL DNA — HARD LOCK
+Simple Stickmen. Rich World. One clear idea per image. German visual language.
+- Every image communicates ONE primary visual thought from the current speech beat.
+- Use ONE dominant focal point and normally only 1–2 supporting cues.
+- Prefer concrete everyday Stickman action over generic infographic imagery.
+- Avoid split-screen, comic panels, collages, dashboards and dense diagrams.
+- Vary camera distance, pose, location, clothing, cast size and composition naturally.
+- Do not repeat the same room, same lone character, same outfit or same medium shot without narrative reason.
+
+CAST VARIATION — HARD LOCK
+STYLE CONSISTENCY DOES NOT MEAN CHARACTER CLONING.
+- 01.png is a STYLE AND ANATOMY reference only.
+- Use different Stickman people whenever the current beat does not require narrative continuity.
+- Vary clothing colors, simple accessories, role cues, cast size, posture, location and camera.
+- Choose 1 to 4 Stickmen when useful.
+- Reuse an exact character only inside an explicitly marked LOCAL CONTINUITY mini-story.
+- Do not default to a hoodie, desk, home office or one-person composition.
+
+BEFORE EACH SCENE DECIDE
+1. CAST — who/how many Stickmen best explain this beat?
+2. LOCATION — which believable place makes the meaning clearest?
+3. ACTION — what visible action shows the spoken idea?
+4. CAMERA — what angle/distance makes it instantly readable?
+
+FLOW SOURCE IMAGE TEXT POLICY — ZERO READABLE TEXT
+Generated source images must contain ZERO readable text.
+- no readable German text
+- no readable English text
+- no letters, words, labels, subtitles, UI words, poster text, document text or logos
+- screens and papers use abstract lines, blocks, icons and shapes only
+- do not copy the German speech context into the image
+German labels for the final video are added later in Remotion.
+
+GLOBAL SCENE CLAUSE
+STRICT STICKMAN-ONLY CHECK: Every visible person in foreground, background, screens, photos, reflections or memories must use the approved true-stickman anatomy and editorial 2D style. Different people are welcome. If any figure becomes a normal cartoon or semi-realistic human, regenerate.
+
+MASTER REFERENCE WORKFLOW
+1. Generate SCENE 01 ONLY.
+2. STOP.
+3. Check true-stickman anatomy, environment quality, text freedom and composition.
+4. Wait for user approval.
+5. Save approved image as 03-bilder/01.png.
+6. For EVERY image from Scene 02 onward attach 01.png as reference.
+7. Scene 01 remains STYLE/ANATOMY master only.
+8. Master does NOT lock character identity, clothing, cast size, location, pose, camera or composition.
+
+AUTOMATIC BATCH WORKFLOW
+MASTER: 01
+Batch 1: 02–06
+Batch 2: 07–11
+Batch 3: 12–16
+Batch 4: 17–21
+Batch 5: 22–26
+Batch 6: 27–31
+Batch 7: 32–35
+
+After Scene 01 approval generate only the current batch, maximum 5 new images. Run internal QA after every batch. Check anatomy, scene meaning, cast/location/camera variety and ZERO READABLE TEXT. Regenerate only failed images. Continue automatically after PASS.
+
+REFERENCE CLAUSE FOR SCENE 02+
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone template. Match true-stickman anatomy, head/torso proportions, very thin line limbs, no-finger hands, linework, natural color treatment, subtle cel shading, environment detail level and overall editorial 2D quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. Reuse a character only when the scene explicitly says LOCAL CONTINUITY. ZERO READABLE TEXT.
+
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du läufst in einen Raum und plötzlich fühlt es sich an, als würden alle dich anschauen.
+PROMPT:
+MASTER STYLE FRAME. One true Stickman enters a modern community room through a doorway while three or four background Stickmen are already inside doing ordinary things. The entering character hesitates as if suddenly feeling watched, but the background people should not all stare directly. Rich believable room, furniture, plants, windows, natural daylight, clean dark outlines, subtle 2D cel shading. Full enough body view to establish exact true-stickman anatomy. Wide doorway framing with depth. ZERO READABLE TEXT. Generate Scene 01 only, then STOP.
+
+SCENE 02
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Vielleicht sitzt deine Frisur komisch, dein T-Shirt hat einen Fleck oder du hast gerade etwas Peinliches gesagt.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER at a public mirror area before an event, wearing a simple muted jacket and shirt. The Stickman notices one tiny clothing stain and checks their appearance with nervous posture. Keep the flaw small in reality but emotionally important to the character. Close three-quarter mirror angle. Mirror reflection must remain true Stickman. ZERO READABLE TEXT.
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Für dich fühlt sich dieser Moment riesig an. Für die anderen oft deutlich kleiner.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER in a busy lobby feels intensely self-conscious while several differently dressed Stickmen around them continue normal conversations, look at phones or walk past. Main character is visually emphasized through framing, not through giant fantasy scale. Wide side composition. ZERO READABLE TEXT.
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Psychologen nennen dieses Muster den Spotlight-Effekt.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. One Stickman stands in a modern neutral interior under a soft symbolic cone of light while the rest of the room remains normally lit. Keep this elegant and editorial, not theatrical. Leave clean upper-left negative space for the later German Remotion label SPOTLIGHT-EFFEKT. Medium frontal shot. ZERO READABLE TEXT.
+
+SCENE 05
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Damit ist gemeint, dass Menschen häufig überschätzen, wie stark andere ihre eigene Erscheinung und ihr Verhalten bemerken.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER crossing a city square imagines being highly noticeable, while nearby Stickmen are actually occupied with commuting, talking, shopping and their own phones. Elevated diagonal view clearly shows attention distributed away from the main character. ZERO READABLE TEXT.
+
+SCENE 06
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein klassisches Experiment machte das ziemlich anschaulich.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Researcher Stickman prepares a simple social-psychology experiment in a seminar room: one participant nearby, a few chairs arranged for observers, minimal study props. Professional grounded research atmosphere, no science-fiction laboratory. Wide room perspective. Papers contain abstract lines only. ZERO READABLE TEXT.
+
+SCENE 07
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Teilnehmende mussten ein auffälliges T-Shirt tragen und einen Raum betreten, in dem bereits andere Personen saßen.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Start a LOCAL CONTINUITY mini-story. A participant Stickman wearing a visually unusual but completely text-free patterned T-shirt enters a seminar room where several other Stickmen are seated. Shirt may use a bold geometric symbol but no letters or recognizable logo. Camera from behind the seated group toward the entering participant. ZERO READABLE TEXT.
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Danach sollten sie schätzen, wie viele Menschen das Motiv auf ihrem Shirt bemerkt hatten.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 07. Reuse only the participant from Scene 07. In a quiet side area, the participant makes an estimate using a row of simple blank person-icons or tokens, selecting many of them. Close side angle. No numbers, words or written form. ZERO READABLE TEXT.
+
+SCENE 09
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ihre Schätzungen lagen deutlich über dem, was die Beobachter tatsächlich berichteten.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 07–08. Researcher Stickman compares two clean groups of abstract observer tokens: a visibly larger estimated group and a smaller actual-noticed group. Keep it editorial and simple with the researcher as anchor, not a dense chart. High three-quarter view. No numbers or labels. ZERO READABLE TEXT.
+
+SCENE 10
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der Effekt zeigte sich nicht nur bei Kleidung.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER walks through a shopping street among several other Stickmen. Clothing exists naturally but is not the central visual cue anymore. The character's behavior and social presence are now the focus. Wide street-level composition. ZERO READABLE TEXT.
+
+SCENE 11
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Auch in Gruppengesprächen überschätzten Menschen, wie sehr ihre eigenen guten oder schlechten Beiträge den anderen aufgefallen waren.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Four Stickmen sit around a workshop table. One character speaks and feels highly prominent, while the others show mixed normal attention: one listens, one thinks, one looks briefly at notes. Diagonal group composition with clear social interaction. ZERO READABLE TEXT.
+
+SCENE 12
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Warum passiert das?
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER pauses alone in a quiet indoor passage, thoughtful posture, surrounding environment softly receding. No giant question mark and no text. Tight close-medium portrait with simple negative space. ZERO READABLE TEXT.
+
+SCENE 13
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein Grund ist ziemlich simpel: Du selbst erlebst dich immer aus der ersten Reihe.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER on a train platform shown from a close over-shoulder perspective where their own sleeves, hands and body occupy a strong portion of the frame while the surrounding world sits farther away. Visually communicate first-person self-salience without literal POV camera distortion. ZERO READABLE TEXT.
+
+SCENE 14
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du kennst deinen Fleck, deinen Versprecher, deine Unsicherheit und jede kleine Veränderung an dir.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER near a mirror notices one tiny clothing mark and nervous posture. Use facial minimalism and body language rather than multiple icons. One concrete self-checking moment, close three-quarter framing. ZERO READABLE TEXT.
+
+SCENE 15
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Andere Menschen haben aber ihren eigenen inneren Film.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Three different Stickmen in a detailed café each live in their own small everyday focus: one looks at a drink, one checks a phone, one prepares to speak to a friend. No one dominates. Wide environmental shot with rich café detail. ZERO READABLE TEXT.
+
+SCENE 16
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Sie denken über ihren nächsten Satz nach, schauen auf ihr Handy,
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Several Stickmen in a transit waiting area: one quietly rehearses before speaking to someone, another looks at a smartphone, another simply waits. Medium group shot with clear depth. Phone screen uses abstract shapes only. ZERO READABLE TEXT.
+
+SCENE 17
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+überlegen was sie bestellen oder machen sich Gedanken darüber, wie sie selbst wirken.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Two or three Stickmen near a café counter: one studies the food display, another subtly adjusts their own jacket before meeting someone. Different clothing colors and roles. Side wide angle, realistic café environment. Menu contains only abstract shapes. ZERO READABLE TEXT.
+
+SCENE 18
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Deine Aufmerksamkeit ist stark auf dich gerichtet.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER walking on a park path with a visually narrow soft focus around their own body while the environment falls slightly out of attention. Keep effect subtle and 2D editorial. Leave upper-left negative space for German Remotion label ICH-FOKUS. ZERO READABLE TEXT.
+
+SCENE 19
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Die Aufmerksamkeit der anderen verteilt sich auf viel mehr Dinge.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. High wide view of a lively city square with multiple Stickmen naturally directing attention toward many different things: friend, bicycle, phone, shop window, route ahead. No single person is the center. Strong environmental storytelling. ZERO READABLE TEXT.
+
+SCENE 20
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dadurch entsteht eine falsche Hochrechnung: Wenn es für mich extrem auffällig ist, muss es für andere auch auffällig sein.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. One Stickman in a pedestrian zone feels surrounded by a soft imagined spotlight while the surrounding crowd is actually looking elsewhere. Show the mismatch in one grounded composition: internal salience around the character versus normal distributed attention around them. Wide perspective. ZERO READABLE TEXT.
+
+SCENE 21
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Natürlich bedeutet das nicht, dass niemand dich bemerkt.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Two Stickmen on a train platform. One genuinely looks briefly toward the other while the rest of the small background crowd remains occupied. Medium side shot. Make the real glance obvious but limited. ZERO READABLE TEXT.
+
+SCENE 22
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Auffällige Kleidung, ein lauter Fehler oder ungewöhnliches Verhalten können Aufmerksamkeit bekommen.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER in a bold but text-free colorful outfit walks through a city street and receives a few genuine glances from nearby Stickmen. Do not make everyone stare. Wide street perspective with believable storefronts and city depth. ZERO READABLE TEXT.
+
+SCENE 23
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der Punkt ist nur: Wir schätzen diese Aufmerksamkeit oft größer ein, als sie wirklich ist.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. One self-conscious Stickman in a public square expects broad attention, but only one or two nearby people actually glance while everyone else continues their own tasks. Strong clear hierarchy. Leave upper-left space for later German label WENIGER ALS DU DENKST. ZERO READABLE TEXT.
+
+SCENE 24
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das kann im Alltag erstaunlich befreiend sein.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER walks calmly along a green riverside or park path, shoulders relaxed, surrounded by ordinary people doing their own activities. Wide peaceful composition, fresh environment and soft daylight. ZERO READABLE TEXT.
+
+SCENE 25
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du stolperst beim Reinkommen in ein Café und denkst noch zehn Minuten später darüber nach.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Start a LOCAL CONTINUITY café mini-story. A NEW Stickman lightly stumbles while entering a café, catches balance without injury, and looks embarrassed. Several café guests are present but only a couple briefly notice. Low diagonal entrance angle, rich interior depth. ZERO READABLE TEXT.
+
+SCENE 26
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Die meisten anderen haben den Moment wahrscheinlich längst wieder vergessen oder gar nicht richtig registriert.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 25. Keep the same café environment and the same stumbling character now seated in the background. Other café Stickmen have returned to drinking, talking, reading or looking out the window. Wide reverse angle emphasizing that life moved on. ZERO READABLE TEXT.
+
+SCENE 27
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ähnlich kann es bei Präsentationen sein.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Start a NEW LOCAL CONTINUITY presentation mini-story. A new presenter Stickman stands at the front of a modern seminar room facing a small audience. Presentation screen contains only abstract shapes and diagrams. Wide audience perspective. ZERO READABLE TEXT.
+
+SCENE 28
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du bemerkst jedes Zittern in deiner Stimme und jede kleine Pause.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 27. Reuse only the presenter. Close side shot: hands or small note card held slightly tensely, body posture shows nervousness while face remains minimal. Note card contains abstract lines only. ZERO READABLE TEXT.
+
+SCENE 29
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das Publikum nimmt davon häufig weniger wahr, weil es vor allem dem Inhalt folgt
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 27–28. View from near the presenter toward the audience: most Stickmen are watching the abstract presentation content rather than scrutinizing the presenter's tiny nervous movements. Clear room depth. ZERO READABLE TEXT.
+
+SCENE 30
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+oder selbst mit anderen Gedanken beschäftigt ist.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 27–29. Side cutaway of three audience Stickmen: one follows normally, one takes abstract notes, one briefly thinks about something else. No one mocks or stares at the presenter. ZERO READABLE TEXT.
+
+SCENE 31
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wenn du das nächste Mal glaubst, alle würden deinen Fehler sehen, stell dir eine einfache Frage:
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER outside a small shop after a tiny harmless mistake, pausing calmly instead of spiraling. The character looks reflective, not distressed. Medium frontal shot with passersby in background continuing normally. ZERO READABLE TEXT.
+
+SCENE 32
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wie genau würdest du dich morgen an den kleinen Fehler einer fremden Person erinnern?
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Two Stickmen in a morning train waiting area. One tries to remember a tiny harmless mishap made by an unfamiliar person from the previous day; represent the memory only as a very faint simplified silhouette in the background, not a readable thought bubble. Quiet two-person composition. ZERO READABLE TEXT.
+
+SCENE 33
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wahrscheinlich viel weniger, als du gerade über deinen eigenen Fehler nachdenkst.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW CHARACTER walking through a city passage still mentally carrying their own small mistake as a subtle close visual echo, while a stranger's old mistake is almost fully faded in the distant background. Keep metaphor simple and grounded. Wide shot. ZERO READABLE TEXT.
+
+SCENE 34
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du stehst also oft nicht unter einem echten Scheinwerfer.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. One Stickman stands normally inside a small modern event space while an actual stage spotlight is visibly aimed somewhere else and does not illuminate them. Clear literal-versus-felt metaphor, wide composition, no dramatic performance pose. ZERO READABLE TEXT.
+
+SCENE 35
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein großer Teil dieses Scheinwerfers entsteht in deinem eigenen Kopf.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Closing scene: a Stickman walks calmly through an evening city passage, leaving behind a subtle imagined cone of light that existed only around their own head and body. The surrounding world continues normally with a few distant Stickmen. Cinematic wide final composition, natural evening colors, strong depth. Leave upper-left negative space for later German Remotion label IM EIGENEN KOPF. ZERO READABLE TEXT.
+
+FINAL EXECUTION RULE
+Stop only after Scene 01 for user approval. After Scene 01 is approved, continue automatically through Batch 1 to Batch 7 until all remaining images are complete. After each batch, perform internal QA, regenerate only failed images and continue immediately when the batch passes.
+
+FINAL QA RULE
+Reject and regenerate any image that contains a non-stickman human, anatomy drift, mascot-like oversized anatomy, 3D/Pixar/anime/photorealistic drift, unintended readable text, unnecessary character cloning, repetitive location/camera defaults, or a scene that does not directly match the current speech beat.
+
+FINAL PRINCIPLE
+Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. Concrete action before generic infographic. ZERO readable text in Flow source images. German labels are added later in Remotion.
