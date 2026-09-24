@@ -7,7 +7,8 @@ export type Phase3TimedWord = {text: string; startMs: number; endMs: number; tim
 export type Phase3WordScene = {scene: number; image: string; startWord: number; endWord: number; startWordText: string; endWordText: string; effect?: Phase3ImageEffect};
 export type Phase3Caption = {startFrame: number; endFrame: number; text: string};
 export type Phase3SceneLabelPosition = 'top-left' | 'top-center' | 'center' | 'bottom-center';
-export type Phase3SceneLabel = {scene: number; text: string; position?: Phase3SceneLabelPosition};
+export type Phase3SceneLabelVariant = 'keyword' | 'cover';
+export type Phase3SceneLabel = {scene: number; text: string; position?: Phase3SceneLabelPosition; variant?: Phase3SceneLabelVariant};
 export type Phase3ImageReelProps = {
   audio: string;
   targetFormat?: 'youtube' | 'reel';
@@ -145,6 +146,8 @@ const CaptionOverlay = ({caption, isVertical}: {caption: Phase3Caption; isVertic
 
 const SceneLabelOverlay = ({label, scene, isVertical}: {label: Phase3SceneLabel; scene: Phase3ImageScene; isVertical: boolean}) => {
   const position = label.position ?? 'top-left';
+  const variant = label.variant ?? 'keyword';
+  const isCover = variant === 'cover';
   const justifyContent = position === 'center' ? 'center' : position === 'bottom-center' ? 'flex-end' : 'flex-start';
   const alignItems = position === 'top-left' ? 'flex-start' : 'center';
 
@@ -154,23 +157,24 @@ const SceneLabelOverlay = ({label, scene, isVertical}: {label: Phase3SceneLabel;
         style={{
           justifyContent,
           alignItems,
-          padding: isVertical ? 72 : 64,
+          padding: isCover ? (isVertical ? 72 : 92) : (isVertical ? 72 : 64),
           pointerEvents: 'none',
         }}
       >
         <div
           style={{
-            maxWidth: isVertical ? '82%' : '62%',
+            maxWidth: isCover ? (isVertical ? '88%' : '56%') : (isVertical ? '82%' : '62%'),
             color: '#fff',
-            backgroundColor: 'rgba(0,0,0,0.70)',
-            borderRadius: isVertical ? 20 : 14,
-            padding: isVertical ? '16px 22px' : '12px 18px',
+            backgroundColor: isCover ? 'rgba(0,0,0,0.58)' : 'rgba(0,0,0,0.70)',
+            borderRadius: isCover ? (isVertical ? 26 : 20) : (isVertical ? 20 : 14),
+            padding: isCover ? (isVertical ? '22px 28px' : '22px 30px') : (isVertical ? '16px 22px' : '12px 18px'),
             fontFamily: 'Arial, Helvetica, sans-serif',
-            fontSize: isVertical ? 58 : 42,
-            fontWeight: 800,
-            lineHeight: 1.08,
+            fontSize: isCover ? (isVertical ? 78 : 86) : (isVertical ? 58 : 42),
+            fontWeight: 900,
+            lineHeight: isCover ? 1.02 : 1.08,
+            letterSpacing: isCover ? '-0.02em' : '0em',
             textAlign: position === 'top-left' ? 'left' : 'center',
-            textShadow: '0 2px 8px rgba(0,0,0,0.45)',
+            textShadow: isCover ? '0 4px 16px rgba(0,0,0,0.65)' : '0 2px 8px rgba(0,0,0,0.45)',
           }}
         >
           {label.text}
@@ -215,7 +219,7 @@ export const Phase3ImageReel = ({
         </Sequence>
       ))}
       {effectiveLabels.map((label, index) => (
-        <SceneLabelOverlay key={`${label.scene}-${label.text}-${index}`} label={label} scene={resolved[label.scene - 1]} isVertical={isVertical} />
+        <SceneLabelOverlay key={`${label.scene}-${label.text}-${label.variant ?? 'keyword'}-${index}`} label={label} scene={resolved[label.scene - 1]} isVertical={isVertical} />
       ))}
       {effectiveCaptions.map((caption, index) => (
         <CaptionOverlay key={`${caption.startFrame}-${caption.endFrame}-${index}`} caption={caption} isVertical={isVertical} />
