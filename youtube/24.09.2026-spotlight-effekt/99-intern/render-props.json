@@ -1,0 +1,9 @@
+{
+  "status": "PENDING_PHASE3",
+  "format": "youtube",
+  "aspectRatio": "16:9",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "audio": "PENDING final-voice.mp3",
+  "reason": "Erst nach finalem 1,10x-Audio, Worttimings und finalen Bildassets mit build:phase3-props erzeugen."
+}
