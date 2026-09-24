@@ -10,6 +10,7 @@ Verbindlich:
 - `rules/YOUTUBE_THEMEN_SYSTEM.md`
 - `rules/YOUTUBE_STYLE_LOCK.md`
 - `rules/IMAGE_REFERENCE_LOCK.md`
+- `rules/COVER_LOCK.md`
 - `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - `rules/PRODUCTION_FORMAT_RULES.md`
 
@@ -102,11 +103,28 @@ Deutsche Labels werden standardmäßig erst in **Remotion** über `sceneLabels` 
 
 Nur wenn Text physisch zwingend Teil einer Szene sein muss, darf eine explizite Ausnahme den exakten kurzen deutschen Wortlaut freigeben.
 
+## Scene 01 — Cover + Master + erster Visual Beat
+
+Für jedes YouTube-Projekt gilt verbindlich:
+
+**`03-bilder/01.png` = SCENE 01 + COVER/THUMBNAIL-BASIS + STYLE-/ANATOMY-MASTER.**
+
+Szene 01 muss daher gleichzeitig:
+- den ersten gesprochenen Visual Beat korrekt darstellen,
+- als starkes, schnell lesbares Cover funktionieren,
+- die Stickman-/Welt-DNA als Master etablieren,
+- ZERO READABLE TEXT im Flow-Quellbild einhalten.
+
+Ein separates Pflicht-`cover.png` wird nicht geführt. Falls das endgültige YouTube-Cover Text bekommt, wird dieser nach der Bildgenerierung ausschließlich kontrolliert auf Deutsch ergänzt.
+
+Details stehen in `rules/COVER_LOCK.md`.
+
 ## Master-Referenz + automatische 5er-Batches
 
 - Bild 01 zuerst allein generieren
+- Bild 01 ist zugleich Cover, erster Visual Beat und Master
 - STOP und Nutzerfreigabe abwarten
-- Bild 01 nur bei vollständigem Style-/Stickman-/Textfreiheits-PASS freigeben
+- Bild 01 nur bei vollständigem Style-/Stickman-/Textfreiheits-/Cover-PASS freigeben
 - Bild 01 bleibt Master
 - ab Bild 02 Master bei jeder Generierung anhängen
 - danach höchstens 5 neue Bilder pro Batch
@@ -128,7 +146,7 @@ Der Nutzer arbeitet regulär nur mit:
 
 Technische Hilfsdateien gehören nach `99-intern/`.
 
-Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, ZERO-READABLE-TEXT-Regel und Batch-Ablauf.
+Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, ZERO-READABLE-TEXT-Regel, Scene-01-Cover-Regel und Batch-Ablauf.
 
 ## Audio
 
@@ -155,6 +173,9 @@ Bei Format-Widerspruch:
 
 Bei visueller Identität:
 **`rules/STICKMAN_DNA.md` gewinnt.**
+
+Bei Cover-Widerspruch:
+**`rules/COVER_LOCK.md` gewinnt: `01.png = SCENE 01 + COVER + MASTER`.**
 
 Bei exakter projektspezifischer Darstellung:
 **freigegebene Master-Referenz gewinnt.**
