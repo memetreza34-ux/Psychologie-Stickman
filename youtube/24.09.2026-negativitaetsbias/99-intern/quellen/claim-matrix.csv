@@ -1,0 +1,7 @@
+claim_id,script_claim,evidence,status,notes
+C1,"Negative Informationen bekommen häufig mehr Gewicht als vergleichbar positive.","Baumeister et al. 2001; Rozin & Royzman 2001",SUPPORTED,"Als allgemeine Tendenz formuliert, nicht als ausnahmsloses Gesetz."
+C2,"Das Muster wird in mehreren psychologischen Bereichen beschrieben, u. a. Aufmerksamkeit, Lernen, Urteilen, Beziehungen und Erinnern.","Baumeister et al. 2001; Rozin & Royzman 2001",SUPPORTED,"Beide Arbeiten sind breite Reviews über mehrere Domänen."
+C3,"Negative Hinweise können auf Fehler, Verlust, Gefahr oder soziale Probleme aufmerksam machen.","Baumeister et al. 2001; Rozin & Royzman 2001",SUPPORTED_WITH_CAUTION,"Funktionale Erklärung; im Skript vorsichtig als mögliche/naheliegende Funktion dargestellt."
+C4,"Negatives bekommt häufig schneller Aufmerksamkeit und kann gründlicher verarbeitet werden.","Baumeister et al. 2001",SUPPORTED,"Review beschreibt u. a. stärkere Verarbeitung negativer Information."
+C5,"Der Effekt ist situationsabhängig und nicht bei jedem negativen Ereignis automatisch stärker.","Konservative Einordnung der Review-Literatur",SUPPORTED,"Verhindert Überverallgemeinerung."
+C6,"Praktische Reflexion: Gesamtbild prüfen, positive/neutrale Informationen aktiv mit berücksichtigen.","Redaktionelle Alltagshilfe",EDITORIAL,"Keine klinische oder therapeutische Wirkung versprochen."

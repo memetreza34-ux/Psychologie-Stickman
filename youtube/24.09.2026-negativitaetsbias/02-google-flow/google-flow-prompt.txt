@@ -1,0 +1,323 @@
+GOOGLE FLOW MASTER PROMPT — NEGATIVITÄTSBIAS — 2,5-MINUTEN-VIDEO
+
+DIESE DATEI IST DER EINZIGE GOOGLE-FLOW-PROMPT FÜR DAS GESAMTE VIDEO.
+Keine zweite Prompt-Datei verwenden.
+
+FORMAT HARD LOCK
+- YouTube 16:9
+- 1920x1080
+- 30 fps target project
+- horizontal landscape composition
+
+STYLE HARD LOCK — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3
+STRICT STICKMAN ONLY.
+
+EVERY visible human or human-like figure must use TRUE STICKMAN anatomy. They do NOT need to be the same person.
+
+TRUE STICKMAN ANATOMY — NON-NEGOTIABLE
+- simple round or oval flat head, slightly smaller than mascot proportions
+- tiny black dot eyes and very small simple mouth
+- no realistic nose, ears or neck
+- small strongly simplified torso
+- very thin line-like arms and legs with near-constant thickness
+- simple rounded nub/mitten hands, no fingers
+- simplified shoes
+- clothing may show role but never create normal human/cartoon anatomy
+
+HARD FAIL
+- normal cartoon humans
+- semi-realistic or realistic humans
+- thick human limbs
+- detailed fingers/hands
+- realistic face anatomy
+- 3D/CGI/Pixar
+- anime/manga/chibi
+- mascot-like oversized heads
+
+ENVIRONMENT RULE
+Rich believable 2D environments are encouraged: cafés, trains, workshops, streets, parks, research rooms, kitchens, meeting spaces, city scenes and public transport. Detail belongs in the environment, not in human anatomy. Use clean dark organic outlines, natural colors, subtle cel shading, believable depth and soft light.
+
+CHANNEL DNA — HARD LOCK
+Simple Stickmen. Rich World. One clear idea per image.
+- one primary visual thought per image
+- concrete everyday action before generic infographic
+- one dominant focal point and normally only 1–2 supporting cues
+- no dense collages, dashboards or repeated card layouts
+- vary cast, clothing, role, location, pose, camera distance and composition
+
+SCENE 01 COVER — HARD LOCK
+- 03-bilder/01.png is Scene 01 + COVER/THUMBNAIL BASE + STYLE/ANATOMY MASTER
+- Scene 01 must show the first spoken beat correctly and work as a strong cover
+- large clear focal character, strong silhouette, minimal clutter, instant readability
+- reserve calm upper-left/left negative space for the later German Remotion cover headline: WARUM BLEIBT NEGATIVES HÄNGEN?
+- DO NOT render that headline in Flow
+- Scene 01 remains ZERO READABLE TEXT
+
+SELECTIVE FINAL TEXT SYSTEM
+Flow source images stay text-free. The final video later receives controlled German Remotion overlays only on selected scenes.
+Planned overlays: Scene 01 cover; Scenes 04, 09, 15, 21, 25, 31 and 34 short keywords.
+For those scenes, reserve calm negative space without sacrificing the main visual idea.
+German labels are added later in Remotion. Never draw them in Flow.
+
+CAST VARIATION — HARD LOCK
+STYLE CONSISTENCY DOES NOT MEAN CHARACTER CLONING.
+- 01.png is STYLE/ANATOMY reference only after approval
+- use different Stickman people whenever continuity is not required
+- vary simple clothing, accessories, role, cast size, location, action and camera
+- reuse an exact person only in scenes explicitly marked LOCAL CONTINUITY
+- do not default to the same hoodie, desk, room or medium shot
+
+BEFORE EACH SCENE DECIDE
+1. CAST — who/how many Stickmen best explain the beat?
+2. LOCATION — which believable place makes the idea clearest?
+3. ACTION — what concrete visible action shows the meaning?
+4. CAMERA — what angle/distance makes it instantly readable?
+
+FLOW SOURCE IMAGE TEXT POLICY — ZERO READABLE TEXT
+Generated source images must contain ZERO readable text.
+- no German or English words
+- no letters, labels, subtitles, UI words, poster text, document text or logos
+- screens and papers use abstract lines, blocks, icons and shapes only
+- do not copy speech context into the image
+- German labels are added later in Remotion
+
+MASTER REFERENCE WORKFLOW
+1. Generate SCENE 01 ONLY as COVER + FIRST VISUAL BEAT + STYLE/ANATOMY MASTER.
+2. STOP.
+3. Wait for user approval.
+4. Save approved image as 03-bilder/01.png.
+5. For EVERY image from Scene 02 onward attach 01.png as STYLE/ANATOMY reference.
+6. Master does NOT lock identity, clothing, cast size, location, pose, camera or composition.
+
+AUTOMATIC BATCH WORKFLOW
+MASTER/COVER: 01
+Batch 1: 02–06
+Batch 2: 07–11
+Batch 3: 12–16
+Batch 4: 17–21
+Batch 5: 22–26
+Batch 6: 27–31
+Batch 7: 32–35
+After Scene 01 approval, generate only the current batch, max 5 images. Internally QA anatomy, meaning, cast/location/camera variety and text freedom. Regenerate only failed images and continue automatically after PASS.
+
+REFERENCE CLAUSE FOR SCENE 02+
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. Reuse exact people only in LOCAL CONTINUITY scenes. ZERO READABLE TEXT.
+
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du bekommst zehn nette Rückmeldungen und einen einzigen kritischen Kommentar.
+PROMPT:
+COVER + MASTER STYLE FRAME. A young adult true Stickman in a modern coworking lounge looks at a smartphone after receiving feedback. Around the phone and in the environment, use many small soft positive reaction symbols/icons and one single darker critical reaction shape that strongly pulls the character's attention. Do not create readable chat bubbles. Make the main Stickman large on the right side with clear concerned body language. Background: 3–4 differently dressed true Stickmen continue normal activities and do not stare. Strong thumbnail hierarchy, rich believable lounge, clean 2D editorial look. Leave calm upper-left/left negative space for later Remotion headline. ZERO READABLE TEXT. Generate Scene 01 only, then STOP.
+
+SCENE 02
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Und ausgerechnet dieser eine Satz bleibt dir noch Stunden später im Kopf, obwohl der Rest positiv war.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 01. Reuse the Scene-01 main character only. Evening city train: the character sits among several commuters and keeps mentally returning to one dark feedback symbol while the many positive symbols are faint and secondary. Other passengers remain busy with their own activities. Medium-wide side angle. ZERO READABLE TEXT.
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Warum fühlt sich Negatives oft stärker an als genauso viel Positives?
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in a detailed café receives many calm friendly social cues, while one small darker cue dominates their attention. Keep this grounded, not a dashboard. Elevated diagonal café composition with other true Stickmen in background. ZERO READABLE TEXT.
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein Teil der Antwort steckt im sogenannten Negativitätsbias.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. One true Stickman in a clean modern interior visually attends much more strongly to one dark stimulus than to several equally sized lighter stimuli. Elegant simple concept grounded in a real room, not a chart. Frontal medium shot. Leave clean upper-left space for later Remotion keyword NEGATIVITÄTSBIAS. ZERO READABLE TEXT.
+
+SCENE 05
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Damit ist gemeint: Negative Informationen bekommen häufig mehr Gewicht als vergleichbar positive.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Three true Stickmen in a small meeting room after feedback. The main character reacts much more intensely to one corrective gesture than to several positive gestures that came before. Clear group interaction, three-quarter angle, no literal scale. ZERO READABLE TEXT.
+
+SCENE 06
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das zeigt sich nicht nur bei Kommentaren, sondern in vielen Bereichen unseres Alltags.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Busy city square with several different true Stickmen doing ordinary activities. One character becomes disproportionately focused on a small negative event while many neutral everyday events continue around them. Wide elevated city perspective. ZERO READABLE TEXT.
+
+SCENE 07
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein schlechter Eindruck kann schneller hängen bleiben als mehrere unauffällige gute Momente.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW office-worker Stickman in a hallway has one small awkward first interaction with two colleagues; afterward the main character looks self-conscious while the colleagues already act normally. Medium side framing. ZERO READABLE TEXT.
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Auch Kritik beschäftigt uns oft länger als ein normales Lob, selbst wenn beides ähnlich wichtig war.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Apprentice/student Stickman in a realistic workshop-learning room receives several encouraging gestures from a mentor and then one calm correction. The learner's attention shifts strongly to the correction. Over-the-shoulder from learner. ZERO READABLE TEXT.
+
+SCENE 09
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Psychologische Übersichtsarbeiten beschreiben dieses Muster in Beziehungen, Lernen, Aufmerksamkeit, Urteilen und Erinnern.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Researcher true Stickman in a library/research room organizes several abstract study cards representing different life domains through icons and shapes only. Visually show negative material receiving stronger emphasis across several domains without readable labels. High three-quarter view. Leave calm space for later Remotion keyword NEGATIVES WIEGT SCHWERER. ZERO READABLE TEXT.
+
+SCENE 10
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Aber wichtig: Das heißt nicht, dass jedes negative Ereignis immer stärker wirkt.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman on a quiet park path calmly considers two different everyday experiences without one automatically dominating. Balanced grounded composition showing nuance, not a rule. Medium-wide shot. ZERO READABLE TEXT.
+
+SCENE 11
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Es ist eher eine Tendenz, die je nach Situation und Bedeutung unterschiedlich stark sein kann.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Several differently dressed true Stickmen in a station hall react with visibly different intensity to the same small unpleasant event. Wide group composition, varied poses, realistic public-space depth. ZERO READABLE TEXT.
+
+SCENE 12
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Warum existiert diese Tendenz überhaupt?
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman pauses thoughtfully in a quiet museum-like passage. Clear reflective pose, no giant question mark, no infographic. Tight close-medium framing with architectural depth. ZERO READABLE TEXT.
+
+SCENE 13
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Negative Hinweise können auf Fehler, Verlust, Gefahr oder soziale Probleme aufmerksam machen.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Commuter Stickman on a station platform notices a small potentially problematic object or hazard cue on the ground before anything else. Keep safe distance and everyday realism. Low side angle. ZERO READABLE TEXT.
+
+SCENE 14
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Solche Informationen zu übersehen kann teurer sein, als etwas Angenehmes kurz zu verpassen.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in a kitchen reacts quickly to a pot that is about to boil over while an appealing finished meal sits safely nearby. Concrete cost-asymmetry example, no danger, dynamic three-quarter angle. ZERO READABLE TEXT.
+
+SCENE 15
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Deshalb bekommt Negatives häufig schneller unsere Aufmerksamkeit und wird gründlicher verarbeitet.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Large station hall with several true Stickmen. One character immediately orients toward a clear small problem cue while pleasant surroundings become secondary. Wide perspective, strong depth. Leave upper-left calm space for later Remotion keyword AUFMERKSAMKEIT. ZERO READABLE TEXT.
+
+SCENE 16
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du merkst das zum Beispiel beim Scrollen durch Nachrichten oder Kommentare.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman sits at a café window scrolling through a smartphone. Screen contains only abstract cards, shapes and icons. Rich café environment, over-the-shoulder composition. ZERO READABLE TEXT.
+
+SCENE 17
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Zwischen vielen neutralen Meldungen springt dir die schlechte Nachricht sofort ins Auge.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 16. Reuse the same café character. Among many neutral abstract cards, one dark warning-like card immediately captures the character's gaze. Tight three-quarter phone angle, no letters or pseudo-writing. ZERO READABLE TEXT.
+
+SCENE 18
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ähnlich ist es in Gesprächen mit Freunden, Kollegen oder Familie.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Three differently dressed true Stickmen have a relaxed conversation around a dining table. Warm normal body language and believable home/dining environment. Wide side group shot. ZERO READABLE TEXT.
+
+SCENE 19
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Neun normale Sätze können verschwinden, während eine scharfe Bemerkung hängen bleibt.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 18. Same group and room. One sharper remark briefly changes the main character's posture and attention, while the rest of the interaction remains ordinary. Medium reverse angle. ZERO READABLE TEXT.
+
+SCENE 20
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Danach beginnt dein Kopf oft, genau diesen Moment immer wieder abzuspielen.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 18–19. Reuse only the affected main character. Later evening walk through a city street; the one conversation moment is subtly echoed as a faint abstract memory shape near them. Cinematic side shot with depth. ZERO READABLE TEXT.
+
+SCENE 21
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dadurch wirkt die negative Sache größer, als sie im Gesamtbild tatsächlich war.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in a broad public square visually fixates on one small dark event in the foreground while the wide real environment contains many neutral and positive everyday cues. Very wide composition. Leave clean upper-left space for later Remotion keyword GESAMTBILD. ZERO READABLE TEXT.
+
+SCENE 22
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das kann besonders bei Feedback in Schule, Ausbildung oder Arbeit problematisch werden.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW learner/employee Stickman sits with a mentor in a realistic training room during structured feedback. Calm professional interaction, not dramatic. Diagonal two-person framing. ZERO READABLE TEXT.
+
+SCENE 23
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du hörst fünf Dinge, die gut liefen, und einen Punkt, den du verbessern sollst.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 22. Same two people and room. Use five small positive abstract markers and one corrective marker on the table or board; the learner's gaze locks onto the single corrective marker. No numbers or words. High table angle. ZERO READABLE TEXT.
+
+SCENE 24
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Später erinnerst du dich vielleicht fast nur noch an diesen einen Fehler und vergisst den Rest.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 22–23. Reuse the learner later on a tram. One corrective marker remains vivid in memory while positive markers are faint and distant. Tight side shot, other passengers normal. ZERO READABLE TEXT.
+
+SCENE 25
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der Negativitätsbias kann also beeinflussen, worauf du achtest, was du erinnerst und wie du bewertest.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. One true Stickman in a modern learning/work space moves visually through three simple grounded stations: noticing, remembering, evaluating, with each pulled toward one negative marker. Keep it one coherent scene, not three panels. Wide editorial composition. Leave negative space for later Remotion keyword VERZERRTE GEWICHTUNG. ZERO READABLE TEXT.
+
+SCENE 26
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Aber du musst ihm nicht einfach ausgeliefert sein.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman walks along a riverside path and visibly relaxes out of a narrow fixation. Open environment, calm posture, wide peaceful shot. ZERO READABLE TEXT.
+
+SCENE 27
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein erster Schritt ist, das Gesamtbild bewusst wieder sichtbar zu machen.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. True Stickman at a kitchen table lays several abstract feedback cards/icons side by side so positive, neutral and negative information is all visible together. Slight top-down angle. ZERO READABLE TEXT.
+
+SCENE 28
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Frag dich: Welche positiven oder neutralen Informationen blende ich gerade aus?
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman at a café table deliberately looks across several different feedback cues instead of staring at the darkest one. Reflective body language, close over-the-shoulder angle. ZERO READABLE TEXT.
+
+SCENE 29
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Bei Feedback kannst du die guten Punkte genauso konkret notieren wie die Kritik.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in an apprenticeship/office feedback setting writes both positive points and criticism into a notebook using balanced abstract lines and icons only. Three-quarter close framing. ZERO READABLE TEXT.
+
+SCENE 30
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Und bei einem schlechten Kommentar hilft eine zweite Frage:
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman on a park bench receives one negative-looking phone comment and deliberately pauses before reacting. Medium frontal composition. Phone contains abstract shapes only. ZERO READABLE TEXT.
+
+SCENE 31
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ist das wirklich ein starkes Signal oder nur ein einzelner Datenpunkt unter vielen?
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 30. Same park-bench character. One dark comment point is visible among many neutral/positive abstract points; the character now studies the whole distribution calmly. Over-the-shoulder angle. Leave clean space for later Remotion keyword EIN DATENPUNKT. ZERO READABLE TEXT.
+
+SCENE 32
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Damit redest du Probleme nicht schön und ignorierst keine berechtigte Kritik.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Two true Stickmen walking on a quiet path discuss a real criticism calmly. One listens openly without dismissing or catastrophizing. Balanced two-person side view. ZERO READABLE TEXT.
+
+SCENE 33
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du verhinderst nur, dass ein negativer Moment automatisch alles andere überschreibt.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in a bright community room takes one dark negative marker out of the visual center and places it back among a larger mixed group of cues. High three-quarter composition, concrete tabletop action. ZERO READABLE TEXT.
+
+SCENE 34
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Negatives verdient manchmal Aufmerksamkeit, aber nicht automatisch die ganze Bühne.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. A true Stickman in a small modern event space sees one dark negative cue trying to occupy the center of a literal stage, while the wider stage and audience remain balanced and normal. Elegant metaphor, not theatrical chaos. Wide stage perspective. Leave upper-left space for later Remotion keyword NICHT DIE GANZE BÜHNE. ZERO READABLE TEXT.
+
+SCENE 35
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wenn du das merkst, siehst du Situationen wieder näher am tatsächlichen Gesamtbild.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Closing scene: a true Stickman walks calmly along an evening city promenade and looks across a broad balanced environment with several distant Stickmen, lights, trees and everyday activity. No single negative point dominates. Cinematic wide final composition with natural evening colors. ZERO READABLE TEXT.
+
+FINAL EXECUTION RULE
+Stop only after Scene 01 for user approval. After approval continue automatically through Batch 1 to Batch 7. After each batch run internal QA, regenerate only failed images and continue after PASS.
+
+FINAL QA RULE
+Reject and regenerate any image with non-stickman humans, anatomy drift, oversized mascot heads, 3D/Pixar/anime/photorealistic drift, unintended readable text, unnecessary character cloning, repetitive locations/cameras, or mismatch with the current speech beat. Scene 01 also fails if it is not cover-strong and if there is no usable negative space for the later German headline.
+
+FINAL PRINCIPLE
+01.png = SCENE 01 + COVER + STYLE/ANATOMY MASTER. Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. Flow source images stay text-free. Selected German cover/keyword overlays are added later in Remotion.
