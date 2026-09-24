@@ -3,7 +3,7 @@
   "sceneCount": 35,
   "coverImage": "03-bilder/01.png",
   "scene01Role": "SCENE_01_COVER_MASTER",
-  "textOverlayPolicy": "SELECTIVE_GERMAN_KEYWORDS_V1",
+  "finalTextOverlayPolicy": "SELECTIVE_GERMAN_KEYWORDS_V1",
   "reason": "Start-/Endzeiten erst aus finalem bearbeiteten 1,10x-Audio ableiten. Szene 01 bleibt Cover/Thumbnail-Basis und Style-/Anatomie-Master.",
   "sceneLabels": [
     {"scene":1,"text":"WARUM BLEIBT NEGATIVES HÄNGEN?","position":"top-left","variant":"cover"},
