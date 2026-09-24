@@ -16,8 +16,9 @@ Danach lesen:
 5. `rules/YOUTUBE_THEMEN_SYSTEM.md`
 6. `rules/YOUTUBE_STYLE_LOCK.md`
 7. `rules/IMAGE_REFERENCE_LOCK.md`
-8. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-9. `rules/PRODUCTION_FORMAT_RULES.md`
+8. `rules/COVER_LOCK.md`
+9. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+10. `rules/PRODUCTION_FORMAT_RULES.md`
 
 `rules/STICKMAN_DNA.md` ist die zentrale visuelle Source of Truth. Andere Style-/Prompt-Dateien konkretisieren diese DNA, dürfen ihr aber nicht widersprechen.
 
@@ -88,6 +89,26 @@ Bei Konflikt gilt:
 - wenn ein Sprechabschnitt mehrere neue Gedanken enthält, in mehrere Visual Beats/Bilder aufteilen
 - Zuschauer soll die Kernaussage sehr schnell erfassen können
 
+## Scene 01 — COVER + MASTER HARD LOCK
+
+Für jedes YouTube-Projekt gilt:
+
+**`03-bilder/01.png` = SCENE 01 + COVER/THUMBNAIL-BASIS + STYLE-/ANATOMY-MASTER.**
+
+Szene 01 muss gleichzeitig:
+- den ersten gesprochenen Visual Beat korrekt darstellen,
+- als starkes Cover funktionieren,
+- die Stickman-/Welt-DNA als Master etablieren,
+- ZERO READABLE TEXT in Flow einhalten.
+
+Cover-Komposition: klares großes Hauptmotiv, starke lesbare Körperhaltung/Emotion/Handlung, wenig visuelles Rauschen, schnelle Thumbnail-Lesbarkeit und bei Bedarf ruhige Negativfläche für späteren deutschen Covertext.
+
+Kein separates Pflicht-`cover.png`. Wenn Covertext verwendet wird, erst nach der Flow-Generierung kontrolliert und ausschließlich auf Deutsch ergänzen.
+
+Strukturierte Phase-1-Pläne: Szene 01 trägt `isCover: true` und `coverRole: "SCENE_01_COVER_MASTER"`; alle späteren Szenen `isCover: false`.
+
+Details: `rules/COVER_LOCK.md`.
+
 ## Visual-Beat-Dichte
 
 Standard für skriptbasierte YouTube-Projekte:
@@ -103,9 +124,9 @@ Nicht nur nach Wortzahl teilen. Auch kurze Sätze mit mehreren Orten, Handlungen
 ## Verbindlicher Referenz-Workflow
 
 Bei Serienbildern gilt:
-1. zuerst Bild 01 bzw. ein explizites Masterbild alleine generieren,
+1. zuerst Bild 01 als **Cover + erster Visual Beat + Style-/Anatomy-Master** alleine generieren,
 2. danach STOP und auf Nutzerfreigabe warten,
-3. dieses Bild nur bei vollständigem PASS als Master-Referenz freigeben,
+3. dieses Bild nur bei vollständigem Cover-/Style-/Stickman-/Text-PASS als Master-Referenz freigeben,
 4. danach höchstens 5 neue Bilder pro Batch erzeugen,
 5. nach jedem Batch interne Style-/Continuity-/Inhalts-QA durchführen,
 6. nur fehlerhafte Bilder regenerieren,
@@ -158,7 +179,7 @@ Für jedes neue YouTube-Projekt bleibt die normale Nutzeransicht bewusst einfach
 
 - `01-script/` → enthält nur `script.txt`
 - `02-google-flow/` → enthält nur `google-flow-prompt.txt`
-- `03-bilder/` → `01.png`, `02.png`, `03.png` usw.; `01.png` ist zugleich Master-Referenz
+- `03-bilder/` → `01.png`, `02.png`, `03.png` usw.; **`01.png` ist zugleich Scene 01 + Cover + Master-Referenz**
 - `04-audio/` → finales `final-voice.mp3`
 - `05-export/` → fertiger Videoexport
 - `99-intern/` → Quellen, Style-/Continuity-Regeln, QA, Phase-1/Phase-3-Dateien und sonstige Technik
@@ -170,6 +191,7 @@ Der Nutzer soll für die normale Produktion **nur ein Skript und eine einzige Pr
 - Format und Stil
 - STRICT-STICKMAN-ONLY-Gate
 - ZERO-READABLE-TEXT-Gate für Flow-Quellbilder
+- **Scene-01-Cover-Hard-Lock**
 - Ein-Gedanke-pro-Bild-Gate
 - konkrete Szene vor generischer Infografik
 - Master-Referenz-Regel
@@ -188,6 +210,7 @@ Keine zusätzlichen Prompt-/Style-Dateien in der normalen sichtbaren Arbeitsflä
 Bei strukturellen oder Pipeline-Änderungen mindestens ausführen:
 - `npm run typecheck`
 - `npm run qa:visual-density`
+- `npm run qa:auto-visual-planning`
 - `npm run qa:flow-prompts`
 - relevante Format-/Produktionschecks
 
@@ -205,6 +228,9 @@ Bei Formatkonflikten gilt ohne Ausnahme:
 Bei visueller Identität gilt:
 **`rules/STICKMAN_DNA.md` gewinnt.**
 
+Bei Cover-Fragen gilt:
+**`rules/COVER_LOCK.md` gewinnt: `01.png = SCENE 01 + COVER + MASTER`.**
+
 Bei der exakten projektspezifischen Darstellung gilt innerhalb der DNA:
 **freigegebene Master-Referenz gewinnt.**
 
@@ -212,4 +238,4 @@ Bei Textkonflikten gilt:
 **textfreies Flow-Quellbild + deutscher Remotion-Overlay gewinnt.**
 
 Beim Batch-Ablauf gilt:
-**Masterfreigabe einmalig nach Bild 01; danach automatische 5er-Batches mit interner QA ohne weitere Nutzer-Rückfragen.**
+**Master-/Coverfreigabe einmalig nach Bild 01; danach automatische 5er-Batches mit interner QA ohne weitere Nutzer-Rückfragen.**
