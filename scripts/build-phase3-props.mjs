@@ -16,6 +16,8 @@ const normalizeFormat = (value) => {
   return null;
 };
 
+const countWords = (value) => String(value ?? '').trim().split(/\s+/).filter(Boolean).length;
+
 const words = JSON.parse(fs.readFileSync(path.resolve(wordTimingPath), 'utf8'));
 const plan = JSON.parse(fs.readFileSync(path.resolve(scenePlanPath), 'utf8'));
 const targetFormat = normalizeFormat(plan.format);
@@ -24,6 +26,7 @@ if (!Array.isArray(plan.sceneStartWords) || !plan.sceneStartWords.length) throw 
 
 const allowedEffects = new Set(['static', 'zoom-in', 'zoom-out', 'pan-left', 'pan-right']);
 const allowedLabelPositions = new Set(['top-left', 'top-center', 'center', 'bottom-center']);
+const allowedLabelVariants = new Set(['keyword', 'cover']);
 const reelDefaultEffects = ['zoom-in', 'pan-left', 'zoom-out', 'pan-right'];
 let sceneEffects = Array.isArray(plan.sceneEffects) ? plan.sceneEffects : [];
 if (sceneEffects.some((effect) => !allowedEffects.has(effect))) throw new Error('sceneEffects contains unsupported values');
@@ -43,7 +46,39 @@ sceneLabels.forEach((label, index) => {
   if (label.position && !allowedLabelPositions.has(label.position)) {
     throw new Error(`sceneLabels[${index}].position is unsupported`);
   }
+  const variant = label.variant ?? 'keyword';
+  if (!allowedLabelVariants.has(variant)) {
+    throw new Error(`sceneLabels[${index}].variant must be cover or keyword`);
+  }
+  if (variant === 'cover' && label.scene !== 1) {
+    throw new Error(`sceneLabels[${index}]: cover variant is only allowed on scene 1`);
+  }
+  const wordCount = countWords(label.text);
+  if (variant === 'cover' && (wordCount < 2 || wordCount > 7)) {
+    throw new Error(`sceneLabels[${index}]: cover headline must contain 2-7 words`);
+  }
+  if (variant === 'keyword' && wordCount > 5) {
+    throw new Error(`sceneLabels[${index}]: keyword overlay must contain at most 5 words`);
+  }
 });
+
+if (targetFormat === 'youtube') {
+  const coverLabels = sceneLabels.filter((label) => label.scene === 1 && (label.variant ?? 'keyword') === 'cover');
+  if (coverLabels.length !== 1) {
+    throw new Error('YouTube Phase 3 requires exactly one scene-1 cover label with variant="cover".');
+  }
+
+  const labelsPerScene = new Map();
+  sceneLabels.forEach((label) => labelsPerScene.set(label.scene, (labelsPerScene.get(label.scene) ?? 0) + 1));
+  for (const [scene, count] of labelsPerScene.entries()) {
+    if (count > 1) throw new Error(`YouTube scene ${scene} contains more than one text overlay.`);
+  }
+
+  const maxOverlayScenes = Math.max(1, Math.ceil(plan.sceneStartWords.length * 0.3));
+  if (sceneLabels.length > maxOverlayScenes) {
+    throw new Error(`YouTube text overlays are too dense: ${sceneLabels.length}/${plan.sceneStartWords.length}. Maximum is ${maxOverlayScenes} (30%).`);
+  }
+}
 
 const props = {
   targetFormat,
