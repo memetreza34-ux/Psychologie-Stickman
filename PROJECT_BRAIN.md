@@ -14,7 +14,7 @@ Eigenständiges Produktionsrepo für **Alltagspsychologie & menschliches Verhalt
 - Visual-Beat-Regeln: `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - YouTube-Produktionsfläche: `youtube/`
 - Reel-Produktionsfläche: `reels/`
-- aktueller YouTube-Praxistest: `youtube/23.09.2026-aufschieben-test/`
+- aktueller YouTube-Praxistest: `youtube/24.09.2026-spotlight-effekt/`
 
 ## Strukturprinzip
 
@@ -139,13 +139,16 @@ Die Flow-QA prüft zusätzlich auf:
 
 ## Aktueller Praxistest
 
-YouTube, 23.09.2026: **„Warum schieben wir wichtige Dinge auf?“ — Aufschieben/Prokrastination**.
+YouTube, 24.09.2026: **„Warum du glaubst, dass alle dich beobachten“ — Spotlight-Effekt**.
 
-Ziel: ca. 2-Minuten-Test der überarbeiteten Bildpipeline mit:
+Ziel: ca. 2,5-Minuten-End-to-End-Test der überarbeiteten Bildpipeline mit:
+- 411 Wörtern und 35 kurzen Visual Beats
 - 16:9 / 1920×1080
 - STRICT-STICKMAN-DNA
 - Style-Konsistenz ohne Charakter-Klonen
-- abwechslungsreichen passenden Orten, Rollen und Kamerawinkeln
+- stark wechselnden passenden Orten, Rollen und Kamerawinkeln
 - ZERO READABLE TEXT in Flow-Quellbildern
 - deutschen Texten ausschließlich kontrolliert über Remotion bzw. explizite deutsche Ausnahme
-- Masterfreigabe nach Bild 01 und danach automatischen 5er-Batches.
+- Masterfreigabe nach Bild 01 und danach automatischen 5er-Batches
+- Quellen-/Claim-Check vor Script/Phase 1
+- finaler Phase-3-Aufbau erst nach finalem 1,10x-Audio und echten Bildassets.

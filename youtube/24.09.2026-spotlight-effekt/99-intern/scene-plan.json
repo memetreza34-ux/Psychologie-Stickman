@@ -1,0 +1,12 @@
+{
+  "status": "PENDING_FINAL_AUDIO",
+  "sceneCount": 35,
+  "reason": "Start-/Endzeiten erst aus finalem bearbeiteten 1,10x-Audio ableiten.",
+  "sceneLabels": [
+    {"scene": 4, "text": "SPOTLIGHT-EFFEKT", "position": "top-left"},
+    {"scene": 18, "text": "ICH-FOKUS", "position": "top-left"},
+    {"scene": 23, "text": "WENIGER ALS DU DENKST", "position": "top-left"},
+    {"scene": 35, "text": "IM EIGENEN KOPF", "position": "top-left"}
+  ],
+  "scenes": []
+}
