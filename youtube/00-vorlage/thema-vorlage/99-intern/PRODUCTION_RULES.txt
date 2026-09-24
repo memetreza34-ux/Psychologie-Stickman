@@ -23,14 +23,22 @@ BILDER
 - horizontale Breite bewusst für Umgebung, Abläufe und Vergleiche nutzen
 - keine Füllbilder
 - keine spätere Information vorwegnehmen
-- sichtbarer Text nur wenn nötig und dann ausschließlich Deutsch
+- Flow-Quellbilder bleiben ZERO READABLE TEXT
 - alle Menschen Stickman
+
+FINALE TEXTE — REMOTION
+- Szene 01 bekommt immer eine deutsche Cover-Headline mit 2–7 Wörtern (`variant: "cover"`)
+- ausgewählte weitere Szenen dürfen deutsche Keywords mit maximal 5 Wörtern bekommen (`variant: "keyword"`)
+- Ziel ungefähr ein Textmoment alle 4–6 Bilder
+- maximal 30 % der YouTube-Szenen mit Overlays
+- keine langen Sätze und keine Dauer-Untertitel
+- Overlay-Szenen im Flow mit ruhiger Negativfläche planen
 
 SCENE 01 / COVER — HARD LOCK
 - `03-bilder/01.png` ist immer gleichzeitig Szene 01 + Cover/Thumbnail-Basis + Style-/Anatomie-Master
 - Szene 01 muss den ersten gesprochenen Beat korrekt darstellen UND als starkes Cover funktionieren
 - großes klares Hauptmotiv, schnelle Lesbarkeit, klare Emotion/Handlung, wenig visuelles Rauschen
-- optional ruhige Negativfläche für späteren deutschen Covertext
+- verpflichtende ruhige Negativfläche für spätere deutsche Cover-Headline
 - Flow-Quellbild bleibt ZERO READABLE TEXT
 - kein separates Pflicht-`cover.png`
 - Phase-1-Metadaten: `isCover: true`, `coverRole: "SCENE_01_COVER_MASTER"`
@@ -43,4 +51,7 @@ REFERENZ-WORKFLOW
 
 HARD FAIL
 - Szene 01 ist nicht als Cover vorgesehen
+- finale Szene 01 hat keine deutsche Cover-Headline
+- Keyword-Overlays werden zu langen Sätzen
+- Overlay-Dichte überschreitet 30 %
 - 9:16 / 1080×1920 als reguläres YouTube-Longform-Format
