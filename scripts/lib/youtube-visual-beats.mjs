@@ -145,14 +145,22 @@ const buildPlanningFields = (beat, index) => ({
 export const buildVisualBeatScenes = (beats) =>
   beats.map((beat, index) => {
     const plan = buildPlanningFields(beat, index);
+    const isCover = index === 0;
+    const coverInstruction = isCover
+      ? 'COVER HARD LOCK: Diese erste Szene ist zugleich COVER/THUMBNAIL-BASIS und STYLE-/ANATOMY-MASTER. Sie muss den ersten gesprochenen Beat korrekt zeigen und gleichzeitig als starkes Cover funktionieren: klares großes Hauptmotiv, schnelle Lesbarkeit, starke Pose/Emotion oder Handlung, wenig visuelles Rauschen, keine spätere Information vorwegnehmen. '
+      : '';
+
     return {
       scene: index + 1,
+      isCover,
+      ...(isCover ? {coverRole: 'SCENE_01_COVER_MASTER'} : {}),
       startPhrase: firstWords(beat, 8),
       endWord: lastWord(beat),
       speechSection: beat,
       textPolicy: 'NONE',
       ...plan,
       visualTask:
+        `${coverInstruction}` +
         `VISUAL BEAT: Zeige ausschließlich die Information, die in diesem gesprochenen Beat vorkommt. ` +
         `Bevorzuge eine konkrete Stickman-Handlung in einer glaubwürdigen Umgebung vor abstrakten Diagrammen. ` +
         `Keine spätere Information vorwegnehmen. Neue Orte, Personen, Objekte, Zahlen, Handlungen oder Ursache-Folge-Schritte müssen sichtbar werden, wenn sie in diesem Beat wichtig sind. ` +

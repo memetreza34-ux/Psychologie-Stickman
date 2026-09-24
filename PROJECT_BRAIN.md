@@ -11,6 +11,7 @@ Eigenständiges Produktionsrepo für **Alltagspsychologie & menschliches Verhalt
 - Bildwelt: **LOCKED — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3 — STRICT STICKMAN ONLY**
 - Style-Lock: `rules/YOUTUBE_STYLE_LOCK.md`
 - Referenz-Lock: `rules/IMAGE_REFERENCE_LOCK.md`
+- Cover-Lock: `rules/COVER_LOCK.md`
 - Visual-Beat-Regeln: `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - YouTube-Produktionsfläche: `youtube/`
 - Reel-Produktionsfläche: `reels/`
@@ -24,7 +25,7 @@ Unter `youtube/` liegen Themen direkt als Projektordner. Kein zusätzlicher `lon
 Normale sichtbare Arbeitsfläche eines YouTube-Projekts:
 1. `01-script/` — nur `script.txt`
 2. `02-google-flow/` — nur `google-flow-prompt.txt`
-3. `03-bilder/` — fertige `01.png`, `02.png`, ...; `01.png` ist Master
+3. `03-bilder/` — fertige `01.png`, `02.png`, ...; **`01.png` ist immer Szene 01 + Cover/Thumbnail-Basis + Master**
 4. `04-audio/` — `final-voice.mp3`
 5. `05-export/` — fertiger Export
 6. `99-intern/` — alle technischen Dateien, Quellen, QA und Metadaten
@@ -36,6 +37,22 @@ Unter `reels/` wird nach Kalenderwochen organisiert:
 `TT.MM.JJJJ-bis-TT.MM.JJJJ/`
 
 Darin liegen `1-montag` bis `7-sonntag`.
+
+## Scene 01 — Cover-Regel
+
+Für jedes neue YouTube-Video gilt ohne Ausnahme:
+
+**`03-bilder/01.png = SCENE 01 + COVER + STYLE-/ANATOMY-MASTER`.**
+
+Das bedeutet:
+- Szene 01 zeigt den ersten gesprochenen Visual Beat korrekt.
+- Szene 01 wird gleichzeitig cover-tauglich komponiert: starkes Hauptmotiv, schnelle Lesbarkeit, klare Emotion/Handlung, wenig visuelles Rauschen.
+- Szene 01 etabliert die Stickman-/Welt-DNA für alle Folgeassets.
+- Flow erzeugt auch beim Cover ZERO READABLE TEXT.
+- Covertext, falls verwendet, wird erst danach kontrolliert und ausschließlich auf Deutsch ergänzt.
+- Es gibt kein separates Pflicht-`cover.png`; die erste Szene ist das Cover.
+
+Strukturierte Phase-1-Pläne markieren Szene 01 mit `isCover: true` und `coverRole: "SCENE_01_COVER_MASTER"`.
 
 ## Bildwelt-Kern
 
@@ -55,14 +72,14 @@ Darin liegen `1-montag` bis `7-sonntag`.
 
 **Stickman-DNA ist keine Charakter-DNA.**
 
-Bild 01 ist global nur Referenz für:
+Bild 01 ist global Referenz für:
 - Stickman-Anatomiesystem
 - Linienart
 - Rendering/Shading
 - Farbverhalten
 - Detailgrad und Qualität der Welt
 
-Bild 01 sperrt global **nicht**:
+Dass Bild 01 zugleich Cover ist, ändert daran nichts. Bild 01 sperrt global **nicht**:
 - Figurenidentität
 - Kleidung
 - Castgröße
@@ -93,9 +110,9 @@ Wenn sichtbarer Text gebraucht wird, wird er standardmäßig später kontrollier
 
 ## Referenz-Workflow
 
-1. Bild 01 allein erzeugen.
+1. Bild 01 als **Cover + ersten Visual Beat + Master** allein erzeugen.
 2. STOP und Nutzerfreigabe abwarten.
-3. Bild 01 nur bei vollständigem Style-/Stickman-/Text-PASS freigeben.
+3. Bild 01 nur bei vollständigem Cover-/Style-/Stickman-/Text-PASS freigeben.
 4. Bild 01 bleibt Style-/Anatomie-Master für das Video.
 5. Danach höchstens 5 neue Bilder pro Batch.
 6. Nach jedem Batch interne Style-/Continuity-/Inhalts-QA automatisch durchführen.
@@ -119,6 +136,7 @@ Standard:
 - genau ein primärer Gedanke pro Bild
 - Cast, Ort, Handlung und Kamera werden pro Beat geplant
 - keine unnötige Wiederholung derselben Figuren-/Raum-/Kameraformel
+- Szene 01 zusätzlich immer cover-tauglich planen
 
 Die automatische Phase-1-Erzeugung ist ein **redaktioneller Entwurf**, keine Ausrede für generische Szenen. Vor Phase 2 müssen die geplanten Cast-/Ort-/Handlungs-/Kameraentscheidungen zum gesprochenen Beat passen.
 
@@ -143,12 +161,13 @@ YouTube, 24.09.2026: **„Warum du glaubst, dass alle dich beobachten“ — Spo
 
 Ziel: ca. 2,5-Minuten-End-to-End-Test der überarbeiteten Bildpipeline mit:
 - 411 Wörtern und 35 kurzen Visual Beats
+- **Szene 01 zugleich als Cover/Thumbnail-Basis und Style-/Anatomie-Master**
 - 16:9 / 1920×1080
 - STRICT-STICKMAN-DNA
 - Style-Konsistenz ohne Charakter-Klonen
 - stark wechselnden passenden Orten, Rollen und Kamerawinkeln
 - ZERO READABLE TEXT in Flow-Quellbildern
 - deutschen Texten ausschließlich kontrolliert über Remotion bzw. explizite deutsche Ausnahme
-- Masterfreigabe nach Bild 01 und danach automatischen 5er-Batches
+- Master-/Coverfreigabe nach Bild 01 und danach automatischen 5er-Batches
 - Quellen-/Claim-Check vor Script/Phase 1
 - finaler Phase-3-Aufbau erst nach finalem 1,10x-Audio und echten Bildassets.

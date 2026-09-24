@@ -1,7 +1,9 @@
 {
   "status": "PENDING_FINAL_AUDIO",
   "sceneCount": 35,
-  "reason": "Start-/Endzeiten erst aus finalem bearbeiteten 1,10x-Audio ableiten.",
+  "coverImage": "03-bilder/01.png",
+  "scene01Role": "SCENE_01_COVER_MASTER",
+  "reason": "Start-/Endzeiten erst aus finalem bearbeiteten 1,10x-Audio ableiten. Szene 01 bleibt Cover/Thumbnail-Basis und Style-/Anatomie-Master.",
   "sceneLabels": [
     {"scene": 4, "text": "SPOTLIGHT-EFFEKT", "position": "top-left"},
     {"scene": 18, "text": "ICH-FOKUS", "position": "top-left"},

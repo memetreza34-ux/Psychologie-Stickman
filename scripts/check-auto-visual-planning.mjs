@@ -40,6 +40,14 @@ for (const scene of scenes) {
   }
 }
 
+if (scenes[0]?.isCover !== true) failures.push('scene 1 must always set isCover=true');
+if (scenes[0]?.coverRole !== 'SCENE_01_COVER_MASTER') failures.push('scene 1 must set coverRole=SCENE_01_COVER_MASTER');
+if (!/COVER HARD LOCK/iu.test(scenes[0]?.visualTask ?? '')) failures.push('scene 1 visualTask must contain COVER HARD LOCK guidance');
+for (const scene of scenes.slice(1)) {
+  if (scene.isCover !== false) failures.push(`scene ${scene.scene}: only scene 1 may be the cover`);
+  if ('coverRole' in scene) failures.push(`scene ${scene.scene}: coverRole must only exist on scene 1`);
+}
+
 const uniqueCameras = new Set(scenes.map((scene) => scene.camera));
 if (uniqueCameras.size < Math.min(5, scenes.length)) {
   failures.push(`camera variation too low: ${uniqueCameras.size} unique camera plans across ${scenes.length} scenes`);
@@ -52,5 +60,5 @@ if (failures.length > 0) {
 }
 
 console.log(
-  `AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, ${uniqueCameras.size} camera plans, structured CAST/ORT/HANDLUNG/KAMERA fields present.`,
+  `AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, Scene 01 cover/master locked, ${uniqueCameras.size} camera plans, structured CAST/ORT/HANDLUNG/KAMERA fields present.`,
 );

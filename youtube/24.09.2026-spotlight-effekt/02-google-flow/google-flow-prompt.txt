@@ -51,9 +51,17 @@ Simple Stickmen. Rich World. One clear idea per image. German visual language.
 - Vary camera distance, pose, location, clothing, cast size and composition naturally.
 - Do not repeat the same room, same lone character, same outfit or same medium shot without narrative reason.
 
+SCENE 01 COVER — HARD LOCK
+- `03-bilder/01.png` is ALWAYS Scene 01 + COVER/THUMBNAIL BASE + STYLE/ANATOMY MASTER.
+- Scene 01 must accurately visualize the first spoken beat AND work as a strong YouTube cover.
+- Use a clear large focal character, instantly readable body language, strong silhouette, simple visual hierarchy and minimal clutter.
+- Preserve quiet negative space where optional German cover text can be added later.
+- Do NOT render cover text in Flow. Scene 01 remains ZERO READABLE TEXT.
+- Do not create a separate required cover image. Scene 01 is the cover.
+
 CAST VARIATION — HARD LOCK
 STYLE CONSISTENCY DOES NOT MEAN CHARACTER CLONING.
-- 01.png is a STYLE AND ANATOMY reference only.
+- 01.png is the COVER plus STYLE AND ANATOMY reference, not a character identity template for the whole video.
 - Use different Stickman people whenever the current beat does not require narrative continuity.
 - Vary clothing colors, simple accessories, role cues, cast size, posture, location and camera.
 - Choose 1 to 4 Stickmen when useful.
@@ -79,17 +87,17 @@ GLOBAL SCENE CLAUSE
 STRICT STICKMAN-ONLY CHECK: Every visible person in foreground, background, screens, photos, reflections or memories must use the approved true-stickman anatomy and editorial 2D style. Different people are welcome. If any figure becomes a normal cartoon or semi-realistic human, regenerate.
 
 MASTER REFERENCE WORKFLOW
-1. Generate SCENE 01 ONLY.
+1. Generate SCENE 01 ONLY as COVER + FIRST VISUAL BEAT + STYLE/ANATOMY MASTER.
 2. STOP.
-3. Check true-stickman anatomy, environment quality, text freedom and composition.
+3. Check cover strength, first-beat accuracy, true-stickman anatomy, environment quality, text freedom and composition.
 4. Wait for user approval.
-5. Save approved image as 03-bilder/01.png.
+5. Save approved image as `03-bilder/01.png`; this exact file is also the official cover/thumbnail base.
 6. For EVERY image from Scene 02 onward attach 01.png as reference.
-7. Scene 01 remains STYLE/ANATOMY master only.
+7. Scene 01 remains the COVER and STYLE/ANATOMY master.
 8. Master does NOT lock character identity, clothing, cast size, location, pose, camera or composition.
 
 AUTOMATIC BATCH WORKFLOW
-MASTER: 01
+MASTER/COVER: 01
 Batch 1: 02–06
 Batch 2: 07–11
 Batch 3: 12–16
@@ -101,13 +109,13 @@ Batch 7: 32–35
 After Scene 01 approval generate only the current batch, maximum 5 new images. Run internal QA after every batch. Check anatomy, scene meaning, cast/location/camera variety and ZERO READABLE TEXT. Regenerate only failed images. Continue automatically after PASS.
 
 REFERENCE CLAUSE FOR SCENE 02+
-Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone template. Match true-stickman anatomy, head/torso proportions, very thin line limbs, no-finger hands, linework, natural color treatment, subtle cel shading, environment detail level and overall editorial 2D quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. Reuse a character only when the scene explicitly says LOCAL CONTINUITY. ZERO READABLE TEXT.
+Use attached 01.png as COVER STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone template. Match true-stickman anatomy, head/torso proportions, very thin line limbs, no-finger hands, linework, natural color treatment, subtle cel shading, environment detail level and overall editorial 2D quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. Reuse a character only when the scene explicitly says LOCAL CONTINUITY. ZERO READABLE TEXT.
 
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Du läufst in einen Raum und plötzlich fühlt es sich an, als würden alle dich anschauen.
 PROMPT:
-MASTER STYLE FRAME. One true Stickman enters a modern community room through a doorway while three or four background Stickmen are already inside doing ordinary things. The entering character hesitates as if suddenly feeling watched, but the background people should not all stare directly. Rich believable room, furniture, plants, windows, natural daylight, clean dark outlines, subtle 2D cel shading. Full enough body view to establish exact true-stickman anatomy. Wide doorway framing with depth. ZERO READABLE TEXT. Generate Scene 01 only, then STOP.
+COVER + MASTER STYLE FRAME. Create a strong YouTube-cover-quality first scene that still matches the spoken beat exactly. A true Stickman enters a modern community room through a doorway and hesitates, visibly self-conscious, as if suddenly feeling watched. Make this entering Stickman the clear large focal subject in the foreground/right-center with a strong readable silhouette and expressive hesitant posture. Three or four background Stickmen are already inside doing ordinary things; most are occupied with their own activities and should NOT all stare directly. Use the doorway and room perspective to make the main character feel exposed without falsely showing universal attention. Rich believable room, furniture, plants, windows, natural daylight, clean dark outlines, subtle 2D cel shading. Keep visual hierarchy simple and thumbnail-readable. Leave calm negative space in the upper-left/left area for optional German cover text to be added later outside Flow. Full enough body view to establish exact true-stickman anatomy. ZERO READABLE TEXT. Generate Scene 01 only, then STOP.
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -314,10 +322,10 @@ PROMPT:
 Attach 01.png as STYLE/ANATOMY reference only. Closing scene: a Stickman walks calmly through an evening city passage, leaving behind a subtle imagined cone of light that existed only around their own head and body. The surrounding world continues normally with a few distant Stickmen. Cinematic wide final composition, natural evening colors, strong depth. Leave upper-left negative space for later German Remotion label IM EIGENEN KOPF. ZERO READABLE TEXT.
 
 FINAL EXECUTION RULE
-Stop only after Scene 01 for user approval. After Scene 01 is approved, continue automatically through Batch 1 to Batch 7 until all remaining images are complete. After each batch, perform internal QA, regenerate only failed images and continue immediately when the batch passes.
+Stop only after Scene 01 for user approval. Scene 01 is the official COVER/THUMBNAIL BASE and STYLE/ANATOMY MASTER. After Scene 01 is approved, continue automatically through Batch 1 to Batch 7 until all remaining images are complete. After each batch, perform internal QA, regenerate only failed images and continue immediately when the batch passes.
 
 FINAL QA RULE
-Reject and regenerate any image that contains a non-stickman human, anatomy drift, mascot-like oversized anatomy, 3D/Pixar/anime/photorealistic drift, unintended readable text, unnecessary character cloning, repetitive location/camera defaults, or a scene that does not directly match the current speech beat.
+Reject and regenerate any image that contains a non-stickman human, anatomy drift, mascot-like oversized anatomy, 3D/Pixar/anime/photorealistic drift, unintended readable text, unnecessary character cloning, repetitive location/camera defaults, or a scene that does not directly match the current speech beat. Scene 01 additionally fails if it is not strong and simple enough to function as the YouTube cover while still matching the first spoken beat.
 
 FINAL PRINCIPLE
-Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. Concrete action before generic infographic. ZERO readable text in Flow source images. German labels are added later in Remotion.
+01.png = SCENE 01 + COVER + STYLE/ANATOMY MASTER. Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. Concrete action before generic infographic. ZERO readable text in Flow source images. German labels are added later in Remotion.
