@@ -121,20 +121,46 @@ export const splitScriptIntoVisualBeats = (script, options = {}) => {
 const firstWords = (text, count = 8) => String(text).trim().split(/\s+/).filter(Boolean).slice(0, count).join(' ');
 const lastWord = (text) => String(text).trim().split(/\s+/).filter(Boolean).at(-1) ?? '';
 
+const cameraPresets = [
+  'Medium-wide three-quarter angle; klare Handlung und Umgebung gleichzeitig lesbar. Nur verwenden, wenn es zum Beat passt.',
+  'Over-the-shoulder oder seitliche Perspektive; Fokus auf konkrete Interaktion mit Objekt/Person. Nicht dieselbe Perspektive wie im vorherigen Beat wiederholen.',
+  'Wide environmental shot; Ort und Handlung klar verbinden, ohne die Figur zu klein werden zu lassen.',
+  'Close-medium reaction/action shot; Körperhaltung und eine konkrete Handlung tragen die Aussage, keine neutrale Pose.',
+  'Low or high three-quarter angle; nur wenn dadurch Hierarchie, Druck, Größe oder Aufmerksamkeit verständlicher wird.',
+  'Diagonal medium-wide composition mit Vorder-, Mittel- und Hintergrund; frische Bildtiefe statt Standard-Medium-Shot.',
+];
+
+const buildPlanningFields = (beat, index) => ({
+  visualIdea: `Visualisiere ausschließlich diesen gesprochenen Gedanken: ${beat}`,
+  subject:
+    'CAST: Wähle 1–4 beat-passende Stickmen. Standard ist neue passende Figur/Rolle; exakte Figurenwiederholung nur bei echter LOCAL CONTINUITY. Kleidung/Farben/Rollen dürfen variieren, Stickman-DNA bleibt gleich.',
+  action:
+    'HANDLUNG: Übersetze den Beat in eine konkrete sichtbare Handlung oder Interaktion. Keine bloß stehende neutrale Figur, wenn eine Handlung möglich ist.',
+  environment:
+    'ORT: Wähle einen glaubwürdigen inhaltlich passenden Ort. Nicht automatisch Schreibtisch/Homeoffice; Ort soll die Aussage erklären und sich ohne Grund nicht ständig wiederholen.',
+  camera: `KAMERA: ${cameraPresets[index % cameraPresets.length]}`,
+  continuityPolicy: 'NEW_CHARACTER_DEFAULT_UNLESS_LOCAL_CONTINUITY',
+});
+
 export const buildVisualBeatScenes = (beats) =>
-  beats.map((beat, index) => ({
-    scene: index + 1,
-    startPhrase: firstWords(beat, 8),
-    endWord: lastWord(beat),
-    speechSection: beat,
-    textPolicy: 'NONE',
-    visualTask:
-      `VISUAL BEAT: Zeige ausschließlich die Information, die in diesem gesprochenen Beat vorkommt. ` +
-      `Bevorzuge eine konkrete Stickman-Handlung in einer glaubwürdigen Umgebung vor abstrakten Diagrammen. ` +
-      `Keine spätere Information vorwegnehmen. Neue Orte, Staaten, Institutionen, Zahlen, Handlungen oder Ursache-Folge-Schritte müssen sichtbar werden, wenn sie in diesem Beat genannt werden. ` +
-      `Google-Flow-Quellbild ohne lesbaren Text erzeugen; deutsche Labels werden bei Bedarf später in Remotion ergänzt. ` +
-      `Gesprochener Beat: ${beat}`,
-  }));
+  beats.map((beat, index) => {
+    const plan = buildPlanningFields(beat, index);
+    return {
+      scene: index + 1,
+      startPhrase: firstWords(beat, 8),
+      endWord: lastWord(beat),
+      speechSection: beat,
+      textPolicy: 'NONE',
+      ...plan,
+      visualTask:
+        `VISUAL BEAT: Zeige ausschließlich die Information, die in diesem gesprochenen Beat vorkommt. ` +
+        `Bevorzuge eine konkrete Stickman-Handlung in einer glaubwürdigen Umgebung vor abstrakten Diagrammen. ` +
+        `Keine spätere Information vorwegnehmen. Neue Orte, Personen, Objekte, Zahlen, Handlungen oder Ursache-Folge-Schritte müssen sichtbar werden, wenn sie in diesem Beat wichtig sind. ` +
+        `${plan.subject} ${plan.environment} ${plan.action} ${plan.camera} ` +
+        `Google-Flow-Quellbild ohne lesbaren Text erzeugen; deutsche Labels werden bei Bedarf später in Remotion ergänzt. ` +
+        `Gesprochener Beat: ${beat}`,
+    };
+  });
 
 export const resolvePhase1Plan = (plan, planPath = '') => {
   if (Array.isArray(plan.scenes) && plan.scenes.length > 0) return plan;
