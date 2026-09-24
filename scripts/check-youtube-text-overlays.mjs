@@ -21,6 +21,7 @@ walk(root);
 const failures = [];
 const warnings = [];
 let checked = 0;
+let legacy = 0;
 
 const countWords = (value) => String(value ?? '').trim().split(/\s+/).filter(Boolean).length;
 
@@ -30,7 +31,14 @@ for (const file of files) {
   const plan = resolvePhase1Plan(raw, file);
   if (String(plan.format ?? '').toLowerCase() !== 'youtube') continue;
   const scenes = Array.isArray(plan.scenes) ? plan.scenes : [];
-  if (!scenes.length || scenes[0]?.isCover !== true) continue; // Legacy projects before COVER_LOCK.
+  if (!scenes.length || scenes[0]?.isCover !== true) continue;
+
+  const isNewPolicy = plan.finalTextOverlayPolicy === 'SELECTIVE_GERMAN_KEYWORDS_V1';
+  if (!isNewPolicy) {
+    legacy += 1;
+    warnings.push(`${relative}: legacy COVER_LOCK project without SELECTIVE_GERMAN_KEYWORDS_V1; upgrade before its next final Phase-3 render.`);
+    continue;
+  }
 
   checked += 1;
   const labels = Array.isArray(plan.sceneLabels) ? plan.sceneLabels : [];
@@ -68,14 +76,14 @@ for (const file of files) {
     warnings.push(`${relative}: only ${labels.length}/${scenes.length} scenes use overlays; confirm that the video does not miss useful key-term moments.`);
   }
 
-  if (plan.flowSourceImageTextPolicy && plan.flowSourceImageTextPolicy !== 'NONE') {
-    failures.push(`${relative}: Flow source-image text policy must remain NONE.`);
+  if (plan.flowSourceImageTextPolicy !== 'NONE') {
+    failures.push(`${relative}: Flow source-image text policy must be NONE.`);
   }
-  if (plan.visibleTextLanguage && plan.visibleTextLanguage !== 'de') {
+  if (plan.visibleTextLanguage !== 'de') {
     failures.push(`${relative}: visibleTextLanguage must be 'de'.`);
   }
-  if (plan.renderGermanLabelsInRemotion === false) {
-    failures.push(`${relative}: German labels must be rendered in Remotion.`);
+  if (plan.renderGermanLabelsInRemotion !== true) {
+    failures.push(`${relative}: renderGermanLabelsInRemotion must be true.`);
   }
 
   console.log(`${relative}: ${labels.length}/${scenes.length} overlay scenes (${Math.round(share * 100)}%); cover=${coverLabels.length}.`);
@@ -92,4 +100,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`\nYOUTUBE TEXT OVERLAY QA: PASS — ${checked} COVER_LOCK project(s) checked.\n`);
+console.log(`\nYOUTUBE TEXT OVERLAY QA: PASS — ${checked} new-policy project(s) checked; ${legacy} legacy project(s) warned.\n`);
