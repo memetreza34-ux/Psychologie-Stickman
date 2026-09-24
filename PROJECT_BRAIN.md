@@ -16,7 +16,7 @@ Eigenständiges Produktionsrepo für **Alltagspsychologie & menschliches Verhalt
 - Visual-Beat-Regeln: `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - YouTube-Produktionsfläche: `youtube/`
 - Reel-Produktionsfläche: `reels/`
-- aktueller YouTube-Praxistest: `youtube/24.09.2026-spotlight-effekt/`
+- aktueller YouTube-Praxistest: `youtube/24.09.2026-negativitaetsbias/`
 
 ## Strukturprinzip
 
@@ -178,18 +178,18 @@ Die Phase-3-Props-Prüfung erzwingt bei YouTube zusätzlich:
 
 ## Aktueller Praxistest
 
-YouTube, 24.09.2026: **„Warum du glaubst, dass alle dich beobachten“ — Spotlight-Effekt**.
+YouTube, 24.09.2026: **„Warum das Negative stärker hängen bleibt“ — Negativitätsbias**.
 
-Ziel: ca. 2,5-Minuten-End-to-End-Test der überarbeiteten Bildpipeline mit:
-- 411 Wörtern und 35 kurzen Visual Beats
+Ziel: ca. 2,5-Minuten-End-to-End-Test des verbesserten Cover-/Textsystems mit:
+- 412 Wörtern und 35 kurzen Visual Beats
 - **Szene 01 zugleich als Cover/Thumbnail-Basis und Style-/Anatomie-Master**
-- verpflichtender deutscher Cover-Headline
-- mehreren gezielt gesetzten deutschen Keyword-Overlays statt komplett textfreiem Endvideo
+- Cover-Headline **„WARUM BLEIBT NEGATIVES HÄNGEN?“**
+- 8 gezielt gesetzten deutschen Cover-/Keyword-Overlays auf 35 Szenen (ca. 23 %)
 - 16:9 / 1920×1080
 - STRICT-STICKMAN-DNA
 - Style-Konsistenz ohne Charakter-Klonen
 - stark wechselnden passenden Orten, Rollen und Kamerawinkeln
 - ZERO READABLE TEXT in Flow-Quellbildern
 - Master-/Coverfreigabe nach Bild 01 und danach automatischen 5er-Batches
-- Quellen-/Claim-Check vor Script/Phase 1
+- Quellen-/Claim-Check mit Baumeister et al. (2001) und Rozin & Royzman (2001)
 - finaler Phase-3-Aufbau erst nach finalem 1,10x-Audio und echten Bildassets.
