@@ -22,7 +22,7 @@
   "preferNoVisibleText": true,
   "renderGermanLabelsInRemotion": true,
   "forbidEnglishVisibleText": true,
-  "textOverlayPolicy": "SELECTIVE_GERMAN_KEYWORDS_V1",
+  "finalTextOverlayPolicy": "SELECTIVE_GERMAN_KEYWORDS_V1",
   "sceneLabels": [
     {"scene":1,"text":"WARUM BLEIBT NEGATIVES HÄNGEN?","position":"top-left","variant":"cover"},
     {"scene":4,"text":"NEGATIVITÄTSBIAS","position":"top-left","variant":"keyword"},
