@@ -36,7 +36,7 @@ const locationFamilies = [
   ['lab-research', /\b(laboratory|research room|experiment station|lab\b|forschungsraum|labor\b)\b/iu],
   ['street-outdoor', /\b(street|sidewalk|park|outdoor|city square|straße|park\b)\b/iu],
   ['shop', /\b(shop|store|supermarket|checkout|laden|supermarkt)\b/iu],
-  ['generic-desk', /\b(home-office|home office|workspace|desk\b|schreibtisch|arbeitsplatz)\b/iu],
+  ['generic-desk', /\b(home[- ]?office|workspace|desk\b|schreibtisch|arbeitsplatz)\b/iu],
 ];
 
 const cameraFamilies = [
@@ -78,7 +78,7 @@ for (const promptPath of productionPrompts) {
   if (!/FLOW SOURCE IMAGE TEXT POLICY\s*[—-]\s*ZERO READABLE TEXT/iu.test(content)) {
     failures.push(`${relative}: missing global ZERO READABLE TEXT policy.`);
   }
-  if (!/German labels.+added later in Remotion/isu.test(content)) {
+  if (!/German(?:\s+(?:cover\/keyword|cover|keyword))?\s+labels?.+added later in Remotion/isu.test(content)) {
     failures.push(`${relative}: missing Remotion label handoff rule.`);
   }
   if (/optional\s+(?:single\s+|short\s+)?German\s+(?:label|cue)/iu.test(content)) {

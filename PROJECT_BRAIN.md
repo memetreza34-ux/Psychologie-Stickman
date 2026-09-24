@@ -12,6 +12,7 @@ Eigenständiges Produktionsrepo für **Alltagspsychologie & menschliches Verhalt
 - Style-Lock: `rules/YOUTUBE_STYLE_LOCK.md`
 - Referenz-Lock: `rules/IMAGE_REFERENCE_LOCK.md`
 - Cover-Lock: `rules/COVER_LOCK.md`
+- Text-Overlay-Lock: `rules/TEXT_OVERLAY_LOCK.md`
 - Visual-Beat-Regeln: `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - YouTube-Produktionsfläche: `youtube/`
 - Reel-Produktionsfläche: `reels/`
@@ -49,7 +50,8 @@ Das bedeutet:
 - Szene 01 wird gleichzeitig cover-tauglich komponiert: starkes Hauptmotiv, schnelle Lesbarkeit, klare Emotion/Handlung, wenig visuelles Rauschen.
 - Szene 01 etabliert die Stickman-/Welt-DNA für alle Folgeassets.
 - Flow erzeugt auch beim Cover ZERO READABLE TEXT.
-- Covertext, falls verwendet, wird erst danach kontrolliert und ausschließlich auf Deutsch ergänzt.
+- Szene 01 reserviert bewusst ruhige Fläche für die finale Überschrift.
+- Das finale Cover erhält **immer eine kurze deutsche Remotion-Headline mit 2–7 Wörtern**.
 - Es gibt kein separates Pflicht-`cover.png`; die erste Szene ist das Cover.
 
 Strukturierte Phase-1-Pläne markieren Szene 01 mit `isCover: true` und `coverRole: "SCENE_01_COVER_MASTER"`.
@@ -99,14 +101,25 @@ Nicht als Default erlaubt:
 - immer derselbe Medium Shot
 - immer nur eine einzelne Figur, wenn der Beat sinnvoll mehrere Personen verlangt
 
-## Sprache im Bild
+## Textsystem
 
-Google-Flow-Quellbilder sind standardmäßig **ZERO READABLE TEXT**:
+### Flow
+Google-Flow-Quellbilder bleiben **ZERO READABLE TEXT**:
 - keine lesbaren deutschen oder englischen Wörter
 - keine UI-Texte, Labels, Untertitel, Poster-, Dokument- oder Bildschirmtexte
 - Screens/Dokumente nur mit abstrakten Linien, Formen und Icons
 
-Wenn sichtbarer Text gebraucht wird, wird er standardmäßig später kontrolliert in **Remotion auf Deutsch** gesetzt. Nur eine ausdrücklich begründete Ausnahme darf direkten Bildtext verwenden; dann muss der exakte kurze deutsche Wortlaut vorgegeben sein. Englischer sichtbarer Text ist nicht erlaubt.
+### Finaler YouTube-Render
+Das Endvideo ist **nicht mehr absichtlich komplett textfrei**. Kurzer deutscher Text wird gezielt als visueller Verstärker genutzt:
+- Szene 01: verpflichtende Cover-Headline (`variant: "cover"`, 2–7 Wörter)
+- weitere ausgewählte Szenen: wichtige Begriffe/Merksätze (`variant: "keyword"`, maximal 5 Wörter)
+- Zielwert ungefähr ein Textmoment alle 4–6 Bilder
+- typischer Bereich 15–25 % der Szenen
+- harte Obergrenze 30 %
+- keine langen Sätze und keine Dauer-Untertitel
+- ausschließlich Deutsch
+
+Flow plant bei Overlay-Szenen geeignete ruhige Negativfläche; Remotion setzt den Text.
 
 ## Referenz-Workflow
 
@@ -137,6 +150,7 @@ Standard:
 - Cast, Ort, Handlung und Kamera werden pro Beat geplant
 - keine unnötige Wiederholung derselben Figuren-/Raum-/Kameraformel
 - Szene 01 zusätzlich immer cover-tauglich planen
+- bei geplanten Textmomenten Negativfläche bewusst einplanen
 
 Die automatische Phase-1-Erzeugung ist ein **redaktioneller Entwurf**, keine Ausrede für generische Szenen. Vor Phase 2 müssen die geplanten Cast-/Ort-/Handlungs-/Kameraentscheidungen zum gesprochenen Beat passen.
 
@@ -155,6 +169,13 @@ Die Flow-QA prüft zusätzlich auf:
 - übermäßige Wiederholung derselben Kamerafamilie
 - fehlende Szenen-/Castvariation bei längeren Videos
 
+Die Phase-3-Props-Prüfung erzwingt bei YouTube zusätzlich:
+- genau ein `cover`-Overlay auf Szene 01
+- Cover-Headline 2–7 Wörter
+- Keywords maximal 5 Wörter
+- maximal ein Overlay pro Szene
+- Overlay-Dichte maximal 30 %
+
 ## Aktueller Praxistest
 
 YouTube, 24.09.2026: **„Warum du glaubst, dass alle dich beobachten“ — Spotlight-Effekt**.
@@ -162,12 +183,13 @@ YouTube, 24.09.2026: **„Warum du glaubst, dass alle dich beobachten“ — Spo
 Ziel: ca. 2,5-Minuten-End-to-End-Test der überarbeiteten Bildpipeline mit:
 - 411 Wörtern und 35 kurzen Visual Beats
 - **Szene 01 zugleich als Cover/Thumbnail-Basis und Style-/Anatomie-Master**
+- verpflichtender deutscher Cover-Headline
+- mehreren gezielt gesetzten deutschen Keyword-Overlays statt komplett textfreiem Endvideo
 - 16:9 / 1920×1080
 - STRICT-STICKMAN-DNA
 - Style-Konsistenz ohne Charakter-Klonen
 - stark wechselnden passenden Orten, Rollen und Kamerawinkeln
 - ZERO READABLE TEXT in Flow-Quellbildern
-- deutschen Texten ausschließlich kontrolliert über Remotion bzw. explizite deutsche Ausnahme
 - Master-/Coverfreigabe nach Bild 01 und danach automatischen 5er-Batches
 - Quellen-/Claim-Check vor Script/Phase 1
 - finaler Phase-3-Aufbau erst nach finalem 1,10x-Audio und echten Bildassets.

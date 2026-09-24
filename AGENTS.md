@@ -17,8 +17,9 @@ Danach lesen:
 6. `rules/YOUTUBE_STYLE_LOCK.md`
 7. `rules/IMAGE_REFERENCE_LOCK.md`
 8. `rules/COVER_LOCK.md`
-9. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-10. `rules/PRODUCTION_FORMAT_RULES.md`
+9. `rules/TEXT_OVERLAY_LOCK.md`
+10. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+11. `rules/PRODUCTION_FORMAT_RULES.md`
 
 `rules/STICKMAN_DNA.md` ist die zentrale visuelle Source of Truth. Andere Style-/Prompt-Dateien konkretisieren diese DNA, dürfen ihr aber nicht widersprechen.
 
@@ -57,11 +58,9 @@ Priorität:
 
 Keine langen Serien aus denselben `claim cards`, `truth meters`, Waagen, Pfaden oder Dashboard-Kompositionen. Wiederkehrende Symbole dürfen unterstützen, aber nicht das ganze Video dominieren.
 
-## Google-Flow-Quellbilder — ZERO READABLE TEXT HARD LOCK
+## Textsystem — FLOW TEXTFREI, ENDVIDEO MIT GEZIELTEM DEUTSCHEN KURZTEXT
 
-Der Kanal ist deutschsprachig, aber Google-Flow-Quellbilder werden standardmäßig **vollständig textfrei** erzeugt.
-
-Verbindlich:
+Google-Flow-Quellbilder bleiben standardmäßig **ZERO READABLE TEXT**:
 - keine lesbaren Wörter oder Buchstaben
 - keine UI-Texte
 - keine Labels
@@ -71,14 +70,21 @@ Verbindlich:
 - keine Marken-/Logo-Texte
 - Dokumente/Screens nur mit abstrakten Linien, Formen und Icons
 - englische Promptwörter niemals ins Bild übernehmen
-- deutsche Sprechtexte niemals ins Bild schreiben
+- deutsche Sprechtexte niemals als Flow-Schrift ins Bild schreiben
 
-Deutsche Labels werden standardmäßig kontrolliert in **Remotion** hinzugefügt (`sceneLabels`).
+Das finale YouTube-Video darf und soll **selektiv deutsche Kurztexte in Remotion** verwenden:
+- Szene 01: verpflichtende Cover-Headline (`variant: "cover"`, 2–7 Wörter)
+- ausgewählte weitere Szenen: Schlüsselbegriffe (`variant: "keyword"`, maximal 5 Wörter)
+- Zielwert ungefähr ein Textmoment alle 4–6 Bilder
+- maximal 30 % der YouTube-Szenen mit Overlays
+- keine ganzen Erklärsätze und keine Dauer-Untertitel
+
+Bei geplanten Overlay-Szenen muss Flow passende ruhige Negativfläche liefern. Text wird anschließend kontrolliert in Remotion gesetzt.
 
 Nur wenn Text physisch zwingend Teil der Szene sein muss und nicht sinnvoll als Overlay gesetzt werden kann, darf eine explizite Ausnahme den exakten kurzen deutschen Wortlaut definieren.
 
 Bei Konflikt gilt:
-**textfreies Flow-Quellbild + späterer deutscher Remotion-Overlay gewinnt.**
+**starke visuelle Szene + kurzer deutscher Remotion-Text > komplett textfreies Endvideo > textlastige Slide. Flow selbst bleibt textfrei.**
 
 ## Bildklarheit — HARD LOCK
 
@@ -99,15 +105,14 @@ Szene 01 muss gleichzeitig:
 - den ersten gesprochenen Visual Beat korrekt darstellen,
 - als starkes Cover funktionieren,
 - die Stickman-/Welt-DNA als Master etablieren,
-- ZERO READABLE TEXT in Flow einhalten.
+- ZERO READABLE TEXT in Flow einhalten,
+- ruhige Fläche für die verpflichtende deutsche Cover-Headline besitzen.
 
-Cover-Komposition: klares großes Hauptmotiv, starke lesbare Körperhaltung/Emotion/Handlung, wenig visuelles Rauschen, schnelle Thumbnail-Lesbarkeit und bei Bedarf ruhige Negativfläche für späteren deutschen Covertext.
-
-Kein separates Pflicht-`cover.png`. Wenn Covertext verwendet wird, erst nach der Flow-Generierung kontrolliert und ausschließlich auf Deutsch ergänzen.
+Die finale Cover-Headline wird in Remotion gesetzt, nicht in Flow. Kein separates Pflicht-`cover.png`.
 
 Strukturierte Phase-1-Pläne: Szene 01 trägt `isCover: true` und `coverRole: "SCENE_01_COVER_MASTER"`; alle späteren Szenen `isCover: false`.
 
-Details: `rules/COVER_LOCK.md`.
+Details: `rules/COVER_LOCK.md` und `rules/TEXT_OVERLAY_LOCK.md`.
 
 ## Visual-Beat-Dichte
 
@@ -191,7 +196,8 @@ Der Nutzer soll für die normale Produktion **nur ein Skript und eine einzige Pr
 - Format und Stil
 - STRICT-STICKMAN-ONLY-Gate
 - ZERO-READABLE-TEXT-Gate für Flow-Quellbilder
-- **Scene-01-Cover-Hard-Lock**
+- Scene-01-Cover-Hard-Lock
+- geplante Negativfläche bei Cover-/Keyword-Szenen
 - Ein-Gedanke-pro-Bild-Gate
 - konkrete Szene vor generischer Infografik
 - Master-Referenz-Regel
@@ -201,7 +207,7 @@ Der Nutzer soll für die normale Produktion **nur ein Skript und eine einzige Pr
 - Dateinamen
 - alle individuellen Szenen-/Bildprompts des Videos
 
-Deutsche Labels gehören als Metadaten nach `99-intern/` und werden durch Phase 3/Remotion gerendert, nicht durch Flow.
+Deutsche Cover-/Keyword-Texte gehören als `sceneLabels` nach `99-intern/` und werden durch Phase 3/Remotion gerendert, nicht durch Flow.
 
 Keine zusätzlichen Prompt-/Style-Dateien in der normalen sichtbaren Arbeitsfläche anlegen.
 
@@ -231,11 +237,11 @@ Bei visueller Identität gilt:
 Bei Cover-Fragen gilt:
 **`rules/COVER_LOCK.md` gewinnt: `01.png = SCENE 01 + COVER + MASTER`.**
 
+Bei finalen Text-Overlays gilt:
+**`rules/TEXT_OVERLAY_LOCK.md` gewinnt.**
+
 Bei der exakten projektspezifischen Darstellung gilt innerhalb der DNA:
 **freigegebene Master-Referenz gewinnt.**
-
-Bei Textkonflikten gilt:
-**textfreies Flow-Quellbild + deutscher Remotion-Overlay gewinnt.**
 
 Beim Batch-Ablauf gilt:
 **Master-/Coverfreigabe einmalig nach Bild 01; danach automatische 5er-Batches mit interner QA ohne weitere Nutzer-Rückfragen.**
