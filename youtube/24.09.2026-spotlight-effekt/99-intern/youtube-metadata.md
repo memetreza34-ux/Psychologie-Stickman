@@ -8,6 +8,28 @@
 - **Warum andere dich viel weniger beobachten, als du denkst**
 - **Warum peinliche Momente in deinem Kopf größer werden**
 
+## Cover / Thumbnail — HARD LOCK
+
+**Verbindliches Cover-Asset: `03-bilder/01.png`.**
+
+Für dieses Video gilt wie global im Repo:
+
+**Szene 01 = Cover/Thumbnail-Basis + erster Visual Beat + Style-/Anatomie-Master.**
+
+Kein separates Pflicht-Cover erzeugen. Bild 01 wird so komponiert, dass es gleichzeitig den ersten Satz korrekt zeigt und als YouTube-Cover funktioniert.
+
+Cover-Komposition für Szene 01:
+- ein deutlich sichtbarer, unsicher eintretender Stickman als Hauptmotiv
+- moderner Gemeinschaftsraum
+- mehrere andere Stickmen im Hintergrund, die mit eigenen Dingen beschäftigt sind
+- Hauptfigur wirkt subjektiv stark beobachtet, ohne dass tatsächlich alle starren
+- starke Silhouette / klare Körperhaltung
+- wenig visuelles Rauschen
+- genug ruhige Negativfläche für optionalen späteren deutschen Covertext
+- Flow-Quellbild vollständig textfrei
+
+Optionaler deutscher Covertext nach der Bildgenerierung: **„ALLE SCHAUEN?“**
+
 ## Kurzbeschreibung
 Du betrittst einen Raum, machst einen kleinen Fehler oder merkst einen Fleck auf deiner Kleidung – und plötzlich fühlt es sich an, als würden alle hinschauen. Genau dieses Gefühl untersucht der Spotlight-Effekt.
 
@@ -15,14 +37,8 @@ In diesem Video geht es darum, warum wir häufig überschätzen, wie stark ander
 
 Quellenbasis: Gilovich, Medvec & Savitsky (2000); Gilovich, Kruger & Medvec (2002).
 
-## Thumbnail-Idee — bevorzugt
-Ein einzelner Stickman steht leicht unsicher in der Mitte eines belebten Raums. Ein starker symbolischer Lichtkegel fällt auf ihn, während mehrere andere Stickmen sichtbar mit ihren eigenen Dingen beschäftigt sind und nicht hinschauen. Hoher Kontrast, klare 16:9-Komposition, keine kleinen Details, kein lesbarer Text im Flow-Quellbild. Optionaler deutscher Remotion-Text später: **„ALLE SCHAUEN?“**
-
-## Thumbnail-Idee 2
-Stickman mit kleinem Fleck auf dem Shirt schaut nervös nach links und rechts. Im Hintergrund ignoriert ihn eine Gruppe komplett. Ein großer gedanklicher Spotlight-Kreis um die Hauptfigur. Optionaler deutscher Remotion-Text später: **„NUR IN DEINEM KOPF?“**
-
 ## Thumbnail-Regel
-Flow-Quellbild textfrei. Thumbnail-Text, falls verwendet, erst kontrolliert auf Deutsch ergänzen.
+Flow-Quellbild `01.png` bleibt ZERO READABLE TEXT. Covertext, falls verwendet, erst kontrolliert auf Deutsch ergänzen.
 
 ## Angepinnter Kommentar
 Kennst du das Gefühl, dass ein kleiner Fehler für dich riesig wirkt, obwohl ihn wahrscheinlich kaum jemand bemerkt hat?
