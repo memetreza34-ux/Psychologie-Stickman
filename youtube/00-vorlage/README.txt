@@ -25,14 +25,15 @@ Jedes neue YouTube-Projekt verwendet nur diese sichtbaren Arbeitsordner:
 
 99-intern/
 - `phase1-scenes.json`
-- `word-timings.json`
+- `word-timings.json` (wird bei Bedarf automatisch lokal aus final-voice.mp3 erzeugt)
 - `scene-plan.json`
 - `render-props.json`
 - Quellen, QA, Style, Continuity und weitere Pipeline-Metadaten
 
 Für die normale Arbeit braucht der Nutzer nur `script.txt`, `google-flow-prompt.txt`, Bilder und Audio zu öffnen.
 
-Sobald Bilder, finales Audio und Word Timings fertig sind:
+Sobald Bilder und finales Audio fertig sind:
 `npm run produce:youtube -- youtube/TT.MM.JJJJ-thema`
 
+Fehlende Word Timings werden automatisch mit lokalem Whisper.cpp erzeugt und am finalen Skript ausgerichtet.
 Remotion-Assets werden automatisch nach `public/` gestaged. Kein manuelles Doppelt-Kopieren.
