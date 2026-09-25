@@ -17,7 +17,7 @@ Eine hochwertige 2D-Erklärwelt mit sehr einfachen echten Stickmen in deutlich r
 
 Leitprinzip:
 
-**Simple stickmen. Rich world. One clear idea. Concrete scene first. Style consistency without character cloning. Flow writes the cover title only; later keywords come from Remotion.**
+**Simple stickmen. Rich world. One clear idea. Concrete scene first. Style consistency without character cloning. All visible YouTube text is generated directly in Google Flow.**
 
 ## 1. STRICT STICKMAN DNA — HARD LOCK
 
@@ -96,44 +96,37 @@ Eine bestimmte Figur bleibt nur dann identisch, wenn echte fortlaufende Kontinui
 - keine unnötigen Multi-Panel-Kompositionen
 - keine späteren Informationen vorwegnehmen
 - Komposition, Kamera, Pose, Ort, Requisiten und Licht pro Beat bewusst wählen
-- bei späteren Keyword-Momenten ruhige Negativfläche lassen
+- bei Textmomenten sichere Typografiezone direkt im Flow-Bild einplanen
 - Szene 01 als echtes Thumbnail mit integrierter Titelzone planen
 
-## 6. Textsystem
+## 6. Textsystem — GOOGLE FLOW ONLY
 
-### Szene 01 — Google-Flow-Cover-Titel
+Für neue YouTube-Projekte gilt:
 
-Google Flow rendert den **exakten deutschen Cover-Titel direkt in Bild 01**.
+**Sämtlicher sichtbarer Text wird direkt von Google Flow in die Bilder gerendert. Remotion erzeugt keinen sichtbaren Text.**
 
-Verbindlich:
+### Szene 01
+- exakter deutscher Cover-Titel direkt in `01.png`
 - 2–7 Wörter
-- vorab festgelegter exakter Wortlaut
-- groß und klar lesbar
-- korrekte Rechtschreibung/Umlaute/Satzzeichen
-- keine weiteren lesbaren Wörter im Cover
-- bei Fehler: Bild 01 regenerieren
-- Remotion rendert den Cover-Titel nicht erneut
+- kein weiterer lesbarer Text
 
-### Szene 02+
-
-Google-Flow-Quellbilder bleiben vollständig textfrei:
-- keine lesbaren Wörter oder Buchstaben
-- keine Labels
-- keine UI-Texte
-- keine Untertitel
-- keine Poster-/Werbetexte
-- keine Bildschirmtexte
-- keine zufälligen englischen Promptwörter
-- Dokumente und Screens nur mit abstrakten Linien, Formen und Icons
-
-Ausgewählte spätere Szenen dürfen kurze deutsche Remotion-Keywords verwenden:
+### Ausgewählte spätere Szenen
+- exakter deutscher Keyword-/Merksatz direkt im jeweiligen Flow-Bild
 - maximal 5 Wörter
-- keine langen Sätze
-- keine Dauer-Untertitel
+- kein weiterer lesbarer Text
+
+### Alle anderen Szenen
+- ZERO READABLE TEXT
+- keine Labels, UI-Texte, Untertitel, Poster-/Werbetexte oder Bildschirmtexte
+- Dokumente/Screens nur mit abstrakten Linien, Formen und Icons
+
+### Dichte
 - typischer Zielwert ungefähr ein Textmoment alle 4–6 Bilder
 - maximal 30 % sichtbare Textmomente inklusive Cover
 
-Details: `rules/TEXT_OVERLAY_LOCK.md`.
+### QA
+- falscher, zusätzlicher, unlesbarer oder abgeschnittener Text => nur dieses Bild regenerieren
+- keine Remotion-Keywords, -Labels oder YouTube-Captions
 
 ## 7. Kontinuität
 
@@ -141,7 +134,7 @@ Kontinuität gilt lokal, wenn eine bestimmte Person in einer zusammenhängenden 
 
 Die Master-Referenz sperrt global Stickman-DNA, Linien, Rendering, Farbverhalten, Shading und Weltqualität. Sie sperrt nicht Figurenidentität, Kleidung, Castgröße, Kamera, Pose, Ort, Licht oder Komposition.
 
-Wichtig: Der sichtbare Cover-Titel in `01.png` gehört ausschließlich zu Szene 01 und darf von Szene 02+ **nicht kopiert, rekonstruiert oder imitiert** werden.
+Wichtig: Text aus `01.png` oder anderen Textszenen darf nicht automatisch in Folgeassets kopiert werden. Eine Szene rendert nur dann Text, wenn für genau diese Szene ein eigener exakter Flow-Text vorgegeben ist.
 
 ## 8. Drei Darstellungsmodi
 
@@ -164,7 +157,7 @@ Für historische oder stark ortsgebundene Szenen. Menschen bleiben echte Stickme
 
 ## 10. Master-Prompt-DNA
 
-`strict universal editorial 2D stickman explainer world; EVERY visible human or human-like figure uses the same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet; no conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi; rich believable 2D environment, clean dark organic outlines, natural colors, controlled saturation, believable perspective and lighting, subtle cel shading; MASTER REFERENCE IS STYLE/ANATOMY ONLY, NOT CHARACTER IDENTITY: choose scene-specific cast, clothing, roles, location, pose and camera for every beat; do not default to the same lone hoodie character, same desk, same room or same framing; ONE clear visual idea; prefer a concrete stickman action in a believable setting over a generic infographic; TEXT POLICY: Scene 01 renders the exact provided German cover title and no other readable text; Scene 02+ renders ZERO READABLE TEXT and must not copy the title from the master; selected later German keyword overlays are added in Remotion.`
+`strict universal editorial 2D stickman explainer world; EVERY visible human or human-like figure uses the same true stickman anatomy: simple round or oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet; no conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi; rich believable 2D environment, clean dark organic outlines, natural colors, controlled saturation, believable perspective and lighting, subtle cel shading; MASTER REFERENCE IS STYLE/ANATOMY ONLY, NOT CHARACTER IDENTITY: choose scene-specific cast, clothing, roles, location, pose and camera for every beat; do not default to the same lone hoodie character, same desk, same room or same framing; ONE clear visual idea; prefer a concrete stickman action in a believable setting over a generic infographic; YOUTUBE TEXT POLICY: all planned visible German text is rendered directly by Google Flow in the specified scene; every unplanned text scene renders ZERO READABLE TEXT; do not copy text from the master image; Remotion adds NO visible YouTube text.`
 
 ## 11. Referenzregel
 
@@ -173,9 +166,9 @@ Für historische oder stark ortsgebundene Szenen. Menschen bleiben echte Stickme
 3. Ab Bild 02 Bild 01 als Referenz anhängen.
 4. Master sperrt Anatomie-System, Linien, Farben, Shading und Gesamtästhetik.
 5. Master sperrt nicht Figurenidentität, Kleidung, Castgröße, Kamera, Pose, Ort, Licht oder Komposition.
-6. Ab Bild 02 den Cover-Titel nicht kopieren.
+6. Text aus dem Master nicht kopieren; nur szenenspezifisch geplanten Flow-Text rendern.
 
 ## 12. Priorität
 
 Bei Konflikt gilt:
-**FORMAT_LOCK + STICKMAN_DNA + Master als STYLE-/ANATOMIE-Referenz + exakter Flow-Cover-Titel nur in Szene 01 + ZERO READABLE TEXT ab Szene 02 + beat-passende Cast-/Szenenwahl + selektive deutsche Remotion-Keywords > Charakterklonen, Textklonen, generische Wiederholung oder textlastige Slides.**
+**FORMAT_LOCK + STICKMAN_DNA + Master als STYLE-/ANATOMIE-Referenz + beat-passende Cast-/Szenenwahl + Google-Flow-only sichtbarer YouTube-Text > Charakterklonen, Textklonen, generische Wiederholung oder textlastige Slides.**

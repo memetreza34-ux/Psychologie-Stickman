@@ -1,168 +1,133 @@
-# TEXT OVERLAY LOCK — DEUTSCHE KURZTEXTE
+# TEXT LOCK — ALLE SICHTBAREN TEXTE AUS GOOGLE FLOW
 
 **STATUS: VERBINDLICH — HARD LOCK**
 
-Diese Regel gilt für YouTube-Projekte unter `youtube/` und ergänzt `rules/COVER_LOCK.md`.
+Diese Regel gilt für alle neuen YouTube-Projekte unter `youtube/` und ergänzt `rules/COVER_LOCK.md`.
 
 ## 1. Grundprinzip
 
-**Bild zuerst. Text verstärkt nur den wichtigsten Gedanken.**
+**Remotion erzeugt für YouTube keinen sichtbaren Text.**
 
-Die Stickman-Szene muss grundsätzlich auch ohne zusätzliche Erklärung verständlich bleiben. Kurzer deutscher Text darf gezielt eingesetzt werden, wenn er die Kernaussage schneller erfassbar oder merkfähiger macht.
+Alle sichtbaren deutschen Texte werden bereits bei der Bildgenerierung direkt von **Google Flow** in das jeweilige Bild geschrieben.
 
-Nicht zurück zu textlastigen Slides.
+Remotion ist nur für Schnitt, Audio, Bildwechsel, technische Effekte und Export zuständig.
 
-## 2. Zwei Textwege
+## 2. Erlaubte Textmomente
 
-### A — Cover-Titel in Google Flow
-Nur Szene 01.
-
+### Cover — Szene 01
 - Szene 01 ist immer Cover + erster Visual Beat + Master.
-- Google Flow rendert den **exakten deutschen Cover-Titel direkt in `01.png`**.
+- Google Flow rendert den exakten deutschen Cover-Titel direkt in `01.png`.
 - Ziel: 2–7 Wörter.
-- Darf eine kurze Frage sein.
-- Muss zum Video und zum ersten Beat passen.
-- Kein zusätzlicher lesbarer Text im Cover.
-- Remotion rendert diesen Cover-Titel **nicht erneut**.
+- außer diesem Titel kein weiterer lesbarer Text.
 
-Beispiel:
-`WARUM BLEIBT NEGATIVES HÄNGEN?`
-
-### B — `keyword` in Remotion
-Für ausgewählte Szenen ab Szene 02.
+### Keyword-Szenen
+Ausgewählte spätere Szenen dürfen einen kurzen deutschen Begriff oder Merksatz direkt im Google-Flow-Bild enthalten.
 
 - ideal 1–4 Wörter
 - harte Obergrenze: 5 Wörter
-- wichtiger Begriff, Mechanismus oder Merksatz
+- exakt vorgegebener deutscher Wortlaut
 - kein ganzer Erklärsatz
-- keine Untertitel-Funktion
+- kein zweiter zusätzlicher Text im selben Bild
 
 Beispiele:
-- `SPOTLIGHT-EFFEKT`
-- `ICH-FOKUS`
-- `ÜBERSCHÄTZT`
-- `WENIGER ALS DU DENKST`
+- `NEGATIVITÄTSBIAS`
+- `NEGATIVES WIEGT SCHWERER`
+- `AUFMERKSAMKEIT`
+- `EIN DATENPUNKT`
+
+### Alle anderen Szenen
+**ZERO READABLE TEXT.**
 
 ## 3. Textdichte
 
 Für YouTube-Longform:
-- Szene 01: immer sichtbarer Flow-Cover-Titel
-- weitere Textmomente nur dort, wo sie echten Mehrwert bringen
-- redaktioneller Zielwert: ungefähr ein Textmoment alle 4–6 Bilder
-- typischer Gesamtbereich inklusive Cover: etwa 15–25 % der Szenen
-- harte Obergrenze: 30 % der Szenen mit sichtbaren Cover-/Keyword-Textmomenten
+- Szene 01 immer mit Cover-Titel
+- weitere Textmomente nur bei echtem Mehrwert
+- Ziel: ungefähr ein Textmoment alle 4–6 Bilder
+- typischer Bereich inklusive Cover: 15–25 % der Szenen
+- harte Obergrenze: 30 %
 
-Keine langen Serien aus Textkarten oder ständig eingeblendeten Begriffen.
+Keine Textkarten-Serie und keine Dauerbeschriftung.
 
-## 4. Sprache
+## 4. Sprache und Qualität
 
 Sichtbarer Text ist ausschließlich Deutsch.
 
 HARD FAIL:
-- englische Überschrift
-- englische UI-Begriffe
-- gemischte Deutsch-/Englisch-Labels ohne zwingenden Eigennamen
+- falsche Schreibweise
+- fehlende oder zusätzliche Wörter
+- falsche Umlaute oder Satzzeichen
+- englische Wörter ohne zwingenden Eigennamen
 - KI-Pseudo-Schrift
-- Rechtschreibfehler
+- abgeschnittener oder kaum lesbarer Text
+- zusätzlicher zufälliger Text
 
-## 5. Flow-Textregel
+Bei einem Textfehler wird **nur das betroffene Google-Flow-Bild neu generiert**.
 
-Google Flow hat genau **eine reguläre Textausnahme**:
+## 5. Google-Flow-Prompt pro Textszene
 
-### Szene 01
-Flow rendert exakt den vorgegebenen deutschen Cover-Titel.
-Außer diesem Titel: **NO OTHER READABLE TEXT**.
+Jede geplante Textszene muss den exakten Wortlaut enthalten, zum Beispiel:
 
-### Szene 02+
-**ZERO READABLE TEXT**.
+`EXACT GERMAN TEXT: "NEGATIVITÄTSBIAS"`
 
-Das bedeutet ab Szene 02:
-- keine Überschrift
-- keine Keywords
-- keine UI-Texte
-- keine Untertitel
-- Poster, Screens und Dokumente textfrei bzw. abstrakt
+Dazu immer:
+- render exactly this text
+- preserve spelling, umlauts and punctuation
+- NO OTHER READABLE TEXT
+- typography must be fully inside the safe image area
+- do not crop or clip letters
+- central visual action must remain readable
 
-Spätere deutsche Keywords werden in Remotion gesetzt.
+## 6. Master-Referenz
 
-Kurz:
-**Flow setzt den Cover-Titel. Remotion setzt spätere Keywords.**
+`01.png` enthält den Cover-Titel und bleibt trotzdem Style-/Anatomie-Master.
 
-## 6. Bildkomposition für Textmomente
+Ab Szene 02:
+- Titel aus `01.png` niemals automatisch kopieren
+- wenn die aktuelle Szene **kein** geplantes Textmoment ist: ZERO READABLE TEXT
+- wenn sie ein geplantes Textmoment ist: nur den für diese Szene exakt vorgegebenen deutschen Text rendern
 
-### Cover
-- Titelzone bewusst einplanen
-- Titel groß und klar
-- Hauptmotiv darf nicht vom Titel verdeckt werden
-- Titel soll auch in kleiner Thumbnail-Darstellung lesbar bleiben
+## 7. Metadaten — neuer Standard
 
-### Keyword-Szenen
-- ruhige Negativfläche einplanen
-- Gesicht/Kopf, Hände und zentrale Handlung frei halten
-- keine überladene Ecke hinter dem Text
-
-Das Bild darf nicht leer wirken, nur damit Text Platz hat.
-
-## 7. Metadaten
-
-Neue Projekte verwenden für den Cover-Titel:
+Neue Projekte verwenden:
 
 ```json
 {
-  "coverHeadline": "WARUM BLEIBT NEGATIVES HÄNGEN?",
-  "coverTextRenderer": "GOOGLE_FLOW",
-  "flowSourceImageTextPolicy": "SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY"
+  "visibleTextLanguage": "de",
+  "visibleTextRenderer": "GOOGLE_FLOW",
+  "renderGermanLabelsInRemotion": false,
+  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
+  "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
+  "flowTextMoments": [
+    {"scene": 1, "kind": "cover", "text": "WARUM BLEIBT NEGATIVES HÄNGEN?"},
+    {"scene": 4, "kind": "keyword", "text": "NEGATIVITÄTSBIAS"}
+  ],
+  "sceneLabels": []
 }
 ```
 
-`sceneLabels` enthält bei neuen Projekten nur Remotion-Keywords, zum Beispiel:
+Für neue YouTube-Projekte gilt:
+**`sceneLabels` muss leer bleiben.**
 
-```json
-{"scene": 4, "text": "NEGATIVITÄTSBIAS", "position": "top-left", "variant": "keyword"}
-```
+Es gibt keine YouTube-Cover-, Keyword- oder Caption-Typografie aus Remotion.
 
-Neue Projekte legen **kein `variant: "cover"`-Remotion-Overlay** mehr an.
+## 8. QA
 
-Alte Projekte mit Remotion-Cover dürfen als Legacy weiter bestehen, müssen aber vor einer neuen Bildproduktion auf die Google-Flow-Coverregel migriert werden.
-
-## 8. Inhaltliche Auswahl für Keywords
-
-Text besonders sinnvoll bei:
-- Definition eines zentralen Effekts
-- klarem Wendepunkt
-- wichtigem Mechanismus
-- Ergebnis eines Experiments
-- zentraler Erkenntnis
-- Schluss-Merksatz
-
-Text meist unnötig bei:
-- einfachen Übergangsszenen
-- rein atmosphärischen Bildern
-- Mini-Handlungen, die sofort verständlich sind
-- mehreren direkt aufeinanderfolgenden Szenen mit derselben Aussage
-
-## 9. QA
-
-Vor Freigabe von Szene 01 prüfen:
-- exakter deutscher Cover-Titel sichtbar
-- 2–7 Wörter
-- jedes Wort korrekt geschrieben
-- Satzzeichen korrekt
-- keine zusätzlichen Wörter
-- keine Pseudo-Schrift
-- kein Englisch
-- Titel verdeckt keine wichtige Handlung
+Vor Bildfreigabe prüfen:
+- geplante Textszene enthält exakt den vorgesehenen deutschen Text
+- nicht geplante Textszene enthält gar keinen lesbaren Text
+- kein Text ist abgeschnitten
+- kein Text liegt außerhalb der Safe Area
+- keine zusätzlichen Wörter oder Zeichen
+- Text verdeckt keine zentrale Figur oder Handlung
 
 Vor Export prüfen:
-- Cover-Titel wird nicht zusätzlich in Remotion dupliziert
-- Keywords haben höchstens 5 Wörter
-- Text wiederholt nicht komplette Sprecher-Sätze
-- Textdichte bleibt kontrolliert
-- kein englischer sichtbarer Text
-- Bild bleibt auch ohne spätere Keywords verständlich
+- Remotion rendert keine `sceneLabels`
+- YouTube-Auto-Captions sind aus
+- alle sichtbaren Texte stammen bereits aus den Google-Flow-Bildern
 
-## 10. Priorität
+## 9. Priorität
 
-Bei Textfragen gilt:
+Bei YouTube-Textfragen gilt:
 
-**starke visuelle Szene + exakter Flow-Cover-Titel + gezielte deutsche Remotion-Keywords > komplett textfreies Endvideo > textlastige Slide.**
+**Google Flow erzeugt sämtlichen sichtbaren Text direkt im Bild. Remotion erzeugt keinen sichtbaren Text.**

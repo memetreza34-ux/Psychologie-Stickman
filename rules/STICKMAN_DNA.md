@@ -26,7 +26,7 @@ Verbindlich:
 - Füße/Schuhe stark vereinfacht
 - Kleidung darf Rolle, Beruf, Epoche und Persönlichkeit zeigen, aber niemals normale menschliche Anatomie erzeugen
 
-Gilt ausnahmslos für Hauptfiguren, Nebenfiguren, Passanten, Menschenmengen, Forscher, historische Figuren, Personen in Fahrzeugen, entfernte Hintergrundfiguren sowie Personen auf Screens, Fotos, Postern, Werbung, Spiegelungen und Erinnerungs-/Diagrammebenen.
+Gilt auch für Hauptfiguren, Nebenfiguren, Passanten, Menschenmengen, Forscher, historische Figuren, Personen in Fahrzeugen, entfernte Hintergrundfiguren sowie Personen auf Screens, Fotos, Postern, Werbung, Spiegelungen und Erinnerungs-/Diagrammebenen.
 
 **HARD FAIL:** normale Cartoon-Menschen, semi-realistische Menschen, realistische Menschen, gemischte Figurenstile, dicke menschliche Gliedmaßen, realistische Hände/Finger, 3D/Pixar, Anime, Manga oder Chibi.
 
@@ -41,7 +41,7 @@ Erwünscht:
 - passende Möbel, Technik und Requisiten
 - natürliche Objektfarben
 - saubere dunkle organische Outlines
-- moderate bis kräftige kontrollierte Sättigung
+- kontrollierte Sättigung
 - weiches glaubwürdiges Licht
 - dezentes 2D-/Cel-Shading
 - hochwertige Editorial-/Dokumentationswirkung
@@ -60,10 +60,9 @@ Nicht erwünscht:
 Verbindlich:
 - genau ein primärer visueller Gedanke pro Bild
 - ein klares Hauptmotiv
-- höchstens 1–2 unterstützende Hinweise, wenn wirklich nötig
+- höchstens 1–2 unterstützende Hinweise
 - keine vollgestopften Infografiken
 - keine konkurrierenden Teilbilder, wenn eine einzelne Szene genügt
-- keine unnötigen Tabellen, Panels, Karten, Meter, Diagramme oder Textblöcke
 - Zuschauer soll die Kernidee ungefähr in einer Sekunde erfassen können
 - mehrere neue Gedanken werden auf mehrere Visual Beats verteilt
 - Master sperrt Stil, nicht Kamera, Pose, Ort, Komposition oder Figurenidentität
@@ -73,8 +72,6 @@ Priorität:
 
 ## 4. Konkrete Szene vor abstrakter Infografik
 
-Standardmäßig soll ein Beat als konkrete Stickman-Handlung in einer glaubwürdigen Umgebung visualisiert werden.
-
 Bevorzugte Reihenfolge:
 1. konkrete Handlung mit Stickman + passendem Ort/Requisit
 2. einfache visuelle Metapher
@@ -82,35 +79,23 @@ Bevorzugte Reihenfolge:
 
 Keine langen Serien aus denselben Karten, Metern, Waagen, Pfaden oder abstrakten UI-Flächen.
 
-Jede Szene darf bewusst variieren:
-- Kameradistanz
-- Perspektive
-- Pose
-- Handlung
-- Ort
-- Requisiten
-- Licht
-- Bildtiefe
+## 5. Sprache im Bild — ALLE SICHTBAREN YOUTUBE-TEXTE AUS GOOGLE FLOW
 
-## 5. Sprache im Bild — COVER-AUSNAHME + TEXTFREIE FOLGESZENEN
+Für neue YouTube-Projekte gilt:
 
-Der Kanal ist deutschsprachig.
+**Sämtlicher sichtbarer Text wird direkt von Google Flow in die jeweiligen Bilder gerendert. Remotion erzeugt keinen sichtbaren Text.**
 
-### YouTube Szene 01
-
-**Permanente Cover-Ausnahme:** Google Flow rendert den vorher festgelegten exakten deutschen Cover-Titel direkt in `01.png`.
-
-Verbindlich:
+### Szene 01
+- exakter deutscher Cover-Titel direkt in `01.png`
 - 2–7 Wörter
-- exakter deutscher Wortlaut
-- korrekte Umlaute und Satzzeichen
-- große, gut lesbare Thumbnail-Typografie
 - außer diesem Titel kein weiterer lesbarer Text
-- bei falscher oder unlesbarer Schrift Szene 01 neu generieren
-- Remotion darf diesen Cover-Titel nicht erneut rendern
 
-### YouTube Szene 02+ und normale Quellbilder
+### Ausgewählte spätere Szenen
+- exakter deutscher Keyword-/Merksatz direkt im Flow-Bild
+- maximal 5 Wörter
+- kein weiterer lesbarer Text
 
+### Alle anderen Szenen
 **ZERO READABLE TEXT IN GENERATED SOURCE IMAGES.**
 
 Das bedeutet:
@@ -124,38 +109,26 @@ Das bedeutet:
 - keine Bildschirmtexte
 - keine Marken-/Logo-Texte
 - keine zufälligen englischen Promptwörter
-- den Cover-Titel aus der Master-Referenz niemals kopieren
 
-Spätere ausgewählte deutsche Keywords werden kontrolliert in Remotion ergänzt.
-
-Nur weitere ausdrücklich begründete Szenen dürfen zusätzlichen Text direkt im generierten Bild anfordern. Dann muss der exakte deutsche Wortlaut feststehen und so kurz wie möglich sein.
-
-Bei Cover-Konflikten gewinnt `rules/COVER_LOCK.md`.
+### Text-QA
+Wenn geplanter Text fehlt, falsch geschrieben, unlesbar, abgeschnitten oder von Zusatztext begleitet ist: **nur dieses Bild neu generieren**.
 
 ## 6. CAST-VARIATION — STIL GLEICH, FIGUREN NICHT GLEICH
 
-**Stickman-DNA ist keine Charakter-DNA.** Alle Figuren gehören sichtbar zur gleichen Bildwelt, müssen aber nicht dieselbe Person sein.
+**Stickman-DNA ist keine Charakter-DNA.**
 
 Standard:
 - pro Szene sinnvollsten Cast wählen
 - 1 bis 4 Stickmen, wenn es der Inhalt unterstützt
 - Hauptfigur nur wiederholen, wenn echte erzählerische Kontinuität nötig ist
 - Nebenfiguren dürfen andere Kleidung, Farben, Accessoires, Rollen und Körpergrößen innerhalb der DNA haben
-- Rollen passend zum Inhalt wählen
 - nicht automatisch denselben Hoodie, dieselbe Farbe oder denselben Charakter aus Bild 01 kopieren
 
 Vor jedem Bild vier Entscheidungen:
-1. **Cast:** Wer oder wie viele Stickmen passen?
-2. **Ort:** Welche Umgebung erklärt den Beat?
-3. **Handlung:** Was tun die Figuren sichtbar?
-4. **Kamera:** Welche Perspektive macht es klar?
-
-Verbotener Default:
-- immer derselbe einzelne Stickman
-- immer derselbe Hoodie
-- immer derselbe Schreibtisch
-- immer dieselbe neutrale Pose
-- immer derselbe Medium Shot
+1. Cast
+2. Ort
+3. Handlung
+4. Kamera
 
 ## 7. Wiederkehrende Figuren — NUR BEI ECHTER KONTINUITÄT
 
@@ -165,7 +138,7 @@ Wenn eine bestimmte Figur innerhalb einer zusammenhängenden Mini-Handlung diese
 - Torso-Proportion
 - Arm-/Beindicke
 - Hände/Füße
-- Kleidung und Kernfarben innerhalb dieser Mini-Handlung
+- Kleidung und Kernfarben
 - relevante Accessoires/Requisiten
 
 Diese Kontinuität ist lokal, nicht automatisch für das ganze Video.
@@ -174,25 +147,24 @@ Diese Kontinuität ist lokal, nicht automatisch für das ganze Video.
 
 Für YouTube:
 1. Bild 01 allein generieren, inklusive exaktem Cover-Titel.
-2. STOP und Nutzerfreigabe abwarten.
+2. STOP und Nutzerfreigabe.
 3. Nur freigeben, wenn Stickman-DNA, Welt-DNA, Titel, Cover-Klarheit und erster Beat passen.
 4. Bild 01 als Master speichern.
 5. Ab Bild 02 immer Bild 01 als Referenz anhängen.
-6. Master sperrt **Anatomie-System, Linienart, Rendering, Shading, Farbverhalten, Detailgrad und Gesamtästhetik**.
-7. Master sperrt **NICHT** Figurenidentität, Kleidung, Rollen, Anzahl der Figuren, Pose, Kamera, Ort, Licht oder Komposition.
-8. Der Cover-Titel in Bild 01 gehört ausschließlich zu Szene 01 und darf nie in Folgeassets kopiert oder rekonstruiert werden.
-
-Ein späteres Bild ersetzt den Master nicht automatisch.
+6. Master sperrt Anatomie-System, Linienart, Rendering, Shading, Farbverhalten, Detailgrad und Gesamtästhetik.
+7. Master sperrt NICHT Figurenidentität, Kleidung, Rollen, Anzahl der Figuren, Pose, Kamera, Ort, Licht oder Komposition.
+8. Text aus dem Master niemals automatisch kopieren.
+9. Spätere Szene rendert nur dann Text, wenn für diese Szene eigener exakter Google-Flow-Text geplant ist.
 
 ## 9. Batch-DNA
 
-Nach der einmaligen Freigabe von Bild 01:
+Nach Freigabe von Bild 01:
 - maximal 5 neue Bilder pro Batch
 - interne QA automatisch durchführen
 - gegen Master, untereinander und gegen Visual Beat prüfen
 - nur fehlerhafte Bilder regenerieren
 - bestandene Bilder behalten
-- nach vollständigem PASS automatisch den nächsten Batch starten
+- nach PASS automatisch den nächsten Batch starten
 - keine Nutzer-Rückfrage nach normalen Batches
 
 **Nutzerfreigabe regulär nur einmal: nach Bild 01.**
@@ -202,23 +174,21 @@ Nach der einmaligen Freigabe von Bild 01:
 - `reels/` → 9:16 / 1080×1920 / 30 fps
 - `youtube/` → 16:9 / 1920×1080 / 30 fps
 
-Nicht nachträglich aus dem falschen Format croppen, sondern direkt nativ komponieren.
-
 ## 11. Kompakter DNA-Promptblock
 
-`STRICT CHANNEL DNA: simple editorial 2D stickman characters inside rich detailed believable environments. EVERY visible human or human-like figure must use the same true stickman anatomy: simple round/oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet. No conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi. MASTER IMAGE IS A STYLE/ANATOMY REFERENCE, NOT A CHARACTER OR TEXT CLONE: preserve anatomy system, linework, rendering, color treatment and world quality, but freely vary character identity, clothing, cast size, pose, role, environment and camera to fit each beat. ONE clear visual idea per image. Prefer a concrete stickman action in a believable setting over an abstract infographic. YOUTUBE TEXT POLICY: Scene 01 renders the exact provided German cover title and no other readable text. Scene 02+ renders ZERO READABLE TEXT and must never copy the cover title from the master. Selected later German keyword overlays are added in Remotion.`
+`STRICT CHANNEL DNA: simple editorial 2D stickman characters inside rich detailed believable environments. EVERY visible human or human-like figure must use the same true stickman anatomy: simple round/oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet. No conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi. MASTER IMAGE IS A STYLE/ANATOMY REFERENCE, NOT A CHARACTER OR TEXT CLONE: preserve anatomy system, linework, rendering, color treatment and world quality, but freely vary character identity, clothing, cast size, pose, role, environment and camera to fit each beat. ONE clear visual idea per image. Prefer a concrete stickman action in a believable setting over an abstract infographic. YOUTUBE TEXT POLICY: all planned visible German text is rendered directly by Google Flow in the specified scene; every unplanned text scene renders ZERO READABLE TEXT; do not copy readable text from the master image; Remotion adds NO visible YouTube text.`
 
 ## 12. Priorität
 
 Bei Konflikten gilt:
 - Format → `rules/FORMAT_LOCK.md`
-- visuelle Identität → **diese DNA-Datei**
-- Cover-Titel → `rules/COVER_LOCK.md`
+- visuelle Identität → diese DNA-Datei
+- Cover → `rules/COVER_LOCK.md`
+- sichtbarer YouTube-Text → `rules/TEXT_OVERLAY_LOCK.md`
 - Style-/Anatomie-Ausprägung → freigegebene Master-Referenz
 - Figurenidentität/Cast → jeweiliger Visual Beat
 - Szeneninhalt → jeweiliger Visual Beat
-- spätere Keyword-Texte → `rules/TEXT_OVERLAY_LOCK.md`
 
 Merksatz:
 
-**DNA bestimmt WIE Stickmen aussehen. Master zeigt den Stil. Visual Beat bestimmt WER, WO und WAS. Google Flow setzt den Cover-Titel. Remotion setzt spätere Keywords.**
+**DNA bestimmt WIE Stickmen aussehen. Master zeigt den Stil. Visual Beat bestimmt WER, WO und WAS. Google Flow erzeugt alle sichtbaren YouTube-Texte. Remotion erzeugt keinen sichtbaren Text.**

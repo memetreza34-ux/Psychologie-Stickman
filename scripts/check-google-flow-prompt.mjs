@@ -60,29 +60,18 @@ const dominantFamily = (values) => {
 for (const promptPath of productionPrompts) {
   const content = fs.readFileSync(promptPath, 'utf8');
   const relative = path.relative(process.cwd(), promptPath);
-  const flowCoverV2 = /COVER TITLE\s*[—-]\s*GOOGLE FLOW HARD LOCK/iu.test(content) || /SCENE 01 COVER TITLE EXCEPTION/iu.test(content);
-  let exactCoverHeadline = '';
+  const flowOnlyV3 = /VISIBLE TEXT\s*[—-]\s*GOOGLE FLOW ONLY/iu.test(content) || /FLOW VISIBLE TEXT POLICY/iu.test(content) || /FLOW_VISIBLE_TEXT_ONLY_V3/iu.test(content);
 
-  if (flowCoverV2) {
-    const titleMatch = content.match(/EXACT GERMAN COVER TITLE\s*:\s*["“]([^"”\n]+)["”]/iu);
-    if (!titleMatch) failures.push(`${relative}: Flow-cover policy active but EXACT GERMAN COVER TITLE missing.`);
-    else {
-      exactCoverHeadline = titleMatch[1].trim();
-      const words = countWords(exactCoverHeadline);
-      if (words < 2 || words > 7) failures.push(`${relative}: Flow cover headline must contain 2-7 words.`);
-    }
-    if (!/SCENE 02\+[^\n]*(ZERO READABLE TEXT|textfrei)/iu.test(content)) failures.push(`${relative}: must restore ZERO READABLE TEXT from Scene 02 onward.`);
-    if (!/German\s+keyword\s+labels?[^\n]{0,160}added later in Remotion/iu.test(content)) failures.push(`${relative}: missing Remotion handoff for later keyword labels.`);
-    if (/cover(?:\s+(?:headline|label|title))?[^\n]{0,160}added later in Remotion/iu.test(content)) failures.push(`${relative}: cover title must be rendered by Google Flow, not handed to Remotion.`);
+  if (flowOnlyV3) {
+    if (/added later in Remotion|Remotion keyword|Remotion overlay|Remotion headline/iu.test(content)) failures.push(`${relative}: V3 prompt still delegates visible text to Remotion.`);
+    if (!/NO REMOTION TEXT|Remotion (?:MUST NOT|does not|must not) (?:add|render|create) visible text/iu.test(content)) warnings.push(`${relative}: V3 prompt should explicitly say that Remotion adds no visible text.`);
   } else {
-    if (!/FLOW SOURCE IMAGE TEXT POLICY\s*[—-]\s*ZERO READABLE TEXT/iu.test(content)) failures.push(`${relative}: legacy prompt missing global ZERO READABLE TEXT policy.`);
-    if (!/German(?:\s+(?:cover\/keyword|cover|keyword))?\s+labels?[^\n]{0,200}added later in Remotion/iu.test(content)) failures.push(`${relative}: legacy prompt missing Remotion label handoff rule.`);
-    warnings.push(`${relative}: legacy text policy; upgrade before generating a new Scene 01. New covers must render their exact German title in Google Flow.`);
+    warnings.push(`${relative}: legacy text policy. New prompts must use Flow-only visible text.`);
   }
 
   const referenceClause = content.match(/REFERENCE CLAUSE FOR SCENE 02\+[\s\S]*?(?=^SCENE\s+01\s*$)/imu)?.[0] ?? '';
   if (/character identity/iu.test(referenceClause) && !/NOT\s+(?:AS\s+)?A?\s*character clone/iu.test(referenceClause)) failures.push(`${relative}: master reference clause locks character identity.`);
-  if (flowCoverV2 && !/do not copy|do not recreate|nicht kopieren/iu.test(referenceClause)) warnings.push(`${relative}: Scene-02+ clause should forbid copying cover title.`);
+  if (flowOnlyV3 && !/do not copy|do not recreate|nicht kopieren/iu.test(referenceClause)) warnings.push(`${relative}: Scene-02+ clause should forbid copying text from 01.png.`);
 
   const sceneMatches = [...content.matchAll(/^SCENE\s+(\d+)\s*$/gimu)];
   const sceneNumbers = sceneMatches.map((match) => Number(match[1]));
@@ -95,6 +84,8 @@ for (const promptPath of productionPrompts) {
   let cloneLockedScenes = 0;
   let multiPersonScenes = 0;
   let deskLikeScenes = 0;
+  let textMoments = 0;
+  let coverTextMoments = 0;
   const locations = [];
   const cameras = [];
 
@@ -104,12 +95,24 @@ for (const promptPath of productionPrompts) {
     const block = content.slice(start, end);
     const sceneNumber = sceneNumbers[index];
     const promptText = block.match(/PROMPT:\s*([\s\S]*)/iu)?.[1] ?? block;
+    const exactTextMatch = block.match(/EXACT GERMAN (?:COVER TITLE|TEXT)\s*:\s*["“]([^"”\n]+)["”]/iu);
 
-    if (flowCoverV2 && sceneNumber === 1) {
-      if (!/NO OTHER READABLE TEXT/iu.test(block)) failures.push(`${relative}: scene 1 must forbid all readable text except exact title.`);
-      if (exactCoverHeadline && !block.includes(exactCoverHeadline)) failures.push(`${relative}: scene 1 does not repeat exact cover headline.`);
-      if (/ZERO READABLE TEXT/iu.test(block)) failures.push(`${relative}: scene 1 contradicts Flow-cover policy with ZERO READABLE TEXT.`);
-    } else if (!/ZERO READABLE TEXT/iu.test(block)) failures.push(`${relative}: scene ${sceneNumber} must explicitly say ZERO READABLE TEXT.`);
+    if (flowOnlyV3) {
+      if (exactTextMatch) {
+        textMoments += 1;
+        const exactText = exactTextMatch[1].trim();
+        const wordCount = countWords(exactText);
+        if (sceneNumber === 1) {
+          coverTextMoments += 1;
+          if (wordCount < 2 || wordCount > 7) failures.push(`${relative}: scene 1 cover text must contain 2-7 words.`);
+        } else if (wordCount < 1 || wordCount > 5) failures.push(`${relative}: scene ${sceneNumber} Flow keyword must contain 1-5 words.`);
+        if (!block.includes(exactText)) failures.push(`${relative}: scene ${sceneNumber} does not repeat its exact German text.`);
+        if (!/NO OTHER READABLE TEXT/iu.test(block)) failures.push(`${relative}: scene ${sceneNumber} text moment must forbid all other readable text.`);
+        if (/ZERO READABLE TEXT/iu.test(block)) failures.push(`${relative}: scene ${sceneNumber} has contradictory ZERO READABLE TEXT despite exact Flow text.`);
+      } else if (!/ZERO READABLE TEXT/iu.test(block)) {
+        failures.push(`${relative}: scene ${sceneNumber} must be ZERO READABLE TEXT unless exact Flow text is specified.`);
+      }
+    }
 
     if (!/SPEECH CONTEXT\s*[—-]\s*DO NOT RENDER AS TEXT:/iu.test(block)) failures.push(`${relative}: scene ${sceneNumber} lacks protected speech-context marker.`);
     const explicitlySameCharacter = /\b(?:same|exact same)\s+(?:main\s+)?(?:stickman|character|person)\b/iu.test(promptText);
@@ -119,6 +122,12 @@ for (const promptPath of productionPrompts) {
     if (/\b(home[- ]?office|workspace|desk\b|schreibtisch|arbeitsplatz)\b/iu.test(promptText)) deskLikeScenes += 1;
     locations.push(detectFamily(promptText, locationFamilies));
     cameras.push(detectFamily(promptText, cameraFamilies));
+  }
+
+  if (flowOnlyV3) {
+    if (coverTextMoments !== 1) failures.push(`${relative}: Flow-only V3 requires exactly one Scene-01 cover text moment.`);
+    const maxTextMoments = Math.max(1, Math.ceil(sceneNumbers.length * 0.3));
+    if (textMoments > maxTextMoments) failures.push(`${relative}: ${textMoments}/${sceneNumbers.length} Flow text moments exceed 30% (${maxTextMoments}).`);
   }
 
   const maxCloneLockedScenes = Math.max(3, Math.floor(sceneNumbers.length * 0.35));
@@ -137,7 +146,7 @@ for (const promptPath of productionPrompts) {
 
   if (sceneNumbers.length >= 12 && multiPersonScenes === 0) warnings.push(`${relative}: no clearly multi-person scene across ${sceneNumbers.length} scenes.`);
   if (!/CAST VARIATION\s*[—-]\s*HARD LOCK/iu.test(content)) warnings.push(`${relative}: no CAST VARIATION hard-lock block.`);
-  console.log(`${relative}: ${sceneNumbers.length} scenes; ${flowCoverV2 ? 'Flow-cover-title V2' : 'legacy text policy'}; ${cloneLockedScenes} clone locks; ${deskLikeScenes} desk-like; ${multiPersonScenes} multi-person.`);
+  console.log(`${relative}: ${sceneNumbers.length} scenes; ${textMoments} Flow text moments; ${cloneLockedScenes} clone locks; ${deskLikeScenes} desk-like; ${multiPersonScenes} multi-person.`);
 }
 
 if (warnings.length) {

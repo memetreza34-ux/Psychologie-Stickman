@@ -1,0 +1,18 @@
+{
+  "visibleTextLanguage": "de",
+  "visibleTextRenderer": "GOOGLE_FLOW",
+  "renderGermanLabelsInRemotion": false,
+  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
+  "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
+  "flowTextMoments": [
+    {"scene": 1, "kind": "cover", "text": "WARUM BLEIBT NEGATIVES HÄNGEN?"},
+    {"scene": 4, "kind": "keyword", "text": "NEGATIVITÄTSBIAS"},
+    {"scene": 9, "kind": "keyword", "text": "NEGATIVES WIEGT SCHWERER"},
+    {"scene": 15, "kind": "keyword", "text": "AUFMERKSAMKEIT"},
+    {"scene": 21, "kind": "keyword", "text": "GESAMTBILD"},
+    {"scene": 25, "kind": "keyword", "text": "VERZERRTE GEWICHTUNG"},
+    {"scene": 31, "kind": "keyword", "text": "EIN DATENPUNKT"},
+    {"scene": 34, "kind": "keyword", "text": "NICHT DIE GANZE BÜHNE"}
+  ],
+  "sceneLabels": []
+}

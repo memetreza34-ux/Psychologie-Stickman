@@ -13,13 +13,17 @@ Zentrale technische Dateien liegen direkt in 99-intern/:
 - word-timings.json
 - scene-plan.json
 - render-props.json
+- optional flow-text-policy.json für projektspezifische Textmomente
 
-Neue YouTube-Projekte führen in Phase 1:
-- `coverHeadline`
-- `coverTextRenderer: "GOOGLE_FLOW"`
-- `flowSourceImageTextPolicy: "SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY"`
+Neue YouTube-Projekte verwenden:
+- `visibleTextRenderer: "GOOGLE_FLOW"`
+- `renderGermanLabelsInRemotion: false`
+- `finalTextPolicy: "FLOW_VISIBLE_TEXT_ONLY_V3"`
+- `flowSourceImageTextPolicy: "PLANNED_EXACT_GERMAN_TEXT_ONLY"`
+- `flowTextMoments: [...]`
+- `sceneLabels: []`
 
-Der Cover-Titel wird direkt von Google Flow in `03-bilder/01.png` gerendert. Remotion rendert nur spätere `keyword`-Overlays und darf den Cover-Titel nicht duplizieren.
+Sämtlicher sichtbarer YouTube-Text wird direkt von Google Flow in die jeweiligen Bilder gerendert. Remotion erzeugt keine Cover-Titel, Keywords, Labels oder YouTube-Captions.
 
 `word-timings.json` darf als leere Vorlage starten. `produce:youtube` erzeugt fehlende/leere Wortzeiten automatisch aus `04-audio/final-voice.mp3` mit lokalem Whisper.cpp und richtet sie am finalen `01-script/script.txt` aus.
 
