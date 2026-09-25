@@ -7,7 +7,7 @@ Eigenständiges Produktionsrepo für **Alltagspsychologie & menschliches Verhalt
 ## Aktueller Status
 
 - Bildwelt: **Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY**
-- aktueller YouTube-Praxistest: `youtube/24.09.2026-negativitaetsbias/`
+- aktueller YouTube-Praxistest: `youtube/25.09.2026-bestaetigungsfehler/`
 - Szene 01 ist immer Cover + erster Beat + Master
 - **sämtlicher sichtbarer YouTube-Text kommt direkt aus Google Flow**
 - **Remotion erzeugt keinen sichtbaren YouTube-Text**
@@ -125,12 +125,13 @@ Die Flow-QA prüft bei V3-Projekten:
 
 ## Aktueller Praxistest
 
-**Negativitätsbias**
+**Bestätigungsfehler / Confirmation Bias**
 
-- 412 Wörter / 35 Visual Beats
+- 427 Wörter / 35 Visual Beats
 - Szene 01 = Cover + erster Beat + Master
-- Flow-Cover-Titel: **WARUM BLEIBT NEGATIVES HÄNGEN?**
-- weitere Flow-Texte: Szenen 04, 09, 15, 21, 25, 31, 34
+- Flow-Cover-Titel: **WARUM DU DICH SELBST BESTÄTIGST**
+- weitere Flow-Texte: Szenen 04, 10, 12, 20, 25, 29, 34
 - insgesamt 8 sichtbare Textmomente auf 35 Szenen
 - sämtliche sichtbaren Texte direkt in Google Flow
 - Remotion rendert keinen sichtbaren Text
+- Quellenbasis: Nickerson (1998), Wason (1960), Klayman & Ha (1987)

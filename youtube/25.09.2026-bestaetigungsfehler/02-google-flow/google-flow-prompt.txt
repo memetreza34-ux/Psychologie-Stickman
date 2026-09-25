@@ -1,0 +1,343 @@
+GOOGLE FLOW MASTER PROMPT — BESTÄTIGUNGSFEHLER — 2,5-MINUTEN-VIDEO
+
+DIESE DATEI IST DER EINZIGE GOOGLE-FLOW-PROMPT FÜR DAS GESAMTE VIDEO.
+Keine zweite Prompt-Datei verwenden.
+
+FORMAT HARD LOCK
+- YouTube 16:9
+- 1920x1080
+- 30 fps target project
+- horizontal landscape composition
+
+STYLE HARD LOCK — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3
+STRICT STICKMAN ONLY.
+
+EVERY visible human or human-like figure must use TRUE STICKMAN anatomy. They do NOT need to be the same person.
+
+TRUE STICKMAN ANATOMY — NON-NEGOTIABLE
+- simple round or oval flat head, slightly smaller than mascot proportions
+- tiny black dot eyes and very small simple mouth
+- no realistic nose, ears or neck
+- small strongly simplified torso
+- very thin line-like arms and legs with near-constant thickness
+- simple rounded nub/mitten hands, no fingers
+- simplified shoes
+- clothing may show role but never create normal human/cartoon anatomy
+
+HARD FAIL
+- normal cartoon humans
+- semi-realistic or realistic humans
+- thick human limbs
+- detailed fingers/hands
+- realistic face anatomy
+- 3D/CGI/Pixar
+- anime/manga/chibi
+- mascot-like oversized heads
+
+ENVIRONMENT RULE
+Rich believable 2D environments are encouraged: electronics stores, cafés, trains, research rooms, offices, parks, workshops, libraries, public spaces and city scenes. Detail belongs in the environment, not in human anatomy. Use clean dark organic outlines, natural colors, subtle cel shading, believable depth and soft light.
+
+CHANNEL DNA — HARD LOCK
+Simple Stickmen. Rich World. One clear idea per image.
+- one primary visual thought per image
+- concrete everyday action before generic infographic
+- one dominant focal point and normally only 1–2 supporting cues
+- no dense collages, dashboards or repeated card layouts
+- vary cast, clothing, role, location, pose, camera distance and composition
+
+VISIBLE TEXT — GOOGLE FLOW ONLY
+FLOW_VISIBLE_TEXT_ONLY_V3
+NO REMOTION TEXT. Remotion MUST NOT add visible text.
+Every visible German title or keyword in this video is rendered directly by Google Flow inside its assigned image.
+
+PLANNED FLOW TEXT MOMENTS
+- Scene 01: "WARUM DU DICH SELBST BESTÄTIGST"
+- Scene 04: "BESTÄTIGUNGSFEHLER"
+- Scene 10: "PASSENDE BELEGE"
+- Scene 12: "GEGENBEISPIEL"
+- Scene 20: "ANDERS BEWERTET"
+- Scene 25: "WIDERSPRUCH STRENGER GEPRÜFT"
+- Scene 29: "WAS WÜRDE MICH UMSTIMMEN?"
+- Scene 34: "GLEICHER TEST FÜR ALLE"
+
+TEXT MOMENT HARD LOCK
+For every planned text moment:
+- render exactly the specified German text
+- preserve spelling, umlauts, punctuation and capitalization
+- keep every letter fully inside safe image margins
+- use clean readable editorial typography integrated into the scene
+- no extra subtitle, badge, logo, UI word or pseudo-writing
+- NO OTHER READABLE TEXT
+- if any character is wrong, missing, malformed, clipped or unreadable: reject and regenerate only that image
+
+ALL OTHER SCENES
+ZERO READABLE TEXT.
+- no German or English words
+- no letters, labels, subtitles, UI words, poster text, document text or logos
+- screens and papers use abstract lines, blocks, icons and shapes only
+- do not copy any text from the master image
+
+CAST VARIATION — HARD LOCK
+STYLE CONSISTENCY DOES NOT MEAN CHARACTER CLONING.
+- 01.png is STYLE/ANATOMY reference only after approval
+- use different Stickman people whenever continuity is not required
+- vary simple clothing, accessories, role, cast size, location, action and camera
+- reuse an exact person only in scenes explicitly marked LOCAL CONTINUITY
+- do not default to the same hoodie, desk, room or medium shot
+
+BEFORE EACH SCENE DECIDE
+1. CAST — who/how many Stickmen best explain the beat?
+2. LOCATION — which believable place makes the idea clearest?
+3. ACTION — what concrete visible action shows the meaning?
+4. CAMERA — what angle/distance makes it instantly readable?
+
+MASTER REFERENCE WORKFLOW
+1. Generate SCENE 01 ONLY as COVER + FIRST VISUAL BEAT + STYLE/ANATOMY MASTER, including its exact German cover title.
+2. STOP.
+3. Wait for user approval.
+4. User verifies exact title spelling, safe margins, Stickman anatomy and thumbnail quality.
+5. Save approved image as 03-bilder/01.png.
+6. For EVERY image from Scene 02 onward attach 01.png as STYLE/ANATOMY reference.
+7. Master does NOT lock identity, clothing, cast size, location, pose, camera or composition.
+8. Master text belongs ONLY to Scene 01 and must not be copied into later scenes.
+
+AUTOMATIC BATCH WORKFLOW
+MASTER/COVER: 01
+Batch 1: 02–06
+Batch 2: 07–11
+Batch 3: 12–16
+Batch 4: 17–21
+Batch 5: 22–26
+Batch 6: 27–31
+Batch 7: 32–35
+After Scene 01 approval, generate only the current batch, max 5 images. Internally QA anatomy, meaning, cast/location/camera variety and exact text policy. Regenerate only failed images and continue automatically after PASS.
+
+REFERENCE CLAUSE FOR SCENE 02+
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone or text template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. Reuse exact people only in LOCAL CONTINUITY scenes. IMPORTANT: do not copy, recreate or imitate any readable text from 01.png. Only scenes with an explicit EXACT GERMAN TEXT line may contain their specified text; every other later scene is ZERO READABLE TEXT.
+
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du glaubst, dein neues Handy war die richtige Wahl, und plötzlich fallen dir überall Gründe dafür auf.
+EXACT GERMAN COVER TITLE: "WARUM DU DICH SELBST BESTÄTIGST"
+PROMPT:
+COVER + MASTER STYLE FRAME. A young adult true Stickman stands on the right side of a modern electronics store holding a newly chosen smartphone with satisfied but slightly self-assured body language. Around the product area are several abstract positive review symbols that naturally attract the character's attention, while one contrasting critical symbol remains visible but less attended. Add three differently dressed true Stickmen in the background browsing normally. Rich believable store, strong depth, clean dark outlines, natural color, subtle 2D cel shading. Integrate the exact German cover title "WARUM DU DICH SELBST BESTÄTIGST" large and highly legible on the left/upper-left. Keep all letters comfortably inside safe margins. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+
+SCENE 02
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Gute Bewertungen wirken wichtig, kritische Berichte findest du dagegen schnell übertrieben oder schlecht begründet.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 01. Reuse only the Scene-01 main character, now seated in a detailed café scrolling through abstract review cards on the phone. Friendly positive symbols feel visually prominent and close; critical cards remain smaller at the edge of attention. Other patrons are different true Stickmen occupied with normal activities. Over-the-shoulder camera showing phone and reaction without readable interface. ZERO READABLE TEXT.
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Genau hier kann ein Denkfehler beginnen, ohne dass du ihn bemerkst.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW true Stickman walks through a bright station corridor lined with many neutral abstract information cues, but unconsciously turns toward only the cues that fit an existing expectation. Diagonal medium-wide composition with clear forward motion and believable public-space depth. ZERO READABLE TEXT.
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Psychologen nennen ihn Bestätigungsfehler oder Confirmation Bias.
+EXACT GERMAN TEXT: "BESTÄTIGUNGSFEHLER"
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW true Stickman in a modern library sorts two small groups of abstract evidence cards differently: matching evidence is pulled close while conflicting evidence is pushed farther away. Keep the visual grounded and simple rather than infographic-heavy. Frontal medium composition with a calm clean title zone. Render exactly "BESTÄTIGUNGSFEHLER" as the only readable text. NO OTHER READABLE TEXT.
+
+SCENE 05
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Gemeint ist: Wir suchen oder deuten Informationen oft so, dass sie zu bestehenden Erwartungen passen.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Two differently dressed true Stickmen at a small market stall examine the same set of products and abstract information markers, but the main character selectively pulls forward only cues matching a prior expectation. Three-quarter side composition, realistic stall environment, one clear action. ZERO READABLE TEXT.
+
+SCENE 06
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das passiert nicht unbedingt absichtlich und auch nicht nur bei starren Menschen.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW true Stickman talks casually with a friend inside a tram, naturally explaining a recent choice while unintentionally emphasizing only supporting examples with hand gestures. Both appear normal and reasonable, not stubborn or caricatured. Medium reverse angle with other passengers in depth. ZERO READABLE TEXT.
+
+SCENE 07
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Oft fühlt es sich sogar so an, als würden wir ganz nüchtern und objektiv prüfen.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW technician true Stickman in a realistic workshop carefully inspects several abstract evidence pieces with serious methodical posture, appearing completely objective while only the matching cues are selected onto the work surface. Close-medium action shot, tools and environment detailed but not cluttered. ZERO READABLE TEXT.
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein klassisches Experiment von Peter Wason zeigte ein ähnliches Muster beim Testen von Regeln.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Historical 1960s-inspired research room with one researcher true Stickman and one participant true Stickman. The participant studies a simple sequence made from three cards containing only dot quantities and geometric marks, while the researcher observes. Wide three-quarter angle, restrained period details, no realistic humans. ZERO READABLE TEXT.
+
+SCENE 09
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Teilnehmende bekamen eine Zahlenfolge und sollten herausfinden, welche allgemeine Regel dahintersteckt.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 08. Same researcher, participant and room. The participant arranges multiple sequence cards represented through different dot quantities and simple geometric groupings, visibly trying to infer a hidden rule. Slight high-angle view over the table; do not show digits or written equations. ZERO READABLE TEXT.
+
+SCENE 10
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Viele prüften vor allem neue Zahlenfolgen, die gut zu ihrer ersten Vermutung passten.
+EXACT GERMAN TEXT: "PASSENDE BELEGE"
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 08–09. The participant confidently chooses another abstract sequence that visibly resembles the first suspected pattern, while alternative sequences remain untouched. Diagonal close-medium composition with the chosen examples forming a clear visual cluster. Render exactly "PASSENDE BELEGE" in a calm upper area, fully inside safe margins. NO OTHER READABLE TEXT.
+
+SCENE 11
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Genau diese Tests konnten ihre Vermutung bestätigen, aber oft kaum ernsthaft widerlegen.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 08–10. Several matching abstract sequence cards now collect beside the participant, creating a feeling of repeated confirmation, while no genuinely challenging test has been attempted. Side medium shot with researcher secondary in background. ZERO READABLE TEXT.
+
+SCENE 12
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der bessere Test wäre gewesen, gezielt nach einem möglichen Gegenbeispiel zu suchen.
+EXACT GERMAN TEXT: "GEGENBEISPIEL"
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 08–11. The participant deliberately reaches past the familiar matching cards and selects one strongly contrasting abstract sequence that could challenge the current idea. Clear over-the-shoulder composition centered on the decisive choice. Render exactly "GEGENBEISPIEL" in a clean safe area. NO OTHER READABLE TEXT.
+
+SCENE 13
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Also nach einer Folge, die die eigene Idee tatsächlich falsch machen könnte.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 12. Tight top-down composition of the participant comparing the original matching sequence against a contrasting dot-pattern sequence, with posture showing genuine uncertainty and testing rather than confirmation. No digits, equations or written notes. ZERO READABLE TEXT.
+
+SCENE 14
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dieses Prinzip taucht nicht nur in Laboraufgaben auf, sondern auch im normalen Alltag.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Busy city square with several different true Stickmen in ordinary activities. In the foreground, one new character makes a small everyday choice while selectively attending to matching cues, showing the same reasoning pattern outside a laboratory. Wide environmental shot with strong depth. ZERO READABLE TEXT.
+
+SCENE 15
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Stell dir vor, du hältst einen Kollegen schon länger für unzuverlässig.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Two office-worker true Stickmen in a modern office hallway. The main observer watches a colleague with already skeptical body language even though nothing problematic is happening yet. Medium-wide three-quarter framing with believable workplace depth. ZERO READABLE TEXT.
+
+SCENE 16
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Kommt er einmal zu spät, passt das perfekt in dein bestehendes Bild von ihm.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 15. Same two coworkers. The colleague arrives slightly rushed through a doorway while the observer immediately reacts with a strong "that fits" posture. Keep it everyday and non-dramatic. Low side angle with a visible wall clock shape but no readable numbers. ZERO READABLE TEXT.
+
+SCENE 17
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ist er dagegen zehnmal pünktlich, wirkt das schnell weniger bemerkenswert.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 15–16. On another day in the same office entrance, the same colleague is early, calm and prepared, but the observer barely notices while focusing on another task. Wide frontal composition showing the overlooked positive counterevidence. ZERO READABLE TEXT.
+
+SCENE 18
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ähnlich kann es bei Sport, Technik, Ernährung oder ganz gewöhnlichen Meinungen passieren.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW group of three true Stickman sports fans in a lively but mature club lounge watch an abstract game screen. One fan interprets an ambiguous play strongly in favor of their preferred side. Dynamic group angle, screen contains field shapes only. ZERO READABLE TEXT.
+
+SCENE 19
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du bemerkst dabei nicht nur unterschiedliche Informationen.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW true Stickman at a detailed newspaper kiosk faces many abstract information cards and visual cues; only a few matching cues become sharply salient while others stay present but less attended. High three-quarter perspective. ZERO READABLE TEXT.
+
+SCENE 20
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du kannst dieselbe Information auch unterschiedlich bewerten, je nachdem, was du vorher schon glaubst.
+EXACT GERMAN TEXT: "ANDERS BEWERTET"
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Two differently dressed true Stickmen sit by a café window looking at the exact same ambiguous everyday event outside, yet their body language shows noticeably different interpretations. One shared event, two reactions, no split-screen. Medium-wide side composition. Render exactly "ANDERS BEWERTET" in a calm upper area. NO OTHER READABLE TEXT.
+
+SCENE 21
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Eine Studie, ein Kommentar oder ein Beispiel wirkt überzeugender, wenn es die eigene Sicht unterstützt.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW student true Stickman in a university library examines three abstract evidence sources represented by clean cards with icons only. The source supporting the student's expectation is brought closer and treated as especially convincing. Over-the-shoulder angle with shelves and other true Stickmen in background. ZERO READABLE TEXT.
+
+SCENE 22
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Widerspricht es dir, suchst du eher nach Schwächen, Sonderfällen oder möglichen Ausnahmen.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 21. Same student now scrutinizes one conflicting evidence card with a magnifying glass and visibly stricter posture, while the previously supportive cards rest nearby without equal scrutiny. Tight side-angle action shot. ZERO READABLE TEXT.
+
+SCENE 23
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wichtig: Das bedeutet nicht, dass jede feste Meinung automatisch falsch oder irrational ist.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW true Stickman on a quiet park path calmly holds two different abstract evidence markers at equal distance, showing balanced evaluation rather than rejecting all prior beliefs. Medium shot with open natural environment. ZERO READABLE TEXT.
+
+SCENE 24
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Manchmal sprechen die besseren Belege tatsächlich für deine ursprüngliche Position.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW technician true Stickman in a workshop tests an original diagnosis using several independent tools and receives multiple consistent abstract result signals. The original idea is genuinely supported by the broader evidence. Wide three-quarter composition. ZERO READABLE TEXT.
+
+SCENE 25
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das Problem entsteht, wenn Bestätigung leichter akzeptiert und Widerspruch strenger geprüft wird.
+EXACT GERMAN TEXT: "WIDERSPRUCH STRENGER GEPRÜFT"
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Three true Stickmen in a small meeting room compare two evidence cards: the supportive card is casually accepted, while the conflicting card is placed under exaggerated but still realistic close scrutiny. Clear group composition with asymmetrical treatment visible immediately. Render exactly "WIDERSPRUCH STRENGER GEPRÜFT" in a clean safe title area. NO OTHER READABLE TEXT.
+
+SCENE 26
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wie kann man dieses Muster im Alltag zumindest etwas bremsen?
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW true Stickman pauses on an open riverside promenade, steps back from a narrow cluster of evidence symbols and deliberately widens attention toward several alternative cues. Wide calm landscape shot, reflective but practical mood. ZERO READABLE TEXT.
+
+SCENE 27
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Eine einfache Methode ist, die eigene Vermutung bewusst als testbare Frage zu formulieren.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW true Stickman at a kitchen table converts one rigid evidence arrangement into an open test setup using blank cards, arrows and simple icons only. Slight top-down three-quarter angle, one coherent action. ZERO READABLE TEXT.
+
+SCENE 28
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dann frag nicht nur: Welche Hinweise sprechen dafür?
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 27. Same character reaches toward a cluster of supportive abstract evidence but visibly stops before selecting only those pieces. Over-the-shoulder composition, balanced table layout, no written question marks or words. ZERO READABLE TEXT.
+
+SCENE 29
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Frag zusätzlich: Welche Beobachtung würde mich wirklich ernsthaft umstimmen?
+EXACT GERMAN TEXT: "WAS WÜRDE MICH UMSTIMMEN?"
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW true Stickman stands in a bright museum-like corridor facing two distinct paths of evidence, one familiar and one genuinely challenging. Strong centered perspective, thoughtful body language, clean architectural depth. Render exactly "WAS WÜRDE MICH UMSTIMMEN?" large but secondary to the figure, fully inside safe margins. NO OTHER READABLE TEXT.
+
+SCENE 30
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Bei einer Kaufentscheidung heißt das zum Beispiel: Suche bewusst nach der stärksten Gegenposition.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW buyer true Stickman in a modern electronics store compares two different smartphones. The character deliberately sets the favored device down and picks up the strongest competing option for a fair inspection. Three-quarter close-medium framing. ZERO READABLE TEXT.
+
+SCENE 31
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Lies nicht nur fünf Bewertungen, die deine Wahl feiern und deine Erwartungen bestätigen.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 30. Same buyer sees a cluster of several positive abstract review symbols around the favored phone and recognizes how one-sided the selection has become. High over-the-shoulder view; all review cards use icons and shapes only. ZERO READABLE TEXT.
+
+SCENE 32
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Prüfe auch gute Gegenargumente und vergleiche ehrlich, ob sie wirklich schwächer sind.
+PROMPT:
+LOCAL CONTINUITY WITH SCENE 30–31. Same buyer now places both phones side by side and examines strong opposing evidence for each using the same neutral criteria represented by identical abstract markers. Wide shelf/table composition, balanced visual hierarchy. ZERO READABLE TEXT.
+
+SCENE 33
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ziel ist nicht, ständig an allem zu zweifeln oder Entscheidungen endlos aufzuschieben.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. NEW true Stickman walks through a calm city park with relaxed open posture after making a decision, showing thoughtful confidence rather than endless hesitation. Medium-wide environmental shot with a few distant true Stickmen. ZERO READABLE TEXT.
+
+SCENE 34
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ziel ist, der eigenen Lieblingsidee denselben fairen Test zu geben wie einer fremden.
+EXACT GERMAN TEXT: "GLEICHER TEST FÜR ALLE"
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Two true Stickmen in a clean learning workshop place two competing hypotheses represented by differently colored abstract objects into the exact same neutral test setup. Strong frontal symmetrical composition, mature editorial look. Render exactly "GLEICHER TEST FÜR ALLE" centered in a safe upper zone. NO OTHER READABLE TEXT.
+
+SCENE 35
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Denn eine Meinung wird nicht stärker, wenn sie nie die echte Chance bekommt, falsch zu sein.
+PROMPT:
+Attach 01.png as STYLE/ANATOMY reference only. Closing cinematic scene: a single true Stickman walks along an evening city promenade with both supportive and conflicting abstract cues visible at equal distance in the wider environment. The character moves forward calmly rather than shielding from contradiction. Wide final composition, natural evening colors, subtle cel shading, distant true Stickman passersby. ZERO READABLE TEXT.
+
+FINAL EXECUTION RULE
+Stop only after Scene 01 for user approval. Scene 01 is approved only if the exact cover title "WARUM DU DICH SELBST BESTÄTIGST" is correctly rendered, fully inside safe margins, and no other readable text appears. After approval continue automatically through Batch 1 to Batch 7. At scenes 04, 10, 12, 20, 25, 29 and 34, render only the specified exact German keyword text. Every other scene remains ZERO READABLE TEXT.
+
+FINAL QA RULE
+Reject and regenerate any image with non-stickman humans, anatomy drift, oversized mascot heads, 3D/Pixar/anime/photorealistic drift, unnecessary character cloning, repetitive locations/cameras, mismatch with the current speech beat, accidental readable text, misspelled planned text, extra text or clipped letters. For a planned text moment, regenerate only that failed image until the exact text is correct.
+
+FINAL PRINCIPLE
+01.png = SCENE 01 + COVER + STYLE/ANATOMY MASTER + EXACT FLOW-RENDERED GERMAN COVER TITLE. Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. All visible YouTube text is generated directly by Google Flow; Remotion creates no visible text.

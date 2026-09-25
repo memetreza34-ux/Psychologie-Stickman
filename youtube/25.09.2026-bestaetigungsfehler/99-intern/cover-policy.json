@@ -1,0 +1,10 @@
+{
+  "coverHeadline": "WARUM DU DICH SELBST BESTÄTIGST",
+  "coverTextRenderer": "GOOGLE_FLOW",
+  "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
+  "visibleTextRenderer": "GOOGLE_FLOW",
+  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
+  "renderGermanLabelsInRemotion": false,
+  "forbidAdditionalReadableTextOnCover": true,
+  "remotionMustNotDuplicateCoverTitle": true
+}
