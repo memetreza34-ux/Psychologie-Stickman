@@ -20,25 +20,34 @@ Simple Stickmen. Rich World. One clear idea per image.
 Prefer a concrete action in a believable environment over generic infographic layouts.
 Vary cast, clothing, role, location, pose, camera and composition.
 
-COVER TITLE — GOOGLE FLOW HARD LOCK
-SCENE 01 = COVER + FIRST VISUAL BEAT + STYLE/ANATOMY MASTER.
-EXACT GERMAN COVER TITLE: "[2–7 WÖRTER HIER EINSETZEN]"
-Google Flow MUST render this exact German title directly inside Scene 01.
-- exact spelling, umlauts and punctuation
-- large, clean and highly legible thumbnail typography
-- compose title and main motif together
-- NO OTHER READABLE TEXT in Scene 01
-- no subtitle, badge, logo, UI text or pseudo-writing
-- if the title is wrong or unreadable: regenerate Scene 01
-- Remotion MUST NOT render the cover title again
+VISIBLE TEXT — GOOGLE FLOW ONLY
+FLOW_VISIBLE_TEXT_ONLY_V3.
+All visible text in the YouTube video is generated directly inside Google Flow images.
+NO REMOTION TEXT. Remotion must not add cover titles, keywords, labels or captions.
 
-SCENE 02+ — ZERO READABLE TEXT
-From Scene 02 onward:
-- zero readable words or letters
+PLANNED TEXT MOMENTS
+Before generation, list every visible text moment here using exact German wording.
+- Scene 01 — COVER — "[2–7 WÖRTER]"
+- optional later scenes — KEYWORD — "[1–5 WÖRTER]"
+
+For every planned text scene:
+- add a separate line: `EXACT GERMAN TEXT: "..."` or for Scene 01 `EXACT GERMAN COVER TITLE: "..."`
+- render exactly that German text
+- preserve spelling, umlauts and punctuation
+- keep every letter fully inside the safe frame
+- NO OTHER READABLE TEXT
+- regenerate the image if text is wrong, clipped, malformed or unreadable
+
+For every scene without a planned text moment:
+- ZERO READABLE TEXT
 - no labels, UI words, subtitles, poster/document/screen text or logos
-- screens/papers use abstract lines, blocks, icons and shapes only
-- do not copy, recreate or imitate the cover title from 01.png
-- German keyword labels for selected later scenes are added later in Remotion
+- screens and papers use abstract lines, blocks, icons and shapes only
+
+TEXT DENSITY
+- Scene 01 always has the cover title
+- later text only where it adds real value
+- target roughly 15–25% of scenes including cover
+- hard maximum 30%
 
 MASTER REFERENCE WORKFLOW
 1. Generate Scene 01 only, including the exact cover title.
@@ -47,6 +56,7 @@ MASTER REFERENCE WORKFLOW
 4. Save as `03-bilder/01.png`.
 5. Attach 01.png as STYLE/ANATOMY reference for Scene 02+.
 6. Master is not a character clone or text template.
+7. Do not copy text from 01.png. Only render text when the current scene has its own EXACT GERMAN TEXT instruction.
 
 AUTOMATIC BATCH WORKFLOW
 After Scene 01 approval:
@@ -62,22 +72,26 @@ Reuse exact people only for genuine LOCAL CONTINUITY.
 Do not default to the same hoodie, desk, room, pose or framing.
 
 REFERENCE CLAUSE FOR SCENE 02+
-Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone or text template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. IMPORTANT: do not copy, recreate or imitate the cover title from 01.png. ZERO READABLE TEXT.
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone or text template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. IMPORTANT: do not copy, recreate or imitate text from 01.png. Only render readable text when this scene explicitly supplies EXACT GERMAN TEXT; otherwise ZERO READABLE TEXT.
 
 ARBEITSWEISE
 Unterhalb dieses Blocks alle Visual Beats des konkreten Videos direkt in dieser einen Datei eintragen.
 Jeder Beat enthält:
 - Nummer
 - Sprechtext als geschützten Kontext
+- optional exakten deutschen Text für Flow
 - finalen Bildprompt
 
-BEISPIEL
+BEISPIEL — COVER
 
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [Sprechtext]
+EXACT GERMAN COVER TITLE: "[TITEL]"
 PROMPT:
-COVER + MASTER. Create a strong 16:9 true-stickman scene that accurately visualizes the first spoken beat. Render the EXACT GERMAN COVER TITLE "[TITEL]" as large clean thumbnail typography. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+COVER + MASTER. Create a strong 16:9 true-stickman scene that accurately visualizes the first spoken beat. Render exactly the specified German cover title as large clean thumbnail typography. Keep every letter fully inside the frame. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+
+BEISPIEL — TEXTFREIE SZENE
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -85,11 +99,24 @@ SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 PROMPT:
 [Individueller Szeneninhalt.] Attach 01.png as STYLE/ANATOMY reference only. Do not copy its title or character identity unless LOCAL CONTINUITY requires the same person. ZERO READABLE TEXT.
 
+BEISPIEL — KEYWORD DIREKT AUS FLOW
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+[Sprechtext]
+EXACT GERMAN TEXT: "[KEYWORD]"
+PROMPT:
+[Individueller Szeneninhalt.] Render exactly the specified German keyword in a clean safe text zone. NO OTHER READABLE TEXT.
+
 FINAL QA
+- all planned German text is rendered directly by Google Flow
 - Scene 01: exact German cover title, no additional readable text
-- Scene 02+: ZERO READABLE TEXT
+- keyword scenes: exact German keyword, no additional readable text
+- all other scenes: ZERO READABLE TEXT
+- no clipped or malformed typography
+- Remotion adds NO visible text
 - all humans true Stickmen
 - no anatomy/style drift
 - no unnecessary character cloning
 - one clear visual idea per image
-- image matches the current speech beat
+- image matches current speech beat
