@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {resolvePhase1Plan} from './lib/youtube-visual-beats.mjs';
+import {assertValidFlowCoverPolicy, resolveCoverPolicy} from './lib/cover-policy.mjs';
 
 const [wordTimingPath, phase1PlanPath, outputPath] = process.argv.slice(2);
 if (!wordTimingPath || !phase1PlanPath || !outputPath) {
@@ -66,15 +67,21 @@ scenes.forEach((scene, index) => {
   const e = index + 1 < starts.length ? starts[index + 1] - 2 : words.length - 1;
   const planned = toks(scene.speechSection);
   const actual = timing.slice(s, e + 1);
-  if (planned.length !== actual.length || planned.some((t, i) => t !== actual[i])) {
-    throw new Error(`Scene ${scene.scene}: speechSection mismatch.`);
-  }
+  if (planned.length !== actual.length || planned.some((t, i) => t !== actual[i])) throw new Error(`Scene ${scene.scene}: speechSection mismatch.`);
   const expectedEndWord = norm(scene.endWord ?? lastWord(scene.speechSection));
   if (expectedEndWord !== timing[e]) throw new Error(`Scene ${scene.scene}: endWord mismatch.`);
 });
 
 const format = normalizeFormat(phase1.format);
 if (!['reel', 'youtube'].includes(format)) throw new Error(`Unsupported Phase 1 format: ${phase1.format}`);
+
+const coverPolicy = resolveCoverPolicy(phase1, phase1PlanPath);
+if (format === 'youtube') assertValidFlowCoverPolicy(coverPolicy, phase1PlanPath);
+
+let sceneLabels = Array.isArray(phase1.sceneLabels) ? phase1.sceneLabels : [];
+if (format === 'youtube' && coverPolicy.isGoogleFlow) {
+  sceneLabels = sceneLabels.filter((label) => (label?.variant ?? 'keyword') !== 'cover');
+}
 
 const out = {
   format,
@@ -85,11 +92,16 @@ const out = {
   ...(Number.isFinite(phase1.imageDigits) ? {imageDigits: phase1.imageDigits} : {}),
   ...(Number.isFinite(phase1.endHoldMs) ? {endHoldMs: phase1.endHoldMs} : {}),
   ...(Array.isArray(phase1.sceneEffects) ? {sceneEffects: phase1.sceneEffects} : {}),
-  ...(Array.isArray(phase1.sceneLabels) ? {sceneLabels: phase1.sceneLabels} : {}),
+  ...(sceneLabels.length ? {sceneLabels} : {sceneLabels: []}),
+  ...(format === 'youtube' ? {
+    coverTextRenderer: coverPolicy.coverTextRenderer,
+    coverHeadline: coverPolicy.coverHeadline,
+    flowSourceImageTextPolicy: coverPolicy.flowSourceImageTextPolicy,
+  } : {}),
   ...(typeof phase1.autoCaptions === 'boolean' ? {autoCaptions: phase1.autoCaptions} : {}),
   ...(Number.isFinite(phase1.captionWordsPerPage) ? {captionWordsPerPage: phase1.captionWordsPerPage} : {}),
 };
 
 fs.mkdirSync(path.dirname(path.resolve(outputPath)), {recursive: true});
 fs.writeFileSync(path.resolve(outputPath), `${JSON.stringify(out, null, 2)}\n`);
-console.log(`PHASE 1 MAP: PASS — ${scenes.length} visual beats (${format})`);
+console.log(`PHASE 1 MAP: PASS — ${scenes.length} visual beats (${format}); cover=${coverPolicy.coverTextRenderer}`);
