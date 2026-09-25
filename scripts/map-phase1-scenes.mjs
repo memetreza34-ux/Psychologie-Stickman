@@ -25,13 +25,7 @@ const scenes = phase1.scenes ?? [];
 if (!Array.isArray(words) || words.length === 0) throw new Error('word-timings.json must contain words.');
 if (!Array.isArray(scenes) || scenes.length === 0) throw new Error('Phase 1 contains no visual beats.');
 
-const norm = (v) =>
-  String(v ?? '')
-    .normalize('NFKC')
-    .toLocaleLowerCase('de-DE')
-    .replace(/[„“”"‚‘’'`´….,!?;:()\[\]{}<>/\\|+*=~_^%$#@&–—-]/g, '')
-    .replace(/\s+/g, '')
-    .trim();
+const norm = (v) => String(v ?? '').normalize('NFKC').toLocaleLowerCase('de-DE').replace(/[„“”"‚‘’'`´….,!?;:()\[\]{}<>/\\|+*=~_^%$#@&–—-]/g, '').replace(/\s+/g, '').trim();
 const toks = (v) => String(v ?? '').trim().split(/\s+/).map(norm).filter(Boolean);
 const firstWords = (text, count = 8) => String(text ?? '').trim().split(/\s+/).filter(Boolean).slice(0, count).join(' ');
 const lastWord = (text) => String(text ?? '').trim().split(/\s+/).filter(Boolean).at(-1) ?? '';
@@ -45,9 +39,7 @@ for (const scene of scenes) {
   const startPhrase = String(scene.startPhrase ?? '').trim() || firstWords(speechSection, 8);
   const p = toks(startPhrase);
   const matches = [];
-  for (let i = min; i <= timing.length - p.length; i += 1) {
-    if (p.every((t, j) => timing[i + j] === t)) matches.push(i);
-  }
+  for (let i = min; i <= timing.length - p.length; i += 1) if (p.every((t, j) => timing[i + j] === t)) matches.push(i);
   if (matches.length !== 1) {
     console.error(`Scene ${scene.scene}: startPhrase must map exactly once after word ${min + 1}. Found ${matches.length}.`);
     console.error(`startPhrase: ${startPhrase}`);
@@ -78,8 +70,15 @@ if (!['reel', 'youtube'].includes(format)) throw new Error(`Unsupported Phase 1 
 const coverPolicy = resolveCoverPolicy(phase1, phase1PlanPath);
 if (format === 'youtube') assertValidFlowCoverPolicy(coverPolicy, phase1PlanPath);
 
+const flowTextPolicyPath = path.join(path.dirname(path.resolve(phase1PlanPath)), 'flow-text-policy.json');
+const sidecar = fs.existsSync(flowTextPolicyPath) ? read(flowTextPolicyPath) : null;
+const finalTextPolicy = String(sidecar?.finalTextPolicy ?? phase1.finalTextPolicy ?? phase1.finalTextOverlayPolicy ?? '').trim();
+const flowOnlyText = format === 'youtube' && finalTextPolicy === 'FLOW_VISIBLE_TEXT_ONLY_V3';
+
 let sceneLabels = Array.isArray(phase1.sceneLabels) ? phase1.sceneLabels : [];
-if (format === 'youtube' && coverPolicy.isGoogleFlow) {
+if (flowOnlyText) {
+  sceneLabels = [];
+} else if (format === 'youtube' && coverPolicy.isGoogleFlow) {
   sceneLabels = sceneLabels.filter((label) => (label?.variant ?? 'keyword') !== 'cover');
 }
 
@@ -92,11 +91,15 @@ const out = {
   ...(Number.isFinite(phase1.imageDigits) ? {imageDigits: phase1.imageDigits} : {}),
   ...(Number.isFinite(phase1.endHoldMs) ? {endHoldMs: phase1.endHoldMs} : {}),
   ...(Array.isArray(phase1.sceneEffects) ? {sceneEffects: phase1.sceneEffects} : {}),
-  ...(sceneLabels.length ? {sceneLabels} : {sceneLabels: []}),
+  sceneLabels,
   ...(format === 'youtube' ? {
     coverTextRenderer: coverPolicy.coverTextRenderer,
     coverHeadline: coverPolicy.coverHeadline,
-    flowSourceImageTextPolicy: coverPolicy.flowSourceImageTextPolicy,
+    flowSourceImageTextPolicy: sidecar?.flowSourceImageTextPolicy ?? coverPolicy.flowSourceImageTextPolicy,
+    visibleTextRenderer: sidecar?.visibleTextRenderer ?? phase1.visibleTextRenderer ?? (flowOnlyText ? 'GOOGLE_FLOW' : undefined),
+    finalTextPolicy: flowOnlyText ? 'FLOW_VISIBLE_TEXT_ONLY_V3' : finalTextPolicy,
+    renderGermanLabelsInRemotion: flowOnlyText ? false : phase1.renderGermanLabelsInRemotion,
+    ...(Array.isArray(sidecar?.flowTextMoments) ? {flowTextMoments: sidecar.flowTextMoments} : Array.isArray(phase1.flowTextMoments) ? {flowTextMoments: phase1.flowTextMoments} : {}),
   } : {}),
   ...(typeof phase1.autoCaptions === 'boolean' ? {autoCaptions: phase1.autoCaptions} : {}),
   ...(Number.isFinite(phase1.captionWordsPerPage) ? {captionWordsPerPage: phase1.captionWordsPerPage} : {}),
@@ -104,4 +107,4 @@ const out = {
 
 fs.mkdirSync(path.dirname(path.resolve(outputPath)), {recursive: true});
 fs.writeFileSync(path.resolve(outputPath), `${JSON.stringify(out, null, 2)}\n`);
-console.log(`PHASE 1 MAP: PASS — ${scenes.length} visual beats (${format}); cover=${coverPolicy.coverTextRenderer}`);
+console.log(`PHASE 1 MAP: PASS — ${scenes.length} visual beats (${format}); text=${flowOnlyText ? 'GOOGLE_FLOW_ONLY' : 'LEGACY'}`);
