@@ -51,14 +51,14 @@ THEMA + QUELLEN + CLAIM-CHECK
 → Phase 1 Visual Beats
 → Google-Flow-Bilder
 → finales Voice-over
-→ Word Timings
+→ lokale Whisper-Wortzeiten
 → Phase 3 / Remotion
 → Final-QA
 ```
 
-### Ein-Kommando-Render für ein fertiges YouTube-Projekt
+### Ein-Kommando-Produktion für ein fertiges YouTube-Projekt
 
-Sobald `03-bilder/`, `04-audio/final-voice.mp3`, `99-intern/phase1-scenes.json` und eine nicht-leere `99-intern/word-timings.json` vorliegen:
+Sobald `03-bilder/`, `04-audio/final-voice.mp3` und `99-intern/phase1-scenes.json` vorliegen:
 
 ```bash
 npm run produce:youtube -- youtube/TT.MM.JJJJ-thema
@@ -66,14 +66,40 @@ npm run produce:youtube -- youtube/TT.MM.JJJJ-thema
 
 Der Befehl:
 
-1. mappt Phase 1 auf die finalen Wortzeiten,
-2. staged Bilder und Audio automatisch nach `public/`,
-3. führt die Produktionschecks aus,
-4. baut die Remotion-Props,
-5. rendert `05-export/final.mp4`,
-6. prüft Auflösung, 30 fps, Audio und Dateidauer.
+1. erzeugt bei fehlenden Wortzeiten automatisch `99-intern/word-timings.json` aus `final-voice.mp3`,
+2. richtet die Whisper-Zeitstempel wieder exakt am finalen deutschen `script.txt` aus,
+3. mappt Phase 1 auf die finalen Wortzeiten,
+4. staged Bilder und Audio automatisch nach `public/`,
+5. führt die Produktionschecks aus,
+6. baut die Remotion-Props,
+7. rendert `05-export/final.mp4`,
+8. prüft Auflösung, 30 fps, Audio und Dateidauer.
 
-Vorhandene Exporte werden nicht überschrieben.
+Vorhandene Exporte werden nicht überschrieben. Bereits vorhandene nicht-leere Wortzeiten werden wiederverwendet. Zum bewussten Neu-Erzeugen:
+
+```bash
+npm run produce:youtube -- youtube/TT.MM.JJJJ-thema --force-timings
+```
+
+## Automatische Word Timings
+
+Die Wortzeiten werden lokal mit **Whisper.cpp** über `@remotion/install-whisper-cpp` erzeugt. Standardmodell ist `small`, Sprache ist Deutsch. Es ist kein API-Key nötig.
+
+Beim ersten Lauf werden Whisper.cpp und das Modell unter `.whisper/` installiert bzw. heruntergeladen. Das kann einmalig länger dauern; danach wird der lokale Cache wiederverwendet. `.whisper/` wird nicht committed.
+
+Nur die Wortzeiten erzeugen oder prüfen:
+
+```bash
+npm run timings:youtube -- youtube/TT.MM.JJJJ-thema
+```
+
+Optional kann das Modell gesetzt werden:
+
+```bash
+WHISPER_MODEL=small npm run timings:youtube -- youtube/TT.MM.JJJJ-thema --force
+```
+
+Nach der Transkription wird nicht einfach der erkannte Whisper-Text übernommen. Die Pipeline gleicht die erkannten Wörter mit dem kanonischen `01-script/script.txt` ab. Kleine Erkennungsfehler oder ausgelassene Einzelwörter werden zeitlich interpoliert; wenn Audio und Skript zu stark voneinander abweichen, bricht die Produktion statt mit falschen Schnitten weiterzulaufen.
 
 ## Warum `public/` existiert
 
@@ -91,11 +117,8 @@ npm run stage:assets -- youtube/TT.MM.JJJJ-thema/99-intern/scene-plan.json
 
 ```bash
 npm run check
+npm run qa:word-timings
 npm run qa:render-smoke
 ```
 
-Die GitHub-CI führt beide Schritte aus. Der Smoke-Test rendert ein echtes kurzes Remotion-Video und erkennt dadurch Fehler, die ein reiner TypeScript-Check nicht sehen würde.
-
-## Aktuelle technische Grenze
-
-`word-timings.json` muss derzeit aus dem final bearbeiteten Voice-over erzeugt bzw. importiert werden, bevor `produce:youtube` laufen kann. Die Renderpipeline selbst ist danach durchgängig automatisiert.
+Die GitHub-CI führt `npm run check` und den echten Remotion-Smoke-Render aus. Die Word-Timing-QA testet zusätzlich kanonische Skriptausrichtung, Interpolation bei einzelnen Erkennungsfehlern und den Abbruch bei deutlich falschem Audio/Skript. Der Smoke-Test rendert ein echtes kurzes Remotion-Video und erkennt dadurch Fehler, die ein reiner TypeScript-Check nicht sehen würde.
