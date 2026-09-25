@@ -12,14 +12,13 @@ Eine neue Szene beginnt insbesondere bei:
 - neuem Fakt oder neuer Kernaussage
 - neuem Ort, Akteur, Objekt oder System
 - neuem Zeitbezug / Zeitsprung
-- neuer wichtigen Zahl oder Größenordnung
+- neuer wichtiger Zahl oder Größenordnung
 - neuer Handlung
 - Ursache → Folge
 - Vergleich A → B
 - Frage → Antwort
 - neuem Schritt einer Mechanismus-/Metapher-Erklärung
 - Wechsel von Problem → Konsequenz → Lösung
-- Aufzählung mehrerer klar unterschiedlicher Kontexte oder Beispiele
 
 Wenn im Audio ein konkretes Objekt, ein Ort, eine Person oder ein Vorgang wichtig wird, muss genau dieser Inhalt im zugehörigen Beat sichtbar werden.
 
@@ -35,11 +34,6 @@ Ein Beat wird zusätzlich getrennt, wenn ein Satz zwar kurz ist, aber mehrere ei
 - Beispiel A und Beispiel B
 - erst Wahrnehmung, dann Bewertung
 
-Beispiel:
-`Dann noch einmal in einem Video, in einem Kommentar oder in einem Gespräch.`
-
-Nicht zwanghaft als ein Sammelbild darstellen. Lieber zwei oder drei klare Beats, wenn dadurch jede Szene sofort verständlich wird.
-
 ## Individuelle Bildanpassung
 
 Jeder Beat wird als eigene visuelle Aufgabe behandelt.
@@ -51,9 +45,10 @@ Verbindlich:
 - abstrakte Infografik nur nutzen, wenn sie den Inhalt wirklich besser erklärt
 - keine generische Standardszene nur mit ausgetauschtem Gegenstand
 - keine unnötige Wiederholung derselben Pose/Kamera
-- Master-Referenz hält Figuren-DNA, Linien, Farben und Shading konsistent; sie sperrt nicht die Komposition
-- Google-Flow-Quellbilder standardmäßig ohne lesbaren Text generieren
-- deutsche Labels, falls nötig, kontrolliert in Remotion hinzufügen
+- Master-Referenz hält Stickman-DNA, Linien, Farben und Shading konsistent; sie sperrt nicht die Komposition oder Figurenidentität
+- **Szene 01:** exakten deutschen Cover-Titel direkt in Google Flow rendern
+- **Szene 02+:** Google-Flow-Quellbilder ohne lesbaren Text generieren
+- spätere deutsche Keywords, falls geplant, kontrolliert in Remotion hinzufügen
 
 ## Keine Sammelbilder
 
@@ -75,7 +70,7 @@ Vor dem finalen Audio wird diese Dichte über gesprochene Wörter angenähert:
 - Zielbereich: meist **10–16 Wörter pro Visual Beat**
 - automatischer Standard-Zielwert: **14 Wörter**
 - empfohlene Obergrenze: **20 Wörter**
-- 21–28 Wörter nur als bewusst markierte Ausnahme, wenn es nachweislich derselbe visuelle Gedanke bleibt
+- 21–28 Wörter nur als bewusst markierte Ausnahme
 - absolute Obergrenze: **28 Wörter**
 - Durchschnitt über das ganze Video: höchstens **16 Wörter pro Szene**
 - mindestens ungefähr `ceil(Gesamtwörter / 18)` Szenen
@@ -84,15 +79,13 @@ Die Bildzahl ist kein Selbstzweck. Entscheidend ist die Zahl der echten visuelle
 
 ## Phase 1
 
-Phase 1 ist Visual-Beat-Planung, nicht grobe Kapitelplanung.
-
 Jeder Beat enthält mindestens:
 - `startPhrase`
 - `endWord`
 - `speechSection`
 - `visualTask`
 
-Empfohlen für hochwertige Phase-2-Erzeugung:
+Empfohlen:
 - `visualIdea`
 - `subject`
 - `action`
@@ -100,9 +93,23 @@ Empfohlen für hochwertige Phase-2-Erzeugung:
 - `camera`
 - `textPolicy`
 
-`visualTask` beschreibt ausschließlich, was während genau dieses gesprochenen Beats sichtbar sein muss. Stilfragen werden davon getrennt behandelt.
+`visualTask` beschreibt ausschließlich, was während genau dieses gesprochenen Beats sichtbar sein muss.
 
 ## Text-Policy pro Bild
+
+### Szene 01
+
+`textPolicy: "EXACT_GERMAN_COVER_TITLE_ONLY"`
+
+Verbindlich:
+- `coverHeadline` ist vorher festgelegt
+- 2–7 deutsche Wörter
+- Google Flow rendert exakt diesen Titel direkt in Bild 01
+- außer diesem Titel kein weiterer lesbarer Text
+- bei Schreibfehlern oder Pseudo-Schrift Szene 01 regenerieren
+- Remotion darf den Titel nicht erneut rendern
+
+### Szene 02+
 
 Standard:
 `textPolicy: "NONE"`
@@ -113,8 +120,9 @@ Das bedeutet für Google Flow:
 - keine UI-Texte
 - keine Labels
 - keine Untertitel
+- Cover-Titel aus der Master-Referenz nicht kopieren
 
-Wenn ein deutsches Label gebraucht wird, wird es vorzugsweise in Remotion gerendert. Nur eine ausdrücklich begründete Ausnahme darf Text direkt im generierten Bild anfordern.
+Geplante spätere deutsche Keywords werden vorzugsweise in Remotion gerendert.
 
 ## Automatische Sicherung
 
@@ -134,14 +142,16 @@ Eine Szene mit 21–28 Wörtern muss explizit `allowExtendedBeat: true` tragen.
 Phase 2 darf:
 - Stil auf den vorhandenen Visual Beat anwenden
 - den konkreten Beat verständlich und individuell komponieren
-- abstrakte Formulierung in eine konkrete, passende Stickman-Handlung übersetzen
+- abstrakte Formulierung in eine konkrete passende Stickman-Handlung übersetzen
+- in Szene 01 den exakt festgelegten Cover-Titel als Teil der Cover-Komposition rendern
 
 Phase 2 darf nicht:
 - mehrere Beats zusammenlegen, um Bildzahl zu sparen
 - Inhalte aus späteren Beats vorziehen
 - gesprochenen Inhalt durch dekoratives Füllmaterial ersetzen
 - eine alte Komposition nur aus Bequemlichkeit wiederverwenden
-- automatisch englische Begriffe aus dem Prompt als Bildtext übernehmen
+- ab Szene 02 englische oder deutsche Promptbegriffe als Bildtext übernehmen
+- den Titel aus Bild 01 in spätere Bilder kopieren
 
 ## Final-QA
 
@@ -152,7 +162,8 @@ Nach dem Render prüfen:
 - Bleibt ein Bild ungewöhnlich lange stehen?
 - zeigt das Bild schon Informationen, die das Audio erst später erklärt?
 - gibt es einen wichtigen Satz, für den keine passende visuelle Darstellung existiert?
-- enthält ein Flow-Quellbild unerwünschten lesbaren Text?
-- sind deutsche Overlays korrekt und absichtlich gesetzt?
+- Szene 01: ist der exakte deutsche Cover-Titel korrekt und ohne zusätzlichen lesbaren Text gerendert?
+- Szene 02+: enthält ein Flow-Quellbild unerwünschten lesbaren Text oder eine Kopie des Cover-Titels?
+- sind spätere deutsche Remotion-Keywords korrekt und absichtlich gesetzt?
 
 Wenn eine dieser Fragen problematisch ist, geht das Video zurück zu Phase 1/2 statt nur den Schnitt zu kaschieren.
