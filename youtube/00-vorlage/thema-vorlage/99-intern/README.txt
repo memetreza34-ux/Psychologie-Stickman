@@ -14,6 +14,8 @@ Zentrale technische Dateien liegen direkt in 99-intern/:
 - scene-plan.json
 - render-props.json
 
+`word-timings.json` darf als leere Vorlage starten. `produce:youtube` erzeugt fehlende/leere Wortzeiten automatisch aus `04-audio/final-voice.mp3` mit lokalem Whisper.cpp und richtet sie am finalen `01-script/script.txt` aus.
+
 Keine zusätzliche `projektdateien/`-Zwischenebene mehr.
 
 Bild 01 liegt direkt in 03-bilder/ und ist zugleich Szene 01, Cover-Basis und Master-Referenz.
