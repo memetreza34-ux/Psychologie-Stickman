@@ -6,18 +6,35 @@ outputs/
 scripts/__pycache__/
 **/__pycache__/
 
-# Generated media
+# Generated root exports
 exports/*.mp4
 exports/*.mov
+exports/*.webm
+
+# YouTube production media: canonical project files stay local, placeholders stay tracked
+youtube/**/03-bilder/*
+!youtube/**/03-bilder/.gitkeep
+youtube/**/04-audio/*
+!youtube/**/04-audio/.gitkeep
+youtube/**/05-export/*
+!youtube/**/05-export/.gitkeep
+
+# Reel production media
+reels/**/01-script-audio/audio/*
+!reels/**/01-script-audio/audio/.gitkeep
+reels/**/02-bilder/images/*
+!reels/**/02-bilder/images/.gitkeep
+reels/**/03-export/*.mp4
+reels/**/03-export/*.mov
+
+# Remotion staging area: generated from canonical project folders
+public/youtube/**
+public/reels/**
+public/.smoke/**
+
+# Legacy paths kept ignored for old local workspaces
 channels/dinge-erklaert/youtube/**/01-script-audio/audio/*.mp3
 channels/dinge-erklaert/youtube/**/01-script-audio/audio/*.wav
-channels/dinge-erklaert/youtube/**/02-bilder/images/*.png
-channels/dinge-erklaert/youtube/**/02-bilder/images/*.jpg
-channels/dinge-erklaert/youtube/**/02-bilder/images/*.jpeg
-channels/dinge-erklaert/youtube/**/02-bilder/images/*.webp
-channels/dinge-erklaert/youtube/**/05-export/*.mp4
-public/dinge-erklaert/youtube/**/audio/*.mp3
-public/dinge-erklaert/youtube/**/images/*.png
-public/dinge-erklaert/youtube/**/images/*.jpg
-public/dinge-erklaert/youtube/**/images/*.jpeg
-public/dinge-erklaert/youtube/**/images/*.webp
+channels/dinge-erklaert/youtube/**/02-bilder/images/*
+channels/dinge-erklaert/youtube/**/05-export/*
+public/dinge-erklaert/**
