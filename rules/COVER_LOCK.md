@@ -3,130 +3,150 @@
 **STATUS: VERBINDLICH — HARD LOCK**
 
 Diese Regel gilt für jedes YouTube-Projekt unter `youtube/`.
-
 Zusätzlich verbindlich: `rules/TEXT_OVERLAY_LOCK.md`.
 
 ## 1. Dreifachrolle von Bild 01
 
 `03-bilder/01.png` ist immer gleichzeitig:
 1. **SCENE 01** — erstes sichtbares Bild des Videos,
-2. **COVER / THUMBNAIL-BASIS** — das zentrale Covermotiv des Videos,
+2. **COVER / THUMBNAIL** — das zentrale Covermotiv des Videos,
 3. **STYLE-/ANATOMY-MASTER** — Referenz für Stickman-DNA und Bildwelt aller Folgebilder.
 
-Es wird kein separates Pflicht-`cover.png` benötigt. Die erste Szene ist das Cover.
+Es wird kein separates Pflicht-`cover.png` benötigt.
 
 Kurz:
 **01.png = SCENE 01 + COVER + MASTER.**
 
-## 2. Cover muss trotzdem zum ersten gesprochenen Beat passen
+## 2. Cover muss zum ersten gesprochenen Beat passen
 
-Szene 01 darf nicht nur ein dekoratives Thumbnail sein.
-Sie muss den ersten gesprochenen Visual Beat korrekt darstellen und gleichzeitig als starkes Cover funktionieren.
+Szene 01 darf nicht nur ein dekoratives Thumbnail sein. Sie muss den ersten gesprochenen Visual Beat korrekt darstellen und gleichzeitig als starkes Cover funktionieren.
 
 Verbindlich:
 - erstes gesprochenes Thema sofort visuell erkennbar
 - ein starkes Hauptmotiv
 - klare Emotion / Handlung / Konflikt
-- sehr schnelle Lesbarkeit auch in kleiner Thumbnail-Darstellung
+- schnelle Lesbarkeit auch als kleines Thumbnail
 - keine spätere Information vorwegnehmen
-- keine irreführende Übertreibung, die dem Video widerspricht
-- 16:9 bei YouTube
+- keine irreführende Übertreibung
+- YouTube 16:9
 
 ## 3. Cover-Komposition
 
 Bevorzugt:
 - Hauptmotiv deutlich größer und klarer als in normalen Szenen
 - starke Silhouette / klare Körperhaltung
-- wenige, gezielte unterstützende Elemente
+- wenige gezielte unterstützende Elemente
 - sauberer Vordergrund/Mittelgrund/Hintergrund
 - hohe visuelle Klarheit
-- **bewusst geplante ruhige Negativfläche für die Cover-Überschrift**
+- klare Typografiezone für den Titel, ohne das Motiv zu verdecken
 
 Nicht erlaubt:
 - kleinteilige Infografik als Cover
 - überladene Collage
 - viele gleich wichtige Motive
-- generischer neutraler Stickman ohne erkennbare Aussage
+- generischer neutraler Stickman ohne Aussage
 - reines Titelbild, das den ersten Beat nicht mehr zeigt
 
-## 4. Cover-Text — VERPFLICHTEND
+## 4. Cover-Titel — GOOGLE FLOW HARD LOCK
 
-Das Google-Flow-Quellbild `01.png` bleibt **ZERO READABLE TEXT**.
+**Der sichtbare Cover-Titel wird direkt von Google Flow in `01.png` gerendert.**
 
-Das **finale Cover erhält aber immer eine kontrollierte deutsche Überschrift in Remotion**.
+Das ist die verbindliche Ausnahme von der sonstigen ZERO-READABLE-TEXT-Regel.
 
 Verbindlich:
-- `sceneLabels` enthält für Szene 01 genau ein Label mit `variant: "cover"`
-- ausschließlich Deutsch
-- Ziel: 2–7 Wörter
-- groß, klar und schnell lesbar
-- kurze Frage ist erlaubt
-- Überschrift muss das Video korrekt versprechen
+- jedes YouTube-Cover besitzt einen vorab festgelegten deutschen `coverHeadline`
+- Ziel: **2–7 Wörter**
+- Google Flow erhält den **exakten deutschen Wortlaut**
+- Flow muss genau diesen Titel sichtbar, groß und gut lesbar in Szene 01 rendern
+- Rechtschreibung, Umlaute, Satzzeichen und Groß-/Kleinschreibung müssen stimmen
+- außer diesem Cover-Titel darf Szene 01 keinen weiteren lesbaren Text enthalten
+- **Remotion darf den Cover-Titel nicht ein zweites Mal darüberlegen**
+- kurze Frage als Titel ist erlaubt
 - kein ganzer Erklärungssatz
-- keine von Flow generierte Schrift
 
 Beispiel:
-`ALLE SCHAUEN DICH AN?`
+`WARUM BLEIBT NEGATIVES HÄNGEN?`
 
-Flow baut die Bildkomposition mit passender Freifläche. Remotion setzt die Typografie.
+HARD FAIL für Szene 01:
+- Titel fehlt
+- Titel ist falsch geschrieben
+- Wörter fehlen oder wurden ergänzt
+- englischer oder zusätzlicher lesbarer Text erscheint
+- Pseudo-Schrift / unlesbare Buchstaben
+- Titel verdeckt Kopf, Hände oder zentrale Handlung
 
-## 5. Master-Referenz bleibt Style-/Anatomie-Referenz
+Bei einem solchen Fehler wird **nur Szene 01 neu generiert**, bevor sie als Master freigegeben wird.
 
-Obwohl `01.png` das Cover ist, darf sein konkreter Charakter oder Raum nicht automatisch das ganze Video klonen.
+## 5. Textregel ab Szene 02
+
+Ab Szene 02 gilt wieder standardmäßig:
+**ZERO READABLE TEXT.**
+
+Kurze deutsche Keywords ausgewählter späterer Szenen werden kontrolliert in Remotion ergänzt. Flow rendert diese Keywords nicht selbst.
+
+Kurz:
+- **Szene 01:** exakter deutscher Cover-Titel direkt in Google Flow
+- **Szene 02+:** Flow standardmäßig textfrei
+- **spätere Keywords:** Remotion
+
+## 6. Master-Referenz bleibt Style-/Anatomie-Referenz
+
+Obwohl `01.png` Cover und Titel enthält, darf sein konkreter Charakter oder Raum nicht automatisch das ganze Video klonen.
 
 Ab Szene 02 gilt weiterhin:
 - gleiche Stickman-DNA
 - gleiche Linien-/Renderingqualität
 - gleiche Weltqualität
-- aber Figurenidentität, Kleidung, Rolle, Ort, Pose, Kamera und Cast dürfen beat-passend wechseln
+- Figurenidentität, Kleidung, Rolle, Ort, Pose, Kamera und Cast dürfen beat-passend wechseln
+- der Cover-Titel aus Bild 01 darf **nicht** in spätere Bilder übernommen oder nachgeahmt werden
 
-**Cover-Master bedeutet nicht Charakter-Klonvorlage.**
+**Cover-Master bedeutet nicht Charakter- oder Text-Klonvorlage.**
 
-## 6. Phase-1-Metadaten
+## 7. Metadaten
 
-Szene 01 soll in strukturierten Szenenplänen ausdrücklich tragen:
+Neue YouTube-Projekte sollen enthalten:
+- `coverHeadlineRequired: true`
+- `coverHeadline: "..."`
+- `coverTextRenderer: "GOOGLE_FLOW"`
+- `flowSourceImageTextPolicy: "SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY"`
+
+Szene 01 trägt:
 - `isCover: true`
 - `coverRole: "SCENE_01_COVER_MASTER"`
-
-Projektmetadaten sollen zusätzlich enthalten:
-- `coverHeadlineRequired: true`
-- `coverTextRenderer: "REMOTION"`
 
 Alle späteren Szenen:
 - `isCover: false`
 
-Automatisch erzeugte Visual Beats müssen die Cover-Kennzeichnung selbst setzen.
+`sceneLabels` dient bei neuen Projekten nur noch den späteren Remotion-Keywords. Der Cover-Titel gehört nicht mehr als Remotion-Overlay in `sceneLabels`.
 
-## 7. Google-Flow-Prompt
+## 8. Google-Flow-Prompt
 
-Jeder neue YouTube-Flow-Prompt muss Szene 01 eindeutig als Cover/Master behandeln, z. B.:
-
-`SCENE 01 — COVER + MASTER`
-
-und im Prompt klar machen:
+Jeder neue YouTube-Flow-Prompt muss Szene 01 eindeutig als Cover/Master behandeln und enthalten:
+- `SCENE 01 — COVER + MASTER`
+- den exakten deutschen `coverHeadline`
+- klare Anweisung, diesen Titel direkt im Bild zu rendern
+- `NO OTHER READABLE TEXT`
+- Prüfung auf exakte Schreibweise
 - erstes Bild allein generieren
-- cover-taugliche, starke Komposition
-- erster Beat muss korrekt dargestellt bleiben
-- ruhige Fläche für spätere deutsche Cover-Headline einplanen
-- ZERO READABLE TEXT
-- nach Freigabe als `03-bilder/01.png` speichern
-- ab Szene 02 als STYLE-/ANATOMY-Referenz verwenden
+- nach Szene 01 STOP und Nutzerfreigabe
+- ab Szene 02 `ZERO READABLE TEXT`
+- ab Szene 02 Bild 01 nur als STYLE-/ANATOMY-Referenz verwenden
 
-## 8. QA-Fail
+## 9. QA-Fail
 
 Ein neues YouTube-Projekt gilt als nicht fertig vorbereitet, wenn:
 - Szene 01 nicht als Cover vorgesehen ist
-- Szene 01 nur Master, aber kein Cover ist
-- das finale Cover keine deutsche Überschrift vorsieht
+- kein exakter deutscher Cover-Titel festgelegt ist
+- der Flow-Prompt den Titel nicht direkt in Szene 01 rendern lässt
+- Remotion denselben Cover-Titel zusätzlich rendern würde
 - die Cover-Headline mehr als 7 Wörter hat
-- ein separates Cover geplant wird, während `01.png` als beliebige normale Szene behandelt wird
 - Szene 01 nicht zum ersten gesprochenen Beat passt
 - Szene 01 keine ausreichende Thumbnail-Klarheit besitzt
-- Cover-Text direkt von Flow zufällig/englisch erzeugt wird
+- Szene 02+ unbeabsichtigten lesbaren Text enthält
 
-## 9. Priorität
+## 10. Priorität
 
 Bei Cover-Fragen gilt:
-**`01.png = SCENE 01 + COVER + STYLE-/ANATOMY-MASTER` und das finale Cover erhält eine kurze deutsche Remotion-Headline.**
+**`01.png = SCENE 01 + COVER + STYLE-/ANATOMY-MASTER`, und Google Flow rendert den exakten deutschen Cover-Titel direkt in Bild 01.**
 
-Dabei bleiben `FORMAT_LOCK`, `STICKMAN_DNA`, `TEXT_OVERLAY_LOCK` und die ZERO-READABLE-TEXT-Regel für Flow-Quellbilder verbindlich.
+Die ZERO-READABLE-TEXT-Regel gilt ab Szene 02 weiterhin vollständig.

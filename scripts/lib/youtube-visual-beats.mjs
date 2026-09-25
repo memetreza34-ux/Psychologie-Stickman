@@ -142,12 +142,17 @@ const buildPlanningFields = (beat, index) => ({
   continuityPolicy: 'NEW_CHARACTER_DEFAULT_UNLESS_LOCAL_CONTINUITY',
 });
 
-export const buildVisualBeatScenes = (beats) =>
-  beats.map((beat, index) => {
+export const buildVisualBeatScenes = (beats, options = {}) => {
+  const coverHeadline = String(options.coverHeadline ?? '').trim();
+
+  return beats.map((beat, index) => {
     const plan = buildPlanningFields(beat, index);
     const isCover = index === 0;
+    const titleInstruction = coverHeadline
+      ? `Google Flow muss den exakten deutschen Cover-Titel \"${coverHeadline}\" direkt sichtbar in Bild 01 rendern. Keine weiteren lesbaren Wörter. `
+      : 'Ein exakter deutscher Cover-Titel muss vor Phase 2 festgelegt und direkt von Google Flow in Bild 01 gerendert werden. Keine weiteren lesbaren Wörter. ';
     const coverInstruction = isCover
-      ? 'COVER HARD LOCK: Diese erste Szene ist zugleich COVER/THUMBNAIL-BASIS und STYLE-/ANATOMY-MASTER. Sie muss den ersten gesprochenen Beat korrekt zeigen und gleichzeitig als starkes Cover funktionieren: klares großes Hauptmotiv, schnelle Lesbarkeit, starke Pose/Emotion oder Handlung, wenig visuelles Rauschen, keine spätere Information vorwegnehmen. '
+      ? `COVER HARD LOCK: Diese erste Szene ist zugleich COVER/THUMBNAIL und STYLE-/ANATOMY-MASTER. Sie muss den ersten gesprochenen Beat korrekt zeigen und gleichzeitig als starkes Cover funktionieren: klares großes Hauptmotiv, schnelle Lesbarkeit, starke Pose/Emotion oder Handlung, wenig visuelles Rauschen, keine spätere Information vorwegnehmen. ${titleInstruction}`
       : '';
 
     return {
@@ -157,7 +162,7 @@ export const buildVisualBeatScenes = (beats) =>
       startPhrase: firstWords(beat, 8),
       endWord: lastWord(beat),
       speechSection: beat,
-      textPolicy: 'NONE',
+      textPolicy: isCover ? 'EXACT_GERMAN_COVER_TITLE_ONLY' : 'NONE',
       ...plan,
       visualTask:
         `${coverInstruction}` +
@@ -165,12 +170,15 @@ export const buildVisualBeatScenes = (beats) =>
         `Bevorzuge eine konkrete Stickman-Handlung in einer glaubwürdigen Umgebung vor abstrakten Diagrammen. ` +
         `Keine spätere Information vorwegnehmen. Neue Orte, Personen, Objekte, Zahlen, Handlungen oder Ursache-Folge-Schritte müssen sichtbar werden, wenn sie in diesem Beat wichtig sind. ` +
         `${plan.subject} ${plan.environment} ${plan.action} ${plan.camera} ` +
-        `Google-Flow-Quellbild ohne lesbaren Text erzeugen; deutsche Labels werden bei Bedarf später in Remotion ergänzt. ` +
+        (isCover
+          ? `TEXT POLICY: nur der exakte deutsche Cover-Titel ist lesbar; kein weiterer Text. `
+          : `Google-Flow-Quellbild mit ZERO READABLE TEXT erzeugen; deutsche Keywords werden bei Bedarf später in Remotion ergänzt. `) +
         `Gesprochener Beat: ${beat}`,
     };
   });
+};
 
-const buildModernSceneLabels = (plan, auto) => {
+const buildModernTextPlan = (plan, auto) => {
   const coverHeadline = String(auto.coverHeadline ?? plan.coverHeadline ?? '').trim();
   if (!coverHeadline) return null;
 
@@ -179,14 +187,11 @@ const buildModernSceneLabels = (plan, auto) => {
     throw new Error('autoFromScript.coverHeadline must contain 2-7 words.');
   }
 
-  const existing = Array.isArray(plan.sceneLabels)
-    ? plan.sceneLabels.filter((label) => !(label?.scene === 1 && (label?.variant ?? 'keyword') === 'cover'))
+  const keywordLabels = Array.isArray(plan.sceneLabels)
+    ? plan.sceneLabels.filter((label) => (label?.variant ?? 'keyword') !== 'cover')
     : [];
 
-  return [
-    {scene: 1, text: coverHeadline, position: 'top-left', variant: 'cover'},
-    ...existing,
-  ];
+  return {coverHeadline, keywordLabels};
 };
 
 export const resolvePhase1Plan = (plan, planPath = '') => {
@@ -204,23 +209,25 @@ export const resolvePhase1Plan = (plan, planPath = '') => {
   const beats = splitScriptIntoVisualBeats(script, auto);
   if (beats.length === 0) throw new Error(`No visual beats derived from ${scriptPath}.`);
 
-  const sceneLabels = buildModernSceneLabels(plan, auto);
-  const modernTextPolicy = Array.isArray(sceneLabels);
+  const modernTextPlan = buildModernTextPlan(plan, auto);
 
   return {
     ...plan,
-    ...(modernTextPolicy
+    ...(modernTextPlan
       ? {
           visibleTextLanguage: plan.visibleTextLanguage ?? 'de',
-          flowSourceImageTextPolicy: plan.flowSourceImageTextPolicy ?? 'NONE',
+          flowSourceImageTextPolicy: 'SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY',
           preferNoVisibleText: plan.preferNoVisibleText ?? true,
-          renderGermanLabelsInRemotion: plan.renderGermanLabelsInRemotion ?? true,
+          coverHeadlineRequired: true,
+          coverHeadline: modernTextPlan.coverHeadline,
+          coverTextRenderer: 'GOOGLE_FLOW',
+          renderGermanLabelsInRemotion: true,
           forbidEnglishVisibleText: plan.forbidEnglishVisibleText ?? true,
-          finalTextOverlayPolicy: plan.finalTextOverlayPolicy ?? 'SELECTIVE_GERMAN_KEYWORDS_V1',
-          sceneLabels,
+          finalTextOverlayPolicy: 'FLOW_COVER_TITLE_KEYWORDS_V2',
+          sceneLabels: modernTextPlan.keywordLabels,
         }
       : {}),
-    scenes: buildVisualBeatScenes(beats),
+    scenes: buildVisualBeatScenes(beats, {coverHeadline: modernTextPlan?.coverHeadline}),
     resolvedFromScript: auto.scriptPath,
   };
 };

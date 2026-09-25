@@ -90,8 +90,20 @@ Die Umgebung darf glaubwürdig, farbig, detailreich und hochwertig illustriert s
 
 ## Textsystem
 
-### Flow-Quellbilder
-Google-Flow-Quellbilder bleiben standardmäßig vollständig textfrei:
+### Szene 01 — einzige reguläre Flow-Textausnahme
+
+Google Flow rendert den **exakten deutschen Cover-Titel direkt in `03-bilder/01.png`**.
+
+Verbindlich:
+- `coverHeadline`: 2–7 deutsche Wörter
+- `coverTextRenderer: "GOOGLE_FLOW"`
+- exakte Schreibweise inkl. Umlauten/Satzzeichen
+- kein zusätzlicher lesbarer Text in Szene 01
+- Remotion rendert den Cover-Titel nicht erneut
+
+### Szene 02+
+
+Google-Flow-Quellbilder bleiben vollständig textfrei:
 - keine Wörter oder Buchstaben
 - keine Labels
 - keine UI-Texte
@@ -102,15 +114,14 @@ Google-Flow-Quellbilder bleiben standardmäßig vollständig textfrei:
 Screens, Karten und Dokumente nutzen abstrakte Linien, Formen und Icons.
 
 ### Finaler YouTube-Render
+
 Kurzer deutscher Text darf gezielt als Verstärker genutzt werden:
-- Szene 01: verpflichtende deutsche Cover-Headline, 2–7 Wörter, `variant: "cover"`
-- ausgewählte weitere Szenen: zentrale Begriffe/Merksätze, maximal 5 Wörter, `variant: "keyword"`
+- Szene 01: Cover-Titel ist bereits in Flow in `01.png` eingebrannt
+- ausgewählte spätere Szenen: zentrale Begriffe/Merksätze, maximal 5 Wörter, `variant: "keyword"`, gerendert in Remotion
 - keine langen Sätze
 - keine Dauer-Untertitel
 - Ziel meist ungefähr ein Textmoment alle 4–6 Bilder
-- maximal 30 % der YouTube-Szenen mit Overlays
-
-Flow plant bei diesen Szenen lediglich geeignete Negativfläche. Remotion setzt den Text kontrolliert.
+- maximal 30 % der YouTube-Szenen mit sichtbaren Textmomenten inklusive Cover
 
 Details: `rules/TEXT_OVERLAY_LOCK.md`.
 
@@ -118,14 +129,14 @@ Details: `rules/TEXT_OVERLAY_LOCK.md`.
 
 Für jedes YouTube-Projekt gilt verbindlich:
 
-**`03-bilder/01.png` = SCENE 01 + COVER/THUMBNAIL-BASIS + STYLE-/ANATOMY-MASTER.**
+**`03-bilder/01.png` = SCENE 01 + COVER/THUMBNAIL + STYLE-/ANATOMY-MASTER.**
 
-Szene 01 muss daher gleichzeitig:
+Szene 01 muss gleichzeitig:
 - den ersten gesprochenen Visual Beat korrekt darstellen,
 - als starkes, schnell lesbares Cover funktionieren,
 - die Stickman-/Welt-DNA als Master etablieren,
-- ZERO READABLE TEXT im Flow-Quellbild einhalten,
-- ruhige Fläche für die verpflichtende deutsche Cover-Headline besitzen.
+- den exakten deutschen Cover-Titel direkt aus Google Flow enthalten,
+- außer diesem Titel keinen weiteren lesbaren Text enthalten.
 
 Ein separates Pflicht-`cover.png` wird nicht geführt.
 
@@ -135,10 +146,12 @@ Details stehen in `rules/COVER_LOCK.md`.
 
 - Bild 01 zuerst allein generieren
 - Bild 01 ist zugleich Cover, erster Visual Beat und Master
+- Cover-Titel in Bild 01 auf exakte Schreibweise prüfen
 - STOP und Nutzerfreigabe abwarten
-- Bild 01 nur bei vollständigem Style-/Stickman-/Textfreiheits-/Cover-PASS freigeben
+- Bild 01 nur bei vollständigem Style-/Stickman-/Cover-/Titel-PASS freigeben
 - Bild 01 bleibt Master
 - ab Bild 02 Master bei jeder Generierung anhängen
+- ab Bild 02 Titel/Text aus Master **nicht kopieren**
 - danach höchstens 5 neue Bilder pro Batch
 - interne QA nach jedem Batch
 - nur fehlerhafte Bilder regenerieren
@@ -158,7 +171,7 @@ Der Nutzer arbeitet regulär nur mit:
 
 Technische Hilfsdateien gehören nach `99-intern/`.
 
-Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, ZERO-READABLE-TEXT-Regel, Scene-01-Cover-Regel und Batch-Ablauf. Geplante Overlay-Szenen erhalten im Prompt passende Negativfläche; die Wörter selbst werden nicht von Flow gerendert.
+Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, die Scene-01-Cover-Titel-Ausnahme, die ZERO-READABLE-TEXT-Regel für Szene 02+ und den Batch-Ablauf.
 
 ## Audio
 
@@ -187,10 +200,10 @@ Bei visueller Identität:
 **`rules/STICKMAN_DNA.md` gewinnt.**
 
 Bei Cover-Widerspruch:
-**`rules/COVER_LOCK.md` gewinnt: `01.png = SCENE 01 + COVER + MASTER`.**
+**`rules/COVER_LOCK.md` gewinnt: `01.png = SCENE 01 + COVER + MASTER`, Titel direkt in Google Flow.**
 
-Bei Text-Overlay-Widerspruch:
-**`rules/TEXT_OVERLAY_LOCK.md` gewinnt.**
+Bei Text-Widerspruch:
+**`rules/TEXT_OVERLAY_LOCK.md` gewinnt: Flow-Cover-Titel in Szene 01, Remotion-Keywords später.**
 
 Bei exakter projektspezifischer Darstellung:
 **freigegebene Master-Referenz gewinnt.**

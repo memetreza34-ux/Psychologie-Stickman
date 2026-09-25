@@ -1,149 +1,95 @@
 GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
 
-DIESE DATEI IST DER EINZIGE PROMPT, DEN DER NUTZER FÜR GOOGLE FLOW BRAUCHT.
+DIESE DATEI IST DER EINZIGE PROMPT FÜR GOOGLE FLOW.
 Keine zusätzlichen Prompt-Dateien pro Szene anlegen.
 
-ZIEL
-Aus dem finalen Skript alle benötigten 16:9-Bilder für ein YouTube-Longform-/Testvideo erzeugen.
-
 FORMAT HARD LOCK
-- 16:9
+- YouTube 16:9
 - 1920×1080
-- 30 fps Zielvideo
-- horizontale / Landscape-Komposition
-- Bilder direkt für 16:9 planen, nicht aus Hochformat croppen
+- horizontal landscape composition
 
 STYLE HARD LOCK — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3
 STRICT STICKMAN ONLY.
+Every visible human or human-like figure must use true stickman anatomy: simple round/oval head, tiny minimal face, no realistic nose/ears/neck, small simplified torso, very thin line-like arms and legs, simple no-finger hands, simplified feet. No conventional cartoon humans, no semi-realistic humans, no 3D/Pixar/anime/chibi.
 
-EVERY visible human or human-like figure must use the exact same true stickman anatomy, including foreground people, background people, crowds, researchers, historical figures, people on screens, posters, photos, advertisements, reflections and illustrations inside the scene.
+RICH WORLD
+Use believable detailed 2D environments, natural colors, clean dark organic outlines, subtle cel shading, believable perspective and lighting. Detail belongs in the environment, not in human anatomy.
 
-TRUE STICKMAN ANATOMY:
-- simple round or oval flat head
-- tiny minimal eyes and mouth
-- no realistic nose
-- no realistic ears
-- no realistic neck
-- small strongly simplified torso
-- very thin line-like arms and legs with near-constant thickness
-- no fleshy human/cartoon limb volume
-- simple nub/mitten/circle hands, no finger anatomy
-- simplified feet/shoes
-- clothing may identify role, era or personality but must never create normal human anatomy
+CHANNEL DNA — HARD LOCK
+Simple Stickmen. Rich World. One clear idea per image.
+Prefer a concrete action in a believable environment over generic infographic layouts.
+Vary cast, clothing, role, location, pose, camera and composition.
 
-HARD FAIL:
-- conventional cartoon humans
-- semi-realistic humans
-- realistic humans
-- thick human-like arms or legs
-- detailed hands/fingers
-- realistic face anatomy
-- main character as stickman while background characters look human
-- 3D/CGI/Pixar
-- anime/manga/chibi
+COVER TITLE — GOOGLE FLOW HARD LOCK
+SCENE 01 = COVER + FIRST VISUAL BEAT + STYLE/ANATOMY MASTER.
+EXACT GERMAN COVER TITLE: "[2–7 WÖRTER HIER EINSETZEN]"
+Google Flow MUST render this exact German title directly inside Scene 01.
+- exact spelling, umlauts and punctuation
+- large, clean and highly legible thumbnail typography
+- compose title and main motif together
+- NO OTHER READABLE TEXT in Scene 01
+- no subtitle, badge, logo, UI text or pseudo-writing
+- if the title is wrong or unreadable: regenerate Scene 01
+- Remotion MUST NOT render the cover title again
 
-ENVIRONMENT RULE
-The environment may be much richer and more detailed than the characters: believable rooms, buses, trains, streets, laboratories, furniture, devices, architecture, props, lighting and perspective. Detail belongs in the world, not in human anatomy.
+SCENE 02+ — ZERO READABLE TEXT
+From Scene 02 onward:
+- zero readable words or letters
+- no labels, UI words, subtitles, poster/document/screen text or logos
+- screens/papers use abstract lines, blocks, icons and shapes only
+- do not copy, recreate or imitate the cover title from 01.png
+- German keyword labels for selected later scenes are added later in Remotion
 
-GLOBAL SCENE CLAUSE — APPLIES TO EVERY SINGLE SCENE EVEN IF NOT REPEATED BELOW
-STRICT STICKMAN-ONLY CHECK: Every person visible anywhere in the foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same true stickman anatomy as the approved master. Do not generate normal cartoon humans. If any person looks human-like rather than stickman, the image fails and must be regenerated.
+MASTER REFERENCE WORKFLOW
+1. Generate Scene 01 only, including the exact cover title.
+2. STOP and wait for user approval.
+3. Scene 01 is approved only if title spelling, Stickman DNA, cover clarity and first-beat meaning all PASS.
+4. Save as `03-bilder/01.png`.
+5. Attach 01.png as STYLE/ANATOMY reference for Scene 02+.
+6. Master is not a character clone or text template.
 
-CHANNEL DNA — ONE CLEAR IDEA PER IMAGE — HARD LOCK
-- One image = one primary visual thought.
-- Use one dominant subject / focal point.
-- Add at most 1–2 supporting visual cues only when necessary.
-- Do not overload the frame with multiple explanations, panels, diagrams, cards or competing ideas.
-- Avoid three-part or multi-panel infographic layouts when one direct scene can explain the beat.
-- If a speech section contains several new ideas, split it into additional visual beats instead of squeezing everything into one image.
-- The viewer should understand the core visual idea almost immediately.
-- Clarity is more important than information density inside one frame.
+AUTOMATIC BATCH WORKFLOW
+After Scene 01 approval:
+- max 5 new images per batch
+- internal QA after each batch
+- regenerate only failed images
+- automatically continue after PASS
+- no normal user approval between batches
 
-VISIBLE TEXT — GERMAN ONLY + MINIMAL
-This is a German-language channel. The prompt language may be English, but the visible language inside the generated image must remain German.
-- prefer NO readable text whenever the idea can be shown visually
-- if text is necessary: German only
-- never render English words, headings, labels, buttons, UI, posters, cards or screen text
-- do not copy English wording from this prompt into the image
-- normally use only one short German label or phrase
-- target 1–4 visible words
-- avoid full sentences, paragraphs, explanation cards and text-heavy layouts
-- if a scene below asks for too much text, shorten/translate it or replace it with visual storytelling
-- this rule OVERRIDES any conflicting text instruction in a scene prompt
+CAST VARIATION — HARD LOCK
+Same Stickman DNA does not mean same person.
+Reuse exact people only for genuine LOCAL CONTINUITY.
+Do not default to the same hoodie, desk, room, pose or framing.
 
-MASTER-REFERENZ
-1. Zuerst ausschließlich Bild 01 generieren.
-2. Danach STOP.
-3. Bild 01 vollständig prüfen: Stickman-Anatomie, Linien, Farben, Shading, Umgebung, Format, Bildklarheit und sichtbaren Text.
-4. Bild 01 nur freigeben, wenn STRICT STICKMAN ONLY und die Channel-DNA vollständig erfüllt sind.
-5. Auf die Nutzerfreigabe für Bild 01 warten.
-6. Bild 01 bleibt danach die Master-Referenz für alle folgenden Bilder.
-7. Bild 01 als `01.png` in `03-bilder/` speichern.
-8. Für Bild 02 und alle folgenden Bilder `01.png` als Bildreferenz anhängen.
-9. Master bestimmt Figuren-DNA, Linien, Farbverhalten, Shading und Gesamtstil.
-10. Master bestimmt NICHT Kamera, Pose, Ort oder Komposition.
+REFERENCE CLAUSE FOR SCENE 02+
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone or text template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. IMPORTANT: do not copy, recreate or imitate the cover title from 01.png. ZERO READABLE TEXT.
 
-AUTOMATIC BATCH WORKFLOW — HARD LOCK
-Nach der Nutzerfreigabe von Bild 01 läuft die restliche Bildproduktion automatisch weiter.
-
-- niemals alle Bilder gleichzeitig erzeugen
-- immer höchstens 5 neue Bilder pro Batch
-- nach jedem Batch interne Style-, Continuity-, Inhalts-, Klarheits- und Text-QA durchführen
-- jedes Bild einzeln gegen 01.png prüfen
-- zusätzlich den gesamten Batch untereinander vergleichen
-- alle sichtbaren Personen inklusive Mini-Hintergrundfiguren auf STRICT STICKMAN ONLY prüfen
-- prüfen: genau ein klarer primärer Gedanke pro Bild, kein überladener Aufbau
-- sichtbaren Text prüfen: kein Englisch, möglichst kein Text, sonst kurz und Deutsch
-- nur fehlerhafte Bilder regenerieren
-- gute Bilder behalten
-- sobald der aktuelle Batch vollständig PASS ist, SOFORT automatisch mit dem nächsten Batch fortfahren
-- nach normalen Batches NICHT den Nutzer um Freigabe bitten
-- nur stoppen, wenn ein schwerer Fehler nach Regenerationsversuchen nicht automatisch lösbar ist
-- Dateinamen fortlaufend: `01.png`, `02.png`, `03.png` ...
-- alle fertigen Bilder direkt in `03-bilder/` speichern
-
-Beispiel für einen 69-Bilder-Plan:
-MASTER: 01
-Batch 1: 02–06
-Batch 2: 07–11
-Batch 3: 12–16
-Batch 4: 17–21
-Batch 5: 22–26
-Batch 6: 27–31
-Batch 7: 32–36
-Batch 8: 37–41
-Batch 9: 42–46
-Batch 10: 47–51
-Batch 11: 52–56
-Batch 12: 57–61
-Batch 13: 62–66
-Batch 14: 67–69
-
-JEDE SZENE INDIVIDUELL
-Für jeden Visual Beat eine eigene Bildidee entwickeln. Kamera, Perspektive, Pose, Handlung, Umgebung, Requisiten, Licht und Fokus passend zum gesprochenen Inhalt wählen. Keine generische Standardkomposition wiederholen. Keine Füllbilder und keine Informationen zeigen, die erst später im Skript kommen. Pro Bild nur einen primären visuellen Gedanken darstellen; zusätzliche Hinweise nur sparsam und funktional einsetzen.
-
-REFERENZ-KLAUSEL FÜR BILD 02+
-Match the attached master reference exactly for true stickman anatomy, character design, head and torso proportions, very thin line-like arms and legs, simple no-finger hands, linework, color treatment, shading and overall illustration style. Change only the scene content, pose, camera angle, environment, props and lighting required by this prompt. STRICT STICKMAN-ONLY CHECK: every person visible anywhere in foreground, midground, background, screens, posters, reflections, photos or illustrations must use the same stickman anatomy. Do not generate conventional cartoon humans or semi-realistic people. CHANNEL DNA CHECK: one clear primary visual thought, one dominant focal point, at most 1–2 supporting cues, no overloaded infographic composition. VISIBLE TEXT CHECK: prefer no readable text; when text is necessary, keep it short and German only. Never render English text from the prompt.
-
-ARBEITSWEISE FÜR EIN KONKRETES VIDEO
-Unterhalb dieses Blocks werden ALLE Visual Beats des jeweiligen Videos direkt in dieser EINEN Datei eingetragen.
-Jeder Beat enthält nur:
+ARBEITSWEISE
+Unterhalb dieses Blocks alle Visual Beats des konkreten Videos direkt in dieser einen Datei eintragen.
+Jeder Beat enthält:
 - Nummer
-- Sprechtext
+- Sprechtext als geschützten Kontext
 - finalen Bildprompt
-
-SCENE 01 muss die Figur besonders klar zeigen, damit sie als echte Master-Referenz taugt.
 
 BEISPIEL
 
 SCENE 01
-SPEECH: [Sprechtext]
-PROMPT: Master frame with one clearly visible true stickman character. Simple round head, no nose/ears, tiny face, small simplified torso, very thin line-like limbs, simple no-finger hands. Rich detailed environment. One clear visual idea, one dominant focal point, no overloaded layout. 16:9 landscape. Generate this scene alone first, then STOP for user approval. Prefer no readable text.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+[Sprechtext]
+PROMPT:
+COVER + MASTER. Create a strong 16:9 true-stickman scene that accurately visualizes the first spoken beat. Render the EXACT GERMAN COVER TITLE "[TITEL]" as large clean thumbnail typography. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
 
 SCENE 02
-SPEECH: [Sprechtext]
-PROMPT: [Individueller Szeneninhalt.] Attach 01.png as master reference. Every visible person including background people must remain true stickman. Keep one clear visual idea and one dominant focal point. Prefer no visible text; if necessary, German only and short.
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+[Sprechtext]
+PROMPT:
+[Individueller Szeneninhalt.] Attach 01.png as STYLE/ANATOMY reference only. Do not copy its title or character identity unless LOCAL CONTINUITY requires the same person. ZERO READABLE TEXT.
 
-FINAL EXECUTION RULE
-Stop only after Scene 01 for user approval. After Scene 01 is approved, continue automatically through all remaining 5-image batches until the full image set is complete. Perform internal QA after every batch, regenerate only failed images, and do not ask the user to approve normal batches. Only interrupt if a major consistency problem cannot be corrected automatically.
-
-Für das echte Projekt werden hier alle Szenen vollständig eingesetzt. Es gibt dafür keine zweite, dritte oder vierte Prompt-Datei.
+FINAL QA
+- Scene 01: exact German cover title, no additional readable text
+- Scene 02+: ZERO READABLE TEXT
+- all humans true Stickmen
+- no anatomy/style drift
+- no unnecessary character cloning
+- one clear visual idea per image
+- image matches the current speech beat

@@ -10,11 +10,14 @@ Jedes neue YouTube-Projekt verwendet nur diese sichtbaren Arbeitsordner:
 
 03-bilder/
 - hier `01.png`, `02.png`, `03.png` usw. ablegen
-- `01.png` ist IMMER gleichzeitig Szene 01 + Cover/Thumbnail-Basis + Style-/Anatomie-Master
-- kein separates Pflicht-`cover.png`; die erste Szene ist das Cover
-- Flow-Bilder bleiben textfrei
-- die finale Szene 01 bekommt immer eine kurze deutsche Cover-Headline in Remotion
-- ausgewählte weitere Szenen dürfen kurze deutsche Keyword-Overlays bekommen
+- `01.png` ist IMMER gleichzeitig Szene 01 + Cover/Thumbnail + Style-/Anatomie-Master
+- kein separates Pflicht-`cover.png`
+- Google Flow rendert den exakten deutschen Cover-Titel direkt in `01.png`
+- Cover-Titel: 2–7 Wörter, exakt geschrieben, sonst Szene 01 regenerieren
+- außer dem Titel kein weiterer lesbarer Text in Szene 01
+- ab Szene 02 bleiben Flow-Bilder ZERO READABLE TEXT
+- ausgewählte spätere Szenen dürfen kurze deutsche Keyword-Overlays aus Remotion bekommen
+- Remotion darf den Cover-Titel nicht duplizieren
 
 04-audio/
 - hier `final-voice.mp3` ablegen

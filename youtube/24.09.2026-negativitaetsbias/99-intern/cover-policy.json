@@ -1,0 +1,7 @@
+{
+  "coverHeadline": "WARUM BLEIBT NEGATIVES HÄNGEN?",
+  "coverTextRenderer": "GOOGLE_FLOW",
+  "flowSourceImageTextPolicy": "SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY",
+  "forbidAdditionalReadableTextOnCover": true,
+  "remotionMustNotDuplicateCoverTitle": true
+}

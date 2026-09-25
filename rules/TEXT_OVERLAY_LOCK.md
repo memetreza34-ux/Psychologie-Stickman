@@ -8,27 +8,28 @@ Diese Regel gilt für YouTube-Projekte unter `youtube/` und ergänzt `rules/COVE
 
 **Bild zuerst. Text verstärkt nur den wichtigsten Gedanken.**
 
-Die Stickman-Szene muss auch ohne Text verständlich bleiben. Kurzer deutscher Text darf gezielt eingesetzt werden, wenn er die Kernaussage schneller erfassbar, merkfähiger oder thumbnail-tauglicher macht.
+Die Stickman-Szene muss grundsätzlich auch ohne zusätzliche Erklärung verständlich bleiben. Kurzer deutscher Text darf gezielt eingesetzt werden, wenn er die Kernaussage schneller erfassbar oder merkfähiger macht.
 
-Nicht zurück zu textlastigen Slides: Text ist Verstärker, nicht Hauptinhalt.
+Nicht zurück zu textlastigen Slides.
 
-## 2. Zwei erlaubte Overlay-Typen
+## 2. Zwei Textwege
 
-### `cover`
-Nur für Szene 01.
+### A — Cover-Titel in Google Flow
+Nur Szene 01.
 
 - Szene 01 ist immer Cover + erster Visual Beat + Master.
-- Das finale Cover erhält **verpflichtend eine starke deutsche Überschrift**.
+- Google Flow rendert den **exakten deutschen Cover-Titel direkt in `01.png`**.
 - Ziel: 2–7 Wörter.
-- Darf als kurze Frage formuliert sein.
+- Darf eine kurze Frage sein.
 - Muss zum Video und zum ersten Beat passen.
-- Keine irreführende Clickbait-Aussage.
+- Kein zusätzlicher lesbarer Text im Cover.
+- Remotion rendert diesen Cover-Titel **nicht erneut**.
 
 Beispiel:
-`ALLE SCHAUEN DICH AN?`
+`WARUM BLEIBT NEGATIVES HÄNGEN?`
 
-### `keyword`
-Für ausgewählte Szenen im Video.
+### B — `keyword` in Remotion
+Für ausgewählte Szenen ab Szene 02.
 
 - ideal 1–4 Wörter
 - harte Obergrenze: 5 Wörter
@@ -45,18 +46,17 @@ Beispiele:
 ## 3. Textdichte
 
 Für YouTube-Longform:
-
-- Szene 01: **immer ein `cover`-Overlay**
+- Szene 01: immer sichtbarer Flow-Cover-Titel
 - weitere Textmomente nur dort, wo sie echten Mehrwert bringen
-- redaktioneller Zielwert: ungefähr **ein Textmoment alle 4–6 Bilder**
-- typischer Bereich: etwa **15–25 % der Szenen** mit Text inklusive Cover
-- harte Obergrenze: **30 % der Szenen** mit Overlays, außer ein ausdrücklich begründetes Format verlangt mehr
+- redaktioneller Zielwert: ungefähr ein Textmoment alle 4–6 Bilder
+- typischer Gesamtbereich inklusive Cover: etwa 15–25 % der Szenen
+- harte Obergrenze: 30 % der Szenen mit sichtbaren Cover-/Keyword-Textmomenten
 
 Keine langen Serien aus Textkarten oder ständig eingeblendeten Begriffen.
 
 ## 4. Sprache
 
-Sichtbarer Overlay-Text ist **ausschließlich Deutsch**.
+Sichtbarer Text ist ausschließlich Deutsch.
 
 HARD FAIL:
 - englische Überschrift
@@ -65,55 +65,71 @@ HARD FAIL:
 - KI-Pseudo-Schrift
 - Rechtschreibfehler
 
-## 5. Flow bleibt textfrei
+## 5. Flow-Textregel
 
-Google-Flow-Quellbilder bleiben **ZERO READABLE TEXT**.
+Google Flow hat genau **eine reguläre Textausnahme**:
 
-Das bedeutet:
-- Flow rendert keine Überschrift
-- Flow rendert keine Keywords
-- Screens, Poster und Dokumente bleiben textfrei bzw. abstrakt
-- der Flow-Prompt plant bei Overlay-Szenen lediglich geeignete ruhige Negativfläche
+### Szene 01
+Flow rendert exakt den vorgegebenen deutschen Cover-Titel.
+Außer diesem Titel: **NO OTHER READABLE TEXT**.
 
-Der sichtbare Text wird anschließend kontrolliert in **Remotion** gesetzt.
+### Szene 02+
+**ZERO READABLE TEXT**.
+
+Das bedeutet ab Szene 02:
+- keine Überschrift
+- keine Keywords
+- keine UI-Texte
+- keine Untertitel
+- Poster, Screens und Dokumente textfrei bzw. abstrakt
+
+Spätere deutsche Keywords werden in Remotion gesetzt.
 
 Kurz:
-**Flow baut das Bild. Remotion setzt die deutsche Typografie.**
+**Flow setzt den Cover-Titel. Remotion setzt spätere Keywords.**
 
 ## 6. Bildkomposition für Textmomente
 
-Wenn eine Szene ein geplantes Overlay erhält:
+### Cover
+- Titelzone bewusst einplanen
+- Titel groß und klar
+- Hauptmotiv darf nicht vom Titel verdeckt werden
+- Titel soll auch in kleiner Thumbnail-Darstellung lesbar bleiben
 
-- Motiv und Text dürfen sich nicht gegenseitig verdecken
-- Gesicht/Kopf, Hände und zentrale Handlung bleiben frei
-- ruhige Negativfläche gezielt einplanen
-- keine überladene Ecke mit Requisiten hinter dem Text
-- Text soll auch auf kleinerer Darstellung schnell lesbar sein
+### Keyword-Szenen
+- ruhige Negativfläche einplanen
+- Gesicht/Kopf, Hände und zentrale Handlung frei halten
+- keine überladene Ecke hinter dem Text
 
 Das Bild darf nicht leer wirken, nur damit Text Platz hat.
 
-## 7. Remotion-Metadaten
+## 7. Metadaten
 
-`sceneLabels` unterstützt zwei Varianten:
-
-```json
-{"scene": 1, "text": "ALLE SCHAUEN DICH AN?", "position": "top-left", "variant": "cover"}
-```
+Neue Projekte verwenden für den Cover-Titel:
 
 ```json
-{"scene": 4, "text": "SPOTLIGHT-EFFEKT", "position": "top-left", "variant": "keyword"}
+{
+  "coverHeadline": "WARUM BLEIBT NEGATIVES HÄNGEN?",
+  "coverTextRenderer": "GOOGLE_FLOW",
+  "flowSourceImageTextPolicy": "SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY"
+}
 ```
 
-Für YouTube gilt:
-- genau ein `cover`-Label auf Szene 01
-- andere Labels verwenden `keyword`
-- `cover` ist außerhalb von Szene 01 nicht erlaubt
+`sceneLabels` enthält bei neuen Projekten nur Remotion-Keywords, zum Beispiel:
 
-## 8. Inhaltliche Auswahl
+```json
+{"scene": 4, "text": "NEGATIVITÄTSBIAS", "position": "top-left", "variant": "keyword"}
+```
+
+Neue Projekte legen **kein `variant: "cover"`-Remotion-Overlay** mehr an.
+
+Alte Projekte mit Remotion-Cover dürfen als Legacy weiter bestehen, müssen aber vor einer neuen Bildproduktion auf die Google-Flow-Coverregel migriert werden.
+
+## 8. Inhaltliche Auswahl für Keywords
 
 Text besonders sinnvoll bei:
 - Definition eines zentralen Effekts
-- klarer Wendepunkt
+- klarem Wendepunkt
 - wichtigem Mechanismus
 - Ergebnis eines Experiments
 - zentraler Erkenntnis
@@ -127,20 +143,26 @@ Text meist unnötig bei:
 
 ## 9. QA
 
+Vor Freigabe von Szene 01 prüfen:
+- exakter deutscher Cover-Titel sichtbar
+- 2–7 Wörter
+- jedes Wort korrekt geschrieben
+- Satzzeichen korrekt
+- keine zusätzlichen Wörter
+- keine Pseudo-Schrift
+- kein Englisch
+- Titel verdeckt keine wichtige Handlung
+
 Vor Export prüfen:
-- Szene 01 hat eine starke deutsche Cover-Headline
-- Cover-Headline hat höchstens 7 Wörter
+- Cover-Titel wird nicht zusätzlich in Remotion dupliziert
 - Keywords haben höchstens 5 Wörter
-- Text wiederholt nicht einfach komplette Sprecher-Sätze
-- Overlay-Dichte bleibt kontrolliert
+- Text wiederholt nicht komplette Sprecher-Sätze
+- Textdichte bleibt kontrolliert
 - kein englischer sichtbarer Text
-- Text verdeckt keine wichtige Bildhandlung
-- Bild bleibt auch ohne Overlay verständlich
+- Bild bleibt auch ohne spätere Keywords verständlich
 
 ## 10. Priorität
 
 Bei Textfragen gilt:
 
-**starke visuelle Szene + gezielter kurzer deutscher Remotion-Text > komplett textfreies Endvideo > textlastige Slide.**
-
-Das Flow-Quellbild bleibt trotzdem standardmäßig textfrei.
+**starke visuelle Szene + exakter Flow-Cover-Titel + gezielte deutsche Remotion-Keywords > komplett textfreies Endvideo > textlastige Slide.**

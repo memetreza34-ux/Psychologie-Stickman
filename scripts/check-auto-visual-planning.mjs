@@ -15,8 +15,9 @@ Auf dem Heimweg denkst du noch einmal über die Aufgabe nach.
 Am Abend arbeitest du schließlich ruhig weiter.
 `;
 
+const coverHeadline = 'WARUM SCHIEBEN WIR AUF?';
 const beats = splitScriptIntoVisualBeats(sampleScript, {targetWords: 14, maxWords: 20, semanticSplit: true});
-const scenes = buildVisualBeatScenes(beats);
+const scenes = buildVisualBeatScenes(beats, {coverHeadline});
 const requiredFields = ['visualIdea', 'subject', 'action', 'environment', 'camera', 'continuityPolicy', 'textPolicy', 'visualTask'];
 const failures = [];
 
@@ -28,18 +29,19 @@ for (const scene of scenes) {
       failures.push(`scene ${scene.scene}: missing required planning field '${field}'`);
     }
   }
-  if (scene.textPolicy !== 'NONE') failures.push(`scene ${scene.scene}: textPolicy must default to NONE`);
-  if (scene.continuityPolicy !== 'NEW_CHARACTER_DEFAULT_UNLESS_LOCAL_CONTINUITY') {
-    failures.push(`scene ${scene.scene}: wrong continuityPolicy`);
+  if (scene.scene === 1) {
+    if (scene.textPolicy !== 'EXACT_GERMAN_COVER_TITLE_ONLY') failures.push('scene 1 must use EXACT_GERMAN_COVER_TITLE_ONLY');
+    if (!scene.visualTask.includes(coverHeadline)) failures.push('scene 1 visualTask must contain the exact cover headline');
+  } else if (scene.textPolicy !== 'NONE') {
+    failures.push(`scene ${scene.scene}: textPolicy must be NONE after the cover`);
   }
+  if (scene.continuityPolicy !== 'NEW_CHARACTER_DEFAULT_UNLESS_LOCAL_CONTINUITY') failures.push(`scene ${scene.scene}: wrong continuityPolicy`);
   if (!/CAST:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing CAST planning`);
   if (!/ORT:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing ORT planning`);
   if (!/HANDLUNG:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing HANDLUNG planning`);
   if (!/KAMERA:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing KAMERA planning`);
   if (!/1–4/u.test(scene.subject)) failures.push(`scene ${scene.scene}: cast guidance must allow 1–4 Stickmen`);
-  if (!/Nicht automatisch Schreibtisch\/Homeoffice/iu.test(scene.environment)) {
-    failures.push(`scene ${scene.scene}: environment guidance does not block desk/home-office default`);
-  }
+  if (!/Nicht automatisch Schreibtisch\/Homeoffice/iu.test(scene.environment)) failures.push(`scene ${scene.scene}: environment guidance does not block desk/home-office default`);
 }
 
 if (scenes[0]?.isCover !== true) failures.push('scene 1 must always set isCover=true');
@@ -51,9 +53,7 @@ for (const scene of scenes.slice(1)) {
 }
 
 const uniqueCameras = new Set(scenes.map((scene) => scene.camera));
-if (uniqueCameras.size < Math.min(5, scenes.length)) {
-  failures.push(`camera variation too low: ${uniqueCameras.size} unique camera plans across ${scenes.length} scenes`);
-}
+if (uniqueCameras.size < Math.min(5, scenes.length)) failures.push(`camera variation too low: ${uniqueCameras.size} unique camera plans across ${scenes.length} scenes`);
 
 const tmpDir = path.resolve('tmp');
 const tmpScript = path.join(tmpDir, 'auto-visual-planning-script.txt');
@@ -67,20 +67,18 @@ try {
       targetWords: 14,
       maxWords: 20,
       semanticSplit: true,
-      coverHeadline: 'WARUM SCHIEBEN WIR AUF?',
+      coverHeadline,
     },
   }, 'auto-planning-qa');
 
-  if (resolved.finalTextOverlayPolicy !== 'SELECTIVE_GERMAN_KEYWORDS_V1') {
-    failures.push('auto plan must opt into SELECTIVE_GERMAN_KEYWORDS_V1');
-  }
+  if (resolved.finalTextOverlayPolicy !== 'FLOW_COVER_TITLE_KEYWORDS_V2') failures.push('auto plan must opt into FLOW_COVER_TITLE_KEYWORDS_V2');
   if (resolved.visibleTextLanguage !== 'de') failures.push("auto plan visibleTextLanguage must be 'de'");
-  if (resolved.flowSourceImageTextPolicy !== 'NONE') failures.push('auto plan Flow text policy must be NONE');
-  if (resolved.renderGermanLabelsInRemotion !== true) failures.push('auto plan must render German labels in Remotion');
-  const coverLabels = resolved.sceneLabels?.filter((label) => label.scene === 1 && label.variant === 'cover') ?? [];
-  if (coverLabels.length !== 1 || coverLabels[0].text !== 'WARUM SCHIEBEN WIR AUF?') {
-    failures.push('auto plan must create exactly one scene-1 cover label from coverHeadline');
-  }
+  if (resolved.flowSourceImageTextPolicy !== 'SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY') failures.push('auto plan Flow text policy must use the Scene-01 cover exception');
+  if (resolved.coverTextRenderer !== 'GOOGLE_FLOW') failures.push('auto plan coverTextRenderer must be GOOGLE_FLOW');
+  if (resolved.coverHeadline !== coverHeadline) failures.push('auto plan must preserve exact coverHeadline');
+  if (resolved.renderGermanLabelsInRemotion !== true) failures.push('auto plan must keep Remotion enabled for later keywords');
+  const coverLabels = resolved.sceneLabels?.filter((label) => label.variant === 'cover') ?? [];
+  if (coverLabels.length !== 0) failures.push('new auto plan must not create a Remotion cover label');
 } finally {
   fs.rmSync(tmpScript, {force: true});
 }
@@ -91,6 +89,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log(
-  `AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, Scene 01 cover/master locked, ${uniqueCameras.size} camera plans, structured CAST/ORT/HANDLUNG/KAMERA fields present, modern German cover policy generated.`,
-);
+console.log(`AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, Scene 01 Flow cover-title/master locked, ${uniqueCameras.size} camera plans, later scenes text-free.`);

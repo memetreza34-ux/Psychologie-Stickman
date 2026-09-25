@@ -45,19 +45,31 @@ Simple Stickmen. Rich World. One clear idea per image.
 - no dense collages, dashboards or repeated card layouts
 - vary cast, clothing, role, location, pose, camera distance and composition
 
-SCENE 01 COVER — HARD LOCK
-- 03-bilder/01.png is Scene 01 + COVER/THUMBNAIL BASE + STYLE/ANATOMY MASTER
-- Scene 01 must show the first spoken beat correctly and work as a strong cover
-- large clear focal character, strong silhouette, minimal clutter, instant readability
-- reserve calm upper-left/left negative space for the later German Remotion cover headline: WARUM BLEIBT NEGATIVES HÄNGEN?
-- DO NOT render that headline in Flow
-- Scene 01 remains ZERO READABLE TEXT
+COVER TITLE — GOOGLE FLOW HARD LOCK
+Scene 01 is the cover, first visual beat and style/anatomy master.
+EXACT GERMAN COVER TITLE: "WARUM BLEIBT NEGATIVES HÄNGEN?"
+Google Flow MUST render this exact title directly inside Scene 01.
+- spell every word exactly
+- preserve the question mark
+- large, bold, clean, highly legible thumbnail typography
+- place title on the left / upper-left while the main Stickman remains clear on the right
+- NO OTHER READABLE TEXT in Scene 01
+- no extra subtitle, badge, UI word, logo, poster text or pseudo-writing
+- if any letter, word or punctuation is wrong: reject and regenerate Scene 01
+- Remotion MUST NOT add this cover title again
+
+SCENE 02+ — ZERO READABLE TEXT
+From Scene 02 onward, every Google Flow source image must contain ZERO READABLE TEXT.
+- no German or English words
+- no letters, labels, subtitles, UI words, poster text, document text or logos
+- screens and papers use abstract lines, blocks, icons and shapes only
+- do not copy, recreate or imitate the cover title from 01.png
+- do not copy speech context into the image
 
 SELECTIVE FINAL TEXT SYSTEM
-Flow source images stay text-free. The final video later receives controlled German Remotion overlays only on selected scenes.
-Planned overlays: Scene 01 cover; Scenes 04, 09, 15, 21, 25, 31 and 34 short keywords.
-For those scenes, reserve calm negative space without sacrificing the main visual idea.
-German labels are added later in Remotion. Never draw them in Flow.
+Scene 01 title is already rendered by Google Flow.
+German keyword labels are added later in Remotion only for selected later scenes: 04, 09, 15, 21, 25, 31 and 34.
+For those scenes reserve calm negative space without sacrificing the main visual idea. Never draw these later keywords in Flow.
 
 CAST VARIATION — HARD LOCK
 STYLE CONSISTENCY DOES NOT MEAN CHARACTER CLONING.
@@ -73,21 +85,15 @@ BEFORE EACH SCENE DECIDE
 3. ACTION — what concrete visible action shows the meaning?
 4. CAMERA — what angle/distance makes it instantly readable?
 
-FLOW SOURCE IMAGE TEXT POLICY — ZERO READABLE TEXT
-Generated source images must contain ZERO readable text.
-- no German or English words
-- no letters, labels, subtitles, UI words, poster text, document text or logos
-- screens and papers use abstract lines, blocks, icons and shapes only
-- do not copy speech context into the image
-- German labels are added later in Remotion
-
 MASTER REFERENCE WORKFLOW
-1. Generate SCENE 01 ONLY as COVER + FIRST VISUAL BEAT + STYLE/ANATOMY MASTER.
+1. Generate SCENE 01 ONLY as COVER + FIRST VISUAL BEAT + STYLE/ANATOMY MASTER, including the exact German cover title.
 2. STOP.
 3. Wait for user approval.
-4. Save approved image as 03-bilder/01.png.
-5. For EVERY image from Scene 02 onward attach 01.png as STYLE/ANATOMY reference.
-6. Master does NOT lock identity, clothing, cast size, location, pose, camera or composition.
+4. User must verify exact title spelling before approval.
+5. Save approved image as 03-bilder/01.png.
+6. For EVERY image from Scene 02 onward attach 01.png as STYLE/ANATOMY reference.
+7. Master does NOT lock identity, clothing, cast size, location, pose, camera or composition.
+8. Master cover text belongs ONLY to Scene 01 and must not be copied into later scenes.
 
 AUTOMATIC BATCH WORKFLOW
 MASTER/COVER: 01
@@ -101,19 +107,19 @@ Batch 7: 32–35
 After Scene 01 approval, generate only the current batch, max 5 images. Internally QA anatomy, meaning, cast/location/camera variety and text freedom. Regenerate only failed images and continue automatically after PASS.
 
 REFERENCE CLAUSE FOR SCENE 02+
-Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. Reuse exact people only in LOCAL CONTINUITY scenes. ZERO READABLE TEXT.
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone or text template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. Reuse exact people only in LOCAL CONTINUITY scenes. IMPORTANT: do not copy, recreate or imitate the cover title from 01.png. ZERO READABLE TEXT.
 
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Du bekommst zehn nette Rückmeldungen und einen einzigen kritischen Kommentar.
 PROMPT:
-COVER + MASTER STYLE FRAME. A young adult true Stickman in a modern coworking lounge looks at a smartphone after receiving feedback. Around the phone and in the environment, use many small soft positive reaction symbols/icons and one single darker critical reaction shape that strongly pulls the character's attention. Do not create readable chat bubbles. Make the main Stickman large on the right side with clear concerned body language. Background: 3–4 differently dressed true Stickmen continue normal activities and do not stare. Strong thumbnail hierarchy, rich believable lounge, clean 2D editorial look. Leave calm upper-left/left negative space for later Remotion headline. ZERO READABLE TEXT. Generate Scene 01 only, then STOP.
+COVER + MASTER STYLE FRAME. A young adult true Stickman in a modern coworking lounge looks at a smartphone after receiving feedback. Around the phone and in the environment, use many small soft positive reaction symbols/icons and one single darker critical reaction shape that strongly pulls the character's attention. Do not create readable chat bubbles. Make the main Stickman large on the right side with clear concerned body language. Background: 3–4 differently dressed true Stickmen continue normal activities and do not stare. Strong thumbnail hierarchy, rich believable lounge, clean 2D editorial look. Render the EXACT GERMAN COVER TITLE "WARUM BLEIBT NEGATIVES HÄNGEN?" large and highly legible on the left/upper-left. Preserve exact spelling and the question mark. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Und ausgerechnet dieser eine Satz bleibt dir noch Stunden später im Kopf, obwohl der Rest positiv war.
 PROMPT:
-LOCAL CONTINUITY WITH SCENE 01. Reuse the Scene-01 main character only. Evening city train: the character sits among several commuters and keeps mentally returning to one dark feedback symbol while the many positive symbols are faint and secondary. Other passengers remain busy with their own activities. Medium-wide side angle. ZERO READABLE TEXT.
+LOCAL CONTINUITY WITH SCENE 01. Reuse the Scene-01 main character only. Evening city train: the character sits among several commuters and keeps mentally returning to one dark feedback symbol while the many positive symbols are faint and secondary. Other passengers remain busy with their own activities. Medium-wide side angle. Do not copy the cover title from the master. ZERO READABLE TEXT.
 
 SCENE 03
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -314,10 +320,10 @@ PROMPT:
 Attach 01.png as STYLE/ANATOMY reference only. Closing scene: a true Stickman walks calmly along an evening city promenade and looks across a broad balanced environment with several distant Stickmen, lights, trees and everyday activity. No single negative point dominates. Cinematic wide final composition with natural evening colors. ZERO READABLE TEXT.
 
 FINAL EXECUTION RULE
-Stop only after Scene 01 for user approval. After approval continue automatically through Batch 1 to Batch 7. After each batch run internal QA, regenerate only failed images and continue after PASS.
+Stop only after Scene 01 for user approval. Scene 01 is approved only if the exact cover title "WARUM BLEIBT NEGATIVES HÄNGEN?" is correctly rendered and no other readable text appears. After approval continue automatically through Batch 1 to Batch 7. After each batch run internal QA, regenerate only failed images and continue after PASS.
 
 FINAL QA RULE
-Reject and regenerate any image with non-stickman humans, anatomy drift, oversized mascot heads, 3D/Pixar/anime/photorealistic drift, unintended readable text, unnecessary character cloning, repetitive locations/cameras, or mismatch with the current speech beat. Scene 01 also fails if it is not cover-strong and if there is no usable negative space for the later German headline.
+Reject and regenerate any image with non-stickman humans, anatomy drift, oversized mascot heads, 3D/Pixar/anime/photorealistic drift, unnecessary character cloning, repetitive locations/cameras, or mismatch with the current speech beat. Scene 01 additionally fails if the exact German cover title is missing, misspelled, malformed, unreadable, or accompanied by additional readable text. Scene 02+ fails for any readable text, including accidental copies of the title from 01.png.
 
 FINAL PRINCIPLE
-01.png = SCENE 01 + COVER + STYLE/ANATOMY MASTER. Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. Flow source images stay text-free. Selected German cover/keyword overlays are added later in Remotion.
+01.png = SCENE 01 + COVER + STYLE/ANATOMY MASTER + EXACT FLOW-RENDERED GERMAN COVER TITLE. Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. Scene 02+ Flow source images stay text-free. Selected later German keyword overlays are added in Remotion.

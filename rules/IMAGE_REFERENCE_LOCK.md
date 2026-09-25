@@ -2,17 +2,18 @@
 
 **STATUS: VERBINDLICH**
 
-Ziel: Alle Bilder eines Videos müssen eindeutig wie dieselbe Bildwelt aussehen, ohne dass dadurch immer derselbe Charakter, dieselbe Kleidung oder dieselbe Szene kopiert wird.
+Ziel: Alle Bilder eines Videos müssen eindeutig wie dieselbe Bildwelt aussehen, ohne dadurch immer denselben Charakter, dieselbe Kleidung oder dieselbe Szene zu kopieren.
 
 ## 1. Master-Referenz zuerst
 
-Für jedes Projekt:
+Für jedes YouTube-Projekt:
 1. Bild 01 allein generieren.
-2. Danach STOP und Nutzerfreigabe abwarten.
-3. Bild 01 visuell prüfen.
-4. Nur freigeben, wenn STRICT STICKMAN ONLY, Welt-DNA, Textfreiheit und Bildklarheit erfüllt sind.
-5. Bild 01 als Master speichern.
-6. Bild 02 bis Ende immer mit der freigegebenen Master-Referenz generieren.
+2. Bild 01 enthält den **exakten deutschen Cover-Titel** direkt aus Google Flow.
+3. STOP und Nutzerfreigabe abwarten.
+4. Bild 01 visuell prüfen.
+5. Nur freigeben, wenn STRICT STICKMAN ONLY, Welt-DNA, Cover-Klarheit und **exakte Titel-Schreibweise** erfüllt sind.
+6. Bild 01 als Master speichern.
+7. Bild 02 bis Ende immer mit der freigegebenen Master-Referenz generieren.
 
 Für YouTube liegt der Master als `03-bilder/01.png`.
 
@@ -31,7 +32,6 @@ Die Master-Referenz ist verbindlicher Anker für:
 - Cel-/Illustrations-Shading
 - Farbverhalten und Sättigungsniveau
 - Detailgrad der Welt
-- Verhältnis zwischen einfacher Figur und reichhaltiger Umgebung
 - allgemeine Illustrationsästhetik
 
 **Nicht gesperrt** sind:
@@ -45,9 +45,10 @@ Die Master-Referenz ist verbindlicher Anker für:
 - Licht/Tageszeit
 - Requisiten
 - Komposition
+- sichtbarer Cover-Titel: dieser gehört **nur zu Szene 01** und darf nicht in Folgebilder kopiert werden
 
 Kurz:
-**Master = Stil- und Anatomie-Referenz, nicht Charakter-Klonvorlage.**
+**Master = Stil- und Anatomie-Referenz, nicht Charakter- oder Text-Klonvorlage.**
 
 ## 3. STRICT STICKMAN ONLY — auch im Hintergrund
 
@@ -65,11 +66,24 @@ Nicht zulässig:
 
 Wenn eine sichtbare Person nicht zur Master-Stickman-DNA gehört: **FAIL → neu generieren.**
 
-## 4. FLOW-QUELLBILDER — ZERO READABLE TEXT
+## 4. FLOW-TEXTREGEL
 
-Google-Flow-Quellbilder werden standardmäßig **ohne lesbaren Text** erzeugt.
+### Szene 01 — COVER TITLE EXCEPTION
 
-HARD LOCK:
+Google Flow rendert genau den vorher festgelegten deutschen `coverHeadline` direkt in das Cover.
+
+Verbindlich:
+- 2–7 Wörter
+- exakter Wortlaut
+- korrekte Umlaute/Satzzeichen
+- gut lesbare Thumbnail-Typografie
+- **kein weiterer lesbarer Text**
+
+Wenn der Titel fehlt, falsch geschrieben oder unlesbar ist: **FAIL → Szene 01 neu generieren.**
+
+### Szene 02+
+
+Google-Flow-Quellbilder werden standardmäßig **ZERO READABLE TEXT** erzeugt:
 - keine Buchstaben
 - keine Wörter
 - keine Labels
@@ -79,108 +93,86 @@ HARD LOCK:
 - keine Bildschirmtexte
 - keine zufälligen englischen Promptwörter
 
-Deutsche Begriffe werden standardmäßig **erst in Remotion** als kontrollierte Overlays gesetzt.
-
-Nur wenn Text physisch Teil der Szene sein muss und nicht sinnvoll als Overlay gesetzt werden kann, darf der Szenenplan eine Ausnahme definieren. Dann muss er den **exakten deutschen Wortlaut** enthalten und möglichst auf 1–4 Wörter begrenzt sein.
+Deutsche Keywords ausgewählter späterer Szenen werden in Remotion gesetzt.
 
 QA-Fail:
-- irgendein unbeabsichtigter lesbarer Text im Flow-Quellbild
+- Szene 01: Cover-Titel nicht exakt oder zusätzlicher Text
+- Szene 02+: irgendein unbeabsichtigter lesbarer Text
 - englischer Text
 - erfundene UI-/Poster-/Kartenwörter
-- Text dominiert die Erklärung statt der visuellen Handlung
 
 ## 5. Konkrete Szene vor generischer Infografik
-
-Die Master-Referenz darf nicht dazu führen, dass nur dieselbe abstrakte Komposition wiederholt wird.
 
 Bevorzugt:
 1. konkrete Stickman-Handlung in glaubwürdiger Umgebung
 2. einfache visuelle Metapher
-3. Diagramm/Skala/Karte nur, wenn sie inhaltlich klarer ist
+3. Diagramm/Skala/Karte nur, wenn klarer
 
-Wiederkehrende Karten, Meter, Waagen oder Pfade dürfen nicht zur Standardkomposition des ganzen Videos werden.
+Wiederkehrende Karten, Meter, Waagen oder Pfade dürfen nicht zur Standardkomposition werden.
 
 ## 6. CAST- UND SZENENVIELFALT — HARD LOCK
 
 Vor jeder Szene bewusst entscheiden:
-- **Cast:** 1, 2, 3 oder 4 Stickmen?
-- **Rolle:** Wer passt inhaltlich zum Beat?
-- **Ort:** Welche Umgebung erklärt den Gedanken am besten?
-- **Handlung:** Was passiert sichtbar?
-- **Kamera:** Welcher Blickwinkel macht den Beat klar?
-
-Erlaubt und erwünscht:
-- verschiedene Stickmen innerhalb derselben DNA
-- andere Kleidung/Farben
-- andere Rollen und Accessoires
-- wechselnde Orte
-- verschiedene Kameradistanzen und Perspektiven
-- Einzelperson, Duo, kleine Gruppe oder Crowd je nach Aussage
+- Cast: 1, 2, 3 oder 4 Stickmen?
+- Rolle: Wer passt inhaltlich?
+- Ort: Welche Umgebung erklärt den Gedanken?
+- Handlung: Was passiert sichtbar?
+- Kamera: Welcher Blickwinkel macht den Beat klar?
 
 Nicht als Default erlaubt:
-- immer dieselbe einzelne Figur aus Bild 01
+- immer dieselbe Figur aus Bild 01
 - immer derselbe Hoodie
 - immer derselbe Schreibtisch
 - immer derselbe Raum
 - immer dieselbe neutrale Pose
 - immer derselbe Medium Shot
 
-Eine bestimmte Figur bleibt nur dann dieselbe, wenn die Szene echte Kontinuität braucht, z. B. „später dieselbe Person“ oder eine zusammenhängende Mini-Geschichte.
+Eine bestimmte Figur bleibt nur dann dieselbe, wenn echte Kontinuität nötig ist.
 
 ## 7. Lokale Figurenkontinuität
 
-Wenn eine Szene ausdrücklich dieselbe Person wie eine frühere Szene verlangt, konstant halten:
+Bei ausdrücklich derselben Person innerhalb einer zusammenhängenden Sequenz konstant halten:
 - Kopf-/Körperproportionen
-- Kopf-/Gesichtsstil
+- Gesichtsstil
 - Arm-/Beindicke
 - Hand-/Fußvereinfachung
-- Kleidung und Farben innerhalb dieser zusammenhängenden Sequenz
+- Kleidung/Farben
 - relevante Accessoires
 
-Diese Regel gilt **lokal für die Sequenz**, nicht automatisch für das gesamte Video.
+Diese Regel gilt lokal, nicht automatisch für das gesamte Video.
 
-## 8. Generierung in 5er-Batches — AUTO AFTER MASTER
+## 8. Generierung in 5er-Batches
 
-1. Bild 01 allein erzeugen.
+1. Bild 01 allein erzeugen — inklusive exaktem Cover-Titel.
 2. STOP.
-3. Bild 01 visuell prüfen und vom Nutzer freigeben lassen.
-4. Danach maximal 5 neue Bilder pro Batch generieren.
-5. Für jedes Bild dieselbe Master-Referenz anhängen.
-6. Nach jedem Batch interne Style-/Continuity-/Inhalts-QA durchführen.
-7. Nur fehlerhafte Bilder regenerieren; bestandene Bilder behalten.
-8. Sobald der ganze Batch PASS erreicht, automatisch mit dem nächsten Batch fortfahren.
-9. Bis zum letzten Bild wiederholen.
-10. Bild 01 bleibt Master für **Stil und Anatomie**.
+3. Nutzer prüft Cover, Titel und Stil.
+4. Danach maximal 5 neue Bilder pro Batch.
+5. Für Bild 02+ dieselbe Master-Referenz anhängen.
+6. Prompt ausdrücklich: **do not copy or recreate the cover title from the master reference.**
+7. Nach jedem Batch interne Style-/Continuity-/Inhalts-/Text-QA.
+8. Nur fehlerhafte Bilder regenerieren.
+9. Nach PASS automatisch weiter.
 
-Keine Nutzerfreigabe nach normalen Batches.
+## 9. Referenzklausel pro Bild ab Szene 02
 
-## 9. Referenzklausel pro Bild
-
-Für Bild 02 bis Ende:
-
-`Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone template. Match the approved true-stickman anatomy system, head/torso proportions, very thin line-like limbs, simple no-finger hands, linework, color treatment, shading, environment detail level and overall 2D illustration quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current speech beat. Reuse the exact Scene-01 character only when this scene explicitly requires narrative continuity. Do not default to the same lone hoodie character, same desk, same room or same framing. STRICT STICKMAN-ONLY CHECK: every person visible anywhere must use the same stickman DNA, but they may be different people. Prefer a concrete stickman action in a believable setting over a generic infographic. SOURCE IMAGE TEXT POLICY: render zero readable text, zero letters, zero labels, zero UI words and zero captions. German labels are normally added later in Remotion.`
+`Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone or text template. Match the approved true-stickman anatomy system, head/torso proportions, very thin line-like limbs, simple no-finger hands, linework, color treatment, shading, environment detail level and overall 2D illustration quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current speech beat. Reuse the exact Scene-01 character only when narrative continuity requires it. IMPORTANT: do not copy, recreate or imitate the cover headline from 01.png. SOURCE IMAGE TEXT POLICY FOR SCENE 02+: ZERO READABLE TEXT, zero letters, zero labels, zero UI words and zero captions. German keyword overlays are added later in Remotion.`
 
 ## 10. Batch-QA
 
 Nach jedem Batch intern prüfen:
 - gleiche einfache Stickman-Grundanatomie
 - keine realistische Nase/Ohren
-- kleiner vereinfachter Torso
-- Arme/Beine sehr dünn und linear
-- keine fleischigen Gliedmaßen
+- sehr dünne lineare Arme/Beine
 - keine Fingeranatomie
 - gleiche Linien-/Shading-Logik
 - vergleichbares Farbverhalten und Weltqualität
-- Cast passt zum jeweiligen Beat
-- Figurenidentität wurde nur dort wiederholt, wo Kontinuität sinnvoll ist
-- nicht mehrere Szenen unnötig mit gleichem Hoodie/Raum/Framing wiederholt
+- Cast passt zum Beat
+- keine unnötige Figuren-/Raum-/Kamerawiederholung
 - alle Hintergrundmenschen STRICT STICKMAN ONLY
 - kein 3D-/Anime-/Fotorealismus-Drift
-- kein unbeabsichtigter lesbarer Text im Quellbild
-- Bildinhalt passt exakt zum Visual Beat
-- Bild ist nicht unnötig infografikartig oder überladen
-
-Wenn ein Bild durchfällt, wird nur dieses Bild neu generiert.
+- Szene 02+ ohne lesbaren Text
+- Cover-Titel aus 01.png nicht in Folgebilder kopiert
+- Bild passt exakt zum Visual Beat
 
 ## 11. HARD FAIL
 
@@ -188,16 +180,13 @@ Ein Bild wird verworfen, wenn:
 - Stickman-Anatomie sichtbar wechselt
 - normale Cartoon-Menschen auftauchen
 - realistische Hände/Finger, Nasen oder Ohren auftauchen
-- unbeabsichtigter sichtbarer Text auftaucht
+- Szene 01 den Titel falsch darstellt
+- Szene 02+ unbeabsichtigten sichtbaren Text enthält
 - englischer Text auftaucht
-- Linien/Shading/Farbwelt ohne Grund driften
-- das Bild wie eine generische Infografik wirkt, obwohl eine klare konkrete Szene möglich wäre
+- Cover-Titel aus der Master-Referenz in spätere Szenen übernommen wird
 - der Master unnötig als Charakter-/Raumkopie verwendet wird
-- mehrere aufeinanderfolgende Szenen ohne inhaltlichen Grund denselben Stickman, dieselbe Kleidung, denselben Raum und ähnliche Kamera wiederholen
 
 ## 12. Priorität
 
 Bei Konflikt gilt:
-**STRICT STICKMAN ONLY + Master als Style-/Anatomie-Referenz + textfreies Flow-Quellbild + beat-passende Cast-/Szenenwahl > Charakterkopie oder generische Wiederholung.**
-
-Der Visual Beat bestimmt **wer, wo und was** gezeigt wird. Der Master bestimmt **wie die Bildwelt und Stickman-Anatomie aussehen**. Remotion kontrolliert sichtbare deutsche Texte.
+**STRICT STICKMAN ONLY + Master als Style-/Anatomie-Referenz + exakter Flow-Cover-Titel nur in Szene 01 + ZERO READABLE TEXT ab Szene 02 + beat-passende Cast-/Szenenwahl > Charakter-, Text- oder Szenenklonen.**
