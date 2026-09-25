@@ -12,8 +12,6 @@ Verbindliche Regeln beginnen in `CANONICAL_RULES.md`; die detaillierten Locks li
 
 ## YouTube-Struktur
 
-Jedes moderne Longform-Projekt unter `youtube/` verwendet:
-
 ```text
 youtube/TT.MM.JJJJ-thema/
 ├── 01-script/
@@ -33,26 +31,40 @@ youtube/TT.MM.JJJJ-thema/
     ├── word-timings.json
     ├── scene-plan.json
     ├── render-props.json
-    ├── quellen/
+    ├── flow-text-policy.json (optional/project override)
     └── weitere QA-/Produktionsdateien
 ```
 
 `01.png` ist immer **Szene 01 + Cover/Thumbnail + Style-/Anatomie-Master**.
 
-### Cover-Textregel
+## Sichtbarer Text — nur Google Flow
 
-Google Flow rendert den **exakten deutschen Cover-Titel direkt in `01.png`**.
+Für neue YouTube-Projekte gilt:
 
-- 2–7 Wörter
-- korrekte Schreibweise/Umlaute/Satzzeichen
-- außer dem Cover-Titel kein weiterer lesbarer Text in Szene 01
-- Remotion rendert den Cover-Titel nicht noch einmal
-- ab Szene 02 bleiben Google-Flow-Bilder **ZERO READABLE TEXT**
-- ausgewählte spätere deutsche Keywords werden kontrolliert in Remotion gesetzt
+**Alle sichtbaren Texte werden direkt von Google Flow in die Bilder gerendert. Remotion erzeugt keinen sichtbaren Text.**
+
+- Szene 01: exakter deutscher Cover-Titel, 2–7 Wörter
+- ausgewählte spätere Szenen: kurze deutsche Keywords, maximal 5 Wörter
+- alle übrigen Szenen: ZERO READABLE TEXT
+- typische Textdichte 15–25 %, maximal 30 %
+- falscher, zusätzlicher, unlesbarer oder abgeschnittener Text => nur dieses Bild regenerieren
+- `sceneLabels: []`
+- `renderGermanLabelsInRemotion: false`
+- keine YouTube-Auto-Captions aus Remotion
+
+Neue Policy:
+
+```json
+{
+  "visibleTextRenderer": "GOOGLE_FLOW",
+  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
+  "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY"
+}
+```
 
 ## Reels
 
-Reels bleiben vollständig getrennt unter `reels/` und nutzen 9:16. YouTube und Reels werden weder in Ordnerstruktur noch Renderformat vermischt.
+Reels bleiben vollständig getrennt unter `reels/` und nutzen 9:16.
 
 ## Produktionsfolge
 
@@ -60,10 +72,10 @@ Reels bleiben vollständig getrennt unter `reels/` und nutzen 9:16. YouTube und 
 THEMA + QUELLEN + CLAIM-CHECK
 → finales Skript
 → Phase 1 Visual Beats
-→ Google-Flow-Bilder
+→ Google-Flow-Bilder inklusive aller sichtbaren Texte
 → finales Voice-over
 → lokale Whisper-Wortzeiten
-→ Phase 3 / Remotion
+→ Phase 3 / Remotion für Schnitt + Audio + Export
 → Final-QA
 ```
 
@@ -81,7 +93,7 @@ Der Befehl:
 3. mappt Phase 1 auf die Wortzeiten,
 4. staged Bilder und Audio automatisch nach `public/`,
 5. führt Produktionschecks aus,
-6. baut Remotion-Props,
+6. baut Remotion-Props ohne sichtbare YouTube-Texte,
 7. rendert `05-export/final.mp4`,
 8. prüft Auflösung, 30 fps, Audio und Dateidauer.
 
@@ -95,17 +107,13 @@ npm run produce:youtube -- youtube/TT.MM.JJJJ-thema --force-timings
 
 Die Wortzeiten werden lokal mit **Whisper.cpp** über `@remotion/install-whisper-cpp` erzeugt. Standardmodell ist `small`, Sprache Deutsch, kein API-Key nötig.
 
-Beim ersten Lauf werden Whisper.cpp und das Modell unter `.whisper/` installiert bzw. heruntergeladen. Danach wird der lokale Cache wiederverwendet.
-
 Nur Wortzeiten erzeugen:
 
 ```bash
 npm run timings:youtube -- youtube/TT.MM.JJJJ-thema
 ```
 
-Die Pipeline gleicht Whisper mit dem kanonischen `01-script/script.txt` ab. Kleine Erkennungsfehler können interpoliert werden; bei deutlich falschem Audio/Skript wird abgebrochen.
-
-## Warum `public/` existiert
+## `public/`
 
 `youtube/.../03-bilder/` und `youtube/.../04-audio/` sind die kanonischen Nutzerordner. `public/` ist nur die automatisch erzeugte Remotion-Staging-Fläche.
 
@@ -117,4 +125,4 @@ npm run qa:word-timings
 npm run qa:render-smoke
 ```
 
-Die CI prüft zusätzlich den echten Remotion-Smoke-Render. Für Szene 01 bleibt eine visuelle Freigabe nötig, insbesondere für **exakte Cover-Titel-Schreibweise und Thumbnail-Qualität**.
+Für geplante Flow-Textmomente bleibt eine visuelle QA wichtig: exakte Schreibweise, vollständige Buchstaben, keine zusätzlichen Wörter und keine abgeschnittene Typografie.
