@@ -16,7 +16,6 @@ const walk = (dir) => {
 };
 
 roots.forEach(walk);
-
 const productionPrompts = promptFiles.filter((promptPath) => !promptPath.split(path.sep).includes('00-vorlage'));
 if (productionPrompts.length === 0) {
   console.log('GOOGLE FLOW PROMPT QA: PASS — no production prompt files found.');
@@ -25,6 +24,7 @@ if (productionPrompts.length === 0) {
 
 const failures = [];
 const warnings = [];
+const countWords = (value) => String(value ?? '').trim().split(/\s+/).filter(Boolean).length;
 
 const locationFamilies = [
   ['public-transport', /\b(train|tram|bus|subway|metro|commuter|public transport|bahn|zug|öpnv)\b/iu],
@@ -51,9 +51,7 @@ const cameraFamilies = [
 ];
 
 const detectFamily = (text, families) => {
-  for (const [name, pattern] of families) {
-    if (pattern.test(text)) return name;
-  }
+  for (const [name, pattern] of families) if (pattern.test(text)) return name;
   return null;
 };
 
@@ -74,24 +72,43 @@ const dominantFamily = (values) => {
 for (const promptPath of productionPrompts) {
   const content = fs.readFileSync(promptPath, 'utf8');
   const relative = path.relative(process.cwd(), promptPath);
+  const flowCoverV2 = /COVER TITLE\s*[—-]\s*GOOGLE FLOW HARD LOCK/iu.test(content) || /SCENE 01 COVER TITLE EXCEPTION/iu.test(content);
+  let exactCoverHeadline = '';
 
-  if (!/FLOW SOURCE IMAGE TEXT POLICY\s*[—-]\s*ZERO READABLE TEXT/iu.test(content)) {
-    failures.push(`${relative}: missing global ZERO READABLE TEXT policy.`);
+  if (flowCoverV2) {
+    const titleMatch = content.match(/EXACT GERMAN COVER TITLE\s*:\s*["“]([^"”\n]+)["”]/iu);
+    if (!titleMatch) {
+      failures.push(`${relative}: Flow-cover policy is active but EXACT GERMAN COVER TITLE is missing.`);
+    } else {
+      exactCoverHeadline = titleMatch[1].trim();
+      const words = countWords(exactCoverHeadline);
+      if (words < 2 || words > 7) failures.push(`${relative}: Flow cover headline must contain 2-7 words.`);
+    }
+    if (!/SCENE 02\+[^\n]*ZERO READABLE TEXT|SCENE 02\+[^\n]*textfrei/iu.test(content)) {
+      failures.push(`${relative}: Flow-cover policy must explicitly restore ZERO READABLE TEXT from Scene 02 onward.`);
+    }
+    if (!/German\s+keyword\s+labels?.+added later in Remotion/isu.test(content)) {
+      failures.push(`${relative}: missing Remotion handoff for later keyword labels.`);
+    }
+    if (/cover(?:\s+headline|\s+label)?.+added later in Remotion/isu.test(content)) {
+      failures.push(`${relative}: cover title must be rendered by Google Flow, not handed to Remotion.`);
+    }
+  } else {
+    if (!/FLOW SOURCE IMAGE TEXT POLICY\s*[—-]\s*ZERO READABLE TEXT/iu.test(content)) {
+      failures.push(`${relative}: legacy prompt missing global ZERO READABLE TEXT policy.`);
+    }
+    if (!/German(?:\s+(?:cover\/keyword|cover|keyword))?\s+labels?.+added later in Remotion/isu.test(content)) {
+      failures.push(`${relative}: legacy prompt missing Remotion label handoff rule.`);
+    }
+    warnings.push(`${relative}: legacy text policy; upgrade before generating a new Scene 01. New covers must render their exact German title in Google Flow.`);
   }
-  if (!/German(?:\s+(?:cover\/keyword|cover|keyword))?\s+labels?.+added later in Remotion/isu.test(content)) {
-    failures.push(`${relative}: missing Remotion label handoff rule.`);
-  }
-  if (/optional\s+(?:single\s+|short\s+)?German\s+(?:label|cue)/iu.test(content)) {
-    failures.push(`${relative}: contains optional generated German label instruction.`);
-  }
-  if (/if\s+(?:one\s+)?labels?\s+are\s+(?:needed|necessary)/iu.test(content)) {
-    failures.push(`${relative}: contains conditional generated label instruction.`);
-  }
+
+  if (/optional\s+(?:single\s+|short\s+)?German\s+(?:label|cue)/iu.test(content)) failures.push(`${relative}: contains optional generated German label instruction.`);
+  if (/if\s+(?:one\s+)?labels?\s+are\s+(?:needed|necessary)/iu.test(content)) failures.push(`${relative}: contains conditional generated label instruction.`);
 
   const referenceClause = content.match(/REFERENCE CLAUSE FOR SCENE 02\+[\s\S]*?(?=^SCENE\s+01\s*$)/imu)?.[0] ?? '';
-  if (/character identity/iu.test(referenceClause) && !/NOT\s+(?:AS\s+)?A?\s*character clone/iu.test(referenceClause)) {
-    failures.push(`${relative}: master reference clause locks character identity instead of style/anatomy only.`);
-  }
+  if (/character identity/iu.test(referenceClause) && !/NOT\s+(?:AS\s+)?A?\s*character clone/iu.test(referenceClause)) failures.push(`${relative}: master reference clause locks character identity instead of style/anatomy only.`);
+  if (flowCoverV2 && !/do not copy|do not recreate|nicht kopieren/iu.test(referenceClause)) warnings.push(`${relative}: Scene-02+ reference clause should explicitly forbid copying the cover title from 01.png.`);
 
   const sceneMatches = [...content.matchAll(/^SCENE\s+(\d+)\s*$/gimu)];
   const sceneNumbers = sceneMatches.map((match) => Number(match[1]));
@@ -117,73 +134,51 @@ for (const promptPath of productionPrompts) {
     const sceneNumber = sceneNumbers[index];
     const promptText = block.match(/PROMPT:\s*([\s\S]*)/iu)?.[1] ?? block;
 
-    if (!/ZERO READABLE TEXT/iu.test(block)) {
+    if (flowCoverV2 && sceneNumber === 1) {
+      if (!/NO OTHER READABLE TEXT/iu.test(block)) failures.push(`${relative}: scene 1 must allow only the exact cover title and explicitly forbid other readable text.`);
+      if (exactCoverHeadline && !block.includes(exactCoverHeadline)) failures.push(`${relative}: scene 1 prompt does not repeat the exact cover headline.`);
+      if (/ZERO READABLE TEXT/iu.test(block)) failures.push(`${relative}: scene 1 contradicts the Flow-cover rule with ZERO READABLE TEXT.`);
+    } else if (!/ZERO READABLE TEXT/iu.test(block)) {
       failures.push(`${relative}: scene ${sceneNumber} does not explicitly repeat ZERO READABLE TEXT.`);
     }
-    if (!/SPEECH CONTEXT\s*[—-]\s*DO NOT RENDER AS TEXT:/iu.test(block)) {
-      failures.push(`${relative}: scene ${sceneNumber} lacks protected speech-context marker.`);
-    }
+
+    if (!/SPEECH CONTEXT\s*[—-]\s*DO NOT RENDER AS TEXT:/iu.test(block)) failures.push(`${relative}: scene ${sceneNumber} lacks protected speech-context marker.`);
 
     const explicitlySameCharacter = /\b(?:same|exact same)\s+(?:main\s+)?(?:stickman|character|person)\b/iu.test(promptText);
     const localContinuity = /LOCAL CONTINUITY/iu.test(promptText);
     if (explicitlySameCharacter && !localContinuity) cloneLockedScenes += 1;
 
-    if (/\b(?:two|three|four|2|3|4)\s+(?:stickmen|characters|people|participants|coworkers|passengers|friends)\b|\b(?:group|crowd|coworkers|passengers|patrons|participants|friends)\b/iu.test(promptText)) {
-      multiPersonScenes += 1;
-    }
-
+    if (/\b(?:two|three|four|2|3|4)\s+(?:stickmen|characters|people|participants|coworkers|passengers|friends)\b|\b(?:group|crowd|coworkers|passengers|patrons|participants|friends)\b/iu.test(promptText)) multiPersonScenes += 1;
     if (/\b(home[- ]?office|workspace|desk\b|schreibtisch|arbeitsplatz)\b/iu.test(promptText)) deskLikeScenes += 1;
     locations.push(detectFamily(promptText, locationFamilies));
     cameras.push(detectFamily(promptText, cameraFamilies));
   }
 
   const maxCloneLockedScenes = Math.max(3, Math.floor(sceneNumbers.length * 0.35));
-  if (cloneLockedScenes > maxCloneLockedScenes) {
-    failures.push(
-      `${relative}: ${cloneLockedScenes}/${sceneNumbers.length} scenes unnecessarily lock the same character. ` +
-      `Maximum without explicit LOCAL CONTINUITY is ${maxCloneLockedScenes}. Use the master as style/anatomy reference, not a character clone.`,
-    );
-  }
+  if (cloneLockedScenes > maxCloneLockedScenes) failures.push(`${relative}: ${cloneLockedScenes}/${sceneNumbers.length} scenes unnecessarily lock the same character. Maximum without LOCAL CONTINUITY is ${maxCloneLockedScenes}.`);
 
   const deskShare = deskLikeScenes / sceneNumbers.length;
-  if (sceneNumbers.length >= 10 && deskShare > 0.7) {
-    failures.push(`${relative}: ${deskLikeScenes}/${sceneNumbers.length} scenes use desk/workspace imagery. This is too repetitive for a general explainer unless explicitly justified.`);
-  } else if (sceneNumbers.length >= 10 && deskShare > 0.5) {
-    warnings.push(`${relative}: ${deskLikeScenes}/${sceneNumbers.length} scenes use desk/workspace imagery; review for unnecessary location repetition.`);
-  }
+  if (sceneNumbers.length >= 10 && deskShare > 0.7) failures.push(`${relative}: ${deskLikeScenes}/${sceneNumbers.length} scenes use desk/workspace imagery.`);
+  else if (sceneNumbers.length >= 10 && deskShare > 0.5) warnings.push(`${relative}: ${deskLikeScenes}/${sceneNumbers.length} scenes use desk/workspace imagery; review repetition.`);
 
   const locationStats = dominantFamily(locations);
   if (locationStats.recognized >= Math.max(6, Math.ceil(sceneNumbers.length * 0.4)) && locationStats.winner) {
     const share = locationStats.count / locationStats.recognized;
-    if (share > 0.7) {
-      failures.push(`${relative}: recognized location family '${locationStats.winner}' dominates ${locationStats.count}/${locationStats.recognized} classified scenes.`);
-    } else if (share > 0.55) {
-      warnings.push(`${relative}: recognized location family '${locationStats.winner}' appears in ${locationStats.count}/${locationStats.recognized} classified scenes.`);
-    }
+    if (share > 0.7) failures.push(`${relative}: recognized location family '${locationStats.winner}' dominates ${locationStats.count}/${locationStats.recognized} classified scenes.`);
+    else if (share > 0.55) warnings.push(`${relative}: recognized location family '${locationStats.winner}' appears in ${locationStats.count}/${locationStats.recognized} classified scenes.`);
   }
 
   const cameraStats = dominantFamily(cameras);
   if (cameraStats.recognized >= Math.max(6, Math.ceil(sceneNumbers.length * 0.35)) && cameraStats.winner) {
     const share = cameraStats.count / cameraStats.recognized;
-    if (share > 0.7) {
-      failures.push(`${relative}: camera family '${cameraStats.winner}' dominates ${cameraStats.count}/${cameraStats.recognized} classified scenes.`);
-    } else if (share > 0.55) {
-      warnings.push(`${relative}: camera family '${cameraStats.winner}' appears in ${cameraStats.count}/${cameraStats.recognized} classified scenes.`);
-    }
+    if (share > 0.7) failures.push(`${relative}: camera family '${cameraStats.winner}' dominates ${cameraStats.count}/${cameraStats.recognized} classified scenes.`);
+    else if (share > 0.55) warnings.push(`${relative}: camera family '${cameraStats.winner}' appears in ${cameraStats.count}/${cameraStats.recognized} classified scenes.`);
   }
 
-  if (sceneNumbers.length >= 12 && multiPersonScenes === 0) {
-    warnings.push(`${relative}: no clearly multi-person scene detected across ${sceneNumbers.length} scenes. Confirm that an all-solo cast is truly content-driven.`);
-  }
+  if (sceneNumbers.length >= 12 && multiPersonScenes === 0) warnings.push(`${relative}: no clearly multi-person scene detected across ${sceneNumbers.length} scenes.`);
+  if (!/CAST VARIATION\s*[—-]\s*HARD LOCK/iu.test(content)) warnings.push(`${relative}: no explicit CAST VARIATION hard-lock block.`);
 
-  if (!/CAST VARIATION\s*[—-]\s*HARD LOCK/iu.test(content)) {
-    warnings.push(`${relative}: no explicit CAST VARIATION hard-lock block; consider adding one for future regeneration.`);
-  }
-
-  console.log(
-    `${relative}: ${sceneNumbers.length} scenes; ${cloneLockedScenes} non-continuity clone locks; ` +
-      `${deskLikeScenes} desk-like scenes; ${multiPersonScenes} multi-person scenes.`,
-  );
+  console.log(`${relative}: ${sceneNumbers.length} scenes; ${flowCoverV2 ? 'Flow-cover-title V2' : 'legacy text policy'}; ${cloneLockedScenes} non-continuity clone locks; ${deskLikeScenes} desk-like scenes; ${multiPersonScenes} multi-person scenes.`);
 }
 
 if (warnings.length > 0) {
