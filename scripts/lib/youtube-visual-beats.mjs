@@ -172,9 +172,8 @@ export const buildVisualBeatScenes = (beats) =>
 
 const buildModernSceneLabels = (plan, auto) => {
   const coverHeadline = String(auto.coverHeadline ?? plan.coverHeadline ?? '').trim();
-  if (!coverHeadline) {
-    throw new Error('autoFromScript.coverHeadline is required for modern YouTube auto-planning.');
-  }
+  if (!coverHeadline) return null;
+
   const coverWords = countWords(coverHeadline);
   if (coverWords < 2 || coverWords > 7) {
     throw new Error('autoFromScript.coverHeadline must contain 2-7 words.');
@@ -206,16 +205,21 @@ export const resolvePhase1Plan = (plan, planPath = '') => {
   if (beats.length === 0) throw new Error(`No visual beats derived from ${scriptPath}.`);
 
   const sceneLabels = buildModernSceneLabels(plan, auto);
+  const modernTextPolicy = Array.isArray(sceneLabels);
 
   return {
     ...plan,
-    visibleTextLanguage: plan.visibleTextLanguage ?? 'de',
-    flowSourceImageTextPolicy: plan.flowSourceImageTextPolicy ?? 'NONE',
-    preferNoVisibleText: plan.preferNoVisibleText ?? true,
-    renderGermanLabelsInRemotion: plan.renderGermanLabelsInRemotion ?? true,
-    forbidEnglishVisibleText: plan.forbidEnglishVisibleText ?? true,
-    finalTextOverlayPolicy: plan.finalTextOverlayPolicy ?? 'SELECTIVE_GERMAN_KEYWORDS_V1',
-    sceneLabels,
+    ...(modernTextPolicy
+      ? {
+          visibleTextLanguage: plan.visibleTextLanguage ?? 'de',
+          flowSourceImageTextPolicy: plan.flowSourceImageTextPolicy ?? 'NONE',
+          preferNoVisibleText: plan.preferNoVisibleText ?? true,
+          renderGermanLabelsInRemotion: plan.renderGermanLabelsInRemotion ?? true,
+          forbidEnglishVisibleText: plan.forbidEnglishVisibleText ?? true,
+          finalTextOverlayPolicy: plan.finalTextOverlayPolicy ?? 'SELECTIVE_GERMAN_KEYWORDS_V1',
+          sceneLabels,
+        }
+      : {}),
     scenes: buildVisualBeatScenes(beats),
     resolvedFromScript: auto.scriptPath,
   };
