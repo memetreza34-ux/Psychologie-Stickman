@@ -37,7 +37,18 @@ youtube/TT.MM.JJJJ-thema/
     └── weitere QA-/Produktionsdateien
 ```
 
-`01.png` ist immer **Szene 01 + Cover/Thumbnail-Basis + Style-/Anatomie-Master**. Google-Flow-Quellbilder bleiben textfrei; kontrollierter sichtbarer YouTube-Text wird auf Deutsch in Remotion gesetzt.
+`01.png` ist immer **Szene 01 + Cover/Thumbnail + Style-/Anatomie-Master**.
+
+### Cover-Textregel
+
+Google Flow rendert den **exakten deutschen Cover-Titel direkt in `01.png`**.
+
+- 2–7 Wörter
+- korrekte Schreibweise/Umlaute/Satzzeichen
+- außer dem Cover-Titel kein weiterer lesbarer Text in Szene 01
+- Remotion rendert den Cover-Titel nicht noch einmal
+- ab Szene 02 bleiben Google-Flow-Bilder **ZERO READABLE TEXT**
+- ausgewählte spätere deutsche Keywords werden kontrolliert in Remotion gesetzt
 
 ## Reels
 
@@ -56,26 +67,25 @@ THEMA + QUELLEN + CLAIM-CHECK
 → Final-QA
 ```
 
-### Ein-Kommando-Produktion für ein fertiges YouTube-Projekt
+### Ein-Kommando-Produktion
 
-Sobald `03-bilder/`, `04-audio/final-voice.mp3` und `99-intern/phase1-scenes.json` vorliegen:
+Sobald Bilder, `04-audio/final-voice.mp3` und `99-intern/phase1-scenes.json` vorliegen:
 
 ```bash
 npm run produce:youtube -- youtube/TT.MM.JJJJ-thema
 ```
 
 Der Befehl:
-
-1. erzeugt bei fehlenden Wortzeiten automatisch `99-intern/word-timings.json` aus `final-voice.mp3`,
-2. richtet die Whisper-Zeitstempel wieder exakt am finalen deutschen `script.txt` aus,
-3. mappt Phase 1 auf die finalen Wortzeiten,
+1. erzeugt fehlende `word-timings.json` automatisch mit lokalem Whisper.cpp,
+2. richtet die Wortzeiten am finalen deutschen `script.txt` aus,
+3. mappt Phase 1 auf die Wortzeiten,
 4. staged Bilder und Audio automatisch nach `public/`,
-5. führt die Produktionschecks aus,
-6. baut die Remotion-Props,
+5. führt Produktionschecks aus,
+6. baut Remotion-Props,
 7. rendert `05-export/final.mp4`,
 8. prüft Auflösung, 30 fps, Audio und Dateidauer.
 
-Vorhandene Exporte werden nicht überschrieben. Bereits vorhandene nicht-leere Wortzeiten werden wiederverwendet. Zum bewussten Neu-Erzeugen:
+Vorhandene Exporte werden nicht überschrieben. Wortzeiten bewusst neu erzeugen:
 
 ```bash
 npm run produce:youtube -- youtube/TT.MM.JJJJ-thema --force-timings
@@ -83,35 +93,21 @@ npm run produce:youtube -- youtube/TT.MM.JJJJ-thema --force-timings
 
 ## Automatische Word Timings
 
-Die Wortzeiten werden lokal mit **Whisper.cpp** über `@remotion/install-whisper-cpp` erzeugt. Standardmodell ist `small`, Sprache ist Deutsch. Es ist kein API-Key nötig.
+Die Wortzeiten werden lokal mit **Whisper.cpp** über `@remotion/install-whisper-cpp` erzeugt. Standardmodell ist `small`, Sprache Deutsch, kein API-Key nötig.
 
-Beim ersten Lauf werden Whisper.cpp und das Modell unter `.whisper/` installiert bzw. heruntergeladen. Das kann einmalig länger dauern; danach wird der lokale Cache wiederverwendet. `.whisper/` wird nicht committed.
+Beim ersten Lauf werden Whisper.cpp und das Modell unter `.whisper/` installiert bzw. heruntergeladen. Danach wird der lokale Cache wiederverwendet.
 
-Nur die Wortzeiten erzeugen oder prüfen:
+Nur Wortzeiten erzeugen:
 
 ```bash
 npm run timings:youtube -- youtube/TT.MM.JJJJ-thema
 ```
 
-Optional kann das Modell gesetzt werden:
-
-```bash
-WHISPER_MODEL=small npm run timings:youtube -- youtube/TT.MM.JJJJ-thema --force
-```
-
-Nach der Transkription wird nicht einfach der erkannte Whisper-Text übernommen. Die Pipeline gleicht die erkannten Wörter mit dem kanonischen `01-script/script.txt` ab. Kleine Erkennungsfehler oder ausgelassene Einzelwörter werden zeitlich interpoliert; wenn Audio und Skript zu stark voneinander abweichen, bricht die Produktion statt mit falschen Schnitten weiterzulaufen.
+Die Pipeline gleicht Whisper mit dem kanonischen `01-script/script.txt` ab. Kleine Erkennungsfehler können interpoliert werden; bei deutlich falschem Audio/Skript wird abgebrochen.
 
 ## Warum `public/` existiert
 
-`youtube/.../03-bilder/` und `youtube/.../04-audio/` sind die **kanonischen Nutzerordner**. Remotion lädt statische Medien jedoch über `public/`.
-
-Darum wird `public/` nur als automatisch erzeugte Staging-Fläche verwendet. Der Nutzer kopiert Medien nicht manuell doppelt.
-
-Manuell testen:
-
-```bash
-npm run stage:assets -- youtube/TT.MM.JJJJ-thema/99-intern/scene-plan.json
-```
+`youtube/.../03-bilder/` und `youtube/.../04-audio/` sind die kanonischen Nutzerordner. `public/` ist nur die automatisch erzeugte Remotion-Staging-Fläche.
 
 ## Qualitätssicherung
 
@@ -121,4 +117,4 @@ npm run qa:word-timings
 npm run qa:render-smoke
 ```
 
-Die GitHub-CI führt `npm run check` und den echten Remotion-Smoke-Render aus. Die Word-Timing-QA testet zusätzlich kanonische Skriptausrichtung, Interpolation bei einzelnen Erkennungsfehlern und den Abbruch bei deutlich falschem Audio/Skript. Der Smoke-Test rendert ein echtes kurzes Remotion-Video und erkennt dadurch Fehler, die ein reiner TypeScript-Check nicht sehen würde.
+Die CI prüft zusätzlich den echten Remotion-Smoke-Render. Für Szene 01 bleibt eine visuelle Freigabe nötig, insbesondere für **exakte Cover-Titel-Schreibweise und Thumbnail-Qualität**.
