@@ -1,5 +1,6 @@
 node_modules/
 .remotion/
+.whisper/
 .DS_Store
 tmp/
 outputs/
