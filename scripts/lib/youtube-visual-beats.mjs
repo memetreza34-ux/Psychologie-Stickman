@@ -132,7 +132,11 @@ const normalizeFlowTextMoments = ({coverHeadline, flowTextMoments = [], sceneCou
 
 export const buildVisualBeatScenes = (beats, options = {}) => {
   const coverHeadline = String(options.coverHeadline ?? '').trim();
-  const moments = normalizeFlowTextMoments({coverHeadline, flowTextMoments: options.flowTextMoments ?? [], sceneCount: beats.length});
+  const suppliedMoments = Array.isArray(options.flowTextMoments) ? options.flowTextMoments : [];
+  const hasModernTextPlan = Boolean(coverHeadline) || suppliedMoments.length > 0;
+  const moments = hasModernTextPlan
+    ? normalizeFlowTextMoments({coverHeadline, flowTextMoments: suppliedMoments, sceneCount: beats.length})
+    : [];
   const byScene = new Map(moments.map((moment) => [moment.scene, moment]));
 
   return beats.map((beat, index) => {
