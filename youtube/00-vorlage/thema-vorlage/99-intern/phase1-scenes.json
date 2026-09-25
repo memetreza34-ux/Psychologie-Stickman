@@ -1,0 +1,23 @@
+{
+  "status": "PENDING",
+  "format": "youtube",
+  "aspectRatio": "16:9",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "batchSize": 5,
+  "requireMasterApproval": true,
+  "requireBatchApproval": false,
+  "autoContinueAfterBatchPass": true,
+  "visibleTextLanguage": "de",
+  "flowSourceImageTextPolicy": "NONE",
+  "preferNoVisibleText": true,
+  "renderGermanLabelsInRemotion": true,
+  "forbidEnglishVisibleText": true,
+  "finalTextOverlayPolicy": "SELECTIVE_GERMAN_KEYWORDS_V1",
+  "recommendedTargetWords": 14,
+  "recommendedMaxWords": 20,
+  "semanticSplit": true,
+  "coverHeadline": "",
+  "sceneLabels": [],
+  "scenes": []
+}
