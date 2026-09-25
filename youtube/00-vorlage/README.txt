@@ -20,9 +20,19 @@ Jedes neue YouTube-Projekt verwendet nur diese sichtbaren Arbeitsordner:
 - hier `final-voice.mp3` ablegen
 
 05-export/
-- hier den fertigen Videoexport ablegen
+- `final.mp4` wird hier erzeugt
+- bestehende Exporte werden nicht überschrieben
 
 99-intern/
-- technische Dateien, Quellen, QA, Style, Continuity, Cover-/Keyword-Texte und Pipeline-Metadaten
+- `phase1-scenes.json`
+- `word-timings.json`
+- `scene-plan.json`
+- `render-props.json`
+- Quellen, QA, Style, Continuity und weitere Pipeline-Metadaten
 
-Für die normale Arbeit braucht der Nutzer nur `script.txt` und `google-flow-prompt.txt` zu öffnen.
+Für die normale Arbeit braucht der Nutzer nur `script.txt`, `google-flow-prompt.txt`, Bilder und Audio zu öffnen.
+
+Sobald Bilder, finales Audio und Word Timings fertig sind:
+`npm run produce:youtube -- youtube/TT.MM.JJJJ-thema`
+
+Remotion-Assets werden automatisch nach `public/` gestaged. Kein manuelles Doppelt-Kopieren.
