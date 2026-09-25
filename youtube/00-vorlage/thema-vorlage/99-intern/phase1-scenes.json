@@ -10,11 +10,14 @@
   "autoContinueAfterBatchPass": true,
   "visibleTextLanguage": "de",
   "flowSourceImageTextPolicy": "NONE",
+  "preferNoVisibleText": true,
   "renderGermanLabelsInRemotion": true,
   "forbidEnglishVisibleText": true,
+  "finalTextOverlayPolicy": "SELECTIVE_GERMAN_KEYWORDS_V1",
   "recommendedTargetWords": 14,
   "recommendedMaxWords": 20,
   "semanticSplit": true,
+  "coverHeadline": "",
   "sceneLabels": [],
   "scenes": []
 }

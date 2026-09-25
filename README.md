@@ -4,44 +4,98 @@ Deutschsprachiger Kanal zu **Alltagspsychologie & menschlichem Verhalten**.
 
 Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
 
-## Hauptstruktur
+## Aktiver Standard
+
+Bildwelt: **Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY**.
+
+Verbindliche Regeln beginnen in `CANONICAL_RULES.md`; die detaillierten Locks liegen unter `rules/`.
+
+## YouTube-Struktur
+
+Jedes moderne Longform-Projekt unter `youtube/` verwendet:
 
 ```text
-youtube/
-├── 00-vorlage/
-└── [01-themenname]/
-    ├── 01-script-audio/
-    ├── 02-bilder/
-    ├── 03-quellen/
-    ├── 04-schnitt/
-    └── 06-projektdateien/
-
-reels/
-├── 00-vorlage/
-└── TT.MM.JJJJ-bis-TT.MM.JJJJ/
-    ├── 1-montag/
-    ├── 2-dienstag/
-    ├── 3-mittwoch/
-    ├── 4-donnerstag/
-    ├── 5-freitag/
-    ├── 6-samstag/
-    └── 7-sonntag/
+youtube/TT.MM.JJJJ-thema/
+├── 01-script/
+│   └── script.txt
+├── 02-google-flow/
+│   └── google-flow-prompt.txt
+├── 03-bilder/
+│   ├── 01.png
+│   ├── 02.png
+│   └── ...
+├── 04-audio/
+│   └── final-voice.mp3
+├── 05-export/
+│   └── final.mp4
+└── 99-intern/
+    ├── phase1-scenes.json
+    ├── word-timings.json
+    ├── scene-plan.json
+    ├── render-props.json
+    ├── quellen/
+    └── weitere QA-/Produktionsdateien
 ```
 
-**YouTube und Reels sind vollständig getrennt.** In `youtube/` liegen keine Reels und in `reels/` keine Longform-Projekte.
+`01.png` ist immer **Szene 01 + Cover/Thumbnail-Basis + Style-/Anatomie-Master**. Google-Flow-Quellbilder bleiben textfrei; kontrollierter sichtbarer YouTube-Text wird auf Deutsch in Remotion gesetzt.
 
-## Bildwelt
+## Reels
 
-**Universal Editorial Stickman World v1.1 — LOCKED**
+Reels bleiben vollständig getrennt unter `reels/` und nutzen 9:16. YouTube und Reels werden weder in Ordnerstruktur noch Renderformat vermischt.
 
-Regeln: `rules/YOUTUBE_STYLE_LOCK.md`
+## Produktionsfolge
 
-Jede sichtbare menschliche Figur bleibt Stickman. Räume, Architektur, Kleidung, Technik, Gegenstände, Perspektive und Licht dürfen deutlich detailreicher und realitätsnäher sein.
+```text
+THEMA + QUELLEN + CLAIM-CHECK
+→ finales Skript
+→ Phase 1 Visual Beats
+→ Google-Flow-Bilder
+→ finales Voice-over
+→ Word Timings
+→ Phase 3 / Remotion
+→ Final-QA
+```
 
-## Themen
+### Ein-Kommando-Render für ein fertiges YouTube-Projekt
 
-Verbindlich: `rules/YOUTUBE_THEMEN_SYSTEM.md`
+Sobald `03-bilder/`, `04-audio/final-voice.mp3`, `99-intern/phase1-scenes.json` und eine nicht-leere `99-intern/word-timings.json` vorliegen:
 
-## Aktueller Test
+```bash
+npm run produce:youtube -- youtube/TT.MM.JJJJ-thema
+```
 
-`reels/21.09.2026-bis-27.09.2026/1-montag/` — „Warum greifen wir automatisch zum Handy?“
+Der Befehl:
+
+1. mappt Phase 1 auf die finalen Wortzeiten,
+2. staged Bilder und Audio automatisch nach `public/`,
+3. führt die Produktionschecks aus,
+4. baut die Remotion-Props,
+5. rendert `05-export/final.mp4`,
+6. prüft Auflösung, 30 fps, Audio und Dateidauer.
+
+Vorhandene Exporte werden nicht überschrieben.
+
+## Warum `public/` existiert
+
+`youtube/.../03-bilder/` und `youtube/.../04-audio/` sind die **kanonischen Nutzerordner**. Remotion lädt statische Medien jedoch über `public/`.
+
+Darum wird `public/` nur als automatisch erzeugte Staging-Fläche verwendet. Der Nutzer kopiert Medien nicht manuell doppelt.
+
+Manuell testen:
+
+```bash
+npm run stage:assets -- youtube/TT.MM.JJJJ-thema/99-intern/scene-plan.json
+```
+
+## Qualitätssicherung
+
+```bash
+npm run check
+npm run qa:render-smoke
+```
+
+Die GitHub-CI führt beide Schritte aus. Der Smoke-Test rendert ein echtes kurzes Remotion-Video und erkennt dadurch Fehler, die ein reiner TypeScript-Check nicht sehen würde.
+
+## Aktuelle technische Grenze
+
+`word-timings.json` muss derzeit aus dem final bearbeiteten Voice-over erzeugt bzw. importiert werden, bevor `produce:youtube` laufen kann. Die Renderpipeline selbst ist danach durchgängig automatisiert.
