@@ -71,6 +71,7 @@ console.log('First run may download/build Whisper.cpp and the model. Later runs 
 const {downloadWhisperModel, installWhisperCpp, toCaptions, transcribe} = await import('@remotion/install-whisper-cpp');
 
 try {
+  fs.mkdirSync(path.dirname(whisperPath), {recursive: true});
   await installWhisperCpp({to: whisperPath, version: whisperVersion});
   await downloadWhisperModel({model: whisperModel, folder: whisperPath});
 
