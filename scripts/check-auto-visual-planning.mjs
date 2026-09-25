@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import {buildVisualBeatScenes, splitScriptIntoVisualBeats} from './lib/youtube-visual-beats.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
+import {buildVisualBeatScenes, resolvePhase1Plan, splitScriptIntoVisualBeats} from './lib/youtube-visual-beats.mjs';
 
 const sampleScript = `
 Du willst anfangen, aber dein Handy zieht deine Aufmerksamkeit weg.
@@ -53,6 +55,36 @@ if (uniqueCameras.size < Math.min(5, scenes.length)) {
   failures.push(`camera variation too low: ${uniqueCameras.size} unique camera plans across ${scenes.length} scenes`);
 }
 
+const tmpDir = path.resolve('tmp');
+const tmpScript = path.join(tmpDir, 'auto-visual-planning-script.txt');
+fs.mkdirSync(tmpDir, {recursive: true});
+fs.writeFileSync(tmpScript, sampleScript.trim());
+try {
+  const resolved = resolvePhase1Plan({
+    format: 'youtube',
+    autoFromScript: {
+      scriptPath: tmpScript,
+      targetWords: 14,
+      maxWords: 20,
+      semanticSplit: true,
+      coverHeadline: 'WARUM SCHIEBEN WIR AUF?',
+    },
+  }, 'auto-planning-qa');
+
+  if (resolved.finalTextOverlayPolicy !== 'SELECTIVE_GERMAN_KEYWORDS_V1') {
+    failures.push('auto plan must opt into SELECTIVE_GERMAN_KEYWORDS_V1');
+  }
+  if (resolved.visibleTextLanguage !== 'de') failures.push("auto plan visibleTextLanguage must be 'de'");
+  if (resolved.flowSourceImageTextPolicy !== 'NONE') failures.push('auto plan Flow text policy must be NONE');
+  if (resolved.renderGermanLabelsInRemotion !== true) failures.push('auto plan must render German labels in Remotion');
+  const coverLabels = resolved.sceneLabels?.filter((label) => label.scene === 1 && label.variant === 'cover') ?? [];
+  if (coverLabels.length !== 1 || coverLabels[0].text !== 'WARUM SCHIEBEN WIR AUF?') {
+    failures.push('auto plan must create exactly one scene-1 cover label from coverHeadline');
+  }
+} finally {
+  fs.rmSync(tmpScript, {force: true});
+}
+
 if (failures.length > 0) {
   console.error('\nAUTO VISUAL PLANNING QA: FAIL\n');
   failures.forEach((failure) => console.error(`- ${failure}`));
@@ -60,5 +92,5 @@ if (failures.length > 0) {
 }
 
 console.log(
-  `AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, Scene 01 cover/master locked, ${uniqueCameras.size} camera plans, structured CAST/ORT/HANDLUNG/KAMERA fields present.`,
+  `AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, Scene 01 cover/master locked, ${uniqueCameras.size} camera plans, structured CAST/ORT/HANDLUNG/KAMERA fields present, modern German cover policy generated.`,
 );
