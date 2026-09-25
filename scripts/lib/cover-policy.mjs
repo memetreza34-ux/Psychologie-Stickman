@@ -24,20 +24,23 @@ export const readSidecarCoverPolicy = (sourceFilePath) => {
   return {...parsed, policyPath, projectRoot};
 };
 
+const GOOGLE_FLOW_POLICIES = new Set([
+  'SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY',
+  'PLANNED_EXACT_GERMAN_TEXT_ONLY',
+]);
+
 export const resolveCoverPolicy = (plan, sourceFilePath = '') => {
   const sidecar = sourceFilePath ? readSidecarCoverPolicy(sourceFilePath) : null;
   const renderer = String(sidecar?.coverTextRenderer ?? plan?.coverTextRenderer ?? '').trim().toUpperCase();
   const headline = String(sidecar?.coverHeadline ?? plan?.coverHeadline ?? '').trim();
-  const flowPolicy = String(
-    sidecar?.flowSourceImageTextPolicy ?? plan?.flowSourceImageTextPolicy ?? '',
-  ).trim();
+  const flowPolicy = String(sidecar?.flowSourceImageTextPolicy ?? plan?.flowSourceImageTextPolicy ?? '').trim();
 
-  const isGoogleFlow = renderer === 'GOOGLE_FLOW' || flowPolicy === 'SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY';
+  const isGoogleFlow = renderer === 'GOOGLE_FLOW' || GOOGLE_FLOW_POLICIES.has(flowPolicy);
   return {
     isGoogleFlow,
     coverTextRenderer: isGoogleFlow ? 'GOOGLE_FLOW' : renderer || 'REMOTION',
     coverHeadline: headline,
-    flowSourceImageTextPolicy: isGoogleFlow ? 'SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY' : flowPolicy || 'NONE',
+    flowSourceImageTextPolicy: isGoogleFlow ? (flowPolicy || 'SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY') : flowPolicy || 'NONE',
     sidecar,
   };
 };
@@ -47,4 +50,7 @@ export const assertValidFlowCoverPolicy = (policy, context = 'cover policy') => 
   const words = countCoverWords(policy.coverHeadline);
   if (!policy.coverHeadline) throw new Error(`${context}: coverHeadline is required for GOOGLE_FLOW cover rendering.`);
   if (words < 2 || words > 7) throw new Error(`${context}: coverHeadline must contain 2-7 words.`);
+  if (!GOOGLE_FLOW_POLICIES.has(policy.flowSourceImageTextPolicy)) {
+    throw new Error(`${context}: unsupported Google Flow text policy '${policy.flowSourceImageTextPolicy}'.`);
+  }
 };
