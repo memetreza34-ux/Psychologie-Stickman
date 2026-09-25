@@ -12,9 +12,9 @@
 
 **Verbindliches Cover-Asset: `03-bilder/01.png`.**
 
-Szene 01 = Cover/Thumbnail-Basis + erster Visual Beat + Style-/Anatomie-Master.
+Szene 01 = Cover/Thumbnail + erster Visual Beat + Style-/Anatomie-Master.
 
-Cover-Headline in Remotion:
+Exakter Titel, direkt von Google Flow in `01.png` zu rendern:
 **WARUM BLEIBT NEGATIVES HÄNGEN?**
 
 Cover-Komposition:
@@ -23,20 +23,22 @@ Cover-Komposition:
 - ein einzelner kritischer/dunkler Impuls zieht den Blick an
 - moderne Coworking-Lounge
 - Hintergrundfiguren bleiben echte Stickmen und sind mit eigenen Dingen beschäftigt
-- ruhige linke Fläche für die große deutsche Cover-Headline
-- Flow-Quellbild bleibt vollständig textfrei
+- Titel groß und klar links/oben links
+- außer dem exakten Titel kein weiterer lesbarer Text
+- bei Schreibfehlern Szene 01 regenerieren
+- Remotion darf den Cover-Titel nicht duplizieren
 
 ## Selektive Textmomente
-- 01 — WARUM BLEIBT NEGATIVES HÄNGEN? — cover
-- 04 — NEGATIVITÄTSBIAS
-- 09 — NEGATIVES WIEGT SCHWERER
-- 15 — AUFMERKSAMKEIT
-- 21 — GESAMTBILD
-- 25 — VERZERRTE GEWICHTUNG
-- 31 — EIN DATENPUNKT
-- 34 — NICHT DIE GANZE BÜHNE
+- 01 — WARUM BLEIBT NEGATIVES HÄNGEN? — **Google Flow Cover-Titel**
+- 04 — NEGATIVITÄTSBIAS — Remotion Keyword
+- 09 — NEGATIVES WIEGT SCHWERER — Remotion Keyword
+- 15 — AUFMERKSAMKEIT — Remotion Keyword
+- 21 — GESAMTBILD — Remotion Keyword
+- 25 — VERZERRTE GEWICHTUNG — Remotion Keyword
+- 31 — EIN DATENPUNKT — Remotion Keyword
+- 34 — NICHT DIE GANZE BÜHNE — Remotion Keyword
 
-8 von 35 Szenen = ca. 23 % Textdichte. Alle Texte werden kontrolliert in Remotion gerendert; Flow bleibt ZERO READABLE TEXT.
+8 von 35 Szenen = ca. 23 % sichtbare Textmomente. Nur der Cover-Titel wird in Flow erzeugt; Szene 02+ bleibt in Flow textfrei und spätere Keywords werden kontrolliert in Remotion gerendert.
 
 ## Kurzbeschreibung
 Warum bleibt ein einziger kritischer Kommentar oft stärker hängen als viele nette Rückmeldungen? Dieses Video erklärt den Negativitätsbias: die psychologische Tendenz, negativen Informationen häufig mehr Gewicht zu geben als vergleichbar positiven.
