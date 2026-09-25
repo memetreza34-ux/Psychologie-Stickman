@@ -16,8 +16,12 @@ Am Abend arbeitest du schließlich ruhig weiter.
 `;
 
 const coverHeadline = 'WARUM SCHIEBEN WIR AUF?';
+const flowTextMoments = [
+  {scene: 1, kind: 'cover', text: coverHeadline},
+  {scene: 4, kind: 'keyword', text: 'KLEINER START'},
+];
 const beats = splitScriptIntoVisualBeats(sampleScript, {targetWords: 14, maxWords: 20, semanticSplit: true});
-const scenes = buildVisualBeatScenes(beats, {coverHeadline});
+const scenes = buildVisualBeatScenes(beats, {coverHeadline, flowTextMoments});
 const requiredFields = ['visualIdea', 'subject', 'action', 'environment', 'camera', 'continuityPolicy', 'textPolicy', 'visualTask'];
 const failures = [];
 
@@ -25,16 +29,16 @@ if (scenes.length < 6) failures.push(`expected at least 6 generated scenes, got 
 
 for (const scene of scenes) {
   for (const field of requiredFields) {
-    if (typeof scene[field] !== 'string' || scene[field].trim() === '') {
-      failures.push(`scene ${scene.scene}: missing required planning field '${field}'`);
-    }
+    if (typeof scene[field] !== 'string' || scene[field].trim() === '') failures.push(`scene ${scene.scene}: missing required planning field '${field}'`);
   }
   if (scene.scene === 1) {
-    if (scene.textPolicy !== 'EXACT_GERMAN_COVER_TITLE_ONLY') failures.push('scene 1 must use EXACT_GERMAN_COVER_TITLE_ONLY');
-    if (!scene.visualTask.includes(coverHeadline)) failures.push('scene 1 visualTask must contain the exact cover headline');
-  } else if (scene.textPolicy !== 'NONE') {
-    failures.push(`scene ${scene.scene}: textPolicy must be NONE after the cover`);
-  }
+    if (scene.textPolicy !== 'FLOW_EXACT_COVER_TEXT') failures.push('scene 1 must use FLOW_EXACT_COVER_TEXT');
+    if (scene.flowText !== coverHeadline) failures.push('scene 1 must carry exact cover text');
+  } else if (scene.scene === 4) {
+    if (scene.textPolicy !== 'FLOW_EXACT_KEYWORD_TEXT') failures.push('scene 4 must use FLOW_EXACT_KEYWORD_TEXT');
+    if (scene.flowText !== 'KLEINER START') failures.push('scene 4 must carry exact Flow keyword');
+  } else if (scene.textPolicy !== 'NONE') failures.push(`scene ${scene.scene}: unplanned scene must be text-free`);
+
   if (scene.continuityPolicy !== 'NEW_CHARACTER_DEFAULT_UNLESS_LOCAL_CONTINUITY') failures.push(`scene ${scene.scene}: wrong continuityPolicy`);
   if (!/CAST:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing CAST planning`);
   if (!/ORT:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing ORT planning`);
@@ -62,6 +66,7 @@ fs.writeFileSync(tmpScript, sampleScript.trim());
 try {
   const resolved = resolvePhase1Plan({
     format: 'youtube',
+    flowTextMoments,
     autoFromScript: {
       scriptPath: tmpScript,
       targetWords: 14,
@@ -71,14 +76,15 @@ try {
     },
   }, 'auto-planning-qa');
 
-  if (resolved.finalTextOverlayPolicy !== 'FLOW_COVER_TITLE_KEYWORDS_V2') failures.push('auto plan must opt into FLOW_COVER_TITLE_KEYWORDS_V2');
+  if (resolved.finalTextPolicy !== 'FLOW_VISIBLE_TEXT_ONLY_V3') failures.push('auto plan must opt into FLOW_VISIBLE_TEXT_ONLY_V3');
   if (resolved.visibleTextLanguage !== 'de') failures.push("auto plan visibleTextLanguage must be 'de'");
-  if (resolved.flowSourceImageTextPolicy !== 'SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY') failures.push('auto plan Flow text policy must use the Scene-01 cover exception');
+  if (resolved.visibleTextRenderer !== 'GOOGLE_FLOW') failures.push('auto plan visibleTextRenderer must be GOOGLE_FLOW');
+  if (resolved.flowSourceImageTextPolicy !== 'PLANNED_EXACT_GERMAN_TEXT_ONLY') failures.push('auto plan Flow text policy is wrong');
   if (resolved.coverTextRenderer !== 'GOOGLE_FLOW') failures.push('auto plan coverTextRenderer must be GOOGLE_FLOW');
   if (resolved.coverHeadline !== coverHeadline) failures.push('auto plan must preserve exact coverHeadline');
-  if (resolved.renderGermanLabelsInRemotion !== true) failures.push('auto plan must keep Remotion enabled for later keywords');
-  const coverLabels = resolved.sceneLabels?.filter((label) => label.variant === 'cover') ?? [];
-  if (coverLabels.length !== 0) failures.push('new auto plan must not create a Remotion cover label');
+  if (resolved.renderGermanLabelsInRemotion !== false) failures.push('auto plan must disable all Remotion text');
+  if ((resolved.sceneLabels ?? []).length !== 0) failures.push('new YouTube auto plan must keep sceneLabels empty');
+  if ((resolved.flowTextMoments ?? []).length !== 2) failures.push('auto plan must preserve Flow text moments');
 } finally {
   fs.rmSync(tmpScript, {force: true});
 }
@@ -89,4 +95,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log(`AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, Scene 01 Flow cover-title/master locked, ${uniqueCameras.size} camera plans, later scenes text-free.`);
+console.log(`AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, all planned visible text is Google Flow-native, ${uniqueCameras.size} camera plans.`);
