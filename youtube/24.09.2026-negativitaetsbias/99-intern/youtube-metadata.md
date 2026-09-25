@@ -24,21 +24,27 @@ Cover-Komposition:
 - moderne Coworking-Lounge
 - Hintergrundfiguren bleiben echte Stickmen und sind mit eigenen Dingen beschäftigt
 - Titel groß und klar links/oben links
+- Titel vollständig innerhalb der Safe Area
 - außer dem exakten Titel kein weiterer lesbarer Text
-- bei Schreibfehlern Szene 01 regenerieren
-- Remotion darf den Cover-Titel nicht duplizieren
+- bei Schreibfehlern oder abgeschnittenen Buchstaben Szene 01 regenerieren
 
-## Selektive Textmomente
-- 01 — WARUM BLEIBT NEGATIVES HÄNGEN? — **Google Flow Cover-Titel**
-- 04 — NEGATIVITÄTSBIAS — Remotion Keyword
-- 09 — NEGATIVES WIEGT SCHWERER — Remotion Keyword
-- 15 — AUFMERKSAMKEIT — Remotion Keyword
-- 21 — GESAMTBILD — Remotion Keyword
-- 25 — VERZERRTE GEWICHTUNG — Remotion Keyword
-- 31 — EIN DATENPUNKT — Remotion Keyword
-- 34 — NICHT DIE GANZE BÜHNE — Remotion Keyword
+## Sichtbare Textmomente — ALLE DIREKT AUS GOOGLE FLOW
+- 01 — **WARUM BLEIBT NEGATIVES HÄNGEN?** — Cover
+- 04 — **NEGATIVITÄTSBIAS**
+- 09 — **NEGATIVES WIEGT SCHWERER**
+- 15 — **AUFMERKSAMKEIT**
+- 21 — **GESAMTBILD**
+- 25 — **VERZERRTE GEWICHTUNG**
+- 31 — **EIN DATENPUNKT**
+- 34 — **NICHT DIE GANZE BÜHNE**
 
-8 von 35 Szenen = ca. 23 % sichtbare Textmomente. Nur der Cover-Titel wird in Flow erzeugt; Szene 02+ bleibt in Flow textfrei und spätere Keywords werden kontrolliert in Remotion gerendert.
+8 von 35 Szenen = ca. 23 % sichtbare Textmomente.
+
+**Google Flow rendert alle acht Texte direkt in die jeweiligen Bilder.**
+
+Für alle übrigen Szenen gilt ZERO READABLE TEXT.
+
+**Remotion rendert keinerlei sichtbaren Text, keine Keywords, keine Labels und keine YouTube-Captions.**
 
 ## Kurzbeschreibung
 Warum bleibt ein einziger kritischer Kommentar oft stärker hängen als viele nette Rückmeldungen? Dieses Video erklärt den Negativitätsbias: die psychologische Tendenz, negativen Informationen häufig mehr Gewicht zu geben als vergleichbar positiven.
