@@ -1,26 +1,26 @@
-# Migration — faceless-erklaerkanal → Stickman-youtube-
+# Migration-Historie — faceless-erklaerkanal → Stickman-youtube-
 
-Quelle: `memetreza34-ux/faceless-erklaerkanal`
+**Status: historische Referenz, keine aktive Regeldatei.**
 
-## Ziel
+Quelle der ursprünglichen technischen Migration: `memetreza34-ux/faceless-erklaerkanal`.
 
-Nur technische Produktionslogik wurde übernommen. Themenwelt und Bildwelt wurden neu festgelegt.
+## Was übernommen wurde
 
-## Aktiver Grundzustand
+Übernommen wurde nur technische Produktionslogik. Kanalpositionierung, Themenwelt und Bildwelt wurden anschließend im aktuellen Repository neu definiert.
 
-- Kanalpositionierung: **Alltagspsychologie & menschliches Verhalten**
-- Themen-System: `rules/YOUTUBE_THEMEN_SYSTEM.md`
-- Bildwelt: **Universal Editorial Stickman World v1.1 — LOCKED**
-- Style-Lock: `rules/YOUTUBE_STYLE_LOCK.md`
-- YouTube: `youtube/`
-- Reels: `reels/`
-- aktueller Pilot: `reels/21.09.2026-bis-27.09.2026/1-montag/`
+## Heutiger Stand
 
-## Strukturentscheidung
+- Kanal: **Alltagspsychologie & menschliches Verhalten**
+- Bildwelt: **Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY**
+- aktive Regeln: `CANONICAL_RULES.md` und `rules/`
+- YouTube-Longform: `youtube/`
+- Reels/Shorts: `reels/`
+- moderne YouTube-Projektstruktur: `01-script/`, `02-google-flow/`, `03-bilder/`, `04-audio/`, `05-export/`, `99-intern/`
 
-Wie im früheren Erklärkanal sind YouTube und Reels getrennte Produktionsflächen. Reels werden nach Wochen und Wochentagen organisiert; YouTube-Projekte liegen direkt als Themenordner unter `youtube/`.
+## Nicht mehr verwendete historische Pfade
 
-Nicht mehr verwendet werden:
 - `youtube/longform/`
 - `youtube/reels/`
 - `channels/dinge-erklaert/`
+
+Bei einem Widerspruch zwischen dieser Datei und den aktuellen Regeldateien gilt immer der aktuelle Regelbestand. Diese Datei dokumentiert nur die Herkunft des Repositories.
