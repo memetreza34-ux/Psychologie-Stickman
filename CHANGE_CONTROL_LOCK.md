@@ -36,6 +36,11 @@ THEMA + QUELLEN + CLAIM-CHECK → FINALES SCRIPT → PHASE 1 → PHASE 2 → PHA
 - Bildweltänderung: konkrete visuelle Phase-1-Aufgaben und Phase 2 neu erzeugen
 - reine Audioänderung: Timings/Phase 3 neu erzeugen
 
-## Visual-World-Sperre dieses Repos
+## Aktive Visual-World-Sperre
 
-Die frühere Bildwelt ist nicht Teil dieses Repositories. Solange `YOUTUBE_STYLE_LOCK.md` = `UNSET`, keine finale Bildproduktion freigeben.
+Die verbindliche Bildwelt ist in `rules/STICKMAN_DNA.md`, `rules/YOUTUBE_STYLE_LOCK.md` und `rules/IMAGE_REFERENCE_LOCK.md` festgelegt.
+
+Aktueller Standard:
+**Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY**.
+
+Keine frühere Bildwelt und keine alten Quellrepo-Prompts dürfen die aktuelle Stickman-DNA stillschweigend überschreiben.
