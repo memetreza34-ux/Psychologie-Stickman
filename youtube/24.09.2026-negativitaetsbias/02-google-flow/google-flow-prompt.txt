@@ -45,31 +45,34 @@ Simple Stickmen. Rich World. One clear idea per image.
 - no dense collages, dashboards or repeated card layouts
 - vary cast, clothing, role, location, pose, camera distance and composition
 
-COVER TITLE — GOOGLE FLOW HARD LOCK
-Scene 01 is the cover, first visual beat and style/anatomy master.
-EXACT GERMAN COVER TITLE: "WARUM BLEIBT NEGATIVES HÄNGEN?"
-Google Flow MUST render this exact title directly inside Scene 01.
-- spell every word exactly
-- preserve the question mark
-- large, bold, clean, highly legible thumbnail typography
-- place title on the left / upper-left while the main Stickman remains clear on the right
-- NO OTHER READABLE TEXT in Scene 01
-- no extra subtitle, badge, UI word, logo, poster text or pseudo-writing
-- if any letter, word or punctuation is wrong: reject and regenerate Scene 01
-- Remotion MUST NOT add this cover title again
+VISIBLE TEXT — GOOGLE FLOW ONLY
+FLOW_VISIBLE_TEXT_ONLY_V3.
+All visible text in this YouTube video must be rendered directly inside the Google Flow images.
+NO REMOTION TEXT. Remotion must not add, recreate or overlay cover titles, keywords, labels or captions.
 
-SCENE 02+ — ZERO READABLE TEXT
-From Scene 02 onward, every Google Flow source image must contain ZERO READABLE TEXT.
+PLANNED EXACT GERMAN TEXT MOMENTS
+- Scene 01 — COVER — "WARUM BLEIBT NEGATIVES HÄNGEN?"
+- Scene 04 — KEYWORD — "NEGATIVITÄTSBIAS"
+- Scene 09 — KEYWORD — "NEGATIVES WIEGT SCHWERER"
+- Scene 15 — KEYWORD — "AUFMERKSAMKEIT"
+- Scene 21 — KEYWORD — "GESAMTBILD"
+- Scene 25 — KEYWORD — "VERZERRTE GEWICHTUNG"
+- Scene 31 — KEYWORD — "EIN DATENPUNKT"
+- Scene 34 — KEYWORD — "NICHT DIE GANZE BÜHNE"
+
+For every planned text scene:
+- render exactly the specified German text
+- preserve spelling, umlauts and punctuation
+- keep all letters fully inside the safe frame
+- typography must be clean and highly legible
+- NO OTHER READABLE TEXT
+- if any word, letter or punctuation is wrong, reject and regenerate only that image
+
+For every other scene:
+- ZERO READABLE TEXT
 - no German or English words
-- no letters, labels, subtitles, UI words, poster text, document text or logos
+- no labels, subtitles, UI words, poster text, document text or logos
 - screens and papers use abstract lines, blocks, icons and shapes only
-- do not copy, recreate or imitate the cover title from 01.png
-- do not copy speech context into the image
-
-SELECTIVE FINAL TEXT SYSTEM
-Scene 01 title is already rendered by Google Flow.
-German keyword labels are added later in Remotion only for selected later scenes: 04, 09, 15, 21, 25, 31 and 34.
-For those scenes reserve calm negative space without sacrificing the main visual idea. Never draw these later keywords in Flow.
 
 CAST VARIATION — HARD LOCK
 STYLE CONSISTENCY DOES NOT MEAN CHARACTER CLONING.
@@ -86,14 +89,14 @@ BEFORE EACH SCENE DECIDE
 4. CAMERA — what angle/distance makes it instantly readable?
 
 MASTER REFERENCE WORKFLOW
-1. Generate SCENE 01 ONLY as COVER + FIRST VISUAL BEAT + STYLE/ANATOMY MASTER, including the exact German cover title.
+1. Generate SCENE 01 ONLY as COVER + FIRST VISUAL BEAT + STYLE/ANATOMY MASTER including its exact German cover title.
 2. STOP.
 3. Wait for user approval.
-4. User must verify exact title spelling before approval.
+4. Verify exact title spelling and complete safe-frame placement.
 5. Save approved image as 03-bilder/01.png.
 6. For EVERY image from Scene 02 onward attach 01.png as STYLE/ANATOMY reference.
 7. Master does NOT lock identity, clothing, cast size, location, pose, camera or composition.
-8. Master cover text belongs ONLY to Scene 01 and must not be copied into later scenes.
+8. Do not copy or recreate text from 01.png in later scenes unless that later scene has its own explicit EXACT GERMAN TEXT instruction.
 
 AUTOMATIC BATCH WORKFLOW
 MASTER/COVER: 01
@@ -104,16 +107,17 @@ Batch 4: 17–21
 Batch 5: 22–26
 Batch 6: 27–31
 Batch 7: 32–35
-After Scene 01 approval, generate only the current batch, max 5 images. Internally QA anatomy, meaning, cast/location/camera variety and text freedom. Regenerate only failed images and continue automatically after PASS.
+After Scene 01 approval, generate only the current batch, max 5 images. Internally QA anatomy, meaning, cast/location/camera variety and text accuracy. Regenerate only failed images and continue automatically after PASS.
 
 REFERENCE CLAUSE FOR SCENE 02+
-Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone or text template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. Reuse exact people only in LOCAL CONTINUITY scenes. IMPORTANT: do not copy, recreate or imitate the cover title from 01.png. ZERO READABLE TEXT.
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone or text template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. Reuse exact people only in LOCAL CONTINUITY scenes. IMPORTANT: do not copy or recreate the cover title from 01.png. Only render readable text when the current scene explicitly provides EXACT GERMAN TEXT; otherwise ZERO READABLE TEXT.
 
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Du bekommst zehn nette Rückmeldungen und einen einzigen kritischen Kommentar.
+EXACT GERMAN COVER TITLE: "WARUM BLEIBT NEGATIVES HÄNGEN?"
 PROMPT:
-COVER + MASTER STYLE FRAME. A young adult true Stickman in a modern coworking lounge looks at a smartphone after receiving feedback. Around the phone and in the environment, use many small soft positive reaction symbols/icons and one single darker critical reaction shape that strongly pulls the character's attention. Do not create readable chat bubbles. Make the main Stickman large on the right side with clear concerned body language. Background: 3–4 differently dressed true Stickmen continue normal activities and do not stare. Strong thumbnail hierarchy, rich believable lounge, clean 2D editorial look. Render the EXACT GERMAN COVER TITLE "WARUM BLEIBT NEGATIVES HÄNGEN?" large and highly legible on the left/upper-left. Preserve exact spelling and the question mark. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+COVER + MASTER STYLE FRAME. A young adult true Stickman in a modern coworking lounge looks at a smartphone after receiving feedback. Around the phone and in the environment, use many small soft positive reaction symbols/icons and one single darker critical reaction shape that strongly pulls the character's attention. Do not create readable chat bubbles. Make the main Stickman large on the right side with clear concerned body language. Background: 3–4 differently dressed true Stickmen continue normal activities and do not stare. Strong thumbnail hierarchy, rich believable lounge, clean 2D editorial look. Render exactly "WARUM BLEIBT NEGATIVES HÄNGEN?" large and highly legible on the left/upper-left. Keep every letter fully inside the frame. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -130,8 +134,9 @@ Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in a detailed café 
 SCENE 04
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Ein Teil der Antwort steckt im sogenannten Negativitätsbias.
+EXACT GERMAN TEXT: "NEGATIVITÄTSBIAS"
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. One true Stickman in a clean modern interior visually attends much more strongly to one dark stimulus than to several equally sized lighter stimuli. Elegant simple concept grounded in a real room, not a chart. Frontal medium shot. Leave clean upper-left space for later Remotion keyword NEGATIVITÄTSBIAS. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. One true Stickman in a clean modern interior visually attends much more strongly to one dark stimulus than to several equally sized lighter stimuli. Elegant simple concept grounded in a real room, not a chart. Frontal medium shot. Render exactly "NEGATIVITÄTSBIAS" in a clean upper-left text zone, fully inside the frame. NO OTHER READABLE TEXT.
 
 SCENE 05
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -160,8 +165,9 @@ Attach 01.png as STYLE/ANATOMY reference only. Apprentice/student Stickman in a 
 SCENE 09
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Psychologische Übersichtsarbeiten beschreiben dieses Muster in Beziehungen, Lernen, Aufmerksamkeit, Urteilen und Erinnern.
+EXACT GERMAN TEXT: "NEGATIVES WIEGT SCHWERER"
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. Researcher true Stickman in a library/research room organizes several abstract study cards representing different life domains through icons and shapes only. Visually show negative material receiving stronger emphasis across several domains without readable labels. High three-quarter view. Leave calm space for later Remotion keyword NEGATIVES WIEGT SCHWERER. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. Researcher true Stickman in a library/research room organizes several abstract study cards representing different life domains through icons and shapes only. Visually show negative material receiving stronger emphasis across several domains. High three-quarter view. Render exactly "NEGATIVES WIEGT SCHWERER" in a calm text zone, fully inside the safe frame. NO OTHER READABLE TEXT.
 
 SCENE 10
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -196,8 +202,9 @@ Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in a kitchen reacts 
 SCENE 15
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Deshalb bekommt Negatives häufig schneller unsere Aufmerksamkeit und wird gründlicher verarbeitet.
+EXACT GERMAN TEXT: "AUFMERKSAMKEIT"
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. Large station hall with several true Stickmen. One character immediately orients toward a clear small problem cue while pleasant surroundings become secondary. Wide perspective, strong depth. Leave upper-left calm space for later Remotion keyword AUFMERKSAMKEIT. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. Large station hall with several true Stickmen. One character immediately orients toward a clear small problem cue while pleasant surroundings become secondary. Wide perspective, strong depth. Render exactly "AUFMERKSAMKEIT" in a clear safe text area. NO OTHER READABLE TEXT.
 
 SCENE 16
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -232,8 +239,9 @@ LOCAL CONTINUITY WITH SCENE 18–19. Reuse only the affected main character. Lat
 SCENE 21
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Dadurch wirkt die negative Sache größer, als sie im Gesamtbild tatsächlich war.
+EXACT GERMAN TEXT: "GESAMTBILD"
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in a broad public square visually fixates on one small dark event in the foreground while the wide real environment contains many neutral and positive everyday cues. Very wide composition. Leave clean upper-left space for later Remotion keyword GESAMTBILD. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in a broad public square visually fixates on one small dark event in the foreground while the wide real environment contains many neutral and positive everyday cues. Very wide composition. Render exactly "GESAMTBILD" in a clean safe text zone. NO OTHER READABLE TEXT.
 
 SCENE 22
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -256,8 +264,9 @@ LOCAL CONTINUITY WITH SCENE 22–23. Reuse the learner later on a tram. One corr
 SCENE 25
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Der Negativitätsbias kann also beeinflussen, worauf du achtest, was du erinnerst und wie du bewertest.
+EXACT GERMAN TEXT: "VERZERRTE GEWICHTUNG"
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. One true Stickman in a modern learning/work space moves visually through three simple grounded stations: noticing, remembering, evaluating, with each pulled toward one negative marker. Keep it one coherent scene, not three panels. Wide editorial composition. Leave negative space for later Remotion keyword VERZERRTE GEWICHTUNG. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. One true Stickman in a modern learning/work space moves visually through three simple grounded stations: noticing, remembering, evaluating, with each pulled toward one negative marker. Keep it one coherent scene, not three panels. Wide editorial composition. Render exactly "VERZERRTE GEWICHTUNG" in a safe text zone. NO OTHER READABLE TEXT.
 
 SCENE 26
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -292,8 +301,9 @@ Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman on a park bench rece
 SCENE 31
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Ist das wirklich ein starkes Signal oder nur ein einzelner Datenpunkt unter vielen?
+EXACT GERMAN TEXT: "EIN DATENPUNKT"
 PROMPT:
-LOCAL CONTINUITY WITH SCENE 30. Same park-bench character. One dark comment point is visible among many neutral/positive abstract points; the character now studies the whole distribution calmly. Over-the-shoulder angle. Leave clean space for later Remotion keyword EIN DATENPUNKT. ZERO READABLE TEXT.
+LOCAL CONTINUITY WITH SCENE 30. Same park-bench character. One dark comment point is visible among many neutral/positive abstract points; the character now studies the whole distribution calmly. Over-the-shoulder angle. Render exactly "EIN DATENPUNKT" in a clean safe text zone. NO OTHER READABLE TEXT.
 
 SCENE 32
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -310,8 +320,9 @@ Attach 01.png as STYLE/ANATOMY reference only. NEW Stickman in a bright communit
 SCENE 34
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Negatives verdient manchmal Aufmerksamkeit, aber nicht automatisch die ganze Bühne.
+EXACT GERMAN TEXT: "NICHT DIE GANZE BÜHNE"
 PROMPT:
-Attach 01.png as STYLE/ANATOMY reference only. A true Stickman in a small modern event space sees one dark negative cue trying to occupy the center of a literal stage, while the wider stage and audience remain balanced and normal. Elegant metaphor, not theatrical chaos. Wide stage perspective. Leave upper-left space for later Remotion keyword NICHT DIE GANZE BÜHNE. ZERO READABLE TEXT.
+Attach 01.png as STYLE/ANATOMY reference only. A true Stickman in a small modern event space sees one dark negative cue trying to occupy the center of a literal stage, while the wider stage and audience remain balanced and normal. Elegant metaphor, not theatrical chaos. Wide stage perspective. Render exactly "NICHT DIE GANZE BÜHNE" in a clear safe text zone. NO OTHER READABLE TEXT.
 
 SCENE 35
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -320,10 +331,10 @@ PROMPT:
 Attach 01.png as STYLE/ANATOMY reference only. Closing scene: a true Stickman walks calmly along an evening city promenade and looks across a broad balanced environment with several distant Stickmen, lights, trees and everyday activity. No single negative point dominates. Cinematic wide final composition with natural evening colors. ZERO READABLE TEXT.
 
 FINAL EXECUTION RULE
-Stop only after Scene 01 for user approval. Scene 01 is approved only if the exact cover title "WARUM BLEIBT NEGATIVES HÄNGEN?" is correctly rendered and no other readable text appears. After approval continue automatically through Batch 1 to Batch 7. After each batch run internal QA, regenerate only failed images and continue after PASS.
+Stop only after Scene 01 for user approval. Scene 01 is approved only if the exact cover title is correct, fully visible and no other readable text appears. After approval continue automatically through Batch 1 to Batch 7. After each batch run internal QA, regenerate only failed images and continue after PASS.
 
 FINAL QA RULE
-Reject and regenerate any image with non-stickman humans, anatomy drift, oversized mascot heads, 3D/Pixar/anime/photorealistic drift, unnecessary character cloning, repetitive locations/cameras, or mismatch with the current speech beat. Scene 01 additionally fails if the exact German cover title is missing, misspelled, malformed, unreadable, or accompanied by additional readable text. Scene 02+ fails for any readable text, including accidental copies of the title from 01.png.
+Reject and regenerate any image with non-stickman humans, anatomy drift, oversized mascot heads, 3D/Pixar/anime/photorealistic drift, unnecessary character cloning, repetitive locations/cameras, or mismatch with the current speech beat. Planned text scenes fail if exact German text is missing, misspelled, malformed, clipped or accompanied by additional readable text. All non-text scenes fail for any readable text.
 
 FINAL PRINCIPLE
-01.png = SCENE 01 + COVER + STYLE/ANATOMY MASTER + EXACT FLOW-RENDERED GERMAN COVER TITLE. Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. Scene 02+ Flow source images stay text-free. Selected later German keyword overlays are added in Remotion.
+01.png = SCENE 01 + COVER + STYLE/ANATOMY MASTER. Same Stickman DNA, different appropriate people and places. Simple Stickmen. Rich World. One clear idea per image. ALL visible YouTube text is generated directly by Google Flow. Remotion adds NO visible text.
