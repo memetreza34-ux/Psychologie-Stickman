@@ -21,7 +21,7 @@ Danach lesen:
 10. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 11. `rules/PRODUCTION_FORMAT_RULES.md`
 
-`rules/STICKMAN_DNA.md` ist die zentrale visuelle Source of Truth. Andere Style-/Prompt-Dateien konkretisieren diese DNA, dürfen ihr aber nicht widersprechen.
+`rules/STICKMAN_DNA.md` ist die zentrale visuelle Source of Truth. Für die besondere YouTube-Cover-Textfrage gewinnt `rules/COVER_LOCK.md`.
 
 ## Themenwelt
 
@@ -33,215 +33,193 @@ Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — 
 
 Verbindlich ist **Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY**.
 
-Jede sichtbare menschliche oder menschenähnliche Figur muss dieselbe echte Stickman-Grundanatomie benutzen. Das gilt ohne Ausnahme für Hauptfiguren, Nebenfiguren, Menschenmengen, Hintergrundpersonen, Forscher, historische Figuren, Passanten sowie Personen auf Screens, Fotos, Postern, Werbung, Spiegelungen oder Illustrationen innerhalb der Szene.
-
-Echte Stickman-DNA:
+Jede sichtbare menschliche oder menschenähnliche Figur benutzt echte Stickman-Grundanatomie:
 - einfacher runder/ovaler Kopf
-- keine realistische Nase, Ohren oder Gesichtsmodellierung
-- minimale Augen/Mund/Augenbrauen
-- kleiner stark vereinfachter Torso
-- sehr dünne, lineare Arme und Beine ohne fleischige Volumen
-- Hände nur als einfache Punkte/Mitten/Nubs, keine Fingeranatomie
-- Füße/Schuhe stark vereinfacht
-- Kleidung darf Rolle und Epoche zeigen, darf aber niemals normale menschliche Anatomie erzeugen
+- keine realistische Nase/Ohren/Gesichtsmodellierung
+- minimale Augen/Mund
+- kleiner vereinfachter Torso
+- sehr dünne lineare Arme und Beine
+- einfache Hände ohne Fingeranatomie
+- stark vereinfachte Füße/Schuhe
 
-**Normale Cartoon-Menschen, halb-realistische Menschen oder Mischstile sind HARD FAIL.** Die Umgebung darf dagegen deutlich detailreicher, räumlich glaubwürdig und hochwertig illustriert sein.
+Normale Cartoon-Menschen, halb-realistische Menschen, Mischstile, 3D/Pixar/Anime sind HARD FAIL. Umgebungen dürfen deutlich detailreicher, räumlich glaubwürdig und hochwertig illustriert sein.
 
-## Bildlogik — KONKRETE SZENE VOR INFOGRAFIK
-
-Für jeden Visual Beat zuerst prüfen, ob eine konkrete Stickman-Handlung in einer glaubwürdigen Umgebung die Aussage verständlich machen kann.
+## Bildlogik
 
 Priorität:
 1. konkrete Handlung / Alltagsszene
 2. einfache visuelle Metapher
-3. Diagramm, Skala, Karte oder abstrakter Pfad nur wenn wirklich besser
+3. Diagramm/Skala/Karte nur wenn wirklich klarer
 
-Keine langen Serien aus denselben `claim cards`, `truth meters`, Waagen, Pfaden oder Dashboard-Kompositionen. Wiederkehrende Symbole dürfen unterstützen, aber nicht das ganze Video dominieren.
+Keine langen Serien aus denselben Karten, Waagen, Pfaden oder Dashboard-Kompositionen.
 
-## Textsystem — FLOW TEXTFREI, ENDVIDEO MIT GEZIELTEM DEUTSCHEN KURZTEXT
+## Textsystem — HARD LOCK
 
-Google-Flow-Quellbilder bleiben standardmäßig **ZERO READABLE TEXT**:
-- keine lesbaren Wörter oder Buchstaben
-- keine UI-Texte
-- keine Labels
-- keine Untertitel
-- keine Poster-/Werbetexte
-- keine Bildschirmtexte
-- keine Marken-/Logo-Texte
-- Dokumente/Screens nur mit abstrakten Linien, Formen und Icons
+### Szene 01 / Cover
+
+Google Flow rendert den **exakten deutschen Cover-Titel direkt in `03-bilder/01.png`**.
+
+Verbindlich:
+- 2–7 Wörter
+- exakter vorgegebener Wortlaut
+- korrekte Umlaute/Satzzeichen
+- große, gut lesbare Thumbnail-Typografie
+- außer diesem Titel **kein weiterer lesbarer Text**
+- bei Schreibfehler/Pseudo-Schrift: Szene 01 regenerieren
+- Remotion darf den Cover-Titel **nicht duplizieren**
+
+### Szene 02+
+
+Google-Flow-Quellbilder bleiben **ZERO READABLE TEXT**:
+- keine Wörter/Buchstaben
+- keine UI-Texte, Labels, Untertitel
+- keine Poster-/Werbe-/Bildschirmtexte
+- Dokumente/Screens nur abstrakt
 - englische Promptwörter niemals ins Bild übernehmen
-- deutsche Sprechtexte niemals als Flow-Schrift ins Bild schreiben
+- Cover-Titel aus 01.png nicht kopieren
 
-Das finale YouTube-Video darf und soll **selektiv deutsche Kurztexte in Remotion** verwenden:
-- Szene 01: verpflichtende Cover-Headline (`variant: "cover"`, 2–7 Wörter)
-- ausgewählte weitere Szenen: Schlüsselbegriffe (`variant: "keyword"`, maximal 5 Wörter)
-- Zielwert ungefähr ein Textmoment alle 4–6 Bilder
-- maximal 30 % der YouTube-Szenen mit Overlays
+### Spätere Textmomente
+
+Ausgewählte YouTube-Szenen dürfen kurze deutsche `keyword`-Overlays in Remotion erhalten:
+- maximal 5 Wörter
+- ungefähr ein Textmoment alle 4–6 Bilder
+- maximal 30 % sichtbare Textmomente inklusive Cover
 - keine ganzen Erklärsätze und keine Dauer-Untertitel
 
-Bei geplanten Overlay-Szenen muss Flow passende ruhige Negativfläche liefern. Text wird anschließend kontrolliert in Remotion gesetzt.
-
-Nur wenn Text physisch zwingend Teil der Szene sein muss und nicht sinnvoll als Overlay gesetzt werden kann, darf eine explizite Ausnahme den exakten kurzen deutschen Wortlaut definieren.
-
-Bei Konflikt gilt:
-**starke visuelle Szene + kurzer deutscher Remotion-Text > komplett textfreies Endvideo > textlastige Slide. Flow selbst bleibt textfrei.**
+Kurz:
+**Google Flow setzt den Cover-Titel. Remotion setzt spätere Keywords.**
 
 ## Bildklarheit — HARD LOCK
 
 - genau ein primärer visueller Gedanke pro Bild
 - ein klares Hauptmotiv
-- höchstens 1–2 unterstützende visuelle Hinweise, wenn wirklich nötig
-- keine überladenen Multi-Panel-/Infografik-Kompositionen
-- wenn ein Sprechabschnitt mehrere neue Gedanken enthält, in mehrere Visual Beats/Bilder aufteilen
-- Zuschauer soll die Kernaussage sehr schnell erfassen können
+- höchstens 1–2 unterstützende Hinweise
+- keine überladenen Multi-Panel-Kompositionen
+- mehrere neue Gedanken auf mehrere Visual Beats aufteilen
 
 ## Scene 01 — COVER + MASTER HARD LOCK
 
-Für jedes YouTube-Projekt gilt:
+Für jedes YouTube-Projekt:
 
-**`03-bilder/01.png` = SCENE 01 + COVER/THUMBNAIL-BASIS + STYLE-/ANATOMY-MASTER.**
+**`03-bilder/01.png` = SCENE 01 + COVER/THUMBNAIL + STYLE-/ANATOMY-MASTER.**
 
 Szene 01 muss gleichzeitig:
-- den ersten gesprochenen Visual Beat korrekt darstellen,
-- als starkes Cover funktionieren,
-- die Stickman-/Welt-DNA als Master etablieren,
-- ZERO READABLE TEXT in Flow einhalten,
-- ruhige Fläche für die verpflichtende deutsche Cover-Headline besitzen.
+- den ersten gesprochenen Visual Beat korrekt darstellen
+- als starkes Cover funktionieren
+- die Stickman-/Welt-DNA etablieren
+- den exakten deutschen Cover-Titel direkt aus Google Flow enthalten
+- außer diesem Titel keinen weiteren lesbaren Text enthalten
 
-Die finale Cover-Headline wird in Remotion gesetzt, nicht in Flow. Kein separates Pflicht-`cover.png`.
+Kein separates Pflicht-`cover.png`.
 
-Strukturierte Phase-1-Pläne: Szene 01 trägt `isCover: true` und `coverRole: "SCENE_01_COVER_MASTER"`; alle späteren Szenen `isCover: false`.
-
-Details: `rules/COVER_LOCK.md` und `rules/TEXT_OVERLAY_LOCK.md`.
+Phase-1-Metadaten neuer Projekte:
+- `isCover: true`
+- `coverRole: "SCENE_01_COVER_MASTER"`
+- `coverHeadline: "..."`
+- `coverTextRenderer: "GOOGLE_FLOW"`
+- `flowSourceImageTextPolicy: "SCENE_01_EXACT_GERMAN_COVER_TITLE_ONLY"`
 
 ## Visual-Beat-Dichte
 
-Standard für skriptbasierte YouTube-Projekte:
-- Ziel meist 10–16 Wörter pro Beat
-- automatischer Zielwert 14
+- meist 10–16 Wörter pro Beat
+- Zielwert 14
 - normale Obergrenze 20
-- 21–28 Wörter nur als ausdrücklich geprüfte Ausnahme mit `allowExtendedBeat: true`
-- absolute Obergrenze 28
+- 21–28 nur ausdrücklich geprüft
 - durchschnittlich höchstens 16 Wörter pro Szene
 
-Nicht nur nach Wortzahl teilen. Auch kurze Sätze mit mehreren Orten, Handlungen, Vergleichen oder Ursache-Folge-Schritten redaktionell trennen.
+Nicht nur nach Wortzahl teilen; neue Orte, Handlungen, Vergleiche oder Ursache-Folge-Schritte redaktionell trennen.
 
-## Verbindlicher Referenz-Workflow
+## Referenz-Workflow
 
-Bei Serienbildern gilt:
-1. zuerst Bild 01 als **Cover + erster Visual Beat + Style-/Anatomy-Master** alleine generieren,
-2. danach STOP und auf Nutzerfreigabe warten,
-3. dieses Bild nur bei vollständigem Cover-/Style-/Stickman-/Text-PASS als Master-Referenz freigeben,
-4. danach höchstens 5 neue Bilder pro Batch erzeugen,
-5. nach jedem Batch interne Style-/Continuity-/Inhalts-QA durchführen,
-6. nur fehlerhafte Bilder regenerieren,
-7. nach vollständigem PASS automatisch ohne Nutzer-Rückfrage mit dem nächsten Batch fortfahren,
-8. nur bei einem nicht automatisch lösbaren schweren Fehler stoppen.
+1. Bild 01 als Cover + erster Beat + Master **inklusive exaktem Titel** allein generieren.
+2. STOP und Nutzerfreigabe.
+3. Nur freigeben, wenn Cover, Titel, Stickman-DNA und Inhalt PASS sind.
+4. Danach höchstens 5 neue Bilder pro Batch.
+5. Bild 01 ab Szene 02 nur als STYLE-/ANATOMY-Referenz verwenden, nicht als Charakter- oder Textvorlage.
+6. Nach jedem Batch interne QA.
+7. Nur fehlerhafte Bilder regenerieren.
+8. Nach PASS automatisch fortsetzen.
 
 **Die einzige reguläre Nutzerfreigabe ist Bild 01.**
 
-Kein Folgeasset darf die Master-Referenz eigenmächtig ersetzen. Details stehen in `rules/IMAGE_REFERENCE_LOCK.md`.
-
 ## FORMAT HARD LOCK
 
-Der Projektpfad entscheidet zwingend das Format.
-
-### Unter `reels/`
-- **9:16**
-- **1080×1920**
-- **30 fps**
-- vertikale Bildkomposition
+### `reels/`
+- 9:16
+- 1080×1920
+- 30 fps
 - Remotion: `Phase3Reel`
 
-### Unter `youtube/`
-- **16:9**
-- **1920×1080**
-- **30 fps**
-- horizontale Bildkomposition
+### `youtube/`
+- 16:9
+- 1920×1080
+- 30 fps
 - Remotion: `Phase3YouTube`
-
-Ein Bild wird direkt für sein Zielformat erzeugt. Falsches Seitenverhältnis anschließend nur zu croppen ist keine Standardlösung.
 
 ## Audio
 
 Für beide Formate:
 - finales Voice-over exakt 1,10×
 - führende Stille entfernen
-- lange Pausen straffen; Pausen ab ca. 500 ms auf ungefähr 120 ms Restpause kürzen
+- lange Pausen straffen
 - Wörter niemals abschneiden
 - Timings erst aus final verarbeitetem Audio
 
 ## Zwei getrennte Produktionsflächen
 
-- `youtube/` — reguläre YouTube-Longform-/Testvideo-Projekte als eigene Themenordner
-- `reels/` — Reels/Shorts nach Wochenordnern und Wochentagen
+- `youtube/` — YouTube-Longform/Testvideos
+- `reels/` — Reels/Shorts
 
-Reels dürfen niemals unter `youtube/` liegen und YouTube-Projekte niemals unter `reels/`.
+Nicht vermischen.
 
 ## Einfache YouTube-Arbeitsfläche — HARD LOCK
 
-Für jedes neue YouTube-Projekt bleibt die normale Nutzeransicht bewusst einfach:
-
-- `01-script/` → enthält nur `script.txt`
-- `02-google-flow/` → enthält nur `google-flow-prompt.txt`
-- `03-bilder/` → `01.png`, `02.png`, `03.png` usw.; **`01.png` ist zugleich Scene 01 + Cover + Master-Referenz**
-- `04-audio/` → finales `final-voice.mp3`
+- `01-script/` → `script.txt`
+- `02-google-flow/` → einzige `google-flow-prompt.txt`
+- `03-bilder/` → `01.png`, `02.png`, ...; `01.png` ist Cover + Scene 01 + Master
+- `04-audio/` → `final-voice.mp3`
 - `05-export/` → fertiger Videoexport
-- `99-intern/` → Quellen, Style-/Continuity-Regeln, QA, Phase-1/Phase-3-Dateien und sonstige Technik
+- `99-intern/` → Quellen, QA und Pipeline-Metadaten
 
-Der Nutzer soll für die normale Produktion **nur ein Skript und eine einzige Prompt-Datei** öffnen müssen.
-
-`02-google-flow/google-flow-prompt.txt` ist die einzige nutzerseitige Prompt-Datei für die komplette Bildproduktion. Sie muss enthalten:
-- zentrale DNA aus `rules/STICKMAN_DNA.md`
-- Format und Stil
-- STRICT-STICKMAN-ONLY-Gate
-- ZERO-READABLE-TEXT-Gate für Flow-Quellbilder
+Die Google-Flow-Datei muss enthalten:
+- zentrale Stickman-DNA
+- Format/Stil
 - Scene-01-Cover-Hard-Lock
-- geplante Negativfläche bei Cover-/Keyword-Szenen
+- **exakten deutschen Flow-Cover-Titel**
+- `NO OTHER READABLE TEXT` für Szene 01
+- `ZERO READABLE TEXT` für Szene 02+
+- Verbot, den Titel aus Master in spätere Bilder zu kopieren
 - Ein-Gedanke-pro-Bild-Gate
-- konkrete Szene vor generischer Infografik
 - Master-Referenz-Regel
 - konkreten 5er-Batch-Plan
 - STOP nur nach Bild 01
-- automatische interne QA und automatisches Fortsetzen
-- Dateinamen
-- alle individuellen Szenen-/Bildprompts des Videos
+- automatische QA/Fortsetzung
+- alle individuellen Szenenprompts
 
-Deutsche Cover-/Keyword-Texte gehören als `sceneLabels` nach `99-intern/` und werden durch Phase 3/Remotion gerendert, nicht durch Flow.
-
-Keine zusätzlichen Prompt-/Style-Dateien in der normalen sichtbaren Arbeitsfläche anlegen.
+Bei neuen Projekten gehört der Cover-Titel **nicht** als Remotion-`cover`-Label in `sceneLabels`. `sceneLabels` enthält nur spätere `keyword`-Overlays.
 
 ## QA vor Abschluss
 
-Bei strukturellen oder Pipeline-Änderungen mindestens ausführen:
+Bei strukturellen oder Pipeline-Änderungen mindestens:
 - `npm run typecheck`
 - `npm run qa:visual-density`
 - `npm run qa:auto-visual-planning`
 - `npm run qa:flow-prompts`
-- relevante Format-/Produktionschecks
+- `npm run qa:text-overlays`
+- relevante Produktionschecks
 
 ## Reihenfolge
 
 THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Phase 2 Bilder → Phase 3 Timings/Render → Final-QA.
 
-Keine Phase überspringen. Skriptänderung setzt nachgelagerte semantische/visuelle Planung zurück.
-
 ## Priorität
 
-Bei Formatkonflikten gilt ohne Ausnahme:
-**`rules/FORMAT_LOCK.md` gewinnt.**
+Bei Formatkonflikten: **`rules/FORMAT_LOCK.md` gewinnt.**
 
-Bei visueller Identität gilt:
-**`rules/STICKMAN_DNA.md` gewinnt.**
+Bei visueller Identität: **`rules/STICKMAN_DNA.md` gewinnt.**
 
-Bei Cover-Fragen gilt:
-**`rules/COVER_LOCK.md` gewinnt: `01.png = SCENE 01 + COVER + MASTER`.**
+Bei Cover-Fragen: **`rules/COVER_LOCK.md` gewinnt: Szene 01 enthält den exakten Google-Flow-Cover-Titel.**
 
-Bei finalen Text-Overlays gilt:
-**`rules/TEXT_OVERLAY_LOCK.md` gewinnt.**
+Bei späteren Textmomenten: **`rules/TEXT_OVERLAY_LOCK.md` gewinnt.**
 
-Bei der exakten projektspezifischen Darstellung gilt innerhalb der DNA:
-**freigegebene Master-Referenz gewinnt.**
-
-Beim Batch-Ablauf gilt:
-**Master-/Coverfreigabe einmalig nach Bild 01; danach automatische 5er-Batches mit interner QA ohne weitere Nutzer-Rückfragen.**
+Beim Batch-Ablauf: **Freigabe einmal nach Bild 01; danach automatische 5er-Batches.**
