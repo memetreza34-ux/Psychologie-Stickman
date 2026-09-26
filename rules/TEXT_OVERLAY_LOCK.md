@@ -2,7 +2,7 @@
 
 **STATUS: VERBINDLICH — HARD LOCK**
 
-Diese Regel gilt für alle neuen YouTube-Projekte unter `youtube/` und ergänzt `rules/COVER_LOCK.md`.
+Diese Regel gilt für alle neuen YouTube-Projekte unter `youtube/` und ergänzt `rules/COVER_LOCK.md` und `rules/FLOW_TEXT_STYLE_LOCK.md`.
 
 ## 1. Grundprinzip
 
@@ -49,18 +49,31 @@ Für YouTube-Longform:
 
 Keine Textkarten-Serie und keine Dauerbeschriftung.
 
-## 4. Sprache und Qualität
+## 4. Sprache, Korrektheit und Ästhetik
 
 Sichtbarer Text ist ausschließlich Deutsch.
 
-HARD FAIL:
-- falsche Schreibweise
-- fehlende oder zusätzliche Wörter
-- falsche Umlaute oder Satzzeichen
-- englische Wörter ohne zwingenden Eigennamen
+Korrektheit ist HARD FAIL bei:
+- falscher Schreibweise
+- fehlenden oder zusätzlichen Wörtern
+- falschen Umlauten oder Satzzeichen
+- englischen Wörtern ohne zwingenden Eigennamen
 - KI-Pseudo-Schrift
-- abgeschnittener oder kaum lesbarer Text
-- zusätzlicher zufälliger Text
+- abgeschnittenem oder kaum lesbarem Text
+- zusätzlichem zufälligem Text
+
+Ästhetik ist ebenfalls verbindlich:
+- professionelle integrierte Editorial-Typografie
+- ruhige klare Buchstabenformen
+- sichere Ränder zur Bildkante
+- keine generische Meme-/Sticker-Schrift
+- keine extrem dicke Outline als Standard
+- Text soll zur Bildkomposition gehören statt wie nachträglich aufgeklebt wirken
+- Text darf Hauptfigur, Gesicht, Hände oder Kernhandlung nicht verdecken
+- Cover-Titel deutlich stärker als spätere Keywords
+- Keywords visuell untergeordnet und unterstützend
+
+Details: `rules/FLOW_TEXT_STYLE_LOCK.md`.
 
 Bei einem Textfehler wird **nur das betroffene Google-Flow-Bild neu generiert**.
 
@@ -76,7 +89,14 @@ Dazu immer:
 - NO OTHER READABLE TEXT
 - typography must be fully inside the safe image area
 - do not crop or clip letters
+- use clean professional integrated editorial typography
+- avoid meme/sticker lettering and oversized heavy outlines
+- design the text into a calm intentional text zone
 - central visual action must remain readable
+
+Jeder neue YouTube-Flow-Prompt enthält zusätzlich den globalen Block:
+
+`TYPOGRAPHY AESTHETIC — HARD LOCK`
 
 ## 6. Master-Referenz
 
@@ -86,6 +106,7 @@ Ab Szene 02:
 - Titel aus `01.png` niemals automatisch kopieren
 - wenn die aktuelle Szene **kein** geplantes Textmoment ist: ZERO READABLE TEXT
 - wenn sie ein geplantes Textmoment ist: nur den für diese Szene exakt vorgegebenen deutschen Text rendern
+- Stilgefühl der Typografie darf konsistent bleiben, der konkrete Text und seine Platzierung werden aber neu für die Szene komponiert
 
 ## 7. Metadaten — neuer Standard
 
@@ -98,6 +119,7 @@ Neue Projekte verwenden:
   "renderGermanLabelsInRemotion": false,
   "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
   "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
+  "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
   "flowTextMoments": [
     {"scene": 1, "kind": "cover", "text": "WARUM BLEIBT NEGATIVES HÄNGEN?"},
     {"scene": 4, "kind": "keyword", "text": "NEGATIVITÄTSBIAS"}
@@ -120,6 +142,9 @@ Vor Bildfreigabe prüfen:
 - kein Text liegt außerhalb der Safe Area
 - keine zusätzlichen Wörter oder Zeichen
 - Text verdeckt keine zentrale Figur oder Handlung
+- Text wirkt visuell integriert, nicht aufgeklebt
+- keine billige Meme-/Sticker- oder übermäßig umrissene Blockschrift
+- Typografie ist im selben Video stilistisch konsistent
 
 Vor Export prüfen:
 - Remotion rendert keine `sceneLabels`
@@ -131,3 +156,5 @@ Vor Export prüfen:
 Bei YouTube-Textfragen gilt:
 
 **Google Flow erzeugt sämtlichen sichtbaren Text direkt im Bild. Remotion erzeugt keinen sichtbaren Text.**
+
+Für die visuelle Ausführung gewinnt zusätzlich `rules/FLOW_TEXT_STYLE_LOCK.md`.
