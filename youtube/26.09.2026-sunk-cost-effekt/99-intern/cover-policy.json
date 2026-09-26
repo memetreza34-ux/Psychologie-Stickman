@@ -1,0 +1,11 @@
+{
+  "coverImage": "03-bilder/01.png",
+  "scene01Role": "SCENE_01_COVER_MASTER",
+  "coverHeadline": "WARUM DU NICHT LOSLÄSST",
+  "coverTextRenderer": "GOOGLE_FLOW",
+  "hookType": "WHY_DOES",
+  "premiumVisualPolicy": "PREMIUM_EDITORIAL_CINEMATIC_V1",
+  "colorStoryPolicy": "INTENTIONAL_COLOR_STORY_V1",
+  "coverConcept": "Premium-Kinoszene: Figur steht sichtbar zwischen Sitzreihe und leuchtendem Ausgang; Körperhaltung zeigt Festhalten vs. Gehen.",
+  "approvalRequired": true
+}

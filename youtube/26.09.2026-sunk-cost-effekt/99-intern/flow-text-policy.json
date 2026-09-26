@@ -1,0 +1,18 @@
+{
+  "visibleTextLanguage": "de",
+  "visibleTextRenderer": "GOOGLE_FLOW",
+  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
+  "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
+  "renderGermanLabelsInRemotion": false,
+  "flowTextMoments": [
+    {"scene": 1, "kind": "cover", "text": "WARUM DU NICHT LOSLÄSST"},
+    {"scene": 2, "kind": "keyword", "text": "SUNK-COST-EFFEKT"},
+    {"scene": 7, "kind": "keyword", "text": "BEREITS INVESTIERT"},
+    {"scene": 13, "kind": "keyword", "text": "NICHT ZURÜCKHOLBAR"},
+    {"scene": 18, "kind": "keyword", "text": "SCHON SO VIEL INVESTIERT"},
+    {"scene": 24, "kind": "keyword", "text": "HEUTE NEU ENTSCHEIDEN"},
+    {"scene": 29, "kind": "keyword", "text": "NUR DIE ZUKUNFT ZÄHLT"},
+    {"scene": 35, "kind": "keyword", "text": "VERGANGENES LOSLASSEN"}
+  ],
+  "allOtherScenes": "ZERO_READABLE_TEXT"
+}
