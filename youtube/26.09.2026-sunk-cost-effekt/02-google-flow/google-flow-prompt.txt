@@ -11,46 +11,50 @@ FORMAT HARD LOCK
 - horizontal landscape composition
 
 STYLE HARD LOCK — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3
-STRICT STICKMAN ONLY.
-Every visible human or human-like figure must use true stickman anatomy: simple round/oval head, tiny minimal face, no realistic nose/ears/neck, small simplified torso, very thin line-like arms and legs, simple no-finger hands, simplified feet. No conventional cartoon humans, no semi-realistic humans, no 3D/Pixar/anime/chibi.
+STRICT STICKMAN ONLY. Every visible person uses true stickman anatomy: simple round/oval head, tiny minimal face, no realistic nose/ears/neck, small simplified torso, very thin line arms/legs, no-finger hands, simplified feet. No conventional cartoon humans, semi-realistic humans, 3D/Pixar/anime/chibi.
 
 PREMIUM VISUAL QUALITY — HARD LOCK
-Every frame must feel like a premium editorial illustration prepared for a high-quality YouTube documentary, not a cheap explainer slide. Use deliberate art direction, depth, foreground/midground/background separation, expressive lighting, strong silhouettes, polished environmental detail, controlled texture, and clean composition. Avoid flat generic rooms, weak empty staging, low-contrast grey scenes and repeated office-like backgrounds.
+Every frame must feel like a premium editorial illustration for a high-quality YouTube documentary: deliberate art direction, strong silhouette, depth, foreground/midground/background separation, expressive lighting, polished environment detail, controlled texture and clean composition. Avoid flat cheap explainer slides, weak generic rooms and sterile office repetition.
 
 PREMIUM CHARACTER DESIGN — HARD LOCK
-Stickman anatomy stays simple, but character direction must feel premium through expressive posture, distinct silhouette, role-appropriate clothing, tasteful accessories, clear emotional acting and meaningful interaction with props or other characters. Do not make every figure the same beige-shirt default. Clothing and styling may vary while the true-stickman anatomy stays locked.
+Premium comes from posture, silhouette, role-specific clothing, tasteful accessories, clear emotion and meaningful interaction — never from realistic anatomy. Do not default to the same beige-shirt figure.
 
 COLOR STORY — HARD LOCK
-PROJECT COLOR PALETTE:
-- PRIMARY: deep navy blue #17324D
+PROJECT COLOR PALETTE
+- PRIMARY: deep navy #17324D
 - SECONDARY: rich teal #238C84
-- ACCENT: warm coral orange #F06C4E with selective amber-gold #E6B84A
-- NEUTRAL: warm ivory #F4F0E7 with charcoal outlines #252A30
-- AVOID: grey/beige wash, sterile office monotony, pale low-contrast backgrounds, identical color balance in every scene
-
-Use the palette intentionally, not mechanically. Change dominant color balance by scene while preserving one coherent premium channel world. Use accent colors to guide attention and emotional meaning. Do not tint every frame beige or grey.
+- ACCENT: coral #F06C4E
+- SECOND ACCENT: amber-gold #E6B84A
+- NEUTRAL: warm ivory #F4F0E7
+- OUTLINES: charcoal #252A30
+- AVOID: grey/beige wash, sterile office monotony, pale low-contrast frames, identical color balance in every scene
+Use color intentionally for mood and focus. Do not tint every frame the same way.
 
 REAL-LIFE SCENE PRIORITY — HARD LOCK
-Prefer believable everyday situations that physically show the decision: cinema, subscription use, project work, repair shop, conversation, purchase choice, practical decision review. Visual metaphor is second choice. Abstract charts, scales, cards and diagrams are last choice and must never dominate a long sequence.
+Prefer believable everyday situations first: cinema, subscription, creative project, repair shop, café, decision review. Visual metaphor second. Abstract chart/scale/card teaching graphics last and never as a long sequence.
 
 CHANNEL DNA — HARD LOCK
-Simple Stickmen. Rich World. One clear idea per image. Concrete action first. Premium visual direction. Intentional color story. Same anatomy, different fitting people.
+Simple Stickmen. Rich World. One clear idea per image. Concrete action first. Premium visual direction. Intentional color story.
 
 COVER STRENGTH — HARD LOCK
-Scene 01 must be deliberately stronger than a normal scene: dominant focal subject, obvious tension, premium cinematic lighting, fast thumbnail readability, strong color separation and an integrated clean title zone. It must still accurately visualize the first spoken beat.
+Scene 01 is deliberately stronger than a normal scene: dominant focal subject, obvious tension, premium lighting, strong color separation, fast thumbnail readability and a clean integrated title zone while still matching the first spoken beat.
 
 VISUAL VARIETY — HARD LOCK
-Across the full video use a deliberate mix of standard scenes, split/contrast compositions and a few montage frames. Multi-panel is allowed only when all panels explain the SAME spoken beat. Do not default to one-stickman-standing-in-a-room.
+Use standard, split/contrast and a few montage frames. Multi-panel is allowed only when all panels explain the SAME spoken beat. Do not default to one-stickman-standing-in-a-room.
 
 SOCIAL SCENE VARIETY — HARD LOCK
-Use duo/group scenes when the beat involves advice, comparison, project work, service interactions or other people. Relevant figures must actually interact or react.
+Use duo/group scenes when the beat concerns advice, comparison, teamwork, service interactions or other people. Relevant figures must actually interact or react.
+
+CAST VARIATION — HARD LOCK
+Same Stickman DNA does not mean same person. Reuse exact people only for genuine LOCAL CONTINUITY. Vary clothing, role, age impression, accessories, silhouette, cast size, pose and environment. Do not clone Scene 01 across the video.
 
 VISIBLE TEXT — GOOGLE FLOW ONLY
 FLOW_VISIBLE_TEXT_ONLY_V3.
-All visible text is generated directly inside Google Flow images. Remotion adds NO visible text.
+All visible YouTube text is generated directly inside Google Flow images.
+NO REMOTION TEXT. Remotion must not add cover titles, keywords, labels or captions. Remotion adds NO visible text.
 
 TYPOGRAPHY AESTHETIC — HARD LOCK
-Planned text must use clean professional integrated editorial typography, generous safe margins and calm intentional placement. No meme/sticker lettering, no giant heavy black outline, no random floating text, no glow/3D gimmick. Text must feel designed into the illustrated scene and never cover the core action.
+Use clean professional integrated editorial typography, generous safe margins and calm intentional placement. No meme/sticker lettering, giant heavy outlines, random floating text, glow or 3D gimmicks. Text must feel designed into the illustrated scene and never cover the core action.
 
 PLANNED TEXT MOMENTS
 - Scene 01 — COVER — "WARUM DU NICHT LOSLÄSST"
@@ -63,390 +67,339 @@ PLANNED TEXT MOMENTS
 - Scene 35 — KEYWORD — "VERGANGENES LOSLASSEN"
 
 TEXT RULE
-For every planned text scene, render exactly the specified German wording, preserve spelling and punctuation, keep every letter fully inside the safe frame and render NO OTHER READABLE TEXT. For every other scene: ZERO READABLE TEXT, including signs, tickets, screens, documents, labels, numbers and logos.
+For planned text scenes, render exactly the specified German wording and NO OTHER READABLE TEXT. For all unplanned text scenes: ZERO READABLE TEXT, including signs, tickets, screens, documents, numbers, labels and logos.
 
 MASTER REFERENCE WORKFLOW
-1. Generate Scene 01 only, including the exact German cover title.
+1. Generate Scene 01 only with its exact cover title.
 2. STOP and wait for user approval.
-3. Approve only if premium visual quality, color story, character direction, title, cover strength and Stickman DNA all pass.
+3. Approve only if premium quality, color story, character direction, title, cover strength and Stickman DNA all pass.
 4. Save as 03-bilder/01.png.
-5. Attach 01.png to every later generation as STYLE/ANATOMY/QUALITY reference only.
-6. Do not clone the Scene-01 character, theater, composition or title unless local continuity explicitly requires it.
-7. After approval generate at most 5 new images per batch, run internal QA, regenerate only failures and continue automatically.
+5. Attach 01.png for Scene 02+ as STYLE/ANATOMY/QUALITY reference only.
+6. Do not clone its character, theater, composition or title unless local continuity requires it.
+7. After approval: max 5 images per batch, internal QA, regenerate only failures, then continue automatically.
 
 REFERENCE CLAUSE FOR SCENE 02+
-Use attached 01.png as STYLE, ANATOMY AND PREMIUM QUALITY REFERENCE ONLY, NOT as a character, room, composition or text clone. Preserve true-stickman anatomy, line quality, shading sophistication and overall editorial quality. Freely change identity, clothing, cast, environment, camera, lighting and dominant palette balance to fit the current beat. Do not copy title text from 01.png.
+Use attached 01.png as STYLE, ANATOMY AND PREMIUM QUALITY REFERENCE ONLY, NOT as a character, room, composition or text clone. Preserve anatomy, line quality, shading sophistication and overall editorial quality. Freely change identity, clothing, cast, environment, camera, lighting and palette balance to fit the beat. Do not copy title text from 01.png.
 
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Warum bleibst du bei etwas, obwohl du längst weißt, dass es sich nicht mehr lohnt?
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Deep navy cinema interior with warm coral exit light and a focused amber ticket accent; strong dark-light separation.
-PREMIUM CHARACTER DIRECTION: Stylish young adult Stickman in a dark teal overshirt and clean sneakers, tense body turned halfway toward the glowing cinema exit while still holding a ticket, expressive hesitation.
+COLOR DIRECTION: Deep navy cinema, coral exit light, amber ticket accent.
+PREMIUM CHARACTER DIRECTION: Stylish young adult Stickman in dark teal overshirt and clean sneakers, tense body halfway toward the exit while still holding the ticket.
 EXACT GERMAN COVER TITLE: "WARUM DU NICHT LOSLÄSST"
-PROMPT:
-COVER + MASTER. Premium cinematic editorial 2D scene inside a modern movie theater. The main Stickman stands between the seat row and a glowing exit, body physically pulled in two directions: one foot toward the exit, torso still turned toward the screen, ticket held tightly. Make the conflict instantly readable at thumbnail size. Deep navy theater, selective coral exit glow, warm amber ticket accent, rich environmental detail without clutter. Integrate the exact German title WARUM DU NICHT LOSLÄSST into a clean calm upper-left title zone. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+PROMPT: Premium cinematic modern movie theater. Main Stickman stands between seat row and glowing exit, one foot toward leaving, torso still turned back. Strong silhouette and thumbnail conflict. Integrate exact title WARUM DU NICHT LOSLÄSST in a calm upper-left editorial zone. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Dieses Verhalten nennt man Sunk-Cost-Effekt oder Effekt der versunkenen Kosten.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Warm ivory editorial space with deep navy framing and a rich teal accent field behind the concept label.
-PREMIUM CHARACTER DIRECTION: Different confident Stickman in a tailored coral jacket, pointing toward a visual trail of already-spent tokens fading behind them.
+COLOR DIRECTION: Warm ivory, deep navy framing, rich teal concept panel.
+PREMIUM CHARACTER DIRECTION: Different confident Stickman in a coral jacket, pointing toward spent ticket/time/money objects fading behind.
 EXACT GERMAN TEXT: "SUNK-COST-EFFEKT"
-PROMPT:
-Premium editorial explainer frame with one elegant Stickman facing forward while a trail of already-spent cinema ticket, time token and small coin icons fades behind them into the past. Keep it visually grounded and clean, not a classroom slide. Integrate the exact German text SUNK-COST-EFFEKT into a refined teal editorial panel that belongs to the scene. NO OTHER READABLE TEXT.
+PROMPT: Premium editorial scene, grounded rather than slide-like. Show already-spent resources fading into the past behind the figure. Integrate exact text SUNK-COST-EFFEKT into a refined teal environmental panel. NO OTHER READABLE TEXT.
 
 SCENE 03
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Dabei beeinflussen vergangene Ausgaben Entscheidungen, obwohl dieses Geld nicht zurückkommt.
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Left side warm amber past; right side deep navy/teal future, with clear color separation.
-PREMIUM CHARACTER DIRECTION: Elegant Stickman centered between past spending objects and a future decision path, thoughtful but active pose.
-PROMPT:
-Create a premium contrast composition: on the left, already-spent objects and used tickets recede into warm amber shadow; on the right, a clean future path opens in teal/navy. One Stickman stands between them, visibly looking back at the spent side while needing to choose forward. Same spoken idea only. ZERO READABLE TEXT.
+COLOR DIRECTION: Warm amber past on left, teal/navy future on right.
+PREMIUM CHARACTER DIRECTION: Elegant Stickman centered between past spending objects and a future choice, active thoughtful pose.
+PROMPT: Premium contrast composition: already-spent objects recede on the left while a clean future path opens on the right. The Stickman visibly looks back while needing to choose forward. ZERO READABLE TEXT.
 
 SCENE 04
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Stell dir vor, du hast für einen schlechten Film bereits zwölf Euro bezahlt.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: DUO
-COLOR DIRECTION: Rich cinema red and navy with golden ticket accents; premium evening lighting.
-PREMIUM CHARACTER DIRECTION: Main Stickman in stylish casual clothes at the cinema counter interacting with an attendant Stickman; both distinct silhouettes and clothing.
-PROMPT:
-Believable modern cinema lobby at night. A stylish customer Stickman receives a movie ticket from a well-dressed attendant, with premium lighting, dark navy architecture, rich cinema-red accents and amber ticket highlight. Show the purchase clearly without readable prices, letters or logos. ZERO READABLE TEXT.
+COLOR DIRECTION: Rich cinema red, deep navy architecture, amber ticket accent.
+PREMIUM CHARACTER DIRECTION: Stylish customer Stickman interacting with a well-dressed cinema attendant, both distinct.
+PROMPT: Premium modern cinema lobby at night. Customer receives a ticket from attendant. Strong depth, polished lighting and real environmental detail. Show purchase without readable price, letters or logos. ZERO READABLE TEXT.
 
 SCENE 05
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Nach zwanzig Minuten langweilst du dich, bleibst aber trotzdem sitzen.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: GROUP
-COLOR DIRECTION: Dark navy theater, muted screen glow, coral seat accents, cool blue boredom mood.
-PREMIUM CHARACTER DIRECTION: Same cinema customer for local continuity, slumped with expressive bored posture; nearby viewers react naturally but are not clones.
-PROMPT:
-Inside the cinema, continue the same customer from Scene 04. They sit visibly bored and slumped while the film plays as abstract light on the screen; nearby Stickmen watch normally. Strong premium framing from the aisle, sophisticated low light, clear posture-based emotion. ZERO READABLE TEXT.
+COLOR DIRECTION: Dark navy theater, cool screen glow, coral seat accents.
+PREMIUM CHARACTER DIRECTION: Same cinema customer for local continuity, slumped bored posture; nearby viewers are varied Stickmen.
+PROMPT: Inside the theater, continue the same customer. They sit clearly bored while nearby viewers watch normally. Premium aisle framing, low-light depth and posture-based emotion. ZERO READABLE TEXT.
 
 SCENE 06
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Nicht weil der Film besser wird, sondern weil das Ticket schon bezahlt ist.
 COMPOSITION: SPLIT
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Left side cold dark cinema blue; right side warm amber close-up of used ticket and closed wallet.
-PREMIUM CHARACTER DIRECTION: Same character in both sides, one side bored in seat, other side clutching already-used ticket with reluctant expression.
-PROMPT:
-Clean premium split-screen of the SAME beat: left half shows the bored Stickman still sitting in the theater; right half shows their hand holding the already-used ticket beside a closed wallet, emotionally emphasizing the reason they stay. Strong cinematic hierarchy, no unrelated information. ZERO READABLE TEXT.
+COLOR DIRECTION: Cold navy cinema left; warm amber ticket/wallet close-up right.
+PREMIUM CHARACTER DIRECTION: Same character in both halves, bored on left and reluctant on right.
+PROMPT: Clean premium split-screen: bored character still seated on left; same character holding already-used ticket beside closed wallet on right. Both halves explain the same reason for staying. ZERO READABLE TEXT.
 
 SCENE 07
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Genau diese bereits investierten Kosten können sich wie ein psychologischer Anker anfühlen.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Deep navy background with amber-gold spent tokens and a coral restraint accent.
-PREMIUM CHARACTER DIRECTION: New premium Stickman in dark navy jacket, moving forward while a tasteful symbolic weight of spent items pulls backward.
+COLOR DIRECTION: Deep navy with amber spent objects and one coral restraint accent.
+PREMIUM CHARACTER DIRECTION: New Stickman in dark navy jacket moving toward a teal doorway while spent items pull backward.
 EXACT GERMAN TEXT: "BEREITS INVESTIERT"
-PROMPT:
-Premium visual metaphor grounded in the channel world: a Stickman tries to walk toward a bright teal doorway while an elegant line tether connects their backpack to already-spent ticket, time and money tokens behind them. Keep the metaphor sophisticated, not cartoonish. Integrate the exact German text BEREITS INVESTIERT into a calm editorial panel. NO OTHER READABLE TEXT.
+PROMPT: Sophisticated premium metaphor: Stickman walks toward bright teal future while a restrained tether connects backpack to already-spent ticket/time/money objects. Integrate exact text BEREITS INVESTIERT in a calm editorial panel. NO OTHER READABLE TEXT.
 
 SCENE 08
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Ökonomisch wäre die entscheidende Frage eigentlich nur: Was bringt mir die Zukunft?
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Teal-forward palette with warm ivory floor and a bright coral future focal point.
-PREMIUM CHARACTER DIRECTION: Distinct analytical Stickman in a clean teal overshirt looking toward two future paths, standing upright and decisive.
-PROMPT:
-A premium real-world decision scene at a transit-like fork: one Stickman looks forward at two clearly different future paths represented by environments and outcomes, while the past is visually behind and out of focus. The scene should communicate future-oriented evaluation without charts or text. ZERO READABLE TEXT.
+COLOR DIRECTION: Teal-forward palette, warm ivory floor, coral future focal point.
+PREMIUM CHARACTER DIRECTION: Analytical Stickman in clean teal overshirt evaluating two future paths.
+PROMPT: Premium real-world fork scene. Figure looks only toward two future outcomes; past elements stay soft and behind. Communicate future-oriented evaluation without charts. ZERO READABLE TEXT.
 
 SCENE 09
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Die zwölf Euro sind weg, egal ob du bleibst oder gehst.
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Both halves share the same amber spent-ticket motif; one half navy theater, one half teal exit corridor.
-PREMIUM CHARACTER DIRECTION: Same cinema character shown in two alternative futures with matching style but different posture.
-PROMPT:
-Premium contrast frame: left side shows the cinema character staying in the seat; right side shows the same character walking out into a teal-lit corridor. In BOTH halves the used ticket is already torn/spent and visually identical, showing that the past cost does not change. No readable numbers or words. ZERO READABLE TEXT.
+COLOR DIRECTION: Same amber spent-ticket accent in both halves; navy theater versus teal exit corridor.
+PREMIUM CHARACTER DIRECTION: Same cinema character shown in two alternative futures.
+PROMPT: Premium contrast: left shows staying in seat, right shows leaving into corridor. In both halves the used ticket is already spent and unchanged. No readable numbers or words. ZERO READABLE TEXT.
 
 SCENE 10
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Trotzdem fühlt sich Gehen oft so an, als würdest du den Verlust erst wirklich akzeptieren.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Dark navy doorway with warm coral light outside and a small amber ticket accent.
-PREMIUM CHARACTER DIRECTION: Cinema character stands at exit threshold, shoulders tense, one hand relaxed around ticket, conflicted expression.
-PROMPT:
-Cinematic threshold shot from behind and slightly to the side. The cinema character pauses at the exit, clearly feeling the emotional weight of leaving, even though the ticket is already spent. Use premium lighting, strong silhouette, depth and subtle emotion. ZERO READABLE TEXT.
+COLOR DIRECTION: Dark navy threshold, coral light outside, small amber ticket accent.
+PREMIUM CHARACTER DIRECTION: Same cinema character at exit, tense shoulders and conflicted face.
+PROMPT: Cinematic threshold shot. Character pauses at exit as leaving feels emotionally final even though the ticket is already spent. Strong silhouette, depth and subtle expression. ZERO READABLE TEXT.
 
 SCENE 11
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Menschen versuchen deshalb manchmal, bereits investierte Zeit, Geld oder Mühe zu rechtfertigen.
 COMPOSITION: MONTAGE
 SOCIAL DENSITY: GROUP
-COLOR DIRECTION: One dominant deep navy main scene with three selective accent colors: teal time, amber money, coral effort.
-PREMIUM CHARACTER DIRECTION: Three distinct premium Stickmen in different roles, each actively protecting or continuing an investment.
-PROMPT:
-Premium montage with one dominant central figure defending a failing personal project, plus two smaller supporting mini-scenes of another Stickman guarding spent money and another protecting time invested. All three examples explain the SAME justification behavior. Clear hierarchy, polished editorial design, no clutter. ZERO READABLE TEXT.
+COLOR DIRECTION: Deep navy dominant; teal time, amber money, coral effort accents.
+PREMIUM CHARACTER DIRECTION: Three distinct premium Stickmen in different roles, each actively protecting an investment.
+PROMPT: Premium montage with one dominant main scene and two smaller supporting mini-scenes for time, money and effort. All explain the same justification behavior. Clear hierarchy, not a busy collage. ZERO READABLE TEXT.
 
 SCENE 12
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Das kann dazu führen, dass wir an schlechten Entscheidungen länger festhalten.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Rich teal and navy environment with one coral warning accent.
-PREMIUM CHARACTER DIRECTION: New Stickman gripping the handle of a visibly damaged but still moving shopping cart/project trolley, determined but strained.
-PROMPT:
-Believable premium everyday metaphor: a Stickman keeps pushing a clearly damaged wheeled cart loaded with an old project box even as one wheel drags, while a clean alternative route is visible nearby. Strong action, premium depth and lighting. ZERO READABLE TEXT.
+COLOR DIRECTION: Rich teal/navy environment with one coral warning accent.
+PREMIUM CHARACTER DIRECTION: New Stickman strained while pushing a damaged project trolley.
+PROMPT: Believable premium metaphor: figure keeps pushing a damaged wheeled cart loaded with an old project while a cleaner route is visible nearby. Strong action, depth and lighting. ZERO READABLE TEXT.
 
 SCENE 13
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Wichtig ist: Vergangene Kosten werden durch weiteres Durchhalten nicht automatisch wieder wertvoll.
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Past side warm muted amber; future side clear teal/navy; coral used as a small stop accent.
-PREMIUM CHARACTER DIRECTION: Calm thoughtful Stickman comparing an already-spent object with a future choice, no exaggerated pose.
+COLOR DIRECTION: Muted amber past versus clear teal/navy future.
+PREMIUM CHARACTER DIRECTION: Calm thoughtful Stickman comparing already-spent objects with a future choice.
 EXACT GERMAN TEXT: "NICHT ZURÜCKHOLBAR"
-PROMPT:
-Premium contrast composition. Left: already-spent ticket/time/money objects remain visibly unchanged. Right: the Stickman keeps adding effort, but the spent objects do not transform or return. Integrate the exact German text NICHT ZURÜCKHOLBAR in a refined editorial zone. NO OTHER READABLE TEXT.
+PROMPT: Premium contrast: spent objects remain unchanged while more effort is added elsewhere. Integrate exact text NICHT ZURÜCKHOLBAR into a refined editorial zone. NO OTHER READABLE TEXT.
 
 SCENE 14
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Ein zweites Beispiel ist ein Abo, das du kaum noch benutzt.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Modern home scene with teal furniture, navy shadows and coral device accent.
-PREMIUM CHARACTER DIRECTION: New relaxed Stickman in stylish homewear looking at an unused exercise/service device gathering dust.
-PROMPT:
-Premium modern apartment. A Stickman notices an expensive-looking subscription-linked device or membership item sitting unused in a corner while their phone is face-down and inactive. Clean rich interior, tasteful colors, strong spatial design. No logos or readable interface text. ZERO READABLE TEXT.
+COLOR DIRECTION: Modern home with teal furniture, navy shadows and coral device accent.
+PREMIUM CHARACTER DIRECTION: New stylish homewear Stickman looking at an unused subscription-linked device gathering dust.
+PROMPT: Premium apartment scene. Unused membership/service item sits untouched while the character notices it. Rich interior, tasteful palette, strong spatial design. No logos or readable interface text. ZERO READABLE TEXT.
 
 SCENE 15
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Du zahlst weiter, weil du schon so lange Mitglied bist.
 COMPOSITION: SPLIT
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Left side teal unused home scene; right side amber stream of recurring payment tokens leaving a wallet.
-PREMIUM CHARACTER DIRECTION: Same subscription character, resigned posture on left, hesitant payment gesture on right.
-PROMPT:
-Premium split-screen: left, the unused membership item remains untouched; right, the same character reluctantly lets another abstract payment token leave a wallet. Same beat, no extra concepts. No readable numbers, app text or logos. ZERO READABLE TEXT.
+COLOR DIRECTION: Teal unused home scene left; amber recurring payment token right.
+PREMIUM CHARACTER DIRECTION: Same subscription character, resigned on left and hesitant payment gesture on right.
+PROMPT: Premium split-screen: unused service remains untouched on left; same character lets another abstract payment token leave wallet on right. No readable numbers, app text or logos. ZERO READABLE TEXT.
 
 SCENE 16
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Oder du arbeitest monatelang an einem Projekt, das immer weniger sinnvoll wirkt.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: GROUP
-COLOR DIRECTION: Creative studio with deep navy structural elements, teal work surfaces and coral/gold task accents.
-PREMIUM CHARACTER DIRECTION: Distinct project team of three Stickmen with premium varied clothing, visibly tired but still active around a physical prototype.
-PROMPT:
-Believable creative studio, not a generic office. Three Stickmen have spent months building a large physical prototype that now looks impractical; they keep working while the prototype visibly causes problems. Premium lighting, tools, material samples and spatial depth. ZERO READABLE TEXT.
+COLOR DIRECTION: Deep navy studio structure, teal work surfaces, coral/gold task accents.
+PREMIUM CHARACTER DIRECTION: Three-person creative team with varied clothing, visibly tired around an impractical prototype.
+PROMPT: Premium creative studio, not generic office. Three Stickmen continue building a large physical prototype that now looks increasingly impractical. Show tools, materials and depth. ZERO READABLE TEXT.
 
 SCENE 17
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Je mehr Zeit hineingeflossen ist, desto schwerer kann ein Abbruch erscheinen.
 COMPOSITION: MONTAGE
 SOCIAL DENSITY: DUO
-COLOR DIRECTION: Deep navy main scene, with amber time progression accents and a coral emotional focal point.
-PREMIUM CHARACTER DIRECTION: Two project partners shown across three small stages, posture becoming more exhausted as the project grows.
-PROMPT:
-Premium montage of one project across time: dominant current scene with two exhausted partners beside the oversized prototype, plus two small supporting earlier stages showing the project smaller and easier to leave. All panels explain accumulated time making stopping harder. ZERO READABLE TEXT.
+COLOR DIRECTION: Deep navy main scene, amber time progression accents, coral focal point.
+PREMIUM CHARACTER DIRECTION: Two project partners shown across time, posture increasingly exhausted.
+PROMPT: Premium montage of the same project across three stages: dominant current scene plus two small earlier stages. All panels show how accumulated time makes stopping harder. ZERO READABLE TEXT.
 
 SCENE 18
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Dann entsteht schnell der Gedanke: Jetzt habe ich schon so viel investiert.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: DUO
-COLOR DIRECTION: Navy/teal studio, warm amber investment objects, focused coral light on the main character.
-PREMIUM CHARACTER DIRECTION: One team member gestures toward piles of used materials and long work history while the other looks doubtful.
+COLOR DIRECTION: Navy/teal studio, amber invested materials, coral focus on speaker.
+PREMIUM CHARACTER DIRECTION: One team member gestures emotionally toward accumulated work while partner looks doubtful.
 EXACT GERMAN TEXT: "SCHON SO VIEL INVESTIERT"
-PROMPT:
-Premium project-studio scene. One Stickman points emotionally to accumulated materials, old prototypes and signs of long effort while a partner questions continuing. Integrate the exact German text SCHON SO VIEL INVESTIERT into a clean wall-like editorial area, not pasted over the figures. NO OTHER READABLE TEXT.
+PROMPT: Premium project scene. One Stickman points to accumulated materials and old prototypes while partner questions continuing. Integrate exact text SCHON SO VIEL INVESTIERT into a clean wall-like editorial zone. NO OTHER READABLE TEXT.
 
 SCENE 19
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Und genau dieser Satz kann dich dazu bringen, noch mehr hinterherzuwerfen.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: DUO
-COLOR DIRECTION: Strong coral accent on new resources being added, deep navy background, teal secondary details.
-PREMIUM CHARACTER DIRECTION: Main Stickman actively adds another box of resources to the failing prototype while partner looks concerned.
-PROMPT:
-Continue the project mini-story. The main Stickman physically adds more material and effort to the already problematic prototype while the partner reacts with concern. Make the escalation clear through action, not charts. Premium cinematic composition and lighting. ZERO READABLE TEXT.
+COLOR DIRECTION: Coral on new resources, deep navy background, teal secondary details.
+PREMIUM CHARACTER DIRECTION: Main Stickman actively adds another resource box while partner reacts with concern.
+PROMPT: Continue project mini-story. Main figure adds even more materials to the problematic prototype while partner clearly worries. Show escalation through action, not charts. ZERO READABLE TEXT.
 
 SCENE 20
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Der Effekt kann sogar bei Beziehungen zu Gegenständen oder Plänen auftreten.
 COMPOSITION: MONTAGE
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Warm ivory base with three richer color pockets: teal, navy and coral.
-PREMIUM CHARACTER DIRECTION: One elegant Stickman centered, with three small same-theme examples around them: object, plan, hobby/project.
-PROMPT:
-Premium montage: one central Stickman considering whether to continue, surrounded by three restrained supporting mini-scenes showing attachment to an old object, a failing plan and a time-heavy hobby/project. Same concept only, sophisticated hierarchy, not a busy infographic. ZERO READABLE TEXT.
+COLOR DIRECTION: Warm ivory base with teal, navy and coral pockets.
+PREMIUM CHARACTER DIRECTION: Elegant central Stickman with three supporting same-theme examples around them.
+PROMPT: Premium montage: central figure plus restrained mini-scenes showing attachment to an old object, a failing plan and a time-heavy personal project. Same concept only. ZERO READABLE TEXT.
 
 SCENE 21
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Ein teures Gerät wird weiter repariert, obwohl ein Ersatz längst vernünftiger wäre.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: DUO
-COLOR DIRECTION: Premium repair workshop with dark navy walls, teal equipment and warm amber/coral tool highlights.
-PREMIUM CHARACTER DIRECTION: Customer Stickman with stylish coat and technician Stickman in teal workwear, both expressive and distinct.
-PROMPT:
-Believable premium electronics repair workshop. A technician presents an old device with multiple repair patches while a clean replacement sits nearby; the customer still gestures toward repairing the old one. Strong interaction, realistic workshop detail, no signage or readable labels. ZERO READABLE TEXT.
+COLOR DIRECTION: Dark navy repair workshop, teal equipment, amber/coral tool highlights.
+PREMIUM CHARACTER DIRECTION: Stylish customer plus technician in teal workwear, clearly distinct.
+PROMPT: Premium electronics repair workshop. Technician presents a repeatedly repaired old device while a clean replacement sits nearby; customer still points toward repairing the old one. No signage or readable labels. ZERO READABLE TEXT.
 
 SCENE 22
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Der gemeinsame Fehler ist immer ähnlich: Vergangenheit und Zukunft werden vermischt.
 COMPOSITION: SPLIT
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Left past in amber/coral, right future in teal/navy, clean warm ivory divider.
-PREMIUM CHARACTER DIRECTION: Thoughtful Stickman visually pulled between a stack of past investments and a future outcome.
-PROMPT:
-Premium split composition: past investment on the left, future outcome on the right, with one Stickman incorrectly mixing both into one decision. Keep the idea clear through placement and gaze direction, not labels. ZERO READABLE TEXT.
+COLOR DIRECTION: Amber/coral past left, teal/navy future right, warm ivory divider.
+PREMIUM CHARACTER DIRECTION: Thoughtful Stickman pulled visually between past investments and future outcome.
+PROMPT: Premium split composition showing past investment on left and future outcome on right while one Stickman incorrectly mixes both into one decision. ZERO READABLE TEXT.
 
 SCENE 23
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Vergangene Kosten lassen sich meistens nicht mehr verändern.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Calm deep navy background with amber spent objects fading softly; teal future light remains distant.
-PREMIUM CHARACTER DIRECTION: Calm Stickman lets an already-used ticket and broken part rest behind rather than grabbing them.
-PROMPT:
-Quiet premium scene emphasizing irreversibility: a Stickman stands beside already-used, already-spent objects that remain unchanged behind them. No dramatic metaphor; simply show the past as physically fixed while the character prepares to move on. ZERO READABLE TEXT.
+COLOR DIRECTION: Calm deep navy, amber spent objects fading, distant teal future light.
+PREMIUM CHARACTER DIRECTION: Calm Stickman leaves already-used objects resting behind rather than grabbing them.
+PROMPT: Quiet premium scene. Already-spent objects remain physically unchanged behind the figure as they prepare to move forward. ZERO READABLE TEXT.
 
 SCENE 24
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Die bessere Frage lautet deshalb: Würde ich mich heute noch einmal dafür entscheiden?
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Fresh teal and warm ivory with coral decision accent; brighter, more optimistic lighting.
-PREMIUM CHARACTER DIRECTION: New confident Stickman at a clean decision point, posture upright, hand deliberately choosing between two present-day options.
+COLOR DIRECTION: Fresh teal and warm ivory with coral decision accent.
+PREMIUM CHARACTER DIRECTION: New confident Stickman at a clean present-day decision point, upright posture.
 EXACT GERMAN TEXT: "HEUTE NEU ENTSCHEIDEN"
-PROMPT:
-Premium present-day decision scene. A confident Stickman stands before two realistic choices as if starting from zero today, with past clutter visually behind and out of focus. Integrate the exact German text HEUTE NEU ENTSCHEIDEN into a refined architectural panel. NO OTHER READABLE TEXT.
+PROMPT: Premium present-day choice scene as if starting from zero today. Past clutter stays soft behind. Integrate exact text HEUTE NEU ENTSCHEIDEN into a refined architectural panel. NO OTHER READABLE TEXT.
 
 SCENE 25
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Wenn die Antwort Nein ist, kann das ein wichtiges Warnsignal sein.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Teal field with one precise coral warning accent and deep navy framing.
-PREMIUM CHARACTER DIRECTION: Same decision character pauses with a clear but controlled concerned expression, not exaggerated.
-PROMPT:
-Premium close-medium decision moment. The Stickman has mentally tested the choice as if starting today and reacts with a clear pause and concern. Use one elegant coral warning cue in the environment without text or symbols that resemble signage. ZERO READABLE TEXT.
+COLOR DIRECTION: Teal field, precise coral warning accent, deep navy framing.
+PREMIUM CHARACTER DIRECTION: Same decision character pauses with controlled concern.
+PROMPT: Premium close-medium decision moment. Character tests the choice as if starting today and pauses with clear concern. One restrained coral warning cue in environment. ZERO READABLE TEXT.
 
 SCENE 26
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Hilfreich ist auch, nur zukünftige Kosten und zukünftigen Nutzen gegenüberzustellen.
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Future cost side coral/navy, future benefit side teal/gold, balanced ivory center.
-PREMIUM CHARACTER DIRECTION: Analytical Stickman compares two concrete future outcomes with calm professional body language.
-PROMPT:
-Premium contrast scene showing only FUTURE consequences: left, future cost represented by ongoing time/money/resource use; right, future benefit represented by a realistic positive outcome. One Stickman evaluates them calmly. No past-investment objects in the comparison. ZERO READABLE TEXT.
+COLOR DIRECTION: Future cost side coral/navy, future benefit side teal/gold.
+PREMIUM CHARACTER DIRECTION: Analytical Stickman calmly compares two concrete future outcomes.
+PROMPT: Premium contrast showing only FUTURE consequences: ongoing future cost on left, realistic future benefit on right. No past-investment objects in comparison. ZERO READABLE TEXT.
 
 SCENE 27
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Was kostet mich die nächste Stunde, der nächste Monat oder der nächste Euro?
 COMPOSITION: MONTAGE
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Deep navy anchor background with three crisp accent zones: teal time, coral month/commitment, amber money.
-PREMIUM CHARACTER DIRECTION: One premium Stickman centered, actively examining three future resource examples with clear gaze flow.
-PROMPT:
-Premium montage with one dominant central figure and three small supporting future-resource moments: upcoming time, upcoming recurring commitment, upcoming money. Keep the hierarchy clean and all examples tied to the SAME future-cost question. No readable clocks, calendar text or numbers. ZERO READABLE TEXT.
+COLOR DIRECTION: Deep navy anchor with teal time, coral commitment and amber money accents.
+PREMIUM CHARACTER DIRECTION: One central Stickman actively examining three future resource examples.
+PROMPT: Premium montage with one dominant figure and three small supporting future-resource moments: time, recurring commitment and money. Same future-cost question only. No readable clock/calendar text or numbers. ZERO READABLE TEXT.
 
 SCENE 28
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Und was bekomme ich realistisch dafür zurück?
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Rich teal environment with amber reward accent and deep navy structural depth.
-PREMIUM CHARACTER DIRECTION: Stickman inspects a tangible future outcome instead of abstract charts, confident and focused.
-PROMPT:
-Premium real-life evaluation scene: the Stickman looks at the actual future result produced by continued effort, shown as a concrete usable outcome rather than a graph. Clean environment, strong depth and realistic props. ZERO READABLE TEXT.
+COLOR DIRECTION: Rich teal environment, amber outcome accent, deep navy depth.
+PREMIUM CHARACTER DIRECTION: Stickman inspects a tangible future result, focused and confident.
+PROMPT: Premium real-life evaluation scene. Character looks at the actual future result produced by continued effort, shown as a concrete usable outcome rather than a chart. ZERO READABLE TEXT.
 
 SCENE 29
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Diese Sicht macht Entscheidungen oft nüchterner, weil die Vergangenheit nicht mehr abstimmt.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Clear teal/navy foreground, past objects muted and desaturated far behind, warm ivory clarity.
-PREMIUM CHARACTER DIRECTION: Calm decisive Stickman facing forward with relaxed shoulders, past clutter visually distant.
+COLOR DIRECTION: Clear teal/navy foreground, past objects muted far behind, warm ivory clarity.
+PREMIUM CHARACTER DIRECTION: Calm decisive Stickman facing forward with relaxed shoulders.
 EXACT GERMAN TEXT: "NUR DIE ZUKUNFT ZÄHLT"
-PROMPT:
-Premium forward-looking scene: a calm Stickman makes a present decision while past investments sit far behind in soft focus and no longer influence the foreground. Integrate the exact German text NUR DIE ZUKUNFT ZÄHLT into a clean architectural surface within the scene. NO OTHER READABLE TEXT.
+PROMPT: Premium forward-looking decision. Past investments sit far behind in soft focus and no longer dominate the foreground. Integrate exact text NUR DIE ZUKUNFT ZÄHLT into a clean environmental surface. NO OTHER READABLE TEXT.
 
 SCENE 30
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Auch ein Gegenargument kann helfen: Was würde ich einem Freund in derselben Situation raten?
 COMPOSITION: STANDARD
 SOCIAL DENSITY: DUO
-COLOR DIRECTION: Warm café interior using teal upholstery, navy shadows and coral cups/accents.
-PREMIUM CHARACTER DIRECTION: Two distinct stylish Stickmen in a genuine conversation; one concerned, one giving thoughtful outside advice.
-PROMPT:
-Premium café conversation. One Stickman explains a difficult decision to a friend; the friend calmly offers an outside perspective with clear engaged body language. Rich believable environment, cinematic warm light, no text on menus, cups or walls. ZERO READABLE TEXT.
+COLOR DIRECTION: Warm café with teal upholstery, navy shadows and coral accents.
+PREMIUM CHARACTER DIRECTION: Two stylish distinct Stickmen in genuine conversation, one concerned and one giving thoughtful outside advice.
+PROMPT: Premium café conversation with clear engaged body language and warm cinematic light. No text on menus, cups or walls. ZERO READABLE TEXT.
 
 SCENE 31
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Bei fremden Entscheidungen sehen wir versunkene Kosten oft klarer als bei unseren eigenen.
 COMPOSITION: SPLIT
 SOCIAL DENSITY: DUO
-COLOR DIRECTION: Left side clear teal perspective on friend; right side warmer coral/navy self-perspective with more visual clutter.
-PREMIUM CHARACTER DIRECTION: Same pair from Scene 30; outside observer calm on left, self-decider emotionally entangled on right.
-PROMPT:
-Premium split-screen using the SAME two-person situation: left side shows the friend viewing the decision clearly from outside; right side shows the decision-maker surrounded by their accumulated investment and emotion. Strong visual contrast, same spoken idea. ZERO READABLE TEXT.
+COLOR DIRECTION: Clear teal outside perspective left; warmer coral/navy self-perspective right.
+PREMIUM CHARACTER DIRECTION: Same pair from Scene 30, observer calm on left and decision-maker emotionally entangled on right.
+PROMPT: Premium split-screen of same situation: friend sees the choice clearly from outside while the decision-maker is surrounded by accumulated investment and emotion. ZERO READABLE TEXT.
 
 SCENE 32
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Natürlich bedeutet das nicht, dass jedes schwierige Projekt sofort beendet werden sollte.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: GROUP
-COLOR DIRECTION: Balanced teal/navy studio with hopeful amber highlights, no warning red dominance.
-PREMIUM CHARACTER DIRECTION: Three-person project team reviewing a difficult but still viable project with calm constructive posture.
-PROMPT:
-Premium creative workshop scene. A team of three Stickmen pauses to review a difficult project that still has visible potential. They are not quitting impulsively; they are evaluating carefully. Show tools and prototype progress, premium lighting and calm professional interaction. ZERO READABLE TEXT.
+COLOR DIRECTION: Balanced teal/navy studio with hopeful amber highlights.
+PREMIUM CHARACTER DIRECTION: Three-person project team reviewing a difficult but viable project with constructive posture.
+PROMPT: Premium creative workshop. Team pauses to evaluate a hard project that still has real potential. Show tools, prototype progress and calm professional interaction. ZERO READABLE TEXT.
 
 SCENE 33
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Manchmal lohnt sich Durchhalten, weil die zukünftigen Chancen tatsächlich gut sind.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: GROUP
-COLOR DIRECTION: Teal and warm gold become dominant, deep navy provides contrast; optimistic but restrained.
-PREMIUM CHARACTER DIRECTION: Same project team with more upright posture, collaboratively moving toward a realistic promising outcome.
-PROMPT:
-Continue the same project team. They identify a realistic path forward and work toward a clearly promising future outcome. Show evidence in physical progress and team action rather than charts or text. Premium optimistic color and depth. ZERO READABLE TEXT.
+COLOR DIRECTION: Teal and warm gold dominant, deep navy contrast.
+PREMIUM CHARACTER DIRECTION: Same project team now upright and collaborative around realistic progress.
+PROMPT: Continue same team. They identify a realistic path forward and work toward a visibly promising outcome. Show evidence in physical progress rather than charts. ZERO READABLE TEXT.
 
 SCENE 34
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Entscheidend ist aber, warum du weitermachst: wegen der Zukunft oder wegen der Vergangenheit?
 COMPOSITION: SPLIT
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Left past side amber/coral with spent objects; right future side teal/gold with concrete upcoming benefit.
-PREMIUM CHARACTER DIRECTION: One confident Stickman centered, deliberately comparing motive rather than being dragged by it.
-PROMPT:
-Premium split decision frame: left side shows continuing only because of past investments; right side shows continuing because future prospects are genuinely strong. One centered Stickman compares the two motives. Same question only, strong hierarchy. ZERO READABLE TEXT.
+COLOR DIRECTION: Amber/coral past left, teal/gold future right.
+PREMIUM CHARACTER DIRECTION: Confident Stickman centered, deliberately comparing motive rather than being dragged by it.
+PROMPT: Premium split decision: left shows continuing only because of past investments; right shows continuing because future prospects are genuinely strong. Same question only. ZERO READABLE TEXT.
 
 SCENE 35
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Der Sunk-Cost-Effekt wird kleiner, wenn du Vergangenes loslässt und neu nach vorn entscheidest.
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-COLOR DIRECTION: Bright teal-to-gold forward light, deep navy receding behind, coral used only as a small transition accent.
+COLOR DIRECTION: Bright teal-to-gold forward light, deep navy receding behind, tiny coral transition accent.
 PREMIUM CHARACTER DIRECTION: Premium Stickman walking forward with relaxed confident posture, leaving spent objects behind without drama.
 EXACT GERMAN TEXT: "VERGANGENES LOSLASSEN"
-PROMPT:
-Premium closing scene with a confident Stickman walking into a bright teal-and-gold future environment while already-spent objects remain behind in deep navy distance. The figure is not running away; they are making a calm new decision. Integrate the exact German text VERGANGENES LOSLASSEN into a refined environmental panel with generous safe margins. NO OTHER READABLE TEXT.
-
-FINAL QA
-- 35 scenes present and contiguous
-- Scene 01 is premium cover + first beat + master
-- Hook is visually clear immediately
-- premium character direction is visible, not generic beige default figures
-- project palette is used intentionally with meaningful dominant-color changes
-- no grey/beige wash or sterile office monotony
-- real-life scenes dominate over abstract teaching graphics
-- all humans are true Stickmen
-- composition and social density vary logically
-- every scene includes premium depth, lighting and deliberate staging
-- planned German text is exact and integrated directly by Google Flow
-- every other scene has ZERO READABLE TEXT
-- no English, logos, pseudo-text or accidental numbers
-- Remotion adds NO visible text
+PROMPT: Premium closing scene. Confident Stickman walks into bright teal-and-gold future while spent objects remain behind in deep navy distance. Integrate exact text VERGANGENES LOSLASSEN into a refined environmental panel with generous safe margins. NO OTHER READABLE TEXT.
