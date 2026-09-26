@@ -34,16 +34,53 @@ Zusätzlich teilen bei mehreren eigenständigen Bildern, z. B.:
 
 Verbindlich:
 - Komposition an genau diesen Beat anpassen
-- Kameradistanz, Perspektive, Pose, Handlung, Requisiten, Umgebung, Licht und Fokus bewusst wählen
-- konkrete Stickman-Handlung bevorzugen
+- Kameradistanz, Perspektive, Pose, Handlung, Requisiten, Umgebung, Licht, Farbe und Fokus bewusst wählen
+- konkrete Alltagshandlung bevorzugen
 - abstrakte Infografik nur wenn wirklich klarer
 - keine generische Standardszene
 - keine unnötige Wiederholung derselben Pose/Kamera
-- Master hält Stickman-DNA, Linien, Farben und Shading konsistent; er sperrt nicht Komposition oder Figurenidentität
+- Master hält Stickman-DNA, Premium-Qualitätsniveau, Linien, Farbverhalten und Shading konsistent; er sperrt nicht Komposition oder Figurenidentität
 
 Zusätzlich verbindlich:
+- `rules/PREMIUM_VISUAL_LOCK.md`
 - `rules/COMPOSITION_VARIATION_LOCK.md`
 - `rules/SOCIAL_SCENE_LOCK.md`
+
+## Premium-Felder pro Beat
+
+Bei neuen Projekten mit `PREMIUM_EDITORIAL_CINEMATIC_V1` trägt jede Szene zusätzlich:
+- `colorDirection`
+- `premiumCharacterDirection`
+
+`colorDirection` beschreibt:
+- welche Projektfarbe den Fokus trägt
+- Hintergrund-/Neutralrolle
+- Lichttemperatur / Kontrast
+- wie graue/beige Monotonie vermieden wird
+
+`premiumCharacterDirection` beschreibt:
+- Pose/Körpersprache
+- Emotion
+- Kleidung/Rolle
+- relevante Requisiten
+- Interaktion bei Duo/Gruppe
+
+Premium bedeutet niemals realistischere Anatomie.
+
+## Real-Life Scene Priority
+
+Bei Alltagspsychologie gilt:
+1. echte erkennbare Alltagsszene
+2. visuelle Metapher
+3. abstrakte Lehrgrafik nur wenn sie klarer ist
+
+Vermeiden:
+- riesige schwebende Zahlen als Universalbild
+- endlose Skalen/Karten/Waagen/Pfeile
+- sterile Büroserien
+- neutrale Figur vor Symbol
+
+Wenn ein Einkauf, Gespräch, Café, ÖPNV, Arbeitsplatz, Schule, Wohnung, Verhandlung oder soziale Situation denselben Punkt zeigen kann, gewinnt die konkrete Szene.
 
 ## Kompositionsplanung
 
@@ -127,12 +164,6 @@ Das bedeutet:
 - Ziel meist 15–25 % inklusive Cover
 - harte Obergrenze 30 %
 
-## Keine Sammelbilder
-
-Nicht mehrere **unabhängige Aussagen** in ein einziges Bild quetschen, nur um Bildzahl zu sparen.
-
-Eine Montage mit mehreren Teilmotiven ist dagegen erlaubt, wenn alle Teilmotive denselben Visual Beat erklären.
-
 ## Dichte
 
 Für normale Erklärpassagen:
@@ -159,6 +190,10 @@ Jeder Beat enthält mindestens:
 - `compositionType`
 - `socialDensity`
 
+Bei Premium-Projekten zusätzlich:
+- `colorDirection`
+- `premiumCharacterDirection`
+
 Empfohlen:
 - `visualIdea`
 - `subject`
@@ -170,24 +205,26 @@ Empfohlen:
 
 ## Automatische Sicherung
 
-`npm run qa:visual-density`
-
-und zusätzlich:
-
-`npm run qa:visual-variety`
+Mindestens:
+- `npm run qa:visual-density`
+- `npm run qa:visual-variety`
+- `npm run qa:premium-content`
 
 Die Checks sichern unter anderem:
 - sinnvolle Beat-Dichte
 - geplante Kompositionsvariation
 - Social-Density-Felder
+- Premium-/Color-Projektmetadaten
+- Script-Hook-Plan
 - keine vollständig monotone Einzelbildserie
-- neue V1-Planungsmarker für künftige Projekte
+- neue Zukunftsmarker für künftige Projekte
 
 ## Phase 2 / Google Flow
 
 Phase 2 darf:
 - Stil auf den Visual Beat anwenden
 - den Beat verständlich und individuell komponieren
+- Premium-Figurenführung und Farbrolle umsetzen
 - geplanten exakten deutschen Text direkt in das Bild rendern
 - Split-/Kontrast-/Montage-Kompositionen verwenden, wenn sie denselben Beat unterstützen
 
@@ -195,6 +232,9 @@ Phase 2 darf nicht:
 - mehrere unabhängige Beats zusammenlegen
 - Inhalte aus späteren Beats vorziehen
 - alte Komposition nur aus Bequemlichkeit wiederverwenden
+- Premium durch realistischere Human-Anatomie ersetzen
+- graue/beige Monotonie als Standard erzeugen
+- Lehrgrafik wählen, wenn eine konkrete Alltagsszene klarer wäre
 - ungeplanten Text erzeugen
 - Text aus Bild 01 in spätere Bilder kopieren
 
@@ -203,6 +243,9 @@ Phase 2 darf nicht:
 Prüfen:
 - zentraler Inhalt des gesprochenen Satzes gleichzeitig sichtbar
 - Bild individuell auf Beat zugeschnitten
+- Premium-Figur statt generischer Platzhalterfigur
+- Farbe/Licht bewusst statt Einheitswash
+- echte Alltagsszene bevorzugt, wo sinnvoll
 - keine unnötig generische Infografik
 - keine monotone Serie aus `eine Figur + Raum`
 - Split/Montage dort eingesetzt, wo sie echten Mehrwert bringen

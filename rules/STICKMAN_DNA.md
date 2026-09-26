@@ -2,11 +2,11 @@
 
 **STATUS: HARD LOCK — v1.3**
 
-Diese Datei ist die zentrale visuelle Source of Truth für alle Agenten, Prompts, Templates, Reels und YouTube-Videos.
+Diese Datei ist die zentrale visuelle Anatomie-Source-of-Truth für alle Agenten, Prompts, Templates, Reels und YouTube-Videos.
 
 Leitidee:
 
-**Simple Stickmen. Rich World. One clear idea per image. German visual language.**
+**Simple Stickmen. Premium Character Direction. Rich World. Intentional Color. One clear idea per image.**
 
 ## 1. Figuren-DNA — STRICT STICKMAN ONLY
 
@@ -30,7 +30,30 @@ Gilt auch für Hauptfiguren, Nebenfiguren, Passanten, Menschenmengen, Forscher, 
 
 **HARD FAIL:** normale Cartoon-Menschen, semi-realistische Menschen, realistische Menschen, gemischte Figurenstile, dicke menschliche Gliedmaßen, realistische Hände/Finger, 3D/Pixar, Anime, Manga oder Chibi.
 
-## 2. Welt-DNA — DETAILREICHE MODERNE 2D-WELT
+## 2. Premium Character Direction — SIMPLE ANATOMY, PREMIUM DESIGN
+
+Premium bedeutet **nicht** realistischere Anatomie.
+
+Premium entsteht durch:
+- klare ausdrucksstarke Pose
+- bewusste Körperlinie und Silhouette
+- minimalistische, aber lesbare Emotion
+- rollenbezogene Kleidung mit sauberer Formensprache
+- passende Accessoires/Requisiten, wenn sie die Rolle erklären
+- echte Interaktion mit Objekt, Ort oder anderen Figuren
+- unterschiedliche Körpergrößen/Proportionen innerhalb der Stickman-DNA
+- bewusstes Framing statt Platzhalterfigur in der Bildmitte
+
+Vermeiden:
+- dieselbe generische Beige-/Grau-Kleidung über viele Szenen
+- neutrale stehende Figur ohne Handlung
+- identische Pose in mehreren unabhängigen Szenen
+- Figur nur als Dekoration vor einer Zahl, Skala oder Karte
+- riesige Köpfe oder maskottchenhafte Proportionen
+
+**Simple anatomy, premium character direction.**
+
+## 3. Welt-DNA — DETAILREICHE MODERNE 2D-WELT
 
 Die Figuren bleiben sehr simpel. Die Welt darf deutlich reichhaltiger sein.
 
@@ -42,20 +65,48 @@ Erwünscht:
 - natürliche Objektfarben
 - saubere dunkle organische Outlines
 - kontrollierte Sättigung
-- weiches glaubwürdiges Licht
+- bewusstes Licht mit klarer Fokuszone
 - dezentes 2D-/Cel-Shading
 - hochwertige Editorial-/Dokumentationswirkung
+- Vordergrund/Mittelgrund/Hintergrund, wenn räumlich sinnvoll
 
 Nicht erwünscht:
 - Fotorealismus
 - 3D-/CGI-Look
 - leerer Whiteboard-Look als Standard
 - permanentes Beige/Sepia/Pastell
+- grauer Einheitswash
+- sterile Standardbüros über viele Szenen
 - zufällige Dekoration ohne Erklärfunktion
 
 **Detail gehört in die Welt, nicht in die menschliche Anatomie.**
 
-## 3. Bild-DNA — EINE KLARE IDEE PRO BILD
+## 4. Farb-DNA — INTENTIONAL COLOR STORY
+
+Für neue YouTube-Projekte gilt zusätzlich `rules/PREMIUM_VISUAL_LOCK.md`.
+
+Jedes Video definiert eine thematisch passende Projektpalette mit:
+- Primary
+- Secondary
+- Accent
+- Neutral
+- Avoid
+
+Die Palette schafft Zusammenhalt, ohne jede Szene gleich aussehen zu lassen.
+
+Verbindlich:
+- Fokusmotiv darf farblich hervorgehoben werden
+- Hintergrund darf ruhiger sein
+- Lichttemperatur darf zwischen Szenen variieren
+- natürliche Objektfarben bleiben glaubwürdig
+- 1–2 Akzentfarben dürfen wiederkehren
+
+Nicht erlaubt als Standard:
+- graue/beige Monotonie
+- zufällige Bonbonfarben
+- identische Farbbalance in fast jedem Bild
+
+## 5. Bild-DNA — EINE KLARE IDEE PRO BILD
 
 Verbindlich:
 - genau ein primärer visueller Gedanke pro Bild
@@ -67,19 +118,23 @@ Verbindlich:
 - mehrere neue Gedanken werden auf mehrere Visual Beats verteilt
 - Master sperrt Stil, nicht Kamera, Pose, Ort, Komposition oder Figurenidentität
 
+Mehrere Teilbilder sind erlaubt, wenn sie denselben gesprochenen Beat erklären.
+
 Priorität:
 **Klarheit > Informationsmenge pro Bild.**
 
-## 4. Konkrete Szene vor abstrakter Infografik
+## 6. Konkrete Szene vor abstrakter Infografik
 
 Bevorzugte Reihenfolge:
-1. konkrete Handlung mit Stickman + passendem Ort/Requisit
+1. konkrete Alltagshandlung mit Stickman + passendem Ort/Requisit
 2. einfache visuelle Metapher
 3. Diagramm/Skala/Karte nur wenn Handlung oder Metapher die Aussage nicht sauber erklären kann
 
-Keine langen Serien aus denselben Karten, Metern, Waagen, Pfaden oder abstrakten UI-Flächen.
+Keine langen Serien aus denselben Karten, Metern, Waagen, Pfaden, riesigen Zahlen oder abstrakten UI-Flächen.
 
-## 5. Sprache im Bild — ALLE SICHTBAREN YOUTUBE-TEXTE AUS GOOGLE FLOW
+Wenn eine echte Szene den Mechanismus zeigen kann, gewinnt die echte Szene.
+
+## 7. Sprache im Bild — ALLE SICHTBAREN YOUTUBE-TEXTE AUS GOOGLE FLOW
 
 Für neue YouTube-Projekte gilt:
 
@@ -113,7 +168,7 @@ Das bedeutet:
 ### Text-QA
 Wenn geplanter Text fehlt, falsch geschrieben, unlesbar, abgeschnitten oder von Zusatztext begleitet ist: **nur dieses Bild neu generieren**.
 
-## 6. CAST-VARIATION — STIL GLEICH, FIGUREN NICHT GLEICH
+## 8. CAST-VARIATION — STIL GLEICH, FIGUREN NICHT GLEICH
 
 **Stickman-DNA ist keine Charakter-DNA.**
 
@@ -124,13 +179,15 @@ Standard:
 - Nebenfiguren dürfen andere Kleidung, Farben, Accessoires, Rollen und Körpergrößen innerhalb der DNA haben
 - nicht automatisch denselben Hoodie, dieselbe Farbe oder denselben Charakter aus Bild 01 kopieren
 
-Vor jedem Bild vier Entscheidungen:
+Vor jedem Bild mindestens sechs Entscheidungen:
 1. Cast
 2. Ort
 3. Handlung
 4. Kamera
+5. Farb-/Lichtrolle
+6. Premium-Figurenwirkung
 
-## 7. Wiederkehrende Figuren — NUR BEI ECHTER KONTINUITÄT
+## 9. Wiederkehrende Figuren — NUR BEI ECHTER KONTINUITÄT
 
 Wenn eine bestimmte Figur innerhalb einer zusammenhängenden Mini-Handlung dieselbe Person bleiben soll, konstant halten:
 - Kopfgröße/-form
@@ -143,12 +200,12 @@ Wenn eine bestimmte Figur innerhalb einer zusammenhängenden Mini-Handlung diese
 
 Diese Kontinuität ist lokal, nicht automatisch für das ganze Video.
 
-## 8. Master-Referenz-DNA — STYLE REFERENCE, NOT CHARACTER OR TEXT CLONE
+## 10. Master-Referenz-DNA — STYLE REFERENCE, NOT CHARACTER OR TEXT CLONE
 
 Für YouTube:
 1. Bild 01 allein generieren, inklusive exaktem Cover-Titel.
 2. STOP und Nutzerfreigabe.
-3. Nur freigeben, wenn Stickman-DNA, Welt-DNA, Titel, Cover-Klarheit und erster Beat passen.
+3. Nur freigeben, wenn Stickman-DNA, Premium-Figurenwirkung, Farbwelt, Welt-DNA, Titel, Cover-Klarheit und erster Beat passen.
 4. Bild 01 als Master speichern.
 5. Ab Bild 02 immer Bild 01 als Referenz anhängen.
 6. Master sperrt Anatomie-System, Linienart, Rendering, Shading, Farbverhalten, Detailgrad und Gesamtästhetik.
@@ -156,12 +213,13 @@ Für YouTube:
 8. Text aus dem Master niemals automatisch kopieren.
 9. Spätere Szene rendert nur dann Text, wenn für diese Szene eigener exakter Google-Flow-Text geplant ist.
 
-## 9. Batch-DNA
+## 11. Batch-DNA
 
 Nach Freigabe von Bild 01:
 - maximal 5 neue Bilder pro Batch
 - interne QA automatisch durchführen
 - gegen Master, untereinander und gegen Visual Beat prüfen
+- Premium-Figur, Farbe und reale Szenenqualität mitprüfen
 - nur fehlerhafte Bilder regenerieren
 - bestandene Bilder behalten
 - nach PASS automatisch den nächsten Batch starten
@@ -169,20 +227,21 @@ Nach Freigabe von Bild 01:
 
 **Nutzerfreigabe regulär nur einmal: nach Bild 01.**
 
-## 10. Format-DNA
+## 12. Format-DNA
 
 - `reels/` → 9:16 / 1080×1920 / 30 fps
 - `youtube/` → 16:9 / 1920×1080 / 30 fps
 
-## 11. Kompakter DNA-Promptblock
+## 13. Kompakter DNA-Promptblock
 
-`STRICT CHANNEL DNA: simple editorial 2D stickman characters inside rich detailed believable environments. EVERY visible human or human-like figure must use the same true stickman anatomy: simple round/oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet. No conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi. MASTER IMAGE IS A STYLE/ANATOMY REFERENCE, NOT A CHARACTER OR TEXT CLONE: preserve anatomy system, linework, rendering, color treatment and world quality, but freely vary character identity, clothing, cast size, pose, role, environment and camera to fit each beat. ONE clear visual idea per image. Prefer a concrete stickman action in a believable setting over an abstract infographic. YOUTUBE TEXT POLICY: all planned visible German text is rendered directly by Google Flow in the specified scene; every unplanned text scene renders ZERO READABLE TEXT; do not copy readable text from the master image; Remotion adds NO visible YouTube text.`
+`STRICT CHANNEL DNA: simple editorial 2D stickman anatomy with PREMIUM CHARACTER DIRECTION inside rich detailed believable environments. EVERY visible human or human-like figure must use true stickman anatomy: simple round/oval flat head, tiny minimal eyes and mouth, no realistic nose or ears, small simplified torso, very thin line-like arms and legs, simple no-finger hands and simplified feet. Premium quality comes from expressive pose, deliberate silhouette, role-specific clothing, meaningful props, interaction, framing, lighting and color — NOT from realistic anatomy. No conventional cartoon humans, no semi-realistic people, no mixed human styles, no 3D/Pixar/anime/chibi. Use an intentional project color story with recurring accent colors, believable local object colors, clear focal contrast and varied lighting; avoid grey/beige monotony. MASTER IMAGE IS A STYLE/ANATOMY REFERENCE, NOT A CHARACTER OR TEXT CLONE: preserve anatomy system, linework, rendering, color treatment and world quality, but freely vary character identity, clothing, cast size, pose, role, environment and camera to fit each beat. ONE clear visual idea per image. Prefer a concrete real-life stickman action in a believable setting over an abstract infographic, giant symbol or teaching slide. YOUTUBE TEXT POLICY: all planned visible German text is rendered directly by Google Flow in the specified scene; every unplanned text scene renders ZERO READABLE TEXT; do not copy readable text from the master image; Remotion adds NO visible YouTube text.`
 
-## 12. Priorität
+## 14. Priorität
 
 Bei Konflikten gilt:
 - Format → `rules/FORMAT_LOCK.md`
-- visuelle Identität → diese DNA-Datei
+- visuelle Anatomie → diese DNA-Datei
+- Premium/Farbe → `rules/PREMIUM_VISUAL_LOCK.md`
 - Cover → `rules/COVER_LOCK.md`
 - sichtbarer YouTube-Text → `rules/TEXT_OVERLAY_LOCK.md`
 - Style-/Anatomie-Ausprägung → freigegebene Master-Referenz
@@ -191,4 +250,4 @@ Bei Konflikten gilt:
 
 Merksatz:
 
-**DNA bestimmt WIE Stickmen aussehen. Master zeigt den Stil. Visual Beat bestimmt WER, WO und WAS. Google Flow erzeugt alle sichtbaren YouTube-Texte. Remotion erzeugt keinen sichtbaren Text.**
+**DNA bestimmt die einfache Anatomie. Premium Visual Direction bestimmt Pose, Kleidung, Farbe, Licht und Bildqualität. Visual Beat bestimmt WER, WO und WAS.**

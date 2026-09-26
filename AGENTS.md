@@ -15,18 +15,40 @@ Danach lesen:
 4. `rules/FORMAT_LOCK.md`
 5. `rules/YOUTUBE_THEMEN_SYSTEM.md`
 6. `rules/YOUTUBE_STYLE_LOCK.md`
-7. `rules/IMAGE_REFERENCE_LOCK.md`
-8. `rules/COVER_LOCK.md`
-9. `rules/TEXT_OVERLAY_LOCK.md`
-10. `rules/FLOW_TEXT_STYLE_LOCK.md`
-11. `rules/COMPOSITION_VARIATION_LOCK.md`
-12. `rules/SOCIAL_SCENE_LOCK.md`
-13. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-14. `rules/PRODUCTION_FORMAT_RULES.md`
+7. `rules/PREMIUM_VISUAL_LOCK.md`
+8. `rules/SCRIPT_HOOK_LOCK.md`
+9. `rules/IMAGE_REFERENCE_LOCK.md`
+10. `rules/COVER_LOCK.md`
+11. `rules/TEXT_OVERLAY_LOCK.md`
+12. `rules/FLOW_TEXT_STYLE_LOCK.md`
+13. `rules/COMPOSITION_VARIATION_LOCK.md`
+14. `rules/SOCIAL_SCENE_LOCK.md`
+15. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+16. `rules/PRODUCTION_FORMAT_RULES.md`
 
 ## Themenwelt
 
 Kanalnische: **Alltagspsychologie & menschliches Verhalten**.
+
+## Skript-Einstieg — HARD LOCK
+
+Neue YouTube-Projekte verwenden `scriptHookPolicy: "HOOK_FIRST_EXPLAIN_EARLY_V1"`.
+
+Die ersten Szenen müssen schnell Klarheit schaffen:
+1. Szene 01 = klare Hook-Frage oder überraschende direkte Aussage
+2. Kernbegriff spätestens Szene 03
+3. einfache Erklärung direkt danach
+4. erstes konkretes Alltagsbeispiel spätestens Szene 05
+5. erst danach Mechanismus, Experiment und Vertiefung
+
+Bevorzugte Hook-Typen:
+- `WHAT_IS`
+- `WHY_DOES`
+- `HAVE_YOU_WONDERED`
+- `DIRECT_SURPRISE`
+- `DIRECT_PROBLEM`
+
+Nicht mit mehreren abstrakten Sätzen aufwärmen. Kein langsamer Einstieg, wenn das Thema direkt erklärt werden kann.
 
 ## Bildwelt — HARD LOCK
 
@@ -43,12 +65,44 @@ Jede sichtbare menschliche oder menschenähnliche Figur benutzt echte Stickman-G
 
 Normale Cartoon-Menschen, halb-realistische Menschen, Mischstile, 3D/Pixar/Anime sind HARD FAIL.
 
-## Bildlogik
+## Premium Visual Direction — HARD LOCK
+
+Neue Projekte verwenden:
+- `premiumVisualPolicy: "PREMIUM_EDITORIAL_CINEMATIC_V1"`
+- `colorStoryPolicy: "INTENTIONAL_COLOR_STORY_V1"`
+
+Vor Google Flow eine konkrete `projectPalette` definieren:
+- primary
+- secondary
+- accent
+- neutral
+- avoid
+
+Premium bedeutet **nicht** realistischere Menschen. Stickman-Anatomie bleibt simpel.
+
+Premium entsteht durch:
+- stärkere Körperhaltung und lesbare Emotion
+- bewusst gewählte Kleidung/Rollenwirkung
+- charakteristische Silhouette
+- passende Requisiten
+- echte Interaktion statt Platzhalterfigur
+- Vorder-/Mittel-/Hintergrund
+- bewusstes Licht
+- klare Fokuszone
+- hochwertige Umgebung
+- kontrollierte, thematisch passende Farben
+
+Nicht akzeptabel als Default:
+- grauer/beiger Einheitswash
+- sterile Büros in langen Serien
+- neutrale Figur + riesiges Symbol
+- Lehrbuch-/Whiteboard-Optik
+- endlose Skalen, Karten, Waagen, Pfeile oder schwebende Zahlen, wenn ein Alltagsbild möglich ist
 
 Priorität:
-1. konkrete Handlung / Alltagsszene
-2. einfache visuelle Metapher
-3. Diagramm/Skala/Karte nur wenn wirklich klarer
+**konkrete Alltagsszene > visuelle Metapher > abstrakte Lehrgrafik.**
+
+## Bildlogik
 
 Genau ein primärer visueller Gedanke pro Bild.
 
@@ -112,27 +166,40 @@ Für YouTube:
 - keine YouTube-Auto-Captions
 - Remotion nur für Schnitt, Audio, technische Effekte und Export
 
-### Text-QA
-Falsche Schreibweise, fehlende/zusätzliche Wörter, Pseudo-Schrift, abgeschnittene Buchstaben oder sichtbar schlecht integrierte Typografie => nur das betroffene Flow-Bild regenerieren.
-
 ## Scene 01 — COVER + MASTER HARD LOCK
 
 **`03-bilder/01.png` = SCENE 01 + COVER/THUMBNAIL + STYLE-/ANATOMY-MASTER.**
 
 Szene 01 muss:
-- den ersten gesprochenen Visual Beat korrekt darstellen
+- den Hook-Beat korrekt darstellen
 - bewusst stärker als eine normale Szene funktionieren
 - ein dominantes Hauptmotiv und klare visuelle Spannung besitzen
+- Premium-Figuren- und Farbqualität etablieren
 - die Stickman-/Welt-DNA etablieren
 - den exakten deutschen Cover-Titel direkt aus Google Flow enthalten
 - Titel und Hauptmotiv gemeinsam komponieren
 
 Kein separates Pflicht-`cover.png`.
 
-## Text-/Planungsmetadaten neuer Projekte
+## Metadaten neuer Projekte
 
 ```json
 {
+  "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
+  "hookType": "WHAT_IS",
+  "coreConceptTerm": "",
+  "coreConceptIntroducedByScene": 3,
+  "realLifeExampleByScene": 5,
+  "realLifeExampleSummary": "",
+  "premiumVisualPolicy": "PREMIUM_EDITORIAL_CINEMATIC_V1",
+  "colorStoryPolicy": "INTENTIONAL_COLOR_STORY_V1",
+  "projectPalette": {
+    "primary": "",
+    "secondary": "",
+    "accent": "",
+    "neutral": "",
+    "avoid": ["grey/beige wash"]
+  },
   "visibleTextLanguage": "de",
   "visibleTextRenderer": "GOOGLE_FLOW",
   "renderGermanLabelsInRemotion": false,
@@ -158,7 +225,7 @@ Kein separates Pflicht-`cover.png`.
 
 1. Bild 01 inklusive exaktem Cover-Titel allein generieren.
 2. STOP und Nutzerfreigabe.
-3. Coverstärke, Titel, Typografie, Stickman-DNA und Inhalt prüfen.
+3. Coverstärke, Titel, Typografie, Premium-Figuren, Farbwelt, Stickman-DNA und Inhalt prüfen.
 4. Danach höchstens 5 neue Bilder pro Batch.
 5. Bild 01 ab Szene 02 nur als STYLE-/ANATOMY-Referenz verwenden, nicht als Charakter-, Kompositions- oder Textvorlage.
 6. Nur bei ausdrücklich geplanten späteren Textmomenten deren eigenen exakten deutschen Flow-Text rendern.
@@ -202,7 +269,11 @@ Kein separates Pflicht-`cover.png`.
 Die eine Google-Flow-Datei enthält:
 - Stickman-DNA
 - Format/Stil
-- Scene-01-Cover-Regel
+- Projektpalette
+- `PREMIUM VISUAL QUALITY — HARD LOCK`
+- `PREMIUM CHARACTER DESIGN — HARD LOCK`
+- `COLOR STORY — HARD LOCK`
+- `REAL-LIFE SCENE PRIORITY — HARD LOCK`
 - `COVER STRENGTH — HARD LOCK`
 - `TYPOGRAPHY AESTHETIC — HARD LOCK`
 - `VISUAL VARIETY — HARD LOCK`
@@ -221,6 +292,7 @@ Bei strukturellen oder Pipeline-Änderungen mindestens:
 - `npm run qa:visual-density`
 - `npm run qa:auto-visual-planning`
 - `npm run qa:visual-variety`
+- `npm run qa:premium-content`
 - `npm run qa:flow-prompts`
 - `npm run qa:text-overlays`
 - relevante Produktionschecks
@@ -228,7 +300,9 @@ Bei strukturellen oder Pipeline-Änderungen mindestens:
 ## Priorität
 
 - Formatkonflikt: `rules/FORMAT_LOCK.md`
-- visuelle Identität: `rules/STICKMAN_DNA.md`
+- visuelle Anatomie: `rules/STICKMAN_DNA.md`
+- Premium/Farbe: `rules/PREMIUM_VISUAL_LOCK.md`
+- Script-Einstieg: `rules/SCRIPT_HOOK_LOCK.md`
 - Cover: `rules/COVER_LOCK.md`
 - sichtbarer YouTube-Text: `rules/TEXT_OVERLAY_LOCK.md` — **Google Flow only**
 - Textästhetik: `rules/FLOW_TEXT_STYLE_LOCK.md`

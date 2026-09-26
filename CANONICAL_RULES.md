@@ -9,6 +9,8 @@ Verbindlich:
 - `rules/FORMAT_LOCK.md`
 - `rules/YOUTUBE_THEMEN_SYSTEM.md`
 - `rules/YOUTUBE_STYLE_LOCK.md`
+- `rules/PREMIUM_VISUAL_LOCK.md`
+- `rules/SCRIPT_HOOK_LOCK.md`
 - `rules/IMAGE_REFERENCE_LOCK.md`
 - `rules/COVER_LOCK.md`
 - `rules/TEXT_OVERLAY_LOCK.md`
@@ -18,7 +20,7 @@ Verbindlich:
 - `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - `rules/PRODUCTION_FORMAT_RULES.md`
 
-`rules/STICKMAN_DNA.md` ist die zentrale visuelle Source of Truth.
+`rules/STICKMAN_DNA.md` ist die zentrale Anatomie-Source-of-Truth. `rules/PREMIUM_VISUAL_LOCK.md` definiert Premium-Figurenführung, Farbe und Bildqualität. `rules/SCRIPT_HOOK_LOCK.md` definiert den Einstieg neuer YouTube-Skripte.
 
 Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
 
@@ -41,14 +43,41 @@ YouTube und Reels werden nicht vermischt.
 
 ## Produktionsfolge
 
-THEMA + QUELLEN + CLAIM-CHECK → finales Skript → Phase 1 Visual Beats → Phase 2 Google-Flow-Bilder → finales Audio/Timings → Phase 3 Schnitt/Render → Final-QA.
+THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → finales Skript → Phase 1 Visual Beats → Projektpalette + Premium-Visual-Plan → Phase 2 Google-Flow-Bilder → finales Audio/Timings → Phase 3 Schnitt/Render → Final-QA.
+
+## Skript-Einstieg — HARD LOCK
+
+Neue YouTube-Projekte verwenden `scriptHookPolicy: "HOOK_FIRST_EXPLAIN_EARLY_V1"`.
+
+Die ersten Szenen folgen grundsätzlich:
+1. klare Hook-Frage oder überraschende direkte Aussage
+2. Kernbegriff früh nennen
+3. einfach erklären
+4. konkretes Alltagsbeispiel früh zeigen
+5. erst danach Experiment, Mechanismus und Vertiefung
+
+Richtwerte:
+- Hook in Szene 01
+- Kernbegriff spätestens Szene 03 / ungefähr erste 50 Wörter
+- erstes konkretes Alltagsbeispiel spätestens Szene 05 / ungefähr erste 80 Wörter
+
+Bevorzugte Hook-Typen:
+- `WHAT_IS`
+- `WHY_DOES`
+- `HAVE_YOU_WONDERED`
+- `DIRECT_SURPRISE`
+- `DIRECT_PROBLEM`
+
+Keine langsame abstrakte Vorrede als Standard.
+
+Details: `rules/SCRIPT_HOOK_LOCK.md`.
 
 ## Visual-Beat-Prinzip
 
 Ein wichtiger neuer visueller Gedanke bekommt grundsätzlich ein eigenes Bild.
 
 Verbindlich:
-- konkrete Szene vor generischer Infografik
+- konkrete Alltagsszene vor generischer Infografik
 - genau ein primärer visueller Gedanke pro Bild
 - ein klares Hauptmotiv
 - höchstens 1–2 unterstützende Hinweise
@@ -63,6 +92,44 @@ Dichte:
 - 21–28 nur als geprüfte Ausnahme
 - absolute Obergrenze 28
 - durchschnittlich höchstens 16 Wörter pro Szene
+
+## Premium Visual Direction — HARD LOCK
+
+Neue YouTube-Projekte verwenden:
+- `premiumVisualPolicy: "PREMIUM_EDITORIAL_CINEMATIC_V1"`
+- `colorStoryPolicy: "INTENTIONAL_COLOR_STORY_V1"`
+
+Jedes neue Video definiert vor Flow eine `projectPalette` mit:
+- `primary`
+- `secondary`
+- `accent`
+- `neutral`
+- `avoid`
+
+Premium bedeutet **nicht realistischere Menschen**. STRICT STICKMAN ONLY bleibt bestehen.
+
+Premium entsteht durch:
+- ausdrucksstarke Pose/Körpersprache
+- bewusstes minimalistisches Gesicht
+- rollenbezogene Kleidung und Requisiten
+- charakteristische Silhouette
+- glaubwürdige Interaktion
+- Vorder-/Mittel-/Hintergrund
+- bewusstes Licht
+- klare Fokuszone
+- hochwertige detailreiche Umgebung
+- kontrollierte, thematisch passende Farben
+
+Nicht akzeptabel als Default:
+- grauer/beiger Einheitswash
+- sterile Office-Welt über viele Szenen
+- neutrale Platzhalterfigur vor einem Symbol
+- endlose Lehrgrafiken, Waagen, Karten, Skalen oder riesige schwebende Zahlen, wenn eine echte Alltagsszene möglich ist
+
+Priorität:
+**echte Alltagsszene > visuelle Metapher > abstrakte Lehrgrafik.**
+
+Details: `rules/PREMIUM_VISUAL_LOCK.md`.
 
 ## Kompositionsvariation — HARD LOCK
 
@@ -116,7 +183,7 @@ Nicht erlaubt:
 - 3D/CGI
 - Anime/Chibi
 
-Die Umgebung darf glaubwürdig, farbig, detailreich und hochwertig illustriert sein.
+Die Umgebung muss glaubwürdig, farbig, detailreich und hochwertig illustriert sein. Vordergrundfiguren sollen trotz einfacher Anatomie **bewusst designt und premium inszeniert** wirken.
 
 ## Textsystem — GOOGLE FLOW ONLY
 
@@ -166,9 +233,10 @@ Für jedes YouTube-Projekt gilt:
 **`03-bilder/01.png` = SCENE 01 + COVER/THUMBNAIL + STYLE-/ANATOMY-MASTER.**
 
 Szene 01 muss:
-- den ersten gesprochenen Beat korrekt darstellen
+- den ersten gesprochenen Hook-Beat korrekt darstellen
 - bewusst stärker als eine normale Szene als Thumbnail komponiert sein
 - ein dominantes Hauptmotiv und klare visuelle Spannung haben
+- die Premium-/Farbqualität des Videos etablieren
 - die Stickman-/Welt-DNA etablieren
 - den exakten deutschen Cover-Titel direkt aus Google Flow enthalten
 - außer diesem Titel keinen weiteren lesbaren Text enthalten
@@ -178,7 +246,7 @@ Ein separates Pflicht-`cover.png` wird nicht geführt.
 ## Master-Referenz + automatische 5er-Batches
 
 - Bild 01 zuerst allein generieren
-- Cover-Titel, Coverstärke und Typografie exakt prüfen
+- Cover-Titel, Coverstärke, Premium-Figuren, Farbwelt und Typografie exakt prüfen
 - STOP und Nutzerfreigabe
 - Bild 01 bleibt Master
 - ab Bild 02 Master bei jeder Generierung anhängen
@@ -198,6 +266,21 @@ Neue YouTube-Projekte verwenden:
 
 ```json
 {
+  "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
+  "hookType": "WHAT_IS",
+  "coreConceptTerm": "",
+  "coreConceptIntroducedByScene": 3,
+  "realLifeExampleByScene": 5,
+  "realLifeExampleSummary": "",
+  "premiumVisualPolicy": "PREMIUM_EDITORIAL_CINEMATIC_V1",
+  "colorStoryPolicy": "INTENTIONAL_COLOR_STORY_V1",
+  "projectPalette": {
+    "primary": "",
+    "secondary": "",
+    "accent": "",
+    "neutral": "",
+    "avoid": ["grey/beige wash"]
+  },
   "visibleTextLanguage": "de",
   "visibleTextRenderer": "GOOGLE_FLOW",
   "renderGermanLabelsInRemotion": false,
@@ -222,7 +305,7 @@ Der Nutzer arbeitet regulär nur mit:
 
 Technische Hilfsdateien gehören nach `99-intern/`.
 
-Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, alle exakten geplanten deutschen Texte, die ZERO-READABLE-TEXT-Regel für alle übrigen Szenen, Typografie-/Kompositions-/Social-Hard-Locks und den Batch-Ablauf.
+Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, Projektpalette, Premium-Visual-Regeln, alle exakten geplanten deutschen Texte, ZERO READABLE TEXT für alle übrigen Szenen, Typografie-/Kompositions-/Social-Hard-Locks und den Batch-Ablauf.
 
 ## Audio
 
@@ -240,6 +323,7 @@ Bei Pipeline-/Strukturänderungen mindestens:
 - `npm run qa:visual-density`
 - `npm run qa:auto-visual-planning`
 - `npm run qa:visual-variety`
+- `npm run qa:premium-content`
 - `npm run qa:flow-prompts`
 - `npm run qa:text-overlays`
 - relevante Format-/Produktionschecks
@@ -248,7 +332,11 @@ Bei Pipeline-/Strukturänderungen mindestens:
 
 Bei Format-Widerspruch gewinnt `rules/FORMAT_LOCK.md`.
 
-Bei visueller Identität gewinnt `rules/STICKMAN_DNA.md`.
+Bei visueller Anatomie gewinnt `rules/STICKMAN_DNA.md`.
+
+Bei Premium-/Farb-Widerspruch gewinnt `rules/PREMIUM_VISUAL_LOCK.md`.
+
+Bei Script-Einstieg gewinnt `rules/SCRIPT_HOOK_LOCK.md`.
 
 Bei Cover-Widerspruch gewinnt `rules/COVER_LOCK.md`.
 
