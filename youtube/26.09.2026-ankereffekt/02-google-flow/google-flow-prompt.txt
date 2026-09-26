@@ -1,0 +1,383 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+PROJECT: ANKEREFFEKT
+FORMAT: 16:9 — 1920×1080
+
+VISUAL PLANNING POLICY: VARIED_COMPOSITION_V1
+SOCIAL SCENE POLICY: SOCIAL_VARIETY_V1
+FLOW TEXT STYLE POLICY: EDITORIAL_INTEGRATED_V1
+FLOW_VISIBLE_TEXT_ONLY_V3
+
+STYLE HARD LOCK — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3
+STRICT STICKMAN ONLY.
+Every visible human or human-like figure must use true-stickman anatomy: simple round/oval head, tiny minimal face, no realistic nose, ears or neck, small simplified torso, extremely thin line-like arms and legs, simple no-finger hands, simplified feet/shoes. Clothing may communicate role but must not create normal human anatomy. No conventional cartoon humans, semi-realistic humans, photorealism, 3D/CGI, Pixar, anime or chibi.
+
+RICH WORLD
+Use believable detailed 2D editorial environments, natural colors, clean dark organic outlines, subtle cel shading, believable perspective, mature lighting and depth. Detail belongs in the world, props and composition, not realistic human anatomy.
+
+COVER STRENGTH — HARD LOCK
+Scene 01 is always first spoken beat + YouTube cover + style/anatomy master. It must be intentionally stronger than a normal scene: one dominant focal motif, immediate tension or decision conflict, fast thumbnail readability, clean hierarchy and a deliberate integrated title zone. The title must feel designed into the scene, not pasted on top.
+
+TYPOGRAPHY AESTHETIC — HARD LOCK
+All planned visible text is generated directly by Google Flow.
+Use clean modern editorial sans-serif typography, visually integrated into a real panel, card, sign, board or intentionally designed quiet graphic zone.
+Avoid meme lettering, sticker-like floating words, giant black outlines, cartoon bubble fonts, cramped margins or text touching the frame.
+Keep generous safe margins. Every letter must be complete, correctly spelled and comfortably readable.
+Do not create decorative pseudo-text.
+Remotion MUST NOT add visible text.
+
+VISIBLE TEXT — GOOGLE FLOW ONLY
+Planned exact text moments:
+- Scene 01 — COVER — "WARUM DIE ERSTE ZAHL DICH LENKT"
+- Scene 03 — KEYWORD — "ANKEREFFEKT"
+- Scene 09 — KEYWORD — "NÄHER AM STARTWERT"
+- Scene 13 — KEYWORD — "ZU WENIG KORRIGIERT"
+- Scene 18 — KEYWORD — "FRÜHE VERGLEICHSWERTE"
+- Scene 25 — KEYWORD — "UNSICHERHEIT"
+- Scene 30 — KEYWORD — "GEGENARGUMENT"
+- Scene 35 — KEYWORD — "REIHENFOLGE ZÄHLT"
+
+For a planned text scene:
+- render exactly the supplied German text
+- preserve spelling, umlauts and punctuation
+- NO OTHER READABLE TEXT
+- keep all letters fully inside the safe frame
+- typography must feel native to the composition
+- regenerate only that image if text is malformed, clipped, misspelled or visually ugly
+
+For every other scene:
+- ZERO READABLE TEXT
+- no labels, captions, logos, poster text, UI words, document text or accidental pseudo-writing
+- use abstract icons, shapes, blocks and symbol-only props where needed
+
+VISUAL VARIETY — HARD LOCK
+Do not repeat the same one-Stickman-in-a-room composition.
+Target across a 35-scene video: about 70% standard connected scenes, about 20% split/contrast comparisons, about 10% montage/multi-panel scenes.
+A montage may contain one dominant main scene plus at most 1–2 supporting sub-scenes, but every sub-scene must explain the SAME spoken beat.
+Vary camera distance, angle, foreground/background depth, location, prop logic, cast size and body pose.
+
+SOCIAL SCENE VARIETY — HARD LOCK
+Use SOLO only when one person is semantically best.
+Use DUO for negotiations, comparisons, feedback and interpersonal influence.
+Use GROUP for experiments, social estimates, workshops and multiple-person judgment situations.
+Multi-person scenes need real interaction/reaction, not people standing side by side.
+
+CAST VARIATION — HARD LOCK
+Same Stickman DNA does not mean same character.
+Use new fitting people, roles, clothing and color accents across unrelated scenes.
+Reuse the exact same figure only for genuine LOCAL CONTINUITY mini-stories.
+
+MASTER REFERENCE WORKFLOW
+1. Generate Scene 01 only.
+2. Scene 01 includes the exact German cover title and must PASS title spelling, cover strength, first-beat accuracy and Stickman DNA.
+3. STOP for user approval.
+4. Save approved image as `03-bilder/01.png`.
+5. For Scene 02+, attach 01.png as STYLE/ANATOMY reference only.
+6. After approval, generate at most 5 new images per batch, internally QA them, regenerate only failures, then continue automatically.
+
+REFERENCE CLAUSE FOR SCENE 02+
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone, composition clone or text template. Match true-stickman anatomy, linework, color behavior, subtle cel shading and rich editorial world quality. Freely change character identity, clothing, cast size, pose, camera, environment, props and lighting to fit the current beat. Do not copy or recreate the cover title from 01.png. Only render readable text when the current scene explicitly contains EXACT GERMAN TEXT; otherwise ZERO READABLE TEXT.
+
+GENERAL SCENE RULE
+The SPEECH CONTEXT is protected context and must never be rendered as visible text.
+Each image explains exactly its current spoken beat and must not introduce later information.
+
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du willst einen gebrauchten Laptop kaufen und siehst zuerst einen Preis von 1.200 Euro.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+EXACT GERMAN COVER TITLE: "WARUM DIE ERSTE ZAHL DICH LENKT"
+PROMPT:
+COVER + MASTER. In a modern second-hand electronics shop, a true-stickman buyer studies a used laptop on a display table. The laptop is framed by a visually dominant expensive reference cue shown only through a tall stack of coin icons and premium presentation, with no readable numbers. The buyer leans in, clearly influenced by the first impression. Build a strong thumbnail composition with the character and laptop on the right and a calm architectural title panel on the left. Render the exact German cover title as clean modern editorial sans-serif typography integrated into that panel. Keep generous margins and strong hierarchy. NO OTHER READABLE TEXT.
+
+SCENE 02
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Danach wirkt ein Angebot für 850 Euro plötzlich günstig, obwohl du den echten Marktwert noch gar nicht kennst.
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: SOLO
+PROMPT:
+Show the same buyer in a deliberate contrast composition: on the left, the first expensive reference cue dominates around the laptop; on the right, a later lower offer feels visually smaller and more attractive because of the prior reference. Use the same product and same person for local continuity, but change camera angle and body pose between halves. No digits, price words, logos or other readable text. ZERO READABLE TEXT.
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Genau hier kann der sogenannte Ankereffekt entstehen.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+EXACT GERMAN TEXT: "ANKEREFFEKT"
+PROMPT:
+A true-stickman stands beside a product display while an initial visual marker acts like a psychological anchor, pulling a judgment slider toward itself. Keep the metaphor grounded inside a believable retail setting, not a floating infographic. Integrate the exact German word ANKEREFFEKT into a clean store display panel as part of the scene design, with no heavy outline and generous safe margins. NO OTHER READABLE TEXT.
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein Anker ist eine Zahl oder Information, die dein späteres Urteil unbewusst in eine Richtung ziehen kann.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+PROMPT:
+In a modern home-improvement showroom, a true-stickman compares an unknown object while one early reference marker pulls a later judgment marker toward it on a simple unlabeled physical scale. The action should clearly show directional influence without requiring numbers or labels. Medium-wide three-quarter shot. ZERO READABLE TEXT.
+
+SCENE 05
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der Effekt wurde in vielen Experimenten mit Schätzungen und Entscheidungen beobachtet.
+COMPOSITION: MONTAGE
+SOCIAL DENSITY: GROUP
+PROMPT:
+Create a montage with one dominant central scene of a person making an estimate, plus two small supporting panels showing different decision contexts: judging the amount in a transparent jar, estimating the value of a used bicycle, and evaluating a rental apartment. Several different true-stickmen appear across the three moments. All three sub-scenes communicate the same idea: early information can shape later judgment. No readable labels or numbers anywhere. ZERO READABLE TEXT.
+
+SCENE 06
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Berühmt wurde ein Versuch von Amos Tversky und Daniel Kahneman.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+PROMPT:
+Two researcher Stickmen in a 1970s-style psychology lab prepare a simple wheel-like randomizer and participant station. Use period-inspired decor and equipment while keeping the editorial 2D Stickman style. One researcher adjusts the wheel, the other prepares cards with abstract shapes only. No names, paper text or labels. ZERO READABLE TEXT.
+
+SCENE 07
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Teilnehmende sahen zuerst eine zufällig erzeugte Zahl zwischen null und hundert.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+PROMPT:
+A small group of participants watch an unlabeled circular randomizer stop at different positions. The wheel has colored segments but no digits or letters. Their attention is clearly captured by the random result before any later judgment task. Wide laboratory scene with social interaction and depth. ZERO READABLE TEXT.
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Danach sollten sie schätzen, wie hoch der Anteil afrikanischer Staaten bei den Vereinten Nationen war.
+COMPOSITION: SPLIT
+SOCIAL DENSITY: GROUP
+PROMPT:
+Split composition. Left half: one participant group sees the randomizer stop visually high on an abstract scale. Right half: another group sees it stop visually low. In both halves, participants then look toward a world-map/assembly-style estimation board made only of icons and shapes. No country names, digits or text. ZERO READABLE TEXT.
+
+SCENE 09
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Obwohl die erste Zahl zufällig war, lagen spätere Schätzungen näher an diesem Ausgangswert.
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: GROUP
+EXACT GERMAN TEXT: "NÄHER AM STARTWERT"
+PROMPT:
+Contrast composition showing two groups of estimate markers clustering closer to their earlier high or low starting cue. Keep the lab context visible so the causal sequence is understandable. Integrate the exact German phrase NÄHER AM STARTWERT into a central clean research-board title strip, professionally typeset and fully inside the safe frame. NO OTHER READABLE TEXT.
+
+SCENE 10
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein hoher Anker zog Schätzungen nach oben, ein niedriger Anker eher nach unten.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+PROMPT:
+A true-stickman stands between two large unlabeled anchor markers: one high, one low. Their later estimate marker is visibly pulled upward in one version and downward in the other, using arrows and position only. Keep it concrete as a physical estimation wall in a training room. ZERO READABLE TEXT.
+
+SCENE 11
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das bedeutet nicht, dass Menschen einfach jede Zahl glauben.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+PROMPT:
+Two Stickmen discuss a random cue. One reacts skeptically and pushes away an obviously irrelevant abstract card, while the other points to the later judgment task. The image should communicate that anchoring does not mean blindly believing every cue. Natural conversational scene, no floating text. ZERO READABLE TEXT.
+
+SCENE 12
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der erste Wert kann aber einen gedanklichen Startpunkt setzen.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+PROMPT:
+A single Stickman begins a walking path from a clearly marked but unlabeled starting stake. The path bends toward a final choice point, making the first position visually influential. Use a museum or science-center floor installation so the metaphor feels physically grounded. ZERO READABLE TEXT.
+
+SCENE 13
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Von dort korrigieren wir unser Urteil – oft nicht weit genug.
+COMPOSITION: MONTAGE
+SOCIAL DENSITY: SOLO
+EXACT GERMAN TEXT: "ZU WENIG KORRIGIERT"
+PROMPT:
+Montage with one dominant central frame and two small supporting moments: first an initial marker appears, then the person adjusts away from it, then stops after only a short correction. Integrate the exact German phrase ZU WENIG KORRIGIERT into a clean horizontal exhibit panel beneath the sequence. Typography should be modern editorial, light-to-medium weight, no sticker look. NO OTHER READABLE TEXT.
+
+SCENE 14
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Andere Erklärungen betonen, dass ein Anker bestimmte passende Informationen leichter zugänglich macht.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+PROMPT:
+A true-stickman in a product showroom sees one early reference cue and then selectively notices several supporting features that fit it: premium material, careful packaging, polished finish. Use lighting and gaze direction to show selective accessibility without text. Close-medium action shot. ZERO READABLE TEXT.
+
+SCENE 15
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Siehst du zuerst einen hohen Preis, fallen dir eher Gründe ein, warum etwas teuer sein könnte.
+COMPOSITION: SPLIT
+SOCIAL DENSITY: SOLO
+PROMPT:
+Split composition. Left half: after a high reference cue, the same product is surrounded by visually salient premium details. Right half: without that cue, the same product appears more neutral. Same object, same person, different attentional emphasis. No labels or price digits. ZERO READABLE TEXT.
+
+SCENE 16
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Bei einem niedrigen Ausgangspreis achtest du dagegen stärker auf Argumente für einen niedrigeren Wert.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+PROMPT:
+A true-stickman sees a low starting cue for the same kind of product and now notices wear, small flaws and cheaper-looking details more strongly. The environment remains realistic and balanced; do not make the product objectively worse than before. Over-the-shoulder inspection angle. ZERO READABLE TEXT.
+
+SCENE 17
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Deshalb begegnet dir der Effekt nicht nur in psychologischen Experimenten.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+PROMPT:
+A group scene in a research seminar room showing several anchoring domains through objects rather than words: a price tag shape, negotiation chips, a quantity jar and an estimation board. Different Stickmen interact with each object. The image should feel like a broad research overview, not a collage of unrelated topics. ZERO READABLE TEXT.
+
+SCENE 18
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Preise, Gehaltsvorstellungen, Verhandlungen und Mengenabschätzungen können von frühen Vergleichswerten beeinflusst werden.
+COMPOSITION: SPLIT
+SOCIAL DENSITY: GROUP
+EXACT GERMAN TEXT: "FRÜHE VERGLEICHSWERTE"
+PROMPT:
+Split composition with social interaction. Left half: two Stickmen negotiate around a table with an early large chip stack setting the scale. Right half: two people compare products where an early reference cue shapes value perception. Integrate the exact German phrase FRÜHE VERGLEICHSWERTE into a calm central divider/title band that belongs to the editorial layout. NO OTHER READABLE TEXT.
+
+SCENE 19
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Stell dir vor, zwei identische Jacken liegen nebeneinander.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+PROMPT:
+In a clothing boutique, two identical jackets hang side by side under the same lighting. Two Stickmen compare them closely, checking fabric and fit. Make the jackets genuinely identical in quality and appearance. No brand names, signs or price numbers. ZERO READABLE TEXT.
+
+SCENE 20
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Auf einer hängt vorher ein sehr hoher Vergleichspreis, auf der anderen nicht.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+PROMPT:
+Local continuity from the jacket scene. One jacket has a visually prominent previous-reference card represented only by a large premium frame and many coin icons; the other has a plain minimal card. Two shoppers react differently even though the jackets are identical. No readable text or digits. ZERO READABLE TEXT.
+
+SCENE 21
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der gleiche Verkaufspreis kann dadurch unterschiedlich attraktiv wirken.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+PROMPT:
+A single shopper now sees the two jackets with the same current visual offer cue, yet one feels more attractive because the earlier premium reference remains faintly present in memory as a translucent visual echo. Keep the metaphor subtle and believable. ZERO READABLE TEXT.
+
+SCENE 22
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Auch im Gespräch kann die erste genannte Zahl den Rahmen verändern.
+COMPOSITION: SPLIT
+SOCIAL DENSITY: DUO
+PROMPT:
+Split composition of a face-to-face negotiation. Left: one person makes the first concrete proposal using a large stack of neutral chips. Right: after hearing it, the other person considers a later counterproposal positioned relative to that original stack. No numbers or words. ZERO READABLE TEXT.
+
+SCENE 23
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wer zuerst eine konkrete Größenordnung hört, bewertet spätere Vorschläge häufig relativ zu diesem Wert.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+PROMPT:
+Two Stickmen continue the same negotiation. The first chip stack remains visually central while several later proposals are placed nearby rather than across the full possible range. Use body language and object placement to show the frame created by the first offer. ZERO READABLE TEXT.
+
+SCENE 24
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Besonders problematisch wird das, wenn du selbst kaum sichere Vergleichswerte hast.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+PROMPT:
+A group of people estimate the amount of objects in a large transparent container without an obvious answer. One early participant places a starting token; others visibly orient their guesses around it. Wide social scene with clear hierarchy. No numbers or written estimates. ZERO READABLE TEXT.
+
+SCENE 25
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Je unsicherer eine Schätzung ist, desto nützlicher wirkt ein vorhandener Startpunkt.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+EXACT GERMAN TEXT: "UNSICHERHEIT"
+PROMPT:
+A single Stickman stands in a foggy, uncertain estimation environment with several ambiguous options and one bright starting marker that becomes disproportionately useful. Integrate the exact German word UNSICHERHEIT into a clean physical sign or wall panel in the environment, subtle but readable. NO OTHER READABLE TEXT.
+
+SCENE 26
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Fachwissen kann helfen, schützt aber nicht automatisch in jeder Situation vor Ankern.
+COMPOSITION: MONTAGE
+SOCIAL DENSITY: SOLO
+PROMPT:
+Montage with one dominant expert figure and two supporting panels: a mechanic assessing a vehicle, an art specialist evaluating an object, and a technical expert examining equipment. The same visual anchor motif appears subtly in each context, showing that expertise can help but does not guarantee immunity. No text, names or numbers. ZERO READABLE TEXT.
+
+SCENE 27
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Was kannst du dagegen tun?
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+PROMPT:
+A true-stickman pauses at a calm decision point and deliberately steps back from a prominent anchor cue. The body posture changes from pulled-forward to reflective. Use a quiet public-space setting and a clean visual reset, signaling the transition to practical countermeasures. ZERO READABLE TEXT.
+
+SCENE 28
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Versuche zuerst eine eigene Schätzung zu bilden, bevor du fremde Zahlen anschaust.
+COMPOSITION: SPLIT
+SOCIAL DENSITY: SOLO
+PROMPT:
+Split composition. Left half: the person forms an independent estimate using only the object itself. Right half: outside reference cards remain covered or turned away until after the estimate is formed. Clear before-versus-after sequence, same person and object. ZERO READABLE TEXT.
+
+SCENE 29
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Suche mehrere unabhängige Vergleichswerte statt nur den ersten verfügbaren.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+PROMPT:
+A true-stickman compares several independent reference sources arranged as visually distinct but unlabeled cards from different directions rather than relying on the first one. Use varied shapes, colors and icons to imply independence. Over-the-shoulder composition. ZERO READABLE TEXT.
+
+SCENE 30
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Und frage dich bewusst: Welche Gründe sprechen dafür, dass dieser erste Wert deutlich falsch ist?
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+EXACT GERMAN TEXT: "GEGENARGUMENT"
+PROMPT:
+A true-stickman actively challenges the first anchor by inspecting contrary evidence with a magnifying glass while the original anchor cue sits off to one side. Integrate the exact German word GEGENARGUMENT into the cover of a clean notebook or evidence card that the person is holding. Typography must look native to the object, not pasted on. NO OTHER READABLE TEXT.
+
+SCENE 31
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dieses Gegenargumentieren kann helfen, die Fixierung auf den ursprünglichen Anker zu schwächen.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+PROMPT:
+The original anchor is shown as a chain or tether that visibly loosens after the person examines contrary evidence. Keep the metaphor grounded in the same evidence-review setting; the person now has a wider field of options. No text or digits. ZERO READABLE TEXT.
+
+SCENE 32
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Bei wichtigen Entscheidungen lohnt es sich außerdem, eine plausible Spanne statt nur eine einzelne Zahl zu betrachten.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+PROMPT:
+Two Stickmen consider a plausible range rather than one point: an advisor and decision-maker look at a broad shaded band on a physical scale with no digits. Their attention moves across the whole range instead of one marker. Calm professional setting. ZERO READABLE TEXT.
+
+SCENE 33
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dann wird aus einem einzigen Startwert nicht sofort der Maßstab für alles Weitere.
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: DUO
+PROMPT:
+Contrast composition. Left side: one single starting pin dominates the person's judgment field. Right side: a broad range of plausible positions reduces the dominance of that same pin. Two interacting Stickmen discuss the alternatives using gestures, but no written labels. ZERO READABLE TEXT.
+
+SCENE 34
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der Ankereffekt zeigt deshalb etwas Grundsätzliches über unser Denken.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+PROMPT:
+A group of four Stickmen first make independent estimates on face-down abstract cards, then reveal and compare them together. Emphasize independent thinking before group comparison. Modern workshop setting, strong social dynamics, no written values or labels. ZERO READABLE TEXT.
+
+SCENE 35
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Nicht nur die Information selbst zählt – auch die Reihenfolge, in der sie uns begegnet.
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+EXACT GERMAN TEXT: "REIHENFOLGE ZÄHLT"
+PROMPT:
+A single Stickman sees the same set of information cards arrive in two different orders, visualized as a clean sequence of cards entering from opposite directions around the character. Integrate the exact German phrase REIHENFOLGE ZÄHLT into a calm background editorial panel, with professional sans-serif typography and generous safe margins. NO OTHER READABLE TEXT.
+
+FINAL QA
+- all 35 scenes are present and contiguous
+- Scene 01 is cover + first beat + master and contains the exact cover title
+- planned keyword scenes contain only their exact German text
+- every unplanned text scene contains no readable text at all
+- typography is integrated, clean, safe and not sticker-like
+- composition mix includes standard, split/contrast and montage scenes
+- multiple duo/group scenes show real interaction
+- all visible people are true Stickmen
+- no character cloning across unrelated scenes
+- no accidental English, numbers, labels or pseudo-text
+- Remotion adds NO visible text

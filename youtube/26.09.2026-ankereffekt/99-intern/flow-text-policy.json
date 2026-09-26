@@ -1,0 +1,17 @@
+{
+  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
+  "visibleTextRenderer": "GOOGLE_FLOW",
+  "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
+  "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
+  "renderGermanLabelsInRemotion": false,
+  "flowTextMoments": [
+    {"scene": 1, "kind": "cover", "text": "WARUM DIE ERSTE ZAHL DICH LENKT"},
+    {"scene": 3, "kind": "keyword", "text": "ANKEREFFEKT"},
+    {"scene": 9, "kind": "keyword", "text": "NÄHER AM STARTWERT"},
+    {"scene": 13, "kind": "keyword", "text": "ZU WENIG KORRIGIERT"},
+    {"scene": 18, "kind": "keyword", "text": "FRÜHE VERGLEICHSWERTE"},
+    {"scene": 25, "kind": "keyword", "text": "UNSICHERHEIT"},
+    {"scene": 30, "kind": "keyword", "text": "GEGENARGUMENT"},
+    {"scene": 35, "kind": "keyword", "text": "REIHENFOLGE ZÄHLT"}
+  ]
+}
