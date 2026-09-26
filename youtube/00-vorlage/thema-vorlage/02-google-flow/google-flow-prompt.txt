@@ -4,6 +4,15 @@ DIESE DATEI IST DER EINZIGE PROMPT FÜR GOOGLE FLOW.
 Keine zusätzlichen Prompt-Dateien pro Szene anlegen.
 
 VISUAL PLANNING POLICY: VARIED_COMPOSITION_V1
+PREMIUM VISUAL POLICY: PREMIUM_EDITORIAL_CINEMATIC_V1
+COLOR STORY POLICY: INTENTIONAL_COLOR_STORY_V1
+
+PROJECT COLOR PALETTE — MUST BE FILLED BEFORE GENERATION
+PRIMARY: [PROJECT PRIMARY COLOR / COLOR FAMILY]
+SECONDARY: [PROJECT SECONDARY COLOR / COLOR FAMILY]
+ACCENT: [PROJECT ACCENT COLOR]
+NEUTRAL: [PROJECT NEUTRAL]
+AVOID: grey/beige wash; sterile office monotony; random candy colors
 
 FORMAT HARD LOCK
 - YouTube 16:9
@@ -14,16 +23,42 @@ STYLE HARD LOCK — UNIVERSAL EDITORIAL STICKMAN WORLD v1.3
 STRICT STICKMAN ONLY.
 Every visible human or human-like figure must use true stickman anatomy: simple round/oval head, tiny minimal face, no realistic nose/ears/neck, small simplified torso, very thin line-like arms and legs, simple no-finger hands, simplified feet. No conventional cartoon humans, no semi-realistic humans, no 3D/Pixar/anime/chibi.
 
-RICH WORLD
-Use believable detailed 2D environments, natural colors, clean dark organic outlines, subtle cel shading, believable perspective and lighting. Detail belongs in the environment, not in human anatomy.
+PREMIUM VISUAL QUALITY — HARD LOCK
+Every image must feel like a premium modern editorial illustration, not a classroom slide or generic AI explainer graphic.
+Use deliberate visual hierarchy, believable perspective, foreground/midground/background when useful, rich but controlled environment detail, clean organic outlines, subtle cel shading, purposeful lighting and a clear focal zone.
+Avoid flat sterile rooms, empty whiteboard compositions, generic office repetition and giant floating symbols/numbers when a real-life scene can explain the beat better.
+
+PREMIUM CHARACTER DESIGN — HARD LOCK
+Premium quality comes from character direction, NOT realistic anatomy.
+For important foreground Stickmen use expressive posture, clear silhouette, minimal but readable emotion, role-specific clothing, meaningful props/accessories and believable interaction with the scene or other people.
+Do not repeatedly use the same beige/grey generic outfit, neutral standing pose or anonymous placeholder figure.
+Keep all anatomy STRICT STICKMAN ONLY.
+
+COLOR STORY — HARD LOCK
+Use the PROJECT COLOR PALETTE intentionally across the video.
+- recurring primary/secondary/accent colors create cohesion
+- local object colors remain believable
+- use color contrast to guide attention
+- backgrounds may be calmer than the focal subject
+- vary warm/cool lighting and scene mood when appropriate
+- do NOT apply the exact same color distribution to every scene
+- avoid grey/beige monotony and permanently washed-out interiors
+Every scene must state a COLOR DIRECTION.
+
+REAL-LIFE SCENE PRIORITY — HARD LOCK
+For everyday psychology prefer a concrete recognizable real-life situation before an abstract teaching graphic.
+Priority:
+1. real-life action in a believable place
+2. simple visual metaphor
+3. diagram/scale/card only when genuinely clearer
+Do not build long runs of scales, cards, arrows, charts, coins or giant numbers if shopping, conversation, commuting, work, school, café, family, negotiation or another real-life context can show the same idea.
 
 CHANNEL DNA — HARD LOCK
-Simple Stickmen. Rich World. One clear idea per image.
-Prefer a concrete action in a believable environment over generic infographic layouts.
+Simple Stickman anatomy. Premium character direction. Rich world. Intentional color. One clear idea per image.
 Vary cast, clothing, role, location, pose, camera and composition.
 
 COVER STRENGTH — HARD LOCK
-Scene 01 must be deliberately stronger than a normal scene. It must combine the first spoken beat with a strong YouTube-thumbnail composition: one dominant focal motif, clear emotion/conflict/action, strong silhouette, fast small-size readability, controlled supporting details and a clean title zone. The cover must not feel like a flat ordinary interior shot. Do not turn it into an overloaded collage.
+Scene 01 must be deliberately stronger than a normal scene. It must combine the first spoken hook with a strong YouTube-thumbnail composition: one dominant focal motif, clear emotion/conflict/action, strong silhouette, fast small-size readability, controlled supporting details and a clean title zone. The cover must immediately establish the premium color story and premium character quality. Do not turn it into an overloaded collage.
 
 VISUAL VARIETY — HARD LOCK
 Vary composition families across the whole video.
@@ -90,7 +125,7 @@ TEXT DENSITY
 MASTER REFERENCE WORKFLOW
 1. Generate Scene 01 only, including the exact cover title.
 2. STOP and wait for user approval.
-3. Scene 01 is approved only if title spelling, typography aesthetics, cover strength, Stickman DNA and first-beat meaning all PASS.
+3. Scene 01 is approved only if title spelling, typography aesthetics, premium character quality, color story, cover strength, Stickman DNA and first-beat meaning all PASS.
 4. Save as `03-bilder/01.png`.
 5. Attach 01.png as STYLE/ANATOMY reference for Scene 02+.
 6. Master is not a character, composition or text template.
@@ -110,7 +145,7 @@ Reuse exact people only for genuine LOCAL CONTINUITY.
 Do not default to the same hoodie, desk, room, pose or framing.
 
 REFERENCE CLAUSE FOR SCENE 02+
-Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character, composition or text clone. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props, lighting and composition to fit the current beat. IMPORTANT: do not copy, recreate or imitate text from 01.png. Only render readable text when this scene explicitly supplies EXACT GERMAN TEXT; otherwise ZERO READABLE TEXT.
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character, composition or text clone. Match approved true-stickman anatomy, premium character direction, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Preserve the project color story without copying the exact same color layout. Freely change character identity, clothing, cast size, role, pose, camera, environment, props, lighting and composition to fit the current beat. IMPORTANT: do not copy, recreate or imitate text from 01.png. Only render readable text when this scene explicitly supplies EXACT GERMAN TEXT; otherwise ZERO READABLE TEXT.
 
 ARBEITSWEISE
 Unterhalb dieses Blocks alle Visual Beats des konkreten Videos direkt in dieser einen Datei eintragen.
@@ -119,6 +154,8 @@ Jeder Beat enthält:
 - Sprechtext als geschützten Kontext
 - COMPOSITION: STANDARD / SPLIT / CONTRAST / MONTAGE
 - SOCIAL DENSITY: SOLO / DUO / GROUP
+- COLOR DIRECTION: konkrete Farb-/Lichtrolle der Szene
+- PREMIUM CHARACTER DIRECTION: konkrete Pose/Kleidung/Emotion/Rollenwirkung
 - optional exakten deutschen Text für Flow
 - finalen Bildprompt
 
@@ -129,9 +166,11 @@ SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [Sprechtext]
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
+COLOR DIRECTION: Use the project accent strongly on the main object/character, calm neutral background, cinematic warm/cool separation.
+PREMIUM CHARACTER DIRECTION: Strong readable posture, role-specific outfit, clear minimal emotion, deliberate silhouette.
 EXACT GERMAN COVER TITLE: "[TITEL]"
 PROMPT:
-COVER + MASTER. Create a strong 16:9 true-stickman scene that accurately visualizes the first spoken beat. Make the cover deliberately stronger than a normal scene: dominant focal subject, clear emotional tension/action, clean title zone and fast thumbnail readability. Render exactly the specified German cover title using clean integrated editorial typography. Keep every letter fully inside the frame. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+COVER + MASTER. Create a premium 16:9 true-stickman scene that accurately visualizes the first spoken hook. Make the cover deliberately stronger than a normal scene: dominant focal subject, clear emotional tension/action, rich believable setting, intentional color contrast, clean title zone and fast thumbnail readability. Render exactly the specified German cover title using clean integrated editorial typography. Keep every letter fully inside the frame. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
 
 BEISPIEL — TEXTFREIE STANDARD-SZENE
 
@@ -140,8 +179,10 @@ SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [Sprechtext]
 COMPOSITION: STANDARD
 SOCIAL DENSITY: DUO
+COLOR DIRECTION: [konkrete Palette/Lichtrolle]
+PREMIUM CHARACTER DIRECTION: [konkrete Kleidung, Pose, Emotion, Interaktion]
 PROMPT:
-[Individueller Szeneninhalt mit echter Interaktion.] Attach 01.png as STYLE/ANATOMY reference only. Do not copy its title, composition or character identity unless LOCAL CONTINUITY requires the same person. ZERO READABLE TEXT.
+[Konkrete echte Alltagsszene mit echter Interaktion.] Attach 01.png as STYLE/ANATOMY reference only. Do not copy its title, composition or character identity unless LOCAL CONTINUITY requires the same person. ZERO READABLE TEXT.
 
 BEISPIEL — SPLIT/VERGLEICH
 
@@ -150,8 +191,10 @@ SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [Sprechtext]
 COMPOSITION: SPLIT
 SOCIAL DENSITY: SOLO
+COLOR DIRECTION: Use related palette colors on both halves but different focal accents to make the comparison instantly readable.
+PREMIUM CHARACTER DIRECTION: Same Stickman DNA, expressive contrasting posture on each side if the same person is compared.
 PROMPT:
-Create a clean two-part comparison inside one coherent 16:9 frame. Both sides explain the SAME spoken beat. Keep one primary idea and clear visual hierarchy. ZERO READABLE TEXT.
+Create a premium two-part comparison inside one coherent 16:9 frame. Both sides explain the SAME spoken beat. Keep one primary idea, clear visual hierarchy and believable environments. ZERO READABLE TEXT.
 
 BEISPIEL — KEYWORD DIREKT AUS FLOW
 
@@ -160,9 +203,11 @@ SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [Sprechtext]
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: GROUP
+COLOR DIRECTION: [konkrete Palette/Lichtrolle]
+PREMIUM CHARACTER DIRECTION: [konkrete Gruppe mit lesbarer sozialer Dynamik]
 EXACT GERMAN TEXT: "[KEYWORD]"
 PROMPT:
-[Individueller Szeneninhalt.] Render exactly the specified German keyword using clean professional integrated editorial typography in a calm safe text zone. NO OTHER READABLE TEXT.
+[Konkrete Alltagsszene.] Render exactly the specified German keyword using clean professional integrated editorial typography in a calm safe text zone. NO OTHER READABLE TEXT.
 
 BEISPIEL — MONTAGE / MULTI-PANEL
 
@@ -171,10 +216,16 @@ SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [Sprechtext]
 COMPOSITION: MONTAGE
 SOCIAL DENSITY: DUO
+COLOR DIRECTION: Keep all panels inside the same project palette; use one dominant accent in the main panel and quieter support panels.
+PREMIUM CHARACTER DIRECTION: Main figures receive the strongest pose/wardrobe detail; support panels stay simpler.
 PROMPT:
-Use one dominant main scene plus one or two smaller supporting visual moments that all explain the SAME spoken beat. Keep clear hierarchy and avoid a cluttered collage. ZERO READABLE TEXT.
+Use one dominant real-life main scene plus one or two smaller supporting visual moments that all explain the SAME spoken beat. Keep premium editorial hierarchy and avoid a cluttered collage. ZERO READABLE TEXT.
 
 FINAL QA
+- every scene feels premium, editorial and deliberately art-directed
+- foreground Stickmen use premium character direction while keeping simple anatomy
+- project color story is visible without grey/beige monotony
+- real-life scenes dominate over teaching graphics where possible
 - all planned German text is rendered directly by Google Flow
 - Scene 01: exact German cover title, strong thumbnail composition, no additional readable text
 - typography looks integrated and editorial, not meme/sticker-like
