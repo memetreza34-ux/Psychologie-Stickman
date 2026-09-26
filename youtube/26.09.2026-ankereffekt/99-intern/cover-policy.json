@@ -1,0 +1,10 @@
+{
+  "coverImage": "03-bilder/01.png",
+  "scene01Role": "SCENE_01_COVER_MASTER",
+  "coverHeadline": "WARUM DIE ERSTE ZAHL DICH LENKT",
+  "coverTextRenderer": "GOOGLE_FLOW",
+  "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
+  "coverStrengthPolicy": "STRONG_THUMBNAIL_V1",
+  "requireExactGermanTitle": true,
+  "remotionCoverText": false
+}
