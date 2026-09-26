@@ -7,7 +7,7 @@ Eigenständiges Produktionsrepo für **Alltagspsychologie & menschliches Verhalt
 ## Aktueller Status
 
 - Bildwelt: **Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY**
-- aktueller YouTube-Praxistest: `youtube/25.09.2026-bestaetigungsfehler/`
+- aktueller YouTube-Praxistest: `youtube/26.09.2026-ankereffekt/`
 - Szene 01 ist immer Cover + erster Beat + Master
 - **sämtlicher sichtbarer YouTube-Text kommt direkt aus Google Flow**
 - **Remotion erzeugt keinen sichtbaren YouTube-Text**
@@ -163,15 +163,15 @@ Die QA prüft bei neuen Projekten zusätzlich:
 
 ## Aktueller Praxistest
 
-**Bestätigungsfehler / Confirmation Bias**
+**Ankereffekt / Anchoring Effect**
 
-- 427 Wörter / 35 Visual Beats
+- 415 Wörter / 35 Visual Beats
 - Szene 01 = Cover + erster Beat + Master
-- Flow-Cover-Titel: **WARUM DU DICH SELBST BESTÄTIGST**
-- weitere Flow-Texte: Szenen 04, 10, 12, 20, 25, 29, 34
+- Flow-Cover-Titel: **WARUM DIE ERSTE ZAHL DICH LENKT**
+- weitere Flow-Texte: Szenen 03, 09, 13, 18, 25, 30, 35
 - insgesamt 8 sichtbare Textmomente auf 35 Szenen
+- Prompt-Kompositionsmix: 24 Standard / 5 Split / 3 Contrast / 3 Montage
+- Prompt-Social-Mix: 19 Solo / 8 Duo / 8 Group
 - sämtliche sichtbaren Texte direkt in Google Flow
 - Remotion rendert keinen sichtbaren Text
-- Quellenbasis: Nickerson (1998), Wason (1960), Klayman & Ha (1987)
-
-Die neuen `VARIED_COMPOSITION_V1`-/Typografie-/Social-Regeln gelten für künftige Produktionen; das bestehende Bestätigungsfehler-Video wird dadurch nicht rückwirkend verändert.
+- Quellenbasis: Tversky & Kahneman (1974), Furnham & Boo (2011), Mussweiler et al. (2000), Galinsky & Mussweiler (2001)
