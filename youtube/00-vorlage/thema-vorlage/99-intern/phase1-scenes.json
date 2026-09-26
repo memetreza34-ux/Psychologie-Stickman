@@ -11,6 +11,14 @@
   "visibleTextLanguage": "de",
   "visibleTextRenderer": "GOOGLE_FLOW",
   "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
+  "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
+  "visualPlanningPolicy": "VARIED_COMPOSITION_V1",
+  "compositionTargets": {
+    "standard": 0.7,
+    "comparison": 0.2,
+    "montage": 0.1
+  },
+  "socialScenePolicy": "SOCIAL_VARIETY_V1",
   "preferNoVisibleText": true,
   "coverHeadlineRequired": true,
   "coverHeadline": "",
