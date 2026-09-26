@@ -12,6 +12,9 @@ Verbindlich:
 - `rules/IMAGE_REFERENCE_LOCK.md`
 - `rules/COVER_LOCK.md`
 - `rules/TEXT_OVERLAY_LOCK.md`
+- `rules/FLOW_TEXT_STYLE_LOCK.md`
+- `rules/COMPOSITION_VARIATION_LOCK.md`
+- `rules/SOCIAL_SCENE_LOCK.md`
 - `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - `rules/PRODUCTION_FORMAT_RULES.md`
 
@@ -49,7 +52,7 @@ Verbindlich:
 - genau ein primärer visueller Gedanke pro Bild
 - ein klares Hauptmotiv
 - höchstens 1–2 unterstützende Hinweise
-- keine Sammelbilder
+- mehrere Teilbilder nur, wenn sie denselben Beat erklären
 - keine unnötige Wiederholung derselben Pose oder Komposition
 - Master sperrt Stil, nicht Kamera oder Aufbau
 
@@ -60,6 +63,35 @@ Dichte:
 - 21–28 nur als geprüfte Ausnahme
 - absolute Obergrenze 28
 - durchschnittlich höchstens 16 Wörter pro Szene
+
+## Kompositionsvariation — HARD LOCK
+
+Neue YouTube-Projekte verwenden `visualPlanningPolicy: "VARIED_COMPOSITION_V1"`.
+
+Jede Szene trägt:
+- `compositionType`: `standard`, `split`, `contrast` oder `montage`
+- `socialDensity`: `solo`, `duo` oder `group`
+
+Planungsziel für typische 2–3-Minuten-Videos:
+- ungefähr 70 % normale konkrete Szenen
+- ungefähr 20 % Split-/Kontrast-Kompositionen
+- ungefähr 10 % Multi-Panel-/Montage-Kompositionen
+
+Die Prozentwerte sind ein Anti-Monotonie-Ziel, kein Zwang. Inhaltliche Klarheit gewinnt immer.
+
+Multi-Panel ist ausdrücklich erlaubt, wenn alle Teilmotive **denselben gesprochenen Beat** erklären.
+
+Details:
+- `rules/COMPOSITION_VARIATION_LOCK.md`
+- `rules/SOCIAL_SCENE_LOCK.md`
+
+## Soziale Bildlogik
+
+Psychologie-Videos sollen nicht fast nur isolierte Einzelstickmen zeigen.
+
+Bei Feedback, Gespräch, Zustimmung/Widerspruch, Publikum, Beobachtung, Gruppe, Familie, Freunden, Kollegen, Experimenten oder sozialem Vergleich werden `duo`/`group` aktiv bevorzugt.
+
+Für typische Videos mit mindestens 20 Szenen sind mehrere Duo- und Gruppenszenen vorgesehen, sofern das Thema es zulässt.
 
 ## Bildwelt
 
@@ -103,8 +135,18 @@ Für **YouTube** gilt:
 
 Screens, Karten und Dokumente nutzen abstrakte Linien, Formen und Icons, sofern die Szene kein ausdrücklich geplantes Textmoment ist.
 
+### Typografie-Ästhetik — HARD LOCK
+- professionelle integrierte Editorial-Typografie
+- klare sichere Ränder
+- keine generische Meme-/Sticker-Schrift
+- keine extrem dicke Outline als Standard
+- Text muss wie Teil der Bildkomposition wirken
+- Titel/Keyword dürfen Hauptmotiv oder Handlung nicht verdecken
+
+Jeder neue Flow-Prompt enthält `TYPOGRAPHY AESTHETIC — HARD LOCK`.
+
 ### Qualität
-Jeder geplante Text wird im Flow-Prompt exakt vorgegeben. Falsche Schreibweise, abgeschnittene Buchstaben, Pseudo-Schrift oder zusätzliche Wörter führen zur Regeneration genau dieses Bildes.
+Jeder geplante Text wird im Flow-Prompt exakt vorgegeben. Falsche Schreibweise, abgeschnittene Buchstaben, Pseudo-Schrift, zusätzliche Wörter oder sichtbar schlechte typografische Integration führen zur Regeneration genau dieses Bildes.
 
 ### Remotion
 Für neue YouTube-Projekte:
@@ -113,7 +155,9 @@ Für neue YouTube-Projekte:
 - `renderGermanLabelsInRemotion: false`
 - Remotion übernimmt nur Schnitt, Audio, technische Bildbewegung und Export
 
-Details: `rules/TEXT_OVERLAY_LOCK.md`.
+Details:
+- `rules/TEXT_OVERLAY_LOCK.md`
+- `rules/FLOW_TEXT_STYLE_LOCK.md`
 
 ## Scene 01 — Cover + Master + erster Visual Beat
 
@@ -123,7 +167,8 @@ Für jedes YouTube-Projekt gilt:
 
 Szene 01 muss:
 - den ersten gesprochenen Beat korrekt darstellen
-- als starkes Cover funktionieren
+- bewusst stärker als eine normale Szene als Thumbnail komponiert sein
+- ein dominantes Hauptmotiv und klare visuelle Spannung haben
 - die Stickman-/Welt-DNA etablieren
 - den exakten deutschen Cover-Titel direkt aus Google Flow enthalten
 - außer diesem Titel keinen weiteren lesbaren Text enthalten
@@ -133,7 +178,7 @@ Ein separates Pflicht-`cover.png` wird nicht geführt.
 ## Master-Referenz + automatische 5er-Batches
 
 - Bild 01 zuerst allein generieren
-- Cover-Titel exakt prüfen
+- Cover-Titel, Coverstärke und Typografie exakt prüfen
 - STOP und Nutzerfreigabe
 - Bild 01 bleibt Master
 - ab Bild 02 Master bei jeder Generierung anhängen
@@ -147,7 +192,7 @@ Ein separates Pflicht-`cover.png` wird nicht geführt.
 
 **Regulär genau eine Nutzerfreigabe: nach Bild 01.**
 
-## Neue Textmetadaten
+## Neue Metadaten
 
 Neue YouTube-Projekte verwenden:
 
@@ -158,6 +203,9 @@ Neue YouTube-Projekte verwenden:
   "renderGermanLabelsInRemotion": false,
   "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
   "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
+  "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
+  "visualPlanningPolicy": "VARIED_COMPOSITION_V1",
+  "socialScenePolicy": "SOCIAL_VARIETY_V1",
   "flowTextMoments": [],
   "sceneLabels": []
 }
@@ -174,7 +222,7 @@ Der Nutzer arbeitet regulär nur mit:
 
 Technische Hilfsdateien gehören nach `99-intern/`.
 
-Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, alle exakten geplanten deutschen Texte, die ZERO-READABLE-TEXT-Regel für alle übrigen Szenen und den Batch-Ablauf.
+Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, alle exakten geplanten deutschen Texte, die ZERO-READABLE-TEXT-Regel für alle übrigen Szenen, Typografie-/Kompositions-/Social-Hard-Locks und den Batch-Ablauf.
 
 ## Audio
 
@@ -191,6 +239,7 @@ Bei Pipeline-/Strukturänderungen mindestens:
 - `npm run typecheck`
 - `npm run qa:visual-density`
 - `npm run qa:auto-visual-planning`
+- `npm run qa:visual-variety`
 - `npm run qa:flow-prompts`
 - `npm run qa:text-overlays`
 - relevante Format-/Produktionschecks
@@ -203,7 +252,10 @@ Bei visueller Identität gewinnt `rules/STICKMAN_DNA.md`.
 
 Bei Cover-Widerspruch gewinnt `rules/COVER_LOCK.md`.
 
-Bei Text-Widerspruch gewinnt `rules/TEXT_OVERLAY_LOCK.md`:
-**Google Flow erzeugt sämtlichen sichtbaren YouTube-Text; Remotion erzeugt keinen sichtbaren Text.**
+Bei Text-Widerspruch gewinnt `rules/TEXT_OVERLAY_LOCK.md`; für Typografie gewinnt zusätzlich `rules/FLOW_TEXT_STYLE_LOCK.md`.
+
+Bei Kompositions-Widerspruch gewinnt `rules/COMPOSITION_VARIATION_LOCK.md`.
+
+Bei Cast-/Sozialdichte gewinnt `rules/SOCIAL_SCENE_LOCK.md`.
 
 Beim Batch-Widerspruch gilt: nur Bild 01 braucht Nutzerfreigabe; danach automatische 5er-Batches mit interner QA.

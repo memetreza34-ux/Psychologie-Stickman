@@ -97,14 +97,55 @@ const cameraPresets = [
   'Diagonal medium-wide composition mit Vorder-, Mittel- und Hintergrund; frische Bildtiefe statt Standard-Medium-Shot.',
 ];
 
-const buildPlanningFields = (beat, index) => ({
-  visualIdea: `Visualisiere ausschließlich diesen gesprochenen Gedanken: ${beat}`,
-  subject: 'CAST: Wähle 1–4 beat-passende Stickmen. Standard ist neue passende Figur/Rolle; exakte Figurenwiederholung nur bei echter LOCAL CONTINUITY. Kleidung/Farben/Rollen dürfen variieren, Stickman-DNA bleibt gleich.',
-  action: 'HANDLUNG: Übersetze den Beat in eine konkrete sichtbare Handlung oder Interaktion. Keine bloß stehende neutrale Figur, wenn eine Handlung möglich ist.',
-  environment: 'ORT: Wähle einen glaubwürdigen inhaltlich passenden Ort. Nicht automatisch Schreibtisch/Homeoffice; Ort soll die Aussage erklären und sich ohne Grund nicht ständig wiederholen.',
-  camera: `KAMERA: ${cameraPresets[index % cameraPresets.length]}`,
-  continuityPolicy: 'NEW_CHARACTER_DEFAULT_UNLESS_LOCAL_CONTINUITY',
-});
+const compositionPattern = ['standard', 'standard', 'split', 'standard', 'standard', 'contrast', 'standard', 'montage', 'standard', 'standard'];
+const socialPattern = ['solo', 'duo', 'solo', 'solo', 'group', 'solo', 'duo', 'solo', 'solo', 'group'];
+
+const inferCompositionType = (beat, index) => {
+  if (index === 0) return 'standard';
+  const text = String(beat);
+  const comparison = /\b(aber|dagegen|während|statt|mehr|weniger|anders|vergleich|gegenbeispiel|einerseits|andererseits)\b/iu.test(text);
+  const multiExample = /\b(zum beispiel|beispiele|mehrere|verschiedene|sowohl|oder)\b/iu.test(text) && ((text.match(/,/g) ?? []).length >= 1 || countWords(text) >= 12);
+  if (comparison) return index % 2 === 0 ? 'split' : 'contrast';
+  if (multiExample) return 'montage';
+  return compositionPattern[index % compositionPattern.length];
+};
+
+const inferSocialDensity = (beat, index) => {
+  const text = String(beat);
+  if (/\b(gruppe|gruppen|publikum|menschen|personen|teilnehm|kollegen|familie|freunde|andere|beobachter)\b/iu.test(text)) return 'group';
+  if (/\b(gespräch|feedback|kritik|lob|freund|kollege|partner|jemand|zwei|gegenüber)\b/iu.test(text)) return 'duo';
+  return socialPattern[index % socialPattern.length];
+};
+
+const compositionGuidance = {
+  standard: 'KOMPOSITION: STANDARD. Eine zusammenhängende konkrete Szene mit klarer Hierarchie. Nicht automatisch dieselbe one-stickman-in-room Formel wie zuvor verwenden.',
+  split: 'KOMPOSITION: SPLIT. Zwei klar getrennte Bildhälften visualisieren zwei Seiten desselben gesprochenen Gedankens. Klare Blickführung, keine zusätzlichen unabhängigen Aussagen.',
+  contrast: 'KOMPOSITION: CONTRAST. Zwei Zustände oder Perspektiven desselben Beats deutlich gegenüberstellen, ohne den Frame mit separaten Themen zu überladen.',
+  montage: 'KOMPOSITION: MONTAGE. Ein dominantes Hauptmotiv plus höchstens 1–2 unterstützende Teilmomente desselben Beats. Keine Collage aus unabhängigen Aussagen.',
+};
+
+const socialGuidance = {
+  solo: 'SOZIALDICHTE: SOLO. Eine Hauptfigur ist sinnvoll; Hintergrundfiguren nur, wenn sie den Kontext verbessern.',
+  duo: 'SOZIALDICHTE: DUO. Wenn semantisch passend zwei relevante Stickmen mit echter Interaktion/Reaktion zeigen, nicht nur nebeneinander stellen.',
+  group: 'SOZIALDICHTE: GROUP. Wenn semantisch passend drei oder mehr relevante Stickmen mit klarer sozialer Dynamik zeigen; visuelle Hierarchie behalten.',
+};
+
+const buildPlanningFields = (beat, index) => {
+  const compositionType = inferCompositionType(beat, index);
+  const socialDensity = inferSocialDensity(beat, index);
+  return {
+    visualIdea: `Visualisiere ausschließlich diesen gesprochenen Gedanken: ${beat}`,
+    subject: 'CAST: Wähle beat-passende Stickmen gemäß SOZIALDICHTE. Standard ist neue passende Figur/Rolle; exakte Figurenwiederholung nur bei echter LOCAL CONTINUITY. Kleidung/Farben/Rollen dürfen variieren, Stickman-DNA bleibt gleich.',
+    action: 'HANDLUNG: Übersetze den Beat in eine konkrete sichtbare Handlung oder Interaktion. Keine bloß stehende neutrale Figur, wenn eine Handlung möglich ist.',
+    environment: 'ORT: Wähle einen glaubwürdigen inhaltlich passenden Ort. Nicht automatisch Schreibtisch/Homeoffice; Ort soll die Aussage erklären und sich ohne Grund nicht ständig wiederholen.',
+    camera: `KAMERA: ${cameraPresets[index % cameraPresets.length]}`,
+    compositionType,
+    socialDensity,
+    composition: compositionGuidance[compositionType],
+    socialPlan: socialGuidance[socialDensity],
+    continuityPolicy: 'NEW_CHARACTER_DEFAULT_UNLESS_LOCAL_CONTINUITY',
+  };
+};
 
 const normalizeFlowTextMoments = ({coverHeadline, flowTextMoments = [], sceneCount}) => {
   const moments = Array.isArray(flowTextMoments) ? flowTextMoments.map((item) => ({...item})) : [];
@@ -145,10 +186,10 @@ export const buildVisualBeatScenes = (beats, options = {}) => {
     const isCover = sceneNumber === 1;
     const textMoment = byScene.get(sceneNumber);
     const textInstruction = textMoment
-      ? `FLOW TEXT HARD LOCK: Render EXACT GERMAN TEXT \"${textMoment.text}\" directly inside this image. Preserve spelling, umlauts and punctuation exactly. Keep all letters fully inside the safe frame. NO OTHER READABLE TEXT. `
+      ? `FLOW TEXT HARD LOCK: Render EXACT GERMAN TEXT \"${textMoment.text}\" directly inside this image. Preserve spelling, umlauts and punctuation exactly. Keep all letters fully inside the safe frame. Use professional integrated editorial typography, clean readable letterforms, safe margins, no meme/sticker lettering and no oversized heavy outline by default. Design the text into a calm intentional text zone so it feels part of the scene. NO OTHER READABLE TEXT. `
       : 'FLOW TEXT HARD LOCK: ZERO READABLE TEXT. Do not copy text from the master image. ';
     const coverInstruction = isCover
-      ? 'COVER HARD LOCK: Diese erste Szene ist zugleich COVER/THUMBNAIL und STYLE-/ANATOMY-MASTER. Sie muss den ersten gesprochenen Beat korrekt zeigen und gleichzeitig als starkes Cover funktionieren: klares großes Hauptmotiv, schnelle Lesbarkeit, starke Pose/Emotion oder Handlung, wenig visuelles Rauschen, keine spätere Information vorwegnehmen. '
+      ? 'COVER HARD LOCK: Diese erste Szene ist zugleich COVER/THUMBNAIL und STYLE-/ANATOMY-MASTER. Sie muss den ersten gesprochenen Beat korrekt zeigen und bewusst stärker als eine normale Szene funktionieren: dominantes Hauptmotiv, klare emotionale Spannung/Konflikt oder Handlung, starke Silhouette, schnelle Thumbnail-Lesbarkeit, klare Typografiezone, wenig visuelles Rauschen, keine spätere Information vorwegnehmen. '
       : '';
 
     return {
@@ -165,8 +206,9 @@ export const buildVisualBeatScenes = (beats, options = {}) => {
         `${coverInstruction}${textInstruction}` +
         `VISUAL BEAT: Zeige ausschließlich die Information, die in diesem gesprochenen Beat vorkommt. ` +
         `Bevorzuge eine konkrete Stickman-Handlung in einer glaubwürdigen Umgebung vor abstrakten Diagrammen. ` +
+        `Mehrere Teilbilder sind erlaubt, wenn sie denselben Beat besser erklären; niemals mehrere unabhängige Beats zusammenpressen. ` +
         `Keine spätere Information vorwegnehmen. Neue Orte, Personen, Objekte, Zahlen, Handlungen oder Ursache-Folge-Schritte müssen sichtbar werden, wenn sie in diesem Beat wichtig sind. ` +
-        `${plan.subject} ${plan.environment} ${plan.action} ${plan.camera} ` +
+        `${plan.subject} ${plan.environment} ${plan.action} ${plan.composition} ${plan.socialPlan} ${plan.camera} ` +
         `Gesprochener Beat: ${beat}`,
     };
   });
@@ -197,11 +239,15 @@ export const resolvePhase1Plan = (plan, planPath = '') => {
 
   return {
     ...plan,
+    visualPlanningPolicy: 'VARIED_COMPOSITION_V1',
+    compositionTargets: {standard: 0.7, comparison: 0.2, montage: 0.1},
+    socialScenePolicy: 'SOCIAL_VARIETY_V1',
     ...(modernTextPlan
       ? {
           visibleTextLanguage: 'de',
           visibleTextRenderer: 'GOOGLE_FLOW',
           flowSourceImageTextPolicy: 'PLANNED_EXACT_GERMAN_TEXT_ONLY',
+          flowTextStylePolicy: 'EDITORIAL_INTEGRATED_V1',
           preferNoVisibleText: true,
           coverHeadlineRequired: true,
           coverHeadline: modernTextPlan.coverHeadline,

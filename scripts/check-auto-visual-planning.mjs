@@ -12,7 +12,9 @@ Ein Freund fragt dich, warum du noch nicht angefangen hast.
 Im Büro öffnest du die Datei und machst nur den ersten kleinen Schritt.
 Danach fällt dir die nächste Handlung leichter.
 Auf dem Heimweg denkst du noch einmal über die Aufgabe nach.
-Am Abend arbeitest du schließlich ruhig weiter.
+Am Abend vergleichst du zwei Wege, bevor du ruhig weiterarbeitest.
+Mehrere kleine Beispiele zeigen dir schließlich, dass ein Anfang oft reicht.
+Mit anderen Menschen besprichst du später, was dir geholfen hat.
 `;
 
 const coverHeadline = 'WARUM SCHIEBEN WIR AUF?';
@@ -22,15 +24,18 @@ const flowTextMoments = [
 ];
 const beats = splitScriptIntoVisualBeats(sampleScript, {targetWords: 14, maxWords: 20, semanticSplit: true});
 const scenes = buildVisualBeatScenes(beats, {coverHeadline, flowTextMoments});
-const requiredFields = ['visualIdea', 'subject', 'action', 'environment', 'camera', 'continuityPolicy', 'textPolicy', 'visualTask'];
+const requiredFields = ['visualIdea', 'subject', 'action', 'environment', 'camera', 'continuityPolicy', 'textPolicy', 'visualTask', 'compositionType', 'socialDensity', 'composition', 'socialPlan'];
 const failures = [];
 
-if (scenes.length < 6) failures.push(`expected at least 6 generated scenes, got ${scenes.length}`);
+if (scenes.length < 8) failures.push(`expected at least 8 generated scenes, got ${scenes.length}`);
 
 for (const scene of scenes) {
   for (const field of requiredFields) {
     if (typeof scene[field] !== 'string' || scene[field].trim() === '') failures.push(`scene ${scene.scene}: missing required planning field '${field}'`);
   }
+  if (!['standard', 'split', 'contrast', 'montage'].includes(scene.compositionType)) failures.push(`scene ${scene.scene}: invalid compositionType '${scene.compositionType}'`);
+  if (!['solo', 'duo', 'group'].includes(scene.socialDensity)) failures.push(`scene ${scene.scene}: invalid socialDensity '${scene.socialDensity}'`);
+
   if (scene.scene === 1) {
     if (scene.textPolicy !== 'FLOW_EXACT_COVER_TEXT') failures.push('scene 1 must use FLOW_EXACT_COVER_TEXT');
     if (scene.flowText !== coverHeadline) failures.push('scene 1 must carry exact cover text');
@@ -44,13 +49,15 @@ for (const scene of scenes) {
   if (!/ORT:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing ORT planning`);
   if (!/HANDLUNG:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing HANDLUNG planning`);
   if (!/KAMERA:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing KAMERA planning`);
-  if (!/1–4/u.test(scene.subject)) failures.push(`scene ${scene.scene}: cast guidance must allow 1–4 Stickmen`);
+  if (!/KOMPOSITION:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing KOMPOSITION planning`);
+  if (!/SOZIALDICHTE:/u.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask missing SOZIALDICHTE planning`);
   if (!/Nicht automatisch Schreibtisch\/Homeoffice/iu.test(scene.environment)) failures.push(`scene ${scene.scene}: environment guidance does not block desk/home-office default`);
 }
 
 if (scenes[0]?.isCover !== true) failures.push('scene 1 must always set isCover=true');
 if (scenes[0]?.coverRole !== 'SCENE_01_COVER_MASTER') failures.push('scene 1 must set coverRole=SCENE_01_COVER_MASTER');
 if (!/COVER HARD LOCK/iu.test(scenes[0]?.visualTask ?? '')) failures.push('scene 1 visualTask must contain COVER HARD LOCK guidance');
+if (!/bewusst stärker als eine normale Szene/iu.test(scenes[0]?.visualTask ?? '')) failures.push('scene 1 must contain strengthened cover guidance');
 for (const scene of scenes.slice(1)) {
   if (scene.isCover !== false) failures.push(`scene ${scene.scene}: only scene 1 may be the cover`);
   if ('coverRole' in scene) failures.push(`scene ${scene.scene}: coverRole must only exist on scene 1`);
@@ -58,6 +65,18 @@ for (const scene of scenes.slice(1)) {
 
 const uniqueCameras = new Set(scenes.map((scene) => scene.camera));
 if (uniqueCameras.size < Math.min(5, scenes.length)) failures.push(`camera variation too low: ${uniqueCameras.size} unique camera plans across ${scenes.length} scenes`);
+
+const compositionCounts = scenes.reduce((acc, scene) => {
+  acc[scene.compositionType] = (acc[scene.compositionType] ?? 0) + 1;
+  return acc;
+}, {});
+const comparisonCount = (compositionCounts.split ?? 0) + (compositionCounts.contrast ?? 0);
+if (comparisonCount < 1) failures.push('auto planning must include at least one split/contrast scene');
+if ((compositionCounts.montage ?? 0) < 1) failures.push('auto planning must include at least one montage scene');
+
+const socialCount = scenes.filter((scene) => scene.socialDensity === 'duo' || scene.socialDensity === 'group').length;
+if (socialCount < 2) failures.push(`social scene variation too low: ${socialCount}/${scenes.length}`);
+if (!scenes.some((scene) => scene.socialDensity === 'group')) failures.push('auto planning must include at least one group scene');
 
 const tmpDir = path.resolve('tmp');
 const tmpScript = path.join(tmpDir, 'auto-visual-planning-script.txt');
@@ -80,6 +99,9 @@ try {
   if (resolved.visibleTextLanguage !== 'de') failures.push("auto plan visibleTextLanguage must be 'de'");
   if (resolved.visibleTextRenderer !== 'GOOGLE_FLOW') failures.push('auto plan visibleTextRenderer must be GOOGLE_FLOW');
   if (resolved.flowSourceImageTextPolicy !== 'PLANNED_EXACT_GERMAN_TEXT_ONLY') failures.push('auto plan Flow text policy is wrong');
+  if (resolved.flowTextStylePolicy !== 'EDITORIAL_INTEGRATED_V1') failures.push('auto plan must use EDITORIAL_INTEGRATED_V1');
+  if (resolved.visualPlanningPolicy !== 'VARIED_COMPOSITION_V1') failures.push('auto plan must use VARIED_COMPOSITION_V1');
+  if (resolved.socialScenePolicy !== 'SOCIAL_VARIETY_V1') failures.push('auto plan must use SOCIAL_VARIETY_V1');
   if (resolved.coverTextRenderer !== 'GOOGLE_FLOW') failures.push('auto plan coverTextRenderer must be GOOGLE_FLOW');
   if (resolved.coverHeadline !== coverHeadline) failures.push('auto plan must preserve exact coverHeadline');
   if (resolved.renderGermanLabelsInRemotion !== false) failures.push('auto plan must disable all Remotion text');
@@ -95,4 +117,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log(`AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, all planned visible text is Google Flow-native, ${uniqueCameras.size} camera plans.`);
+console.log(`AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes, ${uniqueCameras.size} camera plans, ${comparisonCount} comparison scene(s), ${compositionCounts.montage ?? 0} montage scene(s), ${socialCount} social scene(s).`);

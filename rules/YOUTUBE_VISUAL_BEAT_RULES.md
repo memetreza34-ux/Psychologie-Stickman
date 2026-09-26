@@ -41,11 +41,63 @@ Verbindlich:
 - keine unnötige Wiederholung derselben Pose/Kamera
 - Master hält Stickman-DNA, Linien, Farben und Shading konsistent; er sperrt nicht Komposition oder Figurenidentität
 
+Zusätzlich verbindlich:
+- `rules/COMPOSITION_VARIATION_LOCK.md`
+- `rules/SOCIAL_SCENE_LOCK.md`
+
+## Kompositionsplanung
+
+Jede neue Phase-1-Szene trägt:
+- `compositionType`: `standard`, `split`, `contrast` oder `montage`
+- `socialDensity`: `solo`, `duo` oder `group`
+
+Planungsziel für typische 2–3-Minuten-Videos:
+- ungefähr 70 % `standard`
+- ungefähr 20 % `split`/`contrast`
+- ungefähr 10 % `montage`
+
+Das ist eine Anti-Monotonie-Richtlinie, keine starre Quote. Inhaltliche Klarheit gewinnt immer.
+
+## Mehrere Teilbilder in einem Frame
+
+Multi-Panel-/Montage-Bilder sind erlaubt und ausdrücklich erwünscht, wenn sie **denselben gesprochenen Beat** verständlicher machen.
+
+Geeignet für:
+- Vorher/Nachher
+- A/B-Vergleich
+- Behauptung/Gegenbeispiel
+- mehrere kurze Beispiele derselben Aussage
+- Hauptszene + 1–2 unterstützende Detailausschnitte
+
+Nicht erlaubt:
+- mehrere unabhängige Beats zusammenpressen
+- spätere Inhalte vorwegnehmen
+- unruhige Collage ohne klare Blickführung
+
+## Soziale Szenen
+
+Bei sozialen Beats Castgröße aktiv nutzen.
+
+Bevorzugt `duo` oder `group` bei:
+- Feedback
+- Gesprächen
+- Zustimmung/Widerspruch
+- Gruppeneinfluss
+- Beobachtung
+- Publikum
+- Freundschaft/Familie/Kollegen
+- sozialem Vergleich
+- Experimenten mit Teilnehmenden
+
+Keine Zwangsgruppen bei klar inneren Solo-Beats.
+
 ## Sichtbarer Text — GOOGLE FLOW ONLY
 
 Für neue YouTube-Projekte:
 
 **Alle sichtbaren Texte werden direkt von Google Flow in das jeweilige Bild gerendert. Remotion erzeugt keinen sichtbaren Text.**
+
+Zusätzlich gilt `rules/FLOW_TEXT_STYLE_LOCK.md`.
 
 ### Geplante Textszene
 Phase 1 trägt:
@@ -58,6 +110,8 @@ Grenzen:
 - spätere Keywords: 1–5 Wörter
 - genau der vorgegebene Text
 - NO OTHER READABLE TEXT
+- Text ästhetisch in die Komposition integrieren
+- keine Meme-/Sticker-Standardtypografie
 
 ### Nicht geplante Textszene
 `textPolicy: "NONE"`
@@ -75,7 +129,9 @@ Das bedeutet:
 
 ## Keine Sammelbilder
 
-Nicht mehrere unterschiedliche Aussagen in ein einziges Bild quetschen, nur um Bildzahl zu sparen.
+Nicht mehrere **unabhängige Aussagen** in ein einziges Bild quetschen, nur um Bildzahl zu sparen.
+
+Eine Montage mit mehreren Teilmotiven ist dagegen erlaubt, wenn alle Teilmotive denselben Visual Beat erklären.
 
 ## Dichte
 
@@ -100,6 +156,8 @@ Jeder Beat enthält mindestens:
 - `endWord`
 - `speechSection`
 - `visualTask`
+- `compositionType`
+- `socialDensity`
 
 Empfohlen:
 - `visualIdea`
@@ -114,12 +172,16 @@ Empfohlen:
 
 `npm run qa:visual-density`
 
-Der Check schlägt fehl, wenn:
-- durchschnittlich mehr als 16 Wörter pro Szene entstehen
-- normale Szene mehr als 20 Wörter enthält
-- Ausnahme mehr als 28 Wörter enthält
-- zu wenige Szenen vorhanden sind
-- `visualTask` fehlt
+und zusätzlich:
+
+`npm run qa:visual-variety`
+
+Die Checks sichern unter anderem:
+- sinnvolle Beat-Dichte
+- geplante Kompositionsvariation
+- Social-Density-Felder
+- keine vollständig monotone Einzelbildserie
+- neue V1-Planungsmarker für künftige Projekte
 
 ## Phase 2 / Google Flow
 
@@ -127,9 +189,10 @@ Phase 2 darf:
 - Stil auf den Visual Beat anwenden
 - den Beat verständlich und individuell komponieren
 - geplanten exakten deutschen Text direkt in das Bild rendern
+- Split-/Kontrast-/Montage-Kompositionen verwenden, wenn sie denselben Beat unterstützen
 
 Phase 2 darf nicht:
-- mehrere Beats zusammenlegen
+- mehrere unabhängige Beats zusammenlegen
 - Inhalte aus späteren Beats vorziehen
 - alte Komposition nur aus Bequemlichkeit wiederverwenden
 - ungeplanten Text erzeugen
@@ -141,9 +204,12 @@ Prüfen:
 - zentraler Inhalt des gesprochenen Satzes gleichzeitig sichtbar
 - Bild individuell auf Beat zugeschnitten
 - keine unnötig generische Infografik
+- keine monotone Serie aus `eine Figur + Raum`
+- Split/Montage dort eingesetzt, wo sie echten Mehrwert bringen
+- soziale Beats zeigen ausreichend Interaktion
 - kein ungewöhnlich langer Bildstillstand ohne Grund
 - keine spätere Information vorweggenommen
-- geplante Flow-Texte exakt, vollständig und nicht abgeschnitten
+- geplante Flow-Texte exakt, vollständig, ästhetisch und nicht abgeschnitten
 - nicht geplante Textszenen vollständig textfrei
 - kein sichtbarer Text aus Remotion
 

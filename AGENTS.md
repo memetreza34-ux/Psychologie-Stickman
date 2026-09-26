@@ -18,8 +18,11 @@ Danach lesen:
 7. `rules/IMAGE_REFERENCE_LOCK.md`
 8. `rules/COVER_LOCK.md`
 9. `rules/TEXT_OVERLAY_LOCK.md`
-10. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-11. `rules/PRODUCTION_FORMAT_RULES.md`
+10. `rules/FLOW_TEXT_STYLE_LOCK.md`
+11. `rules/COMPOSITION_VARIATION_LOCK.md`
+12. `rules/SOCIAL_SCENE_LOCK.md`
+13. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+14. `rules/PRODUCTION_FORMAT_RULES.md`
 
 ## Themenwelt
 
@@ -49,6 +52,27 @@ Priorität:
 
 Genau ein primärer visueller Gedanke pro Bild.
 
+Mehrere Teilbilder in einem Frame sind erlaubt, wenn alle Teilmotive denselben gesprochenen Beat erklären.
+
+## Kompositionsvariation — HARD LOCK
+
+Neue YouTube-Projekte verwenden:
+- `visualPlanningPolicy: "VARIED_COMPOSITION_V1"`
+- `socialScenePolicy: "SOCIAL_VARIETY_V1"`
+
+Jede Szene plant:
+- `compositionType`: `standard`, `split`, `contrast` oder `montage`
+- `socialDensity`: `solo`, `duo` oder `group`
+
+Planungsziel für typische 2–3-Minuten-Videos:
+- ungefähr 70 % normale konkrete Szenen
+- ungefähr 20 % Split-/Kontrast-Szenen
+- ungefähr 10 % Montage-/Multi-Panel-Szenen
+
+Nicht stumpf Quoten erfüllen. Semantik gewinnt. Aber eine lange Serie aus fast identischen `eine Figur + Raum`-Kompositionen ist nicht akzeptabel.
+
+Bei sozialen Beats aktiv Duo-/Gruppenszenen planen: Feedback, Gespräch, Zustimmung/Widerspruch, Publikum, Beobachtung, Familie, Freunde, Kollegen, soziale Vergleiche und Experimente.
+
 ## Textsystem — GOOGLE FLOW ONLY
 
 Für neue YouTube-Projekte gilt ohne Ausnahme:
@@ -70,6 +94,17 @@ Für neue YouTube-Projekte gilt ohne Ausnahme:
 - keine UI-Texte, Labels, Untertitel, Poster-/Werbe-/Bildschirmtexte
 - Dokumente/Screens nur abstrakt
 
+### Typografie-Ästhetik
+Jeder neue Flow-Prompt enthält `TYPOGRAPHY AESTHETIC — HARD LOCK`.
+
+Geplanter Text:
+- clean professional integrated editorial typography
+- sichere Ränder
+- keine Meme-/Sticker-Schrift
+- keine extrem dicke Outline als Standard
+- wirkt in die Szene hineindesignt
+- verdeckt keine zentrale Handlung
+
 ### Remotion
 Für YouTube:
 - `sceneLabels: []`
@@ -78,7 +113,7 @@ Für YouTube:
 - Remotion nur für Schnitt, Audio, technische Effekte und Export
 
 ### Text-QA
-Falsche Schreibweise, fehlende/zusätzliche Wörter, Pseudo-Schrift oder abgeschnittene Buchstaben => nur das betroffene Flow-Bild regenerieren.
+Falsche Schreibweise, fehlende/zusätzliche Wörter, Pseudo-Schrift, abgeschnittene Buchstaben oder sichtbar schlecht integrierte Typografie => nur das betroffene Flow-Bild regenerieren.
 
 ## Scene 01 — COVER + MASTER HARD LOCK
 
@@ -86,13 +121,15 @@ Falsche Schreibweise, fehlende/zusätzliche Wörter, Pseudo-Schrift oder abgesch
 
 Szene 01 muss:
 - den ersten gesprochenen Visual Beat korrekt darstellen
-- als starkes Cover funktionieren
+- bewusst stärker als eine normale Szene funktionieren
+- ein dominantes Hauptmotiv und klare visuelle Spannung besitzen
 - die Stickman-/Welt-DNA etablieren
 - den exakten deutschen Cover-Titel direkt aus Google Flow enthalten
+- Titel und Hauptmotiv gemeinsam komponieren
 
 Kein separates Pflicht-`cover.png`.
 
-## Textmetadaten neuer Projekte
+## Text-/Planungsmetadaten neuer Projekte
 
 ```json
 {
@@ -101,6 +138,9 @@ Kein separates Pflicht-`cover.png`.
   "renderGermanLabelsInRemotion": false,
   "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
   "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
+  "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
+  "visualPlanningPolicy": "VARIED_COMPOSITION_V1",
+  "socialScenePolicy": "SOCIAL_VARIETY_V1",
   "flowTextMoments": [],
   "sceneLabels": []
 }
@@ -118,9 +158,9 @@ Kein separates Pflicht-`cover.png`.
 
 1. Bild 01 inklusive exaktem Cover-Titel allein generieren.
 2. STOP und Nutzerfreigabe.
-3. Cover, Titel, Stickman-DNA und Inhalt prüfen.
+3. Coverstärke, Titel, Typografie, Stickman-DNA und Inhalt prüfen.
 4. Danach höchstens 5 neue Bilder pro Batch.
-5. Bild 01 ab Szene 02 nur als STYLE-/ANATOMY-Referenz verwenden, nicht als Charakter- oder Textvorlage.
+5. Bild 01 ab Szene 02 nur als STYLE-/ANATOMY-Referenz verwenden, nicht als Charakter-, Kompositions- oder Textvorlage.
 6. Nur bei ausdrücklich geplanten späteren Textmomenten deren eigenen exakten deutschen Flow-Text rendern.
 7. Nach jedem Batch interne QA.
 8. Nur fehlerhafte Bilder regenerieren.
@@ -163,6 +203,10 @@ Die eine Google-Flow-Datei enthält:
 - Stickman-DNA
 - Format/Stil
 - Scene-01-Cover-Regel
+- `COVER STRENGTH — HARD LOCK`
+- `TYPOGRAPHY AESTHETIC — HARD LOCK`
+- `VISUAL VARIETY — HARD LOCK`
+- `SOCIAL SCENE VARIETY — HARD LOCK`
 - alle geplanten exakten deutschen Textmomente
 - ZERO READABLE TEXT für alle übrigen Szenen
 - Master-Referenz-Regel
@@ -176,6 +220,7 @@ Bei strukturellen oder Pipeline-Änderungen mindestens:
 - `npm run typecheck`
 - `npm run qa:visual-density`
 - `npm run qa:auto-visual-planning`
+- `npm run qa:visual-variety`
 - `npm run qa:flow-prompts`
 - `npm run qa:text-overlays`
 - relevante Produktionschecks
@@ -186,4 +231,7 @@ Bei strukturellen oder Pipeline-Änderungen mindestens:
 - visuelle Identität: `rules/STICKMAN_DNA.md`
 - Cover: `rules/COVER_LOCK.md`
 - sichtbarer YouTube-Text: `rules/TEXT_OVERLAY_LOCK.md` — **Google Flow only**
+- Textästhetik: `rules/FLOW_TEXT_STYLE_LOCK.md`
+- Komposition: `rules/COMPOSITION_VARIATION_LOCK.md`
+- soziale Cast-Planung: `rules/SOCIAL_SCENE_LOCK.md`
 - Batch: Freigabe einmal nach Bild 01; danach automatische 5er-Batches
