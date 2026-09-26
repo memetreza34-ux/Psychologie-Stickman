@@ -3,6 +3,8 @@ GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
 DIESE DATEI IST DER EINZIGE PROMPT FÜR GOOGLE FLOW.
 Keine zusätzlichen Prompt-Dateien pro Szene anlegen.
 
+VISUAL PLANNING POLICY: VARIED_COMPOSITION_V1
+
 FORMAT HARD LOCK
 - YouTube 16:9
 - 1920×1080
@@ -20,10 +22,45 @@ Simple Stickmen. Rich World. One clear idea per image.
 Prefer a concrete action in a believable environment over generic infographic layouts.
 Vary cast, clothing, role, location, pose, camera and composition.
 
+COVER STRENGTH — HARD LOCK
+Scene 01 must be deliberately stronger than a normal scene. It must combine the first spoken beat with a strong YouTube-thumbnail composition: one dominant focal motif, clear emotion/conflict/action, strong silhouette, fast small-size readability, controlled supporting details and a clean title zone. The cover must not feel like a flat ordinary interior shot. Do not turn it into an overloaded collage.
+
+VISUAL VARIETY — HARD LOCK
+Vary composition families across the whole video.
+Planning target for a normal 2–3 minute video:
+- roughly 70% standard concrete scenes
+- roughly 20% split/contrast scenes
+- roughly 10% multi-panel/montage scenes
+
+Use split or contrast when two sides of the SAME spoken beat benefit from comparison.
+Use montage when a main scene plus 1–2 supporting mini-scenes or examples of the SAME spoken beat improve understanding.
+Do not default to one-stickman-in-room compositions.
+Do not combine independent later beats just to make a busier image.
+One primary idea per final frame remains mandatory.
+
+SOCIAL SCENE VARIETY — HARD LOCK
+Psychology should not be visualized almost entirely with isolated solo Stickmen.
+Use duo/group scenes when the beat concerns feedback, conversation, disagreement, observation, audience, family, friends, coworkers, social comparison, experiments or group influence.
+Relevant characters must interact or react; do not merely line them up.
+Do not force extra people into genuinely internal solo beats.
+
 VISIBLE TEXT — GOOGLE FLOW ONLY
 FLOW_VISIBLE_TEXT_ONLY_V3.
 All visible text in the YouTube video is generated directly inside Google Flow images.
 NO REMOTION TEXT. Remotion must not add cover titles, keywords, labels or captions.
+
+TYPOGRAPHY AESTHETIC — HARD LOCK
+For every planned visible text moment:
+- use clean professional integrated editorial typography
+- keep all letters inside generous safe margins
+- design the text into a calm intentional part of the composition
+- text should feel native to the illustrated scene, not pasted on top
+- avoid generic meme/sticker lettering
+- avoid oversized thick black outlines by default
+- avoid unnecessary glow, 3D or loud text effects
+- keep typography style coherent across the video
+- never cover a face, important hand/action or the core visual idea
+- correctness always wins over style
 
 PLANNED TEXT MOMENTS
 Before generation, list every visible text moment here using exact German wording.
@@ -35,8 +72,9 @@ For every planned text scene:
 - render exactly that German text
 - preserve spelling, umlauts and punctuation
 - keep every letter fully inside the safe frame
+- use professional integrated editorial typography
 - NO OTHER READABLE TEXT
-- regenerate the image if text is wrong, clipped, malformed or unreadable
+- regenerate the image if text is wrong, clipped, malformed, unreadable or aesthetically badly integrated
 
 For every scene without a planned text moment:
 - ZERO READABLE TEXT
@@ -52,10 +90,10 @@ TEXT DENSITY
 MASTER REFERENCE WORKFLOW
 1. Generate Scene 01 only, including the exact cover title.
 2. STOP and wait for user approval.
-3. Scene 01 is approved only if title spelling, Stickman DNA, cover clarity and first-beat meaning all PASS.
+3. Scene 01 is approved only if title spelling, typography aesthetics, cover strength, Stickman DNA and first-beat meaning all PASS.
 4. Save as `03-bilder/01.png`.
 5. Attach 01.png as STYLE/ANATOMY reference for Scene 02+.
-6. Master is not a character clone or text template.
+6. Master is not a character, composition or text template.
 7. Do not copy text from 01.png. Only render text when the current scene has its own EXACT GERMAN TEXT instruction.
 
 AUTOMATIC BATCH WORKFLOW
@@ -72,13 +110,15 @@ Reuse exact people only for genuine LOCAL CONTINUITY.
 Do not default to the same hoodie, desk, room, pose or framing.
 
 REFERENCE CLAUSE FOR SCENE 02+
-Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character clone or text template. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props and lighting to fit the current beat. IMPORTANT: do not copy, recreate or imitate text from 01.png. Only render readable text when this scene explicitly supplies EXACT GERMAN TEXT; otherwise ZERO READABLE TEXT.
+Use attached 01.png as STYLE AND ANATOMY REFERENCE ONLY, NOT as a character, composition or text clone. Match approved true-stickman anatomy, very thin limbs, no-finger hands, linework, color treatment, subtle cel shading, environment detail and overall 2D editorial quality. Freely change character identity, clothing, cast size, role, pose, camera, environment, props, lighting and composition to fit the current beat. IMPORTANT: do not copy, recreate or imitate text from 01.png. Only render readable text when this scene explicitly supplies EXACT GERMAN TEXT; otherwise ZERO READABLE TEXT.
 
 ARBEITSWEISE
 Unterhalb dieses Blocks alle Visual Beats des konkreten Videos direkt in dieser einen Datei eintragen.
 Jeder Beat enthält:
 - Nummer
 - Sprechtext als geschützten Kontext
+- COMPOSITION: STANDARD / SPLIT / CONTRAST / MONTAGE
+- SOCIAL DENSITY: SOLO / DUO / GROUP
 - optional exakten deutschen Text für Flow
 - finalen Bildprompt
 
@@ -87,30 +127,57 @@ BEISPIEL — COVER
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [Sprechtext]
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
 EXACT GERMAN COVER TITLE: "[TITEL]"
 PROMPT:
-COVER + MASTER. Create a strong 16:9 true-stickman scene that accurately visualizes the first spoken beat. Render exactly the specified German cover title as large clean thumbnail typography. Keep every letter fully inside the frame. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+COVER + MASTER. Create a strong 16:9 true-stickman scene that accurately visualizes the first spoken beat. Make the cover deliberately stronger than a normal scene: dominant focal subject, clear emotional tension/action, clean title zone and fast thumbnail readability. Render exactly the specified German cover title using clean integrated editorial typography. Keep every letter fully inside the frame. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
 
-BEISPIEL — TEXTFREIE SZENE
+BEISPIEL — TEXTFREIE STANDARD-SZENE
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [Sprechtext]
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
 PROMPT:
-[Individueller Szeneninhalt.] Attach 01.png as STYLE/ANATOMY reference only. Do not copy its title or character identity unless LOCAL CONTINUITY requires the same person. ZERO READABLE TEXT.
+[Individueller Szeneninhalt mit echter Interaktion.] Attach 01.png as STYLE/ANATOMY reference only. Do not copy its title, composition or character identity unless LOCAL CONTINUITY requires the same person. ZERO READABLE TEXT.
+
+BEISPIEL — SPLIT/VERGLEICH
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+[Sprechtext]
+COMPOSITION: SPLIT
+SOCIAL DENSITY: SOLO
+PROMPT:
+Create a clean two-part comparison inside one coherent 16:9 frame. Both sides explain the SAME spoken beat. Keep one primary idea and clear visual hierarchy. ZERO READABLE TEXT.
 
 BEISPIEL — KEYWORD DIREKT AUS FLOW
 
 SCENE 04
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [Sprechtext]
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: GROUP
 EXACT GERMAN TEXT: "[KEYWORD]"
 PROMPT:
-[Individueller Szeneninhalt.] Render exactly the specified German keyword in a clean safe text zone. NO OTHER READABLE TEXT.
+[Individueller Szeneninhalt.] Render exactly the specified German keyword using clean professional integrated editorial typography in a calm safe text zone. NO OTHER READABLE TEXT.
+
+BEISPIEL — MONTAGE / MULTI-PANEL
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+[Sprechtext]
+COMPOSITION: MONTAGE
+SOCIAL DENSITY: DUO
+PROMPT:
+Use one dominant main scene plus one or two smaller supporting visual moments that all explain the SAME spoken beat. Keep clear hierarchy and avoid a cluttered collage. ZERO READABLE TEXT.
 
 FINAL QA
 - all planned German text is rendered directly by Google Flow
-- Scene 01: exact German cover title, no additional readable text
+- Scene 01: exact German cover title, strong thumbnail composition, no additional readable text
+- typography looks integrated and editorial, not meme/sticker-like
 - keyword scenes: exact German keyword, no additional readable text
 - all other scenes: ZERO READABLE TEXT
 - no clipped or malformed typography
@@ -118,5 +185,8 @@ FINAL QA
 - all humans true Stickmen
 - no anatomy/style drift
 - no unnecessary character cloning
+- composition families are varied across the video
+- social beats use meaningful duo/group interaction
+- split/montage never combine independent beats
 - one clear visual idea per image
 - image matches current speech beat
