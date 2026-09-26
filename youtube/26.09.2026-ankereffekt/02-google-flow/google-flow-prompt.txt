@@ -373,7 +373,7 @@ FINAL QA
 - all 35 scenes are present and contiguous
 - Scene 01 is cover + first beat + master and contains the exact cover title
 - planned keyword scenes contain only their exact German text
-- every other scene is ZERO READABLE TEXT
+- every unplanned text scene contains no readable text at all
 - typography is integrated, clean, safe and not sticker-like
 - composition mix includes standard, split/contrast and montage scenes
 - multiple duo/group scenes show real interaction
