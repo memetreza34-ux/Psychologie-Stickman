@@ -42,11 +42,17 @@
   "coverHeadlineRequired": true,
   "coverHeadline": "WARUM DEINS MEHR WERT IST",
   "coverTextRenderer": "GOOGLE_FLOW",
+  "coverSemanticPolicy": "TOPIC_EXPLICIT_VISUAL_THESIS_V1",
+  "coverTopicTerm": "BESITZTUMSEFFEKT",
+  "coverVisualThesis": "Die gleiche Tasse wird vom Besitzer sichtbar höher bewertet als vom Nicht-Besitzer beziehungsweise Käufer.",
+  "coverMechanismVisible": true,
+  "coverLayoutPolicy": "INTEGRATED_THUMBNAIL_COMPOSITION_V1",
+  "coverTitlePlacementPolicy": "COMPOSITION_FIRST_NO_TOP_BANNER_V1",
   "recommendedTargetWords": 14,
   "recommendedMaxWords": 20,
   "semanticSplit": true,
   "flowTextMoments": [
-    {"scene": 1, "kind": "cover", "text": ["WARUM DEINS MEHR WERT IST"]},
+    {"scene": 1, "kind": "cover", "text": ["WARUM DEINS MEHR WERT IST", "BESITZTUMSEFFEKT"]},
     {"scene": 2, "kind": "schema", "text": ["BESITZTUMSEFFEKT", "MEINS", "MEHR WERT"]},
     {"scene": 6, "kind": "comparison", "text": ["VERKAUFEN", "KAUFEN"]},
     {"scene": 8, "kind": "textIllustration", "text": ["MEINS WIRD ZUM AUSGANGSPUNKT"]},
@@ -62,7 +68,7 @@
     "coverHeadline": "WARUM DEINS MEHR WERT IST"
   },
   "scenes": [
-    {"number":1,"sceneType":"CHARACTER_SCENE","compositionType":"standard","socialDensity":"duo","speechSection":"Warum würdest du für dieselbe Tasse plötzlich mehr Geld verlangen, nur weil sie dir gehört? Genau das beschreibt der Besitztumseffekt.","visualIdea":"same mug, owner values it more than buyer","visualTask":"Show an owner protectively holding the same mug while a buyer offers less.","camera":"strong medium-wide cover composition","lightingMood":"warm table light with cool background separation","textPolicy":"FLOW_EXACT_COVER_TEXT","flowText":["WARUM DEINS MEHR WERT IST"]},
+    {"number":1,"sceneType":"COMPARE_VISUAL","compositionType":"contrast","socialDensity":"duo","speechSection":"Warum würdest du für dieselbe Tasse plötzlich mehr Geld verlangen, nur weil sie dir gehört? Genau das beschreibt der Besitztumseffekt.","visualIdea":"the same mug is clearly valued more highly by its owner than by the buyer","visualTask":"Make one identical mug the dominant shared focal object while the owner protects and overvalues it and the buyer evaluates it more neutrally.","camera":"strong thumbnail-ready medium-wide contrast composition","lightingMood":"warm owner side with cooler neutral buyer side, same cinematic world","textPolicy":"FLOW_EXACT_COVER_TEXT","flowText":["WARUM DEINS MEHR WERT IST","BESITZTUMSEFFEKT"],"titlePlacement":"compact asymmetric integrated title block in reserved negative space, never a full-width top banner"},
     {"number":2,"sceneType":"SCHEMA_EXPLAINER","compositionType":"standard","socialDensity":"none","speechSection":"Sobald wir etwas besitzen, verändert sich oft unser Gefühl für seinen Wert.","visualIdea":"ownership shifts subjective value upward","visualTask":"Illustrate ownership causing perceived value to rise.","camera":"clean frontal illustrated schema","lightingMood":"soft warm/cool world-consistent lighting","textPolicy":"FLOW_EXACT_SCHEMA_TEXT","flowText":["BESITZTUMSEFFEKT","MEINS","MEHR WERT"]},
     {"number":3,"sceneType":"CHARACTER_SCENE","compositionType":"standard","socialDensity":"duo","speechSection":"Stell dir vor, du bekommst bei einem Experiment eine Tasse geschenkt.","visualIdea":"participant receives a mug in a simple experiment","visualTask":"Show a researcher handing a mug to a participant who becomes the owner.","camera":"medium three-quarter shot","lightingMood":"bright neutral room with warm table light","textPolicy":"NONE","flowText":[]},
     {"number":4,"sceneType":"CHARACTER_SCENE","compositionType":"standard","socialDensity":"solo","speechSection":"Kurz danach sollst du sagen, für welchen Preis du sie verkaufen würdest.","visualIdea":"new owner thinks about a selling price","visualTask":"Show the new owner considering what selling price to choose for the mug.","camera":"close-medium over-shoulder","lightingMood":"soft neutral daylight","textPolicy":"NONE","flowText":[]},
