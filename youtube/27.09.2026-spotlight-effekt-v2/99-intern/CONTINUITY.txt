@@ -1,0 +1,12 @@
+CONTINUITY — SPOTLIGHT-EFFEKT V2
+
+Active world: CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
+Character system: STYLIZED_STICKMAN_CAST_V1
+
+Keep the same linework, simplified anatomy, soft cel shading, color behavior and film-like lighting across every scene type.
+
+The same train main character continues locally across scenes 1, 4, 5, 6, 8 and 9. Preserve jacket family, head proportions and face style there.
+
+Other scenes may use different people, clothing and locations.
+
+Scene 01 is cover + first beat, not global style master.
