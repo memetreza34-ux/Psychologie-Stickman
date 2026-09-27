@@ -1,0 +1,60 @@
+{
+  "id": "MINIMAL_EDITORIAL_STICKMAN_V2",
+  "name": "Minimal Editorial Stickman World v2",
+  "status": "active",
+  "background": "#F6F3EA",
+  "ink": "#202124",
+  "palette": {
+    "primary": "#3F6EDB",
+    "problem": "#E7684A",
+    "solution": "#4E9B78",
+    "optionalSignal": "#D6A23D"
+  },
+  "normalSceneMaxDominantAccents": 1,
+  "character": {
+    "head": "simple round or slightly oval flat head",
+    "face": "two tiny dot/short-line eyes and optional tiny mouth line",
+    "nose": false,
+    "ears": false,
+    "realisticNeck": false,
+    "torso": "compact flat graphic shape",
+    "limbs": "very thin line-like arms and legs with near-constant thickness",
+    "hands": "tiny nubs, dots or circles; no fingers",
+    "feet": "tiny simplified shapes",
+    "clothing": "simple graphic torso/jacket shape; no detailed fabric rendering"
+  },
+  "environment": {
+    "mode": "suggested-not-rendered",
+    "typicalPropCountMin": 1,
+    "typicalPropCountMax": 5,
+    "negativeSpace": "high",
+    "texture": "none-or-minimal",
+    "shading": "none-or-very-subtle",
+    "complexArchitecture": false,
+    "cinematicLighting": false
+  },
+  "sceneFamilies": {
+    "EVERYDAY_MINIMAL": 0.60,
+    "CONCEPT_METAPHOR": 0.25,
+    "COMPARE_CHANGE": 0.10,
+    "DIAGRAM_MAX": 0.05
+  },
+  "hardFails": [
+    "conventional cartoon human",
+    "semi-realistic or realistic person",
+    "fleshy or anatomical limbs",
+    "realistic hands or fingers",
+    "realistic facial anatomy",
+    "3D or CGI",
+    "Pixar",
+    "anime or manga or chibi",
+    "rich detailed environment as default",
+    "cinematic lighting as default",
+    "material texture rendering",
+    "complex cel shading",
+    "background competing with primary idea",
+    "unnecessary accent colors"
+  ],
+  "globalPrompt": "MINIMAL EDITORIAL STICKMAN WORLD v2. Warm off-white paper background (#F6F3EA), charcoal organic outlines (#202124), true minimal stickman anatomy, flat graphic torso shapes, very thin line limbs, tiny no-finger hands, simple feet, minimal dot/line face, no realistic anatomy. Sparse editorial environment using only the few props required to identify place and action. Large clean negative space. Flat colors with normally one dominant accent from channel blue #3F6EDB, problem coral #E7684A, solution green #4E9B78, optional muted amber #D6A23D. One clear visual idea per frame. Prefer simple action or a clean psychology metaphor. No photorealism, no 3D, no Pixar, no anime, no conventional cartoon humans, no cinematic lighting, no rich detailed environments, no material textures, no complex cel-shading.",
+  "referencePackPath": "assets/style-v2/"
+}
