@@ -14,25 +14,28 @@
   "coreConceptIntroducedByScene": 3,
   "realLifeExampleByScene": 5,
   "realLifeExampleSummary": "",
-  "premiumVisualPolicy": "PREMIUM_EDITORIAL_CINEMATIC_V1",
-  "colorStoryPolicy": "INTENTIONAL_COLOR_STORY_V1",
-  "projectPalette": {
-    "primary": "",
-    "secondary": "",
-    "accent": "",
-    "neutral": "",
-    "avoid": ["grey/beige wash", "sterile office monotony"]
+  "visualSystem": "MINIMAL_EDITORIAL_STICKMAN_V2",
+  "channelPalette": {
+    "background": "#F6F3EA",
+    "ink": "#202124",
+    "primary": "#3F6EDB",
+    "problem": "#E7684A",
+    "solution": "#4E9B78",
+    "optionalSignal": "#D6A23D"
+  },
+  "environmentPolicy": "SPARSE_SUGGESTED_ENVIRONMENT_V1",
+  "accentPolicy": "ONE_DOMINANT_ACCENT_V1",
+  "sceneFamilyTargets": {
+    "everydayMinimal": 0.6,
+    "conceptMetaphor": 0.25,
+    "compareChange": 0.1,
+    "diagramMax": 0.05
   },
   "visibleTextLanguage": "de",
   "visibleTextRenderer": "GOOGLE_FLOW",
   "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
   "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
   "visualPlanningPolicy": "VARIED_COMPOSITION_V1",
-  "compositionTargets": {
-    "standard": 0.7,
-    "comparison": 0.2,
-    "montage": 0.1
-  },
   "socialScenePolicy": "SOCIAL_VARIETY_V1",
   "preferNoVisibleText": true,
   "coverHeadlineRequired": true,
