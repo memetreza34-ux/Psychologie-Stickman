@@ -2,23 +2,95 @@
 
 ## Zweck
 
-Eigenständiges Produktionsrepo für **Alltagspsychologie & menschliches Verhalten** mit getrennten Formaten: YouTube-Longform/Testvideos und Reels/Shorts.
+Produktionsrepo für **Alltagspsychologie & menschliches Verhalten** mit YouTube-Longform/Testvideos und Reels/Shorts.
 
 ## Aktueller Status
 
-- Bildwelt: **Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY**
-- aktueller YouTube-Praxistest: `youtube/26.09.2026-ankereffekt/`
-- Szene 01 ist immer Cover + erster Beat + Master
-- sämtlicher sichtbarer YouTube-Text kommt direkt aus Google Flow
-- Remotion erzeugt keinen sichtbaren YouTube-Text
+- aktive Bildwelt: **Minimal Editorial Stickman World v2**
+- Policy: `MINIMAL_EDITORIAL_STICKMAN_V2`
+- Source of truth: `rules/VISUAL_SYSTEM.md`
+- maschinenlesbar: `rules/visual-system.json`
+- Anatomie: `rules/STICKMAN_DNA.md`
+- Referenzpack: `assets/style-v2/`
+- Script-Policy: `HOOK_FIRST_EXPLAIN_EARLY_V1`
 - Kompositionsplanung: `VARIED_COMPOSITION_V1`
-- Typografie-Policy: `EDITORIAL_INTEGRATED_V1`
 - Social-Scene-Policy: `SOCIAL_VARIETY_V1`
-- neue Premium-Visual-Policy: `PREMIUM_EDITORIAL_CINEMATIC_V1`
-- neue Farb-Policy: `INTENTIONAL_COLOR_STORY_V1`
-- neue Script-Policy: `HOOK_FIRST_EXPLAIN_EARLY_V1`
+- Textpolicy bleibt zunächst `FLOW_VISIBLE_TEXT_ONLY_V3`
 
-Der Ankereffekt-Praxistest hat gezeigt: reine Kompositionsvariation reicht nicht. Zukünftige Videos brauchen zusätzlich stärkere Premium-Figurenführung, bewusste Farbe, mehr reale Alltagsszenen und einen direkteren Skript-Einstieg. Das bestehende Ankereffekt-Video wird nicht rückwirkend verändert.
+Die frühere `Universal Editorial Stickman World v1.3` mit `PREMIUM_EDITORIAL_CINEMATIC_V1` ist für neue Produktionen retired.
+
+## Warum v2
+
+Die v1.3-Praxistests zeigten einen strukturellen Konflikt:
+- extrem simple Stickman-Anatomie
+- gleichzeitig detailreiche, räumliche, beleuchtete Premium-Welt
+- viele Art-Direction-Regeln pro Szene
+
+Das führte zu Style-Drift, zu hoher Prompt-Komplexität und Bildern, die trotz vieler Regeln nicht eindeutig genug nach einer Kanalwelt aussahen.
+
+v2 reduziert deshalb die Bildsprache bewusst:
+- feste Anatomie
+- feste Kanalpalette
+- reduzierte Umgebung
+- wenig Rendering
+- große Negativflächen
+- ein klarer Gedanke pro Bild
+- einfache Alltagsszene oder starke Psychologie-Metapher
+
+## v2 Kanalpalette
+
+- Background `#F6F3EA`
+- Ink `#202124`
+- Blue `#3F6EDB`
+- Coral / Problem `#E7684A`
+- Green / Lösung `#4E9B78`
+- optional Amber `#D6A23D`
+
+Normale Szene: meistens nur eine dominante Akzentfarbe.
+Keine neue Projektpalette pro Video.
+
+## Umgebungsprinzip
+
+**Suggest, do not render.**
+
+Typisch 1–5 relevante Requisiten.
+Beispiel Kino:
+- wenige Sitze
+- Screen/Tür-Hinweis
+- Ticket
+- Figur
+
+Nicht mehr nötig:
+- komplette Kinoarchitektur
+- Materialtexturen
+- cinematic lighting
+- komplexe Tiefenstaffelung
+
+## Szenenfamilien
+
+Richtmix:
+- 60% `EVERYDAY_MINIMAL`
+- 25% `CONCEPT_METAPHOR`
+- 10% `COMPARE_CHANGE`
+- max. 5% Diagramm/Chart
+
+## Referenzsystem
+
+Scene 01 ist nicht mehr die globale Style-Source-of-Truth.
+
+Permanentes Referenzpack:
+`assets/style-v2/`
+
+Ziel:
+- style master
+- anatomy sheet
+- environment examples
+- metaphor examples
+- thumbnail reference
+
+Bis die PNGs erstellt/freigegeben sind, gelten die textuelle und JSON-v2-Spezifikation.
+
+Scene 01 kann aus Pipeline-Kompatibilität weiterhin Cover + erster Visual Beat bleiben.
 
 ## YouTube-Struktur
 
@@ -32,189 +104,46 @@ Der Ankereffekt-Praxistest hat gezeigt: reine Kompositionsvariation reicht nicht
 ## Script-Einstieg
 
 Neue YouTube-Projekte:
-- Szene 01 = klare Hook-Frage oder überraschende direkte Aussage
-- Kernbegriff spätestens Szene 03 / ungefähr erste 50 Wörter
-- einfache Erklärung unmittelbar danach
-- erstes konkretes Alltagsbeispiel spätestens Szene 05 / ungefähr erste 80 Wörter
-- erst danach Mechanismus, Experiment und Vertiefung
-
-Bevorzugte Hook-Typen:
-- `WHAT_IS`
-- `WHY_DOES`
-- `HAVE_YOU_WONDERED`
-- `DIRECT_SURPRISE`
-- `DIRECT_PROBLEM`
-
-Beispiel Ankereffekt künftig besser:
-`Was ist der Ankereffekt? Die erste Zahl, die du siehst, kann dein späteres Urteil in ihre Richtung ziehen.`
-Dann direkt ein reales Preisbeispiel.
-
-## Scene 01 — Cover-Regel
-
-**`03-bilder/01.png = SCENE 01 + COVER + STYLE-/ANATOMY-MASTER`.**
-
-Szene 01:
-- zeigt den ersten Hook-Beat korrekt
-- ist bewusst stärker als eine normale Szene komponiert
-- besitzt ein dominantes Hauptmotiv und klare visuelle Spannung
-- etabliert Premium-Figuren, Farbwelt und Stickman-DNA
-- funktioniert als starkes Thumbnail
-- enthält den exakten deutschen Cover-Titel direkt aus Google Flow
-- enthält außer diesem Titel keinen weiteren lesbaren Text
-
-## Premium Visual Direction
-
-Neue YouTube-Projekte verwenden:
-
-```json
-{
-  "premiumVisualPolicy": "PREMIUM_EDITORIAL_CINEMATIC_V1",
-  "colorStoryPolicy": "INTENTIONAL_COLOR_STORY_V1",
-  "projectPalette": {
-    "primary": "...",
-    "secondary": "...",
-    "accent": "...",
-    "neutral": "...",
-    "avoid": ["grey/beige wash", "sterile office monotony"]
-  }
-}
-```
-
-Premium-Figuren bleiben echte Stickmen. Premium entsteht durch:
-- starke Pose/Körpersprache
-- lesbare minimalistische Emotion
-- rollenbezogene Kleidung
-- charakteristische Silhouette
-- passende Requisiten
-- echte Interaktion
-- bewusstes Framing
-
-Farbe:
-- thematische Projektpalette vor Flow festlegen
-- Akzentfarben für Fokus nutzen
-- natürliche Objektfarben erhalten
-- Lichttemperatur variieren
-- graue/beige Monotonie vermeiden
-- nicht jede Szene identisch einfärben
-
-Bildpriorität:
-**konkrete Alltagsszene > visuelle Metapher > abstrakte Lehrgrafik.**
-
-## Textsystem — GOOGLE FLOW ONLY
-
-Neue YouTube-Projekte verwenden:
-
-```json
-{
-  "visibleTextLanguage": "de",
-  "visibleTextRenderer": "GOOGLE_FLOW",
-  "renderGermanLabelsInRemotion": false,
-  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
-  "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
-  "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
-  "flowTextMoments": [],
-  "sceneLabels": []
-}
-```
-
-Regel:
-- geplante Textszene → exakter deutscher Text direkt im Google-Flow-Bild
-- Cover: 2–7 Wörter
-- spätere Keywords: maximal 5 Wörter
-- alle anderen Szenen: ZERO READABLE TEXT
-- Ziel ungefähr ein Textmoment alle 4–6 Bilder
-- typische Dichte 15–25 %, maximal 30 %
-- Schrift sauber, modern und editorial integriert
-- keine Meme-/Sticker-Standardtypografie
-- Remotion: keine Cover-Titel, Keywords, Labels oder YouTube-Captions
-
-## Bildwelt-Kern
-
-- jede sichtbare menschliche Figur ist ein echter Stickman
-- einfacher runder/ovaler Kopf
-- minimale Gesichtszüge
-- kleiner vereinfachter Torso
-- sehr dünne lineare Arme und Beine
-- keine realistischen Hände/Finger, Nasen oder Ohren
-- Kleidung darf Rolle zeigen, aber keine normale Human-Anatomie erzeugen
-- Umgebungen detailreich und hochwertig illustriert
-- saubere organische Outlines, dezentes 2D-/Cel-Shading
-- kein Photorealismus, keine normalen Cartoon-Menschen, kein 3D/CGI
-
-## Style-Konsistenz ohne Charakter-Klonen
-
-Bild 01 ist Referenz für Anatomiesystem, Linienart, Rendering/Shading, Farbverhalten und Qualitätsniveau. Nicht global gesperrt sind Figurenidentität, Kleidung, Castgröße, Rolle, Pose, Kamera, Ort, Licht oder Komposition.
-
-## Kompositionsvariation
-
-Für neue Videos wird jede Szene mit `compositionType` geplant:
-- `standard`
-- `split`
-- `contrast`
-- `montage`
-
-Zielmix für typische 2–3-Minuten-Videos:
-- ca. 70 % normale konkrete Szenen
-- ca. 20 % Split-/Kontrast-Kompositionen
-- ca. 10 % Montage-/Multi-Panel-Kompositionen
-
-Mehrere Teilbilder sind erlaubt, wenn sie denselben gesprochenen Beat erklären.
-
-## Social Scene Variety
-
-Jede Szene bekommt zusätzlich `socialDensity`:
-- `solo`
-- `duo`
-- `group`
-
-Bei Feedback, Gesprächen, Publikum, Beobachtung, Kollegen/Familie/Freunden, Experimenten und sozialem Vergleich aktiv Duo-/Gruppenbilder bevorzugen.
-
-## Referenz-Workflow
-
-1. Bild 01 inklusive Cover-Titel allein erzeugen.
-2. STOP und Nutzerfreigabe.
-3. Titel, Typografie, Coverstärke, Premium-Figuren, Farbwelt und Stickman-DNA prüfen.
-4. Bild 01 bleibt Master.
-5. Danach höchstens 5 neue Bilder pro Batch.
-6. Nach jedem Batch interne QA.
-7. Nur fehlerhafte Bilder regenerieren.
-8. Nach PASS automatisch fortfahren.
+- Szene 01 = klare Hook-Frage oder direkte überraschende Aussage
+- Kernbegriff spätestens Szene 03
+- einfache Erklärung direkt danach
+- konkretes Alltagsbeispiel spätestens Szene 05
+- erst danach Mechanismus/Experiment/Vertiefung
 
 ## Visual Beats
 
-- konkrete Alltagsszene vor generischer Infografik
 - meist 10–16 Wörter pro Beat
 - Zielwert 14
 - normale Obergrenze 20
-- 21–28 nur als geprüfte Ausnahme
-- genau ein primärer Gedanke pro Bild
-- Cast, Ort, Handlung, Kamera, Komposition, Social Density, Farbe und Premium-Figurenwirkung pro Beat planen
+- ein primärer visueller Gedanke pro Bild
+- pro Beat bewusst wählen:
+  - scene family
+  - cast
+  - action
+  - minimal props
+  - framing
+  - accent role
+  - text policy
 
-## Qualitätssicherung
+## Textsystem
 
-Mindestens:
-- `npm run typecheck`
-- `npm run qa:visual-density`
-- `npm run qa:auto-visual-planning`
-- `npm run qa:visual-variety`
-- `npm run qa:premium-content`
-- `npm run qa:flow-prompts`
-- `npm run qa:text-overlays`
-- relevante Produktionschecks
+Bleibt bei dieser Migration unverändert:
+- geplante sichtbare Texte direkt aus Google Flow
+- nicht geplante Szenen `ZERO READABLE TEXT`
+- Remotion erzeugt keine sichtbaren YouTube-Texte
 
-Die neue Premium-Content-QA prüft bei neuen Projekten:
-- Script-Hook-Metadaten
-- frühe Kernbegriffs-Einführung
-- frühes Alltagsbeispiel laut Plan
-- ausgefüllte Projektpalette
-- Premium-Visual-/Color-Policies
-- Premium-/Color-/Real-Life-Hard-Locks im Flow-Prompt
-- `COLOR DIRECTION` und `PREMIUM CHARACTER DIRECTION` pro Szene
+## QA
 
-## Aktueller Praxistest
+Neue v2-Projekte müssen insbesondere prüfen:
+- `visualSystem === MINIMAL_EDITORIAL_STICKMAN_V2`
+- feste Kanalpalette vorhanden
+- sparse environment policy aktiv
+- one-dominant-accent policy aktiv
+- keine v1-Cinematic-Hard-Locks im neuen Flow-Prompt
+- Stickman-DNA korrekt
+- Bild in ungefähr einer Sekunde verständlich
 
-**Ankereffekt / Anchoring Effect**
+## Aktuelle Migration
 
-- bestehender Test bleibt unverändert
-- zeigte Defizite bei Premium-Figuren, Farbdynamik, Lehrgrafik-Anteil und Hook-Direktheit
-- diese Defizite werden durch die neuen Zukunftsregeln nicht rückwirkend am Video, sondern im Produktionssystem adressiert
+Bestehende Videos/Prompts bleiben historische Legacy-Projekte und werden nicht automatisch umgeschrieben.
+Neue Projekte und neue Style-Tests müssen v2 verwenden.
