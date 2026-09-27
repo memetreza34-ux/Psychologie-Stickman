@@ -1,57 +1,31 @@
-STYLE — YOUTUBE TEMPLATE
+STYLE — CINEMATIC ILLUSTRATED PSYCHOLOGY WORLD v1
 
-LOCKED: MINIMAL EDITORIAL STICKMAN WORLD v2
-POLICY: MINIMAL_EDITORIAL_STICKMAN_V2
+CHARACTERS
+- stylized stickman-inspired, not bare line stickmen
+- large simple head, minimal expressive face
+- compact clothed torso
+- very slim simplified limbs with slight width
+- simple hands and shoes
+- individualize through clothing, hair cue, glasses/accessory, pose and color
 
-SOURCE OF TRUTH
-- rules/VISUAL_SYSTEM.md
-- rules/visual-system.json
-- rules/STICKMAN_DNA.md
+WORLD
+- colorful believable everyday locations
+- clean slightly organic outlines
+- soft cel shading
+- natural depth
+- cinematic illustrated warm/cool lighting
+- meaningful small details
 
-MENSCHEN
-- echter minimalistischer Stickman
-- einfacher runder/leicht ovaler Kopf
-- minimale Punkt-/Strichmimik
-- keine realistische Nase/Ohren/Halsanatomie
-- kompakter flacher Torso
-- sehr dünne lineare Arme/Beine
-- Nub-/Punkt-/Kreis-Hände, keine Finger
-- simple Füße
-- Kleidung nur als einfache grafische Form
-
-KANALPALETTE
-- Hintergrund #F6F3EA
-- Linien #202124
-- Blau #3F6EDB
-- Problem/Spannung #E7684A
-- Lösung #4E9B78
-- optional Signal #D6A23D
-- normale Szene meist nur eine dominante Akzentfarbe
-
-UMGEBUNG
-- angedeutet, nicht ausgerendert
-- typischerweise 1–5 relevante Requisiten
-- große saubere Negativfläche
-- flache Shapes
-- kaum/kein Texture- oder Shading-Detail
-
-BEVORZUGT
-- einfache Alltagsszene
-- klare Psychologie-Metapher
-- sauberer A/B- oder Vorher/Nachher-Vergleich
+ALLOWED NON-CHARACTER FRAMES
+- illustrated schemas
+- object metaphors
+- comparison visuals
+- text illustrations
+All use the same world/rendering language.
 
 HARD FAIL
-- normale Cartoon-/semi-realistische/realistische Menschen
-- dicke anatomische Gliedmaßen
-- Finger/realistische Hände
-- 3D/CGI/Pixar/Anime/Chibi
-- rich detailed environment als Default
-- cinematic lighting als Default
-- Materialtexturen/komplexes Cel-Shading
-- zu viele konkurrierende Akzentfarben
-- unklarer Hauptgedanke
-
-FORMAT
-- YouTube 16:9 / 1920×1080
-- Szene 01 darf Cover + erster Beat sein, definiert aber NICHT die globale Style-DNA
-- permanente Referenzen liegen unter assets/style-v2/
+- whiteboard/bare stickman
+- normal full cartoon or realistic humans
+- 3D/Pixar/anime
+- photorealistic environment
+- corporate infographic look

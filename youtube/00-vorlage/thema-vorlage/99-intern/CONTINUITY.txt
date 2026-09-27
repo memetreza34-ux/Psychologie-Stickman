@@ -1,62 +1,22 @@
-CONTINUITY — YOUTUBE TEMPLATE v2
+CONTINUITY — CINEMATIC PSYCHOLOGY WORLD
 
-GLOBAL STYLE REFERENCE
-- Scene 01 is NOT the global style master.
-- Global visual source of truth: rules/VISUAL_SYSTEM.md + rules/visual-system.json.
-- Approved permanent references live under assets/style-v2/ when available.
+GLOBAL CONTINUITY
+Keep consistent:
+- character anatomy family
+- line style
+- soft cel shading
+- texture level
+- color behavior
+- cinematic illustrated lighting
+- world-detail quality
 
-SCENE 01
-- generate Scene 01 alone under the current workflow
-- approve hook clarity, exact title, v2 anatomy, sparse environment, palette restraint and negative space
-- save as 03-bilder/01.png
-- Scene 01 may be used as a local project reference, but must not redefine channel anatomy/rendering
+CHARACTER CONTINUITY
+Only when the same person returns: preserve head/hair/accessory, clothing, colors, proportions and shoes.
 
-STICKMAN CONTINUITY
-- same round/slightly oval head system
-- same minimal face logic
-- same compact flat torso system
-- same very thin line arms/legs
-- no realistic hands/fingers
-- same tiny hand/foot simplification
-- same charcoal line language
-- same flat-fill simplicity
+Do not clone the same person across unrelated scenes.
 
-RECURRING CHARACTER
-Only preserve exact identity when genuine local continuity requires it:
-- head size/shape
-- torso color/shape
-- relevant tiny accessory
-- approximate height
+REPRESENTATION CONTINUITY
+Schemas, object metaphors, comparisons and text illustrations must look like the same illustrated film-world as character scenes.
 
-Otherwise choose a scene-appropriate cast while keeping the same DNA.
-
-ENVIRONMENT CONTINUITY
-Consistency means the SAME LEVEL OF SIMPLIFICATION, not the same room.
-- use only necessary props
-- large negative space
-- avoid rich/detailed backgrounds
-- no cinematic lighting
-- no complex material/shading drift
-
-COLOR CONTINUITY
-- background #F6F3EA
-- ink #202124
-- channel accents only
-- normal scene usually one dominant accent
-
-BATCH WORKFLOW
-- after Scene 01 approval: max 5 new images per batch
-- compare against v2 system/reference pack
-- regenerate only failed images
-- continue after full PASS
-
-HARD FAIL
-- conventional cartoon/semi-realistic/realistic humans
-- background people using different anatomy
-- thick anatomical limbs
-- realistic hands/fingers/noses/ears
-- 3D/CGI/Pixar/Anime/Chibi
-- rich detailed environment drift
-- cinematic rendering drift
-- palette drift
-- reference text/room/character cloned without narrative reason
+REFERENCE
+Use assets/cinematic-psychology-world/ once approved. Scene 01 is not the global style master.

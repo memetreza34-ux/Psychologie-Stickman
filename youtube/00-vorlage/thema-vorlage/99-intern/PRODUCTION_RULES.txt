@@ -1,108 +1,33 @@
-YOUTUBE PRODUCTION RULES — HARD LOCK
+YOUTUBE PRODUCTION RULES
 
 FORMAT
-- ausschließlich 16:9
-- 1920×1080
-- 30 fps
-- horizontale / Landscape-Komposition
-- Remotion-Komposition: Phase3YouTube
+- 16:9 / 1920x1080 / 30 fps
 
-SCRIPT — HOOK FIRST
-- `scriptHookPolicy = HOOK_FIRST_EXPLAIN_EARLY_V1`
-- Szene 01 = klare Hook-Frage oder direkte überraschende Aussage
-- Kernbegriff spätestens Szene 03
-- erstes konkretes Alltagsbeispiel spätestens Szene 05
+VISUAL SYSTEM
+- CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
+- CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V1
+- ENVIRONMENT: BELIEVABLE_CINEMATIC_ENVIRONMENT_V1
+- RENDERING: SOFT_CEL_SHADED_FILM_FRAME_V1
+- REPRESENTATION: MIXED_PSYCHOLOGY_VISUALS_V1
 
-AUDIO
-- finales Voice-over exakt 1,10×
-- führende Stille entfernen
-- lange Pausen straffen
-- Wörter niemals anschneiden
-- Timings erst aus finalem Audio
+Every beat chooses scene type, composition, social density, camera, lighting mood and text policy.
 
-VISUAL SYSTEM v2
-- `visualSystem = MINIMAL_EDITORIAL_STICKMAN_V2`
-- `environmentPolicy = SPARSE_SUGGESTED_ENVIRONMENT_V1`
-- `accentPolicy = ONE_DOMINANT_ACCENT_V1`
-- Source of truth: `rules/VISUAL_SYSTEM.md`
-- feste Kanalpalette; keine eigene Projektpalette pro Video
+Character scenes use stylized stickman-inspired clothed figures. Non-character frames must share the same outlines, cel shading, colors, lighting and polish.
 
-KANALPALETTE
-- Background #F6F3EA
-- Ink #202124
-- Primary Blue #3F6EDB
-- Problem Coral #E7684A
-- Solution Green #4E9B78
-- optional Amber #D6A23D
+TEXT
+- Flow only
+- cover/keyword/schema/comparison/text-illustration allowed when planned
+- no accidental background text
+- no visible Remotion text
 
-BILDER
-- jeder Visual Beat bekommt eine eigene passende Bildidee
-- eine klare Idee pro Bild
-- Zuschauer soll Beat ungefähr in einer Sekunde verstehen
-- Umgebung nur andeuten; typischerweise 1–5 notwendige Requisiten
-- große saubere Negativflächen
-- normale Szene meist eine dominante Akzentfarbe
-- alle Menschen STRICT MINIMAL STICKMAN ONLY
-- keine Details nur für Premium-Wirkung
-
-SZENENFAMILIEN
-- ca. 60 % EVERYDAY_MINIMAL
-- ca. 25 % CONCEPT_METAPHOR
-- ca. 10 % COMPARE_CHANGE
-- höchstens ca. 5 % DIAGRAM
-- Inhaltliche Klarheit gewinnt vor Quote
-
-KOMPOSITION / SOCIAL
-- `visualPlanningPolicy = VARIED_COMPOSITION_V1`
-- `socialScenePolicy = SOCIAL_VARIETY_V1`
-- soziale Beats bevorzugen echte Duo-/Gruppeninteraktion
-- Split/Contrast/Montage nur wenn derselbe gesprochene Beat davon profitiert
-
-NICHT MEHR TEIL DER BILDWELT
-- PREMIUM_EDITORIAL_CINEMATIC_V1
-- projektweise neue Color Story als Pflicht
-- rich detailed environments
-- cinematic lighting
-- komplexe Material-/Fashion-Details
-- komplexes Cel-Shading
-
-SICHTBARER TEXT — GOOGLE FLOW ONLY
-- `finalTextPolicy = FLOW_VISIBLE_TEXT_ONLY_V3`
-- sichtbarer YouTube-Text direkt in Google Flow
-- Remotion erzeugt keinen sichtbaren YouTube-Text
-- `sceneLabels = []`
-- `renderGermanLabelsInRemotion = false`
-- nicht geplante Textszenen: ZERO READABLE TEXT
-
-SCENE 01 / COVER
-- `03-bilder/01.png` bleibt aus Pipeline-Kompatibilität Szene 01 + Cover/Thumbnail
-- Szene 01 ist NICHT mehr globaler Style-/Anatomie-Master
-- globale Kanalreferenz: `rules/VISUAL_SYSTEM.md` + später `assets/style-v2/`
-- Szene 01 muss Hook + Cover klar darstellen
-- exakter deutscher Cover-Titel direkt aus Google Flow
-
-REFERENZ-WORKFLOW
-- permanente Kanalreferenz ist unabhängig von einem einzelnen Video
-- gleiche Anatomie, Linien, Simplifikation, Palette und Umgebungsdichte beibehalten
-- niemals Referenz als Charakter-/Raum-/Textklon verwenden
-- höchstens 5 neue Bilder pro Batch
-- interne QA nach jedem Batch
+COVER
+- 01.png = Scene 01 + Cover
+- follows global channel reference pack
+- is not global Style Master
 
 QA
-- `npm run qa:premium-content`
-- `npm run qa:visual-variety`
-- `npm run qa:flow-prompts`
-- `npm run check`
-
-HARD FAIL
-- visualSystem fehlt bei neuem v2-Projekt
-- falsche Kanalpalette
-- cinematic/rich-world v1 als aktive Policy
-- normale Cartoon-/semi-realistische/realistische Menschen
-- 3D/CGI/Pixar/Anime/Chibi
-- dicke anatomische Gliedmaßen oder Finger
-- überladene Umgebung
-- zu viele konkurrierende Farben
-- unklarer Hauptgedanke
-- sichtbarer Text wird durch Remotion erzeugt
-- 9:16 als reguläres YouTube-Longform-Format
+- consistent world
+- beat clarity
+- correct character family
+- no 3D/realistic/corporate-vector drift
+- exact planned German text

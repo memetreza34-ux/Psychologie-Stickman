@@ -2,46 +2,57 @@
 
 Deutschsprachiger Kanal zu **Alltagspsychologie & menschlichem Verhalten**.
 
-Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
+## Aktive Bildwelt
 
-## Aktiver visueller Standard
+**Cinematic Illustrated Psychology World v1**
 
-**Minimal Editorial Stickman World v2**
-
-Policy: `MINIMAL_EDITORIAL_STICKMAN_V2`
+Policy: `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1`
 
 Source of truth:
 - `rules/VISUAL_SYSTEM.md`
 - `rules/visual-system.json`
 - `rules/STICKMAN_DNA.md`
-- später zusätzlich der freigegebene Referenzsatz unter `assets/style-v2/`
+- `assets/cinematic-psychology-world/`
 
-Die alte `Universal Editorial Stickman World v1.3` / `PREMIUM_EDITORIAL_CINEMATIC_V1` ist für neue Produktionen **retired**.
+Die alte Minimal-Editorial-v2-Bildwelt ist **nicht mehr aktiv**.
 
-### v2 in einem Satz
+### Kurzdefinition
 
-**Sehr einfache echte Stickmen + warmes Off-White + Charcoal-Linien + feste Kanalakzente + stark reduzierte Umgebungen + ein klarer visueller Gedanke pro Bild.**
+**Stilisierte stickman-inspirierte Figuren + Kleidung + farbige glaubwürdige Orte + filmische 2D-Komposition + soft cel shading + verschiedene Erklärformen in derselben Welt.**
 
-### Feste Kanalpalette
+Nicht jedes Bild braucht eine Figur. Erlaubt sind auch Schemas, Objektmetaphern, Vergleiche und Text-Illustrationen, solange sie exakt dieselbe visuelle Welt benutzen.
 
-- Background: `#F6F3EA`
-- Ink: `#202124`
-- Blue: `#3F6EDB`
-- Coral / Problem: `#E7684A`
-- Green / Lösung: `#4E9B78`
-- optional Amber: `#D6A23D`
+## Szenentypen
 
-Normale Szenen nutzen meist nur **eine dominante Akzentfarbe**.
+- `CHARACTER_SCENE` — normale Alltagsszene mit Figuren
+- `SCHEMA_EXPLAINER` — illustriertes Schema mit kurzen exakten Labels
+- `OBJECT_METAPHOR` — Objekt/Metapher ohne notwendige Figur
+- `COMPARE_VISUAL` — A/B, vorher/nachher, Gedanke/Wirklichkeit
+- `TEXT_ILLUSTRATION` — kurze integrierte Begriff-/Merksatz-Illustration
 
-### Was v2 ausdrücklich nicht mehr will
+Richtmix: ungefähr 55 / 15 / 15 / 10 / 5 Prozent. Inhalt gewinnt immer vor Quote.
 
-- kein globaler Cinematic-Look
-- keine rich detailed environments als Qualitätsmerkmal
-- keine komplett neue Projektpalette pro Video
-- kein Material-/Fashion-Rendering
-- kein komplexes Cel-Shading
-- kein 3D/Pixar/Anime
-- keine normalen Cartoon-/semi-realistischen Menschen
+## Charaktere
+
+Figuren bleiben klar vereinfacht und stickman-inspiriert, sind aber **keine nackten Strichmännchen**:
+- großer einfacher Kopf
+- minimale ausdrucksstarke Mimik
+- sichtbarer vereinfachter Oberkörper/Kleidung
+- sehr schlanke geformte Arme/Beine
+- einfache Hände und Schuhe
+- Individualität über Kleidung, Haarhinweis, Brille, Accessoire, Pose und Farbe
+
+## Welt
+
+Believable, colorful, film-like 2D locations with meaningful details, natural depth, clean outlines, soft cel shading and warm/cool lighting. No photorealism, no 3D/Pixar, no corporate vector look, no whiteboard world.
+
+## Text
+
+Google Flow rendert geplanten sichtbaren Text direkt im Bild. Erlaubt sind Cover, Keywords, Schema-Titel/Labels, Vergleichslabels und kurze Text-Illustrationen. Alle nicht geplanten Texte bleiben `ZERO READABLE TEXT`. Remotion erzeugt keinen sichtbaren YouTube-Text.
+
+## Referenzsystem
+
+Globale Referenzen liegen unter `assets/cinematic-psychology-world/`. `03-bilder/01.png` bleibt Szene 01 + Cover, ist aber **nicht** der globale Style-Master.
 
 ## YouTube-Struktur
 
@@ -55,64 +66,20 @@ youtube/TT.MM.JJJJ-thema/
 └── 99-intern/
 ```
 
-Für Pipeline-Kompatibilität kann `01.png` weiterhin Szene 01 + Cover sein. **Es ist aber nicht mehr der globale Style-Master.** Die Kanal-DNA kommt aus v2 und künftig aus `assets/style-v2/`.
-
-## Bildlogik
-
-Bevorzugte Szenenfamilien:
-- ca. 60% `EVERYDAY_MINIMAL`
-- ca. 25% `CONCEPT_METAPHOR`
-- ca. 10% `COMPARE_CHANGE`
-- höchstens ca. 5% Diagramm/Chart
-
-Umgebung wird **angedeutet statt ausgerendert**: meist 1–5 relevante Requisiten und viel saubere Negativfläche.
-
-## Script-Start
-
-Neue YouTube-Skripte verwenden weiterhin `HOOK_FIRST_EXPLAIN_EARLY_V1`:
-1. Szene 01 = klare Hook
-2. Kernbegriff spätestens Szene 03
-3. einfache Erklärung
-4. erstes konkretes Alltagsbeispiel spätestens Szene 05
-5. danach Mechanismus/Vertiefung
-
-## Sichtbarer Text
-
-Die Textpipeline bleibt bei dieser Bildwelt-Migration zunächst unverändert:
-- geplante sichtbare deutsche Texte direkt aus Google Flow
-- unplanned scenes: `ZERO READABLE TEXT`
-- Remotion bleibt für Schnitt, Audio, technische Bildbewegung und Export
-
-## Produktionsfolge
+## Produktion
 
 ```text
 THEMA + QUELLEN + CLAIM-CHECK
-→ Hook-/Einstiegsplan
-→ finales Skript
+→ Script/Hook
 → Visual Beats
-→ v2-Szenenfamilie + Akzentrolle + Minimal-Props
-→ Google-Flow-Bilder
-→ finales Voice-over
-→ lokale Whisper-Wortzeiten
+→ Szenentyp + Cast/Objekt + Ort + Kamera + Licht + Textmodus
+→ Google Flow
+→ Voice + Whisper Timings
 → Remotion
 → Final-QA
 ```
 
-## Ein-Kommando-Produktion
-
 ```bash
 npm run produce:youtube -- youtube/TT.MM.JJJJ-thema
-```
-
-## Qualitätssicherung
-
-```bash
 npm run check
-npm run qa:premium-content
-npm run qa:visual-variety
-npm run qa:flow-prompts
-npm run qa:word-timings
-npm run qa:render-smoke
 ```
-
-`qa:premium-content` behält aus Kompatibilitätsgründen den alten Script-Namen, prüft für v2 aber Minimal-Editorial-Regeln statt Cinematic-Premium-Regeln.
