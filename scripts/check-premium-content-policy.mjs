@@ -18,11 +18,13 @@ const walk = (dir) => {
 };
 walk(root);
 
+const V2 = 'MINIMAL_EDITORIAL_STICKMAN_V2';
 const failures = [];
 const warnings = [];
-let modernPlans = 0;
-let modernPrompts = 0;
+let v2Plans = 0;
+let v2Prompts = 0;
 let legacyPlans = 0;
+let legacyPrompts = 0;
 
 const normalize = (value) => String(value ?? '').normalize('NFKC').toLocaleLowerCase('de-DE');
 const firstWords = (text, max) => String(text ?? '').trim().split(/\s+/u).filter(Boolean).slice(0, max).join(' ');
@@ -31,30 +33,10 @@ const firstSentence = (text) => {
   return [...segmenter.segment(String(text ?? '').trim())].map((item) => item.segment.trim()).find(Boolean) ?? '';
 };
 
-for (const file of phase1Files) {
-  if (file.split(path.sep).includes('00-vorlage')) continue;
-  const relative = path.relative(process.cwd(), file);
-  const plan = JSON.parse(fs.readFileSync(file, 'utf8'));
-
-  if (plan.premiumVisualPolicy !== 'PREMIUM_EDITORIAL_CINEMATIC_V1' && plan.scriptHookPolicy !== 'HOOK_FIRST_EXPLAIN_EARLY_V1') {
-    legacyPlans += 1;
-    warnings.push(`${relative}: legacy project; future projects must use premium visual + hook-first policies.`);
-    continue;
-  }
-
-  modernPlans += 1;
-
-  if (plan.premiumVisualPolicy !== 'PREMIUM_EDITORIAL_CINEMATIC_V1') failures.push(`${relative}: missing PREMIUM_EDITORIAL_CINEMATIC_V1.`);
-  if (plan.colorStoryPolicy !== 'INTENTIONAL_COLOR_STORY_V1') failures.push(`${relative}: missing INTENTIONAL_COLOR_STORY_V1.`);
-  if (plan.scriptHookPolicy !== 'HOOK_FIRST_EXPLAIN_EARLY_V1') failures.push(`${relative}: missing HOOK_FIRST_EXPLAIN_EARLY_V1.`);
-
-  const palette = plan.projectPalette;
-  if (!palette || typeof palette !== 'object') failures.push(`${relative}: projectPalette missing.`);
-  else {
-    for (const field of ['primary', 'secondary', 'accent', 'neutral']) {
-      if (typeof palette[field] !== 'string' || palette[field].trim().length < 2) failures.push(`${relative}: projectPalette.${field} must be filled.`);
-    }
-    if (!Array.isArray(palette.avoid) || palette.avoid.length === 0 || palette.avoid.some((item) => String(item).trim() === '')) failures.push(`${relative}: projectPalette.avoid must contain at least one explicit avoid rule.`);
+const checkHook = (plan, relative, file) => {
+  if (plan.scriptHookPolicy !== 'HOOK_FIRST_EXPLAIN_EARLY_V1') {
+    failures.push(`${relative}: missing HOOK_FIRST_EXPLAIN_EARLY_V1.`);
+    return;
   }
 
   const allowedHooks = new Set(['WHAT_IS', 'WHY_DOES', 'HAVE_YOU_WONDERED', 'DIRECT_SURPRISE', 'DIRECT_PROBLEM']);
@@ -77,7 +59,7 @@ for (const file of phase1Files) {
   const scriptPath = explicitScript ? path.resolve(explicitScript) : path.join(projectRoot, '01-script', 'script.txt');
   if (!fs.existsSync(scriptPath)) {
     failures.push(`${relative}: script file not found for hook QA (${path.relative(process.cwd(), scriptPath)}).`);
-    continue;
+    return;
   }
 
   const script = fs.readFileSync(scriptPath, 'utf8').trim();
@@ -94,46 +76,90 @@ for (const file of phase1Files) {
     const first60 = normalize(firstWords(script, 60));
     if (!first60.includes(normalize(term))) failures.push(`${relative}: core concept '${term}' is not present within the first 60 spoken words.`);
   }
+};
+
+for (const file of phase1Files) {
+  if (file.split(path.sep).includes('00-vorlage')) continue;
+  const relative = path.relative(process.cwd(), file);
+  const plan = JSON.parse(fs.readFileSync(file, 'utf8'));
+
+  if (plan.visualSystem !== V2) {
+    legacyPlans += 1;
+    if (plan.premiumVisualPolicy === 'PREMIUM_EDITORIAL_CINEMATIC_V1') {
+      warnings.push(`${relative}: legacy v1.3/cinematic project retained as historical production.`);
+    } else {
+      warnings.push(`${relative}: legacy visual project; new productions must use ${V2}.`);
+    }
+    continue;
+  }
+
+  v2Plans += 1;
+  checkHook(plan, relative, file);
+
+  if (plan.environmentPolicy !== 'SPARSE_SUGGESTED_ENVIRONMENT_V1') failures.push(`${relative}: missing SPARSE_SUGGESTED_ENVIRONMENT_V1.`);
+  if (plan.accentPolicy !== 'ONE_DOMINANT_ACCENT_V1') failures.push(`${relative}: missing ONE_DOMINANT_ACCENT_V1.`);
+
+  const palette = plan.channelPalette;
+  const expected = {
+    background: '#F6F3EA',
+    ink: '#202124',
+    primary: '#3F6EDB',
+    problem: '#E7684A',
+    solution: '#4E9B78',
+    optionalSignal: '#D6A23D',
+  };
+  if (!palette || typeof palette !== 'object') failures.push(`${relative}: channelPalette missing.`);
+  else {
+    for (const [field, value] of Object.entries(expected)) {
+      if (String(palette[field] ?? '').toUpperCase() !== value.toUpperCase()) failures.push(`${relative}: channelPalette.${field} must be ${value}.`);
+    }
+  }
+
+  if ('projectPalette' in plan) warnings.push(`${relative}: v2 should not depend on a per-video projectPalette.`);
+  if (plan.premiumVisualPolicy === 'PREMIUM_EDITORIAL_CINEMATIC_V1') failures.push(`${relative}: v2 must not enable PREMIUM_EDITORIAL_CINEMATIC_V1.`);
 }
 
 for (const file of promptFiles) {
   if (file.split(path.sep).includes('00-vorlage')) continue;
   const relative = path.relative(process.cwd(), file);
   const content = fs.readFileSync(file, 'utf8');
-  if (!/PREMIUM VISUAL POLICY:\s*PREMIUM_EDITORIAL_CINEMATIC_V1/iu.test(content)) continue;
-  modernPrompts += 1;
+  const isV2 = /MINIMAL_EDITORIAL_STICKMAN_V2|MINIMAL EDITORIAL STICKMAN WORLD v2/iu.test(content);
 
-  const requiredBlocks = [
-    ['PREMIUM VISUAL QUALITY — HARD LOCK', /PREMIUM VISUAL QUALITY\s*[—-]\s*HARD LOCK/iu],
-    ['PREMIUM CHARACTER DESIGN — HARD LOCK', /PREMIUM CHARACTER DESIGN\s*[—-]\s*HARD LOCK/iu],
-    ['COLOR STORY — HARD LOCK', /COLOR STORY\s*[—-]\s*HARD LOCK/iu],
-    ['REAL-LIFE SCENE PRIORITY — HARD LOCK', /REAL-LIFE SCENE PRIORITY\s*[—-]\s*HARD LOCK/iu],
-  ];
-  for (const [label, pattern] of requiredBlocks) if (!pattern.test(content)) failures.push(`${relative}: missing ${label}.`);
-
-  if (!/COLOR STORY POLICY:\s*INTENTIONAL_COLOR_STORY_V1/iu.test(content)) failures.push(`${relative}: missing INTENTIONAL_COLOR_STORY_V1 marker.`);
-  if (!/PROJECT COLOR PALETTE/iu.test(content)) failures.push(`${relative}: missing PROJECT COLOR PALETTE block.`);
-
-  const sceneMatches = [...content.matchAll(/^SCENE\s+(\d+)\s*$/gimu)];
-  for (let index = 0; index < sceneMatches.length; index += 1) {
-    const start = sceneMatches[index].index ?? 0;
-    const end = sceneMatches[index + 1]?.index ?? content.length;
-    const block = content.slice(start, end);
-    const scene = Number(sceneMatches[index][1]);
-    if (!/COLOR DIRECTION:/iu.test(block)) failures.push(`${relative}: scene ${scene} lacks COLOR DIRECTION.`);
-    if (!/PREMIUM CHARACTER DIRECTION:/iu.test(block)) failures.push(`${relative}: scene ${scene} lacks PREMIUM CHARACTER DIRECTION.`);
+  if (!isV2) {
+    legacyPrompts += 1;
+    continue;
   }
+
+  v2Prompts += 1;
+
+  if (/PREMIUM VISUAL POLICY:\s*PREMIUM_EDITORIAL_CINEMATIC_V1/iu.test(content)) failures.push(`${relative}: v2 prompt still enables old cinematic policy.`);
+  if (/COLOR STORY POLICY:\s*INTENTIONAL_COLOR_STORY_V1/iu.test(content)) failures.push(`${relative}: v2 prompt still enables old per-project color-story policy.`);
+
+  const required = [
+    ['v2 visual-system marker', /MINIMAL_EDITORIAL_STICKMAN_V2|MINIMAL EDITORIAL STICKMAN WORLD v2/iu],
+    ['warm off-white background', /#F6F3EA/iu],
+    ['charcoal ink', /#202124/iu],
+    ['channel blue', /#3F6EDB/iu],
+    ['problem coral', /#E7684A/iu],
+    ['solution green', /#4E9B78/iu],
+    ['sparse environment rule', /SPARSE|MINIMUM PROPS|MINIMAL ENVIRONMENT|SUGGEST.*(?:ENVIRONMENT|PLACE)/iu],
+    ['negative-space rule', /NEGATIVE SPACE/iu],
+  ];
+  for (const [label, pattern] of required) if (!pattern.test(content)) failures.push(`${relative}: missing ${label}.`);
+
+  if (!/no cinematic lighting|NO CINEMATIC|cinematic lighting.*(?:not|no|avoid)/iu.test(content)) warnings.push(`${relative}: explicitly forbid cinematic lighting in the global v2 block.`);
+  if (!/no rich detailed environments|RICH DETAILED ENVIRONMENTS.*(?:not|no|avoid)|avoid rich detailed/iu.test(content)) warnings.push(`${relative}: explicitly forbid rich detailed environments in the global v2 block.`);
 }
 
 if (warnings.length) {
-  console.warn('\nPREMIUM CONTENT QA: WARNINGS\n');
+  console.warn('\nVISUAL CONTENT QA: WARNINGS\n');
   warnings.forEach((warning) => console.warn(`- ${warning}`));
 }
 
 if (failures.length) {
-  console.error('\nPREMIUM CONTENT QA: FAIL\n');
+  console.error('\nVISUAL CONTENT QA: FAIL\n');
   failures.forEach((failure) => console.error(`- ${failure}`));
   process.exit(1);
 }
 
-console.log(`\nPREMIUM CONTENT QA: PASS — ${modernPlans} premium/hook plan(s), ${modernPrompts} premium Flow prompt(s), ${legacyPlans} legacy plan(s) warned.\n`);
+console.log(`\nVISUAL CONTENT QA: PASS — ${v2Plans} v2 plan(s), ${v2Prompts} v2 Flow prompt(s), ${legacyPlans} legacy plan(s), ${legacyPrompts} legacy prompt(s).\n`);
