@@ -1,74 +1,39 @@
-# VISUAL QUALITY LOCK — v2 COMPATIBILITY FILE
+# VISUAL QUALITY LOCK — CINEMATIC PSYCHOLOGY WORLD
 
 **STATUS: ACTIVE COMPATIBILITY LOCK**
 
-The former `PREMIUM_EDITORIAL_CINEMATIC_V1` direction is retired for new productions.
-The active visual system is `MINIMAL_EDITORIAL_STICKMAN_V2` in `rules/VISUAL_SYSTEM.md`.
+This path remains for pipeline compatibility. The active system is `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1` from `rules/VISUAL_SYSTEM.md`.
 
-This file remains only because existing tools and documents reference its path.
+## What quality means now
 
-## What quality means in v2
+Quality comes from:
+- consistent character design
+- expressive pose and emotion
+- believable colorful locations
+- purposeful camera angle
+- soft cel shading
+- cinematic illustrated light
+- foreground/midground/background when useful
+- small story-relevant details
+- controlled color and focus
+- visual representation chosen to fit the psychology beat
 
-Quality is created by:
-- immediate readability
-- strong pose and silhouette
-- clean spacing
-- one visual thought
-- restrained color
-- sparse meaningful props
-- a precise psychology metaphor when needed
-- consistent anatomy and line language
+Quality does not mean photorealism, 3D or excessive detail.
 
-Quality is NOT created by:
-- cinematic lighting
-- rich environments
-- detailed material rendering
-- complex perspective
-- elaborate fashion
-- foreground/midground/background depth for its own sake
-- detailed cel shading
+## World consistency
 
-## Color
+Character scenes, schemas, object metaphors, comparisons and text illustrations all share:
+- same outline language
+- same 2D rendering
+- same shading softness
+- same color behavior
+- same lighting logic
+- same level of polish
 
-Use the fixed channel palette from `rules/VISUAL_SYSTEM.md`.
-Do not create a new project palette for every video.
-
-Normal frame:
-- warm off-white + charcoal
-- usually one dominant accent
-- second accent only for a necessary comparison/cause-effect distinction
-
-## Environment
-
-Use the fewest visual cues that still make the place and action obvious.
-Typical target: 1–5 relevant props.
-
-A café does not need a rendered café interior.
-A cinema does not need full cinema architecture.
-An office does not need decorative office detail.
-
-## Prompt rule
-
-New Flow prompts use:
-- `VISUAL SYSTEM: MINIMAL_EDITORIAL_STICKMAN_V2`
-- one short global v2 style block
-- scene prompts focused on content
-
-Do not require the old blocks:
-- `PREMIUM VISUAL QUALITY — HARD LOCK`
-- `PREMIUM CHARACTER DESIGN — HARD LOCK`
-- `COLOR STORY — HARD LOCK`
+A schema must look like it belongs inside the same animated film, not like a PowerPoint slide.
 
 ## QA
 
-Regenerate when:
-- the environment competes with the idea
-- the figure becomes a conventional cartoon human
-- realism/rendering complexity increases
-- multiple colors compete without explanatory need
-- the frame cannot be understood quickly
-- decorative detail is present without explanatory value
-
-## Priority
+Regenerate if the frame drifts toward bare stickman doodles, full cartoon humans, 3D/CGI, flat corporate vectors, photorealism, or a different illustration language.
 
 `rules/VISUAL_SYSTEM.md` is authoritative.

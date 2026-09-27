@@ -1,60 +1,54 @@
 {
-  "id": "MINIMAL_EDITORIAL_STICKMAN_V2",
-  "name": "Minimal Editorial Stickman World v2",
+  "id": "CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1",
+  "name": "Cinematic Illustrated Psychology World v1",
   "status": "active",
-  "background": "#F6F3EA",
-  "ink": "#202124",
-  "palette": {
-    "primary": "#3F6EDB",
-    "problem": "#E7684A",
-    "solution": "#4E9B78",
-    "optionalSignal": "#D6A23D"
-  },
-  "normalSceneMaxDominantAccents": 1,
+  "characterSystem": "STYLIZED_STICKMAN_CAST_V1",
+  "environmentPolicy": "BELIEVABLE_CINEMATIC_ENVIRONMENT_V1",
+  "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V1",
+  "representationPolicy": "MIXED_PSYCHOLOGY_VISUALS_V1",
   "character": {
-    "head": "simple round or slightly oval flat head",
-    "face": "two tiny dot/short-line eyes and optional tiny mouth line",
-    "nose": false,
-    "ears": false,
-    "realisticNeck": false,
-    "torso": "compact flat graphic shape",
-    "limbs": "very thin line-like arms and legs with near-constant thickness",
-    "hands": "tiny nubs, dots or circles; no fingers",
-    "feet": "tiny simplified shapes",
-    "clothing": "simple graphic torso/jacket shape; no detailed fabric rendering"
+    "head": "large simple round or slightly oval head",
+    "face": "minimal expressive eyes, optional eyebrows, small mouth",
+    "torso": "compact simplified clothed torso",
+    "limbs": "very slim simplified illustrated limbs with slight width",
+    "hands": "simple stylized hands, no realistic finger anatomy",
+    "feet": "clear simplified shoes or feet",
+    "individuality": ["clothing", "simple hair cue", "glasses", "bag/accessory", "pose", "expression"]
   },
-  "environment": {
-    "mode": "suggested-not-rendered",
-    "typicalPropCountMin": 1,
-    "typicalPropCountMax": 5,
-    "negativeSpace": "high",
-    "texture": "none-or-minimal",
-    "shading": "none-or-very-subtle",
-    "complexArchitecture": false,
-    "cinematicLighting": false
+  "world": {
+    "locations": "believable colorful everyday environments",
+    "depth": "foreground-midground-background when useful",
+    "detail": "moderate meaningful environmental detail",
+    "lighting": "cinematic illustrated warm/cool lighting",
+    "shading": "soft cel shading",
+    "outlines": "clean slightly organic dark outlines",
+    "texture": "controlled subtle texture"
+  },
+  "colorBehavior": {
+    "mode": "natural-scene-colors-with-recurring-channel-language",
+    "anchors": ["deep navy", "warm amber", "muted teal/blue", "coral/red"],
+    "rules": ["colorful not candy-colored", "strongest contrast on focal subject", "background may be quieter", "warm-cool contrast may support emotion"]
   },
   "sceneFamilies": {
-    "EVERYDAY_MINIMAL": 0.60,
-    "CONCEPT_METAPHOR": 0.25,
-    "COMPARE_CHANGE": 0.10,
-    "DIAGRAM_MAX": 0.05
+    "CHARACTER_SCENE": 0.55,
+    "SCHEMA_EXPLAINER": 0.15,
+    "OBJECT_METAPHOR": 0.15,
+    "COMPARE_VISUAL": 0.10,
+    "TEXT_ILLUSTRATION": 0.05
   },
+  "textModes": ["cover", "keyword", "schema", "comparison", "text_illustration"],
   "hardFails": [
-    "conventional cartoon human",
-    "semi-realistic or realistic person",
-    "fleshy or anatomical limbs",
-    "realistic hands or fingers",
-    "realistic facial anatomy",
-    "3D or CGI",
-    "Pixar",
-    "anime or manga or chibi",
-    "rich detailed environment as default",
-    "cinematic lighting as default",
-    "material texture rendering",
-    "complex cel shading",
-    "background competing with primary idea",
-    "unnecessary accent colors"
+    "bare line stickman or whiteboard doodle",
+    "conventional full cartoon human",
+    "realistic human anatomy",
+    "3D or CGI or Pixar",
+    "anime manga chibi",
+    "photorealistic environment",
+    "corporate vector stock-art look",
+    "PowerPoint-style schema",
+    "material style drift between scenes",
+    "random readable text"
   ],
-  "globalPrompt": "MINIMAL EDITORIAL STICKMAN WORLD v2. Warm off-white paper background (#F6F3EA), charcoal organic outlines (#202124), true minimal stickman anatomy, flat graphic torso shapes, very thin line limbs, tiny no-finger hands, simple feet, minimal dot/line face, no realistic anatomy. Sparse editorial environment using only the few props required to identify place and action. Large clean negative space. Flat colors with normally one dominant accent from channel blue #3F6EDB, problem coral #E7684A, solution green #4E9B78, optional muted amber #D6A23D. One clear visual idea per frame. Prefer simple action or a clean psychology metaphor. No photorealism, no 3D, no Pixar, no anime, no conventional cartoon humans, no cinematic lighting, no rich detailed environments, no material textures, no complex cel-shading.",
-  "referencePackPath": "assets/style-v2/"
+  "globalPrompt": "Create a cinematic 2D illustrated frame for a modern psychology YouTube channel. Keep one consistent visual world: stylized stickman-inspired characters with large simple round heads, minimal expressive faces, compact clothed torsos, very slim simplified limbs, simple hands and shoes; characters are clearly simplified but not bare line stickmen and not normal cartoon humans. Use colorful believable environments, clean slightly organic outlines, soft cel shading, natural depth, purposeful cinematic framing, controlled colors, warm/cool lighting and small meaningful details. When no character is needed, diagrams, text schemas, objects, comparisons and metaphors must use the exact same illustration, line, color, shading and lighting language. No photorealism, no 3D/Pixar, no anime, no corporate vector look, no whiteboard doodle style.",
+  "referencePackPath": "assets/cinematic-psychology-world/"
 }

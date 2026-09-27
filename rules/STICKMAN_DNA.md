@@ -1,83 +1,64 @@
-# STICKMAN DNA — CHANNEL ANATOMY SOURCE OF TRUTH
+# STICKMAN DNA — STYLIZED CHARACTER SOURCE OF TRUTH
 
-**STATUS: HARD LOCK — v2**
+**STATUS: HARD LOCK — CINEMATIC WORLD v1**
 
-Die vollständige aktive Bildwelt steht in `rules/VISUAL_SYSTEM.md`.
-Diese Datei definiert ausschließlich die menschliche Anatomie, damit keine zweite konkurrierende Art Direction entsteht.
+The full world is defined in `rules/VISUAL_SYSTEM.md`. This file defines human character anatomy only.
 
-## Figuren-DNA
+## Character DNA
 
-Jede sichtbare menschliche oder menschenähnliche Figur ist ein echter minimalistischer Stickman:
-- einfacher runder oder leicht ovaler flacher Kopf
-- zwei winzige Punkt-/Strichaugen
-- optional ein kleiner Mundstrich
-- keine realistische Nase
-- keine realistischen Ohren
-- kein realistischer Hals
-- kompakter flacher grafischer Torso
-- sehr dünne lineare Arme und Beine mit nahezu gleichbleibender Dicke
-- Hände nur als kleine Nubs, Punkte oder Kreise
-- keine Finger
-- stark vereinfachte Füße/Schuhe
-- keine realistische Muskel-/Körperanatomie
+Every visible person uses the same stylized stickman-inspired anatomy family:
+- large round or slightly oval simplified head
+- minimal expressive eyes
+- optional simple eyebrows
+- small simple mouth
+- no realistic facial anatomy
+- compact simplified torso with visible clothing
+- very slim simplified arms and legs with slight illustrated width
+- limbs are not bare one-pixel lines and not realistic fleshy human limbs
+- simplified hands without realistic finger anatomy
+- clear simplified shoes/feet
+- readable pose and body language
 
-Diese Anatomie gilt ausnahmslos für:
-- Hauptfiguren
-- Nebenfiguren
-- Menschenmengen
-- historische Figuren
-- Forscher/Teilnehmer
-- Personen in Fahrzeugen
-- Menschen auf Screens, Fotos, Postern, Spiegelungen und Erinnerungsbildern
+## Clothing and individuality
 
-## Kleidung
+Characters may be individualized through:
+- hoodie, jacket, shirt, sweater, coat or other simple clothing
+- clothing colors
+- simple hair silhouette when useful
+- glasses
+- bag, headphones, hat or one role accessory
+- height/proportion variation within the same family
+- expression and posture
 
-Kleidung ist eine einfache grafische Form:
-- Torso-Farbfläche oder simple Jackenform
-- maximal ein kleines Rollen-Accessoire, wenn es die Aussage verbessert
-- keine Stofftexturen
-- keine detaillierten Falten
-- kein Fashion-Rendering
-- Kleidung darf niemals normale menschliche Anatomie erzeugen
+Clothing should feel designed but not fashion-rendered.
 
-## Variation
+## Background people
 
-Figuren dürfen variieren durch:
-- Pose
-- Körpergröße
-- Torsofarbe
-- kleines Accessoire
-- minimale Mimik
+Background people use the same simplification family, but may be rendered with less detail than foreground characters.
 
-Nicht variieren:
-- Anatomiesystem
-- Linienart
-- Hand-/Fußsystem
-- Gesichtskomplexität
-- Rendering-Komplexität
+## Continuity
 
-## Hard Fail
+If the same person returns in connected scenes, preserve:
+- head shape
+- hair/accessory
+- clothing and core colors
+- torso/limb proportions
+- shoes
+- face simplification
 
-Bild verwerfen bei:
-- normalen Cartoon-Menschen
-- semi-realistischen oder realistischen Menschen
-- fleischigen/dicken menschlichen Gliedmaßen
-- Fingern oder realistischen Händen
-- realistischen Nasen/Ohren
+Different scenes may use different people when continuity is not required.
+
+## Hard fail
+
+- bare black-line stickman / whiteboard figure
+- normal full cartoon-human anatomy
+- semi-realistic or realistic human anatomy
+- detailed fingers/hands
+- realistic nose/ears/facial structure
 - 3D/Pixar/CGI
-- Anime/Manga/Chibi
-- Mischstil zwischen Figuren
+- anime/manga/chibi
+- mixed incompatible human styles
 
-## Kompakter Anatomie-Prompt
+## Compact character prompt
 
-`TRUE MINIMAL STICKMAN ANATOMY: simple round or slightly oval flat head, two tiny dot/short-line eyes, optional tiny mouth line, no realistic nose/ears/neck, compact flat graphic torso, very thin line-like arms and legs with near-constant thickness, tiny nub/dot/circle hands with no fingers, tiny simplified feet, no realistic body volume. Clothing is only a simple graphic torso/jacket shape. Every visible person follows this same anatomy.`
-
-## Priorität
-
-1. `rules/VISUAL_SYSTEM.md` = gesamte Bildwelt
-2. diese Datei = Anatomie
-3. Visual Beat = konkrete Szene
-
-Merksatz:
-
-**Anatomie bleibt immer gleich. Der Visual Beat verändert nur Pose, Rolle, Handlung und Situation.**
+`STYLIZED STICKMAN-INSPIRED CHARACTER: large simple round/oval head, minimal expressive face, compact clothed torso, very slim simplified illustrated arms and legs with slight width, simple hands and shoes, clear body language. Individualize through clothing, simple hair/accessory and posture while keeping the same simplified anatomy family. Not a bare line stickman, not a normal cartoon human, not realistic, not 3D.`
