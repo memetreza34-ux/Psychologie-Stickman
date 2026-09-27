@@ -85,8 +85,13 @@ for (const file of plans) {
 
   if (topic && !norm(prompt).includes(topicNorm)) failures.push(`${rel}: Flow prompt does not include coverTopicTerm '${topic}'.`);
 
-  const scene1Match = prompt.match(/^SCENE\s+01\s*$([\s\S]*?)(?=^SCENE\s+02\s*$|\z)/imu);
-  const scene1Prompt = scene1Match?.[1] ?? '';
+  const scene1Start = prompt.search(/^SCENE\s+01\s*$/imu);
+  const scene2Start = prompt.search(/^SCENE\s+02\s*$/imu);
+  const scene1Prompt = scene1Start >= 0
+    ? prompt.slice(scene1Start, scene2Start > scene1Start ? scene2Start : prompt.length)
+    : '';
+
+  if (!scene1Prompt) failures.push(`${rel}: Flow prompt is missing Scene 01.`);
   if (!/TITLE PLACEMENT:/iu.test(scene1Prompt)) failures.push(`${rel}: Scene 01 prompt needs explicit TITLE PLACEMENT.`);
   if (/full[- ]width[^\n]{0,30}top|across the full top|headline across the top/iu.test(scene1Prompt) && !/NO FULL-WIDTH TOP BANNER/iu.test(scene1Prompt)) {
     warnings.push(`${rel}: Scene 01 may still encourage a top-banner layout; review title placement.`);
