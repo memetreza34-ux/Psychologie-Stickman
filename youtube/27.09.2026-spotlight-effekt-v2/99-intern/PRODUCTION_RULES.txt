@@ -1,0 +1,13 @@
+PRODUCTION RULES — SPOTLIGHT-EFFEKT V2
+
+1. Scene 01 first. Stop for cover approval before generating later images.
+2. Cover must visibly explain the Spotlight-Effekt: imagined attention on the main person versus actual attention directed elsewhere.
+3. Scene 01 visible text is exactly:
+   - SPOTLIGHT-EFFEKT
+   - WARUM DU DENKST ALLE SCHAUEN
+4. No full-width top banner. Use the planned compact asymmetric integrated title block.
+5. Later scenes follow phase1-scenes.json and google-flow-prompt.txt exactly.
+6. Planned text comes only from Google Flow. All other scenes are ZERO READABLE TEXT.
+7. Generate later images in batches of max 5 and regenerate only failed frames.
+8. Final audio path: 04-audio/final-voice.mp3.
+9. After images and audio exist, use the repository's YouTube production pipeline for timings, staging, Remotion and export.
