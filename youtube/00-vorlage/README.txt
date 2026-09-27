@@ -1,72 +1,69 @@
 YOUTUBE LONGFORM — EINFACHE ARBEITSSTRUKTUR
 
-Jedes neue YouTube-Projekt verwendet nur diese sichtbaren Arbeitsordner:
+Jedes neue YouTube-Projekt verwendet diese sichtbaren Arbeitsordner:
 
 01-script/
 - script.txt
 - Szene 01 = klarer Hook
-- Kernbegriff spätestens Szene 03 / ca. erste 50 Wörter
-- einfache Erklärung direkt danach
-- erstes konkretes Alltagsbeispiel spätestens Szene 05 / ca. erste 80 Wörter
-- keine langsame abstrakte Vorrede als Standard
+- Kernbegriff spätestens Szene 03
+- erstes konkretes Alltagsbeispiel spätestens Szene 05
 
 02-google-flow/
 - google-flow-prompt.txt
-- PREMIUM VISUAL POLICY = PREMIUM_EDITORIAL_CINEMATIC_V1
-- COLOR STORY POLICY = INTENTIONAL_COLOR_STORY_V1
-- Projektpalette vor Generation ausfüllen
-- jede Szene erhält COLOR DIRECTION + PREMIUM CHARACTER DIRECTION
-- konkrete Alltagsszene vor Lehrgrafik
-- ALLE sichtbaren YouTube-Texte werden direkt von Google Flow in die Bilder gerendert
-- Remotion erzeugt keinen sichtbaren Text
+- VISUAL SYSTEM = MINIMAL_EDITORIAL_STICKMAN_V2
+- ENVIRONMENT POLICY = SPARSE_SUGGESTED_ENVIRONMENT_V1
+- ACCENT POLICY = ONE_DOMINANT_ACCENT_V1
+- feste Kanalpalette statt eigener Projektpalette
+- Umgebungen nur andeuten, nicht ausrendern
+- jede Szene bekommt SCENE FAMILY + ACCENT ROLE + MINIMAL PROPS
+- sichtbare YouTube-Texte weiterhin direkt aus Google Flow
 
 03-bilder/
-- hier `01.png`, `02.png`, `03.png` usw. ablegen
-- `01.png` ist IMMER Szene 01 + Cover/Thumbnail + Style-/Anatomie-Master
-- Szene 01 muss Premium-Figurenqualität + Projekt-Farbwelt etablieren
-- Szene 01 enthält den exakten deutschen Cover-Titel direkt aus Google Flow
-- geplante spätere Keyword-Szenen enthalten ihren exakten deutschen Kurztext ebenfalls direkt aus Google Flow
-- alle übrigen Szenen bleiben ZERO READABLE TEXT
-- Cover: 2–7 Wörter
-- Keywords: maximal 5 Wörter
-- falscher, zusätzlicher oder abgeschnittener Text => nur dieses Bild regenerieren
+- `01.png`, `02.png`, `03.png` usw.
+- `01.png` ist Szene 01 + Cover/Thumbnail für Pipeline-Kompatibilität
+- `01.png` ist NICHT mehr der globale Style-Master
+- globale Style-Source-of-Truth: rules/VISUAL_SYSTEM.md + assets/style-v2/
+- nicht geplante Textszenen bleiben ZERO READABLE TEXT
 
 04-audio/
-- hier `final-voice.mp3` ablegen
+- final-voice.mp3
 
 05-export/
-- `final.mp4` wird hier erzeugt
-- bestehende Exporte werden nicht überschrieben
+- final.mp4
 
 99-intern/
-- `phase1-scenes.json`
-- Pflicht für neue Projekte: Hook-Metadaten + Premium-/Color-Policies + projectPalette
-- `word-timings.json` (wird bei Bedarf automatisch lokal aus final-voice.mp3 erzeugt)
-- `scene-plan.json`
-- `render-props.json`
+- phase1-scenes.json
+- Pflicht für neue Projekte: visualSystem + channelPalette + environmentPolicy + accentPolicy
+- word-timings.json
+- scene-plan.json
+- render-props.json
 - Quellen, QA, Style, Continuity und weitere Pipeline-Metadaten
 
-Neue YouTube-Projekte:
+Neue Projekte:
 - `scriptHookPolicy = HOOK_FIRST_EXPLAIN_EARLY_V1`
-- `premiumVisualPolicy = PREMIUM_EDITORIAL_CINEMATIC_V1`
-- `colorStoryPolicy = INTENTIONAL_COLOR_STORY_V1`
+- `visualSystem = MINIMAL_EDITORIAL_STICKMAN_V2`
+- `environmentPolicy = SPARSE_SUGGESTED_ENVIRONMENT_V1`
+- `accentPolicy = ONE_DOMINANT_ACCENT_V1`
 - `visualPlanningPolicy = VARIED_COMPOSITION_V1`
 - `socialScenePolicy = SOCIAL_VARIETY_V1`
 - `visibleTextRenderer = GOOGLE_FLOW`
-- `renderGermanLabelsInRemotion = false`
 - `finalTextPolicy = FLOW_VISIBLE_TEXT_ONLY_V3`
-- `sceneLabels = []`
 
-Premium bedeutet NICHT realistische Menschen. Stickman-Anatomie bleibt simpel. Premium entsteht durch Pose, Silhouette, Kleidung, Emotion, Licht, Farbe, Tiefe und Umgebung.
+KANALPALETTE
+- Background #F6F3EA
+- Ink #202124
+- Blue #3F6EDB
+- Coral #E7684A
+- Green #4E9B78
+- optional Amber #D6A23D
 
 Nicht als Default akzeptieren:
-- grauer/beiger Einheitswash
-- sterile Büro-Monotonie
-- neutrale Platzhalterfigur
-- riesiges Symbol/Zahl statt echter Alltagsszene
-- Lehrbuch-/Whiteboard-Serie
-
-Für die normale Arbeit braucht der Nutzer nur `script.txt`, `google-flow-prompt.txt`, Bilder und Audio zu öffnen.
+- cinematic lighting
+- rich detailed environments
+- komplett neue Projektpalette pro Video
+- Material-/Fashion-Rendering
+- normale Cartoon-/semi-realistische Menschen
+- 3D/CGI/Anime
 
 Sobald Bilder und finales Audio fertig sind:
 `npm run produce:youtube -- youtube/TT.MM.JJJJ-thema`
@@ -76,5 +73,4 @@ Wichtige QA:
 `npm run qa:visual-variety`
 `npm run qa:flow-prompts`
 
-Fehlende Word Timings werden automatisch mit lokalem Whisper.cpp erzeugt und am finalen Skript ausgerichtet.
-Remotion dient danach für Schnitt, Audio und Export — nicht für sichtbaren Text.
+Der QA-Scriptname `premium-content` bleibt aus Kompatibilitätsgründen; v2 bewertet Minimalität, Klarheit und Konsistenz statt Cinematic-Premium-Rendering.
