@@ -1,0 +1,54 @@
+{
+  "id": "CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1",
+  "name": "Cinematic Illustrated Psychology World v1",
+  "status": "active",
+  "characterSystem": "STYLIZED_STICKMAN_CAST_V1",
+  "environmentPolicy": "BELIEVABLE_CINEMATIC_ENVIRONMENT_V1",
+  "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V1",
+  "representationPolicy": "MIXED_PSYCHOLOGY_VISUALS_V1",
+  "character": {
+    "head": "large simple round or slightly oval head",
+    "face": "minimal expressive eyes, optional eyebrows, small mouth",
+    "torso": "compact simplified clothed torso",
+    "limbs": "very slim simplified illustrated limbs with slight width",
+    "hands": "simple stylized hands, no realistic finger anatomy",
+    "feet": "clear simplified shoes or feet",
+    "individuality": ["clothing", "simple hair cue", "glasses", "bag/accessory", "pose", "expression"]
+  },
+  "world": {
+    "locations": "believable colorful everyday environments",
+    "depth": "foreground-midground-background when useful",
+    "detail": "moderate meaningful environmental detail",
+    "lighting": "cinematic illustrated warm/cool lighting",
+    "shading": "soft cel shading",
+    "outlines": "clean slightly organic dark outlines",
+    "texture": "controlled subtle texture"
+  },
+  "colorBehavior": {
+    "mode": "natural-scene-colors-with-recurring-channel-language",
+    "anchors": ["deep navy", "warm amber", "muted teal/blue", "coral/red"],
+    "rules": ["colorful not candy-colored", "strongest contrast on focal subject", "background may be quieter", "warm-cool contrast may support emotion"]
+  },
+  "sceneFamilies": {
+    "CHARACTER_SCENE": 0.55,
+    "SCHEMA_EXPLAINER": 0.15,
+    "OBJECT_METAPHOR": 0.15,
+    "COMPARE_VISUAL": 0.10,
+    "TEXT_ILLUSTRATION": 0.05
+  },
+  "textModes": ["cover", "keyword", "schema", "comparison", "text_illustration"],
+  "hardFails": [
+    "bare line stickman or whiteboard doodle",
+    "conventional full cartoon human",
+    "realistic human anatomy",
+    "3D or CGI or Pixar",
+    "anime manga chibi",
+    "photorealistic environment",
+    "corporate vector stock-art look",
+    "PowerPoint-style schema",
+    "material style drift between scenes",
+    "random readable text"
+  ],
+  "globalPrompt": "Create a cinematic 2D illustrated frame for a modern psychology YouTube channel. Keep one consistent visual world: stylized stickman-inspired characters with large simple round heads, minimal expressive faces, compact clothed torsos, very slim simplified limbs, simple hands and shoes; characters are clearly simplified but not bare line stickmen and not normal cartoon humans. Use colorful believable environments, clean slightly organic outlines, soft cel shading, natural depth, purposeful cinematic framing, controlled colors, warm/cool lighting and small meaningful details. When no character is needed, diagrams, text schemas, objects, comparisons and metaphors must use the exact same illustration, line, color, shading and lighting language. No photorealism, no 3D/Pixar, no anime, no corporate vector look, no whiteboard doodle style.",
+  "referencePackPath": "assets/cinematic-psychology-world/"
+}

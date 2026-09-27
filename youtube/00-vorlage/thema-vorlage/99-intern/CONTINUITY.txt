@@ -1,37 +1,22 @@
-CONTINUITY — YOUTUBE TEMPLATE
+CONTINUITY — CINEMATIC PSYCHOLOGY WORLD
 
-MASTER
-- Bild 01 zuerst allein generieren.
-- Bild 01 nur freigeben, wenn STRICT STICKMAN ONLY vollständig erfüllt ist.
-- Bild 01 als `03-bilder/01.png` speichern.
-- Für jedes Bild ab 02 `01.png` als Referenz anhängen.
-- Master bleibt für das gesamte Video verbindlich.
+GLOBAL CONTINUITY
+Keep consistent:
+- character anatomy family
+- line style
+- soft cel shading
+- texture level
+- color behavior
+- cinematic illustrated lighting
+- world-detail quality
 
-STICKMAN-KONTINUITÄT
-- gleiche Kopf-/Torso-Proportionen
-- gleiche minimale Gesichtslogik
-- sehr dünne lineare Arme/Beine
-- keine fleischigen Gliedmaßen
-- keine realistischen Hände/Finger
-- gleiche Hand-/Fußvereinfachung
-- gleiche Linien-/Shading-Logik
-- wiederkehrende Hauptfigur über Kleidung/Farbe/Accessoires konstant halten
+CHARACTER CONTINUITY
+Only when the same person returns: preserve head/hair/accessory, clothing, colors, proportions and shoes.
 
-ALLE PERSONEN
-Jede sichtbare Person im Vorder-, Mittel- und Hintergrund sowie auf Screens, Fotos, Postern, Werbung oder Spiegelungen muss die gleiche echte Stickman-Grundanatomie verwenden.
+Do not clone the same person across unrelated scenes.
 
-BATCH-WORKFLOW
-- nach Master-Freigabe maximal 5 neue Bilder pro Batch
-- danach STOP
-- alle Bilder gegen 01.png prüfen
-- nur fehlerhafte Bilder regenerieren
-- nächster Batch erst nach vollständigem PASS
+REPRESENTATION CONTINUITY
+Schemas, object metaphors, comparisons and text illustrations must look like the same illustrated film-world as character scenes.
 
-HARD FAIL
-- normale Cartoon-Menschen
-- semi-realistische/realistische Menschen
-- Hintergrundfiguren mit anderer Anatomie
-- dicke menschliche Arme/Beine
-- realistische Hände/Finger/Nasen/Ohren
-- 3D/CGI/Anime/Chibi
-- Style-Drift gegenüber 01.png
+REFERENCE
+Use assets/cinematic-psychology-world/ once approved. Scene 01 is not the global style master.

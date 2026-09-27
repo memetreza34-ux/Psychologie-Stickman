@@ -1,37 +1,31 @@
-STYLE — YOUTUBE TEMPLATE
+STYLE — CINEMATIC ILLUSTRATED PSYCHOLOGY WORLD v1
 
-LOCKED: UNIVERSAL EDITORIAL STICKMAN WORLD v1.3 — STRICT STICKMAN ONLY
+CHARACTERS
+- stylized stickman-inspired, not bare line stickmen
+- large simple head, minimal expressive face
+- compact clothed torso
+- very slim simplified limbs with slight width
+- simple hands and shoes
+- individualize through clothing, hair cue, glasses/accessory, pose and color
 
-MENSCHEN
-- jede sichtbare menschliche oder menschenähnliche Figur ist ein echter Stickman
-- einfacher runder/ovaler Kopf
-- minimale Gesichtszüge
-- keine realistische Nase/Ohren/Halsanatomie
-- kleiner stark vereinfachter Torso
-- sehr dünne lineare Arme und Beine
-- keine fleischigen menschlichen Gliedmaßen
-- einfache Nub-/Mitten-Hände ohne Fingeranatomie
-- stark vereinfachte Füße/Schuhe
-- Kleidung darf Rolle/Epoche zeigen, aber keine normale menschliche Anatomie erzeugen
-- gilt auch für Hintergrund, Mengen, Forscher, historische Figuren, Screens, Poster, Fotos und Spiegelungen
+WORLD
+- colorful believable everyday locations
+- clean slightly organic outlines
+- soft cel shading
+- natural depth
+- cinematic illustrated warm/cool lighting
+- meaningful small details
 
-UMGEBUNG
-- darf deutlich detailreicher sein als die Figuren
-- glaubwürdige Architektur, Fahrzeuge, Möbel, Technik, Requisiten
-- natürliche Farben
-- saubere dunkle organische Outlines
-- glaubwürdige Perspektive und Licht
-- dezentes 2D-/Cel-Shading
-- nicht fotorealistisch
+ALLOWED NON-CHARACTER FRAMES
+- illustrated schemas
+- object metaphors
+- comparison visuals
+- text illustrations
+All use the same world/rendering language.
 
 HARD FAIL
-- normale Cartoon-Menschen
-- semi-realistische/realistische Menschen
-- dicke menschliche Arme/Beine
-- realistische Hände/Finger
-- Mischstil zwischen Vorder- und Hintergrund
-- 3D/CGI/Anime/Chibi
-
-FORMAT
-- YouTube-Projekte: 16:9 / 1920×1080
-- Szene 01 definiert die Master-Stickman-DNA
+- whiteboard/bare stickman
+- normal full cartoon or realistic humans
+- 3D/Pixar/anime
+- photorealistic environment
+- corporate infographic look

@@ -1,115 +1,33 @@
-YOUTUBE PRODUCTION RULES — HARD LOCK
+YOUTUBE PRODUCTION RULES
 
 FORMAT
-- ausschließlich 16:9
-- 1920×1080
-- 30 fps
-- horizontale / Landscape-Komposition
-- Remotion-Komposition: Phase3YouTube
-- Bilder direkt als 16:9 generieren
+- 16:9 / 1920x1080 / 30 fps
 
-SCRIPT — HOOK FIRST
-- `scriptHookPolicy = HOOK_FIRST_EXPLAIN_EARLY_V1`
-- Szene 01 = klare Hook-Frage oder überraschende direkte Aussage
-- Kernbegriff spätestens Szene 03 / ungefähr erste 50 Wörter
-- einfache Erklärung direkt danach
-- erstes konkretes Alltagsbeispiel spätestens Szene 05 / ungefähr erste 80 Wörter
-- keine langsame abstrakte Vorrede als Standard
+VISUAL SYSTEM
+- CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
+- CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V1
+- ENVIRONMENT: BELIEVABLE_CINEMATIC_ENVIRONMENT_V1
+- RENDERING: SOFT_CEL_SHADED_FILM_FRAME_V1
+- REPRESENTATION: MIXED_PSYCHOLOGY_VISUALS_V1
 
-AUDIO
-- finales Voice-over exakt 1,10×
-- führende Stille entfernen
-- Pausen ab ungefähr 500 ms deutlich kürzen
-- Ziel-Restpause ungefähr 120 ms vor 1,10×
-- Wörter niemals anschneiden
-- Timings erst aus finalem Audio
+Every beat chooses scene type, composition, social density, camera, lighting mood and text policy.
 
-PREMIUM VISUALS
-- `premiumVisualPolicy = PREMIUM_EDITORIAL_CINEMATIC_V1`
-- `colorStoryPolicy = INTENTIONAL_COLOR_STORY_V1`
-- Projektpalette vor Flow vollständig definieren
-- Premium entsteht durch Pose, Silhouette, Kleidung, Emotion, Requisiten, Licht, Farbe, Tiefe und Umgebung
-- Stickman-Anatomie bleibt strikt simpel
-- kein grauer/beiger Einheitswash
-- keine sterile Büro-Monotonie
-- keine neutrale Platzhalterfigur vor riesigem Symbol als Default
-- konkrete Alltagsszene > visuelle Metapher > abstrakte Lehrgrafik
+Character scenes use stylized stickman-inspired clothed figures. Non-character frames must share the same outlines, cel shading, colors, lighting and polish.
 
-BILDER
-- jeder Visual Beat bekommt eine eigene passende Bildidee
-- Kamera, Perspektive, Umgebung, Licht, Farbe und Requisiten individuell wählen
-- jede Szene plant `COLOR DIRECTION`
-- jede Szene plant `PREMIUM CHARACTER DIRECTION`
-- Master-Referenz hält Anatomie, Qualitätsniveau und Farbverhalten konstant, nicht Komposition
-- horizontale Breite bewusst für Umgebung, Abläufe und Vergleiche nutzen
-- mehrere Teilbilder nur, wenn sie denselben gesprochenen Beat erklären
-- keine Füllbilder
-- keine spätere Information vorwegnehmen
-- alle Menschen STRICT STICKMAN ONLY
+TEXT
+- Flow only
+- cover/keyword/schema/comparison/text-illustration allowed when planned
+- no accidental background text
+- no visible Remotion text
 
-KOMPOSITION / SOCIAL
-- `visualPlanningPolicy = VARIED_COMPOSITION_V1`
-- `socialScenePolicy = SOCIAL_VARIETY_V1`
-- Ziel ungefähr 70 % Standard, 20 % Split/Contrast, 10 % Montage
-- Inhaltliche Klarheit gewinnt vor Quote
-- soziale Beats bevorzugen echte Duo-/Gruppeninteraktion
-
-SICHTBARER TEXT — GOOGLE FLOW ONLY
-- `finalTextPolicy = FLOW_VISIBLE_TEXT_ONLY_V3`
-- sämtlicher sichtbarer YouTube-Text wird direkt in Google Flow gerendert
-- Remotion erzeugt KEINEN sichtbaren YouTube-Text
-- `sceneLabels = []`
-- `renderGermanLabelsInRemotion = false`
-
-TEXTMOMENTE
-- Szene 01: exakter deutscher Cover-Titel, 2–7 Wörter
-- ausgewählte spätere Szenen: exakter deutscher Keyword-/Merksatz, maximal 5 Wörter
-- typische Textdichte 15–25 % inklusive Cover
-- harte Obergrenze 30 %
-- alle nicht geplanten Textszenen: ZERO READABLE TEXT
-- falscher, zusätzlicher, abgeschnittener oder schlecht integrierter Text => nur dieses Flow-Bild regenerieren
-
-TYPOGRAFIE
-- clean professional integrated editorial typography
-- sichere Ränder
-- keine Meme-/Sticker-Schrift
-- keine extrem dicke Outline als Standard
-- Text muss Teil der Bildkomposition wirken
-
-SCENE 01 / COVER — HARD LOCK
-- `03-bilder/01.png` ist immer gleichzeitig Szene 01 + Cover/Thumbnail + Style-/Anatomie-Master
-- Szene 01 muss den ersten Hook korrekt darstellen UND als starkes Premium-Cover funktionieren
-- dominantes Hauptmotiv, schnelle Lesbarkeit, klare Emotion/Handlung
-- Premium-Figur + Projekt-Farbwelt bereits in Bild 01 etablieren
-- exakter deutscher Cover-Titel direkt aus Google Flow
-- außer Cover-Titel kein weiterer lesbarer Text
-- kein separates Pflicht-`cover.png`
-- Phase-1-Metadaten: `isCover: true`, `coverRole: "SCENE_01_COVER_MASTER"`
-
-REFERENZ-WORKFLOW
-- Bild 01 als Cover + ersten Hook + Master allein generieren und freigeben
-- bei Freigabe zusätzlich Premium-Figuren, Farbe, Typografie und Alltagsnähe prüfen
-- danach Masterbild bei Folgeassets als Style-/Anatomie-Referenz anhängen
-- Master nicht als Charakter-, Text- oder Kompositionsklon verwenden
-- höchstens 5 neue Bilder pro Batch
-- nach jedem Batch interne QA
+COVER
+- 01.png = Scene 01 + Cover
+- follows global channel reference pack
+- is not global Style Master
 
 QA
-- `npm run qa:premium-content`
-- `npm run qa:visual-variety`
-- `npm run qa:flow-prompts`
-- `npm run check`
-
-HARD FAIL
-- langsamer unklarer Einstieg ohne Hook
-- Kernbegriff laut Plan erst nach Szene 03
-- erstes Alltagsbeispiel laut Plan erst nach Szene 05
-- Projektpalette nicht ausgefüllt
-- Premium-/Color-Hard-Locks fehlen
-- Szene 01 ist nicht als Cover vorgesehen
-- Szene 01 wirkt grau/steril/generisch statt premium
-- finale Szene 01 hat nicht den exakten deutschen Flow-Cover-Titel
-- sichtbarer Text wird durch Remotion erzeugt
-- Keyword-Texte werden zu langen Sätzen
-- Textdichte überschreitet 30 %
-- 9:16 / 1080×1920 als reguläres YouTube-Longform-Format
+- consistent world
+- beat clarity
+- correct character family
+- no 3D/realistic/corporate-vector drift
+- exact planned German text

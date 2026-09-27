@@ -1,33 +1,13 @@
-INTERN — NICHT DIE NORMALE ARBEITSFLÄCHE
+INTERN — TECHNICAL PROJECT DATA
 
-Hier liegen technische Dateien, Quellen, QA und Pipeline-Metadaten.
-Der Nutzer soll für die normale Produktion nur diese sichtbaren Arbeitsordner verwenden:
-- 01-script/
-- 02-google-flow/
-- 03-bilder/
-- 04-audio/
-- 05-export/
+Active visual metadata for new projects:
+- visualSystem: CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
+- characterSystem: STYLIZED_STICKMAN_CAST_V1
+- environmentPolicy: BELIEVABLE_CINEMATIC_ENVIRONMENT_V1
+- renderingPolicy: SOFT_CEL_SHADED_FILM_FRAME_V1
+- representationPolicy: MIXED_PSYCHOLOGY_VISUALS_V1
 
-Zentrale technische Dateien liegen direkt in 99-intern/:
-- phase1-scenes.json
-- word-timings.json
-- scene-plan.json
-- render-props.json
-- optional flow-text-policy.json für projektspezifische Textmomente
+Text remains Google-Flow-only with sceneLabels empty and Remotion visible labels disabled.
 
-Neue YouTube-Projekte verwenden:
-- `visibleTextRenderer: "GOOGLE_FLOW"`
-- `renderGermanLabelsInRemotion: false`
-- `finalTextPolicy: "FLOW_VISIBLE_TEXT_ONLY_V3"`
-- `flowSourceImageTextPolicy: "PLANNED_EXACT_GERMAN_TEXT_ONLY"`
-- `flowTextMoments: [...]`
-- `sceneLabels: []`
-
-Sämtlicher sichtbarer YouTube-Text wird direkt von Google Flow in die jeweiligen Bilder gerendert. Remotion erzeugt keine Cover-Titel, Keywords, Labels oder YouTube-Captions.
-
-`word-timings.json` darf als leere Vorlage starten. `produce:youtube` erzeugt fehlende/leere Wortzeiten automatisch aus `04-audio/final-voice.mp3` mit lokalem Whisper.cpp und richtet sie am finalen `01-script/script.txt` aus.
-
-Keine zusätzliche `projektdateien/`-Zwischenebene mehr.
-
-Bild 01 liegt direkt in 03-bilder/ und ist zugleich Szene 01, Cover und Master-Referenz.
-`public/` ist nur Remotion-Staging und wird automatisch erzeugt.
+Global visual reference path: assets/cinematic-psychology-world/.
+01.png = Scene 01 + Cover, not global style master.
