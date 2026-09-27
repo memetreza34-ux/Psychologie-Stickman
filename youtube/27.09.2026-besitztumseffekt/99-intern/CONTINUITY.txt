@@ -1,0 +1,10 @@
+CONTINUITY — BESITZTUMSEFFEKT
+
+Globaler Stil kommt aus `rules/VISUAL_SYSTEM.md` und `assets/cinematic-psychology-world/`.
+
+Lokale Kontinuität:
+- Szene 03–05: derselbe Tassen-Besitzer, gleiche Kleidung und gleiche Tasse.
+- Szene 10–12: derselbe Verkäufer mit denselben alten Kopfhörern.
+- Sonstige Szenen dürfen neue Figuren verwenden.
+
+Keine Figur, kein Raum und keine Komposition wird nur wegen einer Referenz kopiert. Nicht-Figur-Szenen bleiben trotzdem eindeutig Teil derselben Filmwelt.

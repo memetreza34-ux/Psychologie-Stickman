@@ -1,0 +1,287 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+VISUAL SYSTEM: CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V1
+REPRESENTATION POLICY: MIXED_PSYCHOLOGY_VISUALS_V1
+FORMAT: 16:9 / 1920x1080
+
+GLOBAL WORLD — HARD LOCK
+Create a cinematic 2D illustrated frame for a modern psychology YouTube channel. Keep one consistent visual world: stylized stickman-inspired characters with large simple round heads, minimal expressive faces, compact clothed torsos, very slim simplified limbs, simple hands and shoes. Characters are clearly simplified but NOT bare line stickmen and NOT normal cartoon humans. Use colorful believable environments, clean slightly organic outlines, soft cel shading, natural depth, purposeful cinematic framing, controlled colors, warm/cool lighting and small meaningful details. When no character is needed, schemas, text graphics, objects, comparisons and metaphors must use the exact same linework, color, shading, lighting and illustration quality. No photorealism, no 3D/Pixar, no anime, no corporate vector look, no whiteboard doodle style.
+
+SCENE TYPES
+- CHARACTER_SCENE: relatable character action in a believable place
+- SCHEMA_EXPLAINER: illustrated mechanism or relationship; character optional
+- OBJECT_METAPHOR: symbolic object/environment; character optional
+- COMPARE_VISUAL: two states/options in one coherent frame
+- TEXT_ILLUSTRATION: short exact German phrase integrated into a strong illustration
+
+WORLD CONSISTENCY
+Keep the same character family, linework, soft cel shading, depth, color behavior and lighting language across every frame. Vary identity, clothing, location, camera and mood to fit the beat. Repeat a person only for genuine local continuity.
+
+VISIBLE TEXT — GOOGLE FLOW ONLY
+NO REMOTION TEXT.
+Only render the exact German strings listed in the current scene. All other screens, books, posters, packaging and documents must use abstract marks. If PLANNED GERMAN TEXT is NONE, use ZERO READABLE TEXT.
+
+TYPOGRAPHY
+Clean modern editorial typography integrated into the illustrated world. Safe margins. No meme/sticker style, no 3D/glow typography, no corporate PowerPoint look.
+
+REFERENCE SYSTEM
+Use approved files from assets/cinematic-psychology-world/ as STYLE/CHARACTER-FAMILY/LINEWORK/COLOR/SHADING/LIGHTING references only. Do not clone exact characters, rooms, poses, composition or readable text.
+
+COVER
+Scene 01 is first hook + cover. Stronger focal contrast and clean title zone. Scene 01 is NOT the global style master.
+
+BATCH WORKFLOW
+1. Generate Scene 01 only and STOP for user approval.
+2. Save approved image as 03-bilder/01.png.
+3. Continue in batches of max 5 images.
+4. Internal QA after each batch; regenerate only failures.
+
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Warum würdest du für dieselbe Tasse plötzlich mehr Geld verlangen, nur weil sie dir gehört? Genau das beschreibt der Besitztumseffekt.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+VISUAL IDEA: The identical mug feels more valuable to its owner than to a potential buyer.
+CAMERA: strong medium-wide cover composition
+LIGHTING MOOD: warm table light with cool background separation
+CHARACTER DIRECTION: owner in a dark teal hoodie holding the mug protectively; buyer opposite in muted rust jacket, skeptical but calm
+PLANNED GERMAN TEXT:
+- "WARUM DEINS MEHR WERT IST"
+PROMPT:
+At a small second-hand sale table, an owner holds a simple ceramic mug close while a buyer offers a modest amount with an open palm. Make the emotional ownership conflict instantly readable. Integrate exactly "WARUM DEINS MEHR WERT IST" in a clean safe title zone. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+
+SCENE 02
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Sobald wir etwas besitzen, verändert sich oft unser Gefühl für seinen Wert.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: Ownership shifts subjective value upward.
+CAMERA: clean frontal illustrated schema
+LIGHTING MOOD: soft blue/amber film-world lighting
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "BESITZTUMSEFFEKT"
+- "MEINS"
+- "MEHR WERT"
+PROMPT:
+Create an illustrated psychology schema in the same cinematic world: a mug moves from a neutral position into an ownership zone, then its perceived-value indicator rises. Render exactly the listed German texts and NO OTHER READABLE TEXT.
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Stell dir vor, du bekommst bei einem Experiment eine Tasse geschenkt.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+VISUAL IDEA: A participant receives the mug and becomes its owner.
+CAMERA: medium three-quarter shot
+LIGHTING MOOD: bright neutral room with warm table light
+CHARACTER DIRECTION: young adult participant in blue overshirt; researcher in mustard cardigan; both simplified stickman-inspired figures
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+In a simple behavioral-study room, a researcher hands a ceramic mug to a participant across a table. The participant looks pleasantly surprised and takes possession of it. Use a few believable study-room details. ZERO READABLE TEXT.
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Kurz danach sollst du sagen, für welchen Preis du sie verkaufen würdest.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: The new owner now has to choose a selling price.
+CAMERA: close-medium over-shoulder
+LIGHTING MOOD: soft neutral daylight
+CHARACTER DIRECTION: same participant for local continuity, mug held in one hand, thoughtful expression
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+The same participant studies the mug and thinks carefully about a selling price. Show a blank price card with abstract marks only, no numbers or words. Keep the focus on hesitation and attachment. ZERO READABLE TEXT.
+
+SCENE 05
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Eine andere Person besitzt diese Tasse nicht und soll sagen, wie viel sie dafür zahlen würde.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: DUO
+VISUAL IDEA: Owner and non-owner judge the identical mug from opposite positions.
+CAMERA: balanced left-right comparison inside one coherent room
+LIGHTING MOOD: same room with subtle warm/cool separation
+CHARACTER DIRECTION: owner holds mug close; non-owner examines an identical mug calmly from the opposite side
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Create a coherent left-right comparison in the same illustrated study room. Left: owner holds the mug close and looks reluctant to part with it. Right: non-owner calmly evaluates an identical mug as a potential purchase. ZERO READABLE TEXT.
+
+SCENE 06
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Häufig verlangt der Besitzer deutlich mehr, als der Käufer ausgeben möchte.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: NONE
+VISUAL IDEA: Seller valuation is visibly higher than buyer valuation.
+CAMERA: frontal illustrated value comparison
+LIGHTING MOOD: soft cinematic studio light
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "VERKAUFEN"
+- "KAUFEN"
+PROMPT:
+In the same cinematic illustrated world, show the same mug between two clean value markers: the seller side clearly higher, the buyer side clearly lower. Render exactly "VERKAUFEN" and "KAUFEN". NO OTHER READABLE TEXT.
+
+SCENE 07
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Warum? Ein Grund ist, dass Abgeben sich wie ein Verlust anfühlen kann.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: Giving up an owned object feels like losing something.
+CAMERA: close object metaphor
+LIGHTING MOOD: warm object light with cool shadow
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+A ceramic mug rests in a warm pool of light while a subtle red thread anchors it to an unseen owner outside frame; a hand begins to move it away and the thread pulls tight. Make loss and resistance immediately readable. ZERO READABLE TEXT.
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Sobald etwas „meins“ ist, wird Behalten zum Ausgangspunkt.
+SCENE TYPE: TEXT_ILLUSTRATION
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: Ownership becomes the psychological reference point.
+CAMERA: graphic illustrated frame
+LIGHTING MOOD: soft warm focal light
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "MEINS WIRD ZUM AUSGANGSPUNKT"
+PROMPT:
+Create a strong illustrated psychology frame with the mug centered inside a warm personal space while alternative choices sit farther away and dimmer. Integrate exactly "MEINS WIRD ZUM AUSGANGSPUNKT". NO OTHER READABLE TEXT.
+
+SCENE 09
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Verkaufen bedeutet dann nicht nur Geld bekommen, sondern auch etwas verlieren.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: Money arrives while the owned object leaves.
+CAMERA: close-medium symbolic composition
+LIGHTING MOOD: warm coins versus cooler departing object
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+A simplified hand receives a few coins from one side while the familiar mug is simultaneously being carried away on the other side. The composition should make gain and loss happen at the same moment. ZERO READABLE TEXT.
+
+SCENE 10
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das kann im Alltag passieren, wenn du alte Technik, Kleidung oder Sammlerstücke verkaufen willst.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: Everyday seller overvalues familiar possessions.
+CAMERA: wide environmental shot
+LIGHTING MOOD: cozy evening apartment light
+CHARACTER DIRECTION: different young adult character in burgundy sweater, seated on floor among used headphones, jacket and collectible figure
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+At home in the evening, a character prepares several used possessions for an online sale: old headphones, a jacket and a small collectible. They pause over the items with visible attachment. Phone and laptop screens contain abstract blocks only. ZERO READABLE TEXT.
+
+SCENE 11
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du erinnerst dich an den Kaufpreis, an Erlebnisse oder daran, wie lange du das Ding schon besitzt.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: MONTAGE
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: Memories and history become attached to the object.
+CAMERA: main medium shot plus two small memory inserts
+LIGHTING MOOD: warm nostalgic memory light
+CHARACTER DIRECTION: same seller for local continuity, holding old headphones
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Main scene: the seller holds old headphones. Around the main image, two small softly framed memory moments from the SAME beat show buying them years ago and using them on a memorable trip. Keep one coherent film-world and clear hierarchy. ZERO READABLE TEXT.
+
+SCENE 12
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Für einen Käufer zählt das alles viel weniger. Der Effekt ist aber kein Naturgesetz.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: DUO
+VISUAL IDEA: Seller sees personal history; buyer mostly sees a used object.
+CAMERA: coherent split perspective
+LIGHTING MOOD: warmer seller side, neutral buyer side
+CHARACTER DIRECTION: seller emotionally connected; buyer objectively inspects condition
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Show the same used headphones between seller and buyer. The seller side contains faint warm memory imagery; the buyer side focuses on visible wear and practical condition. Keep the contrast nuanced rather than absolute. ZERO READABLE TEXT.
+
+SCENE 13
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Erfahrung, Situation und Erwartungen können ihn deutlich abschwächen.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: Three contextual factors can reduce the strength of the effect.
+CAMERA: clean frontal mechanism schema
+LIGHTING MOOD: world-consistent blue/amber light
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "EFFEKT WIRD SCHWÄCHER"
+- "ERFAHRUNG"
+- "SITUATION"
+- "ERWARTUNG"
+PROMPT:
+Create a cinematic illustrated schema where three inputs reduce the size of an ownership-value glow around an object. Render exactly the four listed German texts and NO OTHER READABLE TEXT.
+
+SCENE 14
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein einfacher Test hilft: Frag dich nicht „Wie viel ist mein Gegenstand wert?“
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: Pause before pricing and question the first valuation.
+CAMERA: close-medium side angle
+LIGHTING MOOD: quiet focused desk light
+CHARACTER DIRECTION: experienced seller in simple olive jacket, calm posture, comparing the object with several abstract market listings
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+A calm seller pauses before entering a price and compares the used item with several similar abstract listings on a laptop. The scene should communicate deliberate re-evaluation rather than attachment. ZERO READABLE TEXT.
+
+SCENE 15
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Sondern: „Würde ich ihn heute für genau diesen Preis noch einmal kaufen?“
+SCENE TYPE: TEXT_ILLUSTRATION
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: A simple question reframes the decision from ownership to fresh choice.
+CAMERA: clean illustrated text frame
+LIGHTING MOOD: soft focused light with calm background
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "WÜRDE ICH ES HEUTE NOCH KAUFEN?"
+PROMPT:
+Place the familiar object on a calm desk between a subtle buy icon and a neutral price tag shape. Integrate exactly "WÜRDE ICH ES HEUTE NOCH KAUFEN?" as the single dominant phrase. NO OTHER READABLE TEXT.
+
+SCENE 16
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wenn deine Antwort Nein ist, hält vielleicht nicht der echte Marktwert dich fest, sondern dein Gefühl von „meins“.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+VISUAL IDEA: Seller accepts a fairer price and lets the object go.
+CAMERA: medium-wide closing shot
+LIGHTING MOOD: balanced warm hopeful light
+CHARACTER DIRECTION: seller relaxed now, buyer receives the item, both individualized within the same stickman-inspired family
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+At a small second-hand handoff, the seller calmly gives the item to a buyer at a fair price. The seller looks relieved rather than regretful. Use a believable colorful setting and a clean closing composition. ZERO READABLE TEXT.
+
+FINAL QA
+- same cinematic illustrated world across every scene type
+- characters match STYLIZED_STICKMAN_CAST_V1
+- no bare line-stickman drift
+- no normal full cartoon-human drift
+- no 3D/photorealistic/anime/corporate-vector drift
+- soft cel shading and believable environment remain consistent
+- schemas and text illustrations look like part of the same film-world
+- one clear current beat per frame
+- every planned German text exact
+- no accidental readable background text
+- no visible Remotion text
