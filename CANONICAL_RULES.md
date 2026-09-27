@@ -4,321 +4,181 @@
 
 Thema: **Alltagspsychologie & menschliches Verhalten**.
 
-Verbindlich:
-- `rules/STICKMAN_DNA.md`
-- `rules/FORMAT_LOCK.md`
-- `rules/YOUTUBE_THEMEN_SYSTEM.md`
-- `rules/YOUTUBE_STYLE_LOCK.md`
-- `rules/PREMIUM_VISUAL_LOCK.md`
-- `rules/SCRIPT_HOOK_LOCK.md`
-- `rules/IMAGE_REFERENCE_LOCK.md`
-- `rules/COVER_LOCK.md`
-- `rules/TEXT_OVERLAY_LOCK.md`
-- `rules/FLOW_TEXT_STYLE_LOCK.md`
-- `rules/COMPOSITION_VARIATION_LOCK.md`
-- `rules/SOCIAL_SCENE_LOCK.md`
-- `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-- `rules/PRODUCTION_FORMAT_RULES.md`
-
-`rules/STICKMAN_DNA.md` ist die zentrale Anatomie-Source-of-Truth. `rules/PREMIUM_VISUAL_LOCK.md` definiert Premium-Figurenführung, Farbe und Bildqualität. `rules/SCRIPT_HOOK_LOCK.md` definiert den Einstieg neuer YouTube-Skripte.
-
-Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
+Kernversprechen: Warum Menschen denken, fühlen und handeln, wie sie tun — verständlich, evidenzorientiert und visuell erklärt.
 
 Keine medizinischen Diagnosen, Therapieanweisungen oder pseudowissenschaftlichen Versprechen.
 
-## Getrennte Formate
+## Source of Truth
 
-### YouTube
-Pfad: `youtube/`
-- 16:9 / 1920×1080 / 30 fps
-- Remotion: `Phase3YouTube`
-- sichtbare Struktur: `01-script/`, `02-google-flow/`, `03-bilder/`, `04-audio/`, `05-export/`, `99-intern/`
+Für neue Produktionen gilt diese Priorität:
+1. `rules/VISUAL_SYSTEM.md` — gesamte aktive Bildwelt
+2. `rules/visual-system.json` — maschinenlesbare Bildwelt
+3. `rules/STICKMAN_DNA.md` — Anatomie
+4. `rules/FORMAT_LOCK.md` — Format
+5. `rules/SCRIPT_HOOK_LOCK.md` — Einstieg
+6. `rules/YOUTUBE_VISUAL_BEAT_RULES.md` — Beat-Aufteilung
+7. `rules/COMPOSITION_VARIATION_LOCK.md` + `rules/SOCIAL_SCENE_LOCK.md`
+8. `rules/TEXT_OVERLAY_LOCK.md` + `rules/FLOW_TEXT_STYLE_LOCK.md`
+9. `rules/IMAGE_REFERENCE_LOCK.md`
 
-### Reels
-Pfad: `reels/`
-- 9:16 / 1080×1920 / 30 fps
-- Remotion: `Phase3Reel`
+`rules/YOUTUBE_STYLE_LOCK.md` und `rules/PREMIUM_VISUAL_LOCK.md` bleiben als Kompatibilitätsdateien bestehen, dürfen aber `rules/VISUAL_SYSTEM.md` nicht überschreiben.
 
-YouTube und Reels werden nicht vermischt.
+## Aktive Bildwelt
 
-## Produktionsfolge
+**Minimal Editorial Stickman World v2**
 
-THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → finales Skript → Phase 1 Visual Beats → Projektpalette + Premium-Visual-Plan → Phase 2 Google-Flow-Bilder → finales Audio/Timings → Phase 3 Schnitt/Render → Final-QA.
+Policy: `MINIMAL_EDITORIAL_STICKMAN_V2`
 
-## Skript-Einstieg — HARD LOCK
+Die alte `Universal Editorial Stickman World v1.3` / `PREMIUM_EDITORIAL_CINEMATIC_V1` ist Legacy und wird für neue Produktionen nicht mehr verwendet.
 
-Neue YouTube-Projekte verwenden `scriptHookPolicy: "HOOK_FIRST_EXPLAIN_EARLY_V1"`.
+### Leitidee
 
-Die ersten Szenen folgen grundsätzlich:
-1. klare Hook-Frage oder überraschende direkte Aussage
-2. Kernbegriff früh nennen
-3. einfach erklären
-4. konkretes Alltagsbeispiel früh zeigen
-5. erst danach Experiment, Mechanismus und Vertiefung
+**Simple stickmen. Sparse editorial world. One visual idea. One dominant accent. Instant readability.**
 
-Richtwerte:
-- Hook in Szene 01
-- Kernbegriff spätestens Szene 03 / ungefähr erste 50 Wörter
-- erstes konkretes Alltagsbeispiel spätestens Szene 05 / ungefähr erste 80 Wörter
+### Kanalpalette
 
-Bevorzugte Hook-Typen:
-- `WHAT_IS`
-- `WHY_DOES`
-- `HAVE_YOU_WONDERED`
-- `DIRECT_SURPRISE`
-- `DIRECT_PROBLEM`
+- Background: `#F6F3EA`
+- Ink: `#202124`
+- Blue: `#3F6EDB`
+- Coral / Problem: `#E7684A`
+- Green / Lösung: `#4E9B78`
+- Optional Amber: `#D6A23D`
 
-Keine langsame abstrakte Vorrede als Standard.
+Keine komplett neue Projektpalette pro Video.
+Normale Szene: meistens eine dominante Akzentfarbe.
 
-Details: `rules/SCRIPT_HOOK_LOCK.md`.
+### Umgebung
+
+**Suggest, do not render.**
+
+- typischerweise 1–5 relevante Requisiten
+- große Negativflächen
+- einfache Boden-/Wandlinie nur wenn nötig
+- flache Shapes
+- kein unnötiges Dekor
+- kein globaler Cinematic-Look
+- keine reichen detailvollen Umgebungen als Default
+- keine Materialtexturen oder komplexes Cel-Shading als Qualitätsmerkmal
+
+### Figuren
+
+Alle Personen folgen `rules/STICKMAN_DNA.md`:
+- runder/leicht ovaler flacher Kopf
+- minimale Punkt-/Strichmimik
+- flacher kompakter Torso
+- sehr dünne lineare Arme/Beine
+- keine Finger
+- keine realistische Anatomie
+- Kleidung nur als einfache grafische Form
+
+## Szenenfamilien
+
+Für typische Psychologie-Videos:
+- ca. 60% `EVERYDAY_MINIMAL`
+- ca. 25% `CONCEPT_METAPHOR`
+- ca. 10% `COMPARE_CHANGE`
+- höchstens ca. 5% Diagramm/Chart
+
+Das sind Richtwerte, kein mathematischer Zwang.
 
 ## Visual-Beat-Prinzip
 
 Ein wichtiger neuer visueller Gedanke bekommt grundsätzlich ein eigenes Bild.
 
 Verbindlich:
-- konkrete Alltagsszene vor generischer Infografik
-- genau ein primärer visueller Gedanke pro Bild
+- ein primärer Gedanke
 - ein klares Hauptmotiv
 - höchstens 1–2 unterstützende Hinweise
-- mehrere Teilbilder nur, wenn sie denselben Beat erklären
-- keine unnötige Wiederholung derselben Pose oder Komposition
-- Master sperrt Stil, nicht Kamera oder Aufbau
+- konkrete einfache Handlung oder klare Metapher
+- keine Detailzugabe nur für Premium-Wirkung
+- Zuschauer soll die Aussage ungefähr in einer Sekunde erfassen können
 
 Dichte:
 - meist 10–16 Wörter pro Beat
 - Zielwert 14
 - normale Obergrenze 20
-- 21–28 nur als geprüfte Ausnahme
+- 21–28 nur als Ausnahme
 - absolute Obergrenze 28
-- durchschnittlich höchstens 16 Wörter pro Szene
 
-## Premium Visual Direction — HARD LOCK
+## Script-Einstieg
 
 Neue YouTube-Projekte verwenden:
-- `premiumVisualPolicy: "PREMIUM_EDITORIAL_CINEMATIC_V1"`
-- `colorStoryPolicy: "INTENTIONAL_COLOR_STORY_V1"`
+`scriptHookPolicy: "HOOK_FIRST_EXPLAIN_EARLY_V1"`
 
-Jedes neue Video definiert vor Flow eine `projectPalette` mit:
-- `primary`
-- `secondary`
-- `accent`
-- `neutral`
-- `avoid`
+Richtwerte:
+- Hook in Szene 01
+- Kernbegriff spätestens Szene 03 / ungefähr erste 50–60 Wörter
+- erstes konkretes Alltagsbeispiel spätestens Szene 05
 
-Premium bedeutet **nicht realistischere Menschen**. STRICT STICKMAN ONLY bleibt bestehen.
+## Referenzsystem
 
-Premium entsteht durch:
-- ausdrucksstarke Pose/Körpersprache
-- bewusstes minimalistisches Gesicht
-- rollenbezogene Kleidung und Requisiten
-- charakteristische Silhouette
-- glaubwürdige Interaktion
-- Vorder-/Mittel-/Hintergrund
-- bewusstes Licht
-- klare Fokuszone
-- hochwertige detailreiche Umgebung
-- kontrollierte, thematisch passende Farben
+Die permanente Kanalreferenz liegt unter:
+`assets/style-v2/`
 
-Nicht akzeptabel als Default:
-- grauer/beiger Einheitswash
-- sterile Office-Welt über viele Szenen
-- neutrale Platzhalterfigur vor einem Symbol
-- endlose Lehrgrafiken, Waagen, Karten, Skalen oder riesige schwebende Zahlen, wenn eine echte Alltagsszene möglich ist
+Zielassets:
+- `style-master.png`
+- `anatomy-sheet.png`
+- `environment-examples.png`
+- `metaphor-examples.png`
+- `thumbnail-reference.png`
 
-Priorität:
-**echte Alltagsszene > visuelle Metapher > abstrakte Lehrgrafik.**
+Bis diese Bilder erzeugt/freigegeben sind, sind `rules/VISUAL_SYSTEM.md` + `rules/visual-system.json` maßgeblich.
 
-Details: `rules/PREMIUM_VISUAL_LOCK.md`.
+`03-bilder/01.png` darf aus Pipeline-Gründen weiterhin Szene 01 + Cover sein, ist aber **nicht mehr der globale Style-Master**.
 
-## Kompositionsvariation — HARD LOCK
+## Textsystem
 
-Neue YouTube-Projekte verwenden `visualPlanningPolicy: "VARIED_COMPOSITION_V1"`.
+Die Textpipeline wird durch die v2-Bildwelt-Migration nicht verändert.
 
-Jede Szene trägt:
-- `compositionType`: `standard`, `split`, `contrast` oder `montage`
-- `socialDensity`: `solo`, `duo` oder `group`
-
-Planungsziel für typische 2–3-Minuten-Videos:
-- ungefähr 70 % normale konkrete Szenen
-- ungefähr 20 % Split-/Kontrast-Kompositionen
-- ungefähr 10 % Multi-Panel-/Montage-Kompositionen
-
-Die Prozentwerte sind ein Anti-Monotonie-Ziel, kein Zwang. Inhaltliche Klarheit gewinnt immer.
-
-Multi-Panel ist ausdrücklich erlaubt, wenn alle Teilmotive **denselben gesprochenen Beat** erklären.
-
-Details:
-- `rules/COMPOSITION_VARIATION_LOCK.md`
-- `rules/SOCIAL_SCENE_LOCK.md`
-
-## Soziale Bildlogik
-
-Psychologie-Videos sollen nicht fast nur isolierte Einzelstickmen zeigen.
-
-Bei Feedback, Gespräch, Zustimmung/Widerspruch, Publikum, Beobachtung, Gruppe, Familie, Freunden, Kollegen, Experimenten oder sozialem Vergleich werden `duo`/`group` aktiv bevorzugt.
-
-Für typische Videos mit mindestens 20 Szenen sind mehrere Duo- und Gruppenszenen vorgesehen, sofern das Thema es zulässt.
-
-## Bildwelt
-
-**Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY**
-
-Jede sichtbare menschliche oder menschenähnliche Figur bleibt ein echter Stickman, auch im Hintergrund, auf Screens, Fotos, Postern, Werbung und Spiegelungen.
-
-Verbindliche Anatomie:
-- einfacher runder/ovaler Kopf
-- minimale Gesichtszüge
-- keine realistische Nase/Ohren
-- kleiner vereinfachter Torso
-- sehr dünne lineare Arme und Beine
-- einfache Hände ohne Fingeranatomie
-- stark vereinfachte Füße/Schuhe
-
-Nicht erlaubt:
-- normale Cartoon-Menschen
-- semi-realistische oder realistische Menschen
-- gemischte Human-/Stickman-Stile
-- Photorealismus
-- 3D/CGI
-- Anime/Chibi
-
-Die Umgebung muss glaubwürdig, farbig, detailreich und hochwertig illustriert sein. Vordergrundfiguren sollen trotz einfacher Anatomie **bewusst designt und premium inszeniert** wirken.
-
-## Textsystem — GOOGLE FLOW ONLY
-
-Für **YouTube** gilt:
-
-**Sämtlicher sichtbarer Text wird direkt von Google Flow in die jeweiligen Bilder gerendert. Remotion erzeugt keinen sichtbaren Text.**
-
-### Geplante Textmomente
-- Szene 01: exakter deutscher Cover-Titel, 2–7 Wörter
-- ausgewählte spätere Szenen: exakte deutsche Keywords/Merksätze, maximal 5 Wörter
-- typische Textdichte 15–25 %
-- harte Obergrenze 30 %
-
-### Nicht geplante Textmomente
-**ZERO READABLE TEXT.**
-
-Screens, Karten und Dokumente nutzen abstrakte Linien, Formen und Icons, sofern die Szene kein ausdrücklich geplantes Textmoment ist.
-
-### Typografie-Ästhetik — HARD LOCK
-- professionelle integrierte Editorial-Typografie
-- klare sichere Ränder
-- keine generische Meme-/Sticker-Schrift
-- keine extrem dicke Outline als Standard
-- Text muss wie Teil der Bildkomposition wirken
-- Titel/Keyword dürfen Hauptmotiv oder Handlung nicht verdecken
-
-Jeder neue Flow-Prompt enthält `TYPOGRAPHY AESTHETIC — HARD LOCK`.
-
-### Qualität
-Jeder geplante Text wird im Flow-Prompt exakt vorgegeben. Falsche Schreibweise, abgeschnittene Buchstaben, Pseudo-Schrift, zusätzliche Wörter oder sichtbar schlechte typografische Integration führen zur Regeneration genau dieses Bildes.
-
-### Remotion
-Für neue YouTube-Projekte:
+Für YouTube:
+- geplante Textmomente: exakter deutscher Text direkt im Google-Flow-Bild
+- Cover: 2–7 Wörter
+- spätere Keywords: maximal 5 Wörter
+- alle übrigen Szenen: `ZERO READABLE TEXT`
 - `sceneLabels: []`
-- keine YouTube-Auto-Captions
 - `renderGermanLabelsInRemotion: false`
-- Remotion übernimmt nur Schnitt, Audio, technische Bildbewegung und Export
 
-Details:
-- `rules/TEXT_OVERLAY_LOCK.md`
-- `rules/FLOW_TEXT_STYLE_LOCK.md`
+## Neue v2-Metadaten
 
-## Scene 01 — Cover + Master + erster Visual Beat
-
-Für jedes YouTube-Projekt gilt:
-
-**`03-bilder/01.png` = SCENE 01 + COVER/THUMBNAIL + STYLE-/ANATOMY-MASTER.**
-
-Szene 01 muss:
-- den ersten gesprochenen Hook-Beat korrekt darstellen
-- bewusst stärker als eine normale Szene als Thumbnail komponiert sein
-- ein dominantes Hauptmotiv und klare visuelle Spannung haben
-- die Premium-/Farbqualität des Videos etablieren
-- die Stickman-/Welt-DNA etablieren
-- den exakten deutschen Cover-Titel direkt aus Google Flow enthalten
-- außer diesem Titel keinen weiteren lesbaren Text enthalten
-
-Ein separates Pflicht-`cover.png` wird nicht geführt.
-
-## Master-Referenz + automatische 5er-Batches
-
-- Bild 01 zuerst allein generieren
-- Cover-Titel, Coverstärke, Premium-Figuren, Farbwelt und Typografie exakt prüfen
-- STOP und Nutzerfreigabe
-- Bild 01 bleibt Master
-- ab Bild 02 Master bei jeder Generierung anhängen
-- Titel aus Bild 01 nicht kopieren
-- bei geplanten späteren Textmomenten nur deren eigenen exakten deutschen Text rendern
-- nicht geplante Szenen bleiben textfrei
-- danach höchstens 5 neue Bilder pro Batch
-- interne QA nach jedem Batch
-- nur fehlerhafte Bilder regenerieren
-- nach vollständigem PASS automatisch weiter
-
-**Regulär genau eine Nutzerfreigabe: nach Bild 01.**
-
-## Neue Metadaten
-
-Neue YouTube-Projekte verwenden:
+Neue Projekte verwenden mindestens:
 
 ```json
 {
-  "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
-  "hookType": "WHAT_IS",
-  "coreConceptTerm": "",
-  "coreConceptIntroducedByScene": 3,
-  "realLifeExampleByScene": 5,
-  "realLifeExampleSummary": "",
-  "premiumVisualPolicy": "PREMIUM_EDITORIAL_CINEMATIC_V1",
-  "colorStoryPolicy": "INTENTIONAL_COLOR_STORY_V1",
-  "projectPalette": {
-    "primary": "",
-    "secondary": "",
-    "accent": "",
-    "neutral": "",
-    "avoid": ["grey/beige wash"]
+  "visualSystem": "MINIMAL_EDITORIAL_STICKMAN_V2",
+  "channelPalette": {
+    "background": "#F6F3EA",
+    "ink": "#202124",
+    "primary": "#3F6EDB",
+    "problem": "#E7684A",
+    "solution": "#4E9B78",
+    "optionalSignal": "#D6A23D"
   },
-  "visibleTextLanguage": "de",
-  "visibleTextRenderer": "GOOGLE_FLOW",
-  "renderGermanLabelsInRemotion": false,
-  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
-  "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
-  "flowTextStylePolicy": "EDITORIAL_INTEGRATED_V1",
+  "environmentPolicy": "SPARSE_SUGGESTED_ENVIRONMENT_V1",
+  "accentPolicy": "ONE_DOMINANT_ACCENT_V1",
+  "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
   "visualPlanningPolicy": "VARIED_COMPOSITION_V1",
   "socialScenePolicy": "SOCIAL_VARIETY_V1",
-  "flowTextMoments": [],
-  "sceneLabels": []
+  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3"
 }
 ```
 
-## Einfache YouTube-Arbeitsfläche
+Legacy keys such as `premiumVisualPolicy`, `colorStoryPolicy` and per-video `projectPalette` are not required for v2.
 
-Der Nutzer arbeitet regulär nur mit:
-- `01-script/script.txt`
-- `02-google-flow/google-flow-prompt.txt`
-- `03-bilder/`
-- `04-audio/`
-- `05-export/`
+## Produktionsfolge
 
-Technische Hilfsdateien gehören nach `99-intern/`.
-
-Die eine `google-flow-prompt.txt` enthält alle Szenenprompts, zentrale DNA, Projektpalette, Premium-Visual-Regeln, alle exakten geplanten deutschen Texte, ZERO READABLE TEXT für alle übrigen Szenen, Typografie-/Kompositions-/Social-Hard-Locks und den Batch-Ablauf.
-
-## Audio
-
-- finales Voice-over exakt 1,10×
-- Tonhöhe erhalten
-- führende Stille entfernen
-- lange Pausen straffen
-- Wörter niemals anschneiden
-- Timings aus final verarbeitetem Audio
+THEMA + QUELLEN + CLAIM-CHECK
+→ HOOK-/EINSTIEGSPLAN
+→ finales Skript
+→ Visual Beats
+→ v2-Szenenfamilie + Akzentrolle + Minimal-Props
+→ Google-Flow-Bilder
+→ finales Audio/Timings
+→ Remotion
+→ Final-QA
 
 ## Qualitätssicherung
 
-Bei Pipeline-/Strukturänderungen mindestens:
+Bei Änderungen mindestens:
 - `npm run typecheck`
 - `npm run qa:visual-density`
 - `npm run qa:auto-visual-planning`
@@ -326,24 +186,21 @@ Bei Pipeline-/Strukturänderungen mindestens:
 - `npm run qa:premium-content`
 - `npm run qa:flow-prompts`
 - `npm run qa:text-overlays`
-- relevante Format-/Produktionschecks
+
+Der Dateiname `qa:premium-content` bleibt aus Kompatibilitätsgründen bestehen; für v2 bedeutet Qualität **Minimalität + Klarheit + Konsistenz**, nicht Cinematic-Premium-Rendering.
+
+## Hard Fail v2
+
+- normale Cartoon-/semi-realistische/realistische Menschen
+- 3D/CGI/Pixar/Anime/Chibi
+- dicke anatomische Gliedmaßen oder Finger
+- reiche detaillierte Welt als Default
+- cinematic lighting als Default
+- unnötige Material-/Fashion-Details
+- zu viele konkurrierende Akzentfarben
+- unklarer primärer Gedanke
+- Dekoration ohne Erklärfunktion
 
 ## Priorität
 
-Bei Format-Widerspruch gewinnt `rules/FORMAT_LOCK.md`.
-
-Bei visueller Anatomie gewinnt `rules/STICKMAN_DNA.md`.
-
-Bei Premium-/Farb-Widerspruch gewinnt `rules/PREMIUM_VISUAL_LOCK.md`.
-
-Bei Script-Einstieg gewinnt `rules/SCRIPT_HOOK_LOCK.md`.
-
-Bei Cover-Widerspruch gewinnt `rules/COVER_LOCK.md`.
-
-Bei Text-Widerspruch gewinnt `rules/TEXT_OVERLAY_LOCK.md`; für Typografie gewinnt zusätzlich `rules/FLOW_TEXT_STYLE_LOCK.md`.
-
-Bei Kompositions-Widerspruch gewinnt `rules/COMPOSITION_VARIATION_LOCK.md`.
-
-Bei Cast-/Sozialdichte gewinnt `rules/SOCIAL_SCENE_LOCK.md`.
-
-Beim Batch-Widerspruch gilt: nur Bild 01 braucht Nutzerfreigabe; danach automatische 5er-Batches mit interner QA.
+Bei visuellem Konflikt gewinnt immer `rules/VISUAL_SYSTEM.md`.
