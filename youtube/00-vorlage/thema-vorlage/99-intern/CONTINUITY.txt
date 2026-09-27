@@ -1,37 +1,62 @@
-CONTINUITY — YOUTUBE TEMPLATE
+CONTINUITY — YOUTUBE TEMPLATE v2
 
-MASTER
-- Bild 01 zuerst allein generieren.
-- Bild 01 nur freigeben, wenn STRICT STICKMAN ONLY vollständig erfüllt ist.
-- Bild 01 als `03-bilder/01.png` speichern.
-- Für jedes Bild ab 02 `01.png` als Referenz anhängen.
-- Master bleibt für das gesamte Video verbindlich.
+GLOBAL STYLE REFERENCE
+- Scene 01 is NOT the global style master.
+- Global visual source of truth: rules/VISUAL_SYSTEM.md + rules/visual-system.json.
+- Approved permanent references live under assets/style-v2/ when available.
 
-STICKMAN-KONTINUITÄT
-- gleiche Kopf-/Torso-Proportionen
-- gleiche minimale Gesichtslogik
-- sehr dünne lineare Arme/Beine
-- keine fleischigen Gliedmaßen
-- keine realistischen Hände/Finger
-- gleiche Hand-/Fußvereinfachung
-- gleiche Linien-/Shading-Logik
-- wiederkehrende Hauptfigur über Kleidung/Farbe/Accessoires konstant halten
+SCENE 01
+- generate Scene 01 alone under the current workflow
+- approve hook clarity, exact title, v2 anatomy, sparse environment, palette restraint and negative space
+- save as 03-bilder/01.png
+- Scene 01 may be used as a local project reference, but must not redefine channel anatomy/rendering
 
-ALLE PERSONEN
-Jede sichtbare Person im Vorder-, Mittel- und Hintergrund sowie auf Screens, Fotos, Postern, Werbung oder Spiegelungen muss die gleiche echte Stickman-Grundanatomie verwenden.
+STICKMAN CONTINUITY
+- same round/slightly oval head system
+- same minimal face logic
+- same compact flat torso system
+- same very thin line arms/legs
+- no realistic hands/fingers
+- same tiny hand/foot simplification
+- same charcoal line language
+- same flat-fill simplicity
 
-BATCH-WORKFLOW
-- nach Master-Freigabe maximal 5 neue Bilder pro Batch
-- danach STOP
-- alle Bilder gegen 01.png prüfen
-- nur fehlerhafte Bilder regenerieren
-- nächster Batch erst nach vollständigem PASS
+RECURRING CHARACTER
+Only preserve exact identity when genuine local continuity requires it:
+- head size/shape
+- torso color/shape
+- relevant tiny accessory
+- approximate height
+
+Otherwise choose a scene-appropriate cast while keeping the same DNA.
+
+ENVIRONMENT CONTINUITY
+Consistency means the SAME LEVEL OF SIMPLIFICATION, not the same room.
+- use only necessary props
+- large negative space
+- avoid rich/detailed backgrounds
+- no cinematic lighting
+- no complex material/shading drift
+
+COLOR CONTINUITY
+- background #F6F3EA
+- ink #202124
+- channel accents only
+- normal scene usually one dominant accent
+
+BATCH WORKFLOW
+- after Scene 01 approval: max 5 new images per batch
+- compare against v2 system/reference pack
+- regenerate only failed images
+- continue after full PASS
 
 HARD FAIL
-- normale Cartoon-Menschen
-- semi-realistische/realistische Menschen
-- Hintergrundfiguren mit anderer Anatomie
-- dicke menschliche Arme/Beine
-- realistische Hände/Finger/Nasen/Ohren
-- 3D/CGI/Anime/Chibi
-- Style-Drift gegenüber 01.png
+- conventional cartoon/semi-realistic/realistic humans
+- background people using different anatomy
+- thick anatomical limbs
+- realistic hands/fingers/noses/ears
+- 3D/CGI/Pixar/Anime/Chibi
+- rich detailed environment drift
+- cinematic rendering drift
+- palette drift
+- reference text/room/character cloned without narrative reason
