@@ -28,8 +28,17 @@ Clean modern editorial typography integrated into the illustrated world. Safe ma
 REFERENCE SYSTEM
 Use approved files from assets/cinematic-psychology-world/ as STYLE/CHARACTER-FAMILY/LINEWORK/COLOR/SHADING/LIGHTING references only. Do not clone exact characters, rooms, poses, composition or readable text.
 
-COVER
-Scene 01 is first hook + cover. Stronger focal contrast and clean title zone. Scene 01 is NOT the global style master.
+COVER SEMANTICS — HARD LOCK
+COVER TOPIC TERM: BESITZTUMSEFFEKT
+COVER VISUAL THESIS: The exact same mug is visibly valued higher by its owner than by the non-owner buyer.
+Scene 01 must explain this mechanism visually even if all text is hidden. The mug is the shared focal object. Owner and buyer must read as two different valuation perspectives on the SAME object. Generic attachment, generic money conflict or a person merely holding a mug is not enough.
+
+COVER TYPOGRAPHY — HARD LOCK
+NO FULL-WIDTH TOP BANNER.
+Do not place one long headline across the entire upper edge. Do not use automatic centered-top placement. Use a compact asymmetric title block inside intentionally reserved negative space. Render the smaller topic kicker "BESITZTUMSEFFEKT" and the larger curiosity line "WARUM DEINS MEHR WERT IST" as one designed hierarchy with intentional line breaks. The title must balance the illustration and must not cover the mug, faces or owner-vs-buyer relationship.
+
+COVER THUMBNAIL TEST
+Scene 01 passes only if the endowment-effect mechanism is understandable in about one second, the term BESITZTUMSEFFEKT is visible, the same mug is clearly central, owner and buyer have clearly different valuation behavior, and the title is integrated rather than sitting in a generic top strip.
 
 BATCH WORKFLOW
 1. Generate Scene 01 only and STOP for user approval.
@@ -40,17 +49,22 @@ BATCH WORKFLOW
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Warum würdest du für dieselbe Tasse plötzlich mehr Geld verlangen, nur weil sie dir gehört? Genau das beschreibt der Besitztumseffekt.
-SCENE TYPE: CHARACTER_SCENE
-COMPOSITION: STANDARD
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
 SOCIAL DENSITY: DUO
-VISUAL IDEA: The identical mug feels more valuable to its owner than to a potential buyer.
-CAMERA: strong medium-wide cover composition
-LIGHTING MOOD: warm table light with cool background separation
-CHARACTER DIRECTION: owner in a dark teal hoodie holding the mug protectively; buyer opposite in muted rust jacket, skeptical but calm
+VISUAL IDEA: The same mug is clearly valued more highly by its owner than by the buyer.
+VISUAL TASK: Make one identical ceramic mug the dominant shared focal object while the owner protectively overvalues it and the buyer evaluates it more neutrally.
+COVER TOPIC TERM: BESITZTUMSEFFEKT
+COVER VISUAL THESIS: The same mug is visibly valued higher by the owner than by the non-owner buyer.
+CAMERA: strong thumbnail-ready medium-wide contrast composition
+LIGHTING MOOD: warm owner side with cooler neutral buyer side, same cinematic world
+CHARACTER DIRECTION: owner in a dark teal hoodie holds the mug protectively and leans toward it; buyer in muted rust jacket examines the exact same mug with calm practical distance
+TITLE PLACEMENT: compact asymmetric two-level title block in reserved negative space, occupying only one side of the composition; never a full-width top banner
 PLANNED GERMAN TEXT:
 - "WARUM DEINS MEHR WERT IST"
+- "BESITZTUMSEFFEKT"
 PROMPT:
-At a small second-hand sale table, an owner holds a simple ceramic mug close while a buyer offers a modest amount with an open palm. Make the emotional ownership conflict instantly readable. Integrate exactly "WARUM DEINS MEHR WERT IST" in a clean safe title zone. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+Create a strong psychology thumbnail in the established cinematic 2D world. Make one ceramic mug large and unmistakably central between two people. The owner visibly protects and emotionally values the mug; the buyer looks at that same mug more neutrally and practically. Their poses and the composition must communicate different perceived value immediately without relying on text. Reserve a compact asymmetric negative-space title zone on one side. Integrate the smaller topic kicker "BESITZTUMSEFFEKT" with the larger two-line curiosity title "WARUM DEINS MEHR WERT IST". NO FULL-WIDTH TOP BANNER. Do not place the title across the entire upper edge. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -59,6 +73,7 @@ SCENE TYPE: SCHEMA_EXPLAINER
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
 VISUAL IDEA: Ownership shifts subjective value upward.
+VISUAL TASK: Illustrate ownership causing perceived value to rise.
 CAMERA: clean frontal illustrated schema
 LIGHTING MOOD: soft blue/amber film-world lighting
 CHARACTER DIRECTION: NONE
@@ -76,6 +91,7 @@ SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: DUO
 VISUAL IDEA: A participant receives the mug and becomes its owner.
+VISUAL TASK: Show a researcher handing a mug to a participant who becomes the owner.
 CAMERA: medium three-quarter shot
 LIGHTING MOOD: bright neutral room with warm table light
 CHARACTER DIRECTION: young adult participant in blue overshirt; researcher in mustard cardigan; both simplified stickman-inspired figures
@@ -90,6 +106,7 @@ SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
 VISUAL IDEA: The new owner now has to choose a selling price.
+VISUAL TASK: Show the new owner considering what selling price to choose for the mug.
 CAMERA: close-medium over-shoulder
 LIGHTING MOOD: soft neutral daylight
 CHARACTER DIRECTION: same participant for local continuity, mug held in one hand, thoughtful expression
@@ -104,6 +121,7 @@ SCENE TYPE: COMPARE_VISUAL
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: DUO
 VISUAL IDEA: Owner and non-owner judge the identical mug from opposite positions.
+VISUAL TASK: Compare the owner and non-owner evaluating identical mugs from opposite roles.
 CAMERA: balanced left-right comparison inside one coherent room
 LIGHTING MOOD: same room with subtle warm/cool separation
 CHARACTER DIRECTION: owner holds mug close; non-owner examines an identical mug calmly from the opposite side
@@ -118,6 +136,7 @@ SCENE TYPE: SCHEMA_EXPLAINER
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: NONE
 VISUAL IDEA: Seller valuation is visibly higher than buyer valuation.
+VISUAL TASK: Show seller valuation clearly above buyer valuation for the same mug.
 CAMERA: frontal illustrated value comparison
 LIGHTING MOOD: soft cinematic studio light
 CHARACTER DIRECTION: NONE
@@ -134,6 +153,7 @@ SCENE TYPE: OBJECT_METAPHOR
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
 VISUAL IDEA: Giving up an owned object feels like losing something.
+VISUAL TASK: Visualize giving up the owned mug as a resisted loss using a taut tether.
 CAMERA: close object metaphor
 LIGHTING MOOD: warm object light with cool shadow
 CHARACTER DIRECTION: NONE
@@ -148,6 +168,7 @@ SCENE TYPE: TEXT_ILLUSTRATION
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
 VISUAL IDEA: Ownership becomes the psychological reference point.
+VISUAL TASK: Show the owned mug as the central reference point while alternatives recede.
 CAMERA: graphic illustrated frame
 LIGHTING MOOD: soft warm focal light
 CHARACTER DIRECTION: NONE
@@ -163,6 +184,7 @@ SCENE TYPE: OBJECT_METAPHOR
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
 VISUAL IDEA: Money arrives while the owned object leaves.
+VISUAL TASK: Show money arriving at the exact moment the familiar mug leaves the owner.
 CAMERA: close-medium symbolic composition
 LIGHTING MOOD: warm coins versus cooler departing object
 CHARACTER DIRECTION: NONE
@@ -177,6 +199,7 @@ SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
 VISUAL IDEA: Everyday seller overvalues familiar possessions.
+VISUAL TASK: Show a person preparing old tech, clothing and a collectible for sale at home.
 CAMERA: wide environmental shot
 LIGHTING MOOD: cozy evening apartment light
 CHARACTER DIRECTION: different young adult character in burgundy sweater, seated on floor among used headphones, jacket and collectible figure
@@ -191,6 +214,7 @@ SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: MONTAGE
 SOCIAL DENSITY: SOLO
 VISUAL IDEA: Memories and history become attached to the object.
+VISUAL TASK: Show the current item connected to a few meaningful purchase and use memories.
 CAMERA: main medium shot plus two small memory inserts
 LIGHTING MOOD: warm nostalgic memory light
 CHARACTER DIRECTION: same seller for local continuity, holding old headphones
@@ -205,6 +229,7 @@ SCENE TYPE: COMPARE_VISUAL
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: DUO
 VISUAL IDEA: Seller sees personal history; buyer mostly sees a used object.
+VISUAL TASK: Contrast the seller's personal history with the buyer's practical view of the same item.
 CAMERA: coherent split perspective
 LIGHTING MOOD: warmer seller side, neutral buyer side
 CHARACTER DIRECTION: seller emotionally connected; buyer objectively inspects condition
@@ -219,6 +244,7 @@ SCENE TYPE: SCHEMA_EXPLAINER
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
 VISUAL IDEA: Three contextual factors can reduce the strength of the effect.
+VISUAL TASK: Illustrate experience, situation and expectations reducing the ownership-value effect.
 CAMERA: clean frontal mechanism schema
 LIGHTING MOOD: world-consistent blue/amber light
 CHARACTER DIRECTION: NONE
@@ -237,6 +263,7 @@ SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
 VISUAL IDEA: Pause before pricing and question the first valuation.
+VISUAL TASK: Show a seller pausing and comparing market alternatives before pricing the item.
 CAMERA: close-medium side angle
 LIGHTING MOOD: quiet focused desk light
 CHARACTER DIRECTION: experienced seller in simple olive jacket, calm posture, comparing the object with several abstract market listings
@@ -251,6 +278,7 @@ SCENE TYPE: TEXT_ILLUSTRATION
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
 VISUAL IDEA: A simple question reframes the decision from ownership to fresh choice.
+VISUAL TASK: Center the used item around the fresh-choice question of buying it again today.
 CAMERA: clean illustrated text frame
 LIGHTING MOOD: soft focused light with calm background
 CHARACTER DIRECTION: NONE
@@ -266,6 +294,7 @@ SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: DUO
 VISUAL IDEA: Seller accepts a fairer price and lets the object go.
+VISUAL TASK: Show the seller calmly accepting a fairer price and handing the item to the buyer.
 CAMERA: medium-wide closing shot
 LIGHTING MOOD: balanced warm hopeful light
 CHARACTER DIRECTION: seller relaxed now, buyer receives the item, both individualized within the same stickman-inspired family
@@ -282,6 +311,9 @@ FINAL QA
 - soft cel shading and believable environment remain consistent
 - schemas and text illustrations look like part of the same film-world
 - one clear current beat per frame
+- Scene 01 clearly explains the Besitztumseffekt mechanism with the same mug and two valuation perspectives
+- Scene 01 visibly contains BESITZTUMSEFFEKT
+- Scene 01 uses an integrated asymmetric title block, not a full-width top banner
 - every planned German text exact
 - no accidental readable background text
 - no visible Remotion text

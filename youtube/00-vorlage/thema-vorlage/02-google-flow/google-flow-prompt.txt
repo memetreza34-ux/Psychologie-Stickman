@@ -30,7 +30,7 @@ VISIBLE TEXT — GOOGLE FLOW ONLY
 NO REMOTION TEXT.
 
 Allowed planned text:
-- Cover title: normally 2–7 words
+- Cover: main title + optional short psychology-topic kicker
 - Keyword: normally 1–5 words
 - Schema: optional short title + up to 3 short labels
 - Comparison: optional short title + up to 2 short labels
@@ -44,8 +44,37 @@ Clean modern editorial typography integrated into the illustrated world. Safe ma
 REFERENCE SYSTEM
 Use approved files from assets/cinematic-psychology-world/ as STYLE/CHARACTER-FAMILY/LINEWORK/COLOR/SHADING/LIGHTING references only. Do not clone exact character, room, pose, composition or readable text.
 
-COVER
-Scene 01 is the first hook + cover. Use the same world but stronger composition, stronger focal contrast and a safe title zone. It is NOT the global style master.
+COVER SEMANTICS — HARD LOCK
+Scene 01 is first hook + cover and MUST explain the central psychology topic visually, not merely create atmosphere.
+
+Before writing Scene 01, define:
+- COVER TOPIC TERM: [exact psychology topic/concept]
+- COVER VISUAL THESIS: [one concrete sentence describing the mechanism/contrast the viewer must SEE]
+
+Requirements:
+- the exact COVER TOPIC TERM must appear as visible planned German text somewhere in Scene 01 for named concepts
+- the illustration itself must show the mechanism even if all text were temporarily hidden
+- use a concrete relationship such as same-object/different-value, thought/reality, cause/effect, owner/non-owner, before/after, person/group, etc.
+- generic worried person + object is NOT enough
+- decorative cinematic atmosphere is NOT enough
+- Scene 01 is NOT the global style master
+
+COVER TYPOGRAPHY — HARD LOCK
+NO FULL-WIDTH TOP BANNER.
+Do not squeeze a long title across the top edge or use automatic centered-top placement.
+Choose an asymmetric title zone from the composition: left or right negative space, integrated two-level title block, believable scene surface, or another deliberately reserved safe zone.
+Normally use:
+- one larger curiosity/explanation line
+- optional smaller topic kicker containing the exact psychology concept
+Use intentional line breaks and generous safe margins. Text and illustration must feel designed as one thumbnail.
+
+COVER THUMBNAIL TEST
+Before approval, mentally shrink the frame. PASS only if:
+1. topic/mechanism is understandable in about one second,
+2. exact topic is named,
+3. main object/characters remain readable,
+4. title does not compete with or cover the mechanism,
+5. typography is not a generic top banner.
 
 BATCH WORKFLOW
 1. Generate Scene 01 only and STOP for user approval.
@@ -61,12 +90,39 @@ SCENE TYPE: CHARACTER_SCENE / SCHEMA_EXPLAINER / OBJECT_METAPHOR / COMPARE_VISUA
 COMPOSITION: STANDARD / SPLIT / CONTRAST / MONTAGE
 SOCIAL DENSITY: SOLO / DUO / GROUP / NONE
 VISUAL IDEA: [one clear idea]
+VISUAL TASK: [what the image must visibly show]
 CAMERA: [shot/angle]
 LIGHTING MOOD: [short]
 CHARACTER DIRECTION: [only when people appear]
 PLANNED GERMAN TEXT: [NONE or exact list]
 PROMPT:
 [short scene-specific content prompt; do not rewrite the global style]
+
+SCENE 01 additionally MUST contain:
+COVER TOPIC TERM: [exact term]
+COVER VISUAL THESIS: [concrete visible mechanism]
+TITLE PLACEMENT: [asymmetric integrated zone; never generic full-width top banner]
+
+EXAMPLE — COVER
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+[hook]
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: DUO
+VISUAL IDEA: the same object feels more valuable to its owner than to a non-owner
+VISUAL TASK: show the same mug as the shared focal object while owner and buyer visibly value it differently
+COVER TOPIC TERM: BESITZTUMSEFFEKT
+COVER VISUAL THESIS: The same mug is visibly valued higher by the owner than by the non-owner.
+CAMERA: strong thumbnail-ready medium-wide contrast composition
+LIGHTING MOOD: warm owner side, cooler neutral buyer side, same film-world
+CHARACTER DIRECTION: owner protectively holds the mug; buyer evaluates it neutrally
+TITLE PLACEMENT: compact asymmetric title block in reserved negative space, not across the full top edge
+PLANNED GERMAN TEXT:
+- "WARUM DEINS MEHR WERT IST"
+- "BESITZTUMSEFFEKT"
+PROMPT:
+Make the identical mug the dominant central object. Clearly contrast owner attachment with buyer neutrality so the mechanism reads without text. Integrate the smaller topic kicker "BESITZTUMSEFFEKT" with the larger line "WARUM DEINS MEHR WERT IST" in the reserved asymmetric title zone. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
 
 EXAMPLE — CHARACTER SCENE
 SCENE 02
@@ -76,6 +132,7 @@ SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
 VISUAL IDEA: distraction from important work
+VISUAL TASK: show a person ignoring unfinished work because attention is captured by the phone
 CAMERA: medium-wide side angle
 LIGHTING MOOD: warm desk lamp against cool blue night window
 CHARACTER DIRECTION: young stickman-inspired character in hoodie, tired posture, focused on smartphone
@@ -91,6 +148,7 @@ SCENE TYPE: SCHEMA_EXPLAINER
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
 VISUAL IDEA: thought versus reality in the spotlight effect
+VISUAL TASK: contrast perceived attention with actual attention distribution
 CAMERA: clean frontal illustrated schema
 LIGHTING MOOD: same soft blue/amber film-world lighting
 CHARACTER DIRECTION: optional small nervous character in center
@@ -109,6 +167,7 @@ SCENE TYPE: OBJECT_METAPHOR
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
 VISUAL IDEA: overthinking as a tangled knot
+VISUAL TASK: make a thought-knot visually dominate a quiet desk scene
 CAMERA: close-medium object composition
 LIGHTING MOOD: quiet night desk, warm lamp and cool background
 CHARACTER DIRECTION: NONE
@@ -125,6 +184,10 @@ FINAL QA
 - believable environment and meaningful details where needed
 - schemas do not look like PowerPoint/corporate vector graphics
 - one clear beat per frame
+- Scene 01 visibly explains the topic mechanism
+- Scene 01 names the exact psychology topic for named concepts
+- Scene 01 does not use a generic full-width top banner
+- cover title and illustration are one intentional composition
 - every planned German text exact
 - no accidental readable background text
 - no visible Remotion text
