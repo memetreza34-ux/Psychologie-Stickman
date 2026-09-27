@@ -1,0 +1,289 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+VISUAL SYSTEM: CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V1
+REPRESENTATION POLICY: MIXED_PSYCHOLOGY_VISUALS_V1
+FORMAT: 16:9 / 1920x1080
+
+GLOBAL WORLD — HARD LOCK
+Create a cinematic 2D illustrated frame for a modern psychology YouTube channel. Keep one consistent visual world: stylized stickman-inspired characters with large simple round heads, minimal expressive faces, compact clothed torsos, very slim simplified limbs, simple hands and shoes. Characters are clearly simplified but NOT bare line stickmen and NOT normal cartoon humans. Use colorful believable environments, clean slightly organic outlines, soft cel shading, natural depth, purposeful cinematic framing, controlled colors, warm/cool lighting and small meaningful details. When no character is needed, schemas, text graphics, objects, comparisons and metaphors must use the exact same linework, color, shading, lighting and illustration quality. No photorealism, no 3D/Pixar, no anime, no corporate vector look, no whiteboard doodle style.
+
+SCENE TYPES
+- CHARACTER_SCENE: relatable character action in a believable place
+- SCHEMA_EXPLAINER: illustrated mechanism or relationship; character optional
+- OBJECT_METAPHOR: symbolic object/environment; character optional
+- COMPARE_VISUAL: two states/options in one coherent frame
+- TEXT_ILLUSTRATION: short exact German phrase integrated into a strong illustration
+
+WORLD CONSISTENCY
+Keep the same character family, linework, soft cel shading, depth, color behavior and lighting language across every frame. Vary identity, clothing, location, camera and mood to fit the beat. Repeat a person only for genuine local continuity.
+
+VISIBLE TEXT — GOOGLE FLOW ONLY
+NO REMOTION TEXT.
+Only render the exact German strings listed in the current scene. All other screens, books, posters, packaging and documents must use abstract marks. If PLANNED GERMAN TEXT is NONE, use ZERO READABLE TEXT.
+
+TYPOGRAPHY
+Clean modern editorial typography integrated into the illustrated world. Safe margins. No meme/sticker style, no 3D/glow typography, no corporate PowerPoint look.
+
+COVER SEMANTICS — HARD LOCK
+COVER TOPIC TERM: SPOTLIGHT-EFFEKT
+COVER VISUAL THESIS: A nervous central passenger believes the whole train is watching, while the surrounding passengers are visibly occupied with their own phones, books, route, window and thoughts.
+The cover must explain the psychological mechanism before the viewer reads the title. The relationship must be visually explicit, not just a worried character in a train.
+NO FULL-WIDTH TOP BANNER. Do not place one centered headline automatically across the upper edge. Reserve a compact asymmetric title zone that belongs to the composition. Use a small topic kicker plus stronger curiosity line if helpful.
+
+REFERENCE SYSTEM
+Use approved files from assets/cinematic-psychology-world/ as STYLE/CHARACTER-FAMILY/LINEWORK/COLOR/SHADING/LIGHTING references only. Do not clone exact characters, rooms, poses, composition or readable text.
+
+BATCH WORKFLOW
+1. Generate Scene 01 only and STOP for user approval.
+2. Save approved image as 03-bilder/01.png.
+3. Continue in batches of max 5 images.
+4. Internal QA after each batch; regenerate only failures.
+
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Warum fühlt es sich manchmal so an, als würden plötzlich alle auf dich schauen? Genau das nennt man Spotlight-Effekt.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: one nervous passenger feels watched while everyone else is actually occupied with themselves
+CAMERA: strong thumbnail-ready medium-wide train composition
+LIGHTING MOOD: warm carriage light, cool evening windows, subtle focal spotlight on main character
+CHARACTER DIRECTION: central young adult in a dark teal jacket, tense posture; surrounding individualized passengers in varied simple clothing, each focused elsewhere
+PLANNED GERMAN TEXT:
+- "WARUM DU DENKST ALLE SCHAUEN"
+- "SPOTLIGHT-EFFEKT"
+TITLE PLACEMENT: compact asymmetric integrated title block in reserved negative space; small topic kicker and stronger main line; never a full-width top banner
+PROMPT:
+Inside a modern train, make one nervous central passenger feel as if the entire carriage is watching. At the same time, clearly show that surrounding passengers are actually absorbed in their own phone, book, window, bag, route and thoughts. The contradiction must be readable instantly. Integrate exactly "SPOTLIGHT-EFFEKT" as a small topic kicker and "WARUM DU DENKST ALLE SCHAUEN" as the stronger title in the reserved asymmetric title zone. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+
+SCENE 02
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dabei beobachten dich andere meistens viel weniger, als es sich für dich anfühlt.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: felt attention is larger than actual attention
+CAMERA: clean frontal illustrated psychology schema
+LIGHTING MOOD: same blue-amber film-world lighting
+CHARACTER DIRECTION: optional small central character only
+PLANNED GERMAN TEXT:
+- "SPOTLIGHT-EFFEKT"
+PROMPT:
+Create a cinematic illustrated psychology schema in the same world. One large perceived spotlight surrounds a central character, while several much smaller real attention directions point elsewhere. Render exactly "SPOTLIGHT-EFFEKT" and NO OTHER READABLE TEXT.
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der Grund: Du erlebst dich selbst aus der ersten Reihe. Deine Kleidung, Fehler und Unsicherheit sind für dich ständig sichtbar.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: the self is experienced at extreme visual proximity
+CAMERA: close symbolic mirror composition
+LIGHTING MOOD: soft warm mirror light with cooler background
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Create a first-person mirror metaphor where personal clothing details and tiny imperfections appear unusually close and visually dominant, while the wider surrounding world feels softer and farther away. Keep the same cinematic illustrated psychology world. ZERO READABLE TEXT.
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Stell dir vor, du steigst in eine volle Bahn und findest dein Outfit plötzlich peinlich.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: a person enters a crowded train and becomes self-conscious about clothing
+CAMERA: wide three-quarter train entrance shot
+LIGHTING MOOD: cool evening outside, warm carriage interior
+CHARACTER DIRECTION: young character in slightly unusual jacket, glancing down at own clothes; varied passengers behave normally
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+A young stickman-inspired character steps into a busy train and suddenly looks embarrassed by their outfit. Other passengers sit and stand naturally, occupied with their own routines. Use believable train details, depth and soft cel shading. ZERO READABLE TEXT.
+
+SCENE 05
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Sofort entsteht das Gefühl: Die anderen haben es bestimmt bemerkt.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: self-consciousness makes surrounding faces feel directed toward the person
+CAMERA: close-medium subjective angle
+LIGHTING MOOD: slightly intensified focal contrast around the main character
+CHARACTER DIRECTION: same character for local continuity, tense shoulders and worried expression
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+From the nervous passenger's subjective perspective, a few ordinary nearby glances feel unusually intense. Keep the background realistic enough to show this is a perception effect rather than everyone literally staring. ZERO READABLE TEXT.
+
+SCENE 06
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Aber die meisten Fahrgäste denken gerade an ihr Handy, ihre Haltestelle oder ihre eigenen Sorgen.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: other passengers are absorbed in their own concerns
+CAMERA: wide coherent carriage composition
+LIGHTING MOOD: balanced warm train lighting with varied small focal pools
+CHARACTER DIRECTION: several individualized passengers each focused on a different private task
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Show the full carriage more objectively. One passenger checks a phone, another looks through the window, another reads, another watches for a stop, another sits lost in thought. The nervous main character is present but not the center of anyone else's attention. ZERO READABLE TEXT.
+
+SCENE 07
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Genau hier entsteht der Spotlight-Effekt: Deine eigene Aufmerksamkeit wird leicht mit der Aufmerksamkeit anderer verwechselt.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: NONE
+VISUAL IDEA: self-attention is mistaken for attention from others
+CAMERA: frontal mechanism schema
+LIGHTING MOOD: soft blue and amber dimensional lighting
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "MEINE AUFMERKSAMKEIT"
+- "AUFMERKSAMKEIT ANDERER"
+PROMPT:
+Create a cinematic illustrated mechanism schema. A strong inward self-attention beam is large and bright, while outward attention from other people is smaller and scattered. Clearly separate the two. Render exactly "MEINE AUFMERKSAMKEIT" and "AUFMERKSAMKEIT ANDERER". NO OTHER READABLE TEXT.
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein kleiner Blick kann dann wirken, als hätte dich jemand genau beurteilt.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+VISUAL IDEA: a brief neutral glance is interpreted as judgment
+CAMERA: close two-person side angle
+LIGHTING MOOD: quiet carriage light with subtle tension
+CHARACTER DIRECTION: nervous main character and one neutral passenger
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+One passenger briefly glances toward the nervous character. The glance itself stays neutral, but the nervous character reacts as if being strongly judged. Preserve subtlety and readable body language. ZERO READABLE TEXT.
+
+SCENE 09
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dabei kann die Person genauso gut einfach durch den Wagen geschaut haben.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: DUO
+VISUAL IDEA: the same glance has a neutral alternative explanation
+CAMERA: wider reveal shot
+LIGHTING MOOD: neutral balanced carriage light
+CHARACTER DIRECTION: same two characters for local continuity
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Reveal the same moment from a wider angle: the passenger's line of sight simply continues past the nervous character toward the train door or window. Make the innocent alternative explanation immediately clear. ZERO READABLE TEXT.
+
+SCENE 10
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Besonders stark wird dieses Gefühl, wenn du nervös bist oder neu in einer Situation.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: novel social setting amplifies self-consciousness
+CAMERA: medium-wide doorway angle
+LIGHTING MOOD: warm social room with cooler light around newcomer
+CHARACTER DIRECTION: new character entering a small group setting, holding a bag close and scanning the room
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+A newcomer enters a small social or classroom-like setting and looks visibly nervous while an established group continues ordinary conversation. Use cinematic depth and believable room details. ZERO READABLE TEXT.
+
+SCENE 11
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dann suchst du schneller nach Zeichen dafür, dass andere dich bewerten.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: attention selectively hunts for social evaluation signals
+CAMERA: graphic close-medium metaphor
+LIGHTING MOOD: focused searching light against calm background
+CHARACTER DIRECTION: optional simplified observer silhouette
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Visualize a narrow scanning beam searching through an otherwise calm social scene and selectively highlighting tiny facial cues and glances. The metaphor should show active searching for judgment signals. ZERO READABLE TEXT.
+
+SCENE 12
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Und genau dadurch wirken neutrale Blicke plötzlich bedeutungsvoller, als sie wirklich sind.
+SCENE TYPE: TEXT_ILLUSTRATION
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: a neutral glance becomes inflated into supposed evidence
+CAMERA: clean symbolic illustration
+LIGHTING MOOD: controlled dramatic shadow inside the same 2D film-world
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "EIN BLICK IST KEIN BEWEIS"
+PROMPT:
+Show a tiny neutral glance symbol casting an oversized dramatic shadow, exaggerating its apparent meaning. Integrate exactly "EIN BLICK IST KEIN BEWEIS" as a clean part of the illustration. NO OTHER READABLE TEXT.
+
+SCENE 13
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein guter Gegentest ist einfach: Wie lange denkst du über kleine peinliche Momente anderer nach?
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: reflect on how little attention we give other people's minor mistakes
+CAMERA: medium reflective side shot
+LIGHTING MOOD: soft calm evening light
+CHARACTER DIRECTION: calm character recalling a stranger's tiny awkward moment
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+A calm character tries to remember a stranger's small awkward moment. The memory appears faint and already dissolving, showing how little mental space it occupies. ZERO READABLE TEXT.
+
+SCENE 14
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Meistens nur Sekunden – wenn du sie überhaupt bemerkst.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: other people's small mistakes vanish quickly from attention
+CAMERA: close symbolic composition
+LIGHTING MOOD: light neutral fade with warm accents
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+A tiny awkward-moment symbol briefly appears inside a soft pool of attention and then fades rapidly while ordinary life continues around it. Keep the same illustrated film-world. ZERO READABLE TEXT.
+
+SCENE 15
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dasselbe gilt häufig auch umgekehrt. Andere Menschen sind viel stärker mit sich selbst beschäftigt.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: everyone experiences themselves as the center of their own attention
+CAMERA: wide social comparison composition
+LIGHTING MOOD: multiple soft personal light pools in one coherent scene
+CHARACTER DIRECTION: several individualized characters each focused on their own task or concern
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Show several different people in the same public space, each inside a subtle personal attention pool focused on their own phone, appearance, thought, bag or destination. No one person dominates everyone else's attention. ZERO READABLE TEXT.
+
+SCENE 16
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wenn du das nächste Mal glaubst, alle schauen: Vielleicht stehst du nur in deinem eigenen Spotlight.
+SCENE TYPE: TEXT_ILLUSTRATION
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: the imagined giant spotlight shrinks into a personal self-attention light
+CAMERA: clean cinematic closing illustration
+LIGHTING MOOD: calm warm resolution with soft blue surroundings
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "DIE MEISTEN SIND BEI SICH"
+PROMPT:
+Show one oversized theatrical spotlight shrinking into a small calm personal light while surrounding people continue normally in the background. Integrate exactly "DIE MEISTEN SIND BEI SICH". NO OTHER READABLE TEXT.
+
+FINAL QA
+- same cinematic illustrated world across every scene type
+- characters match STYLIZED_STICKMAN_CAST_V1
+- no bare line-stickman drift
+- no normal full cartoon-human drift
+- no 3D/photorealistic/anime/corporate-vector drift
+- soft cel shading and believable environments remain consistent
+- schemas and text illustrations look like part of the same film-world
+- one clear current beat per frame
+- Scene 01 visually explains the Spotlight-Effekt before text is read
+- cover contains exact visible topic term SPOTLIGHT-EFFEKT
+- NO FULL-WIDTH TOP BANNER
+- every planned German text exact
+- no accidental readable background text
+- no visible Remotion text
