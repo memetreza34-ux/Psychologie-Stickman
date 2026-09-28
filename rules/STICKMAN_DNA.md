@@ -1,88 +1,154 @@
-# STICKMAN DNA — STYLIZED CHARACTER SOURCE OF TRUTH
+# STICKMAN DNA — STYLIZED HUMAN SOURCE OF TRUTH v2
 
-**STATUS: HARD LOCK — CINEMATIC WORLD v1**
+**STATUS: HARD LOCK — CINEMATIC HUMAN BEHAVIOR WORLD v2**
 
-The full world is defined in `rules/VISUAL_SYSTEM.md`. This file defines human character anatomy only.
+The full world is defined in `rules/VISUAL_SYSTEM.md`. This file defines human character anatomy, emotional range and role expression.
+
+Character system: `STYLIZED_STICKMAN_CAST_V2`
 
 ## 1. Unified human cast — absolute rule
 
-**Every visible human or human-like person belongs to the same stylized stickman-inspired family. No exceptions.**
+Every visible human or human-like person belongs to the exact same stylized stickman-inspired anatomy family.
 
 This applies to:
 - main characters
 - supporting characters
-- background passengers/crowds
-- researchers, coworkers, friends, family, strangers
+- background people and crowds
+- coworkers, friends, family, strangers, authority figures, manipulators, targets and researchers
 - tiny people in montages
-- people visible on screens, posters, photos, reflections or memory inserts when they are actually depicted as people
+- humans shown on screens, posters, photos, reflections or memory inserts
 
-A scene may contain many different individuals, but it may never mix the main stickman family with conventional cartoon humans, semi-realistic people or another anatomy style.
+A scene may contain very different personalities and moral roles, but never different anatomy families.
 
-Supporting/background characters may be simpler and less detailed, but their **head shape, torso logic, limb proportions, face simplification, hands and shoes must still clearly belong to the same family**.
-
-## 2. Character DNA
+## 2. Anatomy lock
 
 Every visible person uses:
 - large round or slightly oval simplified head
 - minimal expressive eyes
 - optional simple eyebrows
 - small simple mouth
-- no realistic facial anatomy
+- no realistic nose, ears or facial anatomy
 - compact simplified torso with visible clothing
-- very slim simplified arms and legs with slight illustrated width
-- limbs are not bare one-pixel lines and not realistic fleshy human limbs
+- very slim shaped arms and legs with slight illustrated width
+- no one-pixel bare-line limbs as the normal design
 - simplified hands without realistic finger anatomy
 - clear simplified shoes/feet
-- readable pose and body language
+- readable silhouette and body language
 
-## 3. Individuality without style drift
+## 3. Emotional and moral range
 
-Characters may be individualized through:
-- hoodie, jacket, shirt, sweater, coat or other simple clothing
+The character family must support the full human-behavior channel.
+
+Allowed presentation includes:
+- relaxed
+- confident
+- curious
+- skeptical
+- insecure
+- anxious
+- ashamed
+- exhausted
+- sad
+- isolated
+- defensive
+- suspicious
+- dominant
+- intimidating
+- cold
+- arrogant
+- controlling
+- deceptive-friendly
+- manipulative
+- authoritative
+- vulnerable
+
+Characters are NOT required to look attractive, friendly or morally good.
+
+The same anatomy family may look pleasant in one scene and disturbing in another through pose, expression, lighting, clothing, blocking and framing.
+
+## 4. Psychological role expression
+
+### Neutral / everyday
+Open posture, normal eye contact, natural spacing, readable ordinary clothing.
+
+### Vulnerable / target
+Smaller spatial presence, withdrawn posture, guarded arms, edge placement, looking away or back, more negative space when useful.
+
+### Dominant / authority
+Stable upright posture, stronger silhouette, deliberate stillness, central or foreground placement, lower camera angle when semantically useful.
+
+### Manipulator / deceptive figure
+Controlled body language, calm face, selective smile, close proximity or strategic positioning. Threat should usually be subtle rather than monstrous.
+
+### Isolated / excluded
+Separated from group, edge or distant placement, reduced visual support, colder or emptier surrounding space.
+
+### Crowd / group pressure
+Same anatomy family across everyone. Group direction, repetition, clustering and gaze can create pressure without turning people into faceless generic vector icons.
+
+## 5. Villain-cliché prohibition
+
+Do not default to:
+- glowing red eyes
+- horns
+- monster teeth
+- demonic faces
+- exaggerated evil grin
+- supernatural shadow monster
+
+unless the literal subject specifically requires such imagery.
+
+Psychological threat should usually come from:
+- posture
+- gaze
+- proximity
+- hierarchy
+- framing
+- shadow
+- stillness
+- environmental control
+- another person's reaction
+
+## 6. Individuality without style drift
+
+Individualize through:
+- hoodie, jacket, shirt, sweater, coat, suit-like simplified outfit or other role-relevant clothing
 - clothing colors
-- simple hair silhouette when useful
+- simple hair silhouette
 - glasses
-- bag, headphones, hat or one role accessory
-- modest height/proportion variation inside the same family
-- expression and posture
+- bag, headphones, hat, watch-like simple accessory or one role prop
+- modest height/proportion variation
+- expression
+- posture
+- silhouette
 
-Individuality must never come from switching to a different anatomy/rendering family.
+Clothing may communicate role and status, but should remain simplified and illustrated rather than fashion-rendered.
 
-Clothing should feel designed but not fashion-rendered.
+## 7. Background people
 
-## 4. Background people
-
-Background people use the same character family.
+Background people remain in the same family.
 
 Allowed simplification:
 - fewer facial details
 - simpler clothing shapes
 - less shading
-- reduced small accessories
+- fewer accessories
 
 Not allowed:
 - realistic silhouettes
-- generic corporate-vector people
 - normal cartoon humans behind a stickman main character
-- mixed body styles inside one crowd
+- generic corporate vector people
+- mixed body styles in one crowd
 
-## 5. Human presence is optional
+## 8. Human presence is optional
 
-**Not every frame needs a person.**
+Not every frame needs a character.
 
-When a beat is clearer without a character, prefer:
-- illustrated schema
-- object metaphor
-- symbolic environment
-- comparison graphic
-- text illustration
-- close-up object storytelling
+Prefer no-human representation when a schema, object, environment, comparison or metaphor explains the beat more clearly.
 
-A no-human frame must still use the same linework, color behavior, soft cel shading, lighting and overall film-world.
+Do not insert a character just to fill empty space.
 
-Do not insert a stickman merely to fill empty space.
-
-## 6. Continuity
+## 9. Continuity
 
 If the same person returns in connected scenes, preserve:
 - head shape
@@ -92,23 +158,23 @@ If the same person returns in connected scenes, preserve:
 - shoes
 - face simplification
 
-Different scenes may use different people when continuity is not required.
+Their mood, posture and lighting may change while identity remains stable.
 
-## 7. Hard fail
+## 10. Hard fail
 
 Regenerate if any visible human becomes:
-- bare black-line stickman / whiteboard figure
+- bare black-line whiteboard stickman
 - normal full cartoon-human anatomy
-- semi-realistic or realistic human anatomy
-- generic vector/corporate person
-- detailed fingers/hands
-- realistic nose/ears/facial structure
+- semi-realistic or realistic human
+- generic corporate person
+- detailed realistic hands/fingers
+- realistic facial anatomy
 - 3D/Pixar/CGI
 - anime/manga/chibi
-- a different human character family than the main figure
+- another character family
 
-Also fail if a scene includes unnecessary people when a clearer object/schema/metaphor visual would explain the beat better.
+Also fail if a dark role is communicated only by cheap villain clichés when subtler psychological direction would be clearer.
 
-## 8. Compact character prompt
+## 11. Compact character lock
 
-`UNIFIED STICKMAN HUMAN CAST: Every visible human — main, supporting and background — must use the exact same stylized stickman-inspired anatomy family: large simple round/oval head, minimal expressive face, compact clothed torso, very slim simplified illustrated arms and legs with slight width, simple hands and shoes. Individualize only through clothing, simple hair/accessory, posture, size and expression. Never mix in normal cartoon humans, realistic people or another character family. Human presence is optional; use no-character schemas, objects, metaphors or illustrations whenever they explain the beat better.`
+`UNIFIED STICKMAN HUMAN CAST V2: Every visible human — main, supporting and background — must use the exact same stylized stickman-inspired anatomy family: large simple round/oval head, minimal expressive face, compact clothed torso, very slim shaped illustrated limbs with slight width, simple hands and shoes. Characters may look neutral, warm, vulnerable, anxious, dominant, cold, manipulative, deceptive, intimidating, isolated or authoritative through clothing, pose, expression, silhouette, framing and light while keeping identical anatomy logic. Never mix normal cartoon humans, realistic people or another family. Do not use cheap monster-villain clichés by default.`
