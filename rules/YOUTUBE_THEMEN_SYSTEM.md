@@ -1,16 +1,18 @@
-# YOUTUBE THEMEN SYSTEM — ALLTAGSPSYCHOLOGIE & MENSCHLICHES VERHALTEN
+# YOUTUBE THEMEN SYSTEM — PSYCHOLOGIE & MENSCHLICHES VERHALTEN
 
 **STATUS: VERBINDLICH**
 
 ## Kanalpositionierung
 
-Der Kanal erklärt **Alltagspsychologie und menschliches Verhalten**.
+Der Kanal erklärt **Psychologie und menschliches Verhalten**.
 
 Kernversprechen:
 
 > Warum Menschen denken, fühlen und handeln, wie sie es tun — verständlich, evidenzorientiert und visuell erklärt.
 
-Der Kanal ist kein allgemeiner Wissenskanal und kein medizinischer Psychologiekanal. Jedes Video braucht eine klare Verbindung zu menschlichem Denken, Wahrnehmen, Entscheiden, Fühlen, Kommunizieren oder Verhalten.
+Der Kanal darf von normaler Alltagspsychologie bis zu dunkleren menschlichen Verhaltensmustern reichen. Gemeinsamer Nenner bleibt immer ein klarer psychologischer oder verhaltensbezogener Mechanismus.
+
+Der Kanal ist kein allgemeiner Wissenskanal, kein medizinischer Beratungs- oder Therapiekanal und kein reiner Finanz-/News-/Politikkanal.
 
 ## Feste Content-Säulen
 
@@ -20,104 +22,144 @@ Der Kanal ist kein allgemeiner Wissenskanal und kein medizinischer Psychologieka
 - Erinnerung und Fehleinschätzungen
 - Erwartungseffekte
 - erste Eindrücke
-- typische Denkfallen im Alltag
+- typische Denkfallen
 
 ### 2. Entscheidungen & Selbststeuerung
 - Prokrastination
 - Gewohnheiten
 - Selbstkontrolle
-- Motivation als psychologischer Mechanismus
-- Wahlverhalten im Alltag
+- Motivation als Mechanismus
 - kurzfristige vs. langfristige Entscheidungen
+- Impulsivität und Aufschub
 
-### 3. Soziale Psychologie & Gruppendynamik
+### 3. Einfluss, Überzeugung & Manipulation
+- Überzeugung
+- Framing
+- Schuld- und Druckmechanismen
+- soziale Einflussnahme
+- Manipulationsmuster
+- Täuschung und Vertrauensaufbau
+- Abhängigkeit und schrittweise Kontrolle
+- Schutzfaktoren und Grenzen
+
+### 4. Macht, Status & Gruppendynamik
 - Konformität
 - Gruppendruck
-- sozialer Einfluss
 - Status und Hierarchien
-- Vertrauen
+- Autorität
+- Gehorsam
+- soziale Kontrolle
 - Kooperation und Konflikt
-- Verhalten in Gruppen
+- Ausgrenzung
+- Dehumanisierung und moralische Distanz, wenn seriös belegbar
 
-### 4. Kommunikation & zwischenmenschliches Verhalten
+### 5. Kommunikation & Beziehungen
 - Körpersprache
 - Missverständnisse
-- Überzeugung
 - Sympathie
+- Vertrauen
 - Gesprächsdynamiken
-- Erwartungen zwischen Menschen
+- Erwartungen
 - soziale Signale
+- Konflikte
+- Bindungs- und Distanzverhalten ohne Ferndiagnosen
 
-### 5. Verhalten in moderner Alltagswelt
-- Verhalten im Internet und in sozialen Medien
-- Aufmerksamkeit durch Apps und digitale Reize
+### 6. Geld, Konsum & Verhalten
+Erlaubt, wenn der psychologische Mechanismus im Mittelpunkt steht:
+- Konsumpsychologie
+- Preiswahrnehmung
+- Verhandlung
+- Statussymbole
+- Verlustaversion
+- Risiko
+- Gier
+- Herdenverhalten
+- finanzielle Denkfehler
+- Betrugspsychologie
+- Verhalten von Käufern, Verkäufern und Anlegern
+
+Nicht gemeint sind reine Aktienanalysen, Kaufempfehlungen, Börsennews oder Finanzberatung ohne psychologischen Schwerpunkt.
+
+### 7. Dunkle Seiten menschlichen Verhaltens
+- Betrug
+- Ausnutzung
+- Machtmissbrauch
+- Manipulation
+- Grausamkeit und moralische Rechtfertigung
+- sektenartige oder kontrollierende Gruppendynamiken
+- Einschüchterung
+- Anonymität und Enthemmung
+
+Darstellung bleibt erklärend und evidenzorientiert. Der Kanal romantisiert oder lehrt keine schädliche Manipulation als Anleitung.
+
+### 8. Digitale Psychologie
+- Social Media
+- Aufmerksamkeitssysteme
+- Likes und soziale Bestätigung
+- parasoziale Beziehungen
+- Online-Mobs
+- Doomscrolling
+- Anonymität
 - Vergleich mit anderen
-- Anonymität und Online-Verhalten
-- Entscheidungsverhalten in Alltagssituationen
+- persuasive Interfaces als Verhaltensmechanismus
 
-### 6. Psychologische Effekte, Experimente & Gedankenmodelle
+### 9. Psychologische Effekte, Experimente & Gedankenmodelle
 - bekannte psychologische Effekte und Experimente, wenn belastbar belegt
-- anschauliche Gedankenexperimente
-- psychologische Mechanismen hinter überraschendem Alltagsverhalten
-- Replikationsprobleme oder wissenschaftliche Unsicherheit müssen genannt werden, wenn sie relevant sind
+- Gedankenexperimente
+- Mechanismen hinter überraschendem Verhalten
+- Replikationsprobleme und Unsicherheit transparent nennen
 
-## Klare Abgrenzung zu anderen Kanälen
+## Themen-Gate
 
-Nicht als Hauptthema für diesen Kanal:
-- Medizin, Krankheiten, Diagnosen oder Therapie
-- psychische Erkrankungen als medizinische Beratung
-- Biologie, Anatomie oder Neurowissenschaft als eigenständige Nische
-- Politik, Geopolitik oder Geschichte als eigenständige Nische
-- Finanzen, Börse oder Geldanlage
-- KI oder Technik als eigenständige Nische
-- reine Motivation, Lebensberatung oder Self-Help ohne erklärbaren psychologischen Mechanismus
+Ein Thema wird angenommen, wenn:
+1. Es beantwortet eine klare Frage über menschliches Denken, Fühlen, Entscheiden, Kommunizieren, sozialen Einfluss oder Verhalten.
+2. Der psychologische Mechanismus der eigentliche Kern ist.
+3. Seriöse Quellen/Forschung oder belastbare Daten verfügbar sind.
+4. Unsicherheit und umstrittene Forschung transparent dargestellt werden.
+5. Das Thema genügend Tiefe für das Format bietet.
+6. Es mehrere klar unterscheidbare Visual Beats ermöglicht.
+7. Es sich in `CINEMATIC_HUMAN_BEHAVIOR_V2` sinnvoll visualisieren lässt.
 
-Diese Bereiche dürfen nur als Beispiel vorkommen, wenn der eigentliche Mittelpunkt des Videos ein psychologischer oder verhaltensbezogener Mechanismus bleibt.
+## Erlaubte Grenzthemen
 
-## Themen-Gate für neue Videos
+Finanzen, Geschichte, Politik, Technik, KI, Werbung oder Kriminalität dürfen behandelt werden, **wenn die zentrale Frage menschliches Verhalten erklärt**.
 
-Ein Thema wird nur angenommen, wenn alle folgenden Punkte erfüllt sind:
-1. Es beantwortet eine klare Frage über menschliches Denken, Fühlen oder Verhalten.
-2. Es lässt sich mit seriösen Quellen und Forschung sauber belegen.
-3. Es trägt genügend Tiefe für das Longform-Format, ohne künstliches Strecken.
-4. Es bietet mehrere klar unterscheidbare Visual Beats.
-5. Es ist für eine Stickman-basierte Erklärwelt gut visualisierbar.
-6. Es überschneidet sich nicht unnötig mit den anderen bestehenden Kanalnischen.
-7. Bei umstrittener Forschung wird Unsicherheit transparent dargestellt.
+Passend:
+- Warum halten Anleger Verluste zu lange?
+- Warum wirken teure Statussymbole kompetent?
+- Wie erzeugen Betrüger Vertrauen?
+- Warum folgen Menschen Autoritäten?
+- Warum machen soziale Plattformen variable Belohnungen so wirksam?
+
+Nicht passend als eigenständiger Kern:
+- Welche Aktie steigt morgen?
+- Die Geschichte eines Krieges ohne Verhaltensfrage
+- Parteipolitischer Kommentar
+- reine Produktnews
+- reine Technik-Erklärung ohne Verhaltensbezug
 
 ## Bevorzugte Video-Fragen
 
-Gute Formen:
-- Warum machen Menschen X, obwohl sie wissen, dass Y besser wäre?
+- Warum machen Menschen X, obwohl Y objektiv besser wäre?
 - Warum glauben wir X?
-- Warum erinnern wir uns an X stärker als an Y?
-- Warum folgen Menschen einer Gruppe?
-- Warum vertrauen wir manchen Menschen schneller als anderen?
-- Warum verändern bestimmte Situationen unser Verhalten?
+- Wie verändert Macht Verhalten?
+- Wie entsteht sozialer Druck?
+- Warum vertrauen wir bestimmten Menschen schneller?
+- Wie beeinflusst Geld unser Urteil?
+- Wie erkennen wir psychologische Einflussmechanismen?
+- Warum handeln Gruppen anders als Einzelne?
 - Was passiert psychologisch, wenn X geschieht?
-- Warum fühlt sich X anders an, als es objektiv ist?
-
-## Beispielthemen
-
-- Warum schieben wir Dinge auf, obwohl wir es besser wissen?
-- Warum glauben wir, dass andere uns stärker beobachten, als sie es wirklich tun?
-- Warum folgen Menschen einer Gruppe, obwohl die Gruppe falschliegt?
-- Warum bleiben schlechte Erinnerungen oft stärker hängen?
-- Warum ist der erste Eindruck so mächtig?
-- Warum treffen intelligente Menschen trotzdem schlechte Entscheidungen?
-- Warum vertrauen wir manchen Menschen sofort?
-- Warum verhalten Menschen sich online anders als im echten Leben?
-- Warum machen Verbote Dinge manchmal interessanter?
-- Warum fühlt sich Zeit mit zunehmendem Alter schneller an?
 
 ## Redaktionsprinzip
 
-Der Kanal **erklärt Verhalten**, statt Menschen zu diagnostizieren oder ihnen Therapie zu geben.
+Der Kanal **erklärt Verhalten** statt Menschen aus der Ferne zu diagnostizieren.
 
 Bevorzugt werden:
 - Ursache → Wirkung
-- konkrete Alltagssituationen
-- nachvollziehbare Experimente und Forschung
-- klare Gegenbeispiele und Grenzen
-- überraschende, aber belegbare Erkenntnisse
-- ein verständlicher praktischer Bezug ohne pseudowissenschaftliche Versprechen
+- sichtbare Alltagssituationen
+- soziale Dynamiken
+- konkrete Experimente/Forschung
+- Gegenbeispiele und Grenzen
+- überraschende, aber belastbare Erkenntnisse
+- praktische Schutz- oder Reflexionspunkte bei Manipulation und schädlichem Einfluss
+- kein pseudowissenschaftliches Mind-Reading
