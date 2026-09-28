@@ -55,13 +55,10 @@
   "semanticSplit": true,
   "flowTextMoments": [
     {"scene": 1, "kind": "cover", "text": ["WARUM EINE ZAHL DICH LENKT", "ANKEREFFEKT", "199 €", "129 €"]},
-    {"scene": 2, "kind": "schema", "text": ["ERSTE ZAHL", "ANKER", "SCHÄTZUNG"]},
+    {"scene": 2, "kind": "keyword", "text": ["ERSTE ZAHL", "ANKER", "SCHÄTZUNG"]},
     {"scene": 3, "kind": "keyword", "text": ["199 €"]},
     {"scene": 4, "kind": "keyword", "text": ["129 €"]},
-    {"scene": 7, "kind": "textIllustration", "text": ["NICHT NUR BEIM EINKAUFEN"]},
-    {"scene": 9, "kind": "schema", "text": ["ERSTER VORSCHLAG", "VERHANDLUNG"]},
-    {"scene": 14, "kind": "schema", "text": ["MEHRERE VERGLEICHE"]},
-    {"scene": 16, "kind": "textIllustration", "text": ["WAS WAR MEIN ANKER?"]}
+    {"scene": 16, "kind": "keyword", "text": ["WAS WAR MEIN ANKER?"]}
   ],
   "sceneLabels": [],
   "autoFromScript": {
