@@ -1,58 +1,90 @@
 # Stickman — Produktionsrepo
 
-Deutschsprachiger Kanal zu **Alltagspsychologie & menschlichem Verhalten**.
+Deutschsprachiger Kanal zu **Psychologie & menschlichem Verhalten**.
 
 ## Aktive Bildwelt
 
-**Cinematic Illustrated Psychology World v1**
+**Cinematic Human Behavior World v2**
 
-Policy: `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1`
+Policy: `CINEMATIC_HUMAN_BEHAVIOR_V2`
 
 Source of truth:
 - `rules/VISUAL_SYSTEM.md`
 - `rules/visual-system.json`
+- `rules/FLOW_PROMPT_CONTRACT.md`
 - `rules/STICKMAN_DNA.md`
-- `assets/cinematic-psychology-world/`
+- `assets/cinematic-human-behavior-world/`
 
-Die alte Minimal-Editorial-v2-Bildwelt ist **nicht mehr aktiv**.
+Retired für neue Produktionen:
+- Universal Editorial Stickman World v1.3
+- Minimal Editorial Stickman v2
+- Cinematic Illustrated Psychology World v1
 
-### Kurzdefinition
+## Kurzdefinition
 
-**Stilisierte stickman-inspirierte Figuren + Kleidung + farbige glaubwürdige Orte + filmische 2D-Komposition + soft cel shading + verschiedene Erklärformen in derselben Welt.**
+**Eine einheitliche filmische 2D-Stickman-Welt, die von heller Alltagspsychologie bis zu Manipulation, Macht, Geld, Isolation und dunkleren Verhaltensthemen wechseln kann, ohne den Illustrationsstil zu wechseln.**
 
-Nicht jedes Bild braucht eine Figur. Erlaubt sind auch Schemas, Objektmetaphern, Vergleiche und Text-Illustrationen, solange sie exakt dieselbe visuelle Welt benutzen.
+Nicht jedes Bild braucht eine Figur. Erlaubt sind Charakter-Szenen, Schemas, Objektmetaphern, Vergleiche und Text-Illustrationen in derselben Welt.
+
+## Mood Engine
+
+Jede Szene plant:
+- `moodMode`: `CLEAR`, `UNEASY`, `DARK`, `POWER`, `MONEY`, `ISOLATION`, `HOPE`
+- `moodIntensity`: `0–4`
+- `powerDynamic`
+
+Der Kanal ist weder dauerhaft hell noch dauerhaft dunkel. Stimmung folgt dem aktuellen gesprochenen Beat.
 
 ## Szenentypen
 
-- `CHARACTER_SCENE` — normale Alltagsszene mit Figuren
-- `SCHEMA_EXPLAINER` — illustriertes Schema mit kurzen exakten Labels
-- `OBJECT_METAPHOR` — Objekt/Metapher ohne notwendige Figur
-- `COMPARE_VISUAL` — A/B, vorher/nachher, Gedanke/Wirklichkeit
-- `TEXT_ILLUSTRATION` — kurze integrierte Begriff-/Merksatz-Illustration
-
-Richtmix: ungefähr 55 / 15 / 15 / 10 / 5 Prozent. Inhalt gewinnt immer vor Quote.
+- `CHARACTER_SCENE`
+- `SCHEMA_EXPLAINER`
+- `OBJECT_METAPHOR`
+- `COMPARE_VISUAL`
+- `TEXT_ILLUSTRATION`
 
 ## Charaktere
 
-Figuren bleiben klar vereinfacht und stickman-inspiriert, sind aber **keine nackten Strichmännchen**:
+Alle Menschen gehören zu `STYLIZED_STICKMAN_CAST_V2`:
 - großer einfacher Kopf
 - minimale ausdrucksstarke Mimik
 - sichtbarer vereinfachter Oberkörper/Kleidung
 - sehr schlanke geformte Arme/Beine
 - einfache Hände und Schuhe
-- Individualität über Kleidung, Haarhinweis, Brille, Accessoire, Pose und Farbe
+- Individualität über Kleidung, Haarhinweis, Accessoire, Pose, Ausdruck und Silhouette
 
-## Welt
+Figuren dürfen freundlich, neutral, verletzlich, erschöpft, dominant, kalt, manipulativ, einschüchternd oder isoliert wirken. Die Anatomie bleibt gleich.
 
-Believable, colorful, film-like 2D locations with meaningful details, natural depth, clean outlines, soft cel shading and warm/cool lighting. No photorealism, no 3D/Pixar, no corporate vector look, no whiteboard world.
+## Prompt-Struktur — HARD LOCK
+
+Alle Google-Flow-Szenen verwenden `FLOW_SCENE_PROMPT_CONTRACT_V1`.
+
+Jeder Szenenblock hat dieselbe feste Reihenfolge. Jeder `PROMPT:` enthält dieselben Unterblöcke:
+
+1. `[GOAL]`
+2. `[WORLD LOCK]`
+3. `[CHARACTER LOCK]`
+4. `[PSYCHOLOGICAL MOOD]`
+5. `[SCENE CONTENT]`
+6. `[CAMERA + COMPOSITION]`
+7. `[LIGHT + COLOR]`
+8. `[TEXT LOCK]`
+9. `[NEGATIVE LOCK]`
+10. `[FINAL CHECK]`
+
+Nur die Szenenwerte ändern sich. Die Struktur bleibt identisch.
+
+`npm run qa:flow-prompts` prüft diese Struktur bei v2-Prompts.
 
 ## Text
 
-Google Flow rendert geplanten sichtbaren Text direkt im Bild. Erlaubt sind Cover, Keywords, Schema-Titel/Labels, Vergleichslabels und kurze Text-Illustrationen. Alle nicht geplanten Texte bleiben `ZERO READABLE TEXT`. Remotion erzeugt keinen sichtbaren YouTube-Text.
+Google Flow rendert geplanten sichtbaren Text direkt im Bild. Alle nicht geplanten Texte bleiben `ZERO READABLE TEXT`. Der Speech Context wird nie sichtbar gerendert. Remotion erzeugt keinen sichtbaren YouTube-Text.
 
 ## Referenzsystem
 
-Globale Referenzen liegen unter `assets/cinematic-psychology-world/`. `03-bilder/01.png` bleibt Szene 01 + Cover, ist aber **nicht** der globale Style-Master.
+Globale Referenzen liegen unter `assets/cinematic-human-behavior-world/` und decken unterschiedliche Charakter-, Licht-, Mood-, Umwelt-, Geld-/Status- und Manipulationssituationen ab.
+
+`03-bilder/01.png` bleibt Szene 01 + Cover, ist aber **nicht** der globale Style-Master.
 
 ## YouTube-Struktur
 
@@ -72,7 +104,8 @@ youtube/TT.MM.JJJJ-thema/
 THEMA + QUELLEN + CLAIM-CHECK
 → Script/Hook
 → Visual Beats
-→ Szenentyp + Cast/Objekt + Ort + Kamera + Licht + Textmodus
+→ Szenentyp + Mood + Power Dynamic + Cast/Objekt + Ort + Kamera + Licht + Farbe + Textmodus
+→ fester Flow-Prompt-Contract
 → Google Flow
 → Voice + Whisper Timings
 → Remotion
