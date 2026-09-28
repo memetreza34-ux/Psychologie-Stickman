@@ -51,6 +51,9 @@ for (const file of prompts) {
   const required = [
     ['active visual marker', /CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1|CINEMATIC ILLUSTRATED PSYCHOLOGY WORLD/iu],
     ['stylized stickman cast', /STYLIZED_STICKMAN|stickman-inspired/iu],
+    ['unified human cast hard lock', /UNIFIED HUMAN CAST\s*[—-]\s*HARD LOCK/iu],
+    ['all visible humans same family', /EVERY visible human|all visible humans|every human/iu],
+    ['optional human presence lock', /CHARACTER PRESENCE\s*[—-]\s*OPTIONAL|CHARACTER PRESENCE\s*[—-]\s*OPTIONAL HARD LOCK|HUMAN PRESENCE IS OPTIONAL/iu],
     ['soft cel shading', /soft cel shading/iu],
     ['believable environment', /believable environment|believable locations/iu],
     ['mixed scene types', /SCHEMA_EXPLAINER/iu],
@@ -58,7 +61,15 @@ for (const file of prompts) {
     ['no 3D', /no 3D|NOT 3D/iu],
   ];
   for (const [label, pattern] of required) if (!pattern.test(text)) failures.push(`${rel}: missing ${label}.`);
+
   if (/MINIMAL_EDITORIAL_STICKMAN_V2|MINIMAL EDITORIAL STICKMAN WORLD v2/iu.test(text)) failures.push(`${rel}: old Minimal Editorial v2 marker remains in active prompt.`);
+  if (/supporting characters? (?:may|can) (?:be|use) normal cartoon|background (?:people|characters?) (?:may|can) (?:be|use) realistic/iu.test(text)) failures.push(`${rel}: prompt explicitly permits mixed human character styles.`);
+
+  const sceneTypes = [...text.matchAll(/SCENE TYPE:\s*([A-Z_]+)/gu)].map((match) => match[1]);
+  if (sceneTypes.length >= 8) {
+    const nonCharacter = sceneTypes.filter((type) => type !== 'CHARACTER_SCENE').length;
+    if (nonCharacter === 0) warnings.push(`${rel}: every scene is CHARACTER_SCENE; review whether some beats are clearer without people.`);
+  }
 }
 
 if (warnings.length) {
