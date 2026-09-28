@@ -1,0 +1,19 @@
+PRODUCTION RULES — ANKEREFFEKT V1
+
+1. Generate Scene 01 first and stop for cover approval.
+2. Use CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1 for every image.
+3. Every visible human must use STYLIZED_STICKMAN_CAST_V1. No mixed human styles.
+4. Human presence is optional. Do not add people to schema/object/metaphor beats unless needed.
+5. Only render exact planned German text. All unplanned background text must be abstract/unreadable.
+6. No Remotion text overlays.
+7. Save approved Flow images as 03-bilder/01.png through 16.png.
+8. Preserve local character continuity where specified in CONTINUITY.txt.
+9. Use final voice file at 04-audio/final-voice.mp3.
+10. After assets exist, run the normal project preparation, validation and render pipeline.
+
+COVER
+- exact topic term: ANKEREFFEKT
+- exact headline: WARUM EINE ZAHL DICH LENKT
+- mechanism must be visible before reading text
+- same headphones + first price 199 € + later price 129 €
+- no full-width top banner
