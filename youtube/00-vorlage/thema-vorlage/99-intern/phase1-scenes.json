@@ -10,6 +10,8 @@
   "autoContinueAfterBatchPass": true,
   "visualSystem": "CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1",
   "characterSystem": "STYLIZED_STICKMAN_CAST_V1",
+  "humanCharacterPolicy": "UNIFIED_STICKMAN_HUMANS_V1",
+  "characterPresencePolicy": "OPTIONAL_HUMANS_MIXED_VISUALS_V1",
   "environmentPolicy": "BELIEVABLE_CINEMATIC_ENVIRONMENT_V1",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V1",
   "representationPolicy": "MIXED_PSYCHOLOGY_VISUALS_V1",
