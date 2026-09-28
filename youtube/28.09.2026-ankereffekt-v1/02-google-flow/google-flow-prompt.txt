@@ -1,0 +1,320 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+VISUAL SYSTEM: CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V1
+HUMAN CHARACTER POLICY: UNIFIED_STICKMAN_HUMANS_V1
+CHARACTER PRESENCE POLICY: OPTIONAL_HUMANS_MIXED_VISUALS_V1
+REPRESENTATION POLICY: MIXED_PSYCHOLOGY_VISUALS_V1
+FORMAT: 16:9 / 1920x1080
+
+GLOBAL WORLD — HARD LOCK
+Create a cinematic 2D illustrated frame for a modern psychology YouTube channel. Keep one consistent film-world: colorful believable environments, clean slightly organic outlines, soft cel shading, natural depth, purposeful cinematic framing, controlled colors, warm/cool lighting and small meaningful details. No photorealism, no 3D/Pixar, no anime, no corporate vector look, no whiteboard doodle style.
+
+UNIFIED HUMAN CAST — HARD LOCK
+EVERY visible human must use the exact same stylized stickman-inspired anatomy family. This includes main characters, supporting characters, background people, crowds, memory figures and depicted people on screens/posters/reflections. Use large simple round/oval heads, minimal expressive faces, compact clothed torsos, very slim simplified illustrated limbs with slight width, simple hands and simple shoes. Background people may be simpler, but never normal cartoon humans, semi-realistic people, realistic humans, generic vector humans or another anatomy family. Individualize only through clothing, simple hair/accessory, modest size variation, posture and expression.
+
+CHARACTER PRESENCE — OPTIONAL HARD LOCK
+A human is NOT required in every scene. If the beat is clearer as a schema, object metaphor, comparison, symbolic environment, object close-up or text illustration, omit people completely. Do not insert decorative stickmen just to fill space. No-human frames must still use the same linework, color behavior, soft cel shading, depth, lighting and film-world.
+
+SCENE TYPES
+- CHARACTER_SCENE: human action in a believable place; all humans use unified stickman family
+- SCHEMA_EXPLAINER: illustrated mechanism; human optional
+- OBJECT_METAPHOR: symbolic object/environment; no human required
+- COMPARE_VISUAL: two states/options; human optional
+- TEXT_ILLUSTRATION: short exact German phrase integrated into illustration; human optional
+
+VISIBLE TEXT — GOOGLE FLOW ONLY
+NO REMOTION TEXT. Only render exact German strings listed in the current scene. All other screens, books, posters, packaging and documents use abstract marks. If PLANNED GERMAN TEXT is NONE, use ZERO READABLE TEXT.
+
+TYPOGRAPHY
+Clean modern editorial typography integrated into the illustrated world. Safe margins. No meme/sticker style, no 3D/glow typography, no corporate PowerPoint look.
+
+COVER SEMANTICS — HARD LOCK
+COVER TOPIC TERM: ANKEREFFEKT
+COVER VISUAL THESIS: The first visible high price of 199 € makes the later 129 € price for the same headphones feel much cheaper.
+The cover must explain this mechanism before text is read. The SAME headphones must remain the shared focal object and the 199 € first value must visibly pull perception of 129 € toward “cheap”.
+
+COVER TYPOGRAPHY — HARD LOCK
+NO FULL-WIDTH TOP BANNER. Reserve a compact asymmetric title zone. Use the small topic kicker "ANKEREFFEKT" and the stronger main line "WARUM EINE ZAHL DICH LENKT" as one designed hierarchy. Do not cover the headphones or the 199 € → 129 € mechanism.
+
+REFERENCE SYSTEM
+Use approved files from assets/cinematic-psychology-world/ as STYLE/CHARACTER-FAMILY/LINEWORK/COLOR/SHADING/LIGHTING references only. Do not clone exact characters, rooms, poses, composition or readable text.
+
+BATCH WORKFLOW
+1. Generate Scene 01 only and STOP for user approval.
+2. Save approved image as 03-bilder/01.png.
+3. Continue in batches of max 5 images.
+4. Internal QA after each batch; regenerate only failures.
+
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Warum wirkt ein Preis plötzlich günstig, nur weil du vorher eine höhere Zahl gesehen hast? Das nennt man Ankereffekt.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: the same headphones feel cheaper after a high first price establishes an anchor
+VISUAL TASK: show the same headphones with 199 € as the dominant first price and 129 € as the later price that suddenly feels cheap; one shopper may react, using the unified stickman family
+COVER TOPIC TERM: ANKEREFFEKT
+COVER VISUAL THESIS: The first visible 199 € price makes the later 129 € price for the same headphones feel much cheaper.
+CAMERA: strong thumbnail-ready medium-wide retail composition
+LIGHTING MOOD: warm product light with cool store background and strong focal contrast
+CHARACTER DIRECTION: one stickman-family shopper only, simple dark teal jacket, clear surprised/bargain reaction
+TITLE PLACEMENT: compact asymmetric integrated title block in reserved negative space; never a full-width top banner
+PLANNED GERMAN TEXT:
+- "WARUM EINE ZAHL DICH LENKT"
+- "ANKEREFFEKT"
+- "199 €"
+- "129 €"
+PROMPT:
+Create a strong psychology thumbnail in the established cinematic 2D world. Make one pair of headphones large and unmistakably central. Show 199 € as the first strong reference value and 129 € as the later price that now feels much cheaper. The mechanism must read instantly without relying on the headline. If a shopper appears, use the exact unified stickman family. Integrate exactly "ANKEREFFEKT", "WARUM EINE ZAHL DICH LENKT", "199 €" and "129 €" in the reserved asymmetric composition. NO FULL-WIDTH TOP BANNER. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+
+SCENE 02
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Die erste Zahl setzt einen mentalen Ausgangspunkt, an dem sich spätere Einschätzungen unbewusst orientieren.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: first number becomes a reference point that shifts later judgment
+VISUAL TASK: illustrate a first numeric value becoming an anchor and pulling a later estimate toward it; no human required
+CAMERA: clean frontal mechanism schema
+LIGHTING MOOD: soft blue-amber film-world lighting
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "ERSTE ZAHL"
+- "ANKER"
+- "SCHÄTZUNG"
+PROMPT:
+Create a cinematic illustrated mechanism schema with a first value becoming an anchor and a later estimate visibly pulled toward it. No human is needed. Render exactly "ERSTE ZAHL", "ANKER" and "SCHÄTZUNG". NO OTHER READABLE TEXT.
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Stell dir vor, du siehst Kopfhörer zuerst für 199 Euro.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: shopper first encounters headphones with a high initial price
+VISUAL TASK: show one stickman-family shopper in an electronics store looking at headphones marked with the first price 199 Euro
+CAMERA: medium three-quarter retail shot
+LIGHTING MOOD: clean warm store lighting with cooler aisle depth
+CHARACTER DIRECTION: one young adult in the unified stickman family, dark teal jacket, neutral evaluating posture
+PLANNED GERMAN TEXT:
+- "199 €"
+PROMPT:
+In a believable electronics store, show one unified-stickman-family shopper noticing a pair of headphones for the first time. The product and first price are the focus. Render exactly "199 €". NO OTHER READABLE TEXT.
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Kurz danach steht dort 129 Euro – und plötzlich fühlt sich das wie ein starkes Angebot an.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: same shopper now perceives 129 Euro as unusually attractive
+VISUAL TASK: show the same shopper reacting positively to the same headphones now marked 129 Euro, preserving local continuity
+CAMERA: close-medium product reaction shot
+LIGHTING MOOD: warmer focal product light with soft background
+CHARACTER DIRECTION: same shopper, same head proportions and dark teal jacket
+PLANNED GERMAN TEXT:
+- "129 €"
+PROMPT:
+Show the same shopper and the same headphones. The shopper now reacts as if the offer feels clearly more attractive. Render exactly "129 €". Preserve the exact same stickman-family character design. NO OTHER READABLE TEXT.
+
+SCENE 05
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Jemand, der nur 129 Euro sieht, kann denselben Preis deutlich neutraler beurteilen.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: DUO
+VISUAL IDEA: same final price feels different depending on whether a high anchor was seen first
+VISUAL TASK: compare two same-family stickman shoppers evaluating identical headphones at the same final price; one saw the high anchor first, the other did not
+CAMERA: balanced left-right comparison
+LIGHTING MOOD: same store world with subtle warm-cool separation
+CHARACTER DIRECTION: two different individuals but exact same stickman anatomy family; vary only clothing, posture and expression
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Create a coherent comparison with identical headphones and the same final price context. Left shopper reacts strongly because a high first price was seen earlier; right shopper evaluates more neutrally. EVERY visible human uses the same stylized stickman family. ZERO READABLE TEXT.
+
+SCENE 06
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der erste Wert wirkt wie ein Anker, der deine spätere Schätzung in seine Richtung zieht.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: a literal anchor pulls a value marker toward the first number
+VISUAL TASK: use a symbolic metal anchor attached to a value marker, visibly pulling a later estimate toward the first reference point; no human required
+CAMERA: close symbolic composition
+LIGHTING MOOD: dramatic warm anchor light against cool background
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Show a strong illustrated metal anchor connected to a floating value marker, visibly pulling the later estimate toward the first reference point. No person is needed. Keep the same cinematic 2D world. ZERO READABLE TEXT.
+
+SCENE 07
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das passiert nicht nur beim Einkaufen.
+SCENE TYPE: TEXT_ILLUSTRATION
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: anchoring extends beyond retail decisions
+VISUAL TASK: create a clean cinematic text illustration with a central anchor symbol branching toward salary, apartment and car icons; no human required
+CAMERA: clean illustrated overview
+LIGHTING MOOD: soft neutral cinematic light
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "NICHT NUR BEIM EINKAUFEN"
+PROMPT:
+Create an illustrated anchor in the center with simple salary, apartment and car symbols around it, all in the same film-world. No human is needed. Integrate exactly "NICHT NUR BEIM EINKAUFEN". NO OTHER READABLE TEXT.
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Auch bei Gehaltsverhandlungen, Wohnungen oder Autos kann die erste genannte Zahl den weiteren Vergleich verschieben.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+VISUAL IDEA: first stated number influences a negotiation reference range
+VISUAL TASK: show two same-family stickman characters in a salary negotiation where one first number visibly becomes the reference point for the discussion
+CAMERA: medium two-person desk shot
+LIGHTING MOOD: professional warm office light with cool depth
+CHARACTER DIRECTION: both people use exact same stickman anatomy family; individualize through jacket, shirt, posture and accessory only
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+At a simple office desk, show two unified-stickman-family people negotiating. One person has just placed the first offer, and the body language makes it clear that this number now frames the discussion. ZERO READABLE TEXT.
+
+SCENE 09
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein frühes Angebot kann dadurch beeinflussen, welche späteren Zahlen überhaupt noch realistisch wirken.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: first offer shifts the range that later options feel plausible within
+VISUAL TASK: show a first offer marker setting a visible range, with later offers clustering around that shifted reference zone; no human required
+CAMERA: frontal illustrated range schema
+LIGHTING MOOD: soft dimensional blue-amber light
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "ERSTER VORSCHLAG"
+- "VERHANDLUNG"
+PROMPT:
+Create a cinematic illustrated range schema. One first-offer marker establishes a shifted zone and later option markers cluster around it. No human is needed. Render exactly "ERSTER VORSCHLAG" and "VERHANDLUNG". NO OTHER READABLE TEXT.
+
+SCENE 10
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Sogar zufällige Zahlen können Schätzungen verschieben, besonders wenn dir ein klarer Vergleich fehlt.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: an arbitrary number card bends an uncertain estimate scale
+VISUAL TASK: show a random number card beside an uncertain estimation scale, with the scale subtly bending toward that number; no human required
+CAMERA: close conceptual illustration
+LIGHTING MOOD: quiet cool background with warm focal number card
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Show an arbitrary number card beside an uncertain estimation scale. The scale subtly bends toward the number, communicating influence without implying certainty. No human is needed. ZERO READABLE TEXT.
+
+SCENE 11
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das bedeutet nicht, dass du jeder ersten Zahl automatisch glaubst.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: person remains skeptical while still exposed to a first number
+VISUAL TASK: show one stickman-family person looking skeptical at an initial price or offer rather than accepting it blindly
+CAMERA: close-medium thoughtful side angle
+LIGHTING MOOD: neutral focused light
+CHARACTER DIRECTION: one unified-stickman-family person, thoughtful expression and folded posture
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Show one stylized stickman-family person examining an offer skeptically rather than simply accepting it. The scene communicates doubt and evaluation, not gullibility. ZERO READABLE TEXT.
+
+SCENE 12
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Aber selbst wenn du weißt, dass ein Anker existiert, kann er deine Einschätzung trotzdem beeinflussen.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: NONE
+VISUAL IDEA: awareness of the anchor does not necessarily remove its pull
+VISUAL TASK: compare an acknowledged anchor symbol with a judgment marker that still remains slightly pulled toward it; no human required
+CAMERA: clean symbolic split comparison
+LIGHTING MOOD: controlled warm-cool contrast
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Create a symbolic comparison: the anchor is clearly recognized and separated, yet the final judgment marker still sits slightly closer to it than a neutral reference point. No human is needed. ZERO READABLE TEXT.
+
+SCENE 13
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein einfacher Schutz ist, vor dem ersten Angebot eine eigene grobe Einschätzung festzulegen.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: person forms an independent estimate before seeing the offer
+VISUAL TASK: show one stickman-family person calmly writing a private estimate before opening or viewing an offer
+CAMERA: medium desk shot
+LIGHTING MOOD: quiet warm desk light with cool background
+CHARACTER DIRECTION: one unified-stickman-family character, calm posture, simple olive sweater
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+At a quiet desk, show one stickman-family person writing a private estimate before viewing an unopened offer on a laptop or envelope. Screens and paper use abstract marks only. ZERO READABLE TEXT.
+
+SCENE 14
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Danach vergleichst du mehrere unabhängige Preise, Daten oder Angebote statt nur mit der ersten Zahl.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: multiple independent reference points reduce dependence on one anchor
+VISUAL TASK: show several independent reference markers around one decision instead of one dominant first value; no human required
+CAMERA: clean frontal multi-reference schema
+LIGHTING MOOD: balanced soft cinematic light
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "MEHRERE VERGLEICHE"
+PROMPT:
+Create a clean illustrated decision schema with several independent reference markers surrounding one central decision point, none dominating alone. No human is needed. Render exactly "MEHRERE VERGLEICHE". NO OTHER READABLE TEXT.
+
+SCENE 15
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+So bekommt dein Kopf mehrere Bezugspunkte und hängt weniger an einem einzigen Wert.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: one heavy anchor is replaced by several balanced reference points
+VISUAL TASK: show one heavy anchor losing dominance as several balanced reference points appear around the decision scale; no human required
+CAMERA: close-medium symbolic balance composition
+LIGHTING MOOD: calm warm resolution with soft blue depth
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Show one heavy anchor becoming less dominant as several balanced reference points appear around a decision scale. Keep the metaphor simple and cinematic. No human is needed. ZERO READABLE TEXT.
+
+SCENE 16
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wenn dir eine Zahl sofort extrem günstig oder teuer vorkommt, frag dich: Was war eigentlich mein Anker?
+SCENE TYPE: TEXT_ILLUSTRATION
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: closing question prompts the viewer to identify the reference number shaping judgment
+VISUAL TASK: show a clean anchor and price-tag illustration with the anchor visually separating from the final judgment; no human required
+CAMERA: clean cinematic closing illustration
+LIGHTING MOOD: calm warm focal light with cool surrounding space
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "WAS WAR MEIN ANKER?"
+PROMPT:
+Create a calm closing illustration with an anchor, a price-tag shape and a final judgment marker visibly separating from the anchor. No human is needed. Integrate exactly "WAS WAR MEIN ANKER?". NO OTHER READABLE TEXT.
+
+FINAL QA
+- same cinematic illustrated world across every scene type
+- EVERY visible human, including supporting/background figures, matches STYLIZED_STICKMAN_CAST_V1
+- no mixed human character families
+- no normal cartoon-human side characters behind a stickman main character
+- human presence is optional; no decorative people added where schemas/objects are clearer
+- no bare line-stickman drift
+- no 3D/photorealistic/anime/corporate-vector drift
+- no-human frames still match linework, color, cel shading, depth and lighting
+- Scene 01 visually explains the Ankereffekt before text is read
+- cover contains exact visible topic term ANKEREFFEKT
+- NO FULL-WIDTH TOP BANNER
+- every planned German text exact
+- no accidental readable background text
+- no visible Remotion text
