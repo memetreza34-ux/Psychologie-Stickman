@@ -1,50 +1,49 @@
 GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
 
-VISUAL SYSTEM: CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
-CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V1
-HUMAN CHARACTER POLICY: UNIFIED_STICKMAN_HUMANS_V1
-CHARACTER PRESENCE POLICY: OPTIONAL_HUMANS_MIXED_VISUALS_V1
-REPRESENTATION POLICY: MIXED_PSYCHOLOGY_VISUALS_V1
+VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+MOOD POLICY: ADAPTIVE_PSYCHOLOGICAL_MOOD_V1
+PROMPT CONTRACT: FLOW_SCENE_PROMPT_CONTRACT_V1
+REPRESENTATION POLICY: MIXED_HUMAN_BEHAVIOR_VISUALS_V2
 FORMAT: 16:9 / 1920x1080
 
 GLOBAL WORLD — HARD LOCK
-Create a cinematic 2D illustrated frame for a modern psychology YouTube channel. Keep one consistent film-world: colorful believable environments, clean slightly organic outlines, soft cel shading, natural depth, purposeful cinematic framing, controlled colors, warm/cool lighting and small meaningful details. No photorealism, no 3D/Pixar, no anime, no corporate vector look, no whiteboard doodle style.
+Create every frame as part of one polished cinematic 2D human-behavior illustration world. Use clean slightly organic dark outlines, soft cel shading, controlled subtle texture, believable depth, purposeful framing and motivated light. Mood may change strongly between scenes; illustration identity must not.
 
 UNIFIED HUMAN CAST — HARD LOCK
-EVERY visible human must use the exact same stylized stickman-inspired anatomy family. This includes main characters, supporting characters, background people, crowds, memory figures and depicted people on screens/posters/reflections. Use large simple round/oval heads, minimal expressive faces, compact clothed torsos, very slim simplified illustrated limbs with slight width, simple hands and simple shoes. Background people may be simpler, but never normal cartoon humans, semi-realistic people, realistic humans, generic vector humans or another anatomy family. Individualize only through clothing, simple hair/accessory, modest size variation, posture and expression.
+EVERY visible human must use STYLIZED_STICKMAN_CAST_V2: large simple round/oval head, minimal expressive face, compact clothed torso, very slim shaped illustrated limbs with slight width, simple hands and simple shoes. Humans may look neutral, skeptical, vulnerable, confident, dominant, cold or uneasy through pose, expression, clothing, framing and light. Never mix anatomy families.
+
+MOOD ENGINE — HARD LOCK
+Every scene explicitly declares MOOD MODE, MOOD INTENSITY and POWER DYNAMIC. Translate these through posture, blocking, camera, negative space, environment, light and controlled color. Do not make the whole video dark or bright by default.
 
 CHARACTER PRESENCE — OPTIONAL HARD LOCK
-A human is NOT required in every scene. If the beat is clearer as a schema, object metaphor, comparison, symbolic environment, object close-up or text illustration, omit people completely. Do not insert decorative stickmen just to fill space. No-human frames must still use the same linework, color behavior, soft cel shading, depth, lighting and film-world.
-
-SCENE TYPES
-- CHARACTER_SCENE: human action in a believable place; all humans use unified stickman family
-- SCHEMA_EXPLAINER: illustrated mechanism; human optional
-- OBJECT_METAPHOR: symbolic object/environment; no human required
-- COMPARE_VISUAL: two states/options; human optional
-- TEXT_ILLUSTRATION: short exact German phrase integrated into illustration; human optional
+A human is NOT required in every scene. If a schema, object metaphor, comparison or symbolic environment explains the current beat faster, omit people completely.
 
 VISIBLE TEXT — GOOGLE FLOW ONLY
-NO REMOTION TEXT. Only render exact German strings listed in the current scene. All other screens, books, posters, packaging and documents use abstract marks. If PLANNED GERMAN TEXT is NONE, use ZERO READABLE TEXT.
+Only render exact German strings listed in PLANNED GERMAN TEXT. Speech Context is NEVER visible text. If PLANNED GERMAN TEXT is NONE, use ZERO READABLE TEXT. No random UI, packaging, poster, document or background text.
 
 TYPOGRAPHY
-Clean modern editorial typography integrated into the illustrated world. Safe margins. No meme/sticker style, no 3D/glow typography, no corporate PowerPoint look.
-
-COVER SEMANTICS — HARD LOCK
-COVER TOPIC TERM: ANKEREFFEKT
-COVER VISUAL THESIS: The first visible high price of 199 € makes the later 129 € price for the same headphones feel much cheaper.
-The cover must explain this mechanism before text is read. The SAME headphones must remain the shared focal object and the 199 € first value must visibly pull perception of 129 € toward “cheap”.
-
-COVER TYPOGRAPHY — HARD LOCK
-NO FULL-WIDTH TOP BANNER. Reserve a compact asymmetric title zone. Use the small topic kicker "ANKEREFFEKT" and the stronger main line "WARUM EINE ZAHL DICH LENKT" as one designed hierarchy. Do not cover the headphones or the 199 € → 129 € mechanism.
+Clean professional editorial typography integrated into the image. Strong contrast against the actual background. If the background is bright, use sufficiently dark text; if the background is dark, use sufficiently light text. No meme/sticker lettering, no glow, no oversized outline, no full-width top banner.
 
 REFERENCE SYSTEM
-Use approved files from assets/cinematic-psychology-world/ as STYLE/CHARACTER-FAMILY/LINEWORK/COLOR/SHADING/LIGHTING references only. Do not clone exact characters, rooms, poses, composition or readable text.
+Use approved files from assets/cinematic-human-behavior-world/ only for illustration language, anatomy family, linework, cel shading, texture, rendering quality and mood-appropriate lighting/color behavior. Do not clone exact character identity, pose, room, object arrangement, composition or readable text. Scene 01 is NOT the global style master.
+
+SCENE TYPES
+- CHARACTER_SCENE
+- SCHEMA_EXPLAINER
+- OBJECT_METAPHOR
+- COMPARE_VISUAL
+- TEXT_ILLUSTRATION
+
+NEGATIVE GLOBAL LOCK
+No photorealism. No 3D/Pixar/CGI. No anime/manga/chibi. No corporate vector stock art. No whiteboard/doodle world. No mixed human anatomy styles. No random readable text. No decorative person when a no-human visual is clearer. No empty black background used as a shortcut for mood.
 
 BATCH WORKFLOW
 1. Generate Scene 01 only and STOP for user approval.
 2. Save approved image as 03-bilder/01.png.
 3. Continue in batches of max 5 images.
 4. Internal QA after each batch; regenerate only failures.
+5. Keep the fixed scene-prompt structure unchanged for every scene.
 
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -52,21 +51,45 @@ Warum wirkt ein Preis plötzlich günstig, nur weil du vorher eine höhere Zahl 
 SCENE TYPE: COMPARE_VISUAL
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: SOLO
-VISUAL IDEA: the same headphones feel cheaper after a high first price establishes an anchor
-VISUAL TASK: show the same headphones with 199 € as the dominant first price and 129 € as the later price that suddenly feels cheap; one shopper may react, using the unified stickman family
-COVER TOPIC TERM: ANKEREFFEKT
-COVER VISUAL THESIS: The first visible 199 € price makes the later 129 € price for the same headphones feel much cheaper.
-CAMERA: strong thumbnail-ready medium-wide retail composition
-LIGHTING MOOD: warm product light with cool store background and strong focal contrast
-CHARACTER DIRECTION: one stickman-family shopper only, simple dark teal jacket, clear surprised/bargain reaction
-TITLE PLACEMENT: compact asymmetric integrated title block in reserved negative space; never a full-width top banner
+MOOD MODE: MONEY
+MOOD INTENSITY: 2
+POWER DYNAMIC: NEUTRAL
+VISUAL IDEA: The same headphones feel cheaper after a high first price establishes an anchor.
+VISUAL TASK: Show the same headphones with 199 € as the dominant first reference and 129 € as the later price that suddenly feels cheaper. The visual mechanism must read before the headline is read.
+CHARACTER / SUBJECT DIRECTION: One STYLIZED_STICKMAN_CAST_V2 shopper only, simple dark teal jacket, believable surprised/bargain reaction; headphones are the dominant subject.
+ACTION / RELATION: The shopper visually compares the same headphones across the 199 € to 129 € price shift.
+ENVIRONMENT: Believable modern electronics-store display with controlled detail and clear product hierarchy.
+CAMERA: Strong thumbnail-ready medium-wide retail composition; headphones large and unmistakably central; compact asymmetric title-safe negative space.
+LIGHTING: Warm product light against cooler store depth, motivated and dimensional, MONEY intensity 2.
+COLOR: Graphite/cool-blue store depth, restrained warm product accent, dark teal clothing; headline must contrast strongly with its actual background.
+CONTINUITY: Establish shopper identity for Scenes 03-04 only. Scene 01 is cover/thumbnail, NOT global style master.
+TEXT POLICY: FLOW_EXACT_COVER_TEXT
 PLANNED GERMAN TEXT:
 - "WARUM EINE ZAHL DICH LENKT"
-- "ANKEREFFEKT"
 - "199 €"
 - "129 €"
+NEGATIVE LOCKS: NO OTHER READABLE TEXT. No full-width top banner. No extra topic kicker. No duplicate headphones. No cartoon-human drift. No finance-stock-vector look.
 PROMPT:
-Create a strong psychology thumbnail in the established cinematic 2D world. Make one pair of headphones large and unmistakably central. Show 199 € as the first strong reference value and 129 € as the later price that now feels much cheaper. The mechanism must read instantly without relying on the headline. If a shopper appears, use the exact unified stickman family. Integrate exactly "ANKEREFFEKT", "WARUM EINE ZAHL DICH LENKT", "199 €" and "129 €" in the reserved asymmetric composition. NO FULL-WIDTH TOP BANNER. NO OTHER READABLE TEXT. Generate Scene 01 only, then STOP.
+[GOAL]
+Create a thumbnail-ready frame where the same headphones visibly feel cheaper because 199 € was seen before 129 €.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2: polished cinematic 2D editorial illustration, organic dark outlines, soft cel shading, controlled texture and believable depth.
+[CHARACTER LOCK]
+Use exactly one STYLIZED_STICKMAN_CAST_V2 shopper with the planned dark teal jacket. Never mix human anatomy families.
+[PSYCHOLOGICAL MOOD]
+MONEY mode, intensity 2, power dynamic NEUTRAL. Make price perception feel persuasive through hierarchy and focal contrast, not through exaggerated facial acting.
+[SCENE CONTENT]
+One pair of headphones is the shared focal object. 199 € is the first strong reference; 129 € is the later price that now feels much cheaper.
+[CAMERA + COMPOSITION]
+Use the planned strong medium-wide retail contrast composition with clear negative space for the headline and no full-width banner.
+[LIGHT + COLOR]
+Use warm product light against cooler graphite/blue store depth. Keep the text high-contrast against its actual background.
+[TEXT LOCK]
+Render exactly "WARUM EINE ZAHL DICH LENKT", "199 €" and "129 €". NO OTHER READABLE TEXT. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D/Pixar/CGI, no anime, no corporate vector art, no whiteboard style, no extra labels, no mixed anatomy, no duplicate product.
+[FINAL CHECK]
+One beat only: first high price changes perception of the later lower price. Correct v2 world, correct shopper family, correct MONEY mood, exact text only. Generate Scene 01 only, then STOP.
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -74,17 +97,45 @@ Die erste Zahl setzt einen mentalen Ausgangspunkt, an dem sich spätere Einschä
 SCENE TYPE: SCHEMA_EXPLAINER
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
-VISUAL IDEA: first number becomes a reference point that shifts later judgment
-VISUAL TASK: illustrate a first numeric value becoming an anchor and pulling a later estimate toward it; no human required
-CAMERA: clean frontal mechanism schema
-LIGHTING MOOD: soft blue-amber film-world lighting
-CHARACTER DIRECTION: NONE
+MOOD MODE: CLEAR
+MOOD INTENSITY: 1
+POWER DYNAMIC: NONE
+VISUAL IDEA: A first number becomes a reference point that shifts later judgment.
+VISUAL TASK: Illustrate a first numeric value becoming an anchor and pulling a later estimate toward it; no human required.
+CHARACTER / SUBJECT DIRECTION: NO HUMAN REQUIRED. Main subjects are the first-value marker, anchor relation and later estimate.
+ACTION / RELATION: The first value visibly establishes the reference point and pulls the later estimate toward it.
+ENVIRONMENT: Dimensional illustrated mechanism space using the same channel linework, depth and cel-shading language; never a PowerPoint slide.
+CAMERA: Clean frontal mechanism schema with one clear left-to-right or center-out relation.
+LIGHTING: Soft clear blue-amber dimensional light, CLEAR intensity 1.
+COLOR: Muted blue/teal base with restrained amber focal anchor; no loud infographic palette.
+CONTINUITY: No character continuity required.
+TEXT POLICY: FLOW_EXACT_SCHEMA_TEXT
 PLANNED GERMAN TEXT:
 - "ERSTE ZAHL"
 - "ANKER"
 - "SCHÄTZUNG"
+NEGATIVE LOCKS: NO OTHER READABLE TEXT. No human. No corporate chart look. No unnecessary extra arrows or labels.
 PROMPT:
-Create a cinematic illustrated mechanism schema with a first value becoming an anchor and a later estimate visibly pulled toward it. No human is needed. Render exactly "ERSTE ZAHL", "ANKER" and "SCHÄTZUNG". NO OTHER READABLE TEXT.
+[GOAL]
+Show that the first number becomes a mental reference point that pulls later estimation toward it.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with the same 2D outlines, cel shading, texture and depth as character scenes.
+[CHARACTER LOCK]
+NO HUMAN REQUIRED. Do not insert a decorative stickman.
+[PSYCHOLOGICAL MOOD]
+CLEAR mode, intensity 1, power dynamic NONE. Prioritize clarity and calm dimensionality.
+[SCENE CONTENT]
+A first-value marker becomes an anchor; a later estimate is visibly displaced toward that anchor.
+[CAMERA + COMPOSITION]
+Use a clean frontal mechanism schema with one dominant relation and no clutter.
+[LIGHT + COLOR]
+Muted blue/teal field with restrained amber anchor focus and soft dimensional light.
+[TEXT LOCK]
+Render exactly "ERSTE ZAHL", "ANKER" and "SCHÄTZUNG". NO OTHER READABLE TEXT. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no corporate infographic, no whiteboard doodle, no decorative human, no extra labels.
+[FINAL CHECK]
+One mechanism only: first value → anchor → shifted estimate. Correct v2 rendering, exact three labels only.
 
 SCENE 03
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -92,15 +143,43 @@ Stell dir vor, du siehst Kopfhörer zuerst für 199 Euro.
 SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-VISUAL IDEA: shopper first encounters headphones with a high initial price
-VISUAL TASK: show one stickman-family shopper in an electronics store looking at headphones marked with the first price 199 Euro
-CAMERA: medium three-quarter retail shot
-LIGHTING MOOD: clean warm store lighting with cooler aisle depth
-CHARACTER DIRECTION: one young adult in the unified stickman family, dark teal jacket, neutral evaluating posture
+MOOD MODE: MONEY
+MOOD INTENSITY: 1
+POWER DYNAMIC: NEUTRAL
+VISUAL IDEA: Shopper first encounters the headphones with a high initial price.
+VISUAL TASK: Show the Scene-01 shopper in an electronics store encountering the same headphones at the first price.
+CHARACTER / SUBJECT DIRECTION: Same STYLIZED_STICKMAN_CAST_V2 shopper as Scene 01, same head proportions and dark teal jacket, neutral evaluating posture.
+ACTION / RELATION: Shopper looks directly at the headphones and the first price marker.
+ENVIRONMENT: Same believable electronics-store world, but not the exact same composition; controlled retail detail.
+CAMERA: Medium three-quarter retail shot.
+LIGHTING: Clean warm product light with cooler aisle depth, MONEY intensity 1.
+COLOR: Cool store depth, warm product focal zone, dark teal shopper.
+CONTINUITY: LOCAL CONTINUITY with Scenes 01 and 04.
+TEXT POLICY: FLOW_EXACT_KEYWORD_TEXT
 PLANNED GERMAN TEXT:
 - "199 €"
+NEGATIVE LOCKS: NO OTHER READABLE TEXT. No duplicate character. No random shelf/package text. No different jacket or anatomy.
 PROMPT:
-In a believable electronics store, show one unified-stickman-family shopper noticing a pair of headphones for the first time. The product and first price are the focus. Render exactly "199 €". NO OTHER READABLE TEXT.
+[GOAL]
+Show the shopper encountering the headphones at the first high price of 199 €.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with polished cinematic 2D rendering and believable retail depth.
+[CHARACTER LOCK]
+Use the same STYLIZED_STICKMAN_CAST_V2 shopper from Scene 01 with the same dark teal jacket and proportions.
+[PSYCHOLOGICAL MOOD]
+MONEY mode, intensity 1, power dynamic NEUTRAL. The scene is evaluative, not dramatic.
+[SCENE CONTENT]
+The shopper notices the same headphones for the first time and evaluates the initial 199 € price.
+[CAMERA + COMPOSITION]
+Use the planned medium three-quarter retail shot with product and reaction both readable.
+[LIGHT + COLOR]
+Warm product light, cooler aisle depth, controlled natural retail colors.
+[TEXT LOCK]
+Render exactly "199 €". NO OTHER READABLE TEXT. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no anime, no random shelf text, no anatomy drift, no exaggerated bargain reaction yet.
+[FINAL CHECK]
+One beat only: first exposure to 199 €. Preserve local shopper continuity and correct MONEY mood.
 
 SCENE 04
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -108,15 +187,43 @@ Kurz danach steht dort 129 Euro – und plötzlich fühlt sich das wie ein stark
 SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-VISUAL IDEA: same shopper now perceives 129 Euro as unusually attractive
-VISUAL TASK: show the same shopper reacting positively to the same headphones now marked 129 Euro, preserving local continuity
-CAMERA: close-medium product reaction shot
-LIGHTING MOOD: warmer focal product light with soft background
-CHARACTER DIRECTION: same shopper, same head proportions and dark teal jacket
+MOOD MODE: MONEY
+MOOD INTENSITY: 2
+POWER DYNAMIC: NEUTRAL
+VISUAL IDEA: The same shopper now perceives 129 € as unusually attractive.
+VISUAL TASK: Show the same shopper and same headphones; the lower price now feels unusually attractive because of the earlier anchor.
+CHARACTER / SUBJECT DIRECTION: Same Scene-01/03 shopper, same clothing and proportions; positive but natural reaction.
+ACTION / RELATION: Shopper leans slightly toward the same product, visibly more attracted to the offer.
+ENVIRONMENT: Same electronics-store world with softer background and stronger product focus.
+CAMERA: Close-medium product reaction shot.
+LIGHTING: Warmer focal product light with cooler soft background, MONEY intensity 2.
+COLOR: Warm focal accent around product, controlled cool surroundings.
+CONTINUITY: LOCAL CONTINUITY with Scenes 01 and 03.
+TEXT POLICY: FLOW_EXACT_KEYWORD_TEXT
 PLANNED GERMAN TEXT:
 - "129 €"
+NEGATIVE LOCKS: NO OTHER READABLE TEXT. No character redesign. No different headphones. No excessive sale graphics.
 PROMPT:
-Show the same shopper and the same headphones. The shopper now reacts as if the offer feels clearly more attractive. Render exactly "129 €". Preserve the exact same stickman-family character design. NO OTHER READABLE TEXT.
+[GOAL]
+Show that the same 129 € price now feels like a strong offer after the earlier 199 € anchor.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with the exact same illustration language as Scene 03.
+[CHARACTER LOCK]
+Use the same STYLIZED_STICKMAN_CAST_V2 shopper, same jacket, head design and proportions.
+[PSYCHOLOGICAL MOOD]
+MONEY mode, intensity 2, power dynamic NEUTRAL. Increase attraction subtly through posture and focal warmth.
+[SCENE CONTENT]
+Same shopper, same headphones, new 129 € price, visibly more positive evaluation.
+[CAMERA + COMPOSITION]
+Use a close-medium reaction/product shot with the product still clearly readable.
+[LIGHT + COLOR]
+Slightly warmer product focal light, cool soft store depth, no candy-colored sale look.
+[TEXT LOCK]
+Render exactly "129 €". NO OTHER READABLE TEXT. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no random sale labels, no character drift, no duplicate products.
+[FINAL CHECK]
+One beat only: 129 € feels better because 199 € came first. Maintain exact local continuity.
 
 SCENE 05
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -124,14 +231,42 @@ Jemand, der nur 129 Euro sieht, kann denselben Preis deutlich neutraler beurteil
 SCENE TYPE: COMPARE_VISUAL
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: DUO
-VISUAL IDEA: same final price feels different depending on whether a high anchor was seen first
-VISUAL TASK: compare two same-family stickman shoppers evaluating identical headphones at the same final price; one saw the high anchor first, the other did not
-CAMERA: balanced left-right comparison
-LIGHTING MOOD: same store world with subtle warm-cool separation
-CHARACTER DIRECTION: two different individuals but exact same stickman anatomy family; vary only clothing, posture and expression
+MOOD MODE: MONEY
+MOOD INTENSITY: 1
+POWER DYNAMIC: STATUS_CONTRAST
+VISUAL IDEA: The same final price feels different depending on whether a high anchor was seen first.
+VISUAL TASK: Compare two same-family shoppers evaluating identical headphones at the same final-price context; one saw the high anchor earlier, the other did not.
+CHARACTER / SUBJECT DIRECTION: Two different STYLIZED_STICKMAN_CAST_V2 individuals; one visibly more impressed, one neutral; same anatomy family.
+ACTION / RELATION: Side-by-side contrast of emotional evaluation while product and final price remain equivalent.
+ENVIRONMENT: Coherent electronics-store comparison, not two unrelated worlds.
+CAMERA: Balanced left-right comparison with identical product scale and clear reaction contrast.
+LIGHTING: Same store world with subtle warm/cool separation, MONEY intensity 1.
+COLOR: Shared neutral store palette with slightly warmer emphasis on the anchored-reaction side.
+CONTINUITY: No identity continuity required; character family consistency required.
+TEXT POLICY: NONE
 PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No numbers, labels or captions. No different headphone design between sides.
 PROMPT:
-Create a coherent comparison with identical headphones and the same final price context. Left shopper reacts strongly because a high first price was seen earlier; right shopper evaluates more neutrally. EVERY visible human uses the same stylized stickman family. ZERO READABLE TEXT.
+[GOAL]
+Compare how the same final price can feel attractive to one shopper and neutral to another depending on prior anchoring.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with one coherent store world and matching rendering on both sides.
+[CHARACTER LOCK]
+Both visible humans use STYLIZED_STICKMAN_CAST_V2; vary only clothing, posture and expression.
+[PSYCHOLOGICAL MOOD]
+MONEY mode, intensity 1, power dynamic STATUS_CONTRAST. Emphasize perceptual contrast, not social superiority.
+[SCENE CONTENT]
+Identical headphones and equivalent final-price context; left reaction stronger from prior anchor, right reaction neutral without it.
+[CAMERA + COMPOSITION]
+Balanced left-right comparison with equal product prominence and clear body-language contrast.
+[LIGHT + COLOR]
+Keep shared store colors; use only subtle warmth difference to support perception.
+[TEXT LOCK]
+ZERO READABLE TEXT. Never render the speech context or price numbers in this frame.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no mixed anatomy, no different products, no captions, no corporate split-screen graphics.
+[FINAL CHECK]
+One comparison only: same outcome, different perception due to prior anchor.
 
 SCENE 06
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -139,30 +274,85 @@ Der erste Wert wirkt wie ein Anker, der deine spätere Schätzung in seine Richt
 SCENE TYPE: OBJECT_METAPHOR
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
-VISUAL IDEA: a literal anchor pulls a value marker toward the first number
-VISUAL TASK: use a symbolic metal anchor attached to a value marker, visibly pulling a later estimate toward the first reference point; no human required
-CAMERA: close symbolic composition
-LIGHTING MOOD: dramatic warm anchor light against cool background
-CHARACTER DIRECTION: NONE
+MOOD MODE: CLEAR
+MOOD INTENSITY: 1
+POWER DYNAMIC: NONE
+VISUAL IDEA: A literal anchor pulls a later estimate toward the first value.
+VISUAL TASK: Use a symbolic illustrated metal anchor attached to a value marker, visibly pulling the later estimate toward the first reference point.
+CHARACTER / SUBJECT DIRECTION: NO HUMAN REQUIRED. Anchor and estimate relation are the subjects.
+ACTION / RELATION: The anchor creates a visible directional pull on the later estimate.
+ENVIRONMENT: Conceptual illustrated space with real dimensional depth, not a flat corporate diagram.
+CAMERA: Close symbolic composition.
+LIGHTING: Focused warm anchor light against calm cool depth, CLEAR intensity 1.
+COLOR: Deep blue/teal depth, restrained warm metal focal accent.
+CONTINUITY: No character continuity required.
+TEXT POLICY: NONE
 PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No labels, no human, no giant floating UI cards.
 PROMPT:
-Show a strong illustrated metal anchor connected to a floating value marker, visibly pulling the later estimate toward the first reference point. No person is needed. Keep the same cinematic 2D world. ZERO READABLE TEXT.
+[GOAL]
+Make the anchoring mechanism instantly understandable through one physical metaphor.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with dimensional 2D illustration, organic outlines and soft cel shading.
+[CHARACTER LOCK]
+NO HUMAN REQUIRED. Do not add a decorative person.
+[PSYCHOLOGICAL MOOD]
+CLEAR mode, intensity 1, power dynamic NONE.
+[SCENE CONTENT]
+A strong illustrated anchor visibly pulls a later estimate marker toward the first-reference position.
+[CAMERA + COMPOSITION]
+Use one close symbolic composition with the pulling relation as the sole focal action.
+[LIGHT + COLOR]
+Warm restrained anchor focus against cool blue/teal depth.
+[TEXT LOCK]
+ZERO READABLE TEXT. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no corporate diagram, no labels, no human, no unrelated symbols.
+[FINAL CHECK]
+One metaphor only: anchor pulls later judgment toward itself.
 
 SCENE 07
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 Das passiert nicht nur beim Einkaufen.
-SCENE TYPE: TEXT_ILLUSTRATION
-COMPOSITION: STANDARD
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: MONTAGE
 SOCIAL DENSITY: NONE
-VISUAL IDEA: anchoring extends beyond retail decisions
-VISUAL TASK: create a clean cinematic text illustration with a central anchor symbol branching toward salary, apartment and car icons; no human required
-CAMERA: clean illustrated overview
-LIGHTING MOOD: soft neutral cinematic light
-CHARACTER DIRECTION: NONE
-PLANNED GERMAN TEXT:
-- "NICHT NUR BEIM EINKAUFEN"
+MOOD MODE: CLEAR
+MOOD INTENSITY: 0
+POWER DYNAMIC: NONE
+VISUAL IDEA: Anchoring extends beyond retail decisions.
+VISUAL TASK: Show one central anchor motif with three small supporting visual cues for salary negotiation, apartment and car without readable labels.
+CHARACTER / SUBJECT DIRECTION: NO HUMAN REQUIRED. Central anchor dominates; three context cues are secondary.
+ACTION / RELATION: The single anchor visually connects to all three non-retail contexts.
+ENVIRONMENT: Clean illustrated conceptual overview in the same 2D world.
+CAMERA: One dominant central anchor with only three small supporting context cues; no cluttered collage.
+LIGHTING: Soft neutral cinematic light, CLEAR intensity 0.
+COLOR: Balanced muted channel colors; no loud icon palette.
+CONTINUITY: No character continuity required.
+TEXT POLICY: NONE
+PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No salary numbers, car prices, apartment labels or extra captions.
 PROMPT:
-Create an illustrated anchor in the center with simple salary, apartment and car symbols around it, all in the same film-world. No human is needed. Integrate exactly "NICHT NUR BEIM EINKAUFEN". NO OTHER READABLE TEXT.
+[GOAL]
+Show that anchoring applies beyond shopping without introducing a second independent lesson.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with the same linework, cel shading and dimensional polish.
+[CHARACTER LOCK]
+NO HUMAN REQUIRED.
+[PSYCHOLOGICAL MOOD]
+CLEAR mode, intensity 0, power dynamic NONE.
+[SCENE CONTENT]
+One central anchor connects visually to three small context cues: salary negotiation, apartment and car.
+[CAMERA + COMPOSITION]
+Use a restrained montage with one dominant anchor and only three subordinate cues.
+[LIGHT + COLOR]
+Soft neutral light and balanced muted colors.
+[TEXT LOCK]
+ZERO READABLE TEXT. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no corporate icon sheet, no extra labels, no clutter.
+[FINAL CHECK]
+One idea only: the same anchoring mechanism appears in multiple non-shopping contexts.
 
 SCENE 08
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -170,14 +360,42 @@ Auch bei Gehaltsverhandlungen, Wohnungen oder Autos kann die erste genannte Zahl
 SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: DUO
-VISUAL IDEA: first stated number influences a negotiation reference range
-VISUAL TASK: show two same-family stickman characters in a salary negotiation where one first number visibly becomes the reference point for the discussion
-CAMERA: medium two-person desk shot
-LIGHTING MOOD: professional warm office light with cool depth
-CHARACTER DIRECTION: both people use exact same stickman anatomy family; individualize through jacket, shirt, posture and accessory only
+MOOD MODE: MONEY
+MOOD INTENSITY: 2
+POWER DYNAMIC: PEER_TO_PEER
+VISUAL IDEA: A first stated number influences the negotiation reference range.
+VISUAL TASK: Show two same-family characters in a salary negotiation where one first offer visibly frames the discussion.
+CHARACTER / SUBJECT DIRECTION: Two STYLIZED_STICKMAN_CAST_V2 adults with distinct simplified work clothing; one composed proposer, one attentive evaluator.
+ACTION / RELATION: One person presents the first offer while the other visibly evaluates from that starting point.
+ENVIRONMENT: Believable professional negotiation room with meaningful objects, not a sterile generic office.
+CAMERA: Medium two-person desk shot with both poses and their relation readable.
+LIGHTING: Controlled professional warm/cool light, MONEY intensity 2.
+COLOR: Graphite/navy environment with restrained warm highlights and natural clothing colors.
+CONTINUITY: New characters; no continuity with retail shopper.
+TEXT POLICY: NONE
 PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No salary number visible, no documents with text, no generic corporate-vector humans.
 PROMPT:
-At a simple office desk, show two unified-stickman-family people negotiating. One person has just placed the first offer, and the body language makes it clear that this number now frames the discussion. ZERO READABLE TEXT.
+[GOAL]
+Show how the first offer begins to frame a salary negotiation.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 in a believable professional room with cinematic 2D depth.
+[CHARACTER LOCK]
+Both people use STYLIZED_STICKMAN_CAST_V2; distinct clothing and posture, same anatomy family.
+[PSYCHOLOGICAL MOOD]
+MONEY mode, intensity 2, power dynamic PEER_TO_PEER. Show subtle negotiation tension, not hostility.
+[SCENE CONTENT]
+One person has just introduced the first offer; the other person's body language shows that this offer is now framing evaluation.
+[CAMERA + COMPOSITION]
+Medium two-person desk shot with clear eye line and offer relationship.
+[LIGHT + COLOR]
+Graphite/navy depth with restrained warm practical highlights.
+[TEXT LOCK]
+ZERO READABLE TEXT. Abstract marks only on documents/screens. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no corporate vector people, no readable salary number, no static posed handshake cliché.
+[FINAL CHECK]
+One beat only: first stated offer becomes negotiation reference.
 
 SCENE 09
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -185,16 +403,42 @@ Ein frühes Angebot kann dadurch beeinflussen, welche späteren Zahlen überhaup
 SCENE TYPE: SCHEMA_EXPLAINER
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
-VISUAL IDEA: first offer shifts the range that later options feel plausible within
-VISUAL TASK: show a first offer marker setting a visible range, with later offers clustering around that shifted reference zone; no human required
-CAMERA: frontal illustrated range schema
-LIGHTING MOOD: soft dimensional blue-amber light
-CHARACTER DIRECTION: NONE
-PLANNED GERMAN TEXT:
-- "ERSTER VORSCHLAG"
-- "VERHANDLUNG"
+MOOD MODE: MONEY
+MOOD INTENSITY: 1
+POWER DYNAMIC: NONE
+VISUAL IDEA: A first offer shifts the range that later options feel plausible within.
+VISUAL TASK: Show a first-offer marker setting a visible range, with later option markers clustering around the shifted reference zone; no human required.
+CHARACTER / SUBJECT DIRECTION: NO HUMAN REQUIRED. Range, first-offer marker and later options are the subjects.
+ACTION / RELATION: First offer establishes a shifted range; later options gather around it.
+ENVIRONMENT: Dimensional illustrated mechanism space with no PowerPoint styling.
+CAMERA: Frontal illustrated range schema.
+LIGHTING: Soft dimensional MONEY-mode light, intensity 1.
+COLOR: Muted graphite/teal base with restrained warm-gold focal marker.
+CONTINUITY: No character continuity required.
+TEXT POLICY: NONE
+PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No numeric labels, no human, no corporate chart template.
 PROMPT:
-Create a cinematic illustrated range schema. One first-offer marker establishes a shifted zone and later option markers cluster around it. No human is needed. Render exactly "ERSTER VORSCHLAG" and "VERHANDLUNG". NO OTHER READABLE TEXT.
+[GOAL]
+Show that an early offer shifts what later values feel plausible.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with a dimensional illustrated schema that belongs to the same film-world.
+[CHARACTER LOCK]
+NO HUMAN REQUIRED.
+[PSYCHOLOGICAL MOOD]
+MONEY mode, intensity 1, power dynamic NONE.
+[SCENE CONTENT]
+One first-offer marker defines a shifted plausible zone; later unlabeled option markers cluster around it.
+[CAMERA + COMPOSITION]
+Use a clean frontal range composition with one obvious shifted zone.
+[LIGHT + COLOR]
+Muted graphite/teal base with restrained warm-gold first-offer focus.
+[TEXT LOCK]
+ZERO READABLE TEXT. Never render the speech context or numeric labels.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no PowerPoint, no corporate chart, no human, no extra labels.
+[FINAL CHECK]
+One mechanism only: first offer shifts perceived realistic range.
 
 SCENE 10
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -202,14 +446,42 @@ Sogar zufällige Zahlen können Schätzungen verschieben, besonders wenn dir ein
 SCENE TYPE: OBJECT_METAPHOR
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
-VISUAL IDEA: an arbitrary number card bends an uncertain estimate scale
-VISUAL TASK: show a random number card beside an uncertain estimation scale, with the scale subtly bending toward that number; no human required
-CAMERA: close conceptual illustration
-LIGHTING MOOD: quiet cool background with warm focal number card
-CHARACTER DIRECTION: NONE
+MOOD MODE: UNEASY
+MOOD INTENSITY: 1
+POWER DYNAMIC: NONE
+VISUAL IDEA: An arbitrary number card bends an uncertain estimate scale.
+VISUAL TASK: Show an arbitrary unlabeled number-like card beside an uncertain estimation scale, with the scale subtly bending toward it.
+CHARACTER / SUBJECT DIRECTION: NO HUMAN REQUIRED. The arbitrary card and uncertain scale are the subjects.
+ACTION / RELATION: The uncertain scale bends slightly toward the arbitrary reference instead of staying centered.
+ENVIRONMENT: Quiet conceptual illustrated space with enough depth to feel part of the channel world.
+CAMERA: Close conceptual illustration.
+LIGHTING: Quiet cool surrounding light with one warm focal source, UNEASY intensity 1.
+COLOR: Cool muted field with restrained warm focal card; no random neon.
+CONTINUITY: No character continuity required.
+TEXT POLICY: NONE
 PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No actual readable number needed, no human, no UI interface.
 PROMPT:
-Show an arbitrary number card beside an uncertain estimation scale. The scale subtly bends toward the number, communicating influence without implying certainty. No human is needed. ZERO READABLE TEXT.
+[GOAL]
+Show that even an arbitrary reference can bend an uncertain estimate when comparison is weak.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with dimensional 2D conceptual illustration.
+[CHARACTER LOCK]
+NO HUMAN REQUIRED.
+[PSYCHOLOGICAL MOOD]
+UNEASY mode, intensity 1, power dynamic NONE. Create subtle instability, not horror.
+[SCENE CONTENT]
+An arbitrary card-like reference sits beside an uncertain scale; the scale subtly bends toward it.
+[CAMERA + COMPOSITION]
+Use a close composition with the bend relation immediately readable.
+[LIGHT + COLOR]
+Cool muted space with restrained warm reference focus.
+[TEXT LOCK]
+ZERO READABLE TEXT. Never render the speech context or a readable random number.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no corporate UI, no human, no random labels.
+[FINAL CHECK]
+One beat only: arbitrary reference shifts uncertain estimation.
 
 SCENE 11
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -217,14 +489,42 @@ Das bedeutet nicht, dass du jeder ersten Zahl automatisch glaubst.
 SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-VISUAL IDEA: person remains skeptical while still exposed to a first number
-VISUAL TASK: show one stickman-family person looking skeptical at an initial price or offer rather than accepting it blindly
-CAMERA: close-medium thoughtful side angle
-LIGHTING MOOD: neutral focused light
-CHARACTER DIRECTION: one unified-stickman-family person, thoughtful expression and folded posture
+MOOD MODE: UNEASY
+MOOD INTENSITY: 1
+POWER DYNAMIC: SELF_VS_SELF
+VISUAL IDEA: A person remains skeptical while still exposed to a first number.
+VISUAL TASK: Show one stickman-family person examining an initial offer skeptically instead of blindly accepting it.
+CHARACTER / SUBJECT DIRECTION: One STYLIZED_STICKMAN_CAST_V2 adult with folded/guarded posture and restrained skeptical expression.
+ACTION / RELATION: Person pauses and evaluates the offer rather than reaching for it.
+ENVIRONMENT: Believable everyday decision setting with abstract unreadable offer details.
+CAMERA: Close-medium thoughtful side angle.
+LIGHTING: Neutral directional light with mild tension, UNEASY intensity 1.
+COLOR: Muted natural colors with controlled cool shadow and one warm offer focal point.
+CONTINUITY: New character; no continuity required.
+TEXT POLICY: NONE
 PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No offer text, no exaggerated angry face, no thought bubble.
 PROMPT:
-Show one stylized stickman-family person examining an offer skeptically rather than simply accepting it. The scene communicates doubt and evaluation, not gullibility. ZERO READABLE TEXT.
+[GOAL]
+Show skepticism without implying that awareness completely removes anchoring.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 in a believable everyday decision environment.
+[CHARACTER LOCK]
+Use one STYLIZED_STICKMAN_CAST_V2 adult with guarded thoughtful posture and minimal skeptical expression.
+[PSYCHOLOGICAL MOOD]
+UNEASY mode, intensity 1, power dynamic SELF_VS_SELF.
+[SCENE CONTENT]
+The person studies an offer and hesitates rather than accepting it automatically.
+[CAMERA + COMPOSITION]
+Close-medium side angle emphasizing posture and evaluation.
+[LIGHT + COLOR]
+Neutral directional light, cool soft shadow, restrained warm offer focus.
+[TEXT LOCK]
+ZERO READABLE TEXT. Abstract marks only on the offer. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no thought bubbles, no readable documents, no exaggerated cartoon anger.
+[FINAL CHECK]
+One beat only: skeptical evaluation, not automatic belief.
 
 SCENE 12
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -232,14 +532,42 @@ Aber selbst wenn du weißt, dass ein Anker existiert, kann er deine Einschätzun
 SCENE TYPE: COMPARE_VISUAL
 COMPOSITION: CONTRAST
 SOCIAL DENSITY: NONE
-VISUAL IDEA: awareness of the anchor does not necessarily remove its pull
-VISUAL TASK: compare an acknowledged anchor symbol with a judgment marker that still remains slightly pulled toward it; no human required
-CAMERA: clean symbolic split comparison
-LIGHTING MOOD: controlled warm-cool contrast
-CHARACTER DIRECTION: NONE
+MOOD MODE: UNEASY
+MOOD INTENSITY: 2
+POWER DYNAMIC: NONE
+VISUAL IDEA: Awareness of the anchor does not necessarily remove its pull.
+VISUAL TASK: Compare a clearly recognized anchor with a judgment marker that still remains slightly pulled toward it.
+CHARACTER / SUBJECT DIRECTION: NO HUMAN REQUIRED. Anchor, neutral reference and judgment marker are the subjects.
+ACTION / RELATION: The anchor is consciously separated, yet the judgment marker remains closer to it than to a neutral reference.
+ENVIRONMENT: Coherent symbolic split space using the same film-world rendering.
+CAMERA: Clean symbolic split comparison.
+LIGHTING: Controlled warm/cool contrast, UNEASY intensity 2.
+COLOR: Cool neutral comparison field with restrained warm anchor influence.
+CONTINUITY: No character continuity required.
+TEXT POLICY: NONE
 PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No labels, no human, no corporate before/after template.
 PROMPT:
-Create a symbolic comparison: the anchor is clearly recognized and separated, yet the final judgment marker still sits slightly closer to it than a neutral reference point. No human is needed. ZERO READABLE TEXT.
+[GOAL]
+Show that recognizing an anchor does not automatically erase its influence.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with a coherent illustrated comparison rather than a slide graphic.
+[CHARACTER LOCK]
+NO HUMAN REQUIRED.
+[PSYCHOLOGICAL MOOD]
+UNEASY mode, intensity 2, power dynamic NONE.
+[SCENE CONTENT]
+The anchor is visibly acknowledged/separated, but the final judgment marker still sits subtly closer to it than to neutral.
+[CAMERA + COMPOSITION]
+Use a clean contrast composition with one continuous visual relationship.
+[LIGHT + COLOR]
+Cool neutral field with restrained warm influence around the anchor.
+[TEXT LOCK]
+ZERO READABLE TEXT. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no corporate split template, no labels, no human.
+[FINAL CHECK]
+One beat only: awareness exists, influence remains.
 
 SCENE 13
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -247,14 +575,42 @@ Ein einfacher Schutz ist, vor dem ersten Angebot eine eigene grobe Einschätzung
 SCENE TYPE: CHARACTER_SCENE
 COMPOSITION: STANDARD
 SOCIAL DENSITY: SOLO
-VISUAL IDEA: person forms an independent estimate before seeing the offer
-VISUAL TASK: show one stickman-family person calmly writing a private estimate before opening or viewing an offer
-CAMERA: medium desk shot
-LIGHTING MOOD: quiet warm desk light with cool background
-CHARACTER DIRECTION: one unified-stickman-family character, calm posture, simple olive sweater
+MOOD MODE: HOPE
+MOOD INTENSITY: 1
+POWER DYNAMIC: SELF_VS_SELF
+VISUAL IDEA: A person forms an independent estimate before seeing the offer.
+VISUAL TASK: Show one person calmly writing a private estimate before opening or viewing an external offer.
+CHARACTER / SUBJECT DIRECTION: One STYLIZED_STICKMAN_CAST_V2 adult with calm focused posture, simple olive sweater.
+ACTION / RELATION: Person writes their own estimate first while the external offer remains unopened/unseen.
+ENVIRONMENT: Quiet believable desk setting with abstract marks only on paper/screen.
+CAMERA: Medium desk shot with independent estimate as the action focus.
+LIGHTING: Quiet warm desk light with cool background, HOPE intensity 1.
+COLOR: Warm restrained focal light, calm cool depth, natural olive clothing.
+CONTINUITY: New character; local continuity not required later.
+TEXT POLICY: NONE
 PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No visible estimate number, no laptop UI text, no tutorial arrows.
 PROMPT:
-At a quiet desk, show one stickman-family person writing a private estimate before viewing an unopened offer on a laptop or envelope. Screens and paper use abstract marks only. ZERO READABLE TEXT.
+[GOAL]
+Show the protective step of forming an independent estimate before seeing an offer.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with a calm believable 2D desk environment.
+[CHARACTER LOCK]
+Use one STYLIZED_STICKMAN_CAST_V2 adult with calm focused posture and simple olive sweater.
+[PSYCHOLOGICAL MOOD]
+HOPE mode, intensity 1, power dynamic SELF_VS_SELF. The frame should feel constructive and controlled.
+[SCENE CONTENT]
+The person writes a private estimate while the external offer remains unopened or hidden.
+[CAMERA + COMPOSITION]
+Medium desk shot with the writing action as the clear focal behavior.
+[LIGHT + COLOR]
+Warm desk light, cool calm depth, restrained natural colors.
+[TEXT LOCK]
+ZERO READABLE TEXT. Use abstract marks only. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no readable numbers/documents, no tutorial arrows, no corporate stock office.
+[FINAL CHECK]
+One beat only: create independent estimate before exposure.
 
 SCENE 14
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -262,15 +618,42 @@ Danach vergleichst du mehrere unabhängige Preise, Daten oder Angebote statt nur
 SCENE TYPE: SCHEMA_EXPLAINER
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
-VISUAL IDEA: multiple independent reference points reduce dependence on one anchor
-VISUAL TASK: show several independent reference markers around one decision instead of one dominant first value; no human required
-CAMERA: clean frontal multi-reference schema
-LIGHTING MOOD: balanced soft cinematic light
-CHARACTER DIRECTION: NONE
-PLANNED GERMAN TEXT:
-- "MEHRERE VERGLEICHE"
+MOOD MODE: HOPE
+MOOD INTENSITY: 1
+POWER DYNAMIC: NONE
+VISUAL IDEA: Multiple independent reference points reduce dependence on one anchor.
+VISUAL TASK: Show several independent reference markers around one decision instead of one dominant first value; no human required.
+CHARACTER / SUBJECT DIRECTION: NO HUMAN REQUIRED. Decision point and several balanced references are the subjects.
+ACTION / RELATION: Several independent markers balance the decision so no single first value dominates.
+ENVIRONMENT: Clean dimensional illustrated decision space, not a corporate slide.
+CAMERA: Clean frontal multi-reference schema.
+LIGHTING: Balanced open cinematic light, HOPE intensity 1.
+COLOR: Balanced teal/blue field with several restrained distinct reference accents.
+CONTINUITY: No character continuity required.
+TEXT POLICY: NONE
+PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No numeric labels, no human, no oversized arrows.
 PROMPT:
-Create a clean illustrated decision schema with several independent reference markers surrounding one central decision point, none dominating alone. No human is needed. Render exactly "MEHRERE VERGLEICHE". NO OTHER READABLE TEXT.
+[GOAL]
+Show that multiple independent references reduce dependence on a single anchor.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with dimensional illustrated schema rendering.
+[CHARACTER LOCK]
+NO HUMAN REQUIRED.
+[PSYCHOLOGICAL MOOD]
+HOPE mode, intensity 1, power dynamic NONE.
+[SCENE CONTENT]
+Several independent reference markers surround one decision point with balanced influence.
+[CAMERA + COMPOSITION]
+Use a clean frontal multi-reference composition with no single marker dominating.
+[LIGHT + COLOR]
+Open balanced light and restrained teal/blue with small differentiated accents.
+[TEXT LOCK]
+ZERO READABLE TEXT. Never render the speech context or numeric labels.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no PowerPoint, no corporate chart, no labels, no human.
+[FINAL CHECK]
+One mechanism only: multiple references create balance.
 
 SCENE 15
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -278,14 +661,42 @@ So bekommt dein Kopf mehrere Bezugspunkte und hängt weniger an einem einzigen W
 SCENE TYPE: OBJECT_METAPHOR
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
-VISUAL IDEA: one heavy anchor is replaced by several balanced reference points
-VISUAL TASK: show one heavy anchor losing dominance as several balanced reference points appear around the decision scale; no human required
-CAMERA: close-medium symbolic balance composition
-LIGHTING MOOD: calm warm resolution with soft blue depth
-CHARACTER DIRECTION: NONE
+MOOD MODE: HOPE
+MOOD INTENSITY: 1
+POWER DYNAMIC: NONE
+VISUAL IDEA: One heavy anchor loses dominance as several balanced reference points appear.
+VISUAL TASK: Show one heavy anchor losing visual dominance as several balanced reference points appear around the decision space.
+CHARACTER / SUBJECT DIRECTION: NO HUMAN REQUIRED. Anchor and balanced reference points are the subjects.
+ACTION / RELATION: The single anchor becomes less dominant while multiple references create balance.
+ENVIRONMENT: Symbolic dimensional world with clear depth and calm resolution.
+CAMERA: Close-medium symbolic balance composition.
+LIGHTING: Calm warm resolution with soft blue depth, HOPE intensity 1.
+COLOR: Warm restrained focal relief with balanced cool background references.
+CONTINUITY: No character continuity required.
+TEXT POLICY: NONE
 PLANNED GERMAN TEXT: NONE
+NEGATIVE LOCKS: ZERO READABLE TEXT. No labels, no human, no literal brain illustration required.
 PROMPT:
-Show one heavy anchor becoming less dominant as several balanced reference points appear around a decision scale. Keep the metaphor simple and cinematic. No human is needed. ZERO READABLE TEXT.
+[GOAL]
+Show the original anchor losing control once several alternative reference points exist.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with dimensional symbolic 2D rendering.
+[CHARACTER LOCK]
+NO HUMAN REQUIRED.
+[PSYCHOLOGICAL MOOD]
+HOPE mode, intensity 1, power dynamic NONE.
+[SCENE CONTENT]
+One heavy anchor becomes visually less dominant as several balanced reference points stabilize the decision space.
+[CAMERA + COMPOSITION]
+Use a close-medium symbolic composition with a clear shift from single dominance to balance.
+[LIGHT + COLOR]
+Calm warm focal relief with soft blue dimensional depth.
+[TEXT LOCK]
+ZERO READABLE TEXT. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no labels, no human, no clutter, no literal brain unless necessary.
+[FINAL CHECK]
+One beat only: several references reduce dependence on one anchor.
 
 SCENE 16
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
@@ -293,28 +704,40 @@ Wenn dir eine Zahl sofort extrem günstig oder teuer vorkommt, frag dich: Was wa
 SCENE TYPE: TEXT_ILLUSTRATION
 COMPOSITION: STANDARD
 SOCIAL DENSITY: NONE
-VISUAL IDEA: closing question prompts the viewer to identify the reference number shaping judgment
-VISUAL TASK: show a clean anchor and price-tag illustration with the anchor visually separating from the final judgment; no human required
-CAMERA: clean cinematic closing illustration
-LIGHTING MOOD: calm warm focal light with cool surrounding space
-CHARACTER DIRECTION: NONE
+MOOD MODE: HOPE
+MOOD INTENSITY: 1
+POWER DYNAMIC: NONE
+VISUAL IDEA: Closing question prompts the viewer to identify the reference shaping judgment.
+VISUAL TASK: Show a clean anchor and price-tag illustration with the anchor visually separating from the final judgment.
+CHARACTER / SUBJECT DIRECTION: NO HUMAN REQUIRED. Anchor, price-tag form and exact closing question are the subjects.
+ACTION / RELATION: The anchor separates from the judgment to visually invite reflection.
+ENVIRONMENT: Calm illustrated closing space with deliberate negative space for the exact question.
+CAMERA: Clean cinematic closing illustration with one dominant anchor/price relation and safe text area.
+LIGHTING: Calm warm focal light with cool surrounding space, HOPE intensity 1.
+COLOR: Warm focal accent, calm navy/teal depth, high text readability.
+CONTINUITY: No character continuity required.
+TEXT POLICY: FLOW_EXACT_TEXT_ILLUSTRATION
 PLANNED GERMAN TEXT:
 - "WAS WAR MEIN ANKER?"
+NEGATIVE LOCKS: NO OTHER READABLE TEXT. No extra recap bullets, no CTA text, no human.
 PROMPT:
-Create a calm closing illustration with an anchor, a price-tag shape and a final judgment marker visibly separating from the anchor. No human is needed. Integrate exactly "WAS WAR MEIN ANKER?". NO OTHER READABLE TEXT.
-
-FINAL QA
-- same cinematic illustrated world across every scene type
-- EVERY visible human, including supporting/background figures, matches STYLIZED_STICKMAN_CAST_V1
-- no mixed human character families
-- no normal cartoon-human side characters behind a stickman main character
-- human presence is optional; no decorative people added where schemas/objects are clearer
-- no bare line-stickman drift
-- no 3D/photorealistic/anime/corporate-vector drift
-- no-human frames still match linework, color, cel shading, depth and lighting
-- Scene 01 visually explains the Ankereffekt before text is read
-- cover contains exact visible topic term ANKEREFFEKT
-- NO FULL-WIDTH TOP BANNER
-- every planned German text exact
-- no accidental readable background text
-- no visible Remotion text
+[GOAL]
+End with one memorable reflective question about identifying the viewer's anchor.
+[WORLD LOCK]
+Use CINEMATIC_HUMAN_BEHAVIOR_V2 with calm polished 2D illustration and the same channel rendering language.
+[CHARACTER LOCK]
+NO HUMAN REQUIRED.
+[PSYCHOLOGICAL MOOD]
+HOPE mode, intensity 1, power dynamic NONE. Create clarity and reflection, not tension.
+[SCENE CONTENT]
+A clean anchor and price-tag relation visually separates the anchor from final judgment and leaves deliberate space for the question.
+[CAMERA + COMPOSITION]
+Use a clean cinematic closing composition with one dominant visual relation and a safe integrated text zone.
+[LIGHT + COLOR]
+Warm focal accent against calm navy/teal depth. Ensure the question has strong contrast against the actual background.
+[TEXT LOCK]
+Render exactly "WAS WAR MEIN ANKER?". NO OTHER READABLE TEXT. Never render the speech context.
+[NEGATIVE LOCK]
+No photorealism, no 3D, no extra labels, no CTA text, no human, no corporate end card.
+[FINAL CHECK]
+One closing beat only: identify the anchor shaping judgment. Correct v2 world, HOPE mood and exact question only.
