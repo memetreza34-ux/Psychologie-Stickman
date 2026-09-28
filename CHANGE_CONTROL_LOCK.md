@@ -30,22 +30,37 @@ Beispiele:
 ## Phasenschutz
 
 YouTube:
-THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → FINALES SCRIPT → PHASE 1 VISUAL BEATS → PREMIUM-/FARBPLAN → PHASE 2 GOOGLE FLOW → PHASE 3 → FINAL-QA.
+THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → FINALES SCRIPT → PHASE 1 VISUAL BEATS → MOOD-/FARBPLAN → PHASE 2 GOOGLE FLOW → PHASE 3 → FINAL-QA.
 
 - Skriptänderung: Hook-Policy + Phase 1 neu prüfen/erstellen
 - Hook-/Einstiegsänderung: Kernbegriffs- und frühes Alltagsbeispiel-Timing neu prüfen
-- Bildweltänderung: Premium-/Farbplan + konkrete visuelle Phase-1-Aufgaben + Phase 2 neu erzeugen
-- Projektpalette ändern: Bild-01-Master und bestehende Flow-Bilder auf Farbkonsistenz neu prüfen
+- Bildweltänderung: Mood-/Farbplan + konkrete visuelle Phase-1-Aufgaben + Phase 2 neu erzeugen
+- Mood-/Palette-Änderung: betroffene Flow-Bilder auf Konsistenz neu prüfen
 - reine Audioänderung: Timings/Phase 3 neu erzeugen
 
 ## Aktive Visual-World-Sperre
 
-Die verbindliche Bildwelt ist in `rules/STICKMAN_DNA.md`, `rules/YOUTUBE_STYLE_LOCK.md`, `rules/PREMIUM_VISUAL_LOCK.md` und `rules/IMAGE_REFERENCE_LOCK.md` festgelegt.
+Verbindliche Quellen:
+1. `rules/VISUAL_SYSTEM.md`
+2. `rules/visual-system.json`
+3. `rules/FLOW_PROMPT_CONTRACT.md`
+4. `rules/STICKMAN_DNA.md`
+5. `rules/YOUTUBE_STYLE_LOCK.md`
+6. `rules/PREMIUM_VISUAL_LOCK.md`
+7. `rules/IMAGE_REFERENCE_LOCK.md`
 
 Aktueller Standard:
-**Universal Editorial Stickman World v1.3 — STRICT STICKMAN ONLY + PREMIUM_EDITORIAL_CINEMATIC_V1 + INTENTIONAL_COLOR_STORY_V1**.
+**Cinematic Human Behavior World v2 — `CINEMATIC_HUMAN_BEHAVIOR_V2` + `STYLIZED_STICKMAN_CAST_V2` + `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1` + `FLOW_SCENE_PROMPT_CONTRACT_V1`.**
 
-Der verbindliche Script-Einstieg für neue YouTube-Projekte ist:
-**HOOK_FIRST_EXPLAIN_EARLY_V1**.
+Der verbindliche Script-Einstieg für neue YouTube-Projekte bleibt:
+**`HOOK_FIRST_EXPLAIN_EARLY_V1`**.
 
-Keine frühere Bildwelt, graue/sterile Default-Ästhetik, langsame abstrakte Hook-Struktur oder alte Quellrepo-Prompts dürfen diese Standards stillschweigend überschreiben.
+## Retired
+
+Folgende Standards dürfen neue Produktionen nicht stillschweigend überschreiben:
+- Universal Editorial Stickman World v1.3
+- Minimal Editorial Stickman v2
+- Cinematic Illustrated Psychology World v1
+- Scene 01 as global style/anatomy master
+
+Historische Projekte dürfen alte Metadaten behalten, aber neue Regeln/Prompts dürfen sie nicht kopieren.
