@@ -1,4 +1,4 @@
-# COVER LOCK — TOPIC-EXPLICIT PSYCHOLOGY THUMBNAILS
+# COVER LOCK — TOPIC-EXPLICIT HUMAN-BEHAVIOR THUMBNAILS
 
 **STATUS: BINDING — HARD LOCK**
 
@@ -6,48 +6,39 @@
 1. Scene 01 / first hook beat
 2. Cover / thumbnail source
 
-It is **not** the global channel style master. Global style comes from `rules/VISUAL_SYSTEM.md` and approved files in `assets/cinematic-psychology-world/`.
+It is **not** the global channel style master. Global style comes from `rules/VISUAL_SYSTEM.md` and approved files in `assets/cinematic-human-behavior-world/`.
 
 ## 1. Core rule: the cover must explain the topic
 
 A cover is not approved merely because it is attractive.
 
-The viewer must understand the central psychology topic or mechanism in roughly one second, even before hearing the narration.
+The viewer should understand the central mechanism, conflict or behavioral question in roughly one second, preferably even before reading the headline.
 
-Every new project must define:
+Every new project defines:
 - `coverSemanticPolicy: "TOPIC_EXPLICIT_VISUAL_THESIS_V1"`
-- `coverTopicTerm`: the exact psychological topic/concept
-- `coverVisualThesis`: one concrete sentence describing what the image must visibly prove/show
+- `coverTopicTerm`: internal exact topic/concept name
+- `coverVisualThesis`: one concrete sentence describing what the image must visibly show
 - `coverMechanismVisible: true`
 - `coverLayoutPolicy: "INTEGRATED_THUMBNAIL_COMPOSITION_V1"`
 - `coverTitlePlacementPolicy: "COMPOSITION_FIRST_NO_TOP_BANNER_V1"`
 
-Example for the endowment effect:
-- topic term: `BESITZTUMSEFFEKT`
-- visual thesis: `The same object is valued higher by its owner than by a non-owner.`
+## 2. Topic term is internal metadata, not mandatory extra text
 
-Bad cover thesis:
-- person holding an object
-- person looking worried
-- generic money conflict
+`coverTopicTerm` identifies the topic for planning and QA.
 
-Good cover thesis:
-- the SAME mug is clearly valued differently by owner and buyer
+For a named psychology effect, the exact technical term **does not have to be visible** if:
+- the main curiosity headline is clear,
+- the visual mechanism is unmistakable,
+- adding the technical term would create unnecessary text or weaken the thumbnail.
 
-## 2. Topic naming
+Example:
+- internal topic: `ANKEREFFEKT`
+- visible title: `WARUM EINE ZAHL DICH LENKT`
+- visual thesis: same headphones shown through the 199 € → 129 € perception shift
 
-For named psychology effects/concepts, the exact `coverTopicTerm` must appear visibly somewhere in Scene 01.
+This is preferred over forcing both a technical kicker and a curiosity headline when the frame becomes text-heavy.
 
-It may be:
-- the main title,
-- a smaller integrated topic kicker,
-- or a short secondary label.
-
-The topic name must not be omitted in favor of a vague curiosity headline alone.
-
-A curiosity line may support the topic name, for example:
-- `BESITZTUMSEFFEKT`
-- `WARUM DEINS MEHR WERT IST`
+Use the exact topic term visibly only when it materially improves instant understanding.
 
 ## 3. Visual mechanism before decoration
 
@@ -57,10 +48,11 @@ Prefer:
 - same object / different valuation
 - thought vs reality
 - before vs after
-- owner vs non-owner
-- person vs group reaction
+- person vs group
+- dominant vs target
 - cause vs consequence
-- clear symbolic mechanism when a real-life situation is impossible
+- price/reference contrast
+- clear symbolic mechanism when a concrete situation would be weaker
 
 Avoid as the main cover idea:
 - generic worried character
@@ -71,72 +63,78 @@ Avoid as the main cover idea:
 
 ## 4. Thumbnail composition
 
-Use the same `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1` world as normal scenes, but compose more strongly:
+Use the same `CINEMATIC_HUMAN_BEHAVIOR_V2` world as normal scenes, but compose more strongly:
 - one dominant visual thesis
 - one primary focal conflict/relationship
 - large readable subjects
 - strong silhouette and role contrast
 - stronger but believable color/light separation
 - meaningful props only
-- clean title zone chosen from the composition
+- one deliberately reserved title zone
 - readable at small thumbnail size
 
-The cover may use split/contrast composition when it explains the concept faster.
+The cover may be CLEAR, UNEASY, DARK, POWER, MONEY, ISOLATION or HOPE according to the actual topic. Do not force a generic dark thumbnail.
 
 ## 5. Typography layout — NO TOP BANNER DEFAULT
 
 Text and illustration must be designed together.
 
 Do NOT default to:
-- one long full-width headline squeezed across the top edge
-- a generic top banner detached from the illustration
+- long full-width headline across the top
+- generic detached banner
 - text pasted over faces or focal objects
-- title centered at the top merely because space exists there
+- technical kicker + headline + multiple labels when one headline is enough
 
-Instead choose the title position from the visual composition:
-- left negative-space zone
-- right negative-space zone
-- integrated two-level title block
-- scene surface/card/sign that belongs to the illustration
-- deliberately reserved asymmetric safe zone
-
-Use 1–2 lines when possible. Keep clear outer margins. The visual subject and title should balance each other.
+Prefer:
+- left/right negative-space zone
+- compact asymmetric title block
+- one or two lines when possible
+- strong contrast against the actual background
+- dark text on sufficiently bright areas
+- light text on sufficiently dark areas
 
 ## 6. Cover text
 
 Google Flow renders all cover text. Remotion adds none.
 
-Allowed:
-- one main curiosity/title line, normally 2–7 words
-- optionally one short secondary topic kicker, usually the exact psychology concept
+Default:
+- one main title/curiosity line, normally 2–7 words
+- mechanism labels such as prices only when necessary to make the visual thesis clear
+- optional technical topic term only when it improves clarity
 
 No random additional readable text.
+
+Text economy matters: fewer strong words are preferred over redundant labeling.
 
 ## 7. Scene-01 planning requirements
 
 Scene 01 must contain:
-- a concrete `visualIdea`
-- a concrete `visualTask`
-- the topic-defining visual relationship
+- concrete `visualIdea`
+- concrete `visualTask`
+- topic-defining visual relationship
+- `moodMode`
+- `moodIntensity`
+- `powerDynamic`
 - exact planned German cover text
-- explicit title placement direction
+- title-safe composition direction
 
-The prompt must say what is visibly different between the compared roles/states. `Make it emotional` or `make the conflict clear` is not sufficient by itself.
+The scene follows the same `FLOW_SCENE_PROMPT_CONTRACT_V1` as every other scene. Do not add ad-hoc field names that break the fixed scene structure.
 
 ## 8. Approval
 
 Scene 01 approval checks:
-- exact topic is identifiable
-- central mechanism is visible without narration
+- central mechanism/question is identifiable
 - visual thesis is concrete, not generic
-- world/character quality matches the channel
+- world/character quality matches v2
+- mood fits the topic
 - cover works at thumbnail size
-- topic term is visible for named concepts
-- typography is integrated into the composition
+- typography is integrated
+- text contrasts with its real background
 - no full-width top-banner default
-- exact German text, safe margins, no accidental text
+- no redundant text
+- exact planned German text only
 
-If any item fails, regenerate Scene 01 before generating later images.
+If any item fails, regenerate Scene 01 before later images.
 
 ## 9. Metadata
 
@@ -154,6 +152,6 @@ Required for new projects:
 
 ## 10. Priority
 
-**Topic clarity > visual beauty > decorative atmosphere.**
+**Topic/mechanism clarity > text quantity > visual decoration.**
 
-A beautiful cover that does not explain the psychology topic is a FAIL.
+A beautiful cover that does not explain the topic is a FAIL. A text-heavy cover that repeats what the image already shows should be simplified.
