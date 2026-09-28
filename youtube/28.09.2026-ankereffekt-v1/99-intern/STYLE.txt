@@ -1,0 +1,18 @@
+STYLE — ANKEREFFEKT V1
+
+Use CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1 exactly.
+
+UNIFIED HUMAN CAST — HARD LOCK
+Every visible human — main, supporting and background — uses the same stylized stickman-inspired character family: large simple round/oval heads, minimal expressive faces, compact clothed torsos, very slim simplified limbs, simple hands and shoes.
+
+Supporting/background people may be less detailed, but never normal cartoon humans, semi-realistic people, realistic people or generic vector humans. Individualize only through clothing, simple hair/accessory, modest size variation, pose and expression.
+
+CHARACTER PRESENCE — OPTIONAL
+Not every scene needs a person. Schemas, object metaphors, symbolic illustrations, comparisons and text illustrations may be completely human-free when clearer. Do not insert decorative people merely to fill space.
+
+WORLD
+Colorful believable 2D environments, clean slightly organic outlines, soft cel shading, natural depth, controlled warm/cool lighting and small meaningful details.
+
+No bare line stickmen, mixed human character families, normal cartoon humans, 3D/Pixar, anime, photorealism, corporate vector look or whiteboard style.
+
+Schemas, metaphors and text illustrations must still feel like frames from the same animated film.
