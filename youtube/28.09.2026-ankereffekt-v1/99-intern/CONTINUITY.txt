@@ -1,0 +1,17 @@
+CONTINUITY — ANKEREFFEKT V1
+
+Active world: CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
+Character system: STYLIZED_STICKMAN_CAST_V1
+Human policy: UNIFIED_STICKMAN_HUMANS_V1
+
+Keep the same linework, simplified anatomy, soft cel shading, color behavior and film-like lighting across every scene type.
+
+The electronics-store shopper continues locally across scenes 1, 3 and 4. Preserve head proportions, face simplification, dark teal jacket and overall body proportions.
+
+Scene 5 may introduce a second shopper, but both people must remain in the exact same stickman anatomy family.
+
+Scene 8 uses two new people for the negotiation example; both must use the same family.
+
+No-human scenes deliberately stay human-free unless the mechanism truly needs a person.
+
+Scene 01 is cover + first beat, not global style master.
