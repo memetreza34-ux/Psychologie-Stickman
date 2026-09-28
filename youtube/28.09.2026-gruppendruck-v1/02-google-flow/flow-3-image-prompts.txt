@@ -1,0 +1,58 @@
+GOOGLE FLOW — 3-IMAGE BATCH TEST
+TOPIC: Warum folgen wir der Gruppe?
+FORMAT: 16:9
+
+IMPORTANT FOR ALL BATCHES:
+Generate 3 separate images, not a collage.
+Cinematic 2D psychology illustration with STRICT STICKMAN characters: large round head, minimal face, narrow clothed torso, very thin arms and legs, simple hands and shoes. Clean dark outlines, soft cel shading, believable environments, natural depth. No normal cartoon humans, no realistic anatomy, no 3D, no Pixar, no anime.
+
+MAIN CHARACTER A:
+teal hoodie, black pants/very thin legs, white shoes. Keep the same head shape, proportions, clothing and colors whenever Character A returns.
+
+==================================================
+FLOW PROMPT 1 — GENERATE IMAGES 01, 02, 03
+==================================================
+
+Generate 3 separate 16:9 images. Keep Character A identical in all three.
+
+IMAGE 01:
+Character A stands alone while four stickman people behind him all point confidently in the same direction. A looks uncertain and glances back at the group. Strong simple composition, slightly uneasy mood. Add only the German title: "WARUM DU DER GRUPPE FOLGST". No other readable text.
+
+IMAGE 02:
+Character A sits with four other stickman people around a simple table in a neutral classroom-like room. The four others simultaneously choose the same option with confident body language. A watches them carefully. Medium-wide shot, clear social group composition. Zero readable text.
+
+IMAGE 03:
+Same Character A, same room and same group. A still believes the group is wrong but now looks visibly unsure, with tense posture while the others remain confident. Slightly closer shot and cooler shadows. Zero readable text.
+
+==================================================
+FLOW PROMPT 2 — GENERATE IMAGES 04, 05, 06
+==================================================
+
+Generate 3 separate 16:9 images. Use the same strict stickman style. If Character A appears, keep him identical to the approved reference from Image 01.
+
+IMAGE 04:
+Simple psychological illustration of one stickman changing position to match a group of four stickmen. Clear visual idea of conformity, clean composition, no diagram look. Zero readable text.
+
+IMAGE 05:
+Character A stands beside a group whose members all face the same direction. He looks at them for information while also appearing uncomfortable about disagreeing. Show both uncertainty and social pressure through body language. Medium-wide shot, believable everyday room. Zero readable text.
+
+IMAGE 06:
+A simple line-judgment experiment inspired by classic conformity research: several strict stickman participants sit in a row and most confidently choose the same obviously wrong line match while one participant looks surprised and conflicted. Keep the visual simple and clear. No scientist caricature, no normal cartoon humans. Zero readable text.
+
+==================================================
+FLOW PROMPT 3 — GENERATE IMAGES 07, 08, 09
+==================================================
+
+Generate 3 separate 16:9 images. Use the same strict stickman style. Keep Character A identical to the approved reference from Image 01.
+
+IMAGE 07:
+Character A stands alone on one side while four stickman people stand close together on the other side, all agreeing with each other. Make the social pressure visible through spacing and composition. Slightly darker, uneasy lighting. Zero readable text.
+
+IMAGE 08:
+Same situation, but now one person from the group steps over to stand beside Character A. A becomes visibly calmer and more confident. The remaining three stay together. Lighting becomes slightly warmer and more open. Zero readable text.
+
+IMAGE 09:
+Character A stands alone in a calm neutral space before hearing anyone else's opinion, thinking independently with relaxed posture. Leave clean negative space and a brighter resolved mood. Zero readable text.
+
+FINAL CONSISTENCY RULE:
+All visible humans must remain strict stickman characters. Do not redesign Character A. Only pose, camera, environment and lighting may change.
