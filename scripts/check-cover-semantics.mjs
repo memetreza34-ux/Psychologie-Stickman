@@ -4,10 +4,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root = path.resolve('youtube');
-const ACTIVE = 'CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1';
+const ACTIVE = 'CINEMATIC_HUMAN_BEHAVIOR_V2';
 const SEMANTIC = 'TOPIC_EXPLICIT_VISUAL_THESIS_V1';
 const LAYOUT = 'INTEGRATED_THUMBNAIL_COMPOSITION_V1';
 const PLACEMENT = 'COMPOSITION_FIRST_NO_TOP_BANNER_V1';
+const CONTRACT = 'FLOW_SCENE_PROMPT_CONTRACT_V1';
 const failures = [];
 const warnings = [];
 
@@ -22,13 +23,8 @@ const walk = (dir) => {
 };
 walk(root);
 
-const norm = (value) => String(value ?? '')
-  .normalize('NFKC')
-  .toLocaleLowerCase('de-DE')
-  .replace(/[^\p{L}\p{N}]+/gu, ' ')
-  .trim();
-
 const wordCount = (value) => String(value ?? '').trim().split(/\s+/u).filter(Boolean).length;
+const textList = (value) => (Array.isArray(value) ? value : [value]).map((item) => String(item ?? '').trim()).filter(Boolean);
 
 for (const file of plans) {
   if (file.split(path.sep).includes('00-vorlage')) continue;
@@ -40,30 +36,40 @@ for (const file of plans) {
   if (plan.coverLayoutPolicy !== LAYOUT) failures.push(`${rel}: coverLayoutPolicy must be ${LAYOUT}.`);
   if (plan.coverTitlePlacementPolicy !== PLACEMENT) failures.push(`${rel}: coverTitlePlacementPolicy must be ${PLACEMENT}.`);
   if (plan.coverMechanismVisible !== true) failures.push(`${rel}: coverMechanismVisible must be true.`);
+  if (plan.promptContract !== CONTRACT) failures.push(`${rel}: promptContract must be ${CONTRACT}.`);
 
   const topic = String(plan.coverTopicTerm ?? '').trim();
   const thesis = String(plan.coverVisualThesis ?? '').trim();
-  if (topic.length < 3) failures.push(`${rel}: coverTopicTerm is required.`);
-  if (thesis.length < 20) failures.push(`${rel}: coverVisualThesis must be a concrete visible mechanism, not a vague phrase.`);
+  if (topic.length < 3) failures.push(`${rel}: coverTopicTerm is required as internal planning metadata.`);
+  if (thesis.length < 20) failures.push(`${rel}: coverVisualThesis must describe a concrete visible mechanism.`);
 
   const headline = String(plan.coverHeadline ?? '').trim();
   const headlineWords = wordCount(headline);
   if (!headline) failures.push(`${rel}: coverHeadline is required.`);
   else if (headlineWords < 2 || headlineWords > 7) failures.push(`${rel}: coverHeadline must contain 2-7 words.`);
 
-  const scene1 = Array.isArray(plan.scenes) ? plan.scenes.find((scene) => Number(scene?.number) === 1) : null;
+  const scene1 = Array.isArray(plan.scenes)
+    ? plan.scenes.find((scene) => Number(scene?.number ?? scene?.scene) === 1)
+    : null;
   if (!scene1) {
     failures.push(`${rel}: Scene 01 is required for cover semantic QA.`);
     continue;
   }
 
   if (String(scene1.visualIdea ?? '').trim().length < 12) failures.push(`${rel}: Scene 01 needs a concrete visualIdea.`);
-  if (String(scene1.visualTask ?? '').trim().length < 20) failures.push(`${rel}: Scene 01 needs a concrete visualTask that visibly shows the topic mechanism.`);
+  if (String(scene1.visualTask ?? '').trim().length < 20) failures.push(`${rel}: Scene 01 needs a concrete visualTask that visibly shows the mechanism.`);
+  if (!['CLEAR', 'UNEASY', 'DARK', 'POWER', 'MONEY', 'ISOLATION', 'HOPE'].includes(String(scene1.moodMode ?? '').toUpperCase())) failures.push(`${rel}: Scene 01 requires valid moodMode.`);
+  const moodIntensity = Number(scene1.moodIntensity);
+  if (!Number.isInteger(moodIntensity) || moodIntensity < 0 || moodIntensity > 4) failures.push(`${rel}: Scene 01 requires moodIntensity 0-4.`);
+  if (!String(scene1.powerDynamic ?? '').trim()) failures.push(`${rel}: Scene 01 requires powerDynamic.`);
 
-  const coverTexts = [headline, ...(Array.isArray(scene1.flowText) ? scene1.flowText : [])].map(norm).filter(Boolean);
-  const topicNorm = norm(topic);
-  if (topicNorm && !coverTexts.some((text) => text.includes(topicNorm))) {
-    failures.push(`${rel}: Scene 01 must visibly include coverTopicTerm '${topic}'.`);
+  const plannedCoverTexts = textList(scene1.flowText);
+  if (!plannedCoverTexts.length) failures.push(`${rel}: Scene 01 must contain planned cover text.`);
+  if (plannedCoverTexts.length > 4) failures.push(`${rel}: Scene 01 has too many visible text strings (${plannedCoverTexts.length}); simplify the cover.`);
+  if (plannedCoverTexts[0] && plannedCoverTexts[0] !== headline) failures.push(`${rel}: first Scene 01 text must equal coverHeadline exactly.`);
+
+  if (topic && !plannedCoverTexts.some((text) => text.toLocaleUpperCase('de-DE').includes(topic.toLocaleUpperCase('de-DE')))) {
+    warnings.push(`${rel}: technical coverTopicTerm '${topic}' is not visible; this is allowed when the headline + visual thesis already explain the topic.`);
   }
 
   const promptPath = path.join(path.dirname(path.dirname(file)), '02-google-flow', 'google-flow-prompt.txt');
@@ -73,17 +79,9 @@ for (const file of plans) {
   }
 
   const prompt = fs.readFileSync(promptPath, 'utf8');
-  const requiredPromptMarkers = [
-    ['cover semantics lock', /COVER SEMANTICS\s*[—-]\s*HARD LOCK/iu],
-    ['cover topic term', /COVER TOPIC TERM:/iu],
-    ['cover visual thesis', /COVER VISUAL THESIS:/iu],
-    ['no top banner rule', /NO FULL-WIDTH TOP BANNER/iu],
-  ];
-  for (const [label, pattern] of requiredPromptMarkers) {
-    if (!pattern.test(prompt)) failures.push(`${rel}: Flow prompt missing ${label}.`);
-  }
-
-  if (topic && !norm(prompt).includes(topicNorm)) failures.push(`${rel}: Flow prompt does not include coverTopicTerm '${topic}'.`);
+  if (!prompt.includes(ACTIVE)) failures.push(`${rel}: Flow prompt missing active visual marker ${ACTIVE}.`);
+  if (!prompt.includes(CONTRACT)) failures.push(`${rel}: Flow prompt missing prompt contract ${CONTRACT}.`);
+  if (!/NO FULL-WIDTH TOP BANNER/iu.test(prompt)) failures.push(`${rel}: Flow prompt missing no-top-banner rule.`);
 
   const scene1Start = prompt.search(/^SCENE\s+01\s*$/imu);
   const scene2Start = prompt.search(/^SCENE\s+02\s*$/imu);
@@ -92,9 +90,14 @@ for (const file of plans) {
     : '';
 
   if (!scene1Prompt) failures.push(`${rel}: Flow prompt is missing Scene 01.`);
-  if (!/TITLE PLACEMENT:/iu.test(scene1Prompt)) failures.push(`${rel}: Scene 01 prompt needs explicit TITLE PLACEMENT.`);
+  if (!/CAMERA:/iu.test(scene1Prompt)) failures.push(`${rel}: Scene 01 prompt needs CAMERA/title-safe composition direction.`);
+  if (!/TEXT POLICY:/iu.test(scene1Prompt)) failures.push(`${rel}: Scene 01 prompt needs TEXT POLICY.`);
+  if (!/PLANNED GERMAN TEXT:/iu.test(scene1Prompt)) failures.push(`${rel}: Scene 01 prompt needs exact planned German text.`);
+  if (!/\[TEXT LOCK\]/u.test(scene1Prompt)) failures.push(`${rel}: Scene 01 PROMPT needs [TEXT LOCK].`);
+  if (!/\[FINAL CHECK\]/u.test(scene1Prompt)) failures.push(`${rel}: Scene 01 PROMPT needs [FINAL CHECK].`);
+
   if (/full[- ]width[^\n]{0,30}top|across the full top|headline across the top/iu.test(scene1Prompt) && !/NO FULL-WIDTH TOP BANNER/iu.test(scene1Prompt)) {
-    warnings.push(`${rel}: Scene 01 may still encourage a top-banner layout; review title placement.`);
+    warnings.push(`${rel}: Scene 01 may still encourage a top-banner layout; review composition.`);
   }
 }
 
