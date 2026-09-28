@@ -1,66 +1,107 @@
-# IMAGE REFERENCE LOCK — CINEMATIC PSYCHOLOGY WORLD v1
+# IMAGE REFERENCE LOCK — CINEMATIC HUMAN BEHAVIOR WORLD v2
 
 **STATUS: BINDING**
 
-Active visual system: `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1`.
+Active visual system: `CINEMATIC_HUMAN_BEHAVIOR_V2`.
 
 ## Permanent channel references
 
 Path:
-`assets/cinematic-psychology-world/`
+`assets/cinematic-human-behavior-world/`
 
-Target pack:
+Target reference pack:
+
+### Core
 - `style-master.png`
-- `character-sheet.png`
-- `environment-sheet.png`
-- `schema-example.png`
-- `object-metaphor-example.png`
-- `cover-reference.png`
+- `character-neutral.png`
+- `character-emotions.png`
+- `character-dark-archetypes.png`
+- `character-groups.png`
 
-Until approved images exist, `rules/VISUAL_SYSTEM.md` and `rules/visual-system.json` are authoritative.
+### Lighting / mood
+- `lighting-clear.png`
+- `lighting-uneasy.png`
+- `lighting-dark.png`
+- `lighting-power.png`
+
+### Environments
+- `environment-day.png`
+- `environment-night.png`
+- `environment-dark.png`
+
+### Topic-specific behavior references
+- `money-status-reference.png`
+- `manipulation-reference.png`
+- `schema-reference.png`
+- `metaphor-reference.png`
+
+### Covers
+- `cover-reference-light.png`
+- `cover-reference-dark.png`
+
+Until approved reference images exist, `rules/VISUAL_SYSTEM.md`, `rules/visual-system.json`, `rules/STICKMAN_DNA.md` and `rules/FLOW_PROMPT_CONTRACT.md` are authoritative.
 
 ## What references lock
 
-- simplified character anatomy family
+References may lock:
+- simplified anatomy family
 - outline language
-- soft cel shading
+- cel-shading language
 - texture level
-- color behavior
-- cinematic illustrated lighting
+- rendering quality
 - environment-detail level
-- overall 2D film-world polish
+- lighting language for the matching mood family
+- controlled color behavior
 
 They do NOT lock:
 - exact person identity
-- clothing
-- pose
-- location
-- camera angle
-- props
-- scene family
-- text from another frame
+- exact clothing
+- exact pose
+- exact room
+- exact camera angle
+- exact props
+- exact composition
+- exact text
+- one single color palette for the whole channel
+
+## Mood references
+
+Choose references according to the planned `moodMode`, not merely because the previous frame used them.
+
+Examples:
+- `CLEAR` → core + clear/day references
+- `UNEASY` → core + uneasy reference
+- `DARK` → core + dark lighting/environment references
+- `POWER` → core + power reference
+- `MONEY` → core + money/status reference
+- `ISOLATION` → core + night/dark environment where useful
+- `HOPE` → core + clear/day reference with warmer resolution
+
+A dark reference may not turn a neutral scene dark. A bright reference may not sanitize a genuinely dark beat.
 
 ## Scene 01
 
-`03-bilder/01.png` remains Scene 01 + cover/thumbnail source for pipeline compatibility. It follows the channel style; it does not redefine it.
+`03-bilder/01.png` remains Scene 01 + cover/thumbnail source for pipeline compatibility.
+
+It follows the permanent reference system. It is NOT the global style master and must not redefine the channel world for later scenes.
 
 ## Character continuity
 
-Repeat a person only when narrative continuity needs it. Then preserve clothing, colors, head design, accessory, proportions and shoes.
+Repeat a character only when narrative continuity requires it. Preserve clothing, core colors, head design, accessory, proportions and shoes.
 
-## Non-character continuity
-
-Schemas, metaphors and object frames use the same outlines, cel shading, lighting and color language as character scenes.
+Mood and light may change while identity remains stable.
 
 ## Flow reference clause
 
-`Use the attached approved CINEMATIC ILLUSTRATED PSYCHOLOGY WORLD reference only for STYLE, CHARACTER FAMILY, LINEWORK, COLOR, SOFT CEL SHADING, LIGHTING AND WORLD QUALITY. Do not clone character identity, pose, room, camera, objects, composition or readable text. Choose the best scene family for the current psychology beat. Character scenes use stylized stickman-inspired figures with clothing and very slim simplified limbs. Non-character schemas, objects, comparisons and metaphors must look like the same illustrated film-world. Render only the exact German text explicitly planned for the current frame; otherwise ZERO READABLE TEXT.`
+`Use the approved CINEMATIC HUMAN BEHAVIOR WORLD v2 references only for STYLE, STICKMAN ANATOMY FAMILY, LINEWORK, CEL SHADING, TEXTURE, RENDERING QUALITY, MOOD-APPROPRIATE LIGHTING AND COLOR BEHAVIOR. Do not clone exact character identity, pose, room, camera, object arrangement, composition or readable text. Apply the current scene's MOOD MODE, MOOD INTENSITY and POWER DYNAMIC. Dark psychology must remain spatially believable and must not become generic black horror imagery. Render only exact planned German text; otherwise ZERO READABLE TEXT.`
 
 ## Hard fail
 
-- style drift
+- reference creates style drift
+- wrong mood reference overrides current beat
 - bare line-stickman drift
 - normal cartoon-human drift
-- 3D/realistic drift
-- schema/diagram with unrelated corporate design language
+- 3D/realistic/anime drift
+- schema uses unrelated corporate design language
 - copied text from reference
+- Scene 01 is treated as global style truth
