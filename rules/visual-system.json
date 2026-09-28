@@ -3,6 +3,8 @@
   "name": "Cinematic Illustrated Psychology World v1",
   "status": "active",
   "characterSystem": "STYLIZED_STICKMAN_CAST_V1",
+  "humanCharacterPolicy": "UNIFIED_STICKMAN_HUMANS_V1",
+  "characterPresencePolicy": "OPTIONAL_HUMANS_MIXED_VISUALS_V1",
   "environmentPolicy": "BELIEVABLE_CINEMATIC_ENVIRONMENT_V1",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V1",
   "representationPolicy": "MIXED_PSYCHOLOGY_VISUALS_V1",
@@ -13,7 +15,17 @@
     "limbs": "very slim simplified illustrated limbs with slight width",
     "hands": "simple stylized hands, no realistic finger anatomy",
     "feet": "clear simplified shoes or feet",
-    "individuality": ["clothing", "simple hair cue", "glasses", "bag/accessory", "pose", "expression"]
+    "individuality": ["clothing", "simple hair cue", "glasses", "bag/accessory", "pose", "expression", "modest size variation"],
+    "scope": ["main", "supporting", "background", "crowd", "memory insert", "screen/poster/reflection humans"],
+    "sameFamilyRequired": true,
+    "backgroundSimplificationAllowed": true,
+    "mixedHumanStylesAllowed": false
+  },
+  "characterPresence": {
+    "requiredEveryFrame": false,
+    "rule": "use humans only when human action/reaction is the clearest explanation",
+    "noHumanOptions": ["SCHEMA_EXPLAINER", "OBJECT_METAPHOR", "COMPARE_VISUAL", "TEXT_ILLUSTRATION", "environment-only illustration", "object close-up"],
+    "forbidDecorativeCharacterInsertion": true
   },
   "world": {
     "locations": "believable colorful everyday environments",
@@ -41,14 +53,18 @@
     "bare line stickman or whiteboard doodle",
     "conventional full cartoon human",
     "realistic human anatomy",
+    "supporting/background human from a different character family",
+    "mixed anatomy families inside one crowd",
+    "generic corporate vector human",
     "3D or CGI or Pixar",
     "anime manga chibi",
     "photorealistic environment",
     "corporate vector stock-art look",
     "PowerPoint-style schema",
+    "unnecessary decorative human when a no-human visual is clearer",
     "material style drift between scenes",
     "random readable text"
   ],
-  "globalPrompt": "Create a cinematic 2D illustrated frame for a modern psychology YouTube channel. Keep one consistent visual world: stylized stickman-inspired characters with large simple round heads, minimal expressive faces, compact clothed torsos, very slim simplified limbs, simple hands and shoes; characters are clearly simplified but not bare line stickmen and not normal cartoon humans. Use colorful believable environments, clean slightly organic outlines, soft cel shading, natural depth, purposeful cinematic framing, controlled colors, warm/cool lighting and small meaningful details. When no character is needed, diagrams, text schemas, objects, comparisons and metaphors must use the exact same illustration, line, color, shading and lighting language. No photorealism, no 3D/Pixar, no anime, no corporate vector look, no whiteboard doodle style.",
+  "globalPrompt": "Create a cinematic 2D illustrated frame for a modern psychology YouTube channel. Keep one consistent film-world. Every visible human — main, supporting and background — must use the same stylized stickman-inspired anatomy family with large simple round heads, minimal expressive faces, compact clothed torsos, very slim simplified limbs, simple hands and shoes. Individualize only through clothing, simple hair/accessories, size, posture and expression. Never mix in normal cartoon humans, realistic people or another character family. Human presence is optional: when a person is not needed, use schemas, objects, metaphors, comparisons, environment illustrations or text illustrations in the same linework, color, soft cel shading, depth and lighting language. Use colorful believable environments, cinematic framing and small meaningful details. No photorealism, no 3D/Pixar, no anime, no corporate vector look, no whiteboard doodle style.",
   "referencePackPath": "assets/cinematic-psychology-world/"
 }

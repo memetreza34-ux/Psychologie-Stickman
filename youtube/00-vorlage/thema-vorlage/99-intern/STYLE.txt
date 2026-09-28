@@ -1,12 +1,20 @@
 STYLE — CINEMATIC ILLUSTRATED PSYCHOLOGY WORLD v1
 
-CHARACTERS
-- stylized stickman-inspired, not bare line stickmen
-- large simple head, minimal expressive face
+UNIFIED HUMAN CAST — HARD LOCK
+- every visible human uses the same stylized stickman-inspired family
+- applies to main, supporting and background people, crowds and memory inserts
+- large simple round/oval head, minimal expressive face
 - compact clothed torso
 - very slim simplified limbs with slight width
 - simple hands and shoes
-- individualize through clothing, hair cue, glasses/accessory, pose and color
+- individualize only through clothing, color, hair cue, glasses/accessory, modest size variation, pose and expression
+- background people may be simpler, but never a different human anatomy/rendering style
+
+CHARACTER PRESENCE — OPTIONAL
+- not every frame needs a person
+- use a character only when human action/reaction helps explain the beat
+- schemas, object metaphors, object close-ups, comparison visuals and text illustrations may contain no humans
+- never add a decorative person only to fill empty space
 
 WORLD
 - colorful believable everyday locations
@@ -21,11 +29,15 @@ ALLOWED NON-CHARACTER FRAMES
 - object metaphors
 - comparison visuals
 - text illustrations
+- symbolic environment/object close-ups
 All use the same world/rendering language.
 
 HARD FAIL
+- main stickman + normal cartoon/realistic side characters
+- mixed human character families inside one frame
 - whiteboard/bare stickman
 - normal full cartoon or realistic humans
+- generic corporate-vector humans
 - 3D/Pixar/anime
 - photorealistic environment
 - corporate infographic look
