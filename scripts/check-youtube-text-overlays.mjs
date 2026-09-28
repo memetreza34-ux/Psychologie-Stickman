@@ -21,14 +21,17 @@ const warnings = [];
 let flowOnlyChecked = 0;
 let legacy = 0;
 const countWords = (value) => String(value ?? '').trim().split(/\s+/).filter(Boolean).length;
+const toTexts = (value) => (Array.isArray(value) ? value : [value]).map((item) => String(item ?? '').trim()).filter(Boolean);
+const allowedKinds = new Set(['cover', 'keyword', 'schema', 'comparison', 'text_illustration']);
 
 for (const file of files) {
+  if (file.split(path.sep).includes('00-vorlage')) continue;
   const relative = path.relative(process.cwd(), file);
   const raw = JSON.parse(fs.readFileSync(file, 'utf8'));
   const plan = resolvePhase1Plan(raw, file);
   if (String(plan.format ?? '').toLowerCase() !== 'youtube') continue;
   const scenes = Array.isArray(plan.scenes) ? plan.scenes : [];
-  if (!scenes.length || scenes[0]?.isCover !== true) continue;
+  if (!scenes.length) continue;
 
   const sidecarPath = path.join(path.dirname(file), 'flow-text-policy.json');
   const sidecar = fs.existsSync(sidecarPath) ? JSON.parse(fs.readFileSync(sidecarPath, 'utf8')) : null;
@@ -46,6 +49,7 @@ for (const file of files) {
   const remotionText = sidecar?.renderGermanLabelsInRemotion ?? plan.renderGermanLabelsInRemotion;
   const moments = Array.isArray(sidecar?.flowTextMoments) ? sidecar.flowTextMoments : (Array.isArray(plan.flowTextMoments) ? plan.flowTextMoments : []);
   const labels = Array.isArray(plan.sceneLabels) ? plan.sceneLabels : [];
+  const isV2 = plan.visualSystem === 'CINEMATIC_HUMAN_BEHAVIOR_V2';
 
   if (renderer !== 'GOOGLE_FLOW') failures.push(`${relative}: V3 requires visibleTextRenderer=GOOGLE_FLOW.`);
   if (remotionText !== false) failures.push(`${relative}: V3 requires renderGermanLabelsInRemotion=false.`);
@@ -56,31 +60,49 @@ for (const file of files) {
   let coverCount = 0;
   moments.forEach((moment, index) => {
     const scene = Number(moment.scene);
-    const text = String(moment.text ?? '').trim();
-    const kind = moment.kind ?? (scene === 1 ? 'cover' : 'keyword');
+    const texts = toTexts(moment.text);
+    const kind = String(moment.kind ?? (scene === 1 ? 'cover' : 'keyword')).trim().toLowerCase();
     if (!Number.isInteger(scene) || scene < 1 || scene > scenes.length) {
       failures.push(`${relative}: flowTextMoments[${index}] references invalid scene ${moment.scene}.`);
       return;
     }
     if (seen.has(scene)) failures.push(`${relative}: scene ${scene} has more than one Flow text moment.`);
     seen.add(scene);
-    if (!text) failures.push(`${relative}: scene ${scene} Flow text is empty.`);
-    const words = countWords(text);
+    if (!texts.length) failures.push(`${relative}: scene ${scene} Flow text is empty.`);
+    if (texts.length > 4) failures.push(`${relative}: scene ${scene} has ${texts.length} text strings; maximum is 4.`);
+    if (!allowedKinds.has(kind)) failures.push(`${relative}: scene ${scene} has unsupported Flow text kind '${kind}'.`);
+
     if (scene === 1) {
       coverCount += 1;
       if (kind !== 'cover') failures.push(`${relative}: scene 1 Flow text must use kind=cover.`);
-      if (words < 2 || words > 7) failures.push(`${relative}: cover title must contain 2-7 words.`);
+      const titleWords = countWords(texts[0] ?? '');
+      if (titleWords < 2 || titleWords > 7) failures.push(`${relative}: cover title must contain 2-7 words.`);
+      texts.slice(1).forEach((text) => {
+        if (countWords(text) > 4) failures.push(`${relative}: scene 1 secondary text '${text}' must contain at most 4 words.`);
+      });
     } else {
-      if (kind !== 'keyword') failures.push(`${relative}: later Flow text scene ${scene} must use kind=keyword.`);
-      if (words < 1 || words > 5) failures.push(`${relative}: scene ${scene} Flow keyword must contain 1-5 words.`);
+      texts.forEach((text) => {
+        if (countWords(text) < 1 || countWords(text) > 5) failures.push(`${relative}: scene ${scene} Flow text '${text}' must contain 1-5 words.`);
+      });
+      if (!isV2 && kind !== 'keyword') failures.push(`${relative}: legacy later Flow text scene ${scene} must use kind=keyword.`);
     }
   });
 
-  if (coverCount !== 1) failures.push(`${relative}: V3 requires exactly one Scene-01 Flow cover title.`);
+  if (coverCount !== 1) failures.push(`${relative}: V3 requires exactly one Scene-01 Flow cover moment.`);
   const maxMoments = Math.max(1, Math.ceil(scenes.length * 0.3));
   if (moments.length > maxMoments) failures.push(`${relative}: Flow text density ${moments.length}/${scenes.length} exceeds 30% (${maxMoments}).`);
   const share = scenes.length ? moments.length / scenes.length : 0;
   if (scenes.length >= 20 && share < 0.12) warnings.push(`${relative}: only ${moments.length}/${scenes.length} scenes have planned Flow text; confirm this is intentional.`);
+
+  const scene1 = scenes.find((scene, index) => Number(scene?.number ?? scene?.scene ?? index + 1) === 1);
+  if (isV2 && scene1) {
+    const flowTexts = toTexts(scene1.flowText);
+    const coverMoment = moments.find((moment) => Number(moment.scene) === 1);
+    const momentTexts = toTexts(coverMoment?.text);
+    if (flowTexts.length && JSON.stringify(flowTexts) !== JSON.stringify(momentTexts)) {
+      failures.push(`${relative}: Scene 01 flowText must match Scene-01 flowTextMoments exactly.`);
+    }
+  }
 
   console.log(`${relative}: ${moments.length}/${scenes.length} Flow text moments (${Math.round(share * 100)}%); Remotion text disabled.`);
 }
