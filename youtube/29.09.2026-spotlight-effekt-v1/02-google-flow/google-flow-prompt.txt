@@ -1,0 +1,143 @@
+GOOGLE FLOW MASTER PROMPT — SPOTLIGHT-EFFEKT
+
+TOPIC: Warum sich eigene Fehler sichtbarer anfühlen, als sie für andere sind
+FORMAT: 16:9 / 1920x1080
+VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V1
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+
+TASK / OUTPUT — READ FIRST
+Create FINAL SEPARATE 16:9 source images for one coherent YouTube video.
+This is the ONLY Google Flow master prompt for this video and it contains every image from BILD 01 to BILD 16.
+Never create a storyboard, contact sheet, multi-scene grid, collage or automatic video.
+One image number always means one separate image asset.
+
+CHANNEL VISUAL WORLD — HARD LOCK
+Keep the COMPLETE video inside one mature cinematic 2D psychology-documentary / editorial illustration world.
+Use adult strict-stickman humans only: large simple round/slightly oval heads without chibi exaggeration, minimal expressive faces, small narrow clothed torsos, narrow shoulders, very thin arms and legs, simple hands and shoes.
+Characters may differ through restrained hair, eyebrows, small eye/mouth variation, glasses/accessories, clothing, posture, gaze and role-specific body language, but never by changing anatomy family.
+Use clean slightly organic dark outlines, controlled soft cel shading, subtle texture, believable depth, purposeful framing and motivated light.
+Simple Stickmen live in rich believable scene-specific environments when a real location helps the beat.
+Do not default to blank cream backgrounds, sterile rooms, repeated desk shots or one fixed red/burgundy/dark or teal/cream palette.
+Not every image needs a person. Object/environment illustrations, metaphors, comparisons and cinematic schemas are equally valid when they explain the beat faster.
+Every image should have one dominant visual idea and only a few useful supporting elements.
+The complete set must look as if the SAME illustrator created it for the SAME channel, even when location, camera, mood and color change.
+
+Hard reject: cute/chibi/mascot figures, normal cartoon-human anatomy, broad shoulders, thick limbs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
+
+CHARACTER + REFERENCE SYSTEM
+Use only reference images that have actually been approved for `CINEMATIC_HUMAN_BEHAVIOR_V2`.
+If no approved reference image exists, follow the written channel rules instead of inventing or assuming one.
+Style-only references may lock rendering, anatomy family, linework, cel shading, texture and environment-quality level, but must not force the same room, pose, clothing, composition or palette.
+Character-identity references additionally preserve the returning person's head/hair/accessory cues, clothing/core colors, shoes and silhouette.
+Never let a weak/chibi/cartoon reference override the written channel rules.
+
+VIDEO WORLD LOCK
+Character A is the recurring main figure: adult strict-stickman, muted teal overshirt, charcoal trousers, simple white shoes, small dark hair cue, restrained minimal face. Keep this identity consistent whenever A returns.
+The café in BILD 01, BILD 05 and BILD 06 is the same modern café: warm wood tables, large daylight windows, muted green details and believable depth.
+The university experiment room in BILD 09, BILD 10 and BILD 11 is the same room with the same basic table/chair/window layout.
+All other locations may change freely while the channel illustration world remains identical.
+
+GENERATION WORKFLOW — HARD LOCK
+
+INITIAL COVER RUN:
+1. Read the complete master prompt first.
+2. Generate BILD 01 ONLY.
+3. Generate exactly 3 SEPARATE cover candidates for BILD 01.
+4. Each candidate must be its own standalone 16:9 image. Never combine the three candidates into one sheet/grid.
+5. STOP and wait for the user to choose one cover.
+6. Keep exactly the chosen candidate.
+7. Rename it immediately to `01.png`.
+8. Put it directly in the single final folder `03-bilder/`.
+9. Do not generate BILD 02 or later before the user has chosen the cover.
+
+AFTER THE USER CHOOSES THE COVER:
+- Batch 1: generate BILD 02, 03, 04, 05 and 06 together as one five-image batch operation
+- Batch 2: generate BILD 07, 08, 09, 10 and 11 together as one five-image batch operation
+- Batch 3: generate BILD 12, 13, 14, 15 and 16 together as one five-image batch operation
+- every requested image number still becomes its own separate standalone 16:9 image
+- immediately rename each accepted result to its matching number: `02.png`, `03.png`, and so on
+- put every accepted image directly into the SAME flat folder `03-bilder/`
+- no cover subfolder, no batch subfolders, no duplicate accepted versions
+- after each batch, check style continuity, anatomy, scene clarity, unnecessary text and visual repetition
+- regenerate only failed images
+- when a batch passes, continue automatically with the next batch from THIS SAME MASTER PROMPT
+- never offer to turn the images into a video; the external pipeline handles the final edit
+
+FINAL REQUIRED IMAGE FOLDER:
+`03-bilder/01.png, 02.png, 03.png, 04.png, 05.png, 06.png, 07.png, 08.png, 09.png, 10.png, 11.png, 12.png, 13.png, 14.png, 15.png, 16.png`
+
+GLOBAL TEXT RULE
+No visible text unless the current BILD prompt explicitly requests exact German wording.
+Never render voice-over as captions.
+Never invent readable posters, signs, screens, documents, packaging, logos or pseudo-text.
+If a BILD prompt says no visible text, render ZERO READABLE TEXT.
+
+COVER RULE — BILD 01
+BILD 01 is both the first visual beat and the YouTube thumbnail source.
+It must communicate the central mechanism visually before the title is read.
+Use one dominant focal relationship, strong thumbnail readability and a compact asymmetric title zone instead of a generic full-width top banner.
+
+BILD 01
+Thumbnail-ready medium-wide three-quarter view inside the recurring modern café. Character A stands near the foreground with a small visible stain on the teal overshirt and looks suddenly self-conscious, while a dramatic but still believable warm cone of light makes that tiny stain feel enormous to A. In the midground and background, several other strict-stickman guests are clearly occupied with their own conversations, phones and drinks instead of staring. Keep the café rich but uncluttered, with cool blue-green daylight, warm wood and strong amber focal contrast on A. Reserve a compact asymmetric dark-enough title zone that does not cover faces or the stain. Render exactly: "ALLE SEHEN DEINEN FEHLER?" No other readable text.
+
+BILD 02
+Create one coherent editorial illustration of Character A experiencing several tiny social mishaps as one single self-consciousness beat: a brief verbal stumble, the same small shirt stain and a short awkward trip are suggested through restrained motion echoes around A rather than separate storyboard panels. Keep the main figure large, the surroundings recognizably public and the mood slightly uneasy but realistic. Neutral daylight, muted teal, graphite and warm-neutral accents. No visible text.
+
+BILD 03
+Create a cinematic illustrated mechanism for the concept itself: one simple self-marker under an oversized warm spotlight while the surrounding field contains smaller distributed points of attention. Keep it dimensional and integrated into the same 2D film world, not a flat infographic. Deep navy-blue space, controlled amber light, subtle texture and depth. Integrate exactly the German term "SPOTLIGHT-EFFEKT" as the only readable text.
+
+BILD 04
+Show the mechanism as a clean visual contrast without people: the same self-marker appears once under a very large imagined attention cone and once under a much smaller realistic attention cone, both inside one coherent cinematic comparison. The difference should be obvious immediately without arrows or explanatory labels. Blue-grey dimensional space, restrained gold light, soft cel shading. No visible text.
+
+BILD 05
+Return to the exact same café from BILD 01. Character A enters with the same small stain on the teal overshirt and looks down at it as if it were impossible to miss. Other guests remain naturally occupied at tables in the background. Use a wide diagonal entrance view, soft daylight, natural wood, muted green and cool blue. Keep the stain readable but physically small. No visible text.
+
+BILD 06
+Return to the same café and widen the visual attention. Character A is now only one element in a believable environment full of competing attention targets: a conversation, a phone, a cup being placed down, someone reading and natural café activity. The stain on A's shirt should still exist but feel visually minor compared with the whole scene. Use rich foreground-midground-background depth and open daylight. No visible text.
+
+BILD 07
+Create a cinematic object metaphor for first-person self-focus. From a near-camera viewpoint, a strong warm spotlight begins close to the viewer's own position and illuminates a simple foreground self-symbol, while the rest of the space falls into cooler depth. The image should communicate that our attention naturally starts from our own experience. Mature editorial 2D illustration, amber foreground against deep blue. No people and no visible text.
+
+BILD 08
+Wide view of a believable train-platform waiting area with four separate adult strict-stickman people. Each person is naturally focused on something different near themselves — a phone, notes, a drink or a conversation — with a subtle local pool of light or attention around each activity. No single person is the universal center. Use cool station greys/blues with several small warm light pockets and strong spatial depth. No visible text.
+
+BILD 09
+Inside a simple late-1990s-style university psychology lab, show three anonymous strict-stickman researchers preparing a social-perception study. They arrange a conspicuous illustrated T-shirt and simple abstract study materials in a believable room. Do not depict or imitate the real researchers' faces. Use clean institutional daylight, soft blue-grey, muted green and warm-neutral accents. Keep the recurring experiment-room layout established for the next images. No visible text.
+
+BILD 10
+Return to the exact same university experiment room. A strict-stickman participant wearing a conspicuous illustrated T-shirt enters through the doorway while several other student stickmen sit naturally inside. The participant is visibly self-conscious, but the observers are not all staring; some are only casually aware or occupied with the room. Use a wide doorway-to-room perspective with neutral room light and one stronger local color accent on the shirt graphic. No visible text.
+
+BILD 11
+Use the same participant and the same experiment room in one clean cinematic left-right contrast. On the left, visualize the participant's expectation: many observers appear to notice the shirt. On the right, show the more restrained actual situation: noticeably fewer observers are focused on it while others remain occupied. Keep this as one coherent comparison, not a corporate infographic. Integrate exactly two small German labels: "ERWARTUNG" on the left and "TATSÄCHLICH" on the right. No other readable text.
+
+BILD 12
+Show a small university discussion group around a table. One speaker has just contributed and now looks inwardly self-conscious, as if the comment is dominating the whole room, while the other group members continue the discussion naturally without exaggerated reactions. Use an over-shoulder medium-wide composition, cool neutral daylight, muted olive and warm-neutral accents. All people use the same mature strict-stickman anatomy family. No visible text.
+
+BILD 13
+Return to Character A in a bright public hallway. One nearby person briefly notices A, while several other people continue walking, talking or checking their own things. The frame must clearly communicate nuance: attention exists, but it is limited and distributed rather than total. Balanced daylight, soft blue and neutral stone tones, believable hallway depth. No visible text.
+
+BILD 14
+Create one coherent side-by-side behavioral comparison in a bright café or waiting area. Character A in the teal overshirt is intensely aware of a tiny stain on their own clothing, while Character B in a muted rust sweater has an equally small stain that A barely reacts to. Same mature stickman anatomy for both. Open soft daylight, warm neutral, calm green and blue. No visible text.
+
+BILD 15
+Character A walks through an open lively city square and visibly shifts attention outward toward what is actually happening: trees, people, bicycles and café terraces. A's posture is more relaxed and open than earlier. Use a wide three-quarter composition with warm late-afternoon daylight, natural green, warm stone and restrained amber. Keep the scene hopeful but not sentimental. No visible text.
+
+BILD 16
+Wide elevated closing view of a calm evening plaza. Character A is identifiable but only one person among many adult strict-stickman people crossing the space. Each person has a subtle local focus of attention on their own path, conversation or activity; no single giant spotlight dominates the whole crowd. Use blue-hour ambient light, small warm practical lights, deep blue, muted green and warm-neutral accents. The ending should feel calm, spacious and resolved. No visible text.
+
+FINAL QA
+- one master prompt file only
+- BILD 01 first as 3 separate cover candidates, then STOP for user choice
+- only after cover approval begin later images
+- later images generated exactly as 02–06, 07–11 and 12–16 five-image batches
+- every image number = separate standalone 16:9 asset
+- accepted outputs renamed immediately to `NN.png`
+- all accepted images together in one flat `03-bilder/` folder
+- no storyboard/contact sheet/multi-scene grid/video
+- same mature strict-stickman illustration world across every batch
+- Character A, recurring café and recurring experiment room remain consistent
+- varied staging, camera, environment, mood and representation inside that same world
+- no forced character in every frame
+- exact German text only in BILD 01, BILD 03 and BILD 11; ZERO READABLE TEXT everywhere else
