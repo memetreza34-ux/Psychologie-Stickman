@@ -9,7 +9,6 @@
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
   "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
   "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
-  "promptContract": "FLOW_SCENE_PROMPT_CONTRACT_V1",
   "character": {
     "head": "large simple round or slightly oval head",
     "face": "minimal expressive eyes, optional eyebrows, small mouth, no realistic facial anatomy",
@@ -118,28 +117,6 @@
     "TEXT_ILLUSTRATION": 0.05
   },
   "textModes": ["cover", "keyword", "schema", "comparison", "text_illustration"],
-  "promptFieldOrder": [
-    "SPEECH CONTEXT — DO NOT RENDER AS TEXT",
-    "SCENE TYPE",
-    "COMPOSITION",
-    "SOCIAL DENSITY",
-    "MOOD MODE",
-    "MOOD INTENSITY",
-    "POWER DYNAMIC",
-    "VISUAL IDEA",
-    "VISUAL TASK",
-    "CHARACTER / SUBJECT DIRECTION",
-    "ACTION / RELATION",
-    "ENVIRONMENT",
-    "CAMERA",
-    "LIGHTING",
-    "COLOR",
-    "CONTINUITY",
-    "TEXT POLICY",
-    "PLANNED GERMAN TEXT",
-    "NEGATIVE LOCKS",
-    "PROMPT"
-  ],
   "hardFails": [
     "bare line stickman or whiteboard doodle",
     "conventional full cartoon human",
@@ -158,8 +135,7 @@
     "mood contradicts current beat",
     "required power dynamic is visually absent",
     "dark scene becomes meaningless black void",
-    "cheap villain cliche replaces psychological direction",
-    "prompt violates fixed scene contract"
+    "cheap villain cliche replaces psychological direction"
   ],
   "referencePackPath": "assets/cinematic-human-behavior-world/"
 }
