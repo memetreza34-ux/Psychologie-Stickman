@@ -1,0 +1,91 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+TOPIC: Warum folgen wir der Gruppe?
+FORMAT: 16:9 / 1920x1080
+
+GLOBAL STYLE
+Create all images in one consistent cinematic 2D psychology world.
+Use STRICT STICKMAN characters only: large simple round heads, minimal faces, narrow clothed torsos, very thin arms and legs, simple hands and shoes. Clean dark outlines, soft cel shading, believable environments and natural depth.
+No normal cartoon humans, no realistic anatomy, no 3D, no Pixar, no anime, no whiteboard style.
+
+CHARACTER A
+Teal hoodie, black very-thin legs, white shoes. Keep the exact same head shape, proportions, clothing and colors whenever Character A returns.
+
+TEXT RULE
+Only render the exact German text explicitly requested for a scene. Otherwise ZERO READABLE TEXT.
+
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Warum folgen wir manchmal einer Gruppe, obwohl wir eigentlich anderer Meinung sind?
+SCENE TYPE: CHARACTER_SCENE
+PLANNED GERMAN TEXT:
+- "WARUM DU DER GRUPPE FOLGST"
+PROMPT:
+Character A stands alone while four strict stickman people behind him confidently point in the same direction. A looks uncertain and glances back at the group. Strong simple composition, slightly uneasy mood, clean thumbnail framing. Render exactly "WARUM DU DER GRUPPE FOLGST". NO OTHER READABLE TEXT.
+
+SCENE 02
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein Grund ist Konformität. Menschen orientieren sich oft an anderen.
+SCENE TYPE: CHARACTER_SCENE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Character A sits with four other strict stickman people around a simple table in a neutral classroom-like room. The four others choose the same option with confident body language while A watches them carefully. Medium-wide shot. ZERO READABLE TEXT.
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Besonders wenn eine Situation unklar ist oder wir nicht negativ auffallen wollen.
+SCENE TYPE: CHARACTER_SCENE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Same Character A, same room and same group. A believes the group may be wrong but looks visibly unsure while the others remain confident. Slightly closer shot, cooler shadows, clear social tension. ZERO READABLE TEXT.
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Du merkst, dass etwas nicht stimmt, aber plötzlich fühlt sich deine eigene Antwort weniger sicher an.
+SCENE TYPE: CHARACTER_SCENE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Show one strict stickman changing his position slightly toward a group of four stickmen, even though his posture still shows doubt. Clear visual idea of conformity, simple believable room, no diagram look. ZERO READABLE TEXT.
+
+SCENE 05
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Je geschlossener und selbstbewusster die Gruppe wirkt, desto größer kann dieser soziale Druck werden.
+SCENE TYPE: CHARACTER_SCENE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Character A stands beside a close group whose members all face the same direction with confident posture. A looks at them for information while also appearing uncomfortable about disagreeing. Medium-wide shot, slightly darker uneasy lighting. ZERO READABLE TEXT.
+
+SCENE 06
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Das bedeutet nicht, dass Menschen einfach willenlos sind.
+SCENE TYPE: CHARACTER_SCENE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Show a simple line-judgment experiment: several strict stickman participants sit in a row and most confidently choose the same obviously wrong line match while Character A looks surprised and conflicted. Keep it simple and cinematic, not a scientific infographic. ZERO READABLE TEXT.
+
+SCENE 07
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Manchmal passen sie ihre öffentliche Antwort an, obwohl sie innerlich weiterhin anderer Meinung bleiben.
+SCENE TYPE: COMPARE_VISUAL
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Character A stands close to four agreeing stickmen and publicly mirrors their choice, but his hesitant face and tense posture show that he internally disagrees. Make the conflict readable through body language only. ZERO READABLE TEXT.
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Schon eine einzige Person, die ebenfalls widerspricht, kann den Druck deutlich verändern.
+SCENE TYPE: CHARACTER_SCENE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Same Character A and same group. One person steps away from the group and stands beside A. A becomes visibly calmer and more confident while the remaining three stay together. Slightly warmer and more open lighting. ZERO READABLE TEXT.
+
+SCENE 09
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Konformität zeigt, wie stark soziale Situationen unsere Entscheidungen beeinflussen können.
+SCENE TYPE: CHARACTER_SCENE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Character A stands in a calm neutral space before hearing anyone else's opinion, thinking independently with relaxed posture. Brighter resolved mood, clean negative space, cinematic 2D framing. ZERO READABLE TEXT.
+
+FINAL CONSISTENCY RULE
+All visible humans must remain strict stickman characters. Character A must stay identical whenever he returns. Keep the same illustration language across every scene. Only pose, camera, environment, lighting and scene content may change.
