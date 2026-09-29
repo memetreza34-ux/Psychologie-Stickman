@@ -48,6 +48,24 @@ Diese **eine Datei enthält alle Szenen des Videos** zusammen mit den globalen F
 
 Nicht in mehrere Master-Prompt-Dateien oder Batch-Prompt-Dateien aufteilen. Batches betreffen nur die Bildgenerierung, nicht die Dateistruktur.
 
+## Google-Flow-Ausgabe — HARD LOCK
+
+Verbindliche Detailregel: `rules/FLOW_OUTPUT_MODE.md`.
+
+Der Masterprompt erzeugt finale **Einzelbilder**, kein Storyboard und kein automatisch gebautes Video.
+
+Für neue YouTube-Projekte:
+- Scene 01 zuerst
+- genau 3 getrennte Scene-01-Cover-Kandidaten
+- STOP für Nutzerfreigabe
+- ein Gewinner wird `03-bilder/01.png`
+- danach standardmäßig 3 Szenen pro Batch, maximal 5
+- jede Szenennummer = eine eigene 16:9-Bilddatei
+- niemals mehrere Szenennummern in einem Storyboard, Kontaktbogen, Panel-Grid oder einer Collage zusammenfassen
+- Flow niemals auffordern, aus den Szenen direkt ein Video zu bauen
+
+Ein `SPLIT`/`CONTRAST`/`MONTAGE` innerhalb EINER Szene bleibt erlaubt, wenn alle Teile denselben gesprochenen Beat erklären.
+
 ## YouTube Export — HARD LOCK
 
 Für neue fertige YouTube-Projekte ist `05-export/` ein vollständiges Upload-Paket:
@@ -71,12 +89,14 @@ Verbindliche Quellen:
 1. `rules/VISUAL_SYSTEM.md`
 2. `rules/visual-system.json`
 3. `rules/STICKMAN_DNA.md`
-4. `rules/YOUTUBE_STYLE_LOCK.md`
-5. `rules/PREMIUM_VISUAL_LOCK.md`
+4. `rules/PREMIUM_VISUAL_LOCK.md`
+5. `rules/YOUTUBE_STYLE_LOCK.md`
 6. `rules/IMAGE_REFERENCE_LOCK.md`
 
 Aktueller Standard:
 **Cinematic Human Behavior World v2 — `CINEMATIC_HUMAN_BEHAVIOR_V2` + `STYLIZED_STICKMAN_CAST_V2` + `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`.**
+
+Figuren sind mature/adult editorial Stickmen, nicht cute/chibi/mascot. Normale Szenen benutzen eine reiche glaubwürdige Bildwelt statt leerem Creme-Hintergrund als Standard.
 
 Der verbindliche Script-Einstieg für neue YouTube-Projekte bleibt:
 **`HOOK_FIRST_EXPLAIN_EARLY_V1`**.
