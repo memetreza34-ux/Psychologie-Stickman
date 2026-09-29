@@ -1,0 +1,48 @@
+{
+  "project": "29.09.2026-spotlight-effekt-v1",
+  "language": "de",
+  "format": "youtube-16-9",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "visualSystem": "CINEMATIC_HUMAN_BEHAVIOR_V2",
+  "characterSystem": "STYLIZED_STICKMAN_CAST_V2",
+  "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
+  "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
+  "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
+  "representationPolicy": "REPRESENTATION_VARIETY_V1",
+  "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
+  "flowPromptPolicy": "NATURAL_FLOW_MASTER_V1",
+  "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
+  "visibleTextLanguage": "de",
+  "visibleTextRenderer": "GOOGLE_FLOW",
+  "renderGermanLabelsInRemotion": false,
+  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
+  "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
+  "sceneLabels": [],
+  "flowTextMoments": [
+    {
+      "scene": 1,
+      "kind": "cover",
+      "text": "ALLE SEHEN DEINEN FEHLER?"
+    },
+    {
+      "scene": 3,
+      "kind": "keyword",
+      "text": "SPOTLIGHT-EFFEKT"
+    },
+    {
+      "scene": 11,
+      "kind": "comparison",
+      "text": ["ERWARTUNG", "TATSÄCHLICH"]
+    }
+  ],
+  "coverRole": "SCENE_01_COVER",
+  "coverHeadlineRequired": true,
+  "coverTextRenderer": "GOOGLE_FLOW",
+  "coverSemanticPolicy": "TOPIC_EXPLICIT_VISUAL_THESIS_V1",
+  "coverTopicTerm": "SPOTLIGHT-EFFEKT",
+  "coverVisualThesis": "Ein kleiner eigener Fehler fühlt sich wie ein großer Scheinwerfer an, während andere Menschen mit ihren eigenen Dingen beschäftigt sind.",
+  "coverMechanismVisible": true,
+  "coverLayoutPolicy": "INTEGRATED_THUMBNAIL_COMPOSITION_V1",
+  "coverTitlePlacementPolicy": "COMPOSITION_FIRST_NO_TOP_BANNER_V1"
+}
