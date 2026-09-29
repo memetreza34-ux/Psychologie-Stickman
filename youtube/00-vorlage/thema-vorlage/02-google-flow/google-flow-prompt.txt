@@ -1,227 +1,109 @@
 GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
 
 TOPIC: [VIDEO-THEMA]
+FORMAT: 16:9 / 1920x1080
 VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
 CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V1
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
-REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
-FORMAT: 16:9 / 1920x1080
 
-IMAGE WORLD — READ THIS FIRST — ABSOLUTE HARD LOCK
-Before generating anything, internalize this visual world and keep it for the COMPLETE video.
-This is the most important creative instruction in the prompt.
+TASK / OUTPUT — READ FIRST
+Create FINAL SEPARATE 16:9 source images for one coherent YouTube video.
+This is the ONLY Google Flow master prompt for this video and it contains every image from BILD 01 to BILD NN.
+Never create a storyboard, contact sheet, multi-scene grid, collage or automatic video.
+One image number always means one separate image asset.
 
-Target world:
-- mature cinematic 2D psychology-documentary / editorial graphic-novel illustration
-- adult strict-stickman characters, never cute/chibi/mascot
-- large simple round/oval heads, tiny minimal faces, narrow clothed torsos, narrow shoulders, very thin arms and legs, simple hands/shoes
-- rich believable environments with foreground, midground and background when useful
-- clean slightly organic dark outlines
-- controlled soft cel shading
-- subtle texture and believable spatial depth
-- purposeful cinematic camera framing
-- motivated light and shadow
-- premium adult editorial quality, not cheap explainer art
+CHANNEL VISUAL WORLD — HARD LOCK
+Keep the COMPLETE video inside one mature cinematic 2D psychology-documentary / editorial illustration world.
+Use adult strict-stickman humans only: large simple round/slightly oval heads without chibi exaggeration, minimal expressive faces, small narrow clothed torsos, narrow shoulders, very thin arms and legs, simple hands and shoes.
+Characters may differ through restrained hair, eyebrows, small eye/mouth variation, glasses/accessories, clothing, posture, gaze and role-specific body language, but never by changing anatomy family.
+Use clean slightly organic dark outlines, controlled soft cel shading, subtle texture, believable depth, purposeful framing and motivated light.
+Simple Stickmen live in rich believable scene-specific environments when a real location helps the beat.
+Do not default to blank cream backgrounds, sterile rooms, repeated desk shots or one fixed red/burgundy/dark or teal/cream palette.
+Not every image needs a person. Object/environment illustrations, metaphors, comparisons and cinematic schemas are equally valid when they explain the beat faster.
+Every image should have one dominant visual idea and only a few useful supporting elements.
+The complete set must look as if the SAME illustrator created it for the SAME channel, even when location, camera, mood and color change.
 
-The complete video must look like ONE coherent illustrated film made by the SAME illustrator for the SAME channel.
-Do not reinterpret the art style later.
-Do not let later batches drift into another character anatomy, cheaper rendering, different linework, different shading or another visual universe.
+Hard reject: cute/chibi/mascot figures, normal cartoon-human anatomy, broad shoulders, thick limbs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
 
-Visual variety is wanted INSIDE this same world:
-- not every scene needs a person
-- use character scenes, object metaphors, schemas, comparisons, environmental/object-only illustrations and occasional text illustrations when they are the clearest choice
-- do not repeat the same red/burgundy/dark or teal/cream treatment across the video
-- vary location, camera, light, mood and local color according to the spoken beat
-- use visible text only when it materially improves understanding
-- if text is not needed: ZERO READABLE TEXT
+CHARACTER + REFERENCE SYSTEM
+Use only reference images that have actually been approved for `CINEMATIC_HUMAN_BEHAVIOR_V2`.
+A style-only reference may lock rendering, anatomy family, linework, cel shading, texture and environment-quality level, but must not force the same room, pose, clothing, composition or palette.
+A character-identity reference additionally preserves the returning person's head/hair/accessory cues, clothing/core colors, shoes and silhouette.
+An environment-continuity reference preserves a recurring place/layout only when needed.
+If an approved reference does not exist, follow the written channel rules instead of inventing or assuming one.
+Never let a weak/chibi/cartoon reference override the written channel rules.
 
-Hard reject:
-- normal cartoon humans
-- chibi/cute/mascot people
-- broad shoulders or thick cartoon limbs
-- 3D/Pixar/CGI
-- anime
-- whiteboard doodles
-- corporate vector art
-- photorealistic people/environments
-- empty cream background as the normal default
-- repetitive medium-shot character scenes as the default
-
-THIS IS THE ONLY GOOGLE FLOW MASTER PROMPT FOR THIS VIDEO.
-It contains all scenes. Do not split it into separate prompt files.
-
-OUTPUT MODE — FINAL SOURCE IMAGES ONLY — HARD LOCK
-Read the full master prompt so you understand style and continuity, but generate only the current requested scene batch.
-Every scene number must become ONE SEPARATE standalone 16:9 image asset.
-NEVER create a storyboard, contact sheet, shot sheet, 3x3 panel grid, multi-scene collage or automatic video.
-NEVER combine different scene numbers inside one generated image.
-A single scene may use split/contrast/montage only when that scene explicitly requests it.
-
-VISUAL WORLD — HARD LOCK
-Create a mature cinematic 2D psychology / human-behavior illustration world.
-The target is an adult editorial / graphic-novel documentary look: clean dark organic outlines, controlled soft cel shading, subtle texture, believable depth, purposeful camera framing and motivated cinematic light.
-Normal real-life scenes should use believable scene-specific environments with foreground, midground and background. Do not default to empty cream/off-white space.
-
-WORLD CONSISTENCY ACROSS THE COMPLETE VIDEO — HARD LOCK
-Treat Scene 01 through Scene NN as one coherent high-quality illustrated film world, even when scenes are generated in separate five-scene batches.
-Batch boundaries must NEVER reset the art style.
-Preserve the same mature strict-stickman anatomy family, linework, outline behavior, cel shading, texture/detail level, environment quality, depth, rendering language and overall premium psychology-documentary/editorial feel across every image.
-Lighting, location, composition, color temperature and mood may change for the current spoken beat, but every frame must still look as if it was created by the SAME illustrator for the SAME channel and the SAME film world.
-Do not let later batches become a cheaper style, different character family, different outline system, different shading system or unrelated visual universe.
-
-STRICT STICKMAN CAST — HARD LOCK
-EVERY visible human uses the same mature strict-stickman anatomy family:
-- large simple round/oval head, NOT chibi/mascot oversized
-- tiny minimal face
-- no realistic nose/ears/neck anatomy
-- small narrow clothed torso
-- narrow shoulders
-- very thin arms and legs
-- simple no-finger hands
-- simple shoes
-Clothing must not create normal cartoon-human body volume.
-
-HARD FAIL
-No cute/chibi/mascot people. No normal cartoon humans. No broad shoulders. No thick limbs. No realistic anatomy. No 3D/Pixar/CGI. No anime. No whiteboard doodles. No corporate-vector people. No photorealistic environment.
-
-PREMIUM QUALITY — HARD LOCK
-Simple Stickmen, rich world, one clear idea per image.
-Use strong silhouette, useful depth, expressive body language, topic-specific environment detail, intentional lighting and controlled color.
-Avoid repeated centered lineups, sterile generic rooms, flat cheap explainer slides and the same teal/cream balance in every image.
-
-MOOD + COLOR
-Choose light, shadow, saturation and framing for the current spoken beat only. The world may become clear, uneasy, dark, powerful, financial, isolated or hopeful without changing illustration style.
-Useful recurring colors may include deep navy, graphite, muted teal, burgundy, coral, amber, deep green and warm neutral. Do not force every color into every frame.
-Do NOT default the complete video to one repeated red/burgundy/dark treatment, one teal/cream treatment or one fixed accent palette. Color and light must adapt to the current beat while remaining inside the same illustration world.
-
-CHARACTER PRESENCE
-A human is not required in every image. Use CHARACTER_SCENE, SCHEMA_EXPLAINER, OBJECT_METAPHOR, COMPARE_VISUAL or TEXT_ILLUSTRATION according to clarity.
-Schemas and metaphors must still look like the same cinematic 2D world, not PowerPoint.
-
-REPRESENTATION VARIETY — HARD LOCK
-Do not force every beat into a character scene.
-Choose the clearest visual form for the current spoken beat before deciding whether a person is needed.
-Normal longform guidance:
-- CHARACTER_SCENE: about 45–60%
-- SCHEMA_EXPLAINER: about 10–20%
-- OBJECT_METAPHOR: about 10–20%
-- COMPARE_VISUAL: about 10–20%
-- TEXT_ILLUSTRATION: normally 0–10%
-These are guidance ranges, not quotas. Clarity wins.
-
-Prefer no-human frames when an object, environment, comparison or mechanism communicates the beat faster.
-Never add a Stickman merely to fill empty space.
-Avoid long repetitive runs of similar medium-shot character scenes, repeated red/dark frames, repeated text cards or repeated schemas.
-When adjacent beats allow it, vary representation, camera, environment and mood while preserving the same visual world.
-
-TEXT + SCHEMA RESTRAINT — HARD LOCK
-Visible text is not decoration. Use it only when it materially improves understanding: cover/title, exact psychology term, important number/price, short comparison label, short schema label or one memorable concept phrase.
-Do NOT place visible text on every image. Do NOT repeat the spoken sentence as on-screen text. If text is not necessary: ZERO READABLE TEXT.
-Use schemas only when a mechanism, sequence, relation or comparison genuinely benefits from structural visualization. Do not create diagram frames as filler or long schema runs.
-
-VISIBLE TEXT — GOOGLE FLOW ONLY
-Only render the exact German text explicitly listed in the current scene.
-Speech context is NEVER visible text.
-If PLANNED GERMAN TEXT is NONE: ZERO READABLE TEXT.
-No random signs, screens, posters, packaging, documents, logos or pseudo-text.
-Typography must be clean, professional, high-contrast and fully inside safe margins.
-
-COVER — SCENE 01
-Scene 01 is cover + first visual beat.
-It must explain the hook visually before the title is read.
-Use one dominant focal conflict, strong silhouette, strong useful contrast and a compact asymmetric title zone.
-No generic full-width top banner.
-
-REFERENCE POLICY
-Use only approved `assets/cinematic-human-behavior-world/` references.
-References lock mature strict-stickman anatomy, linework, cel shading, texture, rendering quality, environment-detail level and mood-appropriate light/color.
-Use the same approved reference logic throughout all five-scene batches so the world remains unified.
-Do not clone exact person, clothing, room, pose, camera, composition or readable text unless local continuity requires it.
-Reject any reference that is cute/chibi, broad-shouldered, thick-limbed or otherwise outside STYLIZED_STICKMAN_CAST_V2.
+VIDEO WORLD LOCK
+[Describe only the recurring people, places, props or continuity facts that must stay the same INSIDE THIS VIDEO. Keep this short. If nothing must recur, write: No fixed recurring location; only the channel illustration world must remain consistent.]
 
 GENERATION WORKFLOW — HARD LOCK
-INITIAL RUN:
-1. Generate SCENE 01 ONLY.
-2. Generate exactly 3 SEPARATE Scene-01 cover candidates.
-3. Each candidate is its own standalone 16:9 image, never a three-panel sheet.
-4. STOP for user approval.
-5. Keep exactly one approved winner.
-6. Rename the winner immediately to `01.png`.
-7. Place it in the single final image folder `03-bilder/`.
-8. Discard the other two cover candidates.
 
-AFTER SCENE 01 APPROVAL:
-- generate remaining scenes in batches of EXACTLY 5 scene numbers whenever at least 5 remain
-- final batch contains the remaining 1–4 scenes
-- generate the whole current five-scene batch in one batch operation/turn, NOT deliberately one scene at a time
-- every requested scene still becomes its own separate standalone 16:9 image
-- preserve the SAME approved visual world and rendering quality across every batch
-- immediately rename every accepted image to its matching two-digit filename: Scene 02 -> `02.png`, Scene 03 -> `03.png`, etc.
-- place every accepted image directly into the SAME flat folder `03-bilder/`
-- no batch subfolders, no separate cover folder, no duplicate accepted versions
-- run internal QA after each batch, including world/style continuity and representation/color repetition against already accepted images
+INITIAL COVER RUN:
+1. Read the complete master prompt first.
+2. Generate BILD 01 ONLY.
+3. Generate exactly 3 SEPARATE cover candidates for BILD 01.
+4. Each candidate must be its own standalone 16:9 image. Never combine the three candidates into one sheet/grid.
+5. STOP and wait for the user to choose one cover.
+6. Keep exactly the chosen candidate.
+7. Rename it immediately to `01.png`.
+8. Put it directly in the single final folder `03-bilder/`.
+9. Do not generate BILD 02 or later before the user has chosen the cover.
+
+AFTER THE USER CHOOSES THE COVER:
+- generate the remaining images in batches of EXACTLY 5 image numbers whenever at least 5 remain
+- generate the whole current five-image batch in one batch operation/turn, not deliberately one image at a time
+- every requested image number still becomes its own separate standalone 16:9 image
+- immediately rename each accepted result to its matching number: BILD 02 -> `02.png`, BILD 03 -> `03.png`, etc.
+- put every accepted image directly into the SAME flat folder `03-bilder/`
+- no cover subfolder, no batch subfolders, no duplicate accepted versions
+- after each batch, check style continuity, anatomy, scene clarity, unnecessary text and visual repetition
 - regenerate only failed images
-- after a batch passes QA, continue automatically with the next five-scene batch from THIS SAME MASTER PROMPT
-- do not wait for extra user confirmation between successful regular batches
-- NEVER offer to turn the images into a video; these are source images for the external video pipeline
+- when a batch passes, continue automatically with the next five-image batch from THIS SAME MASTER PROMPT
+- the final batch may contain the remaining 1–4 images
+- never offer to turn the images into a video; the external pipeline handles the final edit
 
-BATCH EXAMPLE:
-Batch 1: SCENE 02, 03, 04, 05, 06 -> five separate image assets named 02.png through 06.png.
-Batch 2: SCENE 07, 08, 09, 10, 11 -> five separate image assets named 07.png through 11.png.
-Continue in groups of five until the final remainder batch.
+FINAL REQUIRED IMAGE FOLDER:
+`03-bilder/01.png, 02.png, 03.png, ... NN.png`
 
-FINAL IMAGE FOLDER — HARD LOCK
-At the end, all accepted images must be together in ONE folder only:
-`03-bilder/`
+GLOBAL TEXT RULE
+No visible text unless the current BILD prompt explicitly requests exact German wording.
+Never render the spoken voice-over as captions.
+Never invent readable posters, signs, screens, documents, packaging, logos or pseudo-text.
+If a BILD prompt says no visible text, render ZERO READABLE TEXT.
 
-Expected state:
-`01.png, 02.png, 03.png, ... NN.png`
+COVER RULE — BILD 01
+BILD 01 is both the first visual beat and the YouTube thumbnail source.
+It must communicate the central mechanism/question visually before the title is read.
+Use one dominant focal relationship, strong thumbnail readability and a compact asymmetric title zone instead of a generic full-width top banner.
 
-If the Flow environment requires packaging for download, package this one folder as one archive while preserving the folder name and numbered filenames.
+BILD 01
+[Write one natural direct image prompt. Describe the cover composition, central mechanism, scene/environment, camera/framing, light/color and exact short German cover title. End with: No other readable text.]
 
-SCENE BLOCK FORMAT
+BILD 02
+[Write one natural direct image prompt. No internal planning labels.]
 
-SCENE NN
-SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-[exact spoken beat]
-SCENE TYPE: [CHARACTER_SCENE / SCHEMA_EXPLAINER / OBJECT_METAPHOR / COMPARE_VISUAL / TEXT_ILLUSTRATION]
-COMPOSITION: [STANDARD / SPLIT / CONTRAST / MONTAGE]
-SOCIAL DENSITY: [SOLO / DUO / GROUP / NONE]
-VISUAL IDEA: [one clear thought]
-VISUAL TASK: [what must visibly happen]
-CAMERA: [shot/angle]
-LIGHTING MOOD: [short scene-specific direction]
-CHARACTER DIRECTION: [short; NONE if no people]
-PLANNED GERMAN TEXT: [NONE or exact list]
-PROMPT:
-[short scene-specific prompt only; global style is already locked above]
+BILD 03
+[Write one natural direct image prompt.]
 
-SCENE 01 additionally contains:
-COVER TOPIC TERM: [topic/concept]
-COVER VISUAL THESIS: [mechanism the image itself must show]
-TITLE PLACEMENT: [compact asymmetric safe zone]
+BILD 04
+[Write one natural direct image prompt.]
 
-[INSERT ALL SCENES 01–NN HERE]
+BILD 05
+[Write one natural direct image prompt.]
+
+[CONTINUE BILD 06 THROUGH BILD NN IN THE SAME NATURAL DIRECT STYLE]
 
 FINAL QA
 - one master prompt file only
-- Scene 01 first, 3 separate cover candidates, then stop
-- after approval, regular generation uses five-scene batches whenever 5 scenes remain
-- each scene = separate standalone image asset
-- accepted images are renamed immediately to NN.png
-- all accepted images end together in one flat `03-bilder/` folder
-- every batch remains inside the SAME coherent premium visual world
-- no style reset or quality drop between batches
-- visual representation is varied; characters are not forced into every frame
-- no unnecessary text or schema filler
-- no mechanical repeated red/burgundy/dark or teal/cream treatment across the whole video
-- NEVER storyboard/contact-sheet/multi-scene grid
-- every visible human matches mature STYLIZED_STICKMAN_CAST_V2
-- no cute/chibi/mascot drift
-- no normal cartoon-human anatomy
-- believable rich environment unless sparse space is semantically intentional
-- strong focal hierarchy and purposeful lighting
-- one clear beat per image
-- exact German text only when planned
-- ZERO READABLE TEXT otherwise
-- no 3D/Pixar/anime/photorealistic/corporate-vector drift
+- BILD 01 first as 3 separate cover candidates, then STOP for user choice
+- only after cover approval begin later images
+- later images generated in five-image batches whenever five remain
+- every image number = separate standalone 16:9 asset
+- accepted outputs renamed immediately to `NN.png`
+- all accepted images together in one flat `03-bilder/` folder
+- no storyboard/contact sheet/multi-scene grid/video
+- same mature strict-stickman illustration world across every batch
+- varied staging, camera, environment, mood and representation inside that same world
+- no forced character in every frame
+- exact German text only when explicitly requested; otherwise ZERO READABLE TEXT
