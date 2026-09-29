@@ -8,22 +8,25 @@ This system replaces `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1` for NEW productions.
 
 ## 1. Core idea
 
-**One recognizable cinematic 2D strict-stickman world that can move from bright everyday psychology to uneasy, dark, powerful, financial, isolated and hopeful scenes without changing illustration style.**
+**One recognizable mature cinematic 2D strict-stickman world that can move from bright everyday psychology to uneasy, dark, powerful, financial, isolated and hopeful scenes without changing illustration style.**
 
 The channel may cover normal cognition, manipulation, power, status, money behavior, social pressure, deception, fear, trust, conflict, self-control and constructive solutions.
 
 The world is emotionally adaptive instead of permanently cheerful or permanently dark.
+
+The target is an adult psychology-documentary / editorial-graphic-novel feeling — never a children's cartoon, mascot sheet, classroom doodle or generic explainer template.
 
 ## 2. What never changes — HARD LOCK
 
 Across every scene, mood and topic preserve:
 - polished cinematic 2D illustration
 - clean slightly organic dark outlines
-- soft cel shading
+- soft cel shading with stronger graphic shadow when useful
 - controlled subtle texture
-- natural depth
-- purposeful composition
+- believable natural depth
+- purposeful cinematic composition
 - the same strict simplified stickman anatomy family
+- mature editorial tone
 - the same rendering quality and visual grammar
 
 Mood may change strongly. Illustration identity may not.
@@ -33,11 +36,12 @@ Mood may change strongly. Illustration identity may not.
 Whenever humans appear, every visible human belongs to `STYLIZED_STICKMAN_CAST_V2`.
 
 Required family traits:
-- large simple round or slightly oval head
+- large simple round or slightly oval head, but NOT mascot/chibi oversized
 - minimal expressive eyes and mouth
 - no realistic nose/ears/facial anatomy
 - small narrow clothed torso
-- very slim shaped illustrated arms and legs
+- narrow shoulders; clothing must not create a normal broad human body
+- very slim shaped illustrated arms and legs, clearly thinner than ordinary cartoon-human limbs
 - simplified hands without realistic fingers
 - simple readable shoes/feet
 - readable silhouette, posture and body language
@@ -56,7 +60,22 @@ Individuality may come from:
 
 Never individualize by switching anatomy family.
 
-## 4. Emotional character range
+## 4. Mature-character rule — HARD LOCK
+
+Characters must not drift into cute/chibi/mascot language.
+
+Avoid:
+- oversized baby-like heads
+- short rounded plush limbs
+- broad rounded shoulders
+- large soft cartoon torsos
+- blush/cute facial styling
+- toy-like proportions
+- overly cheerful children's-book posing
+
+A friendly scene may still be warm, but the figure remains a restrained adult editorial stickman.
+
+## 5. Emotional character range
 
 Characters are not required to look friendly, attractive or morally good.
 
@@ -79,7 +98,7 @@ Threat should normally be communicated through posture, gaze, proximity, hierarc
 
 Do not default to glowing red eyes, monster teeth, horns or horror faces.
 
-## 5. Character presence is optional — HARD LOCK
+## 6. Character presence is optional — HARD LOCK
 
 A strong frame does not need a human.
 
@@ -96,7 +115,7 @@ Prefer no-human frames when clearer:
 
 Never insert a decorative stickman merely to fill empty space.
 
-## 6. Mood engine
+## 7. Mood engine
 
 Allowed mood modes:
 
@@ -123,7 +142,7 @@ Protection, solution, clarity, recovery or constructive resolution. More open co
 
 Mood intensity may vary from subtle to strong, but the illustration family never changes.
 
-## 7. Power relationships
+## 8. Power relationships
 
 When relevant, power should be visible through:
 - blocking
@@ -135,7 +154,7 @@ When relevant, power should be visible through:
 - foreground/background placement
 - environmental position
 
-## 8. Environment
+## 9. Environment — RICH WORLD HARD LOCK
 
 Locations must support the psychological beat and may range widely:
 - apartment, bedroom, café, train, supermarket, cinema, office, school, street, restaurant, park
@@ -143,9 +162,19 @@ Locations must support the psychological beat and may range widely:
 
 Use recognizable architecture, furniture and props.
 
+Normal character scenes should usually have meaningful foreground, midground and background separation. Environment detail belongs around the simple characters and is a major part of the premium look.
+
+Do NOT default to:
+- empty cream/off-white backgrounds
+- a character floating in blank space
+- the same classroom/office repeatedly
+- sterile generic rooms with no topic-specific detail
+
+A sparse background is allowed only when negative space is deliberately part of the psychological idea, such as isolation or a clean concept frame.
+
 Dark scenes must not collapse into empty black backgrounds. Darkness should still feel located in a believable illustrated space unless abstraction is deliberately clearer.
 
-## 9. Lighting
+## 10. Lighting
 
 Lighting is a storytelling system, not decoration.
 
@@ -164,7 +193,9 @@ Allowed examples:
 
 Use shadows to communicate tension, secrecy, pressure, distance or hierarchy when relevant.
 
-## 10. Color system
+Every premium frame should have an intentional focal-light relationship rather than flat uniform illumination.
+
+## 11. Color system
 
 There is no single forced palette.
 
@@ -182,13 +213,14 @@ Recurring anchors may include:
 
 Rules:
 - controlled, not candy-colored
-- no grey/beige wash as a default
+- no grey/beige/cream wash as a default
 - focal subject receives strongest useful contrast
 - background may be quieter
 - mood influences saturation and temperature
 - color must not replace composition or psychological storytelling
+- avoid repeating the exact same teal-and-cream balance in every frame
 
-## 11. Visual representation families
+## 12. Visual representation families
 
 Every beat chooses the clearest representation:
 
@@ -207,7 +239,7 @@ Two states, perspectives, people or choices shown coherently.
 ### TEXT_ILLUSTRATION
 Short exact text integrated into a strong illustration. Use sparingly.
 
-## 12. One clear beat per frame
+## 13. One clear beat per frame
 
 Every frame communicates one primary thought.
 
@@ -218,7 +250,9 @@ Required:
 - meaningful environment only
 - no clutter for the sake of looking expensive
 
-## 13. Continuity
+A multi-part composition is allowed only when all parts belong to the same single beat. Separate scene numbers are never combined into one asset; see `rules/FLOW_OUTPUT_MODE.md`.
+
+## 14. Continuity
 
 Same world does not mean same character.
 
@@ -232,7 +266,7 @@ Repeat a person only when narrative continuity requires it. Then preserve:
 
 Mood may change around the same person while identity stays stable.
 
-## 14. Reference architecture
+## 15. Reference architecture
 
 Permanent channel reference pack:
 `assets/cinematic-human-behavior-world/`
@@ -257,9 +291,11 @@ Target references may include:
 - `cover-reference-light.png`
 - `cover-reference-dark.png`
 
-Until approved references exist, this file + `rules/visual-system.json` are authoritative.
+Until approved references exist, this file + `rules/visual-system.json` + `rules/STICKMAN_DNA.md` are authoritative.
 
-## 15. Text
+Any candidate reference must itself pass the mature-character, anatomy, environment and rendering locks before it may be used to steer later scenes.
+
+## 16. Text
 
 Normal scenes remain text-free unless text is planned.
 
@@ -276,7 +312,7 @@ If nothing is planned: `ZERO READABLE TEXT`.
 
 Speech context is never rendered as visible text.
 
-## 16. Cover
+## 17. Cover
 
 Cover uses the same world but stronger composition:
 - one dominant emotional conflict/question
@@ -288,14 +324,18 @@ Cover uses the same world but stronger composition:
 
 Cover style must never become a separate comic/poster/anime world.
 
-## 17. Hard fail
+## 18. Hard fail
 
 Regenerate if:
 - mixed human anatomy families appear
 - character becomes realistic/full-cartoon/whiteboard
+- character becomes chibi, mascot-like, toy-like or child-cartoon cute
+- torso/shoulders/limbs become normal thick cartoon-human anatomy
 - 3D/CGI/Pixar/anime drift appears
 - photorealistic environment appears
 - corporate-vector look appears
+- normal scene defaults to empty cream/off-white space without semantic reason
+- environment is generic/sterile when the beat calls for a believable location
 - dark scene becomes meaningless black void without intent
 - villain is communicated only through cheap monster clichés
 - mood contradicts the spoken beat
@@ -304,13 +344,14 @@ Regenerate if:
 - random readable text appears
 - current beat is unclear
 
-## 18. Priority
+## 19. Priority
 
 1. `rules/VISUAL_SYSTEM.md`
 2. `rules/visual-system.json`
-3. approved `assets/cinematic-human-behavior-world/` references
-4. `rules/STICKMAN_DNA.md`
-5. current Visual Beat
-6. compatibility lock files
+3. `rules/STICKMAN_DNA.md`
+4. `rules/PREMIUM_VISUAL_LOCK.md`
+5. approved `assets/cinematic-human-behavior-world/` references
+6. current Visual Beat
+7. compatibility lock files
 
-This file defines only the visual world. The existing production/file structure remains unchanged and is defined elsewhere in the repo.
+This file defines the visual world. Google Flow output behavior is separately locked by `rules/FLOW_OUTPUT_MODE.md`. The existing production/file structure remains unchanged.
