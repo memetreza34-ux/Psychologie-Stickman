@@ -19,6 +19,17 @@ const failures = [];
 const warnings = [];
 const countWords = (s) => String(s ?? '').trim().split(/\s+/u).filter(Boolean).length;
 
+const templatePath = path.resolve('youtube/00-vorlage/thema-vorlage/02-google-flow/google-flow-prompt.txt');
+if (!fs.existsSync(templatePath)) failures.push('YouTube Flow template is missing.');
+else {
+  const template = fs.readFileSync(templatePath, 'utf8');
+  if (!/CINEMATIC_HUMAN_BEHAVIOR_V2/iu.test(template)) failures.push('YouTube Flow template must use CINEMATIC_HUMAN_BEHAVIOR_V2.');
+  if (!/OUTPUT MODE\s*[—-]\s*FINAL SOURCE IMAGES ONLY/iu.test(template)) failures.push('YouTube Flow template lacks FINAL SOURCE IMAGES output mode.');
+  if (!/NEVER create a storyboard/iu.test(template)) failures.push('YouTube Flow template must explicitly forbid storyboard output.');
+  if (!/3 SEPARATE Scene-01 cover candidates/iu.test(template)) failures.push('YouTube Flow template must request 3 separate Scene-01 cover candidates.');
+  if (!/cute\/chibi\/mascot/iu.test(template)) failures.push('YouTube Flow template must guard against cute/chibi/mascot drift.');
+}
+
 for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage'))) {
   const rel = path.relative(process.cwd(), file);
   const text = fs.readFileSync(file, 'utf8');
@@ -26,6 +37,19 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
   if (!scenes.length) { failures.push(`${rel}: no SCENE blocks found.`); continue; }
 
   scenes.forEach((m, i) => { if (Number(m[1]) !== i + 1) failures.push(`${rel}: scenes must be contiguous.`); });
+
+  const isHumanBehaviorV2 = /CINEMATIC_HUMAN_BEHAVIOR_V2/iu.test(text);
+  if (isHumanBehaviorV2) {
+    if (!/OUTPUT MODE\s*[—-]\s*FINAL SOURCE IMAGES ONLY/iu.test(text)) failures.push(`${rel}: v2 prompt lacks FINAL SOURCE IMAGES output mode.`);
+    if (!/NEVER create a storyboard/iu.test(text)) failures.push(`${rel}: v2 prompt must explicitly forbid storyboard output.`);
+    if (!/contact sheet/iu.test(text)) failures.push(`${rel}: v2 prompt must explicitly forbid contact-sheet output.`);
+    if (!/SEPARATE[^\n]*standalone[^\n]*16:9|standalone[^\n]*16:9[^\n]*image/iu.test(text)) failures.push(`${rel}: v2 prompt must require separate standalone 16:9 images.`);
+    if (!/Generate\s+(?:SCENE|Scene)\s+01\s+ONLY/iu.test(text)) failures.push(`${rel}: v2 prompt must gate initial generation to Scene 01 only.`);
+    if (!/3\s+SEPARATE[^\n]*Scene-01[^\n]*cover candidates|exactly\s+3\s+separate[^\n]*cover candidates/iu.test(text)) failures.push(`${rel}: v2 prompt must request 3 separate Scene-01 cover candidates.`);
+    if (!/cute\/chibi\/mascot|cute[^\n]*chibi[^\n]*mascot/iu.test(text)) failures.push(`${rel}: v2 prompt lacks mature-character anti-chibi guard.`);
+    if (!/empty cream|cream\/off-white|off-white/iu.test(text)) warnings.push(`${rel}: v2 prompt should block blank cream/off-white default scenes.`);
+    if (/Create a visual storyboard/iu.test(text)) failures.push(`${rel}: contains storyboard-generation wording that can collapse scenes into one sheet.`);
+  }
 
   let textMoments = 0;
   for (let i = 0; i < scenes.length; i += 1) {
@@ -36,6 +60,7 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
 
     if (!/SPEECH CONTEXT\s*[—-]\s*DO NOT RENDER AS TEXT:/iu.test(block)) failures.push(`${rel}: scene ${n} lacks protected speech context.`);
     if (!/SCENE TYPE:/iu.test(block)) warnings.push(`${rel}: scene ${n} has no SCENE TYPE.`);
+    if (!/PROMPT:/iu.test(block)) failures.push(`${rel}: scene ${n} lacks PROMPT.`);
 
     const listMatch = block.match(/PLANNED GERMAN TEXT:\s*([\s\S]*?)(?=\nPROMPT:)/iu);
     const listed = listMatch ? [...listMatch[1].matchAll(/["“]([^"”\n]+)["”]/gu)].map((m) => m[1].trim()) : [];
