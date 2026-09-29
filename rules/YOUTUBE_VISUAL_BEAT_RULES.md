@@ -63,6 +63,8 @@ Schemas, objects and text illustrations use the same 2D linework, cel shading, t
 
 Mood may change lighting/color strongly while illustration style remains fixed.
 
+Normal real-life scenes use believable scene-specific environments and depth. Empty cream/off-white backgrounds are not the default.
+
 ## Text policy
 
 Allowed:
@@ -91,4 +93,16 @@ Scene prompts should stay concise and practical. They may use the familiar scene
 
 Do not split one video into multiple Flow master files or batch prompt files.
 
-Flow applies `CINEMATIC_HUMAN_BEHAVIOR_V2` to every beat while preserving the same strict Stickman anatomy family and overall illustration language.
+## Flow output behavior
+
+Follow `rules/FLOW_OUTPUT_MODE.md`.
+
+- Scene 01 first as 3 separate cover candidates, then approval stop.
+- Later scenes are generated in small batches from the same master file.
+- Every scene number becomes its own standalone 16:9 image.
+- Never combine several scene numbers into one storyboard/contact sheet/panel grid.
+- Never ask Flow to create the final video.
+
+A single scene may use split/contrast/montage if all parts explain that same beat. This does not permit combining different scene numbers.
+
+Flow applies `CINEMATIC_HUMAN_BEHAVIOR_V2` to every beat while preserving the same mature strict-stickman anatomy family and overall illustration language.
