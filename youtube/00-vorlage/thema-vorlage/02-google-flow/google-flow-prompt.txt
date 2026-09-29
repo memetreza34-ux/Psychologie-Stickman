@@ -3,13 +3,14 @@ GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
 TOPIC: [VIDEO-THEMA]
 VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
 CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 FORMAT: 16:9 / 1920x1080
 
 THIS IS THE ONLY GOOGLE FLOW MASTER PROMPT FOR THIS VIDEO.
 It contains all scenes. Do not split it into separate prompt files.
 
 OUTPUT MODE — FINAL SOURCE IMAGES ONLY — HARD LOCK
-Read the full master prompt so you understand style and continuity, but generate only the currently requested scene numbers.
+Read the full master prompt so you understand style and continuity, but generate only the current requested scene batch.
 Every scene number must become ONE SEPARATE standalone 16:9 image asset.
 NEVER create a storyboard, contact sheet, shot sheet, 3x3 panel grid, multi-scene collage or automatic video.
 NEVER combine different scene numbers inside one generated image.
@@ -73,16 +74,38 @@ INITIAL RUN:
 2. Generate exactly 3 SEPARATE Scene-01 cover candidates.
 3. Each candidate is its own standalone 16:9 image, never a three-panel sheet.
 4. STOP for user approval.
-5. Keep one winner as `03-bilder/01.png`.
+5. Keep exactly one approved winner.
+6. Rename the winner immediately to `01.png`.
+7. Place it in the single final image folder `03-bilder/`.
+8. Discard the other two cover candidates.
 
 AFTER SCENE 01 APPROVAL:
-- default batch = 3 scene numbers
-- hard maximum = 5 scene numbers
-- every requested scene becomes a separate individual image
-- save accepted outputs as `03-bilder/NN.png`
+- generate remaining scenes in batches of EXACTLY 5 scene numbers whenever at least 5 remain
+- final batch contains the remaining 1–4 scenes
+- generate the whole current five-scene batch in one batch operation/turn, NOT deliberately one scene at a time
+- every requested scene still becomes its own separate standalone 16:9 image
+- immediately rename every accepted image to its matching two-digit filename: Scene 02 -> `02.png`, Scene 03 -> `03.png`, etc.
+- place every accepted image directly into the SAME flat folder `03-bilder/`
+- no batch subfolders, no separate cover folder, no duplicate accepted versions
+- run internal QA after each batch
 - regenerate only failed images
-- when the user says continue/weiter, move to the next batch from THIS SAME MASTER PROMPT
-- NEVER offer to turn the storyboard into a video; these are source images for an external video pipeline
+- after a batch passes QA, continue automatically with the next five-scene batch from THIS SAME MASTER PROMPT
+- do not wait for extra user confirmation between successful regular batches
+- NEVER offer to turn the images into a video; these are source images for the external video pipeline
+
+BATCH EXAMPLE:
+Batch 1: SCENE 02, 03, 04, 05, 06 -> five separate image assets named 02.png through 06.png.
+Batch 2: SCENE 07, 08, 09, 10, 11 -> five separate image assets named 07.png through 11.png.
+Continue in groups of five until the final remainder batch.
+
+FINAL IMAGE FOLDER — HARD LOCK
+At the end, all accepted images must be together in ONE folder only:
+`03-bilder/`
+
+Expected state:
+`01.png, 02.png, 03.png, ... NN.png`
+
+If the Flow environment requires packaging for download, package this one folder as one archive while preserving the folder name and numbered filenames.
 
 SCENE BLOCK FORMAT
 
@@ -111,7 +134,10 @@ TITLE PLACEMENT: [compact asymmetric safe zone]
 FINAL QA
 - one master prompt file only
 - Scene 01 first, 3 separate cover candidates, then stop
-- regular batches contain separate standalone image assets
+- after approval, regular generation uses five-scene batches whenever 5 scenes remain
+- each scene = separate standalone image asset
+- accepted images are renamed immediately to NN.png
+- all accepted images end together in one flat `03-bilder/` folder
 - NEVER storyboard/contact-sheet/multi-scene grid
 - every visible human matches mature STYLIZED_STICKMAN_CAST_V2
 - no cute/chibi/mascot drift
