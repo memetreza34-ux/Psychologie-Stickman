@@ -65,18 +65,27 @@ Do not split one video into multiple Flow master prompts. Batches are only gener
 
 Scene prompts stay concise and practical rather than repeating large technical lock blocks for every scene.
 
-## Google Flow output behavior
+## Google Flow output behavior — future projects
 
 Binding rule: `rules/FLOW_OUTPUT_MODE.md`.
+
+New projects use `FINAL_SEPARATE_IMAGE_ASSETS_V2`.
 
 The master file generates final source images, not a storyboard/contact sheet and not the final video.
 
 Workflow:
 1. Scene 01 only → exactly 3 separate cover candidates.
-2. User approves one → `03-bilder/01.png`.
-3. Continue from the same master file in default batches of 3 scenes, max 5.
-4. Every scene number is its own separate 16:9 image.
-5. Never combine different scene numbers in one panel grid/collage.
+2. User approves one → rename immediately to `01.png` and place in `03-bilder/`.
+3. Continue from the same master file in batches of exactly 5 scenes whenever at least 5 remain.
+4. Final remainder batch contains 1–4 scenes.
+5. Generate each five-scene batch as one batch operation, not deliberately one scene at a time.
+6. Every scene number is still its own separate 16:9 image.
+7. Immediately rename each accepted image to `NN.png`.
+8. Keep every accepted image together in the same flat `03-bilder/` folder; no batch subfolders.
+9. QA each batch, regenerate only failures, then continue automatically with the next batch.
+10. Never combine different scene numbers in one panel grid/collage and never ask Flow to build the final video.
+
+Existing/historical projects keep their current prompt behavior unless the user explicitly requests migration of that specific project.
 
 ## Reference pack
 
@@ -99,8 +108,10 @@ Optimize for:
 6. readable body language and power relation
 7. representation variety
 8. separate final Flow image assets
-9. concise Flow scene prompts
-10. clean exact Flow text when planned
+9. efficient five-scene Flow batching
+10. correct immediate scene filenames and one final image folder
+11. concise Flow scene prompts
+12. clean exact Flow text when planned
 
 ## Current migration rule
 
@@ -110,6 +121,6 @@ New visual productions use:
 - `CINEMATIC_HUMAN_BEHAVIOR_V2`
 - `STYLIZED_STICKMAN_CAST_V2`
 - `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`
-- `FINAL_SEPARATE_IMAGE_ASSETS_V1`
+- `FINAL_SEPARATE_IMAGE_ASSETS_V2`
 
 The production folder and single-Flow-file workflow remain unchanged.
