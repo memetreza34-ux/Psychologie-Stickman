@@ -19,108 +19,151 @@ const failures = [];
 const warnings = [];
 const countWords = (s) => String(s ?? '').trim().split(/\s+/u).filter(Boolean).length;
 
+const mustMatch = (text, regex, message) => {
+  if (!regex.test(text)) failures.push(message);
+};
+
 const templatePath = path.resolve('youtube/00-vorlage/thema-vorlage/02-google-flow/google-flow-prompt.txt');
-if (!fs.existsSync(templatePath)) failures.push('YouTube Flow template is missing.');
-else {
+if (!fs.existsSync(templatePath)) {
+  failures.push('YouTube Flow template is missing.');
+} else {
   const template = fs.readFileSync(templatePath, 'utf8');
-  if (!/CINEMATIC_HUMAN_BEHAVIOR_V2/iu.test(template)) failures.push('YouTube Flow template must use CINEMATIC_HUMAN_BEHAVIOR_V2.');
-  if (!/FINAL_SEPARATE_IMAGE_ASSETS_V2/iu.test(template)) failures.push('YouTube Flow template must use FINAL_SEPARATE_IMAGE_ASSETS_V2.');
-  if (!/REPRESENTATION_VARIETY_V1/iu.test(template)) failures.push('YouTube Flow template must use REPRESENTATION_VARIETY_V1.');
-  if (!/REPRESENTATION VARIETY\s*[—-]\s*HARD LOCK/iu.test(template)) failures.push('YouTube Flow template lacks representation-variety hard lock.');
-  if (!/Do NOT place visible text on every image/iu.test(template)) failures.push('YouTube Flow template must explicitly prevent text on every image.');
-  if (!/Do NOT default the complete video to one repeated red\/burgundy\/dark treatment/iu.test(template)) failures.push('YouTube Flow template must prevent repetitive red/burgundy/dark treatment.');
-  if (!/Never add a Stickman merely to fill empty space/iu.test(template)) failures.push('YouTube Flow template must forbid decorative character insertion.');
-  if (!/OUTPUT MODE\s*[—-]\s*FINAL SOURCE IMAGES ONLY/iu.test(template)) failures.push('YouTube Flow template lacks FINAL SOURCE IMAGES output mode.');
-  if (!/WORLD CONSISTENCY/iu.test(template)) failures.push('YouTube Flow template must explicitly lock world consistency across the complete video.');
-  if (!/same illustrator|SAME illustrator/iu.test(template)) failures.push('YouTube Flow template must tell Flow that all scenes should feel created by the same illustrator.');
-  if (!/Batch boundaries must NEVER reset|batch boundaries[^\n]*never reset/iu.test(template)) failures.push('YouTube Flow template must forbid visual style resets between batches.');
-  if (!/NEVER create a storyboard/iu.test(template)) failures.push('YouTube Flow template must explicitly forbid storyboard output.');
-  if (!/3 SEPARATE Scene-01 cover candidates/iu.test(template)) failures.push('YouTube Flow template must request 3 separate Scene-01 cover candidates.');
-  if (!/EXACTLY 5 scene numbers|exactly 5 scene numbers/iu.test(template)) failures.push('YouTube Flow template must use five-scene regular batches.');
-  if (!/final batch contains the remaining 1[–-]4 scenes/iu.test(template)) failures.push('YouTube Flow template must define the final remainder batch as 1-4 scenes.');
-  if (!/NN\.png/iu.test(template)) failures.push('YouTube Flow template must require immediate NN.png scene naming.');
-  if (!/03-bilder\//iu.test(template)) failures.push('YouTube Flow template must collect accepted images in 03-bilder/.');
-  if (!/no batch subfolders/iu.test(template)) failures.push('YouTube Flow template must forbid batch subfolders.');
-  if (!/cute\/chibi\/mascot/iu.test(template)) failures.push('YouTube Flow template must guard against cute/chibi/mascot drift.');
+  mustMatch(template, /CINEMATIC_HUMAN_BEHAVIOR_V2/iu, 'YouTube Flow template must use CINEMATIC_HUMAN_BEHAVIOR_V2.');
+  mustMatch(template, /FINAL_SEPARATE_IMAGE_ASSETS_V2/iu, 'YouTube Flow template must use FINAL_SEPARATE_IMAGE_ASSETS_V2.');
+  mustMatch(template, /NATURAL_FLOW_MASTER_V1/iu, 'YouTube Flow template must use NATURAL_FLOW_MASTER_V1.');
+  mustMatch(template, /TASK\s*\/\s*OUTPUT/iu, 'YouTube Flow template lacks TASK / OUTPUT.');
+  mustMatch(template, /CHANNEL VISUAL WORLD/iu, 'YouTube Flow template lacks CHANNEL VISUAL WORLD.');
+  mustMatch(template, /CHARACTER\s*\+\s*REFERENCE SYSTEM/iu, 'YouTube Flow template lacks CHARACTER + REFERENCE SYSTEM.');
+  mustMatch(template, /VIDEO WORLD LOCK/iu, 'YouTube Flow template lacks VIDEO WORLD LOCK.');
+  mustMatch(template, /GENERATION WORKFLOW/iu, 'YouTube Flow template lacks GENERATION WORKFLOW.');
+  mustMatch(template, /GLOBAL TEXT RULE/iu, 'YouTube Flow template lacks GLOBAL TEXT RULE.');
+  mustMatch(template, /same illustrator|SAME illustrator/iu, 'YouTube Flow template must keep one same-illustrator visual world.');
+  mustMatch(template, /Never create a storyboard/iu, 'YouTube Flow template must explicitly forbid storyboard output.');
+  mustMatch(template, /3 SEPARATE cover candidates|exactly 3 SEPARATE cover candidates/iu, 'YouTube Flow template must request 3 separate BILD-01 cover candidates.');
+  mustMatch(template, /wait for the user to choose one cover/iu, 'YouTube Flow template must stop for user cover choice.');
+  mustMatch(template, /AFTER THE USER CHOOSES THE COVER/iu, 'YouTube Flow template must gate regular generation behind cover approval.');
+  mustMatch(template, /EXACTLY 5 image numbers|five-image batch/iu, 'YouTube Flow template must use five-image regular batches.');
+  mustMatch(template, /one batch operation\/turn|one batch operation|one five-image batch/iu, 'YouTube Flow template must request batch generation rather than deliberate one-by-one generation.');
+  mustMatch(template, /NN\.png/iu, 'YouTube Flow template must require immediate NN.png naming.');
+  mustMatch(template, /03-bilder\//iu, 'YouTube Flow template must collect accepted images in 03-bilder/.');
+  mustMatch(template, /no cover subfolder, no batch subfolders|no batch subfolders/iu, 'YouTube Flow template must forbid batch subfolders.');
+  mustMatch(template, /cute\/chibi\/mascot/iu, 'YouTube Flow template must guard against cute/chibi/mascot drift.');
+  mustMatch(template, /^BILD\s+01\s*$/gimu, 'YouTube Flow template must use natural BILD 01 blocks.');
 }
+
+const forbiddenNaturalLabels = [
+  'SCENE TYPE:',
+  'SOCIAL DENSITY:',
+  'VISUAL IDEA:',
+  'VISUAL TASK:',
+  'POWER DYNAMIC:',
+  'CHARACTER DIRECTION:',
+  'LIGHTING MOOD:',
+  'PLANNED GERMAN TEXT:',
+  'SPEECH CONTEXT'
+];
 
 for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage'))) {
   const rel = path.relative(process.cwd(), file);
   const text = fs.readFileSync(file, 'utf8');
-  const scenes = [...text.matchAll(/^SCENE\s+(\d+)\s*$/gimu)];
-  if (!scenes.length) { failures.push(`${rel}: no SCENE blocks found.`); continue; }
-
-  scenes.forEach((m, i) => { if (Number(m[1]) !== i + 1) failures.push(`${rel}: scenes must be contiguous.`); });
-
   const isHumanBehaviorV2 = /CINEMATIC_HUMAN_BEHAVIOR_V2/iu.test(text);
   const isFlowOutputV2 = /FINAL_SEPARATE_IMAGE_ASSETS_V2/iu.test(text);
-  const isRepresentationVarietyV1 = /REPRESENTATION_VARIETY_V1/iu.test(text);
+  const isNaturalFlow = /NATURAL_FLOW_MASTER_V1/iu.test(text);
+
+  if (isNaturalFlow) {
+    const images = [...text.matchAll(/^BILD\s+(\d+)\s*$/gimu)];
+    if (!images.length) {
+      failures.push(`${rel}: NATURAL_FLOW_MASTER_V1 has no BILD blocks.`);
+      continue;
+    }
+
+    images.forEach((m, i) => {
+      if (Number(m[1]) !== i + 1) failures.push(`${rel}: BILD blocks must be contiguous from 01.`);
+    });
+
+    mustMatch(text, /TASK\s*\/\s*OUTPUT/iu, `${rel}: natural Flow prompt lacks TASK / OUTPUT.`);
+    mustMatch(text, /CHANNEL VISUAL WORLD/iu, `${rel}: natural Flow prompt lacks CHANNEL VISUAL WORLD.`);
+    mustMatch(text, /CHARACTER\s*\+\s*REFERENCE SYSTEM/iu, `${rel}: natural Flow prompt lacks CHARACTER + REFERENCE SYSTEM.`);
+    mustMatch(text, /VIDEO WORLD LOCK/iu, `${rel}: natural Flow prompt lacks VIDEO WORLD LOCK.`);
+    mustMatch(text, /GENERATION WORKFLOW/iu, `${rel}: natural Flow prompt lacks GENERATION WORKFLOW.`);
+    mustMatch(text, /GLOBAL TEXT RULE/iu, `${rel}: natural Flow prompt lacks GLOBAL TEXT RULE.`);
+    mustMatch(text, /Never create a storyboard/iu, `${rel}: natural Flow prompt must forbid storyboard output.`);
+    mustMatch(text, /3 SEPARATE cover candidates|exactly 3 SEPARATE cover candidates/iu, `${rel}: natural Flow prompt must request 3 separate BILD-01 cover candidates.`);
+    mustMatch(text, /wait for the user to choose one cover/iu, `${rel}: natural Flow prompt must stop for user cover choice.`);
+    mustMatch(text, /AFTER THE USER CHOOSES THE COVER/iu, `${rel}: natural Flow prompt must gate later generation behind cover approval.`);
+    mustMatch(text, /one batch operation|five-image batch operation|five-image batch/iu, `${rel}: natural Flow prompt must request five-image batch generation.`);
+    mustMatch(text, /NN\.png|matching number/iu, `${rel}: natural Flow prompt must require immediate numbered filenames.`);
+    mustMatch(text, /03-bilder\//iu, `${rel}: natural Flow prompt must collect accepted images in 03-bilder/.`);
+    mustMatch(text, /no cover subfolder, no batch subfolders|no batch subfolders/iu, `${rel}: natural Flow prompt must forbid batch subfolders.`);
+    mustMatch(text, /same illustrator|SAME illustrator/iu, `${rel}: natural Flow prompt must preserve one same-illustrator visual world.`);
+
+    if (isHumanBehaviorV2) {
+      mustMatch(text, /cute\/chibi\/mascot|cute[^\n]*chibi[^\n]*mascot/iu, `${rel}: natural v2 prompt lacks mature-character anti-chibi guard.`);
+      if (!/blank cream|cream backgrounds|cream\/off-white|off-white/iu.test(text)) warnings.push(`${rel}: v2 prompt should block blank cream/off-white default scenes.`);
+    }
+
+    forbiddenNaturalLabels.forEach((label) => {
+      if (text.includes(label)) failures.push(`${rel}: natural Flow prompt must keep '${label}' in 99-intern planning, not final BILD blocks.`);
+    });
+
+    for (let i = 0; i < images.length; i += 1) {
+      const start = images[i].index ?? 0;
+      const end = images[i + 1]?.index ?? text.indexOf('\nFINAL QA', start) > -1 ? text.indexOf('\nFINAL QA', start) : text.length;
+      const blockEnd = Number.isInteger(end) ? end : text.length;
+      const block = text.slice(start, blockEnd);
+      const n = Number(images[i][1]);
+
+      if (block.trim().split(/\s+/u).length < 20) warnings.push(`${rel}: BILD ${n} is unusually short for natural art direction.`);
+
+      const hasExactText = /Render exactly|Integrate exactly|render exactly|integrate exactly/iu.test(block);
+      const forbidsExtraText = /No visible text|No other readable text|ZERO READABLE TEXT/iu.test(block);
+      if (!hasExactText && !forbidsExtraText) warnings.push(`${rel}: BILD ${n} should explicitly prevent accidental readable text.`);
+      if (hasExactText && !/No other readable text|only readable text/iu.test(block) && n !== 3 && n !== 11) {
+        warnings.push(`${rel}: BILD ${n} has planned text but should explicitly forbid extra readable text.`);
+      }
+
+      if (n === 1) {
+        const quoted = block.match(/Render exactly:\s*["“]([^"”\n]+)["”]/iu)?.[1];
+        if (quoted && (countWords(quoted) < 2 || countWords(quoted) > 7)) failures.push(`${rel}: BILD 01 cover title must be 2-7 words.`);
+      }
+    }
+
+    const remaining = images.length - 1;
+    if (remaining >= 5) {
+      const expectedFullBatches = Math.floor(remaining / 5);
+      const explicitBatchMentions = [...text.matchAll(/Batch\s+\d+:/giu)].length;
+      const genericFiveRule = /batches of EXACTLY 5 image numbers|five-image batch/iu.test(text);
+      if (!genericFiveRule && explicitBatchMentions < expectedFullBatches) {
+        failures.push(`${rel}: regular post-cover generation must use five-image batches.`);
+      }
+    }
+
+    continue;
+  }
+
+  // Legacy / pre-NATURAL_FLOW_MASTER_V1 compatibility path.
+  const scenes = [...text.matchAll(/^SCENE\s+(\d+)\s*$/gimu)];
+  if (!scenes.length) {
+    failures.push(`${rel}: no SCENE blocks found and NATURAL_FLOW_MASTER_V1 is not declared.`);
+    continue;
+  }
+
+  scenes.forEach((m, i) => {
+    if (Number(m[1]) !== i + 1) failures.push(`${rel}: scenes must be contiguous.`);
+  });
 
   if (isHumanBehaviorV2) {
-    if (!/OUTPUT MODE\s*[—-]\s*FINAL SOURCE IMAGES ONLY/iu.test(text)) failures.push(`${rel}: v2 prompt lacks FINAL SOURCE IMAGES output mode.`);
     if (!/NEVER create a storyboard/iu.test(text)) failures.push(`${rel}: v2 prompt must explicitly forbid storyboard output.`);
     if (!/contact sheet/iu.test(text)) failures.push(`${rel}: v2 prompt must explicitly forbid contact-sheet output.`);
     if (!/SEPARATE[^\n]*standalone[^\n]*16:9|standalone[^\n]*16:9[^\n]*image/iu.test(text)) failures.push(`${rel}: v2 prompt must require separate standalone 16:9 images.`);
     if (!/Generate\s+(?:SCENE|Scene)\s+01\s+ONLY/iu.test(text)) failures.push(`${rel}: v2 prompt must gate initial generation to Scene 01 only.`);
     if (!/3\s+SEPARATE[^\n]*Scene-01[^\n]*cover candidates|exactly\s+3\s+separate[^\n]*cover candidates/iu.test(text)) failures.push(`${rel}: v2 prompt must request 3 separate Scene-01 cover candidates.`);
     if (!/cute\/chibi\/mascot|cute[^\n]*chibi[^\n]*mascot/iu.test(text)) failures.push(`${rel}: v2 prompt lacks mature-character anti-chibi guard.`);
-    if (!/empty cream|cream\/off-white|off-white/iu.test(text)) warnings.push(`${rel}: v2 prompt should block blank cream/off-white default scenes.`);
-    if (/Create a visual storyboard/iu.test(text)) failures.push(`${rel}: contains storyboard-generation wording that can collapse scenes into one sheet.`);
   }
 
   if (isFlowOutputV2) {
-    if (!/WORLD CONSISTENCY/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must lock one coherent visual world across all batches.`);
-    if (!/same illustrator|SAME illustrator/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must keep the same-illustrator/same-world identity across the video.`);
-    if (!/batch boundaries[^\n]*NEVER reset|Batch boundaries must NEVER reset|no style reset/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must forbid style resets at batch boundaries.`);
-    if (!/EXACTLY 5 scene numbers|exactly 5 scene numbers|batches of exactly 5 scenes/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 requires five-scene regular batches.`);
-    if (!/remaining 1[–-]4 scenes|verbleibende(?:n)? 1[–-]4/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must define a 1-4 scene final remainder batch.`);
-    if (!/one batch operation|one batch step|einen Batch-Schritt|einem Batch-Schritt/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must request generation as a batch operation rather than deliberate one-by-one generation.`);
     if (!/NN\.png/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must require NN.png naming.`);
     if (!/03-bilder\//iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must collect accepted images in 03-bilder/.`);
-    if (!/no batch subfolders|keine Batch-Unterordner/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must forbid batch subfolders.`);
-  }
-
-  if (isRepresentationVarietyV1) {
-    if (!/CHARACTER_SCENE:[^\n]*45[–-]60%/iu.test(text)) warnings.push(`${rel}: representation-variety prompt should include the normal 45-60% character-scene guidance.`);
-    if (!/Do NOT place visible text on every image/iu.test(text)) failures.push(`${rel}: representation-variety prompt must forbid text on every image.`);
-    if (!/red\/burgundy\/dark treatment/iu.test(text)) failures.push(`${rel}: representation-variety prompt must block mechanical red/burgundy/dark repetition.`);
-    if (!/Never add a Stickman merely to fill empty space/iu.test(text)) failures.push(`${rel}: representation-variety prompt must forbid decorative character insertion.`);
-  }
-
-  let textMoments = 0;
-  for (let i = 0; i < scenes.length; i += 1) {
-    const start = scenes[i].index ?? 0;
-    const end = scenes[i + 1]?.index ?? text.length;
-    const block = text.slice(start, end);
-    const n = Number(scenes[i][1]);
-
-    if (!/SPEECH CONTEXT\s*[—-]\s*DO NOT RENDER AS TEXT:/iu.test(block)) failures.push(`${rel}: scene ${n} lacks protected speech context.`);
-    if (!/SCENE TYPE:/iu.test(block)) warnings.push(`${rel}: scene ${n} has no SCENE TYPE.`);
-    if (!/PROMPT:/iu.test(block)) failures.push(`${rel}: scene ${n} lacks PROMPT.`);
-
-    const listMatch = block.match(/PLANNED GERMAN TEXT:\s*([\s\S]*?)(?=\nPROMPT:)/iu);
-    const listed = listMatch ? [...listMatch[1].matchAll(/["“]([^"”\n]+)["”]/gu)].map((m) => m[1].trim()) : [];
-    const none = /PLANNED GERMAN TEXT:\s*NONE/iu.test(block);
-
-    if (listed.length) {
-      textMoments += 1;
-      if (!/NO OTHER READABLE TEXT/iu.test(block)) failures.push(`${rel}: scene ${n} planned text must forbid extra readable text.`);
-      if (n === 1 && (countWords(listed[0]) < 2 || countWords(listed[0]) > 7)) failures.push(`${rel}: scene 1 cover title must be 2-7 words.`);
-      if (listed.length > 4) failures.push(`${rel}: scene ${n} has too many planned text strings (${listed.length}).`);
-      listed.slice(n === 1 ? 1 : 0).forEach((s) => { if (countWords(s) > 7) warnings.push(`${rel}: scene ${n} label '${s}' is long.`); });
-    } else if (none) {
-      if (!/ZERO READABLE TEXT/iu.test(block)) failures.push(`${rel}: scene ${n} with no planned text must say ZERO READABLE TEXT.`);
-    } else {
-      warnings.push(`${rel}: scene ${n} should explicitly declare PLANNED GERMAN TEXT: NONE or list exact texts.`);
-    }
-  }
-
-  const maxTextMoments = Math.max(1, Math.ceil(scenes.length * 0.40));
-  if (textMoments > maxTextMoments) warnings.push(`${rel}: ${textMoments}/${scenes.length} text-bearing frames exceed the normal 40% guidance.`);
-
-  if (/CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1/iu.test(text)) {
-    if (/MINIMAL_EDITORIAL_STICKMAN_V2|MINIMAL EDITORIAL STICKMAN WORLD v2/iu.test(text)) failures.push(`${rel}: old v2 visual marker appears in active prompt.`);
-    if (!/SCHEMA_EXPLAINER/iu.test(text) || !/OBJECT_METAPHOR/iu.test(text)) failures.push(`${rel}: active prompt must support mixed psychology visual types.`);
   }
 }
 
