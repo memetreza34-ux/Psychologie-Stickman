@@ -16,19 +16,20 @@ Danach lesen:
 5. `rules/STICKMAN_DNA.md`
 6. `rules/PREMIUM_VISUAL_LOCK.md`
 7. `rules/FLOW_OUTPUT_MODE.md`
-8. `rules/FORMAT_LOCK.md`
-9. `rules/YOUTUBE_THEMEN_SYSTEM.md`
-10. `rules/YOUTUBE_STYLE_LOCK.md`
-11. `rules/SCRIPT_HOOK_LOCK.md`
-12. `rules/IMAGE_REFERENCE_LOCK.md`
-13. `rules/COVER_LOCK.md`
-14. `rules/TEXT_OVERLAY_LOCK.md`
-15. `rules/FLOW_TEXT_STYLE_LOCK.md`
-16. `rules/COMPOSITION_VARIATION_LOCK.md`
-17. `rules/SOCIAL_SCENE_LOCK.md`
-18. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-19. `rules/PRODUCTION_FORMAT_RULES.md`
-20. `rules/YOUTUBE_EXPORT_PACKAGE.md`
+8. `rules/REPRESENTATION_VARIETY_LOCK.md`
+9. `rules/FORMAT_LOCK.md`
+10. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+11. `rules/YOUTUBE_STYLE_LOCK.md`
+12. `rules/SCRIPT_HOOK_LOCK.md`
+13. `rules/IMAGE_REFERENCE_LOCK.md`
+14. `rules/COVER_LOCK.md`
+15. `rules/TEXT_OVERLAY_LOCK.md`
+16. `rules/FLOW_TEXT_STYLE_LOCK.md`
+17. `rules/COMPOSITION_VARIATION_LOCK.md`
+18. `rules/SOCIAL_SCENE_LOCK.md`
+19. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+20. `rules/PRODUCTION_FORMAT_RULES.md`
+21. `rules/YOUTUBE_EXPORT_PACKAGE.md`
 
 ## Themenwelt
 
@@ -106,6 +107,31 @@ Nicht jedes Bild braucht eine Figur. Erlaubte Hauptformen:
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
 
+## Repräsentations-Abwechslung — HARD LOCK FÜR NEUE VIDEOS
+
+Verbindlich: `rules/REPRESENTATION_VARIETY_LOCK.md` / `REPRESENTATION_VARIETY_V1`.
+
+Nicht automatisch jede Szene als Figurenbild planen. Pro gesprochenem Beat zuerst entscheiden, welche visuelle Form die Aussage am schnellsten erklärt.
+
+Normale Longform-Richtwerte:
+- Figuren-Szenen ca. 45–60 %
+- Schemas ca. 10–20 %
+- Objekt-/Umgebungsmetaphern ca. 10–20 %
+- Vergleiche ca. 10–20 %
+- Text-Illustrationen normalerweise 0–10 %
+
+Das sind keine Quoten; Klarheit gewinnt.
+
+Zusätzlich:
+- keinen Stickman nur zum Füllen einsetzen
+- sichtbaren Text nur, wenn er Verständnis wirklich verbessert
+- keine gesprochene Aussage einfach als Volltext ins Bild schreiben
+- Schema nur, wenn Mechanismus/Relation strukturell davon profitiert
+- keine langen Serien gleicher Figuren-Mediumshots, Textkarten oder Schemas
+- nicht das ganze Video automatisch rot/burgunder/dunkel oder teal/creme einfärben
+- Farbe, Licht, Kamera, Ort und Darstellungsform passend zum Beat variieren
+- trotz Abwechslung bleibt die einheitliche Kanal-/Filmwelt erhalten
+
 ## Google Flow — PRODUKTIONSSTRUKTUR BLEIBT HARD LOCK
 
 **Pro Video gibt es genau eine zentrale Flow-Datei:**
@@ -177,7 +203,7 @@ Der Masterprompt erzeugt **finale Einzelbilder**, keinen Storyboard-Kontaktbogen
 
 Ein SPLIT/CONTRAST/MONTAGE innerhalb EINER Szene bleibt erlaubt, wenn alle Teile denselben gesprochenen Beat erklären.
 
-**Bestandsschutz:** `FINAL_SEPARATE_IMAGE_ASSETS_V2` gilt nur für neue/zukünftige Projekte. Bestehende YouTube-Projekte nicht rückwirkend ändern, außer der Nutzer verlangt ausdrücklich die Migration dieses Projekts.
+**Bestandsschutz:** `FINAL_SEPARATE_IMAGE_ASSETS_V2` und `REPRESENTATION_VARIETY_V1` gelten für neue/zukünftige Projekte. Bestehende YouTube-Projekte nicht rückwirkend ändern, außer der Nutzer verlangt ausdrücklich die Migration dieses Projekts.
 
 ## Textsystem — GOOGLE FLOW ONLY
 
@@ -192,6 +218,7 @@ Für neue YouTube-Projekte gilt:
 
 ### Ausgewählte spätere Textszenen
 - nur ausdrücklich geplanter exakter deutscher Text
+- nur wenn Text das Verständnis wirklich verbessert
 
 ### Alle anderen Szenen
 - `ZERO READABLE TEXT`
@@ -223,7 +250,7 @@ Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.
 2. Szene 01 aus der einen `google-flow-prompt.txt` generieren.
 3. STOP und Nutzerfreigabe für Bild 01.
 4. Danach 5er-Batches aus derselben Master-Datei, letzter Batch ggf. kleiner.
-5. Nach jedem Batch interne QA.
+5. Nach jedem Batch interne QA einschließlich Welt-/Stil- und Repräsentations-Abwechslung.
 6. Nur fehlerhafte Bilder regenerieren.
 7. Nach PASS automatisch fortsetzen.
 
@@ -269,7 +296,7 @@ Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.
   "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
   "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
-  "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
+  "representationPolicy": "REPRESENTATION_VARIETY_V1",
   "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
   "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
   "visibleTextLanguage": "de",
