@@ -68,9 +68,29 @@ youtube/TT.MM.JJJJ-thema/
 ├── 02-google-flow/google-flow-prompt.txt
 ├── 03-bilder/01.png, 02.png, ...
 ├── 04-audio/final-voice.mp3
-├── 05-export/final.mp4
+├── 05-export/
+│   ├── final.mp4
+│   ├── thumbnail.png
+│   └── youtube-upload.txt
 └── 99-intern/
 ```
+
+### `youtube-upload.txt`
+
+Eine einzige Copy/Paste-Datei für den Upload. Sie enthält immer:
+- finalen YouTube-Titel
+- Beschreibung / Caption
+- Quellen / Links, falls vorhanden
+- Kapitel, falls sinnvoll
+- Tags
+- Hashtags
+- angehefteten Kommentar oder `NONE`
+- bereinigten finalen Sprechertext / Captions
+- Video-Daten
+
+Keine separaten normalen Upload-Dateien wie `title.txt`, `description.txt`, `tags.txt` oder `chapters.txt`.
+
+Verbindliche Regel: `rules/YOUTUBE_EXPORT_PACKAGE.md`.
 
 ## Produktion
 
@@ -83,6 +103,7 @@ THEMA + QUELLEN + CLAIM-CHECK
 → Google Flow
 → Voice + Whisper Timings
 → Remotion
+→ final.mp4 + thumbnail.png + youtube-upload.txt
 → Final-QA
 ```
 
