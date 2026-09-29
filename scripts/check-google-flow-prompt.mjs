@@ -26,6 +26,9 @@ else {
   if (!/CINEMATIC_HUMAN_BEHAVIOR_V2/iu.test(template)) failures.push('YouTube Flow template must use CINEMATIC_HUMAN_BEHAVIOR_V2.');
   if (!/FINAL_SEPARATE_IMAGE_ASSETS_V2/iu.test(template)) failures.push('YouTube Flow template must use FINAL_SEPARATE_IMAGE_ASSETS_V2.');
   if (!/OUTPUT MODE\s*[—-]\s*FINAL SOURCE IMAGES ONLY/iu.test(template)) failures.push('YouTube Flow template lacks FINAL SOURCE IMAGES output mode.');
+  if (!/WORLD CONSISTENCY/iu.test(template)) failures.push('YouTube Flow template must explicitly lock world consistency across the complete video.');
+  if (!/same illustrator|SAME illustrator/iu.test(template)) failures.push('YouTube Flow template must tell Flow that all scenes should feel created by the same illustrator.');
+  if (!/Batch boundaries must NEVER reset|batch boundaries[^\n]*never reset/iu.test(template)) failures.push('YouTube Flow template must forbid visual style resets between batches.');
   if (!/NEVER create a storyboard/iu.test(template)) failures.push('YouTube Flow template must explicitly forbid storyboard output.');
   if (!/3 SEPARATE Scene-01 cover candidates/iu.test(template)) failures.push('YouTube Flow template must request 3 separate Scene-01 cover candidates.');
   if (!/EXACTLY 5 scene numbers|exactly 5 scene numbers/iu.test(template)) failures.push('YouTube Flow template must use five-scene regular batches.');
@@ -60,6 +63,9 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
   }
 
   if (isFlowOutputV2) {
+    if (!/WORLD CONSISTENCY/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must lock one coherent visual world across all batches.`);
+    if (!/same illustrator|SAME illustrator/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must keep the same-illustrator/same-world identity across the video.`);
+    if (!/batch boundaries[^\n]*NEVER reset|Batch boundaries must NEVER reset|no style reset/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must forbid style resets at batch boundaries.`);
     if (!/EXACTLY 5 scene numbers|exactly 5 scene numbers|batches of exactly 5 scenes/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 requires five-scene regular batches.`);
     if (!/remaining 1[–-]4 scenes|verbleibende(?:n)? 1[–-]4/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must define a 1-4 scene final remainder batch.`);
     if (!/one batch operation|one batch step|einen Batch-Schritt|einem Batch-Schritt/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must request generation as a batch operation rather than deliberate one-by-one generation.`);
