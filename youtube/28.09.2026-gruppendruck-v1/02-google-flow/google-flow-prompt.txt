@@ -1,91 +1,230 @@
-GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+GOOGLE FLOW MASTER PROMPT — GRUPPENDRUCK / KONFORMITÄT
 
-TOPIC: Warum folgen wir der Gruppe?
+TOPIC: Warum zweifeln wir an uns, wenn die Gruppe anders denkt?
+VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
 FORMAT: 16:9 / 1920x1080
 
-GLOBAL STYLE
-Create all images in one consistent cinematic 2D psychology world.
-Use STRICT STICKMAN characters only: large simple round heads, minimal faces, narrow clothed torsos, very thin arms and legs, simple hands and shoes. Clean dark outlines, soft cel shading, believable environments and natural depth.
-No normal cartoon humans, no realistic anatomy, no 3D, no Pixar, no anime, no whiteboard style.
+THIS IS THE ONLY GOOGLE FLOW MASTER PROMPT FOR THIS VIDEO.
+All 9 scenes remain in this one file.
 
-CHARACTER A
-Teal hoodie, black very-thin legs, white shoes. Keep the exact same head shape, proportions, clothing and colors whenever Character A returns.
+OUTPUT MODE — FINAL SOURCE IMAGES ONLY — HARD LOCK
+Read the full master prompt so you understand style and continuity, but generate only the currently requested scene numbers.
+Every scene number must become ONE SEPARATE standalone 16:9 image asset.
+NEVER create a storyboard, contact sheet, shot sheet, 3x3 panel grid, multi-scene collage or automatic video.
+NEVER combine different scene numbers inside one generated image.
+A single scene may use split/contrast only when that scene explicitly requests it.
 
-TEXT RULE
-Only render the exact German text explicitly requested for a scene. Otherwise ZERO READABLE TEXT.
+VISUAL WORLD — HARD LOCK
+Mature cinematic 2D psychology-documentary / editorial graphic-novel illustration.
+Clean dark slightly organic outlines, controlled soft cel shading, subtle texture, believable depth, purposeful framing and motivated cinematic light.
+Normal scenes use believable environments with foreground, midground and background. Do NOT default to empty cream/off-white backgrounds or sterile blank rooms.
+The simple characters live inside a richer illustrated world.
+
+STRICT STICKMAN CAST — HARD LOCK
+EVERY visible human uses the same mature strict-stickman anatomy family:
+- large simple round/oval head, NOT chibi/mascot oversized
+- tiny minimal eyes and simple mouth
+- no realistic nose, ears or neck anatomy
+- small narrow clothed torso
+- narrow shoulders
+- very thin arms and legs
+- simple no-finger hands
+- simple shoes
+Clothing must follow the narrow body and must NOT create normal cartoon-human body volume.
+
+HARD FAIL
+No cute/chibi/mascot people. No children's-cartoon look. No normal cartoon humans. No broad shoulders. No thick arms or legs. No realistic anatomy. No 3D/Pixar/CGI. No anime. No whiteboard doodle. No corporate-vector people. No photorealistic environment.
+
+PREMIUM QUALITY — HARD LOCK
+Simple Stickmen. Rich World. One clear idea per image.
+Use expressive posture, strong silhouette, visible social spacing, intentional depth, topic-specific environment detail, controlled color and deliberate light/shadow.
+Avoid repeated centered lineups, flat classroom diagrams and the same teal/cream balance in every image.
+
+CHARACTER A — LOCAL CONTINUITY
+Adult strict-stickman character with muted dark-teal overshirt over a narrow torso, dark very-thin legs and simple light shoes.
+Keep the same head shape, proportions, clothing colors and shoes whenever Character A returns.
+Character A must remain mature/editorial, never cute or chibi.
+
+GROUP CAST
+Supporting people use the exact same stickman anatomy family. Vary muted clothing colors and posture only. Never turn background/group members into normal cartoon humans.
+
+VISIBLE TEXT
+Only render exact German text listed in the current scene.
+Speech context is NEVER visible text.
+If PLANNED GERMAN TEXT is NONE: ZERO READABLE TEXT.
+No random signs, screens, posters, papers, logos or pseudo-text.
+
+COVER RULE
+Scene 01 is the cover + first visual beat.
+The image itself must show one person doubting their own judgment because a united group disagrees.
+Use strong thumbnail hierarchy, one dominant social conflict and a compact asymmetric title zone. No full-width top banner.
+
+GENERATION WORKFLOW — HARD LOCK
+INITIAL RUN:
+1. Generate SCENE 01 ONLY.
+2. Generate exactly 3 SEPARATE Scene-01 cover candidates.
+3. Each candidate is its own standalone 16:9 image, never a three-panel sheet.
+4. STOP for user approval.
+5. Keep one winner as `03-bilder/01.png`.
+
+AFTER SCENE 01 APPROVAL:
+Batch 1: SCENE 02, SCENE 03, SCENE 04 → 3 separate standalone images.
+Batch 2: SCENE 05, SCENE 06, SCENE 07 → 3 separate standalone images.
+Batch 3: SCENE 08, SCENE 09 → 2 separate standalone images.
+Generate only the current batch. Save each accepted result as its matching `03-bilder/NN.png`.
+Regenerate only failed images. When the user says "weiter", continue with the next batch from THIS SAME MASTER PROMPT.
+NEVER offer to turn these scenes into a video. The external pipeline handles the final video.
 
 SCENE 01
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-Warum folgen wir manchmal einer Gruppe, obwohl wir eigentlich anderer Meinung sind?
+Warum zweifelst du plötzlich an dir, nur weil alle anderen etwas anderes sagen?
 SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: One person trusts their own judgment until a united group visibly disagrees.
+VISUAL TASK: Character A is foreground-right holding or indicating one choice while four same-family Stickmen behind/left confidently indicate the opposite choice. A's body still points toward their own choice, but head and eyes turn toward the group in doubt.
+CAMERA: Dynamic medium-wide three-quarter shot with A dominant in foreground and the group clearly readable behind.
+LIGHTING MOOD: UNEASY; cool room depth with a warm practical side light on A and stronger shadow separation around the group.
+CHARACTER DIRECTION: Same mature strict-stickman anatomy for A and all four group members; varied muted clothing, confident group posture, restrained uncertainty in A.
+COVER TOPIC TERM: KONFORMITÄT
+COVER VISUAL THESIS: A united group makes one person visibly question a different answer they originally trusted.
+TITLE PLACEMENT: Compact asymmetric title block in clean negative space, away from faces and the group-vs-individual relation.
 PLANNED GERMAN TEXT:
 - "WARUM DU DER GRUPPE FOLGST"
 PROMPT:
-Character A stands alone while four strict stickman people behind him confidently point in the same direction. A looks uncertain and glances back at the group. Strong simple composition, slightly uneasy mood, clean thumbnail framing. Render exactly "WARUM DU DER GRUPPE FOLGST". NO OTHER READABLE TEXT.
+Premium cinematic psychology thumbnail in a believable modern seminar/study room. Character A stands in the foreground with a different choice while four strict-stickman adults behind him confidently agree with one another. A visibly starts doubting himself through gaze and posture. Strong group-vs-individual depth and shadow. Render exactly "WARUM DU DER GRUPPE FOLGST" in the reserved title zone. NO OTHER READABLE TEXT.
 
 SCENE 02
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-Ein Grund ist Konformität. Menschen orientieren sich oft an anderen.
+Stell dir vor, du sitzt mit vier Menschen in einem Raum. Alle wählen dieselbe Antwort.
 SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: Four people give the same answer while A observes them.
+VISUAL TASK: Character A sits with four group members around a simple study table; the four others simultaneously point to the same one of several simple line-choice cards while A watches.
+CAMERA: Wide diagonal table shot with clear foreground/table depth and all five figures readable.
+LIGHTING MOOD: CLEAR moving toward UNEASY; warm ceiling/practical light with cooler window depth.
+CHARACTER DIRECTION: Local continuity for A. Four distinct same-family stickmen with different muted clothing and unified confident gesture.
 PLANNED GERMAN TEXT: NONE
 PROMPT:
-Character A sits with four other strict stickman people around a simple table in a neutral classroom-like room. The four others choose the same option with confident body language while A watches them carefully. Medium-wide shot. ZERO READABLE TEXT.
+Believable behavioral-study room with table, chairs, simple line-choice cards and real spatial depth. Character A watches four strict-stickman adults confidently choose the same option at once. Keep the group interaction natural and mature, not cute or diagram-like. ZERO READABLE TEXT.
 
 SCENE 03
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-Besonders wenn eine Situation unklar ist oder wir nicht negativ auffallen wollen.
+Du bist dir eigentlich sicher, dass sie falsch ist. Trotzdem beginnt dein Kopf zu fragen: Vielleicht liege ich daneben.
 SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: A knows the group answer seems wrong but begins doubting their own judgment.
+VISUAL TASK: Same room. A quietly holds a different line-choice card closer to their body while looking toward the four confident group members; tense shoulders and hesitant gaze show internal doubt.
+CAMERA: Close-medium over-the-shoulder from behind the group's side toward A, with the united group partly framing the foreground.
+LIGHTING MOOD: UNEASY; cooler shadows around A, subtle warm light on the group, stronger directional contrast.
+CHARACTER DIRECTION: Same A and same group. Strict narrow bodies and very thin limbs remain consistent.
 PLANNED GERMAN TEXT: NONE
 PROMPT:
-Same Character A, same room and same group. A believes the group may be wrong but looks visibly unsure while the others remain confident. Slightly closer shot, cooler shadows, clear social tension. ZERO READABLE TEXT.
+Continue the same study-room moment from a closer reverse angle. Character A still has a different answer but glances toward the unanimous group and visibly loses confidence. Use body language, spacing and directional light to show doubt. ZERO READABLE TEXT.
 
 SCENE 04
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-Du merkst, dass etwas nicht stimmt, aber plötzlich fühlt sich deine eigene Antwort weniger sicher an.
+Das nennt man Konformität.
 SCENE TYPE: CHARACTER_SCENE
-PLANNED GERMAN TEXT: NONE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: One individual begins aligning outwardly with a united group.
+VISUAL TASK: A shifts their indicated choice toward the group's choice while still looking slightly conflicted; the group remains visually unified.
+CAMERA: Clean medium-wide side angle focused on the change in A's gesture.
+LIGHTING MOOD: UNEASY but readable; controlled neutral room light with a restrained teal/navy shadow accent.
+CHARACTER DIRECTION: Same A and group; mature strict-stickman silhouettes.
+PLANNED GERMAN TEXT:
+- "KONFORMITÄT"
 PROMPT:
-Show one strict stickman changing his position slightly toward a group of four stickmen, even though his posture still shows doubt. Clear visual idea of conformity, simple believable room, no diagram look. ZERO READABLE TEXT.
+In the same believable study room, show Character A starting to mirror the united group's answer even though A still looks slightly conflicted. Integrate exactly "KONFORMITÄT" in a small clean editorial text zone. NO OTHER READABLE TEXT.
 
 SCENE 05
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-Je geschlossener und selbstbewusster die Gruppe wirkt, desto größer kann dieser soziale Druck werden.
-SCENE TYPE: CHARACTER_SCENE
+Wir orientieren uns an Gruppen, weil andere Menschen für uns Informationen liefern und weil Widerspruch sozial unangenehm sein kann.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: SPLIT
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: Group influence can come from information and from discomfort about standing apart.
+VISUAL TASK: One coherent two-part scene of the same A: left, A studies the group's confident choice as information; right, A is physically separated while the group clusters together, making disagreement feel socially uncomfortable.
+CAMERA: Designed split composition with matching room language, not a storyboard sheet.
+LIGHTING MOOD: Left clearer/neutral; right cooler and tighter with more negative space around A.
+CHARACTER DIRECTION: Same strict-stickman A and same-family group in both halves; no additional independent scenes.
 PLANNED GERMAN TEXT: NONE
 PROMPT:
-Character A stands beside a close group whose members all face the same direction with confident posture. A looks at them for information while also appearing uncomfortable about disagreeing. Medium-wide shot, slightly darker uneasy lighting. ZERO READABLE TEXT.
+One intentional split comparison for this single spoken beat. Left: Character A looks to the confident group for information. Right: A stands slightly apart while the group remains close together, making disagreement visibly uncomfortable. Same mature cinematic world across both halves. ZERO READABLE TEXT.
 
 SCENE 06
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-Das bedeutet nicht, dass Menschen einfach willenlos sind.
+Genau das zeigten auch klassische Experimente von Solomon Asch: Menschen schlossen sich manchmal einer offensichtlich falschen Mehrheitsantwort an.
 SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: A classic line-judgment setup where a unanimous group gives an obviously wrong answer and one participant feels pressure to follow.
+VISUAL TASK: Show a 1950s-inspired but clean illustrated research room with one reference line and three comparison lines on cards; several strict-stickman participants confidently indicate the same clearly mismatched line while A-like participant looks surprised and conflicted.
+CAMERA: Medium-wide side angle across the row, with line cards visible but no text/numbers.
+LIGHTING MOOD: CLEAR research-room light with subtle UNEASY contrast on the conflicted participant.
+CHARACTER DIRECTION: All participants are mature strict stickmen; simple period-neutral clothing cues, no normal cartoon humans.
 PLANNED GERMAN TEXT: NONE
 PROMPT:
-Show a simple line-judgment experiment: several strict stickman participants sit in a row and most confidently choose the same obviously wrong line match while Character A looks surprised and conflicted. Keep it simple and cinematic, not a scientific infographic. ZERO READABLE TEXT.
+Cinematic illustrated line-judgment experiment inspired by classic conformity research. Several strict-stickman adults in a row confidently choose the same visibly mismatched comparison line while one participant notices the mismatch and hesitates. Rich but controlled research-room depth. ZERO READABLE TEXT.
 
 SCENE 07
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-Manchmal passen sie ihre öffentliche Antwort an, obwohl sie innerlich weiterhin anderer Meinung bleiben.
-SCENE TYPE: COMPARE_VISUAL
+Der Druck wird besonders stark, wenn die Gruppe geschlossen wirkt und du allein dagegenstehst.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: A unanimous cluster visually outweighs one isolated dissenter.
+VISUAL TASK: Character A stands alone on one side of a believable corridor/meeting-room threshold while four group members form a close united cluster on the other side, all facing A.
+CAMERA: Wide low three-quarter angle using distance and negative space to exaggerate the social imbalance without changing character size unrealistically.
+LIGHTING MOOD: UNEASY / ISOLATION; cooler space around A, denser shadow and warmer practical light around the group.
+CHARACTER DIRECTION: A withdrawn but still upright; group stable and confident, not villainous. Same strict-stickman anatomy.
 PLANNED GERMAN TEXT: NONE
 PROMPT:
-Character A stands close to four agreeing stickmen and publicly mirrors their choice, but his hesitant face and tense posture show that he internally disagrees. Make the conflict readable through body language only. ZERO READABLE TEXT.
+Wide cinematic group-pressure composition in a believable meeting-room corridor. Character A stands visibly alone across negative space while four same-family strict stickmen form one close confident cluster. Use blocking, distance and light rather than evil faces. ZERO READABLE TEXT.
 
 SCENE 08
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-Schon eine einzige Person, die ebenfalls widerspricht, kann den Druck deutlich verändern.
+Schon eine einzige Person, die ebenfalls widerspricht, kann die Situation verändern. Plötzlich bist du nicht mehr allein.
 SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: One ally breaks unanimity and immediately reduces A's isolation.
+VISUAL TASK: One group member steps out of the cluster and stands beside A; A's shoulders relax and posture becomes steadier while the remaining three stay together.
+CAMERA: Medium-wide diagonal shot with the ally movement and changed spacing instantly readable.
+LIGHTING MOOD: HOPE; warmer side light opens around A and ally while the room remains grounded and cinematic.
+CHARACTER DIRECTION: Same A and group; ally is one previously seen group member, same clothing. No exaggerated smiling.
 PLANNED GERMAN TEXT: NONE
 PROMPT:
-Same Character A and same group. One person steps away from the group and stands beside A. A becomes visibly calmer and more confident while the remaining three stay together. Slightly warmer and more open lighting. ZERO READABLE TEXT.
+Continue the group-pressure setup. One previously agreeing strict-stickman adult leaves the cluster and stands beside Character A. A becomes visibly calmer and more stable; the remaining three stay grouped. Open the lighting and composition slightly to show relief. ZERO READABLE TEXT.
 
 SCENE 09
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-Konformität zeigt, wie stark soziale Situationen unsere Entscheidungen beeinflussen können.
+Deshalb lohnt sich eine einfache Frage: Was hätte ich gedacht, bevor ich die Meinung der anderen gehört habe?
 SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: Form an independent judgment before seeing the group's answer.
+VISUAL TASK: Character A sits alone at a quiet table before the group enters, calmly choosing between simple line cards and placing one private answer card face-down.
+CAMERA: Calm close-medium three-quarter desk/table shot with a doorway and deeper room visible behind.
+LIGHTING MOOD: HOPE / CLEAR; warm focused table light with cool clean background depth.
+CHARACTER DIRECTION: Same A, relaxed concentrated posture, mature strict-stickman silhouette.
 PLANNED GERMAN TEXT: NONE
 PROMPT:
-Character A stands in a calm neutral space before hearing anyone else's opinion, thinking independently with relaxed posture. Brighter resolved mood, clean negative space, cinematic 2D framing. ZERO READABLE TEXT.
+Character A calmly makes a private judgment before anyone else's opinion is visible, placing a chosen line card face-down on a quiet study table. Use a resolved mature cinematic composition with believable room depth and warm focused light. ZERO READABLE TEXT.
 
-FINAL CONSISTENCY RULE
-All visible humans must remain strict stickman characters. Character A must stay identical whenever he returns. Keep the same illustration language across every scene. Only pose, camera, environment, lighting and scene content may change.
+FINAL QA
+- 9 scene definitions remain inside this one master prompt
+- Scene 01 first: 3 separate standalone cover candidates, then STOP
+- later batches create separate image assets, never one storyboard/contact sheet
+- no automatically generated video
+- every visible human follows mature STYLIZED_STICKMAN_CAST_V2
+- no cute/chibi/mascot drift
+- no normal cartoon-human body volume
+- believable rich environments except deliberate negative space
+- group pressure is communicated through posture, spacing, gaze, camera and light
+- exact text only in Scenes 01 and 04
+- all other scenes ZERO READABLE TEXT
