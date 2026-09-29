@@ -9,42 +9,93 @@ Active visual system: `CINEMATIC_HUMAN_BEHAVIOR_V2`.
 Path:
 `assets/cinematic-human-behavior-world/`
 
-Target reference pack:
+## Core principle
 
-### Core
-- `style-master.png`
-- `character-neutral.png`
-- `character-emotions.png`
-- `character-dark-archetypes.png`
-- `character-groups.png`
+Use a **small approved reference system by role**, not a huge unverified pack.
 
-### Lighting / mood
-- `lighting-clear.png`
-- `lighting-uneasy.png`
-- `lighting-dark.png`
-- `lighting-power.png`
+References exist to stabilize style, anatomy, recurring identities or recurring environments. They must not become a contradictory collage that pulls the image world in different directions.
 
-### Environments
-- `environment-day.png`
-- `environment-night.png`
-- `environment-dark.png`
-
-### Topic-specific behavior references
-- `money-status-reference.png`
-- `manipulation-reference.png`
-- `schema-reference.png`
-- `metaphor-reference.png`
-
-### Covers
-- `cover-reference-light.png`
-- `cover-reference-dark.png`
-
-Until approved reference images exist, these are authoritative:
+Until an actual reference image is approved, these text rules remain authoritative:
 1. `rules/VISUAL_SYSTEM.md`
 2. `rules/visual-system.json`
 3. `rules/STICKMAN_DNA.md`
 4. `rules/PREMIUM_VISUAL_LOCK.md`
-5. `rules/FLOW_OUTPUT_MODE.md` for Flow output behavior
+5. `rules/FLOW_PROMPT_ARCHITECTURE.md`
+6. `rules/FLOW_OUTPUT_MODE.md` for Flow output behavior
+
+## Preferred minimal reference architecture
+
+Use only what the current production genuinely needs.
+
+### Style anchor
+- `style-master.png`
+
+Purpose: style-only reference for linework, anatomy family, cel shading, texture, environment quality and overall rendering level.
+
+### Recurring characters
+When a recurring person matters, use one or two clean approved reference images for that same character.
+
+Suggested naming:
+- `character-a-01.png`
+- `character-a-02.png`
+- `character-b-01.png`
+- `character-b-02.png`
+
+Purpose: `character-identity`.
+
+A second image is optional and should only be added when it improves identity consistency without contradicting the first.
+
+### Groups
+- `character-group.png` only when group/crowd consistency clearly benefits from a dedicated reference.
+
+### Optional special reference
+Use at most one additional approved visual-family reference when useful, for example:
+- `schema-reference.png`
+- `environment-reference.png`
+
+Not every video needs every file above.
+
+## Reference roles — HARD LOCK
+
+References are used with an explicit role:
+
+### `style-only`
+May lock:
+- mature strict-stickman anatomy family
+- outline language
+- 2D rendering level
+- cel-shading language
+- texture level
+- environment-detail quality
+- controlled light/color behavior
+
+Must NOT force:
+- exact person identity
+- exact clothing
+- exact room
+- exact pose
+- exact camera
+- exact composition
+- exact text
+- one fixed palette for every scene
+
+### `character-identity`
+May additionally lock:
+- recurring head/hair/accessory cues
+- clothing/core colors
+- shoes
+- recurring silhouette
+
+It must still follow the channel-wide anatomy/style lock.
+
+### `environment-continuity`
+May lock:
+- recurring room/layout
+- architecture
+- major props
+- recurring camera relation when continuity benefits from it
+
+It must not override the channel illustration style.
 
 ## Reference approval gate — HARD LOCK
 
@@ -67,67 +118,48 @@ Approve only when it demonstrates:
 - simple no-finger hands and shoes
 - clean dark linework
 - controlled cel shading
-- the intended mature psychology-documentary illustration quality
+- intended mature psychology-documentary illustration quality
 
 A weak reference must never be used to propagate mistakes across the whole video.
 
-## What references lock
+## Character-reference quality
 
-References may lock:
-- simplified anatomy family
-- mature visual tone
-- outline language
-- cel-shading language
-- texture level
-- rendering quality
-- environment-detail level
-- lighting language for the matching mood family
-- controlled color behavior
+A clean single-character image is preferred over a busy character sheet when identity is the goal.
 
-They do NOT lock:
-- exact person identity
-- exact clothing
-- exact pose
-- exact room
-- exact camera angle
-- exact props
-- exact composition
-- exact text
-- one single color palette for the whole channel
+If two references are used for one character, they should show the same character clearly from compatible viewpoints without changing anatomy, clothing or rendering style.
 
-## Mood references
+Do not create a multi-character montage merely to provide identity references.
 
-Choose references according to the current beat's mood, not merely because the previous frame used them.
+## Mood and scene adaptation
 
-Examples:
-- `CLEAR` → core + clear/day references
-- `UNEASY` → core + uneasy reference
-- `DARK` → core + dark lighting/environment references
-- `POWER` → core + power reference
-- `MONEY` → core + money/status reference
-- `ISOLATION` → night/dark environment only when useful
-- `HOPE` → core + clear/day reference with warmer resolution
+A style or identity reference does not force the same mood into every frame.
+
+The current beat still decides whether the scene is `CLEAR`, `UNEASY`, `DARK`, `POWER`, `MONEY`, `ISOLATION` or `HOPE`.
 
 A dark reference may not turn a neutral scene dark. A bright reference may not sanitize a genuinely dark beat.
 
-## Scene 01
+## Scene/Bild 01
 
-`03-bilder/01.png` remains Scene 01 + cover/thumbnail source for pipeline compatibility.
+`03-bilder/01.png` remains Bild 01 + cover/thumbnail source for pipeline compatibility.
 
-It follows the permanent reference system. It does not replace the permanent channel reference pack.
+It follows the permanent reference system. It does not replace the permanent channel style source of truth.
+
+After user approval, Bild 01 may help confirm quality/world consistency, but later images must not copy its room, pose, composition or palette unless continuity requires it.
 
 ## Character continuity
 
 Repeat a character only when narrative continuity requires it. Preserve clothing, core colors, head design, accessory, proportions and shoes.
 
-Mood and light may change while identity remains stable.
+Mood and light may change while identity stays stable.
 
 ## Flow reference clause
 
-`Use approved CINEMATIC HUMAN BEHAVIOR WORLD v2 references only for STYLE, MATURE STRICT-STICKMAN ANATOMY, LINEWORK, CEL SHADING, TEXTURE, RENDERING QUALITY, ENVIRONMENT DETAIL and MOOD-APPROPRIATE LIGHT/COLOR. Do not clone exact character identity, pose, room, camera, object arrangement, composition or readable text. Never drift into cute/chibi/mascot proportions or normal cartoon-human body volume. Render only exact planned German text; otherwise ZERO READABLE TEXT.`
+`Use only approved references and use each reference for its declared role. Style-only references lock mature strict-stickman anatomy, linework, cel shading, texture and rendering quality, not scene content. Character-identity references additionally preserve the returning person's identity/clothing cues. Environment-continuity references preserve a recurring place when needed. Never copy accidental text or let a weak/chibi/cartoon reference override the channel rules.`
 
 ## Hard fail
 
+- nonexistent/unapproved reference is treated as if it were approved
+- conflicting references are combined without need
 - reference creates style drift
 - weak/chibi reference becomes the basis for later images
 - wrong mood reference overrides current beat
