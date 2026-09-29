@@ -11,7 +11,6 @@ Policy: `CINEMATIC_HUMAN_BEHAVIOR_V2`
 Source of truth:
 - `rules/VISUAL_SYSTEM.md`
 - `rules/visual-system.json`
-- `rules/FLOW_PROMPT_CONTRACT.md`
 - `rules/STICKMAN_DNA.md`
 - `assets/cinematic-human-behavior-world/`
 
@@ -26,55 +25,30 @@ Retired für neue Produktionen:
 
 Nicht jedes Bild braucht eine Figur. Erlaubt sind Charakter-Szenen, Schemas, Objektmetaphern, Vergleiche und Text-Illustrationen in derselben Welt.
 
-## Mood Engine
-
-Jede Szene plant:
-- `moodMode`: `CLEAR`, `UNEASY`, `DARK`, `POWER`, `MONEY`, `ISOLATION`, `HOPE`
-- `moodIntensity`: `0–4`
-- `powerDynamic`
-
-Der Kanal ist weder dauerhaft hell noch dauerhaft dunkel. Stimmung folgt dem aktuellen gesprochenen Beat.
-
-## Szenentypen
-
-- `CHARACTER_SCENE`
-- `SCHEMA_EXPLAINER`
-- `OBJECT_METAPHOR`
-- `COMPARE_VISUAL`
-- `TEXT_ILLUSTRATION`
-
 ## Charaktere
 
 Alle Menschen gehören zu `STYLIZED_STICKMAN_CAST_V2`:
 - großer einfacher Kopf
-- minimale ausdrucksstarke Mimik
-- sichtbarer vereinfachter Oberkörper/Kleidung
-- sehr schlanke geformte Arme/Beine
+- minimale Mimik
+- schmaler bekleideter Torso
+- sehr dünne Arme und Beine
 - einfache Hände und Schuhe
-- Individualität über Kleidung, Haarhinweis, Accessoire, Pose, Ausdruck und Silhouette
+- Individualität über Kleidung, Haarhinweis, Accessoire, Pose und Ausdruck
 
-Figuren dürfen freundlich, neutral, verletzlich, erschöpft, dominant, kalt, manipulativ, einschüchternd oder isoliert wirken. Die Anatomie bleibt gleich.
+Normale Cartoon-Menschen, realistische Menschen, 3D/Pixar und Anime sind nicht erlaubt.
 
-## Prompt-Struktur — HARD LOCK
+## Google Flow — bestehende Struktur bleibt
 
-Alle Google-Flow-Szenen verwenden `FLOW_SCENE_PROMPT_CONTRACT_V1`.
+Pro Video gibt es **eine einzige** Datei:
 
-Jeder Szenenblock hat dieselbe feste Reihenfolge. Jeder `PROMPT:` enthält dieselben Unterblöcke:
+`02-google-flow/google-flow-prompt.txt`
 
-1. `[GOAL]`
-2. `[WORLD LOCK]`
-3. `[CHARACTER LOCK]`
-4. `[PSYCHOLOGICAL MOOD]`
-5. `[SCENE CONTENT]`
-6. `[CAMERA + COMPOSITION]`
-7. `[LIGHT + COLOR]`
-8. `[TEXT LOCK]`
-9. `[NEGATIVE LOCK]`
-10. `[FINAL CHECK]`
+Diese Datei enthält:
+- globale Bildwelt-/Charakterregeln
+- Text-/Cover-/Referenzregeln
+- alle Szenen des gesamten Videos
 
-Nur die Szenenwerte ändern sich. Die Struktur bleibt identisch.
-
-`npm run qa:flow-prompts` prüft diese Struktur bei v2-Prompts.
+Die Datei wird **nicht** in mehrere Master-Prompts oder Batch-Prompt-Dateien aufgeteilt. Batches betreffen nur die schrittweise Bildgenerierung aus derselben Datei.
 
 ## Text
 
@@ -82,9 +56,9 @@ Google Flow rendert geplanten sichtbaren Text direkt im Bild. Alle nicht geplant
 
 ## Referenzsystem
 
-Globale Referenzen liegen unter `assets/cinematic-human-behavior-world/` und decken unterschiedliche Charakter-, Licht-, Mood-, Umwelt-, Geld-/Status- und Manipulationssituationen ab.
+Globale Referenzen liegen unter `assets/cinematic-human-behavior-world/`.
 
-`03-bilder/01.png` bleibt Szene 01 + Cover, ist aber **nicht** der globale Style-Master.
+`03-bilder/01.png` bleibt Szene 01 + Cover. Die permanente Bildwelt kommt aus den Kanalregeln und Referenzen.
 
 ## YouTube-Struktur
 
@@ -104,8 +78,8 @@ youtube/TT.MM.JJJJ-thema/
 THEMA + QUELLEN + CLAIM-CHECK
 → Script/Hook
 → Visual Beats
-→ Szenentyp + Mood + Power Dynamic + Cast/Objekt + Ort + Kamera + Licht + Farbe + Textmodus
-→ fester Flow-Prompt-Contract
+→ Bildwelt-/Mood-/Szenenplanung
+→ eine google-flow-prompt.txt mit allen Szenen
 → Google Flow
 → Voice + Whisper Timings
 → Remotion
