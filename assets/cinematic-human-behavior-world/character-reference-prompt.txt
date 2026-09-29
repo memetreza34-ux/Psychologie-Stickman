@@ -1,34 +1,55 @@
 GOOGLE FLOW — CHARACTER REFERENCE CANDIDATE
 
-Create ONE 16:9 character-reference sheet for the channel's mature cinematic 2D psychology illustration world.
+Create exactly ONE clean 16:9 character-reference image for the channel's mature cinematic 2D psychology illustration world.
 
-CHARACTER
-One adult editorial STRICT STICKMAN shown in front view and clean side view only.
+PURPOSE
+This image is a candidate `character-identity` reference, not a video scene and not a character sheet/contact sheet.
+The goal is one highly readable recurring adult strict-stickman character that can be reused consistently across later generations.
+
+CHARACTER A
+One full-body adult editorial STRICT STICKMAN in a relaxed three-quarter standing pose.
 
 ANATOMY — HARD LOCK
 - large simple round/slightly oval head, but NOT chibi or mascot oversized
-- tiny minimal eyes and small simple mouth
+- tiny minimal eyes with subtle expressive eyebrows
+- small simple mouth
 - no realistic nose, ears or neck anatomy
 - small narrow clothed torso
 - narrow shoulders
 - very thin arms and legs, clearly thinner than normal cartoon-human limbs
 - simple no-finger hands
 - simple shoes
-- clothing must follow the narrow body and must NOT create a broad normal-human silhouette
+- clothing follows the narrow body and must NOT create a broad normal-human silhouette
 
-CLOTHING
-Muted dark-teal overshirt or hoodie, dark slim lower-body linework, simple light shoes. Clean adult styling, no cute details.
+IDENTITY CUES
+- small restrained dark hair silhouette
+- muted dark-teal overshirt or hoodie shape
+- charcoal lower-body linework
+- simple light shoes
+- mature calm neutral expression
+- readable adult posture, not cute or toy-like
 
 RENDERING
-Mature polished cinematic 2D editorial illustration. Clean dark slightly organic outlines, controlled soft cel shading, subtle texture, professional psychology-documentary / graphic-novel tone.
+Mature polished cinematic 2D editorial illustration.
+Clean dark slightly organic outlines, controlled soft cel shading, subtle texture, professional psychology-documentary tone, restrained graphic-novel influence, clear silhouette and premium finish.
 
 BACKGROUND
-Simple neutral studio/reference background only for this character sheet. Keep enough contrast to inspect the silhouette. This blank reference background is NOT the default for normal video scenes.
+Simple neutral reference background with enough contrast to inspect the silhouette and clothing accurately.
+This simple reference background is ONLY for the identity reference and is NOT the default for normal video scenes.
 
-OUTPUT
-One reference sheet only. Front and side view of the SAME character. No storyboard, no extra characters, no scene montage.
-
-NO TEXT.
+OUTPUT — HARD LOCK
+- exactly ONE standalone 16:9 reference image
+- one character only
+- one full-body three-quarter view only
+- no front/side multi-view sheet
+- no storyboard
+- no montage
+- no extra characters
+- no readable text
 
 HARD FAIL
-No chibi. No cute mascot. No children's cartoon. No broad shoulders. No thick arms or legs. No normal cartoon human body. No realistic anatomy. No 3D/Pixar. No anime. No whiteboard doodle.
+No chibi. No cute mascot. No children's cartoon. No broad shoulders. No thick arms or legs. No normal cartoon-human body. No realistic anatomy. No realistic fingers. No 3D/Pixar/CGI. No anime. No whiteboard doodle. No photorealism.
+
+APPROVAL NOTE
+Do not treat the generated result as authoritative automatically. It becomes usable only after it passes `rules/IMAGE_REFERENCE_LOCK.md` and `rules/STICKMAN_DNA.md`.
+If a second identity reference is later needed, use the approved first image as the character-identity anchor and create one additional clean compatible viewpoint — never a contradictory redesign.
