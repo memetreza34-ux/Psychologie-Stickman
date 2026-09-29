@@ -108,8 +108,13 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
 
     for (let i = 0; i < images.length; i += 1) {
       const start = images[i].index ?? 0;
-      const end = images[i + 1]?.index ?? text.indexOf('\nFINAL QA', start) > -1 ? text.indexOf('\nFINAL QA', start) : text.length;
-      const blockEnd = Number.isInteger(end) ? end : text.length;
+      const nextIndex = images[i + 1]?.index;
+      const finalQaIndex = text.indexOf('\nFINAL QA', start);
+      const blockEnd = Number.isInteger(nextIndex)
+        ? nextIndex
+        : finalQaIndex > -1
+          ? finalQaIndex
+          : text.length;
       const block = text.slice(start, blockEnd);
       const n = Number(images[i][1]);
 
@@ -118,7 +123,7 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
       const hasExactText = /Render exactly|Integrate exactly|render exactly|integrate exactly/iu.test(block);
       const forbidsExtraText = /No visible text|No other readable text|ZERO READABLE TEXT/iu.test(block);
       if (!hasExactText && !forbidsExtraText) warnings.push(`${rel}: BILD ${n} should explicitly prevent accidental readable text.`);
-      if (hasExactText && !/No other readable text|only readable text/iu.test(block) && n !== 3 && n !== 11) {
+      if (hasExactText && !/No other readable text|only readable text/iu.test(block)) {
         warnings.push(`${rel}: BILD ${n} has planned text but should explicitly forbid extra readable text.`);
       }
 
