@@ -7,6 +7,46 @@ FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
 FORMAT: 16:9 / 1920x1080
 
+IMAGE WORLD — READ THIS FIRST — ABSOLUTE HARD LOCK
+Before generating anything, internalize this visual world and keep it for the COMPLETE video.
+This is the most important creative instruction in the prompt.
+
+Target world:
+- mature cinematic 2D psychology-documentary / editorial graphic-novel illustration
+- adult strict-stickman characters, never cute/chibi/mascot
+- large simple round/oval heads, tiny minimal faces, narrow clothed torsos, narrow shoulders, very thin arms and legs, simple hands/shoes
+- rich believable environments with foreground, midground and background when useful
+- clean slightly organic dark outlines
+- controlled soft cel shading
+- subtle texture and believable spatial depth
+- purposeful cinematic camera framing
+- motivated light and shadow
+- premium adult editorial quality, not cheap explainer art
+
+The complete video must look like ONE coherent illustrated film made by the SAME illustrator for the SAME channel.
+Do not reinterpret the art style later.
+Do not let later batches drift into another character anatomy, cheaper rendering, different linework, different shading or another visual universe.
+
+Visual variety is wanted INSIDE this same world:
+- not every scene needs a person
+- use character scenes, object metaphors, schemas, comparisons, environmental/object-only illustrations and occasional text illustrations when they are the clearest choice
+- do not repeat the same red/burgundy/dark or teal/cream treatment across the video
+- vary location, camera, light, mood and local color according to the spoken beat
+- use visible text only when it materially improves understanding
+- if text is not needed: ZERO READABLE TEXT
+
+Hard reject:
+- normal cartoon humans
+- chibi/cute/mascot people
+- broad shoulders or thick cartoon limbs
+- 3D/Pixar/CGI
+- anime
+- whiteboard doodles
+- corporate vector art
+- photorealistic people/environments
+- empty cream background as the normal default
+- repetitive medium-shot character scenes as the default
+
 THIS IS THE ONLY GOOGLE FLOW MASTER PROMPT FOR THIS VIDEO.
 It contains all scenes. Do not split it into separate prompt files.
 
