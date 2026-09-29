@@ -1,0 +1,380 @@
+GOOGLE FLOW MASTER PROMPT — HALO-EFFEKT
+
+TOPIC: Warum ein starker erster Eindruck andere Urteile mitfärben kann
+VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
+FORMAT: 16:9 / 1920x1080
+
+THIS IS THE ONLY GOOGLE FLOW MASTER PROMPT FOR THIS VIDEO.
+It contains all 16 scenes. Do not split it into separate prompt files.
+
+OUTPUT MODE — FINAL SOURCE IMAGES ONLY — HARD LOCK
+Read the full master prompt so you understand style, continuity and all scene intentions, but generate only the current requested scene batch.
+Every scene number must become ONE SEPARATE standalone 16:9 image asset.
+NEVER create a storyboard, contact sheet, shot sheet, 3x3 panel grid, multi-scene collage or automatic video.
+NEVER combine different scene numbers inside one generated image.
+
+WORLD CONSISTENCY ACROSS THE COMPLETE VIDEO — HARD LOCK
+Treat Scene 01 through Scene 16 as one coherent high-quality illustrated film world.
+Batch boundaries must NEVER reset the art style.
+Preserve the same mature strict-stickman anatomy, linework, outline behavior, soft cel shading, texture/detail level, environment quality, depth and rendering language across every batch.
+Every frame must feel created by the SAME illustrator for the SAME channel and the SAME film world.
+Mood, location, camera, light and palette may change per beat, but illustration identity and quality may not drift.
+
+VISUAL WORLD — HARD LOCK
+Mature cinematic 2D psychology-documentary / editorial graphic-novel illustration.
+Clean slightly organic dark outlines, controlled soft cel shading, subtle texture, believable spatial depth, purposeful camera framing and motivated light.
+Simple Stickmen live inside rich scene-specific environments. Do not default to empty cream/off-white space or sterile generic rooms.
+
+STRICT STICKMAN CAST — HARD LOCK
+EVERY visible human uses the same mature strict-stickman anatomy family:
+- large simple round/oval head, not chibi/mascot oversized
+- tiny minimal face
+- no realistic nose, ears or neck anatomy
+- small narrow clothed torso
+- narrow shoulders
+- very thin arms and legs
+- simple no-finger hands
+- simple shoes
+Clothing must not create normal cartoon-human body volume.
+
+HARD FAIL
+No cute/chibi/mascot people. No children's-cartoon look. No normal cartoon humans. No broad shoulders. No thick limbs. No realistic anatomy. No 3D/Pixar/CGI. No anime. No whiteboard doodles. No corporate-vector people. No photorealistic environment.
+
+REPRESENTATION VARIETY — HARD LOCK
+Do not force every beat into a character scene.
+Choose the clearest form for each spoken beat: CHARACTER_SCENE, SCHEMA_EXPLAINER, OBJECT_METAPHOR, COMPARE_VISUAL or TEXT_ILLUSTRATION.
+Humans are optional. Never add a Stickman merely to fill space.
+Avoid long runs of similar medium-shot character scenes, repeated schemas, repeated text cards or the same room pattern.
+
+COLOR + MOOD VARIETY — HARD LOCK
+Do NOT default the complete video to one red/burgundy/dark treatment or one teal/cream treatment.
+Color and light follow the current beat. Use varied daylight, cool blue, amber/gold, graphite, olive, neutral green and restrained darker moments where appropriate.
+Keep one illustration world while palette, lighting and camera vary naturally.
+
+TEXT + SCHEMA RESTRAINT — HARD LOCK
+Visible text is not decoration. Use it only when it materially improves understanding.
+Do NOT repeat the spoken sentence as visible text.
+If PLANNED GERMAN TEXT is NONE: ZERO READABLE TEXT.
+Schemas are used only where mechanism/structure genuinely benefits from them and must remain cinematic, never PowerPoint.
+
+VISIBLE TEXT — GOOGLE FLOW ONLY
+Only render exact German text explicitly listed in the current scene.
+Speech context is NEVER visible text.
+No random signs, screens, documents, logos, packaging or pseudo-text.
+Typography must be clean, professional, high-contrast and inside safe margins.
+
+COVER — SCENE 01
+Scene 01 is cover + first visual beat.
+The image must visually communicate that one strong positive first impression can color several separate judgments.
+Use one dominant social interaction and one clear visual mechanism. Compact asymmetric title zone; no full-width top banner.
+
+REFERENCE POLICY
+Use approved `assets/cinematic-human-behavior-world/` references only for anatomy, linework, cel shading, texture, rendering quality and mood-appropriate light/color.
+Use the same reference logic across every batch.
+Do not clone exact room, person, pose, camera or text unless local continuity requires it.
+
+GENERATION WORKFLOW — HARD LOCK
+INITIAL RUN:
+1. Generate SCENE 01 ONLY.
+2. Generate exactly 3 SEPARATE Scene-01 cover candidates.
+3. Each candidate is its own standalone 16:9 image, never a three-panel sheet.
+4. STOP for user approval.
+5. Keep exactly one approved winner.
+6. Rename it immediately to `01.png`.
+7. Place it in the single final image folder `03-bilder/`.
+8. Discard the other two cover candidates.
+
+AFTER SCENE 01 APPROVAL:
+- generate remaining scenes in batches of EXACTLY 5 scene numbers whenever at least 5 remain
+- final batch contains the remaining 1–4 scenes
+- generate the whole current five-scene batch in one batch operation/turn, NOT deliberately one scene at a time
+- every requested scene still becomes its own separate standalone 16:9 image
+- preserve the SAME approved visual world and rendering quality across every batch
+- immediately rename every accepted image to its matching `NN.png`
+- place every accepted image directly into the SAME flat folder `03-bilder/`
+- no batch subfolders, no separate cover folder, no duplicate accepted versions
+- run internal QA after each batch for world consistency, anatomy, representation variety, unnecessary text, palette repetition and scene clarity
+- regenerate only failed images
+- after a batch passes QA, continue automatically with the next five-scene batch from THIS SAME MASTER PROMPT
+- NEVER offer to turn the images into a video; the external pipeline handles the final video
+
+BATCHES FOR THIS VIDEO:
+Batch 1: SCENE 02, 03, 04, 05, 06 -> five separate assets named 02.png through 06.png.
+Batch 2: SCENE 07, 08, 09, 10, 11 -> five separate assets named 07.png through 11.png.
+Batch 3: SCENE 12, 13, 14, 15, 16 -> five separate assets named 12.png through 16.png.
+
+SCENE 01
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Warum wirkt jemand plötzlich kompetenter, nur weil er auf Anhieb sympathisch, souverän oder attraktiv erscheint?
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: DUO
+VISUAL IDEA: One strong positive first impression colors several separate judgments.
+VISUAL TASK: In a modern interview room, a warm confident applicant is the focal person while the evaluator on the cooler side visually begins to rate several separate neutral criteria more positively; show the spillover through subtle warm light reaching distinct abstract evaluation cards, not magical fantasy.
+CAMERA: strong thumbnail-ready medium-wide three-quarter shot with applicant foreground-left and evaluator/right-side cards clearly readable as shapes
+LIGHTING MOOD: CLEAR; warm amber applicant key light against cool navy-blue evaluator depth, restrained gold spill
+CHARACTER DIRECTION: two mature strict-stickman adults; applicant calm and open, evaluator attentive; same anatomy family
+COVER TOPIC TERM: HALO-EFFEKT
+COVER VISUAL THESIS: A positive first impression from one visible trait spills into several separate judgments about the same person.
+TITLE PLACEMENT: compact asymmetric safe title zone in upper-right negative space, away from faces and evaluation cards
+PLANNED GERMAN TEXT:
+- "WARUM EIN EINDRUCK ALLES FÄRBT"
+- "HALO-EFFEKT"
+PROMPT:
+Premium cinematic psychology thumbnail in a believable modern interview room. Warm, composed strict-stickman applicant on one side; evaluator on the cooler side with several separate abstract evaluation cards subtly receiving the same warm positive tint. The image must instantly communicate one impression coloring multiple judgments. Integrate exactly "WARUM EIN EINDRUCK ALLES FÄRBT" and smaller "HALO-EFFEKT" in the reserved asymmetric title zone. NO OTHER READABLE TEXT. Generate SCENE 01 ONLY, then STOP.
+
+SCENE 02
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein einzelner starker Eindruck kann weitere Urteile über dieselbe Person färben, obwohl diese Eigenschaften gar nicht zusammengehören müssen.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: One colored lens tints several otherwise independent neutral judgments.
+VISUAL TASK: A single cobalt-blue/gold lens or glass filter casts one tint across several separate neutral objects/cards that are clearly unrelated categories.
+CAMERA: close-medium cinematic tabletop/object composition with foreground and depth
+LIGHTING MOOD: CLEAR; neutral environment with focused cobalt and warm gold light
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Cinematic object metaphor: one colored glass lens casts the same tint across several separate neutral evaluation objects on a real tabletop, making unrelated judgments visually share one color. Rich depth, no people. ZERO READABLE TEXT.
+
+SCENE 03
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Dieses Muster nennt man Halo-Effekt.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: One central impression radiates outward into several separate judgments.
+VISUAL TASK: Create one elegant illustrated mechanism: central glowing ring/impression node influencing three distinct neutral assessment nodes, same film-world, not a flat infographic.
+CAMERA: clean frontal cinematic schema with depth and subtle material texture
+LIGHTING MOOD: CLEAR; deep teal/blue field with restrained warm gold focal ring
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "HALO-EFFEKT"
+PROMPT:
+Cinematic illustrated mechanism with one central impression node radiating toward three distinct assessment nodes. Integrate exactly "HALO-EFFEKT" as the only label. Keep dimensional light, texture and film-world depth. NO OTHER READABLE TEXT.
+
+SCENE 04
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Vereinfacht gesagt: Eine auffällige Eigenschaft wirft einen „Heiligenschein“ auf andere Bewertungen.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: A bright ring of light spills onto several separate objects and changes how they look.
+VISUAL TASK: A suspended warm ring light illuminates one dominant object and its glow spills onto three different nearby neutral objects, visually explaining the metaphor without text.
+CAMERA: low close-medium object shot with layered depth
+LIGHTING MOOD: dusky violet environment, amber ring light, natural object colors
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+A warm circular light source creates a halo-like spill over several different neutral objects in a dusky violet illustrated interior. One strong property visually colors the rest. Mature cinematic object metaphor, no people. ZERO READABLE TEXT.
+
+SCENE 05
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Stell dir ein Bewerbungsgespräch vor: Eine Person tritt freundlich, ruhig und selbstsicher auf.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+VISUAL IDEA: A confident friendly first impression forms naturally in a real interview.
+VISUAL TASK: Show an applicant entering or sitting in a modern daylight interview room, calm open posture and steady eye contact, while the interviewer responds positively but professionally.
+CAMERA: wide diagonal two-person office shot with table foreground, windows and plants in depth
+LIGHTING MOOD: CLEAR; soft daylight, natural wood, muted blue and green
+CHARACTER DIRECTION: two distinct mature strict-stickman adults, same anatomy family; no exaggerated smiles
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Believable modern job interview in daylight. Calm friendly strict-stickman applicant with composed posture and steady eye contact; interviewer responds attentively. Rich office depth with wood, plants and window light. ZERO READABLE TEXT.
+
+SCENE 06
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Noch bevor du ihre tatsächliche Leistung kennst, kann sie dadurch auch kompetenter oder zuverlässiger wirken.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: The evaluator's positive impression spreads into separate judgments before hard evidence is reviewed.
+VISUAL TASK: Interviewer alone after the meeting, looking at three separate abstract evaluation cards that all lean positively while the actual work-sample folder remains unopened nearby.
+CAMERA: close-medium over-shoulder desk shot
+LIGHTING MOOD: UNEASY; cool glass-office blue with restrained green and warm card highlights
+CHARACTER DIRECTION: same interviewer from Scene 05, strict-stickman continuity; thoughtful, not gullible
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Same interviewer after the interview, reviewing several abstract evaluation cards while a work-sample folder remains unopened beside them. The positive spillover is visible before evidence is checked. Mature cinematic office depth. ZERO READABLE TEXT.
+
+SCENE 07
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Auch ein negativer Gesamteindruck kann einzelne Urteile in die andere Richtung mitfärben.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: One dark first mark spreads across several previously neutral judgments.
+VISUAL TASK: A single dark ink drop lands on one tile and slowly stains several separate neutral assessment tiles nearby without turning the scene into horror.
+CAMERA: close top-three-quarter tabletop composition
+LIGHTING MOOD: UNEASY; graphite and cool blue with one dark ink accent
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Cinematic tabletop metaphor: one dark ink drop spreads from a single first mark across several separate neutral assessment tiles. Controlled cool blue and graphite lighting, no horror, no people. ZERO READABLE TEXT.
+
+SCENE 08
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Schon Edward Thorndike beschrieb 1920, dass Bewertungen verschiedener Eigenschaften derselben Person auffällig stark zusammenhingen.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: Separate rating categories move together instead of staying independent.
+VISUAL TASK: An archival illustrated rating sheet with one simple worker portrait and several distinct unlabeled rating columns rising similarly, surrounded by subtle 1920s paper/desk context; no modern infographic look.
+CAMERA: angled archival desk close-up
+LIGHTING MOOD: CLEAR; sepia paper, graphite ink, muted olive and navy shadows
+CHARACTER DIRECTION: NONE; portrait remains simplified stickman-family if human-like
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Archival 1920s-inspired illustrated rating sheet on a real desk: one simplified portrait and several separate unlabeled rating columns moving unusually together. Sepia, graphite, muted olive and navy. Cinematic historical-document feel, not PowerPoint. ZERO READABLE TEXT.
+
+SCENE 09
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+In einer bekannten Studie von Richard Nisbett und Timothy Wilson sahen Studierende denselben Dozenten entweder warm und freundlich oder kalt und distanziert.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: GROUP
+VISUAL IDEA: Students watch a filmed instructor in a research setting.
+VISUAL TASK: 1970s-inspired psychology lab/classroom with several students watching a CRT showing one simplified instructor; the room should feel researched and believable, not retro parody.
+CAMERA: medium-wide from behind/side of students toward CRT
+LIGHTING MOOD: CLEAR; warm amber/olive room with cool CRT glow
+CHARACTER DIRECTION: all visible people use mature strict-stickman anatomy; students varied through clothing and posture only
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+1970s-inspired behavioral research room with several strict-stickman students watching a CRT recording of one instructor. Warm amber and olive room, cool screen glow, believable academic detail. ZERO READABLE TEXT.
+
+SCENE 10
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Danach bewerteten sie sogar Dinge wie sein Aussehen, seine Gesten und seinen Akzent unterschiedlich.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: SPLIT
+SOCIAL DENSITY: DUO
+VISUAL IDEA: The same instructor is perceived differently after warm versus cold global impressions.
+VISUAL TASK: One intentional split comparison for this single beat: same instructor identity and setting in both halves, left warm/friendly demeanor, right cold/distant demeanor; below/around each half, identical abstract trait markers shift in opposite directions.
+CAMERA: designed split with matching framing, not a storyboard sheet
+LIGHTING MOOD: left warm gold, right cool blue, same retro rendering language
+CHARACTER DIRECTION: same strict-stickman instructor in both halves, same clothing and proportions, demeanor only changes
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Single coherent split comparison: the exact same strict-stickman instructor, same clothing and framing, warm/friendly on the left and cold/distant on the right; identical abstract trait markers shift with the overall impression. Same retro film-world across both halves. ZERO READABLE TEXT.
+
+SCENE 11
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Besonders interessant: Viele bemerkten nicht, wie stark ihr Gesamteindruck diese Einzelurteile beeinflusst hatte.
+SCENE TYPE: OBJECT_METAPHOR
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: A transparent lens quietly bends separate judgments without the viewer noticing the distortion source.
+VISUAL TASK: Several neutral assessment cards viewed through a large transparent curved lens; the cards look shifted through the lens while the surrounding reality stays straight.
+CAMERA: close conceptual shot with lens foreground and cards in midground
+LIGHTING MOOD: UNEASY; indigo transparent glass, grey-blue environment, small amber highlight
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Large transparent curved lens in the foreground subtly distorts several neutral assessment cards behind it while the surrounding scene remains straight. Quiet cinematic metaphor for unnoticed influence. ZERO READABLE TEXT.
+
+SCENE 12
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Der Halo-Effekt bedeutet nicht, dass ein guter erster Eindruck automatisch falsch ist.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: DUO
+VISUAL IDEA: A positive interaction can be genuine; the issue is overgeneralizing from it.
+VISUAL TASK: Two people have a genuinely pleasant professional interaction in balanced daylight while the evaluator keeps one neutral evidence folder separate rather than rejecting the positive impression.
+CAMERA: medium side shot with open room depth
+LIGHTING MOOD: CLEAR; balanced daylight with soft green and blue, no dramatic bias color
+CHARACTER DIRECTION: two mature strict-stickman adults, relaxed but restrained
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Balanced daylight professional interaction between two strict-stickman adults. The positive exchange looks genuine while an evidence folder remains clearly separate, showing that a good first impression is not automatically false. ZERO READABLE TEXT.
+
+SCENE 13
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Problematisch wird es, wenn wir einzelne Eigenschaften nicht mehr getrennt prüfen.
+SCENE TYPE: SCHEMA_EXPLAINER
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: Separate criteria should remain separate rather than collapsing into one global score.
+VISUAL TASK: Three clearly separated cinematic assessment lanes/cards, each with its own independent marker; no single glow should connect them.
+CAMERA: clean angled tabletop/mechanism view with dimensional depth
+LIGHTING MOOD: CLEAR; cool blue with restrained teal and amber separators
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "KOMPETENZ"
+- "ERFAHRUNG"
+- "ZUVERLÄSSIGKEIT"
+PROMPT:
+Cinematic assessment mechanism with three clearly separated criteria lanes, each evaluated independently. Render exactly "KOMPETENZ", "ERFAHRUNG" and "ZUVERLÄSSIGKEIT". Dimensional film-world lighting, not corporate infographic. NO OTHER READABLE TEXT.
+
+SCENE 14
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Ein einfacher Schutz ist deshalb, Kriterien vorher festzulegen und nacheinander möglichst unabhängig zu bewerten.
+SCENE TYPE: CHARACTER_SCENE
+COMPOSITION: STANDARD
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: An evaluator reviews predetermined criteria one by one before forming an overall judgment.
+VISUAL TASK: One evaluator at a calm daylight desk checks separate criterion cards in sequence; no overall score is visible yet.
+CAMERA: medium three-quarter workspace shot
+LIGHTING MOOD: HOPE; warm daylight, natural wood, muted green and blue
+CHARACTER DIRECTION: mature strict-stickman evaluator, focused calm posture
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+Calm daylight workspace. One strict-stickman evaluator reviews separate criterion cards one by one before making any overall judgment. Warm natural materials and clear visual order. ZERO READABLE TEXT.
+
+SCENE 15
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Vergleiche konkrete Belege: Arbeitsproben, Verhalten, Daten oder mehrere Situationen statt nur den ersten Eindruck.
+SCENE TYPE: COMPARE_VISUAL
+COMPOSITION: CONTRAST
+SOCIAL DENSITY: SOLO
+VISUAL IDEA: One glowing first impression is outweighed by several concrete evidence sources.
+VISUAL TASK: Same evaluator between one warm glowing first-impression portrait/card on the left and multiple distinct evidence sources on the right: work sample, task result, behavior observation, data sheet with abstract marks.
+CAMERA: medium-wide contrast composition with strong left-right hierarchy
+LIGHTING MOOD: HOPE; warm left impression glow versus cool-neutral evidence side, balanced overall
+CHARACTER DIRECTION: one strict-stickman evaluator in center, attention turning toward evidence side
+PLANNED GERMAN TEXT: NONE
+PROMPT:
+One evaluator stands between a single warm glowing first-impression card and several concrete evidence sources: work sample, task result, observed behavior and abstract data sheet. The evaluator turns toward the broader evidence. ZERO READABLE TEXT.
+
+SCENE 16
+SPEECH CONTEXT — DO NOT RENDER AS TEXT:
+Wenn dir jemand sofort „gut in allem“ vorkommt, frag dich: Welche eine Eigenschaft färbt gerade den Rest meines Urteils?
+SCENE TYPE: TEXT_ILLUSTRATION
+COMPOSITION: STANDARD
+SOCIAL DENSITY: NONE
+VISUAL IDEA: Final self-check question over a lens separating one strong impression from several neutral judgments.
+VISUAL TASK: Deep navy-charcoal closing illustration with one restrained warm-gold lens/ring moving away from several neutral blue-grey assessment cards, creating visual separation and clarity.
+CAMERA: clean cinematic closing composition with generous safe space
+LIGHTING MOOD: HOPE; deep navy-charcoal with restrained warm gold and soft blue depth
+CHARACTER DIRECTION: NONE
+PLANNED GERMAN TEXT:
+- "WAS FÄRBT MEIN URTEIL?"
+PROMPT:
+Calm cinematic closing illustration: one warm-gold lens/ring separates from several neutral blue-grey assessment cards, suggesting clearer independent judgment. Integrate exactly "WAS FÄRBT MEIN URTEIL?" in a clean editorial safe zone. NO OTHER READABLE TEXT.
+
+FINAL QA
+- one master prompt file only
+- 16 contiguous scene definitions
+- Scene 01 first as 3 separate cover candidates, then stop
+- after approval use three five-scene batches: 02–06, 07–11, 12–16
+- every scene = separate standalone 16:9 image asset
+- accepted images renamed immediately to NN.png
+- all accepted images stay together in one flat `03-bilder/` folder
+- every batch remains inside the SAME coherent premium visual world
+- no style reset or quality drop between batches
+- representation is varied; humans are not forced into every frame
+- no unnecessary text or schema filler
+- no mechanical repeated red/burgundy/dark or teal/cream treatment
+- no storyboard/contact sheet/multi-scene grid
+- every visible human matches mature STYLIZED_STICKMAN_CAST_V2
+- no cute/chibi/mascot drift
+- no normal cartoon-human anatomy
+- believable rich environments where characters appear
+- one clear beat per image
+- exact German text only when planned
+- ZERO READABLE TEXT otherwise
+- no 3D/Pixar/anime/photorealistic/corporate-vector drift
