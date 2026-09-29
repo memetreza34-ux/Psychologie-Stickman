@@ -8,7 +8,7 @@ Character system: `STYLIZED_STICKMAN_CAST_V2`
 
 ## 1. Unified human cast — absolute rule
 
-Every visible human or human-like person belongs to the exact same stylized stickman-inspired anatomy family.
+Every visible human or human-like person belongs to the exact same stylized strict-stickman anatomy family.
 
 This applies to:
 - main characters
@@ -23,19 +23,38 @@ A scene may contain very different personalities and moral roles, but never diff
 ## 2. Anatomy lock
 
 Every visible person uses:
-- large round or slightly oval simplified head
+- large round or slightly oval simplified head, but not mascot/chibi oversized
 - minimal expressive eyes
 - optional simple eyebrows
 - small simple mouth
 - no realistic nose, ears or facial anatomy
-- compact simplified torso with visible clothing
+- no realistic neck anatomy
+- small narrow simplified torso with visible clothing
+- narrow shoulder line; clothing may not create a broad normal-human upper body
 - very slim shaped arms and legs with slight illustrated width
-- no one-pixel bare-line limbs as the normal design
+- limbs must remain clearly thinner than normal cartoon-human limbs
 - simplified hands without realistic finger anatomy
 - clear simplified shoes/feet
 - readable silhouette and body language
 
-## 3. Emotional and moral range
+## 3. Mature proportion lock — NON-NEGOTIABLE
+
+The channel uses adult editorial stickmen, not cute mascots.
+
+Reject:
+- chibi proportions
+- baby-like oversized heads
+- short rounded plush arms/legs
+- broad shoulders
+- large soft hoodie bodies
+- thick calves/forearms
+- toy-like feet or hands
+- blush/cute facial styling
+- children's-book posing
+
+Clothing wraps the narrow stickman body; clothing must never turn the figure into a conventional cartoon human.
+
+## 4. Emotional and moral range
 
 The character family must support the full human-behavior channel.
 
@@ -66,7 +85,7 @@ Characters are NOT required to look attractive, friendly or morally good.
 
 The same anatomy family may look pleasant in one scene and disturbing in another through pose, expression, lighting, clothing, blocking and framing.
 
-## 4. Psychological role expression
+## 5. Psychological role expression
 
 ### Neutral / everyday
 Open posture, normal eye contact, natural spacing, readable ordinary clothing.
@@ -86,7 +105,7 @@ Separated from group, edge or distant placement, reduced visual support, colder 
 ### Crowd / group pressure
 Same anatomy family across everyone. Group direction, repetition, clustering and gaze can create pressure without turning people into faceless generic vector icons.
 
-## 5. Villain-cliché prohibition
+## 6. Villain-cliché prohibition
 
 Do not default to:
 - glowing red eyes
@@ -109,7 +128,7 @@ Psychological threat should usually come from:
 - environmental control
 - another person's reaction
 
-## 6. Individuality without style drift
+## 7. Individuality without style drift
 
 Individualize through:
 - hoodie, jacket, shirt, sweater, coat, suit-like simplified outfit or other role-relevant clothing
@@ -124,7 +143,7 @@ Individualize through:
 
 Clothing may communicate role and status, but should remain simplified and illustrated rather than fashion-rendered.
 
-## 7. Background people
+## 8. Background people
 
 Background people remain in the same family.
 
@@ -139,8 +158,9 @@ Not allowed:
 - normal cartoon humans behind a stickman main character
 - generic corporate vector people
 - mixed body styles in one crowd
+- background figures becoming chunky/cute because they are smaller
 
-## 8. Human presence is optional
+## 9. Human presence is optional
 
 Not every frame needs a character.
 
@@ -148,7 +168,7 @@ Prefer no-human representation when a schema, object, environment, comparison or
 
 Do not insert a character just to fill empty space.
 
-## 9. Continuity
+## 10. Continuity
 
 If the same person returns in connected scenes, preserve:
 - head shape
@@ -160,13 +180,30 @@ If the same person returns in connected scenes, preserve:
 
 Their mood, posture and lighting may change while identity remains stable.
 
-## 10. Hard fail
+## 11. Character-reference approval gate
+
+A generated character/reference sheet is NOT automatically authoritative.
+
+Approve it only if:
+- anatomy follows Sections 2–3
+- front/side views keep the same proportions
+- torso stays narrow
+- limbs stay very thin
+- head does not become chibi/mascot-like
+- clothing does not add normal human body volume
+- rendering looks mature/editorial rather than children's-cartoon cute
+
+If a reference fails this gate, do not use it to steer later scenes.
+
+## 12. Hard fail
 
 Regenerate if any visible human becomes:
 - bare black-line whiteboard stickman
 - normal full cartoon-human anatomy
 - semi-realistic or realistic human
 - generic corporate person
+- cute/chibi/mascot character
+- broad-shouldered or thick-limbed cartoon body
 - detailed realistic hands/fingers
 - realistic facial anatomy
 - 3D/Pixar/CGI
@@ -175,6 +212,6 @@ Regenerate if any visible human becomes:
 
 Also fail if a dark role is communicated only by cheap villain clichés when subtler psychological direction would be clearer.
 
-## 11. Compact character lock
+## 13. Compact character lock
 
-`UNIFIED STICKMAN HUMAN CAST V2: Every visible human — main, supporting and background — must use the exact same stylized stickman-inspired anatomy family: large simple round/oval head, minimal expressive face, compact clothed torso, very slim shaped illustrated limbs with slight width, simple hands and shoes. Characters may look neutral, warm, vulnerable, anxious, dominant, cold, manipulative, deceptive, intimidating, isolated or authoritative through clothing, pose, expression, silhouette, framing and light while keeping identical anatomy logic. Never mix normal cartoon humans, realistic people or another family. Do not use cheap monster-villain clichés by default.`
+`MATURE STRICT STICKMAN CAST V2: Every visible human — main, supporting and background — uses the same adult editorial stickman anatomy: large simple round/oval head without chibi exaggeration, minimal face, small narrow clothed torso, narrow shoulders, very slim arms and legs, simple no-finger hands and simple shoes. Clothing must not create normal cartoon-human body volume. Express role and emotion through clothing, pose, gaze, silhouette, spacing, framing and light. Never use cute mascot proportions, normal cartoon humans, realistic people, 3D/Pixar/anime or mixed anatomy families.`
