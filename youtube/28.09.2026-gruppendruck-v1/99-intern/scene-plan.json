@@ -5,21 +5,32 @@
   "aspectRatio": "16:9",
   "visualSystem": "CINEMATIC_HUMAN_BEHAVIOR_V2",
   "characterSystem": "STYLIZED_STICKMAN_CAST_V2",
-  "promptMode": "COMPACT_3_IMAGE_BATCH_TEST",
-  "flowPromptFile": "youtube/28.09.2026-gruppendruck-v1/02-google-flow/flow-3-image-prompts.txt",
+  "promptMode": "SINGLE_MASTER_PROMPT_SEPARATE_IMAGE_BATCHES",
+  "flowPromptFile": "youtube/28.09.2026-gruppendruck-v1/02-google-flow/google-flow-prompt.txt",
   "scriptFile": "youtube/28.09.2026-gruppendruck-v1/01-script/script.txt",
   "coverHeadline": "WARUM DU DER GRUPPE FOLGST",
   "imageCount": 9,
+  "coverCandidates": 3,
   "batchSize": 3,
+  "maxBatchSize": 5,
+  "individualImagesOnly": true,
+  "forbidStoryboardContactSheet": true,
+  "forbidAutomaticVideo": true,
+  "batches": [
+    {"kind":"cover_candidates","scenes":[1],"outputs":3,"stopForApproval":true},
+    {"kind":"regular","scenes":[2,3,4],"outputs":3},
+    {"kind":"regular","scenes":[5,6,7],"outputs":3},
+    {"kind":"regular","scenes":[8,9],"outputs":2}
+  ],
   "scenes": [
-    {"scene":1,"speech":"Warum zweifelst du plötzlich an dir, nur weil alle anderen etwas anderes sagen?","image":"01.png","batch":1},
-    {"scene":2,"speech":"Stell dir vor, du sitzt mit vier Menschen in einem Raum. Alle wählen dieselbe Antwort.","image":"02.png","batch":1},
-    {"scene":3,"speech":"Du bist dir eigentlich sicher, dass sie falsch ist. Trotzdem beginnt dein Kopf zu fragen: Vielleicht liege ich daneben.","image":"03.png","batch":1},
-    {"scene":4,"speech":"Das nennt man Konformität.","image":"04.png","batch":2},
-    {"scene":5,"speech":"Wir orientieren uns an Gruppen, weil andere Menschen für uns Informationen liefern und weil Widerspruch sozial unangenehm sein kann.","image":"05.png","batch":2},
-    {"scene":6,"speech":"Genau das zeigten auch klassische Experimente von Solomon Asch: Menschen schlossen sich manchmal einer offensichtlich falschen Mehrheitsantwort an.","image":"06.png","batch":2},
-    {"scene":7,"speech":"Der Druck wird besonders stark, wenn die Gruppe geschlossen wirkt und du allein dagegenstehst.","image":"07.png","batch":3},
-    {"scene":8,"speech":"Schon eine einzige Person, die ebenfalls widerspricht, kann die Situation verändern. Plötzlich bist du nicht mehr allein.","image":"08.png","batch":3},
-    {"scene":9,"speech":"Deshalb lohnt sich eine einfache Frage: Was hätte ich gedacht, bevor ich die Meinung der anderen gehört habe?","image":"09.png","batch":3}
+    {"scene":1,"speech":"Warum zweifelst du plötzlich an dir, nur weil alle anderen etwas anderes sagen?","image":"01.png"},
+    {"scene":2,"speech":"Stell dir vor, du sitzt mit vier Menschen in einem Raum. Alle wählen dieselbe Antwort.","image":"02.png"},
+    {"scene":3,"speech":"Du bist dir eigentlich sicher, dass sie falsch ist. Trotzdem beginnt dein Kopf zu fragen: Vielleicht liege ich daneben.","image":"03.png"},
+    {"scene":4,"speech":"Das nennt man Konformität.","image":"04.png"},
+    {"scene":5,"speech":"Wir orientieren uns an Gruppen, weil andere Menschen für uns Informationen liefern und weil Widerspruch sozial unangenehm sein kann.","image":"05.png"},
+    {"scene":6,"speech":"Genau das zeigten auch klassische Experimente von Solomon Asch: Menschen schlossen sich manchmal einer offensichtlich falschen Mehrheitsantwort an.","image":"06.png"},
+    {"scene":7,"speech":"Der Druck wird besonders stark, wenn die Gruppe geschlossen wirkt und du allein dagegenstehst.","image":"07.png"},
+    {"scene":8,"speech":"Schon eine einzige Person, die ebenfalls widerspricht, kann die Situation verändern. Plötzlich bist du nicht mehr allein.","image":"08.png"},
+    {"scene":9,"speech":"Deshalb lohnt sich eine einfache Frage: Was hätte ich gedacht, bevor ich die Meinung der anderen gehört habe?","image":"09.png"}
   ]
 }
