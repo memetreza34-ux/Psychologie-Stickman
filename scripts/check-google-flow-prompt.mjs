@@ -24,9 +24,15 @@ if (!fs.existsSync(templatePath)) failures.push('YouTube Flow template is missin
 else {
   const template = fs.readFileSync(templatePath, 'utf8');
   if (!/CINEMATIC_HUMAN_BEHAVIOR_V2/iu.test(template)) failures.push('YouTube Flow template must use CINEMATIC_HUMAN_BEHAVIOR_V2.');
+  if (!/FINAL_SEPARATE_IMAGE_ASSETS_V2/iu.test(template)) failures.push('YouTube Flow template must use FINAL_SEPARATE_IMAGE_ASSETS_V2.');
   if (!/OUTPUT MODE\s*[—-]\s*FINAL SOURCE IMAGES ONLY/iu.test(template)) failures.push('YouTube Flow template lacks FINAL SOURCE IMAGES output mode.');
   if (!/NEVER create a storyboard/iu.test(template)) failures.push('YouTube Flow template must explicitly forbid storyboard output.');
   if (!/3 SEPARATE Scene-01 cover candidates/iu.test(template)) failures.push('YouTube Flow template must request 3 separate Scene-01 cover candidates.');
+  if (!/EXACTLY 5 scene numbers|exactly 5 scene numbers/iu.test(template)) failures.push('YouTube Flow template must use five-scene regular batches.');
+  if (!/final batch contains the remaining 1[–-]4 scenes/iu.test(template)) failures.push('YouTube Flow template must define the final remainder batch as 1-4 scenes.');
+  if (!/NN\.png/iu.test(template)) failures.push('YouTube Flow template must require immediate NN.png scene naming.');
+  if (!/03-bilder\//iu.test(template)) failures.push('YouTube Flow template must collect accepted images in 03-bilder/.');
+  if (!/no batch subfolders/iu.test(template)) failures.push('YouTube Flow template must forbid batch subfolders.');
   if (!/cute\/chibi\/mascot/iu.test(template)) failures.push('YouTube Flow template must guard against cute/chibi/mascot drift.');
 }
 
@@ -39,6 +45,8 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
   scenes.forEach((m, i) => { if (Number(m[1]) !== i + 1) failures.push(`${rel}: scenes must be contiguous.`); });
 
   const isHumanBehaviorV2 = /CINEMATIC_HUMAN_BEHAVIOR_V2/iu.test(text);
+  const isFlowOutputV2 = /FINAL_SEPARATE_IMAGE_ASSETS_V2/iu.test(text);
+
   if (isHumanBehaviorV2) {
     if (!/OUTPUT MODE\s*[—-]\s*FINAL SOURCE IMAGES ONLY/iu.test(text)) failures.push(`${rel}: v2 prompt lacks FINAL SOURCE IMAGES output mode.`);
     if (!/NEVER create a storyboard/iu.test(text)) failures.push(`${rel}: v2 prompt must explicitly forbid storyboard output.`);
@@ -49,6 +57,15 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
     if (!/cute\/chibi\/mascot|cute[^\n]*chibi[^\n]*mascot/iu.test(text)) failures.push(`${rel}: v2 prompt lacks mature-character anti-chibi guard.`);
     if (!/empty cream|cream\/off-white|off-white/iu.test(text)) warnings.push(`${rel}: v2 prompt should block blank cream/off-white default scenes.`);
     if (/Create a visual storyboard/iu.test(text)) failures.push(`${rel}: contains storyboard-generation wording that can collapse scenes into one sheet.`);
+  }
+
+  if (isFlowOutputV2) {
+    if (!/EXACTLY 5 scene numbers|exactly 5 scene numbers|batches of exactly 5 scenes/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 requires five-scene regular batches.`);
+    if (!/remaining 1[–-]4 scenes|verbleibende(?:n)? 1[–-]4/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must define a 1-4 scene final remainder batch.`);
+    if (!/one batch operation|one batch step|einen Batch-Schritt|einem Batch-Schritt/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must request generation as a batch operation rather than deliberate one-by-one generation.`);
+    if (!/NN\.png/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must require NN.png naming.`);
+    if (!/03-bilder\//iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must collect accepted images in 03-bilder/.`);
+    if (!/no batch subfolders|keine Batch-Unterordner/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must forbid batch subfolders.`);
   }
 
   let textMoments = 0;
