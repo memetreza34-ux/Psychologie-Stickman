@@ -16,20 +16,21 @@ Danach lesen:
 5. `rules/STICKMAN_DNA.md`
 6. `rules/PREMIUM_VISUAL_LOCK.md`
 7. `rules/FLOW_OUTPUT_MODE.md`
-8. `rules/REPRESENTATION_VARIETY_LOCK.md`
-9. `rules/FORMAT_LOCK.md`
-10. `rules/YOUTUBE_THEMEN_SYSTEM.md`
-11. `rules/YOUTUBE_STYLE_LOCK.md`
-12. `rules/SCRIPT_HOOK_LOCK.md`
-13. `rules/IMAGE_REFERENCE_LOCK.md`
-14. `rules/COVER_LOCK.md`
-15. `rules/TEXT_OVERLAY_LOCK.md`
-16. `rules/FLOW_TEXT_STYLE_LOCK.md`
-17. `rules/COMPOSITION_VARIATION_LOCK.md`
-18. `rules/SOCIAL_SCENE_LOCK.md`
-19. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-20. `rules/PRODUCTION_FORMAT_RULES.md`
-21. `rules/YOUTUBE_EXPORT_PACKAGE.md`
+8. `rules/FLOW_PROMPT_ARCHITECTURE.md`
+9. `rules/REPRESENTATION_VARIETY_LOCK.md`
+10. `rules/FORMAT_LOCK.md`
+11. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+12. `rules/YOUTUBE_STYLE_LOCK.md`
+13. `rules/SCRIPT_HOOK_LOCK.md`
+14. `rules/IMAGE_REFERENCE_LOCK.md`
+15. `rules/COVER_LOCK.md`
+16. `rules/TEXT_OVERLAY_LOCK.md`
+17. `rules/FLOW_TEXT_STYLE_LOCK.md`
+18. `rules/COMPOSITION_VARIATION_LOCK.md`
+19. `rules/SOCIAL_SCENE_LOCK.md`
+20. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+21. `rules/PRODUCTION_FORMAT_RULES.md`
+22. `rules/YOUTUBE_EXPORT_PACKAGE.md`
 
 ## Themenwelt
 
@@ -57,6 +58,8 @@ Jede sichtbare menschliche Figur benutzt dieselbe **mature/adult editorial Stick
 - sehr dünne geformte Arme und Beine
 - einfache Hände ohne realistische Finger
 - einfache Schuhe/Füße
+
+Individualität darf innerhalb derselben Anatomie über einfache Haare, Augenbrauen, kleine Augen-/Mundvarianten, Brille/Accessoire, Kleidung, Haltung, Blickrichtung und Rolle entstehen.
 
 HARD FAIL:
 - cute/chibi/mascot
@@ -106,6 +109,7 @@ Nicht jedes Bild braucht eine Figur. Erlaubte Hauptformen:
 - `OBJECT_METAPHOR`
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
+- environment/object-only illustration
 
 ## Repräsentations-Abwechslung — HARD LOCK FÜR NEUE VIDEOS
 
@@ -139,15 +143,13 @@ Zusätzlich:
 `02-google-flow/google-flow-prompt.txt`
 
 Diese eine Datei enthält gemeinsam:
-- globale Bildwelt-/Stickman-Regeln
-- Flow-Ausgabe-/Batchregeln
-- Format und Stil
-- Charakter-/Kontinuitätsregeln
-- Mood-/Farbregeln, wenn nötig
-- Textregeln
-- Coverregeln
-- Referenzregeln
-- **alle Szenen des gesamten Videos in derselben Datei**
+- Aufgabe/Output
+- einen kompakten gemeinsamen Channel-Style
+- Character-/Reference-Regeln
+- Video-World-/Continuity-Lock
+- Cover-/5er-Batch-/Dateinamen-/Ordnerregeln
+- Textregel
+- **alle Bilder des gesamten Videos in derselben Datei**
 
 **Nicht erlaubt:**
 - mehrere Flow-Prompt-Dateien für ein Video
@@ -156,23 +158,44 @@ Diese eine Datei enthält gemeinsam:
 
 Ein Batch bedeutet nur, dass Flow aus derselben Master-Datei schrittweise Bilder erzeugt. Die Master-Datei selbst wird nicht aufgeteilt.
 
-### Szenenblöcke
+## Google Flow — NATURAL PROMPT ARCHITECTURE HARD LOCK
 
-Die Szenen bleiben kompakt. Übliche Felder:
-- `SCENE NN`
-- `SPEECH CONTEXT — DO NOT RENDER AS TEXT:`
-- `SCENE TYPE:`
-- `COMPOSITION:`
-- `SOCIAL DENSITY:`
-- `VISUAL IDEA:`
-- `VISUAL TASK:`
-- `CAMERA:`
-- `LIGHTING MOOD:`
-- `CHARACTER DIRECTION:`
-- `PLANNED GERMAN TEXT:`
-- `PROMPT:`
+Verbindlich: `rules/FLOW_PROMPT_ARCHITECTURE.md` / `NATURAL_FLOW_MASTER_V1`.
 
-Nicht jede Szene braucht zusätzliche technische Unterblöcke. Der konkrete Bildprompt bleibt kurz, eindeutig und Flow-tauglich.
+### Interne Planung
+
+`99-intern/` darf ausführlich planen mit:
+- Speech/Voice-over Beat
+- Scene Type
+- Visual Function
+- Composition
+- Social Density
+- Mood / Power Dynamic
+- Visual Idea / Task
+- Camera
+- Lighting / Color
+- Character Direction
+- Continuity
+- Text Policy
+- QA
+
+### Finaler Flow-Prompt
+
+Diese technischen Felder werden **nicht als Formular in jeden finalen Bildblock kopiert**.
+
+Nach den globalen Blöcken besteht der finale Prompt aus:
+
+```text
+BILD 01
+[natürliche direkte Bild-Regieanweisung]
+
+BILD 02
+[natürliche direkte Bild-Regieanweisung]
+```
+
+Ein guter Einzelprompt klingt wie eine Regieanweisung an einen Illustrator: Kamera/Framing + Hauptmotiv/Relation + sichtbare Handlung/Mechanismus + Umgebung + Licht/Mood + Continuity falls nötig + exakter deutscher Text nur falls geplant.
+
+Globaler Stil, Anatomie und Verbote werden einmal am Anfang definiert und nicht in jedem Bild wiederholt.
 
 ## Google Flow — OUTPUT HARD LOCK FÜR NEUE VIDEOS
 
@@ -182,28 +205,30 @@ Der Masterprompt erzeugt **finale Einzelbilder**, keinen Storyboard-Kontaktbogen
 
 ### Initial
 1. Ganze Master-Datei lesen.
-2. `SCENE 01 ONLY` generieren.
-3. Genau **3 getrennte Scene-01-Cover-Kandidaten** erzeugen.
+2. `BILD 01 ONLY` generieren.
+3. Genau **3 getrennte Cover-Kandidaten** für Bild 01 erzeugen.
 4. Jeder Kandidat = eigenes 16:9-Bild, niemals 3er-Panel.
 5. STOP für Nutzerfreigabe.
-6. Gewinner sofort in `01.png` umbenennen und in `03-bilder/` ablegen.
+6. Der Nutzer wählt einen Gewinner.
+7. Gewinner sofort in `01.png` umbenennen und in `03-bilder/` ablegen.
 
 ### Danach
-- immer 5 Szenennummern pro Batch, solange mindestens 5 Szenen übrig sind
-- letzter Batch = verbleibende 1–4 Szenen
+- erst nach Nutzerwahl des Covers weiterarbeiten
+- immer 5 Bildnummern pro Batch, solange mindestens 5 Bilder übrig sind
+- letzter Batch = verbleibende 1–4 Bilder
 - kompletten 5er-Batch als einen Batch-Schritt erzeugen, nicht absichtlich Bild für Bild
-- jede Szenennummer = eigene 16:9-Bilddatei
+- jede Bildnummer = eigene 16:9-Bilddatei
 - akzeptierte Bilder sofort passend `NN.png` umbenennen
 - alle akzeptierten Bilder direkt in denselben flachen Ordner `03-bilder/` legen
 - keine Batch-Unterordner und kein separater Cover-Ordner
 - nach Batch-QA automatisch mit dem nächsten 5er-Batch fortfahren
 - nur fehlerhafte Bilder einzeln regenerieren
-- mehrere Szenennummern niemals in Storyboard, Kontaktbogen, 3x3-Grid oder Collage zusammenfassen
+- mehrere Bildnummern niemals in Storyboard, Kontaktbogen, 3x3-Grid oder Collage zusammenfassen
 - Flow niemals anbieten lassen, aus den Bildern direkt ein Video zu erstellen
 
-Ein SPLIT/CONTRAST/MONTAGE innerhalb EINER Szene bleibt erlaubt, wenn alle Teile denselben gesprochenen Beat erklären.
+Ein SPLIT/CONTRAST/MONTAGE innerhalb EINES Bildes bleibt erlaubt, wenn alle Teile denselben gesprochenen Beat erklären.
 
-**Bestandsschutz:** `FINAL_SEPARATE_IMAGE_ASSETS_V2` und `REPRESENTATION_VARIETY_V1` gelten für neue/zukünftige Projekte. Bestehende YouTube-Projekte nicht rückwirkend ändern, außer der Nutzer verlangt ausdrücklich die Migration dieses Projekts.
+**Bestandsschutz:** `FINAL_SEPARATE_IMAGE_ASSETS_V2`, `REPRESENTATION_VARIETY_V1` und `NATURAL_FLOW_MASTER_V1` gelten für neue/zukünftige Projekte. Bestehende YouTube-Projekte nicht rückwirkend ändern, außer der Nutzer verlangt ausdrücklich die Migration dieses Projekts.
 
 ## Textsystem — GOOGLE FLOW ONLY
 
@@ -211,48 +236,47 @@ Für neue YouTube-Projekte gilt:
 
 **Sämtlicher sichtbarer Text wird direkt von Google Flow in die jeweiligen Bilder gerendert. Remotion erzeugt keinen sichtbaren YouTube-Text.**
 
-### Szene 01
+### Bild 01
 - exakter deutscher Cover-Titel direkt in `01.png`
 - normalerweise 2–7 Wörter
 - außer ausdrücklich geplanten Mechanismus-/Preislabels kein zusätzlicher lesbarer Text
 
-### Ausgewählte spätere Textszenen
+### Ausgewählte spätere Textbilder
 - nur ausdrücklich geplanter exakter deutscher Text
 - nur wenn Text das Verständnis wirklich verbessert
 
-### Alle anderen Szenen
+### Alle anderen Bilder
 - `ZERO READABLE TEXT`
 - keine zufälligen UI-, Poster-, Verpackungs-, Dokument- oder Bildschirmtexte
 
-Der `SPEECH CONTEXT` darf niemals sichtbar gerendert werden.
+Voice-over-/Speech-Kontext darf niemals sichtbar gerendert werden.
 
-## Szene 01 — COVER
+## Bild 01 — COVER
 
-`03-bilder/01.png = SCENE 01 + COVER/THUMBNAIL`.
+`03-bilder/01.png = BILD 01 + COVER/THUMBNAIL`.
 
-Szene 01:
+Bild 01:
 - zeigt den Hook-Beat korrekt
 - ist stärker komponiert als eine normale Szene
 - besitzt ein dominantes Hauptmotiv
 - hat schnelle Thumbnail-Lesbarkeit
 - benutzt dieselbe permanente Kanalwelt
 
-Die permanente Bildwelt kommt aus `rules/VISUAL_SYSTEM.md`, `rules/STICKMAN_DNA.md` und den freigegebenen Referenzen. Szene 01 darf diese Regeln nicht überschreiben.
+Die permanente Bildwelt kommt aus `rules/VISUAL_SYSTEM.md`, `rules/STICKMAN_DNA.md` und den freigegebenen Referenzen. Bild 01 darf diese Regeln nicht überschreiben.
 
 ## Referenz-Workflow
 
 Permanente Referenzen:
 `assets/cinematic-human-behavior-world/`
 
-Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.md` und `rules/STICKMAN_DNA.md` besteht. Ein chibi-/cartoonartiges Character Sheet darf nie als Kanal-Master weiterverwendet werden.
+Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.md` und `rules/STICKMAN_DNA.md` besteht. Ein chibi-/cartoonartiges Character-Bild darf nie als Kanal-Master weiterverwendet werden.
 
-1. Passende freigegebene Kanal-/Mood-Referenzen wählen.
-2. Szene 01 aus der einen `google-flow-prompt.txt` generieren.
-3. STOP und Nutzerfreigabe für Bild 01.
-4. Danach 5er-Batches aus derselben Master-Datei, letzter Batch ggf. kleiner.
-5. Nach jedem Batch interne QA einschließlich Welt-/Stil- und Repräsentations-Abwechslung.
-6. Nur fehlerhafte Bilder regenerieren.
-7. Nach PASS automatisch fortsetzen.
+Verwende Referenzen nach Rolle:
+- style-only
+- character-identity
+- environment-continuity
+
+Ein kleiner Satz sauberer Referenzen ist besser als ein großes widersprüchliches Pack. Nicht jede Produktion braucht jede Referenz.
 
 ## FORMAT HARD LOCK
 
@@ -285,7 +309,7 @@ Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.
 - `05-export/`
 - `99-intern/`
 
-**Es bleibt genau eine Google-Flow-Datei mit allen Szenen.**
+**Es bleibt genau eine Google-Flow-Datei mit allen Bildern.**
 
 ## Metadaten neuer Projekte
 
@@ -298,6 +322,7 @@ Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
   "representationPolicy": "REPRESENTATION_VARIETY_V1",
   "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
+  "flowPromptPolicy": "NATURAL_FLOW_MASTER_V1",
   "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
   "visibleTextLanguage": "de",
   "visibleTextRenderer": "GOOGLE_FLOW",
