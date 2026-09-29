@@ -9,13 +9,17 @@
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
   "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
   "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
+  "tone": "mature adult psychology-documentary editorial graphic-novel illustration",
   "character": {
-    "head": "large simple round or slightly oval head",
+    "head": "large simple round or slightly oval head, never mascot or chibi oversized",
     "face": "minimal expressive eyes, optional eyebrows, small mouth, no realistic facial anatomy",
-    "torso": "compact simplified clothed torso",
-    "limbs": "very slim shaped illustrated limbs with slight width",
-    "hands": "simple stylized hands, no realistic finger anatomy",
+    "torso": "small narrow simplified clothed torso",
+    "shoulders": "narrow; clothing must not create broad normal-human shoulder volume",
+    "limbs": "very slim shaped illustrated arms and legs, clearly thinner than conventional cartoon-human limbs",
+    "hands": "simple stylized no-finger hands",
     "feet": "clear simplified shoes or feet",
+    "matureProportionsRequired": true,
+    "cuteMascotProportionsAllowed": false,
     "individuality": [
       "clothing",
       "simple hair cue",
@@ -79,12 +83,14 @@
   ],
   "world": {
     "locations": "believable everyday, social, institutional, commercial, financial, night and tense environments chosen for the beat",
-    "depth": "foreground-midground-background when useful",
-    "detail": "moderate meaningful environmental detail",
-    "lighting": "adaptive motivated cinematic illustrated lighting",
+    "depth": "foreground-midground-background by default when useful",
+    "detail": "moderate meaningful scene-specific environmental detail",
+    "lighting": "adaptive motivated cinematic illustrated lighting with intentional focal contrast",
     "shading": "soft cel shading with stronger graphic shadows when mood requires",
     "outlines": "clean slightly organic dark outlines",
     "texture": "controlled subtle texture",
+    "blankBackgroundDefaultAllowed": false,
+    "emptyCreamBackgroundOnlyWhenSemanticallyIntentional": true,
     "darkSceneRule": "dark scenes remain spatially believable unless deliberate abstraction is clearer"
   },
   "colorBehavior": {
@@ -98,14 +104,15 @@
       "burgundy",
       "deep green",
       "restrained warm gold",
-      "cream"
+      "warm neutral"
     ],
     "rules": [
       "controlled not candy-colored",
-      "no grey beige wash as default",
+      "no grey beige cream wash as default",
       "strongest useful contrast on focal subject",
       "background may be quieter",
       "mood mode influences saturation and temperature",
+      "do not repeat identical teal-and-cream balance across the video",
       "color never replaces psychological composition"
     ]
   },
@@ -117,9 +124,12 @@
     "TEXT_ILLUSTRATION": 0.05
   },
   "textModes": ["cover", "keyword", "schema", "comparison", "text_illustration"],
+  "outputModePolicy": "rules/FLOW_OUTPUT_MODE.md",
   "hardFails": [
     "bare line stickman or whiteboard doodle",
     "conventional full cartoon human",
+    "cute chibi mascot or toy-like character",
+    "broad shoulders or thick normal cartoon-human limbs",
     "realistic human anatomy",
     "supporting or background human from a different character family",
     "mixed anatomy families inside one crowd",
@@ -131,11 +141,14 @@
     "PowerPoint-style schema",
     "unnecessary decorative human when a no-human visual is clearer",
     "material style drift between scenes",
+    "empty cream background used as generic default",
+    "generic sterile environment when a believable location is required",
     "random readable text",
     "mood contradicts current beat",
     "required power dynamic is visually absent",
     "dark scene becomes meaningless black void",
-    "cheap villain cliche replaces psychological direction"
+    "cheap villain cliche replaces psychological direction",
+    "multiple scene numbers combined into one storyboard/contact-sheet asset"
   ],
   "referencePackPath": "assets/cinematic-human-behavior-world/"
 }
