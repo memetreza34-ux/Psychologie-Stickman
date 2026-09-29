@@ -113,11 +113,10 @@ const premiumScenes = scenes.map((scene, index) => {
     lightingMood,
     colorDirection,
     premiumCharacterDirection,
-    promptContract: 'FLOW_SCENE_PROMPT_CONTRACT_V1',
     visualTask:
       `${cleanedVisualTask} ` +
       `V2 WORLD HARD LOCK: CINEMATIC_HUMAN_BEHAVIOR_V2 with STYLIZED_STICKMAN_CAST_V2. ` +
-      `MOOD HARD LOCK: ${mood.moodMode}, intensity ${mood.moodIntensity}, power dynamic ${mood.powerDynamic}. ` +
+      `MOOD: ${mood.moodMode}, intensity ${mood.moodIntensity}, power dynamic ${mood.powerDynamic}. ` +
       `Communicate psychology through posture, blocking, camera, environment, negative space, motivated light and controlled color; do not change illustration family. ` +
       `${colorDirection} ${premiumCharacterDirection}`,
   };
@@ -139,7 +138,6 @@ if (isV2) {
   output.visualSystem = 'CINEMATIC_HUMAN_BEHAVIOR_V2';
   output.characterSystem = 'STYLIZED_STICKMAN_CAST_V2';
   output.moodPolicy = 'ADAPTIVE_PSYCHOLOGICAL_MOOD_V1';
-  output.promptContract = 'FLOW_SCENE_PROMPT_CONTRACT_V1';
   output.environmentPolicy = 'BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2';
   output.renderingPolicy = 'SOFT_CEL_SHADED_FILM_FRAME_V2';
   output.representationPolicy = 'MIXED_HUMAN_BEHAVIOR_VISUALS_V2';
