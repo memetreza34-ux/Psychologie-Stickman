@@ -148,7 +148,7 @@ Die Szenen bleiben kompakt. Übliche Felder:
 
 Nicht jede Szene braucht zusätzliche technische Unterblöcke. Der konkrete Bildprompt bleibt kurz, eindeutig und Flow-tauglich.
 
-## Google Flow — OUTPUT HARD LOCK
+## Google Flow — OUTPUT HARD LOCK FÜR NEUE VIDEOS
 
 Verbindlich: `rules/FLOW_OUTPUT_MODE.md`.
 
@@ -160,17 +160,24 @@ Der Masterprompt erzeugt **finale Einzelbilder**, keinen Storyboard-Kontaktbogen
 3. Genau **3 getrennte Scene-01-Cover-Kandidaten** erzeugen.
 4. Jeder Kandidat = eigenes 16:9-Bild, niemals 3er-Panel.
 5. STOP für Nutzerfreigabe.
-6. Gewinner = `03-bilder/01.png`.
+6. Gewinner sofort in `01.png` umbenennen und in `03-bilder/` ablegen.
 
 ### Danach
-- Standardbatch = 3 Szenen
-- Hard-Max = 5 Szenen
+- immer 5 Szenennummern pro Batch, solange mindestens 5 Szenen übrig sind
+- letzter Batch = verbleibende 1–4 Szenen
+- kompletten 5er-Batch als einen Batch-Schritt erzeugen, nicht absichtlich Bild für Bild
 - jede Szenennummer = eigene 16:9-Bilddatei
+- akzeptierte Bilder sofort passend `NN.png` umbenennen
+- alle akzeptierten Bilder direkt in denselben flachen Ordner `03-bilder/` legen
+- keine Batch-Unterordner und kein separater Cover-Ordner
+- nach Batch-QA automatisch mit dem nächsten 5er-Batch fortfahren
+- nur fehlerhafte Bilder einzeln regenerieren
 - mehrere Szenennummern niemals in Storyboard, Kontaktbogen, 3x3-Grid oder Collage zusammenfassen
-- Flow niemals anbieten lassen, aus dem Storyboard direkt ein Video zu erstellen
-- bei „weiter“ nächsten Batch aus derselben Master-Datei erzeugen
+- Flow niemals anbieten lassen, aus den Bildern direkt ein Video zu erstellen
 
 Ein SPLIT/CONTRAST/MONTAGE innerhalb EINER Szene bleibt erlaubt, wenn alle Teile denselben gesprochenen Beat erklären.
+
+**Bestandsschutz:** `FINAL_SEPARATE_IMAGE_ASSETS_V2` gilt nur für neue/zukünftige Projekte. Bestehende YouTube-Projekte nicht rückwirkend ändern, außer der Nutzer verlangt ausdrücklich die Migration dieses Projekts.
 
 ## Textsystem — GOOGLE FLOW ONLY
 
@@ -215,7 +222,7 @@ Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.
 1. Passende freigegebene Kanal-/Mood-Referenzen wählen.
 2. Szene 01 aus der einen `google-flow-prompt.txt` generieren.
 3. STOP und Nutzerfreigabe für Bild 01.
-4. Danach kleine Batches aus derselben Master-Datei.
+4. Danach 5er-Batches aus derselben Master-Datei, letzter Batch ggf. kleiner.
 5. Nach jedem Batch interne QA.
 6. Nur fehlerhafte Bilder regenerieren.
 7. Nach PASS automatisch fortsetzen.
@@ -263,7 +270,7 @@ Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.
   "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
   "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
-  "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V1",
+  "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
   "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
   "visibleTextLanguage": "de",
   "visibleTextRenderer": "GOOGLE_FLOW",
