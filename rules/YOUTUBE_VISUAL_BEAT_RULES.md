@@ -10,13 +10,13 @@ Typical target remains about 10–16 spoken words per beat; clarity wins over wo
 
 ## Every beat plans
 
-Every scene must contain:
+Every scene may plan:
 - `sceneType`: CHARACTER_SCENE / SCHEMA_EXPLAINER / OBJECT_METAPHOR / COMPARE_VISUAL / TEXT_ILLUSTRATION
 - `compositionType`: standard / split / contrast / montage
 - `socialDensity`: solo / duo / group / none
 - `moodMode`: CLEAR / UNEASY / DARK / POWER / MONEY / ISOLATION / HOPE
 - `moodIntensity`: integer 0–4
-- `powerDynamic`: NEUTRAL / SELF_VS_SELF / PEER_TO_PEER / DOMINANT_VS_TARGET / AUTHORITY_VS_GROUP / GROUP_VS_INDIVIDUAL / SYSTEM_VS_INDIVIDUAL / STATUS_CONTRAST / NONE
+- `powerDynamic`
 - `visualIdea`
 - `subject`
 - `actionOrRelation`
@@ -29,7 +29,7 @@ Every scene must contain:
 - `textPolicy`
 - exact planned Flow texts when needed
 
-No scene should reach Phase 2 without mood mode, intensity and power dynamic.
+Mood/power fields belong to visual planning. They do **not** require a separate verbose prompt-contract structure inside every Flow scene.
 
 ## Mood selection
 
@@ -47,17 +47,7 @@ Do not choose DARK merely because the overall video is about a dark subject. Eac
 
 ## Power relation
 
-When the sentence describes influence, hierarchy, control, pressure, exclusion or status, the frame must visibly encode the relation through:
-- blocking
-- scale
-- foreground/background placement
-- distance
-- posture
-- gaze
-- camera angle
-- environmental control
-
-Do not rely only on symbols or text when a human relationship is the actual point.
+When the sentence describes influence, hierarchy, control, pressure, exclusion or status, the frame should visibly encode the relation through blocking, scale, distance, posture, gaze, camera or environment.
 
 ## Choosing a scene type
 
@@ -89,30 +79,16 @@ All visible text must be exact German planned in Phase 1.
 `NONE` means `ZERO READABLE TEXT`.
 Speech context is never visible text.
 
-## Fixed Phase 2 prompt contract
+## Phase 2 — existing structure stays
 
-Every scene uses `FLOW_SCENE_PROMPT_CONTRACT_V1` from `rules/FLOW_PROMPT_CONTRACT.md`.
+Each video uses exactly one:
 
-The exact field order and exact `PROMPT:` sub-block order are mandatory for every scene. Use `NONE` instead of dropping a field.
+`02-google-flow/google-flow-prompt.txt`
 
-## Phase 2
+This one master file contains the global visual rules and all scene prompts for the full video.
 
-Flow applies `CINEMATIC_HUMAN_BEHAVIOR_V2` to each beat.
+Scene prompts should stay concise and practical. They may use the familiar scene fields such as speech context, scene type, composition, visual idea/task, camera, lighting, character direction, planned text and a short `PROMPT:`.
 
-It may vary:
-- character identity
-- role
-- place
-- camera
-- mood
-- lighting
-- local color
-- representation type
+Do not split one video into multiple Flow master files or batch prompt files.
 
-while preserving:
-- same Stickman anatomy family
-- same outline language
-- same cel-shading/rendering family
-- same overall world polish
-
-Do not copy a previous room, pose, mood or composition simply for consistency. Consistency means same world, not same scene.
+Flow applies `CINEMATIC_HUMAN_BEHAVIOR_V2` to every beat while preserving the same strict Stickman anatomy family and overall illustration language.
