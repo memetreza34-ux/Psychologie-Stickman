@@ -3,7 +3,7 @@
 **STATUS: BINDING — HARD LOCK**
 
 `03-bilder/01.png` is always:
-1. Scene 01 / first hook beat
+1. Scene/Bild 01 / first hook beat
 2. Cover / thumbnail source
 
 It is **not** the global channel style master. Global style comes from `rules/VISUAL_SYSTEM.md` and approved files in `assets/cinematic-human-behavior-world/`.
@@ -14,13 +14,15 @@ A cover is not approved merely because it is attractive.
 
 The viewer should understand the central mechanism, conflict or behavioral question in roughly one second, preferably even before reading the headline.
 
-Every new project defines:
+Every new project defines internally:
 - `coverSemanticPolicy: "TOPIC_EXPLICIT_VISUAL_THESIS_V1"`
 - `coverTopicTerm`: internal exact topic/concept name
 - `coverVisualThesis`: one concrete sentence describing what the image must visibly show
 - `coverMechanismVisible: true`
 - `coverLayoutPolicy: "INTEGRATED_THUMBNAIL_COMPOSITION_V1"`
 - `coverTitlePlacementPolicy: "COMPOSITION_FIRST_NO_TOP_BANNER_V1"`
+
+These planning fields belong in `99-intern/`; the final Flow prompt expresses them naturally inside `BILD 01`.
 
 ## 2. Topic term is internal metadata, not mandatory extra text
 
@@ -42,7 +44,7 @@ Use the exact topic term visibly only when it materially improves instant unders
 
 ## 3. Visual mechanism before decoration
 
-Scene 01 must show the mechanism, relationship, contrast or behavior that defines the topic.
+Bild 01 must show the mechanism, relationship, contrast or behavior that defines the topic.
 
 Prefer:
 - same object / different valuation
@@ -106,23 +108,37 @@ No random additional readable text.
 
 Text economy matters: fewer strong words are preferred over redundant labeling.
 
-## 7. Scene-01 planning requirements
+## 7. Internal planning vs final Flow prompt
 
-Scene 01 must contain:
-- concrete `visualIdea`
-- concrete `visualTask`
+Intern, Bild 01 must still define:
+- concrete visual idea
+- concrete visual task
 - topic-defining visual relationship
-- `moodMode`
-- `moodIntensity`
-- `powerDynamic`
+- mood mode/intensity
+- power dynamic when relevant
 - exact planned German cover text
 - title-safe composition direction
 
-The scene follows the same `FLOW_SCENE_PROMPT_CONTRACT_V1` as every other scene. Do not add ad-hoc field names that break the fixed scene structure.
+But new videos use `NATURAL_FLOW_MASTER_V1`.
 
-## 8. Approval
+Therefore the final `google-flow-prompt.txt` does **not** dump these as technical form fields. `BILD 01` is a natural direct art-direction paragraph that visibly communicates the mechanism, composition, environment/light and exact cover text.
 
-Scene 01 approval checks:
+## 8. Cover generation gate — HARD LOCK
+
+For new videos:
+1. Read the complete master prompt.
+2. Generate **BILD 01 only**.
+3. Generate exactly **3 separate 16:9 cover candidates**.
+4. Never combine the three candidates into one panel/contact sheet.
+5. STOP and wait for the user to choose one.
+6. Keep exactly the chosen candidate.
+7. Rename it immediately to `01.png`.
+8. Place it directly in `03-bilder/`.
+9. Only then may the regular 5-image batches begin.
+
+## 9. Approval
+
+Bild 01 approval checks:
 - central mechanism/question is identifiable
 - visual thesis is concrete, not generic
 - world/character quality matches v2
@@ -134,9 +150,9 @@ Scene 01 approval checks:
 - no redundant text
 - exact planned German text only
 
-If any item fails, regenerate Scene 01 before later images.
+If any item fails, regenerate Bild 01 before later images.
 
-## 9. Metadata
+## 10. Metadata
 
 Required for new projects:
 - `isCover: true`
@@ -150,7 +166,7 @@ Required for new projects:
 - `coverLayoutPolicy: "INTEGRATED_THUMBNAIL_COMPOSITION_V1"`
 - `coverTitlePlacementPolicy: "COMPOSITION_FIRST_NO_TOP_BANNER_V1"`
 
-## 10. Priority
+## 11. Priority
 
 **Topic/mechanism clarity > text quantity > visual decoration.**
 
