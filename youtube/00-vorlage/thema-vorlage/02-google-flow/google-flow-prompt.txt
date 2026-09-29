@@ -4,6 +4,7 @@ TOPIC: [VIDEO-THEMA]
 VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
 CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
 FORMAT: 16:9 / 1920x1080
 
 THIS IS THE ONLY GOOGLE FLOW MASTER PROMPT FOR THIS VIDEO.
@@ -51,10 +52,32 @@ Avoid repeated centered lineups, sterile generic rooms, flat cheap explainer sli
 MOOD + COLOR
 Choose light, shadow, saturation and framing for the current spoken beat only. The world may become clear, uneasy, dark, powerful, financial, isolated or hopeful without changing illustration style.
 Useful recurring colors may include deep navy, graphite, muted teal, burgundy, coral, amber, deep green and warm neutral. Do not force every color into every frame.
+Do NOT default the complete video to one repeated red/burgundy/dark treatment, one teal/cream treatment or one fixed accent palette. Color and light must adapt to the current beat while remaining inside the same illustration world.
 
 CHARACTER PRESENCE
 A human is not required in every image. Use CHARACTER_SCENE, SCHEMA_EXPLAINER, OBJECT_METAPHOR, COMPARE_VISUAL or TEXT_ILLUSTRATION according to clarity.
 Schemas and metaphors must still look like the same cinematic 2D world, not PowerPoint.
+
+REPRESENTATION VARIETY — HARD LOCK
+Do not force every beat into a character scene.
+Choose the clearest visual form for the current spoken beat before deciding whether a person is needed.
+Normal longform guidance:
+- CHARACTER_SCENE: about 45–60%
+- SCHEMA_EXPLAINER: about 10–20%
+- OBJECT_METAPHOR: about 10–20%
+- COMPARE_VISUAL: about 10–20%
+- TEXT_ILLUSTRATION: normally 0–10%
+These are guidance ranges, not quotas. Clarity wins.
+
+Prefer no-human frames when an object, environment, comparison or mechanism communicates the beat faster.
+Never add a Stickman merely to fill empty space.
+Avoid long repetitive runs of similar medium-shot character scenes, repeated red/dark frames, repeated text cards or repeated schemas.
+When adjacent beats allow it, vary representation, camera, environment and mood while preserving the same visual world.
+
+TEXT + SCHEMA RESTRAINT — HARD LOCK
+Visible text is not decoration. Use it only when it materially improves understanding: cover/title, exact psychology term, important number/price, short comparison label, short schema label or one memorable concept phrase.
+Do NOT place visible text on every image. Do NOT repeat the spoken sentence as on-screen text. If text is not necessary: ZERO READABLE TEXT.
+Use schemas only when a mechanism, sequence, relation or comparison genuinely benefits from structural visualization. Do not create diagram frames as filler or long schema runs.
 
 VISIBLE TEXT — GOOGLE FLOW ONLY
 Only render the exact German text explicitly listed in the current scene.
@@ -96,7 +119,7 @@ AFTER SCENE 01 APPROVAL:
 - immediately rename every accepted image to its matching two-digit filename: Scene 02 -> `02.png`, Scene 03 -> `03.png`, etc.
 - place every accepted image directly into the SAME flat folder `03-bilder/`
 - no batch subfolders, no separate cover folder, no duplicate accepted versions
-- run internal QA after each batch, including world/style continuity against already accepted images
+- run internal QA after each batch, including world/style continuity and representation/color repetition against already accepted images
 - regenerate only failed images
 - after a batch passes QA, continue automatically with the next five-scene batch from THIS SAME MASTER PROMPT
 - do not wait for extra user confirmation between successful regular batches
@@ -149,6 +172,9 @@ FINAL QA
 - all accepted images end together in one flat `03-bilder/` folder
 - every batch remains inside the SAME coherent premium visual world
 - no style reset or quality drop between batches
+- visual representation is varied; characters are not forced into every frame
+- no unnecessary text or schema filler
+- no mechanical repeated red/burgundy/dark or teal/cream treatment across the whole video
 - NEVER storyboard/contact-sheet/multi-scene grid
 - every visible human matches mature STYLIZED_STICKMAN_CAST_V2
 - no cute/chibi/mascot drift
