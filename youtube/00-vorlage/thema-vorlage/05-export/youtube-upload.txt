@@ -1,0 +1,66 @@
+========================================
+YOUTUBE UPLOAD
+========================================
+
+TITEL:
+[FINALER YOUTUBE-TITEL]
+
+
+========================================
+BESCHREIBUNG / CAPTION
+========================================
+
+[KOMPLETTE FERTIGE YOUTUBE-BESCHREIBUNG]
+
+
+========================================
+QUELLEN / LINKS
+========================================
+
+[QUELLEN / LINKS ODER NONE]
+
+
+========================================
+KAPITEL
+========================================
+
+[KAPITEL MIT ZEITMARKEN ODER NONE]
+
+
+========================================
+TAGS
+========================================
+
+[tag1, tag2, tag3]
+
+
+========================================
+HASHTAGS
+========================================
+
+[#Psychologie #Verhalten]
+
+
+========================================
+ANGEHEFTETER KOMMENTAR
+========================================
+
+[FERTIGER KOMMENTAR ODER NONE]
+
+
+========================================
+CAPTIONS / SPRECHERTEXT
+========================================
+
+[BEREINIGTER FINALER DEUTSCHER SPRECHERTEXT]
+
+
+========================================
+VIDEO-DATEN
+========================================
+
+Thema: [THEMA]
+Sprache: Deutsch
+Format: YouTube 16:9
+Video: final.mp4
+Thumbnail: thumbnail.png
