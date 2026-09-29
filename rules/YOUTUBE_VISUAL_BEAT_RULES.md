@@ -8,9 +8,9 @@ Split semantically when the spoken idea changes: new action, mechanism, example,
 
 Typical target remains about 10–16 spoken words per beat; clarity wins over word count.
 
-## Every beat plans
+## Every beat plans internally
 
-Every scene may plan:
+Every scene may plan in `99-intern/`:
 - `sceneType`: CHARACTER_SCENE / SCHEMA_EXPLAINER / OBJECT_METAPHOR / COMPARE_VISUAL / TEXT_ILLUSTRATION
 - `compositionType`: standard / split / contrast / montage
 - `socialDensity`: solo / duo / group / none
@@ -29,7 +29,7 @@ Every scene may plan:
 - `textPolicy`
 - exact planned Flow texts when needed
 
-Mood/power fields belong to visual planning. They do **not** require a separate verbose prompt-contract structure inside every Flow scene.
+These are planning/QC fields. They do **not** need to appear as technical labels in the final Flow image prompt.
 
 ## Mood selection
 
@@ -94,7 +94,7 @@ Normal real-life scenes use believable scene-specific environments and depth. Em
 
 ## Text policy
 
-Allowed:
+Allowed internally:
 - `FLOW_EXACT_COVER_TEXT`
 - `FLOW_EXACT_KEYWORD_TEXT`
 - `FLOW_EXACT_SCHEMA_TEXT`
@@ -106,32 +106,54 @@ Schema: optional short title + up to 3 short labels.
 Comparison: optional short title + up to 2 short labels.
 All visible text must be exact German planned in Phase 1.
 `NONE` means `ZERO READABLE TEXT`.
-Speech context is never visible text.
+Speech/voice-over context is never visible text.
 
 Text is not decorative. Use it only when it materially improves understanding: cover/title, exact concept term, important number/price, short comparison/schema label or one memorable phrase. Do not put text on every frame and do not repeat the spoken sentence as visible text.
 
-## Phase 2 — existing structure stays
+## Phase 2 — final Flow prompt
 
 Each video uses exactly one:
 
 `02-google-flow/google-flow-prompt.txt`
 
-This one master file contains the global visual rules and all scene prompts for the full video.
+New videos follow `rules/FLOW_PROMPT_ARCHITECTURE.md` / `NATURAL_FLOW_MASTER_V1`.
 
-Scene prompts should stay concise and practical. They may use the familiar scene fields such as speech context, scene type, composition, visual idea/task, camera, lighting, character direction, planned text and a short `PROMPT:`.
+The final master prompt contains:
+- task/output instruction
+- channel visual world once
+- character/reference system once
+- video world/continuity lock once
+- cover + five-image generation workflow
+- global text rule
+- all image prompts from `BILD 01` to `BILD NN`
 
-Do not split one video into multiple Flow master files or batch prompt files.
+Each final `BILD NN` prompt is a natural direct image description, not a repeated planning form.
+
+A strong image prompt normally expresses only the needed combination of:
+- shot/camera
+- dominant subject/relation
+- visible action/mechanism
+- relevant environment/props
+- light/mood/local color
+- continuity if needed
+- exact German visible text if planned
+
+Global anatomy/style/negative rules are written once near the top, not repeated in every image.
 
 ## Flow output behavior
 
 Follow `rules/FLOW_OUTPUT_MODE.md`.
 
-- Scene 01 first as 3 separate cover candidates, then approval stop.
-- Later scenes are generated in five-scene batches for new videos when at least five remain.
-- Every scene number becomes its own standalone 16:9 image.
-- Never combine several scene numbers into one storyboard/contact sheet/panel grid.
+- Bild 01 first as 3 separate cover candidates, then approval stop.
+- The user chooses one; it becomes `01.png` in `03-bilder/`.
+- Only after that approval do later images begin.
+- Later images are generated in five-image batches for new videos when at least five remain.
+- Every image number becomes its own standalone 16:9 image.
+- Accepted images are renamed immediately to `NN.png`.
+- All accepted images stay in the same flat `03-bilder/` folder.
+- Never combine several image numbers into one storyboard/contact sheet/panel grid.
 - Never ask Flow to create the final video.
 
-A single scene may use split/contrast/montage if all parts explain that same beat. This does not permit combining different scene numbers.
+A single image may use split/contrast/montage if all parts explain that same beat. This does not permit combining different image numbers.
 
 Flow applies `CINEMATIC_HUMAN_BEHAVIOR_V2` to every beat while preserving the same mature strict-stickman anatomy family and overall illustration language.
