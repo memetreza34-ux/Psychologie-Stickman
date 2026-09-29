@@ -1,0 +1,34 @@
+GOOGLE FLOW — CHARACTER REFERENCE CANDIDATE
+
+Create ONE 16:9 character-reference sheet for the channel's mature cinematic 2D psychology illustration world.
+
+CHARACTER
+One adult editorial STRICT STICKMAN shown in front view and clean side view only.
+
+ANATOMY — HARD LOCK
+- large simple round/slightly oval head, but NOT chibi or mascot oversized
+- tiny minimal eyes and small simple mouth
+- no realistic nose, ears or neck anatomy
+- small narrow clothed torso
+- narrow shoulders
+- very thin arms and legs, clearly thinner than normal cartoon-human limbs
+- simple no-finger hands
+- simple shoes
+- clothing must follow the narrow body and must NOT create a broad normal-human silhouette
+
+CLOTHING
+Muted dark-teal overshirt or hoodie, dark slim lower-body linework, simple light shoes. Clean adult styling, no cute details.
+
+RENDERING
+Mature polished cinematic 2D editorial illustration. Clean dark slightly organic outlines, controlled soft cel shading, subtle texture, professional psychology-documentary / graphic-novel tone.
+
+BACKGROUND
+Simple neutral studio/reference background only for this character sheet. Keep enough contrast to inspect the silhouette. This blank reference background is NOT the default for normal video scenes.
+
+OUTPUT
+One reference sheet only. Front and side view of the SAME character. No storyboard, no extra characters, no scene montage.
+
+NO TEXT.
+
+HARD FAIL
+No chibi. No cute mascot. No children's cartoon. No broad shoulders. No thick arms or legs. No normal cartoon human body. No realistic anatomy. No 3D/Pixar. No anime. No whiteboard doodle.
