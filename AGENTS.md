@@ -6,111 +6,57 @@ Vor Änderungen zuerst `CHANGE_CONTROL_LOCK.md` lesen.
 
 Ein neuer Chat startet read-only. Geschrieben wird nur bei ausdrücklicher aktueller Nutzerfreigabe und nur im genannten Scope.
 
-## Verbindliche Regeln — Lesereihenfolge
+## Verbindliche Regeln
 
-1. `CHANGE_CONTROL_LOCK.md`
-2. `CANONICAL_RULES.md`
-3. `PROJECT_BRAIN.md`
-4. `rules/VISUAL_SYSTEM.md`
-5. `rules/visual-system.json`
-6. `rules/FLOW_PROMPT_CONTRACT.md`
-7. `rules/STICKMAN_DNA.md`
-8. `rules/FORMAT_LOCK.md`
-9. `rules/YOUTUBE_THEMEN_SYSTEM.md`
-10. `rules/YOUTUBE_STYLE_LOCK.md`
-11. `rules/PREMIUM_VISUAL_LOCK.md`
-12. `rules/SCRIPT_HOOK_LOCK.md`
-13. `rules/IMAGE_REFERENCE_LOCK.md`
-14. `rules/COVER_LOCK.md`
-15. `rules/TEXT_OVERLAY_LOCK.md`
-16. `rules/FLOW_TEXT_STYLE_LOCK.md`
-17. `rules/COMPOSITION_VARIATION_LOCK.md`
-18. `rules/SOCIAL_SCENE_LOCK.md`
-19. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-20. `rules/PRODUCTION_FORMAT_RULES.md`
+Danach lesen:
+1. `CANONICAL_RULES.md`
+2. `PROJECT_BRAIN.md`
+3. `rules/VISUAL_SYSTEM.md`
+4. `rules/visual-system.json`
+5. `rules/STICKMAN_DNA.md`
+6. `rules/FORMAT_LOCK.md`
+7. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+8. `rules/YOUTUBE_STYLE_LOCK.md`
+9. `rules/PREMIUM_VISUAL_LOCK.md`
+10. `rules/SCRIPT_HOOK_LOCK.md`
+11. `rules/IMAGE_REFERENCE_LOCK.md`
+12. `rules/COVER_LOCK.md`
+13. `rules/TEXT_OVERLAY_LOCK.md`
+14. `rules/FLOW_TEXT_STYLE_LOCK.md`
+15. `rules/COMPOSITION_VARIATION_LOCK.md`
+16. `rules/SOCIAL_SCENE_LOCK.md`
+17. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+18. `rules/PRODUCTION_FORMAT_RULES.md`
 
 ## Themenwelt
 
 Kanalnische: **Psychologie & menschliches Verhalten**.
 
-Erlaubtes Spektrum umfasst unter anderem:
-- Denkfehler und Wahrnehmung
-- Entscheidungen und Selbststeuerung
-- Manipulation und Überzeugung
-- Macht, Status und Hierarchien
-- Gruppendruck und soziale Dynamik
-- Beziehungen und Kommunikation
-- Geld-, Konsum- und Anlegerverhalten
-- Betrugspsychologie
-- dunklere Seiten menschlichen Verhaltens
-- digitale Psychologie
+Erlaubtes Spektrum umfasst unter anderem Denkfehler, Entscheidungen, Manipulation, Macht, Gruppendruck, Beziehungen, Geld-/Konsumverhalten, Betrugspsychologie und dunklere Seiten menschlichen Verhaltens. Grenzthemen bleiben psychologisch/verhaltensbezogen.
 
-Grenzthemen wie Finanzen, Geschichte, Politik, Technik oder Kriminalität sind nur passend, wenn die zentrale Frage menschliches Verhalten erklärt.
+## Bildwelt — HARD LOCK
 
-## Aktive Bildwelt — HARD LOCK
-
-`CINEMATIC_HUMAN_BEHAVIOR_V2`
+Aktive Bildwelt:
+**Cinematic Human Behavior World v2 — `CINEMATIC_HUMAN_BEHAVIOR_V2`.**
 
 Character system:
-`STYLIZED_STICKMAN_CAST_V2`
+`STYLIZED_STICKMAN_CAST_V2`.
 
 Mood system:
-`ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`
+`ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`.
 
-Prompt contract:
-`FLOW_SCENE_PROMPT_CONTRACT_V1`
-
-Retired und für neue Produktionen verboten:
-- Universal Editorial Stickman World v1.3
-- Minimal Editorial Stickman v2
-- Cinematic Illustrated Psychology World v1
-- Scene 01 as global style/anatomy master
-
-## Stickman-DNA — HARD LOCK
-
-Jede sichtbare menschliche Figur benutzt dieselbe Familie:
+Jede sichtbare menschliche Figur benutzt dieselbe Stickman-Familie:
 - großer einfacher runder/ovaler Kopf
 - minimale Gesichtszüge
 - keine realistische Nase/Ohren
-- kompakter bekleideter Torso
-- sehr dünne, aber geformte illustrierte Arme/Beine
-- vereinfachte Hände
-- vereinfachte Schuhe/Füße
+- kleiner/kompakter bekleideter Torso
+- sehr dünne geformte Arme und Beine
+- einfache Hände
+- einfache Schuhe/Füße
 
 Normale Cartoon-Menschen, halb-realistische Menschen, realistische Menschen, Mischstile, 3D/Pixar/Anime sind HARD FAIL.
 
-Figuren dürfen je nach Rolle freundlich, neutral, unsicher, erschöpft, verletzlich, kalt, dominant, manipulativ, arrogant, einschüchternd oder isoliert wirken.
-
-Kein Standard-Bösewicht mit roten Augen/Hörnern/Monsterzähnen. Psychologische Bedrohung bevorzugt über Haltung, Blick, Nähe, Hierarchie, Schatten, Kamera und Raum erzählen.
-
-## Mood Engine — HARD LOCK
-
-Jede Szene plant zwingend:
-- `moodMode`
-- `moodIntensity` 0–4
-- `powerDynamic`
-
-Mood modes:
-- `CLEAR`
-- `UNEASY`
-- `DARK`
-- `POWER`
-- `MONEY`
-- `ISOLATION`
-- `HOPE`
-
-Power dynamics:
-- `NEUTRAL`
-- `SELF_VS_SELF`
-- `PEER_TO_PEER`
-- `DOMINANT_VS_TARGET`
-- `AUTHORITY_VS_GROUP`
-- `GROUP_VS_INDIVIDUAL`
-- `SYSTEM_VS_INDIVIDUAL`
-- `STATUS_CONTRAST`
-- `NONE`
-
-Nicht das ganze Video automatisch dunkel machen. Jeder Beat bekommt den semantisch passenden Mood-Modus.
+Figuren dürfen je nach Inhalt freundlich, neutral, unsicher, erschöpft, verletzlich, kalt, dominant, manipulativ, arrogant, einschüchternd oder isoliert wirken. Kein Standard-Bösewicht mit roten Augen/Hörnern/Monsterzähnen.
 
 ## Skript-Einstieg — HARD LOCK
 
@@ -127,64 +73,56 @@ Die ersten Szenen müssen schnell Klarheit schaffen:
 
 Genau ein primärer visueller Gedanke pro Bild.
 
-Mehrere Teilbilder sind nur erlaubt, wenn alle Teilmotive denselben gesprochenen Beat erklären.
+Mehrere Teilbilder in einem Frame sind erlaubt, wenn alle Teilmotive denselben gesprochenen Beat erklären.
 
-Keine spätere Information vorwegnehmen.
-
-## Szenentypen
-
-Jeder Beat wählt genau eine Hauptrepräsentation:
+Nicht jedes Bild braucht eine Figur. Erlaubte Hauptformen:
 - `CHARACTER_SCENE`
 - `SCHEMA_EXPLAINER`
 - `OBJECT_METAPHOR`
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
 
-Menschen sind nur nötig, wenn menschliche Handlung, Reaktion, Hierarchie oder Beziehung die beste Darstellung ist.
+## Google Flow — ALTE PRODUKTIONSSTRUKTUR BLEIBT HARD LOCK
 
-## Google-Flow-Promptstruktur — ABSOLUTE HARD LOCK
+**Pro Video gibt es genau eine zentrale Flow-Datei:**
 
-**Jeder Szenenprompt wird exakt gleich aufgebaut. Keine freie Reihenfolge. Keine ausgelassenen Blöcke.**
+`02-google-flow/google-flow-prompt.txt`
 
-Jeder `SCENE NN`-Block enthält in dieser Reihenfolge:
+Diese eine Datei enthält gemeinsam:
+- globale Bildwelt-/Stickman-Regeln
+- Format und Stil
+- Charakter-/Kontinuitätsregeln
+- Mood-/Farbregeln, wenn nötig
+- Textregeln
+- Coverregeln
+- Referenzregeln
+- Batch-/Freigaberegeln
+- **alle Szenen des gesamten Videos in derselben Datei**
 
-1. `SPEECH CONTEXT — DO NOT RENDER AS TEXT:`
-2. `SCENE TYPE:`
-3. `COMPOSITION:`
-4. `SOCIAL DENSITY:`
-5. `MOOD MODE:`
-6. `MOOD INTENSITY:`
-7. `POWER DYNAMIC:`
-8. `VISUAL IDEA:`
-9. `VISUAL TASK:`
-10. `CHARACTER / SUBJECT DIRECTION:`
-11. `ACTION / RELATION:`
-12. `ENVIRONMENT:`
-13. `CAMERA:`
-14. `LIGHTING:`
-15. `COLOR:`
-16. `CONTINUITY:`
-17. `TEXT POLICY:`
-18. `PLANNED GERMAN TEXT:`
-19. `NEGATIVE LOCKS:`
-20. `PROMPT:`
+**Nicht erlaubt:**
+- mehrere Flow-Prompt-Dateien für ein Video
+- `prompt-1.txt`, `prompt-2.txt`, `flow-3-image-prompts.txt` oder ähnliche Batch-Prompt-Dateien
+- Aufteilung eines Videos in mehrere unabhängige Master-Prompts
 
-Wenn etwas nicht relevant ist: `NONE`. Der Block darf trotzdem nicht fehlen.
+Ein Batch bedeutet nur, dass Flow aus derselben Master-Datei schrittweise Bilder erzeugt. Die Master-Datei selbst wird nicht aufgeteilt.
 
-### Innerhalb jedes `PROMPT:` immer exakt diese Unterblöcke
+### Szenenblöcke
 
-1. `[GOAL]`
-2. `[WORLD LOCK]`
-3. `[CHARACTER LOCK]`
-4. `[PSYCHOLOGICAL MOOD]`
-5. `[SCENE CONTENT]`
-6. `[CAMERA + COMPOSITION]`
-7. `[LIGHT + COLOR]`
-8. `[TEXT LOCK]`
-9. `[NEGATIVE LOCK]`
-10. `[FINAL CHECK]`
+Die Szenen dürfen kompakt bleiben. Übliche Felder sind:
+- `SCENE NN`
+- `SPEECH CONTEXT — DO NOT RENDER AS TEXT:`
+- `SCENE TYPE:`
+- `COMPOSITION:`
+- `SOCIAL DENSITY:`
+- `VISUAL IDEA:`
+- `VISUAL TASK:`
+- `CAMERA:`
+- `LIGHTING MOOD:`
+- `CHARACTER DIRECTION:`
+- `PLANNED GERMAN TEXT:`
+- `PROMPT:`
 
-Nur die Werte ändern sich. Die Struktur bleibt für jede Szene gleich — egal ob Cover, Manipulation, Geld, Schema, heller Alltag oder dunkle Szene.
+Nicht jede Szene braucht zusätzliche technische Unterblöcke. Der konkrete Bildprompt soll kurz, eindeutig und Flow-tauglich bleiben.
 
 ## Textsystem — GOOGLE FLOW ONLY
 
@@ -194,46 +132,45 @@ Für neue YouTube-Projekte gilt:
 
 ### Szene 01
 - exakter deutscher Cover-Titel direkt in `01.png`
-- 2–7 Wörter als Haupttitel
-- weitere kurze Mechanismus-/Preislabels nur wenn Phase 1 sie ausdrücklich plant
+- normalerweise 2–7 Wörter
+- außer ausdrücklich geplanten Mechanismus-/Preislabels kein zusätzlicher lesbarer Text
 
-### Spätere Textszenen
-- nur ausdrücklich geplante exakte deutsche Texte
-- kurze Keywords/Schema-/Vergleichslabels
+### Ausgewählte spätere Textszenen
+- nur ausdrücklich geplanter exakter deutscher Text
 
 ### Alle anderen Szenen
 - `ZERO READABLE TEXT`
 - keine zufälligen UI-, Poster-, Verpackungs-, Dokument- oder Bildschirmtexte
 
-Der `SPEECH CONTEXT` darf niemals als sichtbarer Text gerendert werden.
+Der `SPEECH CONTEXT` darf niemals sichtbar gerendert werden.
 
-## Szene 01 — COVER HARD LOCK
+## Szene 01 — COVER
 
 `03-bilder/01.png = SCENE 01 + COVER/THUMBNAIL`.
 
 Szene 01:
 - zeigt den Hook-Beat korrekt
 - ist stärker komponiert als eine normale Szene
-- hat ein dominantes Hauptmotiv
+- besitzt ein dominantes Hauptmotiv
 - hat schnelle Thumbnail-Lesbarkeit
-- nutzt dieselbe permanente Kanalwelt
-- ist **NICHT** globaler Style-/Anatomy-Master
+- benutzt dieselbe permanente Kanalwelt
 
-## Reference Workflow
+Die permanente Bildwelt kommt aus `rules/VISUAL_SYSTEM.md`, `rules/STICKMAN_DNA.md` und den freigegebenen Referenzen. Szene 01 darf diese Regeln nicht überschreiben.
 
-Permanent references:
+## Referenz-Workflow
+
+Permanente Referenzen:
 `assets/cinematic-human-behavior-world/`
 
-1. Passende permanente Core-/Mood-Referenzen wählen.
-2. Szene 01 inklusive Covertext generieren.
-3. STOP für Nutzerfreigabe von Bild 01.
-4. Danach höchstens 5 neue Bilder pro Batch.
-5. Bild 01 darf nicht die permanente Reference Library ersetzen.
-6. Nach jedem Batch interne QA.
-7. Nur fehlerhafte Bilder regenerieren.
-8. Nach PASS automatisch fortsetzen.
+1. Passende Kanal-/Mood-Referenzen wählen.
+2. Szene 01 aus der einen `google-flow-prompt.txt` generieren.
+3. STOP und Nutzerfreigabe für Bild 01.
+4. Danach höchstens 5 neue Bilder pro Batch aus derselben Master-Datei.
+5. Nach jedem Batch interne QA.
+6. Nur fehlerhafte Bilder regenerieren.
+7. Nach PASS automatisch fortsetzen.
 
-## Format
+## FORMAT HARD LOCK
 
 ### `reels/`
 - 9:16
@@ -255,6 +192,17 @@ Permanent references:
 - Wörter niemals abschneiden
 - Timings erst aus final verarbeitetem Audio
 
+## Einfache YouTube-Arbeitsfläche
+
+- `01-script/script.txt`
+- `02-google-flow/google-flow-prompt.txt`
+- `03-bilder/`
+- `04-audio/final-voice.mp3`
+- `05-export/`
+- `99-intern/`
+
+**Es bleibt genau eine Google-Flow-Datei mit allen Szenen.**
+
 ## Metadaten neuer Projekte
 
 ```json
@@ -262,7 +210,6 @@ Permanent references:
   "visualSystem": "CINEMATIC_HUMAN_BEHAVIOR_V2",
   "characterSystem": "STYLIZED_STICKMAN_CAST_V2",
   "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
-  "promptContract": "FLOW_SCENE_PROMPT_CONTRACT_V1",
   "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
   "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
@@ -296,5 +243,3 @@ Bei strukturellen oder Pipeline-Änderungen mindestens:
 - `npm run qa:flow-prompts`
 - `npm run qa:text-overlays`
 - relevante Produktionschecks
-
-`qa:flow-prompts` muss neue v2-Prompts ablehnen, wenn Pflichtfelder oder Prompt-Unterblöcke fehlen oder falsch sortiert sind.
