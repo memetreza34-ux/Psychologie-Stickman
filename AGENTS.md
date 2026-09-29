@@ -14,19 +14,21 @@ Danach lesen:
 3. `rules/VISUAL_SYSTEM.md`
 4. `rules/visual-system.json`
 5. `rules/STICKMAN_DNA.md`
-6. `rules/FORMAT_LOCK.md`
-7. `rules/YOUTUBE_THEMEN_SYSTEM.md`
-8. `rules/YOUTUBE_STYLE_LOCK.md`
-9. `rules/PREMIUM_VISUAL_LOCK.md`
-10. `rules/SCRIPT_HOOK_LOCK.md`
-11. `rules/IMAGE_REFERENCE_LOCK.md`
-12. `rules/COVER_LOCK.md`
-13. `rules/TEXT_OVERLAY_LOCK.md`
-14. `rules/FLOW_TEXT_STYLE_LOCK.md`
-15. `rules/COMPOSITION_VARIATION_LOCK.md`
-16. `rules/SOCIAL_SCENE_LOCK.md`
-17. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-18. `rules/PRODUCTION_FORMAT_RULES.md`
+6. `rules/PREMIUM_VISUAL_LOCK.md`
+7. `rules/FLOW_OUTPUT_MODE.md`
+8. `rules/FORMAT_LOCK.md`
+9. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+10. `rules/YOUTUBE_STYLE_LOCK.md`
+11. `rules/SCRIPT_HOOK_LOCK.md`
+12. `rules/IMAGE_REFERENCE_LOCK.md`
+13. `rules/COVER_LOCK.md`
+14. `rules/TEXT_OVERLAY_LOCK.md`
+15. `rules/FLOW_TEXT_STYLE_LOCK.md`
+16. `rules/COMPOSITION_VARIATION_LOCK.md`
+17. `rules/SOCIAL_SCENE_LOCK.md`
+18. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+19. `rules/PRODUCTION_FORMAT_RULES.md`
+20. `rules/YOUTUBE_EXPORT_PACKAGE.md`
 
 ## Themenwelt
 
@@ -45,18 +47,40 @@ Character system:
 Mood system:
 `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`.
 
-Jede sichtbare menschliche Figur benutzt dieselbe Stickman-Familie:
-- großer einfacher runder/ovaler Kopf
+Jede sichtbare menschliche Figur benutzt dieselbe **mature/adult editorial Stickman-Familie**:
+- großer einfacher runder/ovaler Kopf, aber nicht chibi/mascot-übertrieben
 - minimale Gesichtszüge
-- keine realistische Nase/Ohren
-- kleiner/kompakter bekleideter Torso
+- keine realistische Nase/Ohren/Neck-Anatomie
+- kleiner schmaler bekleideter Torso
+- schmale Schultern
 - sehr dünne geformte Arme und Beine
-- einfache Hände
+- einfache Hände ohne realistische Finger
 - einfache Schuhe/Füße
 
-Normale Cartoon-Menschen, halb-realistische Menschen, realistische Menschen, Mischstile, 3D/Pixar/Anime sind HARD FAIL.
+HARD FAIL:
+- cute/chibi/mascot
+- normale Cartoon-Menschen
+- breite Schultern oder dicke Cartoon-Gliedmaßen
+- halb-realistische/realistische Menschen
+- Mischstile
+- 3D/Pixar/Anime
 
 Figuren dürfen je nach Inhalt freundlich, neutral, unsicher, erschöpft, verletzlich, kalt, dominant, manipulativ, arrogant, einschüchternd oder isoliert wirken. Kein Standard-Bösewicht mit roten Augen/Hörnern/Monsterzähnen.
+
+## Rich World — HARD LOCK
+
+**Simple Stickmen. Rich World. One clear idea per image.**
+
+Normale Alltagsszenen benutzen glaubwürdige, beat-spezifische Umgebungen mit sinnvollen Props, räumlicher Tiefe und motiviertem Licht.
+
+Nicht als Standard:
+- leerer Creme-/Offwhite-Hintergrund
+- schwebende Figur ohne Ort
+- sterile generische Räume
+- immer derselbe Klassenraum/Büro-Look
+- flache Stock-Vector-Komposition
+
+Sparse negative space ist nur erlaubt, wenn es inhaltlich bewusst Isolation, Klarheit oder Leere ausdrückt.
 
 ## Skript-Einstieg — HARD LOCK
 
@@ -82,7 +106,7 @@ Nicht jedes Bild braucht eine Figur. Erlaubte Hauptformen:
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
 
-## Google Flow — ALTE PRODUKTIONSSTRUKTUR BLEIBT HARD LOCK
+## Google Flow — PRODUKTIONSSTRUKTUR BLEIBT HARD LOCK
 
 **Pro Video gibt es genau eine zentrale Flow-Datei:**
 
@@ -90,13 +114,13 @@ Nicht jedes Bild braucht eine Figur. Erlaubte Hauptformen:
 
 Diese eine Datei enthält gemeinsam:
 - globale Bildwelt-/Stickman-Regeln
+- Flow-Ausgabe-/Batchregeln
 - Format und Stil
 - Charakter-/Kontinuitätsregeln
 - Mood-/Farbregeln, wenn nötig
 - Textregeln
 - Coverregeln
 - Referenzregeln
-- Batch-/Freigaberegeln
 - **alle Szenen des gesamten Videos in derselben Datei**
 
 **Nicht erlaubt:**
@@ -108,7 +132,7 @@ Ein Batch bedeutet nur, dass Flow aus derselben Master-Datei schrittweise Bilder
 
 ### Szenenblöcke
 
-Die Szenen dürfen kompakt bleiben. Übliche Felder sind:
+Die Szenen bleiben kompakt. Übliche Felder:
 - `SCENE NN`
 - `SPEECH CONTEXT — DO NOT RENDER AS TEXT:`
 - `SCENE TYPE:`
@@ -122,7 +146,31 @@ Die Szenen dürfen kompakt bleiben. Übliche Felder sind:
 - `PLANNED GERMAN TEXT:`
 - `PROMPT:`
 
-Nicht jede Szene braucht zusätzliche technische Unterblöcke. Der konkrete Bildprompt soll kurz, eindeutig und Flow-tauglich bleiben.
+Nicht jede Szene braucht zusätzliche technische Unterblöcke. Der konkrete Bildprompt bleibt kurz, eindeutig und Flow-tauglich.
+
+## Google Flow — OUTPUT HARD LOCK
+
+Verbindlich: `rules/FLOW_OUTPUT_MODE.md`.
+
+Der Masterprompt erzeugt **finale Einzelbilder**, keinen Storyboard-Kontaktbogen und kein fertiges Video.
+
+### Initial
+1. Ganze Master-Datei lesen.
+2. `SCENE 01 ONLY` generieren.
+3. Genau **3 getrennte Scene-01-Cover-Kandidaten** erzeugen.
+4. Jeder Kandidat = eigenes 16:9-Bild, niemals 3er-Panel.
+5. STOP für Nutzerfreigabe.
+6. Gewinner = `03-bilder/01.png`.
+
+### Danach
+- Standardbatch = 3 Szenen
+- Hard-Max = 5 Szenen
+- jede Szenennummer = eigene 16:9-Bilddatei
+- mehrere Szenennummern niemals in Storyboard, Kontaktbogen, 3x3-Grid oder Collage zusammenfassen
+- Flow niemals anbieten lassen, aus dem Storyboard direkt ein Video zu erstellen
+- bei „weiter“ nächsten Batch aus derselben Master-Datei erzeugen
+
+Ein SPLIT/CONTRAST/MONTAGE innerhalb EINER Szene bleibt erlaubt, wenn alle Teile denselben gesprochenen Beat erklären.
 
 ## Textsystem — GOOGLE FLOW ONLY
 
@@ -162,10 +210,12 @@ Die permanente Bildwelt kommt aus `rules/VISUAL_SYSTEM.md`, `rules/STICKMAN_DNA.
 Permanente Referenzen:
 `assets/cinematic-human-behavior-world/`
 
-1. Passende Kanal-/Mood-Referenzen wählen.
+Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.md` und `rules/STICKMAN_DNA.md` besteht. Ein chibi-/cartoonartiges Character Sheet darf nie als Kanal-Master weiterverwendet werden.
+
+1. Passende freigegebene Kanal-/Mood-Referenzen wählen.
 2. Szene 01 aus der einen `google-flow-prompt.txt` generieren.
 3. STOP und Nutzerfreigabe für Bild 01.
-4. Danach höchstens 5 neue Bilder pro Batch aus derselben Master-Datei.
+4. Danach kleine Batches aus derselben Master-Datei.
 5. Nach jedem Batch interne QA.
 6. Nur fehlerhafte Bilder regenerieren.
 7. Nach PASS automatisch fortsetzen.
@@ -213,6 +263,7 @@ Permanente Referenzen:
   "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
   "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
+  "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V1",
   "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
   "visibleTextLanguage": "de",
   "visibleTextRenderer": "GOOGLE_FLOW",
@@ -231,6 +282,15 @@ Permanente Referenzen:
 - normale Obergrenze 20
 - 21–28 nur geprüft
 - durchschnittlich höchstens 16 Wörter pro Szene
+
+## YouTube Export
+
+`05-export/` ist erst vollständig mit:
+- `final.mp4`
+- `thumbnail.png`
+- `youtube-upload.txt`
+
+Alle kopierbaren Upload-Daten gehören gesammelt in `youtube-upload.txt`. Detailregel: `rules/YOUTUBE_EXPORT_PACKAGE.md`.
 
 ## QA
 
