@@ -7,13 +7,14 @@
 3. `rules/STICKMAN_DNA.md`
 4. `rules/PREMIUM_VISUAL_LOCK.md`
 5. `rules/FLOW_OUTPUT_MODE.md`
-6. `rules/IMAGE_REFERENCE_LOCK.md`
-7. approved `assets/cinematic-human-behavior-world/` references
-8. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-9. `rules/COVER_LOCK.md`
-10. `rules/TEXT_OVERLAY_LOCK.md` + `rules/FLOW_TEXT_STYLE_LOCK.md`
-11. `rules/YOUTUBE_EXPORT_PACKAGE.md`
-12. format/script/production rules
+6. `rules/REPRESENTATION_VARIETY_LOCK.md`
+7. `rules/IMAGE_REFERENCE_LOCK.md`
+8. approved `assets/cinematic-human-behavior-world/` references
+9. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+10. `rules/COVER_LOCK.md`
+11. `rules/TEXT_OVERLAY_LOCK.md` + `rules/FLOW_TEXT_STYLE_LOCK.md`
+12. `rules/YOUTUBE_EXPORT_PACKAGE.md`
+13. format/script/production rules
 
 ## Active world
 
@@ -70,16 +71,32 @@ Scene mood, color temperature, location, camera and lighting may change when the
 
 A batch boundary is never allowed to reset the style. Batch 2, Batch 3 and later batches must still look as if the same illustrator created them for the same channel and the same visual world.
 
-## Representation
+## Representation variety — HARD LOCK FOR NEW VIDEOS
 
-Every Visual Beat chooses one:
+Follow `rules/REPRESENTATION_VARIETY_LOCK.md`.
+
+Do not force every visual beat into a Stickman character scene.
+
+Every beat chooses the clearest form:
 - `CHARACTER_SCENE`
 - `SCHEMA_EXPLAINER`
 - `OBJECT_METAPHOR`
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
+- environment/object-only illustration when clearer
 
-Character presence is optional outside `CHARACTER_SCENE`.
+Normal longform guidance:
+- character scenes about 45–60%
+- schemas about 10–20%
+- object metaphors about 10–20%
+- comparisons about 10–20%
+- text illustrations normally 0–10%
+
+These are guidance ranges, not quotas. Clarity wins.
+
+Text and schemas are used only when they materially improve understanding. Do not place text on every image and do not use schemas as filler. If text is unnecessary: `ZERO READABLE TEXT`.
+
+Do not mechanically repeat one red/burgundy/dark treatment, one teal/cream treatment, one room type or one character-shot pattern across the video. Mood, color, camera and representation may vary by beat while the illustration identity stays fixed.
 
 ## Google Flow structure — HARD LOCK
 
@@ -186,7 +203,7 @@ Final upload package must contain no placeholders. See `rules/YOUTUBE_EXPORT_PAC
   "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
   "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
-  "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
+  "representationPolicy": "REPRESENTATION_VARIETY_V1",
   "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
   "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
   "visibleTextRenderer": "GOOGLE_FLOW",
@@ -217,6 +234,9 @@ Historical produced projects may retain old metadata and old Flow batching as le
 - empty cream/off-white background used as normal default
 - random readable text
 - current beat is not visually clear
+- nearly every frame uses a character without a clear reason
+- text/schema frames are used as filler
+- one red/burgundy/dark or teal/cream treatment is mechanically repeated across the whole video
 - later batches visibly drift into another art style or lower-quality world
 - several scene numbers are combined into one storyboard/contact-sheet asset
 - new video falls back to deliberate one-scene-at-a-time generation while five scenes remain
