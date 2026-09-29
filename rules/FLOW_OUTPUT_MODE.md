@@ -2,6 +2,8 @@
 
 **STATUS: BINDING FOR NEW YOUTUBE PROJECTS**
 
+Policy ID: `FINAL_SEPARATE_IMAGE_ASSETS_V1`
+
 ## Core rule
 
 A YouTube video uses exactly one master file:
