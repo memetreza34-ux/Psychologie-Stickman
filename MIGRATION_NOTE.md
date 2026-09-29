@@ -14,7 +14,8 @@ Quelle der ursprünglichen technischen Migration: `memetreza34-ux/faceless-erkla
 - Bildwelt: **Cinematic Human Behavior World v2** (`CINEMATIC_HUMAN_BEHAVIOR_V2`)
 - Character System: `STYLIZED_STICKMAN_CAST_V2`
 - Mood System: `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`
-- Flow Prompt Contract: `FLOW_SCENE_PROMPT_CONTRACT_V1`
+- Flow Output Policy: `FINAL_SEPARATE_IMAGE_ASSETS_V1` via `rules/FLOW_OUTPUT_MODE.md`
+- Flow-Struktur: genau eine `02-google-flow/google-flow-prompt.txt` mit allen Szenen
 - aktive Regeln: `CANONICAL_RULES.md` und `rules/`
 - YouTube-Longform: `youtube/`
 - Reels/Shorts: `reels/`
@@ -27,10 +28,11 @@ Nicht aktiv für neue Produktionen:
 - Minimal Editorial Stickman v2
 - Cinematic Illustrated Psychology World v1
 
-## Nicht mehr verwendete historische Pfade
+## Nicht mehr verwendete historische Pfade/Standards
 
 - `youtube/longform/`
 - `youtube/reels/`
 - `channels/dinge-erklaert/`
+- `FLOW_SCENE_PROMPT_CONTRACT_V1` als verpflichtender 20-Felder-/Subblock-Vertrag
 
 Bei einem Widerspruch zwischen dieser Datei und den aktuellen Regeldateien gilt immer der aktuelle Regelbestand. Diese Datei dokumentiert nur die Herkunft des Repositories.
