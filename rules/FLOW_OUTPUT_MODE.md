@@ -16,6 +16,30 @@ That file contains the global channel/visual rules and every scene prompt for th
 
 The master prompt is an instruction for generating **final source images**, not a request for a storyboard or an automatically generated video.
 
+## Unified visual world across the whole video — HARD LOCK
+
+Google Flow must treat the entire video as **one coherent high-quality illustrated film world**, even when images are generated in separate five-scene batches.
+
+Batch boundaries must NEVER reset or reinterpret the visual identity.
+
+Across Scene 01 through Scene NN, preserve the same:
+- mature strict-stickman anatomy family
+- illustration/rendering language
+- line quality and outline behavior
+- cel-shading style
+- texture/detail level
+- environment quality
+- depth and spatial logic
+- camera/composition quality
+- typography language when text is planned
+- overall premium psychology-documentary / editorial graphic-novel feel
+
+Lighting, location, composition, color temperature and mood may change to match the current spoken beat, but the images must still look as if they were created by the **same illustrator for the same channel and the same film world**.
+
+Do not let Batch 2, Batch 3 or later batches become a new art style, cheaper rendering style, different character anatomy, different outline system, different shading system or unrelated visual universe.
+
+Use approved channel references and the master prompt as the persistent visual source of truth across every batch. Scene 01 may support style/anatomy/quality continuity after approval, but it must not force later scenes to copy the same room, pose, clothing, composition or mood.
+
 ## Output hard lock
 
 Google Flow must NEVER combine several scene numbers into one generated asset.
@@ -52,6 +76,7 @@ After Scene 01 approval:
 - the final batch contains the remaining 1–4 scenes when fewer than 5 remain
 - generate the whole current batch in one batch step/turn; do not deliberately process the five scenes one-by-one
 - every scene number still produces one separate standalone 16:9 image
+- preserve the exact same approved visual world across every batch
 - do not create alternate versions unless a scene fails QA or the user asks
 - run internal QA after the batch
 - regenerate only failed images, not the whole batch
@@ -119,6 +144,10 @@ Every NEW `google-flow-prompt.txt` must contain an explicit output instruction e
 
 `OUTPUT MODE — FINAL SOURCE IMAGES ONLY. Read the full master prompt, but generate only the current requested batch. Every scene number must be a separate standalone 16:9 image. NEVER create a storyboard, contact sheet, multi-scene panel grid, collage or video. After Scene 01 approval, generate scenes in five-scene batches, immediately rename accepted images to NN.png, and collect all accepted images in one flat 03-bilder/ folder.`
 
+It must also contain an explicit visual-world instruction equivalent to:
+
+`WORLD CONSISTENCY — HARD LOCK. Treat the complete video as one coherent premium illustrated film world. Preserve the same mature stickman anatomy, linework, cel shading, texture, environment quality, depth and rendering language across every batch. Mood, location and lighting may change per scene, but the art style must never reset or drift between batches.`
+
 It must also contain the Scene-01 approval gate and five-scene batch instructions.
 
 ## QA hard fail
@@ -128,6 +157,8 @@ Reject the result if:
 - Flow creates a storyboard/contact sheet instead of individual images
 - Flow proposes a video instead of the requested source images
 - regular generation intentionally falls back to one-scene-at-a-time instead of a five-scene batch when five scenes remain
+- a later batch drifts into a different illustration style, character anatomy, outline/shading system or noticeably lower visual quality
+- images no longer feel like one coherent channel/film world
 - a normal scene is returned as a multi-panel layout without that scene explicitly requesting split/contrast/montage
 - an accepted image is left with a non-scene filename
 - accepted images are split across batch folders instead of one `03-bilder/` folder
