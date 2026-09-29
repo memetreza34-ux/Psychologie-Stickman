@@ -48,6 +48,23 @@ Diese **eine Datei enthält alle Szenen des Videos** zusammen mit den globalen F
 
 Nicht in mehrere Master-Prompt-Dateien oder Batch-Prompt-Dateien aufteilen. Batches betreffen nur die Bildgenerierung, nicht die Dateistruktur.
 
+## YouTube Export — HARD LOCK
+
+Für neue fertige YouTube-Projekte ist `05-export/` ein vollständiges Upload-Paket:
+
+```text
+05-export/
+├── final.mp4
+├── thumbnail.png
+└── youtube-upload.txt
+```
+
+`youtube-upload.txt` enthält gesammelt alle kopierbaren Upload-Daten: Titel, Beschreibung/Caption, Quellen/Links, Kapitel falls sinnvoll, Tags, Hashtags, angehefteten Kommentar, bereinigten Sprechertext/Captions und Video-Daten.
+
+Keine Aufteilung in separate `title.txt`, `description.txt`, `tags.txt` oder `chapters.txt` für den normalen Workflow.
+
+Verbindliche Detailregel: `rules/YOUTUBE_EXPORT_PACKAGE.md`.
+
 ## Aktive Visual-World-Sperre
 
 Verbindliche Quellen:
