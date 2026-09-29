@@ -74,22 +74,32 @@ Do not split one video into multiple Flow master-prompt files or separate batch-
 
 Scene prompts stay concise because the global visual rules exist once at the top.
 
-## Google Flow output — HARD LOCK
+## Google Flow output — HARD LOCK FOR NEW VIDEOS
 
 Follow `rules/FLOW_OUTPUT_MODE.md`.
+
+New/future projects use `FINAL_SEPARATE_IMAGE_ASSETS_V2`.
 
 The master prompt produces **final source images**, not a storyboard or automatic video.
 
 - Scene 01 first
 - exactly 3 separate Scene-01 cover candidates
 - stop for approval
-- keep one winner as `03-bilder/01.png`
-- later generation defaults to 3 scene numbers per batch, hard maximum 5
+- keep one winner, rename immediately to `01.png`, place in `03-bilder/`
+- later generation uses exactly 5 scene numbers per batch whenever at least 5 remain
+- final remainder batch contains 1–4 scenes
+- generate each five-scene batch as one batch operation, not deliberately image-by-image
 - every scene number becomes its own standalone 16:9 image
+- every accepted image is immediately renamed to its matching `NN.png`
+- all accepted images stay together in one flat `03-bilder/` folder
+- no batch subfolders or separate cover folder
+- after batch QA, regenerate only failures and continue automatically with the next batch
 - never combine several scene numbers into one storyboard, contact sheet, panel grid or collage
 - never ask Flow to turn the scene plan into a video
 
 A single scene may use split/contrast/montage only when all parts explain that one scene's spoken beat.
+
+**Existing/historical projects are not retroactively migrated.** Change an existing project only when the user explicitly requests that project's migration.
 
 ## Visual clarity
 
@@ -157,7 +167,7 @@ Final upload package must contain no placeholders. See `rules/YOUTUBE_EXPORT_PAC
   "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
   "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
-  "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V1",
+  "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
   "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
   "visibleTextRenderer": "GOOGLE_FLOW",
   "renderGermanLabelsInRemotion": false,
@@ -171,8 +181,9 @@ Not active for new production:
 - `Universal Editorial Stickman World v1.3`
 - `MINIMAL_EDITORIAL_STICKMAN_V2`
 - `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1`
+- `FINAL_SEPARATE_IMAGE_ASSETS_V1` for new projects
 
-Historical produced projects may retain old metadata as legacy artifacts.
+Historical produced projects may retain old metadata and old Flow batching as legacy artifacts.
 
 ## Hard fail
 
@@ -187,5 +198,8 @@ Historical produced projects may retain old metadata as legacy artifacts.
 - random readable text
 - current beat is not visually clear
 - several scene numbers are combined into one storyboard/contact-sheet asset
+- new video falls back to deliberate one-scene-at-a-time generation while five scenes remain
+- accepted scene images are not renamed to `NN.png`
+- accepted scene images are split across batch folders instead of one `03-bilder/` folder
 - one video is split into multiple Google-Flow master-prompt files
 - new finished YouTube project has no complete `05-export/youtube-upload.txt`
