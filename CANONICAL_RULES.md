@@ -9,7 +9,8 @@
 5. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 6. `rules/COVER_LOCK.md`
 7. `rules/TEXT_OVERLAY_LOCK.md` + `rules/FLOW_TEXT_STYLE_LOCK.md`
-8. format/script/production rules
+8. `rules/YOUTUBE_EXPORT_PACKAGE.md`
+9. format/script/production rules
 
 ## Active world
 
@@ -86,6 +87,32 @@ Keep `HOOK_FIRST_EXPLAIN_EARLY_V1`:
 - core concept by scene 03
 - concrete example by scene 05 when possible
 
+## YouTube export package — HARD LOCK
+
+Every new YouTube project finishes with:
+
+```text
+05-export/
+├── final.mp4
+├── thumbnail.png
+└── youtube-upload.txt
+```
+
+`youtube-upload.txt` is the single copy/paste file for publication and contains:
+- final YouTube title
+- full description / caption
+- sources / links when relevant
+- chapters when useful
+- tags
+- hashtags
+- pinned comment or `NONE`
+- cleaned final German speaker text / captions
+- basic video data
+
+Do not create separate normal-workflow files such as `title.txt`, `description.txt`, `tags.txt` or `chapters.txt`. All copyable upload information belongs in `youtube-upload.txt`.
+
+Final upload package must contain no placeholders. See `rules/YOUTUBE_EXPORT_PACKAGE.md`.
+
 ## Required metadata for new projects
 
 ```json
@@ -122,3 +149,4 @@ Historical produced projects may retain old metadata as legacy artifacts.
 - random readable text
 - current beat is not visually clear
 - one video is split into multiple Google-Flow master-prompt files
+- new finished YouTube project has no complete `05-export/youtube-upload.txt`
