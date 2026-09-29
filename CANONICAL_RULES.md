@@ -51,6 +51,25 @@ Simple characters do not mean empty scenes.
 
 Normal real-life frames use scene-specific environments, meaningful props, useful foreground/midground/background and motivated light. Empty cream/off-white space is not the channel default and is used only when deliberate negative space is part of the beat.
 
+## Unified film-world rule — HARD LOCK
+
+A complete YouTube video must feel like **one coherent illustrated film**, not a collection of unrelated AI images.
+
+Across all scenes and all Flow batches, preserve the same:
+- Stickman anatomy family
+- illustration/rendering language
+- outline behavior
+- cel-shading style
+- texture/detail level
+- environment quality
+- depth/spatial logic
+- typography language
+- overall premium editorial/psychology-documentary identity
+
+Scene mood, color temperature, location, camera and lighting may change when the story requires it. The visual identity may not.
+
+A batch boundary is never allowed to reset the style. Batch 2, Batch 3 and later batches must still look as if the same illustrator created them for the same channel and the same visual world.
+
 ## Representation
 
 Every Visual Beat chooses one:
@@ -93,6 +112,7 @@ The master prompt produces **final source images**, not a storyboard or automati
 - every accepted image is immediately renamed to its matching `NN.png`
 - all accepted images stay together in one flat `03-bilder/` folder
 - no batch subfolders or separate cover folder
+- preserve the same approved premium visual world across every batch
 - after batch QA, regenerate only failures and continue automatically with the next batch
 - never combine several scene numbers into one storyboard, contact sheet, panel grid or collage
 - never ask Flow to turn the scene plan into a video
@@ -197,6 +217,7 @@ Historical produced projects may retain old metadata and old Flow batching as le
 - empty cream/off-white background used as normal default
 - random readable text
 - current beat is not visually clear
+- later batches visibly drift into another art style or lower-quality world
 - several scene numbers are combined into one storyboard/contact-sheet asset
 - new video falls back to deliberate one-scene-at-a-time generation while five scenes remain
 - accepted scene images are not renamed to `NN.png`
