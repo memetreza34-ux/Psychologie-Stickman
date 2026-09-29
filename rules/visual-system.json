@@ -8,6 +8,7 @@
   "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
   "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
+  "representationVarietyPolicy": "REPRESENTATION_VARIETY_V1",
   "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
   "tone": "mature adult psychology-documentary editorial graphic-novel illustration",
   "character": {
@@ -63,6 +64,21 @@
     ],
     "forbidDecorativeCharacterInsertion": true
   },
+  "representationVariety": {
+    "rule": "choose the clearest visual form per beat; do not force character scenes, text cards or schemas",
+    "targetRanges": {
+      "CHARACTER_SCENE": "0.45-0.60",
+      "SCHEMA_EXPLAINER": "0.10-0.20",
+      "OBJECT_METAPHOR": "0.10-0.20",
+      "COMPARE_VISUAL": "0.10-0.20",
+      "TEXT_ILLUSTRATION": "0.00-0.10"
+    },
+    "textOnlyWhenMateriallyHelpful": true,
+    "schemaOnlyWhenStructurallyHelpful": true,
+    "avoidRepetitiveCharacterRuns": true,
+    "avoidRepetitiveTextOrSchemaRuns": true,
+    "guidanceNotQuota": true
+  },
   "moodEngine": {
     "modes": ["CLEAR", "UNEASY", "DARK", "POWER", "MONEY", "ISOLATION", "HOPE"],
     "intensityMin": 0,
@@ -113,6 +129,8 @@
       "background may be quieter",
       "mood mode influences saturation and temperature",
       "do not repeat identical teal-and-cream balance across the video",
+      "do not mechanically repeat red burgundy dark treatment across the whole video",
+      "use local environment colors and beat-specific lighting when useful",
       "color never replaces psychological composition"
     ]
   },
@@ -125,6 +143,7 @@
   },
   "textModes": ["cover", "keyword", "schema", "comparison", "text_illustration"],
   "outputModePolicy": "rules/FLOW_OUTPUT_MODE.md",
+  "representationVarietyRuleFile": "rules/REPRESENTATION_VARIETY_LOCK.md",
   "hardFails": [
     "bare line stickman or whiteboard doodle",
     "conventional full cartoon human",
@@ -144,6 +163,8 @@
     "empty cream background used as generic default",
     "generic sterile environment when a believable location is required",
     "random readable text",
+    "unnecessary visible text or schema used as filler",
+    "mechanically repeated red burgundy dark treatment across the video",
     "mood contradicts current beat",
     "required power dynamic is visually absent",
     "dark scene becomes meaningless black void",
