@@ -25,6 +25,11 @@ else {
   const template = fs.readFileSync(templatePath, 'utf8');
   if (!/CINEMATIC_HUMAN_BEHAVIOR_V2/iu.test(template)) failures.push('YouTube Flow template must use CINEMATIC_HUMAN_BEHAVIOR_V2.');
   if (!/FINAL_SEPARATE_IMAGE_ASSETS_V2/iu.test(template)) failures.push('YouTube Flow template must use FINAL_SEPARATE_IMAGE_ASSETS_V2.');
+  if (!/REPRESENTATION_VARIETY_V1/iu.test(template)) failures.push('YouTube Flow template must use REPRESENTATION_VARIETY_V1.');
+  if (!/REPRESENTATION VARIETY\s*[—-]\s*HARD LOCK/iu.test(template)) failures.push('YouTube Flow template lacks representation-variety hard lock.');
+  if (!/Do NOT place visible text on every image/iu.test(template)) failures.push('YouTube Flow template must explicitly prevent text on every image.');
+  if (!/Do NOT default the complete video to one repeated red\/burgundy\/dark treatment/iu.test(template)) failures.push('YouTube Flow template must prevent repetitive red/burgundy/dark treatment.');
+  if (!/Never add a Stickman merely to fill empty space/iu.test(template)) failures.push('YouTube Flow template must forbid decorative character insertion.');
   if (!/OUTPUT MODE\s*[—-]\s*FINAL SOURCE IMAGES ONLY/iu.test(template)) failures.push('YouTube Flow template lacks FINAL SOURCE IMAGES output mode.');
   if (!/WORLD CONSISTENCY/iu.test(template)) failures.push('YouTube Flow template must explicitly lock world consistency across the complete video.');
   if (!/same illustrator|SAME illustrator/iu.test(template)) failures.push('YouTube Flow template must tell Flow that all scenes should feel created by the same illustrator.');
@@ -49,6 +54,7 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
 
   const isHumanBehaviorV2 = /CINEMATIC_HUMAN_BEHAVIOR_V2/iu.test(text);
   const isFlowOutputV2 = /FINAL_SEPARATE_IMAGE_ASSETS_V2/iu.test(text);
+  const isRepresentationVarietyV1 = /REPRESENTATION_VARIETY_V1/iu.test(text);
 
   if (isHumanBehaviorV2) {
     if (!/OUTPUT MODE\s*[—-]\s*FINAL SOURCE IMAGES ONLY/iu.test(text)) failures.push(`${rel}: v2 prompt lacks FINAL SOURCE IMAGES output mode.`);
@@ -72,6 +78,13 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
     if (!/NN\.png/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must require NN.png naming.`);
     if (!/03-bilder\//iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must collect accepted images in 03-bilder/.`);
     if (!/no batch subfolders|keine Batch-Unterordner/iu.test(text)) failures.push(`${rel}: FINAL_SEPARATE_IMAGE_ASSETS_V2 must forbid batch subfolders.`);
+  }
+
+  if (isRepresentationVarietyV1) {
+    if (!/CHARACTER_SCENE:[^\n]*45[–-]60%/iu.test(text)) warnings.push(`${rel}: representation-variety prompt should include the normal 45-60% character-scene guidance.`);
+    if (!/Do NOT place visible text on every image/iu.test(text)) failures.push(`${rel}: representation-variety prompt must forbid text on every image.`);
+    if (!/red\/burgundy\/dark treatment/iu.test(text)) failures.push(`${rel}: representation-variety prompt must block mechanical red/burgundy/dark repetition.`);
+    if (!/Never add a Stickman merely to fill empty space/iu.test(text)) failures.push(`${rel}: representation-variety prompt must forbid decorative character insertion.`);
   }
 
   let textMoments = 0;
