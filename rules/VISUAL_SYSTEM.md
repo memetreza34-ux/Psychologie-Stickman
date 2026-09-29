@@ -8,23 +8,23 @@ This system replaces `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1` for NEW productions.
 
 ## 1. Core idea
 
-**One recognizable cinematic 2D stickman-inspired world that can move from bright everyday psychology to uneasy, dark, powerful, financial, isolated and hopeful scenes without changing illustration style.**
+**One recognizable cinematic 2D strict-stickman world that can move from bright everyday psychology to uneasy, dark, powerful, financial, isolated and hopeful scenes without changing illustration style.**
 
-The channel is about human psychology and behavior. It may cover normal everyday cognition, manipulation, power, status, money behavior, social pressure, deception, fear, trust, conflict, self-control and constructive solutions.
+The channel may cover normal cognition, manipulation, power, status, money behavior, social pressure, deception, fear, trust, conflict, self-control and constructive solutions.
 
-The world must therefore be emotionally adaptive instead of permanently cheerful or permanently dark.
+The world is emotionally adaptive instead of permanently cheerful or permanently dark.
 
 ## 2. What never changes — HARD LOCK
 
 Across every scene, mood and topic preserve:
-- polished cinematic 2D editorial/animated-film illustration
+- polished cinematic 2D illustration
 - clean slightly organic dark outlines
 - soft cel shading
 - controlled subtle texture
 - natural depth
 - purposeful composition
-- same simplified stickman-inspired anatomy family
-- same rendering quality and visual grammar
+- the same strict simplified stickman anatomy family
+- the same rendering quality and visual grammar
 
 Mood may change strongly. Illustration identity may not.
 
@@ -36,17 +36,17 @@ Required family traits:
 - large simple round or slightly oval head
 - minimal expressive eyes and mouth
 - no realistic nose/ears/facial anatomy
-- compact simplified clothed torso
-- very slim shaped illustrated arms and legs with slight width
+- small narrow clothed torso
+- very slim shaped illustrated arms and legs
 - simplified hands without realistic fingers
 - simple readable shoes/feet
 - readable silhouette, posture and body language
 
-The same family must be used for main, supporting, background, crowd, screen, poster, reflection and memory humans.
+The same family is used for main, supporting, background, crowd, screen, poster, reflection and memory humans.
 
 Individuality may come from:
 - clothing
-- hair cue
+- simple hair cue
 - glasses/accessory
 - modest size/proportion differences
 - posture
@@ -96,64 +96,46 @@ Prefer no-human frames when clearer:
 
 Never insert a decorative stickman merely to fill empty space.
 
-## 6. Mood engine — HARD LOCK
-
-Every scene plans:
-- `moodMode`
-- `moodIntensity` from `0` to `4`
-- `powerDynamic`
+## 6. Mood engine
 
 Allowed mood modes:
 
 ### CLEAR
-Neutral explanations, everyday cognition, ordinary behavior. Open readable light, natural color, moderate contrast.
+Neutral explanations and ordinary behavior. Open readable light, natural color, moderate contrast.
 
 ### UNEASY
-Doubt, uncertainty, social pressure, subtle manipulation or tension. Cooler/less saturated space, stronger directional light, tighter composition.
+Doubt, uncertainty, social pressure or subtle manipulation. Cooler/less saturated space, stronger directional light, tighter composition.
 
 ### DARK
-Manipulation, coercion, deception, abuse of power, severe conflict or disturbing behavior. Low-key motivated light, graphic shadows, deeper navy/charcoal/burgundy possibilities, stronger negative space.
+Manipulation, coercion, deception, abuse of power or disturbing behavior. Low-key motivated light, graphic shadows, deeper navy/charcoal/burgundy possibilities, stronger negative space.
 
 ### POWER
-Hierarchy, dominance, authority, control and status. Strong silhouette, low/high angle when semantically useful, controlled contrast, spatial hierarchy.
+Hierarchy, dominance, authority, control and status. Strong silhouette, useful low/high angles, controlled contrast and spatial hierarchy.
 
 ### MONEY
 Money, consumption, negotiation, greed, risk and financial behavior. Graphite/deep green/warm gold/cream may appear when appropriate; never generic finance stock-vector aesthetics.
 
 ### ISOLATION
-Loneliness, exclusion, fear, vulnerability or alienation. Cooler palette, large negative space, distant or edge-positioned subject, sparse environmental attention.
+Loneliness, exclusion, fear, vulnerability or alienation. Cooler palette, large negative space, distant or edge-positioned subject.
 
 ### HOPE
 Protection, solution, clarity, recovery or constructive resolution. More open composition, warmer motivated light and clearer visual breathing room.
 
-## 7. Mood intensity
+Mood intensity may vary from subtle to strong, but the illustration family never changes.
 
-- `0` neutral/open
-- `1` subtle direction
-- `2` clearly felt mood
-- `3` strong cinematic tension
-- `4` extreme but still readable and channel-consistent
+## 7. Power relationships
 
-Do not make the entire channel dark. Intensity follows the current spoken beat.
+When relevant, power should be visible through:
+- blocking
+- scale
+- camera angle
+- distance
+- posture
+- gaze
+- foreground/background placement
+- environmental position
 
-A single video may move between intensities as the psychology changes.
-
-## 8. Power dynamics
-
-Allowed values:
-- `NEUTRAL`
-- `SELF_VS_SELF`
-- `PEER_TO_PEER`
-- `DOMINANT_VS_TARGET`
-- `AUTHORITY_VS_GROUP`
-- `GROUP_VS_INDIVIDUAL`
-- `SYSTEM_VS_INDIVIDUAL`
-- `STATUS_CONTRAST`
-- `NONE`
-
-Power must be visible through blocking, scale, camera, distance, posture and environmental position when relevant.
-
-## 9. Environment
+## 8. Environment
 
 Locations must support the psychological beat and may range widely:
 - apartment, bedroom, café, train, supermarket, cinema, office, school, street, restaurant, park
@@ -161,11 +143,11 @@ Locations must support the psychological beat and may range widely:
 
 Use recognizable architecture, furniture and props.
 
-Dark scenes must not collapse into empty black backgrounds. Darkness should still feel located in a believable illustrated space unless abstraction is the deliberate representation.
+Dark scenes must not collapse into empty black backgrounds. Darkness should still feel located in a believable illustrated space unless abstraction is deliberately clearer.
 
-## 10. Lighting
+## 9. Lighting
 
-Lighting is a storytelling system, not a decoration.
+Lighting is a storytelling system, not decoration.
 
 Allowed examples:
 - soft daylight
@@ -182,7 +164,7 @@ Allowed examples:
 
 Use shadows to communicate tension, secrecy, pressure, distance or hierarchy when relevant.
 
-## 11. Color system
+## 10. Color system
 
 There is no single forced palette.
 
@@ -203,10 +185,10 @@ Rules:
 - no grey/beige wash as a default
 - focal subject receives strongest useful contrast
 - background may be quieter
-- mood mode influences saturation and temperature
+- mood influences saturation and temperature
 - color must not replace composition or psychological storytelling
 
-## 12. Visual representation families
+## 11. Visual representation families
 
 Every beat chooses the clearest representation:
 
@@ -225,18 +207,7 @@ Two states, perspectives, people or choices shown coherently.
 ### TEXT_ILLUSTRATION
 Short exact text integrated into a strong illustration. Use sparingly.
 
-## 13. Representation mix
-
-Typical guidance only:
-- ~45–60% `CHARACTER_SCENE`
-- ~10–20% `SCHEMA_EXPLAINER`
-- ~10–20% `OBJECT_METAPHOR`
-- ~10–20% `COMPARE_VISUAL`
-- up to ~10% `TEXT_ILLUSTRATION`
-
-Semantics wins over quotas.
-
-## 14. One clear beat per frame
+## 12. One clear beat per frame
 
 Every frame communicates one primary thought.
 
@@ -247,7 +218,7 @@ Required:
 - meaningful environment only
 - no clutter for the sake of looking expensive
 
-## 15. Continuity
+## 13. Continuity
 
 Same world does not mean same character.
 
@@ -259,14 +230,14 @@ Repeat a person only when narrative continuity requires it. Then preserve:
 - shoes
 - face simplification
 
-Mood may change around the same person while their identity stays stable.
+Mood may change around the same person while identity stays stable.
 
-## 16. Reference architecture
+## 14. Reference architecture
 
 Permanent channel reference pack:
 `assets/cinematic-human-behavior-world/`
 
-Target references:
+Target references may include:
 - `style-master.png`
 - `character-neutral.png`
 - `character-emotions.png`
@@ -288,17 +259,7 @@ Target references:
 
 Until approved references exist, this file + `rules/visual-system.json` are authoritative.
 
-Scene 01 is cover + first beat. It is NOT the global style master.
-
-## 17. Prompt architecture — HARD LOCK
-
-Every Google Flow scene uses `FLOW_SCENE_PROMPT_CONTRACT_V1` from `rules/FLOW_PROMPT_CONTRACT.md`.
-
-The order of scene fields and the order of sub-blocks inside `PROMPT:` must remain identical for every scene. Only values/content change.
-
-This is mandatory for covers, neutral scenes, dark scenes, schemas, comparisons, money scenes and no-human scenes.
-
-## 18. Text
+## 15. Text
 
 Normal scenes remain text-free unless text is planned.
 
@@ -315,9 +276,9 @@ If nothing is planned: `ZERO READABLE TEXT`.
 
 Speech context is never rendered as visible text.
 
-## 19. Cover
+## 16. Cover
 
-Cover uses the same world and the same fixed prompt contract, but stronger composition:
+Cover uses the same world but stronger composition:
 - one dominant emotional conflict/question
 - clear silhouette
 - stronger useful contrast
@@ -327,7 +288,7 @@ Cover uses the same world and the same fixed prompt contract, but stronger compo
 
 Cover style must never become a separate comic/poster/anime world.
 
-## 20. Hard fail
+## 17. Hard fail
 
 Regenerate if:
 - mixed human anatomy families appear
@@ -342,14 +303,14 @@ Regenerate if:
 - schema looks like PowerPoint
 - random readable text appears
 - current beat is unclear
-- scene prompt violates `FLOW_SCENE_PROMPT_CONTRACT_V1`
 
-## 21. Priority
+## 18. Priority
 
 1. `rules/VISUAL_SYSTEM.md`
 2. `rules/visual-system.json`
-3. `rules/FLOW_PROMPT_CONTRACT.md`
-4. approved `assets/cinematic-human-behavior-world/` references
-5. `rules/STICKMAN_DNA.md`
-6. current Visual Beat
-7. compatibility lock files
+3. approved `assets/cinematic-human-behavior-world/` references
+4. `rules/STICKMAN_DNA.md`
+5. current Visual Beat
+6. compatibility lock files
+
+This file defines only the visual world. The existing production/file structure remains unchanged and is defined elsewhere in the repo.
