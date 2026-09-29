@@ -1,172 +1,124 @@
 GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
 
-VISUAL SYSTEM: CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
-CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V1
-HUMAN CHARACTER POLICY: UNIFIED_STICKMAN_HUMANS_V1
-CHARACTER PRESENCE POLICY: OPTIONAL_HUMANS_MIXED_VISUALS_V1
-REPRESENTATION POLICY: MIXED_PSYCHOLOGY_VISUALS_V1
+TOPIC: [VIDEO-THEMA]
+VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
 FORMAT: 16:9 / 1920x1080
 
-GLOBAL WORLD — HARD LOCK
-Create a cinematic 2D illustrated frame for a modern psychology YouTube channel. Keep one consistent film-world with colorful believable environments, clean slightly organic outlines, soft cel shading, natural depth, purposeful cinematic framing, controlled colors, warm/cool lighting and small meaningful details. No photorealism, no 3D/Pixar, no anime, no corporate vector look, no whiteboard doodle style.
+THIS IS THE ONLY GOOGLE FLOW MASTER PROMPT FOR THIS VIDEO.
+It contains all scenes. Do not split it into separate prompt files.
 
-UNIFIED HUMAN CAST — HARD LOCK
-Whenever humans appear, EVERY visible human must belong to the SAME stylized stickman-inspired family.
-This includes main character, supporting characters, background passengers/crowds, tiny memory figures and depicted humans on screens/posters/reflections.
-Family DNA for every human:
-- large simple round/oval head
-- minimal expressive face
-- compact clothed torso
-- very slim simplified illustrated arms and legs with slight width
-- simple hands
-- simple shoes/feet
-Supporting/background people may use less detail, but they MUST NOT become normal cartoon humans, semi-realistic people, realistic people, generic corporate-vector people or another anatomy family.
-Individualize only through clothing, colors, simple hair cue, glasses/accessory, modest size variation, posture and expression.
-Never mix one good stickman main character with differently styled human side characters.
+OUTPUT MODE — FINAL SOURCE IMAGES ONLY — HARD LOCK
+Read the full master prompt so you understand style and continuity, but generate only the currently requested scene numbers.
+Every scene number must become ONE SEPARATE standalone 16:9 image asset.
+NEVER create a storyboard, contact sheet, shot sheet, 3x3 panel grid, multi-scene collage or automatic video.
+NEVER combine different scene numbers inside one generated image.
+A single scene may use split/contrast/montage only when that scene explicitly requests it.
 
-CHARACTER PRESENCE — OPTIONAL HARD LOCK
-A person is NOT required in every frame.
-Choose the representation that explains the current beat most clearly.
-When people do not add explanatory value, prefer a no-human frame such as:
-- SCHEMA_EXPLAINER
-- OBJECT_METAPHOR
-- object close-up
-- symbolic environment
-- COMPARE_VISUAL using objects/states
-- TEXT_ILLUSTRATION
-Do not insert decorative stickmen just to fill space.
-No-human frames must still use the same linework, colors, soft cel shading, depth, lighting and overall film-world.
+VISUAL WORLD — HARD LOCK
+Create a mature cinematic 2D psychology / human-behavior illustration world.
+The target is an adult editorial / graphic-novel documentary look: clean dark organic outlines, controlled soft cel shading, subtle texture, believable depth, purposeful camera framing and motivated cinematic light.
+Normal real-life scenes should use believable scene-specific environments with foreground, midground and background. Do not default to empty cream/off-white space.
 
-SCENE TYPES
-- CHARACTER_SCENE: relatable human action in a believable place; all humans use unified stickman family
-- SCHEMA_EXPLAINER: illustrated mechanism/relationship; human optional
-- OBJECT_METAPHOR: symbolic object/environment; no human required
-- COMPARE_VISUAL: two states/options in one coherent frame; human optional
-- TEXT_ILLUSTRATION: short phrase integrated into a strong illustration; human optional
+STRICT STICKMAN CAST — HARD LOCK
+EVERY visible human uses the same mature strict-stickman anatomy family:
+- large simple round/oval head, NOT chibi/mascot oversized
+- tiny minimal face
+- no realistic nose/ears/neck anatomy
+- small narrow clothed torso
+- narrow shoulders
+- very thin arms and legs
+- simple no-finger hands
+- simple shoes
+Clothing must not create normal cartoon-human body volume.
 
-Target mix is roughly 50–60% character scenes with the rest schemas, metaphors, comparisons and text/object illustrations. This is guidance only; clarity wins.
+HARD FAIL
+No cute/chibi/mascot people. No normal cartoon humans. No broad shoulders. No thick limbs. No realistic anatomy. No 3D/Pixar/CGI. No anime. No whiteboard doodles. No corporate-vector people. No photorealistic environment.
 
-WORLD CONSISTENCY
-Same world does not mean same room or person. Vary character identity, clothing, location, camera and lighting according to the beat. Repeat a person only for genuine continuity. Non-character images must still look as if created by the same illustrator for the same animated film.
+PREMIUM QUALITY — HARD LOCK
+Simple Stickmen, rich world, one clear idea per image.
+Use strong silhouette, useful depth, expressive body language, topic-specific environment detail, intentional lighting and controlled color.
+Avoid repeated centered lineups, sterile generic rooms, flat cheap explainer slides and the same teal/cream balance in every image.
 
-ENVIRONMENT + CAMERA
-Use recognizable real locations and meaningful details. Plan foreground/midground/background when useful. Choose medium, wide, close, side, over-shoulder, high or low angle according to storytelling. Background detail must support, not compete.
+MOOD + COLOR
+Choose light, shadow, saturation and framing for the current spoken beat only. The world may become clear, uneasy, dark, powerful, financial, isolated or hopeful without changing illustration style.
+Useful recurring colors may include deep navy, graphite, muted teal, burgundy, coral, amber, deep green and warm neutral. Do not force every color into every frame.
+
+CHARACTER PRESENCE
+A human is not required in every image. Use CHARACTER_SCENE, SCHEMA_EXPLAINER, OBJECT_METAPHOR, COMPARE_VISUAL or TEXT_ILLUSTRATION according to clarity.
+Schemas and metaphors must still look like the same cinematic 2D world, not PowerPoint.
 
 VISIBLE TEXT — GOOGLE FLOW ONLY
-NO REMOTION TEXT.
-Allowed planned text:
-- Cover: main title + optional short psychology-topic kicker
-- Keyword: normally 1–5 words
-- Schema: optional short title + up to 3 short labels
-- Comparison: optional short title + up to 2 short labels
-- Text illustration: one short phrase
-Every visible word must be explicitly listed in the current scene. All unplanned background text is forbidden. Screens, books, posters, packaging and documents use abstract marks unless their text is explicitly planned.
+Only render the exact German text explicitly listed in the current scene.
+Speech context is NEVER visible text.
+If PLANNED GERMAN TEXT is NONE: ZERO READABLE TEXT.
+No random signs, screens, posters, packaging, documents, logos or pseudo-text.
+Typography must be clean, professional, high-contrast and fully inside safe margins.
 
-TYPOGRAPHY
-Clean modern editorial typography integrated into the illustrated world. Safe margins. No meme/sticker style, no 3D/glow text, no corporate PowerPoint feel.
+COVER — SCENE 01
+Scene 01 is cover + first visual beat.
+It must explain the hook visually before the title is read.
+Use one dominant focal conflict, strong silhouette, strong useful contrast and a compact asymmetric title zone.
+No generic full-width top banner.
 
-REFERENCE SYSTEM
-Use approved files from assets/cinematic-psychology-world/ as STYLE/CHARACTER-FAMILY/LINEWORK/COLOR/SHADING/LIGHTING references only. Do not clone exact character, room, pose, composition or readable text.
+REFERENCE POLICY
+Use only approved `assets/cinematic-human-behavior-world/` references.
+References lock mature strict-stickman anatomy, linework, cel shading, texture, rendering quality, environment-detail level and mood-appropriate light/color.
+Do not clone exact person, clothing, room, pose, camera, composition or readable text unless local continuity requires it.
+Reject any reference that is cute/chibi, broad-shouldered, thick-limbed or otherwise outside STYLIZED_STICKMAN_CAST_V2.
 
-COVER SEMANTICS — HARD LOCK
-Scene 01 is first hook + cover and MUST explain the central psychology topic visually, not merely create atmosphere.
-Before Scene 01 define:
-- COVER TOPIC TERM: [exact psychology topic/concept]
-- COVER VISUAL THESIS: [one concrete sentence describing the mechanism/contrast the viewer must SEE]
-Requirements:
-- exact COVER TOPIC TERM appears as visible planned German text for named concepts
-- illustration itself shows the mechanism even with all text hidden
-- generic worried person + object is not enough
-- all humans on the cover follow the exact same unified stickman family
-- Scene 01 is NOT the global style master
+GENERATION WORKFLOW — HARD LOCK
+INITIAL RUN:
+1. Generate SCENE 01 ONLY.
+2. Generate exactly 3 SEPARATE Scene-01 cover candidates.
+3. Each candidate is its own standalone 16:9 image, never a three-panel sheet.
+4. STOP for user approval.
+5. Keep one winner as `03-bilder/01.png`.
 
-COVER TYPOGRAPHY — HARD LOCK
-NO FULL-WIDTH TOP BANNER.
-Do not squeeze a long title across the top edge or use automatic centered-top placement. Choose an asymmetric title zone from the composition. Use intentional line breaks and generous safe margins. Text and illustration must feel designed as one thumbnail.
+AFTER SCENE 01 APPROVAL:
+- default batch = 3 scene numbers
+- hard maximum = 5 scene numbers
+- every requested scene becomes a separate individual image
+- save accepted outputs as `03-bilder/NN.png`
+- regenerate only failed images
+- when the user says continue/weiter, move to the next batch from THIS SAME MASTER PROMPT
+- NEVER offer to turn the storyboard into a video; these are source images for an external video pipeline
 
-COVER THUMBNAIL TEST
-PASS only if:
-1. topic/mechanism is understandable in about one second,
-2. exact topic is named,
-3. main objects/characters remain readable,
-4. every human belongs to the same stickman family,
-5. title does not cover the mechanism,
-6. typography is not a generic top banner.
+SCENE BLOCK FORMAT
 
-BATCH WORKFLOW
-1. Generate Scene 01 only and STOP for user approval.
-2. Save approved image as 03-bilder/01.png.
-3. Continue in batches of max 5 images.
-4. Internal QA after each batch; regenerate only failures.
-
-EACH SCENE BLOCK MUST CONTAIN
-SCENE [number]
+SCENE NN
 SPEECH CONTEXT — DO NOT RENDER AS TEXT:
 [exact spoken beat]
-SCENE TYPE: CHARACTER_SCENE / SCHEMA_EXPLAINER / OBJECT_METAPHOR / COMPARE_VISUAL / TEXT_ILLUSTRATION
-COMPOSITION: STANDARD / SPLIT / CONTRAST / MONTAGE
-SOCIAL DENSITY: SOLO / DUO / GROUP / NONE
-VISUAL IDEA: [one clear idea]
-VISUAL TASK: [what the image must visibly show]
+SCENE TYPE: [CHARACTER_SCENE / SCHEMA_EXPLAINER / OBJECT_METAPHOR / COMPARE_VISUAL / TEXT_ILLUSTRATION]
+COMPOSITION: [STANDARD / SPLIT / CONTRAST / MONTAGE]
+SOCIAL DENSITY: [SOLO / DUO / GROUP / NONE]
+VISUAL IDEA: [one clear thought]
+VISUAL TASK: [what must visibly happen]
 CAMERA: [shot/angle]
-LIGHTING MOOD: [short]
-CHARACTER DIRECTION: [only when people appear; explicitly keep every human in unified stickman family]
+LIGHTING MOOD: [short scene-specific direction]
+CHARACTER DIRECTION: [short; NONE if no people]
 PLANNED GERMAN TEXT: [NONE or exact list]
 PROMPT:
-[short scene-specific content prompt; do not rewrite the global style]
+[short scene-specific prompt only; global style is already locked above]
 
-SCENE 01 additionally MUST contain:
-COVER TOPIC TERM: [exact term]
-COVER VISUAL THESIS: [concrete visible mechanism]
-TITLE PLACEMENT: [asymmetric integrated zone; never generic full-width top banner]
+SCENE 01 additionally contains:
+COVER TOPIC TERM: [topic/concept]
+COVER VISUAL THESIS: [mechanism the image itself must show]
+TITLE PLACEMENT: [compact asymmetric safe zone]
 
-EXAMPLE — CHARACTER SCENE
-SCENE 02
-SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-[beat]
-SCENE TYPE: CHARACTER_SCENE
-COMPOSITION: STANDARD
-SOCIAL DENSITY: GROUP
-VISUAL IDEA: one nervous passenger feels observed while other passengers focus on themselves
-VISUAL TASK: show the main passenger plus several side passengers, with EVERY person using the same stickman anatomy family
-CAMERA: medium-wide train shot
-LIGHTING MOOD: warm carriage light against cool blue windows
-CHARACTER DIRECTION: main character in hoodie; supporting passengers individualized only through clothing/accessory/posture; all same stickman family
-PLANNED GERMAN TEXT: NONE
-PROMPT:
-A nervous stickman-inspired passenger stands in a train while several other passengers focus on phone, book and window. Every visible human uses the exact same simplified stickman-inspired character family as the main figure; supporting people are simpler, not differently styled humans. ZERO READABLE TEXT.
-
-EXAMPLE — NO-HUMAN OBJECT METAPHOR
-SCENE 09
-SPEECH CONTEXT — DO NOT RENDER AS TEXT:
-[beat]
-SCENE TYPE: OBJECT_METAPHOR
-COMPOSITION: STANDARD
-SOCIAL DENSITY: NONE
-VISUAL IDEA: overthinking as a tangled knot
-VISUAL TASK: make a thought-knot visually dominate a quiet desk scene
-CAMERA: close-medium object composition
-LIGHTING MOOD: quiet night desk, warm lamp and cool background
-CHARACTER DIRECTION: NONE
-PLANNED GERMAN TEXT: NONE
-PROMPT:
-A glowing tangled knot of thought-like lines floats above a desk beside notebook, mug and lamp. No person is needed. Keep the exact same cinematic illustrated film-world. ZERO READABLE TEXT.
+[INSERT ALL SCENES 01–NN HERE]
 
 FINAL QA
-- same cinematic illustrated world across all scene types
-- EVERY human, including background/supporting people, matches STYLIZED_STICKMAN_CAST_V1
-- no mixed human character families
-- no normal cartoon-human side characters behind a stickman main figure
-- no bare line-stickman drift
-- no 3D/photorealistic/anime/corporate-vector drift
-- human presence is optional; no decorative character added without explanatory purpose
-- no-human schemas/objects/metaphors remain in the same film-world
-- believable environment and meaningful details where needed
-- schemas do not look like PowerPoint/corporate vector graphics
-- one clear beat per frame
-- Scene 01 visibly explains the topic mechanism
-- Scene 01 names the exact psychology topic for named concepts
-- Scene 01 does not use a generic full-width top banner
-- every planned German text exact
-- no accidental readable background text
-- no visible Remotion text
+- one master prompt file only
+- Scene 01 first, 3 separate cover candidates, then stop
+- regular batches contain separate standalone image assets
+- NEVER storyboard/contact-sheet/multi-scene grid
+- every visible human matches mature STYLIZED_STICKMAN_CAST_V2
+- no cute/chibi/mascot drift
+- no normal cartoon-human anatomy
+- believable rich environment unless sparse space is semantically intentional
+- strong focal hierarchy and purposeful lighting
+- one clear beat per image
+- exact German text only when planned
+- ZERO READABLE TEXT otherwise
+- no 3D/Pixar/anime/photorealistic/corporate-vector drift
