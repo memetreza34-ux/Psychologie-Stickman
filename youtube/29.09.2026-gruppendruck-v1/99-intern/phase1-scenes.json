@@ -1,0 +1,15 @@
+{
+  "status": "DRAFT",
+  "project": "youtube-29.09.2026-gruppendruck-v1",
+  "format": "youtube",
+  "visualSystem": "CINEMATIC_HUMAN_BEHAVIOR_V2",
+  "characterSystem": "STYLIZED_STICKMAN_CAST_V2",
+  "audio": "youtube/29.09.2026-gruppendruck-v1/04-audio/final-voice.mp3",
+  "imageBasePath": "youtube/29.09.2026-gruppendruck-v1/03-bilder",
+  "imageExtension": "png",
+  "imageDigits": 2,
+  "renderGermanLabelsInRemotion": false,
+  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
+  "sceneLabels": [],
+  "note": "Use the established single google-flow-prompt.txt workflow; all scenes belong in one Flow prompt file."
+}
