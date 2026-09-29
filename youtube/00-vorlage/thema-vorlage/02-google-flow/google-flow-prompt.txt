@@ -21,6 +21,13 @@ Create a mature cinematic 2D psychology / human-behavior illustration world.
 The target is an adult editorial / graphic-novel documentary look: clean dark organic outlines, controlled soft cel shading, subtle texture, believable depth, purposeful camera framing and motivated cinematic light.
 Normal real-life scenes should use believable scene-specific environments with foreground, midground and background. Do not default to empty cream/off-white space.
 
+WORLD CONSISTENCY ACROSS THE COMPLETE VIDEO — HARD LOCK
+Treat Scene 01 through Scene NN as one coherent high-quality illustrated film world, even when scenes are generated in separate five-scene batches.
+Batch boundaries must NEVER reset the art style.
+Preserve the same mature strict-stickman anatomy family, linework, outline behavior, cel shading, texture/detail level, environment quality, depth, rendering language and overall premium psychology-documentary/editorial feel across every image.
+Lighting, location, composition, color temperature and mood may change for the current spoken beat, but every frame must still look as if it was created by the SAME illustrator for the SAME channel and the SAME film world.
+Do not let later batches become a cheaper style, different character family, different outline system, different shading system or unrelated visual universe.
+
 STRICT STICKMAN CAST — HARD LOCK
 EVERY visible human uses the same mature strict-stickman anatomy family:
 - large simple round/oval head, NOT chibi/mascot oversized
@@ -65,6 +72,7 @@ No generic full-width top banner.
 REFERENCE POLICY
 Use only approved `assets/cinematic-human-behavior-world/` references.
 References lock mature strict-stickman anatomy, linework, cel shading, texture, rendering quality, environment-detail level and mood-appropriate light/color.
+Use the same approved reference logic throughout all five-scene batches so the world remains unified.
 Do not clone exact person, clothing, room, pose, camera, composition or readable text unless local continuity requires it.
 Reject any reference that is cute/chibi, broad-shouldered, thick-limbed or otherwise outside STYLIZED_STICKMAN_CAST_V2.
 
@@ -84,10 +92,11 @@ AFTER SCENE 01 APPROVAL:
 - final batch contains the remaining 1–4 scenes
 - generate the whole current five-scene batch in one batch operation/turn, NOT deliberately one scene at a time
 - every requested scene still becomes its own separate standalone 16:9 image
+- preserve the SAME approved visual world and rendering quality across every batch
 - immediately rename every accepted image to its matching two-digit filename: Scene 02 -> `02.png`, Scene 03 -> `03.png`, etc.
 - place every accepted image directly into the SAME flat folder `03-bilder/`
 - no batch subfolders, no separate cover folder, no duplicate accepted versions
-- run internal QA after each batch
+- run internal QA after each batch, including world/style continuity against already accepted images
 - regenerate only failed images
 - after a batch passes QA, continue automatically with the next five-scene batch from THIS SAME MASTER PROMPT
 - do not wait for extra user confirmation between successful regular batches
@@ -138,6 +147,8 @@ FINAL QA
 - each scene = separate standalone image asset
 - accepted images are renamed immediately to NN.png
 - all accepted images end together in one flat `03-bilder/` folder
+- every batch remains inside the SAME coherent premium visual world
+- no style reset or quality drop between batches
 - NEVER storyboard/contact-sheet/multi-scene grid
 - every visible human matches mature STYLIZED_STICKMAN_CAST_V2
 - no cute/chibi/mascot drift
