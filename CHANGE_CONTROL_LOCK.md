@@ -48,23 +48,32 @@ Diese **eine Datei enthält alle Szenen des Videos** zusammen mit den globalen F
 
 Nicht in mehrere Master-Prompt-Dateien oder Batch-Prompt-Dateien aufteilen. Batches betreffen nur die Bildgenerierung, nicht die Dateistruktur.
 
-## Google-Flow-Ausgabe — HARD LOCK
+## Google-Flow-Ausgabe — HARD LOCK FÜR NEUE VIDEOS
 
 Verbindliche Detailregel: `rules/FLOW_OUTPUT_MODE.md`.
 
 Der Masterprompt erzeugt finale **Einzelbilder**, kein Storyboard und kein automatisch gebautes Video.
 
-Für neue YouTube-Projekte:
+Für NEUE YouTube-Projekte:
 - Scene 01 zuerst
 - genau 3 getrennte Scene-01-Cover-Kandidaten
 - STOP für Nutzerfreigabe
-- ein Gewinner wird `03-bilder/01.png`
-- danach standardmäßig 3 Szenen pro Batch, maximal 5
+- ein Gewinner wird sofort `01.png`
+- danach immer 5 Szenennummern pro Batch, solange mindestens 5 Szenen übrig sind
+- letzter Batch = verbleibende 1–4 Szenen
+- der komplette 5er-Batch wird als ein Batch-Schritt erzeugt, nicht absichtlich Bild für Bild
 - jede Szenennummer = eine eigene 16:9-Bilddatei
+- jedes akzeptierte Bild sofort passend `NN.png` umbenennen
+- alle akzeptierten Bilder zusammen in genau einem flachen Ordner `03-bilder/` sammeln
+- keine Batch-Unterordner
+- nach erfolgreicher interner QA automatisch mit dem nächsten 5er-Batch fortfahren
+- nur fehlerhafte Bilder einzeln regenerieren
 - niemals mehrere Szenennummern in einem Storyboard, Kontaktbogen, Panel-Grid oder einer Collage zusammenfassen
 - Flow niemals auffordern, aus den Szenen direkt ein Video zu bauen
 
 Ein `SPLIT`/`CONTRAST`/`MONTAGE` innerhalb EINER Szene bleibt erlaubt, wenn alle Teile denselben gesprochenen Beat erklären.
+
+**Bestandsschutz:** Diese V2-Regel gilt nur für zukünftige/neue Videos. Bereits vorhandene `youtube/...` Projekte werden nicht automatisch angepasst. Migration nur auf ausdrücklichen Nutzerwunsch für das konkrete Projekt.
 
 ## YouTube Export — HARD LOCK
 
