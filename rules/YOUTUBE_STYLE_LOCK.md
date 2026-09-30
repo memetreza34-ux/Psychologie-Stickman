@@ -10,123 +10,67 @@ Policy: `CINEMATIC_HUMAN_BEHAVIOR_V2`
 
 ## Core
 
-- mature stylized strict-stickman characters with clothing and strong readable body language
-- polished cinematic 2D editorial / psychology-documentary illustration
-- believable environments ranging from bright everyday places to dark, tense, institutional, financial and night settings
-- clean slightly organic outlines
-- soft cel shading
-- natural depth
-- purposeful cinematic framing
-- adaptive psychological lighting
-- controlled local color
-- one primary behavioral/psychological beat per frame
+- polished hand-drawn 2D Stickman illustration
+- simple round/oval heads
+- slim simplified bodies
+- thin clearly drawn arms and legs
+- simple clothing and expressive minimal faces
+- clean dark outlines
+- flat controlled colors
+- soft graphic/cel shading
+- characters, objects and environments in the same illustrated language
+- one clear behavioral idea per frame
 
-## Character tone
+## Topic world
 
-All visible humans use `STYLIZED_STICKMAN_CAST_V2`.
+The drawing DNA stays the same, but every video may build a different local world.
 
-The figures are adult editorial stickmen, not cute mascots:
-- large simple head without chibi exaggeration
-- small narrow clothed torso
-- narrow shoulders
-- very slim arms and legs
-- simple hands and shoes
-- minimal face
+Bright topics may be bright and open. Uneasy topics may be cooler. Manipulation/power may be darker. Hopeful topics may be warmer. Everyday topics may use natural local color.
 
-No normal cartoon-human body volume.
+Do not force every video into the same red/dark or teal/cream palette.
 
-## Observable behavior first — HARD LOCK
+## Observable behavior first
 
 New videos use `OBSERVABLE_SCENE_FIRST_V1`.
 
-Do not ask the image model to invent a visual for an abstract psychological state. Translate the beat into concrete visible evidence first: action, posture, gaze, distance, blocking, object relation and environment activity.
+Translate psychology into concrete visible action, posture, gaze, distance, object relation and environment activity before writing the image prompt.
 
-Named psychology effects are not literal art directions. Do not automatically turn Spotlight Effect into a spotlight, Anchor Effect into an anchor, Halo Effect into a halo or Framing into a picture frame.
-
-Lighting, color and symbolism support the concrete action; they never replace it.
-
-## Adaptive mood
-
-Scenes may use CLEAR, UNEASY, DARK, POWER, MONEY, ISOLATION or HOPE.
-
-Mood changes framing, light, posture, negative space, saturation and temperature. It never changes the illustration family and never substitutes for visible behavior.
-
-The channel is neither permanently bright nor permanently dark.
+Do not automatically turn effect names into literal props or special effects.
 
 ## Mixed visual storytelling
 
-A frame may be:
-- `CHARACTER_SCENE`
-- `SCHEMA_EXPLAINER`
-- `OBJECT_METAPHOR`
-- `COMPARE_VISUAL`
-- `TEXT_ILLUSTRATION`
-- environment/object-only illustration
+A frame may be a character scene, object/environment image, comparison, schema or text illustration. A Stickman is not required in every image.
 
-A stickman is not required in every image.
-
-Representation mix is guidance, not quota. Do not force a montage, group, split screen, schema or character merely to create variety.
-
-## Environment
-
-Normal real-life scenes should not default to blank cream/off-white space. Use believable scene-specific environments, depth and motivated lighting.
-
-Concrete environment activity is preferred over generic wording such as `rich cinematic environment`.
-
-## Dark-scene rule
-
-Dark psychology does not mean empty black backgrounds or horror clichés.
-
-Prefer believable locations, actual interaction, posture, gaze, hierarchy, distance and motivated shadows.
-
-## Google Flow structure and output
+## Google Flow
 
 Each video keeps exactly one master file:
 
 `02-google-flow/google-flow-prompt.txt`
 
-New videos use `NATURAL_FLOW_MASTER_V2`.
-
-Final BILD prompts are natural direct art direction using concrete visible evidence, not repeated technical forms.
+The prompt stays concise. Global style is stated once, then every `BILD NN` repeats only one short style anchor plus the actual scene direction.
 
 Output follows `FINAL_SEPARATE_IMAGE_ASSETS_V2`:
-- final source images only
 - BILD 01 first as exactly 3 separate cover candidates
 - STOP for user selection
-- chosen cover → `01.png` in `03-bilder/`
-- later generation in exact five-image batches whenever five remain
-- one separate 16:9 asset per image number
-- accepted images immediately `NN.png`
-- all accepted images together in the same flat `03-bilder/`
-- no storyboard/contact sheet/collage/video
+- chosen cover becomes `01.png`
+- the chosen cover becomes the video-local visual reference for later batches
+- then exact five-image batches whenever five remain
+- every scene stays a separate 16:9 image
+- accepted images are renamed `NN.png`
+- all accepted images stay together in `03-bilder/`
 
-## Not allowed
+## Minimal not allowed
 
-- minimalist whiteboard / bare line-stickman world
-- sparse off-white-paper world as channel default
-- cute/chibi/mascot character world
-- normal realistic/cartoon humans
-- broad shoulders or thick cartoon-human limbs
-- mixed character families
+- photorealistic/realistic humans
 - 3D/Pixar/anime
-- corporate vector infographic style
-- photorealistic environments
-- random style changes between scene families
-- cheap villain clichés as the default dark-language
-- permanently cheerful or permanently dark treatment regardless of beat
-- abstract psychology instruction without concrete observable evidence
-- literal effect-name gimmicks used as automatic visual shorthand
-- forced montage/group/split/schema to satisfy a quota
-- several image numbers inside one storyboard/contact-sheet asset
-
-## Reference
-
-Permanent pack: `assets/cinematic-human-behavior-world/`.
-
-A reference is usable only after it passes the visual/anatomy quality locks. Scene 01 remains cover + first beat and does not replace the permanent channel reference pack.
+- cute/chibi/mascot
+- bare whiteboard Stickmen
+- realistic environment mixed with doodle characters
+- random text
+- style reset between batches
 
 ## Priority
 
 `rules/VISUAL_SYSTEM.md` defines the world.
-`rules/VISUAL_DIRECTOR_PROMPT_WRITER.md` defines how a spoken beat becomes a visible scene.
-`rules/FLOW_PROMPT_ARCHITECTURE.md` defines how that scene becomes the final Flow prompt.
+`rules/VISUAL_DIRECTOR_PROMPT_WRITER.md` defines the scene idea.
+`rules/FLOW_PROMPT_ARCHITECTURE.md` defines the final Flow prompt.
