@@ -4,132 +4,89 @@ TOPIC: [VIDEO-THEMA]
 FORMAT: 16:9 / 1920x1080
 VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
 CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
-ANATOMY POLICY: GEOMETRIC_STICKMAN_ANATOMY_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 
-TASK / OUTPUT — READ FIRST
-Create FINAL SEPARATE 16:9 source images for one coherent YouTube video.
-This is the ONLY Google Flow master prompt for this video and it contains every image from BILD 01 to BILD NN.
-Never create a storyboard, contact sheet, multi-scene grid, collage or automatic video.
-One image number always means one separate image asset.
+TASK
+Create final separate 16:9 source images for one coherent YouTube video.
+One BILD number = one separate image.
+Never create a storyboard, contact sheet, collage or automatic video.
 
-CHANNEL VISUAL WORLD — HARD LOCK
-Keep the complete video inside one mature cinematic 2D psychology-documentary / editorial illustration world.
-Use clean slightly organic dark outlines, controlled soft cel shading, subtle texture, believable depth, purposeful framing and motivated light.
-Simple Stickmen live in rich believable scene-specific environments when a real location helps the beat.
-Do not default to blank cream backgrounds, sterile rooms, repeated desk shots or one fixed red/burgundy/dark or teal/cream palette.
-Not every image needs a person. Object/environment illustrations, comparisons and cinematic schemas are valid when they explain the beat faster.
-Every image has one dominant visual idea and only useful supporting elements.
-The complete set must look as if the SAME illustrator created it for the SAME channel, even when location, camera, mood and color change.
+CHANNEL STYLE
+Polished hand-drawn 2D Stickman illustration.
+Simple round/oval heads, minimal expressive faces, slim simplified bodies, thin clearly drawn arms and legs, simple clothing, clean dark outlines, flat controlled colors and soft graphic shading.
+Characters, props and environments must use the SAME illustrated language.
+No photorealism. No 3D/Pixar/anime. No chibi. No bare whiteboard stick figures.
 
-GEOMETRIC STICKMAN ANATOMY — ABSOLUTE HARD LOCK
-Every visible human — main, supporting and background — must unmistakably read as a TRUE ILLUSTRATED STICK FIGURE, never a thin normal cartoon human.
+VIDEO WORLD
+[Describe the topic-specific world briefly: e.g. bright/open, cool/uneasy, dark/power, warm/hopeful, commercial/money, sparse/isolation. Add only recurring people, places or props that must stay consistent.]
 
-Recognition test: if a figure could plausibly be described as a thin cartoon person, the anatomy is WRONG.
+COVER WORKFLOW — HARD LOCK
+1. Generate BILD 01 ONLY.
+2. Generate exactly 3 SEPARATE 16:9 cover candidates.
+3. Same visual thesis and exact cover text, but 3 meaningfully different compositions.
+4. STOP and wait for the user to choose one.
+5. Chosen winner -> `01.png` -> `03-bilder/`.
+6. Use the chosen `01.png` as the VIDEO-LOCAL VISUAL REFERENCE for all later images: preserve Stickman construction, linework, flat colors, graphic shading, texture and overall illustration quality.
+7. Do NOT copy the cover's exact pose, room, composition or palette unless continuity requires it.
 
-HEAD: one clean simple circle or slightly vertical oval; tiny dot/short-mark eyes; one tiny mouth line; optional tiny eyebrow strokes; NO ears, NO nose, NO neck, NO realistic jaw/cheeks.
-TORSO: one tiny narrow rounded-rectangle/simple tapered graphic clothing shape, clearly less than half the head width; NO chest, waist, hips or shoulder mass.
-ARMS: ultra-thin near-uniform line-like strokes; NO upper-arm/forearm mass; NO sleeve volume.
-LEGS: ultra-thin near-uniform line-like strokes; NO thighs/calves; NO trouser-leg volume.
-HANDS: tiny no-finger endpoint/dot/mitten shapes only.
-FEET: small flat simple shoes only.
-CLOTHING: flat graphic cue only; it may color the tiny torso or line limbs but may NEVER create broad shoulders, chest, sleeves, waist, hips, thighs or calves.
-HAIR: tiny flat head-edge cue only; NO volumetric hairstyle.
-BACKGROUND PEOPLE: same exact geometry even when small, seated, distant or partially hidden. Never simplify them into normal cartoon silhouettes.
+AFTER COVER APPROVAL
+Generate the remaining images in batches of exactly 5 whenever possible:
+- 02–06
+- 07–11
+- 12–16
+- continue in groups of 5
+- final remainder may contain 1–4 images
 
-Hard reject: thin cartoon humans, normal cartoon-human anatomy, cute/chibi/mascot figures, broad shoulders, thick/tapered limbs, sleeve-shaped arms, trouser-shaped legs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
-
-CHARACTER + REFERENCE SYSTEM
-Use only reference images actually approved for CINEMATIC_HUMAN_BEHAVIOR_V2 and GEOMETRIC_STICKMAN_ANATOMY_V1.
-A style-only reference may lock rendering, anatomy family, linework, cel shading, texture and environment quality, but must not force the same room, pose, clothing, composition or palette.
-A character-identity reference preserves returning-person identity cues while keeping the same geometric anatomy.
-An environment-continuity reference preserves a recurring place/layout only when needed.
-If no approved reference exists, follow the written rules instead of inventing one.
-Never let a weak/chibi/cartoon/thin-human reference override the written rules.
-
-VIDEO WORLD LOCK
-[Describe only recurring people, places, props or continuity facts that must stay the same inside this video. Keep this short. If nothing recurs: No fixed recurring location; only the channel illustration world remains consistent.]
-
-GENERATION WORKFLOW — HARD LOCK
-
-INITIAL COVER RUN:
-1. Read the complete master prompt first.
-2. Generate BILD 01 ONLY.
-3. Generate exactly 3 SEPARATE cover candidates for BILD 01.
-4. Each candidate must be its own standalone 16:9 image. Never combine the three candidates into one sheet/grid.
-5. All three keep the same approved visual thesis and exact cover text, but use meaningfully different strong compositions rather than near-duplicates.
-6. STOP and wait for the user to choose one cover.
-7. Keep exactly the chosen candidate.
-8. Rename it immediately to `01.png`.
-9. Put it directly in the single final folder `03-bilder/`.
-10. Do not generate BILD 02 or later before the user has chosen the cover.
-
-AFTER THE USER CHOOSES THE COVER:
-- generate the remaining images in batches of EXACTLY 5 image numbers whenever at least 5 remain
-- generate the whole current five-image batch in one batch operation/turn, not deliberately one image at a time
-- every requested image number still becomes its own separate standalone 16:9 image
-- immediately rename each accepted result to its matching number: BILD 02 -> `02.png`, BILD 03 -> `03.png`, etc.
-- put every accepted image directly into the SAME flat folder `03-bilder/`
-- no cover subfolder, no batch subfolders, no duplicate accepted versions
-- after each batch, check world continuity, GEOMETRIC_STICKMAN_ANATOMY_V1, scene clarity, unnecessary text and visual repetition
-- regenerate only failed images
-- when a batch passes, continue automatically with the next five-image batch from THIS SAME MASTER PROMPT
-- the final batch may contain the remaining 1–4 images
-- never offer to turn the images into a video; the external pipeline handles final editing
-
-FINAL REQUIRED IMAGE FOLDER:
-`03-bilder/01.png, 02.png, 03.png, ... NN.png`
+Each BILD stays a separate 16:9 image.
+Generate each whole 5-image batch in one batch operation, not deliberately one-by-one.
+Rename accepted results immediately to `NN.png`.
+Put every accepted image directly in the same flat folder `03-bilder/`.
+Regenerate only failed images.
+After a batch passes, continue automatically with the next batch.
 
 GLOBAL TEXT RULE
-No visible text unless the current BILD prompt explicitly requests exact German wording.
-Never render the spoken voice-over as captions.
-Never invent readable posters, signs, screens, documents, packaging, logos or pseudo-text.
-If a BILD prompt says no visible text, render ZERO READABLE TEXT.
+Only render exact German text explicitly requested for that BILD.
+Otherwise: NO VISIBLE TEXT.
 
-PROMPTING RULE — OBSERVABLE SCENE FIRST
-Every BILD prompt below already translates the psychology into concrete visible evidence.
-Follow the described people, posture, gaze, distance, action, objects, environment and camera literally.
-Do not replace concrete behavior with symbolic spectacle, glowing attention effects or abstract psychology icons.
-Do not literalize effect names just because of their wording.
-If a prompt contains an emotion, make the listed visible body-language/action cues primary.
+PROMPTING RULE
+Use concrete visible action, posture, gaze, distance, object relation and environment activity.
+Do not ask Flow to invent what an abstract psychological state looks like.
+Do not literalize a psychology-effect name automatically.
 One BILD = one dominant visible idea.
 
-COVER RULE — BILD 01
-BILD 01 is both the first visual beat and the YouTube thumbnail source.
-It must communicate the central mechanism/question through a concrete visible situation before the title is read.
-Use one dominant focal relationship, strong thumbnail readability and a compact asymmetric title zone instead of a generic full-width top banner.
+SHORT STYLE ANCHOR FOR EVERY BILD
+Start every image prompt with:
+`Same polished hand-drawn 2D Stickman world as this video: simple round/oval heads, slim simplified bodies, thin drawn limbs, clean dark outlines, flat controlled colors and soft graphic shading.`
+
+After BILD 01 is approved, interpret "same world" using the chosen `01.png` as the video-local visual reference.
 
 BILD 01
-[Write one natural English prompt, normally 45–110 words: camera/framing + concrete subject(s) + exact visible action/relation + relevant other behavior/objects + environment/props + light/local color + exact short German cover title. End with: No other readable text.]
+[Short natural English prompt, usually 40–90 words: style anchor + camera + main subject + visible action/relation + relevant environment + topic-appropriate light/color + exact short German cover text. End with: No other readable text.]
 
 BILD 02
-[Write one natural English prompt, normally 45–110 words. Describe only concrete visible evidence for this beat. End with: No visible text.]
+[Short natural English prompt, usually 35–80 words. Concrete scene only. End with: No visible text.]
 
 BILD 03
-[Write one natural English prompt. One visible idea only.]
+[Short natural English prompt.]
 
 BILD 04
-[Write one natural English prompt.]
+[Short natural English prompt.]
 
 BILD 05
-[Write one natural English prompt.]
+[Short natural English prompt.]
 
-[CONTINUE BILD 06 THROUGH BILD NN IN THE SAME OBSERVABLE DIRECT STYLE]
+[CONTINUE THROUGH BILD NN]
 
 FINAL QA
-- one master prompt file only
-- BILD 01 first as 3 separate cover candidates, then STOP for user choice
-- only after cover approval begin later images
-- later images generated in five-image batches whenever five remain
-- every image number = separate standalone 16:9 asset
-- accepted outputs renamed immediately to `NN.png`
-- all accepted images together in one flat `03-bilder/` folder
-- no storyboard/contact sheet/multi-scene grid/video
-- every visible human unmistakably passes GEOMETRIC_STICKMAN_ANATOMY_V1
-- no thin-cartoon-human drift in main OR background people
-- same mature strict-stickman illustration world across every batch
-- each BILD uses concrete visible evidence instead of asking Flow to interpret psychology
-- no forced character, montage, group, split, text or schema just to create variety
-- exact German text only when explicitly requested; otherwise ZERO READABLE TEXT
+- 3 separate cover candidates first, then STOP for user choice
+- approved cover = 01.png and video-local visual reference
+- later images in 5-image batches
+- every BILD = separate 16:9 asset
+- all accepted files renamed NN.png
+- all accepted files together in 03-bilder/
+- same hand-drawn Stickman drawing DNA across all batches
+- topic-specific mood/color may change by scene
+- no unnecessary text
+- no storyboard/contact sheet/video
