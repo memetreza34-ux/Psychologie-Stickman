@@ -6,6 +6,8 @@ Policy ID: `NATURAL_FLOW_MASTER_V2`
 
 Creative translation from script to image follows `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md` / `OBSERVABLE_SCENE_FIRST_V1`. Output/batching remains controlled by `rules/FLOW_OUTPUT_MODE.md`.
 
+Human anatomy follows `rules/STICKMAN_DNA.md` / `GEOMETRIC_STICKMAN_ANATOMY_V1`.
+
 ## 1. One master file
 
 Every video keeps exactly one:
@@ -36,40 +38,46 @@ spoken meaning
 
 If the central idea cannot be described with visible people, posture, gaze, distance, action, objects, environment, or a clearly defined comparison/mechanism, the visual plan is not ready.
 
-Weak: `show self-consciousness`, `visualize social pressure`, `make attention feel huge`.
-
-Strong: `A looks down at a small stain while the other guests keep talking, drinking or checking phones; nobody is staring at A.`
-
 ## 4. Do not literalize effect names — HARD LOCK
 
-Do not turn a psychological term into its literal word-picture only because of the name:
+Do not turn a psychological term into its literal word-picture only because of the name. A literal metaphor is allowed only when deliberately chosen because it explains the current beat better than a concrete situation.
+
+Examples:
 - Spotlight-Effekt ≠ theatrical spotlight
 - Ankereffekt ≠ ship anchor
 - Halo-Effekt ≠ glowing halo
 - Framing-Effekt ≠ picture frame
-- Echo Chamber ≠ literal echo room
-- Bandwagon Effect ≠ wagon
-
-A literal metaphor is allowed only when deliberately chosen because it explains the current beat better than a concrete situation.
 
 ## 5. Final master order
 
 1. `TASK / OUTPUT`
 2. `CHANNEL VISUAL WORLD`
-3. `CHARACTER + REFERENCE SYSTEM`
-4. `VIDEO WORLD LOCK`
-5. `GENERATION WORKFLOW`
-6. `GLOBAL TEXT RULE`
-7. short `PROMPTING RULE`
-8. `BILD 01` through `BILD NN`
-9. short final QA
+3. `GEOMETRIC STICKMAN ANATOMY`
+4. `CHARACTER + REFERENCE SYSTEM`
+5. `VIDEO WORLD LOCK`
+6. `GENERATION WORKFLOW`
+7. `GLOBAL TEXT RULE`
+8. short `PROMPTING RULE`
+9. `BILD 01` through `BILD NN`
+10. short final QA
 
 Global style/anatomy/negative rules appear once near the top.
 
-## 6. Final image-prompt formula
+## 6. Geometric stickman block — HARD LOCK
+
+Every new master prompt with people must contain one concise global anatomy block equivalent to:
+
+`Every human must unmistakably read as a true illustrated stick figure, never a thin cartoon human: one simple circle/oval head with tiny dot/mark face, no ears/nose/neck; one tiny narrow graphic torso clearly under half the head width; ultra-thin near-uniform line-like arms and legs with no upper-arm/forearm/thigh/calf volume; tiny no-finger hands; small flat shoes. Clothing is a flat graphic cue and may not create shoulders, chest, sleeves, waist, hips or trouser-leg volume. Hair is only a tiny flat head-edge cue. Main, supporting and background people all use this exact geometry.`
+
+Also include the recognition test:
+
+`If a figure could plausibly be described as a thin normal cartoon human, the anatomy is wrong.`
+
+Background figures must not be allowed to drift into thick or conventional cartoon silhouettes.
+
+## 7. Final image-prompt formula
 
 A normal `BILD NN` prompt should use only what matters, usually in this order:
-
 1. camera/framing
 2. dominant subject(s)
 3. exact visible action/relation
@@ -80,28 +88,24 @@ A normal `BILD NN` prompt should use only what matters, usually in this order:
 8. exact German visible text OR `No visible text.`
 9. only 1–3 scene-specific negatives when a known failure needs blocking
 
-Use concrete nouns and visible verbs such as `looks down`, `steps back`, `points`, `turns away`, `keeps talking`, `checks a phone`, `holds`, `stands closer`, `sits apart`, `compares`.
+Use concrete nouns and visible verbs. Do not make abstract wording the main instruction.
 
-Do not make abstract wording the main instruction: `symbolizes`, `represents`, `embodies`, `visualize the concept`, `communicate the psychology`, `make the viewer feel`.
+## 8. One visible idea per image
 
-## 7. One visible idea per image
-
-One image normally has one main action/relation and one dominant focal subject. Use only a few supporting elements.
-
-If a beat contains several independent examples or actions, split the visual planning instead of forcing a montage. Split/contrast/montage is allowed only when multiple parts are necessary to explain one inseparable comparison or mechanism.
+One image normally has one main action/relation and one dominant focal subject. If a beat contains several independent examples or actions, split the visual planning instead of forcing a montage.
 
 Do not use montage, group scenes or split screens merely to satisfy variety quotas.
 
-## 8. Emotion/power must be physically readable
+## 9. Emotion/power must be physically readable
 
-When emotion or hierarchy matters, show it through gaze, head angle, posture, distance, foreground/background placement, who looks at whom, who ignores whom, standing/sitting position and concrete interaction.
+When emotion or hierarchy matters, show it through gaze, head angle, line-arm position, line-leg stance, torso lean, distance, foreground/background placement and concrete interaction.
 
-An emotion adjective may support the prompt, but cannot replace visible behavior.
+Do not add realistic body mass to make emotion or dominance more readable.
 
-## 9. Unified world, varied staging
+## 10. Unified world, varied staging
 
 Keep constant across the full video:
-- mature strict-stickman anatomy
+- `GEOMETRIC_STICKMAN_ANATOMY_V1`
 - linework and 2D rendering language
 - cel shading and texture quality
 - environment-quality standard
@@ -110,26 +114,23 @@ Keep constant across the full video:
 
 Location, camera, day/night, light direction, local color, mood, people count and representation may change per beat.
 
-## 10. References
+## 11. References
 
-Use approved references by role: style-only, character-identity and environment-continuity. Prefer a small clean reference set. Never let a weak/chibi/cartoon reference override the written rules.
+Use approved references by role: style-only, character-identity and environment-continuity. Prefer a small clean reference set. Never let a weak/chibi/cartoon or thin-human reference override the written geometry lock.
 
-## 11. Representation variety
+## 12. Representation variety
 
-Humans are optional. Choose character interaction, object/environment, comparison, schema, metaphor or text illustration only when it is the clearest form.
+Humans are optional. Choose character interaction, object/environment, comparison, schema, metaphor or text illustration only when it is the clearest form. Percentages are guidance, never quotas.
 
-Representation percentages are guidance, never quotas. Content determines the form.
-
-## 12. Prompt length
+## 13. Prompt length
 
 Normal target: roughly 45–110 English words per image. Longer only when continuity, a necessary comparison or exact typography genuinely requires it.
 
-Every sentence should change something visible. Remove style repetition and abstract restatement.
+Every sentence should change something visible.
 
-## 13. Cover + production workflow
+## 14. Cover + production workflow
 
 Preserve `FINAL_SEPARATE_IMAGE_ASSETS_V2` exactly:
-
 - `BILD 01` first
 - exactly 3 separate 16:9 cover candidates
 - STOP for user choice
@@ -145,45 +146,32 @@ Preserve `FINAL_SEPARATE_IMAGE_ASSETS_V2` exactly:
 
 The three cover candidates keep the same approved visual thesis and exact cover text, but should test meaningfully different strong compositions rather than three near-duplicates.
 
-## 14. Text rule
+## 15. Text rule
 
 Default: `No visible text.` / `ZERO READABLE TEXT`.
 
 Only render exact German wording explicitly planned for that image. Never render voice-over as captions or invent readable signs/screens/documents.
 
-## 15. Flow Agent role
+## 16. Flow Agent role
 
 The Flow Agent is the production executor, not the art director. It may generate, batch, rename, QA and organize assets, but the repo must decide the concrete visible scene first.
 
-## 16. Example
-
-Good:
-
-```text
-BILD 05
-Medium-wide three-quarter view inside a modern café in daylight. Character A stands beside a table and looks down at a small stain on the teal overshirt, shoulders slightly drawn inward. Two guests talk to each other, one checks a phone and another drinks coffee; nobody is staring at A. Warm wood tables, large windows, muted green details and soft natural daylight with clear depth. Keep the stain physically small but clearly visible. No visible text.
-```
-
-Avoid:
-
-```text
-Create a cinematic visual representation of self-consciousness. Make the tiny mistake feel enormous through a dramatic spotlight and psychological symbolism.
-```
-
 ## 17. Hard fail
 
-Rewrite if:
+Rewrite/regenerate if:
+- a human looks like a thin normal cartoon person instead of a true stick figure
+- limbs become tapered/cylindrical or clothing creates human sleeves/trouser legs
+- background people drift into another anatomy
 - the key instruction is abstract rather than observable
 - a psychological term is literalized only because of its name
-- symbolic glow/rays/icons replace a clearer real-life action
+- symbolic glow/rays/icons replace clearer real-life action
 - unrelated examples are crammed into one image
 - Flow must invent the central behavior or relationship
 - a montage/group/split exists only to satisfy a quota
-- the environment is generic filler
-- the prompt repeats global style instead of directing the scene
+- environment is generic filler
 - several image numbers are combined into one asset
 - cover approval or five-image batching is broken
 - accepted images are not renamed or are split across folders
 - later batches reset the art style
 
-This rule complements `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`, `rules/FLOW_OUTPUT_MODE.md`, `rules/VISUAL_SYSTEM.md`, `rules/IMAGE_REFERENCE_LOCK.md` and `rules/REPRESENTATION_VARIETY_LOCK.md`.
+This rule complements `rules/STICKMAN_DNA.md`, `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`, `rules/FLOW_OUTPUT_MODE.md`, `rules/VISUAL_SYSTEM.md`, `rules/IMAGE_REFERENCE_LOCK.md` and `rules/REPRESENTATION_VARIETY_LOCK.md`.
