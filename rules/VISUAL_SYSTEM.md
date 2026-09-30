@@ -4,15 +4,13 @@
 
 Policy ID: `CINEMATIC_HUMAN_BEHAVIOR_V2`
 
+Character anatomy sub-policy: `GEOMETRIC_STICKMAN_ANATOMY_V1`
+
 This system replaces `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1` for NEW productions.
 
 ## 1. Core idea
 
 **One recognizable mature cinematic 2D strict-stickman world that can move from bright everyday psychology to uneasy, dark, powerful, financial, isolated and hopeful scenes without changing illustration style.**
-
-The channel may cover normal cognition, manipulation, power, status, money behavior, social pressure, deception, fear, trust, conflict, self-control and constructive solutions.
-
-The world is emotionally adaptive instead of permanently cheerful or permanently dark.
 
 The target is an adult psychology-documentary / editorial-graphic-novel feeling — never a children's cartoon, mascot sheet, classroom doodle or generic explainer template.
 
@@ -31,38 +29,30 @@ Across every scene, mood and topic preserve:
 
 Mood may change strongly. Illustration identity may not.
 
-## 3. Unified human cast — HARD LOCK
+## 3. Unified human cast — GEOMETRIC HARD LOCK
 
-Whenever humans appear, every visible human belongs to `STYLIZED_STICKMAN_CAST_V2`.
+Whenever humans appear, every visible human belongs to `STYLIZED_STICKMAN_CAST_V2` and obeys `GEOMETRIC_STICKMAN_ANATOMY_V1`.
 
-Required family traits:
-- large simple round or slightly oval head, but NOT mascot/chibi oversized
-- minimal expressive eyes and mouth
-- no realistic nose/ears/facial anatomy
-- small narrow clothed torso
-- narrow shoulders; clothing must not create a normal broad human body
-- very slim shaped illustrated arms and legs, clearly thinner than ordinary cartoon-human limbs
-- simplified hands without realistic fingers
-- simple readable shoes/feet
-- readable silhouette, posture and body language
+**Recognition test:** if the silhouette could plausibly be called a thin normal cartoon human, it is a FAIL. It must unmistakably read as a true illustrated stick figure.
 
-The same family is used for main, supporting, background, crowd, screen, poster, reflection and memory humans.
+Required geometry:
+- one simple circular/slightly oval head, not chibi oversized
+- two tiny eye dots/marks, tiny simple mouth, optional tiny eyebrow strokes
+- no ears, no nose, no neck, no realistic jaw/cheeks
+- one tiny narrow graphic torso, clearly less than half the head width
+- no chest, waist, hips or anatomical shoulder mass
+- arms = ultra-thin near-uniform line-like strokes, no upper-arm/forearm volume
+- legs = ultra-thin near-uniform line-like strokes, no thighs/calves or trouser-leg volume
+- tiny no-finger hand endpoints
+- small flat simple shoes
+- clothing = flat graphic cue only; it may not create normal sleeves, chest, waist, hips, thighs or calves
+- hair = tiny flat head-edge cue, never volumetric hairstyle
 
-Individuality may come from:
-- clothing
-- simple hair cue
-- glasses/accessory
-- modest size/proportion differences
-- posture
-- expression
-- role styling
-- silhouette
-
-Never individualize by switching anatomy family.
+The same geometry is used for main, supporting, background, crowd, screen, poster, reflection and memory humans.
 
 ## 4. Mature-character rule — HARD LOCK
 
-Characters must not drift into cute/chibi/mascot language.
+Characters must not drift into cute/chibi/mascot language, but maturity must never be achieved by adding realistic anatomy.
 
 Avoid:
 - oversized baby-like heads
@@ -71,280 +61,160 @@ Avoid:
 - large soft cartoon torsos
 - blush/cute facial styling
 - toy-like proportions
-- overly cheerful children's-book posing
+- volumetric sleeves/trouser legs
+- skinny-but-human body anatomy
 
-A friendly scene may still be warm, but the figure remains a restrained adult editorial stickman.
+Maturity comes from posture, gaze, role, camera, environment and restrained expression while the body remains unmistakably stick-figure geometry.
 
 ## 5. Emotional character range
 
-Characters are not required to look friendly, attractive or morally good.
+Characters may look neutral, confident, anxious, vulnerable, exhausted, sad, dominant, authoritative, manipulative, deceptive-friendly, arrogant, suspicious or isolated.
 
-Allowed roles include:
-- neutral observer
-- confident person
-- anxious or insecure person
-- vulnerable target
-- exhausted or sad person
-- dominant person
-- authority figure
-- manipulator
-- deceptive friendly figure
-- arrogant/status-focused figure
-- suspicious person
-- isolated person
-- anonymous group/crowd
-
-Threat should normally be communicated through posture, gaze, proximity, hierarchy, camera angle, shadow, negative space and environment — not cheap villain clichés.
-
-Do not default to glowing red eyes, monster teeth, horns or horror faces.
+Threat and role should normally be communicated through posture, gaze, proximity, hierarchy, camera angle, shadow, negative space and environment — not by adding body mass or villain clichés.
 
 ## 6. Character presence is optional — HARD LOCK
 
-A strong frame does not need a human.
-
 Use people when human action, reaction, hierarchy or relationship is the clearest explanation.
 
-Prefer no-human frames when clearer:
-- schema/mechanism
-- symbolic object
-- environmental metaphor
-- object close-up
-- comparison
-- text illustration
-- spatial/social diagram
+Prefer no-human frames when clearer: schema/mechanism, symbolic object, environmental metaphor, object close-up, comparison or text illustration.
 
 Never insert a decorative stickman merely to fill empty space.
 
 ## 7. Mood engine
 
 Allowed mood modes:
+- `CLEAR`
+- `UNEASY`
+- `DARK`
+- `POWER`
+- `MONEY`
+- `ISOLATION`
+- `HOPE`
 
-### CLEAR
-Neutral explanations and ordinary behavior. Open readable light, natural color, moderate contrast.
-
-### UNEASY
-Doubt, uncertainty, social pressure or subtle manipulation. Cooler/less saturated space, stronger directional light, tighter composition.
-
-### DARK
-Manipulation, coercion, deception, abuse of power or disturbing behavior. Low-key motivated light, graphic shadows, deeper navy/charcoal/burgundy possibilities, stronger negative space.
-
-### POWER
-Hierarchy, dominance, authority, control and status. Strong silhouette, useful low/high angles, controlled contrast and spatial hierarchy.
-
-### MONEY
-Money, consumption, negotiation, greed, risk and financial behavior. Graphite/deep green/warm gold/cream may appear when appropriate; never generic finance stock-vector aesthetics.
-
-### ISOLATION
-Loneliness, exclusion, fear, vulnerability or alienation. Cooler palette, large negative space, distant or edge-positioned subject.
-
-### HOPE
-Protection, solution, clarity, recovery or constructive resolution. More open composition, warmer motivated light and clearer visual breathing room.
-
-Mood intensity may vary from subtle to strong, but the illustration family never changes.
+Mood changes framing, light, posture, negative space, saturation and temperature. It never changes the channel's illustration family or geometric anatomy.
 
 ## 8. Power relationships
 
-When relevant, power should be visible through:
-- blocking
-- scale
-- camera angle
-- distance
-- posture
-- gaze
-- foreground/background placement
-- environmental position
+When relevant, power should be visible through blocking, scale, camera angle, distance, posture, gaze and foreground/background placement — never by turning one figure into a muscular or realistic body.
 
 ## 9. Environment — RICH WORLD HARD LOCK
 
-Locations must support the psychological beat and may range widely:
-- apartment, bedroom, café, train, supermarket, cinema, office, school, street, restaurant, park
-- negotiation room, luxury lobby, shop floor, waiting room, corridor, stairwell, parking area, night street, platform, hotel-like hallway, sparse room, digital environment
+Locations must support the psychological beat and may range widely: apartment, bedroom, café, train, supermarket, cinema, office, school, street, restaurant, park, negotiation room, lobby, shop floor, waiting room, corridor, platform and other believable locations.
 
-Use recognizable architecture, furniture and props.
-
-Normal character scenes should usually have meaningful foreground, midground and background separation. Environment detail belongs around the simple characters and is a major part of the premium look.
+Use recognizable architecture, furniture and props. Normal scenes should usually have meaningful foreground/midground/background separation.
 
 Do NOT default to:
 - empty cream/off-white backgrounds
 - a character floating in blank space
 - the same classroom/office repeatedly
-- sterile generic rooms with no topic-specific detail
+- sterile generic rooms
+- flat stock-vector staging
 
-A sparse background is allowed only when negative space is deliberately part of the psychological idea, such as isolation or a clean concept frame.
-
-Dark scenes must not collapse into empty black backgrounds. Darkness should still feel located in a believable illustrated space unless abstraction is deliberately clearer.
+A sparse background is allowed only when negative space is deliberately part of the idea.
 
 ## 10. Lighting
 
-Lighting is a storytelling system, not decoration.
+Lighting is storytelling, not decoration. Use motivated daylight, practical lamps, cool window light, screen light, institutional light, side light, doorway light, rim light or low-key light when appropriate.
 
-Allowed examples:
-- soft daylight
-- warm practical lamp
-- cool window light
-- screen/phone light
-- overhead institutional light
-- side light
-- doorway light
-- rim light
-- motivated low-key light
-- silhouette/backlight
-- mixed warm/cool light
-
-Use shadows to communicate tension, secrecy, pressure, distance or hierarchy when relevant.
-
-Every premium frame should have an intentional focal-light relationship rather than flat uniform illumination.
+Never use symbolic glow/rays as a substitute for concrete behavior unless a deliberate metaphor is clearly the best explanation.
 
 ## 11. Color system
 
-There is no single forced palette.
-
-Recurring anchors may include:
-- deep navy / dark blue
-- charcoal / graphite
-- warm amber
-- muted teal/blue
-- coral/red
-- burgundy
-- deep green
-- restrained warm gold
-- cream / warm neutral
-- natural local object colors
+There is no single forced palette. Recurring anchors may include deep navy, charcoal, warm amber, muted teal/blue, coral/red, burgundy, deep green, restrained gold and natural local object colors.
 
 Rules:
 - controlled, not candy-colored
-- no grey/beige/cream wash as a default
+- no grey/beige/cream wash as default
 - focal subject receives strongest useful contrast
-- background may be quieter
-- mood influences saturation and temperature
-- color must not replace composition or psychological storytelling
-- avoid repeating the exact same teal-and-cream balance in every frame
+- mood influences saturation/temperature
+- avoid repeating the same teal/cream or red/burgundy treatment mechanically
 
 ## 12. Visual representation families
 
 Every beat chooses the clearest representation:
+- `CHARACTER_SCENE`
+- `SCHEMA_EXPLAINER`
+- `OBJECT_METAPHOR`
+- `COMPARE_VISUAL`
+- `TEXT_ILLUSTRATION`
+- environment/object-only illustration
 
-### CHARACTER_SCENE
-Human action, reaction, hierarchy or relationship in a believable place.
-
-### SCHEMA_EXPLAINER
-Illustrated mechanism, sequence or relationship. Human optional. Must belong to the same film-world, never corporate PowerPoint.
-
-### OBJECT_METAPHOR
-Object or environment explains an invisible mechanism. Human optional.
-
-### COMPARE_VISUAL
-Two states, perspectives, people or choices shown coherently.
-
-### TEXT_ILLUSTRATION
-Short exact text integrated into a strong illustration. Use sparingly.
+These are semantic choices, not quotas.
 
 ## 13. One clear beat per frame
 
-Every frame communicates one primary thought.
+Every frame communicates one primary thought with a clear focal subject/relation, current-beat clarity and meaningful environment only.
 
-Required:
-- clear focal subject/relation
-- current spoken beat is visually readable
-- no future information
-- meaningful environment only
-- no clutter for the sake of looking expensive
-
-A multi-part composition is allowed only when all parts belong to the same single beat. Separate scene numbers are never combined into one asset; see `rules/FLOW_OUTPUT_MODE.md`.
+A multi-part composition is allowed only when all parts belong to the same single beat. Separate scene numbers are never combined into one asset.
 
 ## 14. Continuity
 
-Same world does not mean same character.
-
 Repeat a person only when narrative continuity requires it. Then preserve:
-- head design
-- hair/accessory
-- clothing/core colors
-- proportions
+- head shape
+- tiny hair/accessory cue
+- tiny torso-garment shape/color
+- ultra-thin line-limb proportions
 - shoes
 - face simplification
 
-Mood may change around the same person while identity stays stable.
+Mood may change while identity stays stable.
 
-## 15. Reference architecture
+## 15. Background/crowd anatomy — HARD LOCK
+
+Background people are a frequent drift source.
+
+Even when small, seated or partially occluded, they must retain:
+- simple circle/oval heads
+- tiny narrow torsos
+- ultra-thin line arms and legs
+- no thick seated-human silhouettes
+- no broad shoulders/chests/hips
+
+Do not simplify background people into normal cartoon silhouettes or generic corporate people.
+
+## 16. Reference architecture
 
 Permanent channel reference pack:
 `assets/cinematic-human-behavior-world/`
 
-Target references may include:
-- `style-master.png`
-- `character-neutral.png`
-- `character-emotions.png`
-- `character-dark-archetypes.png`
-- `character-groups.png`
-- `lighting-clear.png`
-- `lighting-uneasy.png`
-- `lighting-dark.png`
-- `lighting-power.png`
-- `environment-day.png`
-- `environment-night.png`
-- `environment-dark.png`
-- `money-status-reference.png`
-- `manipulation-reference.png`
-- `schema-reference.png`
-- `metaphor-reference.png`
-- `cover-reference-light.png`
-- `cover-reference-dark.png`
+Prefer a small approved set: style master, one or two compatible character references when needed, optional group/environment/schema reference.
 
 Until approved references exist, this file + `rules/visual-system.json` + `rules/STICKMAN_DNA.md` are authoritative.
 
-Any candidate reference must itself pass the mature-character, anatomy, environment and rendering locks before it may be used to steer later scenes.
+Any candidate reference must itself pass the geometric-stickman anatomy lock before steering later scenes.
 
-## 16. Text
+## 17. Text
 
-Normal scenes remain text-free unless text is planned.
-
-Allowed planned modes:
-- cover title
-- keyword
-- schema title/short labels
-- comparison labels
-- short text illustration
-
-All visible wording is exact planned German text.
-
-If nothing is planned: `ZERO READABLE TEXT`.
+Normal scenes remain text-free unless text is planned. All visible wording is exact planned German text. If nothing is planned: `ZERO READABLE TEXT`.
 
 Speech context is never rendered as visible text.
 
-## 17. Cover
+## 18. Cover
 
-Cover uses the same world but stronger composition:
-- one dominant emotional conflict/question
-- clear silhouette
-- stronger useful contrast
-- deliberate lighting
-- thumbnail readability
-- integrated safe text area
+Cover uses the same world but stronger composition: one dominant conflict/question, clear silhouette, stronger useful contrast, deliberate lighting, thumbnail readability and integrated safe text area.
 
-Cover style must never become a separate comic/poster/anime world.
+The cover may never switch into a different cartoon/anime/poster world.
 
-## 18. Hard fail
+## 19. Hard fail
 
 Regenerate if:
-- mixed human anatomy families appear
+- a figure can pass as a thin normal cartoon human
+- limbs become tapered/cylindrical human arms or legs
+- sleeves/trousers create human limb volume
+- chest/waist/hips/thighs/calves appear
+- background people use a different/chunkier anatomy family
 - character becomes realistic/full-cartoon/whiteboard
-- character becomes chibi, mascot-like, toy-like or child-cartoon cute
-- torso/shoulders/limbs become normal thick cartoon-human anatomy
+- character becomes chibi, mascot-like or toy-like
 - 3D/CGI/Pixar/anime drift appears
 - photorealistic environment appears
 - corporate-vector look appears
-- normal scene defaults to empty cream/off-white space without semantic reason
-- environment is generic/sterile when the beat calls for a believable location
-- dark scene becomes meaningless black void without intent
-- villain is communicated only through cheap monster clichés
+- empty cream/off-white space is used without semantic reason
 - mood contradicts the spoken beat
-- hierarchy/power relation is required but visually absent
 - schema looks like PowerPoint
 - random readable text appears
 - current beat is unclear
 
-## 19. Priority
+## 20. Priority
 
 1. `rules/VISUAL_SYSTEM.md`
 2. `rules/visual-system.json`
