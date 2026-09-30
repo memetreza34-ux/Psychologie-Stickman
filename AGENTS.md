@@ -16,41 +16,39 @@ Danach lesen:
 5. `rules/STICKMAN_DNA.md`
 6. `rules/PREMIUM_VISUAL_LOCK.md`
 7. `rules/FLOW_OUTPUT_MODE.md`
-8. `rules/FLOW_PROMPT_ARCHITECTURE.md`
-9. `rules/REPRESENTATION_VARIETY_LOCK.md`
-10. `rules/FORMAT_LOCK.md`
-11. `rules/YOUTUBE_THEMEN_SYSTEM.md`
-12. `rules/YOUTUBE_STYLE_LOCK.md`
-13. `rules/SCRIPT_HOOK_LOCK.md`
-14. `rules/IMAGE_REFERENCE_LOCK.md`
-15. `rules/COVER_LOCK.md`
-16. `rules/TEXT_OVERLAY_LOCK.md`
-17. `rules/FLOW_TEXT_STYLE_LOCK.md`
-18. `rules/COMPOSITION_VARIATION_LOCK.md`
-19. `rules/SOCIAL_SCENE_LOCK.md`
-20. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-21. `rules/PRODUCTION_FORMAT_RULES.md`
-22. `rules/YOUTUBE_EXPORT_PACKAGE.md`
+8. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
+9. `rules/FLOW_PROMPT_ARCHITECTURE.md`
+10. `rules/REPRESENTATION_VARIETY_LOCK.md`
+11. `rules/FORMAT_LOCK.md`
+12. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+13. `rules/YOUTUBE_STYLE_LOCK.md`
+14. `rules/SCRIPT_HOOK_LOCK.md`
+15. `rules/IMAGE_REFERENCE_LOCK.md`
+16. `rules/COVER_LOCK.md`
+17. `rules/TEXT_OVERLAY_LOCK.md`
+18. `rules/FLOW_TEXT_STYLE_LOCK.md`
+19. `rules/COMPOSITION_VARIATION_LOCK.md`
+20. `rules/SOCIAL_SCENE_LOCK.md`
+21. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+22. `rules/PRODUCTION_FORMAT_RULES.md`
+23. `rules/YOUTUBE_EXPORT_PACKAGE.md`
 
 ## Themenwelt
 
 Kanalnische: **Psychologie & menschliches Verhalten**.
 
-Erlaubtes Spektrum umfasst unter anderem Denkfehler, Entscheidungen, Manipulation, Macht, Gruppendruck, Beziehungen, Geld-/Konsumverhalten, Betrugspsychologie und dunklere Seiten menschlichen Verhaltens. Grenzthemen bleiben psychologisch/verhaltensbezogen.
+Das Spektrum reicht von Denkfehlern und Entscheidungen bis zu Manipulation, Macht, Gruppendruck, Beziehungen, Geld-/Konsumverhalten, Betrugspsychologie und dunkleren Seiten menschlichen Verhaltens. Grenzthemen bleiben psychologisch/verhaltensbezogen.
 
 ## Bildwelt — HARD LOCK
 
-Aktive Bildwelt:
-**Cinematic Human Behavior World v2 — `CINEMATIC_HUMAN_BEHAVIOR_V2`.**
+Aktive Bildwelt: `CINEMATIC_HUMAN_BEHAVIOR_V2`.
 
-Character system:
-`STYLIZED_STICKMAN_CAST_V2`.
+Character system: `STYLIZED_STICKMAN_CAST_V2`.
 
-Mood system:
-`ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`.
+Mood system: `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`.
 
-Jede sichtbare menschliche Figur benutzt dieselbe **mature/adult editorial Stickman-Familie**:
-- großer einfacher runder/ovaler Kopf, aber nicht chibi/mascot-übertrieben
+Jede sichtbare menschliche Figur benutzt dieselbe mature/adult editorial Stickman-Familie:
+- großer einfacher runder/ovaler Kopf, nicht chibi/mascot
 - minimale Gesichtszüge
 - keine realistische Nase/Ohren/Neck-Anatomie
 - kleiner schmaler bekleideter Torso
@@ -59,224 +57,159 @@ Jede sichtbare menschliche Figur benutzt dieselbe **mature/adult editorial Stick
 - einfache Hände ohne realistische Finger
 - einfache Schuhe/Füße
 
-Individualität darf innerhalb derselben Anatomie über einfache Haare, Augenbrauen, kleine Augen-/Mundvarianten, Brille/Accessoire, Kleidung, Haltung, Blickrichtung und Rolle entstehen.
+Individualität über einfache Haare, Augenbrauen, kleine Augen-/Mundvarianten, Brille/Accessoire, Kleidung, Haltung, Blickrichtung und Rolle.
 
-HARD FAIL:
-- cute/chibi/mascot
-- normale Cartoon-Menschen
-- breite Schultern oder dicke Cartoon-Gliedmaßen
-- halb-realistische/realistische Menschen
-- Mischstile
-- 3D/Pixar/Anime
-
-Figuren dürfen je nach Inhalt freundlich, neutral, unsicher, erschöpft, verletzlich, kalt, dominant, manipulativ, arrogant, einschüchternd oder isoliert wirken. Kein Standard-Bösewicht mit roten Augen/Hörnern/Monsterzähnen.
+HARD FAIL: cute/chibi/mascot, normale Cartoon-Menschen, breite Schultern/dicke Gliedmaßen, realistische Menschen, Mischstile, 3D/Pixar/Anime.
 
 ## Rich World — HARD LOCK
 
 **Simple Stickmen. Rich World. One clear idea per image.**
 
-Normale Alltagsszenen benutzen glaubwürdige, beat-spezifische Umgebungen mit sinnvollen Props, räumlicher Tiefe und motiviertem Licht.
-
-Nicht als Standard:
-- leerer Creme-/Offwhite-Hintergrund
-- schwebende Figur ohne Ort
-- sterile generische Räume
-- immer derselbe Klassenraum/Büro-Look
-- flache Stock-Vector-Komposition
-
-Sparse negative space ist nur erlaubt, wenn es inhaltlich bewusst Isolation, Klarheit oder Leere ausdrückt.
+Normale Alltagsszenen benutzen glaubwürdige beat-spezifische Umgebungen mit sinnvollen Props, räumlicher Tiefe und motiviertem Licht. Leere Creme-/Offwhite-Flächen sind kein Standardlook.
 
 ## Skript-Einstieg — HARD LOCK
 
-Neue YouTube-Projekte verwenden `scriptHookPolicy: "HOOK_FIRST_EXPLAIN_EARLY_V1"`.
-
-Die ersten Szenen müssen schnell Klarheit schaffen:
+Neue YouTube-Projekte verwenden `HOOK_FIRST_EXPLAIN_EARLY_V1`:
 1. Szene 01 = klare Hook-Frage oder überraschende direkte Aussage
 2. Kernbegriff spätestens Szene 03
 3. einfache Erklärung direkt danach
 4. erstes konkretes Alltagsbeispiel spätestens Szene 05
 5. erst danach Mechanismus, Experiment und Vertiefung
 
-## Bildlogik
+## Visual Director — HARD LOCK FÜR NEUE VIDEOS
+
+Neue Projekte verwenden `OBSERVABLE_SCENE_FIRST_V1`.
+
+**Do not prompt the psychology. Prompt the evidence of the psychology.**
+
+Vor jedem Flow-Bildprompt:
+
+```text
+gesprochene Bedeutung
+→ Viewer Takeaway
+→ Observable Evidence
+→ eine konkrete sichtbare Komposition
+→ finaler Flow-Prompt
+```
+
+Nicht direkt an Flow delegieren:
+- `zeige sozialen Druck`
+- `visualisiere Unsicherheit`
+- `mache Aufmerksamkeit riesig`
+- `zeige den Effekt`
+
+Stattdessen konkrete sichtbare Handlung, Blickrichtung, Körperhaltung, Abstand, Blocking, Objektbeziehung und Umgebungsaktivität definieren.
+
+Psychologische Effekt-Namen werden nicht automatisch wörtlich visualisiert:
+- Spotlight-Effekt ≠ echter Scheinwerfer
+- Ankereffekt ≠ Schiffsanker
+- Halo-Effekt ≠ Heiligenschein
+- Framing ≠ Bilderrahmen
+
+Metaphern nur bewusst verwenden, wenn sie klarer sind als eine reale Situation.
+
+## Bildlogik und Variety
 
 Genau ein primärer visueller Gedanke pro Bild.
 
-Mehrere Teilbilder in einem Frame sind erlaubt, wenn alle Teilmotive denselben gesprochenen Beat erklären.
+Nicht jedes Bild braucht eine Figur. Erlaubt sind Character Scene, Schema, Objekt-/Umgebungsbild, Vergleich, sparsame Text-Illustration.
 
-Nicht jedes Bild braucht eine Figur. Erlaubte Hauptformen:
-- `CHARACTER_SCENE`
-- `SCHEMA_EXPLAINER`
-- `OBJECT_METAPHOR`
-- `COMPARE_VISUAL`
-- `TEXT_ILLUSTRATION`
-- environment/object-only illustration
+Die bekannten Prozentbereiche sind nur Review-Signale, **keine Quoten**.
 
-## Repräsentations-Abwechslung — HARD LOCK FÜR NEUE VIDEOS
+Nicht erzwingen:
+- Montage, nur weil bisher keine vorkam
+- Gruppenszene für eine Mindestanzahl
+- Split-Screen für künstliche Abwechslung
+- Figur als Füller
+- Schema wegen eines abstrakten Wortes
 
-Verbindlich: `rules/REPRESENTATION_VARIETY_LOCK.md` / `REPRESENTATION_VARIETY_V1`.
+Enthält ein Beat mehrere unabhängige Beispiele/Aktionen, lieber in mehrere Visual Beats teilen statt alles in ein Bild zu pressen.
 
-Nicht automatisch jede Szene als Figurenbild planen. Pro gesprochenem Beat zuerst entscheiden, welche visuelle Form die Aussage am schnellsten erklärt.
+## Google Flow — PRODUKTIONSSTRUKTUR HARD LOCK
 
-Normale Longform-Richtwerte:
-- Figuren-Szenen ca. 45–60 %
-- Schemas ca. 10–20 %
-- Objekt-/Umgebungsmetaphern ca. 10–20 %
-- Vergleiche ca. 10–20 %
-- Text-Illustrationen normalerweise 0–10 %
-
-Das sind keine Quoten; Klarheit gewinnt.
-
-Zusätzlich:
-- keinen Stickman nur zum Füllen einsetzen
-- sichtbaren Text nur, wenn er Verständnis wirklich verbessert
-- keine gesprochene Aussage einfach als Volltext ins Bild schreiben
-- Schema nur, wenn Mechanismus/Relation strukturell davon profitiert
-- keine langen Serien gleicher Figuren-Mediumshots, Textkarten oder Schemas
-- nicht das ganze Video automatisch rot/burgunder/dunkel oder teal/creme einfärben
-- Farbe, Licht, Kamera, Ort und Darstellungsform passend zum Beat variieren
-- trotz Abwechslung bleibt die einheitliche Kanal-/Filmwelt erhalten
-
-## Google Flow — PRODUKTIONSSTRUKTUR BLEIBT HARD LOCK
-
-**Pro Video gibt es genau eine zentrale Flow-Datei:**
+Pro Video gibt es genau eine zentrale Flow-Datei:
 
 `02-google-flow/google-flow-prompt.txt`
 
-Diese eine Datei enthält gemeinsam:
-- Aufgabe/Output
-- einen kompakten gemeinsamen Channel-Style
-- Character-/Reference-Regeln
-- Video-World-/Continuity-Lock
-- Cover-/5er-Batch-/Dateinamen-/Ordnerregeln
-- Textregel
-- **alle Bilder des gesamten Videos in derselben Datei**
+Diese eine Datei enthält Aufgabe/Output, Channel-Style, Character-/Reference-Regeln, Video-World-Lock, Cover-/5er-Batch-/Dateinamen-/Ordnerregeln, Textregel und alle Bilder des gesamten Videos.
 
-**Nicht erlaubt:**
-- mehrere Flow-Prompt-Dateien für ein Video
-- `prompt-1.txt`, `prompt-2.txt`, `flow-3-image-prompts.txt` oder ähnliche Batch-Prompt-Dateien
-- Aufteilung eines Videos in mehrere unabhängige Master-Prompts
-
-Ein Batch bedeutet nur, dass Flow aus derselben Master-Datei schrittweise Bilder erzeugt. Die Master-Datei selbst wird nicht aufgeteilt.
+Keine `prompt-1.txt`, `batch-1.txt`, `flow-3-image-prompts.txt` oder mehrere Master-Prompts.
 
 ## Google Flow — NATURAL PROMPT ARCHITECTURE HARD LOCK
 
-Verbindlich: `rules/FLOW_PROMPT_ARCHITECTURE.md` / `NATURAL_FLOW_MASTER_V1`.
+Neue Projekte verwenden `NATURAL_FLOW_MASTER_V2`.
 
-### Interne Planung
+Interne Planung in `99-intern/` darf ausführlich sein mit Speech Beat, Viewer Takeaway, Observable Evidence, Scene Type, Composition, Social Density, Mood/Power, Camera, Light/Color, Character Direction, Continuity, Text Policy und QA.
 
-`99-intern/` darf ausführlich planen mit:
-- Speech/Voice-over Beat
-- Scene Type
-- Visual Function
-- Composition
-- Social Density
-- Mood / Power Dynamic
-- Visual Idea / Task
-- Camera
-- Lighting / Color
-- Character Direction
-- Continuity
-- Text Policy
-- QA
+Der finale Flow-Prompt kopiert diese technischen Felder **nicht** als Formular.
 
-### Finaler Flow-Prompt
+Ein guter `BILD NN`-Prompt ist direkte englische Art Direction:
+1. Kamera/Framing
+2. konkrete Hauptmotive
+3. exakte sichtbare Handlung/Relation
+4. Verhalten anderer relevanter Personen/Objekte
+5. konkrete Umgebung/Props
+6. Licht/lokale Farben
+7. Continuity falls nötig
+8. exakter deutscher Text oder `No visible text.`
+9. nur wenige lokale Negativregeln bei bekanntem Fehler
 
-Diese technischen Felder werden **nicht als Formular in jeden finalen Bildblock kopiert**.
+Normalziel: ungefähr 45–110 Wörter. Globaler Stil/Anatomie/Verbote werden einmal am Anfang definiert.
 
-Nach den globalen Blöcken besteht der finale Prompt aus:
-
-```text
-BILD 01
-[natürliche direkte Bild-Regieanweisung]
-
-BILD 02
-[natürliche direkte Bild-Regieanweisung]
-```
-
-Ein guter Einzelprompt klingt wie eine Regieanweisung an einen Illustrator: Kamera/Framing + Hauptmotiv/Relation + sichtbare Handlung/Mechanismus + Umgebung + Licht/Mood + Continuity falls nötig + exakter deutscher Text nur falls geplant.
-
-Globaler Stil, Anatomie und Verbote werden einmal am Anfang definiert und nicht in jedem Bild wiederholt.
+Flow ist Produktions-Agent, nicht Art Director. Er darf generieren, batchen, prüfen, umbenennen und organisieren, aber nicht den fehlenden visuellen Gedanken erfinden.
 
 ## Google Flow — OUTPUT HARD LOCK FÜR NEUE VIDEOS
 
-Verbindlich: `rules/FLOW_OUTPUT_MODE.md`.
-
-Der Masterprompt erzeugt **finale Einzelbilder**, keinen Storyboard-Kontaktbogen und kein fertiges Video.
+Verbindlich: `rules/FLOW_OUTPUT_MODE.md` / `FINAL_SEPARATE_IMAGE_ASSETS_V2`.
 
 ### Initial
-1. Ganze Master-Datei lesen.
-2. `BILD 01 ONLY` generieren.
-3. Genau **3 getrennte Cover-Kandidaten** für Bild 01 erzeugen.
-4. Jeder Kandidat = eigenes 16:9-Bild, niemals 3er-Panel.
-5. STOP für Nutzerfreigabe.
-6. Der Nutzer wählt einen Gewinner.
-7. Gewinner sofort in `01.png` umbenennen und in `03-bilder/` ablegen.
+1. ganze Master-Datei lesen
+2. `BILD 01 ONLY`
+3. genau 3 getrennte Cover-Kandidaten als einzelne 16:9-Bilder
+4. STOP für Nutzerfreigabe
+5. Nutzer wählt Gewinner
+6. Gewinner sofort `01.png` → `03-bilder/`
+
+Die drei Cover dürfen unterschiedliche starke Kompositionen testen, aber behalten dieselbe visuelle These und denselben exakten Cover-Text.
 
 ### Danach
-- erst nach Nutzerwahl des Covers weiterarbeiten
-- immer 5 Bildnummern pro Batch, solange mindestens 5 Bilder übrig sind
-- letzter Batch = verbleibende 1–4 Bilder
+- erst nach Cover-Auswahl
+- immer 5 Bildnummern pro Batch, solange mindestens 5 übrig sind
+- letzter Batch = 1–4 Restbilder
 - kompletten 5er-Batch als einen Batch-Schritt erzeugen, nicht absichtlich Bild für Bild
-- jede Bildnummer = eigene 16:9-Bilddatei
-- akzeptierte Bilder sofort passend `NN.png` umbenennen
-- alle akzeptierten Bilder direkt in denselben flachen Ordner `03-bilder/` legen
-- keine Batch-Unterordner und kein separater Cover-Ordner
-- nach Batch-QA automatisch mit dem nächsten 5er-Batch fortfahren
-- nur fehlerhafte Bilder einzeln regenerieren
-- mehrere Bildnummern niemals in Storyboard, Kontaktbogen, 3x3-Grid oder Collage zusammenfassen
-- Flow niemals anbieten lassen, aus den Bildern direkt ein Video zu erstellen
+- jede Bildnummer = eigene 16:9-Datei
+- akzeptierte Bilder sofort `NN.png`
+- alle direkt in denselben flachen Ordner `03-bilder/`
+- keine Batch-Unterordner / kein separater Cover-Ordner
+- Batch-QA; nur Fehler einzeln regenerieren
+- nach PASS automatisch nächster 5er-Batch
+- niemals mehrere Bildnummern in Storyboard/Kontaktbogen/3x3/Collage
+- Flow niemals ein fertiges Video daraus bauen lassen
 
-Ein SPLIT/CONTRAST/MONTAGE innerhalb EINES Bildes bleibt erlaubt, wenn alle Teile denselben gesprochenen Beat erklären.
+Ein SPLIT/CONTRAST/MONTAGE innerhalb EINES Bildes bleibt erlaubt, wenn alle Teile einen untrennbaren Beat erklären.
 
-**Bestandsschutz:** `FINAL_SEPARATE_IMAGE_ASSETS_V2`, `REPRESENTATION_VARIETY_V1` und `NATURAL_FLOW_MASTER_V1` gelten für neue/zukünftige Projekte. Bestehende YouTube-Projekte nicht rückwirkend ändern, außer der Nutzer verlangt ausdrücklich die Migration dieses Projekts.
+**Bestandsschutz:** bestehende YouTube-Projekte nicht rückwirkend ändern, außer der Nutzer verlangt ausdrücklich ihre Migration.
 
 ## Textsystem — GOOGLE FLOW ONLY
 
-Für neue YouTube-Projekte gilt:
+Sämtlicher sichtbarer YouTube-Text wird direkt von Google Flow gerendert. Remotion erzeugt keinen sichtbaren YouTube-Text.
 
-**Sämtlicher sichtbarer Text wird direkt von Google Flow in die jeweiligen Bilder gerendert. Remotion erzeugt keinen sichtbaren YouTube-Text.**
+Bild 01: exakter deutscher Cover-Titel, normalerweise 2–7 Wörter.
+Ausgewählte spätere Bilder: nur explizit geplanter kurzer Text.
+Alle anderen Bilder: `ZERO READABLE TEXT`.
 
-### Bild 01
-- exakter deutscher Cover-Titel direkt in `01.png`
-- normalerweise 2–7 Wörter
-- außer ausdrücklich geplanten Mechanismus-/Preislabels kein zusätzlicher lesbarer Text
-
-### Ausgewählte spätere Textbilder
-- nur ausdrücklich geplanter exakter deutscher Text
-- nur wenn Text das Verständnis wirklich verbessert
-
-### Alle anderen Bilder
-- `ZERO READABLE TEXT`
-- keine zufälligen UI-, Poster-, Verpackungs-, Dokument- oder Bildschirmtexte
-
-Voice-over-/Speech-Kontext darf niemals sichtbar gerendert werden.
-
-## Bild 01 — COVER
-
-`03-bilder/01.png = BILD 01 + COVER/THUMBNAIL`.
-
-Bild 01:
-- zeigt den Hook-Beat korrekt
-- ist stärker komponiert als eine normale Szene
-- besitzt ein dominantes Hauptmotiv
-- hat schnelle Thumbnail-Lesbarkeit
-- benutzt dieselbe permanente Kanalwelt
-
-Die permanente Bildwelt kommt aus `rules/VISUAL_SYSTEM.md`, `rules/STICKMAN_DNA.md` und den freigegebenen Referenzen. Bild 01 darf diese Regeln nicht überschreiben.
+Voice-over-/Speech-Kontext nie sichtbar rendern.
 
 ## Referenz-Workflow
 
-Permanente Referenzen:
-`assets/cinematic-human-behavior-world/`
+Permanente Referenzen: `assets/cinematic-human-behavior-world/`.
 
-Eine generierte Referenz ist erst nutzbar, wenn sie `rules/IMAGE_REFERENCE_LOCK.md` und `rules/STICKMAN_DNA.md` besteht. Ein chibi-/cartoonartiges Character-Bild darf nie als Kanal-Master weiterverwendet werden.
-
-Verwende Referenzen nach Rolle:
+Nur freigegebene Referenzen verwenden. Rollen:
 - style-only
 - character-identity
 - environment-continuity
 
-Ein kleiner Satz sauberer Referenzen ist besser als ein großes widersprüchliches Pack. Nicht jede Produktion braucht jede Referenz.
+Ein kleiner sauberer Satz ist besser als ein widersprüchliches Pack. Eine schwache/chibi Referenz darf nie autoritativ werden.
 
 ## FORMAT HARD LOCK
 
@@ -309,27 +242,29 @@ Ein kleiner Satz sauberer Referenzen ist besser als ein großes widersprüchlich
 - `05-export/`
 - `99-intern/`
 
-**Es bleibt genau eine Google-Flow-Datei mit allen Bildern.**
-
 ## Metadaten neuer Projekte
 
 ```json
 {
   "visualSystem": "CINEMATIC_HUMAN_BEHAVIOR_V2",
   "characterSystem": "STYLIZED_STICKMAN_CAST_V2",
+  "humanCharacterPolicy": "UNIFIED_STICKMAN_HUMANS_V2",
+  "characterPresencePolicy": "OPTIONAL_HUMANS_MIXED_VISUALS_V1",
   "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
   "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
-  "representationPolicy": "REPRESENTATION_VARIETY_V1",
+  "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
+  "representationVarietyPolicy": "REPRESENTATION_VARIETY_V1",
+  "visualPlanningPolicy": "SEMANTIC_OBSERVABLE_VISUALS_V1",
+  "visualDirectorPolicy": "OBSERVABLE_SCENE_FIRST_V1",
+  "socialScenePolicy": "SEMANTIC_SOCIAL_DENSITY_V1",
   "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
-  "flowPromptPolicy": "NATURAL_FLOW_MASTER_V1",
+  "flowPromptPolicy": "NATURAL_FLOW_MASTER_V2",
   "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
   "visibleTextLanguage": "de",
   "visibleTextRenderer": "GOOGLE_FLOW",
   "renderGermanLabelsInRemotion": false,
   "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3",
-  "flowSourceImageTextPolicy": "PLANNED_EXACT_GERMAN_TEXT_ONLY",
-  "flowTextMoments": [],
   "sceneLabels": []
 }
 ```
@@ -349,7 +284,7 @@ Ein kleiner Satz sauberer Referenzen ist besser als ein großes widersprüchlich
 - `thumbnail.png`
 - `youtube-upload.txt`
 
-Alle kopierbaren Upload-Daten gehören gesammelt in `youtube-upload.txt`. Detailregel: `rules/YOUTUBE_EXPORT_PACKAGE.md`.
+Alle kopierbaren Upload-Daten gehören in `youtube-upload.txt`.
 
 ## QA
 
