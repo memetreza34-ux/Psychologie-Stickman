@@ -2,182 +2,105 @@
 
 ## Current direction
 
-The production repo is for German psychology / human-behavior explainers.
+German psychology / human-behavior explainers.
 
-Active world: **Cinematic Human Behavior World v2** (`CINEMATIC_HUMAN_BEHAVIOR_V2`).
+Active world: `CINEMATIC_HUMAN_BEHAVIOR_V2`.
 
-Active creative/prompt system for new videos:
+Active prompt system:
 - `OBSERVABLE_SCENE_FIRST_V1`
 - `NATURAL_FLOW_MASTER_V2`
 - `FINAL_SEPARATE_IMAGE_ASSETS_V2`
-
-The channel may range from ordinary cognitive effects to manipulation, power, status, money behavior, social pressure, deception, fear, trust, conflict and constructive solutions.
 
 ## Character target
 
 Use `STYLIZED_STICKMAN_CAST_V2`:
-- large simple round/oval head without chibi exaggeration
-- expressive minimal face
-- small narrow clothed torso
-- narrow shoulders
-- very slim shaped limbs
-- simple no-finger hands/shoes
-- restrained individuality through clothing/accessory/hair cue, eyebrows, eyes/mouth, posture and gaze
+- simple round/oval head
+- minimal expressive face
+- slim simplified torso
+- thin clearly drawn arms and legs
+- simple clothing, hands and shoes
+- clear readable silhouette
 
-Not bare doodles, cute mascots, normal cartoon humans, realistic humans, 3D/Pixar or anime.
+The target is a polished hand-drawn editorial Stickman: not a bare line doodle and not a normal realistic/cartoon human.
+
+Do not mathematically over-specify body proportions in Flow prompts.
 
 ## World target
 
-Frames should feel like stills from the same polished **adult psychology-documentary / editorial graphic-novel** 2D world.
+Characters, props and environments use the same hand-drawn 2D illustration language:
+- clean dark outlines
+- simple shapes
+- flat controlled colors
+- soft graphic/cel shading
+- light illustrated texture
 
-Simple Stickmen live in a richer environment. Normal real-life scenes use recognizable locations, useful foreground/midground/background, meaningful props and motivated light.
+Do not place simple Stickmen inside semi-realistic product-render or 3D-looking environments.
 
-Empty cream/off-white space is not the default.
+## Topic world
 
-## Observable-scene creative rule — highest prompt priority
+The same drawing DNA can create different worlds.
 
-The main current lesson is:
+A calm topic may be bright and open. Anxiety may be cooler. Manipulation/power may be darker. Hope may be warmer. Everyday scenes may use natural local color.
+
+Do not force every video into the same red/dark or teal/cream treatment.
+
+## Observable-scene rule
 
 **Do not prompt the psychology. Prompt the evidence of the psychology.**
 
-Before a Flow image prompt is written:
+`spoken meaning → viewer takeaway → observable evidence → concrete composition → final Flow prompt`
 
-```text
-spoken meaning
-→ viewer takeaway
-→ observable evidence
-→ one concrete visible composition
-→ final Flow prompt
-```
+Use action, posture, gaze, distance, object relation and environment activity.
 
-Google Flow must not be asked to invent how an abstract state such as pressure, attention, conformity, insecurity or dominance should look.
+Effect names are not automatic literal props.
 
-Use concrete behavior:
-- gaze direction
-- posture
-- distance
-- who looks at whom
-- who ignores whom
-- exact physical action
-- object relation
-- environment activity
+## Final Flow prompt
 
-Named effects are not literal visual instructions. Spotlight-Effekt does not automatically mean a spotlight; Ankereffekt does not automatically mean an anchor; Halo-Effekt does not automatically mean a halo.
-
-## Mixed representations
-
-Do not force a character into every frame.
-
-Character scenes, schemas, object/environment images, comparisons and text illustrations remain available. Typical percentage ranges are **review guidance only**, never generation quotas.
-
-Do not force montage, split screen, group scenes or schemas merely to create variety. Variation must come from the content.
-
-## Google Flow production structure
-
-The structure stays unchanged:
+Each video keeps exactly one:
 
 `02-google-flow/google-flow-prompt.txt`
 
-There is exactly one Flow master file per video. It contains global visual/output rules plus all image prompts.
+Keep it concise. Global style appears once. Every `BILD NN` repeats only a short style anchor plus the actual scene.
 
-Do not split one video into multiple Flow masters. Batches are only generation steps from the same master file.
+Normal scene prompt target: about 35–80 English words.
 
-## Natural Flow architecture V2
+Short anchor:
 
-New videos use `NATURAL_FLOW_MASTER_V2` from `rules/FLOW_PROMPT_ARCHITECTURE.md`.
+`Same polished hand-drawn 2D Stickman world as this video: simple round/oval heads, slim simplified bodies, thin drawn limbs, clean dark outlines, flat controlled colors and soft graphic shading.`
 
-Detailed planning remains in `99-intern/` and may contain viewer takeaway, observable evidence, scene type, composition, social density, mood, power dynamic, camera, continuity, text policy and QA.
+## Cover and generation workflow
 
-The final `google-flow-prompt.txt` does not repeat those technical fields for every image.
+1. BILD 01 only.
+2. Generate exactly 3 separate cover candidates.
+3. STOP for user choice.
+4. Chosen winner → `01.png` in `03-bilder/`.
+5. Chosen `01.png` becomes the video-local visual reference for all later batches.
+6. Preserve from it: Stickman construction, linework, flat colors, shading, texture and overall illustration quality.
+7. Do not copy its exact pose, room, composition or palette unless needed.
+8. Then generate exact five-image batches whenever five remain: 02–06, 07–11, 12–16, etc.
+9. Every BILD remains a separate 16:9 image.
+10. Rename accepted images immediately to `NN.png`.
+11. Keep all accepted images together in one flat `03-bilder/`.
+12. Regenerate only failures and continue automatically after a passing batch.
+13. Never create a storyboard/contact sheet/final video in Flow.
 
-A normal final `BILD NN` prompt is direct English art direction:
-1. camera/framing
-2. concrete subject(s)
-3. exact visible action/relation
-4. relevant other behavior/objects
-5. concrete environment/props
-6. light/local color
-7. continuity when needed
-8. exact German visible text or `No visible text.`
-9. only a few local negatives when needed
+## Mixed representations
 
-Normal prompt target is roughly 45–110 words. Every sentence should change something visible.
-
-## Google Flow Agent role
-
-The Flow Agent is the **production executor**, not the autonomous art director.
-
-It may:
-- generate assets
-- run the three-cover gate
-- generate five-image batches
-- QA/regenerate failures
-- rename accepted files
-- organize them in `03-bilder/`
-
-But the repo should already provide the concrete visual idea. Do not delegate missing creative interpretation to Flow.
-
-## Google Flow output behavior
-
-Binding rule: `rules/FLOW_OUTPUT_MODE.md`.
-
-1. Read full master prompt.
-2. Bild 01 only → exactly 3 separate cover candidates.
-3. STOP and wait for user choice.
-4. User-approved winner → `01.png` in `03-bilder/`.
-5. Only then continue in batches of exactly 5 images whenever at least 5 remain.
-6. Final remainder contains 1–4 images.
-7. Each five-image batch is one batch operation, not deliberate image-by-image work.
-8. Every image number remains one separate 16:9 image.
-9. Accepted images are immediately renamed `NN.png`.
-10. All accepted images stay in the same flat `03-bilder/` folder.
-11. QA each batch, regenerate only failures, then continue automatically.
-12. Never create a storyboard/contact sheet or final video in Flow.
-
-Existing/historical projects keep their current behavior unless explicitly migrated.
-
-## Reference pack
-
-Permanent path: `assets/cinematic-human-behavior-world/`.
-
-Prefer a small approved system by role:
-- `style-master.png`
-- one or two approved Character A references when needed
-- Character B references when needed
-- `character-group.png` when useful
-- optional schema/environment reference
-
-Until actual images are approved, written rules remain authoritative.
+Not every image needs a person. Use objects, environments, comparisons, schemas or short planned text when clearer.
 
 ## Production priority
 
-Optimize for:
-1. current-beat clarity
-2. observable evidence instead of abstract prompt language
-3. strict mature Stickman anatomy
-4. rich believable environment storytelling
-5. world consistency
-6. readable body language/social relation
-7. semantic representation choice without quotas
-8. natural concise Flow art direction
-9. separate final Flow image assets
-10. efficient five-image batching after cover approval
-11. correct filenames and one final image folder
-12. exact Flow text when planned
+1. clear current beat
+2. concrete observable scene
+3. polished simple Stickman drawing DNA
+4. same illustrated language for characters and environment
+5. topic-appropriate local world and mood
+6. concise Flow prompt
+7. 3-cover gate
+8. approved cover as local visual reference
+9. efficient five-image batching
+10. correct filenames and one final image folder
 
-## Current migration rule
+## Existing projects
 
-Historical produced videos may remain legacy artifacts.
-
-New productions use:
-- `CINEMATIC_HUMAN_BEHAVIOR_V2`
-- `STYLIZED_STICKMAN_CAST_V2`
-- `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`
-- `REPRESENTATION_VARIETY_V1`
-- `SEMANTIC_OBSERVABLE_VISUALS_V1`
-- `OBSERVABLE_SCENE_FIRST_V1`
-- `SEMANTIC_SOCIAL_DENSITY_V1`
-- `FINAL_SEPARATE_IMAGE_ASSETS_V2`
-- `NATURAL_FLOW_MASTER_V2`
-
-The production folder and single-Flow-file workflow remain unchanged.
+Historical/existing projects stay unchanged unless the user explicitly asks to migrate that project.
