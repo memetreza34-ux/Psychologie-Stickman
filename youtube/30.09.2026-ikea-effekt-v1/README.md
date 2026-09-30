@@ -6,12 +6,15 @@ READY_FOR_GOOGLE_FLOW_COVER_TEST
 
 ## Ziel
 
-Erster neuer Test nach Einführung von:
+Dieses bestehende Testprojekt wurde auf die neue Figuren-Anatomie migriert:
+- `GEOMETRIC_STICKMAN_ANATOMY_V1`
 - `OBSERVABLE_SCENE_FIRST_V1`
 - `NATURAL_FLOW_MASTER_V2`
 - `FINAL_SEPARATE_IMAGE_ASSETS_V2`
 
-Der Test soll insbesondere prüfen, ob Google Flow mit konkreten beobachtbaren Handlungen bessere und weniger künstliche Bilder erzeugt als mit abstrakten Psychologie-Metaphern.
+Der Test soll jetzt zwei Dinge gleichzeitig prüfen:
+1. ob Google Flow mit konkreten beobachtbaren Handlungen bessere und weniger künstliche Bilder erzeugt,
+2. ob die Figuren wirklich wie hochwertige illustrierte Stickmen aussehen statt wie dünne normale Cartoon-Menschen.
 
 ## Thema
 
@@ -22,13 +25,13 @@ Kernbegriff: IKEA-Effekt.
 ## Dateien
 
 - `01-script/script.txt` — finales Testskript
-- `02-google-flow/google-flow-prompt.txt` — einzige Flow-Masterdatei mit allen 16 Bildern
+- `02-google-flow/google-flow-prompt.txt` — einzige Flow-Masterdatei mit allen 16 Bildern, jetzt mit `GEOMETRIC_STICKMAN_ANATOMY_V1`
 - `99-intern/phase1-scenes.json` — semantische Visual-Planung mit Observable Evidence
 - `99-intern/sources.md` — Quellen und Claim-Check
 
 ## Flow-Testablauf
 
-1. Die komplette `02-google-flow/google-flow-prompt.txt` in den Flow-Agent geben.
+1. Die komplette aktuelle `02-google-flow/google-flow-prompt.txt` in einen neuen Flow-Agent-Chat geben.
 2. Flow darf zunächst NUR `BILD 01` erzeugen.
 3. Genau 3 getrennte 16:9-Cover-Kandidaten.
 4. Danach STOP für Nutzerwahl.
@@ -40,12 +43,29 @@ Kernbegriff: IKEA-Effekt.
 7. Jedes Bild bleibt eine eigene 16:9-Datei und wird sofort `NN.png` benannt.
 8. Alle akzeptierten Bilder gehören zusammen in den flachen Ordner `03-bilder/`.
 
-## Testkriterien
+## Anatomie-Test — wichtigste PASS-Bedingung
+
+Jede sichtbare Person muss sofort wie eine echte illustrierte Stickman-Figur wirken:
+- einfacher Kreis-/Ovalkopf
+- winzige Gesichtszüge
+- kein Hals
+- winziger schmaler Torso deutlich unter halber Kopfbreite
+- ultra-dünne linienartige Arme und Beine
+- keine Ärmel-/Hosenbein-Körpermasse
+- keine Brust, Taille, Hüften, Oberschenkel oder Waden
+- Hintergrundfiguren benutzen dieselbe Geometrie
+
+**Wenn eine Figur auch als „dünner Cartoon-Mensch“ durchgehen könnte, ist das Bild FAIL und muss regeneriert werden.**
+
+## Weitere Testkriterien
 
 PASS wenn:
 - keine Storyboard-/Kontaktbogen-Ausgabe entsteht
-- Figuren mature strict-stickman bleiben
+- alle drei Cover getrennte Dateien sind
+- Figuren mature geometric strict-stickman bleiben
 - kein chibi-/normal-cartoon-human Drift entsteht
+- Character A über alle Szenen dieselbe kleine teal Torsoform + ultradünne Line-Limbs behält
+- Laborfiguren und der Freund dieselbe Anatomiefamilie benutzen
 - die Wohnung, Character A und die zwei Hocker bei Wiederkehr konsistent bleiben
 - keine abstrakten Glow-/Halo-/Value-Meter-Effekte erfunden werden
 - Szenen über sichtbare Handlung verständlich sind
