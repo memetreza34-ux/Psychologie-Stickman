@@ -11,194 +11,100 @@
 7. `rules/FLOW_PROMPT_ARCHITECTURE.md`
 8. `rules/REPRESENTATION_VARIETY_LOCK.md`
 9. `rules/IMAGE_REFERENCE_LOCK.md`
-10. approved `assets/cinematic-human-behavior-world/` references
-11. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-12. `rules/COVER_LOCK.md`
-13. `rules/TEXT_OVERLAY_LOCK.md` + `rules/FLOW_TEXT_STYLE_LOCK.md`
-14. `rules/YOUTUBE_EXPORT_PACKAGE.md`
-15. format/script/production rules
+10. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+11. `rules/COVER_LOCK.md`
+12. `rules/TEXT_OVERLAY_LOCK.md` + `rules/FLOW_TEXT_STYLE_LOCK.md`
+13. `rules/YOUTUBE_EXPORT_PACKAGE.md`
 
 ## Active world
 
 `CINEMATIC_HUMAN_BEHAVIOR_V2`
 
 Core:
-- one unified mature strict-stickman human family
-- polished cinematic 2D psychology-documentary / editorial rendering
-- believable rich environments
-- clean dark/organic outlines
-- soft cel shading with useful graphic shadow
-- adaptive psychological lighting and color
-- natural depth
-- same visual world across bright, uneasy, dark, power, money, isolation and hopeful scenes
+- polished hand-drawn 2D Stickman illustration
+- simple round/oval heads and minimal expressive faces
+- slim simplified bodies with thin clearly drawn limbs
+- clean dark outlines
+- flat controlled colors
+- soft graphic/cel shading
+- characters, props and environments in the same illustrated language
+- one clear visual idea per frame
+
+## Topic-specific world
+
+The drawing DNA stays constant, but the local world changes with the topic.
+
+Bright/calm topics may be brighter and open. Anxiety may be cooler. Manipulation/power may be darker. Hope may be warmer. Everyday topics may use natural local colors.
+
+Do not force every video into one red/dark or teal/cream palette.
 
 ## Character rule
 
-All people follow `STYLIZED_STICKMAN_CAST_V2`:
-- large simple head without chibi/mascot exaggeration
-- minimal face
-- small narrow clothed torso
-- narrow shoulders
-- very slim arms and legs
-- simple no-finger hands and shoes
+All visible people use `STYLIZED_STICKMAN_CAST_V2`.
 
-Individuality may come from restrained hair/eyebrow/eye/mouth variation, glasses/accessories, clothing, posture, gaze and role-specific body language without changing anatomy family.
+Do not over-specify anatomy. The target is a polished editorial Stickman, not a bare line doodle and not a normal realistic/cartoon human.
 
-No cute/chibi/mascot people, no normal cartoon humans, no realistic human anatomy, no broad shoulders/thick limbs, no 3D/Pixar/anime drift.
+## Observable scene first
 
-## Rich-world rule
+Follow `OBSERVABLE_SCENE_FIRST_V1`:
 
-**Simple Stickmen. Rich World. One clear idea per image.**
+`spoken meaning → viewer takeaway → observable evidence → one concrete visible composition → final Flow prompt`
 
-Normal real-life frames use scene-specific environments, meaningful props, useful foreground/midground/background and motivated light. Empty cream/off-white space is not the channel default.
+Do not ask Flow to invent a visual for abstract psychology.
+Do not literalize effect names automatically.
 
-## Unified film-world rule — HARD LOCK
+## Representation variety
 
-The complete YouTube video must feel like one coherent illustrated film.
+Humans are optional. Character scene, object/environment image, comparison, schema and text illustration are all valid when they communicate the beat best.
 
-Across all batches preserve:
-- Stickman anatomy family
-- illustration/rendering language
-- outline behavior
-- cel-shading style
-- texture/detail level
-- environment quality
-- depth/spatial logic
-- typography language
-- overall adult psychology-documentary/editorial identity
+No forced quotas.
 
-Mood, color temperature, location, camera and lighting may change. The visual identity may not.
+## Google Flow prompt architecture
 
-## Visual Director — HARD LOCK FOR NEW VIDEOS
-
-Follow `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md` / `OBSERVABLE_SCENE_FIRST_V1`.
-
-The repo must decide the concrete visible scene before Google Flow is asked to generate it:
-
-```text
-spoken meaning
-→ viewer takeaway
-→ observable evidence
-→ one concrete visible composition
-→ final Flow prompt
-```
-
-Do not ask Flow to invent how an abstract psychological idea looks.
-
-Psychological effect names are not literal art instructions:
-- Spotlight-Effekt ≠ automatic spotlight beam
-- Ankereffekt ≠ automatic ship anchor
-- Halo-Effekt ≠ automatic halo
-- Framing ≠ automatic picture frame
-
-Human emotion/power must be supported by visible posture, gaze, distance, blocking and action rather than adjectives alone.
-
-## Representation variety — guidance, not quota
-
-Follow `rules/REPRESENTATION_VARIETY_LOCK.md`.
-
-Allowed forms include:
-- `CHARACTER_SCENE`
-- `SCHEMA_EXPLAINER`
-- `OBJECT_METAPHOR`
-- `COMPARE_VISUAL`
-- `TEXT_ILLUSTRATION`
-- environment/object-only illustration
-
-Typical percentage ranges are review guidance only. Never force a montage, group scene, split screen, character or schema because a quota expects one. Content determines the form.
-
-Text and schemas are used only when they materially improve understanding. If text is unnecessary: `ZERO READABLE TEXT`.
-
-## Google Flow prompt architecture — HARD LOCK
-
-Follow `rules/FLOW_PROMPT_ARCHITECTURE.md` / `NATURAL_FLOW_MASTER_V2`.
-
-Every YouTube project uses exactly one:
+Every project uses exactly one:
 
 `02-google-flow/google-flow-prompt.txt`
 
-Detailed planning remains in `99-intern/`. The final Flow prompt does not dump technical planning fields into each image block.
+Detailed planning stays in `99-intern/`.
 
-Final master order:
+The final prompt stays concise:
 1. task/output
-2. concise channel visual world
-3. character/reference system
-4. video world/continuity lock
-5. cover + five-image generation workflow
-6. global text rule
-7. observable-scene prompting rule
-8. `BILD 01` through `BILD NN` as natural direct prompts
+2. short channel style
+3. short topic/video world
+4. cover + five-image workflow
+5. text rule
+6. observable-scene rule
+7. `BILD 01` through `BILD NN`
 
-A normal image prompt uses concrete camera/framing + subject + visible action/relation + relevant environment/props + light/local color + continuity when needed + exact planned text or no visible text.
+Every BILD repeats only one short style anchor plus the actual scene direction.
 
-Global style/anatomy/negative rules appear once near the top.
+## Cover + batching — HARD LOCK
 
-## Google Flow output — HARD LOCK FOR NEW VIDEOS
-
-Follow `rules/FLOW_OUTPUT_MODE.md` / `FINAL_SEPARATE_IMAGE_ASSETS_V2`.
-
-- Bild 01 first
+- BILD 01 first
 - exactly 3 separate cover candidates
-- stop for user approval
+- STOP for user choice
 - chosen winner → `03-bilder/01.png`
-- only after cover choice continue
-- later generation uses exactly 5 image numbers per batch whenever at least 5 remain
-- final remainder batch contains 1–4 images
-- whole five-image batch is one batch operation, not deliberate image-by-image work
-- every image number becomes its own standalone 16:9 image
-- accepted images immediately renamed to matching `NN.png`
+- chosen `01.png` becomes the video-local visual reference for all later images
+- preserve from it: Stickman construction, linework, flat color treatment, graphic shading, texture and overall illustration quality
+- do not copy its exact pose, room, composition or palette by default
+- only then continue in five-image batches
+- each BILD stays a separate 16:9 asset
+- accepted images renamed immediately to `NN.png`
 - all accepted images stay together in one flat `03-bilder/`
-- regenerate only failures; after a passing batch continue automatically
-- never combine several image numbers into storyboard/contact sheet/panel grid/collage
-- never ask Flow to turn the image plan into a video
-
-A single image may use split/contrast/montage only when all parts explain one inseparable beat.
-
-**Existing/historical projects are not retroactively migrated.**
-
-## Reference architecture
-
-Follow `rules/IMAGE_REFERENCE_LOCK.md`.
-
-Prefer a small approved reference set by role:
-- `style-master.png`
-- one or two approved images for a recurring Character A when needed
-- one or two approved images for Character B when needed
-- `character-group.png` when useful
-- one optional schema/environment reference when needed
-
-Until an image is actually approved, written rules remain authoritative.
-
-## Visual clarity
-
-One important visual thought per frame. No future information. Detail supports the current beat.
-
-If one beat contains several independent actions/examples, split the visual beat rather than forcing a montage.
+- regenerate only failures
+- never create a storyboard/contact sheet/final video in Flow
 
 ## Text rule
 
-Google Flow only. Planned modes include cover, keyword, schema labels, comparison labels and short text illustrations.
-
-Unplanned text: `ZERO READABLE TEXT`.
-Speech context is never visible text.
-Remotion visible YouTube text remains disabled.
-
-## Cover
-
-`01.png = BILD 01 + Cover/Thumbnail`.
-
-All three initial cover candidates use the same approved thesis and exact cover text but may test meaningfully different strong compositions. Flow must stop for the user's choice.
+Only exact planned German text may appear. Otherwise: `ZERO READABLE TEXT`.
 
 ## Script
 
-Keep `HOOK_FIRST_EXPLAIN_EARLY_V1`:
-- Hook scene 01
-- core concept by scene 03
-- concrete example by scene 05 when possible
+Keep `HOOK_FIRST_EXPLAIN_EARLY_V1`.
 
-## YouTube export package — HARD LOCK
+## Export
 
-Every new finished YouTube project contains:
+Every finished new YouTube project contains:
 
 ```text
 05-export/
@@ -207,71 +113,19 @@ Every new finished YouTube project contains:
 └── youtube-upload.txt
 ```
 
-`youtube-upload.txt` contains final title, description/caption, sources/links when relevant, chapters when useful, tags, hashtags, pinned comment or `NONE`, cleaned final German speaker text/captions and basic video data.
+## Existing projects
 
-No separate normal-workflow `title.txt`, `description.txt`, `tags.txt` or `chapters.txt`.
+Historical/existing projects are not automatically migrated. Migration only on explicit request for that project.
 
-## Required metadata for new projects
+## Minimal hard fail
 
-```json
-{
-  "visualSystem": "CINEMATIC_HUMAN_BEHAVIOR_V2",
-  "characterSystem": "STYLIZED_STICKMAN_CAST_V2",
-  "humanCharacterPolicy": "UNIFIED_STICKMAN_HUMANS_V2",
-  "characterPresencePolicy": "OPTIONAL_HUMANS_MIXED_VISUALS_V1",
-  "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
-  "environmentPolicy": "BELIEVABLE_ADAPTIVE_CINEMATIC_ENVIRONMENT_V2",
-  "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
-  "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
-  "representationVarietyPolicy": "REPRESENTATION_VARIETY_V1",
-  "visualPlanningPolicy": "SEMANTIC_OBSERVABLE_VISUALS_V1",
-  "visualDirectorPolicy": "OBSERVABLE_SCENE_FIRST_V1",
-  "socialScenePolicy": "SEMANTIC_SOCIAL_DENSITY_V1",
-  "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
-  "flowPromptPolicy": "NATURAL_FLOW_MASTER_V2",
-  "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
-  "visibleTextRenderer": "GOOGLE_FLOW",
-  "renderGermanLabelsInRemotion": false,
-  "finalTextPolicy": "FLOW_VISIBLE_TEXT_ONLY_V3"
-}
-```
-
-## Retired standards
-
-Not active for new production:
-- `Universal Editorial Stickman World v1.3`
-- `MINIMAL_EDITORIAL_STICKMAN_V2`
-- `CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1`
-- `FLOW_SCENE_PROMPT_CONTRACT_V1`
-- `VARIED_COMPOSITION_V1` as a forced composition system
-- `SOCIAL_VARIETY_V1` as a forced social-density system
-- `NATURAL_FLOW_MASTER_V1`
-- `FINAL_SEPARATE_IMAGE_ASSETS_V1`
-
-Historical projects may retain old metadata.
-
-## Hard fail for new production
-
-- bare whiteboard/doodle drift
-- cute/chibi/mascot drift
-- normal cartoon or realistic human drift
-- broad shoulders/thick limbs
-- mixed human anatomy families
-- 3D/Pixar/anime/photorealistic drift
-- corporate-vector schema drift
-- empty cream/off-white default world
+- photorealistic/realistic humans
+- 3D/Pixar/anime
+- cute/chibi/mascot
+- bare whiteboard Stickmen
+- character/environment rendering mismatch
+- abstract psychology replacing observable evidence
+- several scene numbers combined into one asset
+- cover gate or five-image batching broken
+- later batches visibly drift away from the approved cover's drawing DNA
 - random readable text
-- current beat is not visually clear
-- final prompt asks Flow to interpret an abstract psychological state instead of describing observable evidence
-- a named psychology effect is literalized only because of its name
-- symbolic glow/ray/icon replaces a clearer real-world action
-- unrelated examples are crammed into one image
-- montage/group/split is forced to satisfy a quota
-- later batches drift into another art style
-- final Flow prompt becomes a repeated technical form
-- several image numbers are combined into one asset
-- post-cover generation falls back to deliberate one-image-at-a-time work while five remain
-- accepted images are not renamed to `NN.png`
-- accepted images are split across batch folders
-- one video is split into multiple Flow master files
-- finished project has no complete `05-export/youtube-upload.txt`
