@@ -4,52 +4,74 @@ Create exactly ONE clean 16:9 character-reference image for the channel's mature
 
 PURPOSE
 This image is a candidate `character-identity` reference, not a video scene and not a character sheet/contact sheet.
-The goal is one highly readable recurring adult strict-stickman character that can be reused consistently across later generations.
+The goal is one highly readable recurring TRUE ILLUSTRATED STICK FIGURE that can be reused consistently.
 
 CHARACTER A
 One full-body adult editorial STRICT STICKMAN in a relaxed three-quarter standing pose.
 
-ANATOMY — HARD LOCK
-- large simple round/slightly oval head, but NOT chibi or mascot oversized
-- tiny minimal eyes with subtle expressive eyebrows
-- small simple mouth
-- no realistic nose, ears or neck anatomy
-- small narrow clothed torso
-- narrow shoulders
-- very thin arms and legs, clearly thinner than normal cartoon-human limbs
-- simple no-finger hands
-- simple shoes
-- clothing follows the narrow body and must NOT create a broad normal-human silhouette
+ANATOMY POLICY: GEOMETRIC_STICKMAN_ANATOMY_V1
 
-IDENTITY CUES
-- small restrained dark hair silhouette
-- muted dark-teal overshirt or hoodie shape
-- charcoal lower-body linework
-- simple light shoes
-- mature calm neutral expression
-- readable adult posture, not cute or toy-like
+ABSOLUTE RECOGNITION TEST
+If the result could plausibly be described as a thin normal cartoon human, it is WRONG. The figure must unmistakably read as a stick figure at first glance.
+
+HEAD
+- one clean simple circle or slightly vertical oval
+- head diameter roughly similar to visible torso height, never chibi giant
+- no ears, nose, neck, jaw or realistic skull anatomy
+
+FACE
+- two tiny dot eyes or short marks
+- one tiny mouth line
+- optional tiny eyebrow strokes only
+- no cheeks, eyelids or detailed facial features
+
+TORSO
+- one tiny narrow rounded-rectangle / simple tapered graphic garment shape
+- torso width clearly below half the head width
+- no chest, waist, hips or shoulder mass
+
+ARMS
+- ultra-thin near-uniform line-like strokes
+- must read as stick-figure lines, NOT skinny human arms
+- no upper-arm/forearm mass
+- no sleeve volume
+
+LEGS
+- ultra-thin near-uniform line-like strokes
+- must read as stick-figure lines, NOT skinny human legs
+- no thighs, calves or trouser-leg volume
+
+HANDS + FEET
+- tiny no-finger endpoint hands
+- small flat simple shoes
+
+CLOTHING
+- tiny muted dark-teal torso garment as a FLAT GRAPHIC CUE only
+- black/charcoal line legs with no filled trouser silhouette
+- clothing may never create broad shoulders, chest, sleeves, waist, hips, thighs or calves
+
+HAIR
+- one tiny flat dark hair mark attached to the head edge
+- no volumetric hairstyle
 
 RENDERING
-Mature polished cinematic 2D editorial illustration.
-Clean dark slightly organic outlines, controlled soft cel shading, subtle texture, professional psychology-documentary tone, restrained graphic-novel influence, clear silhouette and premium finish.
+Mature polished cinematic 2D editorial illustration. Clean dark slightly organic outlines, controlled soft cel shading, subtle texture, professional psychology-documentary tone, restrained graphic-novel influence, premium finish.
 
 BACKGROUND
-Simple neutral reference background with enough contrast to inspect the silhouette and clothing accurately.
-This simple reference background is ONLY for the identity reference and is NOT the default for normal video scenes.
+Simple neutral reference background with enough contrast to inspect the silhouette. This reference background is NOT the default for normal video scenes.
 
 OUTPUT — HARD LOCK
 - exactly ONE standalone 16:9 reference image
 - one character only
 - one full-body three-quarter view only
-- no front/side multi-view sheet
+- no multi-view sheet
 - no storyboard
 - no montage
 - no extra characters
 - no readable text
 
 HARD FAIL
-No chibi. No cute mascot. No children's cartoon. No broad shoulders. No thick arms or legs. No normal cartoon-human body. No realistic anatomy. No realistic fingers. No 3D/Pixar/CGI. No anime. No whiteboard doodle. No photorealism.
+No thin cartoon human. No normal cartoon human. No chibi. No cute mascot. No broad shoulders. No neck. No chest/waist/hips. No thick or tapered limbs. No sleeve-shaped arms. No trouser-shaped legs. No thighs or calves. No realistic fingers. No volumetric hairstyle. No 3D/Pixar/CGI. No anime. No whiteboard doodle. No photorealism.
 
 APPROVAL NOTE
 Do not treat the generated result as authoritative automatically. It becomes usable only after it passes `rules/IMAGE_REFERENCE_LOCK.md` and `rules/STICKMAN_DNA.md`.
-If a second identity reference is later needed, use the approved first image as the character-identity anchor and create one additional clean compatible viewpoint — never a contradictory redesign.
