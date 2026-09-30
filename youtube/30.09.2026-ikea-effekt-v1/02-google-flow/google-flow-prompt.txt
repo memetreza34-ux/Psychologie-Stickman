@@ -4,6 +4,7 @@ TOPIC: IKEA-Effekt — warum eigene Arbeit den subjektiven Wert erhöhen kann
 FORMAT: 16:9 / 1920x1080
 VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
 CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+ANATOMY POLICY: GEOMETRIC_STICKMAN_ANATOMY_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
@@ -16,8 +17,6 @@ One image number always means one separate image asset.
 
 CHANNEL VISUAL WORLD — HARD LOCK
 Keep the complete video inside one mature cinematic 2D psychology-documentary / editorial illustration world.
-Every visible human uses the same adult strict-stickman anatomy: large simple round or slightly oval head without chibi exaggeration, tiny minimal eyes, small simple mouth, no realistic nose, ears or neck, very small narrow clothed torso, narrow shoulders, extremely slim illustrated arms and legs, simple no-finger hands and simple shoes.
-Clothing must wrap the narrow stickman body and must never create broad normal-cartoon-human anatomy.
 Use clean slightly organic dark outlines, controlled soft cel shading, subtle texture, believable foreground/midground/background depth, purposeful framing and motivated light.
 Simple Stickmen live in rich believable scene-specific environments. Use real apartment/workbench/lab details only when they help the current beat.
 Do not default to blank cream backgrounds, sterile generic rooms, repeated centered medium shots or one fixed red/burgundy/dark or teal/cream palette.
@@ -25,21 +24,36 @@ Not every image needs a person. Object-focused and comparison images are valid w
 Every image has one dominant visible idea and only useful supporting elements.
 The complete set must look as if the SAME illustrator created it for the SAME channel, even when camera, room, light and local color change.
 
-Hard reject: cute/chibi/mascot figures, normal cartoon-human bodies, broad shoulders, thick limbs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
+GEOMETRIC STICKMAN ANATOMY — ABSOLUTE HARD LOCK
+Every visible human — main, supporting and background — must unmistakably read as a TRUE ILLUSTRATED STICK FIGURE, never a thin normal cartoon human.
+Recognition test: if a figure could plausibly be described as a thin cartoon person, the anatomy is WRONG and that image must be regenerated.
+
+HEAD: one clean simple circle or slightly vertical oval; tiny dot/short-mark eyes; one tiny mouth line; optional tiny eyebrow strokes; NO ears, NO nose, NO neck, NO realistic jaw or cheeks.
+TORSO: one tiny narrow rounded-rectangle/simple tapered graphic clothing shape, clearly less than half the head width; NO chest, waist, hips or shoulder mass.
+ARMS: ultra-thin near-uniform line-like strokes; NO upper-arm or forearm mass; NO sleeve volume.
+LEGS: ultra-thin near-uniform line-like strokes; NO thighs, calves or trouser-leg volume.
+HANDS: tiny no-finger endpoint/dot/mitten shapes only.
+FEET: small flat simple shoes only.
+CLOTHING: flat graphic cue only; never create broad shoulders, chest, sleeves, waist, hips, thighs or calves.
+HAIR: tiny flat head-edge cue only; NO volumetric hairstyle.
+BACKGROUND PEOPLE: exact same geometry even when small, seated, distant or partly hidden. Never simplify them into normal cartoon silhouettes or thick crowd bodies.
+
+Hard reject: thin cartoon humans, normal cartoon-human anatomy, cute/chibi/mascot figures, broad shoulders, thick/tapered limbs, sleeve-shaped arms, trouser-shaped legs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
 
 CHARACTER + REFERENCE SYSTEM
-Use only references actually approved for CINEMATIC_HUMAN_BEHAVIOR_V2.
-If no approved visual reference is available, follow the written rules above exactly.
+Use only references actually approved for CINEMATIC_HUMAN_BEHAVIOR_V2 and GEOMETRIC_STICKMAN_ANATOMY_V1.
+If no approved visual reference is available, follow the written geometry above exactly.
 A style-only reference locks rendering/anatomy/linework/cel-shading/texture quality, not scene content.
-A character-identity reference may additionally preserve returning identity/clothing cues.
-Never let a weak, cute, chibi or normal-cartoon reference override the written rules.
+A character-identity reference may additionally preserve returning identity cues.
+Never let a weak, cute, chibi, normal-cartoon or thin-human reference override the written geometry.
 
 VIDEO WORLD LOCK
-Character A recurs through the everyday story: adult strict-stickman, simple short dark hair cue, teal overshirt over a light neutral shirt, dark slim trousers, simple white shoes. Keep A's head shape, proportions, clothing colors and shoes consistent whenever A returns.
+Character A recurs through the everyday story: same geometric stickman anatomy, one tiny muted-teal torso garment block, black ultra-thin line legs, small flat white shoes and one tiny dark hair mark attached to the head edge. NO overshirt volume, sleeves, trouser-leg mass, neck, shoulders or hips. Keep A's head shape, tiny torso block, line-limb proportions, colors and shoes consistent whenever A returns.
 The main self-built object is one simple compact stool: light-oak rectangular seat, four slim light-oak legs, small dark graphite cross-braces and visible simple screw joints. Keep its design consistent.
 A second ready-made comparison stool is visually almost identical but cleaner and without assembly traces.
 The recurring home is a modest modern apartment with warm wood floor, off-white walls, one large daylight window, muted green plant accents and a small dining/work area. Keep layout broadly consistent without repeating the exact same camera.
 Research scenes 07–10 use one neutral bright behavioral-lab workshop with pale walls, simple worktables and restrained blue-green details.
+Every lab participant, researcher and friend uses the exact same GEOMETRIC_STICKMAN_ANATOMY_V1 family.
 Do not show IKEA logos, store branding, brand packaging or readable product instructions.
 
 GENERATION WORKFLOW — HARD LOCK
@@ -66,7 +80,7 @@ AFTER THE USER CHOOSES THE COVER:
 - immediately rename each accepted result to its matching number: BILD 02 -> `02.png`, BILD 03 -> `03.png`, etc.
 - put every accepted image directly into the SAME flat folder `03-bilder/`
 - no cover subfolder, no batch subfolders, no duplicate accepted versions
-- after each batch, check style continuity, strict-stickman anatomy, scene clarity, unnecessary text and visual repetition
+- after each batch, check style continuity, GEOMETRIC_STICKMAN_ANATOMY_V1, especially background people, scene clarity, unnecessary text and visual repetition
 - regenerate only failed images
 - when a batch passes, continue automatically with the next five-image batch from THIS SAME MASTER PROMPT
 - never offer to turn the images into a video; the external pipeline handles final editing
@@ -94,52 +108,52 @@ It must communicate the central mechanism through a concrete visible choice befo
 Use one dominant focal relationship, strong thumbnail readability and a compact asymmetric title zone instead of a generic full-width top banner.
 
 BILD 01
-Thumbnail-ready medium-wide three-quarter view in Character A's apartment work area. Place two nearly identical light-oak stools large in the frame. Around the self-built stool, show an Allen key, opened plain packaging and a few harmless leftover protective pieces; the ready-made stool is clean and untouched. Character A physically pulls the self-built stool closer with one hand while leaving the other stool behind, making the preference obvious through action. Natural daylight, warm wood floor, muted teal and graphite accents, clear depth. Integrate exactly: "WARUM DEINE ARBEIT DEN WERT VERÄNDERT" in a compact high-contrast side title zone. No other readable text. No glow, value aura, hearts or brand logos.
+Thumbnail-ready medium-wide three-quarter view in Character A's apartment work area. Place two nearly identical light-oak stools large in the frame. Around the self-built stool, show an Allen key, opened plain packaging and a few harmless leftover protective pieces; the ready-made stool is clean and untouched. Geometric-stickman Character A, with circle head, tiny teal torso block and ultra-thin line limbs, physically pulls the self-built stool closer with one tiny endpoint hand while leaving the other stool behind. Natural daylight, warm wood floor, muted teal and graphite accents, clear depth. Integrate exactly: "WARUM DEINE ARBEIT DEN WERT VERÄNDERT" in a compact high-contrast side title zone. No other readable text. No normal cartoon-human body, glow, value aura, hearts or brand logos.
 
 BILD 02
-Close-medium object-focused shot at workbench height. The finished self-built light-oak stool stands on a simple work mat. Beside it lie one Allen key, two plain packing pieces and Character A's hands calmly putting the tool away. Use soft window daylight, believable wood grain, graphite hardware and one muted teal clothing edge entering the frame. The image should look like a real finished assembly moment, not a product advertisement or symbolic concept card. Do not show any store branding, logos, labels or readable instructions. No visible text.
+Close-medium object-focused shot at workbench height. The finished self-built light-oak stool stands on a simple work mat. Beside it lie one Allen key, two plain packing pieces and only Character A's two ultra-thin line forearms with tiny endpoint hands calmly putting the tool away; no sleeve or human-arm volume enters the frame. Use soft window daylight, believable wood grain, graphite hardware and one tiny muted-teal torso-edge cue if needed. The image should look like a real finished assembly moment, not a product advertisement or symbolic concept card. No store branding, logos, labels or readable instructions. No visible text.
 
 BILD 03
-Medium three-quarter apartment shot with both stools visible. Character A rests one hand naturally on the self-built stool and nudges the almost identical ready-made stool slightly aside with the other hand, making the personal preference readable through physical choice. Keep A relaxed, not exaggerated. Show warm wood floor, daylight window and a few normal apartment details in depth. Both stools remain physically similar in size and quality. No price graphics, arrows, glowing objects, floating hearts or abstract value symbols. No visible text.
+Medium three-quarter apartment shot with both stools visible. Geometric-stickman Character A rests one tiny endpoint hand naturally on the self-built stool and nudges the almost identical ready-made stool slightly aside with the other. Preserve circle head, tiny torso block and ultra-thin line arms/legs; do not add sleeves, trousers or body mass. Show warm wood floor, daylight window and a few normal apartment details in depth. Both stools remain physically similar in size and quality. No price graphics, arrows, glowing objects, floating hearts or abstract value symbols. No visible text.
 
 BILD 04
-Close-medium three-quarter action shot in the apartment work area. Character A kneels beside the self-built stool and tightens the final visible screw with an Allen key. Frame the hand, tool and stool joint clearly while keeping A's strict-stickman face and narrow body readable. Only a few useful parts remain beside the work mat; avoid clutter. Bright natural side light, light-oak wood, graphite screw hardware and muted teal clothing. The exact finishing action carries the scene. No victory symbols, no glow and no visible text.
+Close-medium three-quarter action shot in the apartment work area. Geometric-stickman Character A kneels beside the self-built stool and tightens the final visible screw with an Allen key. Keep the simple circle head and tiny teal torso readable while the arms and bent legs remain ultra-thin near-uniform line strokes with no sleeve, thigh, calf or trouser volume. Only a few useful parts remain beside the work mat. Bright natural side light, light-oak wood and graphite hardware. The exact finishing action carries the scene. No victory symbols, glow or visible text.
 
 BILD 05
-Straight three-quarter comparison view with no person needed. Place the two nearly identical stools side by side at equal scale in the apartment. The self-built stool is identified only by real assembly evidence nearby: Allen key, opened plain packaging and one small protective insert. The ready-made stool has no assembly traces and stands cleanly beside it. Use neutral natural daylight so neither stool is magically brighter, larger or more dramatic. Keep the room believable and uncluttered. No labels, no arrows, no logos and no visible text.
+Straight three-quarter comparison view with no person needed. Place the two nearly identical stools side by side at equal scale in the apartment. The self-built stool is identified only by real assembly evidence nearby: Allen key, opened plain packaging and one small protective insert. The ready-made stool has no assembly traces and stands cleanly beside it. Use neutral natural daylight so neither stool is magically brighter, larger or more dramatic. Keep the room believable and uncluttered. No labels, arrows, logos or visible text.
 
 BILD 06
-Wide apartment shot with foreground doorway and the dining area by the window in the background. Character A carries the self-built stool toward the dining table and deliberately places it at A's usual seat. The almost identical ready-made stool remains near the doorway where it was left. Show the preference through movement and placement, not facial exaggeration. Warm late-afternoon daylight, warm wood floor, muted green plant, soft cool window shadows, same strict-stickman anatomy and same stool design. No aura, heart symbols or visible text.
+Wide apartment shot with foreground doorway and the dining area by the window in the background. Geometric-stickman Character A carries the self-built stool toward the dining table and deliberately places it at A's usual seat. A remains a circle head, tiny teal torso block, ultra-thin line arms/legs and flat white shoes even in the wide shot. The almost identical ready-made stool remains near the doorway. Show preference through movement and placement, not facial exaggeration. Warm late-afternoon daylight, warm wood floor, muted green plant and soft cool window shadows. No aura, heart symbols or visible text.
 
 BILD 07
-Wide environmental view inside one bright behavioral-lab workshop. Three adult strict-stickman participants work at clearly separated stations in the same room: one assembles a small plain box, one folds a sheet into simple origami, and one builds a small generic interlocking-brick model. A researcher stands to the side with a plain clipboard containing no readable text. Keep all humans in the same mature narrow stickman anatomy family. Neutral institutional daylight, pale worktables, restrained blue-green details, clean depth. This is one coherent research setting, not a three-panel collage. No logos and no visible text.
+Wide environmental view inside one bright behavioral-lab workshop. Three adult GEOMETRIC stickman participants work at clearly separated stations in the same room: one assembles a small plain box, one folds a sheet into simple origami, and one builds a small generic interlocking-brick model. A geometric-stickman researcher stands to the side with a plain clipboard containing no readable text. EVERY human, including distant figures, uses a simple circle/oval head, tiny torso block and ultra-thin line arms and legs; no normal cartoon silhouettes. Neutral institutional daylight, pale worktables, restrained blue-green details and clean depth. One coherent research setting, not a three-panel collage. No logos and no visible text.
 
 BILD 08
-Medium-wide side angle at a behavioral-lab table. One participant sits between a completed self-made object and a comparable object made by someone else. The participant physically slides a visibly larger small pile of plain neutral evaluation chips toward the self-made object and a smaller pile toward the comparison object. A researcher observes from the side without reacting. Keep the chip piles simple and non-monetary. Clean neutral lab light, subdued surfaces, modest blue-green accents. No numbers, no charts, no currency symbols, no arrows and no visible text.
+Medium-wide side angle at a behavioral-lab table. One geometric-stickman participant sits between a completed self-made object and a comparable object made by someone else and slides a visibly larger small pile of plain neutral evaluation chips toward the self-made object and a smaller pile toward the comparison object. A geometric-stickman researcher observes from the side. Seated bodies must still keep tiny torso blocks and ultra-thin line limbs; no normal seated-human thighs, sleeves or trouser shapes. Clean neutral lab light, subdued surfaces and modest blue-green accents. No numbers, charts, currency symbols, arrows or visible text.
 
 BILD 09
-Close-medium action shot in the same research lab. A participant places the final lid piece onto a small completed box so that all parts fit cleanly. The participant's hands are just releasing the finished object; the table around it is tidy, with no unused structural pieces left. Use soft neutral daylight and a gentle natural focal highlight on the completed box. The visible completion itself is the entire point. No trophy, no checkmark cloud, no glowing success effect, no labels and no visible text.
+Close-medium action shot in the same research lab. A geometric-stickman participant places the final lid piece onto a small completed box so that all parts fit cleanly. Only tiny endpoint hands and ultra-thin line forearms approach the object; no human hand, sleeve or forearm volume. Keep enough of the circle head and tiny torso block visible to preserve the character family. The table around it is tidy. Soft neutral daylight and restrained cool lab background. The visible completion itself is the point. No trophy, checkmark cloud, glowing success effect, labels or visible text.
 
 BILD 10
-Medium side shot at the same lab table. The same small box is now clearly dismantled into several ordinary pieces. The participant calmly moves the separated pieces into a plain material tray and is no longer holding the object protectively. Keep the pose neutral and practical rather than sad or dramatic. Use slightly cooler neutral lab light, restrained local colors and clear foreground focus on the dismantled pieces. Do not show disappearing money, fading glow, broken hearts, arrows or abstract loss symbols. No visible text.
+Medium side shot at the same lab table. The same small box is clearly dismantled into several ordinary pieces. A geometric-stickman participant calmly moves the separated pieces into a plain material tray, using ultra-thin line arms and tiny endpoint hands. Keep the pose neutral and practical; seated line legs remain ultra-thin with no thigh/calf or trouser volume. Slightly cooler neutral lab light, restrained local colors and clear foreground focus on the dismantled pieces. No disappearing money, fading glow, broken hearts, arrows or abstract loss symbols. No visible text.
 
 BILD 11
-Medium-wide three-quarter view back in Character A's apartment. The finished self-built stool stands stable beside A. Character A closes the toolbox with both hands, then looks at the completed stool with upright relaxed posture and slightly lifted head. Keep the expression subtle; the visible evidence of competence is successful completion plus calm body language. Warm natural side light, light-oak wood, muted teal clothing, soft amber sunlight and graphite accents. No medal, trophy, glowing brain, halo or abstract competence icon. No visible text.
+Medium-wide three-quarter view back in Character A's apartment. The finished self-built stool stands stable beside A. Geometric-stickman Character A closes the toolbox with two ultra-thin line arms and tiny endpoint hands, then looks at the completed stool with an upright simple line posture and slightly lifted circle head. Preserve the tiny teal torso block and no human shoulder/chest mass. Warm natural side light, light-oak wood, soft amber sunlight and graphite accents. Competence comes from successful completion and posture. No medal, trophy, glowing brain, halo or abstract competence icon. No visible text.
 
 BILD 12
-Close-medium side angle in the apartment. Character A carefully sits down on the self-built stool for the first time, notices that it stands stable, relaxes the shoulders and briefly looks down at the stool with quiet satisfaction. The toolbox is already closed and out of the immediate work area, showing the task is finished. Use soft warm practical light mixed with natural window fill. Keep the emotion restrained and adult. No speech bubble, no quote card, no trophy, no glow and no visible text.
+Close-medium side angle in the apartment. Geometric-stickman Character A carefully sits down on the self-built stool for the first time. Even seated, A must remain a true stick figure: circle head, tiny torso block, ultra-thin bent line arms and legs, no thighs, calves, hips or trouser shapes. A notices the stool stands stable, relaxes the torso angle and briefly looks down at it. The toolbox is already closed and outside the immediate work area. Soft warm practical light mixed with natural window fill. No speech bubble, quote card, trophy, glow or visible text.
 
 BILD 13
-Intimate close-medium object-and-character shot in the apartment during early evening. Character A notices a small harmless scratch on the self-built stool and carefully buffs that exact spot with a cloth. Keep A's face visible enough to read focused care, not sentimentality. Warm wood tones, amber practical lamp light and soft cool background shadows create natural depth. The extra care toward the object is the only behavioral signal. No hearts, memory bubbles, sentimental glow, icons or visible text.
+Intimate close-medium object-and-character shot in the apartment during early evening. Geometric-stickman Character A notices a small harmless scratch on the self-built stool and carefully buffs that exact spot with a cloth. Keep the circle head, tiny teal torso and ultra-thin line arms visible; the cloth may cover the tiny endpoint hand but must not create a realistic hand or sleeve. Warm wood tones, amber practical lamp light and soft cool background shadows. Extra care toward the object is the only behavioral signal. No hearts, memory bubbles, sentimental glow, icons or visible text.
 
 BILD 14
-Medium-wide two-person apartment shot. A friend in the same strict-stickman anatomy family, wearing a muted burgundy sweater, casually reaches for the clean ready-made stool while Character A gestures toward the self-built stool. The friend remains neutral and does not inspect the tools or assembly traces; A's body turns slightly toward the self-built stool. Keep both stools clearly visible between them. Natural evening room light, balanced warm interior colors and readable social spacing. No thought bubbles, arrows, value labels or visible text.
+Medium-wide two-person apartment shot. A friend uses the SAME GEOMETRIC STICKMAN anatomy family with a tiny muted-burgundy torso block, ultra-thin line limbs and simple circle head. The friend casually reaches for the clean ready-made stool while Character A gestures toward the self-built stool. Both characters remain true stick figures with no sleeves, chest, hips or trouser-leg mass. The friend stays neutral and does not inspect the tools or assembly traces. Keep both stools clearly visible between them. Natural evening room light and readable social spacing. No thought bubbles, arrows, value labels or visible text.
 
 BILD 15
-Low-medium side-by-side comparison shot in clear neutral daylight. Show both stools on the same flat floor under equal lighting. The self-built stool has one small believable alignment imperfection at a joint, while the ready-made stool looks slightly cleaner and more precise; neither is broken or unsafe. Character A is partially visible using the self-built stool normally. Keep the comparison subtle and realistic. Do not use rankings, stars, score cards, green/red marks, arrows or exaggerated defects. No visible text.
+Low-medium side-by-side comparison shot in clear neutral daylight. Show both stools on the same flat floor under equal lighting. The self-built stool has one small believable alignment imperfection at a joint, while the ready-made stool looks slightly cleaner and more precise; neither is broken or unsafe. Character A is partially visible using the self-built stool normally, but any visible head, torso or limbs must preserve GEOMETRIC_STICKMAN_ANATOMY_V1 with ultra-thin line limbs and no human body volume. Keep the comparison subtle and realistic. No rankings, stars, score cards, green/red marks, arrows or exaggerated defects. No visible text.
 
 BILD 16
-Wide calm closing shot in the same apartment dining area. Character A sits normally at the table on the self-built stool, no longer working on it. A briefly glances at one small visible assembly mark while the closed toolbox rests on a shelf in the background. Use soft warm evening light with a small cool window balance, warm wood, muted teal and natural shadows. The ending should feel ordinary and reflective, not triumphant or symbolic. No glow, no floating icons, no title card and no visible text.
+Wide calm closing shot in the same apartment dining area. Geometric-stickman Character A sits normally at the table on the self-built stool, no longer working on it. Even at distance and seated, preserve the simple circle head, tiny teal torso block, ultra-thin line arms and legs and flat shoes; no normal seated-human silhouette. A briefly glances at one small visible assembly mark while the closed toolbox rests on a shelf in the background. Soft warm evening light with a small cool window balance, warm wood and natural shadows. Ordinary and reflective, not triumphant. No glow, floating icons, title card or visible text.
 
 FINAL QA
 - one master prompt file only
@@ -150,7 +164,11 @@ FINAL QA
 - accepted outputs renamed immediately to matching `NN.png`
 - all accepted images together in one flat `03-bilder/` folder
 - no storyboard, contact sheet, multi-scene grid, collage or video
-- same mature strict-stickman illustration world across every batch
+- every main, supporting and background human passes GEOMETRIC_STICKMAN_ANATOMY_V1
+- if any figure looks like a thin normal cartoon human, regenerate that image
+- no thick/tapered limbs, sleeve-shaped arms, trouser-shaped legs, necks, chest, waist, hips, thighs or calves
+- Character A remains circle head + tiny teal torso block + ultra-thin line limbs + flat white shoes across recurring scenes
+- research participants and the friend use the exact same geometric anatomy family
 - Character A, the recurring stools and recurring locations stay consistent where specified
 - each BILD uses concrete visible evidence instead of asking Flow to interpret psychology
 - no brand logos and no literalized IKEA-store imagery
