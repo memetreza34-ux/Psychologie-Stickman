@@ -4,6 +4,7 @@ TOPIC: [VIDEO-THEMA]
 FORMAT: 16:9 / 1920x1080
 VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
 CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+ANATOMY POLICY: GEOMETRIC_STICKMAN_ANATOMY_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
@@ -15,9 +16,7 @@ Never create a storyboard, contact sheet, multi-scene grid, collage or automatic
 One image number always means one separate image asset.
 
 CHANNEL VISUAL WORLD — HARD LOCK
-Keep the COMPLETE video inside one mature cinematic 2D psychology-documentary / editorial illustration world.
-Use adult strict-stickman humans only: large simple round/slightly oval heads without chibi exaggeration, minimal expressive faces, small narrow clothed torsos, narrow shoulders, very thin arms and legs, simple hands and shoes.
-Characters may differ through restrained hair, eyebrows, small eye/mouth variation, glasses/accessories, clothing, posture, gaze and role-specific body language, but never by changing anatomy family.
+Keep the complete video inside one mature cinematic 2D psychology-documentary / editorial illustration world.
 Use clean slightly organic dark outlines, controlled soft cel shading, subtle texture, believable depth, purposeful framing and motivated light.
 Simple Stickmen live in rich believable scene-specific environments when a real location helps the beat.
 Do not default to blank cream backgrounds, sterile rooms, repeated desk shots or one fixed red/burgundy/dark or teal/cream palette.
@@ -25,15 +24,30 @@ Not every image needs a person. Object/environment illustrations, comparisons an
 Every image has one dominant visual idea and only useful supporting elements.
 The complete set must look as if the SAME illustrator created it for the SAME channel, even when location, camera, mood and color change.
 
-Hard reject: cute/chibi/mascot figures, normal cartoon-human anatomy, broad shoulders, thick limbs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
+GEOMETRIC STICKMAN ANATOMY — ABSOLUTE HARD LOCK
+Every visible human — main, supporting and background — must unmistakably read as a TRUE ILLUSTRATED STICK FIGURE, never a thin normal cartoon human.
+
+Recognition test: if a figure could plausibly be described as a thin cartoon person, the anatomy is WRONG.
+
+HEAD: one clean simple circle or slightly vertical oval; tiny dot/short-mark eyes; one tiny mouth line; optional tiny eyebrow strokes; NO ears, NO nose, NO neck, NO realistic jaw/cheeks.
+TORSO: one tiny narrow rounded-rectangle/simple tapered graphic clothing shape, clearly less than half the head width; NO chest, waist, hips or shoulder mass.
+ARMS: ultra-thin near-uniform line-like strokes; NO upper-arm/forearm mass; NO sleeve volume.
+LEGS: ultra-thin near-uniform line-like strokes; NO thighs/calves; NO trouser-leg volume.
+HANDS: tiny no-finger endpoint/dot/mitten shapes only.
+FEET: small flat simple shoes only.
+CLOTHING: flat graphic cue only; it may color the tiny torso or line limbs but may NEVER create broad shoulders, chest, sleeves, waist, hips, thighs or calves.
+HAIR: tiny flat head-edge cue only; NO volumetric hairstyle.
+BACKGROUND PEOPLE: same exact geometry even when small, seated, distant or partially hidden. Never simplify them into normal cartoon silhouettes.
+
+Hard reject: thin cartoon humans, normal cartoon-human anatomy, cute/chibi/mascot figures, broad shoulders, thick/tapered limbs, sleeve-shaped arms, trouser-shaped legs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
 
 CHARACTER + REFERENCE SYSTEM
-Use only reference images actually approved for CINEMATIC_HUMAN_BEHAVIOR_V2.
+Use only reference images actually approved for CINEMATIC_HUMAN_BEHAVIOR_V2 and GEOMETRIC_STICKMAN_ANATOMY_V1.
 A style-only reference may lock rendering, anatomy family, linework, cel shading, texture and environment quality, but must not force the same room, pose, clothing, composition or palette.
-A character-identity reference preserves returning-person identity/clothing cues.
+A character-identity reference preserves returning-person identity cues while keeping the same geometric anatomy.
 An environment-continuity reference preserves a recurring place/layout only when needed.
-If no approved reference exists, follow the written channel rules instead of inventing one.
-Never let a weak/chibi/cartoon reference override the written rules.
+If no approved reference exists, follow the written rules instead of inventing one.
+Never let a weak/chibi/cartoon/thin-human reference override the written rules.
 
 VIDEO WORLD LOCK
 [Describe only recurring people, places, props or continuity facts that must stay the same inside this video. Keep this short. If nothing recurs: No fixed recurring location; only the channel illustration world remains consistent.]
@@ -59,11 +73,11 @@ AFTER THE USER CHOOSES THE COVER:
 - immediately rename each accepted result to its matching number: BILD 02 -> `02.png`, BILD 03 -> `03.png`, etc.
 - put every accepted image directly into the SAME flat folder `03-bilder/`
 - no cover subfolder, no batch subfolders, no duplicate accepted versions
-- after each batch, check style continuity, anatomy, scene clarity, unnecessary text and visual repetition
+- after each batch, check world continuity, GEOMETRIC_STICKMAN_ANATOMY_V1, scene clarity, unnecessary text and visual repetition
 - regenerate only failed images
 - when a batch passes, continue automatically with the next five-image batch from THIS SAME MASTER PROMPT
 - the final batch may contain the remaining 1–4 images
-- never offer to turn the images into a video; the external pipeline handles the final edit
+- never offer to turn the images into a video; the external pipeline handles final editing
 
 FINAL REQUIRED IMAGE FOLDER:
 `03-bilder/01.png, 02.png, 03.png, ... NN.png`
@@ -78,7 +92,7 @@ PROMPTING RULE — OBSERVABLE SCENE FIRST
 Every BILD prompt below already translates the psychology into concrete visible evidence.
 Follow the described people, posture, gaze, distance, action, objects, environment and camera literally.
 Do not replace concrete behavior with symbolic spectacle, glowing attention effects or abstract psychology icons.
-Do not literalize effect names just because of their wording: Spotlight-Effekt is not automatically a theatrical spotlight; Ankereffekt is not automatically a ship anchor; Halo-Effekt is not automatically a glowing halo; Framing is not automatically a picture frame.
+Do not literalize effect names just because of their wording.
 If a prompt contains an emotion, make the listed visible body-language/action cues primary.
 One BILD = one dominant visible idea.
 
@@ -88,7 +102,7 @@ It must communicate the central mechanism/question through a concrete visible si
 Use one dominant focal relationship, strong thumbnail readability and a compact asymmetric title zone instead of a generic full-width top banner.
 
 BILD 01
-[Write one natural English prompt, normally 45–110 words: camera/framing + concrete subject(s) + exact visible action/relation + relevant other behavior/objects + environment/props + light/local color + exact short German cover title. Avoid abstract symbolic spectacle. End with: No other readable text.]
+[Write one natural English prompt, normally 45–110 words: camera/framing + concrete subject(s) + exact visible action/relation + relevant other behavior/objects + environment/props + light/local color + exact short German cover title. End with: No other readable text.]
 
 BILD 02
 [Write one natural English prompt, normally 45–110 words. Describe only concrete visible evidence for this beat. End with: No visible text.]
@@ -113,8 +127,9 @@ FINAL QA
 - accepted outputs renamed immediately to `NN.png`
 - all accepted images together in one flat `03-bilder/` folder
 - no storyboard/contact sheet/multi-scene grid/video
+- every visible human unmistakably passes GEOMETRIC_STICKMAN_ANATOMY_V1
+- no thin-cartoon-human drift in main OR background people
 - same mature strict-stickman illustration world across every batch
 - each BILD uses concrete visible evidence instead of asking Flow to interpret psychology
-- no effect-name literalization by default
 - no forced character, montage, group, split, text or schema just to create variety
 - exact German text only when explicitly requested; otherwise ZERO READABLE TEXT
