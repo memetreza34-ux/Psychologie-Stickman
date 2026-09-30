@@ -2,21 +2,41 @@
 
 **STATUS: BINDING**
 
+New projects also follow `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md` / `OBSERVABLE_SCENE_FIRST_V1`.
+
 ## One important thought = one visual beat
 
 Split semantically when the spoken idea changes: new action, mechanism, example, comparison, cause/effect, question/answer, problem/solution, power relation, emotional state or location.
 
 Typical target remains about 10–16 spoken words per beat; clarity wins over word count.
 
-## Every beat plans internally
+If one spoken sentence contains several independent examples or actions, create several visual beats instead of forcing them into one montage.
+
+## Observable-scene gate — HARD LOCK
+
+Before selecting scene type, camera or mood, define internally:
+- `viewerTakeaway`: what must the viewer understand now?
+- `observableEvidence`: what can literally be seen that proves the point?
+- `dominantRelation`: the one main visible action/relationship
+- `literalMetaphorWarning`: when a named psychological term could tempt a misleading literal visualization
+
+The visual idea is not ready if `observableEvidence` is only an abstract mental-state phrase such as `show pressure`, `show attention`, `show conformity`, `show insecurity` or `visualize the effect`.
+
+Translate it into visible behavior, objects, spacing, gaze, posture or a concrete comparison first.
+
+## Every beat may plan internally
 
 Every scene may plan in `99-intern/`:
-- `sceneType`: CHARACTER_SCENE / SCHEMA_EXPLAINER / OBJECT_METAPHOR / COMPARE_VISUAL / TEXT_ILLUSTRATION
-- `compositionType`: standard / split / contrast / montage
-- `socialDensity`: solo / duo / group / none
-- `moodMode`: CLEAR / UNEASY / DARK / POWER / MONEY / ISOLATION / HOPE
-- `moodIntensity`: integer 0–4
+- `sceneType`
+- `compositionType`
+- `socialDensity`
+- `moodMode`
+- `moodIntensity`
 - `powerDynamic`
+- `viewerTakeaway`
+- `observableEvidence`
+- `dominantRelation`
+- `literalMetaphorWarning`
 - `visualIdea`
 - `subject`
 - `actionOrRelation`
@@ -27,68 +47,85 @@ Every scene may plan in `99-intern/`:
 - `characterDirection` when characters appear
 - `continuityPolicy`
 - `textPolicy`
-- exact planned Flow texts when needed
+- exact planned Flow text when needed
 
-These are planning/QC fields. They do **not** need to appear as technical labels in the final Flow image prompt.
+These are planning/QC fields. They do not appear as technical labels in the final Flow image prompt.
+
+## Do not literalize named psychology effects
+
+Do not automatically render the literal object in an effect name.
+
+Examples:
+- Spotlight-Effekt → not automatically a spotlight
+- Ankereffekt → not automatically an anchor
+- Halo-Effekt → not automatically a halo
+- Framing-Effekt → not automatically a picture frame
+- Echo Chamber → not automatically an echo room
+
+A symbolic metaphor must be a deliberate art-direction decision, not a lexical shortcut.
 
 ## Mood selection
 
 Choose mood from the current spoken beat only.
 
-- `CLEAR`: explanation, ordinary cognition, neutral everyday behavior.
-- `UNEASY`: doubt, uncertainty, subtle pressure or tension.
-- `DARK`: manipulation, coercion, deception, severe conflict or disturbing behavior.
-- `POWER`: hierarchy, authority, dominance, status or control.
-- `MONEY`: money, pricing, consumption, negotiation, greed, financial risk or status.
-- `ISOLATION`: exclusion, loneliness, vulnerability, alienation or fear.
-- `HOPE`: protection, solution, clarity, recovery or constructive resolution.
+- `CLEAR`: explanation, ordinary cognition, neutral everyday behavior
+- `UNEASY`: doubt, uncertainty, subtle pressure or tension
+- `DARK`: manipulation, coercion, deception, severe conflict or disturbing behavior
+- `POWER`: hierarchy, authority, dominance, status or control
+- `MONEY`: money, pricing, consumption, negotiation, greed, financial risk or status
+- `ISOLATION`: exclusion, loneliness, vulnerability, alienation or fear
+- `HOPE`: protection, solution, clarity, recovery or constructive resolution
 
-Do not choose DARK merely because the overall video is about a dark subject. Each beat gets its own mood.
-
-Do not mechanically repeat the same red/burgundy/dark treatment across many scenes. A video may move through different color temperatures, lighting situations and accent colors while preserving one illustration identity.
+Do not choose DARK merely because the overall video is about a dark subject. Mood is not a color quota and must not mechanically create red/burgundy scenes.
 
 ## Power relation
 
-When the sentence describes influence, hierarchy, control, pressure, exclusion or status, the frame should visibly encode the relation through blocking, scale, distance, posture, gaze, camera or environment.
+When influence, hierarchy, control, pressure, exclusion or status matters, encode it through observable blocking, scale, distance, posture, gaze, standing/sitting position, camera or environment.
 
-## Choosing a scene type
+Do not rely on a label such as `dominant` without visible cues.
 
-Use CHARACTER_SCENE when a relatable human action, reaction, hierarchy or relationship explains the beat best.
-Use SCHEMA_EXPLAINER only when a mechanism, sequence or relationship genuinely benefits from structural visualization.
-Use OBJECT_METAPHOR when one symbolic object/environment explains the invisible mechanism faster.
-Use COMPARE_VISUAL for two states, people, choices or perspectives.
-Use TEXT_ILLUSTRATION for a memorable concept moment only and sparingly.
+## Choosing a representation
 
-Do not default to CHARACTER_SCENE merely because the channel uses Stickmen. If an object, environment, comparison or mechanism is clearer, omit humans.
+Use `CHARACTER_SCENE` when human action/reaction/relationship is the clearest proof.
+Use `SCHEMA_EXPLAINER` only when a mechanism or relation genuinely needs structure.
+Use `OBJECT_METAPHOR` only when the chosen object metaphor is clearer than a concrete situation and is not just a literalized effect name.
+Use `COMPARE_VISUAL` when two states/choices/perspectives must be seen together.
+Use `TEXT_ILLUSTRATION` sparingly for a memorable concept moment.
+Use environment/object-only illustration when people add nothing.
 
-## Representation variety — HARD LOCK for new videos
+## Representation variety — guidance, never quota
 
 Binding detail rule: `rules/REPRESENTATION_VARIETY_LOCK.md`.
 
-Normal longform guidance:
-- `CHARACTER_SCENE`: about 45–60%
-- `SCHEMA_EXPLAINER`: about 10–20%
-- `OBJECT_METAPHOR`: about 10–20%
-- `COMPARE_VISUAL`: about 10–20%
-- `TEXT_ILLUSTRATION`: normally 0–10%
+Typical longform ranges may still be used as a review signal, but they are NOT generation requirements.
 
-These are guidance ranges, not quotas. The clearest visual for the current beat wins.
+Never force:
+- a montage because none has appeared yet
+- a group scene to satisfy a count
+- a split screen for artificial variety
+- a person merely because the channel uses Stickmen
+- a schema because the sentence is abstract
 
-Avoid repetitive runs of:
-- similar character medium shots
-- the same room type
-- the same red/dark palette
-- several text cards
-- several schemas
-- centered compositions with no reason
+Variation must emerge from the content.
 
-When adjacent beats allow it, vary scene form, camera, environment, human presence and mood while preserving continuity and the unified channel world.
+## Composition
+
+Default to one coherent scene.
+
+Use split/contrast only for a real two-sided comparison.
+Use montage only when multiple elements are inseparable parts of the same beat.
+
+Do not use rotating composition patterns or index-based camera patterns.
+
+Camera is chosen because it makes the current action/relation clearer:
+- wide for social/environment relations
+- medium/medium-wide for readable action + context
+- close/close-medium for a specific reaction or object detail
+- low/high angle only when hierarchy/scale actually matters
 
 ## Same world everywhere
 
-Schemas, objects and text illustrations use the same 2D linework, cel shading, texture, controlled color and world polish as character scenes.
-
-Mood may change lighting/color strongly while illustration style remains fixed.
+Schemas, objects and text illustrations share the same 2D linework, cel shading, texture, controlled color and polish as character scenes.
 
 Normal real-life scenes use believable scene-specific environments and depth. Empty cream/off-white backgrounds are not the default.
 
@@ -102,13 +139,9 @@ Allowed internally:
 - `FLOW_EXACT_TEXT_ILLUSTRATION`
 - `NONE`
 
-Schema: optional short title + up to 3 short labels.
-Comparison: optional short title + up to 2 short labels.
-All visible text must be exact German planned in Phase 1.
-`NONE` means `ZERO READABLE TEXT`.
-Speech/voice-over context is never visible text.
+All visible text must be exact planned German text. `NONE` means `ZERO READABLE TEXT`.
 
-Text is not decorative. Use it only when it materially improves understanding: cover/title, exact concept term, important number/price, short comparison/schema label or one memorable phrase. Do not put text on every frame and do not repeat the spoken sentence as visible text.
+Text is not decorative. Do not repeat the spoken sentence as visible text.
 
 ## Phase 2 — final Flow prompt
 
@@ -116,44 +149,39 @@ Each video uses exactly one:
 
 `02-google-flow/google-flow-prompt.txt`
 
-New videos follow `rules/FLOW_PROMPT_ARCHITECTURE.md` / `NATURAL_FLOW_MASTER_V1`.
+New videos follow `rules/FLOW_PROMPT_ARCHITECTURE.md` / `NATURAL_FLOW_MASTER_V2`.
 
-The final master prompt contains:
+The final master contains:
 - task/output instruction
 - channel visual world once
 - character/reference system once
 - video world/continuity lock once
 - cover + five-image generation workflow
 - global text rule
-- all image prompts from `BILD 01` to `BILD NN`
+- short observable-scene prompting rule
+- all prompts from `BILD 01` to `BILD NN`
 
-Each final `BILD NN` prompt is a natural direct image description, not a repeated planning form.
-
-A strong image prompt normally expresses only the needed combination of:
-- shot/camera
-- dominant subject/relation
-- visible action/mechanism
-- relevant environment/props
-- light/mood/local color
+Each `BILD NN` prompt is natural direct art direction built from:
+- camera/framing
+- concrete subject(s)
+- exact visible action/relation
+- relevant other behavior/objects
+- concrete environment/props
+- light/local color
 - continuity if needed
-- exact German visible text if planned
+- exact planned German text or no visible text
 
-Global anatomy/style/negative rules are written once near the top, not repeated in every image.
+The final prompt must not ask Flow to interpret the psychological concept itself.
 
 ## Flow output behavior
 
-Follow `rules/FLOW_OUTPUT_MODE.md`.
-
-- Bild 01 first as 3 separate cover candidates, then approval stop.
-- The user chooses one; it becomes `01.png` in `03-bilder/`.
-- Only after that approval do later images begin.
-- Later images are generated in five-image batches for new videos when at least five remain.
-- Every image number becomes its own standalone 16:9 image.
-- Accepted images are renamed immediately to `NN.png`.
-- All accepted images stay in the same flat `03-bilder/` folder.
-- Never combine several image numbers into one storyboard/contact sheet/panel grid.
-- Never ask Flow to create the final video.
-
-A single image may use split/contrast/montage if all parts explain that same beat. This does not permit combining different image numbers.
-
-Flow applies `CINEMATIC_HUMAN_BEHAVIOR_V2` to every beat while preserving the same mature strict-stickman anatomy family and overall illustration language.
+Follow `rules/FLOW_OUTPUT_MODE.md`:
+- Bild 01 first as 3 separate cover candidates, then stop for user approval
+- chosen winner becomes `01.png` in `03-bilder/`
+- only then later images begin
+- later images use five-image batches whenever five remain
+- every image number becomes its own standalone 16:9 asset
+- accepted images are immediately renamed to `NN.png`
+- all accepted images stay in the same flat `03-bilder/`
+- never combine several image numbers into one storyboard/contact sheet/grid
+- never ask Flow to create the final video
