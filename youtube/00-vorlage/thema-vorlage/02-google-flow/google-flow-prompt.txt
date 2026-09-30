@@ -4,7 +4,8 @@ TOPIC: [VIDEO-THEMA]
 FORMAT: 16:9 / 1920x1080
 VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
 CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
-FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V1
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 
 TASK / OUTPUT — READ FIRST
@@ -20,22 +21,22 @@ Characters may differ through restrained hair, eyebrows, small eye/mouth variati
 Use clean slightly organic dark outlines, controlled soft cel shading, subtle texture, believable depth, purposeful framing and motivated light.
 Simple Stickmen live in rich believable scene-specific environments when a real location helps the beat.
 Do not default to blank cream backgrounds, sterile rooms, repeated desk shots or one fixed red/burgundy/dark or teal/cream palette.
-Not every image needs a person. Object/environment illustrations, metaphors, comparisons and cinematic schemas are equally valid when they explain the beat faster.
-Every image should have one dominant visual idea and only a few useful supporting elements.
+Not every image needs a person. Object/environment illustrations, comparisons and cinematic schemas are valid when they explain the beat faster.
+Every image has one dominant visual idea and only useful supporting elements.
 The complete set must look as if the SAME illustrator created it for the SAME channel, even when location, camera, mood and color change.
 
 Hard reject: cute/chibi/mascot figures, normal cartoon-human anatomy, broad shoulders, thick limbs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
 
 CHARACTER + REFERENCE SYSTEM
-Use only reference images that have actually been approved for `CINEMATIC_HUMAN_BEHAVIOR_V2`.
-A style-only reference may lock rendering, anatomy family, linework, cel shading, texture and environment-quality level, but must not force the same room, pose, clothing, composition or palette.
-A character-identity reference additionally preserves the returning person's head/hair/accessory cues, clothing/core colors, shoes and silhouette.
+Use only reference images actually approved for CINEMATIC_HUMAN_BEHAVIOR_V2.
+A style-only reference may lock rendering, anatomy family, linework, cel shading, texture and environment quality, but must not force the same room, pose, clothing, composition or palette.
+A character-identity reference preserves returning-person identity/clothing cues.
 An environment-continuity reference preserves a recurring place/layout only when needed.
-If an approved reference does not exist, follow the written channel rules instead of inventing or assuming one.
-Never let a weak/chibi/cartoon reference override the written channel rules.
+If no approved reference exists, follow the written channel rules instead of inventing one.
+Never let a weak/chibi/cartoon reference override the written rules.
 
 VIDEO WORLD LOCK
-[Describe only the recurring people, places, props or continuity facts that must stay the same INSIDE THIS VIDEO. Keep this short. If nothing must recur, write: No fixed recurring location; only the channel illustration world must remain consistent.]
+[Describe only recurring people, places, props or continuity facts that must stay the same inside this video. Keep this short. If nothing recurs: No fixed recurring location; only the channel illustration world remains consistent.]
 
 GENERATION WORKFLOW — HARD LOCK
 
@@ -44,11 +45,12 @@ INITIAL COVER RUN:
 2. Generate BILD 01 ONLY.
 3. Generate exactly 3 SEPARATE cover candidates for BILD 01.
 4. Each candidate must be its own standalone 16:9 image. Never combine the three candidates into one sheet/grid.
-5. STOP and wait for the user to choose one cover.
-6. Keep exactly the chosen candidate.
-7. Rename it immediately to `01.png`.
-8. Put it directly in the single final folder `03-bilder/`.
-9. Do not generate BILD 02 or later before the user has chosen the cover.
+5. All three keep the same approved visual thesis and exact cover text, but use meaningfully different strong compositions rather than near-duplicates.
+6. STOP and wait for the user to choose one cover.
+7. Keep exactly the chosen candidate.
+8. Rename it immediately to `01.png`.
+9. Put it directly in the single final folder `03-bilder/`.
+10. Do not generate BILD 02 or later before the user has chosen the cover.
 
 AFTER THE USER CHOOSES THE COVER:
 - generate the remaining images in batches of EXACTLY 5 image numbers whenever at least 5 remain
@@ -72,27 +74,35 @@ Never render the spoken voice-over as captions.
 Never invent readable posters, signs, screens, documents, packaging, logos or pseudo-text.
 If a BILD prompt says no visible text, render ZERO READABLE TEXT.
 
+PROMPTING RULE — OBSERVABLE SCENE FIRST
+Every BILD prompt below already translates the psychology into concrete visible evidence.
+Follow the described people, posture, gaze, distance, action, objects, environment and camera literally.
+Do not replace concrete behavior with symbolic spectacle, glowing attention effects or abstract psychology icons.
+Do not literalize effect names just because of their wording: Spotlight-Effekt is not automatically a theatrical spotlight; Ankereffekt is not automatically a ship anchor; Halo-Effekt is not automatically a glowing halo; Framing is not automatically a picture frame.
+If a prompt contains an emotion, make the listed visible body-language/action cues primary.
+One BILD = one dominant visible idea.
+
 COVER RULE — BILD 01
 BILD 01 is both the first visual beat and the YouTube thumbnail source.
-It must communicate the central mechanism/question visually before the title is read.
+It must communicate the central mechanism/question through a concrete visible situation before the title is read.
 Use one dominant focal relationship, strong thumbnail readability and a compact asymmetric title zone instead of a generic full-width top banner.
 
 BILD 01
-[Write one natural direct image prompt. Describe the cover composition, central mechanism, scene/environment, camera/framing, light/color and exact short German cover title. End with: No other readable text.]
+[Write one natural English prompt, normally 45–110 words: camera/framing + concrete subject(s) + exact visible action/relation + relevant other behavior/objects + environment/props + light/local color + exact short German cover title. Avoid abstract symbolic spectacle. End with: No other readable text.]
 
 BILD 02
-[Write one natural direct image prompt. No internal planning labels.]
+[Write one natural English prompt, normally 45–110 words. Describe only concrete visible evidence for this beat. End with: No visible text.]
 
 BILD 03
-[Write one natural direct image prompt.]
+[Write one natural English prompt. One visible idea only.]
 
 BILD 04
-[Write one natural direct image prompt.]
+[Write one natural English prompt.]
 
 BILD 05
-[Write one natural direct image prompt.]
+[Write one natural English prompt.]
 
-[CONTINUE BILD 06 THROUGH BILD NN IN THE SAME NATURAL DIRECT STYLE]
+[CONTINUE BILD 06 THROUGH BILD NN IN THE SAME OBSERVABLE DIRECT STYLE]
 
 FINAL QA
 - one master prompt file only
@@ -104,6 +114,7 @@ FINAL QA
 - all accepted images together in one flat `03-bilder/` folder
 - no storyboard/contact sheet/multi-scene grid/video
 - same mature strict-stickman illustration world across every batch
-- varied staging, camera, environment, mood and representation inside that same world
-- no forced character in every frame
+- each BILD uses concrete visible evidence instead of asking Flow to interpret psychology
+- no effect-name literalization by default
+- no forced character, montage, group, split, text or schema just to create variety
 - exact German text only when explicitly requested; otherwise ZERO READABLE TEXT
