@@ -31,6 +31,14 @@ const requiredWorkflow = (text, rel) => {
   mustMatch(text, /no cover subfolder, no batch subfolders|no batch subfolders/iu, `${rel}: must forbid batch subfolders.`);
 };
 
+const requiredGeometricStickman = (text, rel) => {
+  mustMatch(text, /GEOMETRIC_STICKMAN_ANATOMY_V1/iu, `${rel}: missing GEOMETRIC_STICKMAN_ANATOMY_V1.`);
+  mustMatch(text, /thin (?:normal )?cartoon human|thin cartoon person/iu, `${rel}: missing thin-cartoon-human recognition guard.`);
+  mustMatch(text, /ultra-thin[^\n]*(?:line-like|line)[^\n]*(?:arms|limbs)|arms[^\n]*ultra-thin/iu, `${rel}: missing line-like arm geometry.`);
+  mustMatch(text, /NO thighs|no thighs|thighs\/calves|no thigh/iu, `${rel}: missing anti-human leg-volume rule.`);
+  mustMatch(text, /BACKGROUND PEOPLE|background people/iu, `${rel}: missing background-person anatomy lock.`);
+};
+
 const templatePath = path.resolve('youtube/00-vorlage/thema-vorlage/02-google-flow/google-flow-prompt.txt');
 if (!fs.existsSync(templatePath)) failures.push('YouTube Flow template is missing.');
 else {
@@ -45,6 +53,7 @@ else {
   mustMatch(template, /same illustrator|SAME illustrator/iu, 'YouTube Flow template must keep one same-illustrator visual world.');
   mustMatch(template, /cute\/chibi\/mascot/iu, 'YouTube Flow template must guard against cute/chibi/mascot drift.');
   mustMatch(template, /^BILD\s+01\s*$/gimu, 'YouTube Flow template must use natural BILD 01 blocks.');
+  requiredGeometricStickman(template, 'YouTube Flow template');
   requiredWorkflow(template, 'YouTube Flow template');
 }
 
@@ -58,6 +67,7 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
   const text = fs.readFileSync(file, 'utf8');
   const naturalV2 = /NATURAL_FLOW_MASTER_V2/iu.test(text);
   const naturalV1 = /NATURAL_FLOW_MASTER_V1/iu.test(text);
+  const geometricV1 = /GEOMETRIC_STICKMAN_ANATOMY_V1/iu.test(text);
 
   if (naturalV2 || naturalV1) {
     const images = [...text.matchAll(/^BILD\s+(\d+)\s*$/gimu)];
@@ -86,6 +96,8 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
       mustMatch(text, /PROMPTING RULE/iu, `${rel}: V2 prompt missing PROMPTING RULE.`);
       mustMatch(text, /concrete visible|observable evidence|visible action/iu, `${rel}: V2 prompt lacks observable-scene instruction.`);
       if (/FLOW_SCENE_PROMPT_CONTRACT_V1/iu.test(text)) failures.push(`${rel}: retired FLOW_SCENE_PROMPT_CONTRACT_V1 appears in V2 prompt.`);
+      if (geometricV1) requiredGeometricStickman(text, rel);
+      else warnings.push(`${rel}: pre-GEOMETRIC_STICKMAN_ANATOMY_V1 V2 prompt retained; future projects must use the geometric lock.`);
     } else {
       warnings.push(`${rel}: historical NATURAL_FLOW_MASTER_V1 retained; future projects use V2.`);
     }
@@ -110,7 +122,6 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
     continue;
   }
 
-  // Historical pre-natural prompts are retained for compatibility.
   const scenes = [...text.matchAll(/^SCENE\s+(\d+)\s*$/gimu)];
   if (!scenes.length) warnings.push(`${rel}: legacy prompt has no recognized SCENE/BILD blocks.`);
 }
