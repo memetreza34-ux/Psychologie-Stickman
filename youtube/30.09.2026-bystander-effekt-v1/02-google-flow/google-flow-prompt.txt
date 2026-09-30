@@ -1,0 +1,161 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+TOPIC: Bystander-Effekt — warum mehrere Zuschauer Hilfe verzögern können
+FORMAT: 16:9 / 1920x1080
+VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+ANATOMY POLICY: GEOMETRIC_STICKMAN_ANATOMY_V1
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+
+TASK / OUTPUT — READ FIRST
+Create FINAL SEPARATE 16:9 source images for one coherent YouTube video.
+This is the ONLY Google Flow master prompt for this video and contains every image from BILD 01 to BILD 16.
+Never create a storyboard, contact sheet, multi-scene grid, collage or automatic video.
+One image number always means one separate image asset.
+
+CHANNEL VISUAL WORLD — HARD LOCK
+Keep the complete video inside one mature cinematic 2D psychology-documentary / editorial illustration world.
+Use clean slightly organic dark outlines, controlled soft cel shading, subtle texture, believable foreground/midground/background depth, purposeful framing and motivated light.
+Use rich believable station, laboratory, waiting-room and street environments with only useful props.
+Do not default to blank cream backgrounds, sterile generic rooms, one fixed red/burgundy palette or one fixed teal/cream palette.
+The complete set must look as if the SAME illustrator created it for the SAME channel.
+
+GEOMETRIC STICKMAN ANATOMY — ABSOLUTE HARD LOCK
+Every visible human — main, supporting and background — must unmistakably read as a TRUE ILLUSTRATED STICK FIGURE, never a thin normal cartoon human.
+Recognition test: if a figure could plausibly be described as a thin cartoon person, the anatomy is WRONG.
+
+HEAD: one clean simple circle or slightly vertical oval; tiny dot/short-mark eyes; one tiny mouth line; optional tiny eyebrow strokes; NO ears, NO nose, NO neck, NO realistic jaw or cheeks.
+TORSO: one tiny narrow rounded-rectangle/simple tapered graphic clothing shape, clearly less than half the head width; NO chest, waist, hips or shoulder mass.
+ARMS: ultra-thin near-uniform line-like strokes; NO upper-arm or forearm mass; NO sleeve volume.
+LEGS: ultra-thin near-uniform line-like strokes; NO thighs, calves or trouser-leg volume.
+HANDS: tiny no-finger endpoint/dot/mitten shapes only.
+FEET: small flat simple shoes only.
+CLOTHING: flat graphic cue only; never create broad shoulders, chest, sleeves, waist, hips, thighs or calves.
+HAIR: tiny flat head-edge cue only; NO volumetric hairstyle.
+BACKGROUND PEOPLE: exact same geometry even when small, seated, distant or partly hidden. Never simplify them into normal cartoon silhouettes or thick crowd bodies.
+
+Hard reject: thin cartoon humans, normal cartoon-human anatomy, cute/chibi/mascot figures, broad shoulders, thick/tapered limbs, sleeve-shaped arms, trouser-shaped legs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
+
+CHARACTER + REFERENCE SYSTEM
+Use only references actually approved for CINEMATIC_HUMAN_BEHAVIOR_V2 and GEOMETRIC_STICKMAN_ANATOMY_V1.
+If no approved reference exists, follow the written anatomy above exactly.
+Never let a weak/chibi/cartoon/thin-human reference override the written geometry.
+
+VIDEO WORLD LOCK
+Character A: recurring witness, same geometric stickman anatomy, tiny muted-teal torso garment block, black ultra-thin line legs, small white flat shoes, one tiny dark hair mark. No sleeves or trouser-leg volume.
+Person B: recurring person needing help at the station, tiny muted-rust torso block, black ultra-thin line limbs, small dark flat shoes, no volumetric clothing.
+Station: modern generic covered train station with blue-grey structural steel, pale platform surfaces, large windows/skylight, benches, columns and restrained warm signage shapes with ZERO READABLE TEXT and no brand logos.
+Classic research scenes: simple late-1960s-inspired behavioral lab with pale grey-green walls, small conversation booths, wired headsets and plain furniture.
+All crowds and background figures preserve exact geometric line-limb anatomy.
+
+GENERATION WORKFLOW — HARD LOCK
+
+INITIAL COVER RUN:
+1. Read the complete master prompt first.
+2. Generate BILD 01 ONLY.
+3. Generate exactly 3 SEPARATE cover candidates for BILD 01.
+4. Each candidate must be its own standalone 16:9 image. Never combine them into a sheet/grid.
+5. Keep the same exact title and same central event, but make the three candidates meaningfully different: one closer three-quarter group view, one wider station composition with B low in foreground, one low-angle composition emphasizing the frozen feet/line legs of the bystanders around B.
+6. STOP and wait for the user to choose one cover.
+7. Keep exactly the chosen candidate.
+8. Rename it immediately to `01.png`.
+9. Put it directly in the single final folder `03-bilder/`.
+10. Do not generate BILD 02 or later before the user has chosen the cover.
+
+AFTER THE USER CHOOSES THE COVER:
+- Batch 1: BILD 02, 03, 04, 05, 06
+- Batch 2: BILD 07, 08, 09, 10, 11
+- Batch 3: BILD 12, 13, 14, 15, 16
+- generate each whole five-image batch in one batch operation/turn, not deliberately one image at a time
+- each image number still becomes its own separate standalone 16:9 image
+- immediately rename accepted results to matching filenames: 02.png, 03.png, etc.
+- put every accepted image directly into the SAME flat folder `03-bilder/`
+- no cover subfolder, no batch subfolders, no duplicate accepted versions
+- after each batch check GEOMETRIC_STICKMAN_ANATOMY_V1, especially background people, world continuity, scene clarity and random text
+- regenerate only failed images
+- when a batch passes, continue automatically with the next five-image batch from THIS SAME MASTER PROMPT
+- never offer to turn the images into a video
+
+FINAL REQUIRED IMAGE FOLDER:
+`03-bilder/01.png, 02.png, 03.png, ... 16.png`
+
+GLOBAL TEXT RULE
+No visible text unless the current BILD prompt explicitly requests exact German wording.
+Never render the spoken voice-over as captions.
+Never invent readable posters, signs, screens, documents, logos, labels or pseudo-text.
+If a BILD prompt says no visible text, render ZERO READABLE TEXT.
+
+PROMPTING RULE — OBSERVABLE SCENE FIRST
+Every BILD prompt below translates psychology into concrete visible evidence.
+Follow posture, gaze, distance, action, objects and environment literally.
+Do not replace behavior with arrows, glowing effects, thought bubbles, guilt symbols, halos, attention rays or abstract psychology icons.
+The term Bystander-Effekt is NOT a visual object.
+One BILD = one dominant visible idea.
+
+COVER RULE — BILD 01
+BILD 01 is the first visual beat and the YouTube thumbnail source. The central situation must be understood before the title is read. Use one strong focal relationship and a compact asymmetric text zone, not a full-width top banner.
+
+BILD 01
+Thumbnail-ready station scene. Person B sits awake on the platform floor beside a dropped bag and a few scattered belongings after a harmless stumble. Four geometric stickman bystanders have clearly noticed B, but their circle heads turn partly toward one another and their ultra-thin line legs remain still; nobody is already helping. Keep B large enough to read and the bystanders clearly separate. Cool station daylight with muted blue-grey, teal and warm amber local accents. Integrate exactly: "WARUM HILFT NIEMAND?" in a compact side title zone. No other readable text. No arrows, warning glow or normal cartoon-human bodies.
+
+BILD 02
+Wide eye-level view of the same station. Person B remains seated near the dropped bag while five nearby geometric stickman bystanders stand within clear helping distance. Their tiny narrow torso blocks and ultra-thin line limbs remain visible; several bodies angle toward other observers instead of moving directly to B. Keep the environment believable with bench, column, platform edge and skylight depth. Neutral-cool daylight, restrained local colors. The scene should read as a real moment of hesitation, not a diagram. No symbols, no labels, no visible text.
+
+BILD 03
+Slightly elevated medium-wide station view. Arrange five geometric stickman bystanders in a loose arc around Person B. Each bystander briefly looks toward another observer rather than taking a clear step forward; hands stay at their sides, bag straps or coat edges. Preserve true stick-figure geometry: circle heads, tiny torso blocks, ultra-thin line arms and legs, no sleeve or trouser volume. Use soft directional daylight and clear floor spacing to make the shared hesitation readable. No arrows, force fields, thought bubbles or visible text.
+
+BILD 04
+Medium three-quarter shot focused on Character A. A first looks toward Person B in the background, then turns the circle head slightly toward two calm bystanders beside him; A's previously raised ultra-thin line arm has lowered halfway. The two others remain neutral and still, looking between A and B. Keep the station environment specific but uncluttered: bench edge, column, platform glass and a blurred train shape with no logo. Cool open daylight with muted teal and graphite accents. No thought bubbles, question marks or visible text.
+
+BILD 05
+Low-medium station angle showing the immediate aftermath of a harmless stumble. Person B sits upright and conscious on the platform floor beside an open bag and three scattered everyday objects. Three nearby geometric stickman witnesses have turned their simple circle heads and tiny torsos toward B, making it obvious they noticed. Keep all limbs as ultra-thin line strokes with no human leg mass, including seated Person B. Natural daylight, realistic platform depth, no injury gore, no dramatic emergency lighting and no visible text.
+
+BILD 06
+Medium-wide side view of four witnesses near Person B. One looks briefly at B, two look at each other, and one holds a phone low without using it. Their feet and ultra-thin line legs stay planted; no one has begun moving forward. Give each person a small different torso color cue while preserving identical geometric anatomy. Keep B visible at frame edge with the dropped bag. Quiet neutral station lighting, no red alarm palette. No floating icons, guilt symbols, arrows or visible text.
+
+BILD 07
+Medium-wide view of the station at a quieter moment with only Character A near Person B. A is already taking one clear step forward, one ultra-thin line arm gently extended toward B. Large open platform space around them makes the absence of other possible helpers obvious without labels. Keep A's tiny teal torso block, black line legs and flat white shoes consistent; B keeps the muted-rust torso block. Open natural daylight with warmer highlights and clear depth. No hero pose, no glow and no visible text.
+
+BILD 08
+Wide establishing view inside a simple late-1960s-inspired behavioral laboratory. Several small conversation booths with wired headsets line one wall. Two adult geometric stickman researchers prepare the equipment beside a plain desk; their bodies remain circle heads, tiny torso blocks and ultra-thin line limbs, not vintage cartoon humans. Use pale grey-green walls, warm wood furniture and restrained amber equipment details. No portraits, no names, no readable documents, no historical poster text and no visible text.
+
+BILD 09
+Close-medium three-quarter view inside one conversation booth. A single geometric stickman participant sits with a wired headset and suddenly straightens up; one ultra-thin line hand touches the earpiece while the other grips the desk edge. The minimal face shows concern only through tiny eye marks and a small mouth line. Keep the other participant completely off-screen. Neutral institutional light with a cooler side shadow, pale grey-green booth walls and dark cable detail. No medical imagery, waveform, warning icon or visible text.
+
+BILD 10
+Medium side angle inside the same lab. The participant sits on the edge of the chair with one tiny endpoint hand close to the door handle, visibly hesitating. Through a corridor window behind him, several identical closed conversation booths are visible, making the assumed presence of other listeners concrete. Keep the participant unmistakably stick-figure: tiny torso, ultra-thin line arms/legs, no sleeves or trouser shapes. Cool institutional light and long corridor depth. No timers, percentages, arrows, charts or visible text.
+
+BILD 11
+Medium-wide waiting-room scene in the same mature illustration world. A light amount of harmless theatrical smoke enters near a wall vent. Character A turns from the smoke toward two other geometric stickman people who remain calmly seated with blank papers on their laps. Their seated bodies must still use tiny torso blocks and ultra-thin line limbs; do not render normal seated human silhouettes. Neutral room light, subdued blue-green seating and soft haze. No danger icons, thought bubbles, panic effects, readable papers or visible text.
+
+BILD 12
+Top-down editorial research-desk image with no people required. Arrange many small blank study cards across the desk, each containing only tiny non-readable dot-and-line marks. Several cards feed visually into one central synthesis sheet that shows varied neutral effect markers rather than one identical result. Use warm paper, graphite marks, restrained blue-green tabs and soft daylight shadows. Keep it tactile and cinematic, not a flat corporate infographic or PowerPoint slide. No readable study titles, percentages, labels or visible text.
+
+BILD 13
+Wide street-level scene. A conscious cyclist sits beside a fallen bicycle after an incident while two geometric stickman bystanders approach together: one holds a phone to the simple circle head, the other kneels nearby with a respectful gap. Additional bystanders step aside to create space. Every person, including distant figures, keeps tiny torso blocks and ultra-thin line limbs. Clear daylight, natural street colors and open visibility. Show coordinated support, not heroic poses or disaster spectacle. No siren glow, logos or visible text.
+
+BILD 14
+Medium station group shot returning to Character A, Person B and three witnesses. The witnesses do not look cold or villainous: one tilts the simple circle head toward B, another glances uncertainly toward the group, and A shifts the tiny torso forward as if preparing to move. Keep emotional information in gaze and line-limb posture only. Balanced natural station daylight, muted local colors and clear depth. No hearts, morality color-coding, evil faces, broad shoulders or normal cartoon-human anatomy. No visible text.
+
+BILD 15
+Wide high-angle view of a large station concourse, deliberately testing crowd consistency. Many background people follow different walking paths while Person B sits near a column beside the dropped bag. Only a few heads turn. EVERY distant person must preserve GEOMETRIC_STICKMAN_ANATOMY_V1: simple circle/oval head, tiny torso block, ultra-thin line arms and legs, small flat feet. No thick crowd silhouettes, no realistic seated bodies, no corporate-vector humans. Open skylight, blue-grey architecture and restrained varied clothing cues. No visible text.
+
+BILD 16
+Clean medium-wide closing station shot. Four geometric stickman bystanders form a loose half-circle with Person B visible lower in frame. Each bystander directs the simple head or tiny eye marks briefly toward another observer instead of directly toward B, creating a visible chain of mutual checking without any graphic arrows. Preserve tiny torsos and ultra-thin line limbs for every person. Soft late-afternoon station light with muted blue-green, graphite and warm amber accents. Nobody looks cruel or monstrous. No thought bubbles, symbols or visible text.
+
+FINAL QA
+- one master prompt file only
+- BILD 01 first as 3 separate cover candidates, then STOP for user choice
+- only after cover approval begin BILD 02–16
+- later images generated as three five-image batches: 02–06, 07–11, 12–16
+- every image number = separate standalone 16:9 asset
+- accepted outputs renamed immediately to NN.png
+- all accepted images together in one flat 03-bilder/ folder
+- no storyboard/contact sheet/multi-scene grid/video
+- every main, supporting and background human passes GEOMETRIC_STICKMAN_ANATOMY_V1
+- if any figure looks like a thin normal cartoon human, regenerate that image
+- no thick/tapered limbs, sleeve-shaped arms, trouser-shaped legs, necks, chest, waist, hips, thighs or calves
+- same mature 2D editorial film world across every batch
+- exact German text only in BILD 01; ZERO READABLE TEXT everywhere else
