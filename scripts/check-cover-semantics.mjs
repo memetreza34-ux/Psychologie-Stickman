@@ -5,10 +5,11 @@ import path from 'node:path';
 
 const root = path.resolve('youtube');
 const ACTIVE = 'CINEMATIC_HUMAN_BEHAVIOR_V2';
+const DIRECTOR = 'OBSERVABLE_SCENE_FIRST_V1';
+const FLOW = 'NATURAL_FLOW_MASTER_V2';
 const SEMANTIC = 'TOPIC_EXPLICIT_VISUAL_THESIS_V1';
 const LAYOUT = 'INTEGRATED_THUMBNAIL_COMPOSITION_V1';
 const PLACEMENT = 'COMPOSITION_FIRST_NO_TOP_BANNER_V1';
-const CONTRACT = 'FLOW_SCENE_PROMPT_CONTRACT_V1';
 const failures = [];
 const warnings = [];
 
@@ -32,45 +33,45 @@ for (const file of plans) {
   const plan = JSON.parse(fs.readFileSync(file, 'utf8'));
   if (plan.visualSystem !== ACTIVE) continue;
 
+  const isNew = plan.visualDirectorPolicy === DIRECTOR || plan.flowPromptPolicy === FLOW;
+  if (!isNew) {
+    warnings.push(`${rel}: historical cover plan retained; future projects use ${DIRECTOR} + ${FLOW}.`);
+    continue;
+  }
+
   if (plan.coverSemanticPolicy !== SEMANTIC) failures.push(`${rel}: coverSemanticPolicy must be ${SEMANTIC}.`);
   if (plan.coverLayoutPolicy !== LAYOUT) failures.push(`${rel}: coverLayoutPolicy must be ${LAYOUT}.`);
   if (plan.coverTitlePlacementPolicy !== PLACEMENT) failures.push(`${rel}: coverTitlePlacementPolicy must be ${PLACEMENT}.`);
   if (plan.coverMechanismVisible !== true) failures.push(`${rel}: coverMechanismVisible must be true.`);
-  if (plan.promptContract !== CONTRACT) failures.push(`${rel}: promptContract must be ${CONTRACT}.`);
+  if (plan.visualDirectorPolicy !== DIRECTOR) failures.push(`${rel}: cover must use ${DIRECTOR}.`);
+  if (plan.flowPromptPolicy !== FLOW) failures.push(`${rel}: cover must use ${FLOW}.`);
+  if ('promptContract' in plan) failures.push(`${rel}: retired promptContract must not exist in a new cover plan.`);
 
   const topic = String(plan.coverTopicTerm ?? '').trim();
   const thesis = String(plan.coverVisualThesis ?? '').trim();
   if (topic.length < 3) failures.push(`${rel}: coverTopicTerm is required as internal planning metadata.`);
-  if (thesis.length < 20) failures.push(`${rel}: coverVisualThesis must describe a concrete visible mechanism.`);
+  if (thesis.length < 20) failures.push(`${rel}: coverVisualThesis must describe a concrete visible mechanism/situation.`);
 
   const headline = String(plan.coverHeadline ?? '').trim();
   const headlineWords = wordCount(headline);
   if (!headline) failures.push(`${rel}: coverHeadline is required.`);
   else if (headlineWords < 2 || headlineWords > 7) failures.push(`${rel}: coverHeadline must contain 2-7 words.`);
 
-  const scene1 = Array.isArray(plan.scenes)
-    ? plan.scenes.find((scene) => Number(scene?.number ?? scene?.scene) === 1)
-    : null;
+  const scene1 = Array.isArray(plan.scenes) ? plan.scenes.find((scene) => Number(scene?.number ?? scene?.scene) === 1) : null;
   if (!scene1) {
-    failures.push(`${rel}: Scene 01 is required for cover semantic QA.`);
+    failures.push(`${rel}: BILD/Scene 01 is required for cover semantic QA.`);
     continue;
   }
 
   if (String(scene1.visualIdea ?? '').trim().length < 12) failures.push(`${rel}: Scene 01 needs a concrete visualIdea.`);
-  if (String(scene1.visualTask ?? '').trim().length < 20) failures.push(`${rel}: Scene 01 needs a concrete visualTask that visibly shows the mechanism.`);
-  if (!['CLEAR', 'UNEASY', 'DARK', 'POWER', 'MONEY', 'ISOLATION', 'HOPE'].includes(String(scene1.moodMode ?? '').toUpperCase())) failures.push(`${rel}: Scene 01 requires valid moodMode.`);
-  const moodIntensity = Number(scene1.moodIntensity);
-  if (!Number.isInteger(moodIntensity) || moodIntensity < 0 || moodIntensity > 4) failures.push(`${rel}: Scene 01 requires moodIntensity 0-4.`);
-  if (!String(scene1.powerDynamic ?? '').trim()) failures.push(`${rel}: Scene 01 requires powerDynamic.`);
+  if (String(scene1.observableEvidence ?? '').trim().length < 12) failures.push(`${rel}: Scene 01 needs concrete observableEvidence.`);
+  if (String(scene1.dominantRelation ?? '').trim().length < 8) failures.push(`${rel}: Scene 01 needs a dominantRelation.`);
+  if (String(scene1.visualTask ?? '').trim().length < 20) failures.push(`${rel}: Scene 01 needs a concrete visualTask.`);
 
   const plannedCoverTexts = textList(scene1.flowText);
   if (!plannedCoverTexts.length) failures.push(`${rel}: Scene 01 must contain planned cover text.`);
-  if (plannedCoverTexts.length > 4) failures.push(`${rel}: Scene 01 has too many visible text strings (${plannedCoverTexts.length}); simplify the cover.`);
+  if (plannedCoverTexts.length > 4) failures.push(`${rel}: Scene 01 has too many visible text strings (${plannedCoverTexts.length}).`);
   if (plannedCoverTexts[0] && plannedCoverTexts[0] !== headline) failures.push(`${rel}: first Scene 01 text must equal coverHeadline exactly.`);
-
-  if (topic && !plannedCoverTexts.some((text) => text.toLocaleUpperCase('de-DE').includes(topic.toLocaleUpperCase('de-DE')))) {
-    warnings.push(`${rel}: technical coverTopicTerm '${topic}' is not visible; this is allowed when the headline + visual thesis already explain the topic.`);
-  }
 
   const promptPath = path.join(path.dirname(path.dirname(file)), '02-google-flow', 'google-flow-prompt.txt');
   if (!fs.existsSync(promptPath)) {
@@ -79,26 +80,19 @@ for (const file of plans) {
   }
 
   const prompt = fs.readFileSync(promptPath, 'utf8');
-  if (!prompt.includes(ACTIVE)) failures.push(`${rel}: Flow prompt missing active visual marker ${ACTIVE}.`);
-  if (!prompt.includes(CONTRACT)) failures.push(`${rel}: Flow prompt missing prompt contract ${CONTRACT}.`);
-  if (!/NO FULL-WIDTH TOP BANNER/iu.test(prompt)) failures.push(`${rel}: Flow prompt missing no-top-banner rule.`);
+  if (!prompt.includes(ACTIVE)) failures.push(`${rel}: Flow prompt missing ${ACTIVE}.`);
+  if (!prompt.includes(FLOW)) failures.push(`${rel}: Flow prompt missing ${FLOW}.`);
+  if (!prompt.includes(DIRECTOR)) failures.push(`${rel}: Flow prompt missing ${DIRECTOR}.`);
+  if (/FLOW_SCENE_PROMPT_CONTRACT_V1/iu.test(prompt)) failures.push(`${rel}: retired prompt contract remains in new Flow prompt.`);
 
-  const scene1Start = prompt.search(/^SCENE\s+01\s*$/imu);
-  const scene2Start = prompt.search(/^SCENE\s+02\s*$/imu);
-  const scene1Prompt = scene1Start >= 0
-    ? prompt.slice(scene1Start, scene2Start > scene1Start ? scene2Start : prompt.length)
-    : '';
+  const image1Start = prompt.search(/^BILD\s+01\s*$/imu);
+  const image2Start = prompt.search(/^BILD\s+02\s*$/imu);
+  const image1Prompt = image1Start >= 0 ? prompt.slice(image1Start, image2Start > image1Start ? image2Start : prompt.length) : '';
+  if (!image1Prompt) failures.push(`${rel}: Flow prompt is missing BILD 01.`);
+  if (!/No other readable text|only readable text/iu.test(image1Prompt)) failures.push(`${rel}: BILD 01 must forbid extra readable text.`);
+  if (!/concrete|visible|looks|stands|sits|holds|points|walks|talks|checks|turns|gaze|posture/iu.test(image1Prompt)) warnings.push(`${rel}: BILD 01 may be too abstract; review observable evidence.`);
 
-  if (!scene1Prompt) failures.push(`${rel}: Flow prompt is missing Scene 01.`);
-  if (!/CAMERA:/iu.test(scene1Prompt)) failures.push(`${rel}: Scene 01 prompt needs CAMERA/title-safe composition direction.`);
-  if (!/TEXT POLICY:/iu.test(scene1Prompt)) failures.push(`${rel}: Scene 01 prompt needs TEXT POLICY.`);
-  if (!/PLANNED GERMAN TEXT:/iu.test(scene1Prompt)) failures.push(`${rel}: Scene 01 prompt needs exact planned German text.`);
-  if (!/\[TEXT LOCK\]/u.test(scene1Prompt)) failures.push(`${rel}: Scene 01 PROMPT needs [TEXT LOCK].`);
-  if (!/\[FINAL CHECK\]/u.test(scene1Prompt)) failures.push(`${rel}: Scene 01 PROMPT needs [FINAL CHECK].`);
-
-  if (/full[- ]width[^\n]{0,30}top|across the full top|headline across the top/iu.test(scene1Prompt) && !/NO FULL-WIDTH TOP BANNER/iu.test(scene1Prompt)) {
-    warnings.push(`${rel}: Scene 01 may still encourage a top-banner layout; review composition.`);
-  }
+  if (/full[- ]width[^\n]{0,30}top|headline across the top/iu.test(image1Prompt)) warnings.push(`${rel}: BILD 01 may encourage a full-width top banner; review composition.`);
 }
 
 if (warnings.length) {
