@@ -4,7 +4,8 @@
 
 Zusätzlich gilt `rules/FORMAT_LOCK.md` mit höchster Format-Priorität.
 Für YouTube-Text gilt `rules/TEXT_OVERLAY_LOCK.md`.
-Für Premium/Farbe gilt `rules/PREMIUM_VISUAL_LOCK.md`.
+Für Bildwelt/Qualität gilt `rules/VISUAL_SYSTEM.md` + `rules/PREMIUM_VISUAL_LOCK.md`.
+Für Visual-Director/Prompting gilt `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md` + `rules/FLOW_PROMPT_ARCHITECTURE.md`.
 Für Script-Einstieg gilt `rules/SCRIPT_HOOK_LOCK.md`.
 
 ## 1. Zwei getrennte Ausgabeformate
@@ -39,45 +40,46 @@ Neue Projekte:
 - lange Pausen deutlich straffen
 - Timings erst aus final bearbeitetem Audio ableiten
 
-## 4. Premium Visual Direction
+## 4. Aktive Visual Direction
 
-Neue YouTube-Projekte:
-- `PREMIUM_EDITORIAL_CINEMATIC_V1`
-- `INTENTIONAL_COLOR_STORY_V1`
-- ausgefüllte `projectPalette`
+Neue YouTube-Projekte verwenden:
+- `CINEMATIC_HUMAN_BEHAVIOR_V2`
+- `STYLIZED_STICKMAN_CAST_V2`
+- `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`
+- `REPRESENTATION_VARIETY_V1`
+- `OBSERVABLE_SCENE_FIRST_V1`
+- `NATURAL_FLOW_MASTER_V2`
 
 Verbindlich:
-- Premium-Figuren durch Pose, Silhouette, Kleidung, Emotion und Interaktion
-- Stickman-Anatomie bleibt simpel
+- mature strict-stickman anatomy
+- glaubwürdige reiche Umgebungen
 - bewusstes Licht und Tiefe
-- thematisch passende Farbe
-- graue/beige Monotonie vermeiden
-- konkrete Alltagsszene vor abstrakter Lehrgrafik
+- adaptive statt fest vorgegebene Farbwelt
+- konkrete sichtbare Handlung/Relation vor abstrakter Symbolik
+- Verhalten über Pose, Blick, Abstand, Blocking und Aktion lesbar machen
+- nicht automatisch jeden Beat als Figurenbild planen
+- keine Montage/Split/Group-Szene nur wegen Variety-Quote
+- keine wörtliche Visualisierung eines Effekt-Namens nur wegen seines Namens
+
+Kurzform:
+**Erst festlegen, was sichtbar passieren muss; danach den Flow-Prompt schreiben.**
 
 ## 5. YouTube-Textregel — GOOGLE FLOW ONLY
 
-Für neue YouTube-Projekte:
-
-**Sämtlicher sichtbarer Text wird direkt von Google Flow in die Bilder gerendert. Remotion erzeugt keinen sichtbaren Text.**
+Sämtlicher sichtbarer Text wird direkt von Google Flow in die Bilder gerendert. Remotion erzeugt keinen sichtbaren YouTube-Text.
 
 ### Szene 01
 - exakter deutscher Cover-Titel direkt in `01.png`
 - 2–7 Wörter
-- kein weiterer lesbarer Text
+- kein unnötiger Zusatztext
 
 ### Ausgewählte spätere Szenen
-- exakter deutscher Keyword-/Merksatz direkt im Google-Flow-Bild
-- maximal 5 Wörter
-- kein zusätzlicher lesbarer Text
+- exakter deutscher Keyword-/Schema-/Vergleichstext nur wenn er Verständnis wirklich verbessert
+- normalerweise maximal 5 Wörter pro Textblock
 
 ### Alle anderen Szenen
 - ZERO READABLE TEXT
-- keine UI-Texte, Labels, Untertitel, Poster- oder Bildschirmtexte
-- Karten, Screens und Dokumente abstrakt
-
-### Dichte
-- Ziel meist 15–25 % sichtbare Textmomente inklusive Cover
-- harte Obergrenze 30 %
+- keine zufälligen UI-Texte, Labels, Untertitel, Poster- oder Bildschirmtexte
 
 ### Remotion
 - `sceneLabels: []`
@@ -85,21 +87,19 @@ Für neue YouTube-Projekte:
 - `renderGermanLabelsInRemotion: false`
 - nur Schnitt, Audio, technische Bildbewegung und Export
 
-## 6. Jedes Bild individuell anpassen
+## 6. Jedes Bild individuell und konkret
 
-- exakt den aktuell gesprochenen Gedanken zeigen
-- konkrete Alltagshandlung bevorzugen
-- abstrakte Infografik nur wenn klarer
-- Kamera, Handlung, Umgebung, Requisiten, Licht, Farbe und Fokus pro Beat individuell wählen
-- `COLOR DIRECTION` pro Premium-Szene
-- `PREMIUM CHARACTER DIRECTION` pro Premium-Szene
-- keine unnötige Wiederholung
-- Master sperrt Anatomie/Qualitätsniveau, nicht Komposition oder Figurenidentität
-- keine späteren Informationen vorwegnehmen
-- bei Textszenen sichere Typografiezone direkt für Flow einplanen
+Für jeden Beat:
+1. Was soll der Zuschauer verstehen?
+2. Was kann man konkret sehen, das dies beweist?
+3. Was ist die eine dominante sichtbare Handlung/Relation?
+4. Erst dann Kamera, Umgebung, Licht, Farbe und Text festlegen.
 
-Kurzform:
-**Master bestimmt Qualitätsniveau und Anatomie. Visual Beat bestimmt WAS. Projektpalette bestimmt Farblogik. Google Flow erzeugt Bild UND alle sichtbaren YouTube-Texte. Remotion schneidet und rendert nur.**
+Finaler Flow-Prompt bevorzugt konkrete sichtbare Verben und Details statt abstrakter Formulierungen.
+
+Beispiel:
+- schwach: `show social pressure`
+- besser: `four people point to the same option while one person hesitates, keeps their hand lowered and glances at the group`
 
 ## 7. Formatgerechte Komposition
 
@@ -110,24 +110,33 @@ Kurzform:
 ### YouTube 16:9
 - horizontale Breite nutzen
 - Vordergrund, Mittelgrund und Hintergrund sinnvoll verteilen
-- Szene 01 mit klarer Thumbnail-Hierarchie, Premium-Figur, Farbkontrast und integrierter Titelzone komponieren
+- Szene 01 mit klarer Thumbnail-Hierarchie und integrierter Titelzone komponieren
 
-## 8. Final-QA
+## 8. Google Flow Workflow
+
+Neue YouTube-Videos:
+- BILD 01 → genau 3 getrennte Cover-Kandidaten → STOP für Nutzerwahl
+- Gewinner → `01.png` in `03-bilder/`
+- danach immer 5 Bildnummern pro Batch, solange mindestens 5 übrig sind
+- letzter Batch = 1–4 Restbilder
+- jedes Bild separat als 16:9
+- akzeptierte Ergebnisse sofort `NN.png`
+- alle gemeinsam in einem flachen `03-bilder/`
+- kein Storyboard/Kontaktbogen/automatisches Video
+
+## 9. Final-QA
 
 Vor Export prüfen:
 - Reel: 9:16 / 1080×1920 / 30 fps
 - YouTube: 16:9 / 1920×1080 / 30 fps
 - finales Audio 1,10×
-- keine abgeschnittenen Wörter im Audio
-- Premium-Figuren und Projekt-Farbwelt wirken konsistent
-- keine graue/beige Monotonie ohne Grund
-- keine unnötige Lehrgrafik-Serie
-- alle geplanten deutschen Flow-Texte exakt, vollständig und lesbar
-- keine zusätzlichen oder englischen Wörter
+- keine abgeschnittenen Wörter
+- mature Stickman-Anatomie und einheitliche Bildwelt
+- jede Szene zeigt konkrete sichtbare Evidenz statt nur einen abstrakten Begriff
+- keine Effekt-Namen wörtlich visualisiert ohne bewusste Begründung
+- keine erzwungene Montage/Group/Split-Quote
+- alle geplanten deutschen Flow-Texte exakt und lesbar
 - alle nicht geplanten Textszenen textfrei
 - Remotion enthält keine YouTube-Labels/Captions
-- Textdichte maximal 30 %
-- alle Menschen echte Stickmen
-- Stil bleibt über Master konsistent
 
 **HARD FAIL:** Reel in 16:9 oder YouTube-Longform in 9:16.
