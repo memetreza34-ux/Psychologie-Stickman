@@ -1,0 +1,158 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+TOPIC: IKEA-Effekt — warum eigene Arbeit den subjektiven Wert erhöhen kann
+FORMAT: 16:9 / 1920x1080
+VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
+CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+
+TASK / OUTPUT — READ FIRST
+Create FINAL SEPARATE 16:9 source images for one coherent YouTube video.
+This is the ONLY Google Flow master prompt for this video and it contains every image from BILD 01 to BILD 16.
+Never create a storyboard, contact sheet, multi-scene grid, collage or automatic video.
+One image number always means one separate image asset.
+
+CHANNEL VISUAL WORLD — HARD LOCK
+Keep the complete video inside one mature cinematic 2D psychology-documentary / editorial illustration world.
+Every visible human uses the same adult strict-stickman anatomy: large simple round or slightly oval head without chibi exaggeration, tiny minimal eyes, small simple mouth, no realistic nose, ears or neck, very small narrow clothed torso, narrow shoulders, extremely slim illustrated arms and legs, simple no-finger hands and simple shoes.
+Clothing must wrap the narrow stickman body and must never create broad normal-cartoon-human anatomy.
+Use clean slightly organic dark outlines, controlled soft cel shading, subtle texture, believable foreground/midground/background depth, purposeful framing and motivated light.
+Simple Stickmen live in rich believable scene-specific environments. Use real apartment/workbench/lab details only when they help the current beat.
+Do not default to blank cream backgrounds, sterile generic rooms, repeated centered medium shots or one fixed red/burgundy/dark or teal/cream palette.
+Not every image needs a person. Object-focused and comparison images are valid when clearer.
+Every image has one dominant visible idea and only useful supporting elements.
+The complete set must look as if the SAME illustrator created it for the SAME channel, even when camera, room, light and local color change.
+
+Hard reject: cute/chibi/mascot figures, normal cartoon-human bodies, broad shoulders, thick limbs, realistic humans, 3D/Pixar/CGI, anime, whiteboard doodles, corporate-vector people, photorealistic environments, cheap PowerPoint schemas.
+
+CHARACTER + REFERENCE SYSTEM
+Use only references actually approved for CINEMATIC_HUMAN_BEHAVIOR_V2.
+If no approved visual reference is available, follow the written rules above exactly.
+A style-only reference locks rendering/anatomy/linework/cel-shading/texture quality, not scene content.
+A character-identity reference may additionally preserve returning identity/clothing cues.
+Never let a weak, cute, chibi or normal-cartoon reference override the written rules.
+
+VIDEO WORLD LOCK
+Character A recurs through the everyday story: adult strict-stickman, simple short dark hair cue, teal overshirt over a light neutral shirt, dark slim trousers, simple white shoes. Keep A's head shape, proportions, clothing colors and shoes consistent whenever A returns.
+The main self-built object is one simple compact stool: light-oak rectangular seat, four slim light-oak legs, small dark graphite cross-braces and visible simple screw joints. Keep its design consistent.
+A second ready-made comparison stool is visually almost identical but cleaner and without assembly traces.
+The recurring home is a modest modern apartment with warm wood floor, off-white walls, one large daylight window, muted green plant accents and a small dining/work area. Keep layout broadly consistent without repeating the exact same camera.
+Research scenes 07–10 use one neutral bright behavioral-lab workshop with pale walls, simple worktables and restrained blue-green details.
+Do not show IKEA logos, store branding, brand packaging or readable product instructions.
+
+GENERATION WORKFLOW — HARD LOCK
+
+INITIAL COVER RUN:
+1. Read the complete master prompt first.
+2. Generate BILD 01 ONLY.
+3. Generate exactly 3 SEPARATE cover candidates for BILD 01.
+4. Each candidate must be its own standalone 16:9 image. Never combine the three candidates into one sheet/grid.
+5. All three keep the same visual thesis and exact cover text, but use meaningfully different strong compositions: one closer three-quarter choice moment, one clean side-by-side comparison, and one lower/wider composition with A physically pulling the self-built stool closer.
+6. STOP and wait for the user to choose one cover.
+7. Keep exactly the chosen candidate.
+8. Rename it immediately to `01.png`.
+9. Put it directly in the single final folder `03-bilder/`.
+10. Do not generate BILD 02 or later before the user has chosen the cover.
+
+AFTER THE USER CHOOSES THE COVER:
+- generate the remaining images in batches of EXACTLY 5 image numbers whenever at least 5 remain
+- Batch 1: BILD 02, 03, 04, 05, 06
+- Batch 2: BILD 07, 08, 09, 10, 11
+- Batch 3: BILD 12, 13, 14, 15, 16
+- generate each whole five-image batch in one batch operation/turn, not deliberately one image at a time
+- every requested image number still becomes its own separate standalone 16:9 image
+- immediately rename each accepted result to its matching number: BILD 02 -> `02.png`, BILD 03 -> `03.png`, etc.
+- put every accepted image directly into the SAME flat folder `03-bilder/`
+- no cover subfolder, no batch subfolders, no duplicate accepted versions
+- after each batch, check style continuity, strict-stickman anatomy, scene clarity, unnecessary text and visual repetition
+- regenerate only failed images
+- when a batch passes, continue automatically with the next five-image batch from THIS SAME MASTER PROMPT
+- never offer to turn the images into a video; the external pipeline handles final editing
+
+FINAL REQUIRED IMAGE FOLDER:
+`03-bilder/01.png, 02.png, 03.png, ... 16.png`
+
+GLOBAL TEXT RULE
+No visible text unless the current BILD prompt explicitly requests exact German wording.
+Never render the spoken voice-over as captions.
+Never invent readable posters, signs, screens, documents, packaging, logos, labels or pseudo-text.
+If a BILD prompt says no visible text, render ZERO READABLE TEXT.
+
+PROMPTING RULE — OBSERVABLE SCENE FIRST
+Every BILD prompt below already translates the psychology into concrete visible evidence.
+Follow the described people, posture, gaze, distance, action, objects, environment and camera literally.
+Do not replace concrete behavior with symbolic spectacle, glowing value effects, floating icons, halos, price auras, hearts or abstract psychology graphics.
+Do not literalize the name IKEA-Effekt as a furniture-store logo, store scene or branded product.
+If a prompt contains an emotion, make the listed visible body-language/action cues primary.
+One BILD = one dominant visible idea.
+
+COVER RULE — BILD 01
+BILD 01 is both the first visual beat and the YouTube thumbnail source.
+It must communicate the central mechanism through a concrete visible choice before the title is read.
+Use one dominant focal relationship, strong thumbnail readability and a compact asymmetric title zone instead of a generic full-width top banner.
+
+BILD 01
+Thumbnail-ready medium-wide three-quarter view in Character A's apartment work area. Place two nearly identical light-oak stools large in the frame. Around the self-built stool, show an Allen key, opened plain packaging and a few harmless leftover protective pieces; the ready-made stool is clean and untouched. Character A physically pulls the self-built stool closer with one hand while leaving the other stool behind, making the preference obvious through action. Natural daylight, warm wood floor, muted teal and graphite accents, clear depth. Integrate exactly: "WARUM DEINE ARBEIT DEN WERT VERÄNDERT" in a compact high-contrast side title zone. No other readable text. No glow, value aura, hearts or brand logos.
+
+BILD 02
+Close-medium object-focused shot at workbench height. The finished self-built light-oak stool stands on a simple work mat. Beside it lie one Allen key, two plain packing pieces and Character A's hands calmly putting the tool away. Use soft window daylight, believable wood grain, graphite hardware and one muted teal clothing edge entering the frame. The image should look like a real finished assembly moment, not a product advertisement or symbolic concept card. Do not show any store branding, logos, labels or readable instructions. No visible text.
+
+BILD 03
+Medium three-quarter apartment shot with both stools visible. Character A rests one hand naturally on the self-built stool and nudges the almost identical ready-made stool slightly aside with the other hand, making the personal preference readable through physical choice. Keep A relaxed, not exaggerated. Show warm wood floor, daylight window and a few normal apartment details in depth. Both stools remain physically similar in size and quality. No price graphics, arrows, glowing objects, floating hearts or abstract value symbols. No visible text.
+
+BILD 04
+Close-medium three-quarter action shot in the apartment work area. Character A kneels beside the self-built stool and tightens the final visible screw with an Allen key. Frame the hand, tool and stool joint clearly while keeping A's strict-stickman face and narrow body readable. Only a few useful parts remain beside the work mat; avoid clutter. Bright natural side light, light-oak wood, graphite screw hardware and muted teal clothing. The exact finishing action carries the scene. No victory symbols, no glow and no visible text.
+
+BILD 05
+Straight three-quarter comparison view with no person needed. Place the two nearly identical stools side by side at equal scale in the apartment. The self-built stool is identified only by real assembly evidence nearby: Allen key, opened plain packaging and one small protective insert. The ready-made stool has no assembly traces and stands cleanly beside it. Use neutral natural daylight so neither stool is magically brighter, larger or more dramatic. Keep the room believable and uncluttered. No labels, no arrows, no logos and no visible text.
+
+BILD 06
+Wide apartment shot with foreground doorway and the dining area by the window in the background. Character A carries the self-built stool toward the dining table and deliberately places it at A's usual seat. The almost identical ready-made stool remains near the doorway where it was left. Show the preference through movement and placement, not facial exaggeration. Warm late-afternoon daylight, warm wood floor, muted green plant, soft cool window shadows, same strict-stickman anatomy and same stool design. No aura, heart symbols or visible text.
+
+BILD 07
+Wide environmental view inside one bright behavioral-lab workshop. Three adult strict-stickman participants work at clearly separated stations in the same room: one assembles a small plain box, one folds a sheet into simple origami, and one builds a small generic interlocking-brick model. A researcher stands to the side with a plain clipboard containing no readable text. Keep all humans in the same mature narrow stickman anatomy family. Neutral institutional daylight, pale worktables, restrained blue-green details, clean depth. This is one coherent research setting, not a three-panel collage. No logos and no visible text.
+
+BILD 08
+Medium-wide side angle at a behavioral-lab table. One participant sits between a completed self-made object and a comparable object made by someone else. The participant physically slides a visibly larger small pile of plain neutral evaluation chips toward the self-made object and a smaller pile toward the comparison object. A researcher observes from the side without reacting. Keep the chip piles simple and non-monetary. Clean neutral lab light, subdued surfaces, modest blue-green accents. No numbers, no charts, no currency symbols, no arrows and no visible text.
+
+BILD 09
+Close-medium action shot in the same research lab. A participant places the final lid piece onto a small completed box so that all parts fit cleanly. The participant's hands are just releasing the finished object; the table around it is tidy, with no unused structural pieces left. Use soft neutral daylight and a gentle natural focal highlight on the completed box. The visible completion itself is the entire point. No trophy, no checkmark cloud, no glowing success effect, no labels and no visible text.
+
+BILD 10
+Medium side shot at the same lab table. The same small box is now clearly dismantled into several ordinary pieces. The participant calmly moves the separated pieces into a plain material tray and is no longer holding the object protectively. Keep the pose neutral and practical rather than sad or dramatic. Use slightly cooler neutral lab light, restrained local colors and clear foreground focus on the dismantled pieces. Do not show disappearing money, fading glow, broken hearts, arrows or abstract loss symbols. No visible text.
+
+BILD 11
+Medium-wide three-quarter view back in Character A's apartment. The finished self-built stool stands stable beside A. Character A closes the toolbox with both hands, then looks at the completed stool with upright relaxed posture and slightly lifted head. Keep the expression subtle; the visible evidence of competence is successful completion plus calm body language. Warm natural side light, light-oak wood, muted teal clothing, soft amber sunlight and graphite accents. No medal, trophy, glowing brain, halo or abstract competence icon. No visible text.
+
+BILD 12
+Close-medium side angle in the apartment. Character A carefully sits down on the self-built stool for the first time, notices that it stands stable, relaxes the shoulders and briefly looks down at the stool with quiet satisfaction. The toolbox is already closed and out of the immediate work area, showing the task is finished. Use soft warm practical light mixed with natural window fill. Keep the emotion restrained and adult. No speech bubble, no quote card, no trophy, no glow and no visible text.
+
+BILD 13
+Intimate close-medium object-and-character shot in the apartment during early evening. Character A notices a small harmless scratch on the self-built stool and carefully buffs that exact spot with a cloth. Keep A's face visible enough to read focused care, not sentimentality. Warm wood tones, amber practical lamp light and soft cool background shadows create natural depth. The extra care toward the object is the only behavioral signal. No hearts, memory bubbles, sentimental glow, icons or visible text.
+
+BILD 14
+Medium-wide two-person apartment shot. A friend in the same strict-stickman anatomy family, wearing a muted burgundy sweater, casually reaches for the clean ready-made stool while Character A gestures toward the self-built stool. The friend remains neutral and does not inspect the tools or assembly traces; A's body turns slightly toward the self-built stool. Keep both stools clearly visible between them. Natural evening room light, balanced warm interior colors and readable social spacing. No thought bubbles, arrows, value labels or visible text.
+
+BILD 15
+Low-medium side-by-side comparison shot in clear neutral daylight. Show both stools on the same flat floor under equal lighting. The self-built stool has one small believable alignment imperfection at a joint, while the ready-made stool looks slightly cleaner and more precise; neither is broken or unsafe. Character A is partially visible using the self-built stool normally. Keep the comparison subtle and realistic. Do not use rankings, stars, score cards, green/red marks, arrows or exaggerated defects. No visible text.
+
+BILD 16
+Wide calm closing shot in the same apartment dining area. Character A sits normally at the table on the self-built stool, no longer working on it. A briefly glances at one small visible assembly mark while the closed toolbox rests on a shelf in the background. Use soft warm evening light with a small cool window balance, warm wood, muted teal and natural shadows. The ending should feel ordinary and reflective, not triumphant or symbolic. No glow, no floating icons, no title card and no visible text.
+
+FINAL QA
+- one master prompt file only
+- BILD 01 first as exactly 3 separate cover candidates, then STOP for user choice
+- only after cover approval begin later images
+- later images generated as BILD 02–06, 07–11 and 12–16 five-image batches
+- every image number = separate standalone 16:9 asset
+- accepted outputs renamed immediately to matching `NN.png`
+- all accepted images together in one flat `03-bilder/` folder
+- no storyboard, contact sheet, multi-scene grid, collage or video
+- same mature strict-stickman illustration world across every batch
+- Character A, the recurring stools and recurring locations stay consistent where specified
+- each BILD uses concrete visible evidence instead of asking Flow to interpret psychology
+- no brand logos and no literalized IKEA-store imagery
+- no forced symbolic glow, hearts, value meters, abstract icons or theatrical effects
+- exact German text only in BILD 01; otherwise ZERO READABLE TEXT
