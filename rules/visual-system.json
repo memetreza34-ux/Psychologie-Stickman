@@ -9,8 +9,43 @@
   "renderingPolicy": "SOFT_CEL_SHADED_FILM_FRAME_V2",
   "representationPolicy": "MIXED_HUMAN_BEHAVIOR_VISUALS_V2",
   "representationVarietyPolicy": "REPRESENTATION_VARIETY_V1",
+  "visualPlanningPolicy": "SEMANTIC_OBSERVABLE_VISUALS_V1",
+  "visualDirectorPolicy": "OBSERVABLE_SCENE_FIRST_V1",
+  "socialScenePolicy": "SEMANTIC_SOCIAL_DENSITY_V1",
+  "flowPromptPolicy": "NATURAL_FLOW_MASTER_V2",
+  "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
   "moodPolicy": "ADAPTIVE_PSYCHOLOGICAL_MOOD_V1",
   "tone": "mature adult psychology-documentary editorial graphic-novel illustration",
+  "creativeTranslation": {
+    "principle": "do not prompt the psychology; prompt observable evidence of the psychology",
+    "sequence": [
+      "spoken meaning",
+      "viewer takeaway",
+      "observable evidence",
+      "one concrete visible composition",
+      "final Flow prompt"
+    ],
+    "visibleEvidence": [
+      "action",
+      "posture",
+      "gaze",
+      "distance",
+      "blocking",
+      "object relation",
+      "environment activity"
+    ],
+    "doNotLiteralizeEffectNames": true,
+    "effectNameExamples": {
+      "Spotlight-Effekt": "not automatically a theatrical spotlight",
+      "Ankereffekt": "not automatically a ship anchor",
+      "Halo-Effekt": "not automatically a glowing halo",
+      "Framing-Effekt": "not automatically a picture frame",
+      "Echo Chamber": "not automatically a literal echo room",
+      "Bandwagon Effect": "not automatically a wagon"
+    },
+    "symbolismMaySupportButNotReplaceBehavior": true,
+    "flowAgentRole": "production executor, not autonomous art director"
+  },
   "character": {
     "head": "large simple round or slightly oval head, never mascot or chibi oversized",
     "face": "minimal expressive eyes, optional eyebrows, small mouth, no realistic facial anatomy",
@@ -21,32 +56,8 @@
     "feet": "clear simplified shoes or feet",
     "matureProportionsRequired": true,
     "cuteMascotProportionsAllowed": false,
-    "individuality": [
-      "clothing",
-      "simple hair cue",
-      "glasses",
-      "role accessory",
-      "pose",
-      "expression",
-      "silhouette",
-      "modest size variation"
-    ],
-    "allowedPsychologicalRoles": [
-      "neutral",
-      "confident",
-      "anxious",
-      "vulnerable",
-      "exhausted",
-      "sad",
-      "dominant",
-      "authority",
-      "manipulator",
-      "deceptive-friendly",
-      "arrogant-status",
-      "suspicious",
-      "isolated",
-      "anonymous-group"
-    ],
+    "individuality": ["clothing", "simple hair cue", "glasses", "role accessory", "pose", "expression", "silhouette", "modest size variation"],
+    "allowedPsychologicalRoles": ["neutral", "confident", "anxious", "vulnerable", "exhausted", "sad", "dominant", "authority", "manipulator", "deceptive-friendly", "arrogant-status", "suspicious", "isolated", "anonymous-group"],
     "sameFamilyRequired": true,
     "mixedHumanStylesAllowed": false,
     "cheapVillainClichesByDefault": false
@@ -54,18 +65,11 @@
   "characterPresence": {
     "requiredEveryFrame": false,
     "rule": "use humans only when action, reaction, hierarchy or relationship is the clearest explanation",
-    "noHumanOptions": [
-      "SCHEMA_EXPLAINER",
-      "OBJECT_METAPHOR",
-      "COMPARE_VISUAL",
-      "TEXT_ILLUSTRATION",
-      "environment-only illustration",
-      "object close-up"
-    ],
+    "noHumanOptions": ["SCHEMA_EXPLAINER", "OBJECT_METAPHOR", "COMPARE_VISUAL", "TEXT_ILLUSTRATION", "environment-only illustration", "object close-up"],
     "forbidDecorativeCharacterInsertion": true
   },
   "representationVariety": {
-    "rule": "choose the clearest visual form per beat; do not force character scenes, text cards or schemas",
+    "rule": "choose the clearest visual form per beat; do not force character scenes, text cards, schemas, montage, split or group scenes",
     "targetRanges": {
       "CHARACTER_SCENE": "0.45-0.60",
       "SCHEMA_EXPLAINER": "0.10-0.20",
@@ -77,31 +81,22 @@
     "schemaOnlyWhenStructurallyHelpful": true,
     "avoidRepetitiveCharacterRuns": true,
     "avoidRepetitiveTextOrSchemaRuns": true,
-    "guidanceNotQuota": true
+    "guidanceNotQuota": true,
+    "forbidForcedVarietyQuotas": true
   },
   "moodEngine": {
     "modes": ["CLEAR", "UNEASY", "DARK", "POWER", "MONEY", "ISOLATION", "HOPE"],
     "intensityMin": 0,
     "intensityMax": 4,
-    "rule": "mood changes lighting, framing, posture, negative space, saturation and temperature but never changes the illustration family",
+    "rule": "mood changes lighting, framing, posture, negative space, saturation and temperature but never changes the illustration family and never substitutes for visible behavior",
     "neverForceDarkChannelWide": true
   },
-  "powerDynamics": [
-    "NEUTRAL",
-    "SELF_VS_SELF",
-    "PEER_TO_PEER",
-    "DOMINANT_VS_TARGET",
-    "AUTHORITY_VS_GROUP",
-    "GROUP_VS_INDIVIDUAL",
-    "SYSTEM_VS_INDIVIDUAL",
-    "STATUS_CONTRAST",
-    "NONE"
-  ],
+  "powerDynamics": ["NEUTRAL", "SELF_VS_SELF", "PEER_TO_PEER", "DOMINANT_VS_TARGET", "AUTHORITY_VS_GROUP", "GROUP_VS_INDIVIDUAL", "SYSTEM_VS_INDIVIDUAL", "STATUS_CONTRAST", "NONE"],
   "world": {
     "locations": "believable everyday, social, institutional, commercial, financial, night and tense environments chosen for the beat",
     "depth": "foreground-midground-background by default when useful",
     "detail": "moderate meaningful scene-specific environmental detail",
-    "lighting": "adaptive motivated cinematic illustrated lighting with intentional focal contrast",
+    "lighting": "adaptive motivated cinematic illustrated lighting with intentional focal contrast; lighting supports concrete action instead of replacing it with symbolism",
     "shading": "soft cel shading with stronger graphic shadows when mood requires",
     "outlines": "clean slightly organic dark outlines",
     "texture": "controlled subtle texture",
@@ -111,17 +106,7 @@
   },
   "colorBehavior": {
     "mode": "adaptive-mood-colors-with-recurring-channel-language",
-    "anchors": [
-      "deep navy",
-      "charcoal",
-      "warm amber",
-      "muted teal blue",
-      "coral red",
-      "burgundy",
-      "deep green",
-      "restrained warm gold",
-      "warm neutral"
-    ],
+    "anchors": ["deep navy", "charcoal", "warm amber", "muted teal blue", "coral red", "burgundy", "deep green", "restrained warm gold", "warm neutral"],
     "rules": [
       "controlled not candy-colored",
       "no grey beige cream wash as default",
@@ -131,7 +116,7 @@
       "do not repeat identical teal-and-cream balance across the video",
       "do not mechanically repeat red burgundy dark treatment across the whole video",
       "use local environment colors and beat-specific lighting when useful",
-      "color never replaces psychological composition"
+      "color never replaces observable behavior or composition"
     ]
   },
   "sceneFamilies": {
@@ -141,8 +126,11 @@
     "COMPARE_VISUAL": 0.15,
     "TEXT_ILLUSTRATION": 0.05
   },
+  "sceneFamilyNumbersAreReviewGuidanceOnly": true,
   "textModes": ["cover", "keyword", "schema", "comparison", "text_illustration"],
   "outputModePolicy": "rules/FLOW_OUTPUT_MODE.md",
+  "visualDirectorRuleFile": "rules/VISUAL_DIRECTOR_PROMPT_WRITER.md",
+  "flowPromptRuleFile": "rules/FLOW_PROMPT_ARCHITECTURE.md",
   "representationVarietyRuleFile": "rules/REPRESENTATION_VARIETY_LOCK.md",
   "hardFails": [
     "bare line stickman or whiteboard doodle",
@@ -169,6 +157,10 @@
     "required power dynamic is visually absent",
     "dark scene becomes meaningless black void",
     "cheap villain cliche replaces psychological direction",
+    "abstract psychology instruction replaces concrete observable evidence",
+    "effect name is literalized only because of its wording",
+    "symbolic glow ray or icon replaces clearer real-world behavior",
+    "montage group or split composition is forced only to satisfy variety",
     "multiple scene numbers combined into one storyboard/contact-sheet asset"
   ],
   "referencePackPath": "assets/cinematic-human-behavior-world/"
