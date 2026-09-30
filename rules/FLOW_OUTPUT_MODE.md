@@ -4,168 +4,103 @@
 
 Policy ID: `FINAL_SEPARATE_IMAGE_ASSETS_V2`
 
-Existing/historical YouTube projects are NOT migrated by this rule unless the user explicitly asks for that specific project to be changed.
+Existing/historical projects are not migrated automatically.
 
-## Core rule
+## One master file
 
-A YouTube video uses exactly one master file:
+Every video uses exactly one:
 
 `02-google-flow/google-flow-prompt.txt`
 
-That file contains the global channel/visual rules and every scene prompt for the complete video.
+It contains the complete image plan. Batches are generation steps, not separate prompt files.
 
-The master prompt is an instruction for generating **final source images**, not a request for a storyboard or an automatically generated video.
+## Cover first — HARD LOCK
 
-## Unified visual world across the whole video — HARD LOCK
+1. Read the full master prompt.
+2. Generate **BILD 01 only**.
+3. Generate exactly **3 separate 16:9 cover candidates**.
+4. Never combine them into one sheet/grid.
+5. STOP and wait for the user's choice.
+6. Keep exactly the chosen winner.
+7. Rename it to `01.png`.
+8. Put it in `03-bilder/`.
 
-Google Flow must treat the entire video as **one coherent high-quality illustrated film world**, even when images are generated in separate five-scene batches.
+## Approved cover becomes the video-local reference
 
-Batch boundaries must NEVER reset or reinterpret the visual identity.
+After the user chooses the cover, `01.png` becomes the visual reference for the rest of **that video**.
 
-Across Scene 01 through Scene NN, preserve the same:
-- mature strict-stickman anatomy family
-- illustration/rendering language
-- line quality and outline behavior
-- cel-shading style
+Later batches must preserve from it:
+- Stickman construction
+- outline/linework language
+- flat-color treatment
+- graphic/cel shading
 - texture/detail level
-- environment quality
-- depth and spatial logic
-- camera/composition quality
-- typography language when text is planned
-- overall premium psychology-documentary / editorial graphic-novel feel
+- overall illustration quality
 
-Lighting, location, composition, color temperature and mood may change to match the current spoken beat, but the images must still look as if they were created by the **same illustrator for the same channel and the same film world**.
+The cover reference does **not** force the same room, camera, pose, mood or palette. Those change with the current beat.
 
-Do not let Batch 2, Batch 3 or later batches become a new art style, cheaper rendering style, different character anatomy, different outline system, different shading system or unrelated visual universe.
+## Five-image batches
 
-Use approved channel references and the master prompt as the persistent visual source of truth across every batch. Scene 01 may support style/anatomy/quality continuity after approval, but it must not force later scenes to copy the same room, pose, clothing, composition or mood.
+Only after cover approval:
+- generate the remaining scenes in batches of exactly 5 whenever at least 5 remain
+- final remainder = 1–4 scenes
+- generate the whole current batch in one batch operation/turn
+- every scene number still becomes one separate standalone 16:9 image
+- use the approved `01.png` as the local style reference throughout all later batches
+- QA after each batch
+- regenerate only failed images
+- after a passing batch continue automatically with the next batch
 
-## Output hard lock
+Example:
 
-Google Flow must NEVER combine several scene numbers into one generated asset.
+`02, 03, 04, 05, 06`
 
-Never output:
-- a storyboard sheet
-- a contact sheet
-- a 3x3 or other panel grid containing several scene numbers
-- a collage containing several independent scenes
-- a shot-list image
-- a storyboard preview
-- an automatically generated video
+then:
 
-Each scene number becomes its own separate 16:9 image asset.
+`07, 08, 09, 10, 11`
 
-A single scene may use `SPLIT`, `CONTRAST` or `MONTAGE` inside that one image only when the scene plan explicitly requires it. This never permits combining several different scene numbers into one image.
+and so on.
 
-## Initial cover run
+## Naming
 
-1. Read the entire master prompt so the full visual world and continuity plan are understood.
-2. Generate **Scene 01 only**.
-3. Generate exactly **3 separate Scene-01 cover candidates**.
-4. Each candidate is a standalone 16:9 image, never a three-panel sheet.
-5. STOP for user approval.
-6. Keep exactly one approved winner.
-7. Rename the approved winner to `01.png`.
-8. Place it in the single final image folder `03-bilder/`.
-9. Discard/reject the other two candidates.
-
-## Regular generation — five-scene batches
-
-After Scene 01 approval:
-- generate the remaining scenes in **batches of exactly 5 scene numbers whenever at least 5 scenes remain**
-- the final batch contains the remaining 1–4 scenes when fewer than 5 remain
-- generate the whole current batch in one batch step/turn; do not deliberately process the five scenes one-by-one
-- every scene number still produces one separate standalone 16:9 image
-- preserve the exact same approved visual world across every batch
-- do not create alternate versions unless a scene fails QA or the user asks
-- run internal QA after the batch
-- regenerate only failed images, not the whole batch
-- after a batch passes QA, continue automatically with the next five-scene batch from the same master file; do not require a user confirmation between successful regular batches
-
-Example after approved Scene 01:
-
-`Batch 1: Scene 02, 03, 04, 05, 06`
-
-means **five separate image assets generated as one batch operation**, not one image containing five panels and not five manually separated generation rounds.
-
-Then:
-
-`Batch 2: Scene 07, 08, 09, 10, 11`
-
-Continue in groups of five until the final remainder batch.
-
-## Naming — immediate and mandatory
-
-As soon as an image passes QA, rename it immediately to its matching two-digit scene number:
-
-- Scene 01 → `01.png`
-- Scene 02 → `02.png`
-- Scene 03 → `03.png`
+Rename every accepted image immediately:
+- BILD 01 → `01.png`
+- BILD 02 → `02.png`
+- BILD 03 → `03.png`
 - ...
-- Scene 10 → `10.png`
-- Scene NN → `NN.png`
 
-Do not leave accepted images with temporary/generated names.
+## One final image folder
 
-The file number always matches the scene number.
-
-## Single final image folder
-
-All accepted source images for the video belong together in exactly one flat folder:
+All accepted images stay together in one flat folder:
 
 `03-bilder/`
 
-Rules:
-- no batch subfolders
-- no separate cover folder
-- no `batch-1/`, `batch-2/` or similar output folders
-- no duplicate accepted versions
-- final folder contains only the accepted numbered scene images needed for the video
+No cover subfolder. No batch subfolders. No duplicate accepted versions.
 
-At the end of Flow image production, collect/keep all accepted renamed images together in this one folder. If the Flow environment requires packaging for download, package this folder as one archive while preserving the folder name and numbered filenames.
+## Never create
 
-Expected final state example:
+- storyboard
+- contact sheet
+- multi-scene grid
+- collage containing several scene numbers
+- automatic video
 
-```text
-03-bilder/
-├── 01.png
-├── 02.png
-├── 03.png
-├── 04.png
-├── 05.png
-├── 06.png
-├── 07.png
-└── ...
-```
+One scene number = one separate image asset.
 
-## Master prompt wording
+## World consistency
 
-Every NEW `google-flow-prompt.txt` must contain an explicit output instruction equivalent to:
+The complete video must look like one illustrated world from the same artist.
 
-`OUTPUT MODE — FINAL SOURCE IMAGES ONLY. Read the full master prompt, but generate only the current requested batch. Every scene number must be a separate standalone 16:9 image. NEVER create a storyboard, contact sheet, multi-scene panel grid, collage or video. After Scene 01 approval, generate scenes in five-scene batches, immediately rename accepted images to NN.png, and collect all accepted images in one flat 03-bilder/ folder.`
+The same drawing DNA stays constant, while location, camera, lighting, local color and mood may change with the topic and scene.
 
-It must also contain an explicit visual-world instruction equivalent to:
+## QA fail
 
-`WORLD CONSISTENCY — HARD LOCK. Treat the complete video as one coherent premium illustrated film world. Preserve the same mature stickman anatomy, linework, cel shading, texture, environment quality, depth and rendering language across every batch. Mood, location and lighting may change per scene, but the art style must never reset or drift between batches.`
+Reject when:
+- several scene numbers appear in one generated asset
+- Flow falls back to deliberate one-image-at-a-time generation while five remain
+- later batches stop matching the approved cover's drawing DNA
+- an accepted image is not renamed correctly
+- accepted images are split across folders
+- Flow creates a video instead of source images
 
-It must also contain the Scene-01 approval gate and five-scene batch instructions.
-
-## QA hard fail
-
-Reject the result if:
-- two or more scene numbers appear inside one generated asset
-- Flow creates a storyboard/contact sheet instead of individual images
-- Flow proposes a video instead of the requested source images
-- regular generation intentionally falls back to one-scene-at-a-time instead of a five-scene batch when five scenes remain
-- a later batch drifts into a different illustration style, character anatomy, outline/shading system or noticeably lower visual quality
-- images no longer feel like one coherent channel/film world
-- a normal scene is returned as a multi-panel layout without that scene explicitly requesting split/contrast/montage
-- an accepted image is left with a non-scene filename
-- accepted images are split across batch folders instead of one `03-bilder/` folder
-- scene numbering and accepted filenames do not match
-
-## Structural compatibility
-
-This rule does **not** split the master prompt into multiple files. All scenes remain in the single `02-google-flow/google-flow-prompt.txt`.
-
-This V2 batch/output rule applies to **future/new YouTube projects only**. Existing project prompts remain unchanged unless the user explicitly requests migration.
+This rule applies to future/new videos unless the user explicitly requests migration of an existing project.
