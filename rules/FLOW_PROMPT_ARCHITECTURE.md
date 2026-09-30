@@ -1,49 +1,58 @@
-# GOOGLE FLOW PROMPT ARCHITECTURE — NATURAL MASTER V1
+# GOOGLE FLOW PROMPT ARCHITECTURE — NATURAL MASTER V2
 
 **STATUS: BINDING FOR NEW YOUTUBE PROJECTS**
 
-Policy ID: `NATURAL_FLOW_MASTER_V1`
+Policy ID: `NATURAL_FLOW_MASTER_V2`
 
-This rule controls **how the final `google-flow-prompt.txt` is written**. Output/batching remains controlled by `rules/FLOW_OUTPUT_MODE.md`.
+Creative translation from script to image follows `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md` / `OBSERVABLE_SCENE_FIRST_V1`. Output/batching remains controlled by `rules/FLOW_OUTPUT_MODE.md`.
 
-## 1. One master file only
+## 1. One master file
 
-Every YouTube video keeps exactly one Flow file:
+Every video keeps exactly one:
 
 `02-google-flow/google-flow-prompt.txt`
 
-It contains the full channel/world instruction, the complete output workflow and all image prompts for the whole video.
+It contains the channel/world instruction, output workflow and all `BILD 01` through `BILD NN`. Never split one video into batch prompt files.
 
-Never split one video into `prompt-1.txt`, `batch-1.txt`, `flow-3-images.txt` or similar files.
+## 2. Internal planning != final Flow prompt
 
-## 2. Internal planning and final Flow prompt are different layers
+Detailed planning remains in `99-intern/`. It may contain speech beat, viewer takeaway, observable evidence, scene type, composition, social density, mood, camera, light/color, continuity, text policy and QA.
 
-Detailed planning belongs in `99-intern/`.
+The final Flow prompt must not dump those fields as a repeated technical form. It should read like concise art direction to an illustrator.
 
-Internal planning may use fields such as:
-- speech/voice-over beat
-- scene type
-- visual function
-- composition type
-- social density
-- mood mode/intensity
-- power dynamic
-- visual idea/task
-- subject/action/relation
-- environment
-- camera
-- lighting/color direction
-- continuity
-- text policy
-- QA
+## 3. Observable-scene gate — HARD LOCK
 
-These fields are useful for planning and validation but **must not be dumped mechanically into the final Flow prompt**.
+Never send an abstract psychology statement directly to Flow.
 
-The final Flow prompt should read like clear art direction to an illustrator, not like a database form.
+Before every image prompt:
 
-## 3. Required final master structure
+```text
+spoken meaning
+→ what must the viewer understand?
+→ what can literally be seen that proves it?
+→ one concrete composition
+→ final prompt
+```
 
-New `google-flow-prompt.txt` files use this order:
+If the central idea cannot be described with visible people, posture, gaze, distance, action, objects, environment, or a clearly defined comparison/mechanism, the visual plan is not ready.
+
+Weak: `show self-consciousness`, `visualize social pressure`, `make attention feel huge`.
+
+Strong: `A looks down at a small stain while the other guests keep talking, drinking or checking phones; nobody is staring at A.`
+
+## 4. Do not literalize effect names — HARD LOCK
+
+Do not turn a psychological term into its literal word-picture only because of the name:
+- Spotlight-Effekt ≠ theatrical spotlight
+- Ankereffekt ≠ ship anchor
+- Halo-Effekt ≠ glowing halo
+- Framing-Effekt ≠ picture frame
+- Echo Chamber ≠ literal echo room
+- Bandwagon Effect ≠ wagon
+
+A literal metaphor is allowed only when deliberately chosen because it explains the current beat better than a concrete situation.
+
+## 5. Final master order
 
 1. `TASK / OUTPUT`
 2. `CHANNEL VISUAL WORLD`
@@ -51,205 +60,130 @@ New `google-flow-prompt.txt` files use this order:
 4. `VIDEO WORLD LOCK`
 5. `GENERATION WORKFLOW`
 6. `GLOBAL TEXT RULE`
-7. `BILD 01` through `BILD NN` as natural direct image prompts
-8. short final QA reminder if useful
+7. short `PROMPTING RULE`
+8. `BILD 01` through `BILD NN`
+9. short final QA
 
-Global style/anatomy/negative rules appear **once near the top**, not repeated inside every image block.
+Global style/anatomy/negative rules appear once near the top.
 
-## 4. Natural image-prompt rule
+## 6. Final image-prompt formula
 
-Each `BILD NN` block contains one natural direct paragraph or a few concise sentences.
+A normal `BILD NN` prompt should use only what matters, usually in this order:
 
-Write only what that image needs. A strong prompt normally communicates, in natural language:
-- camera/framing when important
-- dominant subject or relationship
-- visible action/state/mechanism
-- relevant environment/props
-- lighting/mood/local color
-- continuity with a recurring character/place/object when needed
-- exact German visible text only when planned
+1. camera/framing
+2. dominant subject(s)
+3. exact visible action/relation
+4. behavior of other relevant people/objects
+5. concrete environment/props
+6. light and local color
+7. continuity if needed
+8. exact German visible text OR `No visible text.`
+9. only 1–3 scene-specific negatives when a known failure needs blocking
 
-Do not output mechanical scene labels such as:
+Use concrete nouns and visible verbs such as `looks down`, `steps back`, `points`, `turns away`, `keeps talking`, `checks a phone`, `holds`, `stands closer`, `sits apart`, `compares`.
 
-```text
-SCENE TYPE:
-SOCIAL DENSITY:
-VISUAL IDEA:
-VISUAL TASK:
-POWER DYNAMIC:
-CHARACTER DIRECTION:
-LIGHTING MOOD:
-```
+Do not make abstract wording the main instruction: `symbolizes`, `represents`, `embodies`, `visualize the concept`, `communicate the psychology`, `make the viewer feel`.
 
-Those remain in `99-intern/`.
+## 7. One visible idea per image
 
-## 5. One clear visual thought per image
+One image normally has one main action/relation and one dominant focal subject. Use only a few supporting elements.
 
-Each final image should communicate one dominant idea quickly.
+If a beat contains several independent examples or actions, split the visual planning instead of forcing a montage. Split/contrast/montage is allowed only when multiple parts are necessary to explain one inseparable comparison or mechanism.
 
-Prefer:
-- one dominant subject/relation
-- 1–3 genuinely useful supporting elements
-- large YouTube-readable shapes
-- clear focal hierarchy
+Do not use montage, group scenes or split screens merely to satisfy variety quotas.
 
-If a spoken beat contains two equally important visual ideas, split the planning into two image beats rather than overloading one image.
+## 8. Emotion/power must be physically readable
 
-## 6. Unified world, varied staging
+When emotion or hierarchy matters, show it through gaze, head angle, posture, distance, foreground/background placement, who looks at whom, who ignores whom, standing/sitting position and concrete interaction.
 
-The complete video must feel like one illustrated film by the same illustrator.
+An emotion adjective may support the prompt, but cannot replace visible behavior.
 
-Keep constant:
-- mature strict-stickman anatomy family
-- linework/outline behavior
-- 2D rendering language
-- cel-shading family
-- texture/detail quality
+## 9. Unified world, varied staging
+
+Keep constant across the full video:
+- mature strict-stickman anatomy
+- linework and 2D rendering language
+- cel shading and texture quality
 - environment-quality standard
 - typography language
-- overall adult psychology-documentary/editorial identity
+- adult psychology-documentary/editorial identity
 
-Allow to vary by beat:
-- location
-- camera distance/angle
-- day/night
-- light direction
-- local color
-- mood
-- number of people
-- character vs object vs schema vs comparison
+Location, camera, day/night, light direction, local color, mood, people count and representation may change per beat.
 
-**Same world does not mean same composition or same palette.**
+## 10. References
 
-## 7. Reference architecture
+Use approved references by role: style-only, character-identity and environment-continuity. Prefer a small clean reference set. Never let a weak/chibi/cartoon reference override the written rules.
 
-Use references by role, not as one giant style collage.
+## 11. Representation variety
 
-Preferred minimal system when approved assets exist:
-- `style-master.png` — style/rendering/anatomy-quality anchor
-- one or two clean reference images for a recurring Character A when needed
-- one or two clean reference images for a recurring Character B when needed
-- `character-group.png` only when group consistency benefits from it
-- one optional schema/environment reference only when that visual family needs additional steering
+Humans are optional. Choose character interaction, object/environment, comparison, schema, metaphor or text illustration only when it is the clearest form.
 
-Not every video needs every reference.
+Representation percentages are guidance, never quotas. Content determines the form.
 
-Reference roles:
-- **style-only** reference locks rendering/anatomy/linework/shading/texture quality
-- **character-identity** reference locks the returning person's identity/clothing cues
-- **environment-continuity** reference locks a recurring place/layout
+## 12. Prompt length
 
-Never use a weak/cute/chibi/broad-shouldered reference just because it exists. Text rules remain authoritative until a reference is explicitly approved.
+Normal target: roughly 45–110 English words per image. Longer only when continuity, a necessary comparison or exact typography genuinely requires it.
 
-## 8. Character quality
+Every sentence should change something visible. Remove style repetition and abstract restatement.
 
-Characters remain `STYLIZED_STICKMAN_CAST_V2`, but they must not feel sterile.
+## 13. Cover + production workflow
 
-Within the same anatomy family, individuality may come from:
-- simple hairstyle/silhouette
-- eyebrows and small eye/mouth variation
-- glasses or one useful accessory
-- clothing color/shape
-- posture
-- gaze
-- social distance
-- role-specific body language
+Preserve `FINAL_SEPARATE_IMAGE_ASSETS_V2` exactly:
 
-Do not individualize by switching to normal cartoon-human anatomy.
+- `BILD 01` first
+- exactly 3 separate 16:9 cover candidates
+- STOP for user choice
+- chosen winner becomes `01.png` in `03-bilder/`
+- only then continue
+- later images in batches of exactly 5 whenever at least 5 remain
+- each image number remains a separate 16:9 asset
+- accepted results immediately renamed to `NN.png`
+- all accepted images remain in the same flat `03-bilder/`
+- regenerate only failures
+- after a passing batch continue automatically
+- never create the final video in Flow
 
-## 9. Representation variety
+The three cover candidates keep the same approved visual thesis and exact cover text, but should test meaningfully different strong compositions rather than three near-duplicates.
 
-Do not force humans into every image.
+## 14. Text rule
 
-Use the clearest representation for the beat:
-- character interaction
-- object/environment illustration
-- object metaphor
-- comparison
-- cinematic schema/mechanism
-- sparse text illustration only when useful
+Default: `No visible text.` / `ZERO READABLE TEXT`.
 
-Visible text and schemas are tools, not defaults.
+Only render exact German wording explicitly planned for that image. Never render voice-over as captions or invent readable signs/screens/documents.
 
-## 10. Cover + production workflow — non-negotiable
+## 15. Flow Agent role
 
-The prompt must preserve `FINAL_SEPARATE_IMAGE_ASSETS_V2` exactly:
+The Flow Agent is the production executor, not the art director. It may generate, batch, rename, QA and organize assets, but the repo must decide the concrete visible scene first.
 
-### Cover gate
-1. Read the full master prompt.
-2. Generate **BILD 01 only**.
-3. Generate exactly **3 separate 16:9 cover candidates**.
-4. Never combine them into one sheet/grid.
-5. STOP and wait for the user to choose one.
-6. Keep the chosen image only.
-7. Rename it immediately to `01.png`.
-8. Put it directly in `03-bilder/`.
-
-### After user chooses the cover
-- generate all remaining images in batches of exactly **5 image numbers** whenever at least 5 remain
-- each requested image remains its own standalone 16:9 asset
-- do not deliberately generate the five images one-by-one
-- after each batch, immediately rename accepted outputs to their image number: `02.png`, `03.png`, etc.
-- put every accepted image directly into the same flat `03-bilder/` folder
-- no `batch-1/`, `covers/` or other output subfolders
-- QA the batch; regenerate only failed images
-- after a successful batch, continue automatically with the next 5-image batch
-- final batch may contain the remaining 1–4 images
-- never offer to create the final video in Flow
-
-At the end:
-
-```text
-03-bilder/
-01.png
-02.png
-03.png
-...
-NN.png
-```
-
-## 11. Global text rule
-
-Default: no visible text.
-
-Only render exact German wording explicitly requested for a specific image.
-Do not render voice-over text as captions.
-Do not invent readable signs, screens, documents, packaging or pseudo-text.
-
-## 12. Good final prompt style
+## 16. Example
 
 Good:
 
 ```text
 BILD 05
-Wide three-quarter view inside a modern café in daylight. Character A sits opposite Character B while B confidently explains something and A begins accepting the idea. Keep both figures large and readable with natural social spacing. Warm window light, muted green and amber local colors, rich but uncluttered café depth. No visible text.
+Medium-wide three-quarter view inside a modern café in daylight. Character A stands beside a table and looks down at a small stain on the teal overshirt, shoulders slightly drawn inward. Two guests talk to each other, one checks a phone and another drinks coffee; nobody is staring at A. Warm wood tables, large windows, muted green details and soft natural daylight with clear depth. Keep the stain physically small but clearly visible. No visible text.
 ```
 
 Avoid:
 
 ```text
-SCENE TYPE: CHARACTER_SCENE
-SOCIAL DENSITY: DUO
-VISUAL IDEA: ...
-VISUAL TASK: ...
-CAMERA: ...
-LIGHTING MOOD: ...
-CHARACTER DIRECTION: ...
+Create a cinematic visual representation of self-consciousness. Make the tiny mistake feel enormous through a dramatic spotlight and psychological symbolism.
 ```
 
-## 13. Hard fail
+## 17. Hard fail
 
-Reject/rewrite the final master prompt if:
-- it becomes a long repeated technical form instead of direct art direction
-- global style rules are repeated inside every image block
-- several scene numbers are combined into one image asset
-- cover approval is skipped
-- post-cover generation does not use 5-image batches when five remain
-- accepted images are not renamed immediately
-- accepted images are split across folders
-- later batches reset the style
-- the visual world is consistent only because every image repeats the same room, palette or character shot
-- figures are forced into every frame
-- text or schemas are used as filler
+Rewrite if:
+- the key instruction is abstract rather than observable
+- a psychological term is literalized only because of its name
+- symbolic glow/rays/icons replace a clearer real-life action
+- unrelated examples are crammed into one image
+- Flow must invent the central behavior or relationship
+- a montage/group/split exists only to satisfy a quota
+- the environment is generic filler
+- the prompt repeats global style instead of directing the scene
+- several image numbers are combined into one asset
+- cover approval or five-image batching is broken
+- accepted images are not renamed or are split across folders
+- later batches reset the art style
 
-This rule complements `rules/FLOW_OUTPUT_MODE.md`, `rules/VISUAL_SYSTEM.md`, `rules/IMAGE_REFERENCE_LOCK.md` and `rules/REPRESENTATION_VARIETY_LOCK.md`.
+This rule complements `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`, `rules/FLOW_OUTPUT_MODE.md`, `rules/VISUAL_SYSTEM.md`, `rules/IMAGE_REFERENCE_LOCK.md` and `rules/REPRESENTATION_VARIETY_LOCK.md`.
