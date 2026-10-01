@@ -1,6 +1,6 @@
 # SOCIAL SCENE LOCK
 
-**STATUS: BINDING**
+**STATUS: BINDING PROCESS RULE**
 
 When psychology is social, show actual interaction.
 
@@ -8,10 +8,16 @@ When psychology is social, show actual interaction.
 - `solo`
 - `duo`
 - `group`
-- `none` for non-character scene types
+- `none`
 
-Prefer duo/group for conversation, feedback, observation, audience, family, friends, coworkers, social comparison, conformity and experiments.
-
-All visible people use the same stylized stickman-inspired character family. Background figures may be simpler, but must not become normal cartoon or realistic humans.
+Prefer duo/group when conversation, feedback, observation, audience, family, friends, coworkers, social comparison, conformity or experiments require several people.
 
 Do not force people into object metaphors, schemas or internal mechanisms when they are unnecessary.
+
+## Visual-world gate
+
+Current visual world: **UNDEFINED**.
+
+This file decides only how many people a beat may need and what interaction must be visible. It does not define how people look.
+
+Character/person design will be defined only in the future user-approved visual world.

@@ -1,12 +1,12 @@
 # COMPOSITION + REPRESENTATION VARIETY LOCK
 
-**STATUS: BINDING**
+**STATUS: BINDING PROCESS RULE**
 
-Consistency of world does not mean repeating the same image formula.
+Consistency does not mean repeating the same image formula.
 
 ## Two independent choices
 
-Every beat chooses:
+Every beat may choose:
 1. `sceneType`: CHARACTER_SCENE / SCHEMA_EXPLAINER / OBJECT_METAPHOR / COMPARE_VISUAL / TEXT_ILLUSTRATION
 2. `compositionType`: standard / split / contrast / montage
 
@@ -22,12 +22,16 @@ Vary when useful:
 - solo / duo / group
 - character / object / schema / comparison
 
-Avoid long runs of identical desk-room-medium-shot images.
+Avoid long runs of identical staging.
 
 ## Multi-panel
 
 Allowed only when all panels explain the same spoken beat. Keep one clear hierarchy.
 
-## Target
+## Visual-world gate
 
-Representation mix is defined in `rules/VISUAL_SYSTEM.md`. No old 70/20/10 composition quota overrides it.
+This file defines composition only.
+
+Current visual world: **UNDEFINED**.
+
+It must not define character design, rendering, palette, shading or reference style. Those will be defined separately after user approval.

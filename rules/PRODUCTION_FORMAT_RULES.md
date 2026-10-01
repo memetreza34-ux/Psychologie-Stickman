@@ -4,7 +4,6 @@
 
 Zusätzlich gilt `rules/FORMAT_LOCK.md` mit höchster Format-Priorität.
 Für YouTube-Text gilt `rules/TEXT_OVERLAY_LOCK.md`.
-Für Bildwelt/Qualität gilt `rules/VISUAL_SYSTEM.md` + `rules/PREMIUM_VISUAL_LOCK.md`.
 Für Visual-Director/Prompting gilt `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md` + `rules/FLOW_PROMPT_ARCHITECTURE.md`.
 Für Script-Einstieg gilt `rules/SCRIPT_HOOK_LOCK.md`.
 
@@ -40,52 +39,50 @@ Neue Projekte:
 - lange Pausen deutlich straffen
 - Timings erst aus final bearbeitetem Audio ableiten
 
-## 4. Aktive Visual Direction
+## 4. Visual Direction
 
-Neue YouTube-Projekte verwenden:
-- `CINEMATIC_HUMAN_BEHAVIOR_V2`
-- `STYLIZED_STICKMAN_CAST_V2`
-- `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`
-- `REPRESENTATION_VARIETY_V1`
+Aktiv bleiben nur die bildweltunabhängigen Regeln:
 - `OBSERVABLE_SCENE_FIRST_V1`
+- `REPRESENTATION_VARIETY_V1`
 - `NATURAL_FLOW_MASTER_V2`
+- `FINAL_SEPARATE_IMAGE_ASSETS_V2`
 
 Verbindlich:
-- mature strict-stickman anatomy
-- glaubwürdige reiche Umgebungen
-- bewusstes Licht und Tiefe
-- adaptive statt fest vorgegebene Farbwelt
 - konkrete sichtbare Handlung/Relation vor abstrakter Symbolik
-- Verhalten über Pose, Blick, Abstand, Blocking und Aktion lesbar machen
+- Verhalten über beobachtbare Aktion, Blick, Abstand, Blocking und Objektbeziehung beschreiben
 - nicht automatisch jeden Beat als Figurenbild planen
-- keine Montage/Split/Group-Szene nur wegen Variety-Quote
+- keine Montage/Split/Group-Szene nur wegen Variety
 - keine wörtliche Visualisierung eines Effekt-Namens nur wegen seines Namens
 
 Kurzform:
 **Erst festlegen, was sichtbar passieren muss; danach den Flow-Prompt schreiben.**
 
+### Visual-World-Gate
+
+Aktueller Status: **UNDEFINED**.
+
+Nicht definiert sind Character-Design, 2D/3D, Rendering, Farben, Lichtstil, Shading, Textur und Referenzsystem.
+
+Keine neue Flow-Bildproduktion starten, bevor die neue Bildwelt ausdrücklich freigegeben wurde.
+
 ## 5. YouTube-Textregel — GOOGLE FLOW ONLY
 
-Sämtlicher sichtbarer Text wird direkt von Google Flow in die Bilder gerendert. Remotion erzeugt keinen sichtbaren YouTube-Text.
+Sichtbarer Text wird direkt von Google Flow in die Bilder gerendert. Remotion erzeugt keinen sichtbaren YouTube-Text.
 
 ### Szene 01
-- exakter deutscher Cover-Titel direkt in `01.png`
+- exakter deutscher Cover-Titel
 - 2–7 Wörter
-- kein unnötiger Zusatztext
 
 ### Ausgewählte spätere Szenen
-- exakter deutscher Keyword-/Schema-/Vergleichstext nur wenn er Verständnis wirklich verbessert
+- exakter deutscher Keyword-/Schema-/Vergleichstext nur wenn nötig
 - normalerweise maximal 5 Wörter pro Textblock
 
 ### Alle anderen Szenen
 - ZERO READABLE TEXT
-- keine zufälligen UI-Texte, Labels, Untertitel, Poster- oder Bildschirmtexte
 
 ### Remotion
 - `sceneLabels: []`
-- keine YouTube-Auto-Captions
 - `renderGermanLabelsInRemotion: false`
-- nur Schnitt, Audio, technische Bildbewegung und Export
 
 ## 6. Jedes Bild individuell und konkret
 
@@ -93,13 +90,7 @@ Für jeden Beat:
 1. Was soll der Zuschauer verstehen?
 2. Was kann man konkret sehen, das dies beweist?
 3. Was ist die eine dominante sichtbare Handlung/Relation?
-4. Erst dann Kamera, Umgebung, Licht, Farbe und Text festlegen.
-
-Finaler Flow-Prompt bevorzugt konkrete sichtbare Verben und Details statt abstrakter Formulierungen.
-
-Beispiel:
-- schwach: `show social pressure`
-- besser: `four people point to the same option while one person hesitates, keeps their hand lowered and glances at the group`
+4. Erst danach Kamera, Umgebung und – nach Freigabe der neuen Bildwelt – Licht/Farbe/Style festlegen.
 
 ## 7. Formatgerechte Komposition
 
@@ -109,17 +100,16 @@ Beispiel:
 
 ### YouTube 16:9
 - horizontale Breite nutzen
-- Vordergrund, Mittelgrund und Hintergrund sinnvoll verteilen
-- Szene 01 mit klarer Thumbnail-Hierarchie und integrierter Titelzone komponieren
+- räumliche Anordnung sinnvoll planen
+- Szene 01 mit klarer Thumbnail-Hierarchie und Titelzone komponieren
 
 ## 8. Google Flow Workflow
 
-Neue YouTube-Videos:
 - BILD 01 → genau 3 getrennte Cover-Kandidaten → STOP für Nutzerwahl
 - Gewinner → `01.png` in `03-bilder/`
-- danach immer 5 Bildnummern pro Batch, solange mindestens 5 übrig sind
+- danach 5 Bildnummern pro Batch, solange mindestens 5 übrig sind
 - letzter Batch = 1–4 Restbilder
-- jedes Bild separat als 16:9
+- jedes Bild separat
 - akzeptierte Ergebnisse sofort `NN.png`
 - alle gemeinsam in einem flachen `03-bilder/`
 - kein Storyboard/Kontaktbogen/automatisches Video
@@ -131,12 +121,11 @@ Vor Export prüfen:
 - YouTube: 16:9 / 1920×1080 / 30 fps
 - finales Audio 1,10×
 - keine abgeschnittenen Wörter
-- mature Stickman-Anatomie und einheitliche Bildwelt
-- jede Szene zeigt konkrete sichtbare Evidenz statt nur einen abstrakten Begriff
-- keine Effekt-Namen wörtlich visualisiert ohne bewusste Begründung
-- keine erzwungene Montage/Group/Split-Quote
-- alle geplanten deutschen Flow-Texte exakt und lesbar
-- alle nicht geplanten Textszenen textfrei
+- neue Bildwelt wurde ausdrücklich freigegeben und konsistent angewendet
+- jede Szene zeigt konkrete sichtbare Evidenz
+- keine Effekt-Namen unbewusst wörtlich visualisiert
+- geplante deutsche Flow-Texte exakt
+- ungeplante Textszenen textfrei
 - Remotion enthält keine YouTube-Labels/Captions
 
 **HARD FAIL:** Reel in 16:9 oder YouTube-Longform in 9:16.

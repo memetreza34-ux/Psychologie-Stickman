@@ -44,4 +44,9 @@ Für beide Formate bleiben unverändert:
 - lange Pausen straffen, ohne Wörter anzuschneiden
 - sichtbarer Text in finalen Bildern nur auf Deutsch, wenn Text überhaupt nötig ist
 - jedes Bild individuell auf seinen Visual Beat anpassen
-- Master-Referenz hält Stil und Figuren-DNA konstant, nicht die Komposition
+
+## VISUAL-WORLD-GATE
+
+Aktueller Visual-World-Status: **UNDEFINED**.
+
+Dieses Format-Lock definiert keinen Stil. Sobald die neue Bildwelt freigegeben ist, gilt sie konsistent innerhalb der jeweiligen Produktion, ohne die Formatregeln hier zu verändern.
