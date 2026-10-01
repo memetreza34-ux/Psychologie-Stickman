@@ -1,38 +1,21 @@
-# Migration-Historie — faceless-erklaerkanal → Stickman-youtube-
+# Migration-Historie — faceless-erklaerkanal → aktuelles Produktionsrepo
 
 **Status: historische Referenz, keine aktive Regeldatei.**
 
-Quelle der ursprünglichen technischen Migration: `memetreza34-ux/faceless-erklaerkanal`.
+Übernommen wurde technische Produktionslogik.
 
-## Was übernommen wurde
+## Aktueller Stand
 
-Übernommen wurde nur technische Produktionslogik. Kanalpositionierung, Themenwelt und Bildwelt wurden anschließend im aktuellen Repository neu definiert.
-
-## Heutiger Stand
-
-- Kanal: **Psychologie & menschliches Verhalten**
-- Bildwelt: **Cinematic Human Behavior World v2** (`CINEMATIC_HUMAN_BEHAVIOR_V2`)
-- Character System: `STYLIZED_STICKMAN_CAST_V2`
-- Mood System: `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`
-- Flow Output Policy: `FINAL_SEPARATE_IMAGE_ASSETS_V1` via `rules/FLOW_OUTPUT_MODE.md`
-- Flow-Struktur: genau eine `02-google-flow/google-flow-prompt.txt` mit allen Szenen
-- aktive Regeln: `CANONICAL_RULES.md` und `rules/`
-- YouTube-Longform: `youtube/`
-- Reels/Shorts: `reels/`
+- Kanal: Psychologie & menschliches Verhalten
+- Bildwelt: **UNDEFINED**
+- Flow-Struktur: genau eine `02-google-flow/google-flow-prompt.txt`
+- Flow-Ausgabe: 3 Cover → Nutzerwahl → 5er-Batches
 - moderne YouTube-Projektstruktur: `01-script/`, `02-google-flow/`, `03-bilder/`, `04-audio/`, `05-export/`, `99-intern/`
 
 ## Historische Bildwelten
 
-Nicht aktiv für neue Produktionen:
-- Universal Editorial Stickman World v1.3
-- Minimal Editorial Stickman v2
-- Cinematic Illustrated Psychology World v1
+Frühere Bildwelten/Style-Systeme sind **nicht aktiv** und wurden aus dem aktuellen Visual-World-Regelbestand entfernt.
 
-## Nicht mehr verwendete historische Pfade/Standards
+Sie dürfen nur als historische Git-Historie verstanden werden und nicht als Vorlage für die neue Bildwelt.
 
-- `youtube/longform/`
-- `youtube/reels/`
-- `channels/dinge-erklaert/`
-- `FLOW_SCENE_PROMPT_CONTRACT_V1` als verpflichtender 20-Felder-/Subblock-Vertrag
-
-Bei einem Widerspruch zwischen dieser Datei und den aktuellen Regeldateien gilt immer der aktuelle Regelbestand. Diese Datei dokumentiert nur die Herkunft des Repositories.
+Bei Widersprüchen gelten `CANONICAL_RULES.md`, `PROJECT_BRAIN.md` und die aktuellen Prozessregeln.

@@ -2,25 +2,32 @@ GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
 
 TOPIC: [VIDEO-THEMA]
 FORMAT: 16:9 / 1920x1080
-VISUAL SYSTEM: CINEMATIC_HUMAN_BEHAVIOR_V2
-CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V2
+VISUAL WORLD STATUS: UNDEFINED
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+
+STOP — VISUAL WORLD NOT DEFINED
+
+Do NOT generate images from this template yet.
+
+Before production, replace this section with the NEW user-approved visual world:
+- channel style
+- character/person system if any
+- rendering language
+- color/light rules
+- reference policy
+- short reusable style anchor
+
+Do not reuse any deleted/old visual world automatically.
 
 TASK
 Create final separate 16:9 source images for one coherent YouTube video.
 One BILD number = one separate image.
 Never create a storyboard, contact sheet, collage or automatic video.
 
-CHANNEL STYLE
-Polished hand-drawn 2D Stickman illustration.
-Simple round/oval heads, minimal expressive faces, slim simplified bodies, thin clearly drawn arms and legs, simple clothing, clean dark outlines, flat controlled colors and soft graphic shading.
-Characters, props and environments must use the SAME illustrated language.
-No photorealism. No 3D/Pixar/anime. No chibi. No bare whiteboard stick figures.
-
 VIDEO WORLD
-[Describe the topic-specific world briefly: e.g. bright/open, cool/uneasy, dark/power, warm/hopeful, commercial/money, sparse/isolation. Add only recurring people, places or props that must stay consistent.]
+[Define only recurring people, places, props or continuity facts after the new visual world is approved.]
 
 COVER WORKFLOW — HARD LOCK
 1. Generate BILD 01 ONLY.
@@ -28,11 +35,9 @@ COVER WORKFLOW — HARD LOCK
 3. Same visual thesis and exact cover text, but 3 meaningfully different compositions.
 4. STOP and wait for the user to choose one.
 5. Chosen winner -> `01.png` -> `03-bilder/`.
-6. Use the chosen `01.png` as the VIDEO-LOCAL VISUAL REFERENCE for all later images: preserve Stickman construction, linework, flat colors, graphic shading, texture and overall illustration quality.
-7. Do NOT copy the cover's exact pose, room, composition or palette unless continuity requires it.
 
 AFTER COVER APPROVAL
-Generate the remaining images in batches of exactly 5 whenever possible:
+Generate remaining images in batches of exactly 5 whenever possible:
 - 02–06
 - 07–11
 - 12–16
@@ -40,11 +45,11 @@ Generate the remaining images in batches of exactly 5 whenever possible:
 - final remainder may contain 1–4 images
 
 Each BILD stays a separate 16:9 image.
-Generate each whole 5-image batch in one batch operation, not deliberately one-by-one.
+Generate each whole 5-image batch in one batch operation.
 Rename accepted results immediately to `NN.png`.
 Put every accepted image directly in the same flat folder `03-bilder/`.
 Regenerate only failed images.
-After a batch passes, continue automatically with the next batch.
+After PASS, continue automatically.
 
 GLOBAL TEXT RULE
 Only render exact German text explicitly requested for that BILD.
@@ -56,37 +61,22 @@ Do not ask Flow to invent what an abstract psychological state looks like.
 Do not literalize a psychology-effect name automatically.
 One BILD = one dominant visible idea.
 
-SHORT STYLE ANCHOR FOR EVERY BILD
-Start every image prompt with:
-`Same polished hand-drawn 2D Stickman world as this video: simple round/oval heads, slim simplified bodies, thin drawn limbs, clean dark outlines, flat controlled colors and soft graphic shading.`
-
-After BILD 01 is approved, interpret "same world" using the chosen `01.png` as the video-local visual reference.
+STYLE ANCHOR
+[UNDEFINED — insert only after the new visual world is approved.]
 
 BILD 01
-[Short natural English prompt, usually 40–90 words: style anchor + camera + main subject + visible action/relation + relevant environment + topic-appropriate light/color + exact short German cover text. End with: No other readable text.]
+[Do not write/generate until visual world is approved. Then: short natural prompt + exact German cover text + No other readable text.]
 
 BILD 02
-[Short natural English prompt, usually 35–80 words. Concrete scene only. End with: No visible text.]
-
-BILD 03
-[Short natural English prompt.]
-
-BILD 04
-[Short natural English prompt.]
-
-BILD 05
-[Short natural English prompt.]
+[Do not write/generate until visual world is approved.]
 
 [CONTINUE THROUGH BILD NN]
 
 FINAL QA
-- 3 separate cover candidates first, then STOP for user choice
-- approved cover = 01.png and video-local visual reference
+- visual world is approved and no longer UNDEFINED
+- 3 separate cover candidates first, then STOP
 - later images in 5-image batches
 - every BILD = separate 16:9 asset
-- all accepted files renamed NN.png
-- all accepted files together in 03-bilder/
-- same hand-drawn Stickman drawing DNA across all batches
-- topic-specific mood/color may change by scene
-- no unnecessary text
+- accepted files renamed NN.png
+- all files together in 03-bilder/
 - no storyboard/contact sheet/video

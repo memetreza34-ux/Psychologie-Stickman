@@ -16,68 +16,54 @@ Schreiben ist erlaubt, wenn der Nutzer im aktuellen Chat ausdrücklich eine Änd
 
 Beispiele:
 - „erstelle das nächste YouTube-Video“ → nur dieses Projekt + notwendige Projektlisten
-- „ändere die Bildwelt“ → Style-/Promptregeln dürfen innerhalb dieses Auftrags geändert werden
+- „ändere die Bildwelt“ → Visual-World-/Promptregeln dürfen innerhalb dieses Auftrags geändert werden
 - „übertrage das Repo“ → Migrationsarbeiten im genannten Zielrepo sind erlaubt
 
 ## Grenzen
 
 - keine ungefragten Neben-Cleanups
-- vor Update bestehender Datei aktuellen SHA lesen
+- vor Update/Löschung bestehender Dateien aktuellen SHA lesen
 - fremde Änderungen nicht überschreiben
 - Exporte nicht überschreiben
-- bei struktureller Änderung relevante Checks ausführen
+- bei strukturellen Änderungen relevante Checks ausführen
 
 ## Phasenschutz
 
 YouTube:
-THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → FINALES SCRIPT → PHASE 1 VISUAL BEATS → MOOD-/FARBPLAN → PHASE 2 GOOGLE FLOW → PHASE 3 → FINAL-QA.
+THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → FINALES SCRIPT → PHASE 1 VISUAL BEATS → PHASE 2 GOOGLE FLOW → PHASE 3 → FINAL-QA.
 
 - Skriptänderung: Hook-Policy + Phase 1 neu prüfen/erstellen
 - Hook-/Einstiegsänderung: Kernbegriffs- und frühes Alltagsbeispiel-Timing neu prüfen
-- Bildweltänderung: Mood-/Farbplan + konkrete visuelle Phase-1-Aufgaben + Phase 2 neu erzeugen
-- Mood-/Palette-Änderung: betroffene Flow-Bilder auf Konsistenz neu prüfen
+- Bildweltänderung: Phase 1 + Phase 2 auf die neue Bildwelt neu ausrichten
 - reine Audioänderung: Timings/Phase 3 neu erzeugen
 
 ## Google-Flow-Struktur — NICHT ÄNDERN
 
-Pro Video bleibt die bestehende Struktur verbindlich:
+Pro Video bleibt genau eine zentrale Datei:
 
 `02-google-flow/google-flow-prompt.txt`
 
-Diese **eine Datei enthält alle Szenen des Videos** zusammen mit den globalen Flow-/Bildwelt-Regeln.
+Keine Aufteilung in mehrere Master-/Batch-Prompt-Dateien.
 
-Nicht in mehrere Master-Prompt-Dateien oder Batch-Prompt-Dateien aufteilen. Batches betreffen nur die Bildgenerierung, nicht die Dateistruktur.
+## Google-Flow-Ausgabe — HARD LOCK
 
-## Google-Flow-Ausgabe — HARD LOCK FÜR NEUE VIDEOS
+Verbindlich: `rules/FLOW_OUTPUT_MODE.md`.
 
-Verbindliche Detailregel: `rules/FLOW_OUTPUT_MODE.md`.
-
-Der Masterprompt erzeugt finale **Einzelbilder**, kein Storyboard und kein automatisch gebautes Video.
-
-Für NEUE YouTube-Projekte:
-- Scene 01 zuerst
-- genau 3 getrennte Scene-01-Cover-Kandidaten
-- STOP für Nutzerfreigabe
-- ein Gewinner wird sofort `01.png`
-- danach immer 5 Szenennummern pro Batch, solange mindestens 5 Szenen übrig sind
-- letzter Batch = verbleibende 1–4 Szenen
-- der komplette 5er-Batch wird als ein Batch-Schritt erzeugt, nicht absichtlich Bild für Bild
-- jede Szenennummer = eine eigene 16:9-Bilddatei
-- jedes akzeptierte Bild sofort passend `NN.png` umbenennen
-- alle akzeptierten Bilder zusammen in genau einem flachen Ordner `03-bilder/` sammeln
+- BILD 01 zuerst
+- genau 3 getrennte Cover-Kandidaten
+- STOP für Nutzerwahl
+- Gewinner → `01.png`
+- danach 5 Bildnummern pro Batch, solange mindestens 5 übrig sind
+- letzter Batch = 1–4 Restbilder
+- jede Bildnummer = eigene 16:9-Datei
+- akzeptierte Bilder sofort `NN.png`
+- alles in einem flachen `03-bilder/`
 - keine Batch-Unterordner
-- nach erfolgreicher interner QA automatisch mit dem nächsten 5er-Batch fortfahren
-- nur fehlerhafte Bilder einzeln regenerieren
-- niemals mehrere Szenennummern in einem Storyboard, Kontaktbogen, Panel-Grid oder einer Collage zusammenfassen
-- Flow niemals auffordern, aus den Szenen direkt ein Video zu bauen
-
-Ein `SPLIT`/`CONTRAST`/`MONTAGE` innerhalb EINER Szene bleibt erlaubt, wenn alle Teile denselben gesprochenen Beat erklären.
-
-**Bestandsschutz:** Diese V2-Regel gilt nur für zukünftige/neue Videos. Bereits vorhandene `youtube/...` Projekte werden nicht automatisch angepasst. Migration nur auf ausdrücklichen Nutzerwunsch für das konkrete Projekt.
+- kein Storyboard/Kontaktbogen/Collage/automatisches Video
 
 ## YouTube Export — HARD LOCK
 
-Für neue fertige YouTube-Projekte ist `05-export/` ein vollständiges Upload-Paket:
+Fertiges Upload-Paket:
 
 ```text
 05-export/
@@ -86,35 +72,29 @@ Für neue fertige YouTube-Projekte ist `05-export/` ein vollständiges Upload-Pa
 └── youtube-upload.txt
 ```
 
-`youtube-upload.txt` enthält gesammelt alle kopierbaren Upload-Daten: Titel, Beschreibung/Caption, Quellen/Links, Kapitel falls sinnvoll, Tags, Hashtags, angehefteten Kommentar, bereinigten Sprechertext/Captions und Video-Daten.
+## VISUAL WORLD STATUS — UNDEFINED
 
-Keine Aufteilung in separate `title.txt`, `description.txt`, `tags.txt` oder `chapters.txt` für den normalen Workflow.
+Die bisherige Bildwelt wurde auf ausdrücklichen Nutzerwunsch entfernt.
 
-Verbindliche Detailregel: `rules/YOUTUBE_EXPORT_PACKAGE.md`.
+Aktuell gibt es:
+- **keine aktive Bildwelt**
+- **keine aktive Character-DNA**
+- **keine aktive Style-DNA**
+- **kein aktives visuelles Referenzpaket**
 
-## Aktive Visual-World-Sperre
+Bis eine neue Bildwelt ausdrücklich definiert und freigegeben wurde:
+- keine neue Google-Flow-Bildproduktion starten
+- keinen alten Stil aus bestehenden Videos ableiten
+- keine gelöschten Visual-World-Regeln wiederherstellen
+- keine früheren Namen/IDs als Default verwenden
 
-Verbindliche Quellen:
-1. `rules/VISUAL_SYSTEM.md`
-2. `rules/visual-system.json`
-3. `rules/STICKMAN_DNA.md`
-4. `rules/PREMIUM_VISUAL_LOCK.md`
-5. `rules/YOUTUBE_STYLE_LOCK.md`
-6. `rules/IMAGE_REFERENCE_LOCK.md`
+Bestehende Video-Projekte bleiben historische Projektartefakte und sind keine Quelle der neuen Bildwelt.
 
-Aktueller Standard:
-**Cinematic Human Behavior World v2 — `CINEMATIC_HUMAN_BEHAVIOR_V2` + `STYLIZED_STICKMAN_CAST_V2` + `ADAPTIVE_PSYCHOLOGICAL_MOOD_V1`.**
+## Weiterhin aktive, bildweltunabhängige Regeln
 
-Figuren sind mature/adult editorial Stickmen, nicht cute/chibi/mascot. Normale Szenen benutzen eine reiche glaubwürdige Bildwelt statt leerem Creme-Hintergrund als Standard.
-
-Der verbindliche Script-Einstieg für neue YouTube-Projekte bleibt:
-**`HOOK_FIRST_EXPLAIN_EARLY_V1`**.
-
-## Retired
-
-Folgende Standards dürfen neue Produktionen nicht stillschweigend überschreiben:
-- Universal Editorial Stickman World v1.3
-- Minimal Editorial Stickman v2
-- Cinematic Illustrated Psychology World v1
-
-Historische Projekte dürfen alte Metadaten behalten, aber neue Regeln/Prompts dürfen sie nicht kopieren.
+- `rules/FLOW_OUTPUT_MODE.md`
+- `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
+- `rules/FLOW_PROMPT_ARCHITECTURE.md`
+- `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+- `rules/COVER_LOCK.md`
+- Script-/Format-/Audio-/Exportregeln

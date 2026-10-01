@@ -1,106 +1,69 @@
 # PROJECT BRAIN
 
-## Current direction
+## Kanal
 
-German psychology / human-behavior explainers.
+Deutschsprachige YouTube-Videos zu Psychologie und menschlichem Verhalten.
 
-Active world: `CINEMATIC_HUMAN_BEHAVIOR_V2`.
+## VISUAL WORLD STATUS
 
-Active prompt system:
+**UNDEFINED**
+
+Die alte Bildwelt wurde vollständig aus dem aktiven Regelsystem entfernt.
+
+Aktuell sind absichtlich nicht definiert:
+- Zeichenstil
+- Figuren-/Character-DNA
+- Anatomie
+- Rendering
+- Farben
+- Lichtsystem
+- Referenzbilder
+- feste Style-Prompts
+
+Diese Punkte werden als Nächstes gemeinsam neu aufgebaut.
+
+## Wichtigste Sperre
+
+Solange die neue Bildwelt nicht ausdrücklich freigegeben ist:
+
+**Keine neue Flow-Bildproduktion starten.**
+
+Nicht aus alten Videos, alten Regeln oder Git-Historie einen Stil rekonstruieren.
+
+## Was bestehen bleibt
+
+Die Produktionsmechanik bleibt erhalten:
+- Psychologie-/Human-Behavior-Themen
+- Script/Hook
+- Visual Beats
 - `OBSERVABLE_SCENE_FIRST_V1`
-- `NATURAL_FLOW_MASTER_V2`
-- `FINAL_SEPARATE_IMAGE_ASSETS_V2`
+- eine zentrale `02-google-flow/google-flow-prompt.txt`
+- 3 Cover zuerst
+- Nutzer wählt Cover
+- danach 5er-Batches
+- einzelne 16:9-Bilder
+- `NN.png`
+- ein flacher `03-bilder/`
+- Audio/Remotion/Export
 
-## Character target
-
-Use `STYLIZED_STICKMAN_CAST_V2`:
-- simple round/oval head
-- minimal expressive face
-- slim simplified torso
-- thin clearly drawn arms and legs
-- simple clothing, hands and shoes
-- clear readable silhouette
-
-The target is a polished hand-drawn editorial Stickman: not a bare line doodle and not a normal realistic/cartoon human.
-
-Do not mathematically over-specify body proportions in Flow prompts.
-
-## World target
-
-Characters, props and environments use the same hand-drawn 2D illustration language:
-- clean dark outlines
-- simple shapes
-- flat controlled colors
-- soft graphic/cel shading
-- light illustrated texture
-
-Do not place simple Stickmen inside semi-realistic product-render or 3D-looking environments.
-
-## Topic world
-
-The same drawing DNA can create different worlds.
-
-A calm topic may be bright and open. Anxiety may be cooler. Manipulation/power may be darker. Hope may be warmer. Everyday scenes may use natural local color.
-
-Do not force every video into the same red/dark or teal/cream treatment.
-
-## Observable-scene rule
+## Observable Scene First
 
 **Do not prompt the psychology. Prompt the evidence of the psychology.**
 
-`spoken meaning → viewer takeaway → observable evidence → concrete composition → final Flow prompt`
+```text
+spoken meaning
+→ viewer takeaway
+→ observable evidence
+→ concrete composition
+→ final prompt
+```
 
-Use action, posture, gaze, distance, object relation and environment activity.
+Diese Logik ist bildweltunabhängig und bleibt aktiv.
 
-Effect names are not automatic literal props.
+## Nächster Schritt
 
-## Final Flow prompt
-
-Each video keeps exactly one:
-
-`02-google-flow/google-flow-prompt.txt`
-
-Keep it concise. Global style appears once. Every `BILD NN` repeats only a short style anchor plus the actual scene.
-
-Normal scene prompt target: about 35–80 English words.
-
-Short anchor:
-
-`Same polished hand-drawn 2D Stickman world as this video: simple round/oval heads, slim simplified bodies, thin drawn limbs, clean dark outlines, flat controlled colors and soft graphic shading.`
-
-## Cover and generation workflow
-
-1. BILD 01 only.
-2. Generate exactly 3 separate cover candidates.
-3. STOP for user choice.
-4. Chosen winner → `01.png` in `03-bilder/`.
-5. Chosen `01.png` becomes the video-local visual reference for all later batches.
-6. Preserve from it: Stickman construction, linework, flat colors, shading, texture and overall illustration quality.
-7. Do not copy its exact pose, room, composition or palette unless needed.
-8. Then generate exact five-image batches whenever five remain: 02–06, 07–11, 12–16, etc.
-9. Every BILD remains a separate 16:9 image.
-10. Rename accepted images immediately to `NN.png`.
-11. Keep all accepted images together in one flat `03-bilder/`.
-12. Regenerate only failures and continue automatically after a passing batch.
-13. Never create a storyboard/contact sheet/final video in Flow.
-
-## Mixed representations
-
-Not every image needs a person. Use objects, environments, comparisons, schemas or short planned text when clearer.
-
-## Production priority
-
-1. clear current beat
-2. concrete observable scene
-3. polished simple Stickman drawing DNA
-4. same illustrated language for characters and environment
-5. topic-appropriate local world and mood
-6. concise Flow prompt
-7. 3-cover gate
-8. approved cover as local visual reference
-9. efficient five-image batching
-10. correct filenames and one final image folder
-
-## Existing projects
-
-Historical/existing projects stay unchanged unless the user explicitly asks to migrate that project.
+Eine neue Bildwelt wird von Grund auf definiert. Erst danach werden:
+1. Style-/Character-Regeln erstellt
+2. Flow-Prompt-Architektur mit der neuen Welt befüllt
+3. Referenz-/Cover-Workflow final festgelegt
+4. neue Videos produziert
