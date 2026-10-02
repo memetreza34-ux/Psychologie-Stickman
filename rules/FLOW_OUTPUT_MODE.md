@@ -4,7 +4,7 @@
 
 Policy ID: `FINAL_SEPARATE_IMAGE_ASSETS_V2`
 
-This rule controls output behavior only. It does **not** define the visual style.
+This rule controls output behavior. Visual style is defined by `rules/PSYCHOLOGY_STICKMAN_WORLD.md`.
 
 ## One master file
 
@@ -22,6 +22,16 @@ Every video uses exactly one:
 6. Keep the chosen winner.
 7. Rename it `01.png`.
 8. Put it in `03-bilder/`.
+9. Use approved `01.png` as the episode visual reference for later images.
+
+`01.png` anchors:
+- stickman species
+- linework
+- shading
+- texture
+- general rendering quality
+
+It does NOT force later scenes to copy the same composition, location, person, palette or mood unless continuity requires it.
 
 ## Five-image batches
 
@@ -58,18 +68,24 @@ No cover folder. No batch folders. No duplicate accepted versions.
 
 ## Visual consistency
 
-The exact consistency rules will come from the future approved visual world.
+Active world: `PSYCHOLOGY_STICKMAN_WORLD_V1`.
 
-Once a world is defined, later batches must preserve its approved drawing/render/character language while allowing scene-specific composition, location, light and mood.
+Later batches must preserve:
+- same stickman species
+- same illustrator / line language
+- same cel-shading and texture language
+- same professional finish
 
-Current status: **no active visual world**.
+But script-specific people, clothing, hairstyle, accessories, place, era, color, light and mood may change.
+
+When Flow supports image references / ingredients, use approved `01.png` as the style reference for later batches.
 
 ## QA fail
 
 Reject when:
-- production starts while visual world is undefined
 - several scene numbers appear in one asset
 - Flow intentionally falls back to one-at-a-time while five remain
 - accepted images are not renamed correctly
 - accepted images are split across folders
 - Flow creates a video instead of source images
+- later images drift into another human/cartoon species or another rendering style

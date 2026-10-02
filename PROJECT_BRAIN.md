@@ -6,44 +6,75 @@ Deutschsprachige YouTube-Videos zu Psychologie und menschlichem Verhalten.
 
 ## VISUAL WORLD STATUS
 
-**UNDEFINED**
+**ACTIVE**
 
-Die alte Bildwelt wurde vollständig aus dem aktiven Regelsystem entfernt.
+Binding source:
 
-Aktuell sind absichtlich nicht definiert:
-- Zeichenstil
-- Figuren-/Character-DNA
-- Anatomie
-- Rendering
-- Farben
-- Lichtsystem
-- Referenzbilder
-- feste Style-Prompts
+`rules/PSYCHOLOGY_STICKMAN_WORLD.md`
 
-Diese Punkte werden als Nächstes gemeinsam neu aufgebaut.
+Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
-## Wichtigste Sperre
+## Channel visual identity
 
-Solange die neue Bildwelt nicht ausdrücklich freigegeben ist:
+One coherent hand-drawn 2D animated psychology universe.
 
-**Keine neue Flow-Bildproduktion starten.**
+All people share one stickman species:
+- oversized round / softly oval light heads
+- tiny black oval eyes and minimal expressive faces
+- narrow clothed torsos
+- very thin dark stick-like arms and legs
+- small simple hands and shoes
+- organic dark outlines
+- soft cel shading
+- subtle drawn texture
+- natural clear colors
 
-Nicht aus alten Videos, alten Regeln oder Git-Historie einen Stil rekonstruieren.
+No permanent mascot. No forced recurring Character A/B cast.
 
-## Was bestehen bleibt
+People are adapted to the script through clothing, hair, accessories, age cues, profession/social role, historical era, posture and expression while keeping the same visual species.
 
-Die Produktionsmechanik bleibt erhalten:
+The world may be bright, neutral, warm, cold, historical or dark depending on the current psychology beat. The renderer/species stays fixed; mood and scene content adapt.
+
+## Dark psychology
+
+Dark scenes should feel tense through observable behavior, spatial relations and motivated light rather than horror clichés.
+
+Use:
+- gaze
+- posture
+- distance
+- blocking
+- who stands/sits
+- hands
+- group spacing
+- environmental context
+
+## Episode reference
+
+BILD 01 is the cover and first visual reference.
+
+Workflow:
+- generate exactly 3 separate cover candidates
+- user chooses one
+- winner becomes `01.png`
+- use `01.png` as the episode style reference for later images
+
+It anchors species, linework, shading, texture and finish.
+It does NOT force later images to copy the same person, composition, location, palette or mood unless story continuity requires it.
+
+## What remains fixed operationally
+
 - Psychologie-/Human-Behavior-Themen
 - Script/Hook
 - Visual Beats
 - `OBSERVABLE_SCENE_FIRST_V1`
-- eine zentrale `02-google-flow/google-flow-prompt.txt`
-- 3 Cover zuerst
-- Nutzer wählt Cover
-- danach 5er-Batches
-- einzelne 16:9-Bilder
+- one central `02-google-flow/google-flow-prompt.txt`
+- 3 covers first
+- user chooses cover
+- then 5-image batches
+- separate 16:9 images
 - `NN.png`
-- ein flacher `03-bilder/`
+- one flat `03-bilder/`
 - Audio/Remotion/Export
 
 ## Observable Scene First
@@ -58,12 +89,7 @@ spoken meaning
 → final prompt
 ```
 
-Diese Logik ist bildweltunabhängig und bleibt aktiv.
+## Production rule
 
-## Nächster Schritt
-
-Eine neue Bildwelt wird von Grund auf definiert. Erst danach werden:
-1. Style-/Character-Regeln erstellt
-2. Flow-Prompt-Architektur mit der neuen Welt befüllt
-3. Referenz-/Cover-Workflow final festgelegt
-4. neue Videos produziert
+New videos use the active visual world automatically.
+Historical projects are not retroactively migrated unless explicitly requested.

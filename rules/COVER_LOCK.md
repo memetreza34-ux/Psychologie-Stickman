@@ -5,12 +5,11 @@
 `03-bilder/01.png` is always:
 1. Scene/BILD 01
 2. cover/thumbnail source
+3. visual episode reference after user approval
 
-## Visual-world gate
+## Active visual world
 
-Current visual world: **UNDEFINED**.
-
-Cover generation must not start until the new visual world is explicitly approved.
+Use `rules/PSYCHOLOGY_STICKMAN_WORLD.md` (`PSYCHOLOGY_STICKMAN_WORLD_V1`).
 
 ## Core rule
 
@@ -43,7 +42,7 @@ Do not let an abstract effect name become the visual idea automatically.
 - reserved title space
 - readable at small size
 
-The exact render/character/style rules will come from the future approved visual world.
+People must use the approved Psychology Stickman species. Clothing, hair, accessories, role, era and emotion should fit the actual topic rather than a fixed channel mascot.
 
 ## Cover text
 
@@ -61,7 +60,19 @@ The exact render/character/style rules will come from the future approved visual
 5. Use meaningfully different compositions.
 6. STOP for user choice.
 7. Winner → `01.png` → `03-bilder/`.
-8. Only then may later 5-image batches begin.
+8. Approved `01.png` becomes the visual episode reference.
+9. Only then may later 5-image batches begin.
+
+## Reference meaning
+
+The winning cover anchors:
+- stickman species
+- linework
+- cel shading
+- texture
+- general rendering quality
+
+It does not force later scenes to reuse the exact same person, pose, place, palette or composition unless story continuity requires it.
 
 ## Approval
 
@@ -71,6 +82,4 @@ Cover passes only when:
 - text is correct/readable
 - thumbnail works small
 - no unrelated clutter
-- the approved new visual world is followed
-
-Until a new visual world exists, approval cannot be completed.
+- the approved Psychology Stickman World is followed

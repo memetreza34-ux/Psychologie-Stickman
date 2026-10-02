@@ -58,20 +58,37 @@ Choose camera because it clarifies the beat:
 - close for a specific reaction/object
 - low/high only when hierarchy/scale needs it
 
-## Visual-world status
+## Active visual world
 
-Current status: **UNDEFINED**.
+Use `rules/PSYCHOLOGY_STICKMAN_WORLD.md`.
 
-This planning file does not define:
-- character style
-- 2D/3D
-- linework
-- color language
-- shading
-- texture
-- visual reference pack
+Every person must remain in the same established stickman species and illustrator language.
 
-Those will be added only after the new visual world is explicitly approved.
+Per beat, adapt only what the script actually calls for:
+- clothing
+- hair/accessories
+- role / status
+- age cues
+- historical era
+- location
+- local color/light/mood
+- expression/posture
+
+Do not force a permanent protagonist across unrelated beats.
+Reuse identity only when the story follows the same person.
+
+## Emotion
+
+When emotion matters, plan observable cues such as:
+- gaze
+- head angle
+- shoulders
+- hands
+- distance
+- who stands/sits
+- who blocks or approaches
+- group spacing
+- interaction with relevant objects
 
 ## Text policy
 
@@ -84,13 +101,12 @@ Each video uses exactly one:
 
 `02-google-flow/google-flow-prompt.txt`
 
-Do not start Phase 2 image generation while the visual world is undefined.
-
 ## Flow output
 
 Follow `rules/FLOW_OUTPUT_MODE.md`:
 - 3 covers first
 - user selection
+- approved `01.png` becomes episode visual reference
 - then 5-image batches
 - separate 16:9 assets
 - `NN.png`

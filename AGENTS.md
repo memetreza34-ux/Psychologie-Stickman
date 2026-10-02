@@ -10,37 +10,42 @@ Ein neuer Chat startet read-only. Schreiben nur bei ausdrücklicher aktueller Nu
 
 1. `CANONICAL_RULES.md`
 2. `PROJECT_BRAIN.md`
-3. `rules/FLOW_OUTPUT_MODE.md`
-4. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
-5. `rules/FLOW_PROMPT_ARCHITECTURE.md`
-6. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-7. `rules/REPRESENTATION_VARIETY_LOCK.md`
-8. `rules/COVER_LOCK.md`
-9. relevante Script-/Format-/Audio-/Exportregeln
+3. `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
+4. `rules/FLOW_OUTPUT_MODE.md`
+5. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
+6. `rules/FLOW_PROMPT_ARCHITECTURE.md`
+7. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+8. `rules/REPRESENTATION_VARIETY_LOCK.md`
+9. `rules/COVER_LOCK.md`
+10. relevante Script-/Format-/Audio-/Exportregeln
 
 ## Kanal
 
 Nische: **Psychologie & menschliches Verhalten**.
 
-## VISUAL WORLD STATUS — UNDEFINED
+## VISUAL WORLD STATUS — ACTIVE
 
-Es gibt aktuell **keine aktive Bildwelt**.
+Binding visual world:
 
-Nicht selbstständig festlegen oder aus alten Dateien ableiten:
-- Character-DNA
-- Stickman-/Menschenform
-- 2D/3D-Stil
-- Rendering
-- Farben
-- Shading
-- feste Negativ-Prompts
-- Referenzbilder
+`PSYCHOLOGY_STICKMAN_WORLD_V1`
 
-Alte Visual-World-IDs und gelöschte Style-Locks sind nicht mehr aktiv.
+Source: `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
 
-### Produktionssperre
+Kern:
+- hochwertige handgezeichnete 2D-Animationswelt
+- gleiche Stickman-Spezies für alle Menschen
+- übergroße runde/soft-ovale helle Köpfe
+- winzige schwarze ovale Augen, minimale expressive Gesichter
+- schmale bekleidete Torsi
+- sehr dünne dunkle Stickman-Arme/-Beine
+- organische Outlines, weiches Cel-Shading, dezente Zeichentextur
+- natürliche klare Farben
+- kein permanenter Kanal-Charakter
+- Kleidung, Haare, Accessoires, Rolle, Epoche, Ort, Licht, Farbe und Emotion passen sich dem Script an
 
-Keine neue Google-Flow-Bildproduktion, bis der Nutzer eine neue Bildwelt ausdrücklich definiert/freigegeben hat.
+Gleiche Figur nur dann wiederverwenden, wenn die Story-Kontinuität dieselbe Person verlangt.
+
+Dark Psychology darf dunkel, kalt, intim und spannungsvoll sein, aber Wirkung entsteht über Blick, Haltung, Distanz, Blocking, Hände, Kamera und Licht statt Horror-Klischees.
 
 ## Visual Director
 
@@ -64,12 +69,14 @@ Pro Video genau:
 
 Keine mehreren Master-Prompts.
 
-## Cover + Batches
+## Cover + Referenz + Batches
 
 - BILD 01 only
 - genau 3 getrennte 16:9 Cover-Kandidaten
 - STOP für Nutzerwahl
 - Gewinner → `01.png`
+- `01.png` ist die visuelle Episodenreferenz für Spezies/Linework/Shading/Textur/Finish
+- spätere Personen, Kleidung, Orte, Farben und Stimmung dürfen sich scriptgerecht ändern
 - danach 5er-Batches
 - jede Bildnummer eigene Datei
 - akzeptierte Bilder sofort `NN.png`

@@ -28,7 +28,7 @@ Use a character/human scene when action, reaction, hierarchy, social pressure or
 Prefer a no-human visual when an object, environment, comparison or mechanism explains the beat faster.
 Never add a person merely to fill empty space.
 
-The future approved visual world will define how people actually look.
+When people are used, follow `PSYCHOLOGY_STICKMAN_WORLD_V1`: same stickman species and illustrator language, but clothing, hair, role, era, expression and posture adapt to the script.
 
 ## No quotas
 
@@ -53,8 +53,7 @@ If text is unnecessary: `ZERO READABLE TEXT`.
 
 Use a schema only when the viewer benefits from seeing a mechanism, sequence or relation structurally.
 Do not use a schema merely because the spoken sentence is abstract.
-
-The future approved visual world will define the rendering style of schemas and all other representations.
+Schemas must use the same hand-drawn 2D world language rather than a foreign corporate-vector style.
 
 ## Sequence-level variety
 
@@ -67,12 +66,7 @@ Avoid repetitive runs of the same:
 
 Variation should come from the content, not a mechanical rotation pattern.
 
-## Visual-world gate
-
-Current visual-world status: **UNDEFINED**.
-
-This file must not define color palette, character anatomy, linework, shading, 2D/3D rendering or reference images.
-Those belong to the new visual world once the user approves it.
+The same channel world may move between bright, dark, historical, social, domestic and professional settings. Rendering identity stays fixed while scene mood and content adapt.
 
 ## QA
 
@@ -82,5 +76,6 @@ Review the plan when:
 - schemas/text frames are filler
 - adjacent scenes repeat the same staging despite different beats
 - representation choice makes the current beat less clear
+- visual variety accidentally breaks the shared Psychology Stickman World
 
-This rule complements `rules/YOUTUBE_VISUAL_BEAT_RULES.md` and `rules/FLOW_OUTPUT_MODE.md`.
+This rule complements `rules/PSYCHOLOGY_STICKMAN_WORLD.md`, `rules/YOUTUBE_VISUAL_BEAT_RULES.md` and `rules/FLOW_OUTPUT_MODE.md`.

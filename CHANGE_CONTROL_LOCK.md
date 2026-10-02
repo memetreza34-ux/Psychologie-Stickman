@@ -72,29 +72,33 @@ Fertiges Upload-Paket:
 └── youtube-upload.txt
 ```
 
-## VISUAL WORLD STATUS — UNDEFINED
+## VISUAL WORLD STATUS — ACTIVE
 
-Die bisherige Bildwelt wurde auf ausdrücklichen Nutzerwunsch entfernt.
+Aktive Bildwelt für neue Produktionen:
 
-Aktuell gibt es:
-- **keine aktive Bildwelt**
-- **keine aktive Character-DNA**
-- **keine aktive Style-DNA**
-- **kein aktives visuelles Referenzpaket**
+`rules/PSYCHOLOGY_STICKMAN_WORLD.md`
 
-Bis eine neue Bildwelt ausdrücklich definiert und freigegeben wurde:
-- keine neue Google-Flow-Bildproduktion starten
-- keinen alten Stil aus bestehenden Videos ableiten
-- keine gelöschten Visual-World-Regeln wiederherstellen
-- keine früheren Namen/IDs als Default verwenden
+Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
-Bestehende Video-Projekte bleiben historische Projektartefakte und sind keine Quelle der neuen Bildwelt.
+Kern:
+- hochwertige handgezeichnete 2D-Animationswelt
+- eine feste Stickman-Spezies für alle Menschen
+- übergroße runde/soft-ovale helle Köpfe, winzige schwarze ovale Augen
+- schmale bekleidete Körper, sehr dünne dunkle Stickman-Arme/-Beine
+- organische dunkle Outlines, weiches Cel-Shading, dezente Zeichentextur
+- Kleidung, Haare, Accessoires, Rolle, Epoche, Ort, Farbe, Licht und Emotion passen sich dem Script an
+- keine feste Kanalfigur / kein erzwungener Character A/B Cast
+- derselbe Mensch wird nur wiederverwendet, wenn die Story-Kontinuität es verlangt
+- Gewinner-Cover `01.png` ist die visuelle Referenz für die restliche Episode, nicht die feste Komposition oder zwingend dieselbe Person
 
-## Weiterhin aktive, bildweltunabhängige Regeln
+Bestehende Video-Projekte bleiben historische Projektartefakte und werden nicht automatisch migriert.
+
+## Weiterhin aktive Prozessregeln
 
 - `rules/FLOW_OUTPUT_MODE.md`
 - `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
 - `rules/FLOW_PROMPT_ARCHITECTURE.md`
 - `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+- `rules/REPRESENTATION_VARIETY_LOCK.md`
 - `rules/COVER_LOCK.md`
 - Script-/Format-/Audio-/Exportregeln

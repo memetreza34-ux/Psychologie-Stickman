@@ -2,43 +2,54 @@
 
 ## VISUAL WORLD STATUS
 
-`UNDEFINED`
+`ACTIVE`
 
-Die bisherige Bildwelt, Character-DNA, Style-Locks und Referenzpakete wurden entfernt.
+Binding visual world for new productions:
 
-Es existiert aktuell **kein** verbindlicher Zeichenstil, keine verbindliche Figurenform und keine verbindliche Farb-/Render-DNA.
+`rules/PSYCHOLOGY_STICKMAN_WORLD.md`
 
-### Hard Gate
+Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
-Neue Bildproduktion mit Google Flow ist gesperrt, bis der Nutzer eine neue Bildwelt ausdrücklich definiert und freigegeben hat.
+## Visual-world core
 
-Nicht erlaubt:
-- alte Bildwelten aus Git-Historie wieder als Default verwenden
-- bestehende Videos als automatische Style-Quelle behandeln
-- stillschweigend wieder Stickman-/Cartoon-/3D-/Editorial-Regeln einführen
-- einen Stil selbst erfinden, bevor der Nutzer ihn freigibt
+The channel uses one coherent hand-drawn 2D animated psychology world.
 
-## Aktive Prozess-Quellen
+All visible people belong to the same stickman species:
+- oversized round or softly oval light/white heads
+- tiny black oval eyes and minimal expressive faces
+- narrow clothed torsos
+- very thin dark stick-like arms and legs
+- small simple hands and shoes
+- strong slightly organic dark outlines
+- soft cel shading
+- subtle illustrated texture
+- natural clear colors
 
-1. `rules/FLOW_OUTPUT_MODE.md`
-2. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
-3. `rules/FLOW_PROMPT_ARCHITECTURE.md`
-4. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-5. `rules/REPRESENTATION_VARIETY_LOCK.md`
-6. `rules/COVER_LOCK.md`
-7. `rules/TEXT_OVERLAY_LOCK.md`
-8. `rules/YOUTUBE_EXPORT_PACKAGE.md`
-9. Script-/Format-/Produktionsregeln
+There is no permanent channel mascot and no mandatory recurring Character A/B cast.
+People are designed to fit the script through clothing, hair, accessories, role, age cues, era, expression and posture while preserving the same species and illustrator language.
 
-Diese Dateien dürfen den Produktionsablauf definieren, aber **keine neue Bildwelt vorwegnehmen**.
+Locations, palettes and light adapt to the current beat. Bright, neutral, historical and dark-psychology scenes may look very different in mood while remaining unmistakably the same illustrated universe.
+
+## Active process sources
+
+1. `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
+2. `rules/FLOW_OUTPUT_MODE.md`
+3. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
+4. `rules/FLOW_PROMPT_ARCHITECTURE.md`
+5. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+6. `rules/REPRESENTATION_VARIETY_LOCK.md`
+7. `rules/COVER_LOCK.md`
+8. `rules/TEXT_OVERLAY_LOCK.md`
+9. `rules/YOUTUBE_EXPORT_PACKAGE.md`
+10. Script-/Format-/Produktionsregeln
 
 ## Observable Scene First
-
-Weiterhin aktiv:
 
 `spoken meaning → viewer takeaway → observable evidence → concrete composition → final prompt`
 
 Flow soll keine abstrakte Psychologie selbst visualisieren müssen. Effekt-Namen werden nicht automatisch wörtlich dargestellt.
+
+Emotion und Macht werden bevorzugt über sichtbare Evidenz gezeigt: Blick, Haltung, Abstand, Blocking, Hände, Gruppenabstände, Objektbeziehungen und konkrete Handlungen.
 
 ## Google Flow
 
@@ -46,19 +57,20 @@ Pro Video genau eine Datei:
 
 `02-google-flow/google-flow-prompt.txt`
 
-## Cover + Batching
+## Cover + visual reference + batching
 
 - BILD 01 zuerst
-- genau 3 getrennte Cover-Kandidaten
+- genau 3 getrennte 16:9 Cover-Kandidaten
 - STOP für Nutzerwahl
 - gewähltes Cover → `03-bilder/01.png`
+- `01.png` wird visuelle Episodenreferenz für Stickman-Spezies, Linien, Shading, Textur und Qualitätsniveau
+- spätere Szenen dürfen Personen, Kleidung, Ort, Kamera, Farbe, Licht und Stimmung scriptgerecht ändern
+- exakte Cover-Person nur wiederverwenden, wenn die Story dieselbe Person verlangt
 - danach 5er-Batches
 - jede Bildnummer bleibt eine eigene 16:9-Datei
 - akzeptierte Bilder sofort `NN.png`
 - alles gemeinsam in `03-bilder/`
 - kein Storyboard/Kontaktbogen/fertiges Video
-
-Wie das gewählte Cover später als visuelle Referenz genutzt wird, wird erst mit der **neuen Bildwelt** endgültig festgelegt.
 
 ## Text
 
@@ -79,4 +91,4 @@ Nur explizit geplanter deutscher Text. Sonst `ZERO READABLE TEXT`.
 
 ## Bestehende Projekte
 
-Bestehende Projekte werden nicht automatisch gelöscht oder migriert. Sie sind historische Projektstände und keine aktive Bildwelt.
+Bestehende Projekte werden nicht automatisch migriert. Sie bleiben historische Projektstände, bis der Nutzer ausdrücklich eine Migration verlangt.

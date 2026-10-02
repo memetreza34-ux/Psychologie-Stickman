@@ -2,32 +2,42 @@ GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
 
 TOPIC: [VIDEO-THEMA]
 FORMAT: 16:9 / 1920x1080
-VISUAL WORLD STATUS: UNDEFINED
+VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
-
-STOP — VISUAL WORLD NOT DEFINED
-
-Do NOT generate images from this template yet.
-
-Before production, replace this section with the NEW user-approved visual world:
-- channel style
-- character/person system if any
-- rendering language
-- color/light rules
-- reference policy
-- short reusable style anchor
-
-Do not reuse any deleted/old visual world automatically.
 
 TASK
 Create final separate 16:9 source images for one coherent YouTube video.
 One BILD number = one separate image.
 Never create a storyboard, contact sheet, collage or automatic video.
 
+ACTIVE VISUAL WORLD
+High-quality hand-drawn 2D animated psychology world.
+
+All people share one stickman species:
+- oversized round or softly oval light/white heads
+- tiny black oval eyes and minimal expressive faces
+- narrow clothed torsos
+- very thin dark stick-like arms and legs
+- small simple hands and shoes
+- strong slightly organic dark outlines
+- soft cel shading
+- subtle illustrated texture
+- natural clear colors
+
+There is no permanent channel mascot. Design people to fit the current script through clothing, hair, accessories, role, age cues, historical era, posture and expression while keeping the same stickman species.
+
+Locations, colors, light and mood adapt to the beat. Bright, neutral, historical and dark-psychology scenes may differ strongly in atmosphere while remaining the same illustrated universe.
+
+GLOBAL STYLE ANCHOR
+Same approved Psychology Stickman World: high-quality hand-drawn 2D animation, oversized round/soft-oval light heads, tiny black oval eyes and minimal expressive faces, narrow clothed torsos, very thin dark stick-like limbs, organic dark outlines, soft cel shading, subtle illustration texture and natural clear colors. All people share the same stickman species while clothing, hair, accessories, role, era, environment, light and mood adapt to the script.
+
+GLOBAL EXCLUSIONS
+No 3D/Pixar, anime, photorealism, normal-human anatomy drift or bare whiteboard-doodle look.
+
 VIDEO WORLD
-[Define only recurring people, places, props or continuity facts after the new visual world is approved.]
+[Define only script-specific recurring people, places, era, props or continuity facts. Do not invent a permanent channel protagonist.]
 
 COVER WORKFLOW — HARD LOCK
 1. Generate BILD 01 ONLY.
@@ -35,6 +45,8 @@ COVER WORKFLOW — HARD LOCK
 3. Same visual thesis and exact cover text, but 3 meaningfully different compositions.
 4. STOP and wait for the user to choose one.
 5. Chosen winner -> `01.png` -> `03-bilder/`.
+6. Use approved `01.png` as the episode visual reference for stickman species, linework, shading, texture and finish.
+7. Do NOT mechanically copy its exact person, composition, location, palette or mood unless story continuity requires it.
 
 AFTER COVER APPROVAL
 Generate remaining images in batches of exactly 5 whenever possible:
@@ -51,30 +63,33 @@ Put every accepted image directly in the same flat folder `03-bilder/`.
 Regenerate only failed images.
 After PASS, continue automatically.
 
+When image references / ingredients are supported, use approved `01.png` as the episode style reference for later batches.
+
 GLOBAL TEXT RULE
 Only render exact German text explicitly requested for that BILD.
 Otherwise: NO VISIBLE TEXT.
 
 PROMPTING RULE
-Use concrete visible action, posture, gaze, distance, object relation and environment activity.
+Use concrete visible action, posture, gaze, distance, hands, blocking, object relation and environment activity.
 Do not ask Flow to invent what an abstract psychological state looks like.
 Do not literalize a psychology-effect name automatically.
 One BILD = one dominant visible idea.
 
-STYLE ANCHOR
-[UNDEFINED — insert only after the new visual world is approved.]
-
 BILD 01
-[Do not write/generate until visual world is approved. Then: short natural prompt + exact German cover text + No other readable text.]
+[Short natural prompt: camera + concrete conflict/action + topic-appropriate people/clothing/place/light + exact German cover text + No other readable text.]
 
 BILD 02
-[Do not write/generate until visual world is approved.]
+[Short natural prompt focused on observable evidence. Keep same stickman species; adapt people, clothing, environment and mood to this beat.]
 
 [CONTINUE THROUGH BILD NN]
 
 FINAL QA
-- visual world is approved and no longer UNDEFINED
+- uses PSYCHOLOGY_STICKMAN_WORLD_V1
+- all people remain the same stickman species
+- people/clothing/role/era fit the script
+- bright/dark/historical mood changes do not change the art style
 - 3 separate cover candidates first, then STOP
+- approved 01.png used as episode visual reference
 - later images in 5-image batches
 - every BILD = separate 16:9 asset
 - accepted files renamed NN.png

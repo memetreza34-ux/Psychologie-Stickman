@@ -4,13 +4,11 @@
 
 Policy ID: `NATURAL_FLOW_MASTER_V2`
 
-## Visual-world gate
+## Active visual world
 
-Current visual-world status: **UNDEFINED**.
+Binding world: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
-This file defines prompt structure only. It must NOT invent the new channel style.
-
-No new Flow image generation may start until a new visual world has been explicitly defined and approved.
+Source: `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
 
 ## One master file
 
@@ -23,9 +21,9 @@ All images stay inside this one master file.
 ## Final prompt order
 
 1. TASK / OUTPUT
-2. VISUAL WORLD STATUS
-3. approved CHANNEL STYLE / CHARACTER SYSTEM once the new world exists
-4. VIDEO WORLD / continuity
+2. ACTIVE VISUAL WORLD
+3. short global channel-style/species block
+4. VIDEO WORLD / continuity facts for this script
 5. COVER WORKFLOW
 6. FIVE-IMAGE BATCH WORKFLOW
 7. GLOBAL TEXT RULE
@@ -41,11 +39,11 @@ Final BILD prompts stay short and direct:
 - main subject
 - exact visible action/relation
 - useful environment/props
-- light/color only according to the future approved visual world
+- scene-specific light/color/mood
 - continuity when needed
 - exact visible German text or `No visible text.`
 
-Do not repeat large technical forms inside every BILD.
+Do not repeat the full visual-world specification in every BILD.
 
 ## Observable Scene First
 
@@ -56,11 +54,27 @@ Use:
 Do not ask Flow to invent how an abstract psychological state looks.
 Do not literalize effect names automatically.
 
-## Visual style anchor
+## Global visual style anchor
 
-There is currently **no active style anchor**.
+Use this short anchor once near the top of the master and only repeat compactly when Flow needs reinforcement:
 
-When the new visual world is approved, define one short reusable anchor here and in the template. Until then, do not substitute an old Stickman/editorial/3D/cartoon style.
+`Same approved Psychology Stickman World: high-quality hand-drawn 2D animation, oversized round/soft-oval light heads, tiny black oval eyes and minimal expressive faces, narrow clothed torsos, very thin dark stick-like limbs, organic dark outlines, soft cel shading, subtle illustration texture and natural clear colors. All people share the same stickman species while clothing, hair, accessories, role, era, environment, light and mood adapt to the script.`
+
+Minimal global exclusions:
+- no 3D / Pixar
+- no anime
+- no photorealism
+- no normal-human anatomy drift
+- no bare whiteboard doodle look
+
+## People
+
+Do not invent a permanent protagonist.
+
+Design people from the current script and role while keeping the same species.
+Reuse exact identity only when story continuity clearly requires the same person.
+
+Emotion should be visible through action, gaze, posture, hands, spacing, blocking and object relations.
 
 ## Cover workflow
 
@@ -70,8 +84,9 @@ When the new visual world is approved, define one short reusable anchor here and
 - 3 meaningfully different compositions
 - STOP for user choice
 - winner → `01.png`
+- approved `01.png` becomes the episode visual reference for species, linework, shading, texture and finish
 
-How the approved cover is used as a visual reference will be finalized together with the new visual world.
+The approved cover is NOT a command to repeat its exact composition/person/location in later scenes.
 
 ## Later generation
 
@@ -87,6 +102,8 @@ Accepted images → `NN.png` → same flat `03-bilder/`.
 Regenerate only failed images.
 Never create storyboard/contact sheet/final video.
 
+When supported, attach/use `01.png` as the visual style reference / ingredient for later batches.
+
 ## Text
 
 Default: `No visible text.`
@@ -95,8 +112,8 @@ Only exact planned German wording may appear.
 
 ## Hard fail
 
-- image generation starts while `VISUAL WORLD STATUS` is `UNDEFINED`
-- an old deleted visual world is silently reused
+- people drift into a different species or normal cartoon-human anatomy
+- dark/bright/historical scenes switch to a foreign rendering style
 - Flow must invent the core visual idea
 - several scene numbers are combined into one asset
 - cover gate or five-image batching is broken
