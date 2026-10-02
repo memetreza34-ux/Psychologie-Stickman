@@ -1,0 +1,192 @@
+{
+  "status": "READY_FOR_GOOGLE_FLOW_COVER_TEST",
+  "format": "youtube",
+  "aspectRatio": "16:9",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "visualWorld": "PSYCHOLOGY_STICKMAN_WORLD_V1",
+  "visualDirectorPolicy": "OBSERVABLE_SCENE_FIRST_V1",
+  "representationVarietyPolicy": "REPRESENTATION_VARIETY_V1",
+  "flowOutputPolicy": "FINAL_SEPARATE_IMAGE_ASSETS_V2",
+  "flowPromptPolicy": "NATURAL_FLOW_MASTER_V2",
+  "scriptHookPolicy": "HOOK_FIRST_EXPLAIN_EARLY_V1",
+  "hookType": "WHY_DOES",
+  "coreConceptTerm": "psychologische Reaktanz",
+  "coreConceptIntroducedByScene": 2,
+  "realLifeExampleByScene": 4,
+  "realLifeExampleSummary": "Eine Person wird scharf angewiesen, ihr Handy nicht zu benutzen, und richtet danach besonders viel Aufmerksamkeit genau auf dieses Handy.",
+  "coverHeadline": "WARUM REIZEN VERBOTE?",
+  "coverTopicTerm": "psychologische Reaktanz",
+  "coverVisualThesis": "A young adult reaches back toward a smartphone while another person visibly restricts access to it; the conflict over freedom is readable through hands, gaze and distance rather than symbols.",
+  "coverMechanismVisible": true,
+  "visibleTextLanguage": "de",
+  "visibleTextRenderer": "GOOGLE_FLOW",
+  "flowTextMoments": [
+    {"scene": 1, "kind": "cover", "text": "WARUM REIZEN VERBOTE?"},
+    {"scene": 11, "kind": "speech", "text": "DU MUSST"}
+  ],
+  "batchPlan": [[2,3,4,5,6],[7,8,9,10,11],[12,13,14,15,16]],
+  "scenes": [
+    {
+      "scene": 1,
+      "speechSection": "Warum willst du manchmal genau das tun, sobald dir jemand sagt: Lass das?",
+      "viewerTakeaway": "A restriction can suddenly pull attention toward the restricted action.",
+      "observableEvidence": "At a small apartment table, one person slides a smartphone out of reach while the other immediately leans forward and reaches back toward it.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "thumbnail-ready medium-close conflict",
+      "mood": "tense everyday",
+      "textPolicy": "FLOW_EXACT_COVER_TEXT"
+    },
+    {
+      "scene": 2,
+      "speechSection": "Dieses Gegensteuern nennt man psychologische Reaktanz.",
+      "viewerTakeaway": "The same visible conflict is the everyday face of reactance.",
+      "observableEvidence": "The restricted person now sits back with crossed arms but keeps eyes fixed on the phone while the other person guards it calmly.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "medium two-shot",
+      "mood": "controlled tension",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 3,
+      "speechSection": "Vereinfacht gesagt: Wenn wir unsere Freiheit bedroht sehen, kann ein innerer Drang entstehen, sie wiederherzustellen.",
+      "viewerTakeaway": "Reactance motivates restoration of threatened freedom.",
+      "observableEvidence": "The restricted person reaches around the other person's blocking hand to reclaim the phone, focused on restoring access rather than using it yet.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "close-medium hands and faces",
+      "mood": "active resistance",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 4,
+      "speechSection": "Zum Beispiel sagt dir jemand in scharfem Ton, du dürftest auf keinen Fall dein Handy benutzen.",
+      "viewerTakeaway": "A controlling command creates a concrete freedom threat.",
+      "observableEvidence": "One adult points sternly toward a phone lying face-down on the table while the younger adult stiffens, pulls shoulders back and looks directly at the phone.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "medium three-quarter apartment view",
+      "mood": "tense",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 5,
+      "speechSection": "Plötzlich denkst du stärker an genau dieses Handy – selbst wenn es vorher gar nicht so wichtig war.",
+      "viewerTakeaway": "Attention can shift toward the restricted object.",
+      "observableEvidence": "The young adult sits on a sofa with a book open but keeps looking across the room at the phone placed on a high shelf.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "wide apartment composition",
+      "mood": "restless",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 6,
+      "speechSection": "Reaktanz bedeutet aber nicht, dass Menschen immer automatisch das Gegenteil tun.",
+      "viewerTakeaway": "Reactance is not an automatic opposite-behavior switch.",
+      "observableEvidence": "The same person notices the phone but then deliberately turns away, closes the room door and leaves it untouched.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "medium-wide exit shot",
+      "mood": "calmer",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 7,
+      "speechSection": "Forschung seit den 1960er Jahren zeigt vielmehr: Einschränkungen von Wahlfreiheit können Widerstand auslösen.",
+      "viewerTakeaway": "Reactance has a long research history.",
+      "observableEvidence": "A 1960s-inspired behavioral laboratory shows a participant at a table with two simple choices while a researcher visibly removes one option from reach.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "wide vintage lab establishing shot",
+      "mood": "clear research",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 8,
+      "speechSection": "Dieser Widerstand kann sich als Ärger, Gegenargumente oder der Wunsch zeigen, die bedrohte Freiheit zurückzugewinnen.",
+      "viewerTakeaway": "Reactance may show as anger, counterarguing and restoration attempts.",
+      "observableEvidence": "In a discussion, one person leans back with tense brows and crossed arms, then gestures back toward the restricted choice while the other continues explaining.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "close-medium social interaction",
+      "mood": "uneasy",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 9,
+      "speechSection": "Je wichtiger eine Freiheit für jemanden ist, desto stärker kann diese Reaktion ausfallen.",
+      "viewerTakeaway": "A highly valued freedom can produce stronger resistance when threatened.",
+      "observableEvidence": "A young adult with backpack is ready to leave an apartment for an important evening plan while another adult blocks the doorway; the traveler grips the strap and steps forward instead of backing away.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "medium-wide hallway shot",
+      "mood": "strong tension",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 10,
+      "speechSection": "Auch die Art, wie eine Botschaft formuliert ist, spielt eine Rolle.",
+      "viewerTakeaway": "Delivery style changes how a persuasive message is received.",
+      "observableEvidence": "One advisor and one listener sit at a desk; the advisor's posture shifts from finger-pointing and leaning in to an open-hand posture with two choices laid out on the table.",
+      "sceneType": "COMPARE_VISUAL",
+      "camera": "clean side-by-side comparison within one coherent scene",
+      "mood": "neutral explanatory",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 11,
+      "speechSection": "Sehr kontrollierende Sprache wie „Du musst“ oder „Du darfst auf keinen Fall“ kann mehr Widerstand hervorrufen.",
+      "viewerTakeaway": "Controlling language can increase resistance.",
+      "observableEvidence": "A supervisor leans forward and points at a seated employee who pulls slightly back, jaw tense and arms closing toward the body.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "medium office two-shot",
+      "mood": "pressured",
+      "textPolicy": "FLOW_EXACT_TEXT",
+      "flowText": "DU MUSST"
+    },
+    {
+      "scene": 12,
+      "speechSection": "Darum kann derselbe Rat anders wirken, wenn er echte Wahlmöglichkeiten lässt.",
+      "viewerTakeaway": "Choice can lower the sense of freedom threat.",
+      "observableEvidence": "A counselor places two clearly different options on the table with an open palm while the listener leans forward voluntarily and compares them.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "medium bright consultation scene",
+      "mood": "clear and open",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 13,
+      "speechSection": "Statt „Du musst sofort damit aufhören“ kann eine Formulierung wie „Du entscheidest selbst – hier sind die Folgen“ weniger Druck erzeugen.",
+      "viewerTakeaway": "Autonomy-supportive framing can feel less coercive.",
+      "observableEvidence": "A health advisor slides an information sheet forward but keeps hands open and body relaxed; the other person picks up the sheet by choice instead of being physically pressured.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "medium tabletop interaction",
+      "mood": "calm",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 14,
+      "speechSection": "Wichtig ist: Reaktanz erklärt nicht jede Trotzreaktion, und Menschen unterscheiden sich darin, wie stark sie darauf reagieren.",
+      "viewerTakeaway": "People vary; reactance is not a universal explanation.",
+      "observableEvidence": "Three different stickman adults receive the same restriction in a simple group exercise: one looks irritated, one neutral, and one accepts it calmly.",
+      "sceneType": "COMPARE_VISUAL",
+      "camera": "medium-wide three-person comparison",
+      "mood": "neutral explanatory",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 15,
+      "speechSection": "Sie hilft aber zu verstehen, warum Druck manchmal genau das Gegenteil dessen erreicht, was eigentlich beabsichtigt war.",
+      "viewerTakeaway": "Pressure can backfire in some contexts.",
+      "observableEvidence": "Back in an evening apartment, a person who had ignored the phone earlier now reaches decisively for it immediately after another person's blocking gesture becomes more forceful.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "dynamic medium shot",
+      "mood": "dark tense",
+      "textPolicy": "NONE"
+    },
+    {
+      "scene": 16,
+      "speechSection": "Wenn ein Verbot etwas plötzlich interessanter macht, verteidigst du vielleicht nicht die Sache selbst – sondern deine Freiheit.",
+      "viewerTakeaway": "The conflict may be about autonomy more than the object itself.",
+      "observableEvidence": "The person has reclaimed the phone but does not look at its screen; instead they look directly at the other person's blocking hand while holding the phone loosely at their side.",
+      "sceneType": "CHARACTER_SCENE",
+      "camera": "quiet close-medium ending shot",
+      "mood": "reflective",
+      "textPolicy": "NONE"
+    }
+  ]
+}

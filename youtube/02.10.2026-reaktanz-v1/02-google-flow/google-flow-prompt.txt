@@ -1,0 +1,130 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+TOPIC: Psychologische Reaktanz
+FORMAT: 16:9 / 1920x1080
+VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+
+TASK
+Create final separate 16:9 source images for one coherent psychology YouTube video.
+One BILD number = one separate image.
+Never create a storyboard, contact sheet, collage or automatic video.
+
+ACTIVE VISUAL WORLD
+High-quality hand-drawn 2D animated psychology world.
+All visible people use the same stickman species: oversized round or softly oval light/white heads, tiny black oval eyes, minimal expressive faces, narrow clothed torsos, very thin dark stick-like arms and legs, small simple hands and shoes, strong slightly organic dark outlines, soft cel shading, subtle illustrated texture and natural clear colors.
+
+There is no permanent channel mascot. Adapt clothing, hair, accessories, age cues, role, era, environment, light and mood to the current beat while keeping the same stickman species and the same illustrator/render language.
+
+GLOBAL STYLE ANCHOR
+Same approved Psychology Stickman World: high-quality hand-drawn 2D animation, oversized round/soft-oval light heads, tiny black oval eyes and minimal expressive faces, narrow clothed torsos, very thin dark stick-like limbs, organic dark outlines, soft cel shading, subtle illustration texture and natural clear colors. All people share the same stickman species while clothing, hair, accessories, role, era, environment, light and mood adapt to the script.
+
+GLOBAL EXCLUSIONS
+No 3D/Pixar, anime, photorealism, normal-human anatomy drift or bare whiteboard-doodle look.
+
+VIDEO WORLD
+The first phone example uses the same young adult across BILD 01–06 and again in BILD 15–16: short simple dark hair, muted rust-red hoodie, charcoal trousers, small off-white shoes. The restricting adult in BILD 01–04 and 15–16 wears a dark navy sweater and dark trousers. Keep these two people consistent when they return.
+
+Other people are newly designed for their role while staying in the exact same stickman species. BILD 07 uses a 1960s-inspired psychology lab. BILD 10–13 use modern office/consultation environments. BILD 14 uses a neutral group-exercise setting.
+
+COVER WORKFLOW — HARD LOCK
+1. Generate BILD 01 ONLY.
+2. Generate exactly 3 SEPARATE 16:9 cover candidates.
+3. All three use the exact headline: “WARUM REIZEN VERBOTE?”
+4. All three show the same core thesis: access to a smartphone is visibly restricted and the restricted person immediately focuses on reclaiming it.
+5. The three candidates must use meaningfully different compositions, not tiny pose changes.
+6. STOP and wait for the user to choose one.
+7. Chosen winner -> `01.png` -> `03-bilder/`.
+8. Use approved `01.png` as the episode visual reference for stickman species, linework, shading, texture and finish.
+9. Do not mechanically copy the cover composition in later scenes.
+
+BILD 01 — COVER ONLY
+Generate exactly three separate standalone 16:9 images:
+
+Candidate 1: thumbnail-ready medium-close apartment-table conflict. The rust-hoodie young adult reaches toward a smartphone while the navy-sweater adult slides it out of reach with one hand. Strong eye-line toward the phone, clear hand conflict, expressive posture, warm apartment light with slightly cooler shadow. Integrate exactly: “WARUM REIZEN VERBOTE?” Reserve clean title space without covering the hands or phone. No other readable text.
+
+Candidate 2: over-the-shoulder close composition from behind the restricting adult. A blocking hand is foreground-large beside the smartphone; the rust-hoodie young adult leans forward beyond it, eyes locked on the phone. Strong depth and emotional tension. Integrate exactly: “WARUM REIZEN VERBOTE?” No other readable text.
+
+Candidate 3: wider apartment composition. The navy-sweater adult places the smartphone high on a shelf while the rust-hoodie young adult immediately steps toward it and reaches upward. Use strong diagonal body language and clear separation between restricted person and object. Integrate exactly: “WARUM REIZEN VERBOTE?” No other readable text.
+
+STOP AFTER THE THREE BILD 01 CANDIDATES.
+
+AFTER COVER APPROVAL
+Generate remaining images in exactly these batches:
+- Batch 1: BILD 02–06
+- Batch 2: BILD 07–11
+- Batch 3: BILD 12–16
+
+Generate each whole five-image batch in one batch operation, but every BILD must remain one separate 16:9 image asset.
+Rename accepted results immediately to `NN.png` and keep all accepted files directly in the same flat `03-bilder/` folder.
+Regenerate only failed images. After a batch passes QA, continue automatically to the next batch.
+Use approved `01.png` as the episode style reference/ingredient when supported.
+
+GLOBAL TEXT RULE
+Only BILD 01 and BILD 11 contain readable text.
+All other BILDs: NO VISIBLE TEXT.
+Never invent English, signs, labels or gibberish.
+
+PROMPTING RULE
+Show psychology through visible action, gaze, posture, hands, distance, blocking and object relations. Do not visualize “reactance” as an aura, energy field, arrows or abstract symbol.
+
+BILD 02
+Medium two-shot at the same apartment table. The rust-hoodie young adult sits back with arms crossed, but their head and eyes stay fixed on the phone now held close to the navy-sweater adult. The other adult remains calm and composed. Keep the exact approved stickman species and returning identities from BILD 01. Warm practical light with restrained tension. No visible text.
+
+BILD 03
+Close-medium view focused on hands and faces. The rust-hoodie young adult reaches around the other adult’s blocking forearm to reclaim the smartphone, focused on regaining access rather than looking at the screen. The navy-sweater adult keeps one hand between the person and phone. Natural apartment detail, clear readable action. No visible text.
+
+BILD 04
+Medium three-quarter apartment scene. The navy-sweater adult stands beside the table and points firmly toward the face-down smartphone while the rust-hoodie young adult stiffens, shoulders pulled back, eyes fixed on the phone. Make the controlling interaction visible through posture and distance, not symbols. No visible text.
+
+BILD 05
+Wide evening apartment scene. The rust-hoodie young adult sits on a sofa with an open book but keeps looking across the room at the smartphone placed high on a shelf. The book is ignored; the body subtly leans toward the phone. Warm room light, quiet background detail, same returning character. No visible text.
+
+BILD 06
+Medium-wide doorway shot in the same apartment. The rust-hoodie young adult notices the phone on the shelf, pauses, then deliberately turns away and leaves the room without taking it. Show choice through body direction and the untouched phone in the background. Mood calmer and more open. No visible text.
+
+BILD 07
+Wide 1960s-inspired behavioral psychology laboratory. A participant in era-appropriate simple shirt and trousers sits at a table with two ordinary objects while a researcher in period clothing visibly removes one option from reach. Vintage institutional furniture, muted period colors, soft daylight, same stickman species and illustrator style. No readable labels or documents. No visible text.
+
+BILD 08
+Close-medium discussion scene in a neutral room. One adult stickman leans back with tense brows and crossed arms, then gestures back toward the restricted option on the table while another person continues explaining calmly. Use posture, brows and hand movement to show anger and counterarguing. Same stickman species, natural clothing colors. No visible text.
+
+BILD 09
+Medium-wide apartment-hallway scene at dusk. A young adult wearing a jacket and backpack is ready to leave for an important plan, while an older adult stands partly in the doorway and blocks the exit with one arm. The young adult grips the backpack strap and steps forward instead of retreating. Deep blue-gray hall with warm room light behind them. No visible text.
+
+BILD 10
+One coherent comparison scene in a modern consultation office. On the left, an advisor leans in and points rigidly at one option; the listener pulls back. On the right, the same kind of advisor uses an open palm with two options laid out while the listener leans forward voluntarily. Keep both sides in the same room and same art direction. No visible text.
+
+BILD 11
+Medium office two-shot. A supervisor leans forward and points firmly at a seated employee. The employee pulls slightly back, shoulders tense, arms closing toward the body, clearly resisting the pressure. Integrate one short speech bubble or message element with the exact German text: “DU MUSST”. No other readable text.
+
+BILD 12
+Bright consultation scene. A counselor places two clearly different options on a table with an open palm and relaxed posture. The listener leans forward voluntarily and compares them with one hand hovering between the choices. Clear daylight, calm colors, same stickman species. No visible text.
+
+BILD 13
+Medium tabletop health-advice scene. An advisor slides a simple information sheet toward another adult but keeps both hands open and body relaxed. The other person chooses to pick up the sheet without being physically pressured. The sheet has no readable writing. Warm-neutral light, clean professional environment. No visible text.
+
+BILD 14
+Medium-wide neutral group exercise. Three adult stickmen receive the same visible restriction: a facilitator removes one option from a small choice table. One participant looks irritated with tense shoulders, one remains neutral, and one accepts it calmly. Different simple clothing and hair cues, identical stickman species and renderer. No visible text.
+
+BILD 15
+Dynamic medium evening-apartment shot returning to the rust-hoodie young adult and navy-sweater adult. The phone lies on the table. The navy-sweater adult makes a firmer blocking gesture, and the rust-hoodie person immediately reaches decisively for the phone after previously ignoring it. Deep blue-gray shadows with warm lamp light. Keep returning identities exact. No visible text.
+
+BILD 16
+Quiet close-medium ending in the same apartment. The rust-hoodie young adult has reclaimed the phone and holds it loosely at their side without looking at the screen. Instead, they look directly at the navy-sweater adult’s lowered blocking hand, expression thoughtful rather than triumphant. Warm lamp light, cool night background, reflective final frame. No visible text.
+
+FINAL QA
+- use PSYCHOLOGY_STICKMAN_WORLD_V1 throughout
+- same stickman species and same illustrator/render language in every scene
+- returning phone-example people stay consistent
+- role, clothing, era, location, light and mood adapt to the script without style drift
+- three separate BILD 01 cover candidates first, then STOP
+- approved `01.png` becomes the episode style reference
+- later images generated in 5-image batches: 02–06, 07–11, 12–16
+- every BILD is a separate 16:9 asset
+- accepted files renamed `NN.png`
+- all accepted files directly in `03-bilder/`
+- no storyboard, contact sheet, collage or automatic video
+- only BILD 01 and BILD 11 contain planned readable German text
