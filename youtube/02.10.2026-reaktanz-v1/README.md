@@ -20,9 +20,9 @@ Cover-Headline:
 
 ## Ziel
 
-Erstes neues Video mit der aktiven Bildwelt `PSYCHOLOGY_STICKMAN_WORLD_V1`.
+Erstes neues Video mit der aktiven Bildwelt `PSYCHOLOGY_STICKMAN_WORLD_V1` und dem verschärften **Representation-First**-Ansatz.
 
-Das Video soll bewusst zeigen, dass die neue Welt sowohl helle Alltags-/Erklärungsszenen als auch dunklere, emotional angespannte Psychologie-Szenen tragen kann, ohne dass die Stickman-Spezies oder der Illustratorstil wechseln.
+Das Video soll zeigen, dass die neue Welt nicht aus 16 ähnlichen Figurenszenen besteht. Je nach Beat werden Figuren, Objekte, Umgebungen, Vergleiche, Schemata oder kurze Textillustrationen verwendet — immer im selben Illustrator-/Renderstil.
 
 ## Aktive Regeln
 
@@ -37,7 +37,7 @@ Das Video soll bewusst zeigen, dass die neue Welt sowohl helle Alltags-/Erkläru
 
 - `01-script/script.txt` — finales deutsches Voice-over-Script mit 16 Beats
 - `02-google-flow/google-flow-prompt.txt` — einzige Flow-Masterdatei mit allen 16 Bildern
-- `99-intern/phase1-scenes.json` — Observable-Evidence-/Visual-Beat-Planung
+- `99-intern/phase1-scenes.json` — Observable-Evidence-/Representation-Planung
 - `99-intern/sources.md` — Quellen und Claim-Check
 
 ## Hook-Check
@@ -48,6 +48,25 @@ Das Video soll bewusst zeigen, dass die neue Welt sowohl helle Alltags-/Erkläru
 - Szene 04: erstes konkretes Alltagsbeispiel
 
 Damit liegt der Kernbegriff vor Szene 03 und das erste Alltagsbeispiel vor Szene 05.
+
+## Representation-Mix
+
+Die 16 Beats sind bewusst gemischt:
+- 4 `CHARACTER_SCENE`
+- 3 `OBJECT_FOCUS`
+- 1 `ENVIRONMENT_SCENE`
+- 2 `SCHEMA_EXPLAINER`
+- 3 `COMPARE_VISUAL`
+- 3 `TEXT_ILLUSTRATION`
+
+Das ist keine feste Quote für andere Videos. Es zeigt nur, dass hier pro Beat die stärkste Darstellungsform gewählt wurde statt automatisch Menschen einzusetzen.
+
+Geplanter Text erscheint nur dort, wo die Formulierung selbst relevant ist:
+- BILD 01: `WARUM REIZEN VERBOTE?`
+- BILD 02: `PSYCHOLOGISCHE REAKTANZ`
+- BILD 08: `ÄRGER`, `GEGENARGUMENTE`, `FREIHEIT ZURÜCK`
+- BILD 11: `DU MUSST`
+- BILD 13: `DU ENTSCHEIDEST SELBST`
 
 ## Flow-Ablauf
 
@@ -68,13 +87,14 @@ Damit liegt der Kernbegriff vor Szene 03 und das erste Alltagsbeispiel vor Szene
 ## Bildwelt-Test
 
 PASS, wenn:
-- alle Menschen sofort zur selben hochwertigen Stickman-Spezies gehören
-- große helle Rund-/Ovalköpfe, kleine schwarze Augen, schmale bekleidete Körper und sehr dünne dunkle Gliedmaßen stabil bleiben
+- alle Bilder wie dieselbe handgezeichnete 2D-Serie wirken
+- Menschen nur dann erscheinen, wenn menschliches Verhalten wirklich die Evidenz ist
+- Figuren weiterhin klar dieselbe hochwertige Stickman-Spezies sind
+- Objekt-/Environment-/Schema-/Textbilder dieselben Outlines, Shading, Textur und Qualitätsstandards nutzen
 - Kleidung, Haare und Rollen passend zur jeweiligen Szene variieren
 - helle, neutrale, historische und dunkle Szenen trotzdem vom selben Illustrator wirken
 - die Figuren weder zu normalen Cartoon-Menschen noch zu nackten Whiteboard-Strichmännchen driften
-- Emotion über Blick, Haltung, Hände, Abstand und Blocking sichtbar wird
-- Räume und Gegenstände dieselbe 2D-Zeichensprache wie die Figuren verwenden
+- Emotion über sichtbare Evidenz wie Blick, Haltung, Hände, Abstand, Blocking, Objektbeziehung, Raum und Licht entsteht
 
 ## Inhaltliche Leitplanken
 

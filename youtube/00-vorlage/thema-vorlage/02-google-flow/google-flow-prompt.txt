@@ -4,6 +4,7 @@ TOPIC: [VIDEO-THEMA]
 FORMAT: 16:9 / 1920x1080
 VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 
@@ -15,7 +16,7 @@ Never create a storyboard, contact sheet, collage or automatic video.
 ACTIVE VISUAL WORLD
 High-quality hand-drawn 2D animated psychology world.
 
-All people share one stickman species:
+When people appear, they use one shared stickman species:
 - oversized round or softly oval light/white heads
 - tiny black oval eyes and minimal expressive faces
 - narrow clothed torsos
@@ -28,13 +29,29 @@ All people share one stickman species:
 
 There is no permanent channel mascot. Design people to fit the current script through clothing, hair, accessories, role, age cues, historical era, posture and expression while keeping the same stickman species.
 
+The world is NOT character-only. Objects, environments, comparisons, schemas and text-led illustrations use the exact same illustrator/render language.
+
 Locations, colors, light and mood adapt to the beat. Bright, neutral, historical and dark-psychology scenes may differ strongly in atmosphere while remaining the same illustrated universe.
 
 GLOBAL STYLE ANCHOR
-Same approved Psychology Stickman World: high-quality hand-drawn 2D animation, oversized round/soft-oval light heads, tiny black oval eyes and minimal expressive faces, narrow clothed torsos, very thin dark stick-like limbs, organic dark outlines, soft cel shading, subtle illustration texture and natural clear colors. All people share the same stickman species while clothing, hair, accessories, role, era, environment, light and mood adapt to the script.
+Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, minimal expressive faces, narrow clothed torsos and very thin dark stick-like limbs. People, clothing, objects, text, environment, era, light and mood adapt to the script.
 
 GLOBAL EXCLUSIONS
-No 3D/Pixar, anime, photorealism, normal-human anatomy drift or bare whiteboard-doodle look.
+No 3D/Pixar, anime, photorealism, normal-human anatomy drift, bare whiteboard-doodle look or foreign corporate-infographic style.
+
+REPRESENTATION FIRST — HARD RULE
+Before each BILD, use the representation already chosen in Phase 1:
+- CHARACTER_SCENE
+- OBJECT_FOCUS
+- ENVIRONMENT_SCENE
+- SCHEMA_EXPLAINER
+- COMPARE_VISUAL
+- TEXT_ILLUSTRATION
+
+People are optional.
+Do NOT turn every beat into a stickman scene just because the channel uses Stickmen or because the spoken line contains a person/pronoun.
+Use full characters only when visible human behavior or interaction is the clearest evidence.
+If an object, exact phrase, environment, mechanism or comparison explains the beat better, let that visual carry the frame.
 
 VIDEO WORLD
 [Define only script-specific recurring people, places, era, props or continuity facts. Do not invent a permanent channel protagonist.]
@@ -45,8 +62,9 @@ COVER WORKFLOW — HARD LOCK
 3. Same visual thesis and exact cover text, but 3 meaningfully different compositions.
 4. STOP and wait for the user to choose one.
 5. Chosen winner -> `01.png` -> `03-bilder/`.
-6. Use approved `01.png` as the episode visual reference for stickman species, linework, shading, texture and finish.
-7. Do NOT mechanically copy its exact person, composition, location, palette or mood unless story continuity requires it.
+6. Use approved `01.png` as the episode visual reference for linework, shading, texture, finish and, when people appear, the stickman species.
+7. Do NOT mechanically copy its exact person, composition, representation type, location, palette or mood unless story continuity requires it.
+8. A cover containing people does NOT require later images to contain people.
 
 AFTER COVER APPROVAL
 Generate remaining images in batches of exactly 5 whenever possible:
@@ -68,25 +86,28 @@ When image references / ingredients are supported, use approved `01.png` as the 
 GLOBAL TEXT RULE
 Only render exact German text explicitly requested for that BILD.
 Otherwise: NO VISIBLE TEXT.
+Text may be the primary subject in a TEXT_ILLUSTRATION when wording itself is the mechanism.
 
 PROMPTING RULE
-Use concrete visible action, posture, gaze, distance, hands, blocking, object relation and environment activity.
+Use concrete visible action, object relation, environment layout, exact text, posture, gaze, distance, hands or blocking according to the chosen representation.
 Do not ask Flow to invent what an abstract psychological state looks like.
 Do not literalize a psychology-effect name automatically.
 One BILD = one dominant visible idea.
 
 BILD 01
-[Short natural prompt: camera + concrete conflict/action + topic-appropriate people/clothing/place/light + exact German cover text + No other readable text.]
+[Short natural cover prompt: representation + concrete conflict/action + topic-appropriate world + exact German cover text + no other readable text.]
 
 BILD 02
-[Short natural prompt focused on observable evidence. Keep same stickman species; adapt people, clothing, environment and mood to this beat.]
+[Short natural prompt focused on observable evidence. Use the chosen representation; do not add people unless they are genuinely needed.]
 
 [CONTINUE THROUGH BILD NN]
 
 FINAL QA
 - uses PSYCHOLOGY_STICKMAN_WORLD_V1
-- all people remain the same stickman species
-- people/clothing/role/era fit the script
+- uses representation-first planning; people are optional
+- all people remain the same stickman species when present
+- object/environment/text/schema frames use the same illustrator/render language
+- people/clothing/role/era fit the script when people are present
 - bright/dark/historical mood changes do not change the art style
 - 3 separate cover candidates first, then STOP
 - approved 01.png used as episode visual reference

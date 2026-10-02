@@ -25,13 +25,14 @@ Every video uses exactly one:
 9. Use approved `01.png` as the episode visual reference for later images.
 
 `01.png` anchors:
-- stickman species
 - linework
 - shading
 - texture
 - general rendering quality
+- stickman species whenever people appear
 
-It does NOT force later scenes to copy the same composition, location, person, palette or mood unless continuity requires it.
+It does NOT force later scenes to copy the same composition, location, person, representation type, palette or mood unless continuity requires it.
+A cover containing people does NOT mean later images must contain people.
 
 ## Five-image batches
 
@@ -71,12 +72,20 @@ No cover folder. No batch folders. No duplicate accepted versions.
 Active world: `PSYCHOLOGY_STICKMAN_WORLD_V1`.
 
 Later batches must preserve:
-- same stickman species
 - same illustrator / line language
 - same cel-shading and texture language
 - same professional finish
+- same stickman species when people appear
 
-But script-specific people, clothing, hairstyle, accessories, place, era, color, light and mood may change.
+Representation may change beat by beat according to Phase 1:
+- character scene
+- object focus
+- environment scene
+- schema explainer
+- comparison
+- text illustration
+
+Objects, text, environments and schemas must look like they were drawn by the same illustrator as the character scenes.
 
 When Flow supports image references / ingredients, use approved `01.png` as the style reference for later batches.
 
@@ -88,4 +97,7 @@ Reject when:
 - accepted images are not renamed correctly
 - accepted images are split across folders
 - Flow creates a video instead of source images
-- later images drift into another human/cartoon species or another rendering style
+- later images drift into another rendering style
+- people drift into another human/cartoon species
+- non-character frames switch to a foreign infographic/vector style
+- Flow adds people to an object/text/environment frame despite the prompt explicitly choosing a non-character representation

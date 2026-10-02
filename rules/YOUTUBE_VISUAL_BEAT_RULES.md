@@ -14,6 +14,8 @@ Before the final image prompt, define:
 - `viewerTakeaway`
 - `observableEvidence`
 - `dominantRelation`
+- `sceneType`
+- `representationReason`
 - `literalMetaphorWarning`
 
 Weak:
@@ -22,7 +24,7 @@ Weak:
 - show conformity
 
 Strong:
-- describe who does what, where, with which object/relation, and what the viewer can literally see
+- describe what can literally be seen and why that visual form is best for this beat
 
 ## Do not literalize effect names
 
@@ -32,16 +34,22 @@ Spotlight Effect ≠ automatic spotlight.
 Anchor Effect ≠ automatic anchor.
 Halo Effect ≠ automatic halo.
 
-## Representation choice
+## Representation choice — HARD GATE
 
 Allowed:
-- character/human scene
-- object/environment scene
-- comparison
-- schema/mechanism
-- text illustration
+- `CHARACTER_SCENE`
+- `OBJECT_FOCUS`
+- `ENVIRONMENT_SCENE`
+- `SCHEMA_EXPLAINER`
+- `COMPARE_VISUAL`
+- `TEXT_ILLUSTRATION`
 
-Choose the clearest representation. No quotas.
+Choose the clearest representation BEFORE character design.
+
+The presence of words like `du`, `jemand`, `Person`, `Menschen`, `er` or `sie` does not automatically mean `CHARACTER_SCENE`.
+
+Use a character scene only when visible human behavior or relation is the core evidence.
+Use an object/environment/text/schema/comparison frame when that explains the beat faster or more clearly.
 
 ## Composition
 
@@ -52,19 +60,23 @@ Use montage only when all parts belong to one inseparable idea.
 
 ## Camera
 
-Choose camera because it clarifies the beat:
+Choose camera because it clarifies the chosen representation:
 - wide for environment/relations
 - medium for action + context
 - close for a specific reaction/object
+- top-down/tabletop for choices, objects, documents or mechanisms
 - low/high only when hierarchy/scale needs it
 
 ## Active visual world
 
 Use `rules/PSYCHOLOGY_STICKMAN_WORLD.md`.
 
-Every person must remain in the same established stickman species and illustrator language.
+When people appear, every person must remain in the same established stickman species and illustrator language.
+
+Object, environment, text and schema frames must use the same illustrator language too.
 
 Per beat, adapt only what the script actually calls for:
+- representation type
 - clothing
 - hair/accessories
 - role / status
@@ -79,7 +91,7 @@ Reuse identity only when the story follows the same person.
 
 ## Emotion
 
-When emotion matters, plan observable cues such as:
+When emotion matters and people are used, plan observable cues such as:
 - gaze
 - head angle
 - shoulders
@@ -90,10 +102,26 @@ When emotion matters, plan observable cues such as:
 - group spacing
 - interaction with relevant objects
 
+When people are not needed, mood can also be carried by object placement, environment, light, negative space and exact planned text.
+
+## Sequence-level review
+
+Before Phase 2, review the whole scene list.
+
+Flag a plan when:
+- nearly every beat became a full character scene
+- several adjacent scenes repeat the same social staging
+- a person is present only to hold/point at an object
+- object/text/environment alternatives were ignored
+
+For 10+ scene videos, roughly 75% or more full `CHARACTER_SCENE`s requires explicit `characterHeavyJustification`.
+
 ## Text policy
 
 Planned exact German text only.
 Otherwise: `ZERO READABLE TEXT`.
+
+Text may be the main subject when wording itself is the mechanism.
 
 ## Phase 2
 

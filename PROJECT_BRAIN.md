@@ -18,7 +18,7 @@ Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
 One coherent hand-drawn 2D animated psychology universe.
 
-All people share one stickman species:
+When people appear, they share one stickman species:
 - oversized round / softly oval light heads
 - tiny black oval eyes and minimal expressive faces
 - narrow clothed torsos
@@ -33,21 +33,39 @@ No permanent mascot. No forced recurring Character A/B cast.
 
 People are adapted to the script through clothing, hair, accessories, age cues, profession/social role, historical era, posture and expression while keeping the same visual species.
 
-The world may be bright, neutral, warm, cold, historical or dark depending on the current psychology beat. The renderer/species stays fixed; mood and scene content adapt.
+The world is not character-only. A beat may instead be object-focused, environment-led, text-led, a comparison or a simple mechanism/schema. All forms keep the same illustrator language.
+
+The world may be bright, neutral, warm, cold, historical or dark depending on the current psychology beat. The renderer/species stays fixed; representation, mood and scene content adapt.
+
+## Representation First
+
+Before designing characters, choose the clearest visual form:
+
+`CHARACTER_SCENE | OBJECT_FOCUS | ENVIRONMENT_SCENE | SCHEMA_EXPLAINER | COMPARE_VISUAL | TEXT_ILLUSTRATION`
+
+People are optional.
+
+Do not let words like `du`, `jemand`, `Person` or `Menschen` automatically create a character scene.
+
+Use full characters when human behavior/interaction is the evidence. Otherwise prefer the object, place, phrase, comparison or mechanism that carries the beat more directly.
+
+For 10+ scenes, roughly 75%+ full character scenes need explicit `characterHeavyJustification` or the plan must be reworked.
 
 ## Dark psychology
 
-Dark scenes should feel tense through observable behavior, spatial relations and motivated light rather than horror clichés.
+Dark scenes should feel tense through observable behavior, spatial relations, objects, environment and motivated light rather than horror clichés.
 
-Use:
+Possible tools:
 - gaze
 - posture
 - distance
 - blocking
-- who stands/sits
 - hands
 - group spacing
-- environmental context
+- doorway / room layout
+- phone / message / object placement
+- exact short text when wording itself matters
+- negative space and light
 
 ## Episode reference
 
@@ -59,8 +77,8 @@ Workflow:
 - winner becomes `01.png`
 - use `01.png` as the episode style reference for later images
 
-It anchors species, linework, shading, texture and finish.
-It does NOT force later images to copy the same person, composition, location, palette or mood unless story continuity requires it.
+It anchors linework, shading, texture and finish, plus the stickman species whenever people appear.
+It does NOT force later images to copy the same person, composition, representation type, location, palette or mood unless story continuity requires it.
 
 ## What remains fixed operationally
 
@@ -68,6 +86,7 @@ It does NOT force later images to copy the same person, composition, location, p
 - Script/Hook
 - Visual Beats
 - `OBSERVABLE_SCENE_FIRST_V1`
+- `REPRESENTATION_VARIETY_V1`
 - one central `02-google-flow/google-flow-prompt.txt`
 - 3 covers first
 - user chooses cover
@@ -85,11 +104,12 @@ It does NOT force later images to copy the same person, composition, location, p
 spoken meaning
 → viewer takeaway
 → observable evidence
+→ best representation
 → concrete composition
 → final prompt
 ```
 
 ## Production rule
 
-New videos use the active visual world automatically.
+New videos use the active visual world and representation-first gate automatically.
 Historical projects are not retroactively migrated unless explicitly requested.

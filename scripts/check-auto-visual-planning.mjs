@@ -18,7 +18,7 @@ const flowTextMoments = [{scene: 1, kind: 'cover', text: coverHeadline}];
 const beats = splitScriptIntoVisualBeats(sampleScript, {targetWords: 14, maxWords: 20, semanticSplit: true});
 const scenes = buildVisualBeatScenes(beats, {coverHeadline, flowTextMoments});
 const failures = [];
-const requiredFields = ['sceneType','visualIdea','subject','action','environment','camera','continuityPolicy','textPolicy','visualTask','compositionType','socialDensity','viewerTakeaway','observableEvidence','dominantRelation','literalMetaphorWarning'];
+const requiredFields = ['sceneType','representationReason','visualIdea','subject','action','environment','camera','continuityPolicy','textPolicy','visualTask','compositionType','socialDensity','viewerTakeaway','observableEvidence','dominantRelation','literalMetaphorWarning'];
 
 if (scenes.length < 5) failures.push(`expected at least 5 generated scenes, got ${scenes.length}`);
 
@@ -29,10 +29,14 @@ for (const scene of scenes) {
   if (!['standard', 'contrast'].includes(scene.compositionType)) failures.push(`scene ${scene.scene}: invalid compositionType '${scene.compositionType}'`);
   if (!['solo', 'duo', 'group', 'none'].includes(scene.socialDensity)) failures.push(`scene ${scene.scene}: invalid socialDensity '${scene.socialDensity}'`);
   if (!/OBSERVABLE-SCENE FIRST/iu.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask must use observable-scene-first planning`);
+  if (!/REPRESENTATION FIRST/iu.test(scene.visualTask)) failures.push(`scene ${scene.scene}: visualTask must use representation-first planning`);
 }
 
 if (scenes[0]?.isCover !== true) failures.push('scene 1 must be cover');
 if (scenes[0]?.textPolicy !== 'FLOW_EXACT_COVER_TEXT') failures.push('scene 1 must use exact cover text');
+
+const representationTypes = new Set(scenes.map((scene) => scene.sceneType));
+if (representationTypes.size < 2) failures.push('auto planning must produce more than one representation type for the mixed sample script');
 
 const spotlightScene = buildVisualBeatScenes(['Dieses Gefühl nennt man Spotlight-Effekt.'])[0];
 if (!/spotlight/iu.test(spotlightScene.literalMetaphorWarning ?? '')) failures.push('Spotlight-Effekt must trigger literal-metaphor warning');
@@ -43,11 +47,13 @@ fs.mkdirSync(tmpDir, {recursive: true});
 fs.writeFileSync(tmpScript, sampleScript.trim());
 try {
   const resolved = resolvePhase1Plan({format: 'youtube', autoFromScript: {scriptPath: tmpScript, targetWords: 14, maxWords: 20, semanticSplit: true, coverHeadline, flowTextMoments}}, 'auto-planning-qa');
-  if (resolved.visualWorldStatus !== 'UNDEFINED') failures.push('visual world must stay UNDEFINED');
+  if (resolved.visualWorldStatus !== 'ACTIVE') failures.push('visual world must be ACTIVE');
+  if (resolved.visualWorld !== 'PSYCHOLOGY_STICKMAN_WORLD_V1') failures.push('active Psychology Stickman World must be injected');
   if (resolved.visualDirectorPolicy !== 'OBSERVABLE_SCENE_FIRST_V1') failures.push('missing observable director policy');
+  if (resolved.representationVarietyPolicy !== 'REPRESENTATION_VARIETY_V1') failures.push('missing representation variety policy');
   if (resolved.flowPromptPolicy !== 'NATURAL_FLOW_MASTER_V2') failures.push('missing flow prompt policy');
   if (resolved.flowOutputPolicy !== 'FINAL_SEPARATE_IMAGE_ASSETS_V2') failures.push('missing output policy');
-  if (resolved.flowTextStylePolicy !== 'UNDEFINED_UNTIL_VISUAL_WORLD_APPROVED') failures.push('text style must remain undefined');
+  if (resolved.flowTextStylePolicy !== 'PSYCHOLOGY_STICKMAN_WORLD_V1') failures.push('text style must use the active world');
   if ('visualSystem' in resolved) failures.push('old visualSystem must not be auto-injected');
   if ('characterSystem' in resolved) failures.push('old characterSystem must not be auto-injected');
 } finally {
@@ -59,4 +65,4 @@ if (failures.length) {
   failures.forEach((x) => console.error(`- ${x}`));
   process.exit(1);
 }
-console.log(`AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes; visual world intentionally undefined.`);
+console.log(`AUTO VISUAL PLANNING QA: PASS — ${scenes.length} scenes; representations=${[...representationTypes].join(', ')}.`);

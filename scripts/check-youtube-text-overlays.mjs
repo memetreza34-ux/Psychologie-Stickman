@@ -20,7 +20,7 @@ const failures = [];
 const warnings = [];
 const countWords = (value) => String(value ?? '').trim().split(/\s+/u).filter(Boolean).length;
 const toTexts = (value) => (Array.isArray(value) ? value : [value]).map((item) => String(item ?? '').trim()).filter(Boolean);
-const allowedKinds = new Set(['cover', 'keyword', 'schema', 'comparison', 'text_illustration']);
+const allowedKinds = new Set(['cover', 'keyword', 'term', 'speech', 'schema', 'comparison', 'text_illustration']);
 
 for (const file of files) {
   if (file.split(path.sep).includes('00-vorlage')) continue;

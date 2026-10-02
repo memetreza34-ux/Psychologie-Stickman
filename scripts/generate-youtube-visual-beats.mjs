@@ -19,8 +19,10 @@ if (!scenes.length) throw new Error('No scenes were resolved.');
 
 const output = {
   ...resolved,
-  visualWorldStatus: 'UNDEFINED',
-  flowTextStylePolicy: resolved.flowTextStylePolicy ?? 'UNDEFINED_UNTIL_VISUAL_WORLD_APPROVED',
+  visualWorldStatus: 'ACTIVE',
+  visualWorld: 'PSYCHOLOGY_STICKMAN_WORLD_V1',
+  representationVarietyPolicy: resolved.representationVarietyPolicy ?? 'REPRESENTATION_VARIETY_V1',
+  flowTextStylePolicy: resolved.flowTextStylePolicy ?? 'PSYCHOLOGY_STICKMAN_WORLD_V1',
 };
 
 delete output.visualSystem;
@@ -41,9 +43,16 @@ fs.mkdirSync(path.dirname(absoluteOutput), {recursive: true});
 fs.writeFileSync(absoluteOutput, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
 
 const words = scenes.reduce((sum, scene) => sum + countWords(scene.speechSection), 0);
+const counts = scenes.reduce((acc, scene) => {
+  const type = String(scene.sceneType ?? 'UNKNOWN');
+  acc[type] = (acc[type] ?? 0) + 1;
+  return acc;
+}, {});
 console.log('YOUTUBE VISUAL BEATS MATERIALIZED');
 console.log(`Scenes: ${scenes.length}`);
 console.log(`Spoken words: ${words}`);
 console.log(`Average words/scene: ${(words / scenes.length).toFixed(1)}`);
-console.log('Visual world: UNDEFINED — Phase 2 image generation is blocked until a new world is approved.');
+console.log(`Visual world: ${output.visualWorld}`);
+console.log(`Representations: ${Object.entries(counts).map(([type, count]) => `${type}=${count}`).join(', ')}`);
+console.log('Representation rule: choose the clearest visual form first; people are optional.');
 console.log(`Output: ${absoluteOutput}`);

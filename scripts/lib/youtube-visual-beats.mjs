@@ -58,27 +58,56 @@ const lastWord = (text) => String(text).trim().split(/\s+/u).filter(Boolean).at(
 const inferSocialDensity = (beat) => {
   const text = String(beat);
   if (/\b(gruppe|gruppen|publikum|menschen|personen|teilnehm|kollegen|familie|freunde|beobachter|mehrere menschen)\b/iu.test(text)) return 'group';
-  if (/\b(gespräch|feedback|kritik|lob|freund|kollege|partner|gegenüber|verhandlung|zwei personen|jemand anderes)\b/iu.test(text)) return 'duo';
+  if (/\b(gespräch|feedback|kritik|lob|freund|kollege|partner|gegenüber|verhandlung|zwei personen|jemand anderes|chef|mitarbeiter|berater|lehrer|elternteil)\b/iu.test(text)) return 'duo';
   if (/\b(du|dich|dir|jemand|person|mensch|er|sie|teilnehmer|teilnehmende)\b/iu.test(text)) return 'solo';
   return 'none';
 };
 
-const inferCompositionType = (beat) => /\b(einerseits|andererseits|im vergleich|dagegen|während|stattdessen|erwartung|tatsächlich|vorher|nachher)\b/iu.test(String(beat)) ? 'contrast' : 'standard';
+const inferCompositionType = (beat) => /\b(einerseits|andererseits|im vergleich|dagegen|während|stattdessen|erwartung|tatsächlich|vorher|nachher|aber)\b/iu.test(String(beat)) ? 'contrast' : 'standard';
 
-const inferSceneType = (beat, socialDensity, compositionType) => {
+const inferSceneType = (beat, rawSocialDensity, compositionType, {textMoment, isCover} = {}) => {
   const text = String(beat);
   if (compositionType === 'contrast') return 'COMPARE_VISUAL';
-  if (socialDensity !== 'none') return 'CHARACTER_SCENE';
-  if (/\b(prozess|ablauf|schritt|mechanismus|führt zu|dadurch|folge|ursache|zwischen|verhältnis)\b/iu.test(text)) return 'SCHEMA_EXPLAINER';
-  return 'OBJECT_METAPHOR';
+
+  const languageCue = /\b(botschaft|formuliert|formulierung|sprache|satz|wort|wörter|sagt|sagen|heißt|nennt man|du musst|du darfst|verbot|warnung|hinweis)\b/iu.test(text);
+  const objectCue = /\b(handy|smartphone|telefon|preis|preisschild|schild|tür|karte|option|wahl|etikett|produkt|buch|datei|brief|nachricht|knopf|objekt|gegenstand|zettel|formular)\b/iu.test(text);
+  const environmentCue = /\b(bus|bahn|bibliothek|büro|wohnung|zimmer|labor|schule|universität|café|restaurant|laden|supermarkt|bahnhof|straße|wartezimmer|park|werkstatt)\b/iu.test(text);
+  const mechanismCue = /\b(mechanismus|prozess|ablauf|schritt|führt zu|dadurch|folge|ursache|verhältnis|freiheit bedroht|wiederherstellen|reaktanz|wirkung|zusammenhang)\b/iu.test(text);
+  const humanInteractionCue = /\b(fragt|antwortet|spricht|diskutiert|streitet|zeigt|weist an|befiehlt|blockiert|hilft|beobachtet|schaut|blickt|drängt|überredet|überzeugt|droht|lobt|kritisiert|lehnt sich|geht auf|tritt näher|zieht sich zurück)\b/iu.test(text);
+
+  if (!isCover && textMoment && languageCue) return 'TEXT_ILLUSTRATION';
+  if (mechanismCue && !humanInteractionCue && !objectCue) return 'SCHEMA_EXPLAINER';
+  if (objectCue && !humanInteractionCue) return 'OBJECT_FOCUS';
+  if (environmentCue && !humanInteractionCue && rawSocialDensity !== 'group') return 'ENVIRONMENT_SCENE';
+  if (rawSocialDensity === 'group' || humanInteractionCue || rawSocialDensity === 'duo') return 'CHARACTER_SCENE';
+  if (objectCue) return 'OBJECT_FOCUS';
+  if (environmentCue) return 'ENVIRONMENT_SCENE';
+  if (rawSocialDensity === 'solo') return 'OBJECT_FOCUS';
+  return 'SCHEMA_EXPLAINER';
 };
 
 const inferCamera = ({sceneType, socialDensity}) => {
   if (sceneType === 'COMPARE_VISUAL') return 'Use one clean comparison view where both states are immediately readable.';
+  if (sceneType === 'OBJECT_FOCUS') return 'Use a close, close-medium or tabletop view that makes the object relation immediately readable.';
+  if (sceneType === 'ENVIRONMENT_SCENE') return 'Use a wide or medium-wide establishing view where the place itself carries the evidence.';
+  if (sceneType === 'SCHEMA_EXPLAINER') return 'Use a clean illustrated mechanism view with one dominant relation and minimal labels only when planned.';
+  if (sceneType === 'TEXT_ILLUSTRATION') return 'Compose the exact planned wording as the primary visual inside the same illustrated world, supported by only a few useful props.';
   if (socialDensity === 'group') return 'Use a wide or medium-wide view that keeps the key social relation readable.';
   if (socialDensity === 'duo') return 'Use a medium or medium-wide interaction view with readable gaze, distance and action.';
   if (socialDensity === 'solo') return 'Use a medium or close-medium view only as close as needed to read the concrete action.';
-  return 'Choose the simplest view that makes the object/environment relation immediately understandable.';
+  return 'Choose the simplest view that makes the evidence immediately understandable.';
+};
+
+const representationReason = (sceneType) => {
+  const reasons = {
+    CHARACTER_SCENE: 'Visible human behavior or interaction is the clearest evidence for this beat.',
+    OBJECT_FOCUS: 'A concrete object relation can explain this beat more directly than another full character scene.',
+    ENVIRONMENT_SCENE: 'The place, layout or contextual environment is the clearest evidence for this beat.',
+    SCHEMA_EXPLAINER: 'The beat describes a mechanism or relation that benefits from one simple structured illustration.',
+    COMPARE_VISUAL: 'The viewer needs to see two states together to understand the contrast.',
+    TEXT_ILLUSTRATION: 'The wording itself is the mechanism, so exact planned text should lead the frame.',
+  };
+  return reasons[sceneType] ?? 'Choose the clearest visible form for this beat.';
 };
 
 const literalMetaphorGuard = (beat) => {
@@ -93,30 +122,35 @@ const literalMetaphorGuard = (beat) => {
   return guards.join(' ') || 'NONE';
 };
 
-const buildPlanningFields = (beat) => {
-  const socialDensity = inferSocialDensity(beat);
+const buildPlanningFields = (beat, options = {}) => {
+  const rawSocialDensity = inferSocialDensity(beat);
   const compositionType = inferCompositionType(beat);
-  const sceneType = inferSceneType(beat, socialDensity, compositionType);
-  const observableEvidence = socialDensity === 'group'
-    ? 'Plan one concrete social interaction with specific visible activities and gaze directions.'
-    : socialDensity === 'duo'
-      ? 'Plan one concrete two-person interaction with readable gaze, distance, posture and action.'
-      : socialDensity === 'solo'
-        ? 'Plan one concrete visible action/reaction with the relevant object or environment.'
-        : 'Plan one concrete object/environment relation or mechanism that can be drawn literally.';
+  const sceneType = inferSceneType(beat, rawSocialDensity, compositionType, options);
+  const socialDensity = ['CHARACTER_SCENE', 'COMPARE_VISUAL'].includes(sceneType) ? rawSocialDensity : 'none';
+  const evidenceByType = {
+    CHARACTER_SCENE: 'Plan one concrete human action/reaction/relationship with specific gaze, posture, spacing and behavior.',
+    OBJECT_FOCUS: 'Plan one concrete object relation that can carry the idea without a full character scene.',
+    ENVIRONMENT_SCENE: 'Plan one concrete environment/layout whose visible details carry the idea.',
+    SCHEMA_EXPLAINER: 'Plan one simple visible mechanism or relation with no decorative complexity.',
+    COMPARE_VISUAL: 'Plan one inseparable comparison where both states are readable at once.',
+    TEXT_ILLUSTRATION: 'Plan the exact approved wording as the primary visual with only supporting illustrated context.',
+  };
+  const observableEvidence = evidenceByType[sceneType] ?? 'Plan one concrete visible relation that can be drawn literally.';
+  const peopleRequired = sceneType === 'CHARACTER_SCENE' || (sceneType === 'COMPARE_VISUAL' && socialDensity !== 'none');
   return {
     sceneType,
+    representationReason: representationReason(sceneType),
     compositionType,
     socialDensity,
     viewerTakeaway: beat,
     observableEvidence,
-    dominantRelation: 'ONE observable action, relation or comparison only; define it concretely during creative review.',
+    dominantRelation: 'ONE observable action, object relation, mechanism, comparison or exact text focus only; define it concretely during creative review.',
     literalMetaphorWarning: literalMetaphorGuard(beat),
-    visualIdea: `Translate this spoken beat into concrete visible evidence: ${beat}`,
-    subject: socialDensity === 'none' ? 'Use no person unless a person is genuinely needed for the visible mechanism.' : 'Use the people required by the beat; character design remains undefined until the new visual world is approved.',
-    characterDirection: socialDensity === 'none' ? 'NO HUMAN REQUIRED unless semantically necessary.' : 'Describe role through visible posture, gaze, spacing and action. Do not define character style before the new visual world is approved.',
-    action: 'Describe what the subject is visibly doing. Replace abstract emotion with observable behavior.',
-    actionOrRelation: 'One visible action/relation/mechanism from the current beat only.',
+    visualIdea: `Translate this spoken beat into concrete visible evidence using the clearest representation: ${beat}`,
+    subject: peopleRequired ? 'Use only the people genuinely required by the visible mechanism.' : 'Do not add a full person unless the chosen representation genuinely needs one.',
+    characterDirection: peopleRequired ? 'Describe role through visible posture, gaze, spacing and action while using the active Psychology Stickman World.' : 'NO FULL CHARACTER BY DEFAULT; object/environment/text/schema may carry the frame.',
+    action: 'Describe what is visibly happening. Replace abstract psychology with observable evidence.',
+    actionOrRelation: 'One visible action/object relation/mechanism/comparison/text focus from the current beat only.',
     environment: 'Choose a concrete scene-specific place and props only when they help prove the beat.',
     camera: inferCamera({sceneType, socialDensity}),
     continuityPolicy: 'NEW_CHARACTER_DEFAULT_UNLESS_LOCAL_CONTINUITY',
@@ -159,8 +193,8 @@ export const buildVisualBeatScenes = (beats, options = {}) => {
   return beats.map((beat, index) => {
     const scene = index + 1;
     const isCover = scene === 1;
-    const plan = buildPlanningFields(beat);
     const textMoment = byScene.get(scene);
+    const plan = buildPlanningFields(beat, {textMoment, isCover});
     const textList = textMoment ? normalizeTextList(textMoment.texts ?? textMoment.text) : [];
     const quoted = textList.map((text) => `"${text}"`).join(', ');
     const textInstruction = textMoment ? `FLOW TEXT: render exactly ${quoted}. NO OTHER READABLE TEXT.` : 'FLOW TEXT: ZERO READABLE TEXT.';
@@ -176,7 +210,7 @@ export const buildVisualBeatScenes = (beats, options = {}) => {
       textPolicy: textMoment ? (isCover ? 'FLOW_EXACT_COVER_TEXT' : 'FLOW_EXACT_KEYWORD_TEXT') : 'NONE',
       ...(textMoment ? {flowText: textList.length === 1 ? textList[0] : textList, flowTextKind: textMoment.kind} : {}),
       ...plan,
-      visualTask: `${coverInstruction} OBSERVABLE-SCENE FIRST: ${plan.observableEvidence} ${plan.action} ${plan.environment} ${plan.camera}${literal} ${textInstruction}`.trim(),
+      visualTask: `${coverInstruction} REPRESENTATION FIRST: ${plan.representationReason} OBSERVABLE-SCENE FIRST: ${plan.observableEvidence} ${plan.action} ${plan.environment} ${plan.camera}${literal} ${textInstruction}`.trim(),
     };
   });
 };
@@ -195,9 +229,11 @@ export const resolvePhase1Plan = (plan, planPath = '') => {
   const flowTextMoments = normalizeFlowTextMoments({coverHeadline, flowTextMoments: auto.flowTextMoments ?? plan.flowTextMoments ?? [], sceneCount: beats.length});
   return {
     ...plan,
-    visualWorldStatus: 'UNDEFINED',
+    visualWorldStatus: 'ACTIVE',
+    visualWorld: 'PSYCHOLOGY_STICKMAN_WORLD_V1',
     visualPlanningPolicy: 'SEMANTIC_OBSERVABLE_VISUALS_V1',
     visualDirectorPolicy: 'OBSERVABLE_SCENE_FIRST_V1',
+    representationVarietyPolicy: 'REPRESENTATION_VARIETY_V1',
     flowPromptPolicy: 'NATURAL_FLOW_MASTER_V2',
     flowOutputPolicy: plan.flowOutputPolicy ?? 'FINAL_SEPARATE_IMAGE_ASSETS_V2',
     socialScenePolicy: 'SEMANTIC_SOCIAL_DENSITY_V1',
@@ -205,7 +241,7 @@ export const resolvePhase1Plan = (plan, planPath = '') => {
       visibleTextLanguage: 'de',
       visibleTextRenderer: 'GOOGLE_FLOW',
       flowSourceImageTextPolicy: 'PLANNED_EXACT_GERMAN_TEXT_ONLY',
-      flowTextStylePolicy: 'UNDEFINED_UNTIL_VISUAL_WORLD_APPROVED',
+      flowTextStylePolicy: 'PSYCHOLOGY_STICKMAN_WORLD_V1',
       preferNoVisibleText: true,
       coverHeadlineRequired: true,
       coverHeadline,

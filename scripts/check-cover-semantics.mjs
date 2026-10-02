@@ -24,14 +24,19 @@ for (const file of plans) {
   const rel = path.relative(process.cwd(), file);
   const plan = JSON.parse(fs.readFileSync(file, 'utf8'));
   if (plan.visualSystem) {
-    warnings.push(`${rel}: historical project with old visual system retained; skipped for new cover QA.`);
+    warnings.push(`${rel}: historical project with old visual system retained; skipped for current cover QA.`);
     continue;
   }
   if (plan.visualWorldStatus === 'UNDEFINED') {
     warnings.push(`${rel}: visual world UNDEFINED; cover generation is blocked.`);
     continue;
   }
-  if (plan.visualWorldStatus !== 'READY') continue;
+
+  const activeWorld = plan.visualWorld === 'PSYCHOLOGY_STICKMAN_WORLD_V1' || ['ACTIVE', 'READY'].includes(plan.visualWorldStatus);
+  if (!activeWorld) {
+    warnings.push(`${rel}: historical/non-active visual world; skipped for current cover QA.`);
+    continue;
+  }
 
   if (plan.coverMechanismVisible !== true) failures.push(`${rel}: coverMechanismVisible must be true.`);
   const topic = String(plan.coverTopicTerm ?? '').trim();
@@ -48,6 +53,7 @@ for (const file of plans) {
   }
   if (String(scene1.observableEvidence ?? '').trim().length < 12) failures.push(`${rel}: Scene 01 needs observableEvidence.`);
   if (String(scene1.dominantRelation ?? '').trim().length < 8) failures.push(`${rel}: Scene 01 needs dominantRelation.`);
+  if (String(scene1.representationReason ?? '').trim().length < 8) failures.push(`${rel}: Scene 01 needs representationReason.`);
 
   const promptPath = path.join(path.dirname(path.dirname(file)), '02-google-flow', 'google-flow-prompt.txt');
   if (!fs.existsSync(promptPath)) {
@@ -56,6 +62,7 @@ for (const file of plans) {
   }
   const prompt = fs.readFileSync(promptPath, 'utf8');
   if (/VISUAL WORLD STATUS:\s*UNDEFINED/iu.test(prompt)) failures.push(`${rel}: Flow prompt still has undefined visual world.`);
+  if (!/VISUAL WORLD:\s*PSYCHOLOGY_STICKMAN_WORLD_V1/iu.test(prompt)) failures.push(`${rel}: Flow prompt must use PSYCHOLOGY_STICKMAN_WORLD_V1.`);
   if (!/^BILD\s+01\s*$/gimu.test(prompt)) failures.push(`${rel}: Flow prompt missing BILD 01.`);
 }
 

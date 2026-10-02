@@ -29,15 +29,21 @@ const requiredWorkflow = (text, rel) => {
   must(text, /storyboard|contact sheet/iu, `${rel}: must explicitly address storyboard/contact-sheet output.`);
 };
 
+const requiredRepresentationFirst = (text, rel) => {
+  must(text, /representation first|best visual form|people are optional|people.*optional/iu, `${rel}: missing representation-first / people-optional rule.`);
+  must(text, /OBJECT_FOCUS|object-focused|object focus/iu, `${rel}: missing object-led representation option.`);
+  must(text, /TEXT_ILLUSTRATION|text-led|text illustration/iu, `${rel}: missing text-led representation option.`);
+};
+
 const templatePath = path.resolve('youtube/00-vorlage/thema-vorlage/02-google-flow/google-flow-prompt.txt');
 if (!fs.existsSync(templatePath)) failures.push('YouTube Flow template is missing.');
 else {
   const template = fs.readFileSync(templatePath, 'utf8');
-  must(template, /VISUAL WORLD STATUS:\s*UNDEFINED/iu, 'Template must declare visual world UNDEFINED.');
-  must(template, /Do NOT generate images|DO NOT generate images/iu, 'Template must block image generation while world is undefined.');
+  must(template, /VISUAL WORLD:\s*PSYCHOLOGY_STICKMAN_WORLD_V1/iu, 'Template must declare active PSYCHOLOGY_STICKMAN_WORLD_V1.');
   must(template, /OBSERVABLE_SCENE_FIRST_V1/iu, 'Template must keep observable-scene policy.');
   must(template, /FINAL_SEPARATE_IMAGE_ASSETS_V2/iu, 'Template must keep output policy.');
   requiredWorkflow(template, 'YouTube Flow template');
+  requiredRepresentationFirst(template, 'YouTube Flow template');
   if (oldMarkers.test(template)) failures.push('Template still contains a deleted/old visual-world marker.');
 }
 
@@ -54,6 +60,7 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
   }
   if (!/NATURAL_FLOW_MASTER_V2/iu.test(text)) continue;
   requiredWorkflow(text, rel);
+  if (/PSYCHOLOGY_STICKMAN_WORLD_V1/iu.test(text)) requiredRepresentationFirst(text, rel);
   const images = [...text.matchAll(/^BILD\s+(\d+)\s*$/gimu)];
   if (!images.length) failures.push(`${rel}: no BILD blocks found.`);
   images.forEach((match, index) => {

@@ -14,7 +14,7 @@ Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
 The channel uses one coherent hand-drawn 2D animated psychology world.
 
-All visible people belong to the same stickman species:
+When people appear, they all belong to the same stickman species:
 - oversized round or softly oval light/white heads
 - tiny black oval eyes and minimal expressive faces
 - narrow clothed torsos
@@ -27,6 +27,8 @@ All visible people belong to the same stickman species:
 
 There is no permanent channel mascot and no mandatory recurring Character A/B cast.
 People are designed to fit the script through clothing, hair, accessories, role, age cues, era, expression and posture while preserving the same species and illustrator language.
+
+The visual world is NOT character-only. Object-focused frames, environments, schemas, comparisons and text-led illustrations are equally valid when they explain the beat better. All forms keep the same illustrator/render language.
 
 Locations, palettes and light adapt to the current beat. Bright, neutral, historical and dark-psychology scenes may look very different in mood while remaining unmistakably the same illustrated universe.
 
@@ -43,13 +45,23 @@ Locations, palettes and light adapt to the current beat. Bright, neutral, histor
 9. `rules/YOUTUBE_EXPORT_PACKAGE.md`
 10. Script-/Format-/Produktionsregeln
 
-## Observable Scene First
+## Observable Scene First + Representation First
 
-`spoken meaning → viewer takeaway → observable evidence → concrete composition → final prompt`
+`spoken meaning → viewer takeaway → observable evidence → best representation → concrete composition → final prompt`
 
 Flow soll keine abstrakte Psychologie selbst visualisieren müssen. Effekt-Namen werden nicht automatisch wörtlich dargestellt.
 
-Emotion und Macht werden bevorzugt über sichtbare Evidenz gezeigt: Blick, Haltung, Abstand, Blocking, Hände, Gruppenabstände, Objektbeziehungen und konkrete Handlungen.
+Before character design, choose whether the beat is best shown as:
+- `CHARACTER_SCENE`
+- `OBJECT_FOCUS`
+- `ENVIRONMENT_SCENE`
+- `SCHEMA_EXPLAINER`
+- `COMPARE_VISUAL`
+- `TEXT_ILLUSTRATION`
+
+People are optional. A full character scene is used only when visible human behavior/interaction is the clearest evidence.
+
+Emotion and power are preferably shown through observable evidence: gaze, posture, distance, blocking, hands, group spacing, object relations, environmental context or exact planned wording.
 
 ## Google Flow
 
@@ -63,18 +75,26 @@ Pro Video genau eine Datei:
 - genau 3 getrennte 16:9 Cover-Kandidaten
 - STOP für Nutzerwahl
 - gewähltes Cover → `03-bilder/01.png`
-- `01.png` wird visuelle Episodenreferenz für Stickman-Spezies, Linien, Shading, Textur und Qualitätsniveau
-- spätere Szenen dürfen Personen, Kleidung, Ort, Kamera, Farbe, Licht und Stimmung scriptgerecht ändern
+- `01.png` wird visuelle Episodenreferenz für Linien, Shading, Textur und Qualitätsniveau sowie für die Stickman-Spezies, wenn Menschen erscheinen
+- spätere Szenen dürfen Representation, Personen, Kleidung, Ort, Kamera, Farbe, Licht und Stimmung scriptgerecht ändern
 - exakte Cover-Person nur wiederverwenden, wenn die Story dieselbe Person verlangt
+- Cover mit Menschen verpflichtet spätere Szenen NICHT zu Menschen
 - danach 5er-Batches
 - jede Bildnummer bleibt eine eigene 16:9-Datei
 - akzeptierte Bilder sofort `NN.png`
 - alles gemeinsam in `03-bilder/`
 - kein Storyboard/Kontaktbogen/fertiges Video
 
+## Sequence QA
+
+Bei 10+ Szenen ist eine Planung mit ungefähr 75% oder mehr `CHARACTER_SCENE`s ohne explizite `characterHeavyJustification` ein QA-Fail. Das ist keine Zielquote, sondern ein Schutz gegen den alten Fehler „jede Szene = Figurenbild“.
+
+Jede neue aktive Phase-1-Szene soll einen kurzen `representationReason` enthalten.
+
 ## Text
 
 Nur explizit geplanter deutscher Text. Sonst `ZERO READABLE TEXT`.
+Text darf Hauptmotiv sein, wenn die Formulierung selbst psychologisch relevant ist.
 
 ## Script
 

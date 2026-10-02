@@ -82,7 +82,7 @@ Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
 Kern:
 - hochwertige handgezeichnete 2D-Animationswelt
-- eine feste Stickman-Spezies für alle Menschen
+- eine feste Stickman-Spezies für alle sichtbaren Menschen
 - übergroße runde/soft-ovale helle Köpfe, winzige schwarze ovale Augen
 - schmale bekleidete Körper, sehr dünne dunkle Stickman-Arme/-Beine
 - organische dunkle Outlines, weiches Cel-Shading, dezente Zeichentextur
@@ -91,7 +91,23 @@ Kern:
 - derselbe Mensch wird nur wiederverwendet, wenn die Story-Kontinuität es verlangt
 - Gewinner-Cover `01.png` ist die visuelle Referenz für die restliche Episode, nicht die feste Komposition oder zwingend dieselbe Person
 
-Bestehende Video-Projekte bleiben historische Projektartefakte und werden nicht automatisch migriert.
+### Representation First — HARD LOCK
+
+Die aktive Bildwelt ist **nicht character-only**.
+
+Vor jeder Szene wird die beste sichtbare Darstellungsform gewählt:
+- `CHARACTER_SCENE`
+- `OBJECT_FOCUS`
+- `ENVIRONMENT_SCENE`
+- `SCHEMA_EXPLAINER`
+- `COMPARE_VISUAL`
+- `TEXT_ILLUSTRATION`
+
+Menschen sind optional. Eine Figur darf nicht nur deshalb erscheinen, weil der Kanal Stickmen nutzt oder der Sprechtext `du`, `jemand`, `Person` oder `Menschen` enthält.
+
+Bei 10+ Szenen sind ungefähr 75%+ volle `CHARACTER_SCENE`s ohne explizite `characterHeavyJustification` QA-Fail.
+
+Bestehende Video-Projekte bleiben historische Projektartefakte und werden nicht automatisch migriert, außer der Nutzer beauftragt die konkrete Migration/Verbesserung.
 
 ## Weiterhin aktive Prozessregeln
 

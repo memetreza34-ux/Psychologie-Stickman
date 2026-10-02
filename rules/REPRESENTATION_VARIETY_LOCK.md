@@ -6,72 +6,97 @@ Policy ID: `REPRESENTATION_VARIETY_V1`
 
 ## Core rule
 
-Do not force every visual beat into the same representation.
+Choose the **best visual form first**. Never choose a full character scene merely because the channel uses Stickmen or because the spoken sentence contains `du`, `jemand`, `Person` or another human pronoun.
 
-For every spoken beat, choose the clearest visible form first.
+For every spoken beat, ask:
+1. What must the viewer understand?
+2. What is the clearest observable evidence?
+3. Which representation explains it fastest with the least visual clutter?
 
 Allowed primary forms:
 - `CHARACTER_SCENE`
+- `OBJECT_FOCUS`
+- `ENVIRONMENT_SCENE`
 - `SCHEMA_EXPLAINER`
-- `OBJECT_METAPHOR`
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
-- environment/object-only illustration
 
-These are semantic choices, not style definitions.
+These are semantic choices, not style definitions. Every form stays inside `PSYCHOLOGY_STICKMAN_WORLD_V1`.
+
+## Character gate — HARD RULE
+
+A full character scene is justified when human behavior itself is the evidence, for example:
+- gaze / reaction
+- hierarchy / dominance
+- social pressure
+- conversation / conflict
+- blocking / approach / withdrawal
+- group behavior
+- emotion that depends on posture and relation
+
+Prefer a non-character representation when the beat is mainly about:
+- one object becoming important
+- a message / phrase / warning
+- a place or environmental condition
+- a mechanism or sequence
+- a direct comparison
+- a historical setup that can be shown through objects/room design
+- a number / price / short exact term
+
+A person may appear cropped or secondary in an object-led frame, but the frame should not be converted into another generic two-person scene.
 
 ## Human presence
 
 People are optional.
 
-Use a character/human scene when action, reaction, hierarchy, social pressure or relationship is central.
-Prefer a no-human visual when an object, environment, comparison or mechanism explains the beat faster.
-Never add a person merely to fill empty space.
-
 When people are used, follow `PSYCHOLOGY_STICKMAN_WORLD_V1`: same stickman species and illustrator language, but clothing, hair, role, era, expression and posture adapt to the script.
 
-## No quotas
+When people are not used, objects, environments, schemas and text still use the exact same outline, shading, texture, color and finish language.
 
-Do not force percentages for character scenes, schemas, comparisons, text frames or object images.
+## Sequence-level anti-repetition
 
-Clarity of the current beat wins.
+Do not let a whole video become:
+`person at table → person in room → two people talking → person at table → two people talking`.
 
-## Text restraint
+Across a normal 10+ scene video, deliberately review whether the sequence contains enough **genuinely different visual forms** to match the script.
 
-Visible text is not decoration.
+This is not a quota system. However, if roughly three quarters or more of a 10+ scene plan are full `CHARACTER_SCENE`s, the plan must include an explicit `characterHeavyJustification` explaining why human behavior is genuinely the clearest evidence throughout. Without that justification, the plan fails QA and must be reconsidered.
 
-Use text only when it materially improves understanding, for example:
-- cover/title
+Four or more consecutive full character scenes should trigger a review unless story continuity genuinely requires them.
+
+## Text-led frames
+
+Visible text is not decoration, but it is allowed when wording itself matters.
+
+Good uses:
 - exact psychology term
-- important number or price
-- short comparison/schema label
-- one memorable short phrase
+- exact controlling phrase
+- important number / price
+- short compare label
+- one concise warning / choice
 
 If text is unnecessary: `ZERO READABLE TEXT`.
+
+Text-led frames must look like illustrated frames from the same channel, not like presentation slides.
 
 ## Schema restraint
 
 Use a schema only when the viewer benefits from seeing a mechanism, sequence or relation structurally.
 Do not use a schema merely because the spoken sentence is abstract.
-Schemas must use the same hand-drawn 2D world language rather than a foreign corporate-vector style.
+Schemas use the same hand-drawn 2D world language rather than a foreign corporate-vector style.
 
-## Sequence-level variety
+## Planning metadata
 
-Avoid repetitive runs of the same:
-- camera distance
-- room/location
-- subject placement
-- representation type
-- text-card structure
+For new active-world phase-1 plans, every scene should include a short `representationReason` that explains why its chosen `sceneType` is the clearest form for that beat.
 
-Variation should come from the content, not a mechanical rotation pattern.
-
-The same channel world may move between bright, dark, historical, social, domestic and professional settings. Rendering identity stays fixed while scene mood and content adapt.
+For `CHARACTER_SCENE`, that reason should state what visible human behavior makes the character scene necessary.
 
 ## QA
 
-Review the plan when:
+Rewrite/review when:
 - nearly every scene uses people without need
+- a pronoun automatically caused `CHARACTER_SCENE`
+- a person is present only to hold or point at an object that could carry the frame itself
 - text appears repeatedly without explanatory value
 - schemas/text frames are filler
 - adjacent scenes repeat the same staging despite different beats
