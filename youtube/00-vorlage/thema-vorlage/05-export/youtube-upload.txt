@@ -49,7 +49,7 @@ ANGEHEFTETER KOMMENTAR
 
 
 ========================================
-CAPTIONS / SPRECHERTEXT
+SPRECHERTEXT / BACKUP
 ========================================
 
 [BEREINIGTER FINALER DEUTSCHER SPRECHERTEXT]
@@ -64,3 +64,4 @@ Sprache: Deutsch
 Format: YouTube 16:9
 Video: final.mp4
 Thumbnail: thumbnail.png
+Untertitel: captions.srt
