@@ -14,13 +14,15 @@ Ein neuer Chat startet read-only. Schreiben nur bei ausdrücklicher aktueller Nu
 4. `rules/TOPIC_UNIQUENESS_LOCK.md`
 5. `rules/YOUTUBE_THEMEN_SYSTEM.md`
 6. `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
-7. `rules/FLOW_OUTPUT_MODE.md`
-8. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
-9. `rules/FLOW_PROMPT_ARCHITECTURE.md`
-10. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-11. `rules/REPRESENTATION_VARIETY_LOCK.md`
-12. `rules/COVER_LOCK.md`
-13. relevante Script-/Format-/Audio-/Exportregeln
+7. `rules/VISUAL_SEQUENCE_HARDENING.md`
+8. `rules/FLOW_OUTPUT_MODE.md`
+9. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
+10. `rules/FLOW_PROMPT_ARCHITECTURE.md`
+11. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+12. `rules/REPRESENTATION_VARIETY_LOCK.md`
+13. `rules/COVER_LOCK.md`
+14. `rules/TEXT_OVERLAY_LOCK.md`
+15. relevante Script-/Format-/Audio-/Exportregeln
 
 ## Kanal
 
@@ -59,9 +61,11 @@ Kern:
 
 **Normaler Cartoon-Mensch = FAIL.** Historische, Büro-, Labor- oder Dark-Psychology-Szenen haben keine Ausnahme. Drifted frames regenerieren.
 
+**Same-frame lock:** Wenn mehrere Menschen in einem Bild sind, müssen alle dieselbe helle/weiße Basiskopf-Form, dieselbe Torso-Skala und dieselbe dünne Stickman-Anatomie besitzen. Haare/Kleidung ändern nicht die Spezies. Gemischter Cartoon-Mensch + Stickman = sofort regenerieren.
+
 ## Visual Director
 
-`OBSERVABLE_SCENE_FIRST_V1` + `REPRESENTATION_VARIETY_V1`:
+`OBSERVABLE_SCENE_FIRST_V1` + `REPRESENTATION_VARIETY_V1` + `VISUAL_SEQUENCE_HARDENING_V1`:
 
 ```text
 gesprochene Bedeutung
@@ -69,6 +73,7 @@ gesprochene Bedeutung
 → Observable Evidence
 → beste Representation
 → konkrete Komposition
+→ Motif-/Panel-QA
 → finaler Flow-Prompt
 ```
 
@@ -77,22 +82,32 @@ People are one tool, not the default.
 Allowed:
 `CHARACTER_SCENE | OBJECT_FOCUS | ENVIRONMENT_SCENE | SCHEMA_EXPLAINER | COMPARE_VISUAL | TEXT_ILLUSTRATION`
 
-## Sequence QA
+## Sequence QA — HARD
 
-Nicht nur Representation-Typen zählen. Prüfe auch die tatsächliche Bildfolge.
+Nicht nur Representation-Typen zählen. Prüfe die tatsächliche Bildfolge.
 
-Vermeiden:
+Jede neue/revidierte aktive Phase-1-Szene trägt:
+- `motifKey`
+- `visualChangeReason`
+- `panelCount`
+
+Vermeiden / regenerieren:
 - mehrere ähnliche beige/neutral Explainer-Flächen hintereinander
 - wiederholt zentriertes Objekt + Kreise/Pfeile
 - gleiche Kamera/Focal Scale in vielen Nachbarszenen
+- 3+ angrenzende Szenen mit demselben `motifKey` ohne echte Progression/Justification
+- 3-/4-Panel- oder 3-/4-Stufen-Erklärbilder als Standardlösung
 - kleine Figuren/Labels, die nur am großen Bildschirm funktionieren
 - überladene Schemata
+- ungeplanter lesbarer Text, besonders englische Überschriften, UI-/Packaging-Text oder Gibberish
 
-Bei 3+ aufeinanderfolgenden explainer-artigen Frames: aktiv nach stärkerer Environment-/Object-/Camera-Lösung suchen.
+Default: maximal **2 klar getrennte States/Panels pro BILD**. Bei 3 Schritten lieber auf mehrere Bilder verteilen, eine echte Szene zeigen oder auf Before/After reduzieren.
 
-Schemas: normalerweise ein Mechanismus, vorzugsweise max. 3 große Labels/Branches.
+Schemas: ein Mechanismus, vorzugsweise max. 3 große Labels/Branches und max. 2 sichtbare States/Panels.
 
 Text: groß, kurz, phone-readable; keine Mini-Absätze.
+
+Pacing: einfache Objekt-/Textbilder nicht künstlich sehr lange halten. Wenn der Voice-Beat zu lang ist, einen zweiten konkreten Visual Beat planen statt zufällige Bewegung hinzuzufügen.
 
 ## Google Flow — Struktur
 
@@ -118,6 +133,7 @@ Keine mehreren Master-Prompts.
 ## Text
 
 Nur geplanter deutscher Text. Sonst `ZERO READABLE TEXT`.
+Ungeplanter englischer/deutscher Text oder Pseudo-Text = FAIL und Regeneration.
 
 ## Format
 
