@@ -61,9 +61,12 @@ youtube/TT.MM.JJJJ-thema/
 ├── 05-export/
 │   ├── final.mp4
 │   ├── thumbnail.png
+│   ├── captions.srt
 │   └── youtube-upload.txt
 └── 99-intern/
 ```
+
+`captions.srt` liegt direkt in `05-export/`; es gibt keinen separaten Caption-/Subtitle-Ordner im normalen YouTube-Workflow.
 
 ## Aktive bildweltunabhängige Kernregeln
 
