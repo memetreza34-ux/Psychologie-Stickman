@@ -45,7 +45,7 @@ Behobene Fehler:
 - BILD 12 ist jetzt **eine einzige reale Laborszene** statt eines überladenen Multi-Panel-Erklärbilds
 - Default maximal **2 sichtbare States/Panels pro BILD**
 - ungeplanter englischer/deutscher Text oder Gibberish ist ausdrücklich ein Hard Fail
-- einfache Bilder sollen nicht künstlich lange gehalten werden; bei zu langen Voice-Beats wird künftig ein weiterer konkreter Visual Beat geplant
+- der lange Schlussbeat wurde in BILD 16 + BILD 17 geteilt, damit die Schlusskarte nicht zu lange statisch stehen bleibt
 
 Aktive neue Schutzregel:
 `VISUAL_SEQUENCE_HARDENING_V1`
@@ -69,9 +69,9 @@ Das Video nutzt `PSYCHOLOGY_STICKMAN_WORLD_V1`, strikten Same-Frame-Species-Lock
 
 ## Dateien
 
-- `01-script/script.txt` — finales deutsches Voice-over-Script mit 16 Beats
-- `02-google-flow/google-flow-prompt.txt` — einzige Flow-Masterdatei mit allen 16 Bildern
-- `99-intern/phase1-scenes.json` — Observable-Evidence-, Representation-, Motif- und Staging-Planung
+- `01-script/script.txt` — finales deutsches Voice-over-Script
+- `02-google-flow/google-flow-prompt.txt` — einzige Flow-Masterdatei mit allen 17 Visual Beats
+- `99-intern/phase1-scenes.json` — Observable-Evidence-, Representation-, Motif-, Panel- und Staging-Planung
 - `99-intern/sources.md` — Quellen und Claim-Check
 
 ## Hook-Check
@@ -85,9 +85,9 @@ Damit wird der Kernbegriff vor Szene 03 genannt und das erste Alltagsbeispiel ko
 
 ## Representation-Mix nach Revision
 
-Die 16 Beats verwenden:
+Die 17 Visual Beats verwenden:
 - 3 `CHARACTER_SCENE`
-- 5 `OBJECT_FOCUS`
+- 6 `OBJECT_FOCUS`
 - 4 `ENVIRONMENT_SCENE`
 - 0 `SCHEMA_EXPLAINER`
 - 2 `COMPARE_VISUAL`
@@ -100,7 +100,7 @@ Die vorherigen 3-Stufen-Schemata wurden bewusst durch echte Räume, konkrete Obj
 Nur drei BILDs enthalten lesbaren Text:
 - BILD 01: `WARUM REDEN WIR UNS DAS SCHÖN?`
 - BILD 02: `KOGNITIVE DISSONANZ`
-- BILD 16: `ÜBERZEUGT – ODER RECHTFERTIGT?`
+- BILD 17: `ÜBERZEUGT – ODER RECHTFERTIGT?`
 
 Alle anderen BILDs: `NO VISIBLE TEXT`.
 
@@ -124,9 +124,10 @@ Bewusst unterschiedliche Bildräume und Motive:
 - BILD 13: modernes Zuhause / Vergleich wird geschlossen
 - BILD 14: extremer Defekt-Close-up
 - BILD 15: weites modernes Forschungsumfeld
-- BILD 16: klare Reflexions-Textszene
+- BILD 16: kurzer ruhiger Objekt-Pausenbeat ohne Text
+- BILD 17: klare Reflexions-Textszene
 
-Jede Phase-1-Szene enthält jetzt `motifKey`, `visualChangeReason` und `panelCount`.
+Jede Phase-1-Szene enthält `motifKey`, `visualChangeReason` und `panelCount`.
 
 ## Flow-Ablauf
 
@@ -140,6 +141,7 @@ Jede Phase-1-Szene enthält jetzt `motifKey`, `visualChangeReason` und `panelCou
    - BILD 02–06
    - BILD 07–11
    - BILD 12–16
+   - BILD 17 als letzter Rest-Batch
 8. Jede Bildnummer bleibt eine separate 16:9-Datei.
 9. Akzeptierte Bilder sofort `NN.png` benennen und direkt in `03-bilder/` halten.
 10. Nur fehlgeschlagene Bilder regenerieren.
