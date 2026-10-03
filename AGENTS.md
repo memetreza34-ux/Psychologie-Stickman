@@ -134,7 +134,12 @@ Nur geplanter deutscher Text. Sonst `ZERO READABLE TEXT`.
 `05-export/`:
 - `final.mp4`
 - `thumbnail.png`
+- `captions.srt`
 - `youtube-upload.txt`
+
+`captions.srt` liegt direkt in `05-export/` und wird aus den finalen Voice-over-Timings erzeugt.
+Keine separaten `captions/`, `subtitles/` oder `untertitel/`-Ordner im normalen Workflow.
+Interne Word-Timings bleiben in `99-intern/`.
 
 ## QA
 
