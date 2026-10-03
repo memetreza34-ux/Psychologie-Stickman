@@ -5,6 +5,7 @@ FORMAT: 16:9 / 1920x1080
 VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
+VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 
@@ -14,32 +15,45 @@ One BILD number = one separate image.
 Never create a storyboard, contact sheet, collage or automatic video.
 
 ACTIVE VISUAL WORLD
-Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.
+Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: identical oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; hair/clothing may vary but never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.
 
 GLOBAL EXCLUSIONS
-No 3D/Pixar, anime, photorealism, normal-human anatomy drift, bare whiteboard doodle, foreign corporate infographic style or repetitive beige explainer-board default.
+No 3D/Pixar, anime, photorealism, normal-human anatomy drift, mixed human species in one frame, bare whiteboard doodle, foreign corporate infographic style, repetitive beige explainer-board default, 3-/4-panel explainer boards or unplanned readable text.
 
 REPRESENTATION FIRST — HARD RULE
 Use the representation specified for each BILD. People are optional.
 Do not add full stickman characters to object/text/environment frames just to fill space.
 
 STICKMAN SPECIES LOCK — HARD RULE
-Whenever people appear, preserve exactly: oversized light round/oval head, tiny black oval eyes, minimal face, narrow clothed torso, very thin dark stick-like arms and legs, small simplified hands and shoes. Clothing must follow the thin stickman body and must not create realistic shoulders, hips, thighs or normal cartoon-human volume.
-If any human becomes a normal cartoon person, regenerate that BILD.
+Whenever people appear, preserve exactly: identical oversized light round/oval base heads, tiny black oval eyes, minimal face, narrow clothed torsos, very thin dark stick-like arms and legs, small simplified hands and shoes.
+Hair sits on the same approved light/white head shell. Hair must NOT turn a head into a normal skin-toned cartoon-human face.
+Clothing must follow the thin stickman body and must not create realistic shoulders, chest, hips, thighs or normal cartoon-human volume.
+If several people share one image, ALL people must use the exact same base head construction, torso scale and limb thickness.
+If one person becomes a normal cartoon human while another remains a stickman, regenerate that BILD.
+
+MOTIF PROGRESSION — HARD RULE
+The same story prop may return, but neighboring frames must materially change action, context, object state, camera, focal scale or consequence.
+Do NOT create five near-identical headphone/product-display images in a row.
+The opening progression is deliberately: store conflict -> receipt/bag term image -> home post-purchase doubt -> top-down choice -> macro feature inspection -> historical research room.
+
+PANEL / STATE DENSITY — HARD RULE
+Default maximum: 2 distinct visible states/panels in one BILD.
+Never create a 3-part or 4-part explainer board, timeline or mini-storyboard.
+When an idea has three logical steps, show one coherent physical scene or split the logic across separate BILDs.
 
 SEQUENCE VARIETY / MOBILE READABILITY
-Avoid repeated neutral boards, centered-object diagrams and circles/arrows templates. Use real illustrated spaces, strong close-ups, historical environments and clear comparisons when specified.
-Every frame must work on a phone: one dominant focal idea, large subject, sparse text, no tiny crowds or dense arrow networks.
+Avoid repeated neutral boards, centered-object diagrams and circles/arrows templates. Use real illustrated spaces, strong close-ups, historical environments and clear two-state comparisons when specified.
+Every frame must work on a phone: one dominant focal idea, large subject, sparse text, no tiny crowds, dense arrow networks or many mini-panels.
 
 VIDEO WORLD / CONTINUITY
-Recurring present-day buyer for BILD 01, 03, 05, 13, 14 and 16 when visible: young adult stickman, short wavy dark hair, rust overshirt, cream T-shirt, charcoal trousers and small off-white shoes.
+Recurring present-day buyer for BILD 01 and only where explicitly needed later: young adult approved stickman, short wavy dark hair placed on the same light/white round head, rust overshirt over a narrow torso, cream T-shirt, charcoal trousers and small off-white shoes.
 Chosen product: generic matte blue over-ear headphones.
 Rejected alternative: generic muted green over-ear headphones.
 No readable brands, model names, product packaging text, websites or price labels.
 
 BILD 06–08 use a 1950s consumer-choice research setting.
 BILD 09–12 use a late-1950s forced-compliance laboratory with a repetitive wooden peg-and-spool task.
-Historical people still use the exact same approved stickman species with period-appropriate clothing.
+Historical people still use the exact same approved stickman base species with period-appropriate hair/clothing layered on top.
 
 IMPORTANT CONCEPT RULE
 Kognitive Dissonanz must NOT be visualized as a cracked brain, split head, lightning, glowing aura, abstract energy, two personalities or any other literalized “mental conflict” cliché. Show concrete choices, behavior, incentives, evaluation shifts and observable evidence.
@@ -48,7 +62,7 @@ COVER WORKFLOW — HARD LOCK
 1. Generate BILD 01 ONLY.
 2. Generate exactly 3 SEPARATE standalone 16:9 cover candidates.
 3. All three use the exact headline: “WARUM REDEN WIR UNS DAS SCHÖN?”
-4. All three express the same thesis: the buyer visibly protects the chosen blue headphones while still showing doubt about the similarly appealing rejected green pair.
+4. All three express the same thesis: one buyer visibly protects the chosen blue headphones while still glancing toward the similarly appealing rejected green pair.
 5. Use three meaningfully different thumbnail compositions.
 6. STOP and wait for the user to choose one.
 7. Chosen winner -> `01.png` -> `03-bilder/`.
@@ -66,81 +80,88 @@ Rename accepted results immediately to `NN.png` and keep all accepted files dire
 Regenerate only failed images. After a batch passes QA, continue automatically to the next batch.
 When supported, use approved `01.png` as the episode style reference / ingredient.
 
-GLOBAL TEXT RULE
+GLOBAL TEXT RULE — HARD
 Readable text is allowed only in BILD 01, BILD 02 and BILD 16.
 All other BILDs: NO VISIBLE TEXT.
-Never invent English, signs, labels, poster text, packaging text, form text or gibberish.
+Never invent English headings, German labels, signs, form text, poster text, packaging text, UI text, research-board text or gibberish.
+Any unplanned readable text = FAIL and regenerate.
 
 OBSERVABLE-SCENE RULE
-Show psychology through concrete visible evidence: choice, gaze, object placement, repeated action, weak versus strong incentive, before-versus-after evaluation and real research setups.
+Show psychology through concrete visible evidence: choice, gaze, object placement, repeated action, weak versus strong incentive, evaluation shifts and real research setups.
 Do not ask Flow to visualize an abstract mental state.
 One BILD = one dominant visible idea.
 
 BILD 01
 Generate exactly three separate standalone 16:9 cover candidates.
 
-Candidate 1: thumbnail-ready medium-close electronics-store scene. The recurring buyer clutches the chosen matte blue headphones and receipt defensively against the chest, but the tiny black oval eyes glance back toward the equally appealing muted green pair still on display. A friend beside them makes a neutral questioning gesture toward the alternative. Same approved stickman species. Integrate exactly: “WARUM REDEN WIR UNS DAS SCHÖN?” Large clean title, no other readable text.
+Candidate 1: thumbnail-ready medium-close electronics-store scene with ONE recurring buyer only. The buyer clutches the chosen matte blue headphones and receipt defensively against the narrow torso while the tiny black oval eyes glance sideways toward the muted green alternative still on a nearby display. Keep the green pair secondary but clearly visible. Exact approved stickman species: same light/white round base head, tiny eyes, narrow torso, very thin dark limbs. Integrate exactly: “WARUM REDEN WIR UNS DAS SCHÖN?” Large clean title, no other readable text.
 
-Candidate 2: strong over-shoulder thumbnail from behind the green rejected headphones in the foreground. The recurring buyer stands farther back holding the blue pair, body turned away as if the decision is finished but head turned back toward the green option with visible hesitation. A friend watches the buyer rather than the product. Same approved stickman species. Integrate exactly: “WARUM REDEN WIR UNS DAS SCHÖN?” No other readable text.
+Candidate 2: strong over-shoulder thumbnail from behind the green rejected headphones in the foreground. The recurring buyer stands deeper in the store holding the blue pair and receipt, body turned toward the exit while the head turns back toward the green option. ONE human only. Same approved light/white stickman head and thin-body construction. Integrate exactly: “WARUM REDEN WIR UNS DAS SCHÖN?” No other readable text.
 
-Candidate 3: close counter composition. The blue chosen headphones and receipt dominate one side in the buyer’s hands; the green alternative remains close on the counter. The buyer forces a confident posture while one hand grips the receipt tightly and the eyes still track the rejected pair. Keep the face large enough for phone viewing. Same approved stickman species. Integrate exactly: “WARUM REDEN WIR UNS DAS SCHÖN?” No other readable text.
+Candidate 3: close counter composition. The chosen blue headphones and receipt dominate the buyer’s hands; the rejected green pair remains farther back on the counter. The buyer’s posture is deliberately confident while the eyes still track the rejected pair. ONE human only, exact approved stickman species. Integrate exactly: “WARUM REDEN WIR UNS DAS SCHÖN?” No other readable text.
 
 STOP AFTER THE THREE BILD 01 CANDIDATES.
 
 BILD 02
-TEXT_ILLUSTRATION. Close illustrated object composition from the same episode world. Make the exact German term “KOGNITIVE DISSONANZ” large and dominant beside the blue headphones, purchase receipt and the green rejected pair pushed slightly back. Keep it integrated into the hand-drawn world, not a presentation slide. Strong organic outlines, soft cel shading and large mobile-readable typography. No other readable text.
+TEXT_ILLUSTRATION. Completely different staging from the cover: top-down close view of a crumpled purchase receipt, a plain shopping bag and only a cropped edge of the chosen blue headphones. Make the exact German term “KOGNITIVE DISSONANZ” large and dominant, integrated into the illustrated desk/purchase aftermath rather than a presentation slide. Do NOT show the green rejected headphones here. No other readable text.
 
 BILD 03
-SCHEMA_EXPLAINER. One simple three-stage visible mechanism, no labels. First: blue and green headphones balanced equally on a comparison counter. Second: one hand chooses the blue pair. Third: the buyer holds the blue pair and receipt but still turns the head back toward the green pair. Use only one simple directional flow between stages. Same approved stickman species where visible. No brain icons, cracks or dense arrows. NO VISIBLE TEXT.
+OBJECT_FOCUS. Present-day home desk immediately after the purchase. The chosen blue headphones sit half outside the shopping bag beside the receipt and an open plain return box. One simplified stickman hand hesitates between lifting the headphones to use them and placing them back into the box. No full person, no green alternative, no diagram and no separate panels. One physical scene only. NO VISIBLE TEXT.
 
 BILD 04
 OBJECT_FOCUS. Top-down electronics counter with two similarly appealing generic over-ear headphones, matte blue and muted green. One simplified stickman hand reaches decisively for the blue pair while the green pair remains close enough to make the tradeoff obvious. Make the products large and clean. Same hand-drawn illustrator language, natural store lighting. No brands, model names, prices or packaging words. NO VISIBLE TEXT.
 
 BILD 05
-COMPARE_VISUAL. One coherent two-state product comparison. Left: the chosen blue headphones are inspected closely for soft ear padding and sturdy build. Right: the rejected green pair is pushed slightly away while a small ordinary hinge flaw receives close attention. Keep both products large, with only cropped hands if needed. No thumbs icons, stars, scores or labels. Same illustrated world, different focal relation on each side. NO VISIBLE TEXT.
+COMPARE_VISUAL. Maximum TWO states only. Tight macro product comparison with different focal scale from BILD 04. Left: the chosen blue headphones fill the frame with comfortable ear padding and sturdy construction under close inspection. Right: the rejected green pair fills the frame around one small ordinary hinge flaw. Only cropped hands if needed. No thumbs icons, stars, scores or labels. Same illustrated world. NO VISIBLE TEXT.
 
 BILD 06
-ENVIRONMENT_SCENE. Wide 1950s social-psychology research room with plain institutional furniture and several period household consumer items arranged on a table. One participant evaluates the items while a researcher records responses on a clipboard. Every person uses the exact approved stickman species with simple 1950s clothing. Warm neutral daylight, clear room depth, documentary feel. No modern devices, readable brands or text. NO VISIBLE TEXT.
+ENVIRONMENT_SCENE. Wide 1950s social-psychology research room with plain institutional furniture and several period household consumer items arranged on a table. One participant evaluates the items while a researcher records responses on a clipboard. BOTH people use the identical approved light/white base head, tiny black oval eyes, narrow torso and thin-limb stickman anatomy; only period hair/clothing differ. Warm neutral daylight, clear room depth, documentary feel. No modern devices, readable brands or text. NO VISIBLE TEXT.
 
 BILD 07
-SCHEMA_EXPLAINER. Large physical tabletop research sequence, not a slide. Stage one: several consumer-item cards are arranged on a simple desirability board. Stage two: one of two closely ranked items is chosen. Stage three: the same chosen card is placed higher while the rejected card is placed lower. Use the same 1950s illustration language and only one clean flow between stages. No numbers, percentages, labels or corporate-chart styling. NO VISIBLE TEXT.
+OBJECT_FOCUS. One coherent physical 1950s research-table scene, NOT a timeline. Two product cards sit on a wooden ranking tray after the choice: the chosen card has just been moved one position higher and the rejected card one position lower. Two small neutral wooden position markers remain at their former nearly equal positions, making the shift visible without labels or numbers. One researcher hand finishes moving the chosen card. No panels, arrows, charts, percentages or readable text.
 
 BILD 08
-COMPARE_VISUAL. Tight before-versus-after view of the same physical ranking board. Before the choice, the two relevant product cards sit nearly level. After the choice, the selected card is visibly higher and the rejected card lower. Keep the cards and movement large enough for phone viewing. Same historical illustrated materials, no people needed. No readable scales, numbers, labels or percentages. NO VISIBLE TEXT.
+ENVIRONMENT_SCENE. Wider 1950s research-room aftermath, clearly different from BILD 07. The participant walks toward the exit carrying the selected household item while the rejected item remains on the table near the now-separated ranking cards. A researcher stays by the table observing the changed arrangement. Every visible person uses the identical approved stickman base species. This is one physical scene, not a before/after board. NO VISIBLE TEXT.
 
 BILD 09
 ENVIRONMENT_SCENE. Late-1950s psychology laboratory with a repetitive wooden peg-and-spool task apparatus centered on a plain table, simple chairs, stopwatch and a waiting area visible through an open doorway. Make the task look obviously monotonous through repeated identical pieces and orderly setup, not through text. Same hand-drawn world, period lighting and furniture. No readable study title or modern electronics. NO VISIBLE TEXT.
 
 BILD 10
-CHARACTER_SCENE. Medium doorway interaction in the same late-1950s lab. One participant has just finished the repetitive peg task and now speaks to a waiting participant with deliberately upbeat hand gestures while the dull apparatus remains clearly visible behind them. The waiting participant listens neutrally. Exact approved stickman species, period clothing, clear body language, no normal-human anatomy. No speech-bubble text. NO VISIBLE TEXT.
+CHARACTER_SCENE. Medium doorway interaction in the same late-1950s lab. One participant has just finished the repetitive peg task and now speaks to a waiting participant with deliberately upbeat hand gestures while the dull apparatus remains clearly visible behind them. BOTH people must have the identical light/white round/oval base head, tiny black oval eyes, narrow clothed torso and very thin dark limbs; period hair/clothing may differ only on top of that same anatomy. No speech-bubble text. NO VISIBLE TEXT.
 
 BILD 11
-COMPARE_VISUAL. Clean two-state experimental comparison using the same peg apparatus. Left: one participant receives a single small reward coin/token and later gives a mildly positive evaluation gesture toward the task. Right: another participant receives a thick cash envelope and later remains visibly unimpressed. Keep only the essential subjects large. Same late-1950s lab and exact stickman species. Do not show exact dollar amounts, scores or readable forms. NO VISIBLE TEXT.
+COMPARE_VISUAL. Maximum TWO states only. Same late-1950s lab and same approved stickman species on both sides. Left: one participant receives a single small reward coin/token and later gives a mildly positive evaluation gesture toward the task. Right: another participant receives a thick cash envelope and later remains visibly unimpressed. Keep the people and reward objects large; no third panel, no exact dollar amounts, scores, forms, headings or labels. NO VISIBLE TEXT.
 
 BILD 12
-SCHEMA_EXPLAINER. One simple three-part forced-compliance mechanism. First: the participant performs the dull peg task. Second: a single small reward token sits beside the participant while they make an upbeat gesture to the waiting person. Third: the participant sits alone afterward, reconsidering the task. One clean flow only. Same approved stickman species and 1950s lab language. No brain icons, scales, labels or dense arrows. NO VISIBLE TEXT.
+CHARACTER_SCENE. ONE coherent late-1950s lab scene, no diagram and no panels. A single small reward token lies foreground-large on the table. In the middle ground, the participant stands at the doorway making deliberately upbeat hand gestures to the waiting participant, while the dull peg apparatus remains visible behind them. The tiny reward, positive social statement and boring task must all coexist in the same physical space. BOTH humans use identical approved light/white stickman base heads and thin-body anatomy. NO VISIBLE TEXT.
 
 BILD 13
-OBJECT_FOCUS. Present-day desk at home. The chosen matte blue headphones are placed prominently in the foreground while one hand closes a comparison page containing the muted green rejected pair; the purchase receipt remains beside the blue headphones. Keep screens and paper completely unreadable. The object placement should show the rejected alternative being put away. Same episode linework, shading and texture. NO VISIBLE TEXT.
+OBJECT_FOCUS. Present-day desk at home. The chosen matte blue headphones are placed prominently in the foreground while one hand closes an unreadable comparison page containing only a small cropped image of the muted green rejected pair; the purchase receipt remains beside the blue headphones. Keep screen/paper text completely unreadable. The object placement should show the rejected alternative being put away. Same episode linework, shading and texture. NO VISIBLE TEXT.
 
 BILD 14
-OBJECT_FOCUS. Tight counterexample close-up at the same home desk. The chosen blue headphones now have a clearly broken hinge, and one hand turns the damaged joint beside the receipt. Make the real physical defect the only dominant reason for reevaluation. This frame must feel concrete, not symbolic. Same hand-drawn world. No labels, glowing effects, scores or readable paper text. NO VISIBLE TEXT.
+OBJECT_FOCUS. Tight counterexample close-up at the same home desk but much tighter focal scale. The chosen blue headphones now have a clearly broken hinge, and one hand turns the damaged joint beside the receipt. Make the real physical defect the only dominant reason for reevaluation. This frame must feel concrete, not symbolic. No labels, glowing effects, scores or readable paper text. NO VISIBLE TEXT.
 
 BILD 15
-ENVIRONMENT_SCENE. Wide modern social-psychology research workspace. Several distinct but simple task setups occupy separate tables: a choice task, a repetitive manual task and blank questionnaire materials, with two researchers comparing setups. The point is methodological variety, not one standardized machine. Every person uses the exact approved stickman species. Keep forms and screens unreadable. Natural contemporary lighting, strong depth, no corporate infographic look. NO VISIBLE TEXT.
+ENVIRONMENT_SCENE. Wide modern social-psychology research workspace. Several distinct but simple task setups occupy separate tables: a choice task, a repetitive manual task and blank questionnaire materials, with two researchers comparing the setups. BOTH researchers use identical approved light/white base heads, narrow torsos and thin limbs; hair/clothing may differ. Keep forms and screens unreadable. Natural contemporary lighting, strong depth, no corporate infographic look. NO VISIBLE TEXT.
 
 BILD 16
-TEXT_ILLUSTRATION. Top-down reflective desk composition in the present-day episode world. The chosen blue headphones, purchase receipt and a cropped image of the rejected green alternative frame one large note card. Render exactly: “ÜBERZEUGT – ODER RECHTFERTIGT?” Make the phrase large and instantly readable on a phone. Same organic outlines, soft cel shading and subtle texture. No other readable text.
+TEXT_ILLUSTRATION. Top-down reflective desk composition in the present-day episode world. The chosen blue headphones, purchase receipt and a small cropped image of the rejected green alternative frame one large note card. Render exactly: “ÜBERZEUGT – ODER RECHTFERTIGT?” Make the phrase large and instantly readable on a phone. Same organic outlines, soft cel shading and subtle texture. No other readable text.
 
 FINAL QA
 - topic is Kognitive Dissonanz and not any previously used channel topic
 - uses PSYCHOLOGY_STICKMAN_WORLD_V1
+- uses VISUAL_SEQUENCE_HARDENING_V1
 - no person drifts into normal cartoon-human anatomy
+- every multi-person frame uses identical base light/white head construction, torso scale and thin-limb anatomy; mixed species = FAIL
 - no cracked-brain, split-head, lightning or glowing-conflict cliché is used
+- opening motif visibly progresses instead of repeating the same headphone display
+- no image contains more than 2 distinct visual states/panels
+- no 3-part/4-part explainer board or mini-storyboard
 - representation choices match the specified BILD type
 - sequence avoids repetitive beige/neutral explainer-board staging
 - mobile-readable: large focal subjects, no tiny crowds, no dense labels/arrows
 - text appears only in BILD 01, 02 and 16 with exact German wording
+- any unplanned readable English/German/gibberish = FAIL and regenerate
 - 3 separate cover candidates first, then STOP
 - approved 01.png used as episode visual reference
 - later images generated in 5-image batches
