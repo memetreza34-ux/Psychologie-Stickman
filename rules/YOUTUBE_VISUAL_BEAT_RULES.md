@@ -18,22 +18,6 @@ Before the final image prompt, define:
 - `representationReason`
 - `literalMetaphorWarning`
 
-Weak:
-- show pressure
-- visualize insecurity
-- show conformity
-
-Strong:
-- describe what can literally be seen and why that visual form is best for this beat
-
-## Do not literalize effect names
-
-A psychology term is not automatically an art instruction.
-
-Spotlight Effect ≠ automatic spotlight.
-Anchor Effect ≠ automatic anchor.
-Halo Effect ≠ automatic halo.
-
 ## Representation choice — HARD GATE
 
 Allowed:
@@ -44,89 +28,75 @@ Allowed:
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
 
-Choose the clearest representation BEFORE character design.
+Choose the clearest representation BEFORE character design. A pronoun or mention of a person does not automatically justify `CHARACTER_SCENE`.
 
-The presence of words like `du`, `jemand`, `Person`, `Menschen`, `er` or `sie` does not automatically mean `CHARACTER_SCENE`.
+## Do not literalize effect names
 
-Use a character scene only when visible human behavior or relation is the core evidence.
-Use an object/environment/text/schema/comparison frame when that explains the beat faster or more clearly.
+A psychology term is not automatically an art instruction.
+
+Spotlight Effect ≠ automatic spotlight.
+Anchor Effect ≠ automatic anchor.
+Halo Effect ≠ automatic halo.
+Framing Effect ≠ automatic picture frame.
 
 ## Composition
 
-Default to one coherent visual idea.
+Default to one coherent visual idea. Use split/contrast only when the beat genuinely requires two states. Avoid cramming multiple examples into one image.
 
-Use split/contrast only when the beat genuinely requires two sides.
-Use montage only when all parts belong to one inseparable idea.
+## Camera and staging
 
-## Camera
-
-Choose camera because it clarifies the chosen representation:
+Choose camera because it clarifies the beat:
 - wide for environment/relations
 - medium for action + context
-- close for a specific reaction/object
-- top-down/tabletop for choices, objects, documents or mechanisms
+- close for a reaction/object
+- top-down/tabletop for choices, objects or mechanisms
+- over-shoulder when gaze/attention matters
 - low/high only when hierarchy/scale needs it
+
+Before Phase 2, compare each scene to the previous two. If the camera, focal scale, flat background and object placement are effectively the same despite a different spoken idea, redesign the composition.
 
 ## Active visual world
 
 Use `rules/PSYCHOLOGY_STICKMAN_WORLD.md`.
 
-When people appear, every person must remain in the same established stickman species and illustrator language.
+When people appear, every person must remain in the exact approved stickman species. No normal cartoon-human anatomy drift is accepted, even in historical, office or research scenes.
 
-Object, environment, text and schema frames must use the same illustrator language too.
-
-Per beat, adapt only what the script actually calls for:
-- representation type
-- clothing
-- hair/accessories
-- role / status
-- age cues
-- historical era
-- location
-- local color/light/mood
-- expression/posture
-
-Do not force a permanent protagonist across unrelated beats.
-Reuse identity only when the story follows the same person.
+Object, environment, text and schema frames use the same illustrator language.
 
 ## Emotion
 
-When emotion matters and people are used, plan observable cues such as:
-- gaze
-- head angle
-- shoulders
-- hands
-- distance
-- who stands/sits
-- who blocks or approaches
-- group spacing
-- interaction with relevant objects
+When people are used, plan visible cues: gaze, head angle, shoulders, hands, distance, standing/sitting, blocking, approach and object interaction.
 
-When people are not needed, mood can also be carried by object placement, environment, light, negative space and exact planned text.
+When people are not needed, mood may come from object placement, environment, light, negative space and exact planned text.
 
 ## Sequence-level review
 
-Before Phase 2, review the whole scene list.
+Before Phase 2, review the whole scene list for both **representation variety** and **staging variety**.
 
-Flag a plan when:
+Flag/rewrite when:
 - nearly every beat became a full character scene
 - several adjacent scenes repeat the same social staging
-- a person is present only to hold/point at an object
+- several adjacent scenes repeat a flat beige/neutral explainer-board composition
+- a person only holds or points at an object
 - object/text/environment alternatives were ignored
+- 3+ adjacent explainer-style frames rely on circles/arrows/centered objects instead of richer scene variation
+- 4+ consecutive `CHARACTER_SCENE`s occur without strong continuity need
 
-For 10+ scene videos, roughly 75% or more full `CHARACTER_SCENE`s requires explicit `characterHeavyJustification`.
+For 10+ scene videos, roughly 75%+ `CHARACTER_SCENE` requires explicit `characterHeavyJustification`.
+
+## Schema and text density
+
+Schemas should have one mechanism and preferably no more than 3 major branches/labels. Avoid crowds of tiny figures and dense arrow networks.
+
+Text must be large enough for mobile viewing. Avoid small explanatory paragraphs, many labels or text that competes with the main visual.
 
 ## Text policy
 
-Planned exact German text only.
-Otherwise: `ZERO READABLE TEXT`.
-
-Text may be the main subject when wording itself is the mechanism.
+Planned exact German text only. Otherwise: `ZERO READABLE TEXT`.
 
 ## Phase 2
 
 Each video uses exactly one:
-
 `02-google-flow/google-flow-prompt.txt`
 
 ## Flow output
