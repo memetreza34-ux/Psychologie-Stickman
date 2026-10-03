@@ -6,14 +6,15 @@ Policy ID: `REPRESENTATION_VARIETY_V1`
 
 ## Core rule
 
-Choose the **best visual form first**. Never choose a full character scene merely because the channel uses Stickmen or because the spoken sentence contains `du`, `jemand`, `Person` or another human pronoun.
+Choose the **best visual form first**. Never choose a full character scene merely because the channel uses Stickmen or because the spoken sentence mentions a person.
 
-For every spoken beat, ask:
+For every beat ask:
 1. What must the viewer understand?
 2. What is the clearest observable evidence?
-3. Which representation explains it fastest with the least visual clutter?
+3. Which representation explains it fastest with the least clutter?
+4. Does the resulting frame look meaningfully different from adjacent beats while staying in the same world?
 
-Allowed primary forms:
+Allowed forms:
 - `CHARACTER_SCENE`
 - `OBJECT_FOCUS`
 - `ENVIRONMENT_SCENE`
@@ -21,86 +22,78 @@ Allowed primary forms:
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
 
-These are semantic choices, not style definitions. Every form stays inside `PSYCHOLOGY_STICKMAN_WORLD_V1`.
+## Character gate
 
-## Character gate — HARD RULE
+Use `CHARACTER_SCENE` when visible human behavior is the evidence: gaze, reaction, hierarchy, social pressure, conversation, conflict, blocking, approach/withdrawal or group behavior.
 
-A full character scene is justified when human behavior itself is the evidence, for example:
-- gaze / reaction
-- hierarchy / dominance
-- social pressure
-- conversation / conflict
-- blocking / approach / withdrawal
-- group behavior
-- emotion that depends on posture and relation
+Prefer non-character forms when the beat is mainly about an object, wording, place, mechanism, comparison, historical setup, number or price.
 
-Prefer a non-character representation when the beat is mainly about:
-- one object becoming important
-- a message / phrase / warning
-- a place or environmental condition
-- a mechanism or sequence
-- a direct comparison
-- a historical setup that can be shown through objects/room design
-- a number / price / short exact term
-
-A person may appear cropped or secondary in an object-led frame, but the frame should not be converted into another generic two-person scene.
+When people are used, every person must keep the exact approved stickman species. Normal cartoon-human anatomy is a hard fail.
 
 ## Human presence
 
-People are optional.
-
-When people are used, follow `PSYCHOLOGY_STICKMAN_WORLD_V1`: same stickman species and illustrator language, but clothing, hair, role, era, expression and posture adapt to the script.
-
-When people are not used, objects, environments, schemas and text still use the exact same outline, shading, texture, color and finish language.
+People are optional. A cropped shoulder/head or hand may support an object-led frame without turning it into another generic character scene.
 
 ## Sequence-level anti-repetition
 
-Do not let a whole video become:
-`person at table → person in room → two people talking → person at table → two people talking`.
+Do not let a video become either:
+`person at table → person in room → two people talking → person at table`
 
-Across a normal 10+ scene video, deliberately review whether the sequence contains enough **genuinely different visual forms** to match the script.
+or:
+`beige board → centered object → circles/arrows → beige board → centered object`.
 
-This is not a quota system. However, if roughly three quarters or more of a 10+ scene plan are full `CHARACTER_SCENE`s, the plan must include an explicit `characterHeavyJustification` explaining why human behavior is genuinely the clearest evidence throughout. Without that justification, the plan fails QA and must be reconsidered.
+Representation labels alone do not guarantee real variety. Review the actual staging, camera, depth, palette and focal scale.
 
-Four or more consecutive full character scenes should trigger a review unless story continuity genuinely requires them.
+For 10+ scenes:
+- roughly 75%+ `CHARACTER_SCENE` requires explicit `characterHeavyJustification`
+- 4+ consecutive full character scenes trigger review
+- 3+ consecutive flat explainer-style frames (`SCHEMA_EXPLAINER`, `TEXT_ILLUSTRATION` or diagram-like `COMPARE_VISUAL`) trigger review unless the sequence genuinely requires it
+
+## Spatial / camera diversity
+
+When content allows, alternate between:
+- immersive environment
+- close object detail
+- medium interaction
+- wide relation
+- top-down tabletop
+- text-led graphic moment
+
+Do not mechanically rotate cameras; use them because they clarify the beat. But avoid near-identical framing across adjacent scenes when the spoken meaning changes.
 
 ## Text-led frames
 
-Visible text is not decoration, but it is allowed when wording itself matters.
-
-Good uses:
-- exact psychology term
-- exact controlling phrase
-- important number / price
-- short compare label
-- one concise warning / choice
-
-If text is unnecessary: `ZERO READABLE TEXT`.
-
-Text-led frames must look like illustrated frames from the same channel, not like presentation slides.
+Visible text is allowed only when wording itself matters. Keep it short, large and phone-readable. Avoid paragraph-like copy, tiny captions or decorative labels.
 
 ## Schema restraint
 
-Use a schema only when the viewer benefits from seeing a mechanism, sequence or relation structurally.
-Do not use a schema merely because the spoken sentence is abstract.
-Schemas use the same hand-drawn 2D world language rather than a foreign corporate-vector style.
+Schemas are for mechanisms, not filler. Keep them simple:
+- one main mechanism
+- preferably at most 3 major labels/branches
+- no crowd of tiny people
+- no dense arrow network
+- no presentation-slide look
+
+## Mobile readability
+
+Every frame must pass a small-screen check. Rewrite when the main idea depends on tiny figures, tiny text, many mini-panels, dense arrows or several equally strong focal points.
 
 ## Planning metadata
 
-For new active-world phase-1 plans, every scene should include a short `representationReason` that explains why its chosen `sceneType` is the clearest form for that beat.
+Every new active-world Phase-1 scene includes `representationReason`.
 
-For `CHARACTER_SCENE`, that reason should state what visible human behavior makes the character scene necessary.
+For `CHARACTER_SCENE`, state what human behavior makes the character necessary.
 
 ## QA
 
 Rewrite/review when:
 - nearly every scene uses people without need
 - a pronoun automatically caused `CHARACTER_SCENE`
-- a person is present only to hold or point at an object that could carry the frame itself
-- text appears repeatedly without explanatory value
-- schemas/text frames are filler
-- adjacent scenes repeat the same staging despite different beats
-- representation choice makes the current beat less clear
-- visual variety accidentally breaks the shared Psychology Stickman World
+- a person merely holds/points at an object that could carry the frame itself
+- adjacent frames repeat the same flat neutral/beige explainer staging
+- schemas/text frames are visually dense or phone-unreadable
+- several adjacent scenes repeat the same camera/focal scale despite different beats
+- text appears without explanatory value
+- visual variety breaks the shared Psychology Stickman World
 
 This rule complements `rules/PSYCHOLOGY_STICKMAN_WORLD.md`, `rules/YOUTUBE_VISUAL_BEAT_RULES.md` and `rules/FLOW_OUTPUT_MODE.md`.
