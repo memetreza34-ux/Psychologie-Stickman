@@ -24,12 +24,13 @@ All images stay inside this one master file.
 2. ACTIVE VISUAL WORLD
 3. short global channel-style/species block
 4. REPRESENTATION-FIRST rule
-5. VIDEO WORLD / continuity facts for this script
-6. COVER WORKFLOW
-7. FIVE-IMAGE BATCH WORKFLOW
-8. GLOBAL TEXT RULE
-9. OBSERVABLE-SCENE RULE
-10. BILD 01 through BILD NN
+5. SEQUENCE VARIETY / MOBILE-READABILITY rule
+6. VIDEO WORLD / continuity facts
+7. COVER WORKFLOW
+8. FIVE-IMAGE BATCH WORKFLOW
+9. GLOBAL TEXT RULE
+10. OBSERVABLE-SCENE RULE
+11. BILD 01 through BILD NN
 
 ## Prompt simplicity
 
@@ -42,13 +43,13 @@ Final BILD prompts stay short and direct:
 - useful environment/props
 - scene-specific light/color/mood
 - continuity when needed
-- exact visible German text or `No visible text.`
+- exact German text or `No visible text.`
 
-Do not repeat the full visual-world specification in every BILD.
+Do not repeat the full visual-world paragraph in every BILD.
 
 ## Representation first — HARD RULE
 
-Before each BILD prompt, the repo must already have chosen the clearest representation:
+Before each BILD prompt, Phase 1 must already choose one:
 - `CHARACTER_SCENE`
 - `OBJECT_FOCUS`
 - `ENVIRONMENT_SCENE`
@@ -56,11 +57,41 @@ Before each BILD prompt, the repo must already have chosen the clearest represen
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
 
-People are optional. Do not turn every beat into a stickman scene simply because the channel is a Stickman channel.
+People are optional. A character scene is appropriate only when visible human behavior/interaction is the evidence.
 
-A character scene is appropriate when visible human behavior/interaction is the evidence. If an object, exact phrase, environment, mechanism or comparison carries the beat better, use that form instead.
+## Stickman species lock — HARD RULE
 
-Later non-character frames must still preserve the approved episode linework, shading, texture, color handling and finish.
+Whenever a BILD contains people, the prompt must preserve the approved species. Use the compact reinforcement when needed:
+
+`same approved stickman species: oversized light round/oval head, tiny black oval eyes, narrow clothed torso, very thin dark stick-like limbs; no normal-human anatomy.`
+
+Historical, office, laboratory, family and dark-psychology scenes do not get exceptions. If Flow generates a normal cartoon human, that BILD fails and must be regenerated.
+
+## Sequence variety and staging
+
+Representation variety alone is insufficient if the frames still look like repeated flat explainer cards.
+
+Before Phase 2, check adjacent scenes for:
+- camera distance
+- focal scale
+- subject placement
+- spatial depth
+- local palette/light
+- flat-board vs immersive-environment staging
+
+Avoid repeated beige/neutral presentation boards, centered objects, circles/arrows templates or near-identical layouts across several adjacent BILDs.
+
+When the script allows, prefer concrete real-world contexts such as a shelf, room, street, desk, product close-up, hallway or laboratory over a generic explanatory background.
+
+## Mobile readability
+
+All images must work at phone size.
+
+- large clear focal subject
+- short planned text only
+- no paragraph-like copy
+- schemas preferably max 3 major labels/branches
+- avoid tiny crowds, dense arrow networks and many mini-panels
 
 ## Observable Scene First
 
@@ -68,33 +99,26 @@ Use:
 
 `spoken meaning → viewer takeaway → observable evidence → best representation → concrete composition → final prompt`
 
-Do not ask Flow to invent how an abstract psychological state looks.
-Do not literalize effect names automatically.
+Do not ask Flow to invent an abstract psychological visual. Do not literalize effect names automatically.
 
-## Global visual style anchor
+## Global style anchor
 
-Use this short anchor once near the top of the master and only repeat compactly when Flow needs reinforcement:
+Use once near the top:
 
-`Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, minimal expressive faces, narrow clothed torsos and very thin dark stick-like limbs. People, clothing, objects, text, environment, era, light and mood adapt to the script.`
+`Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.`
 
-Minimal global exclusions:
+Minimal exclusions:
 - no 3D / Pixar
 - no anime
 - no photorealism
 - no normal-human anatomy drift
-- no bare whiteboard doodle look
+- no bare whiteboard doodle
 - no foreign corporate infographic style
+- no repetitive beige explainer-board default
 
 ## People
 
-Do not invent a permanent protagonist.
-
-Design people from the current script and role while keeping the same species.
-Reuse exact identity only when story continuity clearly requires the same person.
-
-Do not add people to object/text/environment frames just to make them feel populated.
-
-Emotion should be visible through action, gaze, posture, hands, spacing, blocking and object relations when people are actually part of the chosen representation.
+Do not invent a permanent protagonist. Reuse exact identity only when story continuity requires it. Do not add people to object/text/environment frames just to populate them.
 
 ## Cover workflow
 
@@ -104,9 +128,9 @@ Emotion should be visible through action, gaze, posture, hands, spacing, blockin
 - 3 meaningfully different compositions
 - STOP for user choice
 - winner → `01.png`
-- approved `01.png` becomes the episode visual reference for species when people appear, plus linework, shading, texture and finish for every representation type
+- approved `01.png` becomes episode reference for linework, shading, texture, finish and stickman species when people appear
 
-The approved cover is NOT a command to repeat its exact composition/person/location or to keep using people in later scenes.
+The cover does not force later scenes to repeat its person, location, composition or representation type.
 
 ## Later generation
 
@@ -117,27 +141,22 @@ After cover approval:
 - continue in groups of 5
 - final remainder 1–4
 
-Each BILD remains one separate 16:9 asset.
-Accepted images → `NN.png` → same flat `03-bilder/`.
-Regenerate only failed images.
-Never create storyboard/contact sheet/final video.
-
-When supported, attach/use `01.png` as the visual style reference / ingredient for later batches.
+Each BILD remains one separate 16:9 asset. Accepted images → `NN.png` → same flat `03-bilder/`. Regenerate only failed images. Never create storyboard/contact sheet/final video.
 
 ## Text
 
 Default: `No visible text.`
 
-Only exact planned German wording may appear.
-Text may be the primary subject of a `TEXT_ILLUSTRATION` when wording itself is the mechanism.
+Only exact planned German wording may appear. Text may be the primary subject of a `TEXT_ILLUSTRATION` when wording itself is the mechanism, but it must remain large and sparse.
 
-## Hard fail
+## Hard fail / rewrite
 
-- full character scenes are used by default without a representation reason
-- a person is added only to decorate an object/text beat
-- people drift into a different species or normal cartoon-human anatomy
-- object/text/schema frames switch to a foreign rendering style
-- dark/bright/historical scenes switch to a foreign rendering style
+- character scene used by default without representation reason
+- any human drifts into normal cartoon-human anatomy
+- non-character frame switches to a foreign rendering style
+- several adjacent frames repeat the same flat explainer-board composition
+- schema/text image is too dense for phone viewing
+- tiny people or labels are required to understand the point
 - Flow must invent the core visual idea
 - several scene numbers are combined into one asset
 - cover gate or five-image batching is broken
