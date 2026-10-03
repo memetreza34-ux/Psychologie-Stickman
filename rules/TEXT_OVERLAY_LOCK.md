@@ -26,9 +26,11 @@ All unplanned text is forbidden.
 - optional short title
 - up to 3 short labels
 - use fewer labels when the relation is already clear
+- max 2 distinct visual states/panels by default
 
 ### Comparison
 - up to 2 short comparison labels plus optional short title
+- max 2 distinct comparison states/panels
 
 ### Text Illustration
 - one memorable short phrase
@@ -37,11 +39,22 @@ All unplanned text is forbidden.
 ### All other frames
 `ZERO READABLE TEXT`.
 
-## No accidental background text
+## No accidental background text — HARD FAIL
 
 Unplanned posters, screens, documents, packaging, signs and interfaces must not contain readable words.
 
 Speech context is never visible text.
+
+Regenerate immediately if Flow invents:
+- English headings or labels
+- unplanned German words
+- readable packaging/brand/model names
+- readable UI or website copy
+- research-board headings
+- fake article text
+- gibberish/pseudo-text that is visibly letter-like
+
+A non-text scene must be visually clean enough that the viewer cannot read accidental words even in the background.
 
 ## Canonical metadata
 
@@ -67,11 +80,11 @@ This is a ceiling, not a target.
 
 ## Typography status
 
-The old visual-world-specific typography lock was removed.
+Current visual world: **ACTIVE — `PSYCHOLOGY_STICKMAN_WORLD_V1`**.
 
-Current visual world: **UNDEFINED**.
+Typography follows the same hand-drawn illustrated world and must remain integrated rather than looking like a foreign corporate slide.
 
-Until the new visual world is approved, this file defines only wording, density and text safety. Font feeling, graphic treatment, color, outline, integration style and other visual typography decisions are intentionally undefined.
+Wording, density and readability rules in this file remain binding regardless of font treatment.
 
 ## QA
 
@@ -79,8 +92,11 @@ Regenerate the affected image if:
 - wording is wrong
 - umlauts/punctuation are wrong
 - text is clipped or unreadable
-- extra readable text appears
+- extra readable text appears anywhere
+- English text appears without being explicitly planned
+- pseudo-text/gibberish appears
 - schema contains unplanned labels
 - text covers the main visual mechanism
+- text-bearing layout becomes a 3-/4-panel explainer board
 
 `sceneLabels` remains empty and `renderGermanLabelsInRemotion` remains false.
