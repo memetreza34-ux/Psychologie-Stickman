@@ -39,13 +39,13 @@
   "flowTextMoments": [
     {"scene": 1, "kind": "cover", "text": "WARUM REDEN WIR UNS DAS SCHÖN?"},
     {"scene": 2, "kind": "keyword", "text": "KOGNITIVE DISSONANZ"},
-    {"scene": 16, "kind": "text_illustration", "text": "ÜBERZEUGT – ODER RECHTFERTIGT?"}
+    {"scene": 17, "kind": "text_illustration", "text": "ÜBERZEUGT – ODER RECHTFERTIGT?"}
   ],
   "sceneLabels": [],
-  "batchPlan": [[2,3,4,5,6],[7,8,9,10,11],[12,13,14,15,16]],
+  "batchPlan": [[2,3,4,5,6],[7,8,9,10,11],[12,13,14,15,16],[17]],
   "representationSummary": {
     "CHARACTER_SCENE": 3,
-    "OBJECT_FOCUS": 5,
+    "OBJECT_FOCUS": 6,
     "ENVIRONMENT_SCENE": 4,
     "SCHEMA_EXPLAINER": 0,
     "COMPARE_VISUAL": 2,
@@ -275,7 +275,7 @@
       "viewerTakeaway": "One possible response is to change how the chosen option is evaluated afterward.",
       "observableEvidence": "At home, the blue headphones sit prominently on the desk while one hand closes an unreadable comparison page containing only a small cropped image of the green alternative; the receipt stays nearby.",
       "sceneType": "OBJECT_FOCUS",
-      "representationReason": "Object handling and placement show the rejected alternative being mentally/physically put away without another argument scene.",
+      "representationReason": "Object handling and placement show the rejected alternative being put away without another argument scene.",
       "compositionType": "standard",
       "socialDensity": "none",
       "dominantRelation": "Chosen product is brought forward while the rejected comparison is closed away.",
@@ -325,11 +325,29 @@
     },
     {
       "scene": 16,
-      "speechSection": "Wenn du eine Wahl plötzlich extrem verteidigst, lohnt sich die Frage: Überzeugt sie mich – oder beruhige ich gerade meine Entscheidung?",
+      "speechSection": "Wenn du eine Wahl plötzlich extrem verteidigst, lohnt sich die Frage:",
+      "viewerTakeaway": "The viewer gets a short visual pause before the final self-check question.",
+      "observableEvidence": "Quiet present-day desk close-up: the chosen blue headphones sit beside the receipt while one hand rests on the edge of the desk; the rejected green alternative is only a small blurred shape farther back, leaving clear negative space for a reflective beat without readable text.",
+      "sceneType": "OBJECT_FOCUS",
+      "representationReason": "Splitting the final 21-word sentence prevents an overly long static text frame and creates a concrete visual pause before the closing question.",
+      "compositionType": "standard",
+      "socialDensity": "none",
+      "dominantRelation": "Chosen item is foreground-clear while the rejected option recedes, creating a moment of reconsideration.",
+      "literalMetaphorWarning": "No text, question mark icon or thought bubble.",
+      "camera": "quiet close desk composition with negative space",
+      "mood": "reflective pause",
+      "textPolicy": "NONE",
+      "motifKey": "pre_final_reflection_pause",
+      "visualChangeReason": "Changes from a wide research workspace to an intimate modern desk close-up and intentionally pauses before the final text card.",
+      "panelCount": 1
+    },
+    {
+      "scene": 17,
+      "speechSection": "Überzeugt sie mich – oder beruhige ich gerade meine Entscheidung?",
       "viewerTakeaway": "The final reflection distinguishes conviction from post-choice self-justification.",
-      "observableEvidence": "Top-down illustrated desk with the chosen blue headphones, receipt and a small cropped image of the rejected green alternative framing one large note card with the exact final question.",
+      "observableEvidence": "Top-down illustrated desk with the chosen blue headphones, purchase receipt and a small cropped image of the rejected green alternative framing one large note card with the exact final question.",
       "sceneType": "TEXT_ILLUSTRATION",
-      "representationReason": "The ending is explicitly a reflective question, so one sparse text-led composition is the strongest close.",
+      "representationReason": "The final clause is explicitly a reflective question, so a short dedicated text frame is stronger and faster than holding one text card through the full closing sentence.",
       "compositionType": "standard",
       "socialDensity": "none",
       "dominantRelation": "The final question sits between the chosen object and the evidence of the rejected alternative.",
@@ -339,7 +357,7 @@
       "textPolicy": "FLOW_EXACT_TEXT",
       "flowText": "ÜBERZEUGT – ODER RECHTFERTIGT?",
       "motifKey": "final_reflection_card",
-      "visualChangeReason": "Ends with a clean top-down text composition after a wide research scene, using the story objects only as framing rather than as the sole subject.",
+      "visualChangeReason": "Moves from a no-text close reflective pause to one short, large final text card, avoiding a long static hold.",
       "panelCount": 1
     }
   ]
