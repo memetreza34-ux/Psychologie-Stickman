@@ -44,6 +44,8 @@ When people appear, they all belong to the same exact stickman species:
 
 **Normal cartoon-human anatomy drift is a hard fail.** Clothing, hair, age, role and era may vary; underlying species/anatomy may not.
 
+When several people share one frame, they must visibly share the exact same base head construction, torso scale and limb thickness. Hair/clothing may vary, but mixed stickman + normal-cartoon-human anatomy in one frame is an immediate FAIL.
+
 The world is NOT character-only. Object-focused frames, environments, schemas, comparisons and text-led illustrations are equally valid when they explain the beat better. All forms keep the same illustrator/render language.
 
 ## Active process sources
@@ -51,15 +53,16 @@ The world is NOT character-only. Object-focused frames, environments, schemas, c
 1. `rules/TOPIC_UNIQUENESS_LOCK.md`
 2. `rules/YOUTUBE_THEMEN_SYSTEM.md`
 3. `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
-4. `rules/FLOW_OUTPUT_MODE.md`
-5. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
-6. `rules/FLOW_PROMPT_ARCHITECTURE.md`
-7. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-8. `rules/REPRESENTATION_VARIETY_LOCK.md`
-9. `rules/COVER_LOCK.md`
-10. `rules/TEXT_OVERLAY_LOCK.md`
-11. `rules/YOUTUBE_EXPORT_PACKAGE.md`
-12. Script-/Format-/Produktionsregeln
+4. `rules/VISUAL_SEQUENCE_HARDENING.md`
+5. `rules/FLOW_OUTPUT_MODE.md`
+6. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
+7. `rules/FLOW_PROMPT_ARCHITECTURE.md`
+8. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+9. `rules/REPRESENTATION_VARIETY_LOCK.md`
+10. `rules/COVER_LOCK.md`
+11. `rules/TEXT_OVERLAY_LOCK.md`
+12. `rules/YOUTUBE_EXPORT_PACKAGE.md`
+13. Script-/Format-/Produktionsregeln
 
 ## Observable Scene First + Representation First
 
@@ -75,6 +78,19 @@ Allowed primary forms:
 
 People are optional. A full character scene is used only when visible human behavior/interaction is the clearest evidence.
 
+## Visual sequence hardening
+
+Policy ID: `VISUAL_SEQUENCE_HARDENING_V1`.
+
+For new or revised active projects:
+- recurring motifs must visibly progress instead of repeating the same object/composition several times
+- Phase 1 carries `motifKey`, `visualChangeReason` and `panelCount`
+- 3+ adjacent scenes with the same motif key require explicit `motifProgressionJustification`; otherwise redesign
+- default maximum is 2 distinct states/panels in one BILD
+- 3-/4-panel explainer boards are not accepted as a normal solution
+- any unplanned readable text, including English headings or gibberish, is a hard fail
+- simple frames should not be held longer than the idea supports; split visual beats when needed
+
 ## Sequence / staging QA
 
 Representation variety alone is insufficient. New videos must also avoid repetitive staging.
@@ -82,11 +98,13 @@ Representation variety alone is insufficient. New videos must also avoid repetit
 Review/rewrite when:
 - several adjacent frames repeat the same beige/neutral explainer-board look
 - several adjacent frames repeat centered objects, circles/arrows or nearly identical camera setups
+- several adjacent frames reuse the same story object in effectively the same visual role
 - 3+ adjacent explainer-style frames become a flat presentation sequence without strong reason
 - a schema depends on tiny figures, many arrows or dense labels
+- a single image contains more than 2 explanatory states/panels without exceptional justification
 - planned text is too small or dense for phone viewing
 
-When content allows, vary camera distance, focal scale, depth, subject placement, local palette/light and real-world context.
+When content allows, vary camera distance, focal scale, depth, subject placement, local palette/light, object state and real-world context.
 
 For 10+ scenes, roughly 75%+ `CHARACTER_SCENE` without `characterHeavyJustification` is a QA fail.
 
@@ -116,6 +134,7 @@ Pro video exactly one:
 
 Only explicitly planned German text. Otherwise `ZERO READABLE TEXT`.
 Text may be the main subject when wording itself is psychologically relevant, but it must remain large, sparse and mobile-readable.
+Any unplanned English/German/gibberish anywhere in a generated frame is a regeneration failure.
 
 ## Script
 
