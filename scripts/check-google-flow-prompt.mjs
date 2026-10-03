@@ -35,6 +35,13 @@ const requiredRepresentationFirst = (text, rel) => {
   must(text, /TEXT_ILLUSTRATION|text-led|text illustration/iu, `${rel}: missing text-led representation option.`);
 };
 
+const requiredSequenceHardening = (text, rel) => {
+  must(text, /same[- ]frame|all.*humans.*same|identical.*base.*head|mixed.*species/iu, `${rel}: missing same-frame species lock.`);
+  must(text, /motif progression|motifKey|recurring.*object.*progress/iu, `${rel}: missing motif-progression rule.`);
+  must(text, /maximum:?\s*2|max\s*2|2\s+distinct.*(?:states|panels)|no\s+3[- ]?\/4[- ]?panel/iu, `${rel}: missing max-two-state/panel rule.`);
+  must(text, /unplanned.*(?:English|readable text)|English.*FAIL|gibberish.*FAIL|zero readable text/iu, `${rel}: missing accidental-text hard fail.`);
+};
+
 const templatePath = path.resolve('youtube/00-vorlage/thema-vorlage/02-google-flow/google-flow-prompt.txt');
 if (!fs.existsSync(templatePath)) failures.push('YouTube Flow template is missing.');
 else {
@@ -42,8 +49,10 @@ else {
   must(template, /VISUAL WORLD:\s*PSYCHOLOGY_STICKMAN_WORLD_V1/iu, 'Template must declare active PSYCHOLOGY_STICKMAN_WORLD_V1.');
   must(template, /OBSERVABLE_SCENE_FIRST_V1/iu, 'Template must keep observable-scene policy.');
   must(template, /FINAL_SEPARATE_IMAGE_ASSETS_V2/iu, 'Template must keep output policy.');
+  must(template, /VISUAL_SEQUENCE_HARDENING_V1/iu, 'Template must declare VISUAL_SEQUENCE_HARDENING_V1.');
   requiredWorkflow(template, 'YouTube Flow template');
   requiredRepresentationFirst(template, 'YouTube Flow template');
+  requiredSequenceHardening(template, 'YouTube Flow template');
   if (oldMarkers.test(template)) failures.push('Template still contains a deleted/old visual-world marker.');
 }
 
@@ -61,12 +70,19 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
   if (!/NATURAL_FLOW_MASTER_V2/iu.test(text)) continue;
   requiredWorkflow(text, rel);
   if (/PSYCHOLOGY_STICKMAN_WORLD_V1/iu.test(text)) requiredRepresentationFirst(text, rel);
+  if (/VISUAL_SEQUENCE_HARDENING_V1/iu.test(text)) requiredSequenceHardening(text, rel);
   const images = [...text.matchAll(/^BILD\s+(\d+)\s*$/gimu)];
   if (!images.length) failures.push(`${rel}: no BILD blocks found.`);
   images.forEach((match, index) => {
     if (Number(match[1]) !== index + 1) failures.push(`${rel}: BILD blocks must be contiguous from 01.`);
   });
   must(text, /observable|concrete visible|visible action|visible evidence/iu, `${rel}: missing observable-scene instruction.`);
+
+  if (/VISUAL_SEQUENCE_HARDENING_V1/iu.test(text)) {
+    const riskyThreePart = /(?:three|3)[- ]?(?:part|stage|panel|state)/iu.test(text);
+    const explicitlyForbidThreePart = /do not create 3|no 3[- ]?\/4[- ]?panel|max(?:imum)?\s*2|default maximum:?\s*2/iu.test(text);
+    if (riskyThreePart && !explicitlyForbidThreePart) failures.push(`${rel}: hardened prompt mentions a 3-part/3-stage visual without an explicit max-two-state safeguard.`);
+  }
 }
 
 if (warnings.length) {
