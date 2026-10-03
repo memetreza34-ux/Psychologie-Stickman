@@ -96,6 +96,8 @@ Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
 Every visible person must keep the exact approved stickman construction. Clothing, hair, role and era may vary, but normal cartoon-human anatomy is never accepted. Drifted frames must be regenerated.
 
+**Same-frame lock:** If several people appear together, they must all share the identical light/white base-head construction, torso scale and thin-limb anatomy. Hair and clothing may differ but may not turn one figure into a normal cartoon human while another remains a stickman. Mixed species in one frame = FAIL.
+
 ### Representation First — HARD
 
 Choose first:
@@ -109,6 +111,17 @@ Choose first:
 People are optional. A person may not be added merely because the channel uses Stickmen or the narration mentions a person.
 
 At 10+ scenes, roughly 75%+ `CHARACTER_SCENE` without `characterHeavyJustification` is a QA fail.
+
+### Visual sequence hardening — HARD
+
+Policy: `VISUAL_SEQUENCE_HARDENING_V1` from `rules/VISUAL_SEQUENCE_HARDENING.md`.
+
+- a recurring object may return, but 3+ adjacent scenes may not repeat effectively the same motif/composition without explicit continuity justification
+- every revised/new active plan using this policy carries `motifKey`, `visualChangeReason` and `panelCount`
+- default maximum = 2 distinct visible states/panels in one BILD
+- 3-part/4-part explainer boards are redesigned into separate beats, a single coherent physical scene or a two-state comparison
+- unplanned readable English/German/gibberish is a hard fail
+- simple static frames must not be stretched beyond what the visual idea can support; split the visual beat instead of relying on decorative motion
 
 ### Staging diversity — HARD REVIEW
 
@@ -126,6 +139,8 @@ Existing video projects remain historical artifacts unless the user explicitly r
 
 - `rules/TOPIC_UNIQUENESS_LOCK.md`
 - `rules/YOUTUBE_THEMEN_SYSTEM.md`
+- `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
+- `rules/VISUAL_SEQUENCE_HARDENING.md`
 - `rules/FLOW_OUTPUT_MODE.md`
 - `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
 - `rules/FLOW_PROMPT_ARCHITECTURE.md`
