@@ -5,6 +5,7 @@ FORMAT: 16:9 / 1920x1080
 VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
+VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 
@@ -17,22 +18,25 @@ ACTIVE VISUAL WORLD
 High-quality hand-drawn 2D animated psychology world with organic dark outlines, soft cel shading, subtle illustrated texture, natural clear colors and coherent depth.
 
 When people appear, they use the exact same approved stickman species:
-- oversized round or softly oval light/white heads
+- identical oversized round or softly oval light/white base heads
 - tiny black oval eyes and minimal expressive faces
 - narrow clothed torsos
 - very thin dark stick-like arms and legs
 - small simple hands and shoes
 
 Clothing, hair, age, role and era may change. The underlying anatomy may not.
-Never turn a person into a normal cartoon human, semi-realistic human, chibi figure or full-bodied animated character.
+Hair sits on the same approved light/white head construction; it must not create a normal skin-toned cartoon face.
+Clothing follows the same narrow torso and may not create realistic shoulders, chest, hips or thighs.
+If several humans share one image, ALL must visibly use the same base head, torso scale and limb thickness.
+Never mix a normal cartoon person with an approved stickman in the same frame.
 
 The world is NOT character-only. Objects, environments, comparisons, schemas and text-led illustrations use the exact same illustrator/render language.
 
 GLOBAL STYLE ANCHOR
-Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.
+Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: identical oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; hair/clothing may vary but never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.
 
 GLOBAL EXCLUSIONS
-No 3D/Pixar, anime, photorealism, normal-human anatomy drift, bare whiteboard-doodle look, foreign corporate-infographic style or repetitive beige explainer-board default.
+No 3D/Pixar, anime, photorealism, normal-human anatomy drift, mixed human species in one frame, bare whiteboard-doodle look, foreign corporate-infographic style, repetitive beige explainer-board default, 3-/4-panel explainer-board default or unplanned readable text.
 
 REPRESENTATION FIRST — HARD RULE
 Before each BILD, use the representation already chosen in Phase 1:
@@ -45,9 +49,20 @@ Before each BILD, use the representation already chosen in Phase 1:
 
 People are optional. Use full characters only when visible human behavior or interaction is the clearest evidence.
 
+MOTIF PROGRESSION — HARD RULE
+Phase 1 defines `motifKey`, `visualChangeReason` and `panelCount` for each scene.
+A recurring story object may return, but neighboring frames must materially progress through action, consequence, location, camera, focal scale, object state, social relation or foreground/background role.
+Do not repeat the same hero object in nearly the same composition several times just because the narration still refers to it.
+Three or more adjacent scenes with the same motifKey require explicit continuity justification and still need materially different staging.
+
+PANEL / STATE DENSITY — HARD RULE
+Default maximum: 2 distinct visible states/panels in one BILD.
+Do not create 3-part or 4-part timelines, mini-storyboards or slide-like explanation boards.
+If the idea has three steps, split it across BILDs, show one coherent real physical scene, or reduce it to a two-state before/after comparison.
+
 STAGING VARIETY — HARD REVIEW
-Representation variety alone is not enough. Avoid several adjacent frames with the same flat beige/neutral board, centered-object layout, circles/arrows template or near-identical camera.
-When the content allows, vary spatial depth, camera distance, focal scale, subject placement, local lighting and environment.
+Representation variety alone is not enough. Avoid several adjacent frames with the same flat beige/neutral board, centered-object layout, circles/arrows template, repeated hero-object display or near-identical camera.
+When the content allows, vary spatial depth, camera distance, focal scale, subject placement, local lighting, object state and environment.
 Prefer a real illustrated context — shelf, room, desk, street, product close-up, hallway, laboratory — when it explains the beat better than a generic presentation background.
 
 MOBILE READABILITY
@@ -56,7 +71,8 @@ Every image must work on a phone screen:
 - large readable subject
 - short large planned text only
 - no paragraph-like copy
-- schemas preferably max 3 major branches/labels
+- max 2 distinct states/panels by default
+- schemas preferably max 3 major labels/branches
 - no dense arrow networks, tiny crowds or many mini-panels
 
 VIDEO WORLD
@@ -89,10 +105,11 @@ After PASS, continue automatically.
 
 When image references / ingredients are supported, use approved `01.png` as the episode style reference for later batches.
 
-GLOBAL TEXT RULE
+GLOBAL TEXT RULE — HARD
 Only render exact German text explicitly requested for that BILD.
 Otherwise: NO VISIBLE TEXT.
 Text may be the primary subject in a TEXT_ILLUSTRATION when wording itself is the mechanism, but keep it large and sparse.
+Any unplanned readable English/German, packaging/brand/UI words, research headings or gibberish = FAIL and regenerate.
 
 PROMPTING RULE
 Use concrete visible action, object relation, environment layout, exact text, posture, gaze, distance, hands or blocking according to the chosen representation.
@@ -104,18 +121,23 @@ BILD 01
 [Short natural cover prompt: representation + concrete conflict/action + topic-appropriate world + exact German cover text + no other readable text.]
 
 BILD 02
-[Short natural prompt focused on observable evidence. Use the chosen representation. If people appear, preserve exact approved stickman species. Avoid repeating the previous frame's staging without reason.]
+[Short natural prompt focused on observable evidence. Use the chosen representation. If people appear, preserve the identical approved base species for every human in the frame. Progress the motif from the previous scene instead of repeating the same shot. Default max 2 visible states/panels.]
 
 [CONTINUE THROUGH BILD NN]
 
 FINAL QA
 - uses PSYCHOLOGY_STICKMAN_WORLD_V1
+- uses VISUAL_SEQUENCE_HARDENING_V1
 - people are optional and representation-first planning is respected
-- EVERY visible human remains the exact same stickman species; normal cartoon-human drift = FAIL
+- EVERY visible human remains the exact same stickman species
+- multiple people in one image use identical base head/torso/limb construction; mixed species = FAIL
+- recurring motifs visibly progress instead of repeating the same shot
+- no BILD has more than 2 distinct states/panels without exceptional justification
 - object/environment/text/schema frames use the same illustrator/render language
 - several adjacent frames do not repeat the same flat beige explainer-board layout
-- camera/focal scale/depth vary when the content supports it
+- camera/focal scale/depth/object state vary when the content supports it
 - schemas and text frames remain simple and phone-readable
+- exact planned German text only; any unplanned readable English/German/gibberish = FAIL
 - 3 separate cover candidates first, then STOP
 - approved 01.png used as episode visual reference
 - later images in 5-image batches
