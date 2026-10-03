@@ -1,0 +1,146 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+TOPIC: Spotlight-Effekt
+FORMAT: 16:9 / 1920x1080
+VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+
+TASK
+Create final separate 16:9 source images for one coherent psychology YouTube video.
+One BILD number = one separate image.
+Never create a storyboard, contact sheet, collage or automatic video.
+
+ACTIVE VISUAL WORLD
+Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.
+
+GLOBAL EXCLUSIONS
+No 3D/Pixar, anime, photorealism, normal-human anatomy drift, bare whiteboard doodle, foreign corporate infographic style or repetitive beige explainer-board default.
+
+REPRESENTATION FIRST — HARD RULE
+Use the representation specified for each BILD. People are optional.
+Do not add full stickman characters to object/text/environment frames just to fill space.
+
+STICKMAN SPECIES LOCK — HARD RULE
+Whenever people appear, preserve exactly: oversized light round/oval head, tiny black oval eyes, minimal face, narrow clothed torso, very thin dark stick-like arms and legs, small simplified hands and shoes. Clothing must follow the thin stickman body and must not create realistic shoulders, hips, thighs or normal cartoon-human volume.
+If any human becomes a normal cartoon person, regenerate that BILD.
+
+SEQUENCE VARIETY / MOBILE READABILITY
+Avoid repeated neutral boards, centered-object diagrams and circles/arrows templates. Use real illustrated spaces, strong close-ups, wide environments and clear comparisons when specified.
+Every frame must work on a phone: one dominant focal idea, large subject, sparse text, no tiny crowds or dense arrow networks.
+
+VIDEO WORLD / CONTINUITY
+Recurring everyday person for BILD 01, 03, 04, 05, 11, 12, 15 and 16 when visible: young adult stickman, short simple dark hair, muted olive open overshirt, off-white T-shirt, charcoal trousers, small off-white shoes. A visible brown coffee stain appears on the upper chest of the off-white T-shirt after the spill. Preserve this person's clothing/colors only when the same episode situation returns.
+
+Other people are designed for their role while keeping the same exact stickman species.
+BILD 07–08 use an early-2000s university psychology research setting.
+BILD 13 uses a simple videogame-performance setting.
+
+IMPORTANT CONCEPT RULE
+The Spotlight-Effekt must NOT be visualized as a literal theatrical spotlight, stage beam, glowing cone, aura or stage performance unless explicitly requested. Use observable social attention and perspective instead.
+
+COVER WORKFLOW — HARD LOCK
+1. Generate BILD 01 ONLY.
+2. Generate exactly 3 SEPARATE standalone 16:9 cover candidates.
+3. All three use the exact headline: “SEHEN DAS WIRKLICH ALLE?”
+4. All three express the same thesis: the stained-shirt person is intensely focused on the coffee stain while the surrounding seminar room is mostly occupied with other things.
+5. Use three meaningfully different thumbnail compositions.
+6. STOP and wait for the user to choose one.
+7. Chosen winner -> `01.png` -> `03-bilder/`.
+8. Use approved `01.png` as the episode visual reference for linework, shading, texture, finish and stickman species.
+9. Do not force later images to copy the cover person, framing or environment unless continuity requires it.
+
+AFTER COVER APPROVAL
+Generate remaining images in exactly these batches:
+- Batch 1: BILD 02–06
+- Batch 2: BILD 07–11
+- Batch 3: BILD 12–16
+
+Generate each whole five-image batch in one batch operation, but every BILD must remain one separate 16:9 image asset.
+Rename accepted results immediately to `NN.png` and keep all accepted files directly in the same flat `03-bilder/` folder.
+Regenerate only failed images. After a batch passes QA, continue automatically to the next batch.
+When supported, use approved `01.png` as the episode style reference / ingredient.
+
+GLOBAL TEXT RULE
+Readable text is allowed only in BILD 01, BILD 02 and BILD 14.
+All other BILDs: NO VISIBLE TEXT.
+Never invent English, signs, labels, poster text, packaging text or gibberish.
+
+OBSERVABLE-SCENE RULE
+Show psychology through concrete visible evidence: gaze, hand movement, body posture, distributed attention, object importance, room activity, perspective and exact planned wording.
+Do not ask Flow to visualize an abstract mental state.
+One BILD = one dominant visible idea.
+
+BILD 01
+Generate exactly three separate standalone 16:9 cover candidates.
+
+Candidate 1: thumbnail-ready medium-close seminar entrance. The recurring young adult is foreground-large, looking down at a clear brown coffee stain on the off-white T-shirt while one hand tries to cover it with the olive overshirt. In the background, several seminar participants are talking, checking a phone or writing instead of staring. Same approved stickman species. Integrate exactly: “SEHEN DAS WIRKLICH ALLE?” Large, clean, readable title space. No other readable text. No literal spotlight.
+
+Candidate 2: close three-quarter composition from slightly above the stained-shirt person. Their face and coffee stain dominate the left half; the right half shows a deeper seminar room where only one person briefly glances while the others remain busy with notes and conversation. Strong emotional contrast, simple thumbnail hierarchy. Same approved stickman species. Integrate exactly: “SEHEN DAS WIRKLICH ALLE?” No other readable text. No spotlight beam.
+
+Candidate 3: wider doorway composition with strong depth. The recurring young adult pauses at the seminar-room entrance and partly covers the coffee stain, while separate small groups inside the room focus on their own phones, notebooks and conversations. Keep the stained person large enough for mobile readability. Same approved stickman species. Integrate exactly: “SEHEN DAS WIRKLICH ALLE?” No other readable text. No stage lighting.
+
+STOP AFTER THE THREE BILD 01 CANDIDATES.
+
+BILD 02
+TEXT_ILLUSTRATION. Close illustrated composition from the same episode world. Make the exact German term “SPOTLIGHT-EFFEKT” large and dominant beside a cropped view of the coffee-stained off-white shirt and a seminar notebook. Keep it integrated into the hand-drawn world, not a slide. Strong dark outlines, soft cel shading, large mobile-readable typography. No other readable text. No literal spotlight imagery.
+
+BILD 03
+COMPARE_VISUAL. One coherent self-view versus room-view comparison. Left: the recurring young adult stands close to a restroom or hallway mirror, with the coffee stain visually large because it is close to them. Right: a much wider seminar-room view where the same person is only one figure among several ongoing activities. Same approved stickman species wherever people appear. No title, labels, arrows or visible text. No spotlight beam.
+
+BILD 04
+CHARACTER_SCENE. Medium university hallway shot just before the seminar. The recurring young adult holds a paper coffee cup and stares down at a fresh brown stain on the off-white T-shirt, shoulders tense, one hand touching the overshirt. Other students move naturally through the hallway without turning the scene into a crowd staring contest. Same approved stickman species; no normal-human anatomy. NO VISIBLE TEXT.
+
+BILD 05
+OBJECT_FOCUS. Tight close-up of the brown coffee stain on the off-white shirt. One simplified stickman hand repeatedly pulls the muted olive overshirt across the stain; a blurred notebook edge sits in the foreground. Make the stain and hand the only dominant focal relation. Same hand-drawn illustrator language. NO VISIBLE TEXT.
+
+BILD 06
+ENVIRONMENT_SCENE. Wide lived-in seminar room in daylight with strong foreground-middle-background depth. One pair quietly talks, one student checks a phone, another writes notes, another sorts papers; the stained-shirt person is simply one normal figure among the room. Every visible person uses the exact approved stickman species. Natural varied colors, not a beige explainer board. NO VISIBLE TEXT.
+
+BILD 07
+ENVIRONMENT_SCENE. Early-2000s university psychology research room. Show plain institutional furniture, a conspicuous graphic T-shirt placed on a chair, a row of observer chairs, clipboard, old desktop monitor and simple research-room details. One participant approaches the setup while researchers remain secondary. All people, if visible, use the exact approved stickman species with period-appropriate clothing. The shirt graphic must be abstract and non-readable, with no celebrity or brand. NO VISIBLE TEXT.
+
+BILD 08
+COMPARE_VISUAL. Clean two-state research comparison using only four large observer stickmen per side so it remains readable on a phone. Left: the participant expects all four observers to focus directly on the conspicuous shirt. Right: in the actual room only one observer briefly glances while the others keep notes or continue a quiet conversation. Same early-2000s room and exact stickman species. Do not invent numbers, percentages or charts. NO VISIBLE TEXT.
+
+BILD 09
+CHARACTER_SCENE. Medium round-table group discussion with four adult stickmen. One speaker has just finished talking and watches the others tensely, shoulders slightly raised and hands close together. The other three naturally continue the conversation, check a note and respond to each other without dramatic focus on that speaker. Exact approved stickman species, varied simple clothing, natural room depth. NO VISIBLE TEXT.
+
+BILD 10
+SCHEMA_EXPLAINER. One simple two-step mechanism only. Left: large close mirror view of the recurring young adult noticing the coffee stain. One single clean visual transition leads to the right: a much wider seminar-room view where the same stain is only a tiny detail in the overall scene. Use the same hand-drawn world, no corporate-vector style, no brain icons, no dense arrows, no labels. Same approved stickman species. NO VISIBLE TEXT.
+
+BILD 11
+OBJECT_FOCUS. Tight close view of the same coffee stain as the main subject. At the edge of the frame, only a cropped stickman face briefly turns tiny black oval eyes toward the stain before moving on; keep the rest of the background soft and secondary. This frame must show that the flaw can genuinely be noticed without becoming a full confrontation. Same approved species cue. NO VISIBLE TEXT.
+
+BILD 12
+CHARACTER_SCENE. Medium seminar scene. The recurring young adult gives a visibly uncertain wrong answer with one hand half-raised and shoulders tense. One nearby student looks up briefly, while the others keep writing or looking toward the lecturer. Exact approved stickman species for every person, no normal cartoon-human anatomy. The point is partial notice, not total room attention. NO VISIBLE TEXT.
+
+BILD 13
+COMPARE_VISUAL. One coherent two-state videogame-performance comparison with the same stickman player and one observer. Left: the player performs very well and quickly checks whether the observer noticed. Right: the player has a poor round and again checks the observer, who remains similarly occupied in both states. Keep the player and observer large and clear, with no readable score, no percentages and no tiny panels. Same approved stickman species. NO VISIBLE TEXT.
+
+BILD 14
+TEXT_ILLUSTRATION. Top-down real illustrated desk scene with a phone, closed notebook and coffee cup. One large note card is the focal object and contains exactly: “WÜRDE MIR DAS AUFFALLEN?” Make the phrase large and instantly readable on a phone. Same hand-drawn outline, shading and texture language as the episode. No other readable text.
+
+BILD 15
+ENVIRONMENT_SCENE. Very wide seminar-room view from the back corner. The recurring young adult is only one person among several students, tables, bags and normal activities. No one is centered as the special subject; the composition should feel open, balanced and ordinary. Every visible person uses the exact approved stickman species. Strong spatial depth, natural daylight, no flat explainer-board look. NO VISIBLE TEXT.
+
+BILD 16
+ENVIRONMENT_SCENE. Wide university hallway after the seminar. The recurring young adult walks calmly with the crowd while different people peel off toward stairs, doors and conversations. The coffee stain remains faintly visible but is now a small detail rather than the focal point. Every person keeps the exact approved stickman species. Quiet relieving atmosphere, natural depth and varied movement. NO VISIBLE TEXT.
+
+FINAL QA
+- uses PSYCHOLOGY_STICKMAN_WORLD_V1
+- no person drifts into normal cartoon-human anatomy
+- no literal theatrical spotlight is used to explain the Spotlight-Effekt
+- representation choices match the specified BILD type
+- sequence avoids repetitive beige/neutral explainer-board staging
+- mobile-readable: large focal subjects, no tiny crowds, no dense labels/arrows
+- text appears only in BILD 01, 02 and 14 with exact German wording
+- 3 separate cover candidates first, then STOP
+- approved 01.png used as episode visual reference
+- later images generated in 5-image batches
+- every BILD remains a separate 16:9 asset
+- accepted files renamed NN.png
+- all accepted images together in 03-bilder/
+- no storyboard, contact sheet, collage or automatic video
