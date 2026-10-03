@@ -59,8 +59,13 @@ Verbindlich: `rules/FLOW_OUTPUT_MODE.md`.
 05-export/
 ├── final.mp4
 ├── thumbnail.png
+├── captions.srt
 └── youtube-upload.txt
 ```
+
+`captions.srt` ist die finale deutsche YouTube-Untertiteldatei und liegt direkt im flachen `05-export/`.
+Keine zusätzlichen `captions/`, `subtitles/` oder `untertitel/`-Ordner im normalen YouTube-Workflow.
+Interne Wort-/Timing-Daten bleiben in `99-intern/` und gehören nicht in den Export.
 
 ## VISUAL WORLD STATUS — ACTIVE
 
