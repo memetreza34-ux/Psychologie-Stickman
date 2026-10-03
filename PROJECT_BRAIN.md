@@ -97,6 +97,16 @@ It does NOT force later images to copy the same person, composition, representat
 - one flat `03-bilder/`
 - Audio/Remotion/Export
 
+## YouTube export package
+
+Final upload files stay together in one flat `05-export/`:
+- `final.mp4`
+- `thumbnail.png`
+- `captions.srt`
+- `youtube-upload.txt`
+
+`captions.srt` is the final German YouTube subtitle file synced to the final processed voice-over. Do not create separate caption/subtitle folders; internal timing JSON stays in `99-intern/`.
+
 ## Observable Scene First
 
 `spoken meaning → viewer takeaway → observable evidence → best representation → concrete composition → final prompt`
