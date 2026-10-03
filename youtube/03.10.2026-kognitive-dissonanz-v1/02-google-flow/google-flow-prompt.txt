@@ -74,14 +74,16 @@ Generate remaining images in exactly these batches:
 - Batch 1: BILD 02–06
 - Batch 2: BILD 07–11
 - Batch 3: BILD 12–16
+- Final remainder: BILD 17
 
 Generate each whole 5-image batch in one batch operation, but every BILD must remain one separate 16:9 image asset.
+Generate the final one-image remainder as one separate 16:9 asset.
 Rename accepted results immediately to `NN.png` and keep all accepted files directly in the same flat `03-bilder/` folder.
 Regenerate only failed images. After a batch passes QA, continue automatically to the next batch.
 When supported, use approved `01.png` as the episode style reference / ingredient.
 
 GLOBAL TEXT RULE — HARD
-Readable text is allowed only in BILD 01, BILD 02 and BILD 16.
+Readable text is allowed only in BILD 01, BILD 02 and BILD 17.
 All other BILDs: NO VISIBLE TEXT.
 Never invent English headings, German labels, signs, form text, poster text, packaging text, UI text, research-board text or gibberish.
 Any unplanned readable text = FAIL and regenerate.
@@ -145,6 +147,9 @@ BILD 15
 ENVIRONMENT_SCENE. Wide modern social-psychology research workspace. Several distinct but simple task setups occupy separate tables: a choice task, a repetitive manual task and blank questionnaire materials, with two researchers comparing the setups. BOTH researchers use identical approved light/white base heads, narrow torsos and thin limbs; hair/clothing may differ. Keep forms and screens unreadable. Natural contemporary lighting, strong depth, no corporate infographic look. NO VISIBLE TEXT.
 
 BILD 16
+OBJECT_FOCUS. Quiet present-day desk close-up as a short reflective pause before the final question. The chosen blue headphones sit beside the purchase receipt in sharp focus. A small blurred green alternative sits farther back near the edge of the desk. One cropped stickman hand rests motionless beside the receipt. Use negative space and shallow depth so this feels intimate and clearly different from the wide research scene before it. No question-mark icon, thought bubble or readable text. NO VISIBLE TEXT.
+
+BILD 17
 TEXT_ILLUSTRATION. Top-down reflective desk composition in the present-day episode world. The chosen blue headphones, purchase receipt and a small cropped image of the rejected green alternative frame one large note card. Render exactly: “ÜBERZEUGT – ODER RECHTFERTIGT?” Make the phrase large and instantly readable on a phone. Same organic outlines, soft cel shading and subtle texture. No other readable text.
 
 FINAL QA
@@ -155,16 +160,17 @@ FINAL QA
 - every multi-person frame uses identical base light/white head construction, torso scale and thin-limb anatomy; mixed species = FAIL
 - no cracked-brain, split-head, lightning or glowing-conflict cliché is used
 - opening motif visibly progresses instead of repeating the same headphone display
+- final spoken thought is split into BILD 16 + BILD 17 so the final text card is not held through an overly long beat
 - no image contains more than 2 distinct visual states/panels
 - no 3-part/4-part explainer board or mini-storyboard
 - representation choices match the specified BILD type
 - sequence avoids repetitive beige/neutral explainer-board staging
 - mobile-readable: large focal subjects, no tiny crowds, no dense labels/arrows
-- text appears only in BILD 01, 02 and 16 with exact German wording
+- text appears only in BILD 01, 02 and 17 with exact German wording
 - any unplanned readable English/German/gibberish = FAIL and regenerate
 - 3 separate cover candidates first, then STOP
 - approved 01.png used as episode visual reference
-- later images generated in 5-image batches
+- later images generated in 5-image batches plus the final one-image remainder
 - every BILD remains a separate 16:9 asset
 - accepted files renamed NN.png
 - all accepted images together in 03-bilder/
