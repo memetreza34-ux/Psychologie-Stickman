@@ -6,230 +6,150 @@ Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
 This is the binding visual world for new psychology / human-behavior YouTube productions.
 
-It is adapted from the proven hand-drawn 2D story-world logic used in the Geldwelt engine, but it is not a Geldwelt clone. The subject matter, people, clothing, locations, era, mood and color are chosen from the psychology script.
-
 ## 1. Core look
 
-Create a high-quality hand-drawn 2D animated story world.
-
-Every frame should feel as if it was drawn by the same professional illustrator for the same channel:
+Create a high-quality hand-drawn 2D animated story world. Every frame should feel as if it was drawn by the same professional illustrator for the same channel:
 - strong slightly organic dark outlines
 - soft cel shading
 - subtle illustrated texture
 - natural clear colors
 - clean readable silhouettes
-- believable foreground / middle ground / background depth
-- detailed enough environments to feel lived-in, never empty clip-art
+- believable foreground / middle ground / background depth when the scene is spatial
+- lived-in environments instead of empty clip-art
 
-No fixed channel palette. Color and light follow the current scene.
+No fixed channel palette. Color and light follow the scene.
 
-## 2. The visual world is bigger than the cast
-
-`PSYCHOLOGY_STICKMAN_WORLD_V1` is the style of the entire illustrated universe, not a command to put a stickman into every frame.
+## 2. The world is bigger than the cast
 
 A beat may be represented by:
-- a character scene
-- a close object-focused illustration
-- an environment-only illustration
-- a simple mechanism/schema
-- a direct comparison
-- a text-led illustration with exact planned German wording
+- `CHARACTER_SCENE`
+- `OBJECT_FOCUS`
+- `ENVIRONMENT_SCENE`
+- `SCHEMA_EXPLAINER`
+- `COMPARE_VISUAL`
+- `TEXT_ILLUSTRATION`
 
-Humans are optional. Use a full character scene only when visible human behavior, emotion, hierarchy, interaction or social relation is the clearest evidence for the spoken beat.
+Humans are optional. Use a full character scene only when visible human behavior, emotion, hierarchy, interaction or social relation is the clearest evidence.
 
-If an object, place, short text treatment, comparison or mechanism explains the beat faster and more clearly, prefer that instead of adding a person as decoration.
+All non-human frames still use the same illustrator language: outlines, cel shading, texture, color handling and professional finish.
 
-All non-human frames still use the same illustrator language: the same outlines, cel shading, texture, color handling, depth and professional finish.
+## 3. Stickman species — HARD DNA whenever people appear
 
-## 3. Stickman species — fixed DNA when people appear
-
-All visible people belong to the same visual stickman species.
-
-Shared construction:
+All visible people belong to exactly one visual species:
 - oversized round or softly oval light/white head
 - tiny black oval eyes
-- minimal brows and mouth when needed for emotion
+- minimal brows and mouth only as needed
 - narrow simplified clothed torso
-- very thin dark stick-like arms and legs with natural bends
-- small simplified hands
-- small simple shoes
-- clothing clearly visible without turning the body into normal human anatomy
+- very thin dark stick-like arms and legs
+- small simplified hands and shoes
+- clothing follows the thin stickman construction and must not create realistic human body volume
 
-The figure must read instantly as a designed stickman, not as a normal cartoon human and not as a bare classroom doodle.
+**Hard fail:** a person may never drift into a normal cartoon human, semi-realistic human, chibi person or full-bodied animated character.
 
-The underlying species stays stable across every scene:
-- head proportions
-- eye language
-- face simplicity
-- torso scale
-- limb thickness
-- outline weight
-- cel-shading language
-- texture language
-- overall finish
+Hair, age, clothing, profession and historical era may change. The underlying anatomy may not.
 
-## 4. Individual people — adaptive to script
+For every human-containing BILD prompt, reinforce the compact species cue when useful:
+`same approved stickman species: oversized light round/oval head, tiny black oval eyes, narrow clothed torso, very thin dark stick-like limbs; no normal-human anatomy.`
 
-There is NO permanent channel mascot and NO mandatory recurring Character A/B cast.
+If any generated human frame breaks the species, regenerate that frame instead of accepting the drift.
 
-Design each person for the role and story beat.
+## 4. Individual people
 
-Allowed individuality:
-- hairstyle / hair color
-- clothing type and clothing color
-- age cues
-- glasses, hats, bags, jewelry or other useful accessories
-- profession / social role
-- historical-period clothing
-- posture
-- expression
-- status / authority cues
+There is no permanent channel mascot and no mandatory Character A/B cast. Design each person for the current role through hairstyle, clothing, accessories, age cues, profession/social role, era, posture and expression.
 
-Examples:
-- 1960s experiment participants wear era-appropriate clothing and hair
-- a manager may wear a suit
-- a student may wear a hoodie or cardigan
-- a parent, cashier, teacher, therapist or worker should visually fit that role
+Reuse an exact identity only when the story clearly follows the same person.
 
-But all remain the same stickman species.
+## 5. Emotion and dark psychology
 
-If the script clearly follows the same person across several beats, preserve that person's hair, clothing, colors and distinctive accessories for continuity. Otherwise do not force the same person into unrelated scenes.
+Show psychology through observable evidence. With people, use gaze, head angle, shoulders, hands, distance, standing/sitting, blocking, group spacing and object interaction.
 
-## 5. Emotion and psychology
+Dark psychology may be tense, intimate, cold or shadowed, but avoid horror shortcuts such as demon eyes, horns or monster cues. A dark beat also does not automatically require two people; a phone, doorway, message, empty chair arrangement or object-led frame may work better.
 
-Psychological meaning is shown through observable evidence first.
+## 6. Adaptive worlds
 
-When people are present, useful cues include:
-- gaze direction
-- head angle
-- posture
-- hands / arms
-- distance
-- who stands or sits
-- who blocks a path
-- who looks at whom
-- group spacing
-- interaction with relevant objects
-
-Facial expression may support the beat, but do not rely on a complex human face.
-
-Dark-psychology scenes may be tense, intimate, cold, shadowed or low-key, but do not use generic villain or horror shortcuts. No red demon eyes, horns or monster cues. Power and threat come from behavior, distance, blocking, camera and light.
-
-A dark-psychology beat does not automatically require two people facing each other. A locked door, a phone, a message, a chair arrangement, a shadowed hallway or a text-led illustration may carry the idea better when the script supports it.
-
-## 6. Adaptive worlds, locations and eras
-
-The drawing/render language stays fixed; the world content changes with the script.
-
-Allowed examples:
-- bright apartment
-- dark apartment at night
-- school / university
-- office / meeting room
-- café / restaurant
-- store / supermarket
-- train station / street
-- laboratory
-- hospital / waiting room
-- historical period setting
-- workplace / workshop
-- home / bedroom
-
-Architecture, furniture, props, clothing and hair should fit the place and era.
-
-A dark scene and a bright scene must still unmistakably belong to the same animated universe.
+The drawing/render language stays fixed while the world changes with the script: apartment, school, office, café, store, station, laboratory, hospital, historical setting, workplace, street or bedroom. Architecture, furniture, props, clothing and hair should fit place and era.
 
 ## 7. Color and lighting
 
-Use natural, varied colors rather than one repeated channel tint.
+Use natural varied colors. Do not mechanically repeat one beige/cream explainer background, teal tint or any other single palette across the whole video.
 
-Scene mood decides the local palette:
-- neutral / explanatory → clear daylight or balanced indoor light
-- social / everyday → natural warm/cool mix
-- dark psychology / control / isolation → deeper blue-gray or muted shadows with motivated warm practical light when useful
-- hope / relief → brighter open light
-- historical scenes → period-appropriate material and color cues
+Neutral explanatory scenes do **not** default to a flat beige presentation board. When the beat can live in a real place or object context, prefer a believable illustrated setting, shelf, table, room, product close-up or environmental composition.
 
-Do not mechanically repeat teal/cream, red/burgundy or any single palette across a whole video.
+## 8. Visual staging diversity — HARD REVIEW
 
-## 8. Environments and objects
+Representation variety is not enough if every frame still looks like the same flat explainer card.
 
-Environments and objects are full members of the same illustrated world.
+Across the sequence vary, when supported by content:
+- spatial depth: immersive room/environment vs close object vs clean graphic frame
+- camera: wide / medium / close / top-down / over-shoulder when useful
+- subject scale and placement
+- foreground / middle / background usage
+- local lighting and palette
+- negative space and focal density
 
-They should:
-- use the same outline / shading / texture language as the characters
-- contain useful props and believable activity
-- establish depth
-- support the psychology instead of acting as generic filler
-- be strong enough to carry a frame without a person when the beat allows it
+Review/rewrite when several adjacent images repeat the same beige/neutral board, centered-object layout, circles/arrows template or near-identical camera setup.
 
-Do not mix a semi-photorealistic room or object with a simple stickman character.
+## 9. Objects, schemas and text
 
-## 9. Text-led illustrations
+Objects and environments may carry a frame without people.
 
-Only planned exact German text may be readable.
+Schemas must stay simple enough to read instantly on a phone:
+- one mechanism
+- preferably no more than 3 major branches/labels
+- no crowd of tiny figures
+- no dense web of arrows, icons and mini-panels
 
-If no text is planned: `NO VISIBLE TEXT`.
+Text-led frames may use exact planned German text when wording itself matters. Keep it large and sparse. No paragraph-like copy or tiny explanatory text. If no text is planned: `NO VISIBLE TEXT`.
 
-Text may become the primary visual when wording itself is the mechanism, for example:
-- a controlling phrase
-- an exact psychology term
-- a short comparison label
-- a price / number
-- a concise warning or choice
+## 10. Mobile readability
 
-Text-led frames must still look like the same hand-drawn Psychology Stickman World, not like a foreign slide deck or corporate infographic.
+Every frame must still work when viewed small on a phone.
 
-## 10. Cover and episode reference workflow
+Hard review when:
+- the main point depends on tiny labels
+- more than a few small figures compete for attention
+- several arrows/circles/mini-panels create clutter
+- text is too small to read quickly
+- the focal object/person is too small relative to the frame
 
-BILD 01 is generated first as exactly 3 separate 16:9 cover candidates.
+## 11. Cover and episode reference
 
-After the user chooses the winner:
+BILD 01 is generated first as exactly 3 separate 16:9 cover candidates. After the user chooses the winner:
 - winner becomes `03-bilder/01.png`
-- `01.png` becomes the visual reference for the rest of that video
-- later images must preserve its linework, shading, texture and finish
-- when people appear, preserve the same stickman species
-- later images may change representation type, location, camera, clothing, people, colors and mood when the script requires it
-- do NOT copy the cover composition mechanically
-- do NOT force a person into later frames just because the cover contains people
+- `01.png` anchors linework, shading, texture, finish and stickman species whenever people appear
+- later images may change representation, place, camera, clothing, people, colors and mood
+- do not mechanically copy the cover composition
+- do not force people into later frames because the cover contains people
 
-When Flow supports image references / ingredients, use the approved `01.png` as the episode style reference for later batches.
+## 12. Short style anchor
 
-For returning people or locations, also preserve continuity from the latest accepted relevant frame.
+`Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.`
 
-## 11. Short reusable style anchor
+## 13. Minimal exclusions
 
-Use this compact anchor in final Flow masters:
-
-`Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, minimal expressive faces, narrow clothed torsos and very thin dark stick-like limbs. People, clothing, objects, text, environment, era, light and mood adapt to the script.`
-
-Do not repeat the full world specification inside every BILD prompt. The global block + short anchor are enough; each BILD should focus on the visible scene.
-
-## 12. Minimal global exclusions
-
-Keep negatives short:
 - no 3D / Pixar
 - no anime
 - no photorealism
 - no normal-human anatomy drift
-- no bare whiteboard / classroom doodle look
+- no bare whiteboard doodle
 - no foreign corporate infographic style
+- no repetitive beige explainer-board default
 
-## 13. QA hard fail
+## 14. QA hard fail / review
 
 Reject/regenerate when:
-- a person stops looking like the established stickman species
-- head/eyes/limb thickness/rendering drift noticeably
-- clothing turns a stickman into a normal cartoon human
-- figures become blank mannequins with no role-appropriate clothing/expression
-- every beat is turned into a character scene by default
-- a person is added only to fill space when an object/text/environment visual is clearer
-- dark scenes switch into a different art style
-- object/text/schema scenes look like they come from a different illustrator
-- environments look photorealistic or stylistically detached from the people
-- a historical/role-specific scene ignores obvious era/role cues
-- later frames look like unrelated illustrators rather than the same channel world
+- any person stops looking like the approved stickman species
+- clothing creates realistic shoulders, hips, thighs or normal cartoon-human volume
+- figures become blank mannequins
+- every beat becomes a character scene by default
+- a person is added only to fill space
+- object/text/schema frames look like another illustrator
+- several adjacent frames repeat the same flat explainer-board layout
+- schemas rely on tiny figures or cluttered arrows/labels
+- text is not comfortably readable on a phone
+- environments look photorealistic or stylistically detached
+- later frames look like unrelated illustrators
 
-## 14. Core sentence
+## 15. Core sentence
 
-**Same illustrated world and same stickman species when people appear; representation, people, clothing, place, era, color, light and emotion adapt to the script.**
+**Same illustrated world and exact same stickman species whenever people appear; representation, people, clothing, place, era, camera, color, light and emotion adapt to the script without falling into repetitive explainer-board layouts.**
