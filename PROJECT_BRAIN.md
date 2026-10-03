@@ -48,6 +48,8 @@ No permanent mascot. No forced recurring Character A/B cast.
 
 **Species lock:** role, clothing, hair and era may change, but a person may never drift into a normal cartoon-human body. Any such frame is regenerated.
 
+**Same-frame species lock:** all visible people in one frame share the same base head construction, torso scale and thin-limb anatomy. Hair/clothing sits on top of that species; it never replaces it with a normal human face/body.
+
 ## Representation First
 
 Choose the clearest visual form before character design:
@@ -57,6 +59,20 @@ Choose the clearest visual form before character design:
 People are optional. Use full characters when human behavior/interaction is the evidence; otherwise let the object, place, wording, comparison or mechanism carry the frame.
 
 For 10+ scenes, roughly 75%+ full character scenes require explicit `characterHeavyJustification`.
+
+## Visual sequence hardening
+
+Binding source: `rules/VISUAL_SEQUENCE_HARDENING.md`.
+Policy: `VISUAL_SEQUENCE_HARDENING_V1`.
+
+New/revised active videos must also pass:
+- motif progression: recurring objects must change role/state/context instead of repeating the same shot
+- `motifKey`, `visualChangeReason` and `panelCount` in Phase 1
+- 3+ adjacent identical motif keys only with explicit continuity justification
+- max 2 distinct visual states/panels per image by default
+- no 3-/4-panel mini-storyboards as explanatory shortcuts
+- zero unplanned readable text, including English headings and pseudo-text
+- static-hold review: simple visuals should be split into another concrete beat when the spoken segment is too long
 
 ## Staging First, not just representation labels
 
@@ -69,6 +85,7 @@ Review adjacent scenes for:
 - foreground/middle/background depth
 - local palette/light
 - real environment vs flat graphic board
+- recurring object/motif state
 
 Avoid repeated centered-object + arrows/circles layouts. Prefer real illustrated contexts when they explain the beat better.
 
@@ -78,7 +95,8 @@ Every image must work at phone size:
 - one dominant focal idea
 - large main subject
 - sparse readable text
-- schemas preferably max 3 major branches/labels
+- at most 2 distinct states/panels by default
+- schemas preferably max 3 major labels/branches
 - no tiny crowds, dense arrows or many mini-panels
 
 ## Dark psychology
@@ -105,6 +123,7 @@ It does NOT force later images to copy the same person, composition, representat
 - Visual Beats
 - `OBSERVABLE_SCENE_FIRST_V1`
 - `REPRESENTATION_VARIETY_V1`
+- `VISUAL_SEQUENCE_HARDENING_V1`
 - one central `02-google-flow/google-flow-prompt.txt`
 - 3 covers first
 - user chooses cover
@@ -130,5 +149,5 @@ Final upload files stay together in one flat `05-export/`:
 
 ## Production rule
 
-New videos automatically use the topic-uniqueness gate, active visual world, representation-first gate, strict species lock, staging-diversity review and mobile-readability review.
+New videos automatically use the topic-uniqueness gate, active visual world, representation-first gate, strict same-frame species lock, motif progression, max-two-state panel rule, staging-diversity review, zero-accidental-text rule and mobile-readability review.
 Historical projects are not retroactively migrated unless explicitly requested.
