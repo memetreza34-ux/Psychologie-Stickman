@@ -32,9 +32,11 @@ const wordTimingPath = findInternal('word-timings.json');
 const scenePlanPath = path.join(projectDir, '99-intern', 'scene-plan.json');
 const renderPropsPath = path.join(projectDir, '99-intern', 'render-props.json');
 const outputPath = path.join(projectDir, '05-export', 'final.mp4');
+const captionsPath = path.join(projectDir, '05-export', 'captions.srt');
 
 if (!fs.existsSync(phase1Path)) throw new Error(`Required production file missing: ${phase1Path}`);
 if (fs.existsSync(outputPath)) throw new Error(`Refusing to overwrite existing export: ${outputPath}`);
+if (fs.existsSync(captionsPath)) throw new Error(`Refusing to overwrite existing captions export: ${captionsPath}`);
 
 const run = (scriptArgs) => {
   const result = spawnSync(process.execPath, scriptArgs, {stdio: 'inherit'});
@@ -64,4 +66,11 @@ run(['scripts/stage-production-assets.mjs', scenePlanPath]);
 run(['scripts/prepare-phase3.mjs', wordTimingPath, scenePlanPath, renderPropsPath]);
 run(['scripts/render-phase3-project.mjs', 'youtube', renderPropsPath, outputPath]);
 run(['scripts/validate-final-render.mjs', outputPath, 'youtube']);
+run(['scripts/generate-youtube-captions.mjs', projectRelative]);
+
+if (!fs.existsSync(captionsPath) || !fs.statSync(captionsPath).size) {
+  throw new Error(`Captions export missing or empty after generation: ${captionsPath}`);
+}
+
 console.log(`PRODUCE YOUTUBE: PASS — ${path.relative(repoRoot, outputPath)}`);
+console.log(`YOUTUBE CAPTIONS: ${path.relative(repoRoot, captionsPath)}`);
