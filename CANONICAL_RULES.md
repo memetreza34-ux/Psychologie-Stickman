@@ -107,8 +107,13 @@ Text may be the main subject when wording itself is psychologically relevant, bu
 05-export/
 ├── final.mp4
 ├── thumbnail.png
+├── captions.srt
 └── youtube-upload.txt
 ```
+
+`captions.srt` is the final German YouTube subtitle file generated from the final voice-over timings. It stays directly in the flat `05-export/` folder.
+No separate `captions/`, `subtitles/` or `untertitel/` folders in the normal YouTube workflow.
+Internal timing data stays in `99-intern/`.
 
 ## Existing projects
 
