@@ -14,11 +14,6 @@ Nur lesen/analysieren bei Formulierungen wie:
 
 Schreiben ist erlaubt, wenn der Nutzer im aktuellen Chat ausdrücklich eine Änderung verlangt. Die Freigabe gilt nur für den genannten Scope.
 
-Beispiele:
-- „erstelle das nächste YouTube-Video“ → nur dieses Projekt + notwendige Projektlisten
-- „ändere die Bildwelt“ → Visual-World-/Promptregeln dürfen innerhalb dieses Auftrags geändert werden
-- „übertrage das Repo“ → Migrationsarbeiten im genannten Zielrepo sind erlaubt
-
 ## Grenzen
 
 - keine ungefragten Neben-Cleanups
@@ -40,10 +35,7 @@ THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → FINALES SCRIPT → PHA
 ## Google-Flow-Struktur — NICHT ÄNDERN
 
 Pro Video bleibt genau eine zentrale Datei:
-
 `02-google-flow/google-flow-prompt.txt`
-
-Keine Aufteilung in mehrere Master-/Batch-Prompt-Dateien.
 
 ## Google-Flow-Ausgabe — HARD LOCK
 
@@ -63,8 +55,6 @@ Verbindlich: `rules/FLOW_OUTPUT_MODE.md`.
 
 ## YouTube Export — HARD LOCK
 
-Fertiges Upload-Paket:
-
 ```text
 05-export/
 ├── final.mp4
@@ -74,28 +64,16 @@ Fertiges Upload-Paket:
 
 ## VISUAL WORLD STATUS — ACTIVE
 
-Aktive Bildwelt für neue Produktionen:
-
-`rules/PSYCHOLOGY_STICKMAN_WORLD.md`
-
+Active world: `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
 Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
-Kern:
-- hochwertige handgezeichnete 2D-Animationswelt
-- eine feste Stickman-Spezies für alle sichtbaren Menschen
-- übergroße runde/soft-ovale helle Köpfe, winzige schwarze ovale Augen
-- schmale bekleidete Körper, sehr dünne dunkle Stickman-Arme/-Beine
-- organische dunkle Outlines, weiches Cel-Shading, dezente Zeichentextur
-- Kleidung, Haare, Accessoires, Rolle, Epoche, Ort, Farbe, Licht und Emotion passen sich dem Script an
-- keine feste Kanalfigur / kein erzwungener Character A/B Cast
-- derselbe Mensch wird nur wiederverwendet, wenn die Story-Kontinuität es verlangt
-- Gewinner-Cover `01.png` ist die visuelle Referenz für die restliche Episode, nicht die feste Komposition oder zwingend dieselbe Person
+### Species lock — HARD
 
-### Representation First — HARD LOCK
+Every visible person must keep the exact approved stickman construction. Clothing, hair, role and era may vary, but normal cartoon-human anatomy is never accepted. Drifted frames must be regenerated.
 
-Die aktive Bildwelt ist **nicht character-only**.
+### Representation First — HARD
 
-Vor jeder Szene wird die beste sichtbare Darstellungsform gewählt:
+Choose first:
 - `CHARACTER_SCENE`
 - `OBJECT_FOCUS`
 - `ENVIRONMENT_SCENE`
@@ -103,11 +81,21 @@ Vor jeder Szene wird die beste sichtbare Darstellungsform gewählt:
 - `COMPARE_VISUAL`
 - `TEXT_ILLUSTRATION`
 
-Menschen sind optional. Eine Figur darf nicht nur deshalb erscheinen, weil der Kanal Stickmen nutzt oder der Sprechtext `du`, `jemand`, `Person` oder `Menschen` enthält.
+People are optional. A person may not be added merely because the channel uses Stickmen or the narration mentions a person.
 
-Bei 10+ Szenen sind ungefähr 75%+ volle `CHARACTER_SCENE`s ohne explizite `characterHeavyJustification` QA-Fail.
+At 10+ scenes, roughly 75%+ `CHARACTER_SCENE` without `characterHeavyJustification` is a QA fail.
 
-Bestehende Video-Projekte bleiben historische Projektartefakte und werden nicht automatisch migriert, außer der Nutzer beauftragt die konkrete Migration/Verbesserung.
+### Staging diversity — HARD REVIEW
+
+Do not accept a sequence that repeatedly falls back to flat beige/neutral explainer boards, centered objects, circles/arrows or near-identical camera setups.
+
+Three or more adjacent explainer-style frames must be reviewed for richer environment/object/camera alternatives unless the content genuinely requires the sequence.
+
+### Mobile readability — HARD REVIEW
+
+Reject/rewrite when the idea depends on tiny figures, small text, dense arrow networks, many mini-panels or several competing focal points. Schemas should normally stay to one mechanism and preferably no more than 3 major labels/branches.
+
+Existing video projects remain historical artifacts unless the user explicitly requests a concrete migration/improvement.
 
 ## Weiterhin aktive Prozessregeln
 
