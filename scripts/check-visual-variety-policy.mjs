@@ -38,11 +38,16 @@ for (const file of files) {
     continue;
   }
 
+  const hardenedSequence = plan.visualSequencePolicy === 'VISUAL_SEQUENCE_HARDENING_V1';
   const representationCounts = {};
   let currentCharacterRun = 0;
   let longestCharacterRun = 0;
   let currentFlatRun = 0;
   let longestFlatRun = 0;
+  let currentMotifRun = 0;
+  let longestMotifRun = 0;
+  let previousMotif = null;
+  let motifFailureReported = false;
 
   for (const scene of scenes) {
     const n = scene.scene ?? scene.number ?? '?';
@@ -75,6 +80,39 @@ for (const file of files) {
     if (/tiny|small figures|mini[- ]?figures|many arrows|dense arrows|many panels|mini[- ]?panels/iu.test(`${scene.observableEvidence ?? ''} ${scene.visualTask ?? ''}`)) {
       warnings.push(`${relative}: scene ${n} explicitly risks tiny/dense visual elements; simplify for mobile.`);
     }
+
+    if (hardenedSequence) {
+      const motifKey = String(scene.motifKey ?? '').trim();
+      const visualChangeReason = String(scene.visualChangeReason ?? '').trim();
+      const panelCount = Number(scene.panelCount);
+
+      if (!motifKey) failures.push(`${relative}: scene ${n} missing motifKey under VISUAL_SEQUENCE_HARDENING_V1.`);
+      if (!visualChangeReason) failures.push(`${relative}: scene ${n} missing visualChangeReason under VISUAL_SEQUENCE_HARDENING_V1.`);
+      if (!Number.isInteger(panelCount) || panelCount < 1) failures.push(`${relative}: scene ${n} missing/invalid panelCount under VISUAL_SEQUENCE_HARDENING_V1.`);
+      if (Number.isInteger(panelCount) && panelCount > 2) {
+        const justification = String(scene.panelCountJustification ?? '').trim();
+        if (!justification) failures.push(`${relative}: scene ${n} has panelCount=${panelCount}; default maximum is 2. Split/reframe or add exceptional panelCountJustification.`);
+        else warnings.push(`${relative}: scene ${n} has panelCount=${panelCount} with exceptional justification; verify mobile readability manually.`);
+      }
+
+      if (motifKey && motifKey === previousMotif) currentMotifRun += 1;
+      else currentMotifRun = motifKey ? 1 : 0;
+      previousMotif = motifKey || null;
+      longestMotifRun = Math.max(longestMotifRun, currentMotifRun);
+
+      if (currentMotifRun >= 3 && !motifFailureReported) {
+        const justification = String(scene.motifProgressionJustification ?? plan.motifProgressionJustification ?? '').trim();
+        if (!justification) {
+          failures.push(`${relative}: scenes include ${currentMotifRun}+ adjacent uses of motifKey '${motifKey}' without motifProgressionJustification. Redesign the motif progression.`);
+          motifFailureReported = true;
+        } else warnings.push(`${relative}: repeated motifKey '${motifKey}' has explicit justification; verify action/context/camera materially progress.`);
+      }
+
+      const combined = `${scene.observableEvidence ?? ''} ${scene.camera ?? ''} ${scene.dominantRelation ?? ''}`;
+      if (/three[- ]?(?:stage|part|panel|state)|3[- ]?(?:stage|part|panel|state)|three distinct states/iu.test(combined) && !(Number.isInteger(panelCount) && panelCount > 2 && String(scene.panelCountJustification ?? '').trim())) {
+        failures.push(`${relative}: scene ${n} still describes a 3-part/3-stage visual under the max-two-state policy.`);
+      }
+    }
   }
 
   const types = Object.keys(representationCounts).filter(Boolean);
@@ -92,6 +130,7 @@ for (const file of files) {
 
   if (longestCharacterRun >= 4) warnings.push(`${relative}: ${longestCharacterRun} consecutive CHARACTER_SCENEs; review for object/text/environment alternatives.`);
   if (longestFlatRun >= 3) warnings.push(`${relative}: ${longestFlatRun} consecutive flat explainer-risk scenes; review for richer environment/object/camera staging instead of repeated board/diagram layouts.`);
+  if (hardenedSequence && longestMotifRun >= 3) warnings.push(`${relative}: longest repeated motifKey run is ${longestMotifRun}; verify any explicit justification is genuinely necessary.`);
 }
 
 if (warnings.length) {
