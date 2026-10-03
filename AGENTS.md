@@ -25,46 +25,59 @@ Nische: **Psychologie & menschliches Verhalten**.
 
 ## VISUAL WORLD STATUS — ACTIVE
 
-Binding visual world:
-
-`PSYCHOLOGY_STICKMAN_WORLD_V1`
-
+Binding visual world: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 Source: `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
 
 Kern:
 - hochwertige handgezeichnete 2D-Animationswelt
-- gleiche Stickman-Spezies für alle Menschen
+- exakt gleiche Stickman-Spezies für alle sichtbaren Menschen
 - übergroße runde/soft-ovale helle Köpfe
-- winzige schwarze ovale Augen, minimale expressive Gesichter
+- winzige schwarze ovale Augen
 - schmale bekleidete Torsi
 - sehr dünne dunkle Stickman-Arme/-Beine
 - organische Outlines, weiches Cel-Shading, dezente Zeichentextur
-- natürliche klare Farben
-- kein permanenter Kanal-Charakter
-- Kleidung, Haare, Accessoires, Rolle, Epoche, Ort, Licht, Farbe und Emotion passen sich dem Script an
+- Kleidung, Haare, Rolle, Epoche, Ort, Licht und Farbe passen sich dem Script an
 
-Gleiche Figur nur dann wiederverwenden, wenn die Story-Kontinuität dieselbe Person verlangt.
-
-Dark Psychology darf dunkel, kalt, intim und spannungsvoll sein, aber Wirkung entsteht über Blick, Haltung, Distanz, Blocking, Hände, Kamera und Licht statt Horror-Klischees.
+**Normaler Cartoon-Mensch = FAIL.** Historische, Büro-, Labor- oder Dark-Psychology-Szenen haben keine Ausnahme. Drifted frames regenerieren.
 
 ## Visual Director
 
-`OBSERVABLE_SCENE_FIRST_V1` bleibt aktiv:
+`OBSERVABLE_SCENE_FIRST_V1` + `REPRESENTATION_VARIETY_V1`:
 
 ```text
 gesprochene Bedeutung
 → Viewer Takeaway
 → Observable Evidence
-→ konkrete sichtbare Komposition
+→ beste Representation
+→ konkrete Komposition
 → finaler Flow-Prompt
 ```
 
-Psychologische Begriffe nicht automatisch wörtlich visualisieren.
+People are one tool, not the default.
+
+Allowed:
+`CHARACTER_SCENE | OBJECT_FOCUS | ENVIRONMENT_SCENE | SCHEMA_EXPLAINER | COMPARE_VISUAL | TEXT_ILLUSTRATION`
+
+## Sequence QA
+
+Nicht nur Representation-Typen zählen. Prüfe auch die tatsächliche Bildfolge.
+
+Vermeiden:
+- mehrere ähnliche beige/neutral Explainer-Flächen hintereinander
+- wiederholt zentriertes Objekt + Kreise/Pfeile
+- gleiche Kamera/Focal Scale in vielen Nachbarszenen
+- kleine Figuren/Labels, die nur am großen Bildschirm funktionieren
+- überladene Schemata
+
+Bei 3+ aufeinanderfolgenden explainer-artigen Frames: aktiv nach stärkerer Environment-/Object-/Camera-Lösung suchen.
+
+Schemas: normalerweise ein Mechanismus, vorzugsweise max. 3 große Labels/Branches.
+
+Text: groß, kurz, phone-readable; keine Mini-Absätze.
 
 ## Google Flow — Struktur
 
 Pro Video genau:
-
 `02-google-flow/google-flow-prompt.txt`
 
 Keine mehreren Master-Prompts.
@@ -75,8 +88,8 @@ Keine mehreren Master-Prompts.
 - genau 3 getrennte 16:9 Cover-Kandidaten
 - STOP für Nutzerwahl
 - Gewinner → `01.png`
-- `01.png` ist die visuelle Episodenreferenz für Spezies/Linework/Shading/Textur/Finish
-- spätere Personen, Kleidung, Orte, Farben und Stimmung dürfen sich scriptgerecht ändern
+- `01.png` ist visuelle Episodenreferenz für Linework/Shading/Textur/Finish und Stickman-Spezies
+- spätere Representation, Personen, Kleidung, Orte, Farben und Stimmung dürfen sich scriptgerecht ändern
 - danach 5er-Batches
 - jede Bildnummer eigene Datei
 - akzeptierte Bilder sofort `NN.png`
