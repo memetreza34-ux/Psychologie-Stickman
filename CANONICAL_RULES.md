@@ -1,5 +1,23 @@
 # CANONICAL RULES — PSYCHOLOGY VIDEO PRODUCTION
 
+## Topic uniqueness — HARD LOCK
+
+Policy ID: `TOPIC_UNIQUENESS_V1`.
+
+Source of truth:
+- `TOPIC_REGISTRY.json`
+- `rules/TOPIC_UNIQUENESS_LOCK.md`
+
+Before any new YouTube project is created, the proposed core psychological mechanism must be checked against the complete registry and existing YouTube project folders.
+
+**One canonical topic / core mechanism = one YouTube video project.**
+
+Different titles, hooks, examples, thumbnails, languages, versions or `Part 2` do not make an already-used topic new.
+
+If a topic already exists, choose a different topic. A genuinely new topic must be added to `TOPIC_REGISTRY.json` in the same change as its new project.
+
+Historical duplicates are grandfathered only as `LEGACY_DUPLICATE_LOCKED` and may never receive another project.
+
 ## VISUAL WORLD STATUS
 
 `ACTIVE`
@@ -30,16 +48,18 @@ The world is NOT character-only. Object-focused frames, environments, schemas, c
 
 ## Active process sources
 
-1. `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
-2. `rules/FLOW_OUTPUT_MODE.md`
-3. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
-4. `rules/FLOW_PROMPT_ARCHITECTURE.md`
-5. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-6. `rules/REPRESENTATION_VARIETY_LOCK.md`
-7. `rules/COVER_LOCK.md`
-8. `rules/TEXT_OVERLAY_LOCK.md`
-9. `rules/YOUTUBE_EXPORT_PACKAGE.md`
-10. Script-/Format-/Produktionsregeln
+1. `rules/TOPIC_UNIQUENESS_LOCK.md`
+2. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+3. `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
+4. `rules/FLOW_OUTPUT_MODE.md`
+5. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
+6. `rules/FLOW_PROMPT_ARCHITECTURE.md`
+7. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+8. `rules/REPRESENTATION_VARIETY_LOCK.md`
+9. `rules/COVER_LOCK.md`
+10. `rules/TEXT_OVERLAY_LOCK.md`
+11. `rules/YOUTUBE_EXPORT_PACKAGE.md`
+12. Script-/Format-/Produktionsregeln
 
 ## Observable Scene First + Representation First
 

@@ -14,6 +14,26 @@ Der Kanal darf von normaler Alltagspsychologie bis zu dunkleren menschlichen Ver
 
 Der Kanal ist kein allgemeiner Wissenskanal, kein medizinischer Beratungs- oder Therapiekanal und kein reiner Finanz-/News-/Politikkanal.
 
+## Themen-Einmaligkeit — HARD GATE
+
+Verbindlich: `TOPIC_UNIQUENESS_V1` aus `rules/TOPIC_UNIQUENESS_LOCK.md`.
+
+Vor jeder neuen YouTube-Themenwahl:
+- `TOPIC_REGISTRY.json` vollständig lesen
+- vorhandene `youtube/TT.MM.JJJJ-*` Projekte prüfen
+- deutsche/englische Synonyme und alternative Schreibweisen vergleichen
+- den eigentlichen psychologischen Kernmechanismus vergleichen, nicht nur den Titel
+
+**Ein kanonisches Thema / ein Kernmechanismus darf nur einmal als neues YouTube-Video-Projekt verwendet werden.**
+
+Ein anderer Titel, Hook, Beispiel, visueller Winkel, `v2`, `Part 2` oder eine andere Verpackung macht dasselbe Thema nicht neu.
+
+Wenn das Thema bereits registriert ist: Thema ablehnen und ein anderes wählen.
+
+Ein wirklich neues Thema wird gleichzeitig mit dem neuen Projekt als neuer `USED`-Eintrag in `TOPIC_REGISTRY.json` registriert.
+
+Historische Duplikate mit Status `LEGACY_DUPLICATE_LOCKED` bleiben nur als Altbestand erhalten und dürfen niemals um ein weiteres Projekt ergänzt werden.
+
 ## Feste Content-Säulen
 
 ### 1. Denken, Wahrnehmung & Denkfehler
@@ -112,13 +132,14 @@ Darstellung bleibt erklärend und evidenzorientiert. Der Kanal romantisiert oder
 ## Themen-Gate
 
 Ein Thema wird angenommen, wenn:
-1. Es beantwortet eine klare Frage über menschliches Denken, Fühlen, Entscheiden, Kommunizieren, sozialen Einfluss oder Verhalten.
-2. Der psychologische Mechanismus der eigentliche Kern ist.
-3. Seriöse Quellen/Forschung oder belastbare Daten verfügbar sind.
-4. Unsicherheit und umstrittene Forschung transparent dargestellt werden.
-5. Das Thema genügend Tiefe für das Format bietet.
-6. Es mehrere klar unterscheidbare Visual Beats ermöglicht.
-7. Es sich in `CINEMATIC_HUMAN_BEHAVIOR_V2` sinnvoll visualisieren lässt.
+1. Das Topic-Uniqueness-Gate bestanden ist und das Kernthema noch nicht im Register steht.
+2. Es beantwortet eine klare Frage über menschliches Denken, Fühlen, Entscheiden, Kommunizieren, sozialen Einfluss oder Verhalten.
+3. Der psychologische Mechanismus der eigentliche Kern ist.
+4. Seriöse Quellen/Forschung oder belastbare Daten verfügbar sind.
+5. Unsicherheit und umstrittene Forschung transparent dargestellt werden.
+6. Das Thema genügend Tiefe für das Format bietet.
+7. Es mehrere klar unterscheidbare Visual Beats ermöglicht.
+8. Es sich in `PSYCHOLOGY_STICKMAN_WORLD_V1` sinnvoll visualisieren lässt.
 
 ## Erlaubte Grenzthemen
 

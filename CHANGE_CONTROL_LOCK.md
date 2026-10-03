@@ -22,11 +22,31 @@ Schreiben ist erlaubt, wenn der Nutzer im aktuellen Chat ausdrücklich eine Änd
 - Exporte nicht überschreiben
 - bei strukturellen Änderungen relevante Checks ausführen
 
+## Topic uniqueness — HARD LOCK
+
+Policy: `TOPIC_UNIQUENESS_V1`.
+
+Vor JEDEM neuen YouTube-Video zuerst lesen und prüfen:
+- `TOPIC_REGISTRY.json`
+- `rules/TOPIC_UNIQUENESS_LOCK.md`
+- vorhandene `youtube/TT.MM.JJJJ-*` Projektordner
+
+**Ein kanonisches Thema / ein psychologischer Kernmechanismus darf nur einmal als YouTube-Video-Projekt existieren.**
+
+Ein anderer Titel, Hook, Beispiel, Thumbnail, visueller Winkel, `v2`, `Part 2`, deutsche/englische Bezeichnung oder andere Verpackung macht dasselbe Kernthema NICHT neu.
+
+Wenn derselbe Kernmechanismus bereits im Register steht: STOP und ein anderes Thema wählen.
+
+Bei einem wirklich neuen Thema muss der neue Eintrag in `TOPIC_REGISTRY.json` im selben Change/Commit wie das neue Video-Projekt angelegt werden.
+
+Historische Duplikate bleiben bestehen, sind aber als `LEGACY_DUPLICATE_LOCKED` eingefroren. Sie erlauben kein weiteres Video zu diesem Thema.
+
 ## Phasenschutz
 
 YouTube:
 THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → FINALES SCRIPT → PHASE 1 VISUAL BEATS → PHASE 2 GOOGLE FLOW → PHASE 3 → FINAL-QA.
 
+- Themenwahl: zuerst Topic-Uniqueness-Gate bestehen
 - Skriptänderung: Hook-Policy + Phase 1 neu prüfen/erstellen
 - Hook-/Einstiegsänderung: Kernbegriffs- und frühes Alltagsbeispiel-Timing neu prüfen
 - Bildweltänderung: Phase 1 + Phase 2 auf die neue Bildwelt neu ausrichten
@@ -104,6 +124,8 @@ Existing video projects remain historical artifacts unless the user explicitly r
 
 ## Weiterhin aktive Prozessregeln
 
+- `rules/TOPIC_UNIQUENESS_LOCK.md`
+- `rules/YOUTUBE_THEMEN_SYSTEM.md`
 - `rules/FLOW_OUTPUT_MODE.md`
 - `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
 - `rules/FLOW_PROMPT_ARCHITECTURE.md`

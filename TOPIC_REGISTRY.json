@@ -1,0 +1,121 @@
+{
+  "policyId": "TOPIC_UNIQUENESS_V1",
+  "rule": "ONE_CANONICAL_TOPIC_ONE_YOUTUBE_VIDEO",
+  "effectiveFrom": "2026-10-03",
+  "instructions": [
+    "Before creating any new YouTube project, compare the proposed core psychological mechanism against every registry entry and alias.",
+    "If the same core topic/mechanism already exists, do not create another video or project. A different title, example, hook, visual angle, language, version number or Part 2 does not make it a new topic.",
+    "A genuinely new topic must be added to this registry in the same change that creates its YouTube project.",
+    "Historical duplicates that already existed when this lock was introduced are frozen and do not authorize another duplicate."
+  ],
+  "entries": [
+    {
+      "topicId": "prokrastination-aufschieben",
+      "canonicalTopic": "Aufschieben / Prokrastination",
+      "aliases": ["aufschieben", "prokrastination", "procrastination", "aufschiebeverhalten"],
+      "projects": ["youtube/23.09.2026-aufschieben-test"],
+      "status": "USED"
+    },
+    {
+      "topicId": "wahrheitseffekt",
+      "canonicalTopic": "Wahrheitseffekt / Illusory Truth Effect",
+      "aliases": ["wahrheitseffekt", "illusory-truth-effect", "illusion-of-truth", "truth-effect"],
+      "projects": ["youtube/23.09.2026-wahrheitseffekt-test"],
+      "status": "USED"
+    },
+    {
+      "topicId": "negativitaetsbias",
+      "canonicalTopic": "Negativitätsbias",
+      "aliases": ["negativitaetsbias", "negativity-bias", "negativitaetseffekt"],
+      "projects": ["youtube/24.09.2026-negativitaetsbias"],
+      "status": "USED"
+    },
+    {
+      "topicId": "spotlight-effekt",
+      "canonicalTopic": "Spotlight-Effekt",
+      "aliases": ["spotlight-effekt", "spotlight-effect"],
+      "projects": [
+        "youtube/24.09.2026-spotlight-effekt",
+        "youtube/27.09.2026-spotlight-effekt-v2",
+        "youtube/29.09.2026-spotlight-effekt-v1",
+        "youtube/03.10.2026-spotlight-effekt-v1"
+      ],
+      "status": "LEGACY_DUPLICATE_LOCKED",
+      "note": "Existing duplicate history. No further Spotlight-Effekt project is allowed."
+    },
+    {
+      "topicId": "bestaetigungsfehler",
+      "canonicalTopic": "Bestätigungsfehler / Confirmation Bias",
+      "aliases": ["bestaetigungsfehler", "bestaetigungsbias", "confirmation-bias", "confirmation-bias-effect"],
+      "projects": ["youtube/25.09.2026-bestaetigungsfehler"],
+      "status": "USED"
+    },
+    {
+      "topicId": "ankereffekt",
+      "canonicalTopic": "Ankereffekt / Anchoring",
+      "aliases": ["ankereffekt", "anker-effekt", "anchoring", "anchoring-effect", "anchoring-bias"],
+      "projects": [
+        "youtube/26.09.2026-ankereffekt",
+        "youtube/28.09.2026-ankereffekt-v1"
+      ],
+      "status": "LEGACY_DUPLICATE_LOCKED",
+      "note": "Existing duplicate history. No further Ankereffekt project is allowed."
+    },
+    {
+      "topicId": "sunk-cost-effekt",
+      "canonicalTopic": "Sunk-Cost-Effekt",
+      "aliases": ["sunk-cost-effekt", "sunk-cost-effect", "sunk-cost-fallacy", "versunkene-kosten"],
+      "projects": ["youtube/26.09.2026-sunk-cost-effekt"],
+      "status": "USED"
+    },
+    {
+      "topicId": "besitztumseffekt",
+      "canonicalTopic": "Besitztumseffekt / Endowment Effect",
+      "aliases": ["besitztumseffekt", "endowment-effect", "besitz-effekt"],
+      "projects": ["youtube/27.09.2026-besitztumseffekt"],
+      "status": "USED"
+    },
+    {
+      "topicId": "gruppendruck",
+      "canonicalTopic": "Gruppendruck",
+      "aliases": ["gruppendruck", "group-pressure", "peer-pressure"],
+      "projects": ["youtube/28.09.2026-gruppendruck-v1"],
+      "status": "USED"
+    },
+    {
+      "topicId": "halo-effekt",
+      "canonicalTopic": "Halo-Effekt",
+      "aliases": ["halo-effekt", "halo-effect"],
+      "projects": ["youtube/29.09.2026-halo-effekt-v1"],
+      "status": "USED"
+    },
+    {
+      "topicId": "bystander-effekt",
+      "canonicalTopic": "Bystander-Effekt",
+      "aliases": ["bystander-effekt", "bystander-effect", "zuschauereffekt"],
+      "projects": ["youtube/30.09.2026-bystander-effekt-v1"],
+      "status": "USED"
+    },
+    {
+      "topicId": "ikea-effekt",
+      "canonicalTopic": "IKEA-Effekt",
+      "aliases": ["ikea-effekt", "ikea-effect"],
+      "projects": ["youtube/30.09.2026-ikea-effekt-v1"],
+      "status": "USED"
+    },
+    {
+      "topicId": "reaktanz",
+      "canonicalTopic": "Psychologische Reaktanz",
+      "aliases": ["reaktanz", "psychologische-reaktanz", "reactance", "psychological-reactance"],
+      "projects": ["youtube/02.10.2026-reaktanz-v1"],
+      "status": "USED"
+    },
+    {
+      "topicId": "framing-effekt",
+      "canonicalTopic": "Framing-Effekt",
+      "aliases": ["framing-effekt", "framing-effect", "framing"],
+      "projects": ["youtube/03.10.2026-framing-effekt-v1"],
+      "status": "USED"
+    }
+  ]
+}

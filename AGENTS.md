@@ -10,18 +10,37 @@ Ein neuer Chat startet read-only. Schreiben nur bei ausdrücklicher aktueller Nu
 
 1. `CANONICAL_RULES.md`
 2. `PROJECT_BRAIN.md`
-3. `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
-4. `rules/FLOW_OUTPUT_MODE.md`
-5. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
-6. `rules/FLOW_PROMPT_ARCHITECTURE.md`
-7. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
-8. `rules/REPRESENTATION_VARIETY_LOCK.md`
-9. `rules/COVER_LOCK.md`
-10. relevante Script-/Format-/Audio-/Exportregeln
+3. `TOPIC_REGISTRY.json`
+4. `rules/TOPIC_UNIQUENESS_LOCK.md`
+5. `rules/YOUTUBE_THEMEN_SYSTEM.md`
+6. `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
+7. `rules/FLOW_OUTPUT_MODE.md`
+8. `rules/VISUAL_DIRECTOR_PROMPT_WRITER.md`
+9. `rules/FLOW_PROMPT_ARCHITECTURE.md`
+10. `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
+11. `rules/REPRESENTATION_VARIETY_LOCK.md`
+12. `rules/COVER_LOCK.md`
+13. relevante Script-/Format-/Audio-/Exportregeln
 
 ## Kanal
 
 Nische: **Psychologie & menschliches Verhalten**.
+
+## Themenwahl — HARD PRECHECK
+
+Vor JEDEM neuen YouTube-Video muss `TOPIC_UNIQUENESS_V1` bestanden werden.
+
+Ablauf:
+1. vorgeschlagenen Kernmechanismus in einem Satz bestimmen
+2. `TOPIC_REGISTRY.json` vollständig prüfen
+3. deutsche/englische Synonyme und alternative Schreibweisen prüfen
+4. vorhandene `youtube/TT.MM.JJJJ-*` Ordner prüfen
+5. wenn derselbe Kernmechanismus bereits verwendet wurde: KEIN neues Projekt anlegen, anderes Thema wählen
+6. bei wirklich neuem Thema Registry-Eintrag + Projekt im selben Change erstellen
+
+Ein anderer Titel, Hook, Beispiel, Thumbnail, `v2`, `Part 2` oder eine andere Verpackung macht dasselbe Thema nicht neu.
+
+Bestehende historische Duplikate sind `LEGACY_DUPLICATE_LOCKED` und dürfen niemals um ein weiteres Projekt ergänzt werden.
 
 ## VISUAL WORLD STATUS — ACTIVE
 
