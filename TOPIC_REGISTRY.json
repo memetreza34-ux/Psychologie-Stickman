@@ -116,6 +116,13 @@
       "aliases": ["framing-effekt", "framing-effect", "framing"],
       "projects": ["youtube/03.10.2026-framing-effekt-v1"],
       "status": "USED"
+    },
+    {
+      "topicId": "kognitive-dissonanz",
+      "canonicalTopic": "Kognitive Dissonanz / Cognitive Dissonance",
+      "aliases": ["kognitive-dissonanz", "cognitive-dissonance", "dissonanztheorie", "cognitive-dissonance-theory"],
+      "projects": ["youtube/03.10.2026-kognitive-dissonanz-v1"],
+      "status": "USED"
     }
   ]
 }
