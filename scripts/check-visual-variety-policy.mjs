@@ -21,6 +21,7 @@ const warnings = [];
 const allowedComposition = new Set(['standard', 'split', 'contrast', 'montage']);
 const allowedSocial = new Set(['solo', 'duo', 'group', 'none']);
 const allowedRepresentation = new Set(['CHARACTER_SCENE', 'OBJECT_FOCUS', 'ENVIRONMENT_SCENE', 'SCHEMA_EXPLAINER', 'COMPARE_VISUAL', 'TEXT_ILLUSTRATION', 'OBJECT_METAPHOR']);
+const flatRiskTypes = new Set(['SCHEMA_EXPLAINER', 'TEXT_ILLUSTRATION']);
 
 for (const file of files) {
   if (file.split(path.sep).includes('00-vorlage')) continue;
@@ -40,6 +41,8 @@ for (const file of files) {
   const representationCounts = {};
   let currentCharacterRun = 0;
   let longestCharacterRun = 0;
+  let currentFlatRun = 0;
+  let longestFlatRun = 0;
 
   for (const scene of scenes) {
     const n = scene.scene ?? scene.number ?? '?';
@@ -54,11 +57,23 @@ for (const file of files) {
     if (!String(scene.representationReason ?? '').trim()) failures.push(`${relative}: scene ${n} missing representationReason.`);
 
     representationCounts[sceneType] = (representationCounts[sceneType] ?? 0) + 1;
+
     if (sceneType === 'CHARACTER_SCENE') {
       currentCharacterRun += 1;
       longestCharacterRun = Math.max(longestCharacterRun, currentCharacterRun);
-    } else {
-      currentCharacterRun = 0;
+    } else currentCharacterRun = 0;
+
+    const explicitFlatCompare = sceneType === 'COMPARE_VISUAL' && /schema|diagram|graphic|circle|arrow|panel|board|flat/iu.test(`${scene.observableEvidence ?? ''} ${scene.camera ?? ''}`);
+    if (flatRiskTypes.has(sceneType) || explicitFlatCompare) {
+      currentFlatRun += 1;
+      longestFlatRun = Math.max(longestFlatRun, currentFlatRun);
+    } else currentFlatRun = 0;
+
+    const textItems = Array.isArray(scene.flowText) ? scene.flowText : (scene.flowText ? [scene.flowText] : []);
+    if (textItems.length > 3 && sceneType !== 'COMPARE_VISUAL') warnings.push(`${relative}: scene ${n} has ${textItems.length} visible text items; verify phone readability.`);
+
+    if (/tiny|small figures|mini[- ]?figures|many arrows|dense arrows|many panels|mini[- ]?panels/iu.test(`${scene.observableEvidence ?? ''} ${scene.visualTask ?? ''}`)) {
+      warnings.push(`${relative}: scene ${n} explicitly risks tiny/dense visual elements; simplify for mobile.`);
     }
   }
 
@@ -76,6 +91,7 @@ for (const file of files) {
   }
 
   if (longestCharacterRun >= 4) warnings.push(`${relative}: ${longestCharacterRun} consecutive CHARACTER_SCENEs; review for object/text/environment alternatives.`);
+  if (longestFlatRun >= 3) warnings.push(`${relative}: ${longestFlatRun} consecutive flat explainer-risk scenes; review for richer environment/object/camera staging instead of repeated board/diagram layouts.`);
 }
 
 if (warnings.length) {
