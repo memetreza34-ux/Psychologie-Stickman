@@ -10,6 +10,9 @@ Binding world: `PSYCHOLOGY_STICKMAN_WORLD_V1`
 
 Source: `rules/PSYCHOLOGY_STICKMAN_WORLD.md`
 
+Sequence hardening: `VISUAL_SEQUENCE_HARDENING_V1`
+Source: `rules/VISUAL_SEQUENCE_HARDENING.md`
+
 ## One master file
 
 Every video uses exactly one:
@@ -24,13 +27,15 @@ All images stay inside this one master file.
 2. ACTIVE VISUAL WORLD
 3. short global channel-style/species block
 4. REPRESENTATION-FIRST rule
-5. SEQUENCE VARIETY / MOBILE-READABILITY rule
-6. VIDEO WORLD / continuity facts
-7. COVER WORKFLOW
-8. FIVE-IMAGE BATCH WORKFLOW
-9. GLOBAL TEXT RULE
-10. OBSERVABLE-SCENE RULE
-11. BILD 01 through BILD NN
+5. SAME-FRAME SPECIES rule
+6. MOTIF PROGRESSION / PANEL-DENSITY rule
+7. SEQUENCE VARIETY / MOBILE-READABILITY rule
+8. VIDEO WORLD / continuity facts
+9. COVER WORKFLOW
+10. FIVE-IMAGE BATCH WORKFLOW
+11. GLOBAL TEXT RULE
+12. OBSERVABLE-SCENE RULE
+13. BILD 01 through BILD NN
 
 ## Prompt simplicity
 
@@ -63,9 +68,33 @@ People are optional. A character scene is appropriate only when visible human be
 
 Whenever a BILD contains people, the prompt must preserve the approved species. Use the compact reinforcement when needed:
 
-`same approved stickman species: oversized light round/oval head, tiny black oval eyes, narrow clothed torso, very thin dark stick-like limbs; no normal-human anatomy.`
+`same approved stickman species: identical light round/oval base heads, tiny black oval eyes, narrow clothed torsos, very thin dark stick-like limbs; hair/clothing may vary but no normal-human anatomy.`
 
 Historical, office, laboratory, family and dark-psychology scenes do not get exceptions. If Flow generates a normal cartoon human, that BILD fails and must be regenerated.
+
+### Same-frame species rule
+
+If two or more humans share one image, every human must visibly use the same light/white head shell, head proportion, eye language, torso scale and limb thickness. Hair sits on the approved head; it must not replace it with a normal skin-toned cartoon face. Clothing may not create human-like shoulders, chest, hips or thighs.
+
+**Mixed normal-cartoon person + stickman in one image = FAIL.**
+
+## Motif progression — HARD RULE
+
+Projects using `VISUAL_SEQUENCE_HARDENING_V1` must plan `motifKey`, `visualChangeReason` and `panelCount` per scene.
+
+Recurring objects are allowed for continuity, but neighboring scenes must materially progress through action, consequence, location, camera, focal scale, object state, social relation or foreground/background role.
+
+Three or more adjacent scenes with the same `motifKey` require explicit `motifProgressionJustification`; otherwise redesign before Phase 2.
+
+Do not treat a different representation label as sufficient variety if the frame is still essentially the same product/desk/person shot.
+
+## Panel/state density — HARD RULE
+
+Default maximum: **2 distinct visible states/panels in one BILD**.
+
+Do not ask Flow for 3-part/4-part timelines, multi-panel mini-storyboards or slide-like explainer sequences inside one image.
+
+For a 3-step mechanism, split it into multiple BILDs, show one coherent physical scene, or reduce it to a two-state before/after comparison.
 
 ## Sequence variety and staging
 
@@ -78,8 +107,9 @@ Before Phase 2, check adjacent scenes for:
 - spatial depth
 - local palette/light
 - flat-board vs immersive-environment staging
+- recurring motif state and function
 
-Avoid repeated beige/neutral presentation boards, centered objects, circles/arrows templates or near-identical layouts across several adjacent BILDs.
+Avoid repeated beige/neutral presentation boards, centered objects, circles/arrows templates, near-identical layouts or repeated hero-object displays across several adjacent BILDs.
 
 When the script allows, prefer concrete real-world contexts such as a shelf, room, street, desk, product close-up, hallway or laboratory over a generic explanatory background.
 
@@ -90,6 +120,7 @@ All images must work at phone size.
 - large clear focal subject
 - short planned text only
 - no paragraph-like copy
+- max 2 distinct states/panels by default
 - schemas preferably max 3 major labels/branches
 - avoid tiny crowds, dense arrow networks and many mini-panels
 
@@ -97,7 +128,7 @@ All images must work at phone size.
 
 Use:
 
-`spoken meaning → viewer takeaway → observable evidence → best representation → concrete composition → final prompt`
+`spoken meaning → viewer takeaway → observable evidence → best representation → concrete composition → motif/panel QA → final prompt`
 
 Do not ask Flow to invent an abstract psychological visual. Do not literalize effect names automatically.
 
@@ -105,16 +136,19 @@ Do not ask Flow to invent an abstract psychological visual. Do not literalize ef
 
 Use once near the top:
 
-`Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.`
+`Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: identical oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; hair/clothing may vary but never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.`
 
 Minimal exclusions:
 - no 3D / Pixar
 - no anime
 - no photorealism
 - no normal-human anatomy drift
+- no mixed human species in one frame
 - no bare whiteboard doodle
 - no foreign corporate infographic style
 - no repetitive beige explainer-board default
+- no 3-/4-panel explainer-board default
+- no unplanned readable text
 
 ## People
 
@@ -149,14 +183,20 @@ Default: `No visible text.`
 
 Only exact planned German wording may appear. Text may be the primary subject of a `TEXT_ILLUSTRATION` when wording itself is the mechanism, but it must remain large and sparse.
 
+Any unplanned readable English/German, UI/packaging words or gibberish is an immediate regeneration failure.
+
 ## Hard fail / rewrite
 
 - character scene used by default without representation reason
 - any human drifts into normal cartoon-human anatomy
+- multiple people in one frame use different base species/anatomies
 - non-character frame switches to a foreign rendering style
 - several adjacent frames repeat the same flat explainer-board composition
+- several adjacent frames reuse the same motif without material progression
 - schema/text image is too dense for phone viewing
+- more than 2 distinct states/panels appear without exceptional justification
 - tiny people or labels are required to understand the point
+- any unplanned readable text appears
 - Flow must invent the core visual idea
 - several scene numbers are combined into one asset
 - cover gate or five-image batching is broken
