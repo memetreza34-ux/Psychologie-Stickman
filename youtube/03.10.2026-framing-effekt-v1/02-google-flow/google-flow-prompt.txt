@@ -1,0 +1,134 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+TOPIC: Framing-Effekt
+FORMAT: 16:9 / 1920x1080
+VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+
+TASK
+Create final separate 16:9 source images for one coherent German psychology YouTube video.
+One BILD number = one separate image.
+Never create a storyboard, contact sheet, collage or automatic video.
+
+ACTIVE VISUAL WORLD
+Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the same stickman species: oversized round/soft-oval light heads, tiny black oval eyes, minimal expressive faces, narrow clothed torsos and very thin dark stick-like limbs. People, clothing, objects, text, environment, era, light and mood adapt to the script.
+
+The world is not character-only. Object-focused frames, environments, comparisons, schemas and text illustrations must look as if they were drawn by the same illustrator as the character scenes.
+
+GLOBAL EXCLUSIONS
+No 3D/Pixar, anime, photorealism, normal-human anatomy drift, bare whiteboard-doodle look or foreign corporate-infographic style.
+
+REPRESENTATION FIRST — HARD RULE
+Use the representation chosen for each BILD: CHARACTER_SCENE, OBJECT_FOCUS, ENVIRONMENT_SCENE, SCHEMA_EXPLAINER, COMPARE_VISUAL or TEXT_ILLUSTRATION.
+People are optional. Do not add full stickman characters to object/text/environment frames simply to fill space.
+
+VIDEO WORLD
+The episode moves between a bright everyday product example, an early-1980s behavioral-research environment and a clean modern reflection/checking sequence.
+
+When people appear, keep the exact approved stickman species and the same illustrator/render language. Do not invent a permanent protagonist. BILD 08 and 09 use period-appropriate participants in the same early-1980s lab. BILD 13 and 15 use newly designed modern adults appropriate to those scenes.
+
+COVER WORKFLOW — HARD LOCK
+1. Generate BILD 01 ONLY.
+2. Generate exactly 3 SEPARATE standalone 16:9 cover candidates.
+3. All three use the exact headline: “GLEICHE INFO, ANDERE WAHL?”
+4. All three show the same thesis: identical underlying information is presented in two equivalent but differently emphasized ways.
+5. Use three meaningfully different compositions.
+6. STOP and wait for the user to choose one.
+7. Chosen winner -> `01.png` -> `03-bilder/`.
+8. Use approved `01.png` as the episode visual reference for linework, shading, texture, finish and stickman species whenever people appear.
+9. A cover without people does not require later images to stay object-only.
+
+AFTER COVER APPROVAL
+Generate remaining images in exactly these batches:
+- Batch 1: BILD 02–06
+- Batch 2: BILD 07–11
+- Batch 3: BILD 12–16
+
+Generate each whole five-image batch in one batch operation, but every BILD must remain one separate 16:9 image asset.
+Rename accepted results immediately to `NN.png` and keep all accepted files directly in the same flat `03-bilder/` folder.
+Regenerate only failed images. After a batch passes QA, continue automatically to the next batch.
+Use approved `01.png` as the episode style reference/ingredient when supported.
+
+GLOBAL TEXT RULE
+Readable text is allowed only in BILD 01, BILD 02, BILD 04, BILD 12 and BILD 14.
+All other BILDs: NO VISIBLE TEXT.
+Never invent English labels, signs or gibberish.
+
+PROMPTING RULE
+Show the psychology through concrete visible evidence: equivalent numbers, object placement, selected choices, environment, comparison, exact planned wording and human behavior where actually needed.
+Do not visualize the Framing-Effekt as a literal picture frame.
+One BILD = one dominant visible idea.
+
+BILD 01
+Generate exactly three separate standalone 16:9 cover candidates.
+
+Candidate 1: close shelf-level comparison of two identical illustrated food packages. Everything about the product is identical except one front label emphasizes “90 % FETTFREI” while the other emphasizes “10 % FETT”. Make the mathematical equivalence obvious through matching package design and one identical 90/10 circular proportion graphic. Integrate exactly: “GLEICHE INFO, ANDERE WAHL?” Clean title zone, strong thumbnail readability, no other readable text.
+
+Candidate 2: top-down comparison on a clean illustrated kitchen table. One identical product sits in the center with two alternative label cards placed left and right: “90 % FETTFREI” and “10 % FETT”. Use a bold central visual link showing both labels belong to the same product without arrows or corporate infographic styling. Integrate exactly: “GLEICHE INFO, ANDERE WAHL?” No other readable text.
+
+Candidate 3: split-but-coherent supermarket shelf composition. The exact same package appears on both sides under different equivalent wording, with identical price, size and 90/10 proportion graphic. One side feels positively emphasized, the other negatively emphasized through local color and layout while remaining the same hand-drawn world. Integrate exactly: “GLEICHE INFO, ANDERE WAHL?” No other readable text.
+
+STOP AFTER THE THREE BILD 01 CANDIDATES.
+
+BILD 02
+TEXT_ILLUSTRATION. Clean hand-drawn psychology-world frame. Make the exact German term “FRAMING-EFFEKT” the main visual. Beside it, show two small equivalent information cards using the same neutral 90/10 proportion but different visual emphasis. Mature editorial composition, same linework, cel shading and texture as the approved cover. No other readable text.
+
+BILD 03
+SCHEMA_EXPLAINER. One neutral circular 90/10 data graphic appears twice with identical geometry. On the left, visual emphasis sits on the large 90-part area; on the right, emphasis sits on the smaller 10-part area. Keep the numbers themselves unreadable here: use proportion and contrast only. Same hand-drawn world, no slide-deck look. NO VISIBLE TEXT.
+
+BILD 04
+OBJECT_FOCUS. Two identical illustrated yogurt-style packages sit side by side on a bright supermarket shelf. Match shape, price area, size and design exactly. The only readable difference is the planned wording: left “90 % FETTFREI”, right “10 % FETT”. Natural retail lighting, tactile hand-drawn packaging, no people needed. No other readable text.
+
+BILD 05
+COMPARE_VISUAL. Show the same 90/10 circular proportion twice in one coherent composition. Left: the majority portion is visually dominant and bright. Right: the minority portion is visually dominant and darker. Geometry and quantities remain identical. Use the same organic outlines, soft cel shading and illustrated texture as the episode. NO VISIBLE TEXT.
+
+BILD 06
+ENVIRONMENT_SCENE. Wide early-1980s behavioral-research room with no portraits or full people required. Paper questionnaires, pencils, simple choice cards, an old desk lamp, muted institutional furniture and period equipment establish the era. The setup should feel like a real decision-research workspace, not a museum display. Same illustrated world. NO VISIBLE TEXT.
+
+BILD 07
+SCHEMA_EXPLAINER. Top-down early-1980s experiment table. Use the same total set of small person-tokens in two mirrored decision layouts: one layout groups the preserved portion, the other groups the lost portion, with matching totals. Include a clear safe-versus-risky choice structure through card shapes and grouped tokens, but no readable words or numbers. NO VISIBLE TEXT.
+
+BILD 08
+CHARACTER_SCENE. Medium-close tabletop choice in the same early-1980s lab. One period-appropriate adult stickman participant studies two option cards and places a hand decisively on the visually certain option while the probability-based alternative remains untouched. Clothing and hair fit the era; exact same stickman species as the channel. Focused neutral research light. NO VISIBLE TEXT.
+
+BILD 09
+CHARACTER_SCENE. Mirrored medium-close choice scene in the same early-1980s lab with a different period-appropriate participant. The person selects the probability-based option while the certain-loss option remains beside it. Make the riskier selection clear through hand placement and card layout, not dramatic emotion. Same stickman species and lab style. NO VISIBLE TEXT.
+
+BILD 10
+COMPARE_VISUAL. Three compact decision setups in one coherent hand-drawn frame receive the same presentation, but outcomes differ: one cropped hand chooses left, one chooses right, one remains paused between the choices. Keep the setups visually identical apart from the response. The point is that wording does not control everyone automatically. NO VISIBLE TEXT.
+
+BILD 11
+ENVIRONMENT_SCENE. Top-down research desk showing many different study contexts: stacks of paper choice cards, a product package, a probability diagram, a neutral decision worksheet and varied result marks. The layout should visually suggest heterogeneous tasks and non-uniform findings without readable labels or numbers. Same illustrated research-world finish. NO VISIBLE TEXT.
+
+BILD 12
+TEXT_ILLUSTRATION. One coherent three-part typology in the same hand-drawn world. First area: chance-choice cards; second: a product attribute package; third: a goal/outcome path. Integrate exactly these three German labels: “RISIKO”, “EIGENSCHAFT”, “ZIEL”. Keep each section visually distinct but stylistically unified. No other readable text.
+
+BILD 13
+CHARACTER_SCENE. Medium-wide modern scene with three adult stickmen receiving the same differently emphasized choice card. One visibly accepts it, one rejects it with a small backward hand motion, and one sets it aside and looks elsewhere. Different clothing and hair fit each adult, but all use the exact same stickman species. Neutral everyday environment, no villain cues. NO VISIBLE TEXT.
+
+BILD 14
+OBJECT_FOCUS. Top-down illustrated notebook with two clean columns containing the same neutral fact rewritten in two directions. Only the headings are readable: “GEWINN” on the left and “VERLUST” on the right. A pen rests between the columns and the same underlying 90/10 proportion graphic appears below both. Calm practical desk light. No other readable text.
+
+BILD 15
+CHARACTER_SCENE. Medium tabletop reflection scene. One modern adult stickman sits with the two rewritten cards side by side, one hand paused between them, then looks down to the identical neutral data sheet placed underneath both. Thoughtful posture, simple everyday clothing, quiet daylight. The human self-check is the focus. NO VISIBLE TEXT.
+
+BILD 16
+OBJECT_FOCUS. Close ending shot of one two-sided information card mid-turn. Both sides show the same 90/10 proportion, but one side visually emphasizes the large portion and the other the small portion. Make the unchanged underlying data obvious through identical geometry. Reflective clean lighting, same illustrated finish. NO VISIBLE TEXT.
+
+FINAL QA
+- use PSYCHOLOGY_STICKMAN_WORLD_V1 throughout
+- preserve the same illustrator, linework, cel shading, texture and finish across character and non-character frames
+- when people appear, use the exact same stickman species
+- respect each chosen representation; do not add full characters to object/text/environment frames
+- no literal picture-frame metaphor for the Framing-Effekt
+- three separate BILD 01 cover candidates first, then STOP
+- approved `01.png` becomes episode style reference
+- later images generated in 5-image batches: 02–06, 07–11, 12–16
+- every BILD is a separate 16:9 asset
+- accepted files renamed `NN.png`
+- all accepted files directly in `03-bilder/`
+- no storyboard, contact sheet, collage or automatic video
+- readable text only in BILD 01, 02, 04, 12 and 14
