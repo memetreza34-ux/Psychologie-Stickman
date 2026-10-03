@@ -75,7 +75,7 @@ Generate remaining images in exactly these batches:
 - Batch 2: BILD 07–11
 - Batch 3: BILD 12–16
 
-Generate each whole five-image batch in one batch operation, but every BILD must remain one separate 16:9 image asset.
+Generate each whole 5-image batch in one batch operation, but every BILD must remain one separate 16:9 image asset.
 Rename accepted results immediately to `NN.png` and keep all accepted files directly in the same flat `03-bilder/` folder.
 Regenerate only failed images. After a batch passes QA, continue automatically to the next batch.
 When supported, use approved `01.png` as the episode style reference / ingredient.
