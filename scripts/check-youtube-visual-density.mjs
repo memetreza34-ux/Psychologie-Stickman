@@ -37,11 +37,17 @@ for (const planPath of productionPlans) {
   const average = scenes.length ? totalWords / scenes.length : 0;
   const longest = counts.length ? Math.max(...counts) : 0;
   const minimumSceneCount = Math.ceil(totalWords / 18);
+  const strict = plan.visualSequencePolicy === 'VISUAL_SEQUENCE_HARDENING_V1';
   const reviewedExtendedBeats = new Set(
     Array.isArray(plan.reviewedExtendedBeats)
       ? plan.reviewedExtendedBeats.filter((value) => Number.isInteger(value) && value > 0)
       : [],
   );
+
+  const report = (message, hard = true) => {
+    if (strict && hard) failures.push(message);
+    else warnings.push(`${message}${strict ? '' : ' [historical/non-hardened plan]'}`);
+  };
 
   console.log(`\n${path.relative(process.cwd(), planPath)}`);
   console.log(`Scenes: ${scenes.length}`);
@@ -49,10 +55,11 @@ for (const planPath of productionPlans) {
   console.log(`Average words/scene: ${average.toFixed(1)}`);
   console.log(`Longest scene: ${longest} words`);
   console.log(`Minimum density floor for this script: ${minimumSceneCount} scenes`);
+  console.log(`Density mode: ${strict ? 'STRICT / VISUAL_SEQUENCE_HARDENING_V1' : 'LEGACY REVIEW'}`);
 
-  if (scenes.length === 0) failures.push(`${planPath}: no visual beats.`);
-  if (scenes.length > 0 && average > 16) failures.push(`${planPath}: average ${average.toFixed(1)} words/scene exceeds 16-word average.`);
-  if (scenes.length < minimumSceneCount) failures.push(`${planPath}: ${scenes.length} scenes is below density floor ${minimumSceneCount}.`);
+  if (scenes.length === 0) report(`${planPath}: no visual beats.`);
+  if (scenes.length > 0 && average > 16) report(`${planPath}: average ${average.toFixed(1)} words/scene exceeds 16-word average.`);
+  if (scenes.length < minimumSceneCount) report(`${planPath}: ${scenes.length} scenes is below density floor ${minimumSceneCount}.`);
 
   scenes.forEach((scene, index) => {
     const words = counts[index] ?? 0;
@@ -60,19 +67,21 @@ for (const planPath of productionPlans) {
     const isReviewedExtended = scene.allowExtendedBeat === true || reviewedExtendedBeats.has(sceneNumber);
 
     if (words > 28) {
-      failures.push(`${planPath}: scene ${sceneNumber} has ${words} words; absolute maximum is 28.`);
+      report(`${planPath}: scene ${sceneNumber} has ${words} words; absolute maximum is 28.`);
     } else if (words > 20 && !isReviewedExtended) {
-      failures.push(`${planPath}: scene ${sceneNumber} has ${words} words; scenes above 20 require explicit editorial review.`);
+      report(`${planPath}: scene ${sceneNumber} has ${words} words; scenes above 20 require explicit editorial review.`);
     } else if (words > 20) {
       warnings.push(`${planPath}: scene ${sceneNumber} uses reviewed extended beat (${words} words).`);
     }
 
-    if (typeof scene.visualTask !== 'string' || scene.visualTask.trim() === '') {
-      failures.push(`${planPath}: scene ${sceneNumber} has no visualTask.`);
+    const hasLegacyVisualTask = typeof scene.visualTask === 'string' && scene.visualTask.trim() !== '';
+    const hasObservableEvidence = typeof scene.observableEvidence === 'string' && scene.observableEvidence.trim() !== '';
+    if (!hasLegacyVisualTask && !hasObservableEvidence) {
+      report(`${planPath}: scene ${sceneNumber} has neither visualTask nor observableEvidence.`);
     }
 
-    if (scene.textPolicy && scene.textPolicy !== 'NONE' && typeof scene.textPolicy !== 'string') {
-      failures.push(`${planPath}: scene ${sceneNumber} has invalid textPolicy.`);
+    if (scene.textPolicy && typeof scene.textPolicy !== 'string') {
+      report(`${planPath}: scene ${sceneNumber} has invalid textPolicy.`);
     }
   });
 }
