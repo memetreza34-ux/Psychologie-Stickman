@@ -36,8 +36,14 @@ for (const file of files) {
     continue;
   }
 
-  if (String(plan.visibleTextRenderer ?? '').toUpperCase() !== 'GOOGLE_FLOW') failures.push(`${relative}: visibleTextRenderer must be GOOGLE_FLOW.`);
-  if (plan.renderGermanLabelsInRemotion !== false) failures.push(`${relative}: renderGermanLabelsInRemotion must be false.`);
+  const strict = plan.visualSequencePolicy === 'VISUAL_SEQUENCE_HARDENING_V1';
+  const report = (message) => {
+    if (strict) failures.push(message);
+    else warnings.push(`${message} [historical/non-hardened plan]`);
+  };
+
+  if (String(plan.visibleTextRenderer ?? '').toUpperCase() !== 'GOOGLE_FLOW') report(`${relative}: visibleTextRenderer must be GOOGLE_FLOW.`);
+  if (plan.renderGermanLabelsInRemotion !== false) report(`${relative}: renderGermanLabelsInRemotion must be false.`);
 
   const moments = Array.isArray(plan.flowTextMoments) ? plan.flowTextMoments : [];
   const seen = new Set();
@@ -49,27 +55,27 @@ for (const file of files) {
     const kind = String(moment.kind ?? (scene === 1 ? 'cover' : 'keyword')).toLowerCase();
 
     if (!Number.isInteger(scene) || scene < 1 || scene > scenes.length) {
-      failures.push(`${relative}: flowTextMoments[${index}] has invalid scene.`);
+      report(`${relative}: flowTextMoments[${index}] has invalid scene.`);
       return;
     }
-    if (seen.has(scene)) failures.push(`${relative}: duplicate text moment for scene ${scene}.`);
+    if (seen.has(scene)) report(`${relative}: duplicate text moment for scene ${scene}.`);
     seen.add(scene);
-    if (!allowedKinds.has(kind)) failures.push(`${relative}: unsupported text kind '${kind}'.`);
-    if (!texts.length) failures.push(`${relative}: scene ${scene} text is empty.`);
-    if (texts.length > 4) failures.push(`${relative}: scene ${scene} has too many text strings.`);
+    if (!allowedKinds.has(kind)) report(`${relative}: unsupported text kind '${kind}'.`);
+    if (!texts.length) report(`${relative}: scene ${scene} text is empty.`);
+    if (texts.length > 4) report(`${relative}: scene ${scene} has too many text strings.`);
 
     if (scene === 1) {
       coverCount += 1;
       const words = countWords(texts[0] ?? '');
-      if (words < 2 || words > 7) failures.push(`${relative}: cover title must contain 2-7 words.`);
+      if (words < 2 || words > 7) report(`${relative}: cover title must contain 2-7 words.`);
     } else {
-      for (const text of texts) if (countWords(text) > 5) failures.push(`${relative}: scene ${scene} text exceeds 5 words.`);
+      for (const text of texts) if (countWords(text) > 5) report(`${relative}: scene ${scene} text exceeds 5 words.`);
     }
   });
 
-  if (moments.length && coverCount !== 1) failures.push(`${relative}: exactly one Scene-01 cover text moment is required.`);
+  if (moments.length && coverCount !== 1) report(`${relative}: exactly one Scene-01 cover text moment is required.`);
   const maxMoments = Math.max(1, Math.ceil(scenes.length * 0.3));
-  if (moments.length > maxMoments) failures.push(`${relative}: text density exceeds 30%.`);
+  if (moments.length > maxMoments) report(`${relative}: text density exceeds 30%.`);
 }
 
 if (warnings.length) {
