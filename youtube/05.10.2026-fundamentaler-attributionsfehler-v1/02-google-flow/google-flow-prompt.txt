@@ -44,13 +44,15 @@ STAGING / SEQUENCE HARD RULES
 - one dominant visible idea per BILD
 - maximum 2 clearly separated states/panels per image
 - no 3-/4-panel mini-storyboards
-- recurring motifs must visibly progress in action, camera, setting or object state
 - vary camera distance, focal scale, depth, subject placement and local lighting when useful
 - prefer real illustrated environments over generic presentation boards
 - keep every frame readable on a phone
 - no tiny crowds, dense arrows or miniature labels
 - ZERO READABLE TEXT unless exact German text is explicitly requested below
 - any unplanned English, German, UI, packaging or gibberish text = FAIL and regenerate
+
+MOTIF PROGRESSION — HARD RULE
+Recurring objects and motifs must visibly progress in action, camera, setting, scale or object state instead of repeating the same composition. A recurring object may return only when its visual role advances the explanation or story.
 
 VIDEO WORLD / CONTINUITY
 Modern everyday scenes may use different people as the script changes.
@@ -266,7 +268,7 @@ CHARACTER_SCENE. In a restaurant, one server moves quickly between a few tables 
 
 BILD 39
 
-ENVIRONMENT_SCENE. Wide restaurant reveal: empty coworker stations, long line of order tickets and several waiting tables. Show operational overload without tiny figures or readable tickets. ZERO READABLE TEXT.
+ENVIRONMENT_SCENE. Wide restaurant reveal: empty coworker stations, long line of order tickets and several waiting tables. Show operational overload without miniature people or readable tickets. ZERO READABLE TEXT.
 
 BILD 40
 
@@ -298,7 +300,7 @@ OBJECT_FOCUS. Extreme close phone screen with one short generic message bubble, 
 
 BILD 47
 
-TEXT_ILLUSTRATION. A tiny generic comment bubble expands toward a large stickman portrait. Render exactly: `ARROGANT? DUMM? AGGRESSIV?` Large and sparse. No other readable text.
+TEXT_ILLUSTRATION. A compact generic comment bubble expands toward a large stickman portrait. Render exactly: `ARROGANT? DUMM? AGGRESSIV?` Large and sparse. No other readable text.
 
 BILD 48
 
@@ -407,6 +409,7 @@ FINAL QA
 - approved 01.png anchors linework, shading, texture, finish and stickman species
 - every visible human remains the exact same stickman species; normal cartoon-human drift = FAIL
 - historical lab scenes keep the same species while adapting period clothing and environment
+- MOTIF PROGRESSION is enforced: recurring objects and motifs visibly advance instead of repeating the same shot
 - maximum 2 distinct states/panels per BILD
 - no chain of flat beige explainer boards
 - camera, focal scale, depth and environment vary across the sequence
