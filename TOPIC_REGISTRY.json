@@ -123,6 +123,13 @@
       "aliases": ["kognitive-dissonanz", "cognitive-dissonance", "dissonanztheorie", "cognitive-dissonance-theory"],
       "projects": ["youtube/03.10.2026-kognitive-dissonanz-v1"],
       "status": "USED"
+    },
+    {
+      "topicId": "fundamentaler-attributionsfehler",
+      "canonicalTopic": "Fundamentaler Attributionsfehler / Correspondence Bias",
+      "aliases": ["fundamentaler-attributionsfehler", "fundamental-attribution-error", "correspondence-bias", "korrespondenzbias", "dispositional-bias"],
+      "projects": ["youtube/05.10.2026-fundamentaler-attributionsfehler-v1"],
+      "status": "USED"
     }
   ]
 }

@@ -1,0 +1,420 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+TOPIC: Fundamentaler Attributionsfehler
+FORMAT: 16:9 / 1920x1080
+TARGET VIDEO LENGTH: 6–7 minutes
+VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
+VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+
+TASK
+Create final separate 16:9 source images for one coherent German YouTube psychology video.
+One BILD number = one separate image.
+Never create a storyboard, contact sheet, collage or automatic video.
+
+ACTIVE VISUAL WORLD
+High-quality hand-drawn 2D animated psychology world with strong slightly organic dark outlines, soft cel shading, subtle illustrated texture, natural clear colors and believable foreground/midground/background depth.
+
+WHEN PEOPLE APPEAR — HARD SPECIES LOCK
+Every visible person must use the exact same approved stickman species:
+- oversized round or softly oval light/white head
+- tiny black oval eyes
+- minimal eyebrows/mouth only when useful
+- narrow clothed torso
+- very thin dark stick-like arms and legs
+- small simplified hands
+- small simple shoes
+Hair, clothing, age, profession and historical era may vary, but the underlying anatomy may not.
+Normal cartoon-human anatomy, semi-realistic human anatomy or mixed species in one frame = FAIL and regenerate.
+
+THE WORLD IS NOT CHARACTER-ONLY
+Objects, rooms, roads, labs, desks, comparisons and text-led illustrations use the same illustrator/render language.
+People are optional and appear only when human behavior is the clearest evidence.
+
+GLOBAL EXCLUSIONS
+No 3D/Pixar, anime, photorealism, normal-human anatomy drift, blank classroom-doodle style, corporate infographic look, repetitive beige explainer boards, glowing brains, split heads, supernatural energy, horror symbolism or personality auras.
+
+REPRESENTATION FIRST — HARD RULE
+Before each BILD use the already planned best visual form: CHARACTER_SCENE, OBJECT_FOCUS, ENVIRONMENT_SCENE, COMPARE_VISUAL or TEXT_ILLUSTRATION. People are optional. Do not add a person merely because the narration says “someone”.
+
+STAGING / SEQUENCE HARD RULES
+- one dominant visible idea per BILD
+- maximum 2 clearly separated states/panels per image
+- no 3-/4-panel mini-storyboards
+- recurring motifs must visibly progress in action, camera, setting or object state
+- vary camera distance, focal scale, depth, subject placement and local lighting when useful
+- prefer real illustrated environments over generic presentation boards
+- keep every frame readable on a phone
+- no tiny crowds, dense arrows or miniature labels
+- ZERO READABLE TEXT unless exact German text is explicitly requested below
+- any unplanned English, German, UI, packaging or gibberish text = FAIL and regenerate
+
+VIDEO WORLD / CONTINUITY
+Modern everyday scenes may use different people as the script changes.
+Historical research scenes must match the correct broad era: 1960s for Jones/Harris, 1970s for Ross/Amabile/Steinmetz, late 1980s/1990s for later attribution research.
+When the same person reappears within one comparison or direct continuity beat, preserve that person's hair, clothing and proportions.
+Do not invent a permanent channel mascot.
+
+COVER WORKFLOW — HARD LOCK
+1. Generate BILD 01 ONLY.
+2. Generate exactly 3 SEPARATE 16:9 cover candidates.
+3. All three use the exact cover text: `DU KENNST DEN GRUND NICHT`
+4. No other readable text.
+5. They must communicate the same thesis but use 3 meaningfully different compositions.
+6. STOP and wait for the user to choose one.
+7. Chosen winner -> `01.png` -> `03-bilder/`.
+8. Use approved `01.png` as the episode visual reference for linework, shading, texture, finish and stickman species.
+9. Do not mechanically copy its exact person, location, palette or composition into later images.
+
+AFTER COVER APPROVAL
+Generate the remaining images in batches of exactly 5 whenever at least 5 remain:
+02–06
+07–11
+12–16
+17–21
+22–26
+27–31
+32–36
+37–41
+42–46
+47–51
+52–56
+57–61
+62–66
+67–71
+72 as the final remainder batch.
+
+Generate each whole 5-image batch in one batch operation, but every BILD must remain a separate final 16:9 asset.
+Rename accepted results immediately to `NN.png`.
+Put every accepted image directly into the same flat `03-bilder/`.
+Regenerate only failed images.
+No batch subfolders.
+
+GLOBAL TEXT RULE
+Only render exact German text explicitly requested for that BILD.
+Otherwise: ZERO READABLE TEXT.
+Text-led images must remain sparse, large and phone-readable.
+
+PROMPTING RULE
+Do not prompt abstract psychology. Prompt concrete visible evidence: posture, gaze, object relation, role structure, camera framing, environmental constraints or exact planned text.
+
+BILD 01
+
+Generate exactly 3 separate cover candidates, then STOP.
+
+CANDIDATE 1
+Driver-seat over-the-shoulder view at a city intersection. A compact car has just cut into the lane; the foreground driver reacts with visible frustration through one hand on the wheel. In the deeper road background, a blocked lane and stalled vehicle hint that the maneuver may have had a situational cause. One visible stickman driver at most. Strong depth, immediate conflict, thumbnail-readable. Exact German text: `DU KENNST DEN GRUND NICHT`. No other readable text.
+
+CANDIDATE 2
+Exterior roadside angle. One compact car merges sharply while its stickman driver is visible through the side window. Behind that car, the viewer can see a lane obstruction that the judging driver would not fully see from their angle. Strong diagonal road action, clear hidden-context thesis. Exact German text: `DU KENNST DEN GRUND NICHT`. No other readable text.
+
+CANDIDATE 3
+A large side mirror dominates the foreground and shows the apparently careless driver in the other car. Outside the mirror, the wider road reveals a stalled vehicle and forced merge. The composition makes narrow judgment versus wider context instantly visible. Exact German text: `DU KENNST DEN GRUND NICHT`. No other readable text.
+
+STOP AFTER THESE 3 SEPARATE COVER IMAGES.
+
+BILD 02
+
+TEXT_ILLUSTRATION. Top-down road junction with one car isolated from a wider traffic obstruction. Render exactly: `FUNDAMENTALER ATTRIBUTIONSFEHLER`. Large, sparse and phone-readable. No other readable text.
+
+BILD 03
+
+COMPARE_VISUAL, maximum 2 states. Same late-arriving stickman person: tight crop shows only the person at a doorway; wider state reveals a stalled train and station queue. Make narrow judgment versus wider context instantly clear. ZERO READABLE TEXT.
+
+BILD 04
+
+COMPARE_VISUAL, maximum 2 states. Left: person arrives late at an office door beside an analog wall clock. Right: same person beside a stopped train and waiting passengers. Same character continuity across both states. ZERO READABLE TEXT.
+
+BILD 05
+
+CHARACTER_SCENE. Busy office desk. A colleague gives a brief curt reply while a ringing phone, open laptop and stacked folders compete for attention. The reaction should look ambiguous, not villainous. ZERO READABLE TEXT.
+
+BILD 06
+
+COMPARE_VISUAL, maximum 2 states. The same person displays one ordinary consistent habit in two clearly different settings, showing that stable tendencies can matter too. Neutral behavior, not moralized. ZERO READABLE TEXT.
+
+BILD 07
+
+OBJECT_FOCUS. Top-down notebook: one large simple portrait icon occupies most of the page while small context objects are pushed to the edge. One clear metaphor for over-weighting the person. ZERO READABLE TEXT.
+
+BILD 08
+
+ENVIRONMENT_SCENE. Pull back to a wide real environment around a judged person. Clock, transit disruption, authority figure and workload cues fill the space while the person becomes small within the larger causal context. ZERO READABLE TEXT.
+
+BILD 09
+
+ENVIRONMENT_SCENE. Authentic 1960s university psychology research room, period furniture and clothing. Participants read essay sheets while a researcher supervises. Same stickman species for every person. ZERO READABLE TEXT.
+
+BILD 10
+
+OBJECT_FOCUS. Two period essay folders on a desk use opposing political visual cues, one favorable and one critical, without slogans, labels or readable paper text. Keep it historical and neutral. ZERO READABLE TEXT.
+
+BILD 11
+
+COMPARE_VISUAL, maximum 2 states. One writer freely selects between two essay folders; another writer is handed a predetermined folder by a researcher. Make choice versus assignment obvious through action, not labels. ZERO READABLE TEXT.
+
+BILD 12
+
+CHARACTER_SCENE. A reader studies an assigned-position essay and then looks toward the writer with a confident judgment while the researcher's assignment gesture remains visible nearby. All people identical stickman base anatomy. ZERO READABLE TEXT.
+
+BILD 13
+
+OBJECT_FOCUS. Foreground assignment card and researcher's hand are visually obvious, yet a portrait marker is still placed close to the essay-position object. Show known constraint being underweighted. ZERO READABLE TEXT.
+
+BILD 14
+
+ENVIRONMENT_SCENE. 1970s university quiz-game room with two desks, questioner and contestant positions, plus a few observers. Period clothing and furniture. No signs or labels. ZERO READABLE TEXT.
+
+BILD 15
+
+OBJECT_FOCUS. Questioner selects difficult topic cards from subjects they know well and arranges only a few chosen cards. Use symbolic topic objects rather than written categories. ZERO READABLE TEXT.
+
+BILD 16
+
+CHARACTER_SCENE. Contestant sits across the table trying to answer while the questioner holds a prepared card. The imbalance in control should be visible through posture and props, not exaggerated emotion. ZERO READABLE TEXT.
+
+BILD 17
+
+OBJECT_FOCUS. Simple random assignment device places a question-mark-shaped token at one seat and a separate answer-role token at the other. No words. Make the allocation visibly arbitrary. ZERO READABLE TEXT.
+
+BILD 18
+
+COMPARE_VISUAL, maximum 2 states. First state: observers watch the confident questioner. Second state: observers place more neutral rating tokens on the questioner side despite the unequal setup. ZERO READABLE TEXT.
+
+BILD 19
+
+ENVIRONMENT_SCENE. High overhead view of the quiz table. Questioner side has self-selected topic cards and answer key; contestant side has only incoming questions. Structural advantage is the main subject. ZERO READABLE TEXT.
+
+BILD 20
+
+OBJECT_FOCUS. A drawer of topic objects opens toward the questioner, who can choose familiar domains; an unknown stack faces the contestant. Clear asymmetry, no diagram board. ZERO READABLE TEXT.
+
+BILD 21
+
+CHARACTER_SCENE. Tight view on the confident questioner in the foreground while the contestant hesitates across the table. Use the camera to make the questioner appear salient without changing the world style. ZERO READABLE TEXT.
+
+BILD 22
+
+ENVIRONMENT_SCENE. Wide reveal of the same quiz moment. Random role tokens, selected-topic materials and both participants are visible so the structural cause becomes more important than the confident person. ZERO READABLE TEXT.
+
+BILD 23
+
+OBJECT_FOCUS. A camera-like viewfinder or framing device encloses one stickman person sharply while most of the surrounding room sits outside the crop. Keep it grounded, not surreal. ZERO READABLE TEXT.
+
+BILD 24
+
+CHARACTER_SCENE. One speaking stickman fills the foreground during a conversation. Face and hand gesture are clear; the room behind is secondary and softly detailed. Show perceptual salience. ZERO READABLE TEXT.
+
+BILD 25
+
+ENVIRONMENT_SCENE. Wider social room where clock, workload, authority presence, weather and private-call cues surround a small actor. Keep one dominant focal relationship, not a cluttered infographic. ZERO READABLE TEXT.
+
+BILD 26
+
+COMPARE_VISUAL, maximum 2 states. Same event: tight crop makes the person dominant; wide crop reveals the constraints around them. Strong camera contrast, same character continuity. ZERO READABLE TEXT.
+
+BILD 27
+
+OBJECT_FOCUS. Research desk with four distinct folders and one magnifying glass, suggesting several possible mechanisms rather than one explanation. No labels, no arrows, no corporate infographic layout. ZERO READABLE TEXT.
+
+BILD 28
+
+ENVIRONMENT_SCENE. 1990s psychology office with review papers, books and two researchers comparing study materials at a table. No readable titles. Same stickman species. ZERO READABLE TEXT.
+
+BILD 29
+
+ENVIRONMENT_SCENE. An observer judges someone through a doorway while an important cause remains physically hidden in the next room, visible only to the viewer. Strong depth and partial information. ZERO READABLE TEXT.
+
+BILD 30
+
+COMPARE_VISUAL, maximum 2 states. Observer knows there is rain and transit delay, but the second wider state reveals the disruption is much more severe than expected. Same late person across both states. ZERO READABLE TEXT.
+
+BILD 31
+
+COMPARE_VISUAL, maximum 2 states. First: quick close impression of a tense person. Second: wider context reveals a strict supervisor and urgent deadline. Show incomplete correction without text or abstract brain symbols. ZERO READABLE TEXT.
+
+BILD 32
+
+CHARACTER_SCENE. A person judges a coworker while simultaneously handling a ringing phone, open laptop and urgent analog timer. Cognitive load must be visible through competing real tasks. ZERO READABLE TEXT.
+
+BILD 33
+
+ENVIRONMENT_SCENE. Late-1980s psychology lab recreation. Participant watches a target person while performing a secondary listening task through headphones; researcher nearby. Period-appropriate props. ZERO READABLE TEXT.
+
+BILD 34
+
+CHARACTER_SCENE. Modern commuter carries bags, checks a phone and hurries through a station while instantly reacting to another person's small mistake nearby. Dynamic but readable. ZERO READABLE TEXT.
+
+BILD 35
+
+ENVIRONMENT_SCENE. Modern conference room. One quiet employee sits among a few colleagues while a meeting proceeds. Do not already reveal the supervisor interruption. ZERO READABLE TEXT.
+
+BILD 36
+
+TEXT_ILLUSTRATION. The quiet employee remains small at one side. Render exactly these large German words: `UNSICHER? UNVORBEREITET? DESINTERESSIERT?` No other readable text. Sparse, high contrast, phone-readable.
+
+BILD 37
+
+CHARACTER_SCENE. Supervisor repeatedly cuts across the quiet employee with an extended hand and dominant posture while the employee's attempted gesture is interrupted. Keep behavior realistic, not melodramatic. ZERO READABLE TEXT.
+
+BILD 38
+
+CHARACTER_SCENE. In a restaurant, one server moves quickly between a few tables and gives a brief reply while carrying several plates. Avoid a huge crowd. Ambiguous behavior, not villainous. ZERO READABLE TEXT.
+
+BILD 39
+
+ENVIRONMENT_SCENE. Wide restaurant reveal: empty coworker stations, long line of order tickets and several waiting tables. Show operational overload without tiny figures or readable tickets. ZERO READABLE TEXT.
+
+BILD 40
+
+ENVIRONMENT_SCENE. Classroom or vocational-training room. One student sits quietly while a teacher addresses the group. Believable German-style learning environment but no readable signage. ZERO READABLE TEXT.
+
+BILD 41
+
+CHARACTER_SCENE. Medium-close on the quiet student. Hands near the desk, eyes following the lesson, background classmates soft. The student is reserved but visibly attentive. ZERO READABLE TEXT.
+
+BILD 42
+
+CHARACTER_SCENE. Same student starts to raise a hand, then hesitates as group attention turns toward them. Show fear of public error through posture and gaze only. ZERO READABLE TEXT.
+
+BILD 43
+
+ENVIRONMENT_SCENE. Formal job-interview room with one candidate under direct attention from two interviewers. Clean office, artificial evaluation atmosphere, same stickman species. ZERO READABLE TEXT.
+
+BILD 44
+
+COMPARE_VISUAL, maximum 2 states. Left: same candidate speaks nervously in the interview. Right: same person communicates confidently with coworkers in a normal work setting. Preserve identity exactly. ZERO READABLE TEXT.
+
+BILD 45
+
+OBJECT_FOCUS. One snapshot-style photo from the interview sits on an evaluator's desk beside a much larger blank timeline of unseen working life. No labels. Show how little evidence one moment contains. ZERO READABLE TEXT.
+
+BILD 46
+
+OBJECT_FOCUS. Extreme close phone screen with one short generic message bubble, but no readable words or UI labels. Large empty surrounding space makes missing voice, history and context visible. ZERO READABLE TEXT.
+
+BILD 47
+
+TEXT_ILLUSTRATION. A tiny generic comment bubble expands toward a large stickman portrait. Render exactly: `ARROGANT? DUMM? AGGRESSIV?` Large and sparse. No other readable text.
+
+BILD 48
+
+ENVIRONMENT_SCENE. Pull back from the sender's phone to reveal a noisy station where they are helping another person with luggage while typing quickly. Show how missing context changes interpretation. ZERO READABLE TEXT.
+
+BILD 49
+
+ENVIRONMENT_SCENE. Boardroom with asymmetrical seating and one elevated presentation position. Make role power visible through space before anyone speaks. No labels or screens with readable text. ZERO READABLE TEXT.
+
+BILD 50
+
+CHARACTER_SCENE. Meeting leader stands, controls the presentation area and asks questions while others listen. The role naturally makes the leader appear informed and confident. ZERO READABLE TEXT.
+
+BILD 51
+
+CHARACTER_SCENE. Reverse angle: seated employee receives rapid questions with little preparation time while the leader waits. Limited control and time pressure make the person appear weaker. ZERO READABLE TEXT.
+
+BILD 52
+
+ENVIRONMENT_SCENE. Return to the 1970s quiz room from high above. The role structure, desk layout and unequal information access dominate the composition more than the people. ZERO READABLE TEXT.
+
+BILD 53
+
+OBJECT_FOCUS. Question cards, answer key and role token cluster around the questioner side. Show how the situation produces opportunities to look knowledgeable. No labels or arrows. ZERO READABLE TEXT.
+
+BILD 54
+
+COMPARE_VISUAL, maximum 2 states. One state zooms tightly on a person's behavior; the other shows that same behavior inside clear situational constraints. Neither side should be presented as automatically correct. ZERO READABLE TEXT.
+
+BILD 55
+
+OBJECT_FOCUS. Physical desk scale with a simple person icon on one side and several environment objects on the other; keep the scale roughly balanced. Same illustrated world, no infographic labels. ZERO READABLE TEXT.
+
+BILD 56
+
+TEXT_ILLUSTRATION. One observed behavior cue points visually toward a stable-trait portrait. Render exactly: `KORRESPONDENZBIAS`. No other readable text. Keep it sparse and elegant, not a diagram board.
+
+BILD 57
+
+COMPARE_VISUAL, maximum 2 states. Observer makes an initial character judgment; second state shows the observer revising after new situational context becomes visible. No text, no brain graphics. ZERO READABLE TEXT.
+
+BILD 58
+
+ENVIRONMENT_SCENE / restrained two-state layout. Two 1990s newsroom environments cover the same social event with different visual emphasis. No national flags, caricatures, stereotypes or readable headlines. ZERO READABLE TEXT.
+
+BILD 59
+
+COMPARE_VISUAL, maximum 2 states. One newspaper-like layout emphasizes a large individual portrait; the other emphasizes the surrounding social circumstances and environment. No readable copy. ZERO READABLE TEXT.
+
+BILD 60
+
+ENVIRONMENT_SCENE. Top-down illustrated table with several different city-context postcards arranged around a simple world-map shape. Suggest variation across contexts without stereotypes or flags. ZERO READABLE TEXT.
+
+BILD 61
+
+COMPARE_VISUAL, maximum 2 states. Same person shows the same ordinary behavior in two genuinely different settings. Make cross-context consistency clear and neutral. ZERO READABLE TEXT.
+
+BILD 62
+
+CHARACTER_SCENE / two-state continuity. Same person repeats one ordinary habit at work and later in a social setting. Preserve exact hair, clothing identity and stickman anatomy. ZERO READABLE TEXT.
+
+BILD 63
+
+OBJECT_FOCUS. Top-down desk composition with one simple person icon and several context objects together. Neither is removed or dominant. One clear visual idea: person plus situation. ZERO READABLE TEXT.
+
+BILD 64
+
+ENVIRONMENT_SCENE. Return to the opening road incident from a much wider angle. The merging car is clearly responding to a blocked lane and stalled vehicle the angry driver could not initially see. ZERO READABLE TEXT.
+
+BILD 65
+
+TEXT_ILLUSTRATION. Three large empty question cards over a simple real-world scene. Render exactly: `3 FRAGEN VOR DEM URTEIL`. No other readable text. Very clean and phone-readable.
+
+BILD 66
+
+OBJECT_FOCUS. A closed doorway hides an important part of a social event while an observer stands outside with only partial visual information. Make missing information the dominant idea. ZERO READABLE TEXT.
+
+BILD 67
+
+COMPARE_VISUAL, maximum 2 states. Same two stickman people swap positions in the same constrained task. Preserve identities exactly. Show role reversal without labels. ZERO READABLE TEXT.
+
+BILD 68
+
+COMPARE_VISUAL, maximum 2 states. Same person under strong deadline pressure in one state and calm low-pressure conditions in the other. Keep behavior difference plausible and visible. ZERO READABLE TEXT.
+
+BILD 69
+
+OBJECT_FOCUS. A partially fogged window reveals only part of a social scene. The uncertainty should feel grounded and reflective, not mysterious or horror-like. ZERO READABLE TEXT.
+
+BILD 70
+
+ENVIRONMENT_SCENE. One person stands in a real room where clock, authority, workload and other situational cues visibly surround their behavior. Integrate all cues naturally, not as icons. ZERO READABLE TEXT.
+
+BILD 71
+
+COMPARE_VISUAL, maximum 2 states. First state: tight portrait of the person. Second state: far wider view reveals full environment and constraints. Strong final pullback, same identity. ZERO READABLE TEXT.
+
+BILD 72
+
+TEXT_ILLUSTRATION. Final wide road-and-city scene from the opening, now calm and fully contextualized. Render exactly: `DU SIEHST NIE ALLES.` Large, simple and integrated into the composition. No other readable text.
+
+FINAL QA
+- uses PSYCHOLOGY_STICKMAN_WORLD_V1
+- representation first / best visual form respected; people are optional
+- BILD 01 = exactly 3 separate cover candidates, then STOP
+- approved 01.png anchors linework, shading, texture, finish and stickman species
+- every visible human remains the exact same stickman species; normal cartoon-human drift = FAIL
+- historical lab scenes keep the same species while adapting period clothing and environment
+- maximum 2 distinct states/panels per BILD
+- no chain of flat beige explainer boards
+- camera, focal scale, depth and environment vary across the sequence
+- every BILD is one separate 16:9 asset
+- remaining images generated in 5-image batches exactly as listed; 72 is final remainder
+- accepted files immediately renamed NN.png
+- all accepted files directly in flat 03-bilder/
+- no storyboard, contact sheet, collage or automatic video
+- only exact planned German text is readable
+- all other images contain ZERO READABLE TEXT
+- any English heading, UI copy, packaging copy or gibberish = FAIL and regenerate
