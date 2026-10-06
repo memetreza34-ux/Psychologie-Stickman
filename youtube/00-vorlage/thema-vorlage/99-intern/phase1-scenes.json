@@ -44,5 +44,6 @@
   "characterHeavyJustification": "",
   "flowTextMoments": [],
   "sceneLabels": [],
-  "scenes": []
+  "scenes": [],
+  "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2"
 }

@@ -212,6 +212,7 @@ Kernquellen:
 - kein `final.mp4`
 - kein `thumbnail.png`
 - keine `captions.srt`
+- kein `subtitle-script.txt`
 - kein fertiges `youtube-upload.txt`
 
 ## Späterer Export
@@ -221,7 +222,20 @@ Kernquellen:
 ├── final.mp4
 ├── thumbnail.png
 ├── captions.srt
+├── subtitle-script.txt
 └── youtube-upload.txt
 ```
 
 Keine separaten Caption-/Subtitle-Unterordner.
+
+## Export-Metadaten V2
+
+Dieses Projekt nutzt `YOUTUBE_EXPORT_PACKAGE_V2`.
+
+Interne Quelle:
+`99-intern/youtube-upload.json`
+
+Beim finalen Produktionslauf werden automatisch erzeugt:
+- `05-export/captions.srt` — direkt bei YouTube hochladbar
+- `05-export/subtitle-script.txt` — lesbare Zeitstempel + Sprechertext zum Kopieren
+- `05-export/youtube-upload.txt` — finaler Titel, Beschreibung und restliche Upload-Daten
