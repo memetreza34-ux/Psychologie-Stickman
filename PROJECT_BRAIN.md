@@ -144,11 +144,28 @@ Final upload files stay together in one flat `05-export/`:
 
 `captions.srt` is the direct-upload German subtitle file synced to the final processed voice-over. `subtitle-script.txt` mirrors those timings in a readable copy format such as `00:00–00:05`. `youtube-upload.txt` carries the final title and full description. Do not create separate caption/subtitle folders; internal timing JSON and `youtube-upload.json` stay in `99-intern/`.
 
+## Longform script identity
+
+Binding source: `rules/YOUTUBE_LONGFORM_SCRIPT_QUALITY.md`.
+Policy: `LONGFORM_STORY_RETENTION_V1`.
+
+For regular 6–7 minute videos:
+- research quality stays high, but the narration is built around viewer experience and story
+- one opening situation/conflict acts as a narrative spine and returns in the spoken script in the final third
+- do not stack researcher names, years and study summaries as if reading a school report
+- prefer a few strong studies/examples over many shallow ones
+- after at most 3 short examples, synthesize, deepen or return to the main story
+- use a midpoint re-engagement beat so the middle does not flatten
+- sources and extra citation detail belong in `youtube-upload.txt`/description, not all in the voice-over
+- the ending pays off the opening and finishes quickly after the strongest conclusion
+
+New `LONGFORM_STANDARD_V1` projects must carry an approved `99-intern/script-plan.json` and pass the longform script QA before visual planning.
+
 ## Observable Scene First
 
 `spoken meaning → viewer takeaway → observable evidence → best representation → concrete composition → final prompt`
 
 ## Production rule
 
-New videos automatically use the topic-uniqueness gate, active visual world, representation-first gate, strict same-frame species lock, motif progression, max-two-state panel rule, staging-diversity review, zero-accidental-text rule and mobile-readability review.
+New videos automatically use the topic-uniqueness gate, active visual world, representation-first gate, strict same-frame species lock, motif progression, max-two-state panel rule, staging-diversity review, zero-accidental-text rule and mobile-readability review. New longforms additionally use `LONGFORM_STORY_RETENTION_V1`.
 Historical projects are not retroactively migrated unless explicitly requested.

@@ -44,11 +44,13 @@ Historische Duplikate bleiben bestehen, sind aber als `LEGACY_DUPLICATE_LOCKED` 
 ## Phasenschutz
 
 YouTube:
-THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → FINALES SCRIPT → PHASE 1 VISUAL BEATS → PHASE 2 GOOGLE FLOW → PHASE 3 → FINAL-QA.
+THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → bei LONGFORM: STORY-/RETENTION-PLAN → FINALES SCRIPT → SCRIPT-QA → PHASE 1 VISUAL BEATS → PHASE 2 GOOGLE FLOW → PHASE 3 → FINAL-QA.
 
 - Themenwahl: zuerst Topic-Uniqueness-Gate bestehen
-- Skriptänderung: Hook-Policy + Phase 1 neu prüfen/erstellen
+- Skriptänderung: Hook-Policy + bei Longform `LONGFORM_STORY_RETENTION_V1` + Phase 1 neu prüfen/erstellen
 - Hook-/Einstiegsänderung: Kernbegriffs- und frühes Alltagsbeispiel-Timing neu prüfen
+- Neue 6–7-Minuten-Longforms (`LONGFORM_STANDARD_V1`) brauchen vor Phase 1 ein freigegebenes `99-intern/script-plan.json` nach `rules/YOUTUBE_LONGFORM_SCRIPT_QUALITY.md`
+- Longform-Skripte dürfen nicht zu einer Kette aus Forschernamen/Jahreszahlen oder vielen kurzen Beispielen werden; Story/Anker/Callback/Takeaway sind Pflicht
 - Bildweltänderung: Phase 1 + Phase 2 auf die neue Bildwelt neu ausrichten
 - reine Audioänderung: Timings/Phase 3 neu erzeugen
 
@@ -150,4 +152,6 @@ Existing video projects remain historical artifacts unless the user explicitly r
 - `rules/YOUTUBE_VISUAL_BEAT_RULES.md`
 - `rules/REPRESENTATION_VARIETY_LOCK.md`
 - `rules/COVER_LOCK.md`
+- `rules/SCRIPT_HOOK_LOCK.md`
+- `rules/YOUTUBE_LONGFORM_SCRIPT_QUALITY.md`
 - Script-/Format-/Audio-/Exportregeln

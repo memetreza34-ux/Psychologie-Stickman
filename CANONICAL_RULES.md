@@ -62,7 +62,9 @@ The world is NOT character-only. Object-focused frames, environments, schemas, c
 10. `rules/COVER_LOCK.md`
 11. `rules/TEXT_OVERLAY_LOCK.md`
 12. `rules/YOUTUBE_EXPORT_PACKAGE.md`
-13. Script-/Format-/Produktionsregeln
+13. `rules/SCRIPT_HOOK_LOCK.md`
+14. `rules/YOUTUBE_LONGFORM_SCRIPT_QUALITY.md`
+15. Script-/Format-/Produktionsregeln
 
 ## Observable Scene First + Representation First
 
@@ -139,6 +141,21 @@ Any unplanned English/German/gibberish anywhere in a generated frame is a regene
 ## Script
 
 `HOOK_FIRST_EXPLAIN_EARLY_V1` remains active.
+
+For `LONGFORM_STANDARD_V1` (normally 6–7 minutes), `LONGFORM_STORY_RETENTION_V1` is additionally binding.
+
+Longform must be story-first, not citation-first:
+- one concrete narrative anchor is introduced early and returns in spoken narration later
+- Hook → simple explanation → deeper example/story → selected research → application → nuance → callback/payoff → concise ending
+- research is translated into plain language; sources stay available in the description, but the spoken script does not read like a bibliography
+- normally no more than 6 individual researcher names and 4 spoken four-digit year mentions
+- no more than 2 named research blocks back-to-back
+- no more than 3 short micro-examples back-to-back; then synthesize or deepen one example
+- at least 2 substantial examples/experiments are developed enough to feel like mini-stories
+- a midpoint re-engagement beat and final spoken callback are required
+- practical takeaway + sharp final line are required
+
+New longform projects require an approved `99-intern/script-plan.json` and must pass `scripts/check-longform-script-quality.mjs` before Phase 1.
 
 ## Export
 

@@ -1353,5 +1353,6 @@
       "flowText": "DU SIEHST NIE ALLES."
     }
   ],
-  "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2"
+  "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2",
+  "longformScriptPolicy": "LEGACY_PRE_LONGFORM_STORY_RETENTION_V1"
 }

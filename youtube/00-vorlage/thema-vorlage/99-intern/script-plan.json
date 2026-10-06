@@ -1,0 +1,42 @@
+{
+  "policy": "LONGFORM_STORY_RETENTION_V1",
+  "status": "PENDING",
+  "targetWords": {
+    "min": 850,
+    "max": 1100
+  },
+  "wordCountJustification": "",
+  "structure": {
+    "hook": "",
+    "introduction": "",
+    "mainPart": "",
+    "conclusion": ""
+  },
+  "narrativeSpine": {
+    "anchorPhrase": "",
+    "callbackPhrase": ""
+  },
+  "research": {
+    "mode": "STORY_FIRST_SOURCES_SECOND",
+    "spokenResearchNames": [],
+    "notes": "Keep spoken names only when they add viewer value; put full citations in youtube-upload metadata."
+  },
+  "examples": {
+    "substantialExamples": [],
+    "synthesisAfterExampleRuns": ""
+  },
+  "retention": {
+    "midpointReengagementPhrase": ""
+  },
+  "ending": {
+    "practicalTakeaway": "",
+    "finalLine": ""
+  },
+  "qa": {
+    "namedResearchersSpokenCount": 0,
+    "yearMentionsSpokenCount": 0,
+    "maxConsecutiveNamedResearchBlocks": 0,
+    "maxConsecutiveMicroExamples": 0,
+    "deepExampleCount": 0
+  }
+}

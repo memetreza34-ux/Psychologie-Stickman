@@ -136,3 +136,11 @@ Zusätzliche automatische Prüfung:
 ## 10. Merksatz
 
 **Hook first. Name the concept early. Explain it simply. Show a real-life example fast. Then go deeper.**
+
+
+## 11. Longform-Erweiterung
+
+Für neue `LONGFORM_STANDARD_V1`-Videos gilt zusätzlich:
+`rules/YOUTUBE_LONGFORM_SCRIPT_QUALITY.md` / `LONGFORM_STORY_RETENTION_V1`.
+
+Die frühe Hook-Regel bleibt unverändert, aber bei 6–7 Minuten reicht ein guter Einstieg allein nicht. Das Skript braucht zusätzlich einen Story-Spine, Midpoint-Re-Engagement, kontrollierte Research-Dichte, wenige stärkere Beispiele und einen gesprochenen Callback im Schluss.

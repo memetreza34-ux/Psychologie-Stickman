@@ -22,7 +22,9 @@ Ein neuer Chat startet read-only. Schreiben nur bei ausdrücklicher aktueller Nu
 12. `rules/REPRESENTATION_VARIETY_LOCK.md`
 13. `rules/COVER_LOCK.md`
 14. `rules/TEXT_OVERLAY_LOCK.md`
-15. relevante Script-/Format-/Audio-/Exportregeln
+15. `rules/SCRIPT_HOOK_LOCK.md`
+16. `rules/YOUTUBE_LONGFORM_SCRIPT_QUALITY.md`
+17. relevante Script-/Format-/Audio-/Exportregeln
 
 ## Kanal
 
@@ -43,6 +45,28 @@ Ablauf:
 Ein anderer Titel, Hook, Beispiel, Thumbnail, `v2`, `Part 2` oder eine andere Verpackung macht dasselbe Thema nicht neu.
 
 Bestehende historische Duplikate sind `LEGACY_DUPLICATE_LOCKED` und dürfen niemals um ein weiteres Projekt ergänzt werden.
+
+## Longform Script — HARD PRECHECK
+
+Für jedes neue Projekt mit `productionMode: "LONGFORM_STANDARD_V1"` gilt zusätzlich `LONGFORM_STORY_RETENTION_V1`.
+
+Vor Phase 1:
+1. `99-intern/script-plan.json` aus der Vorlage anlegen/ausfüllen
+2. Status auf `APPROVED` erst setzen, wenn Hook, Story-Spine, Research-Dichte, Beispiele, Midpoint und Schluss geprüft wurden
+3. `node scripts/check-longform-script-quality.mjs` muss PASS liefern
+
+HARD FAIL / neu schreiben, wenn:
+- das Skript hauptsächlich wie Unterricht/Bibliografie klingt
+- zu viele Forschernamen/Jahreszahlen gesprochen werden
+- mehr als 2 benannte Forschungsblöcke direkt hintereinander stehen
+- mehr als 3 kurze Alltagsbeispiele hintereinander kommen, ohne Synthese oder Vertiefung
+- kein starkes Hauptbeispiel/keine Story durch das Video trägt
+- der Einstieg später im gesprochenen Text nicht mehr aufgegriffen wird
+- im Mittelteil kein Re-Engagement/Pattern-Interrupt vorhanden ist
+- der Schluss nur zusammenfasst, aber den Einstieg nicht auszahlt
+- nach der stärksten Schlussaussage unnötig weitergeredet wird
+
+Research bleibt sauber und belegt; nur die gesprochene Verpackung wird story-first. Detailquellen gehören bevorzugt in die Beschreibung.
 
 ## VISUAL WORLD STATUS — ACTIVE
 
