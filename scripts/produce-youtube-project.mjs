@@ -31,12 +31,23 @@ const phase1Path = findInternal('phase1-scenes.json');
 const wordTimingPath = findInternal('word-timings.json');
 const scenePlanPath = path.join(projectDir, '99-intern', 'scene-plan.json');
 const renderPropsPath = path.join(projectDir, '99-intern', 'render-props.json');
-const outputPath = path.join(projectDir, '05-export', 'final.mp4');
-const captionsPath = path.join(projectDir, '05-export', 'captions.srt');
+const uploadMetadataPath = path.join(projectDir, '99-intern', 'youtube-upload.json');
+const exportDir = path.join(projectDir, '05-export');
+const outputPath = path.join(exportDir, 'final.mp4');
+const captionsPath = path.join(exportDir, 'captions.srt');
+const subtitleScriptPath = path.join(exportDir, 'subtitle-script.txt');
+const uploadPath = path.join(exportDir, 'youtube-upload.txt');
 
 if (!fs.existsSync(phase1Path)) throw new Error(`Required production file missing: ${phase1Path}`);
-if (fs.existsSync(outputPath)) throw new Error(`Refusing to overwrite existing export: ${outputPath}`);
-if (fs.existsSync(captionsPath)) throw new Error(`Refusing to overwrite existing captions export: ${captionsPath}`);
+const phase1 = JSON.parse(fs.readFileSync(phase1Path, 'utf8'));
+const packageV2 = String(phase1?.exportPackagePolicy ?? '') === 'YOUTUBE_EXPORT_PACKAGE_V2';
+if (packageV2 && !fs.existsSync(uploadMetadataPath)) {
+  throw new Error(`YOUTUBE_EXPORT_PACKAGE_V2 requires upload metadata: ${uploadMetadataPath}`);
+}
+
+for (const existingPath of [outputPath, captionsPath, subtitleScriptPath, uploadPath]) {
+  if (fs.existsSync(existingPath)) throw new Error(`Refusing to overwrite existing export: ${existingPath}`);
+}
 
 const run = (scriptArgs) => {
   const result = spawnSync(process.execPath, scriptArgs, {stdio: 'inherit'});
@@ -67,10 +78,15 @@ run(['scripts/prepare-phase3.mjs', wordTimingPath, scenePlanPath, renderPropsPat
 run(['scripts/render-phase3-project.mjs', 'youtube', renderPropsPath, outputPath]);
 run(['scripts/validate-final-render.mjs', outputPath, 'youtube']);
 run(['scripts/generate-youtube-captions.mjs', projectRelative]);
+if (packageV2) run(['scripts/generate-youtube-upload.mjs', projectRelative]);
 
-if (!fs.existsSync(captionsPath) || !fs.statSync(captionsPath).size) {
-  throw new Error(`Captions export missing or empty after generation: ${captionsPath}`);
+for (const requiredPath of [captionsPath, subtitleScriptPath, ...(packageV2 ? [uploadPath] : [])]) {
+  if (!fs.existsSync(requiredPath) || !fs.statSync(requiredPath).size) {
+    throw new Error(`Required export missing or empty after generation: ${requiredPath}`);
+  }
 }
 
 console.log(`PRODUCE YOUTUBE: PASS — ${path.relative(repoRoot, outputPath)}`);
 console.log(`YOUTUBE CAPTIONS: ${path.relative(repoRoot, captionsPath)}`);
+console.log(`YOUTUBE SUBTITLE SCRIPT: ${path.relative(repoRoot, subtitleScriptPath)}`);
+if (packageV2) console.log(`YOUTUBE UPLOAD FILE: ${path.relative(repoRoot, uploadPath)}`);

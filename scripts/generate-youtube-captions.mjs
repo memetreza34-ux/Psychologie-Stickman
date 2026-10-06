@@ -14,18 +14,21 @@ if (!projectArg) {
 }
 
 const repoRoot = path.resolve('.');
-const {projectDir, relative: projectRelative} = resolveProjectPath(projectArg, repoRoot);
+const {projectDir} = resolveProjectPath(projectArg, repoRoot);
 const modernTimingPath = path.join(projectDir, '99-intern', 'word-timings.json');
 const legacyTimingPath = path.join(projectDir, '99-intern', 'projektdateien', 'word-timings.json');
 const timingPath = fs.existsSync(modernTimingPath) ? modernTimingPath : legacyTimingPath;
 const exportDir = path.join(projectDir, '05-export');
-const outputPath = path.join(exportDir, 'captions.srt');
+const srtPath = path.join(exportDir, 'captions.srt');
+const transcriptPath = path.join(exportDir, 'subtitle-script.txt');
 
 if (!fs.existsSync(timingPath)) {
   throw new Error(`Required word timings missing: ${timingPath}`);
 }
-if (fs.existsSync(outputPath) && !force) {
-  throw new Error(`Refusing to overwrite existing captions export: ${outputPath}`);
+for (const outputPath of [srtPath, transcriptPath]) {
+  if (fs.existsSync(outputPath) && !force) {
+    throw new Error(`Refusing to overwrite existing captions export: ${outputPath}`);
+  }
 }
 
 const raw = JSON.parse(fs.readFileSync(timingPath, 'utf8'));
@@ -67,11 +70,7 @@ for (const word of words) {
     const projected = [...current, word];
     const projectedText = projected.map((item) => item.text).join(' ');
     const projectedDuration = word.endMs - current[0].startMs;
-    if (
-      current.length >= MAX_WORDS ||
-      projectedText.length > MAX_CHARS ||
-      projectedDuration > MAX_DURATION_MS
-    ) {
+    if (current.length >= MAX_WORDS || projectedText.length > MAX_CHARS || projectedDuration > MAX_DURATION_MS) {
       flush();
     }
   }
@@ -91,13 +90,22 @@ for (let index = 0; index < cues.length - 1; index += 1) {
   if (cues[index].endMs >= nextStart) cues[index].endMs = Math.max(cues[index].startMs + 1, nextStart - 1);
 }
 
-const formatTime = (value) => {
+const formatSrtTime = (value) => {
   const total = Math.max(0, Math.round(value));
   const hours = Math.floor(total / 3600000);
   const minutes = Math.floor((total % 3600000) / 60000);
   const seconds = Math.floor((total % 60000) / 1000);
   const milliseconds = total % 1000;
   return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')},${String(milliseconds).padStart(3, '0')}`;
+};
+
+const formatReadableTime = (value) => {
+  const totalSeconds = Math.max(0, Math.floor(Number(value) / 1000));
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  if (hours > 0) return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 };
 
 const wrapTwoLines = (text, maxLineChars = 42) => {
@@ -118,19 +126,24 @@ const wrapTwoLines = (text, maxLineChars = 42) => {
   return lines.slice(0, 2).join('\n');
 };
 
-const srt = cues
-  .map((cue, index) => {
-    const start = formatTime(cue.startMs);
-    const end = formatTime(Math.max(cue.startMs + 1, cue.endMs));
-    return `${index + 1}\n${start} --> ${end}\n${wrapTwoLines(cue.text)}`;
-  })
+const srt = cues.map((cue, index) => {
+  const start = formatSrtTime(cue.startMs);
+  const end = formatSrtTime(Math.max(cue.startMs + 1, cue.endMs));
+  return `${index + 1}\n${start} --> ${end}\n${wrapTwoLines(cue.text)}`;
+}).join('\n\n');
+
+const readableTranscript = cues
+  .map((cue) => `${formatReadableTime(cue.startMs)}–${formatReadableTime(cue.endMs)}\n${cue.text}`)
   .join('\n\n');
 
 fs.mkdirSync(exportDir, {recursive: true});
-const temporaryOutput = `${outputPath}.tmp-${process.pid}`;
-fs.writeFileSync(temporaryOutput, `${srt}\n`, 'utf8');
-fs.renameSync(temporaryOutput, outputPath);
+for (const [outputPath, content] of [[srtPath, `${srt}\n`], [transcriptPath, `${readableTranscript}\n`]]) {
+  const temporaryOutput = `${outputPath}.tmp-${process.pid}`;
+  fs.writeFileSync(temporaryOutput, content, 'utf8');
+  fs.renameSync(temporaryOutput, outputPath);
+}
 
 console.log(`YOUTUBE CAPTIONS: PASS — ${cues.length} cues`);
-console.log(`Saved: ${path.relative(repoRoot, outputPath)}`);
-console.log('Caption output is flat: no captions/subtitles subfolder is created.');
+console.log(`Saved: ${path.relative(repoRoot, srtPath)}`);
+console.log(`Saved: ${path.relative(repoRoot, transcriptPath)}`);
+console.log('Caption outputs are flat: no captions/subtitles subfolder is created.');
