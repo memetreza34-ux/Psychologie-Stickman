@@ -147,12 +147,15 @@ Any unplanned English/German/gibberish anywhere in a generated frame is a regene
 ├── final.mp4
 ├── thumbnail.png
 ├── captions.srt
+├── subtitle-script.txt
 └── youtube-upload.txt
 ```
 
-`captions.srt` is the final German YouTube subtitle file generated from the final voice-over timings. It stays directly in the flat `05-export/` folder.
+`captions.srt` is the final German YouTube subtitle file generated from the final voice-over timings and is ready for direct YouTube upload.
+`subtitle-script.txt` is the human-readable timestamped transcript using the same final timings.
+`youtube-upload.txt` contains the final title, full description and the remaining copy-ready upload metadata.
 No separate `captions/`, `subtitles/` or `untertitel/` folders in the normal YouTube workflow.
-Internal timing data stays in `99-intern/`.
+Internal timing data and `99-intern/youtube-upload.json` stay in `99-intern/`.
 
 ## Existing projects
 

@@ -139,9 +139,10 @@ Final upload files stay together in one flat `05-export/`:
 - `final.mp4`
 - `thumbnail.png`
 - `captions.srt`
+- `subtitle-script.txt`
 - `youtube-upload.txt`
 
-`captions.srt` is the final German YouTube subtitle file synced to the final processed voice-over. Do not create separate caption/subtitle folders; internal timing JSON stays in `99-intern/`.
+`captions.srt` is the direct-upload German subtitle file synced to the final processed voice-over. `subtitle-script.txt` mirrors those timings in a readable copy format such as `00:00–00:05`. `youtube-upload.txt` carries the final title and full description. Do not create separate caption/subtitle folders; internal timing JSON and `youtube-upload.json` stay in `99-intern/`.
 
 ## Observable Scene First
 

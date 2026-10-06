@@ -170,9 +170,12 @@ Ungeplanter englischer/deutscher Text oder Pseudo-Text = FAIL und Regeneration.
 - `final.mp4`
 - `thumbnail.png`
 - `captions.srt`
+- `subtitle-script.txt`
 - `youtube-upload.txt`
 
 `captions.srt` liegt direkt in `05-export/` und wird aus den finalen Voice-over-Timings erzeugt.
+`subtitle-script.txt` wird aus denselben Timings erzeugt und enthält lesbare Zeitbereiche plus den gesprochenen Text.
+`youtube-upload.txt` muss finalen Titel + vollständige Beschreibung enthalten; redaktionelle Eingabe dafür liegt in `99-intern/youtube-upload.json`.
 Keine separaten `captions/`, `subtitles/` oder `untertitel/`-Ordner im normalen Workflow.
 Interne Word-Timings bleiben in `99-intern/`.
 
