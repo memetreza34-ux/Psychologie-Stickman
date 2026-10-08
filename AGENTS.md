@@ -140,15 +140,17 @@ Pro Video genau:
 
 Keine mehreren Master-Prompts.
 
-## Cover + Referenz + Batches
+## Cover + Referenz + Batches — `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`
 
 - BILD 01 only
 - genau 3 getrennte 16:9 Cover-Kandidaten
-- STOP für Nutzerwahl
-- Gewinner → `01.png`
+- EINZIGE Nutzerrückfrage: Cover-Auswahl, danach NICHT erneut fragen
+- Gewinner → `01.png` und sofort die beiden abgelehnten Cover-Kandidaten löschen (niemals vor Auswahl)
 - `01.png` ist visuelle Episodenreferenz für Linework/Shading/Textur/Finish und Stickman-Spezies
 - spätere Representation, Personen, Kleidung, Orte, Farben und Stimmung dürfen sich scriptgerecht ändern
-- danach 5er-Batches
+- danach autonom alle weiteren 5er-Batches abarbeiten; nach PASS direkt mit dem nächsten Batch fortfahren, ohne auf Freigaben zu warten
+- nur fehlerhafte/fehlende Bilder regenerieren; nicht pauschal den ganzen Batch neu machen
+- am Ende alle Bildnummern 01–NN auf Vorhandensein, 16:9, eindeutige `NN.png`, flachen Ordner und keine abgelehnten Cover prüfen; wenn unvollständig, ohne Rückfrage nacharbeiten
 - jede Bildnummer eigene Datei
 - akzeptierte Bilder sofort `NN.png`
 - alles in `03-bilder/`

@@ -117,17 +117,19 @@ Every new active Phase-1 scene should include `representationReason`.
 Pro video exactly one:
 `02-google-flow/google-flow-prompt.txt`
 
-## Cover + reference + batching
+## Cover + reference + batching (`COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`)
 
 - BILD 01 first
 - exactly 3 separate 16:9 cover candidates
-- STOP for user selection
-- winner → `03-bilder/01.png`
+- ONLY pause: wait for the user's cover choice
+- winner → `03-bilder/01.png`; immediately remove the other two rejected cover candidates once the choice is made
 - `01.png` anchors linework, shading, texture, finish and stickman species whenever people appear
 - later scenes may change representation, people, clothing, place, camera, color, light and mood
 - cover with people does NOT force later people
-- then 5-image batches
+- then ALL remaining scenes automatically in 5-image batches, with no more approval questions or waiting between batches
 - every BILD stays a separate 16:9 file
+- rework only missing/failed images and resume automatically until all N assets pass QA
+- after the last batch verify every numbered 16:9 PNG from 01 through NN with no gaps, duplicates, leftover rejected covers or subfolders; only claim completion after passing
 - accepted files immediately `NN.png`
 - all in flat `03-bilder/`
 - no storyboard/contact sheet/final video

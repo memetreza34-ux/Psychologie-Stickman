@@ -34,6 +34,31 @@ Every video uses exactly one:
 It does NOT force later scenes to copy the same composition, location, person, representation type, palette or mood unless continuity requires it.
 A cover containing people does NOT mean later images must contain people.
 
+
+## Cover selection is the ONLY human STOP — HARD LOCK
+
+Policy: `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1` (binding in addition to `FINAL_SEPARATE_IMAGE_ASSETS_V2`).
+
+1. Generate exactly three separate cover candidates for BILD 01. **STOP only here** and wait for the user's choice.
+2. After the user chooses, put the winner in `03-bilder/01.png`. Immediately delete/discard the other **two rejected cover candidate files** from the working/output folder. No unselected covers in `03-bilder/` or any handoff. Never delete them before the user has selected the winner.
+3. Continue with BILD 02 onward **automatically without asking, pausing, presenting intermediate batches for approval or waiting for "weiter"**. Run 02–06, 07–11, and so on, exactly five scene numbers per operation whenever five remain. Last operation is the 1–4 remainder.
+4. After EACH operation, check that its five different images exist, are separate 16:9 images, match their assigned BILD numbers and visual/text rules; rename accepted files immediately `NN.png` and place them in the ONE flat `03-bilder/` folder. Only regenerate failed or missing scene numbers, then recheck, and continue by itself.
+5. Continue until every BILD 01–NN is present and accepted; do not stop after a passing 5-image batch.
+6. FINAL QA: expected count **N** from `99-intern/phase1-scenes.json`; exact contiguous filenames `01.png` through `NN.png`; one 16:9 file per scene; no duplicates, gaps, failed images, leftover cover alternatives, contact sheets, subfolders or batch folders. Verify the visual-world/species and accidental-text rules, which are not mechanically detectable from filenames.
+7. If something is missing, regenerate/retrieve the missing or failed items, put them in their numbered slots, and rerun final QA **without asking the user**. Report success only when the set is complete. If tools are blocked, report a concrete blocker and incomplete status, **never claim all images were produced or deleted**.
+8. Final handoff is a **single flat `03-bilder/` folder** containing only the accepted numbered images. Do not create extra prompts, preview folders, extra accepted copies, a storyboard, collage, contact sheet or automatic video.
+9. With images available locally, run `npm run flow:verify -- <project-folder>` to machine-check PNG signatures, 16:9 dimensions, expected count, names and folder shape. This does not replace human/visual QA. If the Flow environment cannot execute the repo's scripts, do the equivalent checks with available file controls; describe any checks you could not perform.
+
+**One pause only: cover choice. Zero approval pauses or "continue?" questions after the choice.**
+
+### Optional safe local cover handoff
+
+When three temporary candidates have been saved locally as:
+`03-bilder/cover-candidate-01.png`, `cover-candidate-02.png`, `cover-candidate-03.png`,
+the selected winner can be finalized with
+`npm run flow:cover -- <project-folder> <1|2|3>`.
+That command refuses an existing `01.png`, renames the winner and removes only the two exact losing candidate files. It never deletes anything without an explicit selection.
+
 ## Five-image batches
 
 Only after cover approval:

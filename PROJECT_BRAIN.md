@@ -103,14 +103,14 @@ Every image must work at phone size:
 
 Dark scenes should feel tense through observable behavior, spatial relations, objects, environment and motivated light rather than horror clichés.
 
-## Episode reference
+## Episode reference — `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`
 
 BILD 01 is the cover and first visual reference.
 
 Workflow:
 - exactly 3 separate cover candidates
-- user chooses one
-- winner becomes `01.png`
+- user chooses one (ONLY pause in entire image-generation workflow)
+- winner becomes `01.png`; delete the other two rejected cover files immediately after selection
 - use `01.png` as episode style reference for linework, shading, texture, finish and stickman species when people appear
 
 It does NOT force later images to copy the same person, composition, representation type, location, palette or mood.
@@ -127,10 +127,10 @@ It does NOT force later images to copy the same person, composition, representat
 - one central `02-google-flow/google-flow-prompt.txt`
 - 3 covers first
 - user chooses cover
-- then 5-image batches
+- then finish all scenes in 5-image batches automatically, with no human approval pauses; on failures regenerate only affected images and continue
 - separate 16:9 images
 - `NN.png`
-- one flat `03-bilder/`
+- one flat `03-bilder/`; final QA validates 01–NN completeness, correct filenames/16:9, no cover losers or subfolders before reporting DONE
 - Audio/Remotion/Export
 
 ## YouTube export package

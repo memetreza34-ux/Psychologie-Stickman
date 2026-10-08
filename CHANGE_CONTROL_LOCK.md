@@ -61,16 +61,19 @@ Pro Video bleibt genau eine zentrale Datei:
 
 ## Google-Flow-Ausgabe — HARD LOCK
 
-Verbindlich: `rules/FLOW_OUTPUT_MODE.md`.
+Verbindlich: `rules/FLOW_OUTPUT_MODE.md`. Zusatz-Policy: `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`.
 
 - BILD 01 zuerst
 - genau 3 getrennte Cover-Kandidaten
-- STOP für Nutzerwahl
-- Gewinner → `01.png`
+- EINZIGER STOP: Nutzer wählt eines der drei Cover
+- Gewinner → `01.png`, die zwei abgelehnten Cover-Dateien sofort löschen (erst NACH Auswahl)
+- danach OHNE weitere Freigaben, Wartepausen oder "weiter?" in 5er-Batches bis BILD NN
 - danach 5 Bildnummern pro Batch, solange mindestens 5 übrig sind
 - letzter Batch = 1–4 Restbilder
 - jede Bildnummer = eigene 16:9-Datei
 - akzeptierte Bilder sofort `NN.png`
+- nach jedem Batch nur fehlerhafte/fehlende Bilder regenerieren und automatisch fortfahren
+- am Ende vollständige BILD-01-bis-NN-Prüfung (Dateinamen, Anzahl, 16:9, keine Cover-Reste oder Unterordner), fehlende Bilder nacharbeiten, erst dann PASS
 - alles in einem flachen `03-bilder/`
 - keine Batch-Unterordner
 - kein Storyboard/Kontaktbogen/Collage/automatisches Video

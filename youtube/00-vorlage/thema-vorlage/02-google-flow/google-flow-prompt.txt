@@ -8,6 +8,7 @@ REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
 VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
 
 TASK
 Create final separate 16:9 source images for one coherent YouTube video.
@@ -78,12 +79,24 @@ Every image must work on a phone screen:
 VIDEO WORLD
 [Define only script-specific recurring people, places, era, props or continuity facts. Do not invent a permanent channel protagonist.]
 
+FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
+
+ONE-PAUSE EXECUTION CONTRACT — HARD
+- Human STOP happens ONLY once: after showing the 3 separate BILD 01 cover options. Wait until the user picks a winner.
+- IMMEDIATELY AFTER CHOICE: save the chosen image as 03-bilder/01.png. Delete the other TWO rejected candidate image files from your working/output assets; keep no cover alternatives in final folder. Never delete before selection.
+- AUTOMATIC CONTINUATION: start BILD 02–06 and continue subsequent groups of exactly 5 scene numbers without questions or waiting after each batch. Do NOT ask for "weiter", confirmations, intermediate review or approval. The cover is the last manual gate.
+- Every batch: produce 5 different separate 16:9 images, individually QA them, rename the accepted ones NN.png, store immediately in ONE flat 03-bilder/ folder, regenerate ONLY failed or missing numbers, then proceed to the NEXT batch automatically.
+- Last batch: generate the final remaining 1–4 numbers as separate 16:9 images, not a smaller storyboard.
+- FINAL COMPLETE CHECK: use the phase1-scenes.json scene count N, verify all 01.png through NN.png exactly once; individual 16:9 assets, no missing numbers, no repeated filenames, no rejected covers, no batch subfolders, no collages/contact sheets, no extra versions. Enforce same approved species/world, exact planned German text only, mobile clarity. Repair any missing or failed number automatically, then repeat final QA.
+- One final folder ONLY: 03-bilder/ with the accepted NN.png files. Do not report DONE until complete; if blocked by an unavailable tool, report exact problem rather than pretending images exist.
+- If the images are locally accessible to the repo, run npm run flow:verify -- <project-folder> for a structural check in addition to visual QA. Otherwise perform equivalent checks with your available file tools.
+
 COVER WORKFLOW — HARD LOCK
 1. Generate BILD 01 ONLY.
 2. Generate exactly 3 SEPARATE 16:9 cover candidates.
 3. Same visual thesis and exact cover text, but 3 meaningfully different compositions.
-4. STOP and wait for the user to choose one.
-5. Chosen winner -> `01.png` -> `03-bilder/`.
+4. STOP and wait for the user to choose one. This is the ONLY pause.
+5. Chosen winner -> `01.png` -> `03-bilder/`; delete both rejected cover candidates immediately after the choice.
 6. Use approved `01.png` as the episode visual reference for linework, shading, texture, finish and, when people appear, the stickman species.
 7. Do NOT mechanically copy its exact person, composition, representation type, location, palette or mood unless continuity requires it.
 8. A cover containing people does NOT require later images to contain people.
@@ -101,7 +114,7 @@ Generate each whole 5-image batch in one batch operation.
 Rename accepted results immediately to `NN.png`.
 Put every accepted image directly in the same flat folder `03-bilder/`.
 Regenerate only failed images.
-After PASS, continue automatically.
+After PASS, continue automatically WITHOUT asking the user, until BILD NN is complete.
 
 When image references / ingredients are supported, use approved `01.png` as the episode style reference for later batches.
 
@@ -144,4 +157,8 @@ FINAL QA
 - every BILD = separate 16:9 asset
 - accepted files renamed NN.png
 - all files together in 03-bilder/
+- both rejected cover candidates deleted after selection
+- NO pauses after cover choice: batches auto-run to completion
+- exact 01..NN presence and 16:9/naming/flat-folder final QA; repair any missing BILD and recheck
+- report DONE only after final QA PASS
 - no storyboard/contact sheet/video

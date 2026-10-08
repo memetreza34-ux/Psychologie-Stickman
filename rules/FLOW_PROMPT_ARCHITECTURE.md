@@ -154,6 +154,14 @@ Minimal exclusions:
 
 Do not invent a permanent protagonist. Reuse exact identity only when story continuity requires it. Do not add people to object/text/environment frames just to populate them.
 
+## Cover-once, then autonomous full production
+
+Binding policy: `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1` from `rules/FLOW_OUTPUT_MODE.md`.
+
+The ONLY stop/request for the user is the choice among the three cover candidates for BILD 01. Upon selection, keep the approved `01.png` and delete both rejected cover candidates. Do NOT ask "weiter", approval, feedback or permission for any subsequent five-image batch. After batch-local QA, regenerate missing/failed items (only those), rename accepted images to `NN.png`, and proceed to the next batch immediately. Complete the entire 01–NN set in the single flat `03-bilder/` folder. Finish with an exact-count/name/16:9/no-leftover-covers/no-subfolders final QA and visual/species/text checks. Missing assets are corrected, not silently skipped. Only real operational failures justify stopping with an explicit incomplete status.
+
+See also `npm run flow:cover -- <project-folder> <winner>` and `npm run flow:verify -- <project-folder>` for a local cover-selection and final file-structure QA when the images are accessible to the repo.
+
 ## Cover workflow
 
 - BILD 01 only

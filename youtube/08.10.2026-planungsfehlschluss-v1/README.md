@@ -50,3 +50,7 @@ Nicht als fertiger Render ausgeben.
 ```
 
 Veröffentlichungsdaten liegen vorbereitet in `99-intern/youtube-upload.json`; Finale SRT-Zeiten erst aus final verarbeitetem Voice-over erzeugen.
+
+## Flow-Autocontinue — `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`
+
+Einzige Pause: Auswahl unter drei BILD-01-Cover-Kandidaten. Danach gewähltes Cover als `03-bilder/01.png` übernehmen und beide verworfenen Cover-Dateien entfernen. Anschließend **ohne Freigaben und ohne Rückfragen** alle 5er-Batches bis BILD 72 abarbeiten. Jeder Batch: einzelne 16:9-Bilder prüfen, fehlerhafte/fehlende Bilder neu erstellen, gültige sofort `NN.png` nennen und direkt im einzigen `03-bilder/` ablegen. Zum Schluss alle **72** Bilddateien exakt und ohne alternative Cover / Unterordner nachweisen; erst danach fertig melden. Lokale Strukturprüfung: `npm run flow:verify -- youtube/08.10.2026-planungsfehlschluss-v1`.

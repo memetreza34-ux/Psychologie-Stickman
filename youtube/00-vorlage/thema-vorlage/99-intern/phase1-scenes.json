@@ -45,5 +45,6 @@
   "flowTextMoments": [],
   "sceneLabels": [],
   "scenes": [],
-  "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2"
+  "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2",
+  "flowAutonomyPolicy": "COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1"
 }
