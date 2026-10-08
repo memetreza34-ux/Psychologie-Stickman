@@ -19,7 +19,7 @@ Policy ID: `YOUTUBE_EXPORT_PACKAGE_V2`
 └── youtube-upload.txt
 ```
 
-`thumbnail.png` ist das finale Cover aus Szene/Bild 01.
+`thumbnail.png` ist das separat ausgewählte Thumbnail und gehört NICHT in die Videotimeline. BILD 01 ist eine normale eigenständige Szene.
 
 `captions.srt` ist die finale deutsche Untertiteldatei für den direkten YouTube-Upload.
 
@@ -141,7 +141,7 @@ Untertitel Kopierversion: subtitle-script.txt
 - Tags knapp und thematisch halten.
 - Hashtags nicht überladen.
 - `SPRECHERTEXT / BACKUP` enthält den bereinigten finalen deutschen Sprechertext.
-- `thumbnail.png` entspricht dem freigegebenen Cover/Bild 01.
+- `thumbnail.png` ist das freigegebene eigene Thumbnail (kein Video-Frame).
 - `final.mp4` bleibt der finale Render.
 
 ## Automatische Erzeugung
@@ -166,3 +166,17 @@ Ein neues YouTube-Projekt mit `YOUTUBE_EXPORT_PACKAGE_V2` ist erst upload-bereit
 5. `youtube-upload.txt` vollständig ohne Platzhalter
 
 Das ist Teil der FINAL-QA.
+
+## MP4 bereits vorhanden: Exportdateien nachträglich erzeugen
+
+Nach dem Rendern muss neben der MP4 auch das gewählte eigenständige `thumbnail.png` in `05-export/` liegen. Dann:
+
+```bash
+npm run finalize:youtube -- youtube/08.10.2026-planungsfehlschluss-v1
+```
+
+Für weitere Videos jeweils den Projektpfad austauschen.
+
+Das erstellt automatisch die **fehlenden** Textdateien `youtube-upload.txt` (Titel, komplette Beschreibung, Quellen, Tags usw.), `captions.srt` (direkt uploadbare deutsche Untertitel mit echten Zeiten) sowie `subtitle-script.txt` (Sprechertext zeilenweise mit Zeitbereichen wie `00:00–00:04`). Wenn `99-intern/word-timings.json` noch nicht vorliegt, verwendet es die Audiospur der vorhandenen MP4 und Whisper.cpp zur zeitlichen Ausrichtung mit dem finalen Skript (ggf. Modell-Download beim ersten Lauf). So werden **keine Zeiten erfunden**.
+
+Die MP4 und das Thumbnail werden niemals überschrieben. Bei neuer MP4 nach Änderungen im Sprechertext sind Timings mit `--force-timings` neu zu erzeugen; bereits erstellte Captions müssen zuvor bewusst entfernt/gesichert werden. Ein reiner MP4-Export ohne Titel/Beschreibung/Untertitel ist nicht fertig.

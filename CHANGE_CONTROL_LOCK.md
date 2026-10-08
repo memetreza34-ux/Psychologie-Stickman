@@ -103,7 +103,7 @@ Verbindlich: `rules/FLOW_OUTPUT_MODE.md`. Zusatz-Policy: `COVER_ONCE_AUTOCONTINU
 
 `captions.srt` ist die finale deutsche YouTube-Untertiteldatei für den direkten Upload.
 `subtitle-script.txt` enthält denselben finalen Sprechertext zusätzlich als gut lesbare Zeitbereiche (`00:00–00:05`) zum Kopieren/Prüfen.
-`youtube-upload.txt` enthält mindestens den finalen YouTube-Titel und die komplette Beschreibung sowie die übrigen Upload-Daten.
+`youtube-upload.txt` enthält den kopierbereiten Titel, Beschreibung, Quellen/Tags/Hashtags und weitere Upload-Daten. Nach externem oder direktem MP4-Render ist `npm run finalize:youtube -- <Projektpfad>` Pflicht: Er ergänzt Metadaten und die beiden zeitbasierten Untertiteldateien aus der echten Audiospur, ohne MP4/Thumbnail zu überschreiben.
 Keine zusätzlichen `captions/`, `subtitles/` oder `untertitel/`-Ordner im normalen YouTube-Workflow.
 Interne Wort-/Timing-Daten und die redaktionelle Quelle `99-intern/youtube-upload.json` bleiben intern.
 

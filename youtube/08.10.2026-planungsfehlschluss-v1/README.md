@@ -51,3 +51,12 @@ Veröffentlichungsdaten liegen vorbereitet in `99-intern/youtube-upload.json`; F
 
 ## Neuer verbindlicher Ablauf
 Policy: `THUMBNAIL_SEPARATE_FROM_SCENE01_V1`. Drei separate Cover zur Auswahl; Gewinner nach `05-export/thumbnail.png`. Danach eigenständige normale Szene 01 und alle BILDs 01–72 in 5er-Batches automatisch; Batchfolge 01–05, 06–10 ... 66–70, 71–72. Niemals Thumbnail in der Videotimeline. Vollständige Schluss-QA. Das bereits lokal erzeugte `planungsfehlschluss.mp4` wird nicht automatisch überschrieben; für neuen ersten Shot muss BILD 01 regeneriert und Video neu gerendert werden. Titel-/Beschreibungsdatei und zeitgenaue Untertitel werden aus den Produktionsmetadaten und finaler Audiospur erzeugt.
+
+## Nach bestehendem MP4-Render: Export fertigstellen
+Wenn `planungsfehlschluss.mp4` bereits in `05-export/` liegt, nicht erneut nur MP4 rendern. Erst separates `thumbnail.png` in `05-export/` ablegen und danach aus dem Repo-Hauptverzeichnis ausführen:
+
+```bash
+npm run finalize:youtube -- youtube/08.10.2026-planungsfehlschluss-v1
+```
+
+Das befüllt `05-export/youtube-upload.txt` mit YouTube-Titel/Beschreibung/Tags/Quellen, sowie `captions.srt` für den direkten YouTube-Untertitel-Upload und `subtitle-script.txt` zum 1:1-Kopieren des vollständigen Texts mit echten Zeitmarken. Nur `mp4` ist kein kompletter Export. Ohne `thumbnail.png` oder Audiozeitabgleich Status weiterhin unvollständig.

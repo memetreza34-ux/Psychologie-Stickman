@@ -12,6 +12,10 @@ const {projectDir,relative}=resolveProjectPath(project,path.resolve('.'));
 const exportDir=path.join(projectDir,'05-export');
 const intern=path.join(projectDir,'99-intern');
 const phase=JSON.parse(fs.readFileSync(path.join(intern,'phase1-scenes.json'),'utf8'));
+if (args.includes('--force-timings') &&
+  ['captions.srt','subtitle-script.txt'].some(n=>fs.existsSync(path.join(exportDir,n)))) {
+  throw Error('--force-timings requires explicitly backing up/removing old subtitles first; never keep stale existing cues.');
+}
 const hasFile=(file)=>fs.existsSync(file)&&fs.statSync(file).isFile()&&fs.statSync(file).size>0;
 const thumbnail=path.join(exportDir,'thumbnail.png');
 if(!fs.existsSync(exportDir))throw Error('Export folder missing. Render MP4 first.');
