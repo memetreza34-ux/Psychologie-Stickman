@@ -19,7 +19,7 @@ Drei getrennte 16:9 Alternativen, dieselbe These. Nach Auswahl STOP -> Sieger al
 - Ziel: 6–7 Minuten
 - Wortzahl: 966
 - Visual Beats: 72
-- Struktur: Hook und Begriff in 01–03; Montag? Nein: Samstag-Regal als Anfangsbeispiel; Studententhesen als Quellenevidenz; Innen-/Außenansicht; Umzugs-Midpoint; realistischer Referenzvergleich; Videoschnitt als zweites ausführliches Beispiel; nuancierter Schluss und gesprochener Rückbezug aufs Regal.
+- Struktur: Hook und Begriff in 01–03; Samstag-Regal als Anfangsbeispiel; Studententhesen als Quellenevidenz; Innen-/Außenansicht; Umzugs-Midpoint; realistischer Referenzvergleich; Videoschnitt als zweites ausführliches Beispiel; nuancierter Schluss und gesprochener Rückbezug aufs Regal.
 - Style: Story-first, gut überprüfte Forschung, keine Bibliografie im Sprechertext.
 - Quellen: `99-intern/sources.md`
 - `99-intern/script-plan.json` = APPROVED.

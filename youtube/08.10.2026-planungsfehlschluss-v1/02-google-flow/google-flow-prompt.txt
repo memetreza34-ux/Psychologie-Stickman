@@ -109,7 +109,7 @@ CHARACTER_SCENE — Single stickman kneels and carefully reverses the timber pan
 Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
 
 BILD 09
-ENVIRONMENT_SCENE — Show overhead apartment floor clutter, clock hands at noon, unfinished shelf; high wide view.
+ENVIRONMENT_SCENE — Overhead view of the apartment floor at noon: scattered planks and unfinished oak shelf under midday light, analog clock clearly at twelve.
 No visible text.
 
 BILD 10
@@ -361,5 +361,5 @@ CHARACTER_SCENE — Same original builder calmly places last book into completed
 Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
 
 BILD 72
-TEXT_ILLUSTRATION — Final well-finished oak shelf in immersive warm apartment; exact large German closing text REALISTISCH PLANEN? optional? final approved text DEIN PLAN. DIE REALITÄT.
-Exact visible German text ONLY: DEIN PLAN. DIE REALITÄT..
+TEXT_ILLUSTRATION — Warm immersive apartment with a beautiful finished oak shelf; only the exact large German closing text DEIN PLAN. DIE REALITÄT. is integrated into the room.
+Exact visible German text ONLY: DEIN PLAN. DIE REALITÄT.
