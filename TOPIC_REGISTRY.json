@@ -12,28 +12,51 @@
     {
       "topicId": "prokrastination-aufschieben",
       "canonicalTopic": "Aufschieben / Prokrastination",
-      "aliases": ["aufschieben", "prokrastination", "procrastination", "aufschiebeverhalten"],
-      "projects": ["youtube/23.09.2026-aufschieben-test"],
+      "aliases": [
+        "aufschieben",
+        "prokrastination",
+        "procrastination",
+        "aufschiebeverhalten"
+      ],
+      "projects": [
+        "youtube/23.09.2026-aufschieben-test"
+      ],
       "status": "USED"
     },
     {
       "topicId": "wahrheitseffekt",
       "canonicalTopic": "Wahrheitseffekt / Illusory Truth Effect",
-      "aliases": ["wahrheitseffekt", "illusory-truth-effect", "illusion-of-truth", "truth-effect"],
-      "projects": ["youtube/23.09.2026-wahrheitseffekt-test"],
+      "aliases": [
+        "wahrheitseffekt",
+        "illusory-truth-effect",
+        "illusion-of-truth",
+        "truth-effect"
+      ],
+      "projects": [
+        "youtube/23.09.2026-wahrheitseffekt-test"
+      ],
       "status": "USED"
     },
     {
       "topicId": "negativitaetsbias",
       "canonicalTopic": "Negativitätsbias",
-      "aliases": ["negativitaetsbias", "negativity-bias", "negativitaetseffekt"],
-      "projects": ["youtube/24.09.2026-negativitaetsbias"],
+      "aliases": [
+        "negativitaetsbias",
+        "negativity-bias",
+        "negativitaetseffekt"
+      ],
+      "projects": [
+        "youtube/24.09.2026-negativitaetsbias"
+      ],
       "status": "USED"
     },
     {
       "topicId": "spotlight-effekt",
       "canonicalTopic": "Spotlight-Effekt",
-      "aliases": ["spotlight-effekt", "spotlight-effect"],
+      "aliases": [
+        "spotlight-effekt",
+        "spotlight-effect"
+      ],
       "projects": [
         "youtube/24.09.2026-spotlight-effekt",
         "youtube/27.09.2026-spotlight-effekt-v2",
@@ -46,14 +69,27 @@
     {
       "topicId": "bestaetigungsfehler",
       "canonicalTopic": "Bestätigungsfehler / Confirmation Bias",
-      "aliases": ["bestaetigungsfehler", "bestaetigungsbias", "confirmation-bias", "confirmation-bias-effect"],
-      "projects": ["youtube/25.09.2026-bestaetigungsfehler"],
+      "aliases": [
+        "bestaetigungsfehler",
+        "bestaetigungsbias",
+        "confirmation-bias",
+        "confirmation-bias-effect"
+      ],
+      "projects": [
+        "youtube/25.09.2026-bestaetigungsfehler"
+      ],
       "status": "USED"
     },
     {
       "topicId": "ankereffekt",
       "canonicalTopic": "Ankereffekt / Anchoring",
-      "aliases": ["ankereffekt", "anker-effekt", "anchoring", "anchoring-effect", "anchoring-bias"],
+      "aliases": [
+        "ankereffekt",
+        "anker-effekt",
+        "anchoring",
+        "anchoring-effect",
+        "anchoring-bias"
+      ],
       "projects": [
         "youtube/26.09.2026-ankereffekt",
         "youtube/28.09.2026-ankereffekt-v1"
@@ -64,71 +100,149 @@
     {
       "topicId": "sunk-cost-effekt",
       "canonicalTopic": "Sunk-Cost-Effekt",
-      "aliases": ["sunk-cost-effekt", "sunk-cost-effect", "sunk-cost-fallacy", "versunkene-kosten"],
-      "projects": ["youtube/26.09.2026-sunk-cost-effekt"],
+      "aliases": [
+        "sunk-cost-effekt",
+        "sunk-cost-effect",
+        "sunk-cost-fallacy",
+        "versunkene-kosten"
+      ],
+      "projects": [
+        "youtube/26.09.2026-sunk-cost-effekt"
+      ],
       "status": "USED"
     },
     {
       "topicId": "besitztumseffekt",
       "canonicalTopic": "Besitztumseffekt / Endowment Effect",
-      "aliases": ["besitztumseffekt", "endowment-effect", "besitz-effekt"],
-      "projects": ["youtube/27.09.2026-besitztumseffekt"],
+      "aliases": [
+        "besitztumseffekt",
+        "endowment-effect",
+        "besitz-effekt"
+      ],
+      "projects": [
+        "youtube/27.09.2026-besitztumseffekt"
+      ],
       "status": "USED"
     },
     {
       "topicId": "gruppendruck",
       "canonicalTopic": "Gruppendruck",
-      "aliases": ["gruppendruck", "group-pressure", "peer-pressure"],
-      "projects": ["youtube/28.09.2026-gruppendruck-v1"],
+      "aliases": [
+        "gruppendruck",
+        "group-pressure",
+        "peer-pressure"
+      ],
+      "projects": [
+        "youtube/28.09.2026-gruppendruck-v1"
+      ],
       "status": "USED"
     },
     {
       "topicId": "halo-effekt",
       "canonicalTopic": "Halo-Effekt",
-      "aliases": ["halo-effekt", "halo-effect"],
-      "projects": ["youtube/29.09.2026-halo-effekt-v1"],
+      "aliases": [
+        "halo-effekt",
+        "halo-effect"
+      ],
+      "projects": [
+        "youtube/29.09.2026-halo-effekt-v1"
+      ],
       "status": "USED"
     },
     {
       "topicId": "bystander-effekt",
       "canonicalTopic": "Bystander-Effekt",
-      "aliases": ["bystander-effekt", "bystander-effect", "zuschauereffekt"],
-      "projects": ["youtube/30.09.2026-bystander-effekt-v1"],
+      "aliases": [
+        "bystander-effekt",
+        "bystander-effect",
+        "zuschauereffekt"
+      ],
+      "projects": [
+        "youtube/30.09.2026-bystander-effekt-v1"
+      ],
       "status": "USED"
     },
     {
       "topicId": "ikea-effekt",
       "canonicalTopic": "IKEA-Effekt",
-      "aliases": ["ikea-effekt", "ikea-effect"],
-      "projects": ["youtube/30.09.2026-ikea-effekt-v1"],
+      "aliases": [
+        "ikea-effekt",
+        "ikea-effect"
+      ],
+      "projects": [
+        "youtube/30.09.2026-ikea-effekt-v1"
+      ],
       "status": "USED"
     },
     {
       "topicId": "reaktanz",
       "canonicalTopic": "Psychologische Reaktanz",
-      "aliases": ["reaktanz", "psychologische-reaktanz", "reactance", "psychological-reactance"],
-      "projects": ["youtube/02.10.2026-reaktanz-v1"],
+      "aliases": [
+        "reaktanz",
+        "psychologische-reaktanz",
+        "reactance",
+        "psychological-reactance"
+      ],
+      "projects": [
+        "youtube/02.10.2026-reaktanz-v1"
+      ],
       "status": "USED"
     },
     {
       "topicId": "framing-effekt",
       "canonicalTopic": "Framing-Effekt",
-      "aliases": ["framing-effekt", "framing-effect", "framing"],
-      "projects": ["youtube/03.10.2026-framing-effekt-v1"],
+      "aliases": [
+        "framing-effekt",
+        "framing-effect",
+        "framing"
+      ],
+      "projects": [
+        "youtube/03.10.2026-framing-effekt-v1"
+      ],
       "status": "USED"
     },
     {
       "topicId": "kognitive-dissonanz",
       "canonicalTopic": "Kognitive Dissonanz / Cognitive Dissonance",
-      "aliases": ["kognitive-dissonanz", "cognitive-dissonance", "dissonanztheorie", "cognitive-dissonance-theory"],
-      "projects": ["youtube/03.10.2026-kognitive-dissonanz-v1"],
+      "aliases": [
+        "kognitive-dissonanz",
+        "cognitive-dissonance",
+        "dissonanztheorie",
+        "cognitive-dissonance-theory"
+      ],
+      "projects": [
+        "youtube/03.10.2026-kognitive-dissonanz-v1"
+      ],
       "status": "USED"
     },
     {
       "topicId": "fundamentaler-attributionsfehler",
       "canonicalTopic": "Fundamentaler Attributionsfehler / Correspondence Bias",
-      "aliases": ["fundamentaler-attributionsfehler", "fundamental-attribution-error", "correspondence-bias", "korrespondenzbias", "dispositional-bias"],
-      "projects": ["youtube/05.10.2026-fundamentaler-attributionsfehler-v1"],
+      "aliases": [
+        "fundamentaler-attributionsfehler",
+        "fundamental-attribution-error",
+        "correspondence-bias",
+        "korrespondenzbias",
+        "dispositional-bias"
+      ],
+      "projects": [
+        "youtube/05.10.2026-fundamentaler-attributionsfehler-v1"
+      ],
+      "status": "USED"
+    },
+    {
+      "topicId": "planungsfehlschluss",
+      "canonicalTopic": "Planungsfehlschluss / Planning Fallacy",
+      "aliases": [
+        "planungsfehlschluss",
+        "planning-fallacy",
+        "optimistic-time-estimation",
+        "planungsoptimismus",
+        "zeitaufwand-unterschaetzen"
+      ],
+      "projects": [
+        "youtube/08.10.2026-planungsfehlschluss-v1"
+      ],
       "status": "USED"
     }
   ]

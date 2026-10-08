@@ -1,0 +1,46 @@
+{
+  "policy": "LONGFORM_STORY_RETENTION_V1",
+  "status": "APPROVED",
+  "targetWords": {
+    "min": 850,
+    "max": 1100
+  },
+  "wordCountJustification": "",
+  "structure": {
+    "hook": "The unexpectedly unfinished two-hour shelf project poses an immediate relatable puzzle.",
+    "introduction": "Name Planungsfehlschluss early; show the specific setup and initial deviations rather than abstract theory.",
+    "mainPart": "Shelf story, research thesis predictions with measured data, inside-vs-outside view, moving-house midpoint reversal, actionable comparisons, detailed editing-project second example, nuanced limits.",
+    "conclusion": "Return explicitly to shelf, use the outside view and an afternoon buffer; end with one concise thought."
+  },
+  "narrativeSpine": {
+    "anchorPhrase": "Regal zwei Stunden",
+    "callbackPhrase": "Erinnerst du dich an das Regal vom Samstagvormittag?"
+  },
+  "research": {
+    "mode": "STORY_FIRST_SOURCES_SECOND",
+    "spokenResearchNames": [],
+    "notes": "The 34 vs 56 days is specifically the average best estimate 33.9 vs observed 55.5 days in Study 1 Buehler Griffin Ross (1994); no causal/general-population inference. All full citations in metadata."
+  },
+  "examples": {
+    "substantialExamples": [
+      "Main shelf assembly with missing tool and board reversal, returns in conclusion",
+      "1994 study: undergraduate honours theses forecasts compared with actual submissions",
+      "Home video-editing project: incompatible shots, sound corrections, render retry and measured tasks"
+    ],
+    "synthesisAfterExampleRuns": "One principal furniture story; one scientific study; one full editing case. The brief move example serves as midpoint reversal and leads back to outside-view synthesis."
+  },
+  "retention": {
+    "midpointReengagementPhrase": "Aber hier kommt die unangenehme Frage:"
+  },
+  "ending": {
+    "practicalTakeaway": "Look at actual times for comparable tasks; include foreseeable detours and some flexible time.",
+    "finalLine": "Denn ein guter Plan ist nicht der, der am schönsten klingt. Sondern der, der die Wirklichkeit aushält."
+  },
+  "qa": {
+    "namedResearchersSpokenCount": 0,
+    "yearMentionsSpokenCount": 0,
+    "maxConsecutiveNamedResearchBlocks": 1,
+    "maxConsecutiveMicroExamples": 2,
+    "deepExampleCount": 3
+  }
+}

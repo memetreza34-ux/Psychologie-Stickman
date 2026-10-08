@@ -1,0 +1,365 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+TOPIC: Planungsfehlschluss / Planning Fallacy
+FORMAT: 16:9 / 1920x1080
+TARGET VIDEO LENGTH: 6–7 minutes
+VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
+VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+
+TASK
+Create final separate 16:9 source images for one coherent German YouTube psychology video.
+One BILD number = one separate image. Never create a storyboard, contact sheet, collage or automatic video.
+
+ACTIVE VISUAL WORLD
+Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent foreground/midground/background depth.
+When people appear they use the exact same stickman species: identical oversized round/soft-oval light/white heads, tiny black oval eyes, narrow clothed torsos, very thin dark stick-like limbs, small hands and shoes.
+Same-frame species lock: every person in one image must share identical base-head construction, torso scale and limb thickness. Hair and clothing may vary, but no normal cartoon-human anatomy, body-shaped clothing, realistic shoulders or skin-toned ordinary cartoon faces.
+Objects, text, environments and schemas use exactly the same illustrator language.
+
+GLOBAL EXCLUSIONS
+No 3D/Pixar, anime, photorealism, mixed human species, floating brains, surreal clock vortex, bare whiteboard-doodle, corporate infographic style, repetitive beige board default, unplanned readable English/German, gibberish or fake labels.
+
+REPRESENTATION FIRST — HARD RULE
+People are optional. Choose the indicated CHARACTER_SCENE, OBJECT_FOCUS, ENVIRONMENT_SCENE, COMPARE_VISUAL or TEXT_ILLUSTRATION as the best visual form. Do not add people to object-led frames without need.
+
+MOTIF PROGRESSION / PANELS / MOBILE QA
+Use material changes in object state, action, environment, depth, camera and scale. No run of repeated centered props; do not repeat the identical shelf shot. Maximum 2 distinct states/panels per frame; no 3-/4-panel mini-storyboards. Big readable subject and one dominant idea on mobile. No dense arrows or tiny labels.
+
+VIDEO WORLD / CONTINUITY
+Main illustrative story: warm modern apartment, oak flat-pack shelf, one approved stickman adult wearing navy top; later finished shelf in same environment. Other locations: university in 1990s, moving stairwell, video editor room. Research experiment depicted as stylized reconstruction, not historic photo. All humans regardless of location share exactly the same stickman species. Color/light vary naturally.
+
+COVER WORKFLOW — HARD LOCK
+1. Generate BILD 01 ONLY.
+2. Create exactly 3 SEPARATE 16:9 cover candidates (not in one composite sheet).
+3. All show one common thesis: a two-hour shelf assembly still unfinished much later. All have only exact headline NUR 2 STUNDEN? in huge German typography.
+4. Make three meaningfully different physical compositions, never a storyboard or contact sheet.
+5. STOP and wait for the user to choose.
+6. The approved candidate becomes 01.png inside flat 03-bilder/.
+7. Reuse approved 01.png as style reference for linework, cel-shading, texture, finish, stickman species. Do not force later images to copy its camera, person, location or light.
+
+AFTER COVER APPROVAL
+Generate BILD 02 onward in groups of 5 whenever >=5 images remain. Batches:
+02–06
+07–11
+12–16
+17–21
+22–26
+27–31
+32–36
+37–41
+42–46
+47–51
+52–56
+57–61
+62–66
+67–71
+72–72
+Each batch is one batch operation producing 5 DIFFERENT separate 16:9 images, never one combined image.
+Rename accepted images NN.png instantly and place all directly in flat 03-bilder/.
+Regenerate only failures; continue after batch QA PASS. No batch subfolders, storyboard, contact sheet or automatic video.
+
+GLOBAL TEXT RULE
+ZERO READABLE TEXT unless the exact German words are explicitly specified for that BILD. No UI captions, manuals, forms, store names or brand text: use unlettered props. Any unplanned text = FAIL and regenerate. Typography large, sparse and mobile-readable.
+
+OBSERVABLE SCENE FIRST
+Every BILD prompt states the concrete visible evidence, focal relation, camera and representation. Never let Flow invent the whole meaning.
+
+BILD 01
+
+Generate exactly 3 SEPARATE cover candidates, then STOP. All have ONLY exact text: NUR 2 STUNDEN?
+
+CANDIDATE 1: Waist-high dramatic medium-wide view. Same worn oak shelf still unfinished; one tired approved stickman kneels in scattered planks while an analog clock silently shows late afternoon. Huge integrated typography: NUR 2 STUNDEN? Contrast cozy daylight and exhausted posture.
+
+CANDIDATE 2: Slight overhead oblique view with an unassembled shelf occupying foreground and finished-shelf silhouette faintly visible as a normal imagined paper sketch behind. Clock and late-afternoon light tell overrun; one small approved stickman bends over wrong board. Exact text NUR 2 STUNDEN? large.
+
+CANDIDATE 3: Wide cinematic interior: Saturday sunlight has changed into orange evening, unfinished shelf cast as clear focal point, approved stickman grips screwdriver with expressive shoulders. Clock integrated in room, not separate panel. Large exact text NUR 2 STUNDEN?.
+
+After user selection save winning image as 01.png in flat 03-bilder/.
+
+BILD 02
+TEXT_ILLUSTRATION — Overhead of half-assembled shelf and a large clean center title PLANUNGSFEHLSCHLUSS; pale blue morning light, no extra symbols.
+Exact visible German text ONLY: PLANUNGSFEHLSCHLUSS.
+
+BILD 03
+COMPARE_VISUAL — One split image contrasts an immaculate imagined finished shelf with a real floor full of loose pieces in the same room.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 04
+ENVIRONMENT_SCENE — Sunlit modern apartment at ten in the morning, unopened flat-pack box beside cleared wall; distinct wide establishing view.
+No visible text.
+
+BILD 05
+OBJECT_FOCUS — Open assembly box and a few carefully arranged wood planks beside an unmarked diagram sheet; confident neat preparation close-up.
+No visible text.
+
+BILD 06
+OBJECT_FOCUS — Close-up into an almost empty toolkit beside a screw; missing driver bit obvious from its empty foam slot.
+No visible text.
+
+BILD 07
+ENVIRONMENT_SCENE — Low floor-level view across the apartment: one misaligned oak panel tilts against the shelf frame; physical fit visibly wrong.
+No visible text.
+
+BILD 08
+CHARACTER_SCENE — Single stickman kneels and carefully reverses the timber panel, screwdriver on floor; determined posture, strong diagonal view.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 09
+ENVIRONMENT_SCENE — Show overhead apartment floor clutter, clock hands at noon, unfinished shelf; high wide view.
+No visible text.
+
+BILD 10
+CHARACTER_SCENE — Stickman sits on floor beside failed shelf holding a blank assembly diagram, head tilted in frustrated disbelief; intimate close-up.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 11
+COMPARE_VISUAL — Two states: pristine imagined assembly bench versus lived chaotic interrupted assembly floor; one dominant contrast, no arrows.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 12
+OBJECT_FOCUS — A single long straight wooden plank lies against bent winding trail of screws and tool marks on floor; metaphor in real room.
+No visible text.
+
+BILD 13
+CHARACTER_SCENE — Stickman studies a hopeful sketch of a complete shelf while unfinished work remains behind; sympathetic documentary framing.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 14
+ENVIRONMENT_SCENE — Period-accurate 1990s university psychology workspace with desk phone and analog records, two identical stickman species researchers.
+No visible text.
+
+BILD 15
+ENVIRONMENT_SCENE — 1990s university study room: student thesis piles and submission box, academic atmosphere, no legible text on pages.
+No visible text.
+
+BILD 16
+TEXT_ILLUSTRATION — One giant 34 and the exact German text 34 TAGE on an uncluttered academic tabletop with one blank paper stack.
+Exact visible German text ONLY: 34 TAGE.
+
+BILD 17
+TEXT_ILLUSTRATION — Same study world but striking stack of many thicker papers on foreground table; exact text 56 TAGE, no other writing.
+Exact visible German text ONLY: 56 TAGE.
+
+BILD 18
+OBJECT_FOCUS — Two modest stacks of student notes beside a practical calendar with unmarked squares, understated evidence and uncertainty.
+No visible text.
+
+BILD 19
+CHARACTER_SCENE — An identical stickman student turns from orderly forecast notebook toward towering unfinished thesis stack; physical surprise.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 20
+ENVIRONMENT_SCENE — Research participant verbally reflects at a desk while observer writes silent notes; 1990s furniture, no readable forms.
+No visible text.
+
+BILD 21
+OBJECT_FOCUS — Macro of fresh forward-pointing project sketch laid over a worn actual timetable with past delays hidden under paper.
+No visible text.
+
+BILD 22
+COMPARE_VISUAL — Left: imagined completed walnut shelf inside bright flat; right: warped board and scattered screws in real apartment.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 23
+OBJECT_FOCUS — An unused spare tool and extra screws lie just beyond the edge of a narrow paper plan; revealing ignored contingencies.
+No visible text.
+
+BILD 24
+TEXT_ILLUSTRATION — Large exact word INNENANSICHT embedded beside detailed unlabelled plan on workshop table, shallow depth.
+Exact visible German text ONLY: INNENANSICHT.
+
+BILD 25
+CHARACTER_SCENE — Stickman leans over a desk planning individual assembly actions on empty square cards; camera from shoulder at close distance.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 26
+ENVIRONMENT_SCENE — Pulled-back apartment corridor with shelves, tools, deliveries and stair route all visible; wide real-world context.
+No visible text.
+
+BILD 27
+TEXT_ILLUSTRATION — Large exact word AUSSENANSICHT above shelf of completed and unfinished previous do-it-yourself projects in one coherent room.
+Exact visible German text ONLY: AUSSENANSICHT.
+
+BILD 28
+COMPARE_VISUAL — Clean two-state photo-like illustrated contrast: ideal uncluttered assembly corner versus typical messy work corner, no labels.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 29
+OBJECT_FOCUS — A notebook with a sequence of unlabelled older project time bars beside current overly short bar; visual comparison no text.
+No visible text.
+
+BILD 30
+ENVIRONMENT_SCENE — Garage storage room with multiple repaired furniture items; one exceptional pristine piece prominently lit among ordinary outcomes.
+No visible text.
+
+BILD 31
+CHARACTER_SCENE — Stickman points hopefully at yesterday's empty bit slot now filled, ignoring large tangled cable behind workbench.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 32
+OBJECT_FOCUS — One missing drill bit replaces another: today snapped screw lodged in wood, evidence that obstacle type changed.
+No visible text.
+
+BILD 33
+ENVIRONMENT_SCENE — Different apartment projects in one continuous storage nook, some finished and one still incomplete, balanced realistic scene.
+No visible text.
+
+BILD 34
+CHARACTER_SCENE — Viewer-facing stickman holds a simple blank project schedule while another stickman in background surveys practical obstacles.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 35
+CHARACTER_SCENE — Female stickman in apartment doorway confidently gestures at moving cartons and gestures toward clock; same species.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 36
+ENVIRONMENT_SCENE — Wide stairwell with narrow turns, stacked moving boxes and distant parked van not yet present; immersive obstacles.
+No visible text.
+
+BILD 37
+COMPARE_VISUAL — Two-state scene: confident mover among boxes inside flat versus friend outside measuring narrow stairwell; clear contrast.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 38
+ENVIRONMENT_SCENE — Observer in moving-house doorway notices bottleneck at stair landing while one mover looks at cartons; physical roles.
+No visible text.
+
+BILD 39
+OBJECT_FOCUS — An optimistic moving list sits on closed carton while old battered moving trolley is pushed out of focal plane.
+No visible text.
+
+BILD 40
+CHARACTER_SCENE — Stickman neighbor shows builder a photograph of another finished shelving project; doorway conversation with two same-species figures.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 41
+OBJECT_FOCUS — Close-up of builder's practical notebook featuring three colored duration bars drawn with no numerals or words.
+No visible text.
+
+BILD 42
+COMPARE_VISUAL — Two clocks with distinct hand positions near a completed shelf, one best-case empty scene vs ordinary cluttered setup.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 43
+ENVIRONMENT_SCENE — Wide tool room containing examples of comparable finished shelves of varying complexity and their work surfaces.
+No visible text.
+
+BILD 44
+OBJECT_FOCUS — Comparison of two similar small flat-pack units with matching tools on one table; controlled similar scale.
+No visible text.
+
+BILD 45
+COMPARE_VISUAL — Two-state contrast: giant wardrobe filling room versus one narrow floating wall shelf; demonstrate mismatch clearly.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 46
+OBJECT_FOCUS — High-quality power driver, prepared clamps and neatly organized hardware on brightly lit workbench, realistic advantages.
+No visible text.
+
+BILD 47
+ENVIRONMENT_SCENE — Calm library-like workspace with sturdy archive boxes of old project evidence; measured visual tone, no mystical cues.
+No visible text.
+
+BILD 48
+ENVIRONMENT_SCENE — Evening home editing studio in the same illustrated world with desktop monitor showing nonverbal timeline shapes; practical new story.
+No visible text.
+
+BILD 49
+OBJECT_FOCUS — Editing desk shot: memory cards, waveform-like strips, microphone and an export icon represented without letters; sparse group.
+No visible text.
+
+BILD 50
+COMPARE_VISUAL — Two video frame displays on monitor show incompatible angle and lighting of same room; no readable UI labels.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 51
+ENVIRONMENT_SCENE — Lively desk environment: mismatched print frame, slightly clipped sound waveform and cursor-like scrub element, immersive rather than flat board.
+No visible text.
+
+BILD 52
+CHARACTER_SCENE — Single stickman editor in dim workspace at midnight, shoulders slumped before editing timeline shapes, cup cold.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 53
+OBJECT_FOCUS — Close-up of physically arranged media cards grouped into editing tasks on studio table, no written titles.
+No visible text.
+
+BILD 54
+ENVIRONMENT_SCENE — Realistic studio workspace at inspection stage: headphones, export progress wheel icon and quality-check screen, clean depth.
+No visible text.
+
+BILD 55
+OBJECT_FOCUS — One monitor shows an empty frozen export indicator next to file drive, studio lamp glows; no readable error text.
+No visible text.
+
+BILD 56
+CHARACTER_SCENE — Editor watches analog stopwatch beside project notebook on desk, expression of purposeful attention not distress.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 57
+OBJECT_FOCUS — Notebook and analog watch with three visible colored intervals marked by shapes not text; top-down documentary view.
+No visible text.
+
+BILD 58
+COMPARE_VISUAL — Past editor desk beside new editor desk; matching composition intentionally contrasts accumulated evidence and upcoming effort.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 59
+OBJECT_FOCUS — Simple physical stack of three recent project cards with differently sized color blocks; readable without micro symbols.
+No visible text.
+
+BILD 60
+ENVIRONMENT_SCENE — Rainy window outside editing room, calendar cards without writing and relocated equipment showing legitimate change.
+No visible text.
+
+BILD 61
+CHARACTER_SCENE — Stickman technician receives new hardware delivery and adapts workbench arrangement, visible genuine scope change.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 62
+COMPARE_VISUAL — Two-state contrast: genuine equipment failure causing delay versus clean unused task plan; neutral, non-blaming.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 63
+ENVIRONMENT_SCENE — Energetic but uncluttered workroom with ambitious pinned goal represented by trophy outline and sturdy realistic workbench.
+No visible text.
+
+BILD 64
+TEXT_ILLUSTRATION — One large exact title 3 FRAGEN in foreground of real desk with blank colored note cards, not separate panels.
+Exact visible German text ONLY: 3 FRAGEN.
+
+BILD 65
+OBJECT_FOCUS — Shelf-building logbook open on pages with large previous-duration color bands, actual data visible without text.
+No visible text.
+
+BILD 66
+ENVIRONMENT_SCENE — Worksite floor showing packed tools and a person entering with unforeseen extra hardware; one coherent interruption example.
+No visible text.
+
+BILD 67
+COMPARE_VISUAL — Two-state clock and project space contrast: tight rushed slot vs generous reserved afternoon, one single mechanism.
+Exactly two coherent visible states maximum; no extra panels. No visible text.
+
+BILD 68
+ENVIRONMENT_SCENE — Return to original apartment in late-afternoon warm light; same half-built oak shelf from opening, strong callback.
+No visible text.
+
+BILD 69
+OBJECT_FOCUS — Builder lays an old timing notebook beside new flat-pack instruction sheet, no readable writing, focal pair.
+No visible text.
+
+BILD 70
+ENVIRONMENT_SCENE — Wide apartment in daylight with protected empty afternoon ahead, prepared shelf workspace and unobstructed passage.
+No visible text.
+
+BILD 71
+CHARACTER_SCENE — Same original builder calmly places last book into completed shelf as afternoon light fades, relaxed not rushed.
+Approved stickman species only; if more than one person appears, exact same species for all. No visible text.
+
+BILD 72
+TEXT_ILLUSTRATION — Final well-finished oak shelf in immersive warm apartment; exact large German closing text REALISTISCH PLANEN? optional? final approved text DEIN PLAN. DIE REALITÄT.
+Exact visible German text ONLY: DEIN PLAN. DIE REALITÄT..
