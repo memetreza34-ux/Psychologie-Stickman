@@ -129,22 +129,12 @@ For every NEW YouTube video, and the opted-in Planungsfehlschluss project:
 - Final QA requires a separate `05-export/thumbnail.png`, ALL scene images 01–NN, exact filenames/count, 16:9, no leftover candidates or subfolders, visual-world and planned-text conformity. Incomplete sets are never marked DONE.
 - Historical projects not opting in remain unchanged. This new rule OVERRIDES old "01.png is the cover" language wherever it conflicts for opted-in/new projects.
 
-## Cover + reference + batching (`COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`)
+## Separate thumbnail + actual scenes — `THUMBNAIL_SEPARATE_FROM_SCENE01_V1`
 
-- BILD 01 first
-- exactly 3 separate 16:9 cover candidates
-- ONLY pause: wait for the user's cover choice
-- winner → `03-bilder/01.png`; immediately remove the other two rejected cover candidates once the choice is made
-- `01.png` anchors linework, shading, texture, finish and stickman species whenever people appear
-- later scenes may change representation, people, clothing, place, camera, color, light and mood
-- cover with people does NOT force later people
-- then ALL remaining scenes automatically in 5-image batches, with no more approval questions or waiting between batches
-- every BILD stays a separate 16:9 file
-- rework only missing/failed images and resume automatically until all N assets pass QA
-- after the last batch verify every numbered 16:9 PNG from 01 through NN with no gaps, duplicates, leftover rejected covers or subfolders; only claim completion after passing
-- accepted files immediately `NN.png`
-- all in flat `03-bilder/`
-- no storyboard/contact sheet/final video
+The thumbnail is an independent 16:9 file in `05-export/thumbnail.png`, NOT BILD 01.
+Choose among 3 standalone candidates; ONLY approval pause; discard losers AFTER choice.
+BILD 01 and later are exclusively actual normal illustrated video scenes matching their spoken sections. Start autonomous five-scene batches at 01–05 then 06–10; immediately QA, rename and continue through NN. One flat `03-bilder/` with exactly 01.png–NN.png, no missing/duplicates/extra covers.
+Use chosen thumbnail only as visual style reference. New videos use this policy; historical unmarked projects remain unchanged.
 
 ## Text
 

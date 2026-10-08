@@ -73,22 +73,15 @@ For every NEW YouTube video, and the opted-in Planungsfehlschluss project:
 
 ## Google-Flow-Ausgabe — HARD LOCK
 
-Verbindlich: `rules/FLOW_OUTPUT_MODE.md`. Zusatz-Policy: `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`.
+**Aktueller Standard: `THUMBNAIL_SEPARATE_FROM_SCENE01_V1`**
 
-- BILD 01 zuerst
-- genau 3 getrennte Cover-Kandidaten
-- EINZIGER STOP: Nutzer wählt eines der drei Cover
-- Gewinner → `01.png`, die zwei abgelehnten Cover-Dateien sofort löschen (erst NACH Auswahl)
-- danach OHNE weitere Freigaben, Wartepausen oder "weiter?" in 5er-Batches bis BILD NN
-- danach 5 Bildnummern pro Batch, solange mindestens 5 übrig sind
-- letzter Batch = 1–4 Restbilder
-- jede Bildnummer = eigene 16:9-Datei
-- akzeptierte Bilder sofort `NN.png`
-- nach jedem Batch nur fehlerhafte/fehlende Bilder regenerieren und automatisch fortfahren
-- am Ende vollständige BILD-01-bis-NN-Prüfung (Dateinamen, Anzahl, 16:9, keine Cover-Reste oder Unterordner), fehlende Bilder nacharbeiten, erst dann PASS
-- alles in einem flachen `03-bilder/`
-- keine Batch-Unterordner
-- kein Storyboard/Kontaktbogen/Collage/automatisches Video
+- 3 eigenständige Thumbnail-Kandidaten, **nur hier STOP** für Auswahl.
+- Gewinner nach `05-export/thumbnail.png`, zwei abgelehnte Kandidaten danach löschen.
+- BILD 01 ist **eine eigenständige normale erste Videoszene**, kein Thumbnail und ohne Cover-Text.
+- Danach alle Szenen 01–05, 06–10 usw. autonom in 5er-Batches, keine weiteren Freigaben.
+- Jeder Batch: pro Szene einzelne 16:9-PNGs prüfen, Fehler einzeln nacharbeiten, richtige `NN.png` sofort in `03-bilder/` legen.
+- Finale Dateiprüfung: nur fortlaufende 01.png–NN.png im flachen Bildordner, unabhängig davon `05-export/thumbnail.png`.
+- Historische Projekte ohne den neuen Policy-Schalter nicht ungefragt umstellen.
 
 ## YouTube Export — HARD LOCK
 

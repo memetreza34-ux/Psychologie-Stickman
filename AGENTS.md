@@ -152,21 +152,13 @@ For every NEW YouTube video, and the opted-in Planungsfehlschluss project:
 - Final QA requires a separate `05-export/thumbnail.png`, ALL scene images 01–NN, exact filenames/count, 16:9, no leftover candidates or subfolders, visual-world and planned-text conformity. Incomplete sets are never marked DONE.
 - Historical projects not opting in remain unchanged. This new rule OVERRIDES old "01.png is the cover" language wherever it conflicts for opted-in/new projects.
 
-## Cover + Referenz + Batches — `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`
+## Cover separat, erstes Bild normale Videoszene — `THUMBNAIL_SEPARATE_FROM_SCENE01_V1`
 
-- BILD 01 only
-- genau 3 getrennte 16:9 Cover-Kandidaten
-- EINZIGE Nutzerrückfrage: Cover-Auswahl, danach NICHT erneut fragen
-- Gewinner → `01.png` und sofort die beiden abgelehnten Cover-Kandidaten löschen (niemals vor Auswahl)
-- `01.png` ist visuelle Episodenreferenz für Linework/Shading/Textur/Finish und Stickman-Spezies
-- spätere Representation, Personen, Kleidung, Orte, Farben und Stimmung dürfen sich scriptgerecht ändern
-- danach autonom alle weiteren 5er-Batches abarbeiten; nach PASS direkt mit dem nächsten Batch fortfahren, ohne auf Freigaben zu warten
-- nur fehlerhafte/fehlende Bilder regenerieren; nicht pauschal den ganzen Batch neu machen
-- am Ende alle Bildnummern 01–NN auf Vorhandensein, 16:9, eindeutige `NN.png`, flachen Ordner und keine abgelehnten Cover prüfen; wenn unvollständig, ohne Rückfrage nacharbeiten
-- jede Bildnummer eigene Datei
-- akzeptierte Bilder sofort `NN.png`
-- alles in `03-bilder/`
-- kein Storyboard/Kontaktbogen/Collage/fertiges Video
+Drei unabhängige Cover-Kandidaten generieren; nur auf diese eine Auswahl warten. Gewinner als `05-export/thumbnail.png`, beide Verlierer löschen. Das Cover gehört NICHT ins MP4 und NICHT in `03-bilder/01.png`. Szene 01 ist eine normale separate Hook-Illustration ohne Cover-Schrift.
+
+Nach Cover-Auswahl ohne weitere Fragen Bild 01–05, 06–10 usw. in 5er-Batches erzeugen; jede Datei prüfen, bei Fehler nur diese neu erzeugen, sofort als `NN.png` in `03-bilder/`. Zum Schluss exakte 01–NN-Vollständigkeit, 16:9, Figuren-/Stil-/Textkonstanz und separates Thumbnail prüfen.
+
+Wenn ein fertiges MP4 außerhalb `npm run produce:youtube` gerendert wurde, **Pflicht:** `npm run finalize:youtube -- <Projektpfad>` ausführen, damit `youtube-upload.txt`, `captions.srt` und `subtitle-script.txt` wirklich entstehen; kein Video überschreiben. Für künftige Videos ausschließlich den neuen Ablauf verwenden.
 
 ## Text
 

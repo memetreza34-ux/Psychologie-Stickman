@@ -147,6 +147,10 @@ Guidance:
 
 If a long spoken beat would force a simple frame to sit too long, create another concrete visual beat rather than adding random decorative motion.
 
+## Independent first video scene — `THUMBNAIL_SEPARATE_FROM_SCENE01_V1`
+
+For new videos BILD 01 is the first script-matched visual beat, not the thumbnail. Thumbnail is a separate file in 05-export/thumbnail.png. Scene count refers only to spoken video beats; keep all 01.png–NN.png in 03-bilder/. The cover choice is the only human stop, later 5-image scene batches run automatically starting 01–05. Historical unmarked episodes stay unchanged.
+
 ## Phase 2
 
 Each video uses exactly one:
@@ -155,10 +159,9 @@ Each video uses exactly one:
 ## Flow output
 
 Follow `rules/FLOW_OUTPUT_MODE.md`:
-- 3 covers first
-- user selection
-- approved `01.png` becomes episode visual reference
-- then 5-image batches
+- 3 separate thumbnail candidates first, the user selects one
+- chosen `05-export/thumbnail.png` is the episode style reference, NOT scene 01
+- first real video image `01.png` starts the five-image batches; continue automatically
 - separate 16:9 assets
 - `NN.png`
 - one flat `03-bilder/`

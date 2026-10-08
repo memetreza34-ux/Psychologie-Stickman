@@ -115,17 +115,13 @@ For every NEW YouTube video, and the opted-in Planungsfehlschluss project:
 - Final QA requires a separate `05-export/thumbnail.png`, ALL scene images 01–NN, exact filenames/count, 16:9, no leftover candidates or subfolders, visual-world and planned-text conformity. Incomplete sets are never marked DONE.
 - Historical projects not opting in remain unchanged. This new rule OVERRIDES old "01.png is the cover" language wherever it conflicts for opted-in/new projects.
 
-## Episode reference — `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`
+## Separate thumbnail + first real scene — `THUMBNAIL_SEPARATE_FROM_SCENE01_V1`
 
-BILD 01 is the cover and first visual reference.
+Thumbnail gets exactly 3 distinct alternatives; ONLY stop for user choice, selected `05-export/thumbnail.png`, both losers deleted. Reference anchors illustration finish and stickman anatomy only. The thumbnail never enters MP4 or the 01–NN series.
 
-Workflow:
-- exactly 3 separate cover candidates
-- user chooses one (ONLY pause in entire image-generation workflow)
-- winner becomes `01.png`; delete the other two rejected cover files immediately after selection
-- use `01.png` as episode style reference for linework, shading, texture, finish and stickman species when people appear
+BILD 01 is a normal video opening that illustrates the first spoken hook, not the cover. Next images auto-run in groups of 5 beginning at 01–05 without any more approval pauses; QA/renaming into the flat `03-bilder/`; final scene count, 16:9, text, species, no missing/extra frames; separate thumbnail.
 
-It does NOT force later images to copy the same person, composition, representation type, location, palette or mood.
+Manual/external MP4 renders must also run `npm run finalize:youtube -- <project>` so final `youtube-upload.txt`, `captions.srt`, `subtitle-script.txt` exist; only real timed word/cut information is accepted.
 
 ## What remains fixed operationally
 
