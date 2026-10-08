@@ -2,89 +2,77 @@ GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
 
 TOPIC: [VIDEO-THEMA]
 FORMAT: 16:9 / 1920x1080
+TARGET: 6–7 minutes
 VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
 VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
-THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
 FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
+THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
 
 TASK
-Create final separate 16:9 source images for one coherent YouTube video.
-One BILD number = one separate image.
-Never create a storyboard, contact sheet, collage or automatic video.
+Produce SEPARATE 16:9 images for a German psychology video, not a storyboard, contact sheet, collage or video.
+Thumbnail and all actual video scenes are different assets.
 
 ACTIVE VISUAL WORLD
-High-quality hand-drawn 2D animated psychology world with organic dark outlines, soft cel shading, subtle illustrated texture, natural clear colors and coherent depth.
-
-When people appear, they use the exact same approved stickman species:
-- identical oversized round or softly oval light/white base heads
-- tiny black oval eyes and minimal expressive faces
-- narrow clothed torsos
-- very thin dark stick-like arms and legs
-- small simple hands and shoes
-
-Clothing, hair, age, role and era may change. The underlying anatomy may not.
-Hair sits on the same approved light/white head construction; it must not create a normal skin-toned cartoon face.
-Clothing follows the same narrow torso and may not create realistic shoulders, chest, hips or thighs.
-If several humans share one image, ALL must visibly use the same base head, torso scale and limb thickness.
-Never mix a normal cartoon person with an approved stickman in the same frame.
-
-The world is NOT character-only. Objects, environments, comparisons, schemas and text-led illustrations use the exact same illustrator/render language.
-
-GLOBAL STYLE ANCHOR
-Same approved Psychology Stickman World: high-quality hand-drawn 2D animation with organic dark outlines, soft cel shading, subtle illustration texture, natural clear colors and coherent depth. When people appear they use the exact same stickman species: identical oversized round/soft-oval light heads, tiny black oval eyes, narrow clothed torsos and very thin dark stick-like limbs; hair/clothing may vary but never normal cartoon-human anatomy. Objects, text, environments and schemas use the same illustrator language.
-
-GLOBAL EXCLUSIONS
-No 3D/Pixar, anime, photorealism, normal-human anatomy drift, mixed human species in one frame, bare whiteboard-doodle look, foreign corporate-infographic style, repetitive beige explainer-board default, 3-/4-panel explainer-board default or unplanned readable text.
+High-quality hand-drawn 2D psychology illustrations: organic dark outlines, soft cel shading, light illustration texture, natural color, environment depth.
+Every human is the same approved stickman species: identical oversized light round/oval base heads, tiny black eyes, narrow clothed torsos, very thin dark stick-like limbs, small hands and shoes.
+Same-frame species lock: all humans in one image share the exact same head/torso/limb construction. Hair and clothing may vary, but never realistic/anime/Pixar/normal cartoon human anatomy.
+Objects and environments use the exact same illustrator language.
 
 REPRESENTATION FIRST — HARD RULE
-Before each BILD, use the representation already chosen in Phase 1:
-- CHARACTER_SCENE
-- OBJECT_FOCUS
-- ENVIRONMENT_SCENE
-- SCHEMA_EXPLAINER
-- COMPARE_VISUAL
-- TEXT_ILLUSTRATION
+People are optional, not the default. Pick the best visual form for each beat:
+CHARACTER_SCENE, OBJECT_FOCUS, ENVIRONMENT_SCENE, SCHEMA_EXPLAINER, COMPARE_VISUAL, TEXT_ILLUSTRATION.
+Make visible evidence concrete: action, object state, gaze, setting, cause/effect, before/after only when justified.
 
-People are optional. Use full characters only when visible human behavior or interaction is the clearest evidence.
-
-MOTIF PROGRESSION — HARD RULE
-Phase 1 defines `motifKey`, `visualChangeReason` and `panelCount` for each scene.
-A recurring story object may return, but neighboring frames must materially progress through action, consequence, location, camera, focal scale, object state, social relation or foreground/background role.
-Do not repeat the same hero object in nearly the same composition several times just because the narration still refers to it.
-Three or more adjacent scenes with the same motifKey require explicit continuity justification and still need materially different staging.
-
-PANEL / STATE DENSITY — HARD RULE
-Default maximum: 2 distinct visible states/panels in one BILD.
-Do not create 3-part or 4-part timelines, mini-storyboards or slide-like explanation boards.
-If the idea has three steps, split it across BILDs, show one coherent real physical scene, or reduce it to a two-state before/after comparison.
-
-STAGING VARIETY — HARD REVIEW
-Representation variety alone is not enough. Avoid several adjacent frames with the same flat beige/neutral board, centered-object layout, circles/arrows template, repeated hero-object display or near-identical camera.
-When the content allows, vary spatial depth, camera distance, focal scale, subject placement, local lighting, object state and environment.
-Prefer a real illustrated context — shelf, room, desk, street, product close-up, hallway, laboratory — when it explains the beat better than a generic presentation background.
-
-MOBILE READABILITY
-Every image must work on a phone screen:
-- one dominant focal idea
-- large readable subject
-- short large planned text only
-- no paragraph-like copy
-- max 2 distinct states/panels by default
-- schemas preferably max 3 major labels/branches
-- no dense arrow networks, tiny crowds or many mini-panels
+MOTIF PROGRESSION AND VISUAL DENSITY
+Each new scene should advance a concrete motif and change action, camera, distance, focal scale, location, object state or social relation. No repeated beige boards or centered symbolic doodles.
+Default maximum: 2 distinct states/panels per BILD. No 3-/4-panel mini-storyboard. No tiny labels/crowds or dense arrow networks.
+Every image must be clear on a phone screen.
+Exact planned German text only when explicitly specified. Any unplanned English/German/packaging/UI text or gibberish = FAIL and regenerate.
 
 VIDEO WORLD
-[Define only script-specific recurring people, places, era, props or continuity facts. Do not invent a permanent channel protagonist.]
-
-THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
+[Script-specific recurring people, objects, settings and chronology only. No invented channel mascot.]
 
 THUMBNAIL CANDIDATES — THE ONLY USER STOP
-Make exactly 3 separate 16:9 THUMBNAIL candidates, identical main thesis and exact cover headline, 3 meaningfully different compositions. They are NOT BILD 01 and not video frames. Only here wait for the user's choice. Keep winner at 05-export/thumbnail.png, delete two rejected covers after choice. Reference selected thumbnail ONLY for stickman species, linework, cel shading and texture.
+1. Generate exactly 3 SEPARATE 16:9 thumbnail candidates, each its OWN image, same concrete thesis and exact cover headline, different compositions.
+2. These are NOT BILD 01, and must NEVER be used as the first video frame or in the video timeline.
+3. STOP only here. Let the user choose.
+4. Save winner to 05-export/thumbnail.png and delete the two rejected candidate files only after user selection.
+5. Use thumbnail.png as style, finish, texture and stickman species reference; do not copy its title, split layout or composition into the video.
+6. No further approval or "weiter?" questions after thumbnail choice.
 
-AUTOMATIC VIDEO SCENE PRODUCTION
-Once thumbnail is chosen, continue WITHOUT ASKING in batches of five video image numbers 01–05, 06–10, 11–15 etc. Final remainder may contain 1–4. BILD 01 is first spoken hook as NORMAL coherent scene, not the thumbnail. No thumbnail title in the video. QA each image, only regenerate failed/missing numbers, rename NN.png, save one separate 16:9 asset per beat in a flat 03-bilder/ folder, immediately continue. FINAL QA
-Three distinct thumbnail candidates, only one user STOP, selected thumbnail in 05-export/thumbnail.png and two losers deleted. Complete separate video scenes BILD 01–NN generated in 5-image batches without further approvals, stored NN.png in flat 03-bilder/. No video scene is the thumbnail; proper 16:9, no unplanned text, verified matching scene content and species, no gaps/extras/subfolders.
+AFTER THUMBNAIL CHOICE — AUTOMATIC ALL VIDEO SCENES
+- Start with BILD 01 as a NORMAL scene corresponding to the first spoken hook, WITHOUT the thumbnail headline/cover title.
+- Generate actual scene BILDs in 5-image batches: 01–05, 06–10, 11–15, then continue in groups of 5; final remainder 1–4.
+- Every BILD is a distinct 16:9 asset; generate one entire batch operation, not one storyboard/grid.
+- QA each batch, regenerate ONLY missing/failed numbers, rename accepted images NN.png and put them immediately into one FLAT 03-bilder/ folder, continue automatically WITHOUT ASKING.
+- No additional prompts for approval. Continue until BILD NN is finished.
+- FINAL: check actual count against phase1-scenes.json: exactly 01.png through NN.png, each valid 16:9, no missing files, rejected cover candidates, duplicates or subfolders. Separately verify 05-export/thumbnail.png.
+- Review visual world / anatomy / random text manually; no false claim of automated visual recognition. No automatic video output in Flow.
+
+GLOBAL TEXT RULE
+ZERO READABLE TEXT unless an individual BILD has explicitly specified exact German words; only then use those words, mobile-readable. No extra text.
+
+PROMPTING RULE
+Short concrete observable composition, best representation first, one dominant idea, meaningful subject/environment/camera/light, no generic abstract metaphors.
+
+BILD 01
+[Actual first-spoken-hook video scene, ordinary coherent illustration, independent of thumbnail. No thumbnail title or thumbnail-like composition. Normally NO VISIBLE TEXT.]
+
+BILD 02
+[Second spoken beat as a separate concrete 16:9 image. Same world, distinct camera/object/action when useful; only planned text.]
+
+[CONTINUE THROUGH BILD NN]
+
+FINAL QA
+- Three separate thumbnail candidates first; STOP once, chosen 05-export/thumbnail.png, two others deleted.
+- BILD 01 is a separate scene, NOT a cover.
+- All actual video scenes complete in continuous 5-image batches.
+- Every human stays exact same stickman species, same-frame lock.
+- No repeat beige default, accidental English or gibberish.
+- Flat 03-bilder/ with exactly NN.png scene files, no other versions, no extra subfolders.
+- Approved 05-export/thumbnail.png remains a separate export asset.
+- No storyboard, contact sheet, collage or unrequested video.
