@@ -37,9 +37,14 @@ const outputPath = path.join(exportDir, 'final.mp4');
 const captionsPath = path.join(exportDir, 'captions.srt');
 const subtitleScriptPath = path.join(exportDir, 'subtitle-script.txt');
 const uploadPath = path.join(exportDir, 'youtube-upload.txt');
+const thumbnailPath = path.join(exportDir, 'thumbnail.png');
 
 if (!fs.existsSync(phase1Path)) throw new Error(`Required production file missing: ${phase1Path}`);
 const phase1 = JSON.parse(fs.readFileSync(phase1Path, 'utf8'));
+if (phase1.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1' &&
+   (!fs.existsSync(thumbnailPath) || !fs.statSync(thumbnailPath).size)) {
+  throw Error('Separate 05-export/thumbnail.png must be selected before rendering; never use 03-bilder/01.png as cover.');
+}
 const packageV2 = String(phase1?.exportPackagePolicy ?? '') === 'YOUTUBE_EXPORT_PACKAGE_V2';
 if (packageV2 && !fs.existsSync(uploadMetadataPath)) {
   throw new Error(`YOUTUBE_EXPORT_PACKAGE_V2 requires upload metadata: ${uploadMetadataPath}`);
@@ -80,7 +85,7 @@ run(['scripts/validate-final-render.mjs', outputPath, 'youtube']);
 run(['scripts/generate-youtube-captions.mjs', projectRelative]);
 if (packageV2) run(['scripts/generate-youtube-upload.mjs', projectRelative]);
 
-for (const requiredPath of [captionsPath, subtitleScriptPath, ...(packageV2 ? [uploadPath] : [])]) {
+for (const requiredPath of [thumbnailPath, captionsPath, subtitleScriptPath, ...(packageV2 ? [uploadPath] : [])]) {
   if (!fs.existsSync(requiredPath) || !fs.statSync(requiredPath).size) {
     throw new Error(`Required export missing or empty after generation: ${requiredPath}`);
   }

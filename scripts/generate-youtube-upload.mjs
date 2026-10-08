@@ -38,6 +38,8 @@ const hashtags = toList(metadata.hashtags);
 const pinnedComment = String(metadata?.pinnedComment ?? 'NONE').trim() || 'NONE';
 const topic = String(metadata?.topic ?? '').trim() || 'Psychologie & menschliches Verhalten';
 const script = fs.readFileSync(scriptPath, 'utf8').trim();
+const videoFiles = fs.existsSync(outputDir) ? fs.readdirSync(outputDir).filter((name) => name.toLowerCase().endsWith('.mp4')) : [];
+const videoName = videoFiles.includes('final.mp4') ? 'final.mp4' : (videoFiles.length === 1 ? videoFiles[0] : 'final.mp4');
 
 const lines = [
   'YOUTUBE UPLOAD',
@@ -70,7 +72,7 @@ const lines = [
   `Thema: ${topic}`,
   'Sprache: Deutsch',
   'Format: YouTube 16:9',
-  'Video: final.mp4',
+  `Video: ${videoName}`,
   'Thumbnail: thumbnail.png',
   'Untertitel Upload: captions.srt',
   'Untertitel Kopierversion: subtitle-script.txt',

@@ -9,6 +9,9 @@ import {buildCanonicalWordTimings, resolveProjectPath} from './lib/word-timing-a
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
 const force = args.includes('--force');
+const sourceIndex = args.indexOf('--audio-source');
+const sourceArg = sourceIndex < 0 ? null : args[sourceIndex + 1];
+if(sourceIndex >= 0 && (!sourceArg || sourceArg.startsWith('--'))) throw Error('--audio-source requires final MP4/audio path.');
 if (!projectArg) {
   console.error('Usage: npm run timings:youtube -- <youtube/project-folder> [--force]');
   process.exit(1);
@@ -17,7 +20,7 @@ if (!projectArg) {
 const repoRoot = path.resolve('.');
 const {projectDir, relative: projectRelative} = resolveProjectPath(projectArg, repoRoot);
 const scriptPath = path.join(projectDir, '01-script', 'script.txt');
-const audioPath = path.join(projectDir, '04-audio', 'final-voice.mp3');
+const audioPath = sourceArg ? path.resolve(sourceArg) : path.join(projectDir, '04-audio', 'final-voice.mp3');
 const modernTimingPath = path.join(projectDir, '99-intern', 'word-timings.json');
 const legacyTimingPath = path.join(projectDir, '99-intern', 'projektdateien', 'word-timings.json');
 const outputPath = fs.existsSync(legacyTimingPath) && !fs.existsSync(modernTimingPath) ? legacyTimingPath : modernTimingPath;
