@@ -28,10 +28,11 @@ if(phase.thumbnailGenerationPolicy==='THUMBNAIL_SEPARATE_FROM_SCENE01_V1' && !ha
 const run=(parts)=>{const r=spawnSync(process.execPath,parts,{stdio:'inherit'});if(r.error)throw r.error;if(r.status!==0)throw Error(parts[0]+' exited '+r.status);};
 const timings=path.join(intern,'word-timings.json');
 const legacy=path.join(intern,'projektdateien','word-timings.json');
-if(args.includes('--force-timings') || !(hasFile(timings)||hasFile(legacy))) {
+const alreadyTimed=['captions.srt','subtitle-script.txt'].every(n=>hasFile(path.join(exportDir,n)));
+if(!alreadyTimed && (args.includes('--force-timings') || !(hasFile(timings)||hasFile(legacy)))) {
   run(['scripts/generate-word-timings.mjs',relative,'--audio-source',mp4,...(args.includes('--force-timings')?['--force']:[])]);
 }
-if(!hasFile(timings)&&!hasFile(legacy))throw Error('Missing real word timings; cannot fabricate subtitle times.');
+if(!alreadyTimed && !hasFile(timings) && !hasFile(legacy))throw Error('Missing real word timings; cannot fabricate subtitle times.');
 for(const [cmd,names] of [
   ['scripts/generate-youtube-upload.mjs',['youtube-upload.txt']],
   ['scripts/generate-youtube-captions.mjs',['captions.srt','subtitle-script.txt']]

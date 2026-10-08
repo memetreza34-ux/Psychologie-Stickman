@@ -60,3 +60,7 @@ npm run finalize:youtube -- youtube/08.10.2026-planungsfehlschluss-v1
 ```
 
 Das befüllt `05-export/youtube-upload.txt` mit YouTube-Titel/Beschreibung/Tags/Quellen, sowie `captions.srt` für den direkten YouTube-Untertitel-Upload und `subtitle-script.txt` zum 1:1-Kopieren des vollständigen Texts mit echten Zeitmarken. Nur `mp4` ist kein kompletter Export. Ohne `thumbnail.png` oder Audiozeitabgleich Status weiterhin unvollständig.
+
+## Bereits aus hochgeladenem MP4 abgeleitete Untertitel
+
+Die Dateien `05-export/captions.srt` und `05-export/subtitle-script.txt` sind für das **bereits hochgeladene 6:08-MP4** aus den tatsächlich erkannten 71 Bildwechseln auf die 72 Script-Szenen abgebildet worden. Jeder Szenenbeginn/-schluss ist video-synchron; Unterteilungen innerhalb einer Szene sind nach Textlänge interpoliert, **nicht wortgenau transkribiert**. Vor YouTube-Upload kurz gegenhören; die genaue Methode steht in `99-intern/subtitle-timing-provenance.json`. Bei einem veränderten oder neu gerenderten Video müssen diese Untertitel nach einem erneuten Audioabgleich aktualisiert werden; nicht blind übernehmen.
