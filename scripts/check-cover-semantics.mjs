@@ -54,6 +54,11 @@ for (const file of plans) {
   if (String(scene1.observableEvidence ?? '').trim().length < 12) failures.push(`${rel}: Scene 01 needs observableEvidence.`);
   if (String(scene1.dominantRelation ?? '').trim().length < 8) failures.push(`${rel}: Scene 01 needs dominantRelation.`);
   if (String(scene1.representationReason ?? '').trim().length < 8) failures.push(`${rel}: Scene 01 needs representationReason.`);
+  if (plan.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1') {
+    if (scene1.textPolicy === 'FLOW_EXACT_COVER_TEXT' || String(scene1.flowText ?? '').trim()) failures.push(`${rel}: independent Scene 01 must NOT be the thumbnail or contain its text.`);
+    if ((plan.flowTextMoments ?? []).some((m) => Number(m.scene) === 1 && m.kind === 'cover')) failures.push(`${rel}: thumbnail text moment must not appear in video scenes.`);
+    if (plan.thumbnailTargetPath !== '05-export/thumbnail.png') failures.push(`${rel}: expected separate thumbnail target.`);
+  }
 
   const promptPath = path.join(path.dirname(path.dirname(file)), '02-google-flow', 'google-flow-prompt.txt');
   if (!fs.existsSync(promptPath)) {
@@ -64,6 +69,7 @@ for (const file of plans) {
   if (/VISUAL WORLD STATUS:\s*UNDEFINED/iu.test(prompt)) failures.push(`${rel}: Flow prompt still has undefined visual world.`);
   if (!/VISUAL WORLD:\s*PSYCHOLOGY_STICKMAN_WORLD_V1/iu.test(prompt)) failures.push(`${rel}: Flow prompt must use PSYCHOLOGY_STICKMAN_WORLD_V1.`);
   if (!/^BILD\s+01\s*$/gimu.test(prompt)) failures.push(`${rel}: Flow prompt missing BILD 01.`);
+  if (plan.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1' && !/THUMBNAIL CANDIDATES/iu.test(prompt)) failures.push(`${rel}: missing three separate thumbnail candidates section.`);
 }
 
 if (warnings.length) {

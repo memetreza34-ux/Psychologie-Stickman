@@ -36,6 +36,7 @@ for (const file of files) {
     continue;
   }
 
+  const separatedThumbnail = plan.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1';
   const strict = plan.visualSequencePolicy === 'VISUAL_SEQUENCE_HARDENING_V1';
   const report = (message) => {
     if (strict) failures.push(message);
@@ -64,7 +65,9 @@ for (const file of files) {
     if (!texts.length) report(`${relative}: scene ${scene} text is empty.`);
     if (texts.length > 4) report(`${relative}: scene ${scene} has too many text strings.`);
 
-    if (scene === 1) {
+    if (scene === 1 && separatedThumbnail) {
+      if (kind === 'cover') report(`${relative}: scene 01 may not be a thumbnail in new separated policy.`);
+    } else if (scene === 1) {
       coverCount += 1;
       const words = countWords(texts[0] ?? '');
       if (words < 2 || words > 7) report(`${relative}: cover title must contain 2-7 words.`);
@@ -73,7 +76,9 @@ for (const file of files) {
     }
   });
 
-  if (moments.length && coverCount !== 1) report(`${relative}: exactly one Scene-01 cover text moment is required.`);
+  if (separatedThumbnail) {
+    if (moments.some((m) => Number(m.scene) === 1)) report(`${relative}: scene 01 should contain no cover/thumbnail text; title belongs in thumbnail.png.`);
+  } else if (moments.length && coverCount !== 1) report(`${relative}: exactly one Scene-01 cover text moment is required.`);
   const maxMoments = Math.max(1, Math.ceil(scenes.length * 0.3));
   if (moments.length > maxMoments) report(`${relative}: text density exceeds 30%.`);
 }

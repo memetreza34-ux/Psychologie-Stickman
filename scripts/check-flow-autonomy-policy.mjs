@@ -29,6 +29,7 @@ for(const phase1 of plans){
     ['without asking','no approval pauses'],
     ['batch','continuous five-image batching'],
     ['03-bilder/','single image folder'],
+    ...(config.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1' ? [['05-export/thumbnail.png','independent thumbnail destination'],['BILD 01','first real scene']] : []),
     ['NN.png','numbered file naming'],
     ['FINAL','final QA'],
     ['missing','missing-file recovery']
