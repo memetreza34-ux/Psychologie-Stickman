@@ -1,5 +1,5 @@
 {
-  "status": "READY_FOR_GOOGLE_FLOW_COVER_TEST",
+  "status": "READY_FOR_SEPARATE_THUMBNAIL_AND_SCENE01_REGENERATION",
   "format": "youtube",
   "aspectRatio": "16:9",
   "resolution": "1920x1080",
@@ -52,11 +52,6 @@
   "characterHeavyJustification": "",
   "flowTextMoments": [
     {
-      "scene": 1,
-      "kind": "cover",
-      "text": "NUR 2 STUNDEN?"
-    },
-    {
       "scene": 2,
       "kind": "keyword",
       "text": "PLANUNGSFEHLSCHLUSS"
@@ -95,104 +90,105 @@
   "sceneLabels": [],
   "batchPlan": [
     [
+      1,
       2,
       3,
       4,
-      5,
-      6
+      5
     ],
     [
+      6,
       7,
       8,
       9,
-      10,
-      11
+      10
     ],
     [
+      11,
       12,
       13,
       14,
-      15,
-      16
+      15
     ],
     [
+      16,
       17,
       18,
       19,
-      20,
-      21
+      20
     ],
     [
+      21,
       22,
       23,
       24,
-      25,
-      26
+      25
     ],
     [
+      26,
       27,
       28,
       29,
-      30,
-      31
+      30
     ],
     [
+      31,
       32,
       33,
       34,
-      35,
-      36
+      35
     ],
     [
+      36,
       37,
       38,
       39,
-      40,
-      41
+      40
     ],
     [
+      41,
       42,
       43,
       44,
-      45,
-      46
+      45
     ],
     [
+      46,
       47,
       48,
       49,
-      50,
-      51
+      50
     ],
     [
+      51,
       52,
       53,
       54,
-      55,
-      56
+      55
     ],
     [
+      56,
       57,
       58,
       59,
-      60,
-      61
+      60
     ],
     [
+      61,
       62,
       63,
       64,
-      65,
-      66
+      65
     ],
     [
+      66,
       67,
       68,
       69,
-      70,
-      71
+      70
     ],
     [
+      71,
       72
     ]
   ],
@@ -208,8 +204,8 @@
       "scene": 1,
       "speechSection": "Warum planst du für ein Regal zwei Stunden ein – und bist abends immer noch nicht fertig?",
       "viewerTakeaway": "Audience sees the true cost of planning: Warum planst du für ein Regal zwei Stunden ein – und bist abends immer noch nicht fertig",
-      "visualTask": "Observable visible evidence: A stressed stickman crouches before half-built oak shelf; cardboard box, scattered planks and a wall clock reveal a far later time; dramatic waist-high angle.",
-      "observableEvidence": "A stressed stickman crouches before half-built oak shelf; cardboard box, scattered planks and a wall clock reveal a far later time; dramatic waist-high angle.",
+      "visualTask": "Normal first video shot, a coherent real apartment environment for the first spoken hook about two hours of shelf assembly becoming a whole afternoon. NO thumbnail title, no thumbnail-style split composition.",
+      "observableEvidence": "Single wide apartment environment: unfinished oak shelf, scattered planks, a frustrated approved stickman and a wall clock showing late afternoon; cinematic framing. No text and no split layout.",
       "sceneType": "CHARACTER_SCENE",
       "representationReason": "Human action, reaction or interaction is the clearest evidence.",
       "compositionType": "standard",
@@ -218,9 +214,8 @@
       "motifKey": "livingroom_late_hook",
       "visualChangeReason": "This beat changes the concrete setting, camera, action or object state relative to its neighbors: livingroom late hook.",
       "panelCount": 1,
-      "textPolicy": "FLOW_EXACT_COVER_TEXT",
-      "literalMetaphorWarning": "Do not literalize 'planning fallacy' as a brain, cosmic clock or magical time warp.",
-      "flowText": "NUR 2 STUNDEN?"
+      "textPolicy": "NONE",
+      "literalMetaphorWarning": "Do not literalize 'planning fallacy' as a brain, cosmic clock or magical time warp."
     },
     {
       "scene": 2,
@@ -1438,5 +1433,7 @@
     }
   ],
   "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2",
-  "flowAutonomyPolicy": "COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1"
+  "flowAutonomyPolicy": "COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1",
+  "thumbnailGenerationPolicy": "THUMBNAIL_SEPARATE_FROM_SCENE01_V1",
+  "thumbnailTargetPath": "05-export/thumbnail.png"
 }

@@ -8,6 +8,7 @@ REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
 VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
 FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
 
 TASK
@@ -79,86 +80,11 @@ Every image must work on a phone screen:
 VIDEO WORLD
 [Define only script-specific recurring people, places, era, props or continuity facts. Do not invent a permanent channel protagonist.]
 
-FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
+THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
 
-ONE-PAUSE EXECUTION CONTRACT — HARD
-- Human STOP happens ONLY once: after showing the 3 separate BILD 01 cover options. Wait until the user picks a winner.
-- IMMEDIATELY AFTER CHOICE: save the chosen image as 03-bilder/01.png. Delete the other TWO rejected candidate image files from your working/output assets; keep no cover alternatives in final folder. Never delete before selection.
-- AUTOMATIC CONTINUATION: start BILD 02–06 and continue subsequent groups of exactly 5 scene numbers without questions or waiting after each batch. Do NOT ask for "weiter", confirmations, intermediate review or approval. The cover is the last manual gate.
-- Every batch: produce 5 different separate 16:9 images, individually QA them, rename the accepted ones NN.png, store immediately in ONE flat 03-bilder/ folder, regenerate ONLY failed or missing numbers, then proceed to the NEXT batch automatically.
-- Last batch: generate the final remaining 1–4 numbers as separate 16:9 images, not a smaller storyboard.
-- FINAL COMPLETE CHECK: use the phase1-scenes.json scene count N, verify all 01.png through NN.png exactly once; individual 16:9 assets, no missing numbers, no repeated filenames, no rejected covers, no batch subfolders, no collages/contact sheets, no extra versions. Enforce same approved species/world, exact planned German text only, mobile clarity. Repair any missing or failed number automatically, then repeat final QA.
-- One final folder ONLY: 03-bilder/ with the accepted NN.png files. Do not report DONE until complete; if blocked by an unavailable tool, report exact problem rather than pretending images exist.
-- If the images are locally accessible to the repo, run npm run flow:verify -- <project-folder> for a structural check in addition to visual QA. Otherwise perform equivalent checks with your available file tools.
+THUMBNAIL CANDIDATES — THE ONLY USER STOP
+Make exactly 3 separate 16:9 THUMBNAIL candidates, identical main thesis and exact cover headline, 3 meaningfully different compositions. They are NOT BILD 01 and not video frames. Only here wait for the user's choice. Keep winner at 05-export/thumbnail.png, delete two rejected covers after choice. Reference selected thumbnail ONLY for stickman species, linework, cel shading and texture.
 
-COVER WORKFLOW — HARD LOCK
-1. Generate BILD 01 ONLY.
-2. Generate exactly 3 SEPARATE 16:9 cover candidates.
-3. Same visual thesis and exact cover text, but 3 meaningfully different compositions.
-4. STOP and wait for the user to choose one. This is the ONLY pause.
-5. Chosen winner -> `01.png` -> `03-bilder/`; delete both rejected cover candidates immediately after the choice.
-6. Use approved `01.png` as the episode visual reference for linework, shading, texture, finish and, when people appear, the stickman species.
-7. Do NOT mechanically copy its exact person, composition, representation type, location, palette or mood unless continuity requires it.
-8. A cover containing people does NOT require later images to contain people.
-
-AFTER COVER APPROVAL
-Generate remaining images in batches of exactly 5 whenever possible:
-- 02–06
-- 07–11
-- 12–16
-- continue in groups of 5
-- final remainder may contain 1–4 images
-
-Each BILD stays a separate 16:9 image.
-Generate each whole 5-image batch in one batch operation.
-Rename accepted results immediately to `NN.png`.
-Put every accepted image directly in the same flat folder `03-bilder/`.
-Regenerate only failed images.
-After PASS, continue automatically WITHOUT asking the user, until BILD NN is complete.
-
-When image references / ingredients are supported, use approved `01.png` as the episode style reference for later batches.
-
-GLOBAL TEXT RULE — HARD
-Only render exact German text explicitly requested for that BILD.
-Otherwise: NO VISIBLE TEXT.
-Text may be the primary subject in a TEXT_ILLUSTRATION when wording itself is the mechanism, but keep it large and sparse.
-Any unplanned readable English/German, packaging/brand/UI words, research headings or gibberish = FAIL and regenerate.
-
-PROMPTING RULE
-Use concrete visible action, object relation, environment layout, exact text, posture, gaze, distance, hands or blocking according to the chosen representation.
-Do not ask Flow to invent what an abstract psychological state looks like.
-Do not literalize a psychology-effect name automatically.
-One BILD = one dominant visible idea.
-
-BILD 01
-[Short natural cover prompt: representation + concrete conflict/action + topic-appropriate world + exact German cover text + no other readable text.]
-
-BILD 02
-[Short natural prompt focused on observable evidence. Use the chosen representation. If people appear, preserve the identical approved base species for every human in the frame. Progress the motif from the previous scene instead of repeating the same shot. Default max 2 visible states/panels.]
-
-[CONTINUE THROUGH BILD NN]
-
-FINAL QA
-- uses PSYCHOLOGY_STICKMAN_WORLD_V1
-- uses VISUAL_SEQUENCE_HARDENING_V1
-- people are optional and representation-first planning is respected
-- EVERY visible human remains the exact same stickman species
-- multiple people in one image use identical base head/torso/limb construction; mixed species = FAIL
-- recurring motifs visibly progress instead of repeating the same shot
-- no BILD has more than 2 distinct states/panels without exceptional justification
-- object/environment/text/schema frames use the same illustrator/render language
-- several adjacent frames do not repeat the same flat beige explainer-board layout
-- camera/focal scale/depth/object state vary when the content supports it
-- schemas and text frames remain simple and phone-readable
-- exact planned German text only; any unplanned readable English/German/gibberish = FAIL
-- 3 separate cover candidates first, then STOP
-- approved 01.png used as episode visual reference
-- later images in 5-image batches
-- every BILD = separate 16:9 asset
-- accepted files renamed NN.png
-- all files together in 03-bilder/
-- both rejected cover candidates deleted after selection
-- NO pauses after cover choice: batches auto-run to completion
-- exact 01..NN presence and 16:9/naming/flat-folder final QA; repair any missing BILD and recheck
-- report DONE only after final QA PASS
-- no storyboard/contact sheet/video
+AUTOMATIC VIDEO SCENE PRODUCTION
+Once thumbnail is chosen, continue WITHOUT ASKING in batches of five video image numbers 01–05, 06–10, 11–15 etc. Final remainder may contain 1–4. BILD 01 is first spoken hook as NORMAL coherent scene, not the thumbnail. No thumbnail title in the video. QA each image, only regenerate failed/missing numbers, rename NN.png, save one separate 16:9 asset per beat in a flat 03-bilder/ folder, immediately continue. FINAL QA
+Three distinct thumbnail candidates, only one user STOP, selected thumbnail in 05-export/thumbnail.png and two losers deleted. Complete separate video scenes BILD 01–NN generated in 5-image batches without further approvals, stored NN.png in flat 03-bilder/. No video scene is the thumbnail; proper 16:9, no unplanned text, verified matching scene content and species, no gaps/extras/subfolders.

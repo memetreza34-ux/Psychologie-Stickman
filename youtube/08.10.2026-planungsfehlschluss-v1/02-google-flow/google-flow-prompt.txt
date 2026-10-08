@@ -9,6 +9,7 @@ REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
 VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
 FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
 
 TASK
@@ -33,47 +34,13 @@ Use material changes in object state, action, environment, depth, camera and sca
 VIDEO WORLD / CONTINUITY
 Main illustrative story: warm modern apartment, oak flat-pack shelf, one approved stickman adult wearing navy top; later finished shelf in same environment. Other locations: university in 1990s, moving stairwell, video editor room. Research experiment depicted as stylized reconstruction, not historic photo. All humans regardless of location share exactly the same stickman species. Color/light vary naturally.
 
-FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
+THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
 
-ONE-PAUSE EXECUTION CONTRACT — HARD
-- Human STOP happens ONLY once: after showing the 3 separate BILD 01 cover options. Wait until the user picks a winner.
-- IMMEDIATELY AFTER CHOICE: save the chosen image as 03-bilder/01.png. Delete the other TWO rejected candidate image files from your working/output assets; keep no cover alternatives in final folder. Never delete before selection.
-- AUTOMATIC CONTINUATION: start BILD 02–06 and continue subsequent groups of exactly 5 scene numbers without questions or waiting after each batch. Do NOT ask for "weiter", confirmations, intermediate review or approval. The cover is the last manual gate.
-- Every batch: produce 5 different separate 16:9 images, individually QA them, rename the accepted ones NN.png, store immediately in ONE flat 03-bilder/ folder, regenerate ONLY failed or missing numbers, then proceed to the NEXT batch automatically.
-- Last batch: generate the final remaining 1–4 numbers as separate 16:9 images, not a smaller storyboard.
-- FINAL COMPLETE CHECK: use the phase1-scenes.json scene count N, verify all 01.png through NN.png exactly once; individual 16:9 assets, no missing numbers, no repeated filenames, no rejected covers, no batch subfolders, no collages/contact sheets, no extra versions. Enforce same approved species/world, exact planned German text only, mobile clarity. Repair any missing or failed number automatically, then repeat final QA.
-- One final folder ONLY: 03-bilder/ with the accepted NN.png files. Do not report DONE until complete; if blocked by an unavailable tool, report exact problem rather than pretending images exist.
-- If the images are locally accessible to the repo, run npm run flow:verify -- <project-folder> for a structural check in addition to visual QA. Otherwise perform equivalent checks with your available file tools.
+THUMBNAIL CANDIDATES — THE ONLY USER STOP
+Make exactly 3 separate 16:9 THUMBNAIL candidates, identical main thesis and exact cover headline, 3 meaningfully different compositions. They are NOT BILD 01 and not video frames. Only here wait for the user's choice. Keep winner at 05-export/thumbnail.png, delete two rejected covers after choice. Reference selected thumbnail ONLY for stickman species, linework, cel shading and texture.
 
-COVER WORKFLOW — HARD LOCK
-1. Generate BILD 01 ONLY.
-2. Create exactly 3 SEPARATE 16:9 cover candidates (not in one composite sheet).
-3. All show one common thesis: a two-hour shelf assembly still unfinished much later. All have only exact headline NUR 2 STUNDEN? in huge German typography.
-4. Make three meaningfully different physical compositions, never a storyboard or contact sheet.
-5. STOP and wait for the user to choose. This is the ONLY pause.
-6. The approved candidate becomes 01.png inside flat 03-bilder/. Immediately delete the two losing cover candidate files.
-7. Reuse approved 01.png as style reference for linework, cel-shading, texture, finish, stickman species. Do not force later images to copy its camera, person, location or light.
-
-AFTER COVER APPROVAL
-Generate BILD 02 onward in groups of 5 whenever >=5 images remain. Batches:
-02–06
-07–11
-12–16
-17–21
-22–26
-27–31
-32–36
-37–41
-42–46
-47–51
-52–56
-57–61
-62–66
-67–71
-72–72
-Each batch is one batch operation producing 5 DIFFERENT separate 16:9 images, never one combined image.
-Rename accepted images NN.png instantly and place all directly in flat 03-bilder/.
-Regenerate only failures; continue after batch QA PASS WITHOUT asking or waiting. Keep advancing until the final scene. No batch subfolders, storyboard, contact sheet or automatic video.
+AUTOMATIC VIDEO SCENE PRODUCTION
+Once thumbnail is chosen, continue WITHOUT ASKING in batches of five video image numbers 01–05, 06–10, 11–15 etc. Final remainder may contain 1–4. BILD 01 is first spoken hook as NORMAL coherent scene, not the thumbnail. No thumbnail title in the video. QA each image, only regenerate failed/missing numbers, rename NN.png, save one separate 16:9 asset per beat in a flat 03-bilder/ folder, immediately continue. FINAL QA: exact complete 01.png–NN.png, valid 16:9 scene assets, separate thumbnail at 05-export/thumbnail.png, no gaps/extras/candidate leftovers/subfolders, consistent style/species and planned German text only. Stop with blocker if actual assets cannot be produced; never fabricate success.
 
 GLOBAL TEXT RULE
 ZERO READABLE TEXT unless the exact German words are explicitly specified for that BILD. No UI captions, manuals, forms, store names or brand text: use unlettered props. Any unplanned text = FAIL and regenerate. Typography large, sparse and mobile-readable.
@@ -81,17 +48,16 @@ ZERO READABLE TEXT unless the exact German words are explicitly specified for th
 OBSERVABLE SCENE FIRST
 Every BILD prompt states the concrete visible evidence, focal relation, camera and representation. Never let Flow invent the whole meaning.
 
+
+THUMBNAIL CANDIDATES — SEPARATE FROM VIDEO
+Exactly 3 separate 16:9 images; headline ONLY here: NUR 2 STUNDEN?
+CANDIDATE 1: Dramatic warm apartment shot of tired approved stickman before an unfinished shelf, late clock and huge exact words NUR 2 STUNDEN?
+CANDIDATE 2: Camera over floor tools and wood pieces toward unfinished shelf, frustrated stickman, exact words NUR 2 STUNDEN?
+CANDIDATE 3: Visually dynamic late-afternoon apartment with unfinished shelf, expression and urgency, exact words NUR 2 STUNDEN?
+Wait for user's choice, save winner as 05-export/thumbnail.png, delete other 2; NEVER use as a video frame.
+
 BILD 01
-
-Generate exactly 3 SEPARATE cover candidates, then STOP. All have ONLY exact text: NUR 2 STUNDEN?
-
-CANDIDATE 1: Waist-high dramatic medium-wide view. Same worn oak shelf still unfinished; one tired approved stickman kneels in scattered planks while an analog clock silently shows late afternoon. Huge integrated typography: NUR 2 STUNDEN? Contrast cozy daylight and exhausted posture.
-
-CANDIDATE 2: Slight overhead oblique view with an unassembled shelf occupying foreground and finished-shelf silhouette faintly visible as a normal imagined paper sketch behind. Clock and late-afternoon light tell overrun; one small approved stickman bends over wrong board. Exact text NUR 2 STUNDEN? large.
-
-CANDIDATE 3: Wide cinematic interior: Saturday sunlight has changed into orange evening, unfinished shelf cast as clear focal point, approved stickman grips screwdriver with expressive shoulders. Clock integrated in room, not separate panel. Large exact text NUR 2 STUNDEN?.
-
-After user selection save winning image as 01.png in flat 03-bilder/.
+CHARACTER_SCENE — A normal cinematic real-world hook in one continuous apartment: frustrated approved stickman looks from unfinished oak shelf and scattered parts toward a wall clock in late afternoon. Vary camera from thumbnail, no split panels. No visible text, no title, NO thumbnail image.
 
 BILD 02
 TEXT_ILLUSTRATION — Overhead of half-assembled shelf and a large clean center title PLANUNGSFEHLSCHLUSS; pale blue morning light, no extra symbols.
@@ -378,4 +344,4 @@ TEXT_ILLUSTRATION — Warm immersive apartment with a beautiful finished oak she
 Exact visible German text ONLY: DEIN PLAN. DIE REALITÄT.
 
 FINAL IMAGE DELIVERY QA — HARD
-Confirm one flat 03-bilder/ folder holds every separate 16:9 file 01.png through 72.png exactly once. Both losing BILD 01 cover candidates must be deleted. No gaps, duplicates, extra rejected versions or subfolders. Individually check all 72 scene images for the approved stickman world, subject, correct text and absence of random labels. Regenerate missing/failed numbers, rename them, and rerun QA automatically, without asking for approval. If disk access is available run npm run flow:verify -- youtube/08.10.2026-planungsfehlschluss-v1. Do not claim finished unless all checks pass; if tool execution is blocked state that and stop with incomplete status.
+Separate thumbnail at 05-export/thumbnail.png, all actual video scenes 01.png through 72.png in flat 03-bilder/, no gaps/duplicates/rejected cover candidates/subfolders, all 16:9; validate style/species/text per scene. Only manual pause was thumbnail choice.

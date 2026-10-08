@@ -46,5 +46,7 @@
   "sceneLabels": [],
   "scenes": [],
   "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2",
-  "flowAutonomyPolicy": "COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1"
+  "flowAutonomyPolicy": "COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1",
+  "thumbnailGenerationPolicy": "THUMBNAIL_SEPARATE_FROM_SCENE01_V1",
+  "thumbnailTargetPath": "05-export/thumbnail.png"
 }

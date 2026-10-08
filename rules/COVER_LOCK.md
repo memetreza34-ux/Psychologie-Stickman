@@ -1,85 +1,17 @@
-# COVER LOCK — TOPIC-EXPLICIT THUMBNAILS
+# COVER LOCK — THUMBNAIL_SEPARATE_FROM_SCENE01_V1
 
-**STATUS: BINDING PROCESS RULE**
+## Independent thumbnail and actual scene 01 — THUMBNAIL_SEPARATE_FROM_SCENE01_V1 (binding override)
 
-`03-bilder/01.png` is always:
-1. Scene/BILD 01
-2. cover/thumbnail source
-3. visual episode reference after user approval
+For every NEW YouTube video, and the opted-in Planungsfehlschluss project:
+- Make 3 separate 16:9 thumbnail candidates FIRST. This is the ONLY approval pause.
+- Winner goes to `05-export/thumbnail.png` (NOT `01.png`). Delete the other two rejected candidates only AFTER selection.
+- The thumbnail is never part of the rendered video or the video-scene numbering; use it only as an illustrator/style reference.
+- BILD 01 is the FIRST NORMAL VIDEO SHOT aligned with the first spoken words: no cover text, no thumbnail framing, no forced title.
+- Automatically generate BILD 01–05, 06–10 and subsequent FIVE image batches; last remainder 1–4. No further questions or pauses after thumbnail selection.
+- After every batch, regenerate failed/missing scenes only, number `01.png` … `NN.png`, keep all scene assets flat in `03-bilder/`.
+- Final QA requires a separate `05-export/thumbnail.png`, ALL scene images 01–NN, exact filenames/count, 16:9, no leftover candidates or subfolders, visual-world and planned-text conformity. Incomplete sets are never marked DONE.
+- Historical projects not opting in remain unchanged. This new rule OVERRIDES old "01.png is the cover" language wherever it conflicts for opted-in/new projects.
 
-## Active visual world
+## Visual quality
 
-Use `rules/PSYCHOLOGY_STICKMAN_WORLD.md` (`PSYCHOLOGY_STICKMAN_WORLD_V1`).
-
-## Core rule
-
-The viewer should understand the central conflict/question quickly, preferably before reading the headline.
-
-Plan internally:
-- `coverTopicTerm`
-- `coverVisualThesis`
-- `coverMechanismVisible: true`
-- exact cover headline
-
-## Observable cover thesis
-
-Use concrete visible evidence:
-- action
-- relation
-- choice
-- comparison
-- cause/consequence
-- gaze/posture/distance when people are relevant
-
-Do not let an abstract effect name become the visual idea automatically.
-
-## Thumbnail composition
-
-- one dominant thesis
-- one primary focal conflict/relation
-- large readable main subjects
-- meaningful props only
-- reserved title space
-- readable at small size
-
-People must use the approved Psychology Stickman species. Clothing, hair, accessories, role, era and emotion should fit the actual topic rather than a fixed channel mascot.
-
-## Cover text
-
-- exact planned German text
-- normally one strong main title
-- no random readable text
-- do not cover the key visual mechanism
-
-## Three-cover gate — HARD LOCK
-
-1. Generate BILD 01 only.
-2. Generate exactly 3 separate standalone 16:9 candidates.
-3. Never combine them into one grid.
-4. Same thesis and exact cover text.
-5. Use meaningfully different compositions.
-6. STOP for user choice.
-7. Winner → `01.png` → `03-bilder/`.
-8. Approved `01.png` becomes the visual episode reference.
-9. Only then may later 5-image batches begin.
-
-## Reference meaning
-
-The winning cover anchors:
-- stickman species
-- linework
-- cel shading
-- texture
-- general rendering quality
-
-It does not force later scenes to reuse the exact same person, pose, place, palette or composition unless story continuity requires it.
-
-## Approval
-
-Cover passes only when:
-- topic/mechanism is clear
-- observable evidence is concrete
-- text is correct/readable
-- thumbnail works small
-- no unrelated clutter
-- the approved Psychology Stickman World is followed
+Thumbnail has exact planned short German headline, a concrete relevant visual conflict, one mobile-readable focal idea, consistent 2D stickman species and no random text. 3 candidates must be distinct independent 16:9 images. Cover is a SEPARATE IMAGE and does not take up scene 01.

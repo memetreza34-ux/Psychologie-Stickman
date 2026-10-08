@@ -1,7 +1,7 @@
 # Planungsfehlschluss — Longform v1
 
 ## Status
-READY_FOR_GOOGLE_FLOW_COVER_TEST
+READY_FOR_SEPARATE_THUMBNAIL_AND_SCENE01_REGENERATION
 
 ## Neues kanonisches Thema
 **Planungsfehlschluss / Planning Fallacy**
@@ -13,7 +13,7 @@ Warum du ständig unterschätzt, wie lange etwas dauert – Planungsfehlschluss
 
 ## Cover
 NUR 2 STUNDEN?
-Drei getrennte 16:9 Alternativen, dieselbe These. Nach Auswahl STOP -> Sieger als `03-bilder/01.png`.
+Drei getrennte 16:9 Alternativen für das separat gespeicherte Thumbnail. Nach Auswahl STOP -> Sieger `05-export/thumbnail.png` (nie als erstes Video-Bild), zwei anderen löschen.
 
 ## Script
 - Ziel: 6–7 Minuten
@@ -27,13 +27,11 @@ Drei getrennte 16:9 Alternativen, dieselbe These. Nach Auswahl STOP -> Sieger al
 ## Visuelle Welt
 `PSYCHOLOGY_STICKMAN_WORLD_V1`, `REPRESENTATION_VARIETY_V1`, `VISUAL_SEQUENCE_HARDENING_V1`.
 Szenen-Mix: CHARACTER_SCENE 14, TEXT_ILLUSTRATION 7, COMPARE_VISUAL 11, ENVIRONMENT_SCENE 21, OBJECT_FOCUS 19.
-Exact German text only on BILDs 01, 02, 16, 17, 24, 27, 64, 72; zero readable text elsewhere. Coherent real rooms, tools, university, moving boxes, editing desk. No beige-board default or species drift.
+Exact German text only on BILDs 02, 16, 17, 24, 27, 64, 72; zero readable text elsewhere. Coherent real rooms, tools, university, moving boxes, editing desk. No beige-board default or species drift.
 
 ## Flow
 Eine zentrale `02-google-flow/google-flow-prompt.txt`.
-BILD 01 => 3 separate covers => STOP für Wahl => Sieger `01.png` => Batches:
-02–06, 07–11, 12–16, 17–21, 22–26, 27–31, 32–36, 37–41, 42–46, 47–51, 52–56, 57–61, 62–66, 67–71, 72–72.
-Separate assets immediately NN.png flat into `03-bilder/`; no storyboard/contact sheet/final video.
+THUMBNAIL-Auswahl separat, dann 01–05, 06–10 ... 66–70, 71–72 als eigenständige Video-Bilder in `03-bilder/` (flach).
 
 ## Noch ausstehend
 Cover-Auswahl, Google-Flow-Bilder, finales Voice-over, `final.mp4`, `thumbnail.png`, `captions.srt`, `subtitle-script.txt`, `youtube-upload.txt`.
@@ -51,6 +49,5 @@ Nicht als fertiger Render ausgeben.
 
 Veröffentlichungsdaten liegen vorbereitet in `99-intern/youtube-upload.json`; Finale SRT-Zeiten erst aus final verarbeitetem Voice-over erzeugen.
 
-## Flow-Autocontinue — `COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1`
-
-Einzige Pause: Auswahl unter drei BILD-01-Cover-Kandidaten. Danach gewähltes Cover als `03-bilder/01.png` übernehmen und beide verworfenen Cover-Dateien entfernen. Anschließend **ohne Freigaben und ohne Rückfragen** alle 5er-Batches bis BILD 72 abarbeiten. Jeder Batch: einzelne 16:9-Bilder prüfen, fehlerhafte/fehlende Bilder neu erstellen, gültige sofort `NN.png` nennen und direkt im einzigen `03-bilder/` ablegen. Zum Schluss alle **72** Bilddateien exakt und ohne alternative Cover / Unterordner nachweisen; erst danach fertig melden. Lokale Strukturprüfung: `npm run flow:verify -- youtube/08.10.2026-planungsfehlschluss-v1`.
+## Neuer verbindlicher Ablauf
+Policy: `THUMBNAIL_SEPARATE_FROM_SCENE01_V1`. Drei separate Cover zur Auswahl; Gewinner nach `05-export/thumbnail.png`. Danach eigenständige normale Szene 01 und alle BILDs 01–72 in 5er-Batches automatisch; Batchfolge 01–05, 06–10 ... 66–70, 71–72. Niemals Thumbnail in der Videotimeline. Vollständige Schluss-QA. Das bereits lokal erzeugte `planungsfehlschluss.mp4` wird nicht automatisch überschrieben; für neuen ersten Shot muss BILD 01 regeneriert und Video neu gerendert werden. Titel-/Beschreibungsdatei und zeitgenaue Untertitel werden aus den Produktionsmetadaten und finaler Audiospur erzeugt.
