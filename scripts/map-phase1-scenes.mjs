@@ -84,11 +84,12 @@ if (flowOnlyText) {
 
 // Older and newly planned YouTube projects may omit media paths until Phase 3.
 // Keep explicitly configured paths unchanged; default only to this project's canonical folders.
-const projectDir = path.dirname(path.dirname(path.resolve(phase1PlanPath)));
+const internalDir = path.dirname(path.resolve(phase1PlanPath));
+const projectDir = path.dirname(path.basename(internalDir) === 'projektdateien' ? path.dirname(internalDir) : internalDir);
 const projectRelative = path.relative(process.cwd(), projectDir).replace(/\\/g, '/');
 const projectMediaPath = (configured, suffix, label) => {
   if (typeof configured === 'string' && configured.trim()) return configured;
-  if (format === 'youtube' && /^youtube\\/[^/]+(?:\\/[^/]+)*$/.test(projectRelative)) {
+  if (format === 'youtube' && projectRelative.startsWith('youtube/') && !projectRelative.split('/').includes('..')) {
     return `${projectRelative}/${suffix}`;
   }
   throw new Error(`${label} is missing in Phase 1 and no canonical YouTube project path could be resolved.`);
