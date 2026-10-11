@@ -82,10 +82,22 @@ if (flowOnlyText) {
   sceneLabels = sceneLabels.filter((label) => (label?.variant ?? 'keyword') !== 'cover');
 }
 
+// Older and newly planned YouTube projects may omit media paths until Phase 3.
+// Keep explicitly configured paths unchanged; default only to this project's canonical folders.
+const projectDir = path.dirname(path.dirname(path.resolve(phase1PlanPath)));
+const projectRelative = path.relative(process.cwd(), projectDir).replace(/\\/g, '/');
+const projectMediaPath = (configured, suffix, label) => {
+  if (typeof configured === 'string' && configured.trim()) return configured;
+  if (format === 'youtube' && /^youtube\\/[^/]+(?:\\/[^/]+)*$/.test(projectRelative)) {
+    return `${projectRelative}/${suffix}`;
+  }
+  throw new Error(`${label} is missing in Phase 1 and no canonical YouTube project path could be resolved.`);
+};
+
 const out = {
   format,
-  audio: phase1.audio,
-  imageBasePath: phase1.imageBasePath,
+  audio: projectMediaPath(phase1.audio, '04-audio/final-voice.mp3', 'audio'),
+  imageBasePath: projectMediaPath(phase1.imageBasePath, '03-bilder', 'imageBasePath'),
   sceneStartWords: starts,
   imageExtension: String(phase1.imageExtension ?? 'png').replace(/^\./, ''),
   ...(Number.isFinite(phase1.imageDigits) ? {imageDigits: phase1.imageDigits} : {}),
