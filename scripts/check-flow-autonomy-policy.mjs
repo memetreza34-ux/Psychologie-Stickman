@@ -37,7 +37,7 @@ for(const phase1 of plans){
   for(const [token,label] of required)if(!text.toLowerCase().includes(token.toLowerCase()))failures.push(master+': missing '+label);
 }
 const rule=read('rules/FLOW_OUTPUT_MODE.md');
-if(!rule.includes(POLICY))failures.push('Flow output rule missing new autonomy policy.');
+if(!rule.includes('THUMBNAIL_SEPARATE_FROM_SCENE01_V1'))failures.push('Flow output rule missing current separate-thumbnail policy.');
 if(failures.length){
   console.error('FLOW AUTONOMY POLICY: FAIL');
   failures.forEach(x=>console.error('- '+x));

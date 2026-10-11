@@ -71,6 +71,10 @@ const hasUsableTimings = () => {
 };
 
 console.log(`PRODUCE YOUTUBE: ${projectRelative}`);
+// Reject incomplete or wrongly numbered scene assets before transcription and rendering.
+if (phase1.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1') {
+  run(['scripts/flow-image-pack.mjs', 'verify', projectRelative]);
+}
 if (!hasUsableTimings() || forceTimings) {
   console.log(forceTimings ? 'Refreshing word timings from final voice-over...' : 'No usable word timings found — generating them from final voice-over...');
   run(['scripts/generate-word-timings.mjs', projectRelative, ...(forceTimings ? ['--force'] : [])]);
