@@ -1,3 +1,7 @@
+## PFLICHT: WOCHENORDNER vor jedem neuen YouTube-Video (YOUTUBE_ISO_WEEK_FOLDERS_V1)
+
+Verbindlich: `rules/YOUTUBE_WEEK_FOLDERS.md`. ZUERST `npm run youtube:week -- TT.MM.JJJJ` ausführen bzw. ISO-Woche Montag–Sonntag errechnen, dann das Videoprojekt **nur** in `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/<TT.MM.JJJJ-thema>/` anlegen. Vorher Themenregister und Wochenprojektordner prüfen. Alle bestehenden Unterordner `01-script` / `02-google-flow` / `03-bilder` / `04-audio` / `05-export` / `99-intern` bleiben unverändert. Die beiden verpflichtenden Phase-1-Direktlinks und `TOPIC_REGISTRY.json` verwenden den *vollständigen* Wochenpfad. Niemals einen neuen flachen Videoordner direkt unter `youtube/` erstellen.
+
 # Psychologie / Human-Behavior Produktionsrepo
 
 Deutschsprachige YouTube-Produktion zu **Psychologie & menschlichem Verhalten**.
@@ -45,10 +49,10 @@ THEMA + QUELLEN
 
 Verbindliche Regel: `rules/PHASE1_HANDOFF_LINKS.md`. Die fertige Phase-1-Antwort muss zwei GitHub-Dateilinks zum konkreten Video liefern:
 
-- `youtube/<Projekt>/02-google-flow/google-flow-prompt.txt` — ein Master-Prompt mit ALLEN Bildprompts fuer Google Flow.
-- `youtube/<Projekt>/01-script/script.txt` — finales Sprecher-Skript zum Kopieren und Einfuegen.
+- `youtube/<WOCHENORDNER>/<Projekt>/02-google-flow/google-flow-prompt.txt` — ein Master-Prompt mit ALLEN Bildprompts fuer Google Flow.
+- `youtube/<WOCHENORDNER>/<Projekt>/01-script/script.txt` — finales Sprecher-Skript zum Kopieren und Einfuegen.
 
-Lokale Pruefung und URL-Ausgabe: `npm run phase1:links -- youtube/<Projekt>`. Vor dem Teilen sicherstellen, dass beide Dateien tatsaechlich in GitHub auf der genannten Branch verfuegbar sind. Keine bloess gedachten oder unvollstaendigen Links melden. Auf dem Tablet bei privatem Repo mit dem berechtigten GitHub-Konto angemeldet sein.
+Lokale Pruefung und URL-Ausgabe: `npm run phase1:links -- youtube/<WOCHENORDNER>/<Projekt>`. Vor dem Teilen sicherstellen, dass beide Dateien tatsaechlich in GitHub auf der genannten Branch verfuegbar sind. Keine bloess gedachten oder unvollstaendigen Links melden. Auf dem Tablet bei privatem Repo mit dem berechtigten GitHub-Konto angemeldet sein.
 
 ## Google Flow
 
@@ -69,7 +73,7 @@ Ausgabe:
 ## YouTube-Struktur
 
 ```text
-youtube/TT.MM.JJJJ-thema/
+youtube/<JJJJ-KWNN_TT.MM-TT.MM>/TT.MM.JJJJ-thema/
 ├── 01-script/script.txt
 ├── 02-google-flow/google-flow-prompt.txt
 ├── 03-bilder/
