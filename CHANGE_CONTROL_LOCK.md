@@ -60,6 +60,10 @@ THEMA + QUELLEN + CLAIM-CHECK → HOOK-/EINSTIEGSPLAN → bei LONGFORM: STORY-/R
 - Bildweltänderung: Phase 1 + Phase 2 auf die neue Bildwelt neu ausrichten
 - reine Audioänderung: Timings/Phase 3 neu erzeugen
 
+## Pflicht-Handoff nach abgeschlossener Phase 1 (Tablet)
+
+Fuer neue, ausdruecklich beauftragte Video-Projekte gilt `PHASE1_TABLET_HANDOFF_LINKS_V1` in `rules/PHASE1_HANDOFF_LINKS.md`: erst beide fertigen Dateien `01-script/script.txt` und `02-google-flow/google-flow-prompt.txt` im Projekt auf GitHub committen und verifizieren; dann in der Fertigmeldung **zwei konkrete anklickbare Dateilinks** fuer Tablet und direktes Kopieren ausgeben. Falls Dateien fehlen oder nicht in GitHub sind, keine Phase-1-Fertigmeldung. Dieses Handoff gibt **keine** Schreibfreigabe fuer andere Projekte oder historische Exporte.
+
 ## Google-Flow-Struktur — NICHT ÄNDERN
 
 Pro Video bleibt genau eine zentrale Datei:

@@ -41,6 +41,15 @@ THEMA + QUELLEN
 → Export
 ```
 
+## Nach jeder fertigen Phase 1: direkt auf dem Tablet kopieren
+
+Verbindliche Regel: `rules/PHASE1_HANDOFF_LINKS.md`. Die fertige Phase-1-Antwort muss zwei GitHub-Dateilinks zum konkreten Video liefern:
+
+- `youtube/<Projekt>/02-google-flow/google-flow-prompt.txt` — ein Master-Prompt mit ALLEN Bildprompts fuer Google Flow.
+- `youtube/<Projekt>/01-script/script.txt` — finales Sprecher-Skript zum Kopieren und Einfuegen.
+
+Lokale Pruefung und URL-Ausgabe: `npm run phase1:links -- youtube/<Projekt>`. Vor dem Teilen sicherstellen, dass beide Dateien tatsaechlich in GitHub auf der genannten Branch verfuegbar sind. Keine bloess gedachten oder unvollstaendigen Links melden. Auf dem Tablet bei privatem Repo mit dem berechtigten GitHub-Konto angemeldet sein.
+
 ## Google Flow
 
 Pro Video genau:
