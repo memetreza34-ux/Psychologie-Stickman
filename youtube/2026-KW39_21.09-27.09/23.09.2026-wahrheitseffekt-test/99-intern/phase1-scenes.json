@@ -1,0 +1,41 @@
+{
+  "project": "youtube-wahrheitseffekt-test-01",
+  "format": "youtube",
+  "aspectRatio": "16:9",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "audio": "youtube/2026-KW39_21.09-27.09/23.09.2026-wahrheitseffekt-test/04-audio/final-voice.mp3",
+  "imageBasePath": "youtube/2026-KW39_21.09-27.09/23.09.2026-wahrheitseffekt-test/03-bilder",
+  "imageExtension": "png",
+  "imageDigits": 2,
+  "endHoldMs": 1000,
+  "styleLock": "UNIVERSAL EDITORIAL STICKMAN WORLD v1.3 — STRICT STICKMAN ONLY",
+  "masterReference": "01.png",
+  "batchSize": 5,
+  "requireMasterApproval": true,
+  "requireBatchApproval": false,
+  "autoContinueAfterBatchPass": true,
+  "visibleTextLanguage": "de",
+  "flowSourceImageTextPolicy": "NONE",
+  "preferNoVisibleText": true,
+  "renderGermanLabelsInRemotion": true,
+  "forbidEnglishVisibleText": true,
+  "reviewedExtendedBeats": [7, 41, 56, 63, 64],
+  "sceneLabels": [
+    {"scene": 6, "text": "WAHRHEITSEFFEKT", "position": "top-left"},
+    {"scene": 30, "text": "WISSEN HILFT", "position": "top-left"},
+    {"scene": 39, "text": "KENNE ICH", "position": "top-left"},
+    {"scene": 50, "text": "VORWISSEN", "position": "top-left"},
+    {"scene": 52, "text": "QUELLE?", "position": "top-left"},
+    {"scene": 55, "text": "VERTRAUT ≠ BEWIESEN", "position": "top-left"},
+    {"scene": 56, "text": "QUELLE?", "position": "top-left"},
+    {"scene": 58, "text": "WER?", "position": "top-left"},
+    {"scene": 59, "text": "BELEG?", "position": "top-left"}
+  ],
+  "autoFromScript": {
+    "scriptPath": "youtube/2026-KW39_21.09-27.09/23.09.2026-wahrheitseffekt-test/01-script/script.txt",
+    "targetWords": 28,
+    "maxWords": 28,
+    "semanticSplit": false
+  }
+}

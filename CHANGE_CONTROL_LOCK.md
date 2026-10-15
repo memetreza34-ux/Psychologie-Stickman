@@ -1,5 +1,9 @@
 # CHANGE CONTROL LOCK
 
+## PFLICHT: WOCHENORDNER vor jedem neuen YouTube-Video (YOUTUBE_ISO_WEEK_FOLDERS_V1)
+
+Verbindlich: `rules/YOUTUBE_WEEK_FOLDERS.md`. ZUERST `npm run youtube:week -- TT.MM.JJJJ` ausführen bzw. ISO-Woche Montag–Sonntag errechnen, dann das Videoprojekt **nur** in `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/<TT.MM.JJJJ-thema>/` anlegen. Vorher Themenregister und Wochenprojektordner prüfen. Alle bestehenden Unterordner `01-script` / `02-google-flow` / `03-bilder` / `04-audio` / `05-export` / `99-intern` bleiben unverändert. Die beiden verpflichtenden Phase-1-Direktlinks und `TOPIC_REGISTRY.json` verwenden den *vollständigen* Wochenpfad. Niemals einen neuen flachen Videoordner direkt unter `youtube/` erstellen.
+
 ## Standardzustand: READ ONLY
 
 Jeder neue Chat startet ohne Schreibfreigabe.
@@ -35,7 +39,7 @@ Policy: `TOPIC_UNIQUENESS_V1`.
 Vor JEDEM neuen YouTube-Video zuerst lesen und prüfen:
 - `TOPIC_REGISTRY.json`
 - `rules/TOPIC_UNIQUENESS_LOCK.md`
-- vorhandene `youtube/TT.MM.JJJJ-*` Projektordner
+- vorhandene `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/TT.MM.JJJJ-*` Projektordner
 
 **Ein kanonisches Thema / ein psychologischer Kernmechanismus darf nur einmal als YouTube-Video-Projekt existieren.**
 

@@ -19,7 +19,7 @@
         "aufschiebeverhalten"
       ],
       "projects": [
-        "youtube/23.09.2026-aufschieben-test"
+        "youtube/2026-KW39_21.09-27.09/23.09.2026-aufschieben-test"
       ],
       "status": "USED"
     },
@@ -33,7 +33,7 @@
         "truth-effect"
       ],
       "projects": [
-        "youtube/23.09.2026-wahrheitseffekt-test"
+        "youtube/2026-KW39_21.09-27.09/23.09.2026-wahrheitseffekt-test"
       ],
       "status": "USED"
     },
@@ -46,7 +46,7 @@
         "negativitaetseffekt"
       ],
       "projects": [
-        "youtube/24.09.2026-negativitaetsbias"
+        "youtube/2026-KW39_21.09-27.09/24.09.2026-negativitaetsbias"
       ],
       "status": "USED"
     },
@@ -58,10 +58,10 @@
         "spotlight-effect"
       ],
       "projects": [
-        "youtube/24.09.2026-spotlight-effekt",
-        "youtube/27.09.2026-spotlight-effekt-v2",
-        "youtube/29.09.2026-spotlight-effekt-v1",
-        "youtube/03.10.2026-spotlight-effekt-v1"
+        "youtube/2026-KW39_21.09-27.09/24.09.2026-spotlight-effekt",
+        "youtube/2026-KW39_21.09-27.09/27.09.2026-spotlight-effekt-v2",
+        "youtube/2026-KW40_28.09-04.10/29.09.2026-spotlight-effekt-v1",
+        "youtube/2026-KW40_28.09-04.10/03.10.2026-spotlight-effekt-v1"
       ],
       "status": "LEGACY_DUPLICATE_LOCKED",
       "note": "Existing duplicate history. No further Spotlight-Effekt project is allowed."
@@ -76,7 +76,7 @@
         "confirmation-bias-effect"
       ],
       "projects": [
-        "youtube/25.09.2026-bestaetigungsfehler"
+        "youtube/2026-KW39_21.09-27.09/25.09.2026-bestaetigungsfehler"
       ],
       "status": "USED"
     },
@@ -91,8 +91,8 @@
         "anchoring-bias"
       ],
       "projects": [
-        "youtube/26.09.2026-ankereffekt",
-        "youtube/28.09.2026-ankereffekt-v1"
+        "youtube/2026-KW39_21.09-27.09/26.09.2026-ankereffekt",
+        "youtube/2026-KW40_28.09-04.10/28.09.2026-ankereffekt-v1"
       ],
       "status": "LEGACY_DUPLICATE_LOCKED",
       "note": "Existing duplicate history. No further Ankereffekt project is allowed."
@@ -107,7 +107,7 @@
         "versunkene-kosten"
       ],
       "projects": [
-        "youtube/26.09.2026-sunk-cost-effekt"
+        "youtube/2026-KW39_21.09-27.09/26.09.2026-sunk-cost-effekt"
       ],
       "status": "USED"
     },
@@ -120,7 +120,7 @@
         "besitz-effekt"
       ],
       "projects": [
-        "youtube/27.09.2026-besitztumseffekt"
+        "youtube/2026-KW39_21.09-27.09/27.09.2026-besitztumseffekt"
       ],
       "status": "USED"
     },
@@ -133,7 +133,7 @@
         "peer-pressure"
       ],
       "projects": [
-        "youtube/28.09.2026-gruppendruck-v1"
+        "youtube/2026-KW40_28.09-04.10/28.09.2026-gruppendruck-v1"
       ],
       "status": "USED"
     },
@@ -145,7 +145,7 @@
         "halo-effect"
       ],
       "projects": [
-        "youtube/29.09.2026-halo-effekt-v1"
+        "youtube/2026-KW40_28.09-04.10/29.09.2026-halo-effekt-v1"
       ],
       "status": "USED"
     },
@@ -158,7 +158,7 @@
         "zuschauereffekt"
       ],
       "projects": [
-        "youtube/30.09.2026-bystander-effekt-v1"
+        "youtube/2026-KW40_28.09-04.10/30.09.2026-bystander-effekt-v1"
       ],
       "status": "USED"
     },
@@ -170,7 +170,7 @@
         "ikea-effect"
       ],
       "projects": [
-        "youtube/30.09.2026-ikea-effekt-v1"
+        "youtube/2026-KW40_28.09-04.10/30.09.2026-ikea-effekt-v1"
       ],
       "status": "USED"
     },
@@ -184,7 +184,7 @@
         "psychological-reactance"
       ],
       "projects": [
-        "youtube/02.10.2026-reaktanz-v1"
+        "youtube/2026-KW40_28.09-04.10/02.10.2026-reaktanz-v1"
       ],
       "status": "USED"
     },
@@ -197,7 +197,7 @@
         "framing"
       ],
       "projects": [
-        "youtube/03.10.2026-framing-effekt-v1"
+        "youtube/2026-KW40_28.09-04.10/03.10.2026-framing-effekt-v1"
       ],
       "status": "USED"
     },
@@ -211,7 +211,7 @@
         "cognitive-dissonance-theory"
       ],
       "projects": [
-        "youtube/03.10.2026-kognitive-dissonanz-v1"
+        "youtube/2026-KW40_28.09-04.10/03.10.2026-kognitive-dissonanz-v1"
       ],
       "status": "USED"
     },
@@ -226,7 +226,7 @@
         "dispositional-bias"
       ],
       "projects": [
-        "youtube/05.10.2026-fundamentaler-attributionsfehler-v1"
+        "youtube/2026-KW41_05.10-11.10/05.10.2026-fundamentaler-attributionsfehler-v1"
       ],
       "status": "USED"
     },
@@ -241,7 +241,7 @@
         "zeitaufwand-unterschaetzen"
       ],
       "projects": [
-        "youtube/08.10.2026-planungsfehlschluss-v1"
+        "youtube/2026-KW41_05.10-11.10/08.10.2026-planungsfehlschluss-v1"
       ],
       "status": "USED"
     },
@@ -257,7 +257,7 @@
         "tuerrahmen-vergesslichkeit"
       ],
       "projects": [
-        "youtube/15.10.2026-tuerschwellen-effekt-v1"
+        "youtube/2026-KW42_12.10-18.10/15.10.2026-tuerschwellen-effekt-v1"
       ],
       "status": "USED",
       "note": "Forschung zeigt Bedingungen und Grenzen; 2021er Multimodal-Studie replizierte den allgemeinen Effekt nicht durchgehend."

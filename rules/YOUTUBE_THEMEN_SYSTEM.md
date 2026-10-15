@@ -1,3 +1,7 @@
+## Wochenordnung — gültig ab 15.10.2026
+
+YouTube-Videos liegen unter `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/<TT.MM.JJJJ-thema>/` (ISO-Woche Montag bis Sonntag). Vollständige Dateilinks/Projektpfade verwenden diesen Präfix. Siehe `rules/YOUTUBE_WEEK_FOLDERS.md`.
+
 # YOUTUBE THEMEN SYSTEM — PSYCHOLOGIE & MENSCHLICHES VERHALTEN
 
 **STATUS: VERBINDLICH**
@@ -20,7 +24,7 @@ Verbindlich: `TOPIC_UNIQUENESS_V1` aus `rules/TOPIC_UNIQUENESS_LOCK.md`.
 
 Vor jeder neuen YouTube-Themenwahl:
 - `TOPIC_REGISTRY.json` vollständig lesen
-- vorhandene `youtube/TT.MM.JJJJ-*` Projekte prüfen
+- vorhandene `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/TT.MM.JJJJ-*` Projekte prüfen
 - deutsche/englische Synonyme und alternative Schreibweisen vergleichen
 - den eigentlichen psychologischen Kernmechanismus vergleichen, nicht nur den Titel
 

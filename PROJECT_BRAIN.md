@@ -1,5 +1,9 @@
 # PROJECT BRAIN
 
+## PFLICHT: WOCHENORDNER vor jedem neuen YouTube-Video (YOUTUBE_ISO_WEEK_FOLDERS_V1)
+
+Verbindlich: `rules/YOUTUBE_WEEK_FOLDERS.md`. ZUERST `npm run youtube:week -- TT.MM.JJJJ` ausführen bzw. ISO-Woche Montag–Sonntag errechnen, dann das Videoprojekt **nur** in `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/<TT.MM.JJJJ-thema>/` anlegen. Vorher Themenregister und Wochenprojektordner prüfen. Alle bestehenden Unterordner `01-script` / `02-google-flow` / `03-bilder` / `04-audio` / `05-export` / `99-intern` bleiben unverändert. Die beiden verpflichtenden Phase-1-Direktlinks und `TOPIC_REGISTRY.json` verwenden den *vollständigen* Wochenpfad. Niemals einen neuen flachen Videoordner direkt unter `youtube/` erstellen.
+
 ## Oberste operative Prioritaet: systematische Verbesserung nach JEDEM Video
 
 Policy: `CONTINUOUS_IMPROVEMENT_P1_V1` — `rules/GROWTH_LEARNING_LOOP.md`.
@@ -21,7 +25,7 @@ Canonical used-topic memory: `TOPIC_REGISTRY.json`.
 Before choosing any new YouTube topic:
 1. read `TOPIC_REGISTRY.json`
 2. compare German/English synonyms and the underlying psychological mechanism
-3. inspect existing `youtube/TT.MM.JJJJ-*` projects
+3. inspect existing `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/TT.MM.JJJJ-*` projects
 4. reject the idea if that core topic has already been used
 
 **Never create a second YouTube video for the same canonical topic/mechanism.** A new title, example, hook, version or Part 2 does not reset topic usage.

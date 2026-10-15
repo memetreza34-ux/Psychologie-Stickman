@@ -2,6 +2,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import {listYouTubeProjects} from './lib/youtube-week-folders.mjs';
 
 const repoRoot = path.resolve('.');
 const registryPath = path.join(repoRoot, 'TOPIC_REGISTRY.json');
@@ -93,13 +94,10 @@ for (const entry of entries) {
   }
 }
 
-const actualProjects = fs.existsSync(youtubeDir)
-  ? fs
-      .readdirSync(youtubeDir, {withFileTypes: true})
-      .filter((entry) => entry.isDirectory() && /^\d{2}\.\d{2}\.\d{4}-.+/u.test(entry.name))
-      .map((entry) => `youtube/${entry.name}`)
-      .sort()
-  : [];
+// Recursively inspect weekly folders; reject flat/incorrectly dated projects.
+let actualProjects = [];
+try { actualProjects = listYouTubeProjects(repoRoot); }
+catch (error) { failures.push('Weekly YouTube folder structure: ' + error.message); }
 
 const actualSet = new Set(actualProjects);
 

@@ -2,6 +2,7 @@
 // Print verified, tablet-friendly GitHub links for the completed Phase-1 handoff.
 import fs from 'node:fs';
 import path from 'node:path';
+import {weekForProjectName} from './lib/youtube-week-folders.mjs';
 
 const [projectArg, ref = 'main'] = process.argv.slice(2);
 if (!projectArg || projectArg.startsWith('--')) {
@@ -16,8 +17,8 @@ const root = path.resolve('.');
 const projectDir = path.resolve(projectArg);
 const relative = path.relative(root, projectDir).replace(/\\/g, '/');
 const parts = relative.split('/');
-if (parts.length !== 2 || parts[0] !== 'youtube' || parts[1] === '00-vorlage' || !parts[1]) {
-  throw new Error('Expected a real video project folder directly under youtube/; templates and paths outside the repository are not allowed.');
+if (parts.length !== 3 || parts[0] !== 'youtube' || parts[1] !== weekForProjectName(parts[2]).folder) {
+  throw new Error('Expected a real project under youtube/<ISO-week>/<DD.MM.YYYY-topic>. No template, wrong-week or root project allowed.');
 }
 
 const scriptRelative = `${relative}/01-script/script.txt`;
