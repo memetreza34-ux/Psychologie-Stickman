@@ -25,6 +25,12 @@ spoken meaning
 
 The final prompt may describe people, objects, environment, text, mechanism, comparison, camera, light and color. Do not assume a person is required.
 
+## Neue Content-First-Qualitaet ab naechstem Video
+
+`CONTENT_FIRST_VISUAL_QA_V2` aus `rules/CONTENT_FIRST_VISUAL_QA.md` ergaenzt diesen Director-Prozess. Fuer jede Szene zuerst `visualFunction` und `informationGain` ermitteln, dann ernsthaft mindestens ein ALTERNATIVES Bildformat betrachten. `focalSubjectKey` bezeichnet das semantische Motiv (Tuer / Karton / Ereignismodell), NICHT den ersten Satz oder die erste Kameraangabe. `settingKey` und `cameraScale` machen aehnliche Bildfolgen auffindbar. Abstrakte Erklaerungen, wissenschaftliche Befunde und Vergleichsbedingungen brauchen oft ein klares Schema, Diagramm oder eine kurze beschriftete Illustration statt der naechsten Figur. Unveraenderte Figuren-/Zeichenwelt, erlaubter exakt geplanter deutscher Bildtext.
+
+Dreimal dieselbe Tuer-/Karton-/Figurenlogik ist auch dann nicht kreativ, wenn Perspektive oder Satz anders klingen. Bevor Google Flow startet, den gesamten Ablauf auf **neuen Erkenntnisgewinn** und echte Wechsel zwischen Geschichte, Mechanismus, Beweis und Konsequenz pruefen. Nach der Generierung die wirklichen PNGs gegen Sprechertext und Nachbarbilder sichten. Das neue Gate erzwingt nicht bestimmte Prozentzahlen an Stickman- oder Diagrammbildern.
+
 ## 2. Observable-evidence test — HARD LOCK
 
 For every beat, answer internally:
@@ -204,7 +210,7 @@ For 10+ scene videos, a character-heavy plan of roughly three quarters or more f
 
 ## 13. Cover-specific direction
 
-BILD 01 still produces exactly three separate cover candidates and then stops for user selection.
+The independent THUMBNAIL step produces exactly three separate cover candidates and then stops once for user selection. BILD 01 is ALWAYS the first ordinary video scene aligned with spoken narration, never a cover; winner goes separately to 05-export/thumbnail.png.
 
 All three candidates must express the same approved visual thesis and exact cover text, but they may test meaningfully different framing/composition choices.
 
@@ -216,8 +222,8 @@ The Flow Agent may execute production:
 - read the full master prompt
 - generate the three separate cover candidates
 - wait for user selection
-- rename the chosen cover to `01.png`
-- generate later images in five-image batches
+- save the selected independent cover to `05-export/thumbnail.png` (never `01.png`)
+- generate BILD 01 onwards in five-image batches
 - QA/regenerate failures
 - rename accepted images to `NN.png`
 - keep all accepted images in `03-bilder/`
