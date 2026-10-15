@@ -1,5 +1,13 @@
 # PROJECT BRAIN
 
+## Oberste operative Prioritaet: systematische Verbesserung nach JEDEM Video
+
+Policy: `CONTINUOUS_IMPROVEMENT_P1_V1` — `rules/GROWTH_LEARNING_LOOP.md`.
+
+Kopfarium lernt aus jedem neuen Video und jeder Produktion: alte Erkenntnisse lesen -> eine messbare Hypothese planen -> im naechsten Video bewusst umsetzen -> nach 48h, 7d und 28d YouTube-Studio-Kennzahlen erfassen, sofern verfuegbar -> Ursachen mit Unsicherheit diagnostizieren -> Experiment und dauerhafte Lernpunkte dokumentieren -> beim Folgevideo Erfolg kontrollieren. Auch Themen, Titel, Thumbnail, Hook, Retention, Abos, Workflowfehler und Produktionszeit beobachten. Ohne echte Daten keine Erfolgsmeldung erfinden.
+
+Referenzdateien: `analytics/channel-learnings.md`, `analytics/experiments.csv`, `analytics/performance_snapshots.csv`, `99-intern/learning-review.md` je neuem Video. Keine automatische Umgestaltung der freigegebenen Bildwelt; bestehende Hard-Locks weiterhin bindend.
+
 ## Kanal
 
 Deutschsprachige YouTube-Videos zu Psychologie und menschlichem Verhalten.

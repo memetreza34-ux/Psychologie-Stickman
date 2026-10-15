@@ -14,6 +14,12 @@ Nur lesen/analysieren bei Formulierungen wie:
 
 Schreiben ist erlaubt, wenn der Nutzer im aktuellen Chat ausdrücklich eine Änderung verlangt. Die Freigabe gilt nur für den genannten Scope.
 
+## PRIORITAET 1 — kontinuierliche Verbesserung innerhalb der Schreibfreigabe
+
+Verbindlicher Verbesserungsprozess: `CONTINUOUS_IMPROVEMENT_P1_V1` aus `rules/GROWTH_LEARNING_LOOP.md`. Nach jedem Video Erkenntnisse, nachvollziehbare Metriken (soweit verfuegbar), Schwaechen, konkrete Folgemassnahmen und deren spaetere Ueberpruefung dokumentieren. Beim naechsten Video offene Erkenntnisse zuerst pruefen. Ohne Messwerte: `NO_DATA`, keine erdachten Zuschauerzahlen oder Wirkungsbehauptungen.
+
+**Wichtig:** Diese Prioritaet ist keine allgemeine Schreibfreigabe. In einem neuen Chat weiter READ ONLY ohne ausdruecklichen Auftrag; bestehende Videos, Bilder, Audio und Exporte nicht stillschweigend bearbeiten. Die feste Bildwelt bleibt unangetastet, sofern kein ausdruecklicher Auftrag vorliegt.
+
 ## Grenzen
 
 - keine ungefragten Neben-Cleanups
