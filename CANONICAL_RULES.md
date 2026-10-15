@@ -1,5 +1,13 @@
 # CANONICAL RULES — PSYCHOLOGY VIDEO PRODUCTION
 
+## PRIORITAET 1: kontinuierliche Kanalverbesserung — HARD PROCESS
+
+Binding policy: `CONTINUOUS_IMPROVEMENT_P1_V1` aus `rules/GROWTH_LEARNING_LOOP.md`.
+
+Vor jeder neuen Produktion: alte Erkenntnisse und offene Experimente ansehen, mindestens **eine konkrete Verbesserungshypothese** in `99-intern/learning-review.md` eintragen und bewusst im neuen Video testen. Nach jedem veroeffentlichten Video (48h / 7d / 28d, soweit Kennzahlen vorliegen) YouTube-Studio-Daten in `analytics/performance_snapshots.csv` festhalten, CTR / Retention / Impressionen / Abo-Gewinne mit Kontext diagnostizieren und Folgemassnahmen in `analytics/experiments.csv` und `analytics/channel-learnings.md` dokumentieren. Beim naechsten Review die Wirksamkeit pruefen. Ohne Daten `NO_DATA` statt Behauptungen; fehlende Messwerte blockieren kein neues Video.
+
+Das gilt auch fuer allgemeine Prozessqualitaet (Flow, Script, Audio, Render, Export). Die bestehende Bildwelt und alle inhaltlichen/technischen Hard-Locks bleiben unveraendert; Wachstum ist ein Ziel, keine Garantie.
+
 ## Topic uniqueness — HARD LOCK
 
 Policy ID: `TOPIC_UNIQUENESS_V1`.
