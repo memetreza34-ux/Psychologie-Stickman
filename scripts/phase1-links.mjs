@@ -2,6 +2,7 @@
 // Print verified, tablet-friendly GitHub links for the completed Phase-1 handoff.
 import fs from 'node:fs';
 import path from 'node:path';
+import {needsCreativeReview, checkCreativeVisualPlan, checkCreativeFlowPrompt} from './lib/creative-visual-qa.mjs';
 import {weekForProjectName} from './lib/youtube-week-folders.mjs';
 
 const [projectArg, ref = 'main'] = process.argv.slice(2);
@@ -39,6 +40,13 @@ const script = readRequired(path.join(root, scriptRelative), 'final speaker scri
 const prompt = readRequired(path.join(root, promptRelative), 'Google Flow master prompt');
 const plan = JSON.parse(readRequired(actualPlanPath, 'Phase-1 visual-beat plan'));
 const scenes = plan.scenes;
+if (needsCreativeReview(plan, relative)) {
+  const review = checkCreativeVisualPlan(plan, relative);
+  if (review.failures.length) throw new Error('CREATIVE VISUAL QA NOT READY:\n' + review.failures.join('\n'));
+  const promptCheck = checkCreativeFlowPrompt(plan, prompt, promptRelative);
+  if (promptCheck.failures.length) throw new Error('FLOW CREATIVE QA NOT READY:\n' + promptCheck.failures.join('\n'));
+  console.log('CREATIVE VISUAL REVIEW: PASS — ' + JSON.stringify(review.summary));
+}
 if (!Array.isArray(scenes) || scenes.length < 1) {
   throw new Error('Phase 1 NOT READY: phase1-scenes.json contains no finished scenes.');
 }
