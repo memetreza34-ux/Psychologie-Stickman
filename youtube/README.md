@@ -12,3 +12,14 @@ Jedes Videoprojekt gehört in einen **Wochenordner (Montag bis Sonntag)**. Alle 
 - [2026-KW42_12.10-18.10](2026-KW42_12.10-18.10/) — 12.10.2026 bis 18.10.2026, 1 Projekte
 
 **Lokale Daten schützen:** Bilder, Sprecher-Audio und gerenderte MP4-Dateien sind oft nicht in Git eingecheckt. Vor dem nächsten `git pull` lokale Daten sichern. Git verschiebt nur nachverfolgte Dateien mit der Ordnerumstellung; ungetrackte Medien bei Bedarf in die neuen Wochenordner übernehmen. Die Umstellung löscht keine binären Medien aus GitHub und erzeugt keine neuen.
+
+## Lokale Medien nach Git-Synchronisierung sicher mitnehmen
+
+Lokale, durch `.gitignore` nicht mitgeführte Dateien (z. B. fertige PNG/MP3/MP4) können nach der Git-Umstellung noch in den alten flachen Ordnern liegen. **Zuerst eine Sicherheitskopie des lokalen `youtube/`-Ordners erstellen.** Nach `git pull` im Repository:
+
+```bash
+npm run youtube:local-media
+npm run youtube:local-media -- --apply
+```
+
+Der erste Befehl zeigt nur, welche fehlenden Mediendateien kopiert würden; der zweite kopiert sie ohne vorhandene Ziele zu überschreiben und ohne Quellen zu löschen. Nur von dir vorhandene lokale Daten werden so mitgenommen, keine neuen Videos gerendert. Bei Git-Konflikten zuerst den Repository-Status prüfen, nicht blind `git reset --hard` verwenden.
