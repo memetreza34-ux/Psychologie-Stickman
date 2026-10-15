@@ -131,6 +131,10 @@ BILD 01 is a normal video opening that illustrates the first spoken hook, not th
 
 Manual/external MP4 renders must also run `npm run finalize:youtube -- <project>` so final `youtube-upload.txt`, `captions.srt`, `subtitle-script.txt` exist; only real timed word/cut information is accepted.
 
+## Tablet-Handoff nach jeder fertigen Phase 1
+
+Policy `PHASE1_TABLET_HANDOFF_LINKS_V1` aus `rules/PHASE1_HANDOFF_LINKS.md`. Nutzer arbeitet fuer Google Flow und Sprechertext auf dem Tablet. Deshalb in der **gleichen Antwort wie die Fertigmeldung** automatisch zwei GitHub-Direktlinks geben: `02-google-flow/google-flow-prompt.txt` (alle einzelnen BILD-Prompts im Master) und `01-script/script.txt` (finales Skript). Vorher beide konkreten Dateien in GitHub committen und Verfuegbarkeit pruefen, sonst nicht fertig behaupten. Kein allgemeiner Repository-Link als Ersatz.
+
 ## What remains fixed operationally
 
 - Topic uniqueness preflight before project creation
