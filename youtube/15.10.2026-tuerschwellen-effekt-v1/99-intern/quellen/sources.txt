@@ -1,0 +1,16 @@
+# Quellenprüfung — Türschwellen-Effekt
+
+## Grundidee und Grenzen
+Der Türschwellen- oder location-updating-Effekt ist eine experimentelle Forschungsfrage, kein Naturgesetz. Laborstudien maßen das Erinnern an zuvor bearbeitete Objekte bei Ortswechseln, nicht eine allgemeine Vergesslichkeitsquote aller Menschen. Der Umstand, dass sich die Studie 2021 nicht robust replizierte, wird im Video ausdrücklich erklärt.
+
+## Primärquellen
+1. **Radvansky & Copeland (2006)**, *Walking through doorways causes forgetting: situation models and experienced space*, Memory & Cognition 34, 1150–1156. https://doi.org/10.3758/BF03193261 — virtuelle Räume und Objektretrieval, verringerte Zugänglichkeit nach räumlichem Übergang.
+2. **Radvansky, Krawietz & Tamplin (2011)**, *Walking through doorways causes forgetting: further explorations*, QJEP 64, 1632–1645. https://doi.org/10.1080/17470218.2011.571267 — virtuelle und reale Umgebungen; Rückkehr ins ursprüngliche Zimmer verbesserte das Erinnern nicht zuverlässig.
+3. **McFadyen, Nolan, Pinocy, Buteri & Baumann (2021)**, *Doorways do not always cause forgetting: a multimodal investigation*, BMC Psychology 9, article 41. https://doi.org/10.1186/s40359-021-00536-3 — vier Experimente: kein durchgängiger signifikanter Effekt; unter zusätzlicher Arbeitsgedächtnisbelastung verschlechterte Signal-Detection-Leistung in einer Versuchsbedingung.
+
+## Redaktionelle Sicherheitsgrenzen
+- Kein Satz wie „Jeder Türrahmen löscht Gedanken“ oder „zurückgehen hilft garantiert“.
+- Die moderne Computerfenster-Szene ist eine **Alltagsanalogie**; nicht als direkte Replikation der originalen Experimente ausgeben.
+- Konkretes Wiederholen der Absicht, sichtbare Notizen und bewusste Kontextrekonstruktion sind **plausible Alltagstipps**; diese Quellen belegen keine sichere Wirksamkeit genau dieser Übungen.
+- Objekt-/Karton-/Klebebandgeschichte ist **fiktives anschauliches Beispiel**, kein tatsächlich berichteter Einzelfall der Studien.
+- Quellen und Studiennamen sind in der YouTube-Beschreibung, die Narration bleibt story-first.
