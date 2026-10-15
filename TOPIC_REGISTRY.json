@@ -244,6 +244,23 @@
         "youtube/08.10.2026-planungsfehlschluss-v1"
       ],
       "status": "USED"
+    },
+    {
+      "topicId": "tuerschwellen-effekt",
+      "canonicalTopic": "Türschwellen-Effekt / Doorway Effect / Location Updating",
+      "aliases": [
+        "tuerschwellen-effekt",
+        "türschwellen-effekt",
+        "doorway-effect",
+        "location-updating-effect",
+        "raumwechsel-gedaechtnis",
+        "tuerrahmen-vergesslichkeit"
+      ],
+      "projects": [
+        "youtube/15.10.2026-tuerschwellen-effekt-v1"
+      ],
+      "status": "USED",
+      "note": "Forschung zeigt Bedingungen und Grenzen; 2021er Multimodal-Studie replizierte den allgemeinen Effekt nicht durchgehend."
     }
   ]
 }
