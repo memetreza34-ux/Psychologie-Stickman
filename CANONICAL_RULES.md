@@ -120,6 +120,12 @@ For 10+ scenes, roughly 75%+ `CHARACTER_SCENE` without `characterHeavyJustificat
 
 Every new active Phase-1 scene should include `representationReason`.
 
+## Phase 1: Direktlinks fuer Google Flow und Sprechertext — HARD HANDOFF
+
+Policy: `PHASE1_TABLET_HANDOFF_LINKS_V1` in `rules/PHASE1_HANDOFF_LINKS.md`.
+
+Nach jeder fertigen Phase 1 muss die finale Antwort **beide getrennten, verifizierten und direkt anklickbaren GitHub-Dateilinks** enthalten: `youtube/<Projekt>/02-google-flow/google-flow-prompt.txt` (ALLE fertigen Bildprompts im einen Master-Prompt) und `youtube/<Projekt>/01-script/script.txt` (vollstaendiges Voice-over). Beide Dateien vor Meldung als `FERTIG` committen und per GitHub-Connector pruefen. Tablet-Zugriff und Kopieren ohne Navigationssuche; keine erfundenen oder uncommitteten Links. Lokale Vorpruefung: `npm run phase1:links -- youtube/<Projekt>`.
+
 ## Google Flow
 
 Pro video exactly one:
