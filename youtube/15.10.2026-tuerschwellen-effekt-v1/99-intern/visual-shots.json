@@ -1,0 +1,362 @@
+[
+  {
+    "scene": 1,
+    "type": "C",
+    "description": "Cinematic living-room hallway: approved pale-headed stickman in teal sweater strides toward bright kitchen doorway, open parcel behind, purposeful posture."
+  },
+  {
+    "scene": 2,
+    "type": "C",
+    "description": "Eye-level kitchen: same stickman frozen between sink and cupboard drawer, confused gaze and raised thin stick arms, morning light."
+  },
+  {
+    "scene": 3,
+    "type": "O",
+    "description": "Over-shoulder return path through doorway toward living-room table with open carton, scissors and empty space where tape should lie."
+  },
+  {
+    "scene": 4,
+    "type": "E",
+    "description": "Low-angle physical wooden doorframe joining two ordinary rooms; sharp trim in foreground and gently contrasting living spaces beyond, no magic."
+  },
+  {
+    "scene": 5,
+    "type": "T",
+    "description": "Single large exact German text TÜRSCHWELLEN-EFFEKT integrated on a clean wall beside real kitchen doorway, parcel blurred through opening."
+  },
+  {
+    "scene": 6,
+    "type": "E",
+    "description": "Wide interconnected room interior, warm packing table visible through cooler kitchen door; believable uninterrupted spatial depth and natural lighting."
+  },
+  {
+    "scene": 7,
+    "type": "E",
+    "description": "Immersive oak living-room table with torn parcel, packing supplies, afternoon light, shelf and plants; no figure needed."
+  },
+  {
+    "scene": 8,
+    "type": "O",
+    "description": "Top-down on unsealed brown parcel, black scissors, twine and paper; distinct round empty spot for red tape roll."
+  },
+  {
+    "scene": 9,
+    "type": "O",
+    "description": "Intimate diagonal macro of cardboard flaps and string, background parcel tools aligned with missing final fastening step."
+  },
+  {
+    "scene": 10,
+    "type": "C",
+    "description": "Approved stickman seated at oak table, fingertips near open parcel, head slightly inclined toward task in concentration."
+  },
+  {
+    "scene": 11,
+    "type": "E",
+    "description": "Long hallway perspective; warm living-room table far behind, cooler kitchen furniture ahead; changed sound and light inferred visually."
+  },
+  {
+    "scene": 12,
+    "type": "O",
+    "description": "Kettle steaming lightly beside porcelain plates and kitchen window with moving curtains, close warm observational frame."
+  },
+  {
+    "scene": 13,
+    "type": "C",
+    "description": "Confused pale-headed stickman framed inside kitchen, parcel only faintly visible beyond threshold, kitchen objects competing for gaze."
+  },
+  {
+    "scene": 14,
+    "type": "O",
+    "description": "Tactile close shot of ordinary drawer pull and door hinge; grounded everyday mechanism rather than eraser symbolism."
+  },
+  {
+    "scene": 15,
+    "type": "E",
+    "description": "High-angle architectural view of single connected home showing packing activity at table versus utensils in kitchen, real physical space."
+  },
+  {
+    "scene": 16,
+    "type": "D",
+    "description": "Two coherent views paired only: warm parcel table and cooler dishes counter separated by actual doorway, no captions."
+  },
+  {
+    "scene": 17,
+    "type": "O",
+    "description": "Organized packing supplies clustered around partially sealed cardboard box, single coherent task context in natural light."
+  },
+  {
+    "scene": 18,
+    "type": "E",
+    "description": "Doorway viewed from kitchen toward partially occluded living-room table; old task cues barely visible through doorframe."
+  },
+  {
+    "scene": 19,
+    "type": "O",
+    "description": "Deep-focus close-up of wooden threshold edge hiding much of scissors and parcel in distant room; foreground/background relationship."
+  },
+  {
+    "scene": 20,
+    "type": "E",
+    "description": "Research lab establishing scene with old desktop monitors, notebooks with blank covers and chairs, realistic science setting."
+  },
+  {
+    "scene": 21,
+    "type": "E",
+    "description": "2000s desktop monitor displays virtual first-person room with unlettered shelving and physical doorway, 2D illustrated surrounding lab."
+  },
+  {
+    "scene": 22,
+    "type": "O",
+    "description": "Virtual screen close-up: blue geometric object lifted from one table while second object remains, keyboard in foreground, no words."
+  },
+  {
+    "scene": 23,
+    "type": "D",
+    "description": "Two adjacent immersive virtual-room views, same-room route versus door transition, visual comparison without labels or numbers."
+  },
+  {
+    "scene": 24,
+    "type": "C",
+    "description": "Approved pale-headed student participant concentrates on desktop monitor during memory task, narrow dressed torso and thin limbs."
+  },
+  {
+    "scene": 25,
+    "type": "O",
+    "description": "Top-down research desk with two colored object tokens and discrete blank answer cards, no fabricated numbers or graphs."
+  },
+  {
+    "scene": 26,
+    "type": "E",
+    "description": "Wide research workstations showing matching virtual walking distances with different room boundary context; no written overlays."
+  },
+  {
+    "scene": 27,
+    "type": "E",
+    "description": "Physical university research corridor with two normal furnished rooms, plain door, boxes on tables, documentary perspective."
+  },
+  {
+    "scene": 28,
+    "type": "C",
+    "description": "Single approved stickman holds covered neutral box near real lab doorway, modest expression of uncertainty, observation not drama."
+  },
+  {
+    "scene": 29,
+    "type": "O",
+    "description": "Close laboratory table holds two unlabeled shape tokens and plain blank probe cards; controlled object-recognition task."
+  },
+  {
+    "scene": 30,
+    "type": "E",
+    "description": "Familiar sunny home kitchen with dishes, kettle, cupboards, magnets with no letters; authentic everyday visual clutter."
+  },
+  {
+    "scene": 31,
+    "type": "C",
+    "description": "Stickman in teal sweater gets distracted before reaching doorway, half turned toward sunlit living-room window."
+  },
+  {
+    "scene": 32,
+    "type": "O",
+    "description": "Lit phone showing only abstract colored notification tiles and a forgotten brass key on hallway console, no UI words."
+  },
+  {
+    "scene": 33,
+    "type": "E",
+    "description": "Long hall perspective with fallen key in foreground, open kitchen doorway beyond; attention can shift before the door."
+  },
+  {
+    "scene": 34,
+    "type": "E",
+    "description": "Modern cognitive lab showing VR headset and research equipment on desk, real doorway to one side, not a magical experiment."
+  },
+  {
+    "scene": 35,
+    "type": "C",
+    "description": "Two approved same-species pale-headed researchers and participant at VR station; one helps fit headset, identical thin-body anatomy."
+  },
+  {
+    "scene": 36,
+    "type": "T",
+    "description": "Single large exact German text NICHT IMMER on simple clean transparent display by VR headset in real lab, no other lettering."
+  },
+  {
+    "scene": 37,
+    "type": "O",
+    "description": "Close study equipment and several blank colored memory tokens next to VR headset; physical workload evidence without numeric claims."
+  },
+  {
+    "scene": 38,
+    "type": "D",
+    "description": "Coherent two-state visual comparison of uncluttered memory test room versus demanding task desk with many handled objects, no infographic arrows."
+  },
+  {
+    "scene": 39,
+    "type": "E",
+    "description": "Wide neutral university doorway with ordinary research objects and varied activity; cautious scientific mood, no confident symbolism."
+  },
+  {
+    "scene": 40,
+    "type": "O",
+    "description": "Macro of real wooden latch and handle with detailed reflected daylight, showing ordinary boundary, no glowing reset power."
+  },
+  {
+    "scene": 41,
+    "type": "E",
+    "description": "Lived-in home office establishment with laptop, blank paper corkboard, mouse, pens and large morning window, new example."
+  },
+  {
+    "scene": 42,
+    "type": "O",
+    "description": "Overhead laptop spreadsheet-like grid using abstract colored blank cells; hand near touchpad, no readable UI."
+  },
+  {
+    "scene": 43,
+    "type": "O",
+    "description": "Side-angle laptop with generic envelope-shaped message tile floating in screen layout, coffee mug and keyboard, zero text."
+  },
+  {
+    "scene": 44,
+    "type": "C",
+    "description": "Approved stickman in mustard narrow top stares at open laptop with confused paused hands, no readable software labels."
+  },
+  {
+    "scene": 45,
+    "type": "E",
+    "description": "Over-shoulder desk with overlapping abstract app windows on laptop; one work focus partly obscured by another window."
+  },
+  {
+    "scene": 46,
+    "type": "O",
+    "description": "Close-up of colored task cards stacked askew over original blue card on physical desk, context interference grounded in objects."
+  },
+  {
+    "scene": 47,
+    "type": "E",
+    "description": "Bright complete workspace: closed binder, neatly stacked papers, switched-off lamp and clean desk, restful task completion."
+  },
+  {
+    "scene": 48,
+    "type": "C",
+    "description": "Approved stickman leaves finished desk calmly toward sunlit window, open posture, sense of purposeful new task."
+  },
+  {
+    "scene": 49,
+    "type": "O",
+    "description": "Partially unfinished envelope physically covered by grocery bags and other tasks on side table, dominant object relationship."
+  },
+  {
+    "scene": 50,
+    "type": "E",
+    "description": "Return to same oak parcel table in living room; torn shipping box unchanged, black scissors, empty tape spot, kitchen beyond."
+  },
+  {
+    "scene": 51,
+    "type": "C",
+    "description": "Teal sweater stickman in hallway looks annoyed, raised shoulders and head turning between kitchen and parcel room."
+  },
+  {
+    "scene": 52,
+    "type": "C",
+    "description": "At parcel table stickman pauses with finger against light oval chin before standing, deliberate memory strategy."
+  },
+  {
+    "scene": 53,
+    "type": "O",
+    "description": "Close-up of narrow stick hand touching parcel flap while other points toward kitchen through real doorway, no speech bubble."
+  },
+  {
+    "scene": 54,
+    "type": "E",
+    "description": "Continuous hallway view connecting torn parcel table to kitchen cabinets, practical direct path and lighting gradient."
+  },
+  {
+    "scene": 55,
+    "type": "O",
+    "description": "Low-angle packing table showing an obvious empty slot beside twine where a reminder tool can be placed, doorway blurred."
+  },
+  {
+    "scene": 56,
+    "type": "O",
+    "description": "Distinct black-handled scissors deliberately positioned at oak table edge next to torn parcel, sharp foreground focus."
+  },
+  {
+    "scene": 57,
+    "type": "T",
+    "description": "Single large exact German word KLEBEBAND clearly handwritten on one large note by scissors and parcel; no other text."
+  },
+  {
+    "scene": 58,
+    "type": "E",
+    "description": "Kitchen view from doorway with discrete packing reminder still visible far behind in living room, practical yet uncertain."
+  },
+  {
+    "scene": 59,
+    "type": "C",
+    "description": "Teal stickman stands quietly in kitchen with relaxed thinking pose near cupboard, not rummaging frantically."
+  },
+  {
+    "scene": 60,
+    "type": "C",
+    "description": "Same stickman pauses by closed drawer, asking silently what happened before entering, hand against chin, coherent home location."
+  },
+  {
+    "scene": 61,
+    "type": "O",
+    "description": "Close parcel lip with incomplete fold, missing tape imprint and recognizable black scissors; concrete remembered prior task."
+  },
+  {
+    "scene": 62,
+    "type": "C",
+    "description": "Over-shoulder stickman from kitchen looks toward familiar living-room table through doorway; thoughtful attempt to recall context."
+  },
+  {
+    "scene": 63,
+    "type": "E",
+    "description": "Long corridor view from kitchen showing parcel partly visible in adjacent room; no miraculous reset or guaranteed recovery imagery."
+  },
+  {
+    "scene": 64,
+    "type": "O",
+    "description": "Study desk with a useful object card partly hidden under several ordinary blank cards; retrieval competition, no faux statistics."
+  },
+  {
+    "scene": 65,
+    "type": "E",
+    "description": "Elevated coherent view of two household activity zones, packing supplies on table and kitchen tools on counter, real architecture."
+  },
+  {
+    "scene": 66,
+    "type": "O",
+    "description": "A hand returns parcel flap to its prior folded position, familiar action cues evident in detailed tactile illustration."
+  },
+  {
+    "scene": 67,
+    "type": "E",
+    "description": "Cinematic wide continuous living room to kitchen perspective with lone approved stickman at threshold and open parcel far behind."
+  },
+  {
+    "scene": 68,
+    "type": "C",
+    "description": "Same stickman in kitchen turns deliberately toward drawer, now focused on red tape roll partly visible beside utensils."
+  },
+  {
+    "scene": 69,
+    "type": "O",
+    "description": "Macro of red tape roll being picked up; neutral shelf and scissors far behind through doorway, no symbols."
+  },
+  {
+    "scene": 70,
+    "type": "E",
+    "description": "Evening domestic room with sealed parcel and lamplight, world keeps moving around small ordinary memories."
+  },
+  {
+    "scene": 71,
+    "type": "C",
+    "description": "Single stickman crosses normal doorway with purposeful calm posture, focused glance toward taped parcel beyond."
+  },
+  {
+    "scene": 72,
+    "type": "O",
+    "description": "Hero macro: distinctive red Klebeband roll rests beside repaired brown cardboard parcel and black scissors, warm satisfying payoff."
+  }
+]
