@@ -1,6 +1,6 @@
 # Kopfarium — Kanalweites Lernprotokoll
 
-**Prioritaet 1:** fortlaufende, belegbare Verbesserung nach `rules/GROWTH_LEARNING_LOOP.md`.
+**Prioritaet 1 — `CONTINUOUS_IMPROVEMENT_P1_V1`:** fortlaufende, belegbare Verbesserung nach `rules/GROWTH_LEARNING_LOOP.md`.
 
 ## Gesicherte Erkenntnisse
 
