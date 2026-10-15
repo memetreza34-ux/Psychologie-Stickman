@@ -4,6 +4,10 @@
 
 Policy ID: `REPRESENTATION_VARIETY_V1`
 
+## Neuer Qualitaetsstandard fuer alle zukunftigen Projekte
+
+Ab neuen Video-Projekten zusaetzlich `CONTENT_FIRST_VISUAL_QA_V2` aus `rules/CONTENT_FIRST_VISUAL_QA.md` verwenden. Die qualitative Wiederholung von Motiv/Schauplatz/Kameraperspektive und Informationswert wird technisch geprueft. Ausgesprochene Mechanismen sind ein aktiver Anlass fuer Schemata, Experimentskizzen, Vergleiche und gezielte beschriftete Illustrationen, nicht bloss fuer die naechste Figur im Zimmer. Es gelten KEINE festen Prozentziele fuer Figuren, Diagramme oder andere Darstellungen.
+
 ## Core rule
 
 Choose the **best visual form first**. Never choose a full character scene merely because the channel uses Stickmen or because the spoken sentence mentions a person.
