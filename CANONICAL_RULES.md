@@ -1,3 +1,7 @@
+## PFLICHT: WOCHENORDNER vor jedem neuen YouTube-Video (YOUTUBE_ISO_WEEK_FOLDERS_V1)
+
+Verbindlich: `rules/YOUTUBE_WEEK_FOLDERS.md`. ZUERST `npm run youtube:week -- TT.MM.JJJJ` ausführen bzw. ISO-Woche Montag–Sonntag errechnen, dann das Videoprojekt **nur** in `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/<TT.MM.JJJJ-thema>/` anlegen. Vorher Themenregister und Wochenprojektordner prüfen. Alle bestehenden Unterordner `01-script` / `02-google-flow` / `03-bilder` / `04-audio` / `05-export` / `99-intern` bleiben unverändert. Die beiden verpflichtenden Phase-1-Direktlinks und `TOPIC_REGISTRY.json` verwenden den *vollständigen* Wochenpfad. Niemals einen neuen flachen Videoordner direkt unter `youtube/` erstellen.
+
 # CANONICAL RULES — PSYCHOLOGY VIDEO PRODUCTION
 
 ## PRIORITAET 1: kontinuierliche Kanalverbesserung — HARD PROCESS
@@ -124,7 +128,7 @@ Every new active Phase-1 scene should include `representationReason`.
 
 Policy: `PHASE1_TABLET_HANDOFF_LINKS_V1` in `rules/PHASE1_HANDOFF_LINKS.md`.
 
-Nach jeder fertigen Phase 1 muss die finale Antwort **beide getrennten, verifizierten und direkt anklickbaren GitHub-Dateilinks** enthalten: `youtube/<Projekt>/02-google-flow/google-flow-prompt.txt` (ALLE fertigen Bildprompts im einen Master-Prompt) und `youtube/<Projekt>/01-script/script.txt` (vollstaendiges Voice-over). Beide Dateien vor Meldung als `FERTIG` committen und per GitHub-Connector pruefen. Tablet-Zugriff und Kopieren ohne Navigationssuche; keine erfundenen oder uncommitteten Links. Lokale Vorpruefung: `npm run phase1:links -- youtube/<Projekt>`.
+Nach jeder fertigen Phase 1 muss die finale Antwort **beide getrennten, verifizierten und direkt anklickbaren GitHub-Dateilinks** enthalten: `youtube/<WOCHENORDNER>/<Projekt>/02-google-flow/google-flow-prompt.txt` (ALLE fertigen Bildprompts im einen Master-Prompt) und `youtube/<WOCHENORDNER>/<Projekt>/01-script/script.txt` (vollstaendiges Voice-over). Beide Dateien vor Meldung als `FERTIG` committen und per GitHub-Connector pruefen. Tablet-Zugriff und Kopieren ohne Navigationssuche; keine erfundenen oder uncommitteten Links. Lokale Vorpruefung: `npm run phase1:links -- youtube/<WOCHENORDNER>/<Projekt>`.
 
 ## Google Flow
 
