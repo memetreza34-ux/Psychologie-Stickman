@@ -56,7 +56,7 @@ Policy: `THUMBNAIL_SEPARATE_FROM_SCENE01_V1`. Drei separate Cover zur Auswahl; G
 Wenn `planungsfehlschluss.mp4` bereits in `05-export/` liegt, nicht erneut nur MP4 rendern. Erst separates `thumbnail.png` in `05-export/` ablegen und danach aus dem Repo-Hauptverzeichnis ausführen:
 
 ```bash
-npm run finalize:youtube -- youtube/08.10.2026-planungsfehlschluss-v1
+npm run finalize:youtube -- youtube/2026-KW41_05.10-11.10/08.10.2026-planungsfehlschluss-v1
 ```
 
 Das befüllt `05-export/youtube-upload.txt` mit YouTube-Titel/Beschreibung/Tags/Quellen, sowie `captions.srt` für den direkten YouTube-Untertitel-Upload und `subtitle-script.txt` zum 1:1-Kopieren des vollständigen Texts mit echten Zeitmarken. Nur `mp4` ist kein kompletter Export. Ohne `thumbnail.png` oder Audiozeitabgleich Status weiterhin unvollständig.
