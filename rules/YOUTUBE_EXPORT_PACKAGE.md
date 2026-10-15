@@ -172,7 +172,7 @@ Das ist Teil der FINAL-QA.
 Nach dem Rendern muss neben der MP4 auch das gewählte eigenständige `thumbnail.png` in `05-export/` liegen. Dann:
 
 ```bash
-npm run finalize:youtube -- youtube/08.10.2026-planungsfehlschluss-v1
+npm run finalize:youtube -- youtube/2026-KW41_05.10-11.10/08.10.2026-planungsfehlschluss-v1
 ```
 
 Für weitere Videos jeweils den Projektpfad austauschen.
