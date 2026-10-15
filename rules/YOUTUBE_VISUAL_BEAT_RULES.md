@@ -2,6 +2,10 @@
 
 **STATUS: BINDING**
 
+## Neue kreative Planungspruefung — CONTENT_FIRST_VISUAL_QA_V2
+
+Vor dem ersten Google Flow Prompt fuer ein neues Video den `CONTENT_FIRST_VISUAL_QA_V2` Prozess aus `rules/CONTENT_FIRST_VISUAL_QA.md` erfuellen: pro Beat Informationsgewinn, ernsthaft ueberlegte alternative Darstellung, semantischer Hauptgegenstand und Umgebung. Bei Mechanismen/Laborbefunden Schemata, klare beschriftete Erklaerbilder oder kontrollierte Zweizustands-Vergleiche mitdenken. Nicht durch 72 Bildnummern oder 72 unterschiedlich formulierte Prompts automatisch Qualitaet behaupten. Vor Phase-1-Handoff `npm run qa:creative-visuals` ausfuehren; nach Flow jede Bildfolge nach wirklicher Aehnlichkeit und Satzpassung kontrollieren.
+
 ## One thought = one visual beat
 
 Split when the spoken idea changes: action, example, comparison, cause/effect, question/answer, problem/solution, relation or location.
