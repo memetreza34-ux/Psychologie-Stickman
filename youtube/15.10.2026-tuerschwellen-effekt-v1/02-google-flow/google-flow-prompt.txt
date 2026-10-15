@@ -42,669 +42,435 @@ INDIVIDUAL VIDEO IMAGE PROMPTS BELOW
 All BILD visuals are SINGLE actual video shots timed to their given German narration beat, not the cover. The voice-over beats are references for what the audience is learning, do not render those sentences as text.
 
 BILD 01
-NARRATION BEAT (spoken German, DO NOT print): Du gehst in die Küche, um Klebeband zu holen. Drei Schritte später stehst du dort und weißt nicht mehr, warum.
 CHARACTER_SCENE — Cinematic living-room hallway: approved pale-headed stickman in teal sweater strides toward bright kitchen doorway, open parcel behind, purposeful posture.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Cinematic living-room hallway: approved pale-headed stickman in teal sweater strides toward bright kitchen doorway, open parcel behind, purposeful posture.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Cinematic living-room hallway: approved pale-headed stickman in teal sweater strides toward bright kitchen doorway, open parcel behind, purposefu
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 01.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Du gehst in die Küche, um Klebeband zu holen. Drei Schritte später stehst du dort und weißt nicht mehr, warum.
+NO VISIBLE TEXT.
+Save as 01.png; individual 16:9 image.
 
 BILD 02
-NARRATION BEAT (spoken German, DO NOT print): Du blickst auf die Spüle, öffnest eine Schublade und fragst dich: Was wollte ich hier eigentlich?
 CHARACTER_SCENE — Eye-level kitchen: same stickman frozen between sink and cupboard drawer, confused gaze and raised thin stick arms, morning light.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Eye-level kitchen: same stickman frozen between sink and cupboard drawer, confused gaze and raised thin stick arms, morning light.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Eye-level kitchen: same stickman frozen between sink and cupboard drawer, confused gaze and raised thin stick arms, morning light.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 02.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Du blickst auf die Spüle, öffnest eine Schublade und fragst dich: Was wollte ich hier eigentlich?
+NO VISIBLE TEXT.
+Save as 02.png; individual 16:9 image.
 
 BILD 03
-NARRATION BEAT (spoken German, DO NOT print): Vielleicht gehst du wieder zurück ins Wohnzimmer. Und plötzlich fällt es dir ein: das Klebeband.
 OBJECT_FOCUS — Over-shoulder return path through doorway toward living-room table with open carton, scissors and empty space where tape should lie.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Over-shoulder return path through doorway toward living-room table with open carton, scissors and empty space where tape should lie.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Over-shoulder return path through doorway toward living-room table with open carton, scissors and empty space where tape should lie.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 03.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Vielleicht gehst du wieder zurück ins Wohnzimmer. Und plötzlich fällt es dir ein: das Klebeband.
+NO VISIBLE TEXT.
+Save as 03.png; individual 16:9 image.
 
 BILD 04
-NARRATION BEAT (spoken German, DO NOT print): Als hätte jemand direkt im Türrahmen den Gedanken aus deinem Kopf gezogen. Aber kann eine Tür wirklich so etwas?
 ENVIRONMENT_SCENE — Low-angle physical wooden doorframe joining two ordinary rooms; sharp trim in foreground and gently contrasting living spaces beyond, no magic.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Low-angle physical wooden doorframe joining two ordinary rooms; sharp trim in foreground and gently contrasting living spaces beyond, no magic.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Low-angle physical wooden doorframe joining two ordinary rooms; sharp trim in foreground and gently contrasting living spaces beyond, no magic.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 04.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Als hätte jemand direkt im Türrahmen den Gedanken aus deinem Kopf gezogen. Aber kann eine Tür wirklich so etwas?
+NO VISIBLE TEXT.
+Save as 04.png; individual 16:9 image.
 
 BILD 05
-NARRATION BEAT (spoken German, DO NOT print): Eine mögliche Erklärung heißt Türschwellen-Effekt. Er beschreibt, dass ein Ortswechsel den Zugriff auf gerade wichtige Informationen erschweren kann.
 TEXT_ILLUSTRATION — Single large exact German text TÜRSCHWELLEN-EFFEKT integrated on a clean wall beside real kitchen doorway, parcel blurred through opening.
-Representation rationale: The exact short German words are necessary to teach or emphasize a key concept.
-Camera, focal subject, narrative evidence: Single large exact German text TÜRSCHWELLEN-EFFEKT integrated on a clean wall beside real kitchen doorway, parcel blurred through opening.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Single large exact German text TÜRSCHWELLEN-EFFEKT integrated on a clean wall beside real kitchen doorway, parcel blurred through opening.
-EXACT visible German text ONLY: TÜRSCHWELLEN-EFFEKT. Do not add any other readable text.
-Output exactly 05.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Eine mögliche Erklärung heißt Türschwellen-Effekt. Er beschreibt, dass ein Ortswechsel den Zugriff auf gerade wichtige Informationen erschweren kann.
+EXACT GERMAN TEXT: TÜRSCHWELLEN-EFFEKT. No other visible words.
+Save as 05.png; individual 16:9 image.
 
 BILD 06
-NARRATION BEAT (spoken German, DO NOT print): Und das Interessante ist nicht die Tür selbst. Es geht darum, wie dein Gehirn Situationen organisiert.
 ENVIRONMENT_SCENE — Wide interconnected room interior, warm packing table visible through cooler kitchen door; believable uninterrupted spatial depth and natural lighting.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Wide interconnected room interior, warm packing table visible through cooler kitchen door; believable uninterrupted spatial depth and natural lighting.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Wide interconnected room interior, warm packing table visible through cooler kitchen door; believable uninterrupted spatial depth and natural lig
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 06.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Und das Interessante ist nicht die Tür selbst. Es geht darum, wie dein Gehirn Situationen organisiert.
+NO VISIBLE TEXT.
+Save as 06.png; individual 16:9 image.
 
 BILD 07
-NARRATION BEAT (spoken German, DO NOT print): Stell dir vor, du sitzt am Wohnzimmertisch und reparierst einen aufgerissenen Karton für ein Paket.
 ENVIRONMENT_SCENE — Immersive oak living-room table with torn parcel, packing supplies, afternoon light, shelf and plants; no figure needed.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Immersive oak living-room table with torn parcel, packing supplies, afternoon light, shelf and plants; no figure needed.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Immersive oak living-room table with torn parcel, packing supplies, afternoon light, shelf and plants; no figure needed.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 07.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Stell dir vor, du sitzt am Wohnzimmertisch und reparierst einen aufgerissenen Karton für ein Paket.
+NO VISIBLE TEXT.
+Save as 07.png; individual 16:9 image.
 
 BILD 08
-NARRATION BEAT (spoken German, DO NOT print): Vor dir liegen Schere, Papier und Schnur. Nur das Klebeband fehlt, also stehst du entschlossen auf.
 OBJECT_FOCUS — Top-down on unsealed brown parcel, black scissors, twine and paper; distinct round empty spot for red tape roll.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Top-down on unsealed brown parcel, black scissors, twine and paper; distinct round empty spot for red tape roll.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Top-down on unsealed brown parcel, black scissors, twine and paper; distinct round empty spot for red tape roll.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 08.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Vor dir liegen Schere, Papier und Schnur. Nur das Klebeband fehlt, also stehst du entschlossen auf.
+NO VISIBLE TEXT.
+Save as 08.png; individual 16:9 image.
 
 BILD 09
-NARRATION BEAT (spoken German, DO NOT print): Solange du am Tisch sitzt, hängen Karton, Paket und Klebeband gedanklich eng zusammen.
 OBJECT_FOCUS — Intimate diagonal macro of cardboard flaps and string, background parcel tools aligned with missing final fastening step.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Intimate diagonal macro of cardboard flaps and string, background parcel tools aligned with missing final fastening step.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Intimate diagonal macro of cardboard flaps and string, background parcel tools aligned with missing final fastening step.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 09.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Solange du am Tisch sitzt, hängen Karton, Paket und Klebeband gedanklich eng zusammen.
+NO VISIBLE TEXT.
+Save as 09.png; individual 16:9 image.
 
 BILD 10
-NARRATION BEAT (spoken German, DO NOT print): Du siehst den offenen Karton. Deine Hände liegen daneben. Der nächste Schritt scheint vollkommen offensichtlich.
 CHARACTER_SCENE — Approved stickman seated at oak table, fingertips near open parcel, head slightly inclined toward task in concentration.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Approved stickman seated at oak table, fingertips near open parcel, head slightly inclined toward task in concentration.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Approved stickman seated at oak table, fingertips near open parcel, head slightly inclined toward task in concentration.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 10.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Du siehst den offenen Karton. Deine Hände liegen daneben. Der nächste Schritt scheint vollkommen offensichtlich.
+NO VISIBLE TEXT.
+Save as 10.png; individual 16:9 image.
 
 BILD 11
-NARRATION BEAT (spoken German, DO NOT print): Auf dem Weg zur Küche verändert sich allerdings mehr als nur dein Standort: Das Licht, die Möbel, die Geräusche.
 ENVIRONMENT_SCENE — Long hallway perspective; warm living-room table far behind, cooler kitchen furniture ahead; changed sound and light inferred visually.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Long hallway perspective; warm living-room table far behind, cooler kitchen furniture ahead; changed sound and light inferred visually.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Long hallway perspective; warm living-room table far behind, cooler kitchen furniture ahead; changed sound and light inferred visually.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 11.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Auf dem Weg zur Küche verändert sich allerdings mehr als nur dein Standort: Das Licht, die Möbel, die Geräusche.
+NO VISIBLE TEXT.
+Save as 11.png; individual 16:9 image.
 
 BILD 12
-NARRATION BEAT (spoken German, DO NOT print): Hinter der Tür stehen Teller statt Kartons. Das Fenster ist offen. Vielleicht piept sogar der Wasserkocher.
 OBJECT_FOCUS — Kettle steaming lightly beside porcelain plates and kitchen window with moving curtains, close warm observational frame.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Kettle steaming lightly beside porcelain plates and kitchen window with moving curtains, close warm observational frame.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Kettle steaming lightly beside porcelain plates and kitchen window with moving curtains, close warm observational frame.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 12.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Hinter der Tür stehen Teller statt Kartons. Das Fenster ist offen. Vielleicht piept sogar der Wasserkocher.
+NO VISIBLE TEXT.
+Save as 12.png; individual 16:9 image.
 
 BILD 13
-NARRATION BEAT (spoken German, DO NOT print): Plötzlich passen die Dinge um dich herum nicht mehr zu dem Gedanken, mit dem du losgelaufen bist.
 CHARACTER_SCENE — Confused pale-headed stickman framed inside kitchen, parcel only faintly visible beyond threshold, kitchen objects competing for gaze.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Confused pale-headed stickman framed inside kitchen, parcel only faintly visible beyond threshold, kitchen objects competing for gaze.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Confused pale-headed stickman framed inside kitchen, parcel only faintly visible beyond threshold, kitchen objects competing for gaze.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 13.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Plötzlich passen die Dinge um dich herum nicht mehr zu dem Gedanken, mit dem du losgelaufen bist.
+NO VISIBLE TEXT.
+Save as 13.png; individual 16:9 image.
 
 BILD 14
-NARRATION BEAT (spoken German, DO NOT print): Es ist nicht so, dass dein Gehirn beim Eintreten alle Erinnerungen löscht. Das wäre viel zu einfach.
 OBJECT_FOCUS — Tactile close shot of ordinary drawer pull and door hinge; grounded everyday mechanism rather than eraser symbolism.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Tactile close shot of ordinary drawer pull and door hinge; grounded everyday mechanism rather than eraser symbolism.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Tactile close shot of ordinary drawer pull and door hinge; grounded everyday mechanism rather than eraser symbolism.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 14.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Es ist nicht so, dass dein Gehirn beim Eintreten alle Erinnerungen löscht. Das wäre viel zu einfach.
+NO VISIBLE TEXT.
+Save as 14.png; individual 16:9 image.
 
 BILD 15
-NARRATION BEAT (spoken German, DO NOT print): Eine verbreitete Erklärung lautet: Unser Kopf teilt den Alltag in kleine Abschnitte, sogenannte Ereignisse.
 ENVIRONMENT_SCENE — High-angle architectural view of single connected home showing packing activity at table versus utensils in kitchen, real physical space.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: High-angle architectural view of single connected home showing packing activity at table versus utensils in kitchen, real physical space.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: High-angle architectural view of single connected home showing packing activity at table versus utensils in kitchen, real physical space.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 15.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Eine verbreitete Erklärung lautet: Unser Kopf teilt den Alltag in kleine Abschnitte, sogenannte Ereignisse.
+NO VISIBLE TEXT.
+Save as 15.png; individual 16:9 image.
 
 BILD 16
-NARRATION BEAT (spoken German, DO NOT print): Am Tisch war das Ereignis: Paket reparieren. In der Küche beginnt möglicherweise ein neues: Küche benutzen.
 COMPARE_VISUAL — Two coherent views paired only: warm parcel table and cooler dishes counter separated by actual doorway, no captions.
-Representation rationale: Exactly two situated conditions clarify the comparison in a single coherent composition.
-Camera, focal subject, narrative evidence: Two coherent views paired only: warm parcel table and cooler dishes counter separated by actual doorway, no captions.
-Single-scene staging: 2 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Two coherent views paired only: warm parcel table and cooler dishes counter separated by actual doorway, no captions.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 16.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Am Tisch war das Ereignis: Paket reparieren. In der Küche beginnt möglicherweise ein neues: Küche benutzen.
+NO VISIBLE TEXT.
+Save as 16.png; individual 16:9 image.
 
 BILD 17
-NARRATION BEAT (spoken German, DO NOT print): Diese Abschnitte helfen dir normalerweise, Wichtiges zu ordnen, statt jedes Detail ständig gleich präsent zu halten.
 OBJECT_FOCUS — Organized packing supplies clustered around partially sealed cardboard box, single coherent task context in natural light.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Organized packing supplies clustered around partially sealed cardboard box, single coherent task context in natural light.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Organized packing supplies clustered around partially sealed cardboard box, single coherent task context in natural light.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 17.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Diese Abschnitte helfen dir normalerweise, Wichtiges zu ordnen, statt jedes Detail ständig gleich präsent zu halten.
+NO VISIBLE TEXT.
+Save as 17.png; individual 16:9 image.
 
 BILD 18
-NARRATION BEAT (spoken German, DO NOT print): Doch beim Wechsel kann eine Information aus dem vorherigen Abschnitt für einen Moment schwerer erreichbar werden.
 ENVIRONMENT_SCENE — Doorway viewed from kitchen toward partially occluded living-room table; old task cues barely visible through doorframe.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Doorway viewed from kitchen toward partially occluded living-room table; old task cues barely visible through doorframe.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Doorway viewed from kitchen toward partially occluded living-room table; old task cues barely visible through doorframe.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 18.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Doch beim Wechsel kann eine Information aus dem vorherigen Abschnitt für einen Moment schwerer erreichbar werden.
+NO VISIBLE TEXT.
+Save as 18.png; individual 16:9 image.
 
 BILD 19
-NARRATION BEAT (spoken German, DO NOT print): Das erklärt zumindest, warum die Idee von einem Zusammenhang zwischen Raumwechsel und Erinnern so plausibel ist.
 OBJECT_FOCUS — Deep-focus close-up of wooden threshold edge hiding much of scissors and parcel in distant room; foreground/background relationship.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Deep-focus close-up of wooden threshold edge hiding much of scissors and parcel in distant room; foreground/background relationship.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Deep-focus close-up of wooden threshold edge hiding much of scissors and parcel in distant room; foreground/background relationship.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 19.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Das erklärt zumindest, warum die Idee von einem Zusammenhang zwischen Raumwechsel und Erinnern so plausibel ist.
+NO VISIBLE TEXT.
+Save as 19.png; individual 16:9 image.
 
 BILD 20
-NARRATION BEAT (spoken German, DO NOT print): Und jetzt wird es konkret: Forschende haben genau diese Frage nicht nur mit Alltagsgeschichten untersucht.
 ENVIRONMENT_SCENE — Research lab establishing scene with old desktop monitors, notebooks with blank covers and chairs, realistic science setting.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Research lab establishing scene with old desktop monitors, notebooks with blank covers and chairs, realistic science setting.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Research lab establishing scene with old desktop monitors, notebooks with blank covers and chairs, realistic science setting.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 20.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Und jetzt wird es konkret: Forschende haben genau diese Frage nicht nur mit Alltagsgeschichten untersucht.
+NO VISIBLE TEXT.
+Save as 20.png; individual 16:9 image.
 
 BILD 21
-NARRATION BEAT (spoken German, DO NOT print): In frühen Experimenten bewegten sich Teilnehmende durch virtuelle Räume und mussten sich bestimmte Gegenstände merken.
 ENVIRONMENT_SCENE — 2000s desktop monitor displays virtual first-person room with unlettered shelving and physical doorway, 2D illustrated surrounding lab.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: 2000s desktop monitor displays virtual first-person room with unlettered shelving and physical doorway, 2D illustrated surrounding lab.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: 2000s desktop monitor displays virtual first-person room with unlettered shelving and physical doorway, 2D illustrated surrounding lab.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 21.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): In frühen Experimenten bewegten sich Teilnehmende durch virtuelle Räume und mussten sich bestimmte Gegenstände merken.
+NO VISIBLE TEXT.
+Save as 21.png; individual 16:9 image.
 
 BILD 22
-NARRATION BEAT (spoken German, DO NOT print): Sie hoben ein Objekt auf, stellten eines ab und liefen anschließend weiter durch die dargestellte Umgebung.
 OBJECT_FOCUS — Virtual screen close-up: blue geometric object lifted from one table while second object remains, keyboard in foreground, no words.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Virtual screen close-up: blue geometric object lifted from one table while second object remains, keyboard in foreground, no words.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Virtual screen close-up: blue geometric object lifted from one table while second object remains, keyboard in foreground, no words.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 22.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Sie hoben ein Objekt auf, stellten eines ab und liefen anschließend weiter durch die dargestellte Umgebung.
+NO VISIBLE TEXT.
+Save as 22.png; individual 16:9 image.
 
 BILD 23
-NARRATION BEAT (spoken German, DO NOT print): Manchmal blieben sie dabei im selben Raum. Manchmal gingen sie durch eine Tür in einen anderen Raum.
 COMPARE_VISUAL — Two adjacent immersive virtual-room views, same-room route versus door transition, visual comparison without labels or numbers.
-Representation rationale: Exactly two situated conditions clarify the comparison in a single coherent composition.
-Camera, focal subject, narrative evidence: Two adjacent immersive virtual-room views, same-room route versus door transition, visual comparison without labels or numbers.
-Single-scene staging: 2 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Two adjacent immersive virtual-room views, same-room route versus door transition, visual comparison without labels or numbers.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 23.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Manchmal blieben sie dabei im selben Raum. Manchmal gingen sie durch eine Tür in einen anderen Raum.
+NO VISIBLE TEXT.
+Save as 23.png; individual 16:9 image.
 
 BILD 24
-NARRATION BEAT (spoken German, DO NOT print): An bestimmten Punkten wurden sie gefragt, an welches Objekt sie sich gerade erinnern sollten.
 CHARACTER_SCENE — Approved pale-headed student participant concentrates on desktop monitor during memory task, narrow dressed torso and thin limbs.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Approved pale-headed student participant concentrates on desktop monitor during memory task, narrow dressed torso and thin limbs.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Approved pale-headed student participant concentrates on desktop monitor during memory task, narrow dressed torso and thin limbs.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 24.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): An bestimmten Punkten wurden sie gefragt, an welches Objekt sie sich gerade erinnern sollten.
+NO VISIBLE TEXT.
+Save as 24.png; individual 16:9 image.
 
 BILD 25
-NARRATION BEAT (spoken German, DO NOT print): In diesen Versuchen fiel das Erinnern nach einem Raumwechsel unter bestimmten Bedingungen schwerer.
 OBJECT_FOCUS — Top-down research desk with two colored object tokens and discrete blank answer cards, no fabricated numbers or graphs.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Top-down research desk with two colored object tokens and discrete blank answer cards, no fabricated numbers or graphs.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Top-down research desk with two colored object tokens and discrete blank answer cards, no fabricated numbers or graphs.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 25.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): In diesen Versuchen fiel das Erinnern nach einem Raumwechsel unter bestimmten Bedingungen schwerer.
+NO VISIBLE TEXT.
+Save as 25.png; individual 16:9 image.
 
 BILD 26
-NARRATION BEAT (spoken German, DO NOT print): Der wichtige Vergleich war nicht einfach Sitzen gegen Laufen. Es ging um verschiedene Arten von Ortswechsel.
 ENVIRONMENT_SCENE — Wide research workstations showing matching virtual walking distances with different room boundary context; no written overlays.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Wide research workstations showing matching virtual walking distances with different room boundary context; no written overlays.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Wide research workstations showing matching virtual walking distances with different room boundary context; no written overlays.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 26.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Der wichtige Vergleich war nicht einfach Sitzen gegen Laufen. Es ging um verschiedene Arten von Ortswechsel.
+NO VISIBLE TEXT.
+Save as 26.png; individual 16:9 image.
 
 BILD 27
-NARRATION BEAT (spoken German, DO NOT print): Spätere Untersuchungen nutzten sogar echte Räume statt nur virtuelle Umgebungen und fanden ebenfalls solche Unterschiede.
 ENVIRONMENT_SCENE — Physical university research corridor with two normal furnished rooms, plain door, boxes on tables, documentary perspective.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Physical university research corridor with two normal furnished rooms, plain door, boxes on tables, documentary perspective.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Physical university research corridor with two normal furnished rooms, plain door, boxes on tables, documentary perspective.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 27.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Spätere Untersuchungen nutzten sogar echte Räume statt nur virtuelle Umgebungen und fanden ebenfalls solche Unterschiede.
+NO VISIBLE TEXT.
+Save as 27.png; individual 16:9 image.
 
 BILD 28
-NARRATION BEAT (spoken German, DO NOT print): Das klingt fast so, als könnte jeder Türrahmen eine Gedächtnisfalle sein. Doch genau hier muss man aufpassen.
 CHARACTER_SCENE — Single approved stickman holds covered neutral box near real lab doorway, modest expression of uncertainty, observation not drama.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Single approved stickman holds covered neutral box near real lab doorway, modest expression of uncertainty, observation not drama.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Single approved stickman holds covered neutral box near real lab doorway, modest expression of uncertainty, observation not drama.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 28.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Das klingt fast so, als könnte jeder Türrahmen eine Gedächtnisfalle sein. Doch genau hier muss man aufpassen.
+NO VISIBLE TEXT.
+Save as 28.png; individual 16:9 image.
 
 BILD 29
-NARRATION BEAT (spoken German, DO NOT print): Denn im Labor ging es um gezielte Aufgaben mit gemerkten Objekten, nicht um jeden vergessenen Einkaufszettel.
 OBJECT_FOCUS — Close laboratory table holds two unlabeled shape tokens and plain blank probe cards; controlled object-recognition task.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Close laboratory table holds two unlabeled shape tokens and plain blank probe cards; controlled object-recognition task.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Close laboratory table holds two unlabeled shape tokens and plain blank probe cards; controlled object-recognition task.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 29.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Denn im Labor ging es um gezielte Aufgaben mit gemerkten Objekten, nicht um jeden vergessenen Einkaufszettel.
+NO VISIBLE TEXT.
+Save as 29.png; individual 16:9 image.
 
 BILD 30
-NARRATION BEAT (spoken German, DO NOT print): Deine Küche zu Hause ist anders. Du kennst sie, und du kannst viele andere Gedanken gleichzeitig haben.
 ENVIRONMENT_SCENE — Familiar sunny home kitchen with dishes, kettle, cupboards, magnets with no letters; authentic everyday visual clutter.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Familiar sunny home kitchen with dishes, kettle, cupboards, magnets with no letters; authentic everyday visual clutter.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Familiar sunny home kitchen with dishes, kettle, cupboards, magnets with no letters; authentic everyday visual clutter.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 30.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Deine Küche zu Hause ist anders. Du kennst sie, und du kannst viele andere Gedanken gleichzeitig haben.
+NO VISIBLE TEXT.
+Save as 30.png; individual 16:9 image.
 
 BILD 31
-NARRATION BEAT (spoken German, DO NOT print): Vielleicht hast du das Klebeband schon vergessen, bevor du überhaupt den ersten Schritt gemacht hast.
 CHARACTER_SCENE — Stickman in teal sweater gets distracted before reaching doorway, half turned toward sunlit living-room window.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Stickman in teal sweater gets distracted before reaching doorway, half turned toward sunlit living-room window.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Stickman in teal sweater gets distracted before reaching doorway, half turned toward sunlit living-room window.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 31.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Vielleicht hast du das Klebeband schon vergessen, bevor du überhaupt den ersten Schritt gemacht hast.
+NO VISIBLE TEXT.
+Save as 31.png; individual 16:9 image.
 
 BILD 32
-NARRATION BEAT (spoken German, DO NOT print): Vielleicht kommt eine Nachricht. Vielleicht springt dir im Flur ein liegen gelassener Schlüssel ins Auge.
 OBJECT_FOCUS — Lit phone showing only abstract colored notification tiles and a forgotten brass key on hallway console, no UI words.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Lit phone showing only abstract colored notification tiles and a forgotten brass key on hallway console, no UI words.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Lit phone showing only abstract colored notification tiles and a forgotten brass key on hallway console, no UI words.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 32.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Vielleicht kommt eine Nachricht. Vielleicht springt dir im Flur ein liegen gelassener Schlüssel ins Auge.
+NO VISIBLE TEXT.
+Save as 32.png; individual 16:9 image.
 
 BILD 33
-NARRATION BEAT (spoken German, DO NOT print): Die Tür kann dann Teil der Situation sein, ohne allein die Ursache für deinen Gedächtnisaussetzer zu sein.
 ENVIRONMENT_SCENE — Long hall perspective with fallen key in foreground, open kitchen doorway beyond; attention can shift before the door.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Long hall perspective with fallen key in foreground, open kitchen doorway beyond; attention can shift before the door.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Long hall perspective with fallen key in foreground, open kitchen doorway beyond; attention can shift before the door.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 33.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Die Tür kann dann Teil der Situation sein, ohne allein die Ursache für deinen Gedächtnisaussetzer zu sein.
+NO VISIBLE TEXT.
+Save as 33.png; individual 16:9 image.
 
 BILD 34
-NARRATION BEAT (spoken German, DO NOT print): Aber hier kommt die Überraschung: Neuere Forschung hat den scheinbar einfachen Tür-Effekt erneut getestet.
 ENVIRONMENT_SCENE — Modern cognitive lab showing VR headset and research equipment on desk, real doorway to one side, not a magical experiment.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Modern cognitive lab showing VR headset and research equipment on desk, real doorway to one side, not a magical experiment.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Modern cognitive lab showing VR headset and research equipment on desk, real doorway to one side, not a magical experiment.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 34.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Aber hier kommt die Überraschung: Neuere Forschung hat den scheinbar einfachen Tür-Effekt erneut getestet.
+NO VISIBLE TEXT.
+Save as 34.png; individual 16:9 image.
 
 BILD 35
-NARRATION BEAT (spoken German, DO NOT print): In einer Reihe von vier Experimenten untersuchte ein anderes Team virtuelle und echte Übergänge zwischen Bereichen.
 CHARACTER_SCENE — Two approved same-species pale-headed researchers and participant at VR station; one helps fit headset, identical thin-body anatomy.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Two approved same-species pale-headed researchers and participant at VR station; one helps fit headset, identical thin-body anatomy.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Two approved same-species pale-headed researchers and participant at VR station; one helps fit headset, identical thin-body anatomy.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 35.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): In einer Reihe von vier Experimenten untersuchte ein anderes Team virtuelle und echte Übergänge zwischen Bereichen.
+NO VISIBLE TEXT.
+Save as 35.png; individual 16:9 image.
 
 BILD 36
-NARRATION BEAT (spoken German, DO NOT print): Das Ergebnis war nicht: Türen machen Menschen grundsätzlich vergesslich. Einen durchgängig signifikanten Effekt fanden sie nicht.
 TEXT_ILLUSTRATION — Single large exact German text NICHT IMMER on simple clean transparent display by VR headset in real lab, no other lettering.
-Representation rationale: The exact short German words are necessary to teach or emphasize a key concept.
-Camera, focal subject, narrative evidence: Single large exact German text NICHT IMMER on simple clean transparent display by VR headset in real lab, no other lettering.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Single large exact German text NICHT IMMER on simple clean transparent display by VR headset in real lab, no other lettering.
-EXACT visible German text ONLY: NICHT IMMER. Do not add any other readable text.
-Output exactly 36.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Das Ergebnis war nicht: Türen machen Menschen grundsätzlich vergesslich. Einen durchgängig signifikanten Effekt fanden sie nicht.
+EXACT GERMAN TEXT: NICHT IMMER. No other visible words.
+Save as 36.png; individual 16:9 image.
 
 BILD 37
-NARRATION BEAT (spoken German, DO NOT print): Unter zusätzlicher Gedächtnisbelastung zeigte sich allerdings eine Beeinträchtigung bei einer bestimmten Erkennungsaufgabe.
 OBJECT_FOCUS — Close study equipment and several blank colored memory tokens next to VR headset; physical workload evidence without numeric claims.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Close study equipment and several blank colored memory tokens next to VR headset; physical workload evidence without numeric claims.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Close study equipment and several blank colored memory tokens next to VR headset; physical workload evidence without numeric claims.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 37.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Unter zusätzlicher Gedächtnisbelastung zeigte sich allerdings eine Beeinträchtigung bei einer bestimmten Erkennungsaufgabe.
+NO VISIBLE TEXT.
+Save as 37.png; individual 16:9 image.
 
 BILD 38
-NARRATION BEAT (spoken German, DO NOT print): Diese Einschränkung ist wichtig, weil populäre Erklärungen häufig aus einem interessanten Experiment ein Naturgesetz machen.
 COMPARE_VISUAL — Coherent two-state visual comparison of uncluttered memory test room versus demanding task desk with many handled objects, no infographic arrows.
-Representation rationale: Exactly two situated conditions clarify the comparison in a single coherent composition.
-Camera, focal subject, narrative evidence: Coherent two-state visual comparison of uncluttered memory test room versus demanding task desk with many handled objects, no infographic arrows.
-Single-scene staging: 2 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Coherent two-state visual comparison of uncluttered memory test room versus demanding task desk with many handled objects, no infographic arrows.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 38.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Diese Einschränkung ist wichtig, weil populäre Erklärungen häufig aus einem interessanten Experiment ein Naturgesetz machen.
+NO VISIBLE TEXT.
+Save as 38.png; individual 16:9 image.
 
 BILD 39
-NARRATION BEAT (spoken German, DO NOT print): Die faire Aussage lautet deshalb: Raum- und Ereigniswechsel können Erinnern beeinflussen; wie stark, hängt von Umständen ab.
 ENVIRONMENT_SCENE — Wide neutral university doorway with ordinary research objects and varied activity; cautious scientific mood, no confident symbolism.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Wide neutral university doorway with ordinary research objects and varied activity; cautious scientific mood, no confident symbolism.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Wide neutral university doorway with ordinary research objects and varied activity; cautious scientific mood, no confident symbolism.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 39.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Die faire Aussage lautet deshalb: Raum- und Ereigniswechsel können Erinnern beeinflussen; wie stark, hängt von Umständen ab.
+NO VISIBLE TEXT.
+Save as 39.png; individual 16:9 image.
 
 BILD 40
-NARRATION BEAT (spoken German, DO NOT print): Ein Türrahmen ist also kein magischer Reset-Knopf. Dein Gedächtnis reagiert auf Zusammenhänge und konkurrierende Anforderungen.
 OBJECT_FOCUS — Macro of real wooden latch and handle with detailed reflected daylight, showing ordinary boundary, no glowing reset power.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Macro of real wooden latch and handle with detailed reflected daylight, showing ordinary boundary, no glowing reset power.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Macro of real wooden latch and handle with detailed reflected daylight, showing ordinary boundary, no glowing reset power.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 40.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Ein Türrahmen ist also kein magischer Reset-Knopf. Dein Gedächtnis reagiert auf Zusammenhänge und konkurrierende Anforderungen.
+NO VISIBLE TEXT.
+Save as 40.png; individual 16:9 image.
 
 BILD 41
-NARRATION BEAT (spoken German, DO NOT print): Und das gilt nicht nur für Küchen. Denk an das, was passiert, wenn du am Computer arbeitest.
 ENVIRONMENT_SCENE — Lived-in home office establishment with laptop, blank paper corkboard, mouse, pens and large morning window, new example.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Lived-in home office establishment with laptop, blank paper corkboard, mouse, pens and large morning window, new example.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Lived-in home office establishment with laptop, blank paper corkboard, mouse, pens and large morning window, new example.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 41.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Und das gilt nicht nur für Küchen. Denk an das, was passiert, wenn du am Computer arbeitest.
+NO VISIBLE TEXT.
+Save as 41.png; individual 16:9 image.
 
 BILD 42
-NARRATION BEAT (spoken German, DO NOT print): Du suchst gerade eine wichtige Zahl in einer Tabelle und wechselst dafür in ein anderes Fenster.
 OBJECT_FOCUS — Overhead laptop spreadsheet-like grid using abstract colored blank cells; hand near touchpad, no readable UI.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Overhead laptop spreadsheet-like grid using abstract colored blank cells; hand near touchpad, no readable UI.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Overhead laptop spreadsheet-like grid using abstract colored blank cells; hand near touchpad, no readable UI.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 42.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Du suchst gerade eine wichtige Zahl in einer Tabelle und wechselst dafür in ein anderes Fenster.
+NO VISIBLE TEXT.
+Save as 42.png; individual 16:9 image.
 
 BILD 43
-NARRATION BEAT (spoken German, DO NOT print): Dort siehst du plötzlich eine E-Mail. Du liest den Betreff, antwortest kurz und öffnest noch einen Tab.
 OBJECT_FOCUS — Side-angle laptop with generic envelope-shaped message tile floating in screen layout, coffee mug and keyboard, zero text.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Side-angle laptop with generic envelope-shaped message tile floating in screen layout, coffee mug and keyboard, zero text.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Side-angle laptop with generic envelope-shaped message tile floating in screen layout, coffee mug and keyboard, zero text.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 43.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Dort siehst du plötzlich eine E-Mail. Du liest den Betreff, antwortest kurz und öffnest noch einen Tab.
+NO VISIBLE TEXT.
+Save as 43.png; individual 16:9 image.
 
 BILD 44
-NARRATION BEAT (spoken German, DO NOT print): Jetzt starrst du auf den Bildschirm und überlegst: Welche Zahl wollte ich eigentlich nachschlagen?
 CHARACTER_SCENE — Approved stickman in mustard narrow top stares at open laptop with confused paused hands, no readable software labels.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Approved stickman in mustard narrow top stares at open laptop with confused paused hands, no readable software labels.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Approved stickman in mustard narrow top stares at open laptop with confused paused hands, no readable software labels.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 44.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Jetzt starrst du auf den Bildschirm und überlegst: Welche Zahl wollte ich eigentlich nachschlagen?
+NO VISIBLE TEXT.
+Save as 44.png; individual 16:9 image.
 
 BILD 45
-NARRATION BEAT (spoken German, DO NOT print): Hier gibt es keinen echten Türrahmen. Aber dein Arbeitskontext ist trotzdem mehrmals gewechselt.
 ENVIRONMENT_SCENE — Over-shoulder desk with overlapping abstract app windows on laptop; one work focus partly obscured by another window.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Over-shoulder desk with overlapping abstract app windows on laptop; one work focus partly obscured by another window.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Over-shoulder desk with overlapping abstract app windows on laptop; one work focus partly obscured by another window.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 45.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Hier gibt es keinen echten Türrahmen. Aber dein Arbeitskontext ist trotzdem mehrmals gewechselt.
+NO VISIBLE TEXT.
+Save as 45.png; individual 16:9 image.
 
 BILD 46
-NARRATION BEAT (spoken German, DO NOT print): Das ist keine Garantie für denselben Laboreffekt, aber ein gutes Bild dafür, warum Übergänge Aufmerksamkeit kosten können.
 OBJECT_FOCUS — Close-up of colored task cards stacked askew over original blue card on physical desk, context interference grounded in objects.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Close-up of colored task cards stacked askew over original blue card on physical desk, context interference grounded in objects.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Close-up of colored task cards stacked askew over original blue card on physical desk, context interference grounded in objects.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 46.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Das ist keine Garantie für denselben Laboreffekt, aber ein gutes Bild dafür, warum Übergänge Aufmerksamkeit kosten können.
+NO VISIBLE TEXT.
+Save as 46.png; individual 16:9 image.
 
 BILD 47
-NARRATION BEAT (spoken German, DO NOT print): Und noch etwas ist überraschend: Solche Wechsel sind nicht grundsätzlich schlecht für unser Denken.
 ENVIRONMENT_SCENE — Bright complete workspace: closed binder, neatly stacked papers, switched-off lamp and clean desk, restful task completion.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Bright complete workspace: closed binder, neatly stacked papers, switched-off lamp and clean desk, restful task completion.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Bright complete workspace: closed binder, neatly stacked papers, switched-off lamp and clean desk, restful task completion.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 47.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Und noch etwas ist überraschend: Solche Wechsel sind nicht grundsätzlich schlecht für unser Denken.
+NO VISIBLE TEXT.
+Save as 47.png; individual 16:9 image.
 
 BILD 48
-NARRATION BEAT (spoken German, DO NOT print): Wenn du eine abgeschlossene Aufgabe hinter dir lässt, kann ein klarer Abschnitt helfen, dich neu zu orientieren.
 CHARACTER_SCENE — Approved stickman leaves finished desk calmly toward sunlit window, open posture, sense of purposeful new task.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Approved stickman leaves finished desk calmly toward sunlit window, open posture, sense of purposeful new task.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Approved stickman leaves finished desk calmly toward sunlit window, open posture, sense of purposeful new task.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 48.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Wenn du eine abgeschlossene Aufgabe hinter dir lässt, kann ein klarer Abschnitt helfen, dich neu zu orientieren.
+NO VISIBLE TEXT.
+Save as 48.png; individual 16:9 image.
 
 BILD 49
-NARRATION BEAT (spoken German, DO NOT print): Problematisch wird es vor allem, wenn ein noch offenes Vorhaben ohne Erinnerungshilfe von anderen Reizen verdrängt wird.
 OBJECT_FOCUS — Partially unfinished envelope physically covered by grocery bags and other tasks on side table, dominant object relationship.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Partially unfinished envelope physically covered by grocery bags and other tasks on side table, dominant object relationship.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Partially unfinished envelope physically covered by grocery bags and other tasks on side table, dominant object relationship.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 49.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Problematisch wird es vor allem, wenn ein noch offenes Vorhaben ohne Erinnerungshilfe von anderen Reizen verdrängt wird.
+NO VISIBLE TEXT.
+Save as 49.png; individual 16:9 image.
 
 BILD 50
-NARRATION BEAT (spoken German, DO NOT print): Zurück zum Wohnzimmer: Der aufgerissene Karton liegt noch da. Das fehlende Klebeband wartet in der Küche.
 ENVIRONMENT_SCENE — Return to same oak parcel table in living room; torn shipping box unchanged, black scissors, empty tape spot, kitchen beyond.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Return to same oak parcel table in living room; torn shipping box unchanged, black scissors, empty tape spot, kitchen beyond.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Return to same oak parcel table in living room; torn shipping box unchanged, black scissors, empty tape spot, kitchen beyond.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 50.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Zurück zum Wohnzimmer: Der aufgerissene Karton liegt noch da. Das fehlende Klebeband wartet in der Küche.
+NO VISIBLE TEXT.
+Save as 50.png; individual 16:9 image.
 
 BILD 51
-NARRATION BEAT (spoken German, DO NOT print): Du könntest jetzt zehnmal zwischen beiden Räumen hin und her laufen und dich jedes Mal ärgern.
 CHARACTER_SCENE — Teal sweater stickman in hallway looks annoyed, raised shoulders and head turning between kitchen and parcel room.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Teal sweater stickman in hallway looks annoyed, raised shoulders and head turning between kitchen and parcel room.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Teal sweater stickman in hallway looks annoyed, raised shoulders and head turning between kitchen and parcel room.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 51.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Du könntest jetzt zehnmal zwischen beiden Räumen hin und her laufen und dich jedes Mal ärgern.
+NO VISIBLE TEXT.
+Save as 51.png; individual 16:9 image.
 
 BILD 52
-NARRATION BEAT (spoken German, DO NOT print): Du kannst aber auch etwas Einfacheres versuchen: Sag dir vor dem Aufstehen bewusst, was du holen willst.
 CHARACTER_SCENE — At parcel table stickman pauses with finger against light oval chin before standing, deliberate memory strategy.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: At parcel table stickman pauses with finger against light oval chin before standing, deliberate memory strategy.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: At parcel table stickman pauses with finger against light oval chin before standing, deliberate memory strategy.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 52.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Du kannst aber auch etwas Einfacheres versuchen: Sag dir vor dem Aufstehen bewusst, was du holen willst.
+NO VISIBLE TEXT.
+Save as 52.png; individual 16:9 image.
 
 BILD 53
-NARRATION BEAT (spoken German, DO NOT print): Nicht nur: Ich gehe mal kurz rüber. Sondern: Ich hole das Klebeband für den Karton.
 OBJECT_FOCUS — Close-up of narrow stick hand touching parcel flap while other points toward kitchen through real doorway, no speech bubble.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Close-up of narrow stick hand touching parcel flap while other points toward kitchen through real doorway, no speech bubble.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Close-up of narrow stick hand touching parcel flap while other points toward kitchen through real doorway, no speech bubble.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 53.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Nicht nur: Ich gehe mal kurz rüber. Sondern: Ich hole das Klebeband für den Karton.
+NO VISIBLE TEXT.
+Save as 53.png; individual 16:9 image.
 
 BILD 54
-NARRATION BEAT (spoken German, DO NOT print): Damit verknüpfst du den Weg gedanklich noch einmal mit der konkreten Handlung, die danach folgen soll.
 ENVIRONMENT_SCENE — Continuous hallway view connecting torn parcel table to kitchen cabinets, practical direct path and lighting gradient.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Continuous hallway view connecting torn parcel table to kitchen cabinets, practical direct path and lighting gradient.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Continuous hallway view connecting torn parcel table to kitchen cabinets, practical direct path and lighting gradient.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 54.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Damit verknüpfst du den Weg gedanklich noch einmal mit der konkreten Handlung, die danach folgen soll.
+NO VISIBLE TEXT.
+Save as 54.png; individual 16:9 image.
 
 BILD 55
-NARRATION BEAT (spoken German, DO NOT print): Eine zweite Möglichkeit ist, dir einen auffälligen Hinweis zu geben, bevor du den Raum verlässt.
 OBJECT_FOCUS — Low-angle packing table showing an obvious empty slot beside twine where a reminder tool can be placed, doorway blurred.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Low-angle packing table showing an obvious empty slot beside twine where a reminder tool can be placed, doorway blurred.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Low-angle packing table showing an obvious empty slot beside twine where a reminder tool can be placed, doorway blurred.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 55.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Eine zweite Möglichkeit ist, dir einen auffälligen Hinweis zu geben, bevor du den Raum verlässt.
+NO VISIBLE TEXT.
+Save as 55.png; individual 16:9 image.
 
 BILD 56
-NARRATION BEAT (spoken German, DO NOT print): Lege etwa die Schere an den Rand des Tisches, wo sie dich später an die Reparatur erinnert.
 OBJECT_FOCUS — Distinct black-handled scissors deliberately positioned at oak table edge next to torn parcel, sharp foreground focus.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Distinct black-handled scissors deliberately positioned at oak table edge next to torn parcel, sharp foreground focus.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Distinct black-handled scissors deliberately positioned at oak table edge next to torn parcel, sharp foreground focus.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 56.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Lege etwa die Schere an den Rand des Tisches, wo sie dich später an die Reparatur erinnert.
+NO VISIBLE TEXT.
+Save as 56.png; individual 16:9 image.
 
 BILD 57
-NARRATION BEAT (spoken German, DO NOT print): Oder notiere ein einziges Wort auf einem Zettel, wenn du mehrere offene Aufgaben gleichzeitig jonglierst.
 TEXT_ILLUSTRATION — Single large exact German word KLEBEBAND clearly handwritten on one large note by scissors and parcel; no other text.
-Representation rationale: The exact short German words are necessary to teach or emphasize a key concept.
-Camera, focal subject, narrative evidence: Single large exact German word KLEBEBAND clearly handwritten on one large note by scissors and parcel; no other text.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Single large exact German word KLEBEBAND clearly handwritten on one large note by scissors and parcel; no other text.
-EXACT visible German text ONLY: KLEBEBAND. Do not add any other readable text.
-Output exactly 57.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Oder notiere ein einziges Wort auf einem Zettel, wenn du mehrere offene Aufgaben gleichzeitig jonglierst.
+EXACT GERMAN TEXT: KLEBEBAND. No other visible words.
+Save as 57.png; individual 16:9 image.
 
 BILD 58
-NARRATION BEAT (spoken German, DO NOT print): Das sind praktische Strategien zur Erinnerungshilfe, keine garantierten Tricks, mit denen jede Türwirkung verschwindet.
 ENVIRONMENT_SCENE — Kitchen view from doorway with discrete packing reminder still visible far behind in living room, practical yet uncertain.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Kitchen view from doorway with discrete packing reminder still visible far behind in living room, practical yet uncertain.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Kitchen view from doorway with discrete packing reminder still visible far behind in living room, practical yet uncertain.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 58.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Das sind praktische Strategien zur Erinnerungshilfe, keine garantierten Tricks, mit denen jede Türwirkung verschwindet.
+NO VISIBLE TEXT.
+Save as 58.png; individual 16:9 image.
 
 BILD 59
-NARRATION BEAT (spoken German, DO NOT print): Und falls du trotzdem einmal in der Küche stehst und nichts mehr weißt, musst du nicht verzweifeln.
 CHARACTER_SCENE — Teal stickman stands quietly in kitchen with relaxed thinking pose near cupboard, not rummaging frantically.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Teal stickman stands quietly in kitchen with relaxed thinking pose near cupboard, not rummaging frantically.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Teal stickman stands quietly in kitchen with relaxed thinking pose near cupboard, not rummaging frantically.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 59.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Und falls du trotzdem einmal in der Küche stehst und nichts mehr weißt, musst du nicht verzweifeln.
+NO VISIBLE TEXT.
+Save as 59.png; individual 16:9 image.
 
 BILD 60
-NARRATION BEAT (spoken German, DO NOT print): Schau nicht hektisch in jede Schublade. Frag dich lieber: Was habe ich unmittelbar davor gerade getan?
 CHARACTER_SCENE — Same stickman pauses by closed drawer, asking silently what happened before entering, hand against chin, coherent home location.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Same stickman pauses by closed drawer, asking silently what happened before entering, hand against chin, coherent home location.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Same stickman pauses by closed drawer, asking silently what happened before entering, hand against chin, coherent home location.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 60.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Schau nicht hektisch in jede Schublade. Frag dich lieber: Was habe ich unmittelbar davor gerade getan?
+NO VISIBLE TEXT.
+Save as 60.png; individual 16:9 image.
 
 BILD 61
-NARRATION BEAT (spoken German, DO NOT print): Der letzte sichtbare Schritt, der Karton oder das Werkzeug kann helfen, den ursprünglichen Zusammenhang wieder aufzubauen.
 OBJECT_FOCUS — Close parcel lip with incomplete fold, missing tape imprint and recognizable black scissors; concrete remembered prior task.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Close parcel lip with incomplete fold, missing tape imprint and recognizable black scissors; concrete remembered prior task.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Close parcel lip with incomplete fold, missing tape imprint and recognizable black scissors; concrete remembered prior task.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 61.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Der letzte sichtbare Schritt, der Karton oder das Werkzeug kann helfen, den ursprünglichen Zusammenhang wieder aufzubauen.
+NO VISIBLE TEXT.
+Save as 61.png; individual 16:9 image.
 
 BILD 62
-NARRATION BEAT (spoken German, DO NOT print): Manchmal hilft es auch, gedanklich zum Ausgangspunkt zurückzugehen, statt einfach noch mehr neue Reize aufzunehmen.
 CHARACTER_SCENE — Over-shoulder stickman from kitchen looks toward familiar living-room table through doorway; thoughtful attempt to recall context.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Over-shoulder stickman from kitchen looks toward familiar living-room table through doorway; thoughtful attempt to recall context.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Over-shoulder stickman from kitchen looks toward familiar living-room table through doorway; thoughtful attempt to recall context.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 62.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Manchmal hilft es auch, gedanklich zum Ausgangspunkt zurückzugehen, statt einfach noch mehr neue Reize aufzunehmen.
+NO VISIBLE TEXT.
+Save as 62.png; individual 16:9 image.
 
 BILD 63
-NARRATION BEAT (spoken German, DO NOT print): Die Forschung zeigt allerdings nicht, dass echtes Zurücklaufen immer zuverlässig die Erinnerung wiederherstellt.
 ENVIRONMENT_SCENE — Long corridor view from kitchen showing parcel partly visible in adjacent room; no miraculous reset or guaranteed recovery imagery.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Long corridor view from kitchen showing parcel partly visible in adjacent room; no miraculous reset or guaranteed recovery imagery.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Long corridor view from kitchen showing parcel partly visible in adjacent room; no miraculous reset or guaranteed recovery imagery.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 63.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Die Forschung zeigt allerdings nicht, dass echtes Zurücklaufen immer zuverlässig die Erinnerung wiederherstellt.
+NO VISIBLE TEXT.
+Save as 63.png; individual 16:9 image.
 
 BILD 64
-NARRATION BEAT (spoken German, DO NOT print): Genau das macht die Sache spannender: Unser Kopf arbeitet nicht wie eine Liste, die nur am falschen Ort liegt.
 OBJECT_FOCUS — Study desk with a useful object card partly hidden under several ordinary blank cards; retrieval competition, no faux statistics.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Study desk with a useful object card partly hidden under several ordinary blank cards; retrieval competition, no faux statistics.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Study desk with a useful object card partly hidden under several ordinary blank cards; retrieval competition, no faux statistics.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 64.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Genau das macht die Sache spannender: Unser Kopf arbeitet nicht wie eine Liste, die nur am falschen Ort liegt.
+NO VISIBLE TEXT.
+Save as 64.png; individual 16:9 image.
 
 BILD 65
-NARRATION BEAT (spoken German, DO NOT print): Er verbindet Gedanken mit Situationen, Aufgaben und dem, worauf wir in einem bestimmten Augenblick achten.
 ENVIRONMENT_SCENE — Elevated coherent view of two household activity zones, packing supplies on table and kitchen tools on counter, real architecture.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Elevated coherent view of two household activity zones, packing supplies on table and kitchen tools on counter, real architecture.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Elevated coherent view of two household activity zones, packing supplies on table and kitchen tools on counter, real architecture.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 65.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Er verbindet Gedanken mit Situationen, Aufgaben und dem, worauf wir in einem bestimmten Augenblick achten.
+NO VISIBLE TEXT.
+Save as 65.png; individual 16:9 image.
 
 BILD 66
-NARRATION BEAT (spoken German, DO NOT print): Denk noch einmal an deinen Weg vom Wohnzimmer in die Küche. Es fehlte nicht plötzlich deine ganze Erinnerung.
 OBJECT_FOCUS — A hand returns parcel flap to its prior folded position, familiar action cues evident in detailed tactile illustration.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: A hand returns parcel flap to its prior folded position, familiar action cues evident in detailed tactile illustration.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: A hand returns parcel flap to its prior folded position, familiar action cues evident in detailed tactile illustration.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 66.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Denk noch einmal an deinen Weg vom Wohnzimmer in die Küche. Es fehlte nicht plötzlich deine ganze Erinnerung.
+NO VISIBLE TEXT.
+Save as 66.png; individual 16:9 image.
 
 BILD 67
-NARRATION BEAT (spoken German, DO NOT print): Dir fehlte nur der Zugriff auf einen winzigen Plan: Ich will den Karton mit Klebeband schließen.
 ENVIRONMENT_SCENE — Cinematic wide continuous living room to kitchen perspective with lone approved stickman at threshold and open parcel far behind.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Cinematic wide continuous living room to kitchen perspective with lone approved stickman at threshold and open parcel far behind.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Cinematic wide continuous living room to kitchen perspective with lone approved stickman at threshold and open parcel far behind.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 67.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Dir fehlte nur der Zugriff auf einen winzigen Plan: Ich will den Karton mit Klebeband schließen.
+NO VISIBLE TEXT.
+Save as 67.png; individual 16:9 image.
 
 BILD 68
-NARRATION BEAT (spoken German, DO NOT print): Wenn du den Zusammenhang bewahrst, gibst du diesem Plan bessere Chancen, dich durch den Ortswechsel zu begleiten.
 CHARACTER_SCENE — Same stickman in kitchen turns deliberately toward drawer, now focused on red tape roll partly visible beside utensils.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Same stickman in kitchen turns deliberately toward drawer, now focused on red tape roll partly visible beside utensils.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Same stickman in kitchen turns deliberately toward drawer, now focused on red tape roll partly visible beside utensils.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 68.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Wenn du den Zusammenhang bewahrst, gibst du diesem Plan bessere Chancen, dich durch den Ortswechsel zu begleiten.
+NO VISIBLE TEXT.
+Save as 68.png; individual 16:9 image.
 
 BILD 69
-NARRATION BEAT (spoken German, DO NOT print): Und wenn du ihn trotzdem vergisst, ist das kein Beweis dafür, dass eine Tür deinen Kopf ausgeschaltet hat.
 OBJECT_FOCUS — Macro of red tape roll being picked up; neutral shelf and scissors far behind through doorway, no symbols.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Macro of red tape roll being picked up; neutral shelf and scissors far behind through doorway, no symbols.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Macro of red tape roll being picked up; neutral shelf and scissors far behind through doorway, no symbols.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 69.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Und wenn du ihn trotzdem vergisst, ist das kein Beweis dafür, dass eine Tür deinen Kopf ausgeschaltet hat.
+NO VISIBLE TEXT.
+Save as 69.png; individual 16:9 image.
 
 BILD 70
-NARRATION BEAT (spoken German, DO NOT print): Es zeigt eher, wie viel unser Gedächtnis im Hintergrund sortieren muss, während der Alltag weiterläuft.
 ENVIRONMENT_SCENE — Evening domestic room with sealed parcel and lamplight, world keeps moving around small ordinary memories.
-Representation rationale: The place, lighting and distribution of activity cues make the context or consequence visibly concrete.
-Camera, focal subject, narrative evidence: Evening domestic room with sealed parcel and lamplight, world keeps moving around small ordinary memories.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Evening domestic room with sealed parcel and lamplight, world keeps moving around small ordinary memories.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 70.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Es zeigt eher, wie viel unser Gedächtnis im Hintergrund sortieren muss, während der Alltag weiterläuft.
+NO VISIBLE TEXT.
+Save as 70.png; individual 16:9 image.
 
 BILD 71
-NARRATION BEAT (spoken German, DO NOT print): Die nächste Tür ist also nicht dein Feind. Entscheidend ist, welchen Gedanken du mit hindurchnehmen willst.
 CHARACTER_SCENE — Single stickman crosses normal doorway with purposeful calm posture, focused glance toward taped parcel beyond.
-Representation rationale: The character's observable intention, attention or reaction is the causal evidence, not a decorative mascot.
-Camera, focal subject, narrative evidence: Single stickman crosses normal doorway with purposeful calm posture, focused glance toward taped parcel beyond.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Single stickman crosses normal doorway with purposeful calm posture, focused glance toward taped parcel beyond.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-STRICT species cue: same light/white oval-head stickman, tiny black oval eyes, narrow clothed torso, very thin dark stick-limbs; if multiple people share this image they use identical base anatomy. No normal cartoon-human bodies.
-Output exactly 71.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Die nächste Tür ist also nicht dein Feind. Entscheidend ist, welchen Gedanken du mit hindurchnehmen willst.
+NO VISIBLE TEXT.
+Save as 71.png; individual 16:9 image.
 
 BILD 72
-NARRATION BEAT (spoken German, DO NOT print): Und jetzt: Weißt du noch, was auf unserem Wohnzimmertisch gefehlt hat? Genau. Das Klebeband.
 OBJECT_FOCUS — Hero macro: distinctive red Klebeband roll rests beside repaired brown cardboard parcel and black scissors, warm satisfying payoff.
-Representation rationale: The focal object and its relationship to prior and current tasks explain this speech beat without adding people.
-Camera, focal subject, narrative evidence: Hero macro: distinctive red Klebeband roll rests beside repaired brown cardboard parcel and black scissors, warm satisfying payoff.
-Single-scene staging: 1 coherent state(s) maximum. This BILD materially changes the focal subject, action, setting, camera or object state from its neighbors: Hero macro: distinctive red Klebeband roll rests beside repaired brown cardboard parcel and black scissors, warm satisfying payoff.
-NO VISIBLE TEXT. No accidental UI, signage, packaging or decorative lettering.
-Output exactly 72.png (standalone 1920×1080 PNG).
+Spoken beat (for timing, NOT visible text): Und jetzt: Weißt du noch, was auf unserem Wohnzimmertisch gefehlt hat? Genau. Das Klebeband.
+NO VISIBLE TEXT.
+Save as 72.png; individual 16:9 image.
 
-FINAL HANDOFF
-The ONLY user STOP is the thumbnail choice. After that, generate WITHOUT ASKING in five-image batches, validate each missing/failed scene and regenerate individually, delete rejected covers only after selection, and verify the flat 03-bilder/ folder contains exactly 01.png–72.png plus separate 05-export/thumbnail.png. FINAL QA counts real PNG files and verifies 16:9, visual-world species and no unplanned text. If not verifiable, report a blocker instead of DONE.
+FINAL QA — After the SINGLE cover-choice STOP, continue WITHOUT ASKING in five-image batches. Regenerate every missing/invalid BILD individually. Verify exactly the 72 flat files 03-bilder/01.png–72.png plus independent 05-export/thumbnail.png; delete both rejected thumbnail candidates ONLY after approval. No duplicate images, extra subfolders, contact sheets, unplanned text or human-species drift. Never report DONE until actually checked.
