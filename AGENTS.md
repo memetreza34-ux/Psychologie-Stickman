@@ -6,6 +6,12 @@ Vor Änderungen zuerst `CHANGE_CONTROL_LOCK.md` lesen.
 
 Ein neuer Chat startet read-only. Schreiben nur bei ausdrücklicher aktueller Nutzerfreigabe und nur im genannten Scope.
 
+## PRIORITAET 1 — nach jedem Video messbar besser werden (HARD PROCESS)
+
+`CONTINUOUS_IMPROVEMENT_P1_V1` aus `rules/GROWTH_LEARNING_LOOP.md` ist die hoechste operative Optimierungsprioritaet fuer Kopfarium. Vor jedem neuen Video zuerst die letzten Erkenntnisse/Experimente pruefen, mindestens eine konkrete Verbesserungshypothese mit messbarem Signal in `99-intern/learning-review.md` dokumentieren und im Folgevideo anwenden. Nach jedem Upload (soweit Daten vorliegen) Messungen nach etwa 48h, 7d und 28d, Ursachenanalyse, naechste Massnahme und spaetere Erfolgskontrolle dokumentieren. Fehlende Analytics ehrlich als NO_DATA markieren und nicht zum Produktionsblocker machen. Auch jeden Flow-/Audio-/Renderfehler als Lernchance nachverfolgen.
+
+Keine Erfolgsgarantien, keine erfundenen Metriken. Die aktive Bildwelt, Topic-Uniqueness und Change-Control bleiben unveraendert bindend.
+
 ## Danach lesen
 
 1. `CANONICAL_RULES.md`
