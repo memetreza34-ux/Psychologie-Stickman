@@ -139,6 +139,10 @@ Text: groß, kurz, phone-readable; keine Mini-Absätze.
 
 Pacing: einfache Objekt-/Textbilder nicht künstlich sehr lange halten. Wenn der Voice-Beat zu lang ist, einen zweiten konkreten Visual Beat planen statt zufällige Bewegung hinzuzufügen.
 
+## Phase-1-Abschluss — ZWEI GITHUB-DIREKTLINKS (HARD)
+
+Bindend: `PHASE1_TABLET_HANDOFF_LINKS_V1` aus `rules/PHASE1_HANDOFF_LINKS.md`. Nach JEDER fertiggestellten Phase 1 die beiden finalen Dateien im konkreten YouTube-Projekt auf GitHub committen und deren Existenz auf der verlinkten Branch pruefen. **In derselben Chat-Abschlussantwort IMMER zwei separate klickbare Links anbieten:** (1) `02-google-flow/google-flow-prompt.txt` mit allen Google-Flow-Bildprompts und (2) `01-script/script.txt` mit dem gesamten finalen Sprechertext. Direkte GitHub-Datei-URLs statt Repo-Root oder Ordnerlinks, tabletfreundlich zum Oeffnen/Kopieren. Wenn eine Datei noch nicht vorhanden, unvollstaendig oder nicht gepusht ist, Phase 1 NICHT als fertig melden und keinen fiktiven Link ausgeben.
+
 ## Google Flow — Struktur
 
 Pro Video genau:
