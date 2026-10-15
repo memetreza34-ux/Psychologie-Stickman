@@ -1,0 +1,49 @@
+{
+  "policy": "LONGFORM_STORY_RETENTION_V1",
+  "status": "APPROVED",
+  "targetWords": {
+    "min": 850,
+    "max": 1100
+  },
+  "wordCountJustification": "Die 1141 gesprochenen Wörter liegen 41 über dem regulären Zielbereich, um die widersprüchlichen Studienergebnisse und die vorsichtige Interpretation verständlich unterzubringen. Bei dem repoüblichen nachbearbeiteten 1,10× Voice-over wird eine Laufzeit um 6:40 Minuten angepeilt; die endgültige Länge muss nach der tatsächlichen Aufnahme gemessen werden.",
+  "structure": {
+    "hook": "Im ersten Satz wird der Film-Konflikt aus dem Alltag sichtbar: eine Person geht wegen Klebeband in die Küche und vergisst beim Ankommen ihr Vorhaben. Sofortige Identifikation statt Intro.",
+    "introduction": "Die Erklärung Türschwellen-Effekt kommt bis Szene 5. Ein aufgerissener Versandkarton und fehlendes rotes Klebeband liefern ein klares durchgehendes Fallbeispiel; eine Tür ist kein magischer Gedächtnislöscher.",
+    "mainPart": "Zeige Kontextwechsel und das Modell mentaler Ereignisabschnitte mit konkreten Haushaltsreizen. Erzähle den virtuellen Objektgedächtnis-Versuch, anschließend echte Räume. Im Mittelteil Gegenprüfung mit vier Versuchen ohne durchgehend signifikanten Effekt und die besondere Rolle zusätzlicher Gedächtnisbelastung. Zweites substanzielles Beispiel Büro/Tabwechsel, dann vorsichtige konkrete Erinnerungshilfen.",
+    "conclusion": "Spoken callback kehrt zu Wohnzimmer, Küche und Klebeband zurück, unterscheidet Abrufproblem von magischer Löschung und schließt mit einer prägnanten Publikumsfrage samt Antwort."
+  },
+  "narrativeSpine": {
+    "anchorPhrase": "Du gehst in die Küche, um Klebeband zu holen.",
+    "callbackPhrase": "Denk noch einmal an deinen Weg vom Wohnzimmer in die Küche."
+  },
+  "research": {
+    "mode": "STORY_FIRST_SOURCES_SECOND",
+    "spokenResearchNames": [],
+    "notes": "Grundstudie 2006 doi:10.3758/BF03193261, Erweiterungen 2011 doi:10.1080/17470218.2011.571267, Nuance 2021 doi:10.1186/s40359-021-00536-3. Virtuelle und reale Raumübergänge zeigten in einigen früheren Experimenten Verschlechterungen des Objektabrufs. Eine Vier-Experimente-Studie 2021 fand keinen robusten allgemeinen Effekt, mit einem Effekt unter Arbeitsgedächtnisbelastung in spezifischer signal-detection Auswertung. KEINE universelle Ursache, keine statistischen Zahlenspiele."
+  },
+  "examples": {
+    "substantialExamples": [
+      "Durchgehende Versandkarton-/Klebeband-Geschichte: Wohnzimmertisch, Gang über Türschwelle, Küchenablenkung, Wiederherstellung eines gedanklichen Handlungsplans, konkreter Callback.",
+      "Original-Labor-Objektgedächtnis in virtuellen und realen Räumen und Gegenprüfung 2021 mit VR und realen Szenen (mit methodischer Unterscheidung).",
+      "Zweites zusammenhängendes Alltagsszenario: Zahl in Excel-ähnlicher Tabelle suchen, durch E-Mail und weitere Tabs abgelenkt werden, Erinnerung an ursprüngliche Absicht verlieren."
+    ],
+    "synthesisAfterExampleRuns": "Statt einer Aufzählung zahlreicher Minibeispiele verbinden Türschwellenmodell, kontrollierte Experiment-Bedingungen und digitaler Kontextwechsel dieselbe Kernfrage. Der praktische Abschnitt kehrt konsequent zum Paket zurück."
+  },
+  "retention": {
+    "midpointReengagementPhrase": "Aber hier kommt die Überraschung:",
+    "technique": "Reversal: Eine neue Vier-Experimente-Untersuchung relativiert die plakative Alles-vergessen-Tür-Behauptung; Zuschauer erhalten unerwartete wissenschaftliche Nuance im Mittelteil."
+  },
+  "ending": {
+    "practicalTakeaway": "Eine konkrete Aufgabe vor dem Wechsel bewusst benennen; sichtbare Hinweise wie Schere/Notiz nutzen; bei Erinnerungslücke die unmittelbar vorherige Handlung rekonstruieren. Keine experimentell garantierten Heiltricks versprechen.",
+    "finalLine": "Und jetzt: Weißt du noch, was auf unserem Wohnzimmertisch gefehlt hat? Genau. Das Klebeband."
+  },
+  "qa": {
+    "namedResearchersSpokenCount": 0,
+    "yearMentionsSpokenCount": 0,
+    "maxConsecutiveNamedResearchBlocks": 1,
+    "maxConsecutiveMicroExamples": 2,
+    "deepExampleCount": 3
+  },
+  "topicId": "tuerschwellen-effekt",
+  "criticalUncertainty": "Die 2021er Studie beobachtete insgesamt keinen signifikanten generellen Türschwellen-Effekt, in einem Teiltest aber einen Effekt unter erhöhter Arbeitsgedächtnislast. Beide Befunde im Voice-over korrekt voneinander getrennt."
+}
