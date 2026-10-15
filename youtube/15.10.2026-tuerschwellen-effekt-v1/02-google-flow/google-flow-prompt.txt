@@ -1,0 +1,476 @@
+GOOGLE FLOW MASTER PROMPT — KOPFARIUM / YOUTUBE LONGFORM
+TOPIC: Doorway Effect / Türschwellen-Effekt (why you forget what you wanted in another room)
+FORMAT: 16:9 / 1920x1080 / separate high-quality PNG illustrations
+TARGET: 6–7 minutes
+VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
+VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
+FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
+
+GOAL
+Create one consistent cinematic hand-illustrated German psychology episode, one distinct image for each numbered BILD. Use 3 SEPARATE thumbnail candidates before the video images. Do not create animations, storyboards, contact sheets, comics, 3-/4-panel boards or one merged collage. Each BILD number is one separate standalone 16:9 PNG. Keep each scene understandable within about five seconds even on a phone.
+
+ACTIVE VISUAL WORLD — HARD
+Same approved Psychology Stickman World in ALL frames: premium hand-drawn 2D illustrated story world, slightly organic dark contour lines, clean cinematic outlines, soft cel shading, tactile illustrated texture, natural clear colors and grounded spatial depth. Surfaces must feel painted by the same illustrator, NOT flat school graphics. Colors, lighting, camera distance and setting adapt to the scene: warmer living room, cooler kitchen, authentic science lab and contemporary home office. No fixed monotonous beige template, no repeated centered diagram cards.
+Characters when narratively necessary: exact same approved stickman species with oversized light/white rounded or soft-oval head, tiny black oval eyes, understated mouth and eyebrows, narrow simplified clothed torso, VERY thin dark stick-like arms and legs, minimal hands/shoes. Same-frame species lock: ALL visible humans share identical pale head base, torso proportions and limb thickness; hairstyle and clothing may differ but never introduce normal cartoon-human anatomy. Never generate human-skinned orange emoji heads, bulky shoulders, thighs, Pixar or chibi bodies.
+No permanent mascot. The main storytelling stickman wears a teal slim sweater and appears only in action/reaction scenes about the parcel and kitchen; a mustard slim top distinguishes the computer-work example. Object-led and environment-led beats do NOT need people.
+
+STORY CONTINUITY — HARD
+Narrative anchor: brown torn shipping parcel, black-handled scissors and missing bright red tape roll on an oak living-room table. The main approved teal-sweater stickman walks through a real wooden hallway door into the familiar kitchen and momentarily loses the task cue. The same home, table, scissors and tape recur with changed camera, role, object state and lighting. Scientists and VR scenes are clearly illustrated representations of experiments, NEVER real documentary footage. Later separate home-office example uses mustard-clothed stickman. End by returning to the original parcel and red tape.
+Representation first: decide whether CHARACTER_SCENE, OBJECT_FOCUS, ENVIRONMENT_SCENE, COMPARE_VISUAL or TEXT_ILLUSTRATION best explains the words. People are optional. All scenes must show concrete visible evidence rather than decorative figures, floating brains, magical portals or thought ghosts.
+MOTIF PROGRESSION: returning parcel, doorway or kitchen is allowed ONLY when its state, action, relation, scale or viewpoint materially progresses. Never repeat 3 similar motifs with identical staging. Maximum 2 distinct states/panels in one BILD; NO 3-/4-panel storyboards. Compare scenes depict at most two clear real-world conditions. Schemas, if any, show one mechanism, max 3 major elements. Main focal content must be mobile readable.
+
+EXACT TEXT RULE
+ZERO READABLE TEXT by default in video images. Do not invent English, German, UI, packaging, calendar, book, laptop, shirt or lab annotations. No gibberish. A few explicitly named BILD numbers below allow ONE exact German phrase; those words must be exactly legible, relatively large and natural in the illustrated world. No other letters/words. If text accidentally appears, FAIL and regenerate that BILD only. Text in the separate thumbnail is allowed only as specified.
+
+THUMBNAIL CANDIDATES — exactly 3 separate images, the ONLY user STOP
+Make exactly 3 SEPARATE independent 16:9 thumbnail candidates with identical accurate German headline: WAS WOLLTE ICH?
+Candidate 1: Immersive cinematic shot: large confused approved teal stickman occupies right-center at an open kitchen doorway; left rear living-room parcel and visible scissors offer the missing context; compelling contrast warm versus cool light; integrate exact headline in image, NO top banner, no random label.
+Candidate 2: Dramatic close/medium portrait inside ordinary kitchen: pale-headed stickman looks over shoulder into darker living room, its unfinished brown shipping parcel visible in strong depth; the doorframe dominates composition without splitting the image; exact headline integrated in available negative space, not overlapping face.
+Candidate 3: Low-angle doorway threshold showing purposeful brown parcel far behind and confused thin-limbed stickman in the kitchen near eye-level; human gaze connects missed purpose to room transition; dramatic but natural hand-drawn scene and same exact headline.
+The thumbnail is separate from video BILD 01. Wait for one user selection ONLY here. Save chosen winner to 05-export/thumbnail.png; after actual selection delete the two rejected candidate files. Do not use selected cover as 03-bilder/01.png and do not insert thumbnail in MP4. Use accepted cover ONLY as illustration DNA reference, not as mandatory framing for video scene 01.
+
+AUTONOMOUS BILD GENERATION AFTER THUMBNAIL SELECTION
+WITHOUT ASKING the user again, automatically generate individual PNG images in 5-image batches (groups of 5): 01–05, 06–10, 11–15, and onward to 66–70, then 71–72. At each five-image batch verify actual file creation, separate PNG assets, validity and 16:9, filenames, image consistency, planned German text only, same-frame stickman anatomy, correct object and setting continuity. Check every missing/failed image and regenerate ONLY failed or missing image numbers before continuing. No empty promises, no silent skipping. Immediately rename accepted images as 01.png, 02.png ... 72.png using the proper two-digit NN.png pattern (up to 72) and save all FLAT in 03-bilder/ with no batch subfolders, version suffixes, duplicates, abandoned cover candidates or additional folders.
+If the platform prevents actual saving or verification, STOP with an explicit blocker rather than marking work done. FINAL QA must confirm 05-export/thumbnail.png separately plus exact ordered 03-bilder/01.png–72.png, all 72 files, correct PNG headers/16:9, no unexpected files and matching illustration/scene text. Source audio and final rendered video are separate later phases.
+
+INDIVIDUAL VIDEO IMAGE PROMPTS BELOW
+All BILD visuals are SINGLE actual video shots timed to their given German narration beat, not the cover. The voice-over beats are references for what the audience is learning, do not render those sentences as text.
+
+BILD 01
+CHARACTER_SCENE — Cinematic living-room hallway: approved pale-headed stickman in teal sweater strides toward bright kitchen doorway, open parcel behind, purposeful posture.
+Spoken beat (for timing, NOT visible text): Du gehst in die Küche, um Klebeband zu holen. Drei Schritte später stehst du dort und weißt nicht mehr, warum.
+NO VISIBLE TEXT.
+Save as 01.png; individual 16:9 image.
+
+BILD 02
+CHARACTER_SCENE — Eye-level kitchen: same stickman frozen between sink and cupboard drawer, confused gaze and raised thin stick arms, morning light.
+Spoken beat (for timing, NOT visible text): Du blickst auf die Spüle, öffnest eine Schublade und fragst dich: Was wollte ich hier eigentlich?
+NO VISIBLE TEXT.
+Save as 02.png; individual 16:9 image.
+
+BILD 03
+OBJECT_FOCUS — Over-shoulder return path through doorway toward living-room table with open carton, scissors and empty space where tape should lie.
+Spoken beat (for timing, NOT visible text): Vielleicht gehst du wieder zurück ins Wohnzimmer. Und plötzlich fällt es dir ein: das Klebeband.
+NO VISIBLE TEXT.
+Save as 03.png; individual 16:9 image.
+
+BILD 04
+ENVIRONMENT_SCENE — Low-angle physical wooden doorframe joining two ordinary rooms; sharp trim in foreground and gently contrasting living spaces beyond, no magic.
+Spoken beat (for timing, NOT visible text): Als hätte jemand direkt im Türrahmen den Gedanken aus deinem Kopf gezogen. Aber kann eine Tür wirklich so etwas?
+NO VISIBLE TEXT.
+Save as 04.png; individual 16:9 image.
+
+BILD 05
+TEXT_ILLUSTRATION — Single large exact German text TÜRSCHWELLEN-EFFEKT integrated on a clean wall beside real kitchen doorway, parcel blurred through opening.
+Spoken beat (for timing, NOT visible text): Eine mögliche Erklärung heißt Türschwellen-Effekt. Er beschreibt, dass ein Ortswechsel den Zugriff auf gerade wichtige Informationen erschweren kann.
+EXACT GERMAN TEXT: TÜRSCHWELLEN-EFFEKT. No other visible words.
+Save as 05.png; individual 16:9 image.
+
+BILD 06
+ENVIRONMENT_SCENE — Wide interconnected room interior, warm packing table visible through cooler kitchen door; believable uninterrupted spatial depth and natural lighting.
+Spoken beat (for timing, NOT visible text): Und das Interessante ist nicht die Tür selbst. Es geht darum, wie dein Gehirn Situationen organisiert.
+NO VISIBLE TEXT.
+Save as 06.png; individual 16:9 image.
+
+BILD 07
+ENVIRONMENT_SCENE — Immersive oak living-room table with torn parcel, packing supplies, afternoon light, shelf and plants; no figure needed.
+Spoken beat (for timing, NOT visible text): Stell dir vor, du sitzt am Wohnzimmertisch und reparierst einen aufgerissenen Karton für ein Paket.
+NO VISIBLE TEXT.
+Save as 07.png; individual 16:9 image.
+
+BILD 08
+OBJECT_FOCUS — Top-down on unsealed brown parcel, black scissors, twine and paper; distinct round empty spot for red tape roll.
+Spoken beat (for timing, NOT visible text): Vor dir liegen Schere, Papier und Schnur. Nur das Klebeband fehlt, also stehst du entschlossen auf.
+NO VISIBLE TEXT.
+Save as 08.png; individual 16:9 image.
+
+BILD 09
+OBJECT_FOCUS — Intimate diagonal macro of cardboard flaps and string, background parcel tools aligned with missing final fastening step.
+Spoken beat (for timing, NOT visible text): Solange du am Tisch sitzt, hängen Karton, Paket und Klebeband gedanklich eng zusammen.
+NO VISIBLE TEXT.
+Save as 09.png; individual 16:9 image.
+
+BILD 10
+CHARACTER_SCENE — Approved stickman seated at oak table, fingertips near open parcel, head slightly inclined toward task in concentration.
+Spoken beat (for timing, NOT visible text): Du siehst den offenen Karton. Deine Hände liegen daneben. Der nächste Schritt scheint vollkommen offensichtlich.
+NO VISIBLE TEXT.
+Save as 10.png; individual 16:9 image.
+
+BILD 11
+ENVIRONMENT_SCENE — Long hallway perspective; warm living-room table far behind, cooler kitchen furniture ahead; changed sound and light inferred visually.
+Spoken beat (for timing, NOT visible text): Auf dem Weg zur Küche verändert sich allerdings mehr als nur dein Standort: Das Licht, die Möbel, die Geräusche.
+NO VISIBLE TEXT.
+Save as 11.png; individual 16:9 image.
+
+BILD 12
+OBJECT_FOCUS — Kettle steaming lightly beside porcelain plates and kitchen window with moving curtains, close warm observational frame.
+Spoken beat (for timing, NOT visible text): Hinter der Tür stehen Teller statt Kartons. Das Fenster ist offen. Vielleicht piept sogar der Wasserkocher.
+NO VISIBLE TEXT.
+Save as 12.png; individual 16:9 image.
+
+BILD 13
+CHARACTER_SCENE — Confused pale-headed stickman framed inside kitchen, parcel only faintly visible beyond threshold, kitchen objects competing for gaze.
+Spoken beat (for timing, NOT visible text): Plötzlich passen die Dinge um dich herum nicht mehr zu dem Gedanken, mit dem du losgelaufen bist.
+NO VISIBLE TEXT.
+Save as 13.png; individual 16:9 image.
+
+BILD 14
+OBJECT_FOCUS — Tactile close shot of ordinary drawer pull and door hinge; grounded everyday mechanism rather than eraser symbolism.
+Spoken beat (for timing, NOT visible text): Es ist nicht so, dass dein Gehirn beim Eintreten alle Erinnerungen löscht. Das wäre viel zu einfach.
+NO VISIBLE TEXT.
+Save as 14.png; individual 16:9 image.
+
+BILD 15
+ENVIRONMENT_SCENE — High-angle architectural view of single connected home showing packing activity at table versus utensils in kitchen, real physical space.
+Spoken beat (for timing, NOT visible text): Eine verbreitete Erklärung lautet: Unser Kopf teilt den Alltag in kleine Abschnitte, sogenannte Ereignisse.
+NO VISIBLE TEXT.
+Save as 15.png; individual 16:9 image.
+
+BILD 16
+COMPARE_VISUAL — Two coherent views paired only: warm parcel table and cooler dishes counter separated by actual doorway, no captions.
+Spoken beat (for timing, NOT visible text): Am Tisch war das Ereignis: Paket reparieren. In der Küche beginnt möglicherweise ein neues: Küche benutzen.
+NO VISIBLE TEXT.
+Save as 16.png; individual 16:9 image.
+
+BILD 17
+OBJECT_FOCUS — Organized packing supplies clustered around partially sealed cardboard box, single coherent task context in natural light.
+Spoken beat (for timing, NOT visible text): Diese Abschnitte helfen dir normalerweise, Wichtiges zu ordnen, statt jedes Detail ständig gleich präsent zu halten.
+NO VISIBLE TEXT.
+Save as 17.png; individual 16:9 image.
+
+BILD 18
+ENVIRONMENT_SCENE — Doorway viewed from kitchen toward partially occluded living-room table; old task cues barely visible through doorframe.
+Spoken beat (for timing, NOT visible text): Doch beim Wechsel kann eine Information aus dem vorherigen Abschnitt für einen Moment schwerer erreichbar werden.
+NO VISIBLE TEXT.
+Save as 18.png; individual 16:9 image.
+
+BILD 19
+OBJECT_FOCUS — Deep-focus close-up of wooden threshold edge hiding much of scissors and parcel in distant room; foreground/background relationship.
+Spoken beat (for timing, NOT visible text): Das erklärt zumindest, warum die Idee von einem Zusammenhang zwischen Raumwechsel und Erinnern so plausibel ist.
+NO VISIBLE TEXT.
+Save as 19.png; individual 16:9 image.
+
+BILD 20
+ENVIRONMENT_SCENE — Research lab establishing scene with old desktop monitors, notebooks with blank covers and chairs, realistic science setting.
+Spoken beat (for timing, NOT visible text): Und jetzt wird es konkret: Forschende haben genau diese Frage nicht nur mit Alltagsgeschichten untersucht.
+NO VISIBLE TEXT.
+Save as 20.png; individual 16:9 image.
+
+BILD 21
+ENVIRONMENT_SCENE — 2000s desktop monitor displays virtual first-person room with unlettered shelving and physical doorway, 2D illustrated surrounding lab.
+Spoken beat (for timing, NOT visible text): In frühen Experimenten bewegten sich Teilnehmende durch virtuelle Räume und mussten sich bestimmte Gegenstände merken.
+NO VISIBLE TEXT.
+Save as 21.png; individual 16:9 image.
+
+BILD 22
+OBJECT_FOCUS — Virtual screen close-up: blue geometric object lifted from one table while second object remains, keyboard in foreground, no words.
+Spoken beat (for timing, NOT visible text): Sie hoben ein Objekt auf, stellten eines ab und liefen anschließend weiter durch die dargestellte Umgebung.
+NO VISIBLE TEXT.
+Save as 22.png; individual 16:9 image.
+
+BILD 23
+COMPARE_VISUAL — Two adjacent immersive virtual-room views, same-room route versus door transition, visual comparison without labels or numbers.
+Spoken beat (for timing, NOT visible text): Manchmal blieben sie dabei im selben Raum. Manchmal gingen sie durch eine Tür in einen anderen Raum.
+NO VISIBLE TEXT.
+Save as 23.png; individual 16:9 image.
+
+BILD 24
+CHARACTER_SCENE — Approved pale-headed student participant concentrates on desktop monitor during memory task, narrow dressed torso and thin limbs.
+Spoken beat (for timing, NOT visible text): An bestimmten Punkten wurden sie gefragt, an welches Objekt sie sich gerade erinnern sollten.
+NO VISIBLE TEXT.
+Save as 24.png; individual 16:9 image.
+
+BILD 25
+OBJECT_FOCUS — Top-down research desk with two colored object tokens and discrete blank answer cards, no fabricated numbers or graphs.
+Spoken beat (for timing, NOT visible text): In diesen Versuchen fiel das Erinnern nach einem Raumwechsel unter bestimmten Bedingungen schwerer.
+NO VISIBLE TEXT.
+Save as 25.png; individual 16:9 image.
+
+BILD 26
+ENVIRONMENT_SCENE — Wide research workstations showing matching virtual walking distances with different room boundary context; no written overlays.
+Spoken beat (for timing, NOT visible text): Der wichtige Vergleich war nicht einfach Sitzen gegen Laufen. Es ging um verschiedene Arten von Ortswechsel.
+NO VISIBLE TEXT.
+Save as 26.png; individual 16:9 image.
+
+BILD 27
+ENVIRONMENT_SCENE — Physical university research corridor with two normal furnished rooms, plain door, boxes on tables, documentary perspective.
+Spoken beat (for timing, NOT visible text): Spätere Untersuchungen nutzten sogar echte Räume statt nur virtuelle Umgebungen und fanden ebenfalls solche Unterschiede.
+NO VISIBLE TEXT.
+Save as 27.png; individual 16:9 image.
+
+BILD 28
+CHARACTER_SCENE — Single approved stickman holds covered neutral box near real lab doorway, modest expression of uncertainty, observation not drama.
+Spoken beat (for timing, NOT visible text): Das klingt fast so, als könnte jeder Türrahmen eine Gedächtnisfalle sein. Doch genau hier muss man aufpassen.
+NO VISIBLE TEXT.
+Save as 28.png; individual 16:9 image.
+
+BILD 29
+OBJECT_FOCUS — Close laboratory table holds two unlabeled shape tokens and plain blank probe cards; controlled object-recognition task.
+Spoken beat (for timing, NOT visible text): Denn im Labor ging es um gezielte Aufgaben mit gemerkten Objekten, nicht um jeden vergessenen Einkaufszettel.
+NO VISIBLE TEXT.
+Save as 29.png; individual 16:9 image.
+
+BILD 30
+ENVIRONMENT_SCENE — Familiar sunny home kitchen with dishes, kettle, cupboards, magnets with no letters; authentic everyday visual clutter.
+Spoken beat (for timing, NOT visible text): Deine Küche zu Hause ist anders. Du kennst sie, und du kannst viele andere Gedanken gleichzeitig haben.
+NO VISIBLE TEXT.
+Save as 30.png; individual 16:9 image.
+
+BILD 31
+CHARACTER_SCENE — Stickman in teal sweater gets distracted before reaching doorway, half turned toward sunlit living-room window.
+Spoken beat (for timing, NOT visible text): Vielleicht hast du das Klebeband schon vergessen, bevor du überhaupt den ersten Schritt gemacht hast.
+NO VISIBLE TEXT.
+Save as 31.png; individual 16:9 image.
+
+BILD 32
+OBJECT_FOCUS — Lit phone showing only abstract colored notification tiles and a forgotten brass key on hallway console, no UI words.
+Spoken beat (for timing, NOT visible text): Vielleicht kommt eine Nachricht. Vielleicht springt dir im Flur ein liegen gelassener Schlüssel ins Auge.
+NO VISIBLE TEXT.
+Save as 32.png; individual 16:9 image.
+
+BILD 33
+ENVIRONMENT_SCENE — Long hall perspective with fallen key in foreground, open kitchen doorway beyond; attention can shift before the door.
+Spoken beat (for timing, NOT visible text): Die Tür kann dann Teil der Situation sein, ohne allein die Ursache für deinen Gedächtnisaussetzer zu sein.
+NO VISIBLE TEXT.
+Save as 33.png; individual 16:9 image.
+
+BILD 34
+ENVIRONMENT_SCENE — Modern cognitive lab showing VR headset and research equipment on desk, real doorway to one side, not a magical experiment.
+Spoken beat (for timing, NOT visible text): Aber hier kommt die Überraschung: Neuere Forschung hat den scheinbar einfachen Tür-Effekt erneut getestet.
+NO VISIBLE TEXT.
+Save as 34.png; individual 16:9 image.
+
+BILD 35
+CHARACTER_SCENE — Two approved same-species pale-headed researchers and participant at VR station; one helps fit headset, identical thin-body anatomy.
+Spoken beat (for timing, NOT visible text): In einer Reihe von vier Experimenten untersuchte ein anderes Team virtuelle und echte Übergänge zwischen Bereichen.
+NO VISIBLE TEXT.
+Save as 35.png; individual 16:9 image.
+
+BILD 36
+TEXT_ILLUSTRATION — Single large exact German text NICHT IMMER on simple clean transparent display by VR headset in real lab, no other lettering.
+Spoken beat (for timing, NOT visible text): Das Ergebnis war nicht: Türen machen Menschen grundsätzlich vergesslich. Einen durchgängig signifikanten Effekt fanden sie nicht.
+EXACT GERMAN TEXT: NICHT IMMER. No other visible words.
+Save as 36.png; individual 16:9 image.
+
+BILD 37
+OBJECT_FOCUS — Close study equipment and several blank colored memory tokens next to VR headset; physical workload evidence without numeric claims.
+Spoken beat (for timing, NOT visible text): Unter zusätzlicher Gedächtnisbelastung zeigte sich allerdings eine Beeinträchtigung bei einer bestimmten Erkennungsaufgabe.
+NO VISIBLE TEXT.
+Save as 37.png; individual 16:9 image.
+
+BILD 38
+COMPARE_VISUAL — Coherent two-state visual comparison of uncluttered memory test room versus demanding task desk with many handled objects, no infographic arrows.
+Spoken beat (for timing, NOT visible text): Diese Einschränkung ist wichtig, weil populäre Erklärungen häufig aus einem interessanten Experiment ein Naturgesetz machen.
+NO VISIBLE TEXT.
+Save as 38.png; individual 16:9 image.
+
+BILD 39
+ENVIRONMENT_SCENE — Wide neutral university doorway with ordinary research objects and varied activity; cautious scientific mood, no confident symbolism.
+Spoken beat (for timing, NOT visible text): Die faire Aussage lautet deshalb: Raum- und Ereigniswechsel können Erinnern beeinflussen; wie stark, hängt von Umständen ab.
+NO VISIBLE TEXT.
+Save as 39.png; individual 16:9 image.
+
+BILD 40
+OBJECT_FOCUS — Macro of real wooden latch and handle with detailed reflected daylight, showing ordinary boundary, no glowing reset power.
+Spoken beat (for timing, NOT visible text): Ein Türrahmen ist also kein magischer Reset-Knopf. Dein Gedächtnis reagiert auf Zusammenhänge und konkurrierende Anforderungen.
+NO VISIBLE TEXT.
+Save as 40.png; individual 16:9 image.
+
+BILD 41
+ENVIRONMENT_SCENE — Lived-in home office establishment with laptop, blank paper corkboard, mouse, pens and large morning window, new example.
+Spoken beat (for timing, NOT visible text): Und das gilt nicht nur für Küchen. Denk an das, was passiert, wenn du am Computer arbeitest.
+NO VISIBLE TEXT.
+Save as 41.png; individual 16:9 image.
+
+BILD 42
+OBJECT_FOCUS — Overhead laptop spreadsheet-like grid using abstract colored blank cells; hand near touchpad, no readable UI.
+Spoken beat (for timing, NOT visible text): Du suchst gerade eine wichtige Zahl in einer Tabelle und wechselst dafür in ein anderes Fenster.
+NO VISIBLE TEXT.
+Save as 42.png; individual 16:9 image.
+
+BILD 43
+OBJECT_FOCUS — Side-angle laptop with generic envelope-shaped message tile floating in screen layout, coffee mug and keyboard, zero text.
+Spoken beat (for timing, NOT visible text): Dort siehst du plötzlich eine E-Mail. Du liest den Betreff, antwortest kurz und öffnest noch einen Tab.
+NO VISIBLE TEXT.
+Save as 43.png; individual 16:9 image.
+
+BILD 44
+CHARACTER_SCENE — Approved stickman in mustard narrow top stares at open laptop with confused paused hands, no readable software labels.
+Spoken beat (for timing, NOT visible text): Jetzt starrst du auf den Bildschirm und überlegst: Welche Zahl wollte ich eigentlich nachschlagen?
+NO VISIBLE TEXT.
+Save as 44.png; individual 16:9 image.
+
+BILD 45
+ENVIRONMENT_SCENE — Over-shoulder desk with overlapping abstract app windows on laptop; one work focus partly obscured by another window.
+Spoken beat (for timing, NOT visible text): Hier gibt es keinen echten Türrahmen. Aber dein Arbeitskontext ist trotzdem mehrmals gewechselt.
+NO VISIBLE TEXT.
+Save as 45.png; individual 16:9 image.
+
+BILD 46
+OBJECT_FOCUS — Close-up of colored task cards stacked askew over original blue card on physical desk, context interference grounded in objects.
+Spoken beat (for timing, NOT visible text): Das ist keine Garantie für denselben Laboreffekt, aber ein gutes Bild dafür, warum Übergänge Aufmerksamkeit kosten können.
+NO VISIBLE TEXT.
+Save as 46.png; individual 16:9 image.
+
+BILD 47
+ENVIRONMENT_SCENE — Bright complete workspace: closed binder, neatly stacked papers, switched-off lamp and clean desk, restful task completion.
+Spoken beat (for timing, NOT visible text): Und noch etwas ist überraschend: Solche Wechsel sind nicht grundsätzlich schlecht für unser Denken.
+NO VISIBLE TEXT.
+Save as 47.png; individual 16:9 image.
+
+BILD 48
+CHARACTER_SCENE — Approved stickman leaves finished desk calmly toward sunlit window, open posture, sense of purposeful new task.
+Spoken beat (for timing, NOT visible text): Wenn du eine abgeschlossene Aufgabe hinter dir lässt, kann ein klarer Abschnitt helfen, dich neu zu orientieren.
+NO VISIBLE TEXT.
+Save as 48.png; individual 16:9 image.
+
+BILD 49
+OBJECT_FOCUS — Partially unfinished envelope physically covered by grocery bags and other tasks on side table, dominant object relationship.
+Spoken beat (for timing, NOT visible text): Problematisch wird es vor allem, wenn ein noch offenes Vorhaben ohne Erinnerungshilfe von anderen Reizen verdrängt wird.
+NO VISIBLE TEXT.
+Save as 49.png; individual 16:9 image.
+
+BILD 50
+ENVIRONMENT_SCENE — Return to same oak parcel table in living room; torn shipping box unchanged, black scissors, empty tape spot, kitchen beyond.
+Spoken beat (for timing, NOT visible text): Zurück zum Wohnzimmer: Der aufgerissene Karton liegt noch da. Das fehlende Klebeband wartet in der Küche.
+NO VISIBLE TEXT.
+Save as 50.png; individual 16:9 image.
+
+BILD 51
+CHARACTER_SCENE — Teal sweater stickman in hallway looks annoyed, raised shoulders and head turning between kitchen and parcel room.
+Spoken beat (for timing, NOT visible text): Du könntest jetzt zehnmal zwischen beiden Räumen hin und her laufen und dich jedes Mal ärgern.
+NO VISIBLE TEXT.
+Save as 51.png; individual 16:9 image.
+
+BILD 52
+CHARACTER_SCENE — At parcel table stickman pauses with finger against light oval chin before standing, deliberate memory strategy.
+Spoken beat (for timing, NOT visible text): Du kannst aber auch etwas Einfacheres versuchen: Sag dir vor dem Aufstehen bewusst, was du holen willst.
+NO VISIBLE TEXT.
+Save as 52.png; individual 16:9 image.
+
+BILD 53
+OBJECT_FOCUS — Close-up of narrow stick hand touching parcel flap while other points toward kitchen through real doorway, no speech bubble.
+Spoken beat (for timing, NOT visible text): Nicht nur: Ich gehe mal kurz rüber. Sondern: Ich hole das Klebeband für den Karton.
+NO VISIBLE TEXT.
+Save as 53.png; individual 16:9 image.
+
+BILD 54
+ENVIRONMENT_SCENE — Continuous hallway view connecting torn parcel table to kitchen cabinets, practical direct path and lighting gradient.
+Spoken beat (for timing, NOT visible text): Damit verknüpfst du den Weg gedanklich noch einmal mit der konkreten Handlung, die danach folgen soll.
+NO VISIBLE TEXT.
+Save as 54.png; individual 16:9 image.
+
+BILD 55
+OBJECT_FOCUS — Low-angle packing table showing an obvious empty slot beside twine where a reminder tool can be placed, doorway blurred.
+Spoken beat (for timing, NOT visible text): Eine zweite Möglichkeit ist, dir einen auffälligen Hinweis zu geben, bevor du den Raum verlässt.
+NO VISIBLE TEXT.
+Save as 55.png; individual 16:9 image.
+
+BILD 56
+OBJECT_FOCUS — Distinct black-handled scissors deliberately positioned at oak table edge next to torn parcel, sharp foreground focus.
+Spoken beat (for timing, NOT visible text): Lege etwa die Schere an den Rand des Tisches, wo sie dich später an die Reparatur erinnert.
+NO VISIBLE TEXT.
+Save as 56.png; individual 16:9 image.
+
+BILD 57
+TEXT_ILLUSTRATION — Single large exact German word KLEBEBAND clearly handwritten on one large note by scissors and parcel; no other text.
+Spoken beat (for timing, NOT visible text): Oder notiere ein einziges Wort auf einem Zettel, wenn du mehrere offene Aufgaben gleichzeitig jonglierst.
+EXACT GERMAN TEXT: KLEBEBAND. No other visible words.
+Save as 57.png; individual 16:9 image.
+
+BILD 58
+ENVIRONMENT_SCENE — Kitchen view from doorway with discrete packing reminder still visible far behind in living room, practical yet uncertain.
+Spoken beat (for timing, NOT visible text): Das sind praktische Strategien zur Erinnerungshilfe, keine garantierten Tricks, mit denen jede Türwirkung verschwindet.
+NO VISIBLE TEXT.
+Save as 58.png; individual 16:9 image.
+
+BILD 59
+CHARACTER_SCENE — Teal stickman stands quietly in kitchen with relaxed thinking pose near cupboard, not rummaging frantically.
+Spoken beat (for timing, NOT visible text): Und falls du trotzdem einmal in der Küche stehst und nichts mehr weißt, musst du nicht verzweifeln.
+NO VISIBLE TEXT.
+Save as 59.png; individual 16:9 image.
+
+BILD 60
+CHARACTER_SCENE — Same stickman pauses by closed drawer, asking silently what happened before entering, hand against chin, coherent home location.
+Spoken beat (for timing, NOT visible text): Schau nicht hektisch in jede Schublade. Frag dich lieber: Was habe ich unmittelbar davor gerade getan?
+NO VISIBLE TEXT.
+Save as 60.png; individual 16:9 image.
+
+BILD 61
+OBJECT_FOCUS — Close parcel lip with incomplete fold, missing tape imprint and recognizable black scissors; concrete remembered prior task.
+Spoken beat (for timing, NOT visible text): Der letzte sichtbare Schritt, der Karton oder das Werkzeug kann helfen, den ursprünglichen Zusammenhang wieder aufzubauen.
+NO VISIBLE TEXT.
+Save as 61.png; individual 16:9 image.
+
+BILD 62
+CHARACTER_SCENE — Over-shoulder stickman from kitchen looks toward familiar living-room table through doorway; thoughtful attempt to recall context.
+Spoken beat (for timing, NOT visible text): Manchmal hilft es auch, gedanklich zum Ausgangspunkt zurückzugehen, statt einfach noch mehr neue Reize aufzunehmen.
+NO VISIBLE TEXT.
+Save as 62.png; individual 16:9 image.
+
+BILD 63
+ENVIRONMENT_SCENE — Long corridor view from kitchen showing parcel partly visible in adjacent room; no miraculous reset or guaranteed recovery imagery.
+Spoken beat (for timing, NOT visible text): Die Forschung zeigt allerdings nicht, dass echtes Zurücklaufen immer zuverlässig die Erinnerung wiederherstellt.
+NO VISIBLE TEXT.
+Save as 63.png; individual 16:9 image.
+
+BILD 64
+OBJECT_FOCUS — Study desk with a useful object card partly hidden under several ordinary blank cards; retrieval competition, no faux statistics.
+Spoken beat (for timing, NOT visible text): Genau das macht die Sache spannender: Unser Kopf arbeitet nicht wie eine Liste, die nur am falschen Ort liegt.
+NO VISIBLE TEXT.
+Save as 64.png; individual 16:9 image.
+
+BILD 65
+ENVIRONMENT_SCENE — Elevated coherent view of two household activity zones, packing supplies on table and kitchen tools on counter, real architecture.
+Spoken beat (for timing, NOT visible text): Er verbindet Gedanken mit Situationen, Aufgaben und dem, worauf wir in einem bestimmten Augenblick achten.
+NO VISIBLE TEXT.
+Save as 65.png; individual 16:9 image.
+
+BILD 66
+OBJECT_FOCUS — A hand returns parcel flap to its prior folded position, familiar action cues evident in detailed tactile illustration.
+Spoken beat (for timing, NOT visible text): Denk noch einmal an deinen Weg vom Wohnzimmer in die Küche. Es fehlte nicht plötzlich deine ganze Erinnerung.
+NO VISIBLE TEXT.
+Save as 66.png; individual 16:9 image.
+
+BILD 67
+ENVIRONMENT_SCENE — Cinematic wide continuous living room to kitchen perspective with lone approved stickman at threshold and open parcel far behind.
+Spoken beat (for timing, NOT visible text): Dir fehlte nur der Zugriff auf einen winzigen Plan: Ich will den Karton mit Klebeband schließen.
+NO VISIBLE TEXT.
+Save as 67.png; individual 16:9 image.
+
+BILD 68
+CHARACTER_SCENE — Same stickman in kitchen turns deliberately toward drawer, now focused on red tape roll partly visible beside utensils.
+Spoken beat (for timing, NOT visible text): Wenn du den Zusammenhang bewahrst, gibst du diesem Plan bessere Chancen, dich durch den Ortswechsel zu begleiten.
+NO VISIBLE TEXT.
+Save as 68.png; individual 16:9 image.
+
+BILD 69
+OBJECT_FOCUS — Macro of red tape roll being picked up; neutral shelf and scissors far behind through doorway, no symbols.
+Spoken beat (for timing, NOT visible text): Und wenn du ihn trotzdem vergisst, ist das kein Beweis dafür, dass eine Tür deinen Kopf ausgeschaltet hat.
+NO VISIBLE TEXT.
+Save as 69.png; individual 16:9 image.
+
+BILD 70
+ENVIRONMENT_SCENE — Evening domestic room with sealed parcel and lamplight, world keeps moving around small ordinary memories.
+Spoken beat (for timing, NOT visible text): Es zeigt eher, wie viel unser Gedächtnis im Hintergrund sortieren muss, während der Alltag weiterläuft.
+NO VISIBLE TEXT.
+Save as 70.png; individual 16:9 image.
+
+BILD 71
+CHARACTER_SCENE — Single stickman crosses normal doorway with purposeful calm posture, focused glance toward taped parcel beyond.
+Spoken beat (for timing, NOT visible text): Die nächste Tür ist also nicht dein Feind. Entscheidend ist, welchen Gedanken du mit hindurchnehmen willst.
+NO VISIBLE TEXT.
+Save as 71.png; individual 16:9 image.
+
+BILD 72
+OBJECT_FOCUS — Hero macro: distinctive red Klebeband roll rests beside repaired brown cardboard parcel and black scissors, warm satisfying payoff.
+Spoken beat (for timing, NOT visible text): Und jetzt: Weißt du noch, was auf unserem Wohnzimmertisch gefehlt hat? Genau. Das Klebeband.
+NO VISIBLE TEXT.
+Save as 72.png; individual 16:9 image.
+
+FINAL QA — After the SINGLE cover-choice STOP, continue WITHOUT ASKING in five-image batches. Regenerate every missing/invalid BILD individually. Verify exactly the 72 flat files 03-bilder/01.png–72.png plus independent 05-export/thumbnail.png; delete both rejected thumbnail candidates ONLY after approval. No duplicate images, extra subfolders, contact sheets, unplanned text or human-species drift. Never report DONE until actually checked.
