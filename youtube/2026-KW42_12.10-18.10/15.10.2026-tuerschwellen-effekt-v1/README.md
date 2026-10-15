@@ -10,8 +10,8 @@
 
 ## Direktlinks zum Kopieren auf dem Tablet
 
-- **Google Flow – alle 72 Bildprompts inklusive drei Thumbnail-Kandidaten:** [google-flow-prompt.txt](https://github.com/memetreza34-ux/Psychologie-Stickman/blob/main/youtube/15.10.2026-tuerschwellen-effekt-v1/02-google-flow/google-flow-prompt.txt)
-- **Finales Sprecher-Skript:** [script.txt](https://github.com/memetreza34-ux/Psychologie-Stickman/blob/main/youtube/15.10.2026-tuerschwellen-effekt-v1/01-script/script.txt)
+- **Google Flow – alle 72 Bildprompts inklusive drei Thumbnail-Kandidaten:** [google-flow-prompt.txt](https://github.com/memetreza34-ux/Psychologie-Stickman/blob/main/youtube/2026-KW42_12.10-18.10/15.10.2026-tuerschwellen-effekt-v1/02-google-flow/google-flow-prompt.txt)
+- **Finales Sprecher-Skript:** [script.txt](https://github.com/memetreza34-ux/Psychologie-Stickman/blob/main/youtube/2026-KW42_12.10-18.10/15.10.2026-tuerschwellen-effekt-v1/01-script/script.txt)
 
 Hinweis: Das Repository ist privat. Auf dem Tablet mit dem GitHub-Konto anmelden, das Zugriff hat, die Datei öffnen und `Raw` / Kopierfunktion verwenden.
 
