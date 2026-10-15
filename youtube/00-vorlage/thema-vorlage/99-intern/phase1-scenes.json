@@ -48,5 +48,6 @@
   "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2",
   "flowAutonomyPolicy": "COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1",
   "thumbnailGenerationPolicy": "THUMBNAIL_SEPARATE_FROM_SCENE01_V1",
-  "thumbnailTargetPath": "05-export/thumbnail.png"
+  "thumbnailTargetPath": "05-export/thumbnail.png",
+  "creativeVisualPolicy": "CONTENT_FIRST_VISUAL_QA_V2"
 }

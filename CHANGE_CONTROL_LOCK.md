@@ -24,6 +24,10 @@ Verbindlicher Verbesserungsprozess: `CONTINUOUS_IMPROVEMENT_P1_V1` aus `rules/GR
 
 **Wichtig:** Diese Prioritaet ist keine allgemeine Schreibfreigabe. In einem neuen Chat weiter READ ONLY ohne ausdruecklichen Auftrag; bestehende Videos, Bilder, Audio und Exporte nicht stillschweigend bearbeiten. Die feste Bildwelt bleibt unangetastet, sofern kein ausdruecklicher Auftrag vorliegt.
 
+## Neue redaktionelle Bildkontrolle fuer kuenftige Produktionen
+
+`CONTENT_FIRST_VISUAL_QA_V2` in `rules/CONTENT_FIRST_VISUAL_QA.md` gilt nur fuer neue bzw. explizit opt-in ueberarbeitete Projekte. Keine automatische Aenderung am vorhandenen Tuer-Effekt-MP4 oder an bestehenden Bilddateien. Pro Szene echten Erklaerwert, alternatives Darstellungsformat, visuellen Schwerpunkt und Wechsel der Bildlogik pruefen; Schemata und kurze exakte deutsche Labels sind ausdruecklich zulaessig. Die neue QA ist **keine** Schreibfreigabe fuer andere Arbeiten. Nach Flow brauchen wirkliche Bilder einen visuellen Review, nicht nur Dateipruefung.
+
 ## Grenzen
 
 - keine ungefragten Neben-Cleanups

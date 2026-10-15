@@ -7,6 +7,15 @@ VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
 VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
+CREATIVE VISUAL POLICY: CONTENT_FIRST_VISUAL_QA_V2
+
+CONTENT-FIRST VISUAL DIRECTION — MANDATORY
+The script's explanatory need comes before any preference for a stickman. For each BILD, use the planned visualFunction, focalSubjectKey, settingKey, cameraScale, informationGain, alternativeVisualType and alternativeRejectionReason. A new image MUST teach something new, not merely show the same door, desk, carton or person with a different sentence.
+MECHANISM: Use a readable SCHEMA_EXPLAINER, informative COMPARE_VISUAL, or focused TEXT_ILLUSTRATION whenever a causal chain, lab comparison, event sequence or study result is being taught. Meaningful German labels may be included ONLY when explicitly authorized as exact flowText in the individual BILD. Diagrams are professional hand-drawn 2D illustrations inside this SAME channel world, NOT beige lecture slides. No fabricated data, bars or numbers. Show a three-step process across consecutive BILDs rather than a three-panel collage.
+NO REPETITIVE subject + setting + camera compositions. Across adjacent batches inspect both image content and informationGain. If 3+ near-duplicate shots appear, regenerate/re-direct the affected image into an appropriate object, labeled mechanism, split comparison, experiment setup or purposeful environmental view. Recurring story props are permitted only when the action/state/information changes materially.
+AFTER each five-image batch: actually visually REVIEW all five rendered images for script-to-picture meaning, diagram accuracy, accidental labels, stickman species and repetition; file-count/format checks alone are not sufficient. Do not declare DONE if semantic mistakes are still present.
+
+
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1

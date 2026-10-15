@@ -16,6 +16,10 @@ Ein neuer Chat startet read-only. Schreiben nur bei ausdrücklicher aktueller Nu
 
 Keine Erfolgsgarantien, keine erfundenen Metriken. Die aktive Bildwelt, Topic-Uniqueness und Change-Control bleiben unveraendert bindend.
 
+## NEUE BILDER: Inhalt vor Stickman-Pose — CONTENT_FIRST_VISUAL_QA_V2 (HARD)
+
+Fuer jede NEUE Phase 1: `rules/CONTENT_FIRST_VISUAL_QA.md` vor dem ersten Bildprompt lesen und `creativeVisualPolicy: "CONTENT_FIRST_VISUAL_QA_V2"` planen. Pro Sprecherabschnitt echte visuelle Aussage, alternatives Format, Hauptmotiv/Schauplatz/Kameraschnitt und konkreten Informationsgewinn bestimmen. Bei Mechanismen/Experimenten gezielt Schemata, Diagramme, Vergleichsgrafiken und kurze beschriftete Illustrationen in DERSELBEN vorhandenen Bildwelt einsetzen. Keine festen Bildtyp-Prozente; Charaktere sind optional. Drei fast identische Ansichten oder fuenfmal dieselbe Tuer/Karton/Figur ohne neuen Informationsgehalt neu planen. `npm run qa:creative-visuals` muss bestanden sein, **bevor** Phase-1-Direktlinks als FERTIG ausgegeben werden. Nach Google Flow die tatsaechlichen PNGs auf Satzpassung und Wiederholung visuell kontrollieren (Metadaten-QA sieht keine fertigen Bilder). Keine Bestandvideos ohne Auftrag neu erzeugen.
+
 ## Danach lesen
 
 1. `CANONICAL_RULES.md`

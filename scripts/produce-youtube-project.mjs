@@ -71,6 +71,8 @@ const hasUsableTimings = () => {
 };
 
 console.log(`PRODUCE YOUTUBE: ${projectRelative}`);
+// Gate new V2 visual direction before expensive audio, render or asset handling.
+run(['scripts/check-creative-visuals.mjs', projectRelative]);
 // Reject incomplete or wrongly numbered scene assets before transcription and rendering.
 if (phase1.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1') {
   run(['scripts/flow-image-pack.mjs', 'verify', projectRelative]);

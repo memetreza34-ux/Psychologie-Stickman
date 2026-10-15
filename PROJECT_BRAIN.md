@@ -12,6 +12,10 @@ Kopfarium lernt aus jedem neuen Video und jeder Produktion: alte Erkenntnisse le
 
 Referenzdateien: `analytics/channel-learnings.md`, `analytics/experiments.csv`, `analytics/performance_snapshots.csv`, `99-intern/learning-review.md` je neuem Video. Keine automatische Umgestaltung der freigegebenen Bildwelt; bestehende Hard-Locks weiterhin bindend.
 
+## Bildqualitaets-Lerneffekt aus dem Tuer-Effekt-Video
+
+Ab dem naechsten Video bindet `CONTENT_FIRST_VISUAL_QA_V2` (`rules/CONTENT_FIRST_VISUAL_QA.md`): Story mit realen Motiven verbinden, aber Mechanismus/Studie an geeigneter Stelle als klare beschriftete Schemazeichnung, Diagramm oder Vergleich erklaeren. Nicht Tuer, Karton oder Stickman mit leicht anderen Winkeln dauernd wiederholen. Planung verlangt einen echten Informationsgewinn je BILD und gepruefte Alternativen; `npm run qa:creative-visuals`, `phase1:links` und `produce:youtube` sichern dies fuer neue Projekte. Fertige Google-Flow-PNGs zusaetzlich ansehen und Fehlbilder regenerieren. Kein Wechsel der freigegebenen Bildwelt, keine festen Prozentquoten.
+
 ## Kanal
 
 Deutschsprachige YouTube-Videos zu Psychologie und menschlichem Verhalten.
