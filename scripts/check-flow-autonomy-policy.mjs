@@ -1,15 +1,14 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+import {listYouTubeProjects} from './lib/youtube-week-folders.mjs';
 
 const POLICY='COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1';
 const failures=[];
 const read=p=>fs.readFileSync(p,'utf8');
 const plans=['youtube/00-vorlage/thema-vorlage/99-intern/phase1-scenes.json'];
-const y='youtube';
-for(const name of fs.readdirSync(y,{withFileTypes:true})){
-  if(!name.isDirectory()||!name.name.match(/^\d{2}\.\d{2}\.\d{4}-/u)) continue;
-  const p=path.join(y,name.name,'99-intern','phase1-scenes.json');
+for(const project of listYouTubeProjects()){
+  const p=path.join(project,'99-intern','phase1-scenes.json');
   if(fs.existsSync(p)){
     const data=JSON.parse(read(p));
     if(data.flowAutonomyPolicy===POLICY) plans.push(p);
