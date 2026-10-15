@@ -1,0 +1,8 @@
+claim_id,claim,source,status,notes
+C01,"In virtuellen Umgebungen war Objektgedächtnis nach bestimmten räumlichen Übergängen schlechter","Radvansky & Copeland (2006), https://doi.org/10.3758/BF03193261",VERIFIED,"Laborteilnehmer und Objekttest; nicht universelles Alltagsvergessen"
+C02,"Experimentelle Effekte wurden auch in tatsächlichen Räumen beobachtet","Radvansky et al. (2011), https://doi.org/10.1080/17470218.2011.571267",VERIFIED,"Konkrete Kontrollbedingungen; keine Aussage dass jede Tür vergesslich macht"
+C03,"Rückkehr zum ursprünglichen Raum half in einem Experiment nicht zuverlässig","Radvansky et al. (2011), https://doi.org/10.1080/17470218.2011.571267",VERIFIED,"Keine garantierte Zurückgeh-Strategie"
+C04,"Vier spätere Experimente fanden keinen durchgehend signifikanten allgemeinen Doorway-Effekt","McFadyen et al. (2021), https://doi.org/10.1186/s40359-021-00536-3",VERIFIED,"Gilt für diese Versuchsreihe und Messweisen"
+C05,"Unter zusätzlicher Gedächtnisbelastung zeigte sich in einem Teiltest eine schlechtere Signalentdeckung","McFadyen et al. (2021), https://doi.org/10.1186/s40359-021-00536-3",VERIFIED,"Spezifische Testmetrik und Bedingung; nicht alle Experimente"
+C06,"Alltagstipps: konkrete Absicht formulieren oder sichtbare Hinweise nutzen","Praktische redaktionelle Schlussfolgerung; nicht als direkte Wirksamkeitsstudie zitiert",QUALIFIED,"Nicht als garantierte Behandlung oder experimentell bewiesene Intervention verkaufen"
+C07,"PC-Tabwechsel kann den Kontext der eigenen Aufgabe verändern","Illustrative Alltagsanalogie",QUALIFIED,"Kein Beleg dass exakter Doorway-Labor-Effekt bei jedem PC-Wechsel auftreten muss"
