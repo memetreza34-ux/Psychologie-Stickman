@@ -1,3 +1,7 @@
+## Wochenordnung — gültig ab 15.10.2026
+
+YouTube-Videos liegen unter `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/<TT.MM.JJJJ-thema>/` (ISO-Woche Montag bis Sonntag). Vollständige Dateilinks/Projektpfade verwenden diesen Präfix. Siehe `rules/YOUTUBE_WEEK_FOLDERS.md`.
+
 # PHASE 1 HANDOFF — TABLET DIRECT LINKS (HARD PROCESS)
 
 Policy ID: `PHASE1_TABLET_HANDOFF_LINKS_V1`
@@ -10,10 +14,10 @@ Der Nutzer produziert seine Bilder und das Voice-over auf einem Tablet und soll 
 
 **Erst nach erfolgreichem Speichern/Committen in GitHub und pruefbarer Verfuegbarkeit** den Abschluss melden. Jede Phase-1-Fertigmeldung und jede abschliessende Antwort, die Phase 1 fertigstellt, zeigt IMMER diese zwei **direkt anklickbaren Dateilinks** (keinen Repo-Root und keine Ordnerlinks):
 
-1. **Google Flow: ALLE Bildprompts** — `youtube/<PROJEKT>/02-google-flow/google-flow-prompt.txt`
-2. **Sprecher-Skript: kompletter finaler Text** — `youtube/<PROJEKT>/01-script/script.txt`
+1. **Google Flow: ALLE Bildprompts** — `youtube/<WOCHENORDNER>/<PROJEKT>/02-google-flow/google-flow-prompt.txt`
+2. **Sprecher-Skript: kompletter finaler Text** — `youtube/<WOCHENORDNER>/<PROJEKT>/01-script/script.txt`
 
-Linkformat: `https://github.com/memetreza34-ux/Psychologie-Stickman/blob/main/youtube/<PROJEKT>/02-google-flow/google-flow-prompt.txt` bzw. `.../01-script/script.txt`. Bei einer anderen freigegebenen Zielbranch statt `main` deren echte Branch verwenden und kenntlich machen. Pfadbestandteile URL-kodieren. Exakte Projektpfade, nicht die Vorlage, verwenden.
+Linkformat: `https://github.com/memetreza34-ux/Psychologie-Stickman/blob/main/youtube/<WOCHENORDNER>/<PROJEKT>/02-google-flow/google-flow-prompt.txt` bzw. `.../01-script/script.txt`. Bei einer anderen freigegebenen Zielbranch statt `main` deren echte Branch verwenden und kenntlich machen. Pfadbestandteile URL-kodieren. Exakte Projektpfade, nicht die Vorlage, verwenden.
 
 **Beispiel fuer die Antwort an den Nutzer:**
 
