@@ -12,6 +12,10 @@ Vor jeder neuen Produktion: alte Erkenntnisse und offene Experimente ansehen, mi
 
 Das gilt auch fuer allgemeine Prozessqualitaet (Flow, Script, Audio, Render, Export). Die bestehende Bildwelt und alle inhaltlichen/technischen Hard-Locks bleiben unveraendert; Wachstum ist ein Ziel, keine Garantie.
 
+## Content-first illustrative quality — NEXT VIDEO HARD GATE
+
+Policy ID: `CONTENT_FIRST_VISUAL_QA_V2` — `rules/CONTENT_FIRST_VISUAL_QA.md`. Ab neuen Video-Projekten ist vor Google Flow/Phase-1-Fertigmeldung je Szene ein neuer `informationGain`, inhaltlicher `focalSubjectKey`, `settingKey`, `cameraScale`, `visualFunction` und bewusste `alternativeVisualType` inklusive Ablehnungsgrund Pflicht. `SCHEMA_EXPLAINER`, `COMPARE_VISUAL` oder `TEXT_ILLUSTRATION` bei passenden psychologischen Mechanismen und Studien nicht ignorieren. Wiederholungen werden ueber Bildfolgen geprueft, nicht nur ueber Wortanfang/`motifKey`. Bei Fehler neue Bildidee waehlen, nicht Metadaten schoenfaerben. Bestehende `PSYCHOLOGY_STICKMAN_WORLD_V1` unveraendert; genaue deutsche Labels weiterhin nur nach `flowText`. Plan-QA + echte Bildsichtung nach Flow bleiben verpflichtend, keine pauschale automatische Sehgarantie.
+
 ## Topic uniqueness — HARD LOCK
 
 Policy ID: `TOPIC_UNIQUENESS_V1`.
