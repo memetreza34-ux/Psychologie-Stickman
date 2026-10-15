@@ -35,3 +35,14 @@ Die 22 am 15.10.2026 vorhandenen Projekte wurden **nur als Git-getrackte Verzeic
 ## Root-Verzeichnis
 
 Nur nicht unmittelbar notwendige Übersichtsdokumente nach `dokumentation/` auslagern (bisher: `ASSET_QUELLEN.md`, `CHANNELS.md`, `MIGRATION_NOTE.md`, `THEMEN_SYSTEM.md`). **AGENTS.md, CANONICAL_RULES.md, PROJECT_BRAIN.md, CHANGE_CONTROL_LOCK.md, README.md, TOPIC_REGISTRY.json, package.json, tsconfig.json, .github/** bleiben bewusst im Root. Auch `src/`, `scripts/`, `rules/`, `analytics/`, `assets/`, `public/`, `reels/` und `exports/` sind echte Arbeitsverzeichnisse, keine überflüssigen Dateien.
+
+## Lokale Medien nach Git-Synchronisierung sicher mitnehmen
+
+Lokale, durch `.gitignore` nicht mitgeführte Dateien (z. B. fertige PNG/MP3/MP4) können nach der Git-Umstellung noch in den alten flachen Ordnern liegen. **Zuerst eine Sicherheitskopie des lokalen `youtube/`-Ordners erstellen.** Nach `git pull` im Repository:
+
+```bash
+npm run youtube:local-media
+npm run youtube:local-media -- --apply
+```
+
+Der erste Befehl zeigt nur, welche fehlenden Mediendateien kopiert würden; der zweite kopiert sie ohne vorhandene Ziele zu überschreiben und ohne Quellen zu löschen. Nur von dir vorhandene lokale Daten werden so mitgenommen, keine neuen Videos gerendert. Bei Git-Konflikten zuerst den Repository-Status prüfen, nicht blind `git reset --hard` verwenden.
