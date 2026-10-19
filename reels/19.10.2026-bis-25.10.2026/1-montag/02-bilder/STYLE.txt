@@ -1,1 +1,0 @@
-PSYCHOLOGY_STICKMAN_WORLD_V1. Bindende Quelle: rules/PSYCHOLOGY_STICKMAN_WORLD.md. Referenz erhält Zeichenstil und Figurenkonstruktion, nicht Layout oder Farbe jedes Folgebildes. Alle Bilder direkt 9:16.

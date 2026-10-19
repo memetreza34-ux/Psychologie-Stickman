@@ -1,5 +1,12 @@
 {
-  "scope": "existing checkCreativeVisualPlan function only; no audio, render or final-image QA implied",
+  "scope": "Szenenplanung und vollständiger Prompt-only-Handoff; noch keine Flow-Bilder oder finale Medien geprüft",
+  "handoff": {
+    "provider": "GOOGLE_FLOW",
+    "externalReferenceRequired": false,
+    "characterDesign": "SCRIPT_SPECIFIC_CHARACTER_V1",
+    "singleCopyablePrompt": true,
+    "scriptIncluded": true
+  },
   "failures": [],
   "warnings": [],
   "summary": {

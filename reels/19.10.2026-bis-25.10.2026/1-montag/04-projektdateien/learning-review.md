@@ -10,6 +10,9 @@ Ein kurzer, auf eine Alltagssituation begrenzter Sprechertext mit einem einfache
 
 ## Konkrete Umsetzung
 
+- Zuständigkeit korrigiert: Codex übergibt nur den vollständigen Prompt; Google Flow erzeugt auch Bild 01 selbst.
+- Person individuell für diese Videogeschichte entwickeln; keine vorgegebene Identität aus einer alten Folge.
+
 - 7 inhaltliche Schritte: Wiedererkennen → ursprüngliche Aufgabe → Begriff/Modell → Kontextwechsel → Forschungsgrenze → konkreter Versuch → Abschluss der Aufgabe.
 - Ein gemeinsames Wohnzimmer/Küchen-Layout; der Karton bleibt im Wohnzimmer.
 - Ein Mechanismusschema und ein ausdrücklich vereinfachter Vergleich von Befundmustern, keine erfundenen Versuchszahlen.
