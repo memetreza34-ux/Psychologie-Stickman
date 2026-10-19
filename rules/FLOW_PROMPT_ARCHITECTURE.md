@@ -26,6 +26,8 @@ For every NEW YouTube video, and the opted-in Planungsfehlschluss project:
 
 ## Master prompt order
 
+New templates also use `STORY_EXPLANATION_PROOF_V1`: mechanism/research/comparison/evidence scenes must depict a planned visible relationship, distinguish illustration from sourced evidence, and include their exact English `visualProof.promptAnchor` in their own BILD description. Decorative props with opposing labels do not demonstrate a mechanism or finding. Details: `rules/STORY_EXPLANATION_PROOF.md`.
+
 1. English prompt instructions, German narration/visible text, topic, format, active illustration world/species and representation choices.
 2. Motif progression, observable scenes, staging variety, mobile readability, zero accidental text, max 2 states/panels.
 3. Script-specific character design and separate `CHARACTER REFERENCES`, followed by independent `THUMBNAIL CANDIDATES` (3 separate 16:9 designs using those identities; exact short German cover phrase). No video scenes yet. STOP only for cover selection.

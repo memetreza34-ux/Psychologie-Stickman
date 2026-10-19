@@ -24,6 +24,15 @@ Dieses Dokument beim neuen Video in `99-intern/learning-review.md` pflegen. Leer
 - Konkrete Loesung fuer den naechsten Produktionsdurchlauf: PENDING
 - Freigabe zum Upload / Gruende: PENDING
 
+## B2. GESCHICHTE UND ERKLÄRUNG
+- Erklärungssatz → konkrete spätere Anwendung: zwei exakte Zitatpaare im script-plan.json: PENDING
+- Welches Verständnis / welche Entscheidung verändert der Schluss? PENDING
+- Erklärbilder ohne Labels geprüft: sichtbare Beziehung und Aussagegrenze: PENDING
+- Textdurchsicht (CODEX_TEXT_REVIEW oder tatsächlicher HUMAN_READ_THROUGH), konkrete Überarbeitung: PENDING
+- Tatsächlicher Verständnistest: NOT_TESTED
+- Falls Rückmeldungen vorliegen: Ziel/Hindernis, Zusammenhang und Einschränkung verstanden? Wortlaut und Missverständnisse: NO_DATA
+- Selbstbewertung und echte Publikumsrückmeldung getrennt dokumentiert: PENDING
+
 ## C. NACH UPLOAD — YOUTUBE STUDIO
 YouTube-Studio-Zahlen zu **48h, 7d, 28d** in `analytics/performance_snapshots.csv` eintragen.
 - Veroeffentlichung (Datum/Uhrzeit): PENDING

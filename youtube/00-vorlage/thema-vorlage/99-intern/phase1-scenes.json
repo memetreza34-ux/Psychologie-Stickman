@@ -61,5 +61,8 @@
   "flowDownloadArchive": "google-flow.zip",
   "requireActualArchiveVerification": true,
   "archiveExportFallback": "REPORT_EXACT_LIMITATION_AND_PROVIDE_SEPARATE_IMAGES",
-  "characterReferenceImportPath": "99-intern/reference-notes/"
+  "characterReferenceImportPath": "99-intern/reference-notes/",
+  "productionMode": "LONGFORM_STANDARD_V1",
+  "longformScriptPolicy": "LONGFORM_STORY_RETENTION_V1",
+  "storyExplanationPolicy": "STORY_EXPLANATION_PROOF_V1"
 }

@@ -64,6 +64,8 @@ Schwach:
 
 ## 5. Frühe Definition
 
+Die frühe Erklärung darf Teil der laufenden Handlung sein. Kein zusätzlicher Definitionsabsatz nötig, wenn ein kurzer Satz das beobachtete Problem bereits verständlich erklärt. Neue Longforms verbinden Erklärung und spätere konkrete Anwendung nach `rules/STORY_EXPLANATION_PROOF.md`; die zeitlichen Grenzen dieser Hook-Regel bleiben bestehen.
+
 Die Definition soll:
 - in Alltagssprache funktionieren
 - möglichst nur einen Hauptsatz enthalten

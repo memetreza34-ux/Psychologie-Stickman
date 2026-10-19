@@ -38,5 +38,35 @@
     "maxConsecutiveNamedResearchBlocks": 0,
     "maxConsecutiveMicroExamples": 0,
     "deepExampleCount": 0
+  },
+  "storyExplanationPolicy": "STORY_EXPLANATION_PROOF_V1",
+  "storyExplanation": {
+    "viewerQuestion": "",
+    "goal": "",
+    "obstacle": "",
+    "stakes": "",
+    "openingQuote": "",
+    "explanationApplications": [
+      {
+        "explanationQuote": "",
+        "applicationQuote": "",
+        "changedUnderstanding": ""
+      },
+      {
+        "explanationQuote": "",
+        "applicationQuote": "",
+        "changedUnderstanding": ""
+      }
+    ],
+    "payoffQuote": "",
+    "payoffChange": "",
+    "editorialReview": {
+      "status": "PENDING",
+      "method": "CODEX_TEXT_REVIEW",
+      "findings": "",
+      "unresolvedIssues": [],
+      "comprehensionStatus": "NOT_TESTED",
+      "feedbackReference": ""
+    }
   }
 }

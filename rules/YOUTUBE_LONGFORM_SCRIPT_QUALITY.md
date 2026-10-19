@@ -14,6 +14,8 @@ Default target:
 
 ## 1. Goal
 
+Für neue Projekte zusätzlich `rules/STORY_EXPLANATION_PROOF.md` anwenden. Die aktuelle Vorlage verlangt zwei im tatsächlichen Skript überprüfbare Verbindungen von Erklärung zu konkreter Anwendung sowie einen dokumentierten Textreview. Ein wiederkehrendes Requisit allein bestätigt noch keine tragende Geschichte.
+
 Research depth stays high, but the voice-over must feel like a compelling YouTube story, not a school report or bibliography.
 
 Core flow:

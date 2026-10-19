@@ -15,16 +15,15 @@ Wachstum ist das Ziel, keine garantierte Kennzahl. Keine Daten erfinden; technis
 
 ## Bildwelt
 
-**Status: UNDEFINED**
+**Status: ACTIVE / USER-APPROVED — `PSYCHOLOGY_STICKMAN_WORLD_V1`.**
 
-Die bisherige Bildwelt wurde entfernt. Das Repository enthält aktuell bewusst **keine aktive Style-DNA, Character-DNA oder visuelle Referenzwelt**.
+Verbindlich ist [die freigegebene Stickman-Welt](rules/PSYCHOLOGY_STICKMAN_WORLD.md). Zeichenstil und Figurenkonstruktion bleiben kanalweit konsistent. Google Flow entwirft die Personen passend zum einzelnen Video; innerhalb der Geschichte bleiben sie wiedererkennbar.
 
-Die neue Bildwelt wird komplett neu definiert.
+## Skript und Bild gemeinsam verbessern
 
-Bis dahin:
-- keine neue Google-Flow-Bildproduktion starten
-- keine alten Bildwelten wiederverwenden
-- bestehende Videos nicht als automatische Stilvorlage behandeln
+Neue YouTube-Projekte verwenden [Geschichte und Erklärnachweise](rules/STORY_EXPLANATION_PROOF.md). Erklärungssätze müssen auf konkrete Veränderungen in der Geschichte zurückführen. Erklärbilder zeigen eine sichtbare Beziehung; bloße Gegenstands- oder Begriffsschilder genügen nicht. Konkrete Vorher-/Nachher-Entwürfe stehen in der [Redaktionswerkstatt](dokumentation/KOPFARIUM_REDAKTIONSWERKSTATT.md).
+
+Die aktualisierte Vorlage enthält Skript- und Bildprüfungen. `npm run check` prüft die Integration einschließlich gezielter negativer Testfälle. Redaktionelle Verständlichkeit muss zusätzlich am tatsächlichen Text und an den generierten Bildern geprüft werden.
 
 ## Was weiterhin steht
 
@@ -35,9 +34,9 @@ THEMA + QUELLEN
 → Script/Hook
 → Visual Beats
 → Observable Evidence
-→ neue Bildwelt (muss erst definiert werden)
+→ freigegebene Stickman-Welt + individuelle Figurenplanung
 → eine google-flow-prompt.txt
-→ 3 Cover
+→ Flow erzeugt Figurenreferenzen + 3 separate Cover
 → Nutzerwahl
 → 5er-Batches
 → Voice + Timings
@@ -61,13 +60,15 @@ Pro Video genau:
 `02-google-flow/google-flow-prompt.txt`
 
 Ausgabe:
-- BILD 01 zuerst
-- 3 getrennte Cover-Kandidaten
-- STOP für Nutzerwahl
-- danach 5er-Batches
+- ein vollständiger englischer Prompt; Sprechertext und sichtbare Bildtexte Deutsch
+- Flow erzeugt zuerst individuelle Figurenreferenzen und 3 getrennte Cover-Kandidaten
+- nur ein STOP für die Coverwahl; Gewinner ist das separate Thumbnail
+- danach alle normalen Videoszenen in 5er-Batches, sofort prüfen und nummerieren
 - jede Bildnummer = eigene 16:9-Datei
 - akzeptierte Bilder als `NN.png`
-- alles gemeinsam in `03-bilder/`
+- abschließend alle Bilder auf Vollständigkeit und Inhalt prüfen
+- ein gemeinsames Flow-Downloadpaket/ZIP, sofern tatsächlich exportierbar; Einschränkungen ehrlich melden
+- lokaler Import: Szenen nach `03-bilder/`, Thumbnail nach `05-export/thumbnail.png`, Referenzen nach `99-intern/reference-notes/`
 - kein Storyboard/Kontaktbogen/fertiges Video
 
 ## YouTube-Struktur
@@ -82,6 +83,7 @@ youtube/<JJJJ-KWNN_TT.MM-TT.MM>/TT.MM.JJJJ-thema/
 │   ├── final.mp4
 │   ├── thumbnail.png
 │   ├── captions.srt
+│   ├── subtitle-script.txt
 │   └── youtube-upload.txt
 └── 99-intern/
 ```

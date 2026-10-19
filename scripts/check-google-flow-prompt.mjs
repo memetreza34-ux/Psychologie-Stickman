@@ -2,6 +2,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import {hasFiveImageBatch} from './lib/flow-workflow-language.mjs';
 
 const roots = [path.resolve('youtube'), path.resolve('reels')];
 const files = [];
@@ -23,7 +24,7 @@ const must = (text, regex, message) => { if (!regex.test(text)) failures.push(me
 const requiredWorkflow = (text, rel) => {
   must(text, /3\s+SEPARATE|exactly\s+3\s+separate/iu, `${rel}: missing 3-cover gate.`);
   must(text, /STOP|wait for the user/iu, `${rel}: missing user cover-selection stop.`);
-  must(text, /batch(?:es)?\s+of\s+exactly\s+5|5-image batch|groups of 5/iu, `${rel}: missing five-image batching.`);
+  if (!hasFiveImageBatch(text)) failures.push(`${rel}: missing five-image batching.`);
   must(text, /NN\.png|matching number/iu, `${rel}: missing numbered filenames.`);
   must(text, /03-bilder\//iu, `${rel}: missing flat 03-bilder/ output.`);
   must(text, /storyboard|contact sheet/iu, `${rel}: must explicitly address storyboard/contact-sheet output.`);

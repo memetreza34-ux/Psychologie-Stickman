@@ -16,6 +16,10 @@ NO REPETITIVE subject + setting + camera compositions. Across adjacent batches i
 AFTER each five-image batch: actually visually REVIEW all five rendered images for script-to-picture meaning, diagram accuracy, accidental labels, stickman species and repetition; file-count/format checks alone are not sufficient. Do not declare DONE if semantic mistakes are still present.
 
 
+STORY / EXPLANATION PROOF — STORY_EXPLANATION_PROOF_V1
+For every mechanism, research, comparison or evidence scene, depict the planned visible relationship rather than objects carrying its name. The BILD description must contain its exact English visualProof.promptAnchor. If every label were hidden, the image must still show the relevant action, changed condition, state or relationship; short German labels clarify that relationship. Two folders labelled UNTERSCHIED and KEIN UNTERSCHIED do not demonstrate a finding.
+A model or analogy must never look like measured brain activity or a proven causal result. Depict a study setup/result only from the checked source and specified conditions. If the evidence does not support a useful visual comparison, keep the scientific limitation in narration and choose an honest scene rather than inventing a result. When the narration returns to the main story, show what is now understood or done differently.
+
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1

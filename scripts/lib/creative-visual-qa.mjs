@@ -1,4 +1,5 @@
 // Structural/semantic planning gate: cannot replace human inspection of generated images.
+import {checkVisualProofs, checkVisualProofPrompt} from './story-explanation-qa.mjs';
 export const CREATIVE_POLICY = 'CONTENT_FIRST_VISUAL_QA_V2';
 export const visualTypes = new Set(['CHARACTER_SCENE','OBJECT_FOCUS','ENVIRONMENT_SCENE','SCHEMA_EXPLAINER','COMPARE_VISUAL','TEXT_ILLUSTRATION']);
 export const visualFunctions = new Set(['HOOK','STORY_ACTION','MECHANISM','RESEARCH','COMPARISON','EVIDENCE','TAKEAWAY','CALLBACK','TRANSITION']);
@@ -17,7 +18,7 @@ export const needsCreativeReview = (plan, projectPath) =>
   plan?.creativeVisualPolicy === CREATIVE_POLICY || isFutureVideoProject(projectPath);
 
 export const checkCreativeVisualPlan = (plan, location='phase1-scenes.json') => {
-  const failures = [], warnings = [];
+  const failures = checkVisualProofs(plan, location), warnings = [];
   const scenes = Array.isArray(plan?.scenes) ? plan.scenes : [];
   const fail = (message) => failures.push(`${location}: ${message}`);
   if (plan?.creativeVisualPolicy !== CREATIVE_POLICY) {
@@ -98,7 +99,7 @@ export const checkCreativeVisualPlan = (plan, location='phase1-scenes.json') => 
 };
 
 export const checkCreativeFlowPrompt = (plan, text, location='google-flow-prompt.txt') => {
-  const failures=[];
+  const failures=checkVisualProofPrompt(plan, text, location);
   if (plan?.creativeVisualPolicy !== CREATIVE_POLICY) return {failures:[`${location}: V2 plan policy missing.`]};
   const content=clean(text);
   for(const [token, label] of [

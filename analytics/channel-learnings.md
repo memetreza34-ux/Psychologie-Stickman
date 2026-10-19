@@ -19,6 +19,21 @@ Beobachtung aus einer Stichprobe von etwa 20 gleichmaessig ueber das Video verte
 
 **Evidenzgrenze:** Nur qualitative Video-/Framebeobachtung, **keine** Daten ueber CTR, Zuschauerbindung, Views oder Abo-Entwicklung. Erst nach neuen Uploads echte 48h/7d/28d-Daten vergleichen, um Wachstumswirkung zu beurteilen.
 
+## Reel-Pilot vom 19.10.2026: redaktionelle Selbstkritik
+
+Evidenz: lokale Endfassung `reels/19.10.2026-bis-25.10.2026/1-montag/03-export/final-reel.mp4`, gerenderte Stichproben aus allen sieben Szenen und der anschließende Austausch. Arman weist darauf hin, dass ein kurzer Reel für die Beurteilung längerer Geschichten nicht ausreicht. Die folgenden Schwächen sind unsere redaktionelle Einschätzung, kein bestätigtes Publikumsurteil:
+
+- Die Alltagssituation trägt den Einstieg; der Übergang zur abstrakten Erklärung unterbricht ihren Verlauf.
+- Zwei Ortsfelder orientieren, machen aber den möglichen Gedächtniszusammenhang noch nicht sichtbar.
+- Mappen mit UNTERSCHIED / KEIN UNTERSCHIED zeigen keine Forschungsbedingung und keinen Befund.
+- Der geschlossene Karton schließt die Handlung; der gesprochene Schluss könnte das gewonnene Verständnis deutlicher auszahlen.
+
+**Beschluss:** Neue Vorlagen nutzen `STORY_EXPLANATION_PROOF_V1`: mindestens zwei genaue Erklärung/Anwendung-Verbindungen im Skript; sichtbare Bildbeziehungen mit konkretem englischen Promptnachweis; dokumentierte redaktionelle Durchsicht. Arbeitsbeispiele: `dokumentation/KOPFARIUM_REDAKTIONSWERKSTATT.md`.
+
+**Beibehalten:** individuelle Figuren pro Video, gleiche Spezies innerhalb der Bildwelt, eigenständige Objekt-/Vergleichsbilder, deutsche sichtbare Texte, bestehender Flow-Ablauf.
+
+**Testen:** Beim nächsten vollständigen Longform prüfen, ob Geschichte und Erklärung über die gesamte Laufzeit zusammenhängen. Wenn unvorbereitete Rückmeldungen verfügbar sind: Ziel/Hindernis, Erklärungszusammenhang und Aussagegrenze in eigenen Worten wiedergeben lassen. Ohne Rückmeldungen `NOT_TESTED`. Analytics weiterhin `NO_DATA`. Kein besserer Zuschauererfolg aus dem Reel ableitbar.
+
 ## Offene Fragen / naechste Tests
 
 - Welche Titel-/Thumbnail-Versprechen sorgen beim tatsaechlichen Publikum fuer mehr qualifizierte Klicks?

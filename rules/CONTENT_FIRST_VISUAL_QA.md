@@ -24,6 +24,8 @@ Moegliche primaere Darstellungen: `CHARACTER_SCENE`, `OBJECT_FOCUS`, `ENVIRONMEN
 
 ## 2. Mechanismen wirklich erKLAEREN — HARD
 
+Neue Vorlagen tragen zusätzlich `storyExplanationPolicy: "STORY_EXPLANATION_PROOF_V1"` aus `rules/STORY_EXPLANATION_PROOF.md`. Jede Mechanismus-/Forschungs-/Vergleichs-/Evidenzszene braucht `visualProof` und einen im zugehörigen englischen BILD-Prompt tatsächlich enthaltenen `promptAnchor`. Zwei Objekte mit gegensätzlichen Labels sind noch kein erklärender Vergleich. Ohne Labels muss die relevante Handlung, Bedingung oder Beziehung erkennbar bleiben. Illustration, Versuchsaufbau und belegten Befund ausdrücklich unterscheiden.
+
 Bei Aussagen ueber Schritte, Ursachen, Gedachtnis-/Entscheidungsmechanismen, Versuchsanordnungen oder Forschungsbefunde pruefen:
 - **Ablaufbild / einfaches Schema** mit wenigen grossen Elementen, klaren Pfeilen/Verbindungen, maximal zwei gegeneinandergestellten Zustaenden
 - **Vorher/Nachher**, **Versuch vs. Kontrolle**, **Ursache -> Wirkung**, **3 Schritte auf DREI aufeinanderfolgenden Bildern** (nicht drei Mini-Panels auf einer einzigen Bildkarte)

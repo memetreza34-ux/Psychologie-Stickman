@@ -2,6 +2,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import {checkStoryScript, STORY_EXPLANATION_POLICY} from './lib/story-explanation-qa.mjs';
 
 const root=path.resolve('youtube');
 const failures=[];
@@ -57,6 +58,8 @@ for(const phase1Path of plans){
 
   if(plan.policy!=='LONGFORM_STORY_RETENTION_V1') failures.push(`${rel}: script-plan policy mismatch.`);
   if(plan.status!=='APPROVED') failures.push(`${rel}: script-plan status must be APPROVED before Phase 1.`);
+  failures.push(...checkStoryScript(plan, script, {required: phase1.storyExplanationPolicy === STORY_EXPLANATION_POLICY, location: rel.replace('phase1-scenes.json', 'script-plan.json')}));
+  if(plan.storyExplanationPolicy && phase1.storyExplanationPolicy !== plan.storyExplanationPolicy) failures.push(`${rel}: storyExplanationPolicy must match script-plan.json.`);
 
   const targetMin=Number(plan?.targetWords?.min??850);
   const targetMax=Number(plan?.targetWords?.max??1100);

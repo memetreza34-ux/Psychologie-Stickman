@@ -14,6 +14,8 @@ Referenzdateien: `analytics/channel-learnings.md`, `analytics/experiments.csv`, 
 
 ## Bildqualitaets-Lerneffekt aus dem Tuer-Effekt-Video
 
+Nach dem Reel-Pilot vom 19.10.2026: `rules/STORY_EXPLANATION_PROOF.md` und `dokumentation/KOPFARIUM_REDAKTIONSWERKSTATT.md` vor der nächsten Produktion verwenden. Erklärungen im laufenden Geschehen anwenden; Bildbeziehungen statt beschrifteter Dekoration planen; den Schluss über ein verändertes Verständnis auszahlen. Neue Vorlagen und vorhandene QA prüfen die konkreten Nachweise. Zuschauerwirkung bleibt NO_DATA, bis tatsächliche Rückmeldungen oder vergleichbare Analytics vorliegen.
+
 Ab dem naechsten Video bindet `CONTENT_FIRST_VISUAL_QA_V2` (`rules/CONTENT_FIRST_VISUAL_QA.md`): Story mit realen Motiven verbinden, aber Mechanismus/Studie an geeigneter Stelle als klare beschriftete Schemazeichnung, Diagramm oder Vergleich erklaeren. Nicht Tuer, Karton oder Stickman mit leicht anderen Winkeln dauernd wiederholen. Planung verlangt einen echten Informationsgewinn je BILD und gepruefte Alternativen; `npm run qa:creative-visuals`, `phase1:links` und `produce:youtube` sichern dies fuer neue Projekte. Fertige Google-Flow-PNGs zusaetzlich ansehen und Fehlbilder regenerieren. Kein Wechsel der freigegebenen Bildwelt, keine festen Prozentquoten.
 
 ## Kanal

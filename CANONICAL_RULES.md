@@ -14,6 +14,8 @@ Das gilt auch fuer allgemeine Prozessqualitaet (Flow, Script, Audio, Render, Exp
 
 ## Content-first illustrative quality — NEXT VIDEO HARD GATE
 
+Aktualisierte YouTube-Vorlagen ergänzen `STORY_EXPLANATION_PROOF_V1` aus `rules/STORY_EXPLANATION_PROOF.md`: exakte Zitatverbindungen zwischen Erklärung und Anwendung im Skript, dokumentierter Textreview und sichtbare Erklärbeziehungen mit Übernahme in den zugehörigen englischen Flow-Prompt. Die bestehenden Longform-/Bildprüfungen und das Phase-1-Handoff kontrollieren diese Nachweise. Ein Struktur-PASS ist kein Verständlichkeits- oder Wachstumsbeweis.
+
 Policy ID: `CONTENT_FIRST_VISUAL_QA_V2` — `rules/CONTENT_FIRST_VISUAL_QA.md`. Ab neuen Video-Projekten ist vor Google Flow/Phase-1-Fertigmeldung je Szene ein neuer `informationGain`, inhaltlicher `focalSubjectKey`, `settingKey`, `cameraScale`, `visualFunction` und bewusste `alternativeVisualType` inklusive Ablehnungsgrund Pflicht. `SCHEMA_EXPLAINER`, `COMPARE_VISUAL` oder `TEXT_ILLUSTRATION` bei passenden psychologischen Mechanismen und Studien nicht ignorieren. Wiederholungen werden ueber Bildfolgen geprueft, nicht nur ueber Wortanfang/`motifKey`. Bei Fehler neue Bildidee waehlen, nicht Metadaten schoenfaerben. Bestehende `PSYCHOLOGY_STICKMAN_WORLD_V1` unveraendert; genaue deutsche Labels weiterhin nur nach `flowText`. Plan-QA + echte Bildsichtung nach Flow bleiben verpflichtend, keine pauschale automatische Sehgarantie.
 
 ## Topic uniqueness — HARD LOCK
