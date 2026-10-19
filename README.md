@@ -62,8 +62,9 @@ Pro Video genau:
 Ausgabe:
 - ein vollständiger englischer Prompt; Sprechertext und sichtbare Bildtexte Deutsch
 - Flow erzeugt zuerst individuelle Figurenreferenzen und 3 getrennte Cover-Kandidaten
-- nur ein STOP für die Coverwahl; Gewinner ist das separate Thumbnail
+- bei den Covern warten, bis das fertige Cover ausdrücklich freigegeben und der Szenenstart erlaubt ist; Gewinner ist das separate Thumbnail
 - danach alle normalen Videoszenen in 5er-Batches, sofort prüfen und nummerieren
+- das gewählte Cover bei jeder Szene als Stilvorlage verwenden; Figurenreferenzen nur für tatsächlich sichtbare wiederkehrende Personen ergänzen
 - jede Bildnummer = eigene 16:9-Datei
 - akzeptierte Bilder als `NN.png`
 - abschließend alle Bilder auf Vollständigkeit und Inhalt prüfen

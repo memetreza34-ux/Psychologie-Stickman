@@ -64,5 +64,16 @@
   "characterReferenceImportPath": "99-intern/reference-notes/",
   "productionMode": "LONGFORM_STANDARD_V1",
   "longformScriptPolicy": "LONGFORM_STORY_RETENTION_V1",
-  "storyExplanationPolicy": "STORY_EXPLANATION_PROOF_V1"
+  "storyExplanationPolicy": "STORY_EXPLANATION_PROOF_V1",
+  "coverStyleReferencePolicy": "APPROVED_COVER_EVERY_SCENE_V1",
+  "coverApprovalPolicy": "EXPLICIT_FINAL_COVER_APPROVAL_V1",
+  "requireFinalCoverApproval": true,
+  "autoStartAfterCoverSelection": false,
+  "characterReferenceUsagePolicy": "VISIBLE_RECURRING_CHARACTER_ONLY_V1",
+  "artDirectionPolicy": "CHANNEL_CORE_EPISODE_DIRECTION_V1",
+  "episodeArtDirection": {
+    "status": "TO_BE_DESIGNED_FROM_SCRIPT",
+    "channelCore": "PSYCHOLOGY_STICKMAN_WORLD_V1",
+    "referenceAfterApproval": "05-export/thumbnail.png"
+  }
 }

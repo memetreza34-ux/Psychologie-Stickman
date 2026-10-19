@@ -8,6 +8,14 @@ This is the binding visual world for new psychology / human-behavior YouTube pro
 
 ## 1. Core look
 
+### Shared channel core, individual episode direction
+
+All episodes keep the same professional illustrator language: clean expressive ink contours with a slight organic variation, clear foreground silhouettes, quieter background detail, soft two-/three-value cel shading and restrained fine paper grain. Avoid glossy 3D volume, noisy sketch lines, heavy watercolor washes, blurry pseudo-cinematic backgrounds and detached vector infographics. Materials, hands, props, rooms and explanatory diagrams receive the same drawing treatment as the people.
+
+Each episode develops a small set of compatible color/material accents, an appropriate lighting treatment, locations and individually designed people from its script. This is art direction within the common world, not permission to invent a new illustration style for each video. Palette accents are not a global color filter; natural local colors and meaningful warm/cool changes remain possible.
+
+After explicit final cover approval, the approved `thumbnail.png` is the mandatory visual style reference for EVERY generated scene, including objects, rooms, diagrams, comparisons and text illustrations. Character references supplement it only when the particular identifiable recurring person is visible. Do not introduce a person merely to use their reference.
+
 Create a high-quality hand-drawn 2D animated story world. Every frame should feel as if it was drawn by the same professional illustrator for the same channel:
 - strong slightly organic dark outlines
 - soft cel shading
@@ -137,12 +145,15 @@ Hard review when:
 
 ## 11. Cover and episode reference
 
-BILD 01 is generated first as exactly 3 separate 16:9 cover candidates. After the user chooses the winner:
-- winner becomes `03-bilder/01.png`
-- `01.png` anchors linework, shading, texture, finish and stickman species whenever people appear
-- later images may change representation, place, camera, clothing, people, colors and mood
-- do not mechanically copy the cover composition
-- do not force people into later frames because the cover contains people
+First generate only the necessary individual character-reference assets. Finish that stage before making exactly three separate cover candidates. Then WAIT while the user chooses, revises and finishes the cover. A cover selection alone does not authorize scene generation. Proceed only after the user explicitly approves the final cover AND authorizes starting scenes; a natural-language instruction can do both at once.
+
+- Final winner becomes `05-export/thumbnail.png`, separate from `03-bilder/01.png`.
+- Attach/select that same approved cover as style reference for EVERY image, including scenes without people and all diagrams. Never fall back to an unselected candidate or a new style.
+- Use it for linework, shading, grain, materials, color relationships and overall finish. Do not copy its title, layout, pose, depicted people or story content into unrelated scenes.
+- Add only the character references needed for identifiable recurring people actually visible in that scene. Object/diagram-only images normally have no character reference.
+- Each BILD explicitly lists its mandatory cover style reference and its character-reference set, including `none` when appropriate.
+- Once final approval releases the scenes, run all five-image batches without further approval questions. Regenerate failures against the same approved cover.
+- If the interface cannot actually reuse the cover reference, report that precise limitation instead of claiming consistent reference use.
 
 ## 12. Short style anchor
 

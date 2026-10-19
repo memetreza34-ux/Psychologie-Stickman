@@ -169,10 +169,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Medium two-person view in a lived-in entryway: the lead closes their own jacket while the female friend leans closer to inspect the zipper, genuinely curious. Frame the moving hand and the friend's attentive gaze; a normal story moment, no exaggerated embarrassment. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nMedium two-person view in a lived-in entryway: the lead closes their own jacket while the female friend leans closer to inspect the zipper, genuinely curious. Frame the moving hand and the friend's attentive gaze; a normal story moment, no exaggerated embarrassment. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R5",
-      "startWord": 1
+      "startWord": 1,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 2,
@@ -202,10 +208,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Close view of the lead's hand stopping halfway along the closed zipper, fingers poised to demonstrate something they cannot yet show. The friend's waiting hand enters at the edge; the zipper remains ordinary and undamaged. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nClose view of the lead's hand stopping halfway along the closed zipper, fingers poised to demonstrate something they cannot yet show. The friend's waiting hand enters at the edge; the zipper remains ordinary and undamaged. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 16
+      "startWord": 16,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 3,
@@ -238,7 +247,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Two large illustrated states: a confident lead beside the intact jacket on the left, their incomplete mechanical sketch with one conspicuous missing connection on the right. The same zipper is recognizable in both; show the gap between confidence and produced explanation, not a brain or a diagnostic test. Render ONLY the exact German text: \"GEFÜHL\", \"ERKLÄRUNG\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png.\nTwo large illustrated states: a confident lead beside the intact jacket on the left, their incomplete mechanical sketch with one conspicuous missing connection on the right. The same zipper is recognizable in both; show the gap between confidence and produced explanation, not a brain or a diagnostic test. Render ONLY the exact German text: \"GEFÜHL\", \"ERKLÄRUNG\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R1",
       "startWord": 29,
@@ -251,7 +260,12 @@
         "promptAnchor": "Two large illustrated states: a confident lead beside the intact jacket on the left, their incomplete mechanical sketch with one conspicuous missing connection on the right.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R1: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 4,
@@ -281,7 +295,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Top-down jacket detail: one hand holds the pull tab above a closed section while a magnifying lens exposes the still-opaque slider body. The hand's successful action and the concealed interior coexist in one coherent view. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTop-down jacket detail: one hand holds the pull tab above a closed section while a magnifying lens exposes the still-opaque slider body. The hand's successful action and the concealed interior coexist in one coherent view. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R5",
       "startWord": 46,
@@ -294,7 +308,10 @@
         "promptAnchor": "Top-down jacket detail: one hand holds the pull tab above a closed section while a magnifying lens exposes the still-opaque slider body.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R5: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 5,
@@ -324,10 +341,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Over the friend's shoulder, the lead points at the interlocked teeth as if this settles the question; the friend keeps an open expectant palm. Keep both adults in the approved stickman species and avoid mockery. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nOver the friend's shoulder, the lead points at the interlocked teeth as if this settles the question; the friend keeps an open expectant palm. Keep both adults in the approved stickman species and avoid mockery. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 61
+      "startWord": 61,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 6,
@@ -360,7 +383,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A large hand-pull icon at left and the closed zipper at right are connected by a deliberately interrupted broad path. The missing middle occupies the focus; only two endpoints, no extra boxes or panels. This is a conceptual illustration of an unanswered connection. Render ONLY the exact German text: \"ERGEBNIS\", \"ZUSAMMENHANG\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA large hand-pull icon at left and the closed zipper at right are connected by a deliberately interrupted broad path. The missing middle occupies the focus; only two endpoints, no extra boxes or panels. This is a conceptual illustration of an unanswered connection. Render ONLY the exact German text: \"ERGEBNIS\", \"ZUSAMMENHANG\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R5",
       "startWord": 75,
@@ -373,7 +396,10 @@
         "promptAnchor": "A large hand-pull icon at left and the closed zipper at right are connected by a deliberately interrupted broad path.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R5: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 7,
@@ -403,10 +429,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Macro of the established jacket's two separated zipper rows meeting the slider entrance, large enough to inspect individually. Keep the actual mechanism concealed at this point; show a clear physical question rather than a decorative symbol. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nMacro of the established jacket's two separated zipper rows meeting the slider entrance, large enough to inspect individually. Keep the actual mechanism concealed at this point; show a clear physical question rather than a decorative symbol. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 90
+      "startWord": 90,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 8,
@@ -436,10 +465,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A fingertip traces the outer slider shell, then hovers over its inaccessible center. Put a clean sheet and pencil in the background; one physical focal point, no floating symbols or readable notes. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA fingertip traces the outer slider shell, then hovers over its inaccessible center. Put a clean sheet and pencil in the background; one physical focal point, no floating symbols or readable notes. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 106
+      "startWord": 106,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 9,
@@ -469,10 +501,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Wide inviting view of the small apartment work table with two chairs, a blank sheet and pencil, the jacket folded at the far edge of the table. The two friends are out of frame; retain the entryway in the distant background for continuity. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nWide inviting view of the small apartment work table with two chairs, a blank sheet and pencil, the jacket folded at the far edge of the table. The two friends are out of frame; retain the entryway in the distant background for continuity. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 121
+      "startWord": 121,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 10,
@@ -502,7 +537,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "One tabletop comparison: a hand confidently poised over a blank sheet beside a second sheet carrying a rough zipper drawing with a clear unfilled central connection. Match paper size and pencil style; this is the illustrative attempt, not measured study data. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nOne tabletop comparison: a hand confidently poised over a blank sheet beside a second sheet carrying a rough zipper drawing with a clear unfilled central connection. Match paper size and pencil style; this is the illustrative attempt, not measured study data. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R5",
       "startWord": 127,
@@ -515,7 +550,10 @@
         "promptAnchor": "One tabletop comparison: a hand confidently poised over a blank sheet beside a second sheet carrying a rough zipper drawing with a clear unfilled central connection.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R5: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 11,
@@ -545,10 +583,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Top-down close view of the lead drawing two zipper rows and the outer slider silhouette on plain paper. Show only meaningful mechanical strokes, not handwriting or letter-like marks. The real jacket lies beside the sheet. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTop-down close view of the lead drawing two zipper rows and the outer slider silhouette on plain paper. Show only meaningful mechanical strokes, not handwriting or letter-like marks. The real jacket lies beside the sheet. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 141
+      "startWord": 141,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 12,
@@ -578,10 +619,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Side view at table level: the lead stops their pencil above the empty slider interior and studies it; the friend watches patiently from the opposite chair. Natural thoughtful posture, no shame, no comic panic. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nSide view at table level: the lead stops their pencil above the empty slider interior and studies it; the friend watches patiently from the opposite chair. Natural thoughtful posture, no shame, no comic panic. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 156
+      "startWord": 156,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 13,
@@ -611,10 +658,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Extreme close-up of the actual pencil drawing: a clean slider outline with its interior deliberately blank, pencil tip at the boundary between known teeth and unknown guidance. Keep every mechanical mark large and readable without words. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nExtreme close-up of the actual pencil drawing: a clean slider outline with its interior deliberately blank, pencil tip at the boundary between known teeth and unknown guidance. Keep every mechanical mark large and readable without words. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 172
+      "startWord": 172,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 14,
@@ -644,7 +694,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A coherent wide home-table scene: the lead smoothly operates the jacket zipper while the garment rests across the table, the friend sets a bag aside. The ordinary practical action succeeds without exposing the mechanism; this illustrates useful knowledge, not a claim about the brain. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nA coherent wide home-table scene: the lead smoothly operates the jacket zipper while the garment rests across the table, the friend sets a bag aside. The ordinary practical action succeeds without exposing the mechanism; this illustrates useful knowledge, not a claim about the brain. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R5",
       "startWord": 187,
@@ -658,7 +708,13 @@
         "promptAnchor": "A coherent wide home-table scene: the lead smoothly operates the jacket zipper while the garment rests across the table, the friend sets a bag aside.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R5: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 15,
@@ -688,7 +744,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Close view of the recognizable jacket folded on the table: a hand reliably locates the pull tab while the opaque slider interior stays hidden. Contrast accessible action with concealed construction within one physical object. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nClose view of the recognizable jacket folded on the table: a hand reliably locates the pull tab while the opaque slider interior stays hidden. Contrast accessible action with concealed construction within one physical object. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R5",
       "startWord": 203,
@@ -702,7 +758,10 @@
         "promptAnchor": "Close view of the recognizable jacket folded on the table: a hand reliably locates the pull tab while the opaque slider interior stays hidden.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R5: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 16,
@@ -732,7 +791,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "One large illustrated mechanical sketch on cool blue drafting paper: the hand's pulling force is linked through the guided zipper rows to a meshing contact. Use one broad continuous relation and generous spacing, no extra panels or labels. Clearly an explanatory sketch, not a brain model. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nOne large illustrated mechanical sketch on cool blue drafting paper: the hand's pulling force is linked through the guided zipper rows to a meshing contact. Use one broad continuous relation and generous spacing, no extra panels or labels. Clearly an explanatory sketch, not a brain model. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R5",
       "startWord": 219,
@@ -745,7 +804,10 @@
         "promptAnchor": "One large illustrated mechanical sketch on cool blue drafting paper: the hand's pulling force is linked through the guided zipper rows to a meshing contact.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R5: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 17,
@@ -775,7 +837,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Show the lead's original sheet with a hand-pull drawing at one end and the closed teeth at the other; the connecting path stops around the empty slider outline. A physical pencil points specifically to that interrupted transition, not to the whole page. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nShow the lead's original sheet with a hand-pull drawing at one end and the closed teeth at the other; the connecting path stops around the empty slider outline. A physical pencil points specifically to that interrupted transition, not to the whole page. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
       "startWord": 235,
@@ -788,7 +850,10 @@
         "promptAnchor": "Show the lead's original sheet with a hand-pull drawing at one end and the closed teeth at the other; the connecting path stops around the empty slider outline.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "G1: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 18,
@@ -821,7 +886,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "One greatly enlarged cutaway of the jacket's metal slider, with two separate rows entering the two branches of its Y-shaped internal channel and one engaged chain leaving the stem. Closing direction is toward the two open rows; keep geometry physically coherent, no magic fusion, no extra panels. Render ONLY the exact German text: \"SCHIEBER\", \"FÜHRUNG\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nOne greatly enlarged cutaway of the jacket's metal slider, with two separate rows entering the two branches of its Y-shaped internal channel and one engaged chain leaving the stem. Closing direction is toward the two open rows; keep geometry physically coherent, no magic fusion, no extra panels. Render ONLY the exact German text: \"SCHIEBER\", \"FÜHRUNG\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R6",
       "startWord": 251,
@@ -834,7 +899,10 @@
         "promptAnchor": "One greatly enlarged cutaway of the jacket's metal slider, with two separate rows entering the two branches of its Y-shaped internal channel and one engaged chain leaving the stem.",
         "evidenceStatus": "SOURCED_RESULT",
         "sourceRef": "R6: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 19,
@@ -864,7 +932,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A tight mechanical close-up below the slider's joining region: complementary zipper elements from opposite tapes mesh into one alternating row. Show intact neighboring elements large and accurately aligned, with the two cloth tapes retained on their respective sides; no added gears or glue. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA tight mechanical close-up below the slider's joining region: complementary zipper elements from opposite tapes mesh into one alternating row. Show intact neighboring elements large and accurately aligned, with the two cloth tapes retained on their respective sides; no added gears or glue. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R6",
       "startWord": 267,
@@ -878,7 +946,10 @@
         "promptAnchor": "A tight mechanical close-up below the slider's joining region: complementary zipper elements from opposite tapes mesh into one alternating row.",
         "evidenceStatus": "SOURCED_RESULT",
         "sourceRef": "R6: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 20,
@@ -908,10 +979,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Three-quarter table view: the lead adds the internal Y-shaped guidance to their earlier drawing while their other hand indicates the matching place on the real jacket. The friend follows the pencil, seeing the connection become explicit. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nThree-quarter table view: the lead adds the internal Y-shaped guidance to their earlier drawing while their other hand indicates the matching place on the real jacket. The friend follows the pencil, seeing the connection become explicit. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 286
+      "startWord": 286,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 21,
@@ -941,10 +1018,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Close view of the revised drawing: the previously empty slider interior now has one clear guidance path, while a separate lightly outlined detail remains intentionally unelaborated. Do not fill the page with invented technical detail or print any claims of mastery. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nClose view of the revised drawing: the previously empty slider interior now has one clear guidance path, while a separate lightly outlined detail remains intentionally unelaborated. Do not fill the page with invented technical detail or print any claims of mastery. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 303
+      "startWord": 303,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 22,
@@ -974,7 +1054,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Wide contemporary research-room reconstruction: a clean desk, a jacket zipper sample, a simple piano-key model and a closed unbranded mechanical lock await a participant. These are illustrative examples from the study's device set, not a historical photograph. No readable notices. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nWide contemporary research-room reconstruction: a clean desk, a jacket zipper sample, a simple piano-key model and a closed unbranded mechanical lock await a participant. These are illustrative examples from the study's device set, not a historical photograph. No readable notices. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R1",
       "startWord": 318,
@@ -987,7 +1067,10 @@
         "promptAnchor": "Wide contemporary research-room reconstruction: a clean desk, a jacket zipper sample, a simple piano-key model and a closed unbranded mechanical lock await a participant.",
         "evidenceStatus": "RESEARCH_SETUP",
         "sourceRef": "R1: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 23,
@@ -1017,7 +1100,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "The separate research participant considers a zipper sample while a researcher offers a plain response sheet. Show a thoughtful initial judgment before any drawing task; no invented score, chart or legible questionnaire. Both people use identical approved stickman construction. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-03.png.\nThe separate research participant considers a zipper sample while a researcher offers a plain response sheet. Show a thoughtful initial judgment before any drawing task; no invented score, chart or legible questionnaire. Both people use identical approved stickman construction. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R1",
       "startWord": 332,
@@ -1030,7 +1113,12 @@
         "promptAnchor": "The separate research participant considers a zipper sample while a researcher offers a plain response sheet.",
         "evidenceStatus": "RESEARCH_SETUP",
         "sourceRef": "R1: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-03.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 24,
@@ -1060,7 +1148,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Top-down view of the research participant's hands producing a large step-by-step mechanical sketch and a few broad connector strokes on paper, beside the zipper sample. Use the sketch to stand for the written explanation task; do not invent readable participant prose. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTop-down view of the research participant's hands producing a large step-by-step mechanical sketch and a few broad connector strokes on paper, beside the zipper sample. Use the sketch to stand for the written explanation task; do not invent readable participant prose. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R1",
       "startWord": 347,
@@ -1073,7 +1161,10 @@
         "promptAnchor": "Top-down view of the research participant's hands producing a large step-by-step mechanical sketch and a few broad connector strokes on paper, beside the zipper sample.",
         "evidenceStatus": "RESEARCH_SETUP",
         "sourceRef": "R1: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 25,
@@ -1106,7 +1197,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Two large matched views of the same illustrative participant: initially casually assured beside the intact device, later inspecting a visibly incomplete explanation sheet before reconsidering their judgment. Qualitative reconstruction of self-rating change only; no numerical means, scales, measured heights or objective-ability score. Render ONLY the exact German text: \"VORHER\", \"NACHHER\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-03.png.\nTwo large matched views of the same illustrative participant: initially casually assured beside the intact device, later inspecting a visibly incomplete explanation sheet before reconsidering their judgment. Qualitative reconstruction of self-rating change only; no numerical means, scales, measured heights or objective-ability score. Render ONLY the exact German text: \"VORHER\", \"NACHHER\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R1",
       "startWord": 360,
@@ -1119,7 +1210,12 @@
         "promptAnchor": "Two large matched views of the same illustrative participant: initially casually assured beside the intact device, later inspecting a visibly incomplete explanation sheet before reconsidering their judgment.",
         "evidenceStatus": "SOURCED_RESULT",
         "sourceRef": "R1: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-03.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 26,
@@ -1149,7 +1245,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A researcher's finger and the participant's pencil converge on the specific blank connection in the produced mechanism sketch. Keep the original device in soft focus, intact; the omission belongs to the explanation, not to a broken object. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA researcher's finger and the participant's pencil converge on the specific blank connection in the produced mechanism sketch. Keep the original device in soft focus, intact; the omission belongs to the explanation, not to a broken object. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R1",
       "startWord": 374,
@@ -1162,7 +1258,10 @@
         "promptAnchor": "A researcher's finger and the participant's pencil converge on the specific blank connection in the produced mechanism sketch.",
         "evidenceStatus": "SOURCED_RESULT",
         "sourceRef": "R1: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 27,
@@ -1195,7 +1294,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A paired conceptual view: the same unchanged mechanism sketch appears on both sides, while the participant's attitude shifts from assured to reflective. Keep every known part identical. The physical knowledge record does not disappear or shrink when the self-judgment changes. Render ONLY the exact German text: \"EINSCHÄTZUNG\", \"KENNTNISSE\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-03.png.\nA paired conceptual view: the same unchanged mechanism sketch appears on both sides, while the participant's attitude shifts from assured to reflective. Keep every known part identical. The physical knowledge record does not disappear or shrink when the self-judgment changes. Render ONLY the exact German text: \"EINSCHÄTZUNG\", \"KENNTNISSE\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R1",
       "startWord": 388,
@@ -1208,7 +1307,12 @@
         "promptAnchor": "A paired conceptual view: the same unchanged mechanism sketch appears on both sides, while the participant's attitude shifts from assured to reflective.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R1: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-03.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 28,
@@ -1238,10 +1342,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Return to the home table from the friend's viewpoint: the lead places the earlier incomplete sheet beside their revised version and indicates one precise remaining question. Warm apartment lighting restores the main story after the research-room sequence. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nReturn to the home table from the friend's viewpoint: the lead places the earlier incomplete sheet beside their revised version and indicates one precise remaining question. Warm apartment lighting restores the main story after the research-room sequence. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 406
+      "startWord": 406,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 29,
@@ -1271,10 +1381,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Top-down revised sketch with one neat open circle around the unresolved detail; a pencil and closed laptop sit beside it. The circle singles out a real connection in the drawing; no entire-page crosses or decorative question marks. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTop-down revised sketch with one neat open circle around the unresolved detail; a pencil and closed laptop sit beside it. The circle singles out a real connection in the drawing; no entire-page crosses or decorative question marks. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 422
+      "startWord": 422,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 30,
@@ -1304,10 +1417,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Close two-person view: the friend raises an interested eyebrow and lightly holds the zipper sample, while the lead listens rather than performs certainty. Change the axis from the earlier table shots; the objection is friendly and substantive. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nClose two-person view: the friend raises an interested eyebrow and lightly holds the zipper sample, while the lead listens rather than performs certainty. Change the axis from the earlier table shots; the objection is friendly and substantive. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 440
+      "startWord": 440,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 31,
@@ -1337,7 +1456,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Illustrative university study workspace: an adult participant confidently selects a familiar subject notebook, then faces a separate blank explanation sheet. Subject materials carry only abstract diagrams, no titles. This is a research reconstruction about prior knowledge, not a caricature of incompetent experts. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-04.png.\nIllustrative university study workspace: an adult participant confidently selects a familiar subject notebook, then faces a separate blank explanation sheet. Subject materials carry only abstract diagrams, no titles. This is a research reconstruction about prior knowledge, not a caricature of incompetent experts. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R3",
       "startWord": 457,
@@ -1350,7 +1469,12 @@
         "promptAnchor": "Illustrative university study workspace: an adult participant confidently selects a familiar subject notebook, then faces a separate blank explanation sheet.",
         "evidenceStatus": "RESEARCH_SETUP",
         "sourceRef": "R3: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-04.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 32,
@@ -1383,7 +1507,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Two large illustrated states using the same mechanism parts: disconnected recognizable components on one side, their correctly connected working relation on the other. The change is the connection between parts, not a new pile of labels or extra facts. Render ONLY the exact German text: \"BEGRIFFE\", \"ZUSAMMENHÄNGE\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTwo large illustrated states using the same mechanism parts: disconnected recognizable components on one side, their correctly connected working relation on the other. The change is the connection between parts, not a new pile of labels or extra facts. Render ONLY the exact German text: \"BEGRIFFE\", \"ZUSAMMENHÄNGE\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R3",
       "startWord": 475,
@@ -1396,7 +1520,10 @@
         "promptAnchor": "Two large illustrated states using the same mechanism parts: disconnected recognizable components on one side, their correctly connected working relation on the other.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R3: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 33,
@@ -1426,10 +1553,15 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "The study participant correctly assembles a familiar simple object, then thoughtfully leaves one explanation detail open on paper. Frame useful competence and honest uncertainty together in one coherent scene; no dunce hats, ridicule or brain-size comparison. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-04.png.\nThe study participant correctly assembles a familiar simple object, then thoughtfully leaves one explanation detail open on paper. Frame useful competence and honest uncertainty together in one coherent scene; no dunce hats, ridicule or brain-size comparison. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R3",
-      "startWord": 493
+      "startWord": 493,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-04.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 34,
@@ -1459,10 +1591,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A clean close view of the lead's hand isolating one mechanical connection with the pencil point, while the rest of the complete sketch extends beyond the frame. Make the selected relationship, not a portrait or trophy, the focus. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA clean close view of the lead's hand isolating one mechanical connection with the pencil point, while the rest of the complete sketch extends beyond the frame. Make the selected relationship, not a portrait or trophy, the focus. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 509
+      "startWord": 509,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 35,
@@ -1492,10 +1627,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Side view: the lead opens the laptop on the same table and reaches for the trackpad, with the partly completed sheet still visible beside it. The friend shifts their chair closer. Use the same cast and unchanged jacket prop. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nSide view: the lead opens the laptop on the same table and reaches for the trackpad, with the partly completed sheet still visible beside it. The friend shifts their chair closer. Use the same cast and unchanged jacket prop. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 525
+      "startWord": 525,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 36,
@@ -1525,10 +1666,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Close laptop view with a large clean mechanical zipper illustration, no web text, logos, navigation labels or pseudo-letters. A hand on the trackpad and the real jacket at the lower edge establish that this is external information, not a thought inside the lead's head. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nClose laptop view with a large clean mechanical zipper illustration, no web text, logos, navigation labels or pseudo-letters. A hand on the trackpad and the real jacket at the lower edge establish that this is external information, not a thought inside the lead's head. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 537
+      "startWord": 537,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 37,
@@ -1558,10 +1702,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "From behind the laptop, show the two friends leaning toward the diagram; the lead begins to nod while the friend's gaze stays on the explanation. Keep the drawing sheet with the open detail visible in the near foreground. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nFrom behind the laptop, show the two friends leaning toward the diagram; the lead begins to nod while the friend's gaze stays on the explanation. Keep the drawing sheet with the open detail visible in the near foreground. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 545
+      "startWord": 545,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 38,
@@ -1594,7 +1744,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Two matched tabletop views: on one side a full source diagram is visible on the laptop; on the other the laptop is turned away and only the lead's incomplete sheet remains available. Keep the same jacket and paper position, changing only access to the source. Render ONLY the exact German text: \"VORLAGE\", \"EIGENE ERKLÄRUNG\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTwo matched tabletop views: on one side a full source diagram is visible on the laptop; on the other the laptop is turned away and only the lead's incomplete sheet remains available. Keep the same jacket and paper position, changing only access to the source. Render ONLY the exact German text: \"VORLAGE\", \"EIGENE ERKLÄRUNG\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R2",
       "startWord": 560,
@@ -1607,7 +1757,10 @@
         "promptAnchor": "Two matched tabletop views: on one side a full source diagram is visible on the laptop; on the other the laptop is turned away and only the lead's incomplete sheet remains available.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R2: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 39,
@@ -1637,7 +1790,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Wide illustrative research station with two equal workspaces: one has an active laptop, the other a covered laptop and the same task card. The objects establish information access as the upcoming difference; no claim of brain measurement or actual historical room. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nWide illustrative research station with two equal workspaces: one has an active laptop, the other a covered laptop and the same task card. The objects establish information access as the upcoming difference; no claim of brain measurement or actual historical room. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R2",
       "startWord": 578,
@@ -1650,7 +1803,10 @@
         "promptAnchor": "Wide illustrative research station with two equal workspaces: one has an active laptop, the other a covered laptop and the same task card.",
         "evidenceStatus": "RESEARCH_SETUP",
         "sourceRef": "R2: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 40,
@@ -1683,7 +1839,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Top-down matched workspaces with identical simple question cards: the left participant hand uses an open laptop to search; the right hand works without access to the closed laptop. Show the search condition and the no-internet condition, not two different abilities or different-quality devices. Render ONLY the exact German text: \"MIT SUCHE\", \"OHNE INTERNET\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTop-down matched workspaces with identical simple question cards: the left participant hand uses an open laptop to search; the right hand works without access to the closed laptop. Show the search condition and the no-internet condition, not two different abilities or different-quality devices. Render ONLY the exact German text: \"MIT SUCHE\", \"OHNE INTERNET\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R2",
       "startWord": 593,
@@ -1696,7 +1852,10 @@
         "promptAnchor": "Top-down matched workspaces with identical simple question cards: the left participant hand uses an open laptop to search; the right hand works without access to the closed laptop.",
         "evidenceStatus": "RESEARCH_SETUP",
         "sourceRef": "R2: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 41,
@@ -1726,7 +1885,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A research hand moves the original zipper-question card aside and presents two new large topic illustrations, a storm cloud and an egg in a pan. The physical replacement of the old topic by unrelated ones is the dominant relation; no written questions or answer keys. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA research hand moves the original zipper-question card aside and presents two new large topic illustrations, a storm cloud and an egg in a pan. The physical replacement of the old topic by unrelated ones is the dominant relation; no written questions or answer keys. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R2",
       "startWord": 610,
@@ -1739,7 +1898,10 @@
         "promptAnchor": "A research hand moves the original zipper-question card aside and presents two new large topic illustrations, a storm cloud and an egg in a pan.",
         "evidenceStatus": "RESEARCH_SETUP",
         "sourceRef": "R2: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 42,
@@ -1769,7 +1931,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A qualitative matched illustration: the search-condition participant gestures more assuredly toward the new topic cards, while the no-search participant pauses thoughtfully over identical cards. Neither produces an answer. No numerical chart, brain scan or implied tested performance; this depicts reported confidence only. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA qualitative matched illustration: the search-condition participant gestures more assuredly toward the new topic cards, while the no-search participant pauses thoughtfully over identical cards. Neither produces an answer. No numerical chart, brain scan or implied tested performance; this depicts reported confidence only. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R2",
       "startWord": 628,
@@ -1782,7 +1944,10 @@
         "promptAnchor": "A qualitative matched illustration: the search-condition participant gestures more assuredly toward the new topic cards, while the no-search participant pauses thoughtfully over identical cards.",
         "evidenceStatus": "SOURCED_RESULT",
         "sourceRef": "R2: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 43,
@@ -1812,10 +1977,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "View from the lead's seat: the laptop screen begins to rotate out of sight while the same drawing and jacket remain fully visible on the table. Emphasize the boundary between available outside explanation and the sheet the lead can produce. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nView from the lead's seat: the laptop screen begins to rotate out of sight while the same drawing and jacket remain fully visible on the table. Emphasize the boundary between available outside explanation and the sheet the lead can produce. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 647
+      "startWord": 647,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 44,
@@ -1845,10 +2013,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Wide home-table shot: the laptop faces away from the lead, the friend points to the real jacket, and the lead settles calmly with pencil in hand. Keep the full spatial relation clear and distinguish this view from the earlier over-shoulder shots. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nWide home-table shot: the laptop faces away from the lead, the friend points to the real jacket, and the lead settles calmly with pencil in hand. Keep the full spatial relation clear and distinguish this view from the earlier over-shoulder shots. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 666
+      "startWord": 666,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 45,
@@ -1878,10 +2052,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "The lead reconstructs the slider guidance on a fresh sheet, then stops at one unelaborated detail. Show the meaningful completed connection plus the distinct remaining gap, with no external diagram visible. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nThe lead reconstructs the slider guidance on a fresh sheet, then stops at one unelaborated detail. Show the meaningful completed connection plus the distinct remaining gap, with no external diagram visible. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 683
+      "startWord": 683,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 46,
@@ -1913,10 +2090,13 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Macro of the pencil circling exactly one unfinished junction in the fresh sketch. Everything outside that circle remains intact and un-crossed-out. Use a single deliberate physical circle, no decorative halos or invented handwriting. Render ONLY the exact German text: \"HIER OFFEN\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nMacro of the pencil circling exactly one unfinished junction in the fresh sketch. Everything outside that circle remains intact and un-crossed-out. Use a single deliberate physical circle, no decorative halos or invented handwriting. Render ONLY the exact German text: \"HIER OFFEN\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 699
+      "startWord": 699,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 47,
@@ -1946,10 +2126,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "The lead calmly shows the useful completed part of the sketch to the friend and leaves the marked gap plainly visible. The friend responds with an attentive nod, not applause or competitive ranking. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nThe lead calmly shows the useful completed part of the sketch to the friend and leaves the marked gap plainly visible. The friend responds with an attentive nod, not applause or competitive ranking. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 713
+      "startWord": 713,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 48,
@@ -1982,7 +2168,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Two large concrete records: a portrait-style response card expressing confidence beside a separate mechanism drawing being checked against a reference drawing. No quantities or grades. The first records a judgment; the second makes a checkable relation available. Render ONLY the exact German text: \"SELBSTEINSCHÄTZUNG\", \"INHALTSPRÜFUNG\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTwo large concrete records: a portrait-style response card expressing confidence beside a separate mechanism drawing being checked against a reference drawing. No quantities or grades. The first records a judgment; the second makes a checkable relation available. Render ONLY the exact German text: \"SELBSTEINSCHÄTZUNG\", \"INHALTSPRÜFUNG\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R4",
       "startWord": 729,
@@ -1995,7 +2181,10 @@
         "promptAnchor": "Two large concrete records: a portrait-style response card expressing confidence beside a separate mechanism drawing being checked against a reference drawing.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R4: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 49,
@@ -2029,7 +2218,7 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Two large reconstructed tasks: one hand copies the exact short German sentence DER TAG BEGINNT from a visible card; another hand attempts a zipper explanation sketch. Same quiet desk conditions. The short sentence is an illustrative placeholder for copying neutral text, not the original experimental stimulus; no scores or result chart. Render ONLY the exact German text: \"ABSCHREIBEN\", \"ERKLÄREN\", \"DER TAG BEGINNT\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTwo large reconstructed tasks: one hand copies the exact short German sentence DER TAG BEGINNT from a visible card; another hand attempts a zipper explanation sketch. Same quiet desk conditions. The short sentence is an illustrative placeholder for copying neutral text, not the original experimental stimulus; no scores or result chart. Render ONLY the exact German text: \"ABSCHREIBEN\", \"ERKLÄREN\", \"DER TAG BEGINNT\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R4",
       "startWord": 748,
@@ -2042,7 +2231,10 @@
         "promptAnchor": "Two large reconstructed tasks: one hand copies the exact short German sentence DER TAG BEGINNT from a visible card; another hand attempts a zipper explanation sketch.",
         "evidenceStatus": "RESEARCH_SETUP",
         "sourceRef": "R4: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 50,
@@ -2072,10 +2264,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "An intimate conversational view: the lead pauses, looks toward their useful sketch and organizes a thought while the friend waits supportively. Keep demonstrated knowledge visible on the table; no empty skulls, crossed-out brains or judgmental gestures. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nAn intimate conversational view: the lead pauses, looks toward their useful sketch and organizes a thought while the friend waits supportively. Keep demonstrated knowledge visible on the table; no empty skulls, crossed-out brains or judgmental gestures. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R5",
-      "startWord": 767
+      "startWord": 767,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 51,
@@ -2105,7 +2303,7 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A source cutaway and the lead's sketch lie side by side. A pencil follows the same internal slider guidance in both and circles one mismatching drawn connection. Keep the comparison mechanical and concrete, no fake certificate, checkmark score or claims about intelligence. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA source cutaway and the lead's sketch lie side by side. A pencil follows the same internal slider guidance in both and circles one mismatching drawn connection. Keep the comparison mechanical and concrete, no fake certificate, checkmark score or claims about intelligence. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "R5",
       "startWord": 784,
@@ -2118,7 +2316,10 @@
         "promptAnchor": "A source cutaway and the lead's sketch lie side by side.",
         "evidenceStatus": "ILLUSTRATIVE_MODEL",
         "sourceRef": "R5: 99-intern/quellen/sources.md"
-      }
+      },
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 52,
@@ -2148,10 +2349,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Fresh wide view of the home table: jacket, clean paper and pencil arranged for a focused attempt, laptop closed at the far end. The calm work setup replaces the earlier rush to answer; no numbered three-step board or panel collage. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nFresh wide view of the home table: jacket, clean paper and pencil arranged for a focused attempt, laptop closed at the far end. The calm work setup replaces the earlier rush to answer; no numbered three-step board or panel collage. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 802
+      "startWord": 802,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 53,
@@ -2183,10 +2387,13 @@
       ],
       "textPolicy": "FLOW_EXACT_KEYWORD_TEXT",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A magnifying lens frames only the slider and the two entering zipper rows, while most of the jacket stays outside the focal area. The physical framing narrows the question to one relationship without pretending to explain the whole object. Render ONLY the exact German text: \"WIE GREIFT ES?\". No other readable text.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA magnifying lens frames only the slider and the two entering zipper rows, while most of the jacket stays outside the focal area. The physical framing narrows the question to one relationship without pretending to explain the whole object. Render ONLY the exact German text: \"WIE GREIFT ES?\". No other readable text.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 819
+      "startWord": 819,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 54,
@@ -2216,10 +2423,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "From the side opposite the earlier drawing shots, show the lead verbally explaining while sketching the guidance path to the friend. The laptop remains closed and physically behind them; hands and pencil make the active attempt unmistakable. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nFrom the side opposite the earlier drawing shots, show the lead verbally explaining while sketching the guidance path to the friend. The laptop remains closed and physically behind them; hands and pencil make the active attempt unmistakable. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 833
+      "startWord": 833,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 55,
@@ -2249,10 +2462,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Close on a useful partial drawing with one newly marked unfinished link. The lead places a small plain colored paper tab beside that exact link; no readable wording, no broad red cross, no additional cards. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nClose on a useful partial drawing with one newly marked unfinished link. The lead places a small plain colored paper tab beside that exact link; no readable wording, no broad red cross, no additional cards. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 848
+      "startWord": 848,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 56,
@@ -2282,10 +2498,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Top-down view of the marked sketch and a source diagram, aligned so the same slider junction can be compared directly. The colored tab stays at the unresolved place and a fingertip traces the corresponding verified channel in the source. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nTop-down view of the marked sketch and a source diagram, aligned so the same slider junction can be compared directly. The colored tab stays at the unresolved place and a fingertip traces the corresponding verified channel in the source. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 865
+      "startWord": 865,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 57,
@@ -2315,10 +2534,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "The source diagram is face down at the far edge while the lead begins a fresh large guidance sketch beside the real zipper. Show available physical object versus unavailable source page clearly; no trophy, perfect-score stamp or guarantee of mastery. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nThe source diagram is face down at the far edge while the lead begins a fresh large guidance sketch beside the real zipper. Show available physical object versus unavailable source page clearly; no trophy, perfect-score stamp or guarantee of mastery. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 881
+      "startWord": 881,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 58,
@@ -2348,10 +2570,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "The lead indicates a remaining circled detail with an honest open palm while the friend listens calmly. Their completed explanation remains between them; uncertainty concerns that one point rather than their entire competence. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nThe lead indicates a remaining circled detail with an honest open palm while the friend listens calmly. Their completed explanation remains between them; uncertainty concerns that one point rather than their entire competence. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 899
+      "startWord": 899,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 59,
@@ -2381,10 +2609,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Return to the original entryway as the female friend now closes her own jacket and prepares to leave, while the lead stands beside the work-table doorway. Her jacket has its own established reference identity; do not accidentally transfer the lead's jacket to her. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nReturn to the original entryway as the female friend now closes her own jacket and prepares to leave, while the lead stands beside the work-table doorway. Her jacket has its own established reference identity; do not accidentally transfer the lead's jacket to her. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 916
+      "startWord": 916,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 60,
@@ -2414,10 +2648,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "Final tabletop comparison of the lead's first nearly empty sketch and their latest connected guidance sketch with one remaining marked detail. The real jacket is the same as at the beginning. Show progress as new relationships on paper, not a claim of complete expertise. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nFinal tabletop comparison of the lead's first nearly empty sketch and their latest connected guidance sketch with one remaining marked detail. The real jacket is the same as at the beginning. Show progress as new relationships on paper, not a claim of complete expertise. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 930
+      "startWord": 930,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     },
     {
       "scene": 61,
@@ -2447,10 +2684,16 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "At the entryway threshold the lead holds their useful sketch at waist height and glances thoughtfully toward its marked gap, while the friend waits naturally beside the door. Frame a reflective exchange, no pointer-to-camera performance or subscription gesture. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.\nAt the entryway threshold the lead holds their useful sketch at waist height and glances thoughtfully toward its marked gap, while the friend waits naturally beside the door. Frame a reflective exchange, no pointer-to-camera performance or subscription gesture. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 946
+      "startWord": 946,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [
+        "character-reference-01.png",
+        "character-reference-02.png"
+      ],
+      "referenceReason": "Only the listed identifiable recurring roles are visible; approved cover supplies shared style."
     },
     {
       "scene": 62,
@@ -2480,10 +2723,13 @@
       "flowText": [],
       "textPolicy": "NONE",
       "literalMetaphorWarning": "Show the actual explanatory relation; never literalize the name of a psychological effect.",
-      "imagePrompt": "A quiet final close view of the latest pencil sketch resting beside the actual jacket zipper: the drawn guidance and the real slider align visually, with the remaining small marked uncertainty retained. Warm side light, uncluttered frame, no slogan or end-card text. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
+      "imagePrompt": "STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.\nCHARACTER REFERENCES: none.\nA quiet final close view of the latest pencil sketch resting beside the actual jacket zipper: the drawn guidance and the real slider align visually, with the remaining small marked uncertainty retained. Warm side light, uncluttered frame, no slogan or end-card text. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.",
       "generationStatus": "PENDING_GOOGLE_FLOW",
       "sourceRef": "G1",
-      "startWord": 963
+      "startWord": 963,
+      "styleReferenceImage": "05-export/thumbnail.png",
+      "characterReferenceImages": [],
+      "referenceReason": "No identifiable recurring person requires an identity reference; retain the approved cover style for this object, cropped hand, scene or illustration."
     }
   ],
   "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2",
@@ -2539,5 +2785,20 @@
       "file": "character-reference-04.png",
       "role": "Distinct illustrative prior-knowledge participant, scenes 31/33"
     }
-  ]
+  ],
+  "coverStyleReferencePolicy": "APPROVED_COVER_EVERY_SCENE_V1",
+  "coverApprovalPolicy": "EXPLICIT_FINAL_COVER_APPROVAL_V1",
+  "requireFinalCoverApproval": true,
+  "autoStartAfterCoverSelection": false,
+  "characterReferenceUsagePolicy": "VISIBLE_RECURRING_CHARACTER_ONLY_V1",
+  "artDirectionPolicy": "CHANNEL_CORE_EPISODE_DIRECTION_V1",
+  "episodeArtDirection": {
+    "status": "PLANNED_PENDING_FINAL_COVER_APPROVAL",
+    "intent": "An intimate, curious everyday investigation; sophisticated illustrated animation with clear mechanical explanations, no classroom-slide or generic AI-art appearance.",
+    "palette": "Proposed episode accents: muted petrol, warm ochre and ivory paper, with natural wood and metal. Use them selectively, never a teal wash. The final approved cover locks the actual palette relationships.",
+    "lighting": "Soft warm side light in the apartment; cooler balanced research light while keeping the same ink, shading and material language. Light heads remain the same pale base.",
+    "materials": "Readable warm wood, matte fabric, restrained metal highlights and lightly textured paper. Technical cutaways use the same drawn finish, not a foreign CAD render.",
+    "composition": "One clear focal relationship per frame, deliberate foreground/middle/background depth where spatial, generous space around explanatory details. No clutter, no fixed centered-object template.",
+    "continuity": "Lead jacket color, zipper construction, individual hair/clothing and apartment layout lock once established in Flow; the friend has her own distinct outer jacket."
+  }
 }

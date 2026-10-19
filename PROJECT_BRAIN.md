@@ -1,5 +1,9 @@
 # PROJECT BRAIN
 
+## Cover fertigstellen, dann alle Szenen am Cover ausrichten — 19.10.2026
+
+`EXPLICIT_FINAL_COVER_APPROVAL_V1` + `APPROVED_COVER_EVERY_SCENE_V1` + `VISIBLE_RECURRING_CHARACTER_ONLY_V1`: Zuerst notwendige Figurenreferenzen fertigstellen, dann drei separate Cover erzeugen. Während Coverwahl und Coverkorrekturen WARTEN. Eine Auswahl allein reicht nicht: Erst die ausdrückliche Freigabe des fertigen Covers mit Szenenstart erlaubt BILD 01. Danach das gewählte `05-export/thumbnail.png` bei JEDER Szene tatsächlich als Stilreferenz verwenden, auch bei Objekten, Räumen, Diagrammen und Vergleichen. Figurenreferenzen nur ergänzen, wenn die betreffende wiederkehrende Person erkennbar im Bild ist. Keine Menschen hinzufügen, um eine Referenz zu verwenden. Jede BILD-Anweisung nennt Cover und benötigte Figurenreferenzen ausdrücklich. Gemeinsame Zeichenwelt kanalweit fest, passende Farb-/Licht-/Materialgestaltung pro Episode; siehe `rules/PSYCHOLOGY_STICKMAN_WORLD.md`. Diese präzisere Freigabe ersetzt ältere verkürzte Formulierungen wie „nach Coverauswahl automatisch weiter“.
+
 ## PFLICHT: WOCHENORDNER vor jedem neuen YouTube-Video (YOUTUBE_ISO_WEEK_FOLDERS_V1)
 
 Verbindlich: `rules/YOUTUBE_WEEK_FOLDERS.md`. ZUERST `npm run youtube:week -- TT.MM.JJJJ` ausführen bzw. ISO-Woche Montag–Sonntag errechnen, dann das Videoprojekt **nur** in `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/<TT.MM.JJJJ-thema>/` anlegen. Vorher Themenregister und Wochenprojektordner prüfen. Alle bestehenden Unterordner `01-script` / `02-google-flow` / `03-bilder` / `04-audio` / `05-export` / `99-intern` bleiben unverändert. Die beiden verpflichtenden Phase-1-Direktlinks und `TOPIC_REGISTRY.json` verwenden den *vollständigen* Wochenpfad. Niemals einen neuen flachen Videoordner direkt unter `youtube/` erstellen.
@@ -125,10 +129,10 @@ Dark scenes should feel tense through observable behavior, spatial relations, ob
 
 For every NEW YouTube video, and the opted-in Planungsfehlschluss project:
 - Make 3 separate 16:9 thumbnail candidates FIRST. This is the ONLY approval pause.
-- Winner goes to `05-export/thumbnail.png` (NOT `01.png`). Delete the other two rejected candidates only AFTER selection.
+- Winner goes to `05-export/thumbnail.png` (NOT `01.png`). Delete the other two rejected candidates only AFTER explicit final cover approval and scene-start authorization.
 - The thumbnail is never part of the rendered video or the video-scene numbering; use it only as an illustrator/style reference.
 - BILD 01 is the FIRST NORMAL VIDEO SHOT aligned with the first spoken words: no cover text, no thumbnail framing, no forced title.
-- Automatically generate BILD 01–05, 06–10 and subsequent FIVE image batches; last remainder 1–4. No further questions or pauses after thumbnail selection.
+- Automatically generate BILD 01–05, 06–10 and subsequent FIVE image batches; last remainder 1–4. No further questions or pauses after explicit final cover approval and scene-start authorization.
 - After every batch, regenerate failed/missing scenes only, number `01.png` … `NN.png`, keep all scene assets flat in `03-bilder/`.
 - Final QA requires a separate `05-export/thumbnail.png`, ALL scene images 01–NN, exact filenames/count, 16:9, no leftover candidates or subfolders, visual-world and planned-text conformity. Incomplete sets are never marked DONE.
 - Historical projects not opting in remain unchanged. This new rule OVERRIDES old "01.png is the cover" language wherever it conflicts for opted-in/new projects.

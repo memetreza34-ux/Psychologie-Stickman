@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {listYouTubeProjects} from './lib/youtube-week-folders.mjs';
+import {checkFlowReferencePolicy} from './lib/flow-reference-policy.mjs';
 
 const POLICY='COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1';
 const failures=[];
@@ -20,6 +21,7 @@ for(const phase1 of plans){
   const master=path.join(path.dirname(path.dirname(phase1)),'02-google-flow','google-flow-prompt.txt');
   if(!fs.existsSync(master)){failures.push(master+': missing master prompt');continue;}
   const text=read(master);
+  failures.push(...checkFlowReferencePolicy(config, text, master));
   const required=[
     [POLICY,'autonomy policy marker'],
     ['STOP','single cover pause'],

@@ -15,10 +15,19 @@
   "checks": [
     "npm run check: exit 0",
     "phase1:links: READY LOCALLY",
-    "exact script/scene/prompt parity: PASS"
+    "exact script/scene/prompt parity: PASS",
+    "Cover-reference workflow self-test + exact per-BILD reference lists: PASS"
   ],
   "notes": [
     "Automatic tests include expected rejection fixtures; their intentional FAIL output is followed by self-test PASS.",
     "Full text, source-claim distinctions and scene plans reviewed; image/voice quality cannot be assessed before actual generation."
-  ]
+  ],
+  "coverStyleReferencePolicy": "APPROVED_COVER_EVERY_SCENE_V1",
+  "explicitFinalCoverApprovalRequired": true,
+  "selectionAloneStartsScenes": false,
+  "coverReferenceSceneCount": 62,
+  "characterReferenceSceneCount": 22,
+  "characterReferencePolicy": "VISIBLE_RECURRING_CHARACTER_ONLY_V1",
+  "artDirectionStatus": "PLANNED_PENDING_ACTUAL_COVER_APPROVAL",
+  "styleReferenceUseInGeneratedImages": "NOT_YET_VERIFIED_NO_IMAGES_PROVIDED"
 }

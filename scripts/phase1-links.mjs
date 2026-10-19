@@ -5,6 +5,7 @@ import path from 'node:path';
 import {needsCreativeReview, checkCreativeVisualPlan, checkCreativeFlowPrompt} from './lib/creative-visual-qa.mjs';
 import {weekForProjectName} from './lib/youtube-week-folders.mjs';
 import {checkStoryScript, STORY_EXPLANATION_POLICY} from './lib/story-explanation-qa.mjs';
+import {checkFlowReferencePolicy} from './lib/flow-reference-policy.mjs';
 
 const [projectArg, ref = 'main'] = process.argv.slice(2);
 if (!projectArg || projectArg.startsWith('--')) {
@@ -40,6 +41,8 @@ const readRequired = (file, label) => {
 const script = readRequired(path.join(root, scriptRelative), 'final speaker script');
 const prompt = readRequired(path.join(root, promptRelative), 'Google Flow master prompt');
 const plan = JSON.parse(readRequired(actualPlanPath, 'Phase-1 visual-beat plan'));
+const referenceErrors = checkFlowReferencePolicy(plan, prompt, promptRelative);
+if (referenceErrors.length) throw new Error('FLOW REFERENCE QA NOT READY:\n' + referenceErrors.join('\n'));
 if (plan.storyExplanationPolicy === STORY_EXPLANATION_POLICY) {
   const scriptPlan = JSON.parse(readRequired(path.join(projectDir, '99-intern', 'script-plan.json'), 'story/explanation script plan'));
   const storyErrors = checkStoryScript(scriptPlan, script, {required: true, location: relative + '/99-intern/script-plan.json'});
