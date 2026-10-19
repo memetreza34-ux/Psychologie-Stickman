@@ -1,33 +1,22 @@
-YOUTUBE PRODUCTION RULES
+YOUTUBE PRODUCTION RULES — GOOGLE FLOW HANDOFF
 
 FORMAT
-- 16:9 / 1920x1080 / 30 fps
+16:9 / 1920x1080 / 30 fps. Preserve PSYCHOLOGY_STICKMAN_WORLD_V1.
 
-VISUAL SYSTEM
-- CINEMATIC_ILLUSTRATED_PSYCHOLOGY_V1
-- CHARACTER SYSTEM: STYLIZED_STICKMAN_CAST_V1
-- ENVIRONMENT: BELIEVABLE_CINEMATIC_ENVIRONMENT_V1
-- RENDERING: SOFT_CEL_SHADED_FILM_FRAME_V1
-- REPRESENTATION: MIXED_PSYCHOLOGY_VISUALS_V1
+ONE ENGLISH PROMPT
+Codex prepares one complete 02-google-flow/google-flow-prompt.txt. All instructions/image descriptions are English; visible image text and narration are German. Google Flow generates every image itself, including references. No external Codex image required.
 
-Every beat chooses scene type, composition, social density, camera, lighting mood and text policy.
+INITIAL OUTPUT ONLY
+Design script-specific individual character references, then exactly three different standalone cover candidates. No video scenes yet. The only approval pause is the cover selection inside Google Flow; no separate character-approval round.
 
-Character scenes use stylized stickman-inspired clothed figures. Non-character frames must share the same outlines, cel shading, colors, lighting and polish.
+AFTER COVER SELECTION
+Winner is the independent thumbnail; delete rejected covers after selection. Character references preserve identity, selected cover preserves style. BILD 01 is an ordinary first story scene, never the cover. Generate scenes in five-image batches, immediately inspect/rename as 01.png through NN.png. Regenerate failed/missing files and continue without further questions.
 
-TEXT
-- Flow only
-- cover/keyword/schema/comparison/text-illustration allowed when planned
-- no accidental background text
-- no visible Remotion text
+TEXT AND VISUALS
+Only planned exact German text. Each beat chooses its best representation and one clear visual idea. Objects, environments and schemas share the same illustration world. No mixed normal-human/stickman anatomy or repeated staging without new information.
 
-COVER
-- 01.png = Scene 01 + Cover
-- follows global channel reference pack
-- is not global Style Master
+FINAL QA AND DOWNLOAD
+Check all images against script, identity, props, scene count, filenames, 16:9 format and exact German labels. Collect thumbnail.png, character-reference files and all numbered scenes in one flat google-flow/ folder; provide google-flow.zip only when actually created and inspected. If the interface cannot export ZIP/files, report the precise limitation and provide separate images.
 
-QA
-- consistent world
-- beat clarity
-- correct character family
-- no 3D/realistic/corporate-vector drift
-- exact planned German text
+LOCAL IMPORT
+Scenes -> 03-bilder/; thumbnail -> 05-export/thumbnail.png; character references -> 99-intern/reference-notes/. No thumbnail/reference in the numbered video scenes. Existing videos are not retroactively changed.

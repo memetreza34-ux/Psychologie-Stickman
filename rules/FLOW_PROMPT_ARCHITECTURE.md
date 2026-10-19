@@ -1,9 +1,21 @@
 # GOOGLE FLOW PROMPT ARCHITECTURE — THUMBNAIL_SEPARATE_FROM_SCENE01_V1
 
+## YouTube handoff clarification — 2026-10-19
+
+For new YouTube productions, Codex supplies one complete English Google Flow prompt. Google Flow itself generates the character references, three covers and all scene images. No externally generated Codex reference image is required. Visible image text and narration remain German.
+
+Initial output is limited to individually designed, script-specific character references and exactly three separate 16:9 cover candidates. Keep only the stickman species and illustrator language fixed across videos; do not reuse a permanent character, outfit or identity. Within this video, use the same character references for matching roles in all covers and relevant scenes. Character references are separate assets, never video scenes. The only approval pause is the user's cover selection inside Flow.
+
+After selection, the winner is the separate thumbnail and the rejected covers are deleted. Use the chosen cover for illustration finish/style and the character references for identity. Generate actual scenes in five-image batches, immediately QA and rename accepted files `01.png` through `NN.png`; regenerate only failed/missing files and continue without asking. Final remainder may contain 1–4 scenes.
+
+After full file AND visual QA, collect the final thumbnail, character references and all numbered scenes into one flat download folder `google-flow/` and provide `google-flow.zip` IF the Flow interface can actually create/export that folder and archive. Inspect the archive contents before claiming ZIP delivery. If export/naming/ZIP is unavailable, state the precise limitation and provide the separate images; never claim an archive exists when it does not.
+
+The download package is an exchange format. On local import, numbered scenes go to `03-bilder/`, the winner to `05-export/thumbnail.png`, and character references to `99-intern/reference-notes/`. Do not put reference images or thumbnails among the numbered scenes. Existing local renderer paths remain unchanged; historical projects are not retroactively regenerated.
+
 ## Independent thumbnail and actual scene 01 — THUMBNAIL_SEPARATE_FROM_SCENE01_V1 (binding override)
 
 For every NEW YouTube video, and the opted-in Planungsfehlschluss project:
-- Make 3 separate 16:9 thumbnail candidates FIRST. This is the ONLY approval pause.
+- Before any video scene, generate script-specific character references and 3 separate 16:9 thumbnail candidates inside Google Flow. Cover selection is the ONLY approval pause.
 - Winner goes to `05-export/thumbnail.png` (NOT `01.png`). Delete the other two rejected candidates only AFTER selection.
 - The thumbnail is never part of the rendered video or the video-scene numbering; use it only as an illustrator/style reference.
 - BILD 01 is the FIRST NORMAL VIDEO SHOT aligned with the first spoken words: no cover text, no thumbnail framing, no forced title.
@@ -14,11 +26,11 @@ For every NEW YouTube video, and the opted-in Planungsfehlschluss project:
 
 ## Master prompt order
 
-1. Topic, format, active illustration world/species and representation choices.
+1. English prompt instructions, German narration/visible text, topic, format, active illustration world/species and representation choices.
 2. Motif progression, observable scenes, staging variety, mobile readability, zero accidental text, max 2 states/panels.
-3. Independent `THUMBNAIL CANDIDATES` (3 separate 16:9 designs; exact short cover phrase). STOP only here.
-4. Winner saved as 05-export/thumbnail.png, losers deleted; use winner for style reference.
+3. Script-specific character design and separate `CHARACTER REFERENCES`, followed by independent `THUMBNAIL CANDIDATES` (3 separate 16:9 designs using those identities; exact short German cover phrase). No video scenes yet. STOP only for cover selection.
+4. Winner saved as 05-export/thumbnail.png, losers deleted; use winner for style and the Flow-generated character references for identity.
 5. BILD 01 through BILD NN are numbered REAL video scenes from narration, not thumbnails. Generate 01–05, 06–10 etc automatically, QA each batch without approval pause, regenerate failures only.
-6. Final count/name/size/style/text check: 03-bilder/01.png … NN.png and a separate 05-export/thumbnail.png.
+6. Final count/name/size/style/text/identity check: scenes 01.png … NN.png plus separate thumbnail and character references. Deliver one flat google-flow/ package and verify google-flow.zip if export is supported. Import into the established local production paths.
 
 Video scenes need short concrete depiction prompts: camera and framing, actual observable event or object, dominant relation, environment/light, exact German text only if planned. Real humans MUST stay in the approved stickman species, not ordinary cartoon people. No default beige-slide aesthetic, no random labels, no storyboards, no 3–4-panel collages.

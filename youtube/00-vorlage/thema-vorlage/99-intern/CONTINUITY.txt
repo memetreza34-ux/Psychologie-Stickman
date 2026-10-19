@@ -1,22 +1,12 @@
-CONTINUITY — CINEMATIC PSYCHOLOGY WORLD
+CONTINUITY — PSYCHOLOGY_STICKMAN_WORLD_V1
 
-GLOBAL CONTINUITY
-Keep consistent:
-- character anatomy family
-- line style
-- soft cel shading
-- texture level
-- color behavior
-- cinematic illustrated lighting
-- world-detail quality
+The stickman species and hand-drawn illustrator language are fixed. Design the actual people individually for THIS script: role, hairstyle, clothing, accessories and era. No permanent channel mascot or default outfit.
 
-CHARACTER CONTINUITY
-Only when the same person returns: preserve head/hair/accessory, clothing, colors, proportions and shoes.
+GOOGLE FLOW REFERENCES
+Google Flow generates the character-reference files itself before the three cover candidates. No external Codex image is required. Use those character references for returning identities in the covers and relevant scenes. Use the selected cover for style/finish, not as a mandatory composition for every image. Character references are separate files and never scene 01.
 
-Do not clone the same person across unrelated scenes.
+WITHIN THIS VIDEO
+Preserve a returning person's head/hair/accessories, clothing, colors and proportions. Keep locations, objects and chronology consistent. Do not clone the same identity into unrelated roles. Every visible human still belongs to the same approved stickman species.
 
-REPRESENTATION CONTINUITY
-Schemas, object metaphors, comparisons and text illustrations must look like the same illustrated film-world as character scenes.
-
-REFERENCE
-Use assets/cinematic-psychology-world/ once approved. Scene 01 is not the global style master.
+DELIVERY
+Include the character references in the flat google-flow/ download package. After import, keep them under 99-intern/reference-notes/, apart from numbered scenes in 03-bilder/.
