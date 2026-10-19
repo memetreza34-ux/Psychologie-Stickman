@@ -1,0 +1,17 @@
+{
+  "scope": "existing checkCreativeVisualPlan function only; no audio, render or final-image QA implied",
+  "failures": [],
+  "warnings": [],
+  "summary": {
+    "total": 7,
+    "representationCounts": {
+      "CHARACTER_SCENE": 2,
+      "OBJECT_FOCUS": 2,
+      "SCHEMA_EXPLAINER": 1,
+      "ENVIRONMENT_SCENE": 1,
+      "COMPARE_VISUAL": 1
+    },
+    "characterPercent": 29,
+    "uniqueSubjects": 7
+  }
+}

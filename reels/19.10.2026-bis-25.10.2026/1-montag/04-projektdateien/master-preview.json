@@ -1,0 +1,17 @@
+{
+  "status": "AWAITING_USER_APPROVAL",
+  "generator": "built-in image_gen",
+  "file": "02-bilder/images/01.png",
+  "width": 941,
+  "height": 1672,
+  "requestedAspectRatio": "9:16",
+  "actualAspectRatio": 0.562799043062201,
+  "wasCropped": false,
+  "inspection": {
+    "text": "PASS — kein sichtbarer Text",
+    "storyContinuity": "PASS — Karton bleibt im Wohnzimmer, Figur in Küche",
+    "species": "PASS — helle runde Kopfform, kleine ovale Augen, dünne dunkle Beine, bekleidete vereinfachte Figur",
+    "composition": "PASS — eigenständig vertikal komponiert, Hauptfigur groß",
+    "limitations": "Noch keine Nutzerfreigabe; finale Anpassung auf 1080×1920 erst im Render, ohne Bildbeschnitt."
+  }
+}

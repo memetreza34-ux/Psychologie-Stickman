@@ -1,0 +1,80 @@
+KOPFARIUM — REEL-PILOT / TÜRSCHWELLEN-EFFEKT
+9:16 / 1080×1920 / 30 fps / 7 eigenständige Bilder
+
+BILD 01 zuerst einzeln erzeugen und zur Nutzerfreigabe vorlegen. Danach denselben Master als Stil-/Figurenreferenz anhängen; Bilder 02–06, dann 07. Alle Bilder direkt vertikal erzeugen. Kein Crop aus Longform, kein Kontaktbogen und kein automatisch generiertes Video.
+
+FESTER STIL: hochwertige handgezeichnete 2D-Welt; organische dunkle Outlines, weiches Cel-Shading, dezente Zeichentextur, natürliche Farben und räumliche Tiefe. Menschen nur in derselben hellen rundköpfigen Stickman-Konstruktion, schmaler bekleideter Torso, sehr dünne dunkle Arme/Beine, kleine einfache Hände. Keine normalen Cartoon-Menschen. Figuren sind optional.
+
+KONTINUITÄT: eine Wohnung mit angrenzendem Wohnzimmer und Küche. Brauner Versandkarton und schwarze Schere bleiben am Packtisch im Wohnzimmer. Erst am Ende ist der Karton mit rotem Band verschlossen. Kleidung der Hauptfigur: schmaler grüner/tealfarbener Pullover. Die Master-Komposition wird nicht auf alle Bilder übertragen.
+
+Sprecherabschnitte dienen der Bildpassung, nicht als automatisch sichtbarer Text. Nur ausdrücklich genannte deutsche Labels rendern. Die Zeitplanung ist vorläufig; echte Schnitte erst aus dem finalen Voice-over.
+
+
+BILD 01
+SPRECHER: Du gehst in die Küche. Und weißt plötzlich nicht mehr, warum.
+ERKENNTNIS: Der Zuschauer erkennt einen vertrauten Gedächtnisaussetzer.
+SICHTBARER BELEG: Eine Figur steht kurz nach dem Raumwechsel unsicher in der Küche. Im Hintergrund bleibt der offene Karton im Wohnzimmer.
+FORTSCHRITT: Hook: ein konkretes Vorhaben scheitert.
+PROMPT:
+Generate one independent native 9:16 portrait illustration, 1080x1920 composition. The same approved pale round-headed stickman in a slim teal-green sweater has just entered the kitchen and paused mid-step. One very thin dark arm rests near an open kitchen drawer; the other hand is slightly open, as if wondering what they came for. The expressive face has tiny black oval eyes, minimal brows and mouth. Frame the figure large in the middle of the portrait, including its slender stick legs. Behind it, an open wooden doorway clearly reveals a LIVING ROOM packing table with an open brown parcel and black scissors; the parcel stays in that other room. Cool clean daylight in the kitchen, gentle warm light in the living room, natural pale blue and green accents. Clear focal hierarchy, just enough kitchen props to identify the room. Organic hand-drawn dark linework, soft cel shading, subtle paper texture, coherent illustrated depth. Upper and lower edges remain quiet for later reel captions. No visible text, lettering, symbols, brain icons or magic effects. This is an opening story shot, not a thumbnail.
+DATEI: 01.png
+
+
+BILD 02
+SPRECHER: Am Tisch war noch alles klar: Karton offen. Klebeband fehlt.
+ERKENNTNIS: Die ursprüngliche Aufgabe wird konkret: Das Paket braucht Klebeband.
+SICHTBARER BELEG: Offener Karton und schwarze Schere auf dem Wohnzimmertisch; die noch unverschlossenen Klappen dominieren.
+FORTSCHRITT: Von Ratlosigkeit zur Ursache des ursprünglichen Weges.
+PROMPT:
+One independent 9:16 portrait illustration. Same living room as the approved master, same brown parcel and black-handled scissors. Tight overhead-diagonal view of the oak packing table: two unsealed cardboard flaps rise slightly; the scissors sit safely beside the parcel. No tape roll on this table. Make the unfinished fastening step immediately visible. Warm daylight and soft natural green from one background plant, not an all-orange filter. The parcel is the dominant object, the background simplified. Use exactly the master illustrator language: organic dark lines, soft cel shading and tactile drawn texture. No person needed. No visible text, labels, arrows or symbols.
+DATEI: 02.png
+
+
+BILD 03
+SPRECHER: Eine mögliche Erklärung heißt Türschwellen-Effekt.
+ERKENNTNIS: Ereignisabschnitte sind ein Erklärungsmodell; die beiden Kontexte unterscheiden sich.
+SICHTBARER BELEG: Zwei große übereinanderliegende Bildfelder: oben derselbe Packtisch, unten dieselbe Küche; die Situationen tragen klare deutsche Labels.
+FORTSCHRITT: Vom konkreten Paket zum einfachen Vergleich der Kontexte.
+PROMPT:
+One independent 9:16 portrait explanatory illustration in the approved hand-drawn Kopfarium world. Create exactly TWO large stacked context fields, with enough breathing room to read on a phone: upper field is a warm living-room packing table with the familiar open brown parcel and black scissors; lower field is the cooler kitchen counter with plates and a kettle, no parcel. Preserve comparable simple scale and focal clarity. Add only the exact large German labels "AM TISCH" in the upper field and "IN DER KÜCHE" in the lower field. Make this an illustrated comparison of situations, not a brain diagram, not anatomical compartments, not a three-step board. Organic ink outlines, soft cel shading, subtle texture and natural colors match the master. No people, mini-icons, additional captions, arrows, charts or invented scientific measurements.
+DATEI: 03.png
+
+
+BILD 04
+SPRECHER: Dein Kopf ordnet Erlebnisse in Abschnitte. Beim Raumwechsel kann der vorige Zusammenhang schwerer erreichbar werden.
+ERKENNTNIS: Die vorherige Aufgabe kann beim Kontextwechsel schwerer zugänglich sein.
+SICHTBARER BELEG: Blick aus der Küche: Teller und Wasserkocher sind nah; der Karton bleibt im entfernten Wohnzimmer teilweise außer Sicht.
+FORTSCHRITT: Das Modell wird an räumlicher Sichtbarkeit nachvollziehbar; kein neues Ratlosigkeitsporträt.
+PROMPT:
+One independent 9:16 portrait environment illustration from inside the same kitchen. Plates and a kettle form one clear foreground cluster, gently highlighted by cool daylight. Beyond the same wooden doorway, the original living-room packing table is only partly visible around the doorframe; the familiar brown parcel remains there, never in the kitchen. Use foreground versus background to show that the old task cues are now less prominent. No person. Same coherent home layout and approved hand-drawn illustrator language, soft cel shading and paper texture. Vary the spatial framing from the master rather than repeating its camera. No text, ghost thoughts, magical erasure, brain icons or floating objects. This is an everyday illustration of changed cues, not a literal neuroscientific mechanism.
+DATEI: 04.png
+
+
+BILD 05
+SPRECHER: Aber: Die Forschung findet diesen Effekt nicht immer. Eine Tür ist kein automatischer Gedächtnis-Reset.
+ERKENNTNIS: Der Forschungseffekt ist bedingungsabhängig; das ist keine universelle Türwirkung.
+SICHTBARER BELEG: Zwei große qualitative Befundkarten: beobachteter Unterschied und kein Unterschied. Keine Zahlen oder Mini-Diagramme.
+FORTSCHRITT: Die wissenschaftliche Einschränkung bekommt eine eigene verständliche Bildidee.
+PROMPT:
+One independent 9:16 portrait illustration of exactly TWO large research-result cards stacked on a simple illustrated laboratory desk. This is a qualitative summary of different published findings, NOT one controlled two-group experiment. Upper card bears only the large exact German word "UNTERSCHIED"; lower card bears only "KEIN UNTERSCHIED". Both cards have the same simple plain layout and a small unlettered doorway/object motif to connect to the topic. No graphs, bars, percentages, fake data, p-values, checkmark implying one finding is correct, or red cross implying one is wrong. Both are legitimate context-dependent findings. Same organic hand-drawn outlines, soft cel shading, subtle texture and natural cool gray/teal palette from the approved world. No people or other writing. Keep the two words immediately readable at phone size.
+DATEI: 05.png
+
+
+BILD 06
+SPRECHER: Probier vor dem Losgehen einen konkreten Satz: „Ich hole Klebeband für den Karton.“
+ERKENNTNIS: Die Person kann vor dem Weg eine konkrete Absicht formulieren.
+SICHTBARER BELEG: Figur steht noch am Packtisch, zeigt auf den offenen Karton und richtet den Blick zur Küchentür. Exakter kurzer Satz ist geplant.
+FORTSCHRITT: Von der Grenze zur konkret ausführbaren Idee.
+PROMPT:
+One independent 9:16 portrait illustration in the SAME living room, BEFORE the person leaves. Same pale round-headed stickman with tiny black oval eyes, narrow teal clothed torso and very thin dark limbs; all anatomy matches the approved master. Show the figure beside the familiar oak packing table, one small hand indicating the still-open brown parcel and gaze directed toward the kitchen doorway. Add one simple large speech bubble, high in the composition, containing EXACTLY "KLEBEBAND FÜR DEN KARTON" in clear German block lettering. This is the only visible text. Keep the cardboard flaps unsealed; do not show the task solved yet. Calm deliberate expression rather than confusion. Natural warm room light with neutral shadows, uncluttered focal area, same organic linework, soft cel shading and illustration texture.
+DATEI: 06.png
+
+
+BILD 07
+SPRECHER: Der nächste Raum ist neu. Deine Aufgabe bleibt dieselbe.
+ERKENNTNIS: Der Schluss zahlt die konkrete Aufgabe aus.
+SICHTBARER BELEG: Das Paket ist geschlossen; rote Klebebandrolle und schwarze Schere liegen auf demselben Wohnzimmertisch.
+FORTSCHRITT: Die anfangs offene Aufgabe erreicht einen klaren visuellen Abschluss.
+PROMPT:
+One independent 9:16 portrait closing illustration. Intimate close-up of the SAME brown parcel now neatly sealed with one red tape strip, on the SAME oak living-room packing table. The red tape roll and black-handled scissors rest beside it in a simple safe arrangement. This is an illustrative story ending, not evidence that a memory trick always works. No person needed. Make the completed parcel immediately recognizable from the earlier shot. Warm natural window light with clean neutral tones and a red focal accent, organic dark outlines, soft cel shading and tactile illustration texture identical to the approved master. No labels, text, sparkles, floating symbols or celebratory clutter.
+DATEI: 07.png

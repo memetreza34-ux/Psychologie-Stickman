@@ -1,0 +1,6 @@
+claim_id,claim,source,status,notes
+C01,"Eine mögliche Erklärung für das geschilderte Erlebnis ist der Türschwellen-Effekt","McFadyen et al. 2021 Einführung und Forschungskontext",QUALIFIED,"Alltagsgeschichte ist Illustration; keine eindeutige Ursachenzuschreibung"
+C02,"Erlebnisse werden in Ereignisabschnitte organisiert","McFadyen et al. 2021 Einführung zu Ereignisgrenzen",QUALIFIED,"Erklärungsmodell; keine anatomischen Schubladen zeigen"
+C03,"Nach einem Raumwechsel kann vorherige Information schwerer erreichbar sein","Frühere Befunde im Forschungskontext von McFadyen et al. 2021",QUALIFIED,"Bedingungsabhängig; kein universeller Effekt"
+C04,"Der Effekt wurde nicht in allen Untersuchungen gefunden","McFadyen et al. 2021 Abstract und Schlussfolgerung",VERIFIED,"Kein allgemeiner signifikanter Effekt über die Versuchsreihe; besonderer Teilbefund unter Gedächtnislast"
+C05,"Vor dem Losgehen die konkrete Aufgabe benennen","Redaktioneller praktischer Vorschlag",QUALIFIED,"Als Versuch formulieren; keine garantierte Wirksamkeit behaupten"
