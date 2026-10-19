@@ -1,0 +1,10 @@
+claim_id,claim,source,status,notes
+C01,Gefühltes Verständnis kann weiter reichen als eine ausgeführte Erklärung.,R1; R5,QUALIFIED,"Kernmechanismus, kein allgemeines Intelligenzurteil."
+C02,In der klassischen Untersuchung folgten auf Einschätzung ein Erklärversuch und eine niedrigere erneute Einschätzung.,"R1, Study 1",VERIFIED,Selbsteinschätzung; keine erfundenen Mittelwerte.
+C03,Grobes Wissen und Bedienwissen ersetzen keine detaillierte Erklärung jeder Verbindung.,R5,QUALIFIED,"Arbeitsunterscheidung, keine Abwertung impliziter Kenntnisse."
+C04,Der Schieber führt die Elementreihen in einem Y-förmigen Kanal zusammen.,R6,VERIFIED,Vereinfachter Schnitt; Geometrie bei Flow visuell prüfen.
+C05,Vorwissen garantiert keine genau kalibrierte Einschätzung der eigenen Erklärfähigkeit.,R3,QUALIFIED,Keine Verallgemeinerung auf alle Expertinnen und Experten.
+C06,Online-Suchende berichteten in beschriebenen Versuchen höhere Erklärzuversicht zu anderen Themen.,"R2, Experiments 1a/1b",VERIFIED,Keine Behauptung objektiv größerer Kenntnisse.
+C07,Auch andere Aufgaben können berichtete Wissensurteile senken.,"R4, Experiment 3 / General Discussion",VERIFIED,Keine vollständig spezifische Diagnose aus einem Erklärversuch.
+C08,Stocken beweist keine umfassende Ahnungslosigkeit; Flüssigkeit beweist keine Richtigkeit.,R5; redaktionelle Einordnung,QUALIFIED,Sprachliche und implizite Kenntnisse nicht gleichsetzen.
+C09,"Genaue Frage, eigener Versuch und Quellenabgleich bilden einen vorgeschlagenen Selbstcheck.","G1, inspiriert durch R1/R5",EDITORIAL_APPLICATION,Keine bewiesene allgemeine Verbesserung oder Erfolgsgarantie.

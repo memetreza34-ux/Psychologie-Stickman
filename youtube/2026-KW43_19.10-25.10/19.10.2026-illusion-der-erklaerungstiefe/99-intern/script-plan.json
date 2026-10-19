@@ -1,0 +1,81 @@
+{
+  "policy": "LONGFORM_STORY_RETENTION_V1",
+  "status": "APPROVED",
+  "targetWords": {
+    "min": 850,
+    "max": 1100
+  },
+  "wordCountJustification": "",
+  "structure": {
+    "hook": "Vertraute Jackenhandlung wird durch eine genaue Frage der Freundin unterbrochen.",
+    "introduction": "Erklärungstiefe früh benennen und die konkrete fehlende Verbindung auf dem Papier sichtbar machen.",
+    "mainPart": "Mechanismus vertiefen, klassische Selbsturteil-Studie anwenden, Vorwissens-Einwand und Internetsuche prüfen, Messgrenze einordnen.",
+    "conclusion": "Eigenen Versuch mit Quellenabgleich verbinden und zur unveränderten Jacke bei veränderter Antwort zurückkehren."
+  },
+  "narrativeSpine": {
+    "anchorPhrase": "Du ziehst deine Jacke zu. Deine Freundin fragt: Warum halten diese winzigen Zähne eigentlich zusammen?",
+    "callbackPhrase": "Deine Freundin hat inzwischen ihre Jacke angezogen. Der Reißverschluss funktioniert genauso wie am Anfang."
+  },
+  "research": {
+    "mode": "STORY_FIRST_SOURCES_SECOND",
+    "spokenResearchNames": [],
+    "notes": "Studien ohne Namens-/Jahresblock erzählen; vollständige Quellen und Grenzen im Upload-Entwurf und in der Claim-Matrix."
+  },
+  "examples": {
+    "substantialExamples": [
+      "Ausgeführte Reißverschlussgeschichte mit Zeichnung, nachgeprüftem Führungsschnitt und verbleibender Lücke.",
+      "Klassische Einschätzung/Erklärversuch/erneute Einschätzung, jeweils auf das Tischbeispiel zurückgeführt.",
+      "Online-Suche versus kein Internet und spätere Urteile zu anderen Themen; durch Wegdrehen der Quelle angewandt."
+    ],
+    "synthesisAfterExampleRuns": "Nach jedem Forschungsabschnitt folgt die konkrete Rückkehr zum eigenen Blatt beziehungsweise zur Frage ohne sichtbare Vorlage."
+  },
+  "retention": {
+    "midpointReengagementPhrase": "Aber vielleicht ist das nur eine Falle für Menschen, die sich mit einem Thema kaum beschäftigt haben?"
+  },
+  "ending": {
+    "practicalTakeaway": "Eine genaue Frage auswählen, ohne Vorlage erklären, die offene Verbindung markieren und den Inhalt mit einer Quelle abgleichen.",
+    "finalLine": "Ein gutes Gefühl kann der Anfang sein. Verständnis zeigt sich daran, welche Verbindungen du wirklich herstellen kannst."
+  },
+  "qa": {
+    "namedResearchersSpokenCount": 0,
+    "yearMentionsSpokenCount": 0,
+    "maxConsecutiveNamedResearchBlocks": 0,
+    "maxConsecutiveMicroExamples": 0,
+    "deepExampleCount": 3
+  },
+  "storyExplanationPolicy": "STORY_EXPLANATION_PROOF_V1",
+  "storyExplanation": {
+    "viewerQuestion": "Warum fühlt sich vertrautes Wissen oft vollständiger an, als es sich beim eigenen Erklären zeigt?",
+    "goal": "Der Freundin den bekannten Reißverschluss verständlich erklären.",
+    "obstacle": "Der entscheidende Zusammenhang im Schieber fehlt der zunächst sicheren Antwort.",
+    "stakes": "Eine Alltagserklärung soll verständlich und ehrlich sein, ohne die Lücke mit einem Wort zu überdecken.",
+    "openingQuote": "Du ziehst deine Jacke zu. Deine Freundin fragt: Warum halten diese winzigen Zähne eigentlich zusammen?",
+    "explanationApplications": [
+      {
+        "explanationQuote": "Eine Erklärung verlangt zusätzlich die Verbindungen: Was verändert sich, wodurch, und welcher Schritt ermöglicht den nächsten?",
+        "applicationQuote": "Beim Reißverschluss bist du bisher vom Ziehen direkt aufs Schließen gesprungen. Dazwischen liegt deine offene Frage.",
+        "changedUnderstanding": "Der Sprung von der Bedienung zum Ergebnis wird als fehlende Verbindung im eigenen Entwurf erkennbar."
+      },
+      {
+        "explanationQuote": "Anschließend bewerteten sie ihr Verständnis erneut. Nach dem Erklärversuch fiel die Selbsteinschätzung niedriger aus.",
+        "applicationQuote": "Zurück zu deiner Zeichnung: Vorher hattest du eine sichere Antwort. Jetzt hast du eine genaue Frage.",
+        "changedUnderstanding": "Das veränderte Urteil über das eigene Blatt bedeutet eine präzisere Frage statt plötzlich verlorenen Wissens."
+      },
+      {
+        "explanationQuote": "Die Suchgruppe traute sich dabei mehr zu. Das war eine höhere Selbsteinschätzung, kein Nachweis größeren Wissens über diese Themen.",
+        "applicationQuote": "Du drehst den Bildschirm weg. Deine Freundin zeigt wieder auf die Jacke. Diesmal lässt du dir Zeit.",
+        "changedUnderstanding": "Eine zugängliche Erklärung wird durch einen eigenen Versuch ohne sichtbare Vorlage ergänzt."
+      }
+    ],
+    "payoffQuote": "Verändert hat sich deine Antwort. Du kannst einen Teil begründen und den offenen Rest genauer benennen.",
+    "payoffChange": "Das Alltagsobjekt bleibt gleich; die Figur kann einen Zusammenhang begründen und die verbliebene Grenze benennen.",
+    "editorialReview": {
+      "status": "PASS",
+      "method": "CODEX_TEXT_REVIEW",
+      "findings": "Definition in die offene Jackenfrage eingebettet; konkrete Mechanik ergänzt; Selbsturteil von Leistung getrennt; Fragen und Antworten auf denselben Entwurf zurückgeführt; Schluss ohne angehängten CTA.",
+      "unresolvedIssues": [],
+      "comprehensionStatus": "NOT_TESTED",
+      "feedbackReference": ""
+    }
+  }
+}

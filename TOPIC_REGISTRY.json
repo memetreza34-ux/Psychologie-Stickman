@@ -261,6 +261,22 @@
       ],
       "status": "USED",
       "note": "Forschung zeigt Bedingungen und Grenzen; 2021er Multimodal-Studie replizierte den allgemeinen Effekt nicht durchgehend."
+    },
+    {
+      "topicId": "illusion-der-erklaerungstiefe",
+      "canonicalTopic": "Illusion der Erklärungstiefe / Illusion of Explanatory Depth",
+      "aliases": [
+        "illusion-der-erklaerungstiefe",
+        "illusion der erklärungstiefe",
+        "illusion-of-explanatory-depth",
+        "ioed",
+        "erklaerungsillusion",
+        "ueberschaetzung-des-erklaerwissens"
+      ],
+      "projects": [
+        "youtube/2026-KW43_19.10-25.10/19.10.2026-illusion-der-erklaerungstiefe"
+      ],
+      "status": "USED"
     }
   ]
 }

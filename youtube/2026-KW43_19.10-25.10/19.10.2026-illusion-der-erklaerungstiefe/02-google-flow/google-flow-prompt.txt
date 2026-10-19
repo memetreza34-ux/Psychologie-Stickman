@@ -1,0 +1,490 @@
+GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
+
+TOPIC: Illusion der Erklärungstiefe — why feeling familiar can outrun a self-produced explanation
+FORMAT: 16:9 / 1920x1080
+TARGET: approximately 6–7 minutes, 979 German spoken words, 62 actual video scenes
+VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
+VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
+REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
+VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
+CREATIVE VISUAL POLICY: CONTENT_FIRST_VISUAL_QA_V2
+
+CONTENT-FIRST VISUAL DIRECTION — MANDATORY
+The script's explanatory need comes before any preference for a stickman. For each BILD, use the planned visualFunction, focalSubjectKey, settingKey, cameraScale, informationGain, alternativeVisualType and alternativeRejectionReason. A new image MUST teach something new, not merely show the same door, desk, carton or person with a different sentence.
+MECHANISM: Use a readable SCHEMA_EXPLAINER, informative COMPARE_VISUAL, or focused TEXT_ILLUSTRATION whenever a causal chain, lab comparison, event sequence or study result is being taught. Meaningful German labels may be included ONLY when explicitly authorized as exact flowText in the individual BILD. Diagrams are professional hand-drawn 2D illustrations inside this SAME channel world, NOT beige lecture slides. No fabricated data, bars or numbers. Show a three-step process across consecutive BILDs rather than a three-panel collage.
+NO REPETITIVE subject + setting + camera compositions. Across adjacent batches inspect both image content and informationGain. If 3+ near-duplicate shots appear, regenerate/re-direct the affected image into an appropriate object, labeled mechanism, split comparison, experiment setup or purposeful environmental view. Recurring story props are permitted only when the action/state/information changes materially.
+AFTER each five-image batch: actually visually REVIEW all five rendered images for script-to-picture meaning, diagram accuracy, accidental labels, stickman species and repetition; file-count/format checks alone are not sufficient. Do not declare DONE if semantic mistakes are still present.
+
+
+STORY / EXPLANATION PROOF — STORY_EXPLANATION_PROOF_V1
+For every mechanism, research, comparison or evidence scene, depict the planned visible relationship rather than objects carrying its name. The BILD description must contain its exact English visualProof.promptAnchor. If every label were hidden, the image must still show the relevant action, changed condition, state or relationship; short German labels clarify that relationship. Two folders labelled UNTERSCHIED and KEIN UNTERSCHIED do not demonstrate a finding.
+A model or analogy must never look like measured brain activity or a proven causal result. Depict a study setup/result only from the checked source and specified conditions. If the evidence does not support a useful visual comparison, keep the scientific limitation in narration and choose an honest scene rather than inventing a result. When the narration returns to the main story, show what is now understood or done differently.
+
+FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
+FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
+FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
+THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
+IMAGE GENERATION PROVIDER: GOOGLE_FLOW
+PROMPT INSTRUCTION LANGUAGE: ENGLISH
+VISIBLE IMAGE TEXT LANGUAGE: GERMAN
+CHARACTER DESIGN POLICY: SCRIPT_SPECIFIC_CHARACTER_V1
+DOWNLOAD PACKAGE POLICY: GOOGLE_FLOW_SINGLE_FOLDER_ZIP_V1
+
+TASK
+Generate all images yourself inside Google Flow from this single English prompt. No external reference image from Codex is supplied or required. Produce SEPARATE 16:9 images for a German psychology video, not a storyboard, contact sheet, collage or video.
+All instructions and image descriptions are English. Keep narration and explicitly authorized visible image text in German; never translate those labels into English. Narration is context only, never automatically printed.
+Character references, thumbnails and actual video scenes are different assets.
+
+ACTIVE VISUAL WORLD
+High-quality hand-drawn 2D psychology illustrations: organic dark outlines, soft cel shading, light illustration texture, natural color, environment depth.
+Every human is the same approved stickman species: identical oversized light round/oval base heads, tiny black eyes, narrow clothed torsos, very thin dark stick-like limbs, small hands and shoes.
+Same-frame species lock: all humans in one image share the exact same head/torso/limb construction. Hair and clothing may vary, but never realistic/anime/Pixar/normal cartoon human anatomy.
+Objects and environments use the exact same illustrator language.
+
+REPRESENTATION FIRST — HARD RULE
+People are optional, not the default. Pick the best visual form for each beat:
+CHARACTER_SCENE, OBJECT_FOCUS, ENVIRONMENT_SCENE, SCHEMA_EXPLAINER, COMPARE_VISUAL, TEXT_ILLUSTRATION.
+Make visible evidence concrete: action, object state, gaze, setting, cause/effect, before/after only when justified.
+
+MOTIF PROGRESSION AND VISUAL DENSITY
+Each new scene should advance a concrete motif and change action, camera, distance, focal scale, location, object state or social relation. No repeated beige boards or centered symbolic doodles.
+Default maximum: 2 distinct states/panels per BILD. No 3-/4-panel mini-storyboard. No tiny labels/crowds or dense arrow networks.
+Every image must be clear on a phone screen.
+Exact planned German text only when explicitly specified. Any unplanned English/German/packaging/UI text or gibberish = FAIL and regenerate.
+
+VIDEO WORLD
+A modern apartment shared work area and entryway, one small work table, two chairs, a pencil, plain paper and a laptop. Invent the lead adult and the female adult friend individually for THIS video, with distinctive suitable hair and clothing; no permanent mascot and no recycled outfit from earlier videos. The lead begins wearing a zip-front jacket, then lays that same jacket on the table. Keep its chosen color, metal zipper and proportions fixed. The friend has a different outer jacket hanging in the entryway at first and wears her own jacket in the ending. Keep the apartment layout coherent. Research rooms are separate illustrative reconstructions with cooler light, not the apartment and not photographs of actual participants. Use character-reference-03.png for the classical-study participant in scenes 23–27, and a distinct character-reference-04.png for the prior-knowledge example in scenes 31/33. These are illustrative casts for different studies, never the same alleged historical participant. Any researcher and the non-recurring internet-condition adults share the approved stickman species but have distinct identities. Source diagrams are original hand-drawn simplifications, not copies of published figures. Do not depict actual brain measurements, invented data or real researchers' portraits.
+
+THUMBNAIL DESIGN BRIEF
+Exact German headline on all three covers: "VERSTEHST DU ES WIRKLICH?". No other cover text. Integrate the headline into useful negative space, not a pasted top banner.
+- Candidate 01: the lead confidently holds the familiar jacket while their own explanation sketch in the foreground has a striking missing middle connection; one coherent spatial scene.
+- Candidate 02: a large slider cutaway dominates the frame; beside it, the lead's pencil stalls over an empty slider interior on paper, a clear mismatch between familiar object and incomplete explanation.
+- Candidate 03: at table level the curious friend waits for an answer while the lead looks from the real zipper to a visibly unfinished drawing; emphasize the genuine explanatory question without ridicule.
+Make these THREE separate 16:9 images, not one grid. Use the same script-specific references in all three. Keep all three until the user chooses.
+
+NARRATION CONTEXT — GERMAN, NEVER PRINT AUTOMATICALLY
+Du ziehst deine Jacke zu. Deine Freundin fragt: Warum halten diese winzigen Zähne eigentlich zusammen?
+
+Du willst es erklären. Nach zwei Sätzen fehlt dir ausgerechnet der entscheidende Schritt.
+
+Das nennt man Illusion der Erklärungstiefe: Dein Verständnis fühlt sich vollständiger an, als deine Erklärung tatsächlich ist.
+
+Du weißt, wie man den Verschluss benutzt. Aber warum schließt er sich hinter dem Schieber?
+
+Du deutest auf die Zähne. Die greifen eben ineinander, sagst du. Deine Freundin wartet.
+
+Denn genau das war ihre Frage. Du hast das Ergebnis beschrieben. Die Erklärung fehlt noch.
+
+Probier es selbst kurz. Wie bringt der Schieber beide Seiten zusammen, obwohl sie vorher getrennt waren?
+
+Denk an die Bewegung und die Teile. Wo genau würdest du beim Erklären unsicher werden?
+
+Du brauchst hier keinen perfekten Vortrag.
+
+Entscheidend ist der Unterschied zwischen deinem ersten Gefühl und dem, was du ausführen kannst.
+
+Am Tisch liegt jetzt ein Blatt. Du zeichnest zwei Zahnreihen und den kleinen Schieber dazwischen.
+
+Bis hierhin läuft es. Dann setzt du den Stift ab. Wie sieht dieser Schieber innen aus?
+
+Die leere Stelle auf dem Papier sagt mehr als dein erstes: Klar, das verstehe ich.
+
+Warum fällt diese Lücke so spät auf? Oft genügt im Alltag ein grober Überblick, um zurechtzukommen.
+
+Du erkennst die Teile wieder und weißt, was du damit tun kannst. Das ist nützliches Wissen.
+
+Eine Erklärung verlangt zusätzlich die Verbindungen: Was verändert sich, wodurch, und welcher Schritt ermöglicht den nächsten?
+
+Beim Reißverschluss bist du bisher vom Ziehen direkt aufs Schließen gesprungen. Dazwischen liegt deine offene Frage.
+
+In einem vereinfachten Schnitt sieht man im Schieber einen Y-förmigen Kanal, der die beiden Seiten führt.
+
+Beim Schließen werden die passend geformten Elemente zusammengeführt und greifen ineinander. Der Schieber ist also mehr als ein Griff.
+
+Du zeichnest diese Führung nach. Jetzt verbindest du deine Handbewegung mit dem, was an den Zähnen passiert.
+
+Das ist noch kein vollständiges Ingenieurwissen. Aber deine Erklärung hat jetzt einen konkreten Zusammenhang mehr.
+
+Genau diese Lücke zwischen Gefühl und ausgeführter Erklärung wurde auch in psychologischen Studien untersucht.
+
+In einer klassischen Untersuchung schätzten Teilnehmende zunächst ein, wie gut sie vertraute technische Dinge verstanden.
+
+Danach sollten sie die Funktionsweise einiger dieser Dinge Schritt für Schritt schriftlich erklären.
+
+Anschließend bewerteten sie ihr Verständnis erneut. Nach dem Erklärversuch fiel die Selbsteinschätzung niedriger aus.
+
+Die eigene Erklärung machte Grenzen sichtbar, die beim ersten Einschätzen leicht verborgen geblieben waren.
+
+Dabei ging es um das eingeschätzte Verständnis. Ein gesunkenes Urteil bedeutet nicht, dass jemand plötzlich Wissen verloren hat.
+
+Zurück zu deiner Zeichnung: Vorher hattest du eine sichere Antwort. Jetzt hast du eine genaue Frage.
+
+Du kannst benennen, welcher Zusammenhang dir fehlt. Damit lässt sich gezielter nachsehen als mit: Ich verstehe gar nichts.
+
+Aber vielleicht ist das nur eine Falle für Menschen, die sich mit einem Thema kaum beschäftigt haben?
+
+So einfach ist es nicht. Auch einschlägiges Vorwissen kann mit einer zu optimistischen Einschätzung der eigenen Erklärfähigkeit zusammengehen.
+
+Es macht einen Unterschied, ob dir Begriffe bekannt vorkommen oder ob du die Zusammenhänge gerade selbst rekonstruieren kannst.
+
+Das bedeutet nicht, dass Fachwissen wertlos ist. Gute Kenntnisse und eine ungenaue Selbsteinschätzung können nebeneinander bestehen.
+
+Die Frage ist also weniger: Bin ich schlau? Sondern: Welchen Teil kann ich gerade wirklich erklären?
+
+Und jetzt kommt die bequemste Abkürzung: Du suchst die Antwort im Internet.
+
+Wenige Sekunden, und der Zusammenhang steht vor dir.
+
+Deine Freundin beugt sich zum Bildschirm. Die Darstellung wirkt übersichtlich. Du nickst schon beim Lesen.
+
+Doch die sichtbare Erklärung und deine eigene Erklärung sind zwei verschiedene Prüfungen. Welche davon hast du gerade bestanden?
+
+Eine weitere Studienreihe untersuchte genau diese Grenze zwischen zugänglicher Information und dem Gefühl eigenen Wissens.
+
+In einem Experiment suchte eine Gruppe online nach Erklärungen. Eine Vergleichsgruppe sollte die Fragen ohne Internet bearbeiten.
+
+Später schätzten beide Gruppen ihre Erklärfähigkeit bei anderen Themen ein, die mit den Suchfragen nichts zu tun hatten.
+
+Die Suchgruppe traute sich dabei mehr zu. Das war eine höhere Selbsteinschätzung, kein Nachweis größeren Wissens über diese Themen.
+
+Die wichtige Frage für deinen Tischversuch bleibt: Was kannst du erklären, wenn die fremde Darstellung gerade nicht sichtbar ist?
+
+Du drehst den Bildschirm weg. Deine Freundin zeigt wieder auf die Jacke. Diesmal lässt du dir Zeit.
+
+Du erklärst die Führung im Schieber. Dann stoppst du. Eine Einzelheit kannst du noch nicht begründen.
+
+Du markierst genau diese Stelle, statt den Rest mit einem vertrauten Fachwort zu überdecken.
+
+Das ist kein Wettbewerb darin, möglichst wenig zu wissen. Es geht darum, die Grenze brauchbar einzuzeichnen.
+
+Auch die Forschung ist hier vorsichtig zu lesen: Veränderungen der Selbsteinschätzung sind nicht automatisch ein präziser Test tatsächlicher Kenntnisse.
+
+In neueren Versuchen sanken Wissensurteile teilweise auch bei anderen Aufgaben. Die Reaktion ist also nicht völlig spezifisch fürs Erklären.
+
+Ein stockender Satz beweist deshalb keine Ahnungslosigkeit. Vielleicht fehlen Worte, Übung oder gerade ein gut geordneter Gedanke.
+
+Und eine flüssige Erklärung kann trotzdem falsch sein. Du musst ihren Inhalt anschließend an einer verlässlichen Quelle prüfen.
+
+Am Tisch kannst du einen einfachen Selbstcheck versuchen. Zuerst entscheidest du, welche genaue Frage du beantworten willst.
+
+Also nicht: Verstehe ich Reißverschlüsse? Sondern: Wie führt der Schieber die beiden Zahnreihen zusammen?
+
+Dann versuchst du die Erklärung ohne Vorlage. Du kannst sprechen, skizzieren oder beides miteinander verbinden.
+
+Wo ein Schritt nur mit irgendwie weitergeht, setzt du eine Markierung. Du musst die Lücke nicht verstecken.
+
+Erst danach vergleichst du mit einer passenden Quelle. Welche Verbindung fehlt? Welcher deiner Schritte stimmt nicht?
+
+Dann probierst du es erneut, ohne die Darstellung vor dir. Das ist ein praktischer Selbstcheck, kein umfassender Wissenstest.
+
+Bei einer schwierigen Frage darf die Antwort auch lauten: Den Teil weiß ich nicht. Ich muss nachsehen.
+
+Deine Freundin hat inzwischen ihre Jacke angezogen. Der Reißverschluss funktioniert genauso wie am Anfang.
+
+Verändert hat sich deine Antwort. Du kannst einen Teil begründen und den offenen Rest genauer benennen.
+
+Beim nächsten „Klar, das verstehe ich“ lohnt sich die Frage: An welcher Stelle würde meine Erklärung abbrechen?
+
+Ein gutes Gefühl kann der Anfang sein. Verständnis zeigt sich daran, welche Verbindungen du wirklich herstellen kannst.
+
+END NARRATION CONTEXT
+
+
+SCRIPT-SPECIFIC CHARACTER REFERENCES — INITIAL PREPARATION
+Design an individual cast for this video based on each role, action, setting and historical period. Choose suitable original hairstyles, clothing, accessories and expressions. Do not reuse a permanent channel mascot or a default outfit from earlier episodes. Only the approved stickman construction and illustrator language are fixed across videos.
+Before producing the cover candidates, generate a separate reference image for each recurring character yourself inside Flow: character-reference-01.png, character-reference-02.png, etc. Each reference is one clear standalone image, no contact sheet and no printed character name. Establish head/hair/clothing/proportions clearly. Keep these identities consistent across all covers and the relevant scenes in THIS video.
+Do not generate actual video scenes during this preparation stage. Do not ask for a separate character-approval round; show the references with the three cover candidates at the single cover-selection pause.
+
+THUMBNAIL CANDIDATES — THE ONLY USER STOP
+1. Using the character references you just generated, create exactly 3 SEPARATE 16:9 thumbnail candidates, each its OWN image, same concrete thesis and exact German cover headline, different compositions. Name them cover-candidate-01.png, cover-candidate-02.png and cover-candidate-03.png.
+2. These are NOT BILD 01, and must NEVER be used as the first video frame or in the video timeline.
+3. STOP only here. Let the user choose.
+4. Save winner to 05-export/thumbnail.png and delete the two rejected candidate files only after user selection.
+5. Use thumbnail.png for illustration style, finish, texture and stickman species; use the separate character-reference files for identity, hairstyle and clothing. Do not copy the cover title, split layout or composition into the video.
+6. No further approval or "continue?" questions after thumbnail choice.
+
+AFTER THUMBNAIL CHOICE — AUTOMATIC ALL VIDEO SCENES
+- Start with BILD 01 as a NORMAL scene corresponding to the first spoken hook, WITHOUT the thumbnail headline/cover title.
+- Generate actual scene BILDs in 5-image batches: 01–05, 06–10, 11–15, then continue in groups of 5; final remainder 1–4.
+- Every BILD is a distinct 16:9 asset; generate one entire batch operation, not one storyboard/grid.
+- QA each batch, regenerate ONLY missing/failed numbers, rename accepted images NN.png and put them immediately into one FLAT 03-bilder/ folder, continue automatically WITHOUT ASKING.
+- No additional prompts for approval. Continue until BILD 62 is finished.
+- FINAL: check actual count against phase1-scenes.json: exactly 01.png through 62.png, each valid 16:9, no missing files, rejected cover candidates, duplicates or subfolders. Separately verify 05-export/thumbnail.png.
+- Review script-to-image meaning, layout/prop continuity, visual world, character identity/anatomy and exact German text in the actual images. No false claim of automated visual recognition. No automatic video output in Flow.
+
+GLOBAL TEXT RULE
+ZERO READABLE TEXT unless an individual BILD has explicitly specified exact German words; only then use those words, mobile-readable. No extra text.
+
+PROMPTING RULE
+Short concrete observable composition, best representation first, one dominant idea, meaningful subject/environment/camera/light, no generic abstract metaphors.
+
+BILD 01
+Narration context (German; do not print): Du ziehst deine Jacke zu. Deine Freundin fragt: Warum halten diese winzigen Zähne eigentlich zusammen?
+Medium two-person view in a lived-in entryway: the lead closes their own jacket while the female friend leans closer to inspect the zipper, genuinely curious. Frame the moving hand and the friend's attentive gaze; a normal story moment, no exaggerated embarrassment. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 02
+Narration context (German; do not print): Du willst es erklären. Nach zwei Sätzen fehlt dir ausgerechnet der entscheidende Schritt.
+Close view of the lead's hand stopping halfway along the closed zipper, fingers poised to demonstrate something they cannot yet show. The friend's waiting hand enters at the edge; the zipper remains ordinary and undamaged. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 03
+Narration context (German; do not print): Das nennt man Illusion der Erklärungstiefe: Dein Verständnis fühlt sich vollständiger an, als deine Erklärung tatsächlich ist.
+Two large illustrated states: a confident lead beside the intact jacket on the left, their incomplete mechanical sketch with one conspicuous missing connection on the right. The same zipper is recognizable in both; show the gap between confidence and produced explanation, not a brain or a diagnostic test. Render ONLY the exact German text: "GEFÜHL", "ERKLÄRUNG". No other readable text.
+
+BILD 04
+Narration context (German; do not print): Du weißt, wie man den Verschluss benutzt. Aber warum schließt er sich hinter dem Schieber?
+Top-down jacket detail: one hand holds the pull tab above a closed section while a magnifying lens exposes the still-opaque slider body. The hand's successful action and the concealed interior coexist in one coherent view. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 05
+Narration context (German; do not print): Du deutest auf die Zähne. Die greifen eben ineinander, sagst du. Deine Freundin wartet.
+Over the friend's shoulder, the lead points at the interlocked teeth as if this settles the question; the friend keeps an open expectant palm. Keep both adults in the approved stickman species and avoid mockery. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 06
+Narration context (German; do not print): Denn genau das war ihre Frage. Du hast das Ergebnis beschrieben. Die Erklärung fehlt noch.
+A large hand-pull icon at left and the closed zipper at right are connected by a deliberately interrupted broad path. The missing middle occupies the focus; only two endpoints, no extra boxes or panels. This is a conceptual illustration of an unanswered connection. Render ONLY the exact German text: "ERGEBNIS", "ZUSAMMENHANG". No other readable text.
+
+BILD 07
+Narration context (German; do not print): Probier es selbst kurz. Wie bringt der Schieber beide Seiten zusammen, obwohl sie vorher getrennt waren?
+Macro of the established jacket's two separated zipper rows meeting the slider entrance, large enough to inspect individually. Keep the actual mechanism concealed at this point; show a clear physical question rather than a decorative symbol. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 08
+Narration context (German; do not print): Denk an die Bewegung und die Teile. Wo genau würdest du beim Erklären unsicher werden?
+A fingertip traces the outer slider shell, then hovers over its inaccessible center. Put a clean sheet and pencil in the background; one physical focal point, no floating symbols or readable notes. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 09
+Narration context (German; do not print): Du brauchst hier keinen perfekten Vortrag.
+Wide inviting view of the small apartment work table with two chairs, a blank sheet and pencil, the jacket folded at the far edge of the table. The two friends are out of frame; retain the entryway in the distant background for continuity. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 10
+Narration context (German; do not print): Entscheidend ist der Unterschied zwischen deinem ersten Gefühl und dem, was du ausführen kannst.
+One tabletop comparison: a hand confidently poised over a blank sheet beside a second sheet carrying a rough zipper drawing with a clear unfilled central connection. Match paper size and pencil style; this is the illustrative attempt, not measured study data. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 11
+Narration context (German; do not print): Am Tisch liegt jetzt ein Blatt. Du zeichnest zwei Zahnreihen und den kleinen Schieber dazwischen.
+Top-down close view of the lead drawing two zipper rows and the outer slider silhouette on plain paper. Show only meaningful mechanical strokes, not handwriting or letter-like marks. The real jacket lies beside the sheet. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 12
+Narration context (German; do not print): Bis hierhin läuft es. Dann setzt du den Stift ab. Wie sieht dieser Schieber innen aus?
+Side view at table level: the lead stops their pencil above the empty slider interior and studies it; the friend watches patiently from the opposite chair. Natural thoughtful posture, no shame, no comic panic. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 13
+Narration context (German; do not print): Die leere Stelle auf dem Papier sagt mehr als dein erstes: Klar, das verstehe ich.
+Extreme close-up of the actual pencil drawing: a clean slider outline with its interior deliberately blank, pencil tip at the boundary between known teeth and unknown guidance. Keep every mechanical mark large and readable without words. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 14
+Narration context (German; do not print): Warum fällt diese Lücke so spät auf? Oft genügt im Alltag ein grober Überblick, um zurechtzukommen.
+A coherent wide home-table scene: the lead smoothly operates the jacket zipper while the garment rests across the table, the friend sets a bag aside. The ordinary practical action succeeds without exposing the mechanism; this illustrates useful knowledge, not a claim about the brain. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 15
+Narration context (German; do not print): Du erkennst die Teile wieder und weißt, was du damit tun kannst. Das ist nützliches Wissen.
+Close view of the recognizable jacket folded on the table: a hand reliably locates the pull tab while the opaque slider interior stays hidden. Contrast accessible action with concealed construction within one physical object. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 16
+Narration context (German; do not print): Eine Erklärung verlangt zusätzlich die Verbindungen: Was verändert sich, wodurch, und welcher Schritt ermöglicht den nächsten?
+One large illustrated mechanical sketch on cool blue drafting paper: the hand's pulling force is linked through the guided zipper rows to a meshing contact. Use one broad continuous relation and generous spacing, no extra panels or labels. Clearly an explanatory sketch, not a brain model. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 17
+Narration context (German; do not print): Beim Reißverschluss bist du bisher vom Ziehen direkt aufs Schließen gesprungen. Dazwischen liegt deine offene Frage.
+Show the lead's original sheet with a hand-pull drawing at one end and the closed teeth at the other; the connecting path stops around the empty slider outline. A physical pencil points specifically to that interrupted transition, not to the whole page. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 18
+Narration context (German; do not print): In einem vereinfachten Schnitt sieht man im Schieber einen Y-förmigen Kanal, der die beiden Seiten führt.
+One greatly enlarged cutaway of the jacket's metal slider, with two separate rows entering the two branches of its Y-shaped internal channel and one engaged chain leaving the stem. Closing direction is toward the two open rows; keep geometry physically coherent, no magic fusion, no extra panels. Render ONLY the exact German text: "SCHIEBER", "FÜHRUNG". No other readable text.
+
+BILD 19
+Narration context (German; do not print): Beim Schließen werden die passend geformten Elemente zusammengeführt und greifen ineinander. Der Schieber ist also mehr als ein Griff.
+A tight mechanical close-up below the slider's joining region: complementary zipper elements from opposite tapes mesh into one alternating row. Show intact neighboring elements large and accurately aligned, with the two cloth tapes retained on their respective sides; no added gears or glue. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 20
+Narration context (German; do not print): Du zeichnest diese Führung nach. Jetzt verbindest du deine Handbewegung mit dem, was an den Zähnen passiert.
+Three-quarter table view: the lead adds the internal Y-shaped guidance to their earlier drawing while their other hand indicates the matching place on the real jacket. The friend follows the pencil, seeing the connection become explicit. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 21
+Narration context (German; do not print): Das ist noch kein vollständiges Ingenieurwissen. Aber deine Erklärung hat jetzt einen konkreten Zusammenhang mehr.
+Close view of the revised drawing: the previously empty slider interior now has one clear guidance path, while a separate lightly outlined detail remains intentionally unelaborated. Do not fill the page with invented technical detail or print any claims of mastery. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 22
+Narration context (German; do not print): Genau diese Lücke zwischen Gefühl und ausgeführter Erklärung wurde auch in psychologischen Studien untersucht.
+Wide contemporary research-room reconstruction: a clean desk, a jacket zipper sample, a simple piano-key model and a closed unbranded mechanical lock await a participant. These are illustrative examples from the study's device set, not a historical photograph. No readable notices. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 23
+Narration context (German; do not print): In einer klassischen Untersuchung schätzten Teilnehmende zunächst ein, wie gut sie vertraute technische Dinge verstanden.
+The separate research participant considers a zipper sample while a researcher offers a plain response sheet. Show a thoughtful initial judgment before any drawing task; no invented score, chart or legible questionnaire. Both people use identical approved stickman construction. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 24
+Narration context (German; do not print): Danach sollten sie die Funktionsweise einiger dieser Dinge Schritt für Schritt schriftlich erklären.
+Top-down view of the research participant's hands producing a large step-by-step mechanical sketch and a few broad connector strokes on paper, beside the zipper sample. Use the sketch to stand for the written explanation task; do not invent readable participant prose. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 25
+Narration context (German; do not print): Anschließend bewerteten sie ihr Verständnis erneut. Nach dem Erklärversuch fiel die Selbsteinschätzung niedriger aus.
+Two large matched views of the same illustrative participant: initially casually assured beside the intact device, later inspecting a visibly incomplete explanation sheet before reconsidering their judgment. Qualitative reconstruction of self-rating change only; no numerical means, scales, measured heights or objective-ability score. Render ONLY the exact German text: "VORHER", "NACHHER". No other readable text.
+
+BILD 26
+Narration context (German; do not print): Die eigene Erklärung machte Grenzen sichtbar, die beim ersten Einschätzen leicht verborgen geblieben waren.
+A researcher's finger and the participant's pencil converge on the specific blank connection in the produced mechanism sketch. Keep the original device in soft focus, intact; the omission belongs to the explanation, not to a broken object. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 27
+Narration context (German; do not print): Dabei ging es um das eingeschätzte Verständnis. Ein gesunkenes Urteil bedeutet nicht, dass jemand plötzlich Wissen verloren hat.
+A paired conceptual view: the same unchanged mechanism sketch appears on both sides, while the participant's attitude shifts from assured to reflective. Keep every known part identical. The physical knowledge record does not disappear or shrink when the self-judgment changes. Render ONLY the exact German text: "EINSCHÄTZUNG", "KENNTNISSE". No other readable text.
+
+BILD 28
+Narration context (German; do not print): Zurück zu deiner Zeichnung: Vorher hattest du eine sichere Antwort. Jetzt hast du eine genaue Frage.
+Return to the home table from the friend's viewpoint: the lead places the earlier incomplete sheet beside their revised version and indicates one precise remaining question. Warm apartment lighting restores the main story after the research-room sequence. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 29
+Narration context (German; do not print): Du kannst benennen, welcher Zusammenhang dir fehlt. Damit lässt sich gezielter nachsehen als mit: Ich verstehe gar nichts.
+Top-down revised sketch with one neat open circle around the unresolved detail; a pencil and closed laptop sit beside it. The circle singles out a real connection in the drawing; no entire-page crosses or decorative question marks. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 30
+Narration context (German; do not print): Aber vielleicht ist das nur eine Falle für Menschen, die sich mit einem Thema kaum beschäftigt haben?
+Close two-person view: the friend raises an interested eyebrow and lightly holds the zipper sample, while the lead listens rather than performs certainty. Change the axis from the earlier table shots; the objection is friendly and substantive. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 31
+Narration context (German; do not print): So einfach ist es nicht. Auch einschlägiges Vorwissen kann mit einer zu optimistischen Einschätzung der eigenen Erklärfähigkeit zusammengehen.
+Illustrative university study workspace: an adult participant confidently selects a familiar subject notebook, then faces a separate blank explanation sheet. Subject materials carry only abstract diagrams, no titles. This is a research reconstruction about prior knowledge, not a caricature of incompetent experts. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 32
+Narration context (German; do not print): Es macht einen Unterschied, ob dir Begriffe bekannt vorkommen oder ob du die Zusammenhänge gerade selbst rekonstruieren kannst.
+Two large illustrated states using the same mechanism parts: disconnected recognizable components on one side, their correctly connected working relation on the other. The change is the connection between parts, not a new pile of labels or extra facts. Render ONLY the exact German text: "BEGRIFFE", "ZUSAMMENHÄNGE". No other readable text.
+
+BILD 33
+Narration context (German; do not print): Das bedeutet nicht, dass Fachwissen wertlos ist. Gute Kenntnisse und eine ungenaue Selbsteinschätzung können nebeneinander bestehen.
+The study participant correctly assembles a familiar simple object, then thoughtfully leaves one explanation detail open on paper. Frame useful competence and honest uncertainty together in one coherent scene; no dunce hats, ridicule or brain-size comparison. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 34
+Narration context (German; do not print): Die Frage ist also weniger: Bin ich schlau? Sondern: Welchen Teil kann ich gerade wirklich erklären?
+A clean close view of the lead's hand isolating one mechanical connection with the pencil point, while the rest of the complete sketch extends beyond the frame. Make the selected relationship, not a portrait or trophy, the focus. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 35
+Narration context (German; do not print): Und jetzt kommt die bequemste Abkürzung: Du suchst die Antwort im Internet.
+Side view: the lead opens the laptop on the same table and reaches for the trackpad, with the partly completed sheet still visible beside it. The friend shifts their chair closer. Use the same cast and unchanged jacket prop. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 36
+Narration context (German; do not print): Wenige Sekunden, und der Zusammenhang steht vor dir.
+Close laptop view with a large clean mechanical zipper illustration, no web text, logos, navigation labels or pseudo-letters. A hand on the trackpad and the real jacket at the lower edge establish that this is external information, not a thought inside the lead's head. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 37
+Narration context (German; do not print): Deine Freundin beugt sich zum Bildschirm. Die Darstellung wirkt übersichtlich. Du nickst schon beim Lesen.
+From behind the laptop, show the two friends leaning toward the diagram; the lead begins to nod while the friend's gaze stays on the explanation. Keep the drawing sheet with the open detail visible in the near foreground. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 38
+Narration context (German; do not print): Doch die sichtbare Erklärung und deine eigene Erklärung sind zwei verschiedene Prüfungen. Welche davon hast du gerade bestanden?
+Two matched tabletop views: on one side a full source diagram is visible on the laptop; on the other the laptop is turned away and only the lead's incomplete sheet remains available. Keep the same jacket and paper position, changing only access to the source. Render ONLY the exact German text: "VORLAGE", "EIGENE ERKLÄRUNG". No other readable text.
+
+BILD 39
+Narration context (German; do not print): Eine weitere Studienreihe untersuchte genau diese Grenze zwischen zugänglicher Information und dem Gefühl eigenen Wissens.
+Wide illustrative research station with two equal workspaces: one has an active laptop, the other a covered laptop and the same task card. The objects establish information access as the upcoming difference; no claim of brain measurement or actual historical room. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 40
+Narration context (German; do not print): In einem Experiment suchte eine Gruppe online nach Erklärungen. Eine Vergleichsgruppe sollte die Fragen ohne Internet bearbeiten.
+Top-down matched workspaces with identical simple question cards: the left participant hand uses an open laptop to search; the right hand works without access to the closed laptop. Show the search condition and the no-internet condition, not two different abilities or different-quality devices. Render ONLY the exact German text: "MIT SUCHE", "OHNE INTERNET". No other readable text.
+
+BILD 41
+Narration context (German; do not print): Später schätzten beide Gruppen ihre Erklärfähigkeit bei anderen Themen ein, die mit den Suchfragen nichts zu tun hatten.
+A research hand moves the original zipper-question card aside and presents two new large topic illustrations, a storm cloud and an egg in a pan. The physical replacement of the old topic by unrelated ones is the dominant relation; no written questions or answer keys. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 42
+Narration context (German; do not print): Die Suchgruppe traute sich dabei mehr zu. Das war eine höhere Selbsteinschätzung, kein Nachweis größeren Wissens über diese Themen.
+A qualitative matched illustration: the search-condition participant gestures more assuredly toward the new topic cards, while the no-search participant pauses thoughtfully over identical cards. Neither produces an answer. No numerical chart, brain scan or implied tested performance; this depicts reported confidence only. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 43
+Narration context (German; do not print): Die wichtige Frage für deinen Tischversuch bleibt: Was kannst du erklären, wenn die fremde Darstellung gerade nicht sichtbar ist?
+View from the lead's seat: the laptop screen begins to rotate out of sight while the same drawing and jacket remain fully visible on the table. Emphasize the boundary between available outside explanation and the sheet the lead can produce. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 44
+Narration context (German; do not print): Du drehst den Bildschirm weg. Deine Freundin zeigt wieder auf die Jacke. Diesmal lässt du dir Zeit.
+Wide home-table shot: the laptop faces away from the lead, the friend points to the real jacket, and the lead settles calmly with pencil in hand. Keep the full spatial relation clear and distinguish this view from the earlier over-shoulder shots. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 45
+Narration context (German; do not print): Du erklärst die Führung im Schieber. Dann stoppst du. Eine Einzelheit kannst du noch nicht begründen.
+The lead reconstructs the slider guidance on a fresh sheet, then stops at one unelaborated detail. Show the meaningful completed connection plus the distinct remaining gap, with no external diagram visible. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 46
+Narration context (German; do not print): Du markierst genau diese Stelle, statt den Rest mit einem vertrauten Fachwort zu überdecken.
+Macro of the pencil circling exactly one unfinished junction in the fresh sketch. Everything outside that circle remains intact and un-crossed-out. Use a single deliberate physical circle, no decorative halos or invented handwriting. Render ONLY the exact German text: "HIER OFFEN". No other readable text.
+
+BILD 47
+Narration context (German; do not print): Das ist kein Wettbewerb darin, möglichst wenig zu wissen. Es geht darum, die Grenze brauchbar einzuzeichnen.
+The lead calmly shows the useful completed part of the sketch to the friend and leaves the marked gap plainly visible. The friend responds with an attentive nod, not applause or competitive ranking. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 48
+Narration context (German; do not print): Auch die Forschung ist hier vorsichtig zu lesen: Veränderungen der Selbsteinschätzung sind nicht automatisch ein präziser Test tatsächlicher Kenntnisse.
+Two large concrete records: a portrait-style response card expressing confidence beside a separate mechanism drawing being checked against a reference drawing. No quantities or grades. The first records a judgment; the second makes a checkable relation available. Render ONLY the exact German text: "SELBSTEINSCHÄTZUNG", "INHALTSPRÜFUNG". No other readable text.
+
+BILD 49
+Narration context (German; do not print): In neueren Versuchen sanken Wissensurteile teilweise auch bei anderen Aufgaben. Die Reaktion ist also nicht völlig spezifisch fürs Erklären.
+Two large reconstructed tasks: one hand copies the exact short German sentence DER TAG BEGINNT from a visible card; another hand attempts a zipper explanation sketch. Same quiet desk conditions. The short sentence is an illustrative placeholder for copying neutral text, not the original experimental stimulus; no scores or result chart. Render ONLY the exact German text: "ABSCHREIBEN", "ERKLÄREN", "DER TAG BEGINNT". No other readable text.
+
+BILD 50
+Narration context (German; do not print): Ein stockender Satz beweist deshalb keine Ahnungslosigkeit. Vielleicht fehlen Worte, Übung oder gerade ein gut geordneter Gedanke.
+An intimate conversational view: the lead pauses, looks toward their useful sketch and organizes a thought while the friend waits supportively. Keep demonstrated knowledge visible on the table; no empty skulls, crossed-out brains or judgmental gestures. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 51
+Narration context (German; do not print): Und eine flüssige Erklärung kann trotzdem falsch sein. Du musst ihren Inhalt anschließend an einer verlässlichen Quelle prüfen.
+A source cutaway and the lead's sketch lie side by side. A pencil follows the same internal slider guidance in both and circles one mismatching drawn connection. Keep the comparison mechanical and concrete, no fake certificate, checkmark score or claims about intelligence. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 52
+Narration context (German; do not print): Am Tisch kannst du einen einfachen Selbstcheck versuchen. Zuerst entscheidest du, welche genaue Frage du beantworten willst.
+Fresh wide view of the home table: jacket, clean paper and pencil arranged for a focused attempt, laptop closed at the far end. The calm work setup replaces the earlier rush to answer; no numbered three-step board or panel collage. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 53
+Narration context (German; do not print): Also nicht: Verstehe ich Reißverschlüsse? Sondern: Wie führt der Schieber die beiden Zahnreihen zusammen?
+A magnifying lens frames only the slider and the two entering zipper rows, while most of the jacket stays outside the focal area. The physical framing narrows the question to one relationship without pretending to explain the whole object. Render ONLY the exact German text: "WIE GREIFT ES?". No other readable text.
+
+BILD 54
+Narration context (German; do not print): Dann versuchst du die Erklärung ohne Vorlage. Du kannst sprechen, skizzieren oder beides miteinander verbinden.
+From the side opposite the earlier drawing shots, show the lead verbally explaining while sketching the guidance path to the friend. The laptop remains closed and physically behind them; hands and pencil make the active attempt unmistakable. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 55
+Narration context (German; do not print): Wo ein Schritt nur mit irgendwie weitergeht, setzt du eine Markierung. Du musst die Lücke nicht verstecken.
+Close on a useful partial drawing with one newly marked unfinished link. The lead places a small plain colored paper tab beside that exact link; no readable wording, no broad red cross, no additional cards. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 56
+Narration context (German; do not print): Erst danach vergleichst du mit einer passenden Quelle. Welche Verbindung fehlt? Welcher deiner Schritte stimmt nicht?
+Top-down view of the marked sketch and a source diagram, aligned so the same slider junction can be compared directly. The colored tab stays at the unresolved place and a fingertip traces the corresponding verified channel in the source. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 57
+Narration context (German; do not print): Dann probierst du es erneut, ohne die Darstellung vor dir. Das ist ein praktischer Selbstcheck, kein umfassender Wissenstest.
+The source diagram is face down at the far edge while the lead begins a fresh large guidance sketch beside the real zipper. Show available physical object versus unavailable source page clearly; no trophy, perfect-score stamp or guarantee of mastery. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 58
+Narration context (German; do not print): Bei einer schwierigen Frage darf die Antwort auch lauten: Den Teil weiß ich nicht. Ich muss nachsehen.
+The lead indicates a remaining circled detail with an honest open palm while the friend listens calmly. Their completed explanation remains between them; uncertainty concerns that one point rather than their entire competence. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 59
+Narration context (German; do not print): Deine Freundin hat inzwischen ihre Jacke angezogen. Der Reißverschluss funktioniert genauso wie am Anfang.
+Return to the original entryway as the female friend now closes her own jacket and prepares to leave, while the lead stands beside the work-table doorway. Her jacket has its own established reference identity; do not accidentally transfer the lead's jacket to her. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 60
+Narration context (German; do not print): Verändert hat sich deine Antwort. Du kannst einen Teil begründen und den offenen Rest genauer benennen.
+Final tabletop comparison of the lead's first nearly empty sketch and their latest connected guidance sketch with one remaining marked detail. The real jacket is the same as at the beginning. Show progress as new relationships on paper, not a claim of complete expertise. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 61
+Narration context (German; do not print): Beim nächsten „Klar, das verstehe ich“ lohnt sich die Frage: An welcher Stelle würde meine Erklärung abbrechen?
+At the entryway threshold the lead holds their useful sketch at waist height and glances thoughtfully toward its marked gap, while the friend waits naturally beside the door. Frame a reflective exchange, no pointer-to-camera performance or subscription gesture. Same approved stickman species: light oversized round heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Use the correct role references. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+BILD 62
+Narration context (German; do not print): Ein gutes Gefühl kann der Anfang sein. Verständnis zeigt sich daran, welche Verbindungen du wirklich herstellen kannst.
+A quiet final close view of the latest pencil sketch resting beside the actual jacket zipper: the drawn guidance and the real slider align visually, with the remaining small marked uncertainty retained. Warm side light, uncluttered frame, no slogan or end-card text. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+
+FINAL QA
+- Script-specific character references were generated inside Flow and used for the relevant roles, with no external Codex image required.
+- Three separate thumbnail candidates first; STOP once, chosen 05-export/thumbnail.png, two others deleted.
+- BILD 01 is a separate scene, NOT a cover.
+- All 62 actual video scenes complete in continuous 5-image batches: 01–05, 06–10, 11–15, 16–20, 21–25, 26–30, 31–35, 36–40, 41–45, 46–50, 51–55, 56–60, then 61–62. Final numbering uses NN.png.
+- Every human stays exact same stickman species, same-frame lock.
+- No repeat beige default, accidental English or gibberish.
+- Flat 03-bilder/ with exactly 62 scene files, 01.png through 62.png, no other versions, no extra subfolders.
+- Approved 05-export/thumbnail.png remains a separate export asset.
+- No storyboard, contact sheet, collage or unrequested video.
+
+
+FINAL DOWNLOAD PACKAGE — ONE FOLDER AND ZIP
+Expected complete package: 67 files — thumbnail.png, character-reference-01.png through character-reference-04.png, and exactly 62 scene images 01.png through 62.png. Never include the two rejected covers or the thumbnail among the numbered scenes.
+After all numbered scenes pass the final file and visual QA:
+- Collect the final deliverables into ONE FLAT download folder named google-flow/.
+- Include thumbnail.png, character-reference-01.png (and further character references only when used), and every numbered scene 01.png through 62.png.
+- Exclude rejected covers, duplicates, failed versions, batch folders, contact sheets and unnumbered extra scene images.
+- Confirm the exact planned number of numbered scenes, no gaps/duplicates, correct filenames, valid separate 16:9 images, consistent character identities and only the planned German visible text.
+- If your interface supports folder/ZIP export, create google-flow.zip from that folder and inspect its actual file list before providing the download. Never claim an archive was created or checked unless it really exists.
+- If your interface cannot save, name, package or export files, state exactly which step is unavailable and provide the images separately. Do not silently skip the step or claim a nonexistent ZIP is ready.
+- Packaging does not change the local production layout: after download, import numbered scenes into 03-bilder/, thumbnail.png into 05-export/, and character references into 99-intern/reference-notes/. The thumbnail and references never enter the video timeline or scene numbering.
