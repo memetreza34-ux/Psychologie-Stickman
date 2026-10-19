@@ -16,6 +16,10 @@ Sie enthält bereits den gesamten Sprechertext, die Bildwelt, die Entwicklung ei
 - Die freigegebene Stickman-Grundkonstruktion und Zeichenwelt bleiben erhalten.
 - Das irrtümlich von Codex erzeugte erste Bild gehört nicht zu dieser Produktion; es wurde außerhalb des Repos archiviert.
 
+## Sprache
+
+Alle Flow-Anweisungen und Bildbeschreibungen sind Englisch. Sichtbare Beschriftungen in den Bildern ausschließlich Deutsch und exakt wie vorgegeben. Der deutsche Sprechertext dient im Prompt nur als Inhaltsreferenz.
+
 ## Sprechertext separat für die spätere Aufnahme
 
 [script.txt](01-script-audio/script.txt)

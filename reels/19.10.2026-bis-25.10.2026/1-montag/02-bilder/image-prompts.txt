@@ -1,27 +1,30 @@
-GOOGLE FLOW — KOPFARIUM / REEL-TEST: WAS WOLLTE ICH HIER?
+GOOGLE FLOW — KOPFARIUM / DOORWAY-EFFECT REEL TEST
 
-AUFTRAG
-Erzeuge selbst die vollständige Bildfolge für den unten beschriebenen kurzen Psychologie-Reel. Format: direkt vertikal 9:16, für 1080×1920 / 30 fps. Sieben einzelne Bilder, jeweils eine eigenständige Datei; kein fertiges Video, kein Kontaktbogen und kein Bild aus mehreren Szenennummern. Es wird kein externes Referenzbild bereitgestellt oder benötigt. Das erste Bild und sämtliche Folgebilder kommen von dir in Google Flow.
+LANGUAGE RULE — IMPORTANT
+All instructions and image descriptions are in English. ALL VISIBLE WORDS INSIDE THE GENERATED IMAGES MUST BE IN GERMAN. Keep the exact German labels specified for each image; do not translate them into English. The German narration below is context only and must not be printed in the images. Images without explicitly planned German text must contain NO VISIBLE TEXT, including letters, numbers, logos, pseudo-writing, packaging text and interface text.
 
-BILDWELT
-Hochwertige handgezeichnete 2D-Illustrationen: organische dunkle Konturen, weiches Cel-Shading, dezente Zeichentextur, natürliche klare Farben und räumliche Tiefe. Alle sichtbaren Menschen gehören derselben Stickman-Spezies an: übergroße runde oder weich ovale helle Köpfe, kleine schwarze ovale Augen, minimaler ausdrucksvoller Mund und Brauen, schmale bekleidete Torsi, sehr dünne dunkle Arme und Beine, kleine vereinfachte Hände und Schuhe. Keine normalen Cartoon-Menschen zwischen Stickmen. Objekt-, Raum-, Schema- und Vergleichsbilder nutzen dieselbe Illustratorhandschrift. Kameras, Motive und Licht dürfen sich passend zum Inhalt ändern. Kein durchgehend brauner oder beiger Filter.
+TASK
+Generate the complete image sequence for the short psychology reel described below. Native vertical 9:16 composition, intended for a 1080×1920 / 30 fps reel. Seven separate images, one independent file per image number. Do not create a finished video, contact sheet or combined image containing several scene numbers. No external reference image is supplied or needed. Generate the first image and all following images yourself inside Google Flow.
 
-PERSON FÜR DIESES VIDEO INDIVIDUELL ENTWERFEN
-Gestalte für genau diese Geschichte eine neue erwachsene Alltagsfigur, die zu Hause ein Paket fertigstellen möchte. Wähle passende eigene Frisur, Kleidung, dezente Accessoires und Ausdruck selbst. Keine feste Kanalfigur, keine übernommene Person aus einem früheren Video und kein automatisch gleicher grüner/tealfarbener Pullover. Die festen Merkmale sind Stickman-Spezies und Zeichenwelt. Die von dir neu gewählte Person bleibt innerhalb dieses Reels bei BILD 01 und BILD 06 wiedererkennbar. Füge in Objekt-/Erklärbildern keine Figur hinzu, wenn sie nichts erklärt.
+ILLUSTRATION WORLD
+Premium hand-drawn 2D illustrations with organic dark outlines, soft cel shading, subtle drawn texture, natural clear colors and coherent spatial depth. Every visible person belongs to the same stickman species: oversized round or softly oval light heads, tiny black oval eyes, minimal expressive mouths and eyebrows, narrow clothed torsos, very thin dark arms and legs, small simplified hands and shoes. Do not mix ordinary cartoon humans with stickmen. Object shots, environments, schemas and comparisons share the same illustrator language. Adapt camera, subject and lighting to the content. Avoid a uniform brown or beige filter throughout.
 
-GESCHICHTE UND KONTINUITÄT
-Eine Wohnung mit angrenzendem Wohnzimmer und Küche. Im Wohnzimmer steht ein Packtisch mit einem offenen braunen Versandkarton und schwarzer Schere. Die Person geht in die Küche und verliert kurz den Zugriff auf ihr Vorhaben. Der Karton bleibt im Wohnzimmer. Später formuliert die Person die Absicht bewusst, bevor sie losgeht; der letzte Gegenstands-Shot zeigt den abgeschlossenen Karton mit rotem Klebeband. Das ist eine illustrative Alltagsgeschichte, kein Wirksamkeitsbeweis. Behalte Grundriss, Gegenstände und die von dir neu entworfene Person im selben Video konsistent. Kopiere nicht die erste Bildkomposition auf alle folgenden Szenen.
+DESIGN AN INDIVIDUAL CHARACTER FOR THIS VIDEO
+Create a new adult everyday character for this specific story: someone preparing a parcel at home. Choose an appropriate original hairstyle, clothing, restrained accessories and expressions yourself. There is no permanent channel mascot, no required character from an earlier video and no default green/teal sweater. The fixed elements are the stickman anatomy and illustration world. The character you design must remain recognizable within this reel in IMAGE 01 and IMAGE 06. Do not add a person to object or explanatory shots unless their presence helps explain the content.
 
-ABLAUF IN GOOGLE FLOW
-1. Erzeuge BILD 01 selbst anhand dieses Prompts und zeige es einzeln. Die erste Bildauswahl/Freigabe findet hier in Google Flow statt; eine bereits von Codex erstellte Vorlage ist nicht nötig.
-2. Nach der Freigabe nutze dein eigenes BILD 01 als interne Referenz für Zeichenstil und diese Videofigur. Erzeuge BILD 02–06 einzeln im nächsten Fünfer-Batch und danach BILD 07.
-3. Pro Bild auf Sprecherpassung, Ort, Gegenstände, Stickman-Anatomie, geplanten Text und Verständlichkeit bei Handygröße prüfen. Fehlbilder gezielt neu erzeugen.
-4. Liefere sieben separate Bilder, fortlaufend 01.png bis 07.png. Falls deine Oberfläche keinen Dateiexport oder keine Benennung unterstützt, liefere die Bilder separat und benenne diese Grenze ehrlich. Keine fehlenden Bilder als fertig melden.
+STORY AND CONTINUITY
+One home with an adjoining living room and kitchen. A packing table in the living room holds an open brown shipping parcel and black scissors. The character enters the kitchen and momentarily loses track of the intention. The parcel stays in the living room. Later, the character deliberately names the intention before leaving; the final object shot shows the parcel sealed with red tape. This is an illustrative everyday story, not proof of a guaranteed intervention. Keep the layout, props and newly designed character consistent within this video. Do not copy the opening composition into every subsequent image.
 
-TEXT UND KOMPOSITION
-Nur in den ausdrücklich benannten Bildern die exakten deutschen Labels zeigen. Alle anderen Bilder vollständig ohne lesbaren Text, Ziffern, Logos, Pseudo-Schrift oder zufällige Verpackungs-/Gerätebeschriftung. Große Hauptmotive; keine überladenen Erklärtafeln. Höchstens zwei klar getrennte Zustände pro Bild. Wichtige Gesichter, Gegenstände und Labels innerhalb der mittleren sicheren Bildfläche halten; oben und unten ruhigen Raum für später ergänzte Reel-Untertitel lassen. Sprecherabschnitte sind Inhaltshilfe, nicht automatisch im Bild sichtbarer Text.
+WORKFLOW INSIDE GOOGLE FLOW
+1. Generate IMAGE 01 yourself from this prompt and show it separately. The first image selection/approval happens here inside Google Flow; no prior image generated by Codex is required.
+2. After approval, use your own IMAGE 01 as the internal illustration and character reference. Generate IMAGE 02–06 as separate images in the next five-image batch, then IMAGE 07.
+3. Check each image against the narration, location, props, stickman anatomy, exact planned German text and readability at phone size. Regenerate failed images individually.
+4. Deliver seven separate images named 01.png through 07.png where file export/naming is supported. If your interface cannot export or name files, provide the images separately and state that limitation honestly. Do not claim missing images are complete.
 
-SPRECHERTEXT GESAMT
+TEXT AND COMPOSITION
+Render only the exact German text explicitly authorized for IMAGE 03, IMAGE 05 and IMAGE 06. All other images contain NO VISIBLE TEXT. Large focal subjects, uncluttered explanation, at most two distinct visual states per image. Keep important faces, objects and labels in the central safe area, with quiet space near the top and bottom for reel subtitles added later. Narration is guidance for meaning, not automatically visible text.
+
+FULL GERMAN NARRATION — CONTEXT ONLY, DO NOT PRINT
 Du gehst in die Küche. Und weißt plötzlich nicht mehr, warum.
 
 Am Tisch war noch alles klar: Karton offen. Klebeband fehlt.
@@ -36,39 +39,39 @@ Probier vor dem Losgehen einen konkreten Satz: „Ich hole Klebeband für den Ka
 
 Der nächste Raum ist neu. Deine Aufgabe bleibt dieselbe.
 
-BILDPLAN — ALLE SIEBEN EINZELBILDER
+IMAGE PLAN — ALL SEVEN SEPARATE IMAGES
 
-BILD 01
-Sprecherabschnitt: Du gehst in die Küche. Und weißt plötzlich nicht mehr, warum.
-Bildbeschreibung: Erzeuge das erste Bild selbst neu. Eine für diesen Reel individuell entworfene erwachsene Alltagsfigur ist gerade vom Wohnzimmer in die Küche gekommen und hält unsicher inne. Die Figur groß im mittleren Bildbereich zeigen, mit der eben für dieses Video gewählten Frisur und Kleidung. Gesicht und Blick vermitteln: Was wollte ich hier? Eine Hand liegt am leicht geöffneten Küchenschubfach. Durch die offene Tür im Hintergrund sieht man den Wohnzimmertisch mit offenem braunem Karton und schwarzer Schere. Der Karton bleibt im Wohnzimmer. Kühleres Tageslicht in der Küche, wärmeres Licht im Wohnzimmer; übersichtliche Requisiten. Kein sichtbarer Text. Dieses normale erste Szenenbild wird deine innerhalb von Flow erzeugte Referenz für die Person und die Zeichenwelt dieses Reels.
-Ausgabe: 01.png, einzelne vertikale 9:16-Illustration.
+IMAGE 01
+German narration (context only): Du gehst in die Küche. Und weißt plötzlich nicht mehr, warum.
+Image description: Create the first image yourself from scratch. A new adult everyday character, individually designed for this reel, has just walked from the living room into the kitchen and pauses uncertainly. Show the character large in the central portrait area, using the hairstyle and clothing you have just chosen for this video. The gaze and posture suggest a forgotten intention. One hand rests on a slightly open kitchen drawer. Through the open doorway behind the character, show the living-room packing table with an open brown parcel and black scissors. The parcel stays in the living room. Cooler daylight in the kitchen, warmer light in the living room; keep props simple. NO VISIBLE TEXT. This ordinary opening scene becomes the character and illustration reference you generate inside Google Flow for this reel.
+Output: 01.png, one independent vertical 9:16 illustration.
 
-BILD 02
-Sprecherabschnitt: Am Tisch war noch alles klar: Karton offen. Klebeband fehlt.
-Bildbeschreibung: Nahaufnahme schräg von oben auf denselben Packtisch im Wohnzimmer. Der offene braune Karton und seine noch unverschlossenen Klappen sind das Hauptmotiv. Die schwarze Schere liegt daneben. Klebeband liegt noch nicht auf dem Tisch. Der unfertige Verpackungsschritt muss sofort erkennbar sein. Keine Figur; kein sichtbarer Text. Bewahre den in BILD 01 selbst entwickelten Zeichenstil, aber übernimm nicht dessen Komposition.
-Ausgabe: 02.png, einzelne vertikale 9:16-Illustration.
+IMAGE 02
+German narration (context only): Am Tisch war noch alles klar: Karton offen. Klebeband fehlt.
+Image description: Close overhead-diagonal view of the same packing table in the living room. The open brown parcel and its unsealed flaps are the main subject. The black scissors lie beside it. There is no tape roll on this table yet. Make the unfinished packing step immediately obvious. No person and NO VISIBLE TEXT. Preserve the illustration language you established in IMAGE 01, while using a different composition.
+Output: 02.png, one independent vertical 9:16 illustration.
 
-BILD 03
-Sprecherabschnitt: Eine mögliche Erklärung heißt Türschwellen-Effekt.
-Bildbeschreibung: Ein klares handgezeichnetes Erklärbild mit genau zwei großen übereinanderliegenden Kontextfeldern. Oben: derselbe Wohnzimmertisch mit offenem Karton und Schere. Unten: Küchentheke mit Tellern und Wasserkocher, ohne Karton. Vergleichbare einfache Größen und wenige Elemente. Nur diese zwei großen exakten deutschen Labels: oben „AM TISCH“, unten „IN DER KÜCHE“. Das ist ein Modell zweier Situationen, keine anatomische Gehirnzeichnung. Keine weiteren Wörter, Pfeilnetze, Mini-Symbole oder zusätzlichen Panels. Alles im selben Illustratorstil wie BILD 01.
-Ausgabe: 03.png, einzelne vertikale 9:16-Illustration.
+IMAGE 03
+German narration (context only): Eine mögliche Erklärung heißt Türschwellen-Effekt.
+Image description: A clear hand-drawn explainer with exactly two large stacked context fields. Upper field: the same living-room table with the open parcel and scissors. Lower field: the kitchen counter with plates and a kettle, without the parcel. Use comparable simple scale and very few elements. Render ONLY these two exact large German labels: upper field "AM TISCH"; lower field "IN DER KÜCHE". These are a model of two situations, not an anatomical brain diagram. No other words, dense arrow networks, mini-icons or extra panels. Match the illustration style established in IMAGE 01.
+Output: 03.png, one independent vertical 9:16 illustration.
 
-BILD 04
-Sprecherabschnitt: Dein Kopf ordnet Erlebnisse in Abschnitte. Beim Raumwechsel kann der vorige Zusammenhang schwerer erreichbar werden.
-Bildbeschreibung: Blick aus derselben Küche in Richtung Wohnzimmer. Teller und Wasserkocher bilden eine deutlich sichtbare nahe Motivgruppe. Der Packtisch mit Karton bleibt hinter dem Türrahmen im Wohnzimmer, zum Teil verdeckt und weniger auffällig. Die räumliche Bildaufteilung zeigt: Neue Hinweise stehen im Vordergrund, die vorige Aufgabe ist nicht mehr unmittelbar vor Augen. Keine Figur; kein Text. Andere Perspektive als BILD 01. Kein magisches Löschen, keine Gedankenwolken, keine fliegenden Gegenstände. Das Bild illustriert den Zusammenhang, beweist aber keinen universellen Ursache-Wirkungs-Effekt.
-Ausgabe: 04.png, einzelne vertikale 9:16-Illustration.
+IMAGE 04
+German narration (context only): Dein Kopf ordnet Erlebnisse in Abschnitte. Beim Raumwechsel kann der vorige Zusammenhang schwerer erreichbar werden.
+Image description: View from inside the same kitchen toward the living room. Plates and a kettle form one clearly visible foreground cluster. Beyond the doorframe, the packing table and parcel remain in the living room, partly occluded and less prominent. The spatial composition illustrates new cues coming to the foreground while the previous task is no longer immediately in view. No person and NO VISIBLE TEXT. Use a different camera position from IMAGE 01. No magical erasure, thought clouds or floating objects. This illustrates the context explanation without claiming a universal cause-and-effect relationship.
+Output: 04.png, one independent vertical 9:16 illustration.
 
-BILD 05
-Sprecherabschnitt: Aber: Die Forschung findet diesen Effekt nicht immer. Eine Tür ist kein automatischer Gedächtnis-Reset.
-Bildbeschreibung: Ein sachlicher handgezeichneter Vergleich zweier qualitativer Forschungsbefunde auf einem übersichtlichen Labortisch: genau zwei große übereinanderliegende Karten im gleichen Aufbau. Obere Karte mit dem exakten deutschen Wort „UNTERSCHIED“, untere Karte mit „KEIN UNTERSCHIED“. Ein kleines wortloses Tür-/Objektmotiv pro Karte verbindet sie mit dem Thema. Beide Befunde gleichwertig darstellen, keinen als richtig oder falsch markieren. Keine Zahlen, Balken, Prozentwerte, p-Werte oder erfundenen Messdaten. Die Karten fassen unterschiedliche Befundmuster zusammen und zeigen ausdrücklich nicht einen einzelnen Zwei-Gruppen-Versuch. Keine Menschen. Wenig Hintergrund; derselbe handgezeichnete Stil wie im restlichen Reel.
-Ausgabe: 05.png, einzelne vertikale 9:16-Illustration.
+IMAGE 05
+German narration (context only): Aber: Die Forschung findet diesen Effekt nicht immer. Eine Tür ist kein automatischer Gedächtnis-Reset.
+Image description: A restrained hand-drawn comparison of qualitative research findings on a simple laboratory desk: exactly two large stacked cards with the same layout. The upper card contains ONLY the exact German word "UNTERSCHIED"; the lower card contains ONLY "KEIN UNTERSCHIED". A small unlettered doorway/object motif on each card connects them to the topic. Treat both findings equally, without marking either as right or wrong. No numbers, bars, percentages, p-values or invented measurements. The cards summarize different finding patterns; they are NOT a depiction of one actual two-group experiment. No people or other writing. Minimal background, same hand-drawn illustration world.
+Output: 05.png, one independent vertical 9:16 illustration.
 
-BILD 06
-Sprecherabschnitt: Probier vor dem Losgehen einen konkreten Satz: „Ich hole Klebeband für den Karton.“
-Bildbeschreibung: Dieselbe für diesen Reel individuell entworfene Person steht noch im Wohnzimmer neben dem offenen Karton. Frisur, Kleidung und Stickman-Konstruktion bleiben innerhalb dieses Videos konsistent. Eine Hand deutet auf die offene Paketaufgabe, der Blick geht bewusst zur Küchentür. Ruhiger, entschlossener Ausdruck. Eine einzige große einfache Sprechblase enthält exakt „KLEBEBAND FÜR DEN KARTON“. Sonst kein sichtbarer Text. Karton noch nicht verschließen. Die Bildhandlung zeigt das bewusste Formulieren eines Vorhabens vor dem Losgehen.
-Ausgabe: 06.png, einzelne vertikale 9:16-Illustration.
+IMAGE 06
+German narration (context only): Probier vor dem Losgehen einen konkreten Satz: „Ich hole Klebeband für den Karton.“
+Image description: The same character individually designed for this reel stands in the living room beside the still-open parcel, BEFORE leaving. Keep the hairstyle, clothing and stickman anatomy consistent within this video. One hand points toward the unfinished packing task; the gaze is directed deliberately toward the kitchen doorway. Calm, purposeful expression. One large simple speech bubble contains EXACTLY this German text: "KLEBEBAND FÜR DEN KARTON". No other visible text. Do not seal the parcel yet. Show the action of consciously naming an intention before walking away.
+Output: 06.png, one independent vertical 9:16 illustration.
 
-BILD 07
-Sprecherabschnitt: Der nächste Raum ist neu. Deine Aufgabe bleibt dieselbe.
-Bildbeschreibung: Ruhige Nahaufnahme desselben Packtisches im Wohnzimmer: Der bekannte braune Karton ist nun mit einem roten Klebestreifen geschlossen. Die rote Klebebandrolle und schwarze Schere liegen daneben. Der Karton ist klar als derselbe Gegenstand erkennbar. Keine Figur nötig; kein Text oder zusätzliche Erfolgssymbolik. Dieser Abschluss löst die kleine Geschichte auf und behauptet keine wissenschaftliche Wirkungsgarantie. Natürliche warme Beleuchtung und derselbe handgezeichnete Stil.
-Ausgabe: 07.png, einzelne vertikale 9:16-Illustration.
+IMAGE 07
+German narration (context only): Der nächste Raum ist neu. Deine Aufgabe bleibt dieselbe.
+Image description: Quiet close-up of the same packing table in the living room: the familiar brown parcel is now sealed with a red tape strip. The red tape roll and black scissors rest beside it. Make the parcel recognizable as the same object. No person needed; NO VISIBLE TEXT and no extra success symbols. This shot resolves the illustrative story and does not establish that a memory strategy is guaranteed to work. Natural warm lighting and the same hand-drawn illustration language.
+Output: 07.png, one independent vertical 9:16 illustration.

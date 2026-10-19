@@ -5,7 +5,10 @@
     "externalReferenceRequired": false,
     "characterDesign": "SCRIPT_SPECIFIC_CHARACTER_V1",
     "singleCopyablePrompt": true,
-    "scriptIncluded": true
+    "scriptIncluded": true,
+    "instructionLanguage": "en",
+    "visibleImageTextLanguage": "de",
+    "narrationLanguage": "de"
   },
   "failures": [],
   "warnings": [],
