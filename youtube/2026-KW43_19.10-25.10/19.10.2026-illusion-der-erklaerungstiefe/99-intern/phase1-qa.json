@@ -1,6 +1,6 @@
 {
   "status": "PHASE_1_PASS",
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "scriptWords": 979,
   "sceneCount": 62,
   "allSpokenWordsMappedInOrder": true,
@@ -20,7 +20,8 @@
   ],
   "notes": [
     "Automatic tests include expected rejection fixtures; their intentional FAIL output is followed by self-test PASS.",
-    "Full text, source-claim distinctions and scene plans reviewed; image/voice quality cannot be assessed before actual generation."
+    "Full text, source-claim distinctions and scene plans reviewed; image/voice quality cannot be assessed before actual generation.",
+    "20.10.2026: User selected previous-reel stickman construction. External screenshot previews of normal-cartoon covers and small-faced test reference rejected for anatomy; revised Flow references/covers and explicit final cover approval are pending. No corrected image set reviewed."
   ],
   "coverStyleReferencePolicy": "APPROVED_COVER_EVERY_SCENE_V1",
   "explicitFinalCoverApprovalRequired": true,
@@ -29,5 +30,7 @@
   "characterReferenceSceneCount": 22,
   "characterReferencePolicy": "VISIBLE_RECURRING_CHARACTER_ONLY_V1",
   "artDirectionStatus": "PLANNED_PENDING_ACTUAL_COVER_APPROVAL",
-  "styleReferenceUseInGeneratedImages": "NOT_YET_VERIFIED_NO_IMAGES_PROVIDED"
+  "styleReferenceUseInGeneratedImages": "NOT_YET_VERIFIED_NO_IMAGES_PROVIDED",
+  "characterShapePolicy": "PREVIOUS_REEL_STICKMAN_V1",
+  "characterShapeImageReview": "EXTERNAL_SCREENSHOTS_REJECTED_CORRECTED_IMAGES_PENDING"
 }

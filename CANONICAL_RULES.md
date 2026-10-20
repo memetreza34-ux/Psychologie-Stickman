@@ -1,5 +1,12 @@
 # CANONICAL RULES — PSYCHOLOGY VIDEO PRODUCTION
 
+## Feste Figurenbauweise seit 20.10.2026 — PREVIOUS_REEL_STICKMAN_V1
+
+Arman möchte künftig ausschließlich die Figurenbauweise aus dem bisherigen Türschwellen-Reel: großer warmweißer runder/soft-ovaler Kopf, breiter einfacher Gesichtsbereich ohne menschliche Kieferform oder sichtbare Nase, winzige schwarze ovale Augen, schmaler bekleideter Rumpf und sehr dünne dunkle Gliedmaßen. Der Kopf bleibt deutlich breiter als die Schultern; Haare liegen als einfache Formen auf dem hellen Kopf. Keine starre Fünf-Kopfhöhen-Vorgabe. Erwachsene über Haltung, Frisur und Kleidung zeigen, ohne normale Cartoon-Anatomie oder kindliche Chibi-Proportionen einzuführen.
+
+Personen bleiben pro Video individuell; Bauweise und Zeichenwelt bleiben kanalweit gleich. Die jüngsten normalen Cartoon-Cover und die kleingesichtige Testfigur sind keine freigegebenen Anatomievorlagen. Abweichende Referenzen zuerst neu erstellen, danach passende Cover. Erst das ausdrücklich fertig freigegebene Cover mit Szenenstart erlaubt die Szenenproduktion; dieses Cover bleibt bei jeder Szene Stilreferenz. Figurenreferenzen nur für erkennbar anwesende wiederkehrende Personen. Keine zusätzliche Figurenfreigabe nötig; tatsächliche Bilder visuell prüfen.
+
+
 ## Cover fertigstellen, dann alle Szenen am Cover ausrichten — 19.10.2026
 
 `EXPLICIT_FINAL_COVER_APPROVAL_V1` + `APPROVED_COVER_EVERY_SCENE_V1` + `VISIBLE_RECURRING_CHARACTER_ONLY_V1`: Zuerst notwendige Figurenreferenzen fertigstellen, dann drei separate Cover erzeugen. Während Coverwahl und Coverkorrekturen WARTEN. Eine Auswahl allein reicht nicht: Erst die ausdrückliche Freigabe des fertigen Covers mit Szenenstart erlaubt BILD 01. Danach das gewählte `05-export/thumbnail.png` bei JEDER Szene tatsächlich als Stilreferenz verwenden, auch bei Objekten, Räumen, Diagrammen und Vergleichen. Figurenreferenzen nur ergänzen, wenn die betreffende wiederkehrende Person erkennbar im Bild ist. Keine Menschen hinzufügen, um eine Referenz zu verwenden. Jede BILD-Anweisung nennt Cover und benötigte Figurenreferenzen ausdrücklich. Gemeinsame Zeichenwelt kanalweit fest, passende Farb-/Licht-/Materialgestaltung pro Episode; siehe `rules/PSYCHOLOGY_STICKMAN_WORLD.md`. Diese präzisere Freigabe ersetzt ältere verkürzte Formulierungen wie „nach Coverauswahl automatisch weiter“.

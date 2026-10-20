@@ -1,5 +1,12 @@
 # PSYCHOLOGY STICKMAN WORLD
 
+## Feste Figurenbauweise seit 20.10.2026 — PREVIOUS_REEL_STICKMAN_V1
+
+Arman möchte künftig ausschließlich die Figurenbauweise aus dem bisherigen Türschwellen-Reel: großer warmweißer runder/soft-ovaler Kopf, breiter einfacher Gesichtsbereich ohne menschliche Kieferform oder sichtbare Nase, winzige schwarze ovale Augen, schmaler bekleideter Rumpf und sehr dünne dunkle Gliedmaßen. Der Kopf bleibt deutlich breiter als die Schultern; Haare liegen als einfache Formen auf dem hellen Kopf. Keine starre Fünf-Kopfhöhen-Vorgabe. Erwachsene über Haltung, Frisur und Kleidung zeigen, ohne normale Cartoon-Anatomie oder kindliche Chibi-Proportionen einzuführen.
+
+Personen bleiben pro Video individuell; Bauweise und Zeichenwelt bleiben kanalweit gleich. Die jüngsten normalen Cartoon-Cover und die kleingesichtige Testfigur sind keine freigegebenen Anatomievorlagen. Abweichende Referenzen zuerst neu erstellen, danach passende Cover. Erst das ausdrücklich fertig freigegebene Cover mit Szenenstart erlaubt die Szenenproduktion; dieses Cover bleibt bei jeder Szene Stilreferenz. Figurenreferenzen nur für erkennbar anwesende wiederkehrende Personen. Keine zusätzliche Figurenfreigabe nötig; tatsächliche Bilder visuell prüfen.
+
+
 **STATUS: ACTIVE / USER-APPROVED**
 
 Policy ID: `PSYCHOLOGY_STICKMAN_WORLD_V1`

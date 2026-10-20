@@ -30,6 +30,14 @@ VISIBLE IMAGE TEXT LANGUAGE: GERMAN
 CHARACTER DESIGN POLICY: SCRIPT_SPECIFIC_CHARACTER_V1
 DOWNLOAD PACKAGE POLICY: GOOGLE_FLOW_SINGLE_FOLDER_ZIP_V1
 
+CHARACTER SHAPE LOCK — PREVIOUS_REEL_STICKMAN_V1
+The accepted construction is the large pale-headed stickman from the previous doorway-effect reel, not the recent small-faced test character or the normal-human cartoon cover candidates.
+Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy.
+Keep the head visually dominant even in full-body views. Do not force a five-head-height formula: preserve the clearly oversized head and slender silhouette instead. Heads are softly drawn with restrained edge shading, never glossy spheres. Show emotion through gaze, brows, mouth, head tilt, hands and posture together.
+Create distinct people appropriate to each script through hair, clothing, accessories and age cues, while keeping this same underlying construction for every visible person. No permanent mascot, fixed gender or mandatory outfit.
+If the accepted previous-reel image is available in this Flow session, use it as an ANATOMY reference during character-reference creation; do not copy that person's identity, clothing, room or pose. This is optional existing input, not a request for Codex to generate a new reference image. If unavailable, follow this explicit construction without claiming to have attached it.
+Before advancing from STAGE A, visually reject and regenerate any reference with a small human-shaped face, visible nose, normal broad body or childlike proportions. Apply the same anatomy review to all three covers before presenting them. A rejected cover cannot become the style anchor. After final cover approval, continue using that cover as the mandatory style reference for EVERY scene; add identity references only where required.
+
 TASK
 Generate all images yourself inside Google Flow from this single English prompt. No external reference image from Codex is supplied or required. Produce SEPARATE 16:9 images for a German psychology video, not a storyboard, contact sheet, collage or video.
 All instructions and image descriptions are English. Keep narration and explicitly authorized visible image text in German; never translate those labels into English. Narration is context only, never automatically printed.

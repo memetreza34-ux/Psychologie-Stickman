@@ -6,7 +6,7 @@ Status: PLAN_REVIEWED / GENERATED_IMAGES_NOT_AVAILABLE.
 - Reißverschluss-Zwischenschritt als nachgeprüfter Schnitt, nicht nur Benennung von Teilen.
 - Forschung: Aufbau, Selbsteinschätzung und tatsächlich geprüftes Wissen auseinanderhalten; keine erfundenen Skalen/Mittelwerte.
 - Eigene Skizze macht im Verlauf konkrete Fortschritte und behält eine benannte Grenze.
-- Bei Flow zuerst Referenzen und drei Cover prüfen, dann nur auf Coverwahl warten.
+- Bei Flow zuerst Referenzen und drei Cover prüfen; auf ausdrückliche Freigabe des fertigen Covers samt Szenenstart warten.
 - Jede 5er-Serie tatsächlich ansehen: Anatomie, Identität, Jackenbesitz, Tisch/Entry-Layout, Schiebergeometrie, exakter deutscher Text, unbeabsichtigte Schrift und Wiederholungen.
 - Besonders 18/19: zwei getrennte Reihen gelangen in die Y-Führung, eine korrekt verzahnte Kette verlässt sie; keine verschmolzenen Zähne oder unmögliche Richtung.
 - Besonders 25/27/42/48: Keine Veränderung von Selbsturteilen als objektiven Wissensverlust/-gewinn ausgeben.
@@ -14,3 +14,5 @@ Status: PLAN_REVIEWED / GENERATED_IMAGES_NOT_AVAILABLE.
 - Abschluss: 01.png–62.png plus separates Thumbnail und Referenzen, richtige Dateinamen, Seitenverhältnis, sichtbare Sinnpassung und wirklich vorhandenes Paket prüfen.
 
 Keine fertigen Bilder, kein Audio und kein MP4 geprüft. Menschlicher Verständnistest: NOT_TESTED.
+
+20.10.2026 — PREVIOUS_REEL_STICKMAN_V1: Externe Screenshots zeigen abweichende Cartoon-Cover und eine kleingesichtige Testreferenz. Diese Figurenbauweise ist abgelehnt; betroffene Referenzen und Cover vor Szenenstart neu erzeugen. Große helle Kopfgrundform, minimales Gesicht, schmaler Rumpf und dünne Gliedmaßen pro Referenz/Cover und später pro Menschenbild tatsächlich ansehen. Noch keine korrigierten Bilder geprüft.

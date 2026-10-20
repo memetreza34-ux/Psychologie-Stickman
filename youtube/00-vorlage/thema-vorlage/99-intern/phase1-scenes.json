@@ -75,5 +75,7 @@
     "status": "TO_BE_DESIGNED_FROM_SCRIPT",
     "channelCore": "PSYCHOLOGY_STICKMAN_WORLD_V1",
     "referenceAfterApproval": "05-export/thumbnail.png"
-  }
+  },
+  "characterShapePolicy": "PREVIOUS_REEL_STICKMAN_V1",
+  "characterShapeAnchor": "Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy."
 }
