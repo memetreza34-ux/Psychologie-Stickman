@@ -1,12 +1,12 @@
 {
   "status": "PHASE_1_PASS",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "scriptWords": 979,
   "sceneCount": 62,
   "allSpokenWordsMappedInOrder": true,
   "allScenePromptsMatchPlan": true,
   "sourceReferences": 6,
-  "plannedGermanTextScenes": 12,
+  "plannedGermanTextScenes": 13,
   "sceneImagesGenerated": false,
   "audioProvided": false,
   "actualMediaReview": "PENDING",
@@ -15,13 +15,15 @@
   "checks": [
     "npm run check: exit 0",
     "phase1:links: READY LOCALLY",
-    "exact script/scene/prompt parity: PASS",
-    "Cover-reference workflow self-test + exact per-BILD reference lists: PASS"
+    "62/62 exact prompt/narration/proof/reference-list parity: PASS",
+    "Original speaker script SHA256 preserved: 7e0961029069fd09bc28e05e574495d042c0938d4e5e2503efddc8b729b73ccd",
+    "Text/image plan reviewed; generated image QA remains pending"
   ],
   "notes": [
-    "Automatic tests include expected rejection fixtures; their intentional FAIL output is followed by self-test PASS.",
-    "Full text, source-claim distinctions and scene plans reviewed; image/voice quality cannot be assessed before actual generation.",
-    "20.10.2026: User selected previous-reel stickman construction. External screenshot previews of normal-cartoon covers and small-faced test reference rejected for anatomy; revised Flow references/covers and explicit final cover approval are pending. No corrected image set reviewed."
+    "All 62 image prompts, four cast briefs and three cover briefs rebuilt on 2026-10-21; speaker script unchanged.",
+    "The user accepted a Planungsfehlschluss-based clothed stickman direction. Earlier plain-line experiments and normal-cartoon variants do not define this production.",
+    "This record distinguishes text/plan checks from actual image review; no rebuilt episode image set, audio or MP4 has been supplied.",
+    "Automatic checks contain intentional rejection fixtures, each followed by the corresponding self-test PASS; these are not checks of actual new Flow media."
   ],
   "coverStyleReferencePolicy": "APPROVED_COVER_EVERY_SCENE_V1",
   "explicitFinalCoverApprovalRequired": true,
@@ -31,6 +33,8 @@
   "characterReferencePolicy": "VISIBLE_RECURRING_CHARACTER_ONLY_V1",
   "artDirectionStatus": "PLANNED_PENDING_ACTUAL_COVER_APPROVAL",
   "styleReferenceUseInGeneratedImages": "NOT_YET_VERIFIED_NO_IMAGES_PROVIDED",
-  "characterShapePolicy": "PREVIOUS_REEL_STICKMAN_V1",
-  "characterShapeImageReview": "EXTERNAL_SCREENSHOTS_REJECTED_CORRECTED_IMAGES_PENDING"
+  "characterShapePolicy": "PLANUNGSFALLACY_CLOTHED_STICKMAN_V1",
+  "characterShapeImageReview": "STYLE_DIRECTION_ACCEPTED_CORRECTED_EPISODE_IMAGES_PENDING",
+  "visualRevision": "2026-10-21-complete-scene-rebuild",
+  "rewrittenScenePrompts": 62
 }

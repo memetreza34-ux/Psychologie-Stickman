@@ -1,18 +1,18 @@
-# Geplante Bildprüfung
+# Geplante Bildprüfung — vollständige Neufassung vom 21.10.2026
 
-Status: PLAN_REVIEWED / GENERATED_IMAGES_NOT_AVAILABLE.
+Status: TEXT_PLAN_REVIEWED / REBUILT_FLOW_IMAGES_NOT_AVAILABLE.
 
-- 62 aufeinanderfolgende Sprecherabschnitte, vollständig und in Skriptreihenfolge.
-- Reißverschluss-Zwischenschritt als nachgeprüfter Schnitt, nicht nur Benennung von Teilen.
-- Forschung: Aufbau, Selbsteinschätzung und tatsächlich geprüftes Wissen auseinanderhalten; keine erfundenen Skalen/Mittelwerte.
-- Eigene Skizze macht im Verlauf konkrete Fortschritte und behält eine benannte Grenze.
-- Bei Flow zuerst Referenzen und drei Cover prüfen; auf ausdrückliche Freigabe des fertigen Covers samt Szenenstart warten.
-- Jede 5er-Serie tatsächlich ansehen: Anatomie, Identität, Jackenbesitz, Tisch/Entry-Layout, Schiebergeometrie, exakter deutscher Text, unbeabsichtigte Schrift und Wiederholungen.
-- Besonders 18/19: zwei getrennte Reihen gelangen in die Y-Führung, eine korrekt verzahnte Kette verlässt sie; keine verschmolzenen Zähne oder unmögliche Richtung.
-- Besonders 25/27/42/48: Keine Veränderung von Selbsturteilen als objektiven Wissensverlust/-gewinn ausgeben.
-- Bild 49 ist eine verkürzte illustrative Kopieraufgabe und kein dokumentarisch exakter Versuchsstimulus.
-- Abschluss: 01.png–62.png plus separates Thumbnail und Referenzen, richtige Dateinamen, Seitenverhältnis, sichtbare Sinnpassung und wirklich vorhandenes Paket prüfen.
+- Alle 62 Einzelbildaufträge neu geschrieben; Sprechertext und Reihenfolge unverändert.
+- Maßstab: Planungsfehlschluss-Figuren mit passender schmaler Kleidung, individueller Frisur und der zuletzt akzeptierten ausgearbeiteten Referenz. Gefüllter vereinfachter Rumpf erlaubt; kein nackter Ein-Strich-Rumpf als Pflicht. Keine normalen Cartoon-Körper.
+- Vier konkrete Figurenreferenzen und drei eigenständige Cover. Referenzen intern visuell prüfen; Coverphase erst nach ausdrücklicher Freigabe des fertigen Covers samt Szenenstart verlassen.
+- Jedes Bild verwendet das fertige Cover tatsächlich als Stilreferenz, auch Objekte und Schemata. Figurenreferenzen nur nach BILD-Liste.
+- Wardrobe: Lead Petroljacke nur am Anfang, ab 11 Mustard-Basistop und Jacke auf Tisch. Freundin innen Plum-Top, Rust-Außenjacke am Haken bis Ende. Keine Jacken vertauschen.
+- Pro Bild echte Satz-Bild-Passung und konkreter Informationsgewinn; Raum-/Gesichts-/Hand-/Objekt-/Schnitt-/Vergleichsansichten prüfen. Keine wiederholten Posen oder beige Karten als Ersatz für Erklärung.
+- 18/19: Y-Führung, zwei getrennte Reihen und eine verzahnte Kette korrekt orientiert; keine Zahnräder, Fusion oder erfundene Bauteile.
+- 23-27 und 39-42: Forschungsillustrationen, keine Originalpersonen/Originalstimuli; schriftliche Aufgabe und Selbsteinschätzung kenntlich auseinanderhalten. Keine erfundenen Werte, Kenntnisverluste oder objektiven Wissenszuwächse.
+- 31/33: Vorwissensbeispiel ohne neu erfundenen Assembly-Test oder Kompetenzergebnis.
+- 43-58: Laptop-Verfügbarkeit, eigene Versuche, Markierung und nachträglicher Quellenabgleich in richtiger Reihenfolge.
+- Jede 5er-Serie tatsächlich ansehen: gleiche Figurenbauweise, Identität, Kleidung, Paper-State, Reißverschluss, genaue deutsche Schrift, kontrastreiche Gesichter/Handlungen und Lesbarkeit auf dem Handy. Fehler einzeln neu erzeugen.
+- Abschluss: genau 62 nummerierte Szenen, separates Thumbnail und vier Referenzen; 67 PNGs im flachen Flow-Paket. ZIP-Inhalt vor Auslieferungsbehauptung prüfen.
 
-Keine fertigen Bilder, kein Audio und kein MP4 geprüft. Menschlicher Verständnistest: NOT_TESTED.
-
-20.10.2026 — PREVIOUS_REEL_STICKMAN_V1: Externe Screenshots zeigen abweichende Cartoon-Cover und eine kleingesichtige Testreferenz. Diese Figurenbauweise ist abgelehnt; betroffene Referenzen und Cover vor Szenenstart neu erzeugen. Große helle Kopfgrundform, minimales Gesicht, schmaler Rumpf und dünne Gliedmaßen pro Referenz/Cover und später pro Menschenbild tatsächlich ansehen. Noch keine korrigierten Bilder geprüft.
+Dies ist Plan-QA. Keine korrigierten Flow-Bilder, kein neues Audio und kein MP4 tatsächlich geprüft. Publikumsverständnis NOT_TESTED; YouTube-Messwerte NO_DATA.

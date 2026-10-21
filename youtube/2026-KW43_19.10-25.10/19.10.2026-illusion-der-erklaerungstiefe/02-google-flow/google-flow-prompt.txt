@@ -1,642 +1,531 @@
-GOOGLE FLOW MASTER PROMPT — YOUTUBE LONGFORM
-
-TOPIC: Illusion der Erklärungstiefe — why feeling familiar can outrun a self-produced explanation
-FORMAT: 16:9 / 1920x1080
-TARGET: approximately 6–7 minutes, 979 German spoken words, 62 actual video scenes
-COVER APPROVAL POLICY: EXPLICIT_FINAL_COVER_APPROVAL_V1
-COVER STYLE REFERENCE POLICY: APPROVED_COVER_EVERY_SCENE_V1
-CHARACTER REFERENCE USAGE: VISIBLE_RECURRING_CHARACTER_ONLY_V1
+GOOGLE FLOW MASTER PROMPT — KOPFARIUM / YOUTUBE LONGFORM
+TOPIC: Illusion der Erklärungstiefe — feeling familiar versus producing an explanation
+FORMAT: 16:9 / 1920x1080 / separate still PNG illustrations
+TARGET: approximately 6–7 minutes; 979 German spoken words; 62 video scenes
+REVISION: 2026-10-21 — complete scene and art-direction rebuild
 VISUAL WORLD: PSYCHOLOGY_STICKMAN_WORLD_V1
+CHARACTER SHAPE POLICY: PLANUNGSFALLACY_CLOTHED_STICKMAN_V1
 VISUAL DIRECTOR POLICY: OBSERVABLE_SCENE_FIRST_V1
 REPRESENTATION POLICY: REPRESENTATION_VARIETY_V1
 VISUAL SEQUENCE POLICY: VISUAL_SEQUENCE_HARDENING_V1
 CREATIVE VISUAL POLICY: CONTENT_FIRST_VISUAL_QA_V2
-
-CONTENT-FIRST VISUAL DIRECTION — MANDATORY
-The script's explanatory need comes before any preference for a stickman. For each BILD, use the planned visualFunction, focalSubjectKey, settingKey, cameraScale, informationGain, alternativeVisualType and alternativeRejectionReason. A new image MUST teach something new, not merely show the same door, desk, carton or person with a different sentence.
-MECHANISM: Use a readable SCHEMA_EXPLAINER, informative COMPARE_VISUAL, or focused TEXT_ILLUSTRATION whenever a causal chain, lab comparison, event sequence or study result is being taught. Meaningful German labels may be included ONLY when explicitly authorized as exact flowText in the individual BILD. Diagrams are professional hand-drawn 2D illustrations inside this SAME channel world, NOT beige lecture slides. No fabricated data, bars or numbers. Show a three-step process across consecutive BILDs rather than a three-panel collage.
-NO REPETITIVE subject + setting + camera compositions. Across adjacent batches inspect both image content and informationGain. If 3+ near-duplicate shots appear, regenerate/re-direct the affected image into an appropriate object, labeled mechanism, split comparison, experiment setup or purposeful environmental view. Recurring story props are permitted only when the action/state/information changes materially.
-AFTER each five-image batch: actually visually REVIEW all five rendered images for script-to-picture meaning, diagram accuracy, accidental labels, stickman species and repetition; file-count/format checks alone are not sufficient. Do not declare DONE if semantic mistakes are still present.
-
-
-STORY / EXPLANATION PROOF — STORY_EXPLANATION_PROOF_V1
-For every mechanism, research, comparison or evidence scene, depict the planned visible relationship rather than objects carrying its name. The BILD description must contain its exact English visualProof.promptAnchor. If every label were hidden, the image must still show the relevant action, changed condition, state or relationship; short German labels clarify that relationship. Two folders labelled UNTERSCHIED and KEIN UNTERSCHIED do not demonstrate a finding.
-A model or analogy must never look like measured brain activity or a proven causal result. Depict a study setup/result only from the checked source and specified conditions. If the evidence does not support a useful visual comparison, keep the scientific limitation in narration and choose an honest scene rather than inventing a result. When the narration returns to the main story, show what is now understood or done differently.
-
+STORY / EXPLANATION POLICY: STORY_EXPLANATION_PROOF_V1
 FLOW PROMPT POLICY: NATURAL_FLOW_MASTER_V2
 FLOW OUTPUT POLICY: FINAL_SEPARATE_IMAGE_ASSETS_V2
 FLOW AUTONOMY POLICY: COVER_ONCE_AUTOCONTINUE_FINAL_QA_V1
 THUMBNAIL GENERATION POLICY: THUMBNAIL_SEPARATE_FROM_SCENE01_V1
+COVER APPROVAL POLICY: EXPLICIT_FINAL_COVER_APPROVAL_V1
+COVER STYLE REFERENCE POLICY: APPROVED_COVER_EVERY_SCENE_V1
+CHARACTER REFERENCE USAGE: VISIBLE_RECURRING_CHARACTER_ONLY_V1
+CHARACTER DESIGN POLICY: SCRIPT_SPECIFIC_CHARACTER_V1
 IMAGE GENERATION PROVIDER: GOOGLE_FLOW
 PROMPT INSTRUCTION LANGUAGE: ENGLISH
 VISIBLE IMAGE TEXT LANGUAGE: GERMAN
-CHARACTER DESIGN POLICY: SCRIPT_SPECIFIC_CHARACTER_V1
 DOWNLOAD PACKAGE POLICY: GOOGLE_FLOW_SINGLE_FOLDER_ZIP_V1
 
-CHARACTER SHAPE LOCK — PREVIOUS_REEL_STICKMAN_V1
-The accepted construction is the large pale-headed stickman from the previous doorway-effect reel, not the recent small-faced test character or the normal-human cartoon cover candidates.
-Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy.
-Keep the head visually dominant even in full-body views. Do not force a five-head-height formula: preserve the clearly oversized head and slender silhouette instead. Heads are softly drawn with restrained edge shading, never glossy spheres. Show emotion through gaze, brows, mouth, head tilt, hands and posture together.
-Create distinct people appropriate to each script through hair, clothing, accessories and age cues, while keeping this same underlying construction for every visible person. No permanent mascot, fixed gender or mandatory outfit.
-If the accepted previous-reel image is available in this Flow session, use it as an ANATOMY reference during character-reference creation; do not copy that person's identity, clothing, room or pose. This is optional existing input, not a request for Codex to generate a new reference image. If unavailable, follow this explicit construction without claiming to have attached it.
-Before advancing from STAGE A, visually reject and regenerate any reference with a small human-shaped face, visible nose, normal broad body or childlike proportions. Apply the same anatomy review to all three covers before presenting them. A rejected cover cannot become the style anchor. After final cover approval, continue using that cover as the mandatory style reference for EVERY scene; add identity references only where required.
+TASK AND LANGUAGE
+Google Flow generates all assets itself from this ONE complete prompt: necessary character references, three independent covers, then the numbered scenes after approval. No new image generated by Codex is supplied or required. Create separate still images, never a video, contact sheet, storyboard or collage. An expressly planned two-state comparison may occupy one illustration; unrelated montages and multi-image contact sheets remain excluded. All instructions and scene descriptions are English. German narration is context only, never automatically printed. Print only the exact German words expressly listed in each image's Visible text instruction.
+This replaces earlier prompts for THIS video. Existing experimental plain-line figures, normal-cartoon references and old cover candidates do not establish the accepted style or authorize scene production. Rebuild affected references and all three covers to this specification. Retain existing files until their proper rejection/cleanup stage; do not delete unrelated projects.
 
-TASK
-Generate all images yourself inside Google Flow from this single English prompt. No external reference image from Codex is supplied or required. Produce SEPARATE 16:9 images for a German psychology video, not a storyboard, contact sheet, collage or video.
-All instructions and image descriptions are English. Keep narration and explicitly authorized visible image text in German; never translate those labels into English. Narration is context only, never automatically printed.
-Character references, thumbnails and actual video scenes are different assets.
+ACCEPTED FIGURE AND WORLD — READ BEFORE STAGE A
+Planungsfehlschluss-based clothed stickman family: oversized warm-white round/soft-oval head, tiny solid black oval eyes, expressive brows and a simple mouth; a narrow simplified torso, very thin dark limbs and small simplified hands/shoes. Clothing wraps the existing slender construction with restrained fabric volume; it does not create ordinary human shoulders, hips or thighs. Keep the same illustrated anatomy for every visible person. A torso may be a simple filled white or clothed shape; it is NOT required to be a single line. Hair and accessories individualize people without replacing the pale head with an ordinary human face.
+The intended construction follows the original Planungsfehlschluss video, developed with the restrained narrow jacket, individual hair and softly drawn face from the user's accepted clothed-figure test. It is NOT a bare one-stroke torso on an empty white field, and NOT an ordinary cartoon person with a small shaped face and anatomical body. A large pale head, simple expressive features, narrow filled torso and thin limbs must read together as one stickman family. Keep the head clearly wider than the narrow shoulders; no rigid numerical head-height formula. The round/soft-oval head stays mostly pale, with a restrained flat edge shadow rather than glossy sphere rendering. Use small hands that can grasp objects clearly; avoid oversized black mittens. Adults use mature posture and role-appropriate styling rather than child/chibi proportions.
+Use clean, slightly organic charcoal contours, confident foreground silhouettes, restrained cel shading and fine drawn texture. Build believable lived-in rooms with perspective, foreground/middle/background and directional light, as in the original videos. Background details may be rich but must be quieter than the important face, hand, object or guide path. Props, clothing, rooms and diagrams share this drawing treatment. No photorealistic room behind flat figures, foreign vector infographic, glossy 3D, anime, noisy sketch mesh or generic beige slide.
+Individual identities change with the script; the channel has no permanent mascot, mandatory gender or outfit. Here the lead and friend are distinct adults. The same base construction applies to study participants and incidental researchers. SAME-FRAME SPECIES LOCK: all visible humans in one frame share the same pale base-head construction, narrow torso scale and thin-limb anatomy. Never mix a normal cartoon human and an accepted stickman in one frame.
+If the original Planungsfehlschluss frame or accepted clothed-figure test is ALREADY available in this Flow session, use it only to anchor construction and illustration finish while making the cast. Do not copy its room, identity, pose or unrelated story content. If it is unavailable, follow this explicit specification; never claim an image was attached when it was not.
 
-EXECUTION ORDER — READ BEFORE GENERATING
-Read the entire prompt before generating anything. Execute only the currently authorized stage. The later cover briefs and BILD descriptions are plans, not permission to skip a wait. Correct existing assets for this same video may be reused; their mere existence never proves final cover approval.
+EPISODE ART DIRECTION
+INTENT: Planungsfehlschluss figure construction developed through restrained clothing and distinct adult identities, in a richly drawn spatial world with readable faces, gestures and explanatory objects.
+PALETTE: Natural local colors: blue-gray apartment walls, warm oak, petrol lead jacket, mustard base top, plum friend base top and rust friend jacket. No global beige or teal wash. Final approved cover locks actual color relationships.
+LIGHTING: Directional window light, clear shape separation and consistent cast shadows in the home; cooler balanced study rooms. Emotional changes use composition and expression, not arbitrary lighting resets.
+MATERIALS: Hand-inked wood, matte fabric, restrained metal and paper texture, shared contours and cel shading. Detailed spatial settings with quieter background contrast; no detached photorealism or CAD diagrams.
+COMPOSITION: Large readable pale faces and useful hands in conversation; independent macro and mechanism views when they explain faster. One dominant relationship per frame; at most two distinct comparison states.
+CONTINUITY: Lead removes petrol jacket before scene 11 and wears mustard base top afterward; jacket stays on table. Friend wears plum inside; rust outer coat hangs at entry until scene 59. Laptop closed through 34, opens 35, turns away 43, visible for check 51, closed 52-55, reopened 56, closed 57 onward.
+The apartment work table stands by a window at camera-right, with the entry through a doorway at rear-left. Keep the table, chairs, coat hook and window spatially consistent. Changing viewpoint may reveal other parts of the same room, not replace the apartment.
+The lead's petrol zip jacket is the story object. At the beginning it is worn; before scene 11 it is removed and laid on the table, where it remains to the end. Its tooth/slider design, cloth color and scale stay fixed. The friend's rust outer jacket is a DIFFERENT garment: hanging at entry, worn only in the ending. The lead's mustard base top and friend's plum base top remain consistent underneath. No logos or clothing text.
+Paper continuity: first incomplete attempt at 11-17; revised explanatory guide at 20-30; fresh own reconstruction with marked remaining limit at 45-47; fresh self-check at 54-58. Preserve each page's visible state when it recurs. No accidental completed guide in an earlier blank attempt.
 
+EXECUTION ORDER — LATER BRIEFS ARE PLANS, NOT PERMISSION
 STAGE A — CHARACTER REFERENCES ONLY
-CORRECTION FOR THIS VIDEO: The externally previewed normal-cartoon covers and the small-faced test reference are not accepted anatomy. Rebuild the affected references first, then regenerate the three cover candidates with the corrected construction. Do not reuse an old cover approval or start numbered scenes. Wait again for explicit final cover approval and scene-start authorization.
-Generate only the character-reference assets necessary to keep the recurring identifiable people in THIS script consistent. Each is one separate image, not a contact sheet. No permanent mascot, default outfit, printed character name or extra character approval round. Keep only the channel species and illustrator language fixed; design suitable individual faces, hair, clothing and roles.
-Complete all necessary reference images FIRST. Do not generate covers or numbered video scenes while this reference stage is incomplete. After the reference set is complete, proceed to STAGE B.
+Create exactly four separate character-reference assets as specified below. One adult, one full-body view per image, with comfortable margins and a neutral quiet background. No multi-view sheet or lineup. Keep the same finish and proportions for all four. Their clothing and roles are specific to THIS video, not a new permanent cast.
+character-reference-01.png — Lead adult, compact brown hair, petrol zip jacket over mustard base top. Single full-body reference, petrol jacket open to show the mustard base top; charcoal thin legs and simple shoes. Preserve the Planungsfehlschluss head/body construction. No second pose.
+character-reference-02.png — Adult female friend, short gray hair, thin round glasses, plum base top and distinct rust outer jacket. Single full-body reference with rust outer jacket open over the plum base top. In apartment work scenes the outer jacket is off and hangs at the entry. Same stickman construction as the lead.
+character-reference-03.png — Illustrative classical-study adult, short dark hair, muted taupe top. Distinct single full-body adult identity, no glasses, narrow clothed torso and thin dark limbs. Used only for the classical-study reconstruction, never an actual historical participant portrait.
+character-reference-04.png — Illustrative prior-knowledge adult, short wavy gray hair, thin rectangular glasses, navy top. Distinct single full-body adult identity with mature posture and same stickman construction. Used only for the separate prior-knowledge illustration.
+Visually inspect each actual reference before covers: large pale head and simple face, slender construction under clothing, thin limbs, mature posture, distinctive identity, no ordinary human anatomy. Correct failed references internally; no additional user approval round is required. Complete the necessary references FIRST, then proceed to STAGE B. Do not generate covers while the reference stage is incomplete.
 
 STAGE B — THREE COVERS, THEN WAIT
-1. Create exactly 3 SEPARATE 16:9 thumbnail candidates, each its own image: cover-candidate-01.png, cover-candidate-02.png and cover-candidate-03.png. Use only the character references needed for people actually visible in that candidate. All three follow the same episode art direction and the exact German cover headline.
-2. These are NOT BILD 01 and never enter the video scene numbering.
-3. STOP. Enter WAITING_FOR_FINAL_COVER_APPROVAL. Let the user choose, revise and finish the cover. A cover selection alone does not authorize scene generation.
-4. Do not interpret a candidate number, a tentative preference, silence, elapsed time or an unfinished revision request as permission to start BILD 01. Stay in the cover stage until the user explicitly says the final cover is finished/approved AND authorizes scene generation. One clear natural-language message may provide both approvals; do not demand a magic phrase.
-5. Before that final approval, produce only requested cover revisions and retain the candidates. After final approval, save the final winner as thumbnail.png (05-export/thumbnail.png on local import), then delete only the two rejected cover candidates. Never delete the selected cover or character references.
-6. The final approved cover now becomes the mandatory style reference for EVERY later image. Character references are additional identity aids only when necessary.
+THUMBNAIL CANDIDATES — exactly 3 independent images
+Create exactly 3 SEPARATE 16:9 covers named cover-candidate-01.png, cover-candidate-02.png and cover-candidate-03.png. Use reference 01 for the lead in all three, reference 02 only for candidate 03. Same cast, anatomy, illustrator language and coherent episode palette across candidates. Depict the SAME visual thesis: an ordinary familiar zipper works, but the lead's own explanation has a missing connection. No gears unrelated to a zipper, machines that are not zipper sliders, random scientific formulas or generic intelligence imagery.
+Exact visible German headline on every candidate: "VERSTEHST DU ES WIRKLICH?". No other words. Use large readable integrated type in intentional negative space, never over the face, important sketch or slider. The cover is a separate asset and never BILD 01.
+CANDIDATE 01 — At table height, a large pale lead face on the right begins confidently but hesitates; a large own sketch on the left foreground has an unmistakably empty slider connection. The real petrol jacket crosses the near table edge. Use the face/sketch relation, strong warm/cool separation and a quiet apartment behind. Give the exact headline clear upper-left space.
+CANDIDATE 02 — A close oblique view puts the actual petrol zipper and the open-middle pencil sketch beside it across the foreground. The lead's small hovering pencil hand and clearly readable questioning face occupy the right third. Keep the real metal casing opaque; no dense technical exploded view. The failed explanation, not a broken zipper, is the contrast. Give the exact headline clean upper space.
+CANDIDATE 03 — A tight two-person table scene: the curious friend waits with one open hand while the lead looks from the real jacket to the conspicuously unfinished sketch. Make both distinct pale faces readable and equal in drawing style; no humiliation, villain expression or tiny crowd. Use directional light and room depth. Place the exact headline in uncluttered space above the table relation.
+Inspect all three covers for accepted stickman anatomy, accurate thesis, German headline and mobile readability. Correct failures before presenting candidates.
+STOP and enter WAITING_FOR_FINAL_COVER_APPROVAL. A cover selection alone does not authorize scene generation. Let the user choose, revise and finish the cover. Silence, elapsed time, a candidate number or tentative preference is not scene-start permission. Proceed only when the user explicitly approves the FINAL finished cover AND authorizes starting scenes; one clear natural-language instruction may do both. Do not require a magic phrase.
+While waiting, make only requested cover revisions and retain candidates. After explicit final cover approval plus scene-start authorization, save the winner as thumbnail.png (local destination 05-export/thumbnail.png), then delete only the two rejected candidates. Never delete the selected cover, character references or unrelated assets.
 
 STAGE C — SCENES AFTER FINAL COVER APPROVAL
-Only after the user's explicit final cover approval AND scene-start instruction:
-- Start BILD 01 as the first normal script-matched video scene, without cover headline or thumbnail layout.
-- Generate separate images in 5-image batches: 01–05, 06–10, 11–15, then continue in groups of 5; final remainder 1–4.
-- For EVERY BILD, attach/select the approved thumbnail.png style reference, including scenes without people. Add ONLY the character references explicitly listed for that BILD.
-- After each batch, visually inspect meaning, style match to the approved cover, identity, anatomy, continuity and exact German text. Regenerate ONLY failed/missing numbers against that same cover, immediately rename accepted assets NN.png, keep one flat 03-bilder/ scene folder, and continue WITHOUT ASKING for further approval.
-- FINAL: verify exact scene count, complete 01.png–NN.png naming, valid separate 16:9 images and separate 05-export/thumbnail.png. No duplicate versions, rejected candidates, contact sheets or batch subfolders.
-- The cover is a style anchor, never a video frame or an excuse to reuse its composition, headline or characters in every image.
-
-CHANNEL CORE — SAME ILLUSTRATOR ACROSS ALL VIDEOS
-Professional hand-drawn 2D animation stills with clean expressive ink contours and slight organic variation, clear foreground silhouettes, quieter background detail, soft two-/three-value cel shading and restrained fine paper grain. Materials, objects, rooms and diagrams share the same line weight logic and finish as people. No glossy 3D volume, photorealistic props, messy sketch noise, heavy watercolor wash, generic beige slides or detached vector infographics. All people retain oversized light round/oval heads, tiny black oval eyes, narrow clothed torsos and very thin dark limbs. Do not change this species or the rendering language between videos.
-
-EPISODE ART DIRECTION — EXPLANATORY DEPTH
-INTENT: An intimate, curious everyday investigation; sophisticated illustrated animation with clear mechanical explanations, no classroom-slide or generic AI-art appearance.
-PALETTE: Proposed episode accents: muted petrol, warm ochre and ivory paper, with natural wood and metal. Use them selectively, never a teal wash. The final approved cover locks the actual palette relationships.
-LIGHTING: Soft warm side light in the apartment; cooler balanced research light while keeping the same ink, shading and material language. Light heads remain the same pale base.
-MATERIALS: Readable warm wood, matte fabric, restrained metal highlights and lightly textured paper. Technical cutaways use the same drawn finish, not a foreign CAD render.
-COMPOSITION: One clear focal relationship per frame, deliberate foreground/middle/background depth where spatial, generous space around explanatory details. No clutter, no fixed centered-object template.
-CONTINUITY: Lead jacket color, zipper construction, individual hair/clothing and apartment layout lock once established in Flow; the friend has her own distinct outer jacket.
-The three cover candidates use this ONE coherent art direction and differ in composition, not in illustrator style. After the user finishes the cover, its actual approved finish and palette become the visual anchor for every later image.
-
-REFERENCE PRIORITY — APPROVED_COVER_EVERY_SCENE_V1
-This reference rule applies to ALL video scenes AFTER final cover approval (STAGE C). Initial references and covers in STAGES A/B use the channel core and episode art direction while the cover is being established; never require a nonexistent cover as an input.
-PRIMARY STYLE REFERENCE: the final user-approved cover, saved as thumbnail.png (local destination 05-export/thumbnail.png). It is REQUIRED FOR EVERY IMAGE, including object-only scenes, diagrams, comparisons and text illustrations.
-For each generation, actually attach/select/reuse that approved cover as the style reference. Match its ink, cel shading, texture, material treatment, color relationships and overall finish. Never copy its headline, composition, poses, particular people or story objects into an unrelated scene. A person on the cover does not authorize adding a person to an object-only scene. Never substitute an unselected candidate, a character sheet or an unrelated past image for this style reference.
-SECONDARY IDENTITY REFERENCES: use only the character-reference files listed for the identifiable recurring people actually visible in this BILD. When CHARACTER REFERENCES says none, do not attach any character-reference image; follow the cover for style and retain only the people/objects actually required by the description. Cropped anonymous hands, symbols and non-recurring background people normally do not need their own reference asset. Character references guide identity, not the scene's overall art style.
-If your interface cannot actually reuse the approved cover reference, stop and state this exact limitation; do not invent a reference-use success claim or silently continue in another style.
-
-REPRESENTATION FIRST — HARD RULE
-People are optional, not the default. Pick the best visual form for each beat:
-CHARACTER_SCENE, OBJECT_FOCUS, ENVIRONMENT_SCENE, SCHEMA_EXPLAINER, COMPARE_VISUAL, TEXT_ILLUSTRATION.
-Make visible evidence concrete: action, object state, gaze, setting, cause/effect, before/after only when justified.
-
-MOTIF PROGRESSION AND VISUAL DENSITY
-Each new scene should advance a concrete motif and change action, camera, distance, focal scale, location, object state or social relation. No repeated beige boards or centered symbolic doodles.
-Default maximum: 2 distinct states/panels per BILD. No 3-/4-panel mini-storyboard. No tiny labels/crowds or dense arrow networks.
-Every image must be clear on a phone screen.
-Exact planned German text only when explicitly specified. Any unplanned English/German/packaging/UI text or gibberish = FAIL and regenerate.
-
-VIDEO WORLD
-A modern apartment shared work area and entryway, one small work table, two chairs, a pencil, plain paper and a laptop. Invent the lead adult and the female adult friend individually for THIS video, with distinctive suitable hair and clothing; no permanent mascot and no recycled outfit from earlier videos. The lead begins wearing a zip-front jacket, then lays that same jacket on the table. Keep its chosen color, metal zipper and proportions fixed. The friend has a different outer jacket hanging in the entryway at first and wears her own jacket in the ending. Keep the apartment layout coherent. Research rooms are separate illustrative reconstructions with cooler light, not the apartment and not photographs of actual participants. Use character-reference-03.png for the classical-study participant in scenes 23–27, and a distinct character-reference-04.png for the prior-knowledge example in scenes 31/33. These are illustrative casts for different studies, never the same alleged historical participant. Any researcher and the non-recurring internet-condition adults share the approved stickman species but have distinct identities. Source diagrams are original hand-drawn simplifications, not copies of published figures. Do not depict actual brain measurements, invented data or real researchers' portraits.
-
-THUMBNAIL DESIGN BRIEF — EXECUTE ONLY IN STAGE B
-Exact German headline on all three covers: "VERSTEHST DU ES WIRKLICH?". No other cover text. Integrate the headline into useful negative space, not a pasted top banner.
-- Candidate 01: the lead confidently holds the familiar jacket while their own explanation sketch in the foreground has a striking missing middle connection; one coherent spatial scene.
-- Candidate 02: a large slider cutaway dominates the frame; beside it, the lead's pencil stalls over an empty slider interior on paper, a clear mismatch between familiar object and incomplete explanation.
-- Candidate 03: at table level the curious friend waits for an answer while the lead looks from the real zipper to a visibly unfinished drawing; emphasize the genuine explanatory question without ridicule.
-Make these THREE separate 16:9 images, not one grid. Use only the identity references for people actually visible in each candidate. Keep all three while the user chooses and finishes the cover; do not start scenes until final approval and the scene-start instruction.
-
-NARRATION CONTEXT — GERMAN, NEVER PRINT AUTOMATICALLY
-Du ziehst deine Jacke zu. Deine Freundin fragt: Warum halten diese winzigen Zähne eigentlich zusammen?
-
-Du willst es erklären. Nach zwei Sätzen fehlt dir ausgerechnet der entscheidende Schritt.
-
-Das nennt man Illusion der Erklärungstiefe: Dein Verständnis fühlt sich vollständiger an, als deine Erklärung tatsächlich ist.
-
-Du weißt, wie man den Verschluss benutzt. Aber warum schließt er sich hinter dem Schieber?
-
-Du deutest auf die Zähne. Die greifen eben ineinander, sagst du. Deine Freundin wartet.
-
-Denn genau das war ihre Frage. Du hast das Ergebnis beschrieben. Die Erklärung fehlt noch.
-
-Probier es selbst kurz. Wie bringt der Schieber beide Seiten zusammen, obwohl sie vorher getrennt waren?
-
-Denk an die Bewegung und die Teile. Wo genau würdest du beim Erklären unsicher werden?
-
-Du brauchst hier keinen perfekten Vortrag.
-
-Entscheidend ist der Unterschied zwischen deinem ersten Gefühl und dem, was du ausführen kannst.
-
-Am Tisch liegt jetzt ein Blatt. Du zeichnest zwei Zahnreihen und den kleinen Schieber dazwischen.
-
-Bis hierhin läuft es. Dann setzt du den Stift ab. Wie sieht dieser Schieber innen aus?
-
-Die leere Stelle auf dem Papier sagt mehr als dein erstes: Klar, das verstehe ich.
-
-Warum fällt diese Lücke so spät auf? Oft genügt im Alltag ein grober Überblick, um zurechtzukommen.
-
-Du erkennst die Teile wieder und weißt, was du damit tun kannst. Das ist nützliches Wissen.
-
-Eine Erklärung verlangt zusätzlich die Verbindungen: Was verändert sich, wodurch, und welcher Schritt ermöglicht den nächsten?
-
-Beim Reißverschluss bist du bisher vom Ziehen direkt aufs Schließen gesprungen. Dazwischen liegt deine offene Frage.
-
-In einem vereinfachten Schnitt sieht man im Schieber einen Y-förmigen Kanal, der die beiden Seiten führt.
-
-Beim Schließen werden die passend geformten Elemente zusammengeführt und greifen ineinander. Der Schieber ist also mehr als ein Griff.
-
-Du zeichnest diese Führung nach. Jetzt verbindest du deine Handbewegung mit dem, was an den Zähnen passiert.
-
-Das ist noch kein vollständiges Ingenieurwissen. Aber deine Erklärung hat jetzt einen konkreten Zusammenhang mehr.
-
-Genau diese Lücke zwischen Gefühl und ausgeführter Erklärung wurde auch in psychologischen Studien untersucht.
-
-In einer klassischen Untersuchung schätzten Teilnehmende zunächst ein, wie gut sie vertraute technische Dinge verstanden.
-
-Danach sollten sie die Funktionsweise einiger dieser Dinge Schritt für Schritt schriftlich erklären.
-
-Anschließend bewerteten sie ihr Verständnis erneut. Nach dem Erklärversuch fiel die Selbsteinschätzung niedriger aus.
-
-Die eigene Erklärung machte Grenzen sichtbar, die beim ersten Einschätzen leicht verborgen geblieben waren.
-
-Dabei ging es um das eingeschätzte Verständnis. Ein gesunkenes Urteil bedeutet nicht, dass jemand plötzlich Wissen verloren hat.
-
-Zurück zu deiner Zeichnung: Vorher hattest du eine sichere Antwort. Jetzt hast du eine genaue Frage.
-
-Du kannst benennen, welcher Zusammenhang dir fehlt. Damit lässt sich gezielter nachsehen als mit: Ich verstehe gar nichts.
-
-Aber vielleicht ist das nur eine Falle für Menschen, die sich mit einem Thema kaum beschäftigt haben?
-
-So einfach ist es nicht. Auch einschlägiges Vorwissen kann mit einer zu optimistischen Einschätzung der eigenen Erklärfähigkeit zusammengehen.
-
-Es macht einen Unterschied, ob dir Begriffe bekannt vorkommen oder ob du die Zusammenhänge gerade selbst rekonstruieren kannst.
-
-Das bedeutet nicht, dass Fachwissen wertlos ist. Gute Kenntnisse und eine ungenaue Selbsteinschätzung können nebeneinander bestehen.
-
-Die Frage ist also weniger: Bin ich schlau? Sondern: Welchen Teil kann ich gerade wirklich erklären?
-
-Und jetzt kommt die bequemste Abkürzung: Du suchst die Antwort im Internet.
-
-Wenige Sekunden, und der Zusammenhang steht vor dir.
-
-Deine Freundin beugt sich zum Bildschirm. Die Darstellung wirkt übersichtlich. Du nickst schon beim Lesen.
-
-Doch die sichtbare Erklärung und deine eigene Erklärung sind zwei verschiedene Prüfungen. Welche davon hast du gerade bestanden?
-
-Eine weitere Studienreihe untersuchte genau diese Grenze zwischen zugänglicher Information und dem Gefühl eigenen Wissens.
-
-In einem Experiment suchte eine Gruppe online nach Erklärungen. Eine Vergleichsgruppe sollte die Fragen ohne Internet bearbeiten.
-
-Später schätzten beide Gruppen ihre Erklärfähigkeit bei anderen Themen ein, die mit den Suchfragen nichts zu tun hatten.
-
-Die Suchgruppe traute sich dabei mehr zu. Das war eine höhere Selbsteinschätzung, kein Nachweis größeren Wissens über diese Themen.
-
-Die wichtige Frage für deinen Tischversuch bleibt: Was kannst du erklären, wenn die fremde Darstellung gerade nicht sichtbar ist?
-
-Du drehst den Bildschirm weg. Deine Freundin zeigt wieder auf die Jacke. Diesmal lässt du dir Zeit.
-
-Du erklärst die Führung im Schieber. Dann stoppst du. Eine Einzelheit kannst du noch nicht begründen.
-
-Du markierst genau diese Stelle, statt den Rest mit einem vertrauten Fachwort zu überdecken.
-
-Das ist kein Wettbewerb darin, möglichst wenig zu wissen. Es geht darum, die Grenze brauchbar einzuzeichnen.
-
-Auch die Forschung ist hier vorsichtig zu lesen: Veränderungen der Selbsteinschätzung sind nicht automatisch ein präziser Test tatsächlicher Kenntnisse.
-
-In neueren Versuchen sanken Wissensurteile teilweise auch bei anderen Aufgaben. Die Reaktion ist also nicht völlig spezifisch fürs Erklären.
-
-Ein stockender Satz beweist deshalb keine Ahnungslosigkeit. Vielleicht fehlen Worte, Übung oder gerade ein gut geordneter Gedanke.
-
-Und eine flüssige Erklärung kann trotzdem falsch sein. Du musst ihren Inhalt anschließend an einer verlässlichen Quelle prüfen.
-
-Am Tisch kannst du einen einfachen Selbstcheck versuchen. Zuerst entscheidest du, welche genaue Frage du beantworten willst.
-
-Also nicht: Verstehe ich Reißverschlüsse? Sondern: Wie führt der Schieber die beiden Zahnreihen zusammen?
-
-Dann versuchst du die Erklärung ohne Vorlage. Du kannst sprechen, skizzieren oder beides miteinander verbinden.
-
-Wo ein Schritt nur mit irgendwie weitergeht, setzt du eine Markierung. Du musst die Lücke nicht verstecken.
-
-Erst danach vergleichst du mit einer passenden Quelle. Welche Verbindung fehlt? Welcher deiner Schritte stimmt nicht?
-
-Dann probierst du es erneut, ohne die Darstellung vor dir. Das ist ein praktischer Selbstcheck, kein umfassender Wissenstest.
-
-Bei einer schwierigen Frage darf die Antwort auch lauten: Den Teil weiß ich nicht. Ich muss nachsehen.
-
-Deine Freundin hat inzwischen ihre Jacke angezogen. Der Reißverschluss funktioniert genauso wie am Anfang.
-
-Verändert hat sich deine Antwort. Du kannst einen Teil begründen und den offenen Rest genauer benennen.
-
-Beim nächsten „Klar, das verstehe ich“ lohnt sich die Frage: An welcher Stelle würde meine Erklärung abbrechen?
-
-Ein gutes Gefühl kann der Anfang sein. Verständnis zeigt sich daran, welche Verbindungen du wirklich herstellen kannst.
-
-END NARRATION CONTEXT
-
-
-GLOBAL TEXT RULE
-ZERO READABLE TEXT unless an individual BILD has explicitly specified exact German words; only then use those words, mobile-readable. No extra text.
-
-PROMPTING RULE
-Short concrete observable composition, best representation first, one dominant idea, meaningful subject/environment/camera/light, no generic abstract metaphors.
+Only after that final approval and scene-start instruction, generate BILD 01-62 in five-image batches: 01–05, 06–10, 11–15, 16–20, 21–25, 26–30, 31–35, 36–40, 41–45, 46–50, 51–55, 56–60, then 61–62. BILD 01 is a normal opening story shot, not the cover.
+PRIMARY STYLE REFERENCE: the final user-approved thumbnail.png. It is REQUIRED FOR EVERY IMAGE, including object-only scenes, diagrams, comparisons and text illustrations. Actually attach/select/reuse that cover for each generation. Match contours, texture, shading, materials and overall finish; allow the planned local lighting and colors. Do not transplant its headline, layout, people or story content into unrelated images.
+SECONDARY IDENTITY REFERENCES: attach ONLY the files listed under CHARACTER REFERENCES in each BILD. When it says none, use no character reference. A cropped anonymous hand does not require a whole-person reference. Do not add people merely to use a reference. The listed identity assets supplement the cover, never replace it.
+If your interface cannot actually reuse the approved cover, stop and report that precise limitation. Never claim reference use or consistent generation without evidence.
+After each batch, visually inspect ALL rendered images for sentence-picture meaning, anatomy, identity, wardrobe, object continuity, diagram geometry, exact planned German text and mobile readability. Regenerate ONLY failed/missing scene numbers, immediately rename accepted assets NN.png, keep one flat 03-bilder/ scene folder and continue WITHOUT ASKING for further approvals. No duplicate version suffixes or batch subfolders.
+
+CONTENT-FIRST SCENE DIRECTION
+Use the specified CHARACTER_SCENE, OBJECT_FOCUS, ENVIRONMENT_SCENE, SCHEMA_EXPLAINER, COMPARE_VISUAL or TEXT_ILLUSTRATION according to the explanatory need. People are optional. MECHANISM and research beats must reveal a concrete relation, condition or changed state; labels alone never count as proof. NO REPETITIVE pose/subject/camera shots that add no information. MOTIF PROGRESSION: repeated objects must change action, function, state or viewpoint for a real explanatory reason. One dominant idea per image; maximum 2 distinct comparison states/panels, never a three-/four-panel storyboard. Do not add decorative brains, floating symbols or magical inner-mind projections.
+The research scenes are explicitly ILLUSTRATED RECONSTRUCTIONS and conceptual comparisons, not real participant portraits, historical photographs or measured diagrams. Distinguish initial judgment, own explanation, later judgment and actual content checking. No invented scores, means, bar charts, brain measurements or causal certainty. Posture can illustrate a reported judgment but cannot itself measure knowledge. Topic pictures and neutral copying sentence are illustrative stand-ins, not exact original study stimuli.
+Mechanical detail: preserve the same zipper design. The simplified Y guide joins the two separate tooth rows into an engaged chain. Keep tape orientation, guide walls and closing direction coherent. Complementary teeth interlock without glue, gears or fusion. This cutaway explains one relation, not all engineering details.
+ZERO READABLE TEXT unless the individual BILD explicitly lists exact German words. No random handwriting, book titles, UI, packaging, labels, pseudo-writing or English words. Existing diagrams on papers/screens use line drawings without accidental lettering. Exact words normally act as scene-specific explanatory annotations, not permanent lettering on recurring props. In later frames retain the drawing or circle but omit an earlier annotation unless that later BILD explicitly allows its words again. The copied sentence in BILD 49 is the one expressly requested physical writing task. Never print narration.
+
+NUMBERED VIDEO IMAGE BRIEFS — EXECUTE ONLY IN AUTHORIZED STAGE C
 
 BILD 01
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-Medium two-person view in a lived-in entryway: the lead closes their own jacket while the female friend leans closer to inspect the zipper, genuinely curious. Frame the moving hand and the friend's attentive gaze; a normal story moment, no exaggerated embarrassment. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Eye-level medium two-shot at the apartment entrance: the lead finishes pulling the petrol jacket zipper up, then looks toward the friend as she points closely at the joined teeth. Her head tilts toward the fastening, his free hand is still relaxed. Frame both expressive faces and the zipper large; the work table is visible through the doorway behind them. Warm side light, natural blue-gray wall. This is the first ordinary story shot, without a cover headline. Wardrobe: lead wears the petrol jacket; friend wears the plum base top, with her rust coat on the entry hook.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du ziehst deine Jacke zu. Deine Freundin fragt: Warum halten diese winzigen Zähne eigentlich zusammen?
 
 BILD 02
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Close view of the lead's hand stopping halfway along the closed zipper, fingers poised to demonstrate something they cannot yet show. The friend's waiting hand enters at the edge; the zipper remains ordinary and undamaged. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Close on the lead's two hands at chest height: one still holds the zipper pull, the other starts an explanatory gesture but stops half-open. The intact closed chain crosses the lower frame; include only the lower edge of the pale head and the small uncertain mouth. Keep the mechanism opaque. The hesitation concerns an explanation, not a broken jacket. No sketch has been produced yet.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du willst es erklären. Nach zwei Sätzen fehlt dir ausgerechnet der entscheidende Schritt.
 
 BILD 03
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png.
-Two large illustrated states: a confident lead beside the intact jacket on the left, their incomplete mechanical sketch with one conspicuous missing connection on the right. The same zipper is recognizable in both; show the gap between confidence and produced explanation, not a brain or a diagnostic test. Render ONLY the exact German text: "GEFÜHL", "ERKLÄRUNG". No other readable text.
+Make a restrained two-state editorial comparison: at left the lead confidently presents the intact jacket; at right an illustrative zipper sketch contains a conspicuous blank where its slider's internal connection should be. Enlarge the paper enough to see the missing relationship without reading a label. Use the same petrol cloth and metal shape in both states. The right state previews an explanation attempt; it is a conceptual illustration, not an event already completed in the story or measured study data. Conceptual comparison: lead wears the petrol jacket in the confident left state. This is not a later wardrobe change.
+Visible text: ONLY "GEFÜHL", "ERKLÄRUNG". No other readable text.
 Narration context (German; do not print): Das nennt man Illusion der Erklärungstiefe: Dein Verständnis fühlt sich vollständiger an, als deine Erklärung tatsächlich ist.
 
 BILD 04
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Top-down jacket detail: one hand holds the pull tab above a closed section while a magnifying lens exposes the still-opaque slider body. The hand's successful action and the concealed interior coexist in one coherent view. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Macro at the lead's jacket: a fingertip rests on the pull tab above the engaged chain, while a second finger indicates the closed metal slider casing. Let fabric folds establish successful everyday use and let the unbroken casing conceal the internal path. The hand positions and opaque part should carry the unanswered question. Use a clean oblique view with a quiet darker cloth background, no X-ray or invented internal component yet.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du weißt, wie man den Verschluss benutzt. Aber warum schließt er sich hinter dem Schieber?
 
 BILD 05
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-Over the friend's shoulder, the lead points at the interlocked teeth as if this settles the question; the friend keeps an open expectant palm. Keep both adults in the approved stickman species and avoid mockery. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+From just behind the friend's pale head, frame the lead pointing to the already joined teeth with an easy explanatory smile. The friend's visible open palm remains waiting rather than accepting an answer. Keep both hands away from their torsos for readable silhouettes. The zipper stays closed and ordinary. Focus on the mismatch between the lead's confident gesture and the friend's still-unanswered question, with the hallway softly drawn behind. Wardrobe: lead wears the petrol jacket; friend wears the plum base top, with her rust coat on the entry hook.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du deutest auf die Zähne. Die greifen eben ineinander, sagst du. Deine Freundin wartet.
 
 BILD 06
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A large hand-pull icon at left and the closed zipper at right are connected by a deliberately interrupted broad path. The missing middle occupies the focus; only two endpoints, no extra boxes or panels. This is a conceptual illustration of an unanswered connection. Render ONLY the exact German text: "ERGEBNIS", "ZUSAMMENHANG". No other readable text.
+Show two large hand-drawn endpoints on a clean blue-gray field: a hand pulling the zipper tab at left and the resulting engaged teeth at right. A single broad linking stroke approaches a large empty middle but stops before reaching the other endpoint. The missing transition is the main subject; no third panel, question-mark symbol or decorative brain. Keep cloth, metal and contours consistent with the room scenes.
+Visible text: ONLY "ERGEBNIS", "ZUSAMMENHANG". No other readable text.
 Narration context (German; do not print): Denn genau das war ihre Frage. Du hast das Ergebnis beschrieben. Die Erklärung fehlt noch.
 
 BILD 07
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Macro of the established jacket's two separated zipper rows meeting the slider entrance, large enough to inspect individually. Keep the actual mechanism concealed at this point; show a clear physical question rather than a decorative symbol. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Frame the actual zipper obliquely so the two separated rows above the slider and the engaged section below it are simultaneously clear. A small hand holds the pull without moving it; the metal casing still conceals its interior. Leave clean space around the joining point for the viewer to inspect. The image asks how the transition works without revealing the later cutaway explanation or adding visible questions.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Probier es selbst kurz. Wie bringt der Schieber beide Seiten zusammen, obwohl sie vorher getrennt waren?
 
 BILD 08
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A fingertip traces the outer slider shell, then hovers over its inaccessible center. Put a clean sheet and pencil in the background; one physical focal point, no floating symbols or readable notes. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+A low macro view follows a fingertip along one zipper row until it reaches the edge of the metal slider and stops. The open teeth are sharply readable in the foreground; the internal route disappears beneath the opaque casing. Isolate this physical boundary between a visible part and the unseen transition. Render a still hand and a single clear focal point rather than several arrows or movement ghosts.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Denk an die Bewegung und die Teile. Wo genau würdest du beim Erklären unsicher werden?
 
 BILD 09
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Wide inviting view of the small apartment work table with two chairs, a blank sheet and pencil, the jacket folded at the far edge of the table. The two friends are out of frame; retain the entryway in the distant background for continuity. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+A quiet establishing view reveals the small apartment work area: two everyday chairs at an oak table beside a window, a pencil and unused paper within reach. The doorway remains at rear left and the friend's rust-colored outer jacket hangs on its hook. The scene feels like an informal conversation can continue here; no stage, audience or lecture equipment. Cool daylight and warm wood balance each other. No person is needed in this frame.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du brauchst hier keinen perfekten Vortrag.
 
 BILD 10
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-One tabletop comparison: a hand confidently poised over a blank sheet beside a second sheet carrying a rough zipper drawing with a clear unfilled central connection. Match paper size and pencil style; this is the illustrative attempt, not measured study data. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Present a two-state tabletop comparison on matched paper: at left a hand confidently holds a pencil over an unused sheet; at right the same hand pauses over a rough zipper explanation whose central connection is blank. Match scale, light and paper texture so the only meaningful change is the produced attempt. This is an illustrative contrast between expectation and output, not a numerical result or a second event in the story.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Entscheidend ist der Unterschied zwischen deinem ersten Gefühl und dem, was du ausführen kannst.
 
 BILD 11
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Top-down close view of the lead drawing two zipper rows and the outer slider silhouette on plain paper. Show only meaningful mechanical strokes, not handwriting or letter-like marks. The real jacket lies beside the sheet. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Top-down close view of the oak table: the lead has removed the petrol jacket and placed it to the left of a fresh sheet. A mustard cuff identifies the drawing hand. The pencil has outlined two zipper rows and a simple exterior slider shape, leaving its interior untouched. Crop closely enough to see the pencil tip meet the paper. Keep the laptop closed at the far edge, without readable markings.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Am Tisch liegt jetzt ein Blatt. Du zeichnest zwei Zahnreihen und den kleinen Schieber dazwischen.
 
 BILD 12
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-Side view at table level: the lead stops their pencil above the empty slider interior and studies it; the friend watches patiently from the opposite chair. Natural thoughtful posture, no shame, no comic panic. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+At paper height, frame the lead's pale face above the sheet and his pencil suspended just before the empty slider outline. His brows draw together slightly, his mouth closes and his torso leans toward the unfinished drawing. The friend waits at the soft-focus far edge of the table, hands resting quietly. The petrol jacket remains on the tabletop. The blank interior, hovering pencil and gaze must be legible together. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Bis hierhin läuft es. Dann setzt du den Stift ab. Wie sieht dieser Schieber innen aus?
 
 BILD 13
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Extreme close-up of the actual pencil drawing: a clean slider outline with its interior deliberately blank, pencil tip at the boundary between known teeth and unknown guidance. Keep every mechanical mark large and readable without words. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Let the first unfinished sketch nearly fill the frame: the pencil outlines of the two rows end at a large empty slider silhouette. A dark pencil lies still beside the sheet, rather than pointing theatrically. Light from the window falls across the untouched central paper and reveals the specific omission. Keep the rest of the paper mostly clear; no handwriting, crossed-out slogans or decorative puzzle pieces.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Die leere Stelle auf dem Papier sagt mehr als dein erstes: Klar, das verstehe ich.
 
 BILD 14
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-A coherent wide home-table scene: the lead smoothly operates the jacket zipper while the garment rests across the table, the friend sets a bag aside. The ordinary practical action succeeds without exposing the mechanism; this illustrates useful knowledge, not a claim about the brain. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+From the far side of the room, show the lead smoothly running the actual zipper on the jacket lying across the table while the friend sets her small bag beside her chair. This ordinary action succeeds. The first incomplete sketch remains nearby but secondary. Keep the existing apartment layout and a coherent path to the entry. Natural practical familiarity is visible without exposing the slider interior or claiming a brain mechanism. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Warum fällt diese Lücke so spät auf? Oft genügt im Alltag ein grober Überblick, um zurechtzukommen.
 
 BILD 15
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Close view of the recognizable jacket folded on the table: a hand reliably locates the pull tab while the opaque slider interior stays hidden. Contrast accessible action with concealed construction within one physical object. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Close on the lead's hand finding the zipper pull by touch at the edge of the folded jacket. Show the pull tab lifting cleanly from its casing while the neighboring fabric and teeth remain intact. A mustard sleeve edge anchors the action to the lead. Keep the casing opaque: locating and using a recognizable part is useful knowledge, while the interior relationship remains outside this view.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du erkennst die Teile wieder und weißt, was du damit tun kannst. Das ist nützliches Wissen.
 
 BILD 16
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-One large illustrated mechanical sketch on cool blue drafting paper: the hand's pulling force is linked through the guided zipper rows to a meshing contact. Use one broad continuous relation and generous spacing, no extra panels or labels. Clearly an explanatory sketch, not a brain model. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Draw one spacious explanatory sketch on lightly textured blue drafting paper: a large pulling hand connects through a simple zipper guide to the engaged row below. Use one continuous force-and-guidance relationship around the actual mechanism, not a chain of three separate boxes. Make the direction legible with one broad arrow and ample spacing. This is a mechanical explanatory model, never a map of brain activity or a result chart.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Eine Erklärung verlangt zusätzlich die Verbindungen: Was verändert sich, wodurch, und welcher Schritt ermöglicht den nächsten?
 
 BILD 17
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Show the lead's original sheet with a hand-pull drawing at one end and the closed teeth at the other; the connecting path stops around the empty slider outline. A physical pencil points specifically to that interrupted transition, not to the whole page. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Return to the original incomplete sheet, rotated slightly on the oak table: the drawing of the pulling hand and the drawing of engaged teeth sit apart, and their connecting line stops at the empty slider outline. A pencil tip touches only that interrupted section. Keep the two known endpoints intact. The physical pause in the drawn connection identifies precisely what the explanation has skipped.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Beim Reißverschluss bist du bisher vom Ziehen direkt aufs Schließen gesprungen. Dazwischen liegt deine offene Frage.
 
 BILD 18
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-One greatly enlarged cutaway of the jacket's metal slider, with two separate rows entering the two branches of its Y-shaped internal channel and one engaged chain leaving the stem. Closing direction is toward the two open rows; keep geometry physically coherent, no magic fusion, no extra panels. Render ONLY the exact German text: "SCHIEBER", "FÜHRUNG". No other readable text.
+Show one greatly enlarged oblique cutaway of a zipper slider attached to its two petrol fabric tapes. The removed top wall exposes a Y-shaped guide: two separate tooth rows meet through the branches and form one engaged chain at the stem. A single closing-direction arrow points toward the separated rows. Keep the guide walls and central divider clearly distinguishable. Use the same ink and restrained metal shading as the illustrated props; no screws, gears or spring machinery invented inside.
+Visible text: ONLY "SCHIEBER", "FÜHRUNG". No other readable text.
 Narration context (German; do not print): In einem vereinfachten Schnitt sieht man im Schieber einen Y-förmigen Kanal, der die beiden Seiten führt.
 
 BILD 19
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A tight mechanical close-up below the slider's joining region: complementary zipper elements from opposite tapes mesh into one alternating row. Show intact neighboring elements large and accurately aligned, with the two cloth tapes retained on their respective sides; no added gears or glue. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Move close to the joining region below the cutaway: the complementary teeth from the two tapes alternate and interlock into one coherent chain. Keep several neighboring teeth large enough to inspect their contact, with cloth on each proper side. A cropped edge of the guide retains the physical connection to the previous frame. Show fitting shapes and contact rather than glue, fusion, magnets or a new gear mechanism.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Beim Schließen werden die passend geformten Elemente zusammengeführt und greifen ineinander. Der Schieber ist also mehr als ein Griff.
 
 BILD 20
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-Three-quarter table view: the lead adds the internal Y-shaped guidance to their earlier drawing while their other hand indicates the matching place on the real jacket. The friend follows the pencil, seeing the connection become explicit. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Over the friend's shoulder, show the lead actively adding the Y-shaped guide to a second sheet while his other hand indicates the matching place on the real jacket. His expression is attentive rather than triumphant. Frame the pencil, guide sketch and real slider as one compact triangle. The earlier unfinished sheet sits partly underneath, clearly a different page; this is progress in the explanation, not the disappearance of every uncertainty. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du zeichnest diese Führung nach. Jetzt verbindest du deine Handbewegung mit dem, was an den Zähnen passiert.
 
 BILD 21
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Close view of the revised drawing: the previously empty slider interior now has one clear guidance path, while a separate lightly outlined detail remains intentionally unelaborated. Do not fill the page with invented technical detail or print any claims of mastery. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Close on the revised drawing: one continuous penciled path now links the two rows through the guide to engaged teeth, while a separate small construction detail remains unfinished at one side. Place the real slider behind the paper as a scale cue. The useful added connection should dominate; the remaining open detail stays visible. No score, trophy, engineering diploma or suggestion that the entire device has been mastered.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Das ist noch kein vollständiges Ingenieurwissen. Aber deine Erklärung hat jetzt einen konkreten Zusammenhang mehr.
 
 BILD 22
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Wide contemporary research-room reconstruction: a clean desk, a jacket zipper sample, a simple piano-key model and a closed unbranded mechanical lock await a participant. These are illustrative examples from the study's device set, not a historical photograph. No readable notices. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Establish a clearly illustrated research room from a low doorway view: an uncluttered desk holds a familiar zipper sample, a plain task sheet and a pen; two chairs stand ready. Pale cool walls and a small wood cabinet distinguish it from the home apartment. The props introduce a systematic task using familiar devices, not a medical examination. No historical portraits, brain scanner, readable notices or claims that this is the original laboratory.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Genau diese Lücke zwischen Gefühl und ausgeführter Erklärung wurde auch in psychologischen Studien untersucht.
 
 BILD 23
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-03.png.
-The separate research participant considers a zipper sample while a researcher offers a plain response sheet. Show a thoughtful initial judgment before any drawing task; no invented score, chart or legible questionnaire. Both people use identical approved stickman construction. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Medium view of the classical-study participant considering the familiar zipper sample as a researcher's cropped hand offers a response sheet. The participant looks at the object, one hand relaxed and open before making an initial judgment. Keep the sheet angled away so no answers or numeric scale are readable. The explanation attempt has not begun. Use the single established study identity; the researcher need not become a separate character asset.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): In einer klassischen Untersuchung schätzten Teilnehmende zunächst ein, wie gut sie vertraute technische Dinge verstanden.
 
 BILD 24
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Top-down view of the research participant's hands producing a large step-by-step mechanical sketch and a few broad connector strokes on paper, beside the zipper sample. Use the sketch to stand for the written explanation task; do not invent readable participant prose. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+From behind the participant's writing shoulder, show the pen working on an explanation page beside the zipper sample. The top of the page contains a large incomplete mechanism sketch; the portion carrying the written response is hidden by the forearm and steep viewing angle. This is an illustrative reconstruction of a written explanation task, not a recovered participant document. No visible pseudo-writing or replacement of the task by assembling hardware.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Danach sollten sie die Funktionsweise einiger dieser Dinge Schritt für Schritt schriftlich erklären.
 
 BILD 25
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-03.png.
-Two large matched views of the same illustrative participant: initially casually assured beside the intact device, later inspecting a visibly incomplete explanation sheet before reconsidering their judgment. Qualitative reconstruction of self-rating change only; no numerical means, scales, measured heights or objective-ability score. Render ONLY the exact German text: "VORHER", "NACHHER". No other readable text.
+Use exactly two matched views of the same participant at the same research desk. At left, before explaining, the intact device accompanies a casually assured face and the initial response sheet. At right, after the attempt, the participant looks back from the incomplete explanation to a fresh response sheet with a more cautious expression. Illustrate the direction of reported self-assessment only. No numerical scale, bar heights, grades or disappearance of knowledge.
+Visible text: ONLY "VORHER", "NACHHER". No other readable text.
 Narration context (German; do not print): Anschließend bewerteten sie ihr Verständnis erneut. Nach dem Erklärversuch fiel die Selbsteinschätzung niedriger aus.
 
 BILD 26
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A researcher's finger and the participant's pencil converge on the specific blank connection in the produced mechanism sketch. Keep the original device in soft focus, intact; the omission belongs to the explanation, not to a broken object. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+A tight overhead detail shows the participant's pencil and a researcher's fingertip converging on the same missing junction in the explanation sketch. The intact device rests to the side, partly out of focus. Keep every drawn known part in place. The blank is in the explanation, not evidence that the real mechanism broke. This frame illustrates what an attempt can reveal, without adding a new experimental measurement.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Die eigene Erklärung machte Grenzen sichtbar, die beim ersten Einschätzen leicht verborgen geblieben waren.
 
 BILD 27
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-03.png.
-A paired conceptual view: the same unchanged mechanism sketch appears on both sides, while the participant's attitude shifts from assured to reflective. Keep every known part identical. The physical knowledge record does not disappear or shrink when the self-judgment changes. Render ONLY the exact German text: "EINSCHÄTZUNG", "KENNTNISSE". No other readable text.
+Make a careful two-state comparison of the same participant beside an identical mechanism sketch. Change only the participant's self-evaluating expression from assured to reflective; preserve every existing line and known relationship on the paper. Keep both copies of the sketch large and visibly identical. This illustrates why a changed judgment must not be drawn as erased knowledge. No shrinking brain, removed components, score or ability ranking.
+Visible text: ONLY "EINSCHÄTZUNG", "KENNTNISSE". No other readable text.
 Narration context (German; do not print): Dabei ging es um das eingeschätzte Verständnis. Ein gesunkenes Urteil bedeutet nicht, dass jemand plötzlich Wissen verloren hat.
 
 BILD 28
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-Return to the home table from the friend's viewpoint: the lead places the earlier incomplete sheet beside their revised version and indicates one precise remaining question. Warm apartment lighting restores the main story after the research-room sequence. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Return to warm apartment light in a medium view from the table's short end. The lead slides the first sketch partly underneath the revised one, then places a fingertip beside one remaining open junction while looking toward the friend. She follows that exact point rather than his face. The improved sheet and precise gesture show that a broad confident answer has become a specific question. Keep the petrol jacket on the table and the laptop closed. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Zurück zu deiner Zeichnung: Vorher hattest du eine sichere Antwort. Jetzt hast du eine genaue Frage.
 
 BILD 29
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Top-down revised sketch with one neat open circle around the unresolved detail; a pencil and closed laptop sit beside it. The circle singles out a real connection in the drawing; no entire-page crosses or decorative question marks. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Top-down view of the revised page and the closed laptop at its far edge. A neat pencil oval surrounds just one unresolved construction detail; the guide and the two connected tooth rows remain unmarked and useful. The pencil rests with its tip beside that oval. Frame enough of the whole sketch to show that the question concerns a bounded part, not the person's entire knowledge or the whole page.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du kannst benennen, welcher Zusammenhang dir fehlt. Damit lässt sich gezielter nachsehen als mit: Ich verstehe gar nichts.
 
 BILD 30
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-Close two-person view: the friend raises an interested eyebrow and lightly holds the zipper sample, while the lead listens rather than performs certainty. Change the axis from the earlier table shots; the objection is friendly and substantive. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Reverse the conversational angle: frame the friend's pale face and questioning raised eyebrow in the foreground as she lightly steadies the jacket slider. Across the table the lead turns toward her, listening with a relaxed mouth and lowered pencil. Let the actual object connect their eyelines. This is a friendly substantive objection, not an argument, a test of intelligence or a performance to the camera. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Aber vielleicht ist das nur eine Falle für Menschen, die sich mit einem Thema kaum beschäftigt haben?
 
 BILD 31
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-04.png.
-Illustrative university study workspace: an adult participant confidently selects a familiar subject notebook, then faces a separate blank explanation sheet. Subject materials carry only abstract diagrams, no titles. This is a research reconstruction about prior knowledge, not a caricature of incompetent experts. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+In a separate university-style workspace, the prior-knowledge participant draws a familiar subject notebook closer and looks toward an unused explanation sheet. The notebook shows only a small unlettered subject diagram. Frame an experienced adult with a purposeful posture, not a confused novice caricature. This is an illustrative setup about domain familiarity and self-assessment; no physical assembly test, actual degree certificate or measured explanation result is shown.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): So einfach ist es nicht. Auch einschlägiges Vorwissen kann mit einer zu optimistischen Einschätzung der eigenen Erklärfähigkeit zusammengehen.
 
 BILD 32
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Two large illustrated states using the same mechanism parts: disconnected recognizable components on one side, their correctly connected working relation on the other. The change is the connection between parts, not a new pile of labels or extra facts. Render ONLY the exact German text: "BEGRIFFE", "ZUSAMMENHÄNGE". No other readable text.
+Show two large technical illustrations of the same zipper components on a pale cool field. At left the recognizable tapes, rows and guide lie disconnected; at right those same parts are arranged in their functioning guiding relation. Preserve scale, shape and inventory so the new information is the connection, not extra components. No pile of words, definition cards or implication that every familiar term is useless.
+Visible text: ONLY "BEGRIFFE", "ZUSAMMENHÄNGE". No other readable text.
 Narration context (German; do not print): Es macht einen Unterschied, ob dir Begriffe bekannt vorkommen oder ob du die Zusammenhänge gerade selbst rekonstruieren kannst.
 
 BILD 33
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-04.png.
-The study participant correctly assembles a familiar simple object, then thoughtfully leaves one explanation detail open on paper. Frame useful competence and honest uncertainty together in one coherent scene; no dunce hats, ridicule or brain-size comparison. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Show the prior-knowledge participant calmly using their existing subject notes while examining a separate incomplete explanation sheet. One hand follows a clear useful relation in the notebook, the other rests beside the open detail on the explanation page. Preserve a thoughtful, competent posture and all existing notes. This is a conceptual illustration that familiarity and miscalibration can coexist, not a measured result of a new task or proof of incompetence.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Das bedeutet nicht, dass Fachwissen wertlos ist. Gute Kenntnisse und eine ungenaue Selbsteinschätzung können nebeneinander bestehen.
 
 BILD 34
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A clean close view of the lead's hand isolating one mechanical connection with the pencil point, while the rest of the complete sketch extends beyond the frame. Make the selected relationship, not a portrait or trophy, the focus. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Return directly to the lead's mustard cuff and pencil tip in a close crop of the home sketch. The tip selects one specific connection between guide and tooth row; the rest of the useful drawing extends beyond the frame. Warm wood at the edge re-establishes the apartment. The image narrows attention to a checkable part without depicting an intelligence test, award, judgmental face or diagnostic label.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Die Frage ist also weniger: Bin ich schlau? Sondern: Welchen Teil kann ich gerade wirklich erklären?
 
 BILD 35
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-Side view: the lead opens the laptop on the same table and reaches for the trackpad, with the partly completed sheet still visible beside it. The friend shifts their chair closer. Use the same cast and unchanged jacket prop. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+A side-on medium shot catches the lead opening the laptop with one hand and moving the other toward its trackpad. The friend draws her chair closer, looking toward the newly available screen. Keep the marked sketch between them and the petrol jacket beside it, never replaced by the laptop. The small shift toward an external answer is the action. The screen faces away enough to contain no readable interface. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Und jetzt kommt die bequemste Abkürzung: Du suchst die Antwort im Internet.
 
 BILD 36
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Close laptop view with a large clean mechanical zipper illustration, no web text, logos, navigation labels or pseudo-letters. A hand on the trackpad and the real jacket at the lower edge establish that this is external information, not a thought inside the lead's head. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Close over the lead's trackpad hand toward the screen: one large, clean zipper cutaway fills the display, with broad colored guide paths and no browser chrome, words or icons. A corner of the real petrol jacket enters the near foreground. Keep the screen illustration in the same drawn world. This is an external explanation being viewed; it must not appear as a projection from the character's head.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Wenige Sekunden, und der Zusammenhang steht vor dir.
 
 BILD 37
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-From behind the laptop, show the two friends leaning toward the diagram; the lead begins to nod while the friend's gaze stays on the explanation. Keep the drawing sheet with the open detail visible in the near foreground. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+From behind the low laptop lid, frame the two pale faces leaning toward the diagram. The lead begins a small agreeing nod with a relaxed brow; the friend studies the screen attentively. Their original unfinished sketch is visible below their hands in the foreground. Compose the external display and the still-incomplete own work together. Avoid exaggerated discovery expressions or showing the lead producing a new answer merely by reading. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Deine Freundin beugt sich zum Bildschirm. Die Darstellung wirkt übersichtlich. Du nickst schon beim Lesen.
 
 BILD 38
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Two matched tabletop views: on one side a full source diagram is visible on the laptop; on the other the laptop is turned away and only the lead's incomplete sheet remains available. Keep the same jacket and paper position, changing only access to the source. Render ONLY the exact German text: "VORLAGE", "EIGENE ERKLÄRUNG". No other readable text.
+Make two matched tabletop views with exactly the same jacket, pencil and incomplete own sketch. In the left view the laptop displays the complete source diagram; in the right it has turned away, leaving the own sheet as the only explanation visible. Keep object positions and lighting matched so source availability is the controlled difference. Do not secretly replace the right sheet with a completed answer or imply two different people have different abilities.
+Visible text: ONLY "VORLAGE", "EIGENE ERKLÄRUNG". No other readable text.
 Narration context (German; do not print): Doch die sichtbare Erklärung und deine eigene Erklärung sind zwei verschiedene Prüfungen. Welche davon hast du gerade bestanden?
 
 BILD 39
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Wide illustrative research station with two equal workspaces: one has an active laptop, the other a covered laptop and the same task card. The objects establish information access as the upcoming difference; no claim of brain measurement or actual historical room. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Establish an illustrative research workspace with two equal stations separated by a low divider. Each has the same chair, task-card placement and laptop model; one laptop is available while the other is shut. No people are needed. Cool window light and restrained wood details distinguish this room from both earlier study settings. The image introduces differing access to information, not measured knowledge, real historical furniture or a brain experiment.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Eine weitere Studienreihe untersuchte genau diese Grenze zwischen zugänglicher Information und dem Gefühl eigenen Wissens.
 
 BILD 40
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Top-down matched workspaces with identical simple question cards: the left participant hand uses an open laptop to search; the right hand works without access to the closed laptop. Show the search condition and the no-internet condition, not two different abilities or different-quality devices. Render ONLY the exact German text: "MIT SUCHE", "OHNE INTERNET". No other readable text.
+Top-down comparison of two matched research stations: at left a cropped hand operates an open laptop showing an unlettered explanatory graphic; at right a hand works with the same kind of task card while the laptop stays closed and unused. Keep equipment and space equal. A simple zipper drawing on both cards is an illustrative stand-in for an explanation question, not an exact reproduction of original experimental wording. No answer quality is compared.
+Visible text: ONLY "MIT SUCHE", "OHNE INTERNET". No other readable text.
 Narration context (German; do not print): In einem Experiment suchte eine Gruppe online nach Erklärungen. Eine Vergleichsgruppe sollte die Fragen ohne Internet bearbeiten.
 
 BILD 41
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A research hand moves the original zipper-question card aside and presents two new large topic illustrations, a storm cloud and an egg in a pan. The physical replacement of the old topic by unrelated ones is the dominant relation; no written questions or answer keys. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+A research hand removes the small zipper illustration card from the work area and places two new large cards in front: one depicts a rain cloud, the other an egg in a frying pan. Keep the removed card visibly at the edge so the topic replacement is explicit. These pictures are illustrative stand-ins for unrelated explanation topics, not original study stimuli. No responses, facts, scores or written questions appear.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Später schätzten beide Gruppen ihre Erklärfähigkeit bei anderen Themen ein, die mit den Suchfragen nichts zu tun hatten.
 
 BILD 42
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A qualitative matched illustration: the search-condition participant gestures more assuredly toward the new topic cards, while the no-search participant pauses thoughtfully over identical cards. Neither produces an answer. No numerical chart, brain scan or implied tested performance; this depicts reported confidence only. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Two matched reconstructed stations show non-recurring adult stickmen facing identical new topic cards. The search-condition participant makes a more assured open-hand response; the no-internet participant pauses with a thoughtful brow. Neither writes or demonstrates an answer. This is a qualitative illustration of reported confidence, not direct evidence from posture or a comparison of tested knowledge. Keep both adults equally capable-looking; no winners, losers, bars, grades or glowing brains.
+Visible text: ONLY "SELBSTEINSCHÄTZUNG". No other readable text.
 Narration context (German; do not print): Die Suchgruppe traute sich dabei mehr zu. Das war eine höhere Selbsteinschätzung, kein Nachweis größeren Wissens über diese Themen.
 
 BILD 43
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-View from the lead's seat: the laptop screen begins to rotate out of sight while the same drawing and jacket remain fully visible on the table. Emphasize the boundary between available outside explanation and the sheet the lead can produce. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Back at the home table, frame the laptop hinge and the lead's hand as the screen rotates away from their seat. The half-turned display becomes unreadable, while the same marked sheet and actual jacket stay fully in view. Use the changing screen orientation as the visible boundary between accessible outside information and the explanation available on the lead's own page. Do not remove the laptop or complete the sketch.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Die wichtige Frage für deinen Tischversuch bleibt: Was kannst du erklären, wenn die fremde Darstellung gerade nicht sichtbar ist?
 
 BILD 44
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-Wide home-table shot: the laptop faces away from the lead, the friend points to the real jacket, and the lead settles calmly with pencil in hand. Keep the full spatial relation clear and distinguish this view from the earlier over-shoulder shots. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+From near the apartment doorway, show the full table relation: the laptop faces away from the lead, the friend points toward the actual jacket, and the lead settles into the chair with the pencil ready. His shoulders lower and his gaze returns to the mechanism rather than the screen. Keep the working objects large enough to recognize within the room. This return is calmer and more deliberate than the first confident answer. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du drehst den Bildschirm weg. Deine Freundin zeigt wieder auf die Jacke. Diesmal lässt du dir Zeit.
 
 BILD 45
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-The lead reconstructs the slider guidance on a fresh sheet, then stops at one unelaborated detail. Show the meaningful completed connection plus the distinct remaining gap, with no external diagram visible. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Close on a fresh attempt: the lead's mustard-cuffed hand has reconstructed the Y guide and its relation to the tooth rows, then pauses beside one unfinished small detail. Keep the external screen turned away outside the working eyeline. The pencil touches the end of a useful completed line; one separate unresolved junction remains. Show real partial progress without an all-or-nothing empty page or an unexplained extra mechanism.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Du erklärst die Führung im Schieber. Dann stoppst du. Eine Einzelheit kannst du noch nicht begründen.
 
 BILD 46
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Macro of the pencil circling exactly one unfinished junction in the fresh sketch. Everything outside that circle remains intact and un-crossed-out. Use a single deliberate physical circle, no decorative halos or invented handwriting. Render ONLY the exact German text: "HIER OFFEN". No other readable text.
+In a tight paper-level view, the pencil completes one small oval around the unfinished junction in the fresh drawing. Keep every useful connection outside the oval untouched. A frame-specific explanatory annotation, not physical handwriting on the recurring sheet, sits beside this specific place, large enough to read, with a single short pointer stroke to the oval. No whole-page cross, decorative halo, unrelated question marks or extra handwriting.
+Visible text: ONLY "HIER OFFEN". No other readable text.
 Narration context (German; do not print): Du markierst genau diese Stelle, statt den Rest mit einem vertrauten Fachwort zu überdecken.
 
 BILD 47
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-The lead calmly shows the useful completed part of the sketch to the friend and leaves the marked gap plainly visible. The friend responds with an attentive nod, not applause or competitive ranking. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Medium view across the table: the lead turns the fresh sheet toward the friend and indicates the useful completed guide with one fingertip, leaving the circled gap plainly visible. His face is calm and candid. The friend follows the drawing with an attentive expression rather than applause. Compose both pale heads above the same paper so understanding is shared through the object. The laptop remains turned away. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Das ist kein Wettbewerb darin, möglichst wenig zu wissen. Es geht darum, die Grenze brauchbar einzuzeichnen.
 
 BILD 48
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Two large concrete records: a portrait-style response card expressing confidence beside a separate mechanism drawing being checked against a reference drawing. No quantities or grades. The first records a judgment; the second makes a checkable relation available. Render ONLY the exact German text: "SELBSTEINSCHÄTZUNG", "INHALTSPRÜFUNG". No other readable text.
+Use two clearly separated illustrated tasks: on the left a hand returns a plain self-assessment response card; on the right another hand traces matching guide paths between an attempted drawing and a reference cutaway. The left card records a judgment without showing a score; the right comparison exposes a checkable content relationship. Keep both tasks large and concrete. This distinction is conceptual, not a chart of experimental outcomes.
+Visible text: ONLY "SELBSTEINSCHÄTZUNG", "INHALTSPRÜFUNG". No other readable text.
 Narration context (German; do not print): Auch die Forschung ist hier vorsichtig zu lesen: Veränderungen der Selbsteinschätzung sind nicht automatisch ein präziser Test tatsächlicher Kenntnisse.
 
 BILD 49
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Two large reconstructed tasks: one hand copies the exact short German sentence DER TAG BEGINNT from a visible card; another hand attempts a zipper explanation sketch. Same quiet desk conditions. The short sentence is an illustrative placeholder for copying neutral text, not the original experimental stimulus; no scores or result chart. Render ONLY the exact German text: "ABSCHREIBEN", "ERKLÄREN", "DER TAG BEGINNT". No other readable text.
+Present exactly two illustrative research tasks at matched desks. On the left a hand copies the short German sentence from a large source card onto paper; on the right a hand attempts a zipper explanation sketch. The copied sentence is an illustrative neutral-text placeholder, not the original experimental material. Keep conditions otherwise quiet and comparable. The setup shows an alternative task; do not invent the amount of any self-rating change or draw knowledge loss.
+Visible text: ONLY "ABSCHREIBEN", "ERKLÄREN", "DER TAG BEGINNT". No other readable text.
 Narration context (German; do not print): In neueren Versuchen sanken Wissensurteile teilweise auch bei anderen Aufgaben. Die Reaktion ist also nicht völlig spezifisch fürs Erklären.
 
 BILD 50
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-An intimate conversational view: the lead pauses, looks toward their useful sketch and organizes a thought while the friend waits supportively. Keep demonstrated knowledge visible on the table; no empty skulls, crossed-out brains or judgmental gestures. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+An intimate two-person crop places the useful sketch clearly below the lead's thoughtful face. He pauses with closed mouth, looks briefly down at the connected guide and gathers his next thought; the friend waits with a relaxed hand on the table. Keep the demonstrated partial explanation present. The pause is compatible with useful knowledge. No empty-head imagery, ridicule, frustrated audience or accusation of stupidity. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Ein stockender Satz beweist deshalb keine Ahnungslosigkeit. Vielleicht fehlen Worte, Übung oder gerade ein gut geordneter Gedanke.
 
 BILD 51
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A source cutaway and the lead's sketch lie side by side. A pencil follows the same internal slider guidance in both and circles one mismatching drawn connection. Keep the comparison mechanical and concrete, no fake certificate, checkmark score or claims about intelligence. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Top-down view of the attempted drawing beside the open laptop's enlarged source cutaway, both aligned to the same slider orientation. A pencil traces a known guide relation, then stops at one visibly mismatching side connection on the own page. The source and attempt are drawn in the same style but remain physically distinct. This is the content check after an explanation, without fake correctness stamps, certificate or invented performance score.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Und eine flüssige Erklärung kann trotzdem falsch sein. Du musst ihren Inhalt anschließend an einer verlässlichen Quelle prüfen.
 
 BILD 52
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Fresh wide view of the home table: jacket, clean paper and pencil arranged for a focused attempt, laptop closed at the far end. The calm work setup replaces the earlier rush to answer; no numbered three-step board or panel collage. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Establish a reset work surface from a high oblique angle: the real jacket, a fresh sheet and pencil occupy the near side; the laptop is now closed at the far edge. The older attempts form a small stack to one side. Keep the same window and doorway in the background but let the deliberately prepared workspace dominate. This practical setup begins a fresh self-check, without a numbered process board, success promise or decorative person.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Am Tisch kannst du einen einfachen Selbstcheck versuchen. Zuerst entscheidest du, welche genaue Frage du beantworten willst.
 
 BILD 53
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A magnifying lens frames only the slider and the two entering zipper rows, while most of the jacket stays outside the focal area. The physical framing narrows the question to one relationship without pretending to explain the whole object. Render ONLY the exact German text: "WIE GREIFT ES?". No other readable text.
+A rectangular handheld magnifier frames only the slider entrance and the two separate zipper rows, while most of the jacket lies outside its window. The small planned German question sits in clean adjacent space with a short line to this joining region. The composition narrows attention to one relationship rather than claiming to explain every part of the jacket. Keep the magnifier physical, metal shading restrained and cloth naturally petrol.
+Visible text: ONLY "WIE GREIFT ES?". No other readable text.
 Narration context (German; do not print): Also nicht: Verstehe ich Reißverschlüsse? Sondern: Wie führt der Schieber die beiden Zahnreihen zusammen?
 
 BILD 54
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-From the side opposite the earlier drawing shots, show the lead verbally explaining while sketching the guidance path to the friend. The laptop remains closed and physically behind them; hands and pencil make the active attempt unmistakable. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+From the side opposite the earlier sketching views, show the lead speaking while drawing the guidance path on a fresh sheet for the friend. His free hand follows the same path above the real slider, linking speech, drawing and object. The closed laptop sits behind the active work area. Keep both faces and the pencil large. The attempt is produced without a visible explanation template; no copied text or instant expertise pose. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Dann versuchst du die Erklärung ohne Vorlage. Du kannst sprechen, skizzieren oder beides miteinander verbinden.
 
 BILD 55
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Close on a useful partial drawing with one newly marked unfinished link. The lead places a small plain colored paper tab beside that exact link; no readable wording, no broad red cross, no additional cards. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Close on the new partial explanation with a useful continuous guide path and one unfinished side link. A hand places a small unlettered ochre paper tab beside that exact link; it does not cover the drawing. Frame the touch and the selected point, with a little petrol fabric at the edge. The tab records a bounded uncertainty. No broad red cross, extra cards, numbered steps or hidden gap.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Wo ein Schritt nur mit irgendwie weitergeht, setzt du eine Markierung. Du musst die Lücke nicht verstecken.
 
 BILD 56
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Top-down view of the marked sketch and a source diagram, aligned so the same slider junction can be compared directly. The colored tab stays at the unresolved place and a fingertip traces the corresponding verified channel in the source. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+The laptop is reopened beside the marked fresh sketch, showing the corresponding source cutaway at the same orientation. The ochre tab stays at the unresolved junction. A fingertip points from that tab toward the matching guide boundary on the display, making the physical comparison obvious. Keep this order readable: a prior attempt already exists before consultation. No invented browser text or suggestion that looking alone proves comprehension.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Erst danach vergleichst du mit einer passenden Quelle. Welche Verbindung fehlt? Welcher deiner Schritte stimmt nicht?
 
 BILD 57
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-The source diagram is face down at the far edge while the lead begins a fresh large guidance sketch beside the real zipper. Show available physical object versus unavailable source page clearly; no trophy, perfect-score stamp or guarantee of mastery. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+From the lead's eyeline, show the laptop lid lowered again and a fresh sheet receiving a newly drawn guide path beside the actual jacket zipper. The prior marked attempt is partly tucked under the closed laptop and cannot act as the visible template. Frame the active pencil stroke and available real object, with the closed source clearly behind. This is another bounded attempt, not a final examination or guaranteed complete explanation.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Dann probierst du es erneut, ohne die Darstellung vor dir. Das ist ein praktischer Selbstcheck, kein umfassender Wissenstest.
 
 BILD 58
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-The lead indicates a remaining circled detail with an honest open palm while the friend listens calmly. Their completed explanation remains between them; uncertainty concerns that one point rather than their entire competence. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+In a calm medium two-shot, the lead taps one still-open detail on the newest sheet and raises the other small hand in an honest open-palm gesture. The friend listens without judging. Most of the drawing remains usefully connected and visible between them. Use a slightly tilted head and relaxed posture rather than shame. The single unknown concerns that detail, not the lead's whole intelligence or worth. Wardrobe: lead wears the mustard base top; friend wears the plum base top; the petrol jacket stays on the table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Bei einer schwierigen Frage darf die Antwort auch lauten: Den Teil weiß ich nicht. Ich muss nachsehen.
 
 BILD 59
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-Return to the original entryway as the female friend now closes her own jacket and prepares to leave, while the lead stands beside the work-table doorway. Her jacket has its own established reference identity; do not accidentally transfer the lead's jacket to her. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Return to the entry from the same side as the opening, now with late soft daylight. The friend closes her own rust-colored jacket while preparing to leave; the lead stands beside the work-area doorway in the mustard base top. The petrol jacket remains on the table visible behind. Frame the friend's ordinary functioning zipper and the coherent shared apartment. Never exchange the two jackets or turn the ending into a victory pose. Wardrobe: lead wears the mustard base top; friend wears her own rust jacket; the petrol jacket remains on the work table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Deine Freundin hat inzwischen ihre Jacke angezogen. Der Reißverschluss funktioniert genauso wie am Anfang.
 
 BILD 60
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-Final tabletop comparison of the lead's first nearly empty sketch and their latest connected guidance sketch with one remaining marked detail. The real jacket is the same as at the beginning. Show progress as new relationships on paper, not a claim of complete expertise. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+Lay the first and latest sketches side by side on the oak table beside the same petrol jacket. The first contains an empty slider connection; the latest includes the guidance relation and retains one small marked uncertainty. Match page size and zipper orientation so the added connection is easy to see without captions. The physical object is unchanged. This is an illustration of this story's progress, not measured research performance or total mastery.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Verändert hat sich deine Antwort. Du kannst einen Teil begründen und den offenen Rest genauer benennen.
 
 BILD 61
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: character-reference-01.png, character-reference-02.png.
-At the entryway threshold the lead holds their useful sketch at waist height and glances thoughtfully toward its marked gap, while the friend waits naturally beside the door. Frame a reflective exchange, no pointer-to-camera performance or subscription gesture. Same approved previous-reel stickman construction: an oversized warm-white round/soft-oval head, visibly wider than the narrow shoulders; a broad simple face without a human jaw, visible nose or modeled cheeks; tiny solid black oval eyes, fine eyebrows and a small simple mouth; a narrow clothed torso and very thin dark stick-like arms and legs. Hair is a restrained layer on the pale head, not a sculpted human skull. Clothing must preserve the slender construction. Use age-appropriate posture and styling; adults must not become children or chibi figures. No normal cartoon-human anatomy. Use only the character references explicitly listed for this BILD. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+At the entry threshold, frame the lead holding the latest sketch at waist height and glancing thoughtfully toward its remaining mark. The friend waits naturally near the open door in her own rust jacket, one hand resting on its zipper. Keep the paper visible but the exchange human and quiet. Their posture shows a more careful question replacing automatic confidence; no direct-to-camera pointing, slogan or subscription gesture. Wardrobe: lead wears the mustard base top; friend wears her own rust jacket; the petrol jacket remains on the work table.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Beim nächsten „Klar, das verstehe ich“ lohnt sich die Frage: An welcher Stelle würde meine Erklärung abbrechen?
 
 BILD 62
 STYLE REFERENCE: thumbnail.png — REQUIRED FOR THIS IMAGE.
 CHARACTER REFERENCES: none.
-A quiet final close view of the latest pencil sketch resting beside the actual jacket zipper: the drawn guidance and the real slider align visually, with the remaining small marked uncertainty retained. Warm side light, uncluttered frame, no slogan or end-card text. ZERO READABLE TEXT, including backgrounds, screens, paper and clothing. Mechanical drawing strokes are not lettering.
+End on a quiet close view of the latest pencil sketch beside the actual petrol jacket zipper. Align the drawn guide and the real slider visually; keep the one small uncertainty mark visible rather than completing it for a neat ending. Window light crosses paper fibers and restrained metal highlights, with the surrounding room falling softly out of focus. The final image holds a concrete connection and an honest limit. No end-card wording, trophy or new object.
+NO VISIBLE TEXT, including paper, screens, clothing and background objects. No pseudo-writing.
 Narration context (German; do not print): Ein gutes Gefühl kann der Anfang sein. Verständnis zeigt sich daran, welche Verbindungen du wirklich herstellen kannst.
 
 FINAL QA
-- The final approved cover was actually reused as style reference for EVERY scene, including diagrams and object-only frames. Only necessary character references were attached. No silent reference substitution.
-- Script-specific character references were generated inside Flow and used for the relevant roles, with no external Codex image required.
-- Necessary character references FIRST, then three separate covers. WAIT until explicit final cover approval and a scene-start instruction; only then save 05-export/thumbnail.png and delete the two rejected covers.
-- BILD 01 is a separate scene, NOT a cover.
-- All 62 actual video scenes complete in continuous 5-image batches: 01–05, 06–10, 11–15, 16–20, 21–25, 26–30, 31–35, 36–40, 41–45, 46–50, 51–55, 56–60, then 61–62. Final numbering uses NN.png.
-- Every human stays exact same stickman species, same-frame lock.
-- No repeat beige default, accidental English or gibberish.
-- Flat 03-bilder/ with exactly 62 scene files, 01.png through 62.png, no other versions, no extra subfolders.
-- Approved 05-export/thumbnail.png remains a separate export asset.
-- No storyboard, contact sheet, collage or unrequested video.
-
+- Necessary character references completed FIRST; exactly three independent cover candidates; explicit final cover approval AND scene-start authorization obtained before numbered scenes. Selection alone never releases scenes.
+- Every actual person belongs to the accepted Planungsfehlschluss-based clothed stickman family; no normal cartoon-human or plain one-stroke-torso style drift. Distinct identities share one construction and finish.
+- The approved cover was actually used for EVERY image. Only the scene's necessary identity references were added; cover text and layout did not leak into the video.
+- Exactly 62 separate numbered 16:9 scene PNGs, 01.png through 62.png, no missing numbers, duplicates, cover candidates, contact sheets or subfolders in 03-bilder/.
+- The selected 05-export/thumbnail.png remains separate from all numbered scenes and never enters the video timeline.
+- Every scene was visually checked against its German narration and its neighbors, not merely counted. Check the two jacket owners, base outfits, paper progress and laptop availability especially carefully.
+- Research setups, reported self-ratings and verified content remain distinguished. The zipper cutaway is coherent; no invented results or extra machine parts.
+- Planned German words are exact and readable; all other surfaces contain no readable text or pseudo-text. Important faces, gestures and mechanisms work at phone size.
+- Actual scene/reference/cover quality is only confirmed after inspection. Never describe text-plan checks as successful image generation or claim the audio/video exists.
 
 FINAL DOWNLOAD PACKAGE — ONE FOLDER AND ZIP
-Expected complete package: 67 files — thumbnail.png, character-reference-01.png through character-reference-04.png, and exactly 62 scene images 01.png through 62.png. Never include the two rejected covers or the thumbnail among the numbered scenes.
-After all numbered scenes pass the final file and visual QA:
-- Collect the final deliverables into ONE FLAT download folder named google-flow/.
-- Include thumbnail.png, character-reference-01.png (and further character references only when used), and every numbered scene 01.png through 62.png.
-- Exclude rejected covers, duplicates, failed versions, batch folders, contact sheets and unnumbered extra scene images.
-- Confirm the exact planned number of numbered scenes, no gaps/duplicates, correct filenames, valid separate 16:9 images, consistent character identities and only the planned German visible text.
-- If your interface supports folder/ZIP export, create google-flow.zip from that folder and inspect its actual file list before providing the download. Never claim an archive was created or checked unless it really exists.
-- If your interface cannot save, name, package or export files, state exactly which step is unavailable and provide the images separately. Do not silently skip the step or claim a nonexistent ZIP is ready.
-- Packaging does not change the local production layout: after download, import numbered scenes into 03-bilder/, thumbnail.png into 05-export/, and character references into 99-intern/reference-notes/. The thumbnail and references never enter the video timeline or scene numbering.
+Expected complete flat exchange folder: google-flow/ with exactly 67 PNG files: thumbnail.png, character-reference-01.png through character-reference-04.png, and all numbered 01.png through 62.png.
+After file and visual QA, collect those final assets in ONE download folder. Exclude rejected covers, failed/duplicate versions, extra scenes and batch folders. If the interface supports archive export, create google-flow.zip and inspect its actual filenames/count before offering the download. If folder creation, naming, saving or ZIP export is unavailable, state the exact limitation and provide the separate assets; do not claim a nonexistent archive.
+On local import: numbered scenes to 03-bilder/, winner to 05-export/thumbnail.png, character references to 99-intern/reference-notes/. The exchange package does not change the local renderer structure. Audio processing, word timing and MP4 rendering occur only after actual final media is supplied.

@@ -14,3 +14,7 @@ Die Geschichte führt von einer Reißverschlussfrage über die eigene Erklärung
 Nächster Produktionsschritt: Den einen Flow-Prompt verwenden. Danach die vollständigen nummerierten Bilder, das separate Thumbnail und die Aufnahme importieren. Erst aus dem final verarbeiteten Audio echte Wortzeiten ableiten und rendern. Diese Phase enthält keine bereits erzeugten Bilder oder fertige MP4.
 
 Cover als Stilvorlage bei allen 62 Szenen, einschließlich Erklärbildern ohne Personen. Figurenreferenzen nur nach der jeweiligen BILD-Liste. Kanalweit gleicher Zeichenstil; dieses Video erhält eine eigene zusammenhängende Farb-, Licht- und Materialgestaltung.
+
+## Bildneufassung vom 21.10.2026
+
+Alle 62 Bildprompts, vier konkrete Figurenreferenzen und drei Cover-Briefings sind neu ausgearbeitet. Figurenmaßstab ist die Planungsfehlschluss-Bauweise mit individueller Kleidung; ein vereinfachter gefüllter Rumpf ist erlaubt. Skript mit 979 Wörtern und Szenenreihenfolge bleiben erhalten. Die neuen Bilder sind noch nicht erzeugt. Notwendige Referenzen zuerst, anschließend Cover und Warten auf fertige Coverfreigabe samt Szenenstart.

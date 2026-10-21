@@ -15,3 +15,11 @@ Vorab überprüfbar: Alle 62 Bildaufträge passen zum jeweiligen Satz; Erklär-/
 Wenn unvorbereitete Rückmeldungen verfügbar sind: Ziel und Hindernis, fehlenden Zusammenhang und Unterschied zwischen Selbsturteil und Wissen in eigenen Worten wiedergeben lassen. Bis dahin NOT_TESTED. Selbstbewertung durch Codex ist kein Publikumstest.
 
 Nach Export: reale Bildfolge und Ton prüfen. Nach Veröffentlichung, falls Daten vorhanden: 48h/7d/28d-Messungen mit Dauer und Traffic-Kontext dokumentieren. Mehrere gleichzeitig geänderte Eigenschaften erlauben keine eindeutige Ursache für eine mögliche Verbesserung.
+
+## Produktionskorrektur vom 21.10.2026
+
+Evidenz: Originalvideos in Antigravity erneut an jeweils sechs Bildstellen geprüft; Arman bevorzugt ausdrücklich die Planungsfehlschluss-Figuren, ergänzt um Kleidung und individuelle Merkmale. Die zuletzt gezeigte schmale Jackenfigur wurde als geeignete Richtung akzeptiert. Normale Cartoon-Menschen und zu einfache nackte Ein-Strich-Figuren wurden abgelehnt. Keine Zuschauer-Metriken liegen vor.
+
+Ursache des Promptfehlers: wechselnde, zu allgemein beschriebene Stilziele und ein unpräziser Begriff „Stickman“, später eine überstrenge Ein-Strich-Rumpf-Vorgabe. Maßnahmen: ein fester Planungsfehlschluss-basierter Konstruktionsabschnitt, vier individuelle Cast-Briefings, genaue Kleider-/Objektfolge, vollständig neu gerichtete 62 Szenen sowie getrennte Prüfung von Stil, Satzpassung und Mechanismus/Forschung. Die Figurenbeschreibung wird nicht als langer Absatz in jedem BILD wiederholt.
+
+Überprüfbare Hypothese: Wenn die Referenzen vor dem Cover dieselbe konkrete Konstruktionsprüfung bestehen und Szenen ihre Garderobe/Objektzustände ausdrücklich festhalten, sinkt die Zahl der nötigen Anatomie-/Kontinuitätskorrekturen pro 5er-Batch. Erst tatsächliche Fehlbilder und Regenerationen zählen; aktueller Messstatus PENDING / NO_DATA. Mehrere gleichzeitige Änderungen erlauben keine isolierte Ursache für späteren Zuschauererfolg.

@@ -41,3 +41,11 @@ Evidenz: lokale Endfassung `reels/19.10.2026-bis-25.10.2026/1-montag/03-export/f
 - Welche Themen bringen wiederkehrende Zuschauer und Abonnenten, nicht nur Einzel-Views?
 
 Experimente in `analytics/experiments.csv` fuehren, Ergebnisse erst nach dokumentierter Messung zu gesicherten Erkenntnissen hochstufen.
+
+## Stilentscheidung und Produktionskorrektur — 21.10.2026
+
+Arman bevorzugt die ursprüngliche Planungsfehlschluss-Figurenbauweise mit individueller Kleidung und die zuletzt akzeptierte schmale Jackenfigur. Quelle: ausdrückliche Rückmeldung und erneute visuelle Stichprobe von je sechs Bildstellen aus Planungsfehlschluss und Türschwellen-Effekt. Kein Publikumsvergleich und keine YouTube-Metriken.
+
+Umsetzung: `PLANUNGSFALLACY_CLOTHED_STICKMAN_V1`. Große helle Köpfe, einfache Gesichter, schmale gefüllte/angezogene Rümpfe und dünne Gliedmaßen; detailreiche kohärente Zeichenwelt. Kein beliebiger Wechsel zwischen normalen Cartoon-Menschen und nackten Ein-Strich-Doodles. Figurenreferenzen konkret entwerfen; Kleidung und Objektzustände pro Szene festhalten. Die laufende Erklärungstiefe-Produktion erhält vollständig neu geschriebene 62 Bildprompts bei unverändertem Sprechertext.
+
+Prüfung nach Flow: Anatomie-/Garderobekorrekturen je Batch tatsächlich zählen und gegen die geplante Richtung sichten. Status PENDING / NO_DATA. Stilpräferenz ist keine Aussage über Viralität oder bessere Retention.
