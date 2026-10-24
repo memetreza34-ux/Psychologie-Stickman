@@ -261,6 +261,24 @@
       ],
       "status": "USED",
       "note": "Forschung zeigt Bedingungen und Grenzen; 2021er Multimodal-Studie replizierte den allgemeinen Effekt nicht durchgehend."
+    },
+    {
+      "topicId": "dunning-kruger-effekt",
+      "canonicalTopic": "Dunning-Kruger-Effekt / Selbstüberschätzung bei geringer Kompetenz",
+      "aliases": [
+        "dunning-kruger",
+        "dunning-kruger-effekt",
+        "dunning kruger effect",
+        "unskilled and unaware",
+        "mount stupid",
+        "berg der dummheit",
+        "selbstüberschätzung inkompetenz"
+      ],
+      "projects": [
+        "youtube/2026-KW43_19.10-25.10/24.10.2026-dunning-kruger-effekt-v1"
+      ],
+      "status": "USED",
+      "note": "Erstes WORKFLOW_V2-Video. Originalbefund + Statistik-Kritik (2020) + Replikation (2021); Mount-Stupid-Kurve als Mythos."
     }
   ]
 }

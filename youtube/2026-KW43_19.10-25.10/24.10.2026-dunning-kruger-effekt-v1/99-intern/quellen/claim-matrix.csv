@@ -1,0 +1,13 @@
+claim_id,claim,source,status,notes
+C01,"Wheeler raubte 1995 in Pittsburgh ohne Maske eine Bank aus und glaubte, Zitronensaft mache ihn unsichtbar",Quelle 5,GEPRUEFT_SEKUNDAER,"Details (Uhrzeit Festnahme) variieren; im Skript nur 'kurz danach'"
+C02,"Wheeler: 'Aber ich hatte doch den Saft drauf' (But I wore the juice)",Quelle 5,GEPRUEFT_SEKUNDAER,Übersetzung
+C03,"Fall regte Dunning/Kruger zur Forschungsfrage an",Quelle 5,GEPRUEFT_SEKUNDAER,
+C04,"Aufgaben in Logik, Grammatik, Humor; Studierende",Quelle 1,GEPRUEFT,
+C05,"Unterstes Viertel: Prozentrang 12, Selbstschätzung 62",Quelle 1,GEPRUEFT,"Abstract, über die Tests gemittelt"
+C06,"Beste unterschätzen sich eher",Quelle 1,GEPRUEFT,
+C07,"Mount-Stupid-Kurve nicht in der Studie; einmalige Messung",Quelle 1 + 6,GEPRUEFT,
+C08,"Die meisten halten sich für bessere Autofahrer",Quelle 4,GEPRUEFT,"Keine Prozentzahl gesprochen"
+C09,"2020: 929 Teilnehmende, Muster weitgehend statistisch erklärbar",Quelle 2,GEPRUEFT,"Umstritten; als Meinung 'einiger Forscher' formuliert"
+C10,"2021: Replikation, zwei Studien mit je ca. 4000 Menschen, Kern: schlechtere Erkennung richtiger Antworten",Quelle 3,GEPRUEFT,
+C11,"Logiktraining verbesserte Selbsteinschätzung der Schwächsten",Quelle 1,GEPRUEFT,Studie 4
+C12,"Wheeler testete mit Sofortbild, Gesicht nicht sichtbar",Quelle 5,GEPRUEFT_SEKUNDAER,"Als 'laut Berichten' + 'vermutlich' markiert"
