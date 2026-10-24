@@ -15,16 +15,7 @@ Wachstum ist das Ziel, keine garantierte Kennzahl. Keine Daten erfinden; technis
 
 ## Bildwelt
 
-**Status: UNDEFINED**
-
-Die bisherige Bildwelt wurde entfernt. Das Repository enthält aktuell bewusst **keine aktive Style-DNA, Character-DNA oder visuelle Referenzwelt**.
-
-Die neue Bildwelt wird komplett neu definiert.
-
-Bis dahin:
-- keine neue Google-Flow-Bildproduktion starten
-- keine alten Bildwelten wiederverwenden
-- bestehende Videos nicht als automatische Stilvorlage behandeln
+**Status: ACTIVE** — `rules/PSYCHOLOGY_STICKMAN_WORLD.md` (`PSYCHOLOGY_STICKMAN_WORLD_V1`): großer heller Kopf, kleine Augen, strichdünne Glieder. Neue Videos nutzen zusätzlich `rules/BILD_METHODE_V2.md` (Figuren-Sheets, textfreie KI-Bilder, Text als Code-Infokarten).
 
 ## Was weiterhin steht
 
@@ -90,6 +81,7 @@ youtube/<JJJJ-KWNN_TT.MM-TT.MM>/TT.MM.JJJJ-thema/
 
 ## Neue Methoden (ab 24.10.2026, zuerst lesen)
 
+- **`WORKFLOW_V2.md` — Startdatei für jedes neue Video (8 Schritte, `npm run v2:build`)**
 - `ANALYSE_2026-10-24.md` — Analyse: was bei Skript, Bild und Code bisher schiefgeht
 - `rules/SKRIPT_METHODE_V2.md` — Skript-Bauplan, Hook-Typen, Satz-Handwerk; Prüfung: `npm run qa:script-style -- <script.txt>`
 - `rules/BILD_METHODE_V2.md` — Figuren-Sheet, kurze Bildprompts, Text/Schemata als Code-`infoCards`

@@ -4,6 +4,10 @@
 
 Verbindlich: `rules/YOUTUBE_WEEK_FOLDERS.md`. ZUERST `npm run youtube:week -- TT.MM.JJJJ` ausführen bzw. ISO-Woche Montag–Sonntag errechnen, dann das Videoprojekt **nur** in `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/<TT.MM.JJJJ-thema>/` anlegen. Vorher Themenregister und Wochenprojektordner prüfen. Alle bestehenden Unterordner `01-script` / `02-google-flow` / `03-bilder` / `04-audio` / `05-export` / `99-intern` bleiben unverändert. Die beiden verpflichtenden Phase-1-Direktlinks und `TOPIC_REGISTRY.json` verwenden den *vollständigen* Wochenpfad. Niemals einen neuen flachen Videoordner direkt unter `youtube/` erstellen.
 
+## Neue Videos: WORKFLOW_V2
+
+Startdatei `WORKFLOW_V2.md`. KI-Bilder textfrei, Text/Zahlen/Vergleiche als Remotion-`infoCards` (`CODE_TEXT_CARDS_V1`), Shotliste `99-intern/shotlist.json` → `npm run v2:build`. Erstes V2-Video: `youtube/2026-KW43_19.10-25.10/24.10.2026-dunning-kruger-effekt-v1`.
+
 ## Oberste operative Prioritaet: systematische Verbesserung nach JEDEM Video
 
 Policy: `CONTINUOUS_IMPROVEMENT_P1_V1` — `rules/GROWTH_LEARNING_LOOP.md`.

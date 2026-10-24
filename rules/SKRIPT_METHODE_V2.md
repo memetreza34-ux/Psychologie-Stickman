@@ -13,7 +13,7 @@ Die alten Regeln (`SCRIPT_HOOK_LOCK`, `LONGFORM_STORY_RETENTION_V1`) bleiben gü
 |---|---|---|
 | Jeder Hook gleich | 14 von 23 Skripten beginnen mit „Warum …“, „plötzlich“ 29× | Kanal klingt austauschbar, Hook nutzt sich ab |
 | Zu viel Absicherung | Türschwellen: „vielleicht“ 5×, dazu „möglicherweise“, „zumindest“, „plausibel“ … | Zuschauer spürt keine klare Aussage → wenig Spannung |
-| Monotoner Rhythmus | Ø 11 Wörter pro Satz, fast alle Sätze 8–15 Wörter, kaum Schlag-Sätze | Klingt wie vorgelesen, Ohr schaltet ab |
+| Monotoner Rhythmus | Ø 11 Wörter pro Satz, fast alle Sätze 8–15 Wörter, kaum Schlag-Sätze (relative Streuung 0,40) | Klingt wie vorgelesen, Ohr schaltet ab |
 | Zu lang | Türschwellen 1141 Wörter ≈ 7,6 min statt 6–7 | Mittelteil zieht |
 | Keine Zahlen | Studien ohne eine einzige Zahl erzählt | Forschung bleibt abstrakt |
 | Keine offenen Schleifen | Planungsfehlschluss: 0 Vorgriffe („gleich“, „am Ende“) | Kein Grund, bis zum Ende zu bleiben |

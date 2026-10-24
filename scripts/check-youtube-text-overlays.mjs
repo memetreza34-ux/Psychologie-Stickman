@@ -31,6 +31,12 @@ for (const file of files) {
   if (!scenes.length) continue;
 
   const finalTextPolicy = String(plan.finalTextPolicy ?? plan.finalTextOverlayPolicy ?? '').trim();
+  if (finalTextPolicy === 'CODE_TEXT_CARDS_V1') {
+    // WORKFLOW_V2: KI-Bilder sind textfrei, sichtbarer Text kommt als infoCards aus Remotion.
+    const withFlowText = scenes.filter((scene) => (Array.isArray(scene.flowText) ? scene.flowText.join('') : String(scene.flowText ?? '')).trim());
+    if (withFlowText.length) failures.push(`${relative}: CODE_TEXT_CARDS_V1 forbids flowText in scenes ${withFlowText.map((s) => s.scene).join(', ')}.`);
+    continue;
+  }
   if (finalTextPolicy !== 'FLOW_VISIBLE_TEXT_ONLY_V3') {
     warnings.push(`${relative}: historical text policy retained.`);
     continue;

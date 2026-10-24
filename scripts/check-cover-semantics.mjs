@@ -67,7 +67,7 @@ for (const file of plans) {
   }
   const prompt = fs.readFileSync(promptPath, 'utf8');
   if (/VISUAL WORLD STATUS:\s*UNDEFINED/iu.test(prompt)) failures.push(`${rel}: Flow prompt still has undefined visual world.`);
-  if (!/VISUAL WORLD:\s*PSYCHOLOGY_STICKMAN_WORLD_V1/iu.test(prompt)) failures.push(`${rel}: Flow prompt must use PSYCHOLOGY_STICKMAN_WORLD_V1.`);
+  if (plan.workflowVersion !== 'V2' && !/VISUAL WORLD:\s*PSYCHOLOGY_STICKMAN_WORLD_V1/iu.test(prompt)) failures.push(`${rel}: Flow prompt must use PSYCHOLOGY_STICKMAN_WORLD_V1.`);
   if (!/^BILD\s+01\s*$/gimu.test(prompt)) failures.push(`${rel}: Flow prompt missing BILD 01.`);
   if (plan.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1' && !/THUMBNAIL CANDIDATES/iu.test(prompt)) failures.push(`${rel}: missing three separate thumbnail candidates section.`);
 }

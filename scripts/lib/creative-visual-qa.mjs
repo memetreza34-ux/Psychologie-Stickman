@@ -49,7 +49,11 @@ export const checkCreativeVisualPlan = (plan, location='phase1-scenes.json') => 
       fail(`scene ${n}: MECHANISM using ${s.sceneType} needs a specific mechanismRenderingJustification; consider a labeled schema, diagram or comparison instead.`);
     }
     const allText = Array.isArray(s.flowText) ? s.flowText.join(' ') : clean(s.flowText);
-    if (s.sceneType === 'TEXT_ILLUSTRATION' && !allText) fail(`scene ${n}: text-led illustration needs exact planned German flowText.`);
+    if (plan.workflowVersion === 'V2') {
+      // V2: Text und Schemata kommen aus dem Code (infoCards), nie aus dem KI-Bild.
+      if (allText) fail(`scene ${n}: WORKFLOW_V2 forbids flowText; use an infoCard for visible text.`);
+      if (explanatoryTypes.has(s.sceneType) && !s.infoCard) fail(`scene ${n}: ${s.sceneType} needs an infoCard in WORKFLOW_V2 (text/schema comes from code).`);
+    } else if (s.sceneType === 'TEXT_ILLUSTRATION' && !allText) fail(`scene ${n}: text-led illustration needs exact planned German flowText.`);
     types[s.sceneType] = (types[s.sceneType] ?? 0) + 1;
     unique.push(s.focalSubjectKey);
   }
@@ -97,9 +101,35 @@ export const checkCreativeVisualPlan = (plan, location='phase1-scenes.json') => 
   return {failures:[...new Set(failures)],warnings,summary};
 };
 
+// WORKFLOW_V2: Das Bildmodell bekommt Bildbeschreibungen, keine Policy-IDs. Jeder BILD-Block ist kurz und textfrei.
+export const checkV2FlowPrompt = (plan, text, location='google-flow-prompt.txt') => {
+  const failures=[];
+  const content=String(text ?? '');
+  const blocks=content.split(/^BILD\s+(\d+)\s*$/gmu);
+  const ids=[];
+  for(let i=1;i<blocks.length;i+=2){
+    const n=Number(blocks[i]);
+    ids.push(n);
+    const body=blocks[i+1].split(/^={3,}/mu)[0];
+    const prompt=(body.match(/^Prompt:\s*([\s\S]*?)(?:\n\s*\n|$)/mu)?.[1] ?? '').trim();
+    const count=words(prompt).length;
+    if(!prompt) failures.push(`${location}: BILD ${n} has no "Prompt:" line.`);
+    else {
+      if(count<25||count>130) failures.push(`${location}: BILD ${n} prompt has ${count} words (25–130).`);
+      if(!/no text/iu.test(prompt)) failures.push(`${location}: BILD ${n} prompt must end with an explicit no-text instruction.`);
+    }
+    if(/\b[A-Z][A-Z0-9_]{5,}_V\d+\b/u.test(body)) failures.push(`${location}: BILD ${n} contains a policy ID; the image model needs descriptions, not rule names.`);
+  }
+  const scenes=Array.isArray(plan?.scenes)?plan.scenes:[];
+  if(ids.length!==scenes.length||ids.some((x,i)=>x!==i+1)) failures.push(`${location}: numbered BILD blocks do not match plan scenes.`);
+  if(!/THUMBNAIL CANDIDATES/u.test(content)) failures.push(`${location}: missing THUMBNAIL CANDIDATES section.`);
+  return {failures};
+};
+
 export const checkCreativeFlowPrompt = (plan, text, location='google-flow-prompt.txt') => {
   const failures=[];
   if (plan?.creativeVisualPolicy !== CREATIVE_POLICY) return {failures:[`${location}: V2 plan policy missing.`]};
+  if (plan.workflowVersion === 'V2') return checkV2FlowPrompt(plan, text, location);
   const content=clean(text);
   for(const [token, label] of [
     [CREATIVE_POLICY,'creative visual policy marker'],

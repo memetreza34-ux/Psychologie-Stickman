@@ -41,7 +41,7 @@ const first40 = words.slice(0, 40).join(' ').toLowerCase();
 let longestRun = 1;
 let run = 1;
 for (let i = 1; i < lengths.length; i += 1) {
-  run = Math.abs(lengths[i] - lengths[i - 1]) <= 3 ? run + 1 : 1;
+  run = Math.abs(lengths[i] - lengths[i - 1]) <= Math.max(2, 0.2 * Math.max(lengths[i], lengths[i - 1])) ? run + 1 : 1;
   longestRun = Math.max(longestRun, run);
 }
 
@@ -55,7 +55,9 @@ const add = (level, message) => results.push({level, message});
 
 if (words.length > targetWords * 1.12) add('WARN', `${words.length} Wörter ≈ ${(words.length / wpm).toFixed(1)} min bei ${wpm} WpM – Ziel ${minutes} min ≈ ${targetWords} Wörter. Kürzen: jede Zeile muss Neues bringen.`);
 if (words.length < targetWords * 0.75) add('WARN', `Nur ${words.length} Wörter für ${minutes} min.`);
-if (sd < 5) add('WARN', `Satzrhythmus monoton (Standardabweichung ${sd.toFixed(1)} Wörter, Ziel ≥ 5). Mehr ganz kurze Sätze (2–5 Wörter) als Schlag setzen.`);
+// Relative Streuung (Variationskoeffizient), damit kurze und lange Skriptstile fair verglichen werden.
+const cv = sd / mean;
+if (cv < 0.45) add('WARN', `Satzrhythmus monoton (Variationskoeffizient ${cv.toFixed(2)}, Ziel ≥ 0.45). Mehr ganz kurze Sätze (2–5 Wörter) als Schlag setzen.`);
 if (longestRun >= 8) add('WARN', `${longestRun} Sätze in Folge mit fast gleicher Länge.`);
 const hedgeRate = (hedgeTotal / words.length) * 1000;
 if (hedgeRate > 12) add('FAIL', `${hedgeTotal} Absicherungswörter (${hedgeRate.toFixed(1)} pro 1000 Wörter, max 12): ${hedges.map(([h, n]) => `${h}×${n}`).join(', ')}. Einschränkungen EINMAL klar in einem eigenen Abschnitt sagen statt überall verteilen.`);
@@ -70,7 +72,7 @@ if (!/\d|prozent|hälfte|doppelt|(?<![\wäöüß])(zwei|drei|vier|fünf|sechs|si
 if (!/(du|dein|dir|dich)/.test(first40)) add('WARN', 'Die ersten 40 Wörter sprechen den Zuschauer nicht direkt an.');
 
 console.log(`SKRIPT-STIL: ${path.relative('.', file)}`);
-console.log(`  Wörter ${words.length} (≈${(words.length / wpm).toFixed(1)} min) · Sätze ${sentences.length} · Ø ${mean.toFixed(1)} Wörter · SD ${sd.toFixed(1)} · kurze Sätze (≤5) ${lengths.filter((l) => l <= 5).length}`);
+console.log(`  Wörter ${words.length} (≈${(words.length / wpm).toFixed(1)} min) · Sätze ${sentences.length} · Ø ${mean.toFixed(1)} Wörter · Streuung ${(sd / mean).toFixed(2)} · kurze Sätze (≤5) ${lengths.filter((l) => l <= 5).length}`);
 console.log(`  Fragen ${questions} · du/dein ${youWords} · Absicherungen ${hedgeTotal} · offene Schleifen ${openLoops}`);
 for (const r of results) console.log(`  ${r.level}: ${r.message}`);
 const failed = results.some((r) => r.level === 'FAIL');
