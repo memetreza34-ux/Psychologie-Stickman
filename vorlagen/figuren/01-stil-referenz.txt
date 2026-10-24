@@ -1,0 +1,10 @@
+KANAL-STIL-REFERENZ (einmalig erzeugen, bestes Bild als assets/images/stil-referenz.png sichern)
+Bei jedem späteren Bild als Referenzbild / Zutat mitgeben.
+
+PROMPT (16:9):
+A hand-drawn 2D illustration for a German psychology explainer channel. A cozy living room in warm afternoon light: an oak table with a brown parcel, a plant, a window, a bookshelf. One stickman character sits at the table: a large round white head, tiny black oval eyes, small simple eyebrows, a narrow body in a teal sweater, very thin dark stick-like arms and legs, small simple hands and shoes. Style: dark slightly organic outlines, soft cel shading, subtle paper texture, natural clear colors, real depth with foreground, middle ground and background. Calm, friendly, premium look. No text, no letters, no numbers.
+
+PRÜFEN:
+- Kopf groß, hell, rund – keine Hautfarbe, keine normale Cartoon-Figur
+- Arme/Beine wirklich strichdünn
+- Linien und Schattierung gefallen dir → dann ist das ab jetzt die Kanal-Referenz

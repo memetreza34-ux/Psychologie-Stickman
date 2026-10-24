@@ -1,0 +1,13 @@
+FIGUREN-SHEET (pro Video für die Hauptfigur, Ergebnis nach 99-intern/figur-<name>.png)
+Stil-Referenz als Referenzbild anhängen. <NAME>, <KLEIDUNG>, <MERKMAL> ersetzen.
+
+PROMPT (16:9):
+Character sheet in the exact style of the reference image, plain light paper background. The same stickman character "<NAME>" shown several times on one sheet: top row front view, three-quarter view, side view and back view, standing; bottom row six close-up head expressions: neutral, confused, surprised, worried, relieved, determined. Character: large round white head, tiny black oval eyes, small eyebrows, <MERKMAL, z. B. short dark ponytail>, narrow body in <KLEIDUNG, z. B. a teal sweater and grey trousers>, very thin dark stick-like arms and legs, small simple hands and shoes. Every view must show the identical character with identical proportions and colors. No text, no labels, no letters.
+
+BEISPIEL (Türschwellen):
+<NAME> = Lena · <MERKMAL> = short dark ponytail · <KLEIDUNG> = a teal sweater and grey trousers
+
+PRÜFEN:
+- Alle 4 Ansichten gleiche Proportionen?
+- Gesichtsausdrücke klar unterscheidbar auch auf dem Handy?
+- Keine Beschriftungen im Bild (sonst neu)

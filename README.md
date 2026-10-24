@@ -88,6 +88,13 @@ youtube/<JJJJ-KWNN_TT.MM-TT.MM>/TT.MM.JJJJ-thema/
 
 `captions.srt` liegt direkt in `05-export/`; es gibt keinen separaten Caption-/Subtitle-Ordner im normalen YouTube-Workflow.
 
+## Neue Methoden (ab 24.10.2026, zuerst lesen)
+
+- `ANALYSE_2026-10-24.md` — Analyse: was bei Skript, Bild und Code bisher schiefgeht
+- `rules/SKRIPT_METHODE_V2.md` — Skript-Bauplan, Hook-Typen, Satz-Handwerk; Prüfung: `npm run qa:script-style -- <script.txt>`
+- `rules/BILD_METHODE_V2.md` — Figuren-Sheet, kurze Bildprompts, Text/Schemata als Code-`infoCards`
+- `vorlagen/figuren/` — kopierfertige Prompts für Stil-Referenz, Figuren-Sheet, Metapher, Bildprompt
+
 ## Aktive bildweltunabhängige Kernregeln
 
 - `CANONICAL_RULES.md`

@@ -56,7 +56,8 @@ if (flowOnlyText) {
     if (variant === 'keyword' && wordCount > 5) throw new Error(`sceneLabels[${index}]: keyword overlay must contain at most 5 words`);
   });
 
-  if (targetFormat === 'youtube') {
+  // CODE_TEXT_CARDS_V1: Thumbnail ist separat (THUMBNAIL_SEPARATE_FROM_SCENE01_V1), daher kein Cover-Label im Video.
+  if (targetFormat === 'youtube' && finalTextPolicy !== 'CODE_TEXT_CARDS_V1') {
     const flowCover = String(plan.coverTextRenderer ?? '').toUpperCase() === 'GOOGLE_FLOW';
     const coverLabels = sceneLabels.filter((label) => label.scene === 1 && (label.variant ?? 'keyword') === 'cover');
     if (flowCover) {
@@ -68,6 +69,28 @@ if (flowOnlyText) {
     }
   }
 }
+
+// Optionale V2-Features (Bewegung, Überblendung, Code-Infokarten, Musik). Ohne Angaben bleibt das Ergebnis wie bisher.
+const motionStyle = plan.motionStyle ?? 'linear';
+if (!['linear', 'smooth'].includes(motionStyle)) throw new Error('motionStyle must be linear or smooth');
+const transition = plan.transition ?? 'cut';
+if (!['cut', 'fade'].includes(transition)) throw new Error('transition must be cut or fade');
+const transitionMs = Number.isFinite(Number(plan.transitionMs)) ? Math.max(100, Math.min(1500, Math.round(Number(plan.transitionMs)))) : 400;
+const infoCards = Array.isArray(plan.infoCards) ? plan.infoCards : [];
+if (flowOnlyText && infoCards.length) throw new Error('FLOW_VISIBLE_TEXT_ONLY_V3 forbids Remotion infoCards. Use finalTextPolicy "CODE_TEXT_CARDS_V1" for code-rendered text.');
+const maxCardWords = {keyword: 4, stat: 6, compare: 8, steps: 12};
+infoCards.forEach((card, index) => {
+  const where = `infoCards[${index}]`;
+  if (!Number.isInteger(card.scene) || card.scene < 1 || card.scene > plan.sceneStartWords.length) throw new Error(`${where}.scene must reference an existing scene`);
+  if (!(card.type in maxCardWords)) throw new Error(`${where}.type must be keyword, stat, compare or steps`);
+  if (card.position && !['top', 'center', 'bottom'].includes(card.position)) throw new Error(`${where}.position must be top, center or bottom`);
+  const required = {keyword: ['text'], stat: ['value', 'label'], compare: ['left', 'right'], steps: []}[card.type];
+  for (const key of required) if (typeof card[key] !== 'string' || !card[key].trim()) throw new Error(`${where}.${key} must be a non-empty string`);
+  if (card.type === 'steps' && (!Array.isArray(card.steps) || card.steps.length < 2 || card.steps.length > 4)) throw new Error(`${where}.steps needs 2-4 entries`);
+  const mainText = card.type === 'steps' ? card.steps.join(' ') : card.type === 'compare' ? `${card.left} ${card.right}` : card.type === 'stat' ? card.label : card.text;
+  if (countWords(mainText) > maxCardWords[card.type]) throw new Error(`${where}: max ${maxCardWords[card.type]} words for ${card.type} (mobile readability)`);
+});
+const music = plan.music && typeof plan.music.src === 'string' ? plan.music : undefined;
 
 const props = {
   targetFormat,
@@ -87,6 +110,11 @@ const props = {
   autoCaptions: flowOnlyText ? false : (targetFormat === 'reel' ? plan.autoCaptions !== false : Boolean(plan.autoCaptions)),
   captionWordsPerPage: Number.isFinite(Number(plan.captionWordsPerPage)) ? Math.max(2, Math.min(7, Math.round(Number(plan.captionWordsPerPage)))) : 4,
   endHoldMs: Number.isFinite(Number(plan.endHoldMs)) ? Math.max(0, Math.round(Number(plan.endHoldMs))) : 1000,
+  motionStyle,
+  transition,
+  transitionMs,
+  infoCards,
+  ...(music ? {music} : {}),
 };
 
 fs.mkdirSync(path.dirname(path.resolve(outputPath)), {recursive: true});

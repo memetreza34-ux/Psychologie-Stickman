@@ -1,0 +1,7 @@
+METAPHER-SHEET (optional, wenn das Video eine wiederkehrende Bild-Metapher hat)
+Stil-Referenz + Figuren-Sheet anhängen.
+
+PROMPT (16:9):
+Visual reference sheet in the exact style of the reference image, plain light paper background. Show the recurring visual metaphor "<METAPHER, z. B. a thin glowing golden thread that represents an intention>" in four states side by side: 1) strong and bright, held in <NAME>'s hand, 2) stretched long and thin, 3) frayed and almost torn, 4) torn into two loose ends. Same character <NAME> from the character sheet appears small next to each state with a matching expression. No text, no numbers, no letters.
+
+Danach im Bildprompt immer gleich benennen, z. B. "the golden intention thread from the metaphor sheet".

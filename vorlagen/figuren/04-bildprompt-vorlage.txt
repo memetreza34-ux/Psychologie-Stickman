@@ -1,0 +1,17 @@
+BILDPROMPT-VORLAGE (50–80 Wörter, ganze Sätze, keine Policy-IDs)
+Referenzbilder anhängen: Stil-Referenz (+ Figuren-Sheet, + Metapher-Sheet wenn nötig)
+
+Hand-drawn 2D illustration in the style of the reference image.
+<NAME>, the stickman from the character sheet, <EINE HANDLUNG> with <KÖRPERSPRACHE: Schultern/Hände/Kopfneigung>, looking <GEFÜHL>.
+<ORT> with <LICHT>.
+<KAMERA: wide / medium / close-up / over-the-shoulder / top-down>, <NAME> in the <left/right> third.
+<NUR WENN infoCard auf diesem Bild:> Keep the <upper third / right half> calm and empty.
+No text, no letters, no numbers anywhere.
+
+VARIANTE (Bearbeiten statt neu):
+Edit this image: keep everything the same, but <EINE ÄNDERUNG: camera closer to her face / she now looks relieved / view from above>.
+
+SELBSTTEST VOR DEM ABSCHICKEN:
+1. Sieht man ohne Ton, worum es in diesem Satz geht?
+2. Ist das Bild anders als die zwei davor (Kamera, Nähe, Gefühl)?
+3. Gibt es genau EINE Hauptsache im Bild?
