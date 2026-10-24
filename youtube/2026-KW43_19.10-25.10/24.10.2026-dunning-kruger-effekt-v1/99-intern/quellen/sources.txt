@@ -1,0 +1,23 @@
+QUELLEN — Dunning-Kruger-Effekt
+
+1. Kruger, J. & Dunning, D. (1999). Unskilled and unaware of it: How difficulties in recognizing one's own incompetence lead to inflated self-assessments. Journal of Personality and Social Psychology, 77(6), 1121–1134.
+   Link: https://doi.org/10.1037/0022-3514.77.6.1121
+   Verwendet für: Aufgaben in Logik, Grammatik, Humor; unterstes Viertel Prozentrang 12, Selbstschätzung 62; Beste unterschätzen sich; Logiktraining verbessert Selbsteinschätzung (Studie 4).
+
+2. Gignac, G. E. & Zajenkowski, M. (2020). The Dunning-Kruger effect is (mostly) a statistical artefact. Intelligence, 80, 101449.
+   Link: https://doi.org/10.1016/j.intell.2020.101449
+   Verwendet für: 929 Teilnehmende, Intelligenztests + Selbsteinschätzung; typisches Muster weitgehend durch Regression zur Mitte und Better-than-average erklärbar. (Wissenschaftlich umstritten, z. B. Hiller 2023; im Skript als "Einige Forscher sagen" formuliert.)
+
+3. Jansen, R. A., Rafferty, A. N. & Griffiths, T. L. (2021). A rational model of the Dunning–Kruger effect supports insensitivity to evidence in low performers. Nature Human Behaviour, 5, 756–763.
+   Link: https://doi.org/10.1038/s41562-021-01057-0
+   Verwendet für: große Replikation, zwei Studien mit je ca. 4000 Teilnehmenden; schwächere Teilnehmende erkennen schlechter, ob einzelne Antworten richtig sind.
+
+4. Svenson, O. (1981). Are we all less risky and more skillful than our fellow drivers? Acta Psychologica, 47(2), 143–148. Replikation: Metapsychology (2023), N = 1203.
+   Link: https://doi.org/10.1016/0001-6918(81)90005-6 · https://open.lnu.se/index.php/metapsychology/article/view/2932
+   Verwendet für: Die meisten halten sich für bessere Autofahrer als der Durchschnitt.
+
+5. McArthur-Wheeler-Fall (Pittsburgh 1995). Sekundärquellen, u. a. Errol Morris: The Anosognosic's Dilemma, New York Times Opinionator (2010); Dunning nennt den Fall als Anstoß.
+   Verwendet für: Banküberfall ohne Maske, Zitronensaft, "Aber ich hatte doch den Saft drauf", Sofortbild-Test (im Skript als "Laut Berichten" markiert).
+
+6. Mount-Stupid-Kurve: Die populäre Kurve (Berg der Dummheit / Tal der Verzweiflung) erscheint in keiner Abbildung von Kruger & Dunning 1999; die Studie misst Leistung und Selbstschätzung zu einem Zeitpunkt.
+   Prüfung: Abbildungen der Originalstudie (Quelle 1).

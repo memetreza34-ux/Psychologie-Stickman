@@ -4,6 +4,10 @@
 
 Verbindlich: `rules/YOUTUBE_WEEK_FOLDERS.md`. ZUERST `npm run youtube:week -- TT.MM.JJJJ` ausführen bzw. ISO-Woche Montag–Sonntag errechnen, dann das Videoprojekt **nur** in `youtube/<JJJJ-KWNN_TT.MM-TT.MM>/<TT.MM.JJJJ-thema>/` anlegen. Vorher Themenregister und Wochenprojektordner prüfen. Alle bestehenden Unterordner `01-script` / `02-google-flow` / `03-bilder` / `04-audio` / `05-export` / `99-intern` bleiben unverändert. Die beiden verpflichtenden Phase-1-Direktlinks und `TOPIC_REGISTRY.json` verwenden den *vollständigen* Wochenpfad. Niemals einen neuen flachen Videoordner direkt unter `youtube/` erstellen.
 
+## NEUE VIDEOS: WORKFLOW_V2 (ab 24.10.2026)
+
+Für jedes neue Video zuerst `WORKFLOW_V2.md` lesen und befolgen (Skript nach `rules/SKRIPT_METHODE_V2.md`, Bilder nach `rules/BILD_METHODE_V2.md`, Dateien per `npm run v2:build`). Die Leseliste weiter unten ist Nachschlagewerk; wo sie V2 widerspricht, gilt V2. Alte Videos werden nicht verändert.
+
 ## Höchste Regel
 
 Vor Änderungen zuerst `CHANGE_CONTROL_LOCK.md` lesen.

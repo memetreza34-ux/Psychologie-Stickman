@@ -37,7 +37,7 @@ for (const planPath of productionPlans) {
   const average = scenes.length ? totalWords / scenes.length : 0;
   const longest = counts.length ? Math.max(...counts) : 0;
   const minimumSceneCount = Math.ceil(totalWords / 18);
-  const strict = plan.visualSequencePolicy === 'VISUAL_SEQUENCE_HARDENING_V1';
+  const strict = plan.visualSequencePolicy === 'VISUAL_SEQUENCE_HARDENING_V1' || plan.workflowVersion === 'V2';
   const reviewedExtendedBeats = new Set(
     Array.isArray(plan.reviewedExtendedBeats)
       ? plan.reviewedExtendedBeats.filter((value) => Number.isInteger(value) && value > 0)

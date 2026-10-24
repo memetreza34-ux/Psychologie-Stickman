@@ -1,0 +1,58 @@
+{
+  "policy": "LONGFORM_STORY_RETENTION_V1",
+  "workflowVersion": "V2",
+  "status": "APPROVED",
+  "hookType": "STORY_HOOK_REAL_CASE",
+  "previousHookType": "SZENEN_HOOK (Türschwellen-Effekt)",
+  "targetWords": {
+    "min": 850,
+    "max": 1100
+  },
+  "wordCountJustification": "",
+  "structure": {
+    "hook": "Echter Fall als Kalt-Einstieg: McArthur Wheeler raubt 1995 ohne Maske eine Bank aus, weil er glaubt, Zitronensaft mache ihn unsichtbar. Danach zwei Fragen an den Zuschauer und zwei offene Schleifen (Schutzfrage am Ende, Mythos des berühmten Bildes).",
+    "introduction": "Begriff Dunning-Kruger-Effekt in einem Satz, dann der Mechanismus als doppelter Nachteil: Wer etwas nicht kann, dem fehlt auch der Maßstab, um es zu bemerken.",
+    "mainPart": "Originalstudie als Mini-Krimi mit Zahlen (Prozentrang 12 vs. 62). Alltagsbeispiel Jonas und Aktien. Wendepunkt: Die Mount-Stupid-Kurve stammt nicht aus der Studie, und ein Teil des Effekts könnte Statistik sein (Gignac & Zajenkowski 2020). Dann Rettung des Kerns durch die große Replikation 2021: Schwächeren fehlt das Signal, ob eine Antwort richtig ist.",
+    "conclusion": "Drei Werkzeuge (Feedback vom Ergebnis, mehr lernen, die Schutzfrage) und Rückkehr zu Wheeler: Er hat getestet, aber das falsche Signal bekommen. Schlusssatz über die Aufnahmen."
+  },
+  "narrativeSpine": {
+    "anchorPhrase": "Denn er hat sich das Gesicht mit Zitronensaft eingerieben.",
+    "callbackPhrase": "McArthur Wheeler hat sich diese Frage nie gestellt."
+  },
+  "research": {
+    "mode": "STORY_FIRST_SOURCES_SECOND",
+    "spokenResearchNames": [
+      "David Dunning",
+      "Justin Kruger"
+    ],
+    "notes": "Kruger & Dunning 1999 (JPSP, doi:10.1037/0022-3514.77.6.1121): unterstes Quartil im Schnitt Prozentrang 12, Selbstschätzung 62; Top-Quartil unterschätzt sich; Studie 4: Logiktraining verbessert Selbsteinschätzung. Gignac & Zajenkowski 2020 (Intelligence, doi:10.1016/j.intell.2020.101449): N=929, Muster weitgehend statistisches Artefakt (umstritten). Jansen, Rafferty & Griffiths 2021 (Nature Human Behaviour, doi:10.1038/s41562-021-01057-0): zwei Studien mit je ca. 4000 Teilnehmenden, Low Performer weniger sensitiv für die Richtigkeit einzelner Antworten. Svenson 1981 + Replikation 2023: Mehrheit hält sich für überdurchschnittliche Fahrer. Wheeler-Fall: Sekundärquellen (u. a. Errol Morris, NYT 2010); Polaroid-Test als 'laut Berichten' markiert."
+  },
+  "examples": {
+    "substantialExamples": [
+      "McArthur Wheeler und der Zitronensaft (Anker und Callback)",
+      "Originalexperiment Kruger & Dunning mit Prozenträngen",
+      "Jonas und die drei Aktien-Videos",
+      "Statistik-Einwand und große Replikation 2021"
+    ],
+    "synthesisAfterExampleRuns": "Nach Skiurlaub, Ernährung und Gitarre folgt sofort die Synthese: Wenig Wissen fühlt sich oft vollständig an. Erst mehr Wissen zeigt dir, wie viel fehlt."
+  },
+  "retention": {
+    "midpointReengagementPhrase": "Und hier kommt das berühmte Bild ins Spiel.",
+    "openLoops": [
+      "Am Ende zeige ich dir eine einzige Frage, die dich davor schützen kann.",
+      "Denn das berühmte Bild zu diesem Effekt stammt gar nicht aus der Forschung.",
+      "Die Zahlen zeige ich dir gleich."
+    ]
+  },
+  "ending": {
+    "practicalTakeaway": "Sicherheitsgefühl ist kein Beweis: Feedback vom Ergebnis holen, ein bisschen mehr lernen und vor jeder großen Gewissheit fragen: Woran würde ich merken, dass ich falschliege?",
+    "finalLine": "Die Frage ist nur, ob wir bereit sind, uns die Aufnahmen anzusehen."
+  },
+  "qa": {
+    "namedResearchersSpokenCount": 2,
+    "yearMentionsSpokenCount": 3,
+    "maxConsecutiveNamedResearchBlocks": 1,
+    "maxConsecutiveMicroExamples": 3,
+    "deepExampleCount": 4
+  }
+}

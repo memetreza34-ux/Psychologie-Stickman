@@ -23,7 +23,7 @@ const must = (text, regex, message) => { if (!regex.test(text)) failures.push(me
 const requiredWorkflow = (text, rel) => {
   must(text, /3\s+SEPARATE|exactly\s+3\s+separate/iu, `${rel}: missing 3-cover gate.`);
   must(text, /STOP|wait for the user/iu, `${rel}: missing user cover-selection stop.`);
-  must(text, /batch(?:es)?\s+of\s+exactly\s+5|5-image batch|groups of 5/iu, `${rel}: missing five-image batching.`);
+  must(text, /batch(?:es)?\s+of\s+(?:exactly\s+)?(?:5|five)\b|(?:5|five)-image batch|groups of (?:5|five)\b/iu, `${rel}: missing five-image batching.`);
   must(text, /NN\.png|matching number/iu, `${rel}: missing numbered filenames.`);
   must(text, /03-bilder\//iu, `${rel}: missing flat 03-bilder/ output.`);
   must(text, /storyboard|contact sheet/iu, `${rel}: must explicitly address storyboard/contact-sheet output.`);
@@ -65,6 +65,13 @@ for (const file of files.filter((p) => !p.split(path.sep).includes('00-vorlage')
   }
   if (/VISUAL WORLD STATUS:\s*UNDEFINED/iu.test(text)) {
     warnings.push(`${rel}: visual world undefined; image generation must remain blocked.`);
+    continue;
+  }
+  const phase1Path = path.join(path.dirname(path.dirname(file)), '99-intern', 'phase1-scenes.json');
+  const isV2 = fs.existsSync(phase1Path) && JSON.parse(fs.readFileSync(phase1Path, 'utf8')).workflowVersion === 'V2';
+  if (isV2) {
+    // WORKFLOW_V2: Ablaufregeln in Klartext; Bildinhalte prüft check-creative-visuals.
+    requiredWorkflow(text, rel);
     continue;
   }
   if (!/NATURAL_FLOW_MASTER_V2/iu.test(text)) continue;

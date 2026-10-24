@@ -114,10 +114,16 @@ const out = {
     renderGermanLabelsInRemotion: flowOnlyText ? false : phase1.renderGermanLabelsInRemotion,
     ...(Array.isArray(sidecar?.flowTextMoments) ? {flowTextMoments: sidecar.flowTextMoments} : Array.isArray(phase1.flowTextMoments) ? {flowTextMoments: phase1.flowTextMoments} : {}),
   } : {}),
+  // WORKFLOW_V2: Bewegung, Überblendung, Code-Infokarten und Musik bis in den Render durchreichen.
+  ...(phase1.motionStyle ? {motionStyle: phase1.motionStyle} : {}),
+  ...(phase1.transition ? {transition: phase1.transition} : {}),
+  ...(Number.isFinite(phase1.transitionMs) ? {transitionMs: phase1.transitionMs} : {}),
+  ...(Array.isArray(phase1.infoCards) ? {infoCards: phase1.infoCards} : {}),
+  ...(phase1.music && typeof phase1.music.src === 'string' ? {music: phase1.music} : {}),
   ...(typeof phase1.autoCaptions === 'boolean' ? {autoCaptions: phase1.autoCaptions} : {}),
   ...(Number.isFinite(phase1.captionWordsPerPage) ? {captionWordsPerPage: phase1.captionWordsPerPage} : {}),
 };
 
 fs.mkdirSync(path.dirname(path.resolve(outputPath)), {recursive: true});
 fs.writeFileSync(path.resolve(outputPath), `${JSON.stringify(out, null, 2)}\n`);
-console.log(`PHASE 1 MAP: PASS — ${scenes.length} visual beats (${format}); text=${flowOnlyText ? 'GOOGLE_FLOW_ONLY' : 'LEGACY'}`);
+console.log(`PHASE 1 MAP: PASS — ${scenes.length} visual beats (${format}); text=${flowOnlyText ? 'GOOGLE_FLOW_ONLY' : finalTextPolicy === 'CODE_TEXT_CARDS_V1' ? 'CODE_CARDS' : 'LEGACY'}`);

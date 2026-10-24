@@ -123,7 +123,7 @@ In `99-intern/scene-plan.json` (neue Felder, alle optional):
 | `compare` | Gruppe A vs. B, vorher/nachher | 8 |
 | `steps` | Mechanismus als Kette (2–4 Schritte) | 12 |
 
-Richtwert: **1 Karte pro ca. 45 Sekunden**, vor allem bei Begriff, Studie, Wendepunkt und Tipp.
+Richtwert: **eine Karte pro Kernaussage, Zahl oder Vergleich** – bei 6–7 Minuten meist 15–25 Karten, vor allem bei Begriff, Studie, Wendepunkt und Tipps. Zwischen zwei mittigen Karten mindestens ein Bild ohne Karte.
 Musik: lizenzfreie Datei nach `public/assets/music/` legen (Pfad relativ zu `public/`).
 
 ---
