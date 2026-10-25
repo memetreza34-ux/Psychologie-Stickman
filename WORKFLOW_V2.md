@@ -12,7 +12,7 @@ Alte Videos werden nicht verändert.
 | 5 | **Figuren** nach `rules/BILD_METHODE_V2.md` | Hauptfigur + Metapher festlegen (Vorlagen in `vorlagen/figuren/`) | — |
 | 6 | **Shotliste** | `99-intern/shotlist.json` (eine Zeile pro Bild, siehe unten) | — |
 | 7 | **Dateien erzeugen** | `npm run v2:build -- <projekt>` erzeugt `phase1-scenes.json`, `google-flow-prompt.txt`, `scene-plan.json` | `npm run qa:creative-visuals -- <projekt>` und `npm run phase1:links -- <projekt>` |
-| 8 | **Produktion** | Flow-Bilder → Sprachaufnahme → `npm run produce:youtube` → Export | Bilder ansehen, Video ansehen |
+| 8 | **Bilder** | Google Flow erzeugt Cover + alle Bilder in `03-bilder/`. Schnitt, Ton und Musik machst du selbst (kein Remotion). | `npm run flow:verify -- <projekt>`, Bilder ansehen |
 
 Danach: Upload, nach 48 h / 7 Tagen Zahlen in `analytics/` eintragen, eine Erkenntnis ins nächste Video mitnehmen.
 
@@ -25,9 +25,9 @@ Danach: Upload, nach 48 h / 7 Tagen Zahlen in `analytics/` eintragen, eine Erken
 - **Cover:** 3 Kandidaten zuerst → du wählst (die **einzige** Frage im ganzen Ablauf) → Gewinner wird `03-bilder/00-cover.png`, **die anderen zwei werden sofort gelöscht**. Das Cover ist nie Bild 01.
 - **Danach komplett selbstständig:** alle Bilder ohne Rückfrage bis zum Ende erzeugen. 5er-Gruppen nur zum Prüfen, nie zum Pausieren. Fehlende oder fehlerhafte Bilder ohne Frage neu machen.
 - **Ein Ordner:** Cover und alle Bilder zusammen in `03-bilder/`: `00-cover.png`, `01.png … NN.png`, alles 16:9, keine Unterordner. Prüfung: `npm run flow:verify -- <projekt>`.
-- Das Upload-Thumbnail mit Überschrift (`05-export/thumbnail.png`) erzeugt `npm run produce:youtube` automatisch aus `00-cover.png` (oder vorher `npm run thumbnail:text -- <projekt>`).
+- Das Cover trägt die Überschrift schon im Bild (von Google Flow). Es ist gleichzeitig das YouTube-Thumbnail.
 - Stickman-Art: großer heller Kopf, kleine Augen, strichdünne Glieder; alle Figuren in einem Bild gleich gebaut.
-- **KI-Bilder enthalten keinen Text.** Jeder Text im Video kommt aus dem Code (`infoCards`), Policy `CODE_TEXT_CARDS_V1`.
+- **Nur Skript + Bilder, kein Remotion.** Normale Bilder sind textfrei. Kurze exakte deutsche Texte (Begriff, Zahl, Vergleich) schreibt Google Flow direkt ins Bild, Policy `FLOW_EXACT_TEXT_V2`.
 - Keine erfundenen Zahlen oder Studien.
 
 ---
@@ -65,7 +65,7 @@ Die Shotliste ist das Herz der Bildplanung. Pro Bild eine Zeile; aus ihr wird al
 ```
 
 - `speech`: Alle `speech`-Texte hintereinander ergeben **exakt** das Skript (wird geprüft).
-- `type`: `CHARACTER_SCENE`, `OBJECT_FOCUS`, `ENVIRONMENT_SCENE`, `SCHEMA_EXPLAINER`, `COMPARE_VISUAL`, `TEXT_ILLUSTRATION`. Die letzten drei brauchen eine `card` (Text kommt aus dem Code).
+- `type`: `CHARACTER_SCENE`, `OBJECT_FOCUS`, `ENVIRONMENT_SCENE`, `SCHEMA_EXPLAINER`, `COMPARE_VISUAL`, `TEXT_ILLUSTRATION`. Die letzten drei brauchen eine `card` (kurzer exakter Text, den Google Flow ins Bild schreibt).
 - `function`: `HOOK`, `STORY_ACTION`, `MECHANISM`, `RESEARCH`, `COMPARISON`, `EVIDENCE`, `TAKEAWAY`, `CALLBACK`, `TRANSITION`.
 - `camera`: `wide`, `medium`, `close`, `macro`, `topdown`, `diagram`, `mixed`.
 - `variantOf` (optional): Nummer eines früheren Bildes → Prompt wird als „Bearbeite BILD NN“ geschrieben.

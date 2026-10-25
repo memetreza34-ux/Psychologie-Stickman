@@ -41,10 +41,15 @@ const thumbnailPath = path.join(exportDir, 'thumbnail.png');
 
 if (!fs.existsSync(phase1Path)) throw new Error(`Required production file missing: ${phase1Path}`);
 const phase1 = JSON.parse(fs.readFileSync(phase1Path, 'utf8'));
-// V2: Cover liegt als 03-bilder/00-cover.png bei den Bildern; das Upload-Thumbnail mit Überschrift entsteht automatisch.
+// V2: Cover liegt als 03-bilder/00-cover.png bei den Bildern (Überschrift schon von Flow im Bild).
 if (phase1.workflowVersion === 'V2' && !fs.existsSync(thumbnailPath)) {
-  const made = spawnSync(process.execPath, ['scripts/thumbnail-text.mjs', projectRelative], {stdio: 'inherit'});
-  if (made.status !== 0) process.exit(made.status ?? 1);
+  const cover = path.join(projectDir, '03-bilder', '00-cover.png');
+  if (!fs.existsSync(cover)) throw new Error('V2: 03-bilder/00-cover.png fehlt – erst Cover in Google Flow wählen.');
+  fs.mkdirSync(exportDir, {recursive: true});
+  if (phase1.finalTextPolicy === 'CODE_TEXT_CARDS_V1') {
+    const made = spawnSync(process.execPath, ['scripts/thumbnail-text.mjs', projectRelative], {stdio: 'inherit'});
+    if (made.status !== 0) process.exit(made.status ?? 1);
+  } else fs.copyFileSync(cover, thumbnailPath);
 }
 if (phase1.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1' &&
    (!fs.existsSync(thumbnailPath) || !fs.statSync(thumbnailPath).size)) {

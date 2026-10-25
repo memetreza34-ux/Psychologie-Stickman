@@ -50,9 +50,9 @@ export const checkCreativeVisualPlan = (plan, location='phase1-scenes.json') => 
     }
     const allText = Array.isArray(s.flowText) ? s.flowText.join(' ') : clean(s.flowText);
     if (plan.workflowVersion === 'V2') {
-      // V2: Text und Schemata kommen aus dem Code (infoCards), nie aus dem KI-Bild.
-      if (allText) fail(`scene ${n}: WORKFLOW_V2 forbids flowText; use an infoCard for visible text.`);
-      if (explanatoryTypes.has(s.sceneType) && !s.infoCard) fail(`scene ${n}: ${s.sceneType} needs an infoCard in WORKFLOW_V2 (text/schema comes from code).`);
+      // V2 (nur Skript + Bilder): kurzer exakter deutscher Text kommt von Google Flow direkt ins Bild.
+      if (explanatoryTypes.has(s.sceneType) && !allText) fail(`scene ${n}: ${s.sceneType} needs exact German flowText in WORKFLOW_V2 (set a card in the shotlist).`);
+      if (words(allText).length > 14) fail(`scene ${n}: flowText too long for reliable image text (max 14 words).`);
     } else if (s.sceneType === 'TEXT_ILLUSTRATION' && !allText) fail(`scene ${n}: text-led illustration needs exact planned German flowText.`);
     types[s.sceneType] = (types[s.sceneType] ?? 0) + 1;
     unique.push(s.focalSubjectKey);
@@ -116,7 +116,7 @@ export const checkV2FlowPrompt = (plan, text, location='google-flow-prompt.txt')
     if(!prompt) failures.push(`${location}: BILD ${n} has no "Prompt:" line.`);
     else {
       if(count<25||count>130) failures.push(`${location}: BILD ${n} prompt has ${count} words (25–130).`);
-      if(!/no text/iu.test(prompt)) failures.push(`${location}: BILD ${n} prompt must end with an explicit no-text instruction.`);
+      if(!/no text|no other text/iu.test(prompt)) failures.push(`${location}: BILD ${n} prompt must end with an explicit no-text / no-other-text instruction.`);
     }
     if(/\b[A-Z][A-Z0-9_]{5,}_V\d+\b/u.test(body)) failures.push(`${location}: BILD ${n} contains a policy ID; the image model needs descriptions, not rule names.`);
   }

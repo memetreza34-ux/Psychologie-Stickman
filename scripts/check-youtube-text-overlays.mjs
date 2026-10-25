@@ -31,6 +31,12 @@ for (const file of files) {
   if (!scenes.length) continue;
 
   const finalTextPolicy = String(plan.finalTextPolicy ?? plan.finalTextOverlayPolicy ?? '').trim();
+  if (finalTextPolicy === 'FLOW_EXACT_TEXT_V2') {
+    // Nur Skript + Bilder: Text steht als flowText im Plan und im BILD-Prompt; Szene 01 bleibt textfrei (Cover ist separat).
+    const scene1Text = (Array.isArray(scenes[0]?.flowText) ? scenes[0].flowText.join('') : String(scenes[0]?.flowText ?? '')).trim();
+    if (scene1Text) failures.push(`${relative}: scene 01 is the first real shot and must not carry cover text.`);
+    continue;
+  }
   if (finalTextPolicy === 'CODE_TEXT_CARDS_V1') {
     // WORKFLOW_V2: KI-Bilder sind textfrei, sichtbarer Text kommt als infoCards aus Remotion.
     const withFlowText = scenes.filter((scene) => (Array.isArray(scene.flowText) ? scene.flowText.join('') : String(scene.flowText ?? '')).trim());

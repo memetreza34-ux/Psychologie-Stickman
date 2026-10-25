@@ -1,6 +1,6 @@
 # BILD-METHODE V2 — bessere Bilder mit weniger Aufwand
 
-Policy: `BILD_METHODE_V2` · Text-Policy für neue Videos: `finalTextPolicy: "CODE_TEXT_CARDS_V1"`
+Policy: `BILD_METHODE_V2` · Text-Policy für neue Videos: `finalTextPolicy: "FLOW_EXACT_TEXT_V2"` (nur Skript + Bilder, kein Remotion)
 
 Die Bildwelt `PSYCHOLOGY_STICKMAN_WORLD_V1` bleibt (großer heller Kopf, kleine Augen, dünne Strichglieder).
 Neu ist, **wie** Bilder geplant, gepromptet und mit Code kombiniert werden.
@@ -20,16 +20,18 @@ Neu ist, **wie** Bilder geplant, gepromptet und mit Code kombiniert werden.
 
 ---
 
-## 2. Das neue Prinzip: drei Ebenen
+## 2. Das Prinzip: nur Skript + Bilder
+
+**Seit 25.10.2026: kein Remotion.** Pro Video gibt es nur zwei Lieferungen: das Sprecher-Skript und die Bilder aus Google Flow. Schnitt, Bewegung und Musik machst du selbst.
 
 ```
-EBENE A  KI-BILD (Google Flow)   = Bühne + Figur + Gefühl. IMMER textfrei.
-EBENE B  CODE (Remotion)         = jeder deutsche Text, Schemata, Zahlen, Vergleiche (infoCards)
-EBENE C  CODE (Remotion)         = Bewegung (smooth), Überblendungen (fade), Musik mit Ducking
+NORMALE BILDER   = Bühne + Figur + Gefühl, komplett textfrei
+TEXT-BILDER      = dasselbe + kurzer, exakter deutscher Text von Google Flow
+                   (Fachbegriff, Zahl, Vergleich, Schritt-Kette – max. 14 Wörter)
+COVER            = mit der exakten Überschrift, direkt von Google Flow
 ```
 
-Warum: Bildmodelle sind stark bei Stimmung und Figuren, schwach bei Schrift und exakten Diagrammen.
-Code ist perfekt bei Schrift und Diagrammen. Jede Ebene macht, was sie gut kann.
+Text nur, wo er wirklich hilft. Jedes Wort wird im Prompt in Anführungszeichen vorgegeben; nach dem Erzeugen auf Rechtschreibung prüfen und bei Fehlern nur dieses Bild neu machen.
 
 ---
 
@@ -58,7 +60,7 @@ Code ist perfekt bei Schrift und Diagrammen. Jede Ebene macht, was sie gut kann.
 Regeln:
 - **Eine Handlung, ein Gefühl pro Bild.** Gefühl über Körper zeigen (Schultern, Hände, Blick), nicht nur über das Gesicht.
 - **Keine Policy-IDs, keine Großbuchstaben-Befehle, kein „HARD/FAIL“** im Prompt. Das Modell braucht Bildbeschreibung, keine Regeln.
-- **Platz für Karten einplanen**, wenn auf diesem Bild eine `infoCard` erscheinen soll („keep the upper third empty“).
+- **Platz für Text einplanen**, wenn das Bild eine `card` hat („keep the upper third calm“).
 - Prüfregeln (Dateinamen, Batches, QA) gehören in eine **kurze Arbeitsanweisung am Anfang**, nicht in jeden Bildprompt.
 
 ---
@@ -96,28 +98,28 @@ Metapher im Figuren-Sheet-Schritt festlegen und im ganzen Video gleich zeichnen 
 
 ---
 
-## 7. Text, Schemata, Zahlen → `infoCards` im Code
+## 7. Text, Schemata, Zahlen → exakter Text im Bild
 
-In `99-intern/scene-plan.json` (neue Felder, alle optional):
+In der Shotliste bekommt ein Bild eine `card`. `npm run v2:build` macht daraus eine genaue Text-Anweisung für Google Flow:
 
 ```json
-{
-  "finalTextPolicy": "CODE_TEXT_CARDS_V1",
-  "motionStyle": "smooth",
-  "transition": "fade",
-  "transitionMs": 400,
-  "music": {"src": "assets/music/ruhig-01.mp3", "volume": 0.18, "duckedVolume": 0.06},
-  "infoCards": [
-    {"scene": 5,  "type": "keyword", "text": "Türschwellen-Effekt", "sub": "Ortswechsel stört den Abruf"},
-    {"scene": 18, "type": "steps",   "steps": ["Absicht", "Tür", "neues Ereignis", "Lücke"]},
-    {"scene": 24, "type": "compare", "title": "Experiment", "left": "Gleicher Raum", "right": "Neuer Raum", "leftSub": "weniger Fehler", "rightSub": "mehr Fehler"},
-    {"scene": 33, "type": "stat",    "value": "4", "label": "Experimente – kein klarer Effekt", "delayMs": 600}
-  ]
-}
+{"type": "keyword", "text": "Dunning-Kruger-Effekt"}
+{"type": "stat",    "value": "62", "label": "Prozentrang: eigene Schätzung"}
+{"type": "compare", "left": "Echte Leistung", "leftSub": "Prozentrang 12", "right": "Eigene Schätzung", "rightSub": "Prozentrang 62"}
+{"type": "steps",   "steps": ["Fehler machen", "Fehler nicht sehen"]}
 ```
 
 | Typ | Wofür | Max. Wörter |
 |---|---|---|
+| `keyword` | Fachbegriff einführen | 4 (+ Untertitel bis 5 Wörter) |
+| `stat` | eine wichtige Zahl | 6 im Label |
+| `compare` | A gegen B, vorher/nachher | 8 |
+| `steps` | Mechanismus als Kette (2–4 Kästchen) | 12 |
+
+`position`: `top` (Standard), `center` oder `bottom`. Im Bildprompt die Fläche dafür frei halten („keep the upper third calm“).
+Richtwert: Text nur bei Begriff, Studie, Zahl, Wendepunkt und Tipps – bei 6–7 Minuten etwa 15–25 Text-Bilder.
+
+---|---|---|
 | `keyword` | Fachbegriff einführen | 4 (+ Untertitel) |
 | `stat` | eine Zahl zählt hoch | 6 im Label |
 | `compare` | Gruppe A vs. B, vorher/nachher | 8 |
