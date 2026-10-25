@@ -22,8 +22,10 @@ Danach: Upload, nach 48 h / 7 Tagen Zahlen in `analytics/` eintragen, eine Erken
 
 - Ein Thema = ein Video (`TOPIC_REGISTRY.json`).
 - Projektordner nur in ISO-Wochenordnern.
-- 3 Thumbnail-Kandidaten zuerst → du wählst → `05-export/thumbnail.png`. Das Thumbnail ist nicht Bild 01.
-- Danach alle Bilder ohne weitere Pause in 5er-Gruppen, Dateien `01.png … NN.png` flach in `03-bilder/`, alles 16:9.
+- **Cover:** 3 Kandidaten zuerst → du wählst (die **einzige** Frage im ganzen Ablauf) → Gewinner wird `03-bilder/00-cover.png`, **die anderen zwei werden sofort gelöscht**. Das Cover ist nie Bild 01.
+- **Danach komplett selbstständig:** alle Bilder ohne Rückfrage bis zum Ende erzeugen. 5er-Gruppen nur zum Prüfen, nie zum Pausieren. Fehlende oder fehlerhafte Bilder ohne Frage neu machen.
+- **Ein Ordner:** Cover und alle Bilder zusammen in `03-bilder/`: `00-cover.png`, `01.png … NN.png`, alles 16:9, keine Unterordner. Prüfung: `npm run flow:verify -- <projekt>`.
+- Das Upload-Thumbnail mit Überschrift (`05-export/thumbnail.png`) erzeugt `npm run produce:youtube` automatisch aus `00-cover.png` (oder vorher `npm run thumbnail:text -- <projekt>`).
 - Stickman-Art: großer heller Kopf, kleine Augen, strichdünne Glieder; alle Figuren in einem Bild gleich gebaut.
 - **KI-Bilder enthalten keinen Text.** Jeder Text im Video kommt aus dem Code (`infoCards`), Policy `CODE_TEXT_CARDS_V1`.
 - Keine erfundenen Zahlen oder Studien.

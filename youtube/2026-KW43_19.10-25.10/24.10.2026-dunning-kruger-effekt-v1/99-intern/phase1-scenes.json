@@ -18,7 +18,7 @@
   "visibleTextRenderer": "REMOTION",
   "renderGermanLabelsInRemotion": true,
   "thumbnailGenerationPolicy": "THUMBNAIL_SEPARATE_FROM_SCENE01_V1",
-  "thumbnailTargetPath": "05-export/thumbnail.png",
+  "thumbnailTargetPath": "03-bilder/00-cover.png",
   "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2",
   "coverHeadline": "Unsichtbar durch Zitronensaft?",
   "coverTopicTerm": "Dunning-Kruger-Effekt",
