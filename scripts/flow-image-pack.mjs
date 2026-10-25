@@ -25,26 +25,30 @@ function finalImageName(n,count){
   return String(n).padStart(Math.max(2,String(count).length),'0')+'.png';
 }
 
-function selectCover(imageDir,selected,separate=false) {
+// V2 (oneFolder): Cover bleibt als 00-cover.png zusammen mit allen Bildern in 03-bilder/.
+const COVER_IN_FOLDER='00-cover.png';
+
+function selectCover(imageDir,selected,separate=false,oneFolder=false) {
   if(![1,2,3].includes(selected)) throw new Error('Cover selection must be 1, 2, or 3.');
   const originals=[1,2,3].map(n=>path.join(imageDir,'cover-candidate-'+String(n).padStart(2,'0')+'.png'));
-  const target=separate ? path.join(path.dirname(imageDir),'05-export','thumbnail.png') : path.join(imageDir,'01.png');
+  const target=oneFolder ? path.join(imageDir,COVER_IN_FOLDER) : separate ? path.join(path.dirname(imageDir),'05-export','thumbnail.png') : path.join(imageDir,'01.png');
   if(fs.existsSync(target)) throw new Error('Selected thumbnail/01.png already exists; refusing to overwrite it.');
   originals.forEach(pngDimensions);
   const accepted=originals[selected-1];
   fs.mkdirSync(path.dirname(target),{recursive:true});
   fs.renameSync(accepted,target);
   originals.filter(f=>f!==accepted).forEach(f=>fs.unlinkSync(f));
-  console.log('FLOW COVER: PASS — selected '+selected+' -> '+(separate?'05-export/thumbnail.png':'03-bilder/01.png')+'; two rejected candidates deleted.');
+  console.log('FLOW COVER: PASS — selected '+selected+' -> '+(oneFolder?'03-bilder/'+COVER_IN_FOLDER:separate?'05-export/thumbnail.png':'03-bilder/01.png')+'; two rejected candidates deleted.');
 }
 
-function verify(imageDir,total,separate=false){
+function verify(imageDir,total,separate=false,oneFolder=false){
   if(!Number.isInteger(total)||total<1) throw new Error('Missing or invalid number of planned scenes.');
   const thumbnail=path.join(path.dirname(imageDir),'05-export','thumbnail.png');
-  if(separate)pngDimensions(thumbnail);
+  if(!oneFolder && separate)pngDimensions(thumbnail);
   if(!fs.existsSync(imageDir)) throw new Error('Missing 03-bilder/ folder.');
   const entries=fs.readdirSync(imageDir,{withFileTypes:true});
   const expected=new Set(Array.from({length:total},(_,i)=>finalImageName(i+1,total)));
+  if(oneFolder)expected.add(COVER_IN_FOLDER);
   const present=new Set();
   const failures=[];
   for(const entry of entries){
@@ -61,7 +65,7 @@ function verify(imageDir,total,separate=false){
     failures.forEach(x=>console.error('- '+x));
     return false;
   }
-  console.log('FLOW IMAGE FINAL QA: PASS — '+total+' numbered separate 16:9 PNG assets, no gaps, rejected cover candidates, extras or subfolders.');
+  console.log('FLOW IMAGE FINAL QA: PASS — '+(oneFolder?COVER_IN_FOLDER+' + ':'')+total+' numbered separate 16:9 PNG assets, no gaps, rejected cover candidates, extras or subfolders.');
   console.log('NOTE: visual subject, style/species and accidental text still require visual review.');
   return true;
 }
@@ -78,7 +82,7 @@ function projectFolder(arg){
   if(!fs.existsSync(planPath)) throw new Error('Missing project phase1-scenes.json');
   const plan=JSON.parse(fs.readFileSync(planPath,'utf8'));
   if(!Array.isArray(plan.scenes)||!plan.scenes.length) throw new Error('No planned scenes');
-  return {imageDir:path.join(dir,'03-bilder'),total:plan.scenes.length,separate:plan.thumbnailGenerationPolicy==='THUMBNAIL_SEPARATE_FROM_SCENE01_V1'};
+  return {imageDir:path.join(dir,'03-bilder'),total:plan.scenes.length,separate:plan.thumbnailGenerationPolicy==='THUMBNAIL_SEPARATE_FROM_SCENE01_V1',oneFolder:plan.workflowVersion==='V2'};
 }
 
 function mockImage(file,width=1600,height=900){
@@ -113,18 +117,29 @@ function selfTest(){
     fs.unlinkSync(path.join(root,'05-export','thumbnail.png'));
     try {verify(img,3,true);throw Error('Missing thumbnail accepted');}
     catch(e){if(e.message==='Missing thumbnail accepted')throw e;}
-    console.log('FLOW IMAGE PACK SELF-TEST: PASS — thumbnail and scene 01 independent');
+    // V2: Cover als 00-cover.png im selben Ordner, Verlierer gelöscht.
+    const img2=path.join(root,'v2','03-bilder');
+    fs.mkdirSync(img2,{recursive:true});
+    for(let i=1;i<=3;i++)mockImage(path.join(img2,'cover-candidate-'+String(i).padStart(2,'0')+'.png'));
+    selectCover(img2,3,true,true);
+    if(!fs.existsSync(path.join(img2,COVER_IN_FOLDER)))throw Error('V2 cover not in image folder');
+    if(fs.readdirSync(img2).some(v=>v.startsWith('cover-candidate')))throw Error('V2 losing covers were not deleted');
+    mockImage(path.join(img2,'01.png'));mockImage(path.join(img2,'02.png'));
+    if(!verify(img2,2,true,true))throw Error('V2 complete folder rejected');
+    fs.unlinkSync(path.join(img2,COVER_IN_FOLDER));
+    if(verify(img2,2,true,true))throw Error('V2 missing cover accepted');
+    console.log('FLOW IMAGE PACK SELF-TEST: PASS — thumbnail and scene 01 independent; V2 cover + images in one folder');
   } finally {fs.rmSync(root,{recursive:true,force:true});}
 }
 
 const command=process.argv[2];
 if(command==='self-test'){selfTest();}
 else if(command==='cover'){
-  const {imageDir,separate}=projectFolder(process.argv[3]);
-  selectCover(imageDir,Number(process.argv[4]),separate);
+  const {imageDir,separate,oneFolder}=projectFolder(process.argv[3]);
+  selectCover(imageDir,Number(process.argv[4]),separate,oneFolder);
 }else if(command==='verify'){
-  const {imageDir,total,separate}=projectFolder(process.argv[3]);
-  if(!verify(imageDir,total,separate))process.exitCode=1;
+  const {imageDir,total,separate,oneFolder}=projectFolder(process.argv[3]);
+  if(!verify(imageDir,total,separate,oneFolder))process.exitCode=1;
 }else{
   console.error('Usage: node scripts/flow-image-pack.mjs cover <youtube/project> <1|2|3> | verify <youtube/project> | self-test');
   process.exitCode=1;

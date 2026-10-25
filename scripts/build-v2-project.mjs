@@ -106,7 +106,8 @@ const phase1 = {
   visibleTextRenderer: 'REMOTION',
   renderGermanLabelsInRemotion: true,
   thumbnailGenerationPolicy: 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1',
-  thumbnailTargetPath: '05-export/thumbnail.png',
+  // V2: Cover und alle Bilder liegen zusammen in 03-bilder/ (00-cover.png + 01.png … NN.png).
+  thumbnailTargetPath: '03-bilder/00-cover.png',
   exportPackagePolicy: 'YOUTUBE_EXPORT_PACKAGE_V2',
   coverHeadline: thumb.headline,
   coverTopicTerm: thumb.topicTerm,
@@ -141,13 +142,16 @@ const candidates = (thumb.candidates ?? []).map((c, i) => `Candidate ${i + 1}: $
 const prompt = `GOOGLE FLOW — ${shotlist.title}
 Kopfarium · 16:9 · ${shots.length} video images + 3 thumbnail candidates
 
-HOW TO WORK (read once)
+HOW TO WORK — follow exactly
 1. Attach the channel style reference image and the character sheet(s) below to every image.
-2. THUMBNAIL CANDIDATES: create exactly 3 separate 16:9 thumbnail images. Then STOP and wait for the user to choose one. Save the winner as 05-export/thumbnail.png and delete the rejected candidates. The thumbnail is never BILD 01.
-3. After that, without asking again, create the video images in batches of 5 (01–05, 06–10, …). One BILD = one separate 16:9 PNG. No storyboard, no contact sheet, no collage, no comic panels.
-4. Check each batch: same character design, same style, no text or letters in the image, the emotion is readable on a phone. Regenerate only failed or missing numbers.
-5. Name files NN.png (01.png, 02.png, …) and save them flat in 03-bilder/. FINAL check: all ${shots.length} files present, no extras.
-6. "Edit BILD NN" means: open that image and change only what is described, so the scene stays continuous.
+2. COVER: create exactly 3 separate 16:9 cover images (see THUMBNAIL CANDIDATES below) as cover-candidate-01.png, cover-candidate-02.png, cover-candidate-03.png. Then STOP and ask ONE question: "Welches Cover: 1, 2 oder 3?" This is the ONLY question in the whole job.
+3. As soon as the user answers: rename the chosen cover to 00-cover.png in 03-bilder/ and immediately DELETE the two other cover candidates. Keep no copies of them anywhere.
+4. Then work fully on your own until everything is finished: create ALL ${shots.length} video images without asking anything. Work in batches of 5 (01–05, 06–10, …) only to check your work — never pause after a batch, never ask "Shall I continue?", never wait for approval. If you are interrupted or hit a limit, simply continue with the next missing number.
+5. One BILD = one separate 16:9 PNG. No storyboard, no contact sheet, no collage, no comic panels.
+6. Check each batch: same character design, same style, no text or letters in the image, emotion readable on a phone. Regenerate only failed or missing numbers, without asking.
+7. ONE FOLDER: name every image NN.png (01.png, 02.png, …) and save it in 03-bilder/ — the same folder as 00-cover.png. No subfolders, no other folders.
+8. FINAL check, then report once: 03-bilder/ contains exactly 00-cover.png and 01.png–${pad(shots.length)}.png, nothing missing, nothing extra. The cover is never BILD 01.
+9. "Edit BILD NN" means: open that image and change only what is described, so the scene stays continuous.
 
 STYLE (applies to every image)
 Hand-drawn 2D illustration: dark slightly organic outlines, soft cel shading, subtle paper texture, natural clear colors, real depth. People are stickmen with a large round white head, tiny black oval eyes, small simple eyebrows and mouth, a narrow clothed body and very thin dark stick-like arms and legs. All people in one image share exactly this build. Never add text, letters, numbers, signs or captions — all text is added later in editing.
@@ -155,7 +159,7 @@ Hand-drawn 2D illustration: dark slightly organic outlines, soft cel shading, su
 CHARACTERS (create a character sheet first with vorlagen/figuren/02-figuren-sheet.txt)
 ${characterLines}
 ${shotlist.metaphor ? `\nRECURRING METAPHOR\n${shotlist.metaphor}\n` : ''}
-THUMBNAIL CANDIDATES (headline text is added later in editing; leave clear space for it)
+THUMBNAIL CANDIDATES (= the 3 cover candidates; headline text is added later in editing, leave clear space for it)
 ${candidates}
 
 ============================================================

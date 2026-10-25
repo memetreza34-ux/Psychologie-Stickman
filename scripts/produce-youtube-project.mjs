@@ -41,6 +41,11 @@ const thumbnailPath = path.join(exportDir, 'thumbnail.png');
 
 if (!fs.existsSync(phase1Path)) throw new Error(`Required production file missing: ${phase1Path}`);
 const phase1 = JSON.parse(fs.readFileSync(phase1Path, 'utf8'));
+// V2: Cover liegt als 03-bilder/00-cover.png bei den Bildern; das Upload-Thumbnail mit Überschrift entsteht automatisch.
+if (phase1.workflowVersion === 'V2' && !fs.existsSync(thumbnailPath)) {
+  const made = spawnSync(process.execPath, ['scripts/thumbnail-text.mjs', projectRelative], {stdio: 'inherit'});
+  if (made.status !== 0) process.exit(made.status ?? 1);
+}
 if (phase1.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1' &&
    (!fs.existsSync(thumbnailPath) || !fs.statSync(thumbnailPath).size)) {
   throw Error('Separate 05-export/thumbnail.png must be selected before rendering; never use 03-bilder/01.png as cover.');

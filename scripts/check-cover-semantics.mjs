@@ -57,7 +57,8 @@ for (const file of plans) {
   if (plan.thumbnailGenerationPolicy === 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1') {
     if (scene1.textPolicy === 'FLOW_EXACT_COVER_TEXT' || String(scene1.flowText ?? '').trim()) failures.push(`${rel}: independent Scene 01 must NOT be the thumbnail or contain its text.`);
     if ((plan.flowTextMoments ?? []).some((m) => Number(m.scene) === 1 && m.kind === 'cover')) failures.push(`${rel}: thumbnail text moment must not appear in video scenes.`);
-    if (plan.thumbnailTargetPath !== '05-export/thumbnail.png') failures.push(`${rel}: expected separate thumbnail target.`);
+    const expectedTarget = plan.workflowVersion === 'V2' ? '03-bilder/00-cover.png' : '05-export/thumbnail.png';
+    if (plan.thumbnailTargetPath !== expectedTarget) failures.push(`${rel}: expected thumbnail target ${expectedTarget}.`);
   }
 
   const promptPath = path.join(path.dirname(path.dirname(file)), '02-google-flow', 'google-flow-prompt.txt');

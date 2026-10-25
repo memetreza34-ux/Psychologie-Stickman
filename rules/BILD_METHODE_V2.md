@@ -151,7 +151,7 @@ Der goldene Faden ist die durchgehende Metapher – er kehrt beim Tipp am Ende z
 ## 9. Arbeitsablauf in Google Flow (kurz)
 
 1. Stil-Referenz + Figuren-Sheet laden (einmal pro Video).
-2. 3 Thumbnail-Kandidaten → du wählst (einzige Pause, wie bisher).
-3. Grundszenen erzeugen, dann Varianten über „Bearbeiten“.
-4. Jedes Bild kurz ansehen: Figur gleich? Text im Bild? Gefühl erkennbar? Sonst nur dieses Bild neu.
-5. Dateien `01.png … NN.png` nach `03-bilder/` (wie bisher).
+2. 3 Cover-Kandidaten → du wählst (einzige Frage). Gewinner wird `03-bilder/00-cover.png`, die anderen zwei werden sofort gelöscht.
+3. Danach ohne Rückfrage durcharbeiten bis alle Bilder fertig sind: Grundszenen, dann Varianten über „Bearbeiten“. Nie nach einer 5er-Gruppe pausieren.
+4. Jedes Bild kurz prüfen: Figur gleich? Text im Bild? Gefühl erkennbar? Sonst nur dieses Bild neu – ohne zu fragen.
+5. Alles in einen Ordner: `00-cover.png` und `01.png … NN.png` zusammen in `03-bilder/`.
