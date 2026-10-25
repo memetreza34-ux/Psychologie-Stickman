@@ -48,7 +48,7 @@ shots.forEach((shot, i) => {
   if (!cameraScales.has(shot.camera)) errors.push(`${where}: unknown camera ${shot.camera}.`);
   if (shot.effect && !effects.has(shot.effect)) errors.push(`${where}: unknown effect ${shot.effect}.`);
   if (shot.variantOf && !(Number.isInteger(shot.variantOf) && shot.variantOf >= 1 && shot.variantOf < n)) errors.push(`${where}: variantOf must reference an earlier shot.`);
-  if (!/no text/iu.test(shot.prompt ?? '')) errors.push(`${where}: prompt must contain "No text".`);
+  if (!/no text/iu.test(shot.prompt ?? '')) errors.push(`${where}: prompt must end with "No text, no letters, no numbers." (Text kommt über card).`);
   if (shot.card) {
     if (!PHASE3_INFO_CARD_TYPES_LIST.includes(shot.card.type)) errors.push(`${where}: card.type must be ${PHASE3_INFO_CARD_TYPES_LIST.join('/')}.`);
     cards.push({scene: n, ...shot.card});
@@ -58,6 +58,31 @@ if (errors.length) {
   errors.forEach((e) => console.error(`V2 BUILD: FAIL ${e}`));
   process.exit(1);
 }
+
+// Kein Remotion: Text aus einer `card` schreibt Google Flow exakt und kurz direkt ins Bild.
+const SUB_MAX_WORDS = 5;
+const textArea = {top: 'in the upper third of the image', center: 'in the center of the image', bottom: 'in the lower third of the image'};
+const flowTextFor = (card) => {
+  if (card.type === 'keyword') return [card.text, ...(card.sub && words(card.sub).length <= SUB_MAX_WORDS ? [card.sub] : [])];
+  if (card.type === 'stat') return [card.value, card.label];
+  if (card.type === 'compare') return [[card.left, card.leftSub].filter(Boolean).join(' – '), [card.right, card.rightSub].filter(Boolean).join(' – ')];
+  return card.steps;
+};
+const textInstruction = (card) => {
+  const lines = flowTextFor(card);
+  const quoted = lines.map((line) => `"${line}"`);
+  const area = textArea[card.position ?? 'top']; // Prompts halten meist das obere Drittel frei.
+  let layout;
+  if (card.type === 'compare') layout = `two clearly separated labels, left side ${quoted[0]}, right side ${quoted[1]}`;
+  else if (card.type === 'steps') layout = `a simple left-to-right chain of ${lines.length} hand-drawn boxes connected by arrows, labeled ${quoted.join(', ')}`;
+  else if (card.type === 'stat') layout = `the large number ${quoted[0]} with the smaller line ${quoted[1]} below it`;
+  else layout = lines.length > 1 ? `the large words ${quoted[0]} with the smaller line ${quoted[1]} below it` : `the large words ${quoted[0]}`;
+  return `Add exact German text ${area}, as clean bold hand-lettered writing that fits the illustration: ${layout}. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.`;
+};
+const promptFor = (shot) => {
+  const base = shot.prompt.trim().replace(/\s*No text, no letters, no numbers\.?\s*$/iu, '');
+  return shot.card ? `${base} ${textInstruction(shot.card)}` : `${base} No text, no letters, no numbers.`;
+};
 
 const thumb = shotlist.thumbnail ?? {};
 const scenes = shots.map((shot, i) => ({
@@ -81,9 +106,9 @@ const scenes = shots.map((shot, i) => ({
   ...(shot.variantOf ? {variantOf: shot.variantOf} : {}),
   // Längere Sprechabschnitte (über 20 Wörter) nur mit bewusster Freigabe, z. B. für eine Vergleichskarte.
   ...(shot.extendedBeatReason ? {allowExtendedBeat: true, extendedBeatReason: shot.extendedBeatReason} : {}),
-  ...(shot.card ? {infoCard: shot.card} : {}),
+  ...(shot.card ? {flowText: flowTextFor(shot.card)} : {}),
   panelCount: 1,
-  textPolicy: 'NONE',
+  textPolicy: shot.card ? 'FLOW_EXACT_GERMAN_TEXT' : 'NONE',
 }));
 
 const phase1 = {
@@ -102,9 +127,10 @@ const phase1 = {
   visualWorldStatus: 'ACTIVE',
   visualWorld: 'PSYCHOLOGY_STICKMAN_WORLD_V1',
   creativeVisualPolicy: CREATIVE_POLICY,
-  finalTextPolicy: 'CODE_TEXT_CARDS_V1',
-  visibleTextRenderer: 'REMOTION',
-  renderGermanLabelsInRemotion: true,
+  // Nur Skript + Bilder: kein Remotion-Text, kurze exakte deutsche Texte rendert Google Flow.
+  finalTextPolicy: 'FLOW_EXACT_TEXT_V2',
+  visibleTextRenderer: 'GOOGLE_FLOW',
+  renderGermanLabelsInRemotion: false,
   thumbnailGenerationPolicy: 'THUMBNAIL_SEPARATE_FROM_SCENE01_V1',
   // V2: Cover und alle Bilder liegen zusammen in 03-bilder/ (00-cover.png + 01.png … NN.png).
   thumbnailTargetPath: '03-bilder/00-cover.png',
@@ -115,12 +141,7 @@ const phase1 = {
   coverMechanismVisible: true,
   characters: shotlist.characters ?? [],
   metaphor: shotlist.metaphor ?? '',
-  motionStyle: shotlist.motion?.motionStyle ?? 'smooth',
-  transition: shotlist.motion?.transition ?? 'fade',
-  transitionMs: shotlist.motion?.transitionMs ?? 400,
-  ...(shotlist.music ? {music: shotlist.music} : {}),
   sceneEffects: shots.map((shot, i) => shot.effect ?? defaultEffects[i % defaultEffects.length]),
-  infoCards: cards,
   scenes,
 };
 
@@ -128,8 +149,8 @@ const characterLines = (shotlist.characters ?? []).map((c) => `- ${c.name}: ${c.
 const blocks = shots.map((shot, i) => {
   const n = pad(i + 1);
   const prompt = shot.variantOf
-    ? `Edit BILD ${pad(shot.variantOf)} (keep the same character, place, light and style): ${shot.prompt.trim()}`
-    : shot.prompt.trim();
+    ? `Edit BILD ${pad(shot.variantOf)} (keep the same character, place, light and style): ${promptFor(shot)}`
+    : promptFor(shot);
   return [
     `BILD ${n}`,
     `Sprechtext (nur Timing, NICHT ins Bild): ${squash(shot.speech)}`,
@@ -148,18 +169,19 @@ HOW TO WORK — follow exactly
 3. As soon as the user answers: rename the chosen cover to 00-cover.png in 03-bilder/ and immediately DELETE the two other cover candidates. Keep no copies of them anywhere.
 4. Then work fully on your own until everything is finished: create ALL ${shots.length} video images without asking anything. Work in batches of 5 (01–05, 06–10, …) only to check your work — never pause after a batch, never ask "Shall I continue?", never wait for approval. If you are interrupted or hit a limit, simply continue with the next missing number.
 5. One BILD = one separate 16:9 PNG. No storyboard, no contact sheet, no collage, no comic panels.
-6. Check each batch: same character design, same style, no text or letters in the image, emotion readable on a phone. Regenerate only failed or missing numbers, without asking.
+6. Check each batch: same character design, same style, emotion readable on a phone, text ONLY where a BILD gives exact German text — spelled exactly, otherwise no letters at all. Regenerate only failed or missing numbers, without asking.
 7. ONE FOLDER: name every image NN.png (01.png, 02.png, …) and save it in 03-bilder/ — the same folder as 00-cover.png. No subfolders, no other folders.
 8. FINAL check, then report once: 03-bilder/ contains exactly 00-cover.png and 01.png–${pad(shots.length)}.png, nothing missing, nothing extra. The cover is never BILD 01.
 9. "Edit BILD NN" means: open that image and change only what is described, so the scene stays continuous.
 
 STYLE (applies to every image)
-Hand-drawn 2D illustration: dark slightly organic outlines, soft cel shading, subtle paper texture, natural clear colors, real depth. People are stickmen with a large round white head, tiny black oval eyes, small simple eyebrows and mouth, a narrow clothed body and very thin dark stick-like arms and legs. All people in one image share exactly this build. Never add text, letters, numbers, signs or captions — all text is added later in editing.
+Hand-drawn 2D illustration: dark slightly organic outlines, soft cel shading, subtle paper texture, natural clear colors, real depth. People are stickmen with a large round white head, tiny black oval eyes, small simple eyebrows and mouth, a narrow clothed body and very thin dark stick-like arms and legs. All people in one image share exactly this build. Never add text, letters, numbers, signs or captions unless a BILD gives exact German text — then write exactly that text and nothing else.
 
 CHARACTERS (create a character sheet first with vorlagen/figuren/02-figuren-sheet.txt)
 ${characterLines}
 ${shotlist.metaphor ? `\nRECURRING METAPHOR\n${shotlist.metaphor}\n` : ''}
-THUMBNAIL CANDIDATES (= the 3 cover candidates; headline text is added later in editing, leave clear space for it)
+THUMBNAIL CANDIDATES (= the 3 cover candidates)
+Every cover shows the exact German headline "${thumb.headline}" as very large, bold, high-contrast hand-lettered text, perfectly spelled, readable on a phone. No other text.
 ${candidates}
 
 ============================================================
@@ -172,4 +194,4 @@ ${blocks.join('\n\n')}
 fs.writeFileSync(path.join(projectDir, '99-intern', 'phase1-scenes.json'), `${JSON.stringify(phase1, null, 2)}\n`);
 fs.writeFileSync(path.join(projectDir, '02-google-flow', 'google-flow-prompt.txt'), prompt);
 const variants = shots.filter((s) => s.variantOf).length;
-console.log(`V2 BUILD: PASS — ${shots.length} Bilder (${shots.length - variants} Grundszenen, ${variants} Varianten), ${cards.length} Infokarten, ${words(script).length} Wörter.`);
+console.log(`V2 BUILD: PASS — ${shots.length} Bilder (${shots.length - variants} Grundszenen, ${variants} Varianten), ${cards.length} Bilder mit exaktem Flow-Text, ${words(script).length} Wörter.`);

@@ -7,13 +7,13 @@ HOW TO WORK — follow exactly
 3. As soon as the user answers: rename the chosen cover to 00-cover.png in 03-bilder/ and immediately DELETE the two other cover candidates. Keep no copies of them anywhere.
 4. Then work fully on your own until everything is finished: create ALL 80 video images without asking anything. Work in batches of 5 (01–05, 06–10, …) only to check your work — never pause after a batch, never ask "Shall I continue?", never wait for approval. If you are interrupted or hit a limit, simply continue with the next missing number.
 5. One BILD = one separate 16:9 PNG. No storyboard, no contact sheet, no collage, no comic panels.
-6. Check each batch: same character design, same style, no text or letters in the image, emotion readable on a phone. Regenerate only failed or missing numbers, without asking.
+6. Check each batch: same character design, same style, emotion readable on a phone, text ONLY where a BILD gives exact German text — spelled exactly, otherwise no letters at all. Regenerate only failed or missing numbers, without asking.
 7. ONE FOLDER: name every image NN.png (01.png, 02.png, …) and save it in 03-bilder/ — the same folder as 00-cover.png. No subfolders, no other folders.
 8. FINAL check, then report once: 03-bilder/ contains exactly 00-cover.png and 01.png–80.png, nothing missing, nothing extra. The cover is never BILD 01.
 9. "Edit BILD NN" means: open that image and change only what is described, so the scene stays continuous.
 
 STYLE (applies to every image)
-Hand-drawn 2D illustration: dark slightly organic outlines, soft cel shading, subtle paper texture, natural clear colors, real depth. People are stickmen with a large round white head, tiny black oval eyes, small simple eyebrows and mouth, a narrow clothed body and very thin dark stick-like arms and legs. All people in one image share exactly this build. Never add text, letters, numbers, signs or captions — all text is added later in editing.
+Hand-drawn 2D illustration: dark slightly organic outlines, soft cel shading, subtle paper texture, natural clear colors, real depth. People are stickmen with a large round white head, tiny black oval eyes, small simple eyebrows and mouth, a narrow clothed body and very thin dark stick-like arms and legs. All people in one image share exactly this build. Never add text, letters, numbers, signs or captions unless a BILD gives exact German text — then write exactly that text and nothing else.
 
 CHARACTERS (create a character sheet first with vorlagen/figuren/02-figuren-sheet.txt)
 - Wheeler: adult stickman, large white round head, tiny black oval eyes, short dark stubble beard, grey hooded sweatshirt, dark jeans, very thin dark stick limbs
@@ -24,7 +24,8 @@ CHARACTERS (create a character sheet first with vorlagen/figuren/02-figuren-shee
 RECURRING METAPHOR
 The doubt lamp: a small round lamp that floats above a person's head on a thin cable. It glows warm yellow when the person notices uncertainty, and stays dark when they feel sure without reason. Create a metaphor sheet first (vorlagen/figuren/03-metapher-sheet.txt) with the lamp dark, flickering, glowing and unplugged.
 
-THUMBNAIL CANDIDATES (= the 3 cover candidates; headline text is added later in editing, leave clear space for it)
+THUMBNAIL CANDIDATES (= the 3 cover candidates)
+Every cover shows the exact German headline "Unsichtbar durch Zitronensaft?" as very large, bold, high-contrast hand-lettered text, perfectly spelled, readable on a phone. No other text.
 Candidate 1: Inside a 1990s bank lobby: Wheeler from the character sheet stands with half a lemon in each hand, juice on his face, and smiles proudly straight into a large security camera in the upper right, whose red light is on. Strong warm-cool contrast. Leave the left third calm for a headline.
 Candidate 2: Close-up of a grainy security monitor that clearly shows Wheeler's grinning face; in the foreground, slightly out of focus, a halved lemon and a police officer's hand pointing at the screen. Leave the top third calm for a headline.
 Candidate 3: Low-angle shot: Wheeler leans towards the viewer with both thumbs up, face glistening with lemon juice, a big confident grin; behind him a wall of security cameras all pointing at him. Leave the right third calm for a headline.
@@ -45,7 +46,7 @@ Save as 02.png
 
 BILD 03
 Sprechtext (nur Timing, NICHT ins Bild): Sein Name ist McArthur Wheeler.
-Prompt: Same hand-drawn style as the reference image. Medium shot at the bank counter: Wheeler from the character sheet slides an empty cloth bag across the counter towards a frightened teller stickman who raises both thin hands. Wheeler looks relaxed and almost friendly. Warm interior light, wooden counter. Keep the upper left area calm. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Medium shot at the bank counter: Wheeler from the character sheet slides an empty cloth bag across the counter towards a frightened teller stickman who raises both thin hands. Wheeler looks relaxed and almost friendly. Warm interior light, wooden counter. Keep the upper left area calm. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "McArthur Wheeler" with the smaller line "Pittsburgh, 1995" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 03.png
 
 BILD 04
@@ -105,7 +106,7 @@ Save as 14.png
 
 BILD 15
 Sprechtext (nur Timing, NICHT ins Bild): Der Effekt heißt Dunning-Kruger-Effekt.
-Prompt: Same hand-drawn style as the reference image. The cozy 1990s university office from before, slightly out of focus, warm desk lamp light, bookshelves. The two researcher stickmen sit small in the lower right corner. The upper half of the image is calm and empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. The cozy 1990s university office from before, slightly out of focus, warm desk lamp light, bookshelves. The two researcher stickmen sit small in the lower right corner. The upper half of the image is calm and empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Dunning-Kruger-Effekt". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 15.png
 
 BILD 16
@@ -130,7 +131,7 @@ Save as 19.png
 
 BILD 20
 Sprechtext (nur Timing, NICHT ins Bild): Man ist doppelt im Nachteil. Man macht den Fehler. Und man sieht ihn nicht.
-Prompt: Same hand-drawn style as the reference image. Side view of the same café chess table, softly out of focus: the beginner stickman leans back relaxed, his doubt lamp dark above his head, while the opponent smiles. The upper half of the image is calm and empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Side view of the same café chess table, softly out of focus: the beginner stickman leans back relaxed, his doubt lamp dark above his head, while the opponent smiles. The upper half of the image is calm and empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: a simple left-to-right chain of 2 hand-drawn boxes connected by arrows, labeled "Fehler machen", "Fehler nicht sehen". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 20.png
 
 BILD 21
@@ -150,12 +151,12 @@ Save as 23.png
 
 BILD 24
 Sprechtext (nur Timing, NICHT ins Bild): Nimm jetzt die Gruppe mit den schwächsten Ergebnissen. Das unterste Viertel.
-Prompt: Same hand-drawn style as the reference image. A simple wide illustrated staircase with four broad steps on a soft paper background. Small student stickmen stand on every step. The group on the lowest step is lit by a warm spotlight, all other steps are dimmed. The top third of the image is empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. A simple wide illustrated staircase with four broad steps on a soft paper background. Small student stickmen stand on every step. The group on the lowest step is lit by a warm spotlight, all other steps are dimmed. The top third of the image is empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Unterstes Viertel" with the smaller line "die schwächsten 25 Prozent" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 24.png
 
 BILD 25
 Sprechtext (nur Timing, NICHT ins Bild): Im Schnitt lagen sie auf Prozentrang zwölf.
-Prompt: Edit BILD 24 (keep the same character, place, light and style): Same hand-drawn style as the reference image. Change the camera to a close-up of the lit group on the lowest step: the student stickmen hold their test sheets and smile, relaxed and content. Keep the right half of the image calm. No text, no letters, no numbers.
+Prompt: Edit BILD 24 (keep the same character, place, light and style): Same hand-drawn style as the reference image. Change the camera to a close-up of the lit group on the lowest step: the student stickmen hold their test sheets and smile, relaxed and content. Keep the right half of the image calm. Add exact German text in the center of the image, as clean bold hand-lettered writing that fits the illustration: the large number "12" with the smaller line "Prozentrang: echte Leistung" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 25.png
 
 BILD 26
@@ -165,12 +166,12 @@ Save as 26.png
 
 BILD 27
 Sprechtext (nur Timing, NICHT ins Bild): Und ihre eigene Schätzung? Prozentrang zweiundsechzig.
-Prompt: Same hand-drawn style as the reference image. The student stickmen on the lowest step of the staircase, each with a round thought bubble above the head. Inside every bubble they see themselves standing proudly on the third step. Warm spotlight on them. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. The student stickmen on the lowest step of the staircase, each with a round thought bubble above the head. Inside every bubble they see themselves standing proudly on the third step. Warm spotlight on them. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large number "62" with the smaller line "Prozentrang: eigene Schätzung" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 27.png
 
 BILD 28
 Sprechtext (nur Timing, NICHT ins Bild): Sie hielten sich also für überdurchschnittlich und lagen damit um ganze fünfzig Prozentpunkte daneben.
-Prompt: Same hand-drawn style as the reference image. The same four-step staircase. One student stickman stands on the lowest step, but his long shadow on the wall behind him reaches all the way up to the third step. Dramatic side light. The top third of the image is empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. The same four-step staircase. One student stickman stands on the lowest step, but his long shadow on the wall behind him reaches all the way up to the third step. Dramatic side light. The top third of the image is empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: two clearly separated labels, left side "Echte Leistung – Prozentrang 12", right side "Eigene Schätzung – Prozentrang 62". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 28.png
 
 BILD 29
@@ -185,7 +186,7 @@ Save as 30.png
 
 BILD 31
 Sprechtext (nur Timing, NICHT ins Bild): Sondern: Ohne Können fehlt auch der Maßstab.
-Prompt: Edit BILD 17 (keep the same character, place, light and style): Same hand-drawn style as the reference image. Back in the workshop: close-up of the proud stickman with empty hands in front of the crooked shelf. The wooden ruler lies on the floor behind him, out of his view. Keep the upper area calm. No text, no letters, no numbers.
+Prompt: Edit BILD 17 (keep the same character, place, light and style): Same hand-drawn style as the reference image. Back in the workshop: close-up of the proud stickman with empty hands in front of the crooked shelf. The wooden ruler lies on the floor behind him, out of his view. Keep the upper area calm. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Ohne Können kein Maßstab". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 31.png
 
 BILD 32
@@ -215,7 +216,7 @@ Save as 36.png
 
 BILD 37
 Sprechtext (nur Timing, NICHT ins Bild): Warum? Jonas kennt drei Regeln. Die hundert Ausnahmen kennt er nicht.
-Prompt: Same hand-drawn style as the reference image. Two halves in one image. Left: Jonas holds a thin booklet with three colored sticky notes and smiles. Right: the grey-haired trader stands in front of a huge wall of filing drawers reaching to the ceiling. The top third of the image is empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Two halves in one image. Left: Jonas holds a thin booklet with three colored sticky notes and smiles. Right: the grey-haired trader stands in front of a huge wall of filing drawers reaching to the ceiling. The top third of the image is empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: two clearly separated labels, left side "Jonas – 3 Regeln", right side "Profi – 100 Ausnahmen". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 37.png
 
 BILD 38
@@ -240,7 +241,7 @@ Save as 41.png
 
 BILD 42
 Sprechtext (nur Timing, NICHT ins Bild): Wenig Wissen fühlt sich oft vollständig an. Erst mehr Wissen zeigt dir, wie viel fehlt.
-Prompt: Same hand-drawn style as the reference image. Two halves in one image, both in a dark endless library. Left: a stickman holds a tiny candle that lights only a small circle with one bookshelf, he looks satisfied. Right: a stickman holds a bright lantern that reveals endless shelves stretching into darkness, he looks amazed and humble. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Two halves in one image, both in a dark endless library. Left: a stickman holds a tiny candle that lights only a small circle with one bookshelf, he looks satisfied. Right: a stickman holds a bright lantern that reveals endless shelves stretching into darkness, he looks amazed and humble. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: two clearly separated labels, left side "Wenig Wissen – fühlt sich vollständig an", right side "Mehr Wissen – zeigt, was fehlt". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 42.png
 
 BILD 43
@@ -250,7 +251,7 @@ Save as 43.png
 
 BILD 44
 Sprechtext (nur Timing, NICHT ins Bild): Eine Kurve. Am Anfang schießt das Selbstvertrauen auf einen Gipfel, den Berg der Dummheit.
-Prompt: Same hand-drawn style as the reference image. A whimsical landscape shaped exactly like the famous curve: a tiny stickman stands on the top of a very sharp, narrow mountain peak, waving a blank flag in triumph. Clouds below him. Keep the top third calm. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. A whimsical landscape shaped exactly like the famous curve: a tiny stickman stands on the top of a very sharp, narrow mountain peak, waving a blank flag in triumph. Clouds below him. Keep the top third calm. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Berg der Dummheit?". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 44.png
 
 BILD 45
@@ -260,7 +261,7 @@ Save as 45.png
 
 BILD 46
 Sprechtext (nur Timing, NICHT ins Bild): Das Problem: Diese Kurve steht nicht in der Studie.
-Prompt: Same hand-drawn style as the reference image. Top-down view of the original study pages spread on a wooden desk: blank lines of body text and simple charts made only of dots and straight lines. A magnifying glass rests on them. There is no mountain shape anywhere. The top third is calm. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Top-down view of the original study pages spread on a wooden desk: blank lines of body text and simple charts made only of dots and straight lines. A magnifying glass rests on them. There is no mountain shape anywhere. The top third is calm. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Nicht in der Studie". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 46.png
 
 BILD 47
@@ -270,7 +271,7 @@ Save as 47.png
 
 BILD 48
 Sprechtext (nur Timing, NICHT ins Bild): Wie gut warst du? Und wie gut glaubst du, warst du?
-Prompt: Same hand-drawn style as the reference image. Two objects side by side on a desk: on the left a corrected test sheet with simple tick and cross marks, on the right a small sheet with only a horizontal line and a slider mark far to the right. Clean light, the top third empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Two objects side by side on a desk: on the left a corrected test sheet with simple tick and cross marks, on the right a small sheet with only a horizontal line and a slider mark far to the right. Clean light, the top third empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: two clearly separated labels, left side "Leistung – Wie gut warst du?", right side "Schätzung – Wie gut glaubst du, warst du?". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 48.png
 
 BILD 49
@@ -290,7 +291,7 @@ Save as 51.png
 
 BILD 52
 Sprechtext (nur Timing, NICHT ins Bild): Das Argument ist überraschend einfach. Fast alle Menschen schätzen sich ein bisschen über dem Durchschnitt ein.
-Prompt: Same hand-drawn style as the reference image. A soft paper background with one long horizontal dashed line across the middle. A crowd of small stickmen stand on little boxes so that all their heads are just slightly above the dashed line. They look pleased. The top third is empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. A soft paper background with one long horizontal dashed line across the middle. A crowd of small stickmen stand on little boxes so that all their heads are just slightly above the dashed line. They look pleased. The top third is empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Etwas über dem Durchschnitt". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 52.png
 
 BILD 53
@@ -300,12 +301,12 @@ Save as 53.png
 
 BILD 54
 Sprechtext (nur Timing, NICHT ins Bild): Wenn sich aber alle ungefähr in der Mitte einordnen, dann liegen die Schwächsten automatisch weit daneben. Und die Besten automatisch darunter.
-Prompt: Same hand-drawn style as the reference image. The familiar four-step staircase. Student stickmen on every step all point towards the same middle step. The group on the lowest step points far up, the group on the top step points down. Simple, clean, readable. The top third is empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. The familiar four-step staircase. Student stickmen on every step all point towards the same middle step. The group on the lowest step points far up, the group on the top step points down. Simple, clean, readable. The top third is empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: two clearly separated labels, left side "Schwächste – liegen weit darüber", right side "Beste – liegen darunter". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 54.png
 
 BILD 55
 Sprechtext (nur Timing, NICHT ins Bild): Ein Team hat das 2020 mit 929 Teilnehmenden, Intelligenztests und Selbsteinschätzungen geprüft.
-Prompt: Same hand-drawn style as the reference image. A wide bright test center with many rows of adult stickmen of all ages at computers, concentrating on puzzle-like tasks shown as simple shapes. A researcher walks between the rows with a clipboard. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. A wide bright test center with many rows of adult stickmen of all ages at computers, concentrating on puzzle-like tasks shown as simple shapes. A researcher walks between the rows with a clipboard. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large number "929" with the smaller line "Teilnehmende (2020)" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 55.png
 
 BILD 56
@@ -320,7 +321,7 @@ Save as 57.png
 
 BILD 58
 Sprechtext (nur Timing, NICHT ins Bild): Nicht ganz. Eine große Studie hat 2021 das Original wiederholt. Zweimal, mit jeweils rund viertausend Menschen.
-Prompt: Same hand-drawn style as the reference image. Top-down view of a huge grid of many small laptop screens arranged like a mosaic; on each screen a tiny stickman works on a simple test. Soft cool light. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Top-down view of a huge grid of many small laptop screens arranged like a mosaic; on each screen a tiny stickman works on a simple test. Soft cool light. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large number "4.000" with the smaller line "Menschen pro Durchgang (2021)" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 58.png
 
 BILD 59
@@ -335,12 +336,12 @@ Save as 60.png
 
 BILD 61
 Sprechtext (nur Timing, NICHT ins Bild): Das ist der eigentliche Punkt. Nicht die Arroganz. Sondern das fehlende Signal.
-Prompt: Same hand-drawn style as the reference image. Macro shot of the small round doubt lamp from the metaphor sheet, completely dark, its thin cable hanging loose and unplugged. Dark calm background. The upper third is empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Macro shot of the small round doubt lamp from the metaphor sheet, completely dark, its thin cable hanging loose and unplugged. Dark calm background. The upper third is empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Das fehlende Signal". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 61.png
 
 BILD 62
 Sprechtext (nur Timing, NICHT ins Bild): Wer gut ist, spürt beim Antworten: Hier bin ich unsicher. Wer schlecht ist, bekommt dieses Signal nicht.
-Prompt: Same hand-drawn style as the reference image. Two stickmen sit side by side at laptops. Left: his doubt lamp blinks yellow and he pauses thoughtfully, finger hovering. Right: his doubt lamp stays dark and he clicks fast and carelessly. The top third is empty. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Two stickmen sit side by side at laptops. Left: his doubt lamp blinks yellow and he pauses thoughtfully, finger hovering. Right: his doubt lamp stays dark and he clicks fast and carelessly. The top third is empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: two clearly separated labels, left side "Wer gut ist – spürt Unsicherheit", right side "Wer schlecht ist – bekommt kein Signal". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 62.png
 
 BILD 63
@@ -360,7 +361,7 @@ Save as 65.png
 
 BILD 66
 Sprechtext (nur Timing, NICHT ins Bild): Erstens: echtes Feedback. Nicht von Freunden, die nett sein wollen, sondern vom Ergebnis.
-Prompt: Same hand-drawn style as the reference image. Jonas from the character sheet sits on a sofa while two friends give him enthusiastic thumbs up. On the laptop beside him a simple line chart clearly points downward. Daylight room. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. Jonas from the character sheet sits on a sofa while two friends give him enthusiastic thumbs up. On the laptop beside him a simple line chart clearly points downward. Daylight room. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Feedback vom Ergebnis" with the smaller line "Tipp 1" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 66.png
 
 BILD 67
@@ -375,7 +376,7 @@ Save as 68.png
 
 BILD 69
 Sprechtext (nur Timing, NICHT ins Bild): Zweitens: Lerne ein bisschen mehr. Klingt verrückt, aber in der Originalstudie passierte genau das.
-Prompt: Same hand-drawn style as the reference image. A student stickman sits at a library desk with a thin workbook, pencil in hand, focused and curious. A small stack of books beside him, warm lamp light. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. A student stickman sits at a library desk with a thin workbook, pencil in hand, focused and curious. A small stack of books beside him, warm lamp light. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Ein bisschen mehr lernen" with the smaller line "Tipp 2" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 69.png
 
 BILD 70
@@ -385,12 +386,12 @@ Save as 70.png
 
 BILD 71
 Sprechtext (nur Timing, NICHT ins Bild): Und drittens die Frage, die ich dir am Anfang versprochen habe.
-Prompt: Edit BILD 13 (keep the same character, place, light and style): Same hand-drawn style as the reference image. The two thin stick hands hold the glowing doubt lamp up higher, its warm light now brighter and filling more of the dark background. No text, no letters, no numbers.
+Prompt: Edit BILD 13 (keep the same character, place, light and style): Same hand-drawn style as the reference image. The two thin stick hands hold the glowing doubt lamp up higher, its warm light now brighter and filling more of the dark background. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Die Schutzfrage" with the smaller line "Tipp 3" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 71.png
 
 BILD 72
 Sprechtext (nur Timing, NICHT ins Bild): Bevor du dir bei etwas ganz sicher bist, frag dich: Woran würde ich merken, dass ich falschliege?
-Prompt: Same hand-drawn style as the reference image. The ordinary stickman in the blue sweater stands at a quiet crossroad at dusk, holding the glowing doubt lamp in one hand, looking thoughtfully down one of the paths. The upper third of the image is calm sky. No text, no letters, no numbers.
+Prompt: Same hand-drawn style as the reference image. The ordinary stickman in the blue sweater stands at a quiet crossroad at dusk, holding the glowing doubt lamp in one hand, looking thoughtfully down one of the paths. The upper third of the image is calm sky. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Woran würde ich's merken?" with the smaller line "…dass ich falschliege?" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 72.png
 
 BILD 73

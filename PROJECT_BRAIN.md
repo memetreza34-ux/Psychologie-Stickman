@@ -6,7 +6,7 @@ Verbindlich: `rules/YOUTUBE_WEEK_FOLDERS.md`. ZUERST `npm run youtube:week -- TT
 
 ## Neue Videos: WORKFLOW_V2
 
-Startdatei `WORKFLOW_V2.md`. KI-Bilder textfrei, Text/Zahlen/Vergleiche als Remotion-`infoCards` (`CODE_TEXT_CARDS_V1`), Shotliste `99-intern/shotlist.json` → `npm run v2:build`. Erstes V2-Video: `youtube/2026-KW43_19.10-25.10/24.10.2026-dunning-kruger-effekt-v1`.
+Startdatei `WORKFLOW_V2.md`. Nur Skript + Bilder, kein Remotion. Kurzer exakter deutscher Text (Begriff/Zahl/Vergleich) und Cover-Überschrift kommen direkt von Google Flow (`FLOW_EXACT_TEXT_V2`). Shotliste `99-intern/shotlist.json` → `npm run v2:build`. Erstes V2-Video: `youtube/2026-KW43_19.10-25.10/24.10.2026-dunning-kruger-effekt-v1`.
 
 ## Oberste operative Prioritaet: systematische Verbesserung nach JEDEM Video
 

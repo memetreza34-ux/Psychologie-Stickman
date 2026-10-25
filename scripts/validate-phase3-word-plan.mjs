@@ -37,7 +37,7 @@ if (Array.isArray(plan.sceneEffects) && plan.sceneEffects.length) {
   plan.sceneEffects.forEach((effect) => {
     if (!allowedEffects.has(effect)) errors.push(`Unsupported scene effect: ${effect}.`);
   });
-  if (format === 'youtube') errors.push('YouTube must not contain sceneEffects; keep Longform static unless the format rules change.');
+  if (format === 'youtube' && !plan.motionStyle) errors.push('YouTube must not contain sceneEffects; keep Longform static unless the format rules change.');
 }
 
 if (errors.length) {

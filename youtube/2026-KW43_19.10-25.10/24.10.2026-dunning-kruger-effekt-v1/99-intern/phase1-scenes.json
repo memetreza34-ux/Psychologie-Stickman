@@ -14,9 +14,9 @@
   "visualWorldStatus": "ACTIVE",
   "visualWorld": "PSYCHOLOGY_STICKMAN_WORLD_V1",
   "creativeVisualPolicy": "CONTENT_FIRST_VISUAL_QA_V2",
-  "finalTextPolicy": "CODE_TEXT_CARDS_V1",
-  "visibleTextRenderer": "REMOTION",
-  "renderGermanLabelsInRemotion": true,
+  "finalTextPolicy": "FLOW_EXACT_TEXT_V2",
+  "visibleTextRenderer": "GOOGLE_FLOW",
+  "renderGermanLabelsInRemotion": false,
   "thumbnailGenerationPolicy": "THUMBNAIL_SEPARATE_FROM_SCENE01_V1",
   "thumbnailTargetPath": "03-bilder/00-cover.png",
   "exportPackagePolicy": "YOUTUBE_EXPORT_PACKAGE_V2",
@@ -43,9 +43,6 @@
     }
   ],
   "metaphor": "The doubt lamp: a small round lamp that floats above a person's head on a thin cable. It glows warm yellow when the person notices uncertainty, and stays dark when they feel sure without reason. Create a metaphor sheet first (vorlagen/figuren/03-metapher-sheet.txt) with the lamp dark, flickering, glowing and unplugged.",
-  "motionStyle": "smooth",
-  "transition": "fade",
-  "transitionMs": 400,
   "sceneEffects": [
     "zoom-in",
     "zoom-out",
@@ -128,170 +125,6 @@
     "zoom-out",
     "zoom-out"
   ],
-  "infoCards": [
-    {
-      "scene": 3,
-      "type": "keyword",
-      "text": "McArthur Wheeler",
-      "sub": "Pittsburgh, 1995",
-      "position": "top"
-    },
-    {
-      "scene": 15,
-      "type": "keyword",
-      "text": "Dunning-Kruger-Effekt",
-      "sub": "Wer wenig kann, überschätzt sich oft am meisten"
-    },
-    {
-      "scene": 20,
-      "type": "steps",
-      "steps": [
-        "Fehler machen",
-        "Fehler nicht sehen"
-      ]
-    },
-    {
-      "scene": 24,
-      "type": "keyword",
-      "text": "Unterstes Viertel",
-      "sub": "die schwächsten 25 Prozent"
-    },
-    {
-      "scene": 25,
-      "type": "stat",
-      "value": "12",
-      "label": "Prozentrang: echte Leistung",
-      "position": "center"
-    },
-    {
-      "scene": 27,
-      "type": "stat",
-      "value": "62",
-      "label": "Prozentrang: eigene Schätzung",
-      "position": "top"
-    },
-    {
-      "scene": 28,
-      "type": "compare",
-      "left": "Echte Leistung",
-      "leftSub": "Prozentrang 12",
-      "right": "Eigene Schätzung",
-      "rightSub": "Prozentrang 62"
-    },
-    {
-      "scene": 31,
-      "type": "keyword",
-      "text": "Ohne Können kein Maßstab",
-      "position": "top"
-    },
-    {
-      "scene": 37,
-      "type": "compare",
-      "left": "Jonas",
-      "leftSub": "3 Regeln",
-      "right": "Profi",
-      "rightSub": "100 Ausnahmen"
-    },
-    {
-      "scene": 42,
-      "type": "compare",
-      "left": "Wenig Wissen",
-      "leftSub": "fühlt sich vollständig an",
-      "right": "Mehr Wissen",
-      "rightSub": "zeigt, was fehlt"
-    },
-    {
-      "scene": 44,
-      "type": "keyword",
-      "text": "Berg der Dummheit?",
-      "position": "top"
-    },
-    {
-      "scene": 46,
-      "type": "keyword",
-      "text": "Nicht in der Studie",
-      "position": "top"
-    },
-    {
-      "scene": 48,
-      "type": "compare",
-      "left": "Leistung",
-      "leftSub": "Wie gut warst du?",
-      "right": "Schätzung",
-      "rightSub": "Wie gut glaubst du, warst du?"
-    },
-    {
-      "scene": 52,
-      "type": "keyword",
-      "text": "Etwas über dem Durchschnitt",
-      "sub": "So schätzen sich fast alle ein",
-      "position": "top"
-    },
-    {
-      "scene": 54,
-      "type": "compare",
-      "left": "Schwächste",
-      "leftSub": "liegen weit darüber",
-      "right": "Beste",
-      "rightSub": "liegen darunter"
-    },
-    {
-      "scene": 55,
-      "type": "stat",
-      "value": "929",
-      "label": "Teilnehmende (2020)",
-      "position": "top"
-    },
-    {
-      "scene": 58,
-      "type": "stat",
-      "value": "4.000",
-      "label": "Menschen pro Durchgang (2021)",
-      "position": "top"
-    },
-    {
-      "scene": 61,
-      "type": "keyword",
-      "text": "Das fehlende Signal",
-      "position": "top"
-    },
-    {
-      "scene": 62,
-      "type": "compare",
-      "left": "Wer gut ist",
-      "leftSub": "spürt Unsicherheit",
-      "right": "Wer schlecht ist",
-      "rightSub": "bekommt kein Signal"
-    },
-    {
-      "scene": 66,
-      "type": "keyword",
-      "text": "Feedback vom Ergebnis",
-      "sub": "Tipp 1",
-      "position": "top"
-    },
-    {
-      "scene": 69,
-      "type": "keyword",
-      "text": "Ein bisschen mehr lernen",
-      "sub": "Tipp 2",
-      "position": "top"
-    },
-    {
-      "scene": 71,
-      "type": "keyword",
-      "text": "Die Schutzfrage",
-      "sub": "Tipp 3",
-      "position": "top"
-    },
-    {
-      "scene": 72,
-      "type": "keyword",
-      "text": "Woran würde ich's merken?",
-      "sub": "…dass ich falschliege?",
-      "position": "top"
-    }
-  ],
   "scenes": [
     {
       "scene": 1,
@@ -347,14 +180,12 @@
       "representationReason": "Ein Raumbild ohne Täter kann keinen Namen tragen.",
       "observableEvidence": "Same hand-drawn style as the reference image. Medium shot at the bank counter: Wheeler from the character sheet slides an empty cloth bag across the counter towards a frightened teller stickman who raises both thin hands. Wheeler looks relaxed and almost friendly. Warm interior light, wooden counter. Keep the upper left area calm. No text, no letters, no numbers.",
       "dominantRelation": "Der Täter bekommt einen Namen und ein Gesicht, die Geschichte wird persönlich.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "McArthur Wheeler",
-        "sub": "Pittsburgh, 1995",
-        "position": "top"
-      },
+      "flowText": [
+        "McArthur Wheeler",
+        "Pittsburgh, 1995"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 4,
@@ -582,13 +413,11 @@
       "representationReason": "Ohne Karte bliebe der Begriff nur gehört, nicht gesehen.",
       "observableEvidence": "Same hand-drawn style as the reference image. The cozy 1990s university office from before, slightly out of focus, warm desk lamp light, bookshelves. The two researcher stickmen sit small in the lower right corner. The upper half of the image is calm and empty. No text, no letters, no numbers.",
       "dominantRelation": "Der Fachbegriff erscheint groß und korrekt geschrieben als Code-Karte.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "Dunning-Kruger-Effekt",
-        "sub": "Wer wenig kann, überschätzt sich oft am meisten"
-      },
+      "flowText": [
+        "Dunning-Kruger-Effekt"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 16,
@@ -684,15 +513,12 @@
       "representationReason": "Ohne Karte verschwimmt, dass es zwei getrennte Probleme sind.",
       "observableEvidence": "Same hand-drawn style as the reference image. Side view of the same café chess table, softly out of focus: the beginner stickman leans back relaxed, his doubt lamp dark above his head, while the opponent smiles. The upper half of the image is calm and empty. No text, no letters, no numbers.",
       "dominantRelation": "Die zwei Stufen des Nachteils werden als Schritt-Karte klar benannt.",
-      "infoCard": {
-        "type": "steps",
-        "steps": [
-          "Fehler machen",
-          "Fehler nicht sehen"
-        ]
-      },
+      "flowText": [
+        "Fehler machen",
+        "Fehler nicht sehen"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 21,
@@ -767,13 +593,12 @@
       "representationReason": "Reiner Text erklärt Viertel schlechter als vier sichtbare Stufen.",
       "observableEvidence": "Same hand-drawn style as the reference image. A simple wide illustrated staircase with four broad steps on a soft paper background. Small student stickmen stand on every step. The group on the lowest step is lit by a warm spotlight, all other steps are dimmed. The top third of the image is empty. No text, no letters, no numbers.",
       "dominantRelation": "Die vier Leistungsgruppen werden als Treppe räumlich verständlich.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "Unterstes Viertel",
-        "sub": "die schwächsten 25 Prozent"
-      },
+      "flowText": [
+        "Unterstes Viertel",
+        "die schwächsten 25 Prozent"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 25,
@@ -792,14 +617,12 @@
       "observableEvidence": "Same hand-drawn style as the reference image. Change the camera to a close-up of the lit group on the lowest step: the student stickmen hold their test sheets and smile, relaxed and content. Keep the right half of the image calm. No text, no letters, no numbers.",
       "dominantRelation": "Die echte Leistung bekommt eine Zahl: Prozentrang 12.",
       "variantOf": 24,
-      "infoCard": {
-        "type": "stat",
-        "value": "12",
-        "label": "Prozentrang: echte Leistung",
-        "position": "center"
-      },
+      "flowText": [
+        "12",
+        "Prozentrang: echte Leistung"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 26,
@@ -836,14 +659,12 @@
       "representationReason": "Ein Vergleich folgt im nächsten Bild; hier zählt erst das Selbstbild der Gruppe.",
       "observableEvidence": "Same hand-drawn style as the reference image. The student stickmen on the lowest step of the staircase, each with a round thought bubble above the head. Inside every bubble they see themselves standing proudly on the third step. Warm spotlight on them. No text, no letters, no numbers.",
       "dominantRelation": "Die Gedankenblasen zeigen die Lücke zwischen echter Stufe und eingebildeter Stufe.",
-      "infoCard": {
-        "type": "stat",
-        "value": "62",
-        "label": "Prozentrang: eigene Schätzung",
-        "position": "top"
-      },
+      "flowText": [
+        "62",
+        "Prozentrang: eigene Schätzung"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 28,
@@ -861,15 +682,12 @@
       "representationReason": "Ein abstraktes Balkendiagramm ist präziser, aber weniger einprägsam als der Schatten.",
       "observableEvidence": "Same hand-drawn style as the reference image. The same four-step staircase. One student stickman stands on the lowest step, but his long shadow on the wall behind him reaches all the way up to the third step. Dramatic side light. The top third of the image is empty. No text, no letters, no numbers.",
       "dominantRelation": "Echte Stufe und Schatten machen die Lücke von 50 Punkten mit einem Blick sichtbar.",
-      "infoCard": {
-        "type": "compare",
-        "left": "Echte Leistung",
-        "leftSub": "Prozentrang 12",
-        "right": "Eigene Schätzung",
-        "rightSub": "Prozentrang 62"
-      },
+      "flowText": [
+        "Echte Leistung – Prozentrang 12",
+        "Eigene Schätzung – Prozentrang 62"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 29,
@@ -926,13 +744,11 @@
       "observableEvidence": "Same hand-drawn style as the reference image. Back in the workshop: close-up of the proud stickman with empty hands in front of the crooked shelf. The wooden ruler lies on the floor behind him, out of his view. Keep the upper area calm. No text, no letters, no numbers.",
       "dominantRelation": "Rückgriff auf das Lineal: Der Maßstab liegt da, aber er sieht ihn nicht.",
       "variantOf": 17,
-      "infoCard": {
-        "type": "keyword",
-        "text": "Ohne Können kein Maßstab",
-        "position": "top"
-      },
+      "flowText": [
+        "Ohne Können kein Maßstab"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 32,
@@ -1046,15 +862,12 @@
       "representationReason": "Ein abstraktes Schema hätte keine Figuren, mit denen man sich vergleicht.",
       "observableEvidence": "Same hand-drawn style as the reference image. Two halves in one image. Left: Jonas holds a thin booklet with three colored sticky notes and smiles. Right: the grey-haired trader stands in front of a huge wall of filing drawers reaching to the ceiling. The top third of the image is empty. No text, no letters, no numbers.",
       "dominantRelation": "Der Wissensunterschied wird als Größenunterschied sichtbar.",
-      "infoCard": {
-        "type": "compare",
-        "left": "Jonas",
-        "leftSub": "3 Regeln",
-        "right": "Profi",
-        "rightSub": "100 Ausnahmen"
-      },
+      "flowText": [
+        "Jonas – 3 Regeln",
+        "Profi – 100 Ausnahmen"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 38,
@@ -1149,15 +962,12 @@
       "representationReason": "Nur Text wäre ein Merksatz ohne Bild, das hängen bleibt.",
       "observableEvidence": "Same hand-drawn style as the reference image. Two halves in one image, both in a dark endless library. Left: a stickman holds a tiny candle that lights only a small circle with one bookshelf, he looks satisfied. Right: a stickman holds a bright lantern that reveals endless shelves stretching into darkness, he looks amazed and humble. No text, no letters, no numbers.",
       "dominantRelation": "Die Synthese als Bild: Mehr Licht zeigt mehr Dunkelheit.",
-      "infoCard": {
-        "type": "compare",
-        "left": "Wenig Wissen",
-        "leftSub": "fühlt sich vollständig an",
-        "right": "Mehr Wissen",
-        "rightSub": "zeigt, was fehlt"
-      },
+      "flowText": [
+        "Wenig Wissen – fühlt sich vollständig an",
+        "Mehr Wissen – zeigt, was fehlt"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 43,
@@ -1195,13 +1005,11 @@
       "observableEvidence": "Same hand-drawn style as the reference image. A whimsical landscape shaped exactly like the famous curve: a tiny stickman stands on the top of a very sharp, narrow mountain peak, waving a blank flag in triumph. Clouds below him. Keep the top third calm. No text, no letters, no numbers.",
       "dominantRelation": "Die Kurve wird als begehbare Landschaft lebendig und merkbar.",
       "mechanismRenderingJustification": "Die Landschaft ist die populäre Kurve selbst; der Stickman auf dem Gipfel zeigt das behauptete Hochgefühl.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "Berg der Dummheit?",
-        "position": "top"
-      },
+      "flowText": [
+        "Berg der Dummheit?"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 45,
@@ -1240,13 +1048,11 @@
       "representationReason": "Forscherfiguren würden vom Beweisstück, den Seiten, ablenken.",
       "observableEvidence": "Same hand-drawn style as the reference image. Top-down view of the original study pages spread on a wooden desk: blank lines of body text and simple charts made only of dots and straight lines. A magnifying glass rests on them. There is no mountain shape anywhere. The top third is calm. No text, no letters, no numbers.",
       "dominantRelation": "Der Faktencheck: In den Originalseiten gibt es keine solche Kurve.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "Nicht in der Studie",
-        "position": "top"
-      },
+      "flowText": [
+        "Nicht in der Studie"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 47,
@@ -1283,15 +1089,12 @@
       "representationReason": "Eine Figur würde die zwei gemessenen Dinge verdecken.",
       "observableEvidence": "Same hand-drawn style as the reference image. Two objects side by side on a desk: on the left a corrected test sheet with simple tick and cross marks, on the right a small sheet with only a horizontal line and a slider mark far to the right. Clean light, the top third empty. No text, no letters, no numbers.",
       "dominantRelation": "Die zwei gemessenen Größen werden klar benannt.",
-      "infoCard": {
-        "type": "compare",
-        "left": "Leistung",
-        "leftSub": "Wie gut warst du?",
-        "right": "Schätzung",
-        "rightSub": "Wie gut glaubst du, warst du?"
-      },
+      "flowText": [
+        "Leistung – Wie gut warst du?",
+        "Schätzung – Wie gut glaubst du, warst du?"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 49,
@@ -1368,14 +1171,11 @@
       "representationReason": "Eine Alltagsszene würde die Mittellinie, um die es geht, nicht zeigen.",
       "observableEvidence": "Same hand-drawn style as the reference image. A soft paper background with one long horizontal dashed line across the middle. A crowd of small stickmen stand on little boxes so that all their heads are just slightly above the dashed line. They look pleased. The top third is empty. No text, no letters, no numbers.",
       "dominantRelation": "Der Besser-als-Durchschnitt-Effekt als einfaches Bild: alle knapp über der Linie.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "Etwas über dem Durchschnitt",
-        "sub": "So schätzen sich fast alle ein",
-        "position": "top"
-      },
+      "flowText": [
+        "Etwas über dem Durchschnitt"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 53,
@@ -1414,15 +1214,12 @@
       "dominantRelation": "Der Statistik-Einwand wird an der bekannten Treppe verständlich.",
       "allowExtendedBeat": true,
       "extendedBeatReason": "Die Vergleichskarte braucht den ganzen Satz zum Lesen; ein Schnitt mitten im Argument würde es zerreißen.",
-      "infoCard": {
-        "type": "compare",
-        "left": "Schwächste",
-        "leftSub": "liegen weit darüber",
-        "right": "Beste",
-        "rightSub": "liegen darunter"
-      },
+      "flowText": [
+        "Schwächste – liegen weit darüber",
+        "Beste – liegen darunter"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 55,
@@ -1440,14 +1237,12 @@
       "representationReason": "Die Zahl kommt als Karte; das Bild soll die Menschen zeigen.",
       "observableEvidence": "Same hand-drawn style as the reference image. A wide bright test center with many rows of adult stickmen of all ages at computers, concentrating on puzzle-like tasks shown as simple shapes. A researcher walks between the rows with a clipboard. No text, no letters, no numbers.",
       "dominantRelation": "Die Größe der Prüfung wird sichtbar: viele Menschen, echte Tests.",
-      "infoCard": {
-        "type": "stat",
-        "value": "929",
-        "label": "Teilnehmende (2020)",
-        "position": "top"
-      },
+      "flowText": [
+        "929",
+        "Teilnehmende (2020)"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 56,
@@ -1503,14 +1298,12 @@
       "representationReason": "Ein Schema würde die Größe der Studie nicht spürbar machen.",
       "observableEvidence": "Same hand-drawn style as the reference image. Top-down view of a huge grid of many small laptop screens arranged like a mosaic; on each screen a tiny stickman works on a simple test. Soft cool light. No text, no letters, no numbers.",
       "dominantRelation": "Die große Wiederholung wird als Masse sichtbar.",
-      "infoCard": {
-        "type": "stat",
-        "value": "4.000",
-        "label": "Menschen pro Durchgang (2021)",
-        "position": "top"
-      },
+      "flowText": [
+        "4.000",
+        "Menschen pro Durchgang (2021)"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 59,
@@ -1567,13 +1360,11 @@
       "representationReason": "Reiner Text ohne die bekannte Lampe verliert die Verbindung zur Geschichte.",
       "observableEvidence": "Same hand-drawn style as the reference image. Macro shot of the small round doubt lamp from the metaphor sheet, completely dark, its thin cable hanging loose and unplugged. Dark calm background. The upper third is empty. No text, no letters, no numbers.",
       "dominantRelation": "Die Metapher wird auf ihren Kern reduziert: das fehlende Signal.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "Das fehlende Signal",
-        "position": "top"
-      },
+      "flowText": [
+        "Das fehlende Signal"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 62,
@@ -1591,15 +1382,12 @@
       "representationReason": "Ein Schema ohne Figuren verliert die Lampe als Signal.",
       "observableEvidence": "Same hand-drawn style as the reference image. Two stickmen sit side by side at laptops. Left: his doubt lamp blinks yellow and he pauses thoughtfully, finger hovering. Right: his doubt lamp stays dark and he clicks fast and carelessly. The top third is empty. No text, no letters, no numbers.",
       "dominantRelation": "Der Unterschied zwischen gut und schwach als direkter Vergleich mit der Lampe.",
-      "infoCard": {
-        "type": "compare",
-        "left": "Wer gut ist",
-        "leftSub": "spürt Unsicherheit",
-        "right": "Wer schlecht ist",
-        "rightSub": "bekommt kein Signal"
-      },
+      "flowText": [
+        "Wer gut ist – spürt Unsicherheit",
+        "Wer schlecht ist – bekommt kein Signal"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 63,
@@ -1675,14 +1463,12 @@
       "representationReason": "Eine Vergleichsgrafik ohne Jonas würde den Rückbezug zu seiner Geschichte verlieren.",
       "observableEvidence": "Same hand-drawn style as the reference image. Jonas from the character sheet sits on a sofa while two friends give him enthusiastic thumbs up. On the laptop beside him a simple line chart clearly points downward. Daylight room. No text, no letters, no numbers.",
       "dominantRelation": "Lob von Freunden gegen ehrliches Ergebnis in einem Bild.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "Feedback vom Ergebnis",
-        "sub": "Tipp 1",
-        "position": "top"
-      },
+      "flowText": [
+        "Feedback vom Ergebnis",
+        "Tipp 1"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 67,
@@ -1739,14 +1525,12 @@
       "representationReason": "Ein Texteinblender allein zeigt nicht, wie Lernen aussieht.",
       "observableEvidence": "Same hand-drawn style as the reference image. A student stickman sits at a library desk with a thin workbook, pencil in hand, focused and curious. A small stack of books beside him, warm lamp light. No text, no letters, no numbers.",
       "dominantRelation": "Tipp 2 als konkrete Handlung: üben statt fühlen.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "Ein bisschen mehr lernen",
-        "sub": "Tipp 2",
-        "position": "top"
-      },
+      "flowText": [
+        "Ein bisschen mehr lernen",
+        "Tipp 2"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 70,
@@ -1784,14 +1568,12 @@
       "observableEvidence": "Same hand-drawn style as the reference image. The two thin stick hands hold the glowing doubt lamp up higher, its warm light now brighter and filling more of the dark background. No text, no letters, no numbers.",
       "dominantRelation": "Die offene Schleife vom Anfang wird eingelöst.",
       "variantOf": 13,
-      "infoCard": {
-        "type": "keyword",
-        "text": "Die Schutzfrage",
-        "sub": "Tipp 3",
-        "position": "top"
-      },
+      "flowText": [
+        "Die Schutzfrage",
+        "Tipp 3"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 72,
@@ -1809,14 +1591,12 @@
       "representationReason": "Nur die Figur ohne Karte lässt die wichtigste Frage des Videos ungeschrieben.",
       "observableEvidence": "Same hand-drawn style as the reference image. The ordinary stickman in the blue sweater stands at a quiet crossroad at dusk, holding the glowing doubt lamp in one hand, looking thoughtfully down one of the paths. The upper third of the image is calm sky. No text, no letters, no numbers.",
       "dominantRelation": "Die Schutzfrage steht groß und lesbar im Bild.",
-      "infoCard": {
-        "type": "keyword",
-        "text": "Woran würde ich's merken?",
-        "sub": "…dass ich falschliege?",
-        "position": "top"
-      },
+      "flowText": [
+        "Woran würde ich's merken?",
+        "…dass ich falschliege?"
+      ],
       "panelCount": 1,
-      "textPolicy": "NONE"
+      "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
     },
     {
       "scene": 73,

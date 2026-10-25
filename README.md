@@ -15,7 +15,7 @@ Wachstum ist das Ziel, keine garantierte Kennzahl. Keine Daten erfinden; technis
 
 ## Bildwelt
 
-**Status: ACTIVE** — `rules/PSYCHOLOGY_STICKMAN_WORLD.md` (`PSYCHOLOGY_STICKMAN_WORLD_V1`): großer heller Kopf, kleine Augen, strichdünne Glieder. Neue Videos nutzen zusätzlich `rules/BILD_METHODE_V2.md` (Figuren-Sheets, textfreie KI-Bilder, Text als Code-Infokarten).
+**Status: ACTIVE** — `rules/PSYCHOLOGY_STICKMAN_WORLD.md` (`PSYCHOLOGY_STICKMAN_WORLD_V1`): großer heller Kopf, kleine Augen, strichdünne Glieder. Neue Videos nutzen zusätzlich `rules/BILD_METHODE_V2.md` (Figuren-Sheets, kurze Bildprompts, exakter deutscher Text direkt von Google Flow; kein Remotion).
 
 ## Was weiterhin steht
 
@@ -84,7 +84,7 @@ youtube/<JJJJ-KWNN_TT.MM-TT.MM>/TT.MM.JJJJ-thema/
 - **`WORKFLOW_V2.md` — Startdatei für jedes neue Video (8 Schritte, `npm run v2:build`)**
 - `ANALYSE_2026-10-24.md` — Analyse: was bei Skript, Bild und Code bisher schiefgeht
 - `rules/SKRIPT_METHODE_V2.md` — Skript-Bauplan, Hook-Typen, Satz-Handwerk; Prüfung: `npm run qa:script-style -- <script.txt>`
-- `rules/BILD_METHODE_V2.md` — Figuren-Sheet, kurze Bildprompts, Text/Schemata als Code-`infoCards`
+- `rules/BILD_METHODE_V2.md` — Figuren-Sheet, kurze Bildprompts, exakter Text direkt im Bild (nur Skript + Bilder, kein Remotion)
 - `vorlagen/figuren/` — kopierfertige Prompts für Stil-Referenz, Figuren-Sheet, Metapher, Bildprompt
 
 ## Aktive bildweltunabhängige Kernregeln
