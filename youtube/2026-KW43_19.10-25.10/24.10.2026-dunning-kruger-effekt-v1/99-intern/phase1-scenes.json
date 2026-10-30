@@ -414,7 +414,8 @@
       "observableEvidence": "Same hand-drawn style as the reference image. The cozy 1990s university office from before, slightly out of focus, warm desk lamp light, bookshelves. The two researcher stickmen sit small in the lower right corner. The upper half of the image is calm and empty. No text, no letters, no numbers.",
       "dominantRelation": "Der Fachbegriff erscheint groß und korrekt geschrieben als Code-Karte.",
       "flowText": [
-        "Dunning-Kruger-Effekt"
+        "Dunning-Kruger-Effekt",
+        "Selbstüberschätzung bei wenig Können"
       ],
       "panelCount": 1,
       "textPolicy": "FLOW_EXACT_GERMAN_TEXT"
@@ -1172,7 +1173,8 @@
       "observableEvidence": "Same hand-drawn style as the reference image. A soft paper background with one long horizontal dashed line across the middle. A crowd of small stickmen stand on little boxes so that all their heads are just slightly above the dashed line. They look pleased. The top third is empty. No text, no letters, no numbers.",
       "dominantRelation": "Der Besser-als-Durchschnitt-Effekt als einfaches Bild: alle knapp über der Linie.",
       "flowText": [
-        "Etwas über dem Durchschnitt"
+        "Etwas über dem Durchschnitt",
+        "Viele halten sich für überdurchschnittlich"
       ],
       "panelCount": 1,
       "textPolicy": "FLOW_EXACT_GERMAN_TEXT"

@@ -11,10 +11,12 @@ Alte Videos werden nicht verändert.
 | 4 | **Skript** nach `rules/SKRIPT_METHODE_V2.md` | `01-script/script.txt`, `99-intern/script-plan.json` (APPROVED) | `npm run qa:script-style -- <script>` und `npm run qa:longform-script` |
 | 5 | **Figuren** nach `rules/BILD_METHODE_V2.md` | Hauptfigur + Metapher festlegen (Vorlagen in `vorlagen/figuren/`) | — |
 | 6 | **Shotliste** | `99-intern/shotlist.json` (eine Zeile pro Bild, siehe unten) | — |
-| 7 | **Dateien erzeugen** | `npm run v2:build -- <projekt>` erzeugt `phase1-scenes.json`, `google-flow-prompt.txt`, `scene-plan.json` | `npm run qa:creative-visuals -- <projekt>` und `npm run phase1:links -- <projekt>` |
+| 7 | **Dateien erzeugen** | `npm run v2:build -- <projekt>` erzeugt `phase1-scenes.json` und `google-flow-prompt.txt` | `npm run qa:v2`, `npm run qa:creative-visuals -- <projekt>` und `npm run phase1:links -- <projekt>` |
 | 8 | **Bilder** | Google Flow erzeugt Cover + alle Bilder in `03-bilder/`. Schnitt, Ton und Musik machst du selbst (kein Remotion). | `npm run flow:verify -- <projekt>`, Bilder ansehen |
 
-Danach: Upload, nach 48 h / 7 Tagen Zahlen in `analytics/` eintragen, eine Erkenntnis ins nächste Video mitnehmen.
+Danach: Schnitt und Sprecher-Audio **extern** fertigstellen, fertige MP4 als `05-export/final.mp4` ablegen, gewähltes Cover `03-bilder/00-cover.png` als `05-export/thumbnail.png` kopieren (keine vorhandenen Dateien überschreiben). Anschließend `npm run finalize:youtube -- <projekt>`: ergänzt Untertitel und Upload-Daten anhand tatsächlicher Wort-Timings. Nach Upload YouTube Studio nach 48 h / 7 d / 28 d auswerten.
+
+**V2-Schutz:** `produce:youtube` ist ausschließlich der alte Remotion-Weg und wird für V2-Projekte abgelehnt. `qa:v2` verhindert stille Textverluste im Google-Flow-Prompt. `flow:verify` kontrolliert vollständige PNG-Struktur, Daten und Nummerierung; die tatsächliche Bildwirkung, Figurendrift, Lesbarkeit und Satz-Bild-Passung werden weiterhin visuell geprüft.
 
 ---
 

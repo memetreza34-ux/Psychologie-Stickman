@@ -17,24 +17,20 @@ Wachstum ist das Ziel, keine garantierte Kennzahl. Keine Daten erfinden; technis
 
 **Status: ACTIVE** — `rules/PSYCHOLOGY_STICKMAN_WORLD.md` (`PSYCHOLOGY_STICKMAN_WORLD_V1`): großer heller Kopf, kleine Augen, strichdünne Glieder. Neue Videos nutzen zusätzlich `rules/BILD_METHODE_V2.md` (Figuren-Sheets, kurze Bildprompts, exakter deutscher Text direkt von Google Flow; kein Remotion).
 
-## Was weiterhin steht
+## Aktiver Workflow: V2 (nur neue Videos)
 
-Die Produktionspipeline bleibt erhalten:
+**Zentrale Startanleitung:** [WORKFLOW_V2.md](WORKFLOW_V2.md). Die historischen Remotion-Skripte bleiben für alte Projekte erhalten; `produce:youtube`, `render:youtube` und `studio` sind **nicht** für neue V2-Videos vorgesehen.
 
 ```text
-THEMA + QUELLEN
-→ Script/Hook
-→ Visual Beats
-→ Observable Evidence
-→ neue Bildwelt (muss erst definiert werden)
-→ eine google-flow-prompt.txt
-→ 3 Cover
-→ Nutzerwahl
-→ 5er-Batches
-→ Voice + Timings
-→ Remotion
-→ Export
+Thema/Quellen -> Skript -> Shotliste -> npm run v2:build
+-> npm run qa:v2 + kreative Prüfungen -> 3 Cover -> eine Coverwahl
+-> Google Flow erzeugt 00-cover.png + 01.png–NN.png in 03-bilder/
+-> npm run flow:verify + manuelle Bildkontrolle
+-> Stimme/Schnitt extern -> MP4 + Thumbnail in 05-export/
+-> npm run finalize:youtube -> Upload -> Analytics & Verbesserungen
 ```
+
+`qa:v2` prüft, dass **alle** geplanten deutschen Texte tatsächlich in Szenenplan und Prompt stehen. `flow:verify` kontrolliert PNG-Dateien einschließlich Pixeldaten; es ersetzt keine visuelle Qualitätsabnahme.
 
 ## Nach jeder fertigen Phase 1: direkt auf dem Tablet kopieren
 
@@ -52,8 +48,8 @@ Pro Video genau:
 `02-google-flow/google-flow-prompt.txt`
 
 Ausgabe:
-- BILD 01 zuerst
-- 3 getrennte Cover-Kandidaten
+- 3 getrennte Cover-Kandidaten zuerst
+- BILD 01 ist die erste normale Szene (niemals das Cover)
 - STOP für Nutzerwahl
 - danach 5er-Batches
 - jede Bildnummer = eigene 16:9-Datei
@@ -67,12 +63,13 @@ Ausgabe:
 youtube/<JJJJ-KWNN_TT.MM-TT.MM>/TT.MM.JJJJ-thema/
 ├── 01-script/script.txt
 ├── 02-google-flow/google-flow-prompt.txt
-├── 03-bilder/
-├── 04-audio/final-voice.mp3
+├── 03-bilder/  (00-cover.png und 01.png–NN.png)
+├── 04-audio/  (optionale Arbeitsdateien)
 ├── 05-export/
 │   ├── final.mp4
 │   ├── thumbnail.png
 │   ├── captions.srt
+│   ├── subtitle-script.txt
 │   └── youtube-upload.txt
 └── 99-intern/
 ```

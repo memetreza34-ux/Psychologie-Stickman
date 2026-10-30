@@ -106,7 +106,7 @@ Save as 14.png
 
 BILD 15
 Sprechtext (nur Timing, NICHT ins Bild): Der Effekt heißt Dunning-Kruger-Effekt.
-Prompt: Same hand-drawn style as the reference image. The cozy 1990s university office from before, slightly out of focus, warm desk lamp light, bookshelves. The two researcher stickmen sit small in the lower right corner. The upper half of the image is calm and empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Dunning-Kruger-Effekt". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
+Prompt: Same hand-drawn style as the reference image. The cozy 1990s university office from before, slightly out of focus, warm desk lamp light, bookshelves. The two researcher stickmen sit small in the lower right corner. The upper half of the image is calm and empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Dunning-Kruger-Effekt" with the smaller line "Selbstüberschätzung bei wenig Können" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 15.png
 
 BILD 16
@@ -291,7 +291,7 @@ Save as 51.png
 
 BILD 52
 Sprechtext (nur Timing, NICHT ins Bild): Das Argument ist überraschend einfach. Fast alle Menschen schätzen sich ein bisschen über dem Durchschnitt ein.
-Prompt: Same hand-drawn style as the reference image. A soft paper background with one long horizontal dashed line across the middle. A crowd of small stickmen stand on little boxes so that all their heads are just slightly above the dashed line. They look pleased. The top third is empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Etwas über dem Durchschnitt". Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
+Prompt: Same hand-drawn style as the reference image. A soft paper background with one long horizontal dashed line across the middle. A crowd of small stickmen stand on little boxes so that all their heads are just slightly above the dashed line. They look pleased. The top third is empty. Add exact German text in the upper third of the image, as clean bold hand-lettered writing that fits the illustration: the large words "Etwas über dem Durchschnitt" with the smaller line "Viele halten sich für überdurchschnittlich" below it. Spell every word exactly as given, including umlauts. No other text, letters or numbers anywhere.
 Save as 52.png
 
 BILD 53
