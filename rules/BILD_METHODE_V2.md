@@ -3,7 +3,7 @@
 Policy: `BILD_METHODE_V2` · Text-Policy für neue Videos: `finalTextPolicy: "FLOW_EXACT_TEXT_V2"` (nur Skript + Bilder, kein Remotion)
 
 Die Bildwelt `PSYCHOLOGY_STICKMAN_WORLD_V1` bleibt (großer heller Kopf, kleine Augen, dünne Strichglieder).
-Neu ist, **wie** Bilder geplant, gepromptet und mit Code kombiniert werden.
+Neu ist, **wie** Bilder geplant, gepromptet und auf Qualität geprüft werden.
 
 ---
 
@@ -117,16 +117,7 @@ In der Shotliste bekommt ein Bild eine `card`. `npm run v2:build` macht daraus e
 | `steps` | Mechanismus als Kette (2–4 Kästchen) | 12 |
 
 `position`: `top` (Standard), `center` oder `bottom`. Im Bildprompt die Fläche dafür frei halten („keep the upper third calm“).
-Richtwert: Text nur bei Begriff, Studie, Zahl, Wendepunkt und Tipps – bei 6–7 Minuten etwa 15–25 Text-Bilder.
-
----|---|---|
-| `keyword` | Fachbegriff einführen | 4 (+ Untertitel) |
-| `stat` | eine Zahl zählt hoch | 6 im Label |
-| `compare` | Gruppe A vs. B, vorher/nachher | 8 |
-| `steps` | Mechanismus als Kette (2–4 Schritte) | 12 |
-
-Richtwert: **eine Karte pro Kernaussage, Zahl oder Vergleich** – bei 6–7 Minuten meist 15–25 Karten, vor allem bei Begriff, Studie, Wendepunkt und Tipps. Zwischen zwei mittigen Karten mindestens ein Bild ohne Karte.
-Musik: lizenzfreie Datei nach `public/assets/music/` legen (Pfad relativ zu `public/`).
+Richtwert: Text nur bei Begriff, Studie, Zahl, Wendepunkt und Tipps – bei 6–7 Minuten etwa 15–25 Text-Bilder. **Zu lange Textangaben stoppen `v2:build` mit einer konkreten Fehlermeldung, statt unbemerkt aus dem Prompt zu verschwinden.** Kontrolle: `npm run qa:v2`.
 
 ---
 
