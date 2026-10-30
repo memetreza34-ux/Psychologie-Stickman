@@ -233,7 +233,7 @@
       "card": {
         "type": "keyword",
         "text": "Dunning-Kruger-Effekt",
-        "sub": "Wer wenig kann, überschätzt sich oft am meisten"
+        "sub": "Selbstüberschätzung bei wenig Können"
       }
     },
     {
@@ -769,7 +769,7 @@
       "card": {
         "type": "keyword",
         "text": "Etwas über dem Durchschnitt",
-        "sub": "So schätzen sich fast alle ein",
+        "sub": "Viele halten sich für überdurchschnittlich",
         "position": "top"
       }
     },

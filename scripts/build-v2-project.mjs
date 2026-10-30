@@ -7,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {PHASE3_INFO_CARD_TYPES_LIST} from './lib/v2-constants.mjs';
+import {flowTextFor,validateFlowCard} from './lib/v2-flow-text.mjs';
 import {visualTypes, visualFunctions, cameraScales, CREATIVE_POLICY} from './lib/creative-visual-qa.mjs';
 
 const projectArg = process.argv[2];
@@ -51,6 +52,7 @@ shots.forEach((shot, i) => {
   if (!/no text/iu.test(shot.prompt ?? '')) errors.push(`${where}: prompt must end with "No text, no letters, no numbers." (Text kommt über card).`);
   if (shot.card) {
     if (!PHASE3_INFO_CARD_TYPES_LIST.includes(shot.card.type)) errors.push(`${where}: card.type must be ${PHASE3_INFO_CARD_TYPES_LIST.join('/')}.`);
+    errors.push(...validateFlowCard(shot.card).map(msg=>`${where}: ${msg}`));
     cards.push({scene: n, ...shot.card});
   }
 });
@@ -60,14 +62,7 @@ if (errors.length) {
 }
 
 // Kein Remotion: Text aus einer `card` schreibt Google Flow exakt und kurz direkt ins Bild.
-const SUB_MAX_WORDS = 5;
 const textArea = {top: 'in the upper third of the image', center: 'in the center of the image', bottom: 'in the lower third of the image'};
-const flowTextFor = (card) => {
-  if (card.type === 'keyword') return [card.text, ...(card.sub && words(card.sub).length <= SUB_MAX_WORDS ? [card.sub] : [])];
-  if (card.type === 'stat') return [card.value, card.label];
-  if (card.type === 'compare') return [[card.left, card.leftSub].filter(Boolean).join(' – '), [card.right, card.rightSub].filter(Boolean).join(' – ')];
-  return card.steps;
-};
 const textInstruction = (card) => {
   const lines = flowTextFor(card);
   const quoted = lines.map((line) => `"${line}"`);

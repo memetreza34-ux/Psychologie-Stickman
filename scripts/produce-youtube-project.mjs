@@ -41,6 +41,9 @@ const thumbnailPath = path.join(exportDir, 'thumbnail.png');
 
 if (!fs.existsSync(phase1Path)) throw new Error(`Required production file missing: ${phase1Path}`);
 const phase1 = JSON.parse(fs.readFileSync(phase1Path, 'utf8'));
+if (phase1.workflowVersion==='V2' && phase1.finalTextPolicy==='FLOW_EXACT_TEXT_V2') {
+  throw Error('V2 does not use Remotion. Use flow:verify, edit externally and then finalize:youtube. No files changed.');
+}
 // V2: Cover liegt als 03-bilder/00-cover.png bei den Bildern (Überschrift schon von Flow im Bild).
 if (phase1.workflowVersion === 'V2' && !fs.existsSync(thumbnailPath)) {
   const cover = path.join(projectDir, '03-bilder', '00-cover.png');
